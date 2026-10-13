@@ -1,0 +1,674 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:locator-x",
+ "rootCardId": "world:locator-x",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -156,
+   156
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:locator-x/master-dashboard",
+   "displayName": "Master Dashboard",
+   "centerXZ": [
+    -48,
+    83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:locator-x/underwriting-desk",
+   "displayName": "Underwriting Desk",
+   "centerXZ": [
+    -96,
+    0
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:locator-x/evidence-layer",
+   "displayName": "Evidence Layer",
+   "centerXZ": [
+    -48,
+    -83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:locator-x/the-academy",
+   "displayName": "The Academy",
+   "centerXZ": [
+    48,
+    -83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:locator-x/market-editions",
+   "displayName": "Market Editions",
+   "centerXZ": [
+    96,
+    0
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:locator-x/louisiana-developer-desk",
+   "displayName": "Louisiana Developer Desk",
+   "centerXZ": [
+    48,
+    83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:locator-x/floor",
+   "parentCardId": "plaza:locator-x",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:locator-x/avatar",
+   "parentCardId": "coordinator:locator-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:locator-x/host/avatar",
+   "parentCardId": "advisor:locator-x/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:locator-x/steward/avatar",
+   "parentCardId": "advisor:locator-x/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:locator-x/alignment/avatar",
+   "parentCardId": "advisor:locator-x/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:locator-x/arch",
+   "parentCardId": "gate:locator-x",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    136
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:locator-x/chamber",
+   "parentCardId": "council:locator-x",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -136
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:locator-x/steward-1/chair",
+   "parentCardId": "seat:locator-x/steward-1",
+   "zoneCardId": "council:locator-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:locator-x/steward-2/chair",
+   "parentCardId": "seat:locator-x/steward-2",
+   "zoneCardId": "council:locator-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:locator-x/steward-3/chair",
+   "parentCardId": "seat:locator-x/steward-3",
+   "zoneCardId": "council:locator-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:locator-x/avatar",
+   "parentCardId": "omega:locator-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -136
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/master-dashboard/pad",
+   "parentCardId": "zone:locator-x/master-dashboard",
+   "zoneCardId": "zone:locator-x/master-dashboard",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -48,
+    0,
+    83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/master-dashboard/hall",
+   "parentCardId": "zone:locator-x/master-dashboard",
+   "zoneCardId": "zone:locator-x/master-dashboard",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -44,
+    0.4,
+    76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/guide/avatar",
+   "parentCardId": "agent:locator-x/guide",
+   "zoneCardId": "zone:locator-x/master-dashboard",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -51,
+    0.4,
+    88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/underwriting-desk/pad",
+   "parentCardId": "zone:locator-x/underwriting-desk",
+   "zoneCardId": "zone:locator-x/underwriting-desk",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -96,
+    0,
+    0
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/underwriting-desk/hall",
+   "parentCardId": "zone:locator-x/underwriting-desk",
+   "zoneCardId": "zone:locator-x/underwriting-desk",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -88,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/forecast-agent/avatar",
+   "parentCardId": "agent:locator-x/forecast-agent",
+   "zoneCardId": "zone:locator-x/underwriting-desk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -102,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/evidence-layer/pad",
+   "parentCardId": "zone:locator-x/evidence-layer",
+   "zoneCardId": "zone:locator-x/evidence-layer",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -48,
+    0,
+    -83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/evidence-layer/hall",
+   "parentCardId": "zone:locator-x/evidence-layer",
+   "zoneCardId": "zone:locator-x/evidence-layer",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -44,
+    0.4,
+    -76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/review-agent/avatar",
+   "parentCardId": "agent:locator-x/review-agent",
+   "zoneCardId": "zone:locator-x/evidence-layer",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -51,
+    0.4,
+    -88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/the-academy/pad",
+   "parentCardId": "zone:locator-x/the-academy",
+   "zoneCardId": "zone:locator-x/the-academy",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    48,
+    0,
+    -83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/the-academy/hall",
+   "parentCardId": "zone:locator-x/the-academy",
+   "zoneCardId": "zone:locator-x/the-academy",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    44,
+    0.4,
+    -76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/level-gates/avatar",
+   "parentCardId": "agent:locator-x/level-gates",
+   "zoneCardId": "zone:locator-x/the-academy",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    51,
+    0.4,
+    -88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/market-editions/pad",
+   "parentCardId": "zone:locator-x/market-editions",
+   "zoneCardId": "zone:locator-x/market-editions",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    96,
+    0,
+    0
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/market-editions/hall",
+   "parentCardId": "zone:locator-x/market-editions",
+   "zoneCardId": "zone:locator-x/market-editions",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    88,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/scout-agent/avatar",
+   "parentCardId": "agent:locator-x/scout-agent",
+   "zoneCardId": "zone:locator-x/market-editions",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    102,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/louisiana-developer-desk/pad",
+   "parentCardId": "zone:locator-x/louisiana-developer-desk",
+   "zoneCardId": "zone:locator-x/louisiana-developer-desk",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    48,
+    0,
+    83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:locator-x/louisiana-developer-desk/hall",
+   "parentCardId": "zone:locator-x/louisiana-developer-desk",
+   "zoneCardId": "zone:locator-x/louisiana-developer-desk",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    44,
+    0.4,
+    76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:locator-x/developer-brief-desk/avatar",
+   "parentCardId": "agent:locator-x/developer-brief-desk",
+   "zoneCardId": "zone:locator-x/louisiana-developer-desk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    51,
+    0.4,
+    88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:locator-x/gate",
+   "startXZ": [
+    0,
+    136
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:locator-x/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -126
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/master-dashboard",
+   "startXZ": [
+    -12,
+    20.78
+   ],
+   "endXZ": [
+    -40,
+    69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/underwriting-desk",
+   "startXZ": [
+    -24,
+    0
+   ],
+   "endXZ": [
+    -80,
+    0
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/evidence-layer",
+   "startXZ": [
+    -12,
+    -20.78
+   ],
+   "endXZ": [
+    -40,
+    -69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/the-academy",
+   "startXZ": [
+    12,
+    -20.78
+   ],
+   "endXZ": [
+    40,
+    -69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/market-editions",
+   "startXZ": [
+    24,
+    0
+   ],
+   "endXZ": [
+    80,
+    0
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:locator-x/louisiana-developer-desk",
+   "startXZ": [
+    12,
+    20.78
+   ],
+   "endXZ": [
+    40,
+    69.28
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

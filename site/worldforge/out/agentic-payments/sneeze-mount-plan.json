@@ -1,0 +1,1779 @@
+{
+ "schemaVersion": "worldforge-sneeze-mount-plan/0.1",
+ "engine": "Sneeze",
+ "bindingStatus": "decoder-available-not-mounted",
+ "bindingNote": "worldforge/native/rmcobject_decoder.* encodes these nodes against Sneeze headers (Y-up -> Z-up conversion in the decoder); nothing is mounted or rendered yet",
+ "rp1": {
+  "nameRule": "ASCII, <= 47 bytes (displayName); UTF-8 label in extras.label",
+  "bound": "d3Max = half-extents in metres from the card Volum or primitive size"
+ },
+ "rootCardId": "world:agentic-payments",
+ "mountParent": "SCENE::Fabric_Root()->Node_Root()",
+ "resourceCachePolicy": "shared-by-exact-sReference-URL",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -144,
+   144
+  ]
+ },
+ "assets": [
+  {
+   "url": "http://127.0.0.1:8789/unit-cube.glb",
+   "localPath": "worldforge/out/assets/unit-cube.glb",
+   "sha256": "66af9d7110fb7ca21d5323ed5c3261747a282e8378290911ce4064152f99e735",
+   "role": "shared-generic-unit-cube"
+  }
+ ],
+ "previewGlb": {
+  "path": "worldforge/out/agentic-payments/agentic-payments.glb",
+  "sha256": "b320b36345562716c64912c3707f1cc5b57bbd318fda84804638bb89054ee3f6"
+ },
+ "nodes": [
+  {
+   "cardId": "world:agentic-payments",
+   "displayName": "Agentic Payments - Powered by AGI Corp",
+   "parentCardId": null,
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     144,
+     40,
+     144
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "world",
+    "label": "Agentic Payments · Powered by AGI Corp",
+    "source": "my-fabric/worlds/index.json"
+   }
+  },
+  {
+   "cardId": "plaza:agentic-payments",
+   "displayName": "Agentic Payments Plaza - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     24,
+     5,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "plaza",
+    "label": "Agentic Payments Plaza · Powered by AGI Corp",
+    "source": "README.md (shared PBC management model)"
+   }
+  },
+  {
+   "cardId": "coordinator:agentic-payments",
+   "displayName": "Agentic Payments Coordin~ - Powered by AGI Corp",
+   "parentCardId": "plaza:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "coordinator",
+    "label": "Agentic Payments Coordin… · Powered by AGI Corp",
+    "source": "agents/swarms/agentic-payments.json#coordinator"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/host",
+   "displayName": "Host Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Host Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/agentic-payments.json#advisors[id=host]"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/steward",
+   "displayName": "Steward Liaison - Powered by AGI Corp",
+   "parentCardId": "plaza:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Steward Liaison · Powered by AGI Corp",
+    "source": "agents/advisors/agentic-payments.json#advisors[id=steward]"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/alignment",
+   "displayName": "Alignment Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Alignment Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/agentic-payments.json#advisors[id=alignment]"
+   }
+  },
+  {
+   "cardId": "gate:agentic-payments",
+   "displayName": "Alignment Evaluation Gate - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     10,
+     6,
+     3
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     124
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "gate",
+    "label": "Alignment Evaluation Gate · Powered by AGI Corp",
+    "source": "worlds/PBC.json#programs"
+   }
+  },
+  {
+   "cardId": "council:agentic-payments",
+   "displayName": "Steward Council - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     14,
+     6,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -124
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "council",
+    "label": "Steward Council · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-1",
+   "displayName": "Steward Seat 1 - Powered by AGI Corp",
+   "parentCardId": "council:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 1 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-2",
+   "displayName": "Steward Seat 2 - Powered by AGI Corp",
+   "parentCardId": "council:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 2 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-3",
+   "displayName": "Steward Seat 3 - Powered by AGI Corp",
+   "parentCardId": "council:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 3 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "omega:agentic-payments",
+   "displayName": "Omega Steward - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     26,
+     0,
+     -124
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "omega",
+    "label": "Omega Steward · Powered by AGI Corp",
+    "source": "agents/advisory/omega_agents.json"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/transaction-desk",
+   "displayName": "Transaction Desk - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     12,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -59.4,
+     0,
+     59.4
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Transaction Desk · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'transact, buy, sell'"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/buyer-agent",
+   "displayName": "Buyer Agent - Powered by AGI Corp",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -3,
+     0,
+     5.48
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Buyer Agent · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'buy'"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/seller-agent",
+   "displayName": "Seller Agent - Powered by AGI Corp",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.48,
+     0,
+     3
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Seller Agent · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'sell'"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/service-provisioning-counter",
+   "displayName": "Service Provisioning Cou~ - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -59.4,
+     0,
+     -59.4
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Service Provisioning Cou… · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/provisioning-agent",
+   "displayName": "Provisioning Agent - Powered by AGI Corp",
+   "parentCardId": "zone:agentic-payments/service-provisioning-counter",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4.24,
+     0,
+     -4.24
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Provisioning Agent · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/budget-office",
+   "displayName": "Budget Office - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     59.4,
+     0,
+     -59.4
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Budget Office · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/budget-agent",
+   "displayName": "Budget Agent - Powered by AGI Corp",
+   "parentCardId": "zone:agentic-payments/budget-office",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     4.24,
+     0,
+     -4.24
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Budget Agent · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "displayName": "Financial Infrastructure~ - Powered by AGI Corp",
+   "parentCardId": "world:agentic-payments",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     59.4,
+     0,
+     59.4
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Financial Infrastructure… · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure autonomously'"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/rail-agent",
+   "displayName": "Rail Agent - Powered by AGI Corp",
+   "parentCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     4.24,
+     0,
+     4.24
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Rail Agent · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure'"
+   }
+  },
+  {
+   "cardId": "plaza:agentic-payments/floor",
+   "displayName": "plaza:agentic-payments/floor",
+   "parentCardId": "plaza:agentic-payments",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     24,
+     0.2,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     48,
+     0.4,
+     48
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "pad",
+    "massingType": "plaza",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "coordinator:agentic-payments/avatar",
+   "displayName": "coordinator:agentic-payments/avatar",
+   "parentCardId": "coordinator:agentic-payments",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/host/avatar",
+   "displayName": "advisor:agentic-payments/host/avatar",
+   "parentCardId": "advisor:agentic-payments/host",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/steward/avatar",
+   "displayName": "advisor:agentic-payments/steward/avatar",
+   "parentCardId": "advisor:agentic-payments/steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agentic-payments/alignment/avatar",
+   "displayName": "advisor:agentic-payments/alignment/avatar",
+   "parentCardId": "advisor:agentic-payments/alignment",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "gate:agentic-payments/arch",
+   "displayName": "gate:agentic-payments/arch",
+   "parentCardId": "gate:agentic-payments",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     8,
+     5,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     16,
+     10,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "arch",
+    "massingType": "gate",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "council:agentic-payments/chamber",
+   "displayName": "council:agentic-payments/chamber",
+   "parentCardId": "council:agentic-payments",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     14,
+     4,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     28,
+     8,
+     20
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "box",
+    "massingType": "council",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-1/chair",
+   "displayName": "seat:agentic-payments/steward-1/chair",
+   "parentCardId": "seat:agentic-payments/steward-1",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agentic-payments",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-2/chair",
+   "displayName": "seat:agentic-payments/steward-2/chair",
+   "parentCardId": "seat:agentic-payments/steward-2",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agentic-payments",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agentic-payments/steward-3/chair",
+   "displayName": "seat:agentic-payments/steward-3/chair",
+   "parentCardId": "seat:agentic-payments/steward-3",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agentic-payments",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "omega:agentic-payments/avatar",
+   "displayName": "omega:agentic-payments/avatar",
+   "parentCardId": "omega:agentic-payments",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.6,
+     1.1,
+     0.6
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1.2,
+     2.2,
+     1.2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/transaction-desk/pad",
+   "displayName": "zone:agentic-payments/transaction-desk/pad",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/transaction-desk",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/transaction-desk/hall",
+   "displayName": "zone:agentic-payments/transaction-desk/hall",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     10,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     5.66,
+     10.4,
+     -5.66
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     20,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/transaction-desk",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/buyer-agent/avatar",
+   "displayName": "agent:agentic-payments/buyer-agent/avatar",
+   "parentCardId": "agent:agentic-payments/buyer-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/transaction-desk",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/seller-agent/avatar",
+   "displayName": "agent:agentic-payments/seller-agent/avatar",
+   "parentCardId": "agent:agentic-payments/seller-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/transaction-desk",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/service-provisioning-counter/pad",
+   "displayName": "entic-payments/service-provisioning-counter/pad",
+   "parentCardId": "zone:agentic-payments/service-provisioning-counter",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/service-provisioning-counter/hall",
+   "displayName": "ntic-payments/service-provisioning-counter/hall",
+   "parentCardId": "zone:agentic-payments/service-provisioning-counter",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     5.66,
+     8.4,
+     5.66
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/provisioning-agent/avatar",
+   "displayName": "gent:agentic-payments/provisioning-agent/avatar",
+   "parentCardId": "agent:agentic-payments/provisioning-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/budget-office/pad",
+   "displayName": "zone:agentic-payments/budget-office/pad",
+   "parentCardId": "zone:agentic-payments/budget-office",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/budget-office",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/budget-office/hall",
+   "displayName": "zone:agentic-payments/budget-office/hall",
+   "parentCardId": "zone:agentic-payments/budget-office",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.66,
+     8.4,
+     5.66
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/budget-office",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/budget-agent/avatar",
+   "displayName": "agent:agentic-payments/budget-agent/avatar",
+   "parentCardId": "agent:agentic-payments/budget-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/budget-office",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/financial-infrastructure-gateway/pad",
+   "displayName": "c-payments/financial-infrastructure-gateway/pad",
+   "parentCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agentic-payments/financial-infrastructure-gateway/hall",
+   "displayName": "-payments/financial-infrastructure-gateway/hall",
+   "parentCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.66,
+     8.4,
+     -5.66
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agentic-payments/rail-agent/avatar",
+   "displayName": "agent:agentic-payments/rail-agent/avatar",
+   "parentCardId": "agent:agentic-payments/rail-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  }
+ ],
+ "acceptanceRequirements": [
+  "Parent nodes must be created before child nodes",
+  "Each returned native handle must resolve via CONTAINER::Node_Find",
+  "Every resource-bearing NODE must eventually expose Gltf_Render_Model()!=nullptr",
+  "Timeout/fetch/parse failure must fail the load",
+  "Scene mutations must use the engine's safe lifecycle/thread boundary"
+ ]
+}

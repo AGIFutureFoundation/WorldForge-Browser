@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:s32-solar-dao",
+ "rootCardId": "world:s32-solar-dao",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:s32-solar-dao/charter-hall",
+   "displayName": "Charter Hall",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "displayName": "Research Synthesis Lab",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s32-solar-dao/proposal-forum",
+   "displayName": "Proposal Forum",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s32-solar-dao/operations-deck",
+   "displayName": "Operations Deck",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s32-solar-dao/progress-observatory",
+   "displayName": "Progress Observatory",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:s32-solar-dao/floor",
+   "parentCardId": "plaza:s32-solar-dao",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:s32-solar-dao/avatar",
+   "parentCardId": "coordinator:s32-solar-dao",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s32-solar-dao/host/avatar",
+   "parentCardId": "advisor:s32-solar-dao/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s32-solar-dao/steward/avatar",
+   "parentCardId": "advisor:s32-solar-dao/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s32-solar-dao/alignment/avatar",
+   "parentCardId": "advisor:s32-solar-dao/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:s32-solar-dao/arch",
+   "parentCardId": "gate:s32-solar-dao",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:s32-solar-dao/chamber",
+   "parentCardId": "council:s32-solar-dao",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:s32-solar-dao/steward-1/chair",
+   "parentCardId": "seat:s32-solar-dao/steward-1",
+   "zoneCardId": "council:s32-solar-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s32-solar-dao/steward-2/chair",
+   "parentCardId": "seat:s32-solar-dao/steward-2",
+   "zoneCardId": "council:s32-solar-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s32-solar-dao/steward-3/chair",
+   "parentCardId": "seat:s32-solar-dao/steward-3",
+   "zoneCardId": "council:s32-solar-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:s32-solar-dao/avatar",
+   "parentCardId": "omega:s32-solar-dao",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/charter-hall/pad",
+   "parentCardId": "zone:s32-solar-dao/charter-hall",
+   "zoneCardId": "zone:s32-solar-dao/charter-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/charter-hall/hall",
+   "parentCardId": "zone:s32-solar-dao/charter-hall",
+   "zoneCardId": "zone:s32-solar-dao/charter-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    12,
+    10
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/research-synthesis-lab/pad",
+   "parentCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "zoneCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/research-synthesis-lab/hall",
+   "parentCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "zoneCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/evidence-monitor/avatar",
+   "parentCardId": "agent:s32-solar-dao/evidence-monitor",
+   "zoneCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/research-synthesis-agent/avatar",
+   "parentCardId": "agent:s32-solar-dao/research-synthesis-agent",
+   "zoneCardId": "zone:s32-solar-dao/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/proposal-forum/pad",
+   "parentCardId": "zone:s32-solar-dao/proposal-forum",
+   "zoneCardId": "zone:s32-solar-dao/proposal-forum",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/proposal-forum/hall",
+   "parentCardId": "zone:s32-solar-dao/proposal-forum",
+   "zoneCardId": "zone:s32-solar-dao/proposal-forum",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/proposal-grant-drafter/avatar",
+   "parentCardId": "agent:s32-solar-dao/proposal-grant-drafter",
+   "zoneCardId": "zone:s32-solar-dao/proposal-forum",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/operations-deck/pad",
+   "parentCardId": "zone:s32-solar-dao/operations-deck",
+   "zoneCardId": "zone:s32-solar-dao/operations-deck",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/operations-deck/hall",
+   "parentCardId": "zone:s32-solar-dao/operations-deck",
+   "zoneCardId": "zone:s32-solar-dao/operations-deck",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/collaborator-scout/avatar",
+   "parentCardId": "agent:s32-solar-dao/collaborator-scout",
+   "zoneCardId": "zone:s32-solar-dao/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/task-router/avatar",
+   "parentCardId": "agent:s32-solar-dao/task-router",
+   "zoneCardId": "zone:s32-solar-dao/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/progress-observatory/pad",
+   "parentCardId": "zone:s32-solar-dao/progress-observatory",
+   "zoneCardId": "zone:s32-solar-dao/progress-observatory",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s32-solar-dao/progress-observatory/hall",
+   "parentCardId": "zone:s32-solar-dao/progress-observatory",
+   "zoneCardId": "zone:s32-solar-dao/progress-observatory",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s32-solar-dao/progress-tracker/avatar",
+   "parentCardId": "agent:s32-solar-dao/progress-tracker",
+   "zoneCardId": "zone:s32-solar-dao/progress-observatory",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:s32-solar-dao/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/charter-hall",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/research-synthesis-lab",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/proposal-forum",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/operations-deck",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s32-solar-dao/progress-observatory",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

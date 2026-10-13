@@ -1,0 +1,887 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Agents That Deploy Infrastructure",
+ "slug": "agents-deploy-infrastructure",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:agents-deploy-infrastructure/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Agents That Deploy Infrastructure Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].tagline"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].zones[*].name"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[*].name"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Agents That Deploy Infrastructure is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].status"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Agents That Deploy Infrastructure Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].reserved_for_humans"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].stewards"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Agents That Deploy Infrastructure Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Agents That Deploy Infrastructure routes a question",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Agents That Deploy Infrastructure Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Planner (Idea Bench): Turns an idea into a build-and-run plan the stewards can read",
+     "keywords": [
+      "planner",
+      "turns",
+      "idea",
+      "build",
+      "stewards",
+      "read",
+      "bench",
+      "where",
+      "turned",
+      "what"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.planner]"
+    },
+    {
+     "n": 2,
+     "do": "Provisioner (Provisioning Yard): Provisions infrastructure from the plan, in rehearsal until a steward approves",
+     "keywords": [
+      "provisioner",
+      "provisions",
+      "infrastructure",
+      "rehearsal",
+      "until",
+      "approves",
+      "provisioning",
+      "yard",
+      "compute",
+      "storage",
+      "networks",
+      "rehearsed",
+      "plans"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.provisioner]"
+    },
+    {
+     "n": 3,
+     "do": "Deployer (Deployment Bay): Deploys applications and keeps a rollback ready",
+     "keywords": [
+      "deployer",
+      "deploys",
+      "applications",
+      "keeps",
+      "rollback",
+      "ready",
+      "deployment",
+      "deploying",
+      "builds",
+      "releases",
+      "rollbacks"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.deployer]"
+    },
+    {
+     "n": 4,
+     "do": "Domain Steward (Domain Registry Desk): Manages domains and records; registrations are a steward decision",
+     "keywords": [
+      "domain",
+      "manages",
+      "domains",
+      "records",
+      "registrations",
+      "decision",
+      "registry",
+      "managing"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.domain-steward]"
+    },
+    {
+     "n": 5,
+     "do": "Configurator (Service Configuration Room): Configures services; never holds a live secret in a prompt",
+     "keywords": [
+      "configurator",
+      "configures",
+      "services",
+      "never",
+      "holds",
+      "secret",
+      "prompt",
+      "service",
+      "configuration",
+      "configuring",
+      "settings",
+      "secrets",
+      "handling",
+      "policy",
+      "wiring"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.configurator]"
+    },
+    {
+     "n": 6,
+     "do": "Operator (Operations Deck): Operates the stack and hands incidents to people",
+     "keywords": [
+      "operator",
+      "operates",
+      "stack",
+      "hands",
+      "incidents",
+      "people",
+      "operations",
+      "deck",
+      "operating",
+      "health",
+      "logs",
+      "call",
+      "handoff"
+     ],
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.operator]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/agents-deploy-infrastructure.json#coordinator",
+    "agents/swarms/agents-deploy-infrastructure.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/idea-bench",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Idea Bench: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Idea Bench",
+   "room": {
+    "kind": "studio",
+    "sign": "Idea Bench",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-1.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/idea-bench].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Where an idea is turned into a plan of what to build and run",
+     "quote": "Where an idea is turned into a plan of what to build and run",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Idea Bench].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea'"
+    },
+    {
+     "text": "Planner's role: Turns an idea into a build-and-run plan the stewards can read",
+     "quote": "Turns an idea into a build-and-run plan the stewards can read",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.planner].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea to something running in production'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Idea Bench\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/idea-bench].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Planner: Turns an idea into a build-and-run plan the stewards can read",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/planner].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/planner"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Idea Bench]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/idea-bench]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.planner]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/provisioning-yard",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Provisioning Yard: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Provisioning Yard",
+   "room": {
+    "kind": "studio",
+    "sign": "Provisioning Yard",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/provisioning-yard].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Provisioning infrastructure: compute, storage and networks, as rehearsed plans",
+     "quote": "Provisioning infrastructure: compute, storage and networks, as rehearsed plans",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Provisioning Yard].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+    },
+    {
+     "text": "Provisioner's role: Provisions infrastructure from the plan, in rehearsal until a steward approves",
+     "quote": "Provisions infrastructure from the plan, in rehearsal until a steward approves",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.provisioner].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Provisioning Yard\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/provisioning-yard].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Provisioner: Provisions infrastructure from the plan, in rehearsal until a steward approves",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/provisioner].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/provisioner"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Provisioning Yard]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/provisioning-yard]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.provisioner]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/deployment-bay",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Deployment Bay: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Deployment Bay",
+   "room": {
+    "kind": "studio",
+    "sign": "Deployment Bay",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/deployment-bay].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Deploying applications: builds, releases and rollbacks",
+     "quote": "Deploying applications: builds, releases and rollbacks",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Deployment Bay].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+    },
+    {
+     "text": "Deployer's role: Deploys applications and keeps a rollback ready",
+     "quote": "Deploys applications and keeps a rollback ready",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.deployer].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Deployment Bay\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/deployment-bay].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Deployer: Deploys applications and keeps a rollback ready",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/deployer].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/deployer"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Deployment Bay]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/deployment-bay]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.deployer]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/domain-registry-desk",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Domain Registry Desk: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Domain Registry Desk",
+   "room": {
+    "kind": "desk",
+    "sign": "Domain Registry Desk",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/domain-registry-desk].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Managing domains and their records",
+     "quote": "Managing domains and their records",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Domain Registry Desk].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+    },
+    {
+     "text": "Domain Steward's role: Manages domains and records; registrations are a steward decision",
+     "quote": "Manages domains and records; registrations are a steward decision",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.domain-steward].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the desk signed \"Domain Registry Desk\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/domain-registry-desk].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Domain Steward: Manages domains and records; registrations are a steward decision",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/domain-steward].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/domain-steward"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Domain Registry Desk]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/domain-registry-desk]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.domain-steward]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/service-configuration-room",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Service Configuration Room: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Service Configuration Room",
+   "room": {
+    "kind": "forum",
+    "sign": "Service Configuration Room",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/service-configuration-room].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Configuring services: settings, secrets handling policy and wiring",
+     "quote": "Configuring services: settings, secrets handling policy and wiring",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Service Configuration Room].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+    },
+    {
+     "text": "Configurator's role: Configures services; never holds a live secret in a prompt",
+     "quote": "Configures services; never holds a live secret in a prompt",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.configurator].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Service Configuration Room\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/service-configuration-room].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Configurator: Configures services; never holds a live secret in a prompt",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/configurator].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/configurator"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Service Configuration Room]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/service-configuration-room]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.configurator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agents-deploy-infrastructure/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "agents-deploy-infrastructure",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "clinic",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-agents-deploy-infrastructure-6.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-clinic.glb",
+    "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Operating the stack: health, logs, incidents and the on-call handoff to people",
+     "quote": "Operating the stack: health, logs, incidents and the on-call handoff to people",
+     "from": "worlds/agents-deploy-infrastructure/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+    },
+    {
+     "text": "Operator's role: Operates the stack and hands incidents to people",
+     "quote": "Operates the stack and hands incidents to people",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.operator].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the clinic signed \"Operations Deck\"",
+     "from": "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Operator: Operates the stack and hands incidents to people",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agents-deploy-infrastructure/specialist/operator].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator",
+     "from": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agents-deploy-infrastructure/specialist/operator"
+   ],
+   "sources": [
+    "worlds/agents-deploy-infrastructure/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/agents-deploy-infrastructure/cards.json#cards[cardId=zone:agents-deploy-infrastructure/operations-deck]",
+    "agents/swarms/agents-deploy-infrastructure.json#agents[id=agents-deploy-infrastructure.operator]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:agents-deploy-infrastructure/coordinator",
+   "avatarId": "avatar:agents-deploy-infrastructure/coordinator",
+   "kind": "coordinator",
+   "name": "Agents That Deploy Infrastructure Coordinator",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/coordinator",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "bb92373c82952b2f365fd6402d5a78f1689270c74aaa859d9a031298de66686e"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/routing"
+   ],
+   "chars": 2873,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Agents That Deploy Infrastructure Coordinator (avatar:agents-deploy-infrastructure/coordinator) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/coordinator in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 bb92373c82952b2f); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Agents That Deploy Infrastructure (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Agents That Deploy Infrastructure Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/routing: How Agents That Deploy Infrastructure routes a question\n    Steps: 1. Planner (Idea Bench): Turns an idea into a build-and-run plan the stewards can read 2. Provisioner (Provisioning Yard): Provisions infrastructure from the plan, in rehearsal until a steward approves 3. Deployer (Deployment Bay): Deploys applications and keeps a rollback ready 4. Domain Steward (Domain Registry Desk): Manages domains and records; registrations are a steward decision 5. Configurator (Service Configuration Room): Configures services; never holds a live secret in a prompt 6. Operator (Operations Deck): Operates the stack and hands incidents to people\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/planner",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/planner",
+   "kind": "specialist",
+   "name": "Planner",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/planner",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "6632c950d08a09de167569641daf7c5264f87fa2178510d929d538335d239d38"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/idea-bench"
+   ],
+   "chars": 2655,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Planner (avatar:agents-deploy-infrastructure/specialist/planner) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/planner in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 6632c950d08a09de); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Idea Bench - Where an idea is turned into a plan of what to build and run.\nYour role: Turns an idea into a build-and-run plan the stewards can read (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea to something running in production').\nYou answer on: planner, turns, idea, build, stewards, read, bench, where, turned, what.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/idea-bench: Idea Bench: what happens here [room: Idea Bench]\n    Steps: 1. Enter the studio signed \"Idea Bench\" 2. Meet Planner: Turns an idea into a build-and-run plan the stewards can read 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/provisioner",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/provisioner",
+   "kind": "specialist",
+   "name": "Provisioner",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/provisioner",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "69311c895aac500c8173202d9f88e9ff7f2512fba3c2ee24a92c74c5683d4246"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/provisioning-yard"
+   ],
+   "chars": 2800,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Provisioner (avatar:agents-deploy-infrastructure/specialist/provisioner) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/provisioner in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 69311c895aac500c); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Provisioning Yard - Provisioning infrastructure: compute, storage and networks, as rehearsed plans.\nYour role: Provisions infrastructure from the plan, in rehearsal until a steward approves (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure').\nYou answer on: provisioner, provisions, infrastructure, rehearsal, until, approves, provisioning, yard, compute, storage, networks, rehearsed, plans.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/provisioning-yard: Provisioning Yard: what happens here [room: Provisioning Yard]\n    Steps: 1. Enter the studio signed \"Provisioning Yard\" 2. Meet Provisioner: Provisions infrastructure from the plan, in rehearsal until a steward approves 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/deployer",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/deployer",
+   "kind": "specialist",
+   "name": "Deployer",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/deployer",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "1473f4dbee84847260eaaf2d8905e611f2429ccd771dbbf98b1c03f7e446d465"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/deployment-bay"
+   ],
+   "chars": 2656,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Deployer (avatar:agents-deploy-infrastructure/specialist/deployer) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/deployer in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 1473f4dbee848472); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Deployment Bay - Deploying applications: builds, releases and rollbacks.\nYour role: Deploys applications and keeps a rollback ready (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications').\nYou answer on: deployer, deploys, applications, keeps, rollback, ready, deployment, deploying, builds, releases, rollbacks.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/deployment-bay: Deployment Bay: what happens here [room: Deployment Bay]\n    Steps: 1. Enter the studio signed \"Deployment Bay\" 2. Meet Deployer: Deploys applications and keeps a rollback ready 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/domain-steward",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/domain-steward",
+   "kind": "specialist",
+   "name": "Domain Steward",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/domain-steward",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "006333d157a8ac5be61314d0121f1e37886df613aa34e7ea6ccf21fb2f733508"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/domain-registry-desk"
+   ],
+   "chars": 2689,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Domain Steward (avatar:agents-deploy-infrastructure/specialist/domain-steward) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/domain-steward in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 006333d157a8ac5b); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Domain Registry Desk - Managing domains and their records.\nYour role: Manages domains and records; registrations are a steward decision (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains').\nYou answer on: domain, manages, domains, records, registrations, decision, registry, managing.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/domain-registry-desk: Domain Registry Desk: what happens here [room: Domain Registry Desk]\n    Steps: 1. Enter the desk signed \"Domain Registry Desk\" 2. Meet Domain Steward: Manages domains and records; registrations are a steward decision 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/configurator",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/configurator",
+   "kind": "specialist",
+   "name": "Configurator",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/configurator",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "b75efb64d833aab4c2b4659fe48fa0d522661cdcdd11c8b3c50e2f8ce8a02723"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/service-configuration-room"
+   ],
+   "chars": 2802,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Configurator (avatar:agents-deploy-infrastructure/specialist/configurator) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/configurator in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 b75efb64d833aab4); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Service Configuration Room - Configuring services: settings, secrets handling policy and wiring.\nYour role: Configures services; never holds a live secret in a prompt (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services').\nYou answer on: configurator, configures, services, never, holds, secret, prompt, service, configuration, configuring, settings, secrets, handling, policy, wiring.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/service-configuration-room: Service Configuration Room: what happens here [room: Service Configuration Room]\n    Steps: 1. Enter the forum signed \"Service Configuration Room\" 2. Meet Configurator: Configures services; never holds a live secret in a prompt 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agents-deploy-infrastructure/specialist/operator",
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/operator",
+   "kind": "specialist",
+   "name": "Operator",
+   "persona_prompt": {
+    "id": "persona:agents-deploy-infrastructure/specialist/operator",
+    "file": "worldforge/out/avatars/prompts/agents-deploy-infrastructure.json",
+    "sha256": "0310c72be8eaeab20505a5c5854b36ae34242e8c6f972bf65c56b99d7f0b09d3"
+   },
+   "lessons": [
+    "lesson:agents-deploy-infrastructure/zone/operations-deck"
+   ],
+   "chars": 2686,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Operator (avatar:agents-deploy-infrastructure/specialist/operator) teaches draft lessons in Agents That Deploy Infrastructure (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agents-deploy-infrastructure/specialist/operator in worldforge/out/avatars/prompts/agents-deploy-infrastructure.json (sha256 0310c72be8eaeab2); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Operating the stack: health, logs, incidents and the on-call handoff to people.\nYour role: Operates the stack and hands incidents to people (source: worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack').\nYou answer on: operator, operates, stack, hands, incidents, people, operations, deck, operating, health, logs, call, handoff.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agents-deploy-infrastructure/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the clinic signed \"Operations Deck\" 2. Meet Operator: Operates the stack and hands incidents to people 3. A question that belongs to another zone goes back to Agents That Deploy Infrastructure Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agents-deploy-infrastructure.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "spec gap: No cloud, provider, domain, registrar or stack is named; nothing is deployed from this world",
+  "spec gap: Spending on infrastructure is treasury.transfer, reserved for human stewards",
+  "spec gap: No RP1 location given yet"
+ ]
+}

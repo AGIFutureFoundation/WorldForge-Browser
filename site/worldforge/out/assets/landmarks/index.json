@@ -1,0 +1,5590 @@
+{
+ "schemaVersion": "worldforge-landmarks/0.1",
+ "generator": "worldforge/landmarks/build_landmarks.py",
+ "synthetic": true,
+ "note": "synthetic procedural civic landmark; not a real building and not modelled on one",
+ "umbrella": "Powered by AGI Corp",
+ "units": "metres",
+ "up": "+Y",
+ "entrance_facing": "+Z",
+ "origin": "base centre (plinth at y = 0)",
+ "footprint_m": [
+  12.0,
+  12.0
+ ],
+ "height_rule": "30 + 40 * u, u = first 48 bits of sha256('landmark:height:<slug>'), rounded to 0.5 m",
+ "inputs": [
+  "my-fabric/worlds/index.json",
+  "worlds/generated/teams/<slug>.json#brand",
+  "worldforge/out/<slug>/blockout.generated.json + cards.json (placement only)"
+ ],
+ "styles": {
+  "series-setback": {
+   "basis": "my-fabric/worlds/index.json worlds[].name ends in '(Series N)'",
+   "form": "square shaft, three setbacks, corner piers, tinted blade fins between glass bays, louvred lantern, emissive ring and needle spire",
+   "count": 28
+  },
+  "track-twist": {
+   "basis": "worlds[].zones[].source cites worlds/sources/founder-tracks-2026-09-28.md",
+   "form": "stacked two-floor glass modules turning a few degrees per module around a mast, tinted corner piers and blades, floor plates, two tilted emissive rings",
+   "count": 3
+  },
+  "focus-rotunda": {
+   "basis": "worlds[].name ends in ' DAO' and zones[].source cites the PBC mission statement ('How It Works')",
+   "form": "round drum shaft with one setback, radial tinted fins, limestone bands, a dome and a floating emissive ring",
+   "count": 6
+  },
+  "platform-prism": {
+   "basis": "none of the rules above (worlds whose zones cite their own source documents)",
+   "form": "chamfered octagonal prism with a batter and one setback, tinted edge fins, glass main faces, stepped crown with emissive bands and a mast",
+   "count": 4
+  }
+ },
+ "tinting": "facade/glass/stone textures are neutral and shared per style; the brand hue lives only in the LM_Fin_Tint (fins, inlays) and LM_Crown_Glow (emissive ring, bead) material factors and the plaque",
+ "plaque": "the only text is the brand mark letters (alphanumerics of brand.mark), Pillow default sans (Aileron)",
+ "placement_rule": "suggested, not applied: worldforge/build.mjs is not edited by this generator. Centre within |x| 7-18 m of the council road axis, north of the plaza (footprint >= 1 m off the plaza pad), >= 3 m clear of every blockout primitive, road and card volume in that world; nearest to the plaza first, east side on ties; yaw turns the +Z entrance to face the plaza centre. Apply as node translation + rotation about +Y.",
+ "universal_placement": {
+  "translation": [
+   13.5,
+   0.0,
+   -50.5
+  ],
+  "yaw_deg": -15.0,
+  "clearance_m": 3.15
+ },
+ "validation": "worldforge/out/assets/landmarks/validation.json",
+ "preview": "worldforge/out/assets/landmarks/preview.jpg",
+ "totals": {
+  "worlds": 41,
+  "triangles": 508339,
+  "bytes": 85396200,
+  "max_bytes": 2772060,
+  "min_height_m": 30.5,
+  "max_height_m": 69.0,
+  "styles": {
+   "series-setback": 28,
+   "track-twist": 3,
+   "focus-rotunda": 6,
+   "platform-prism": 4
+  },
+  "placed": 41
+ },
+ "worlds": [
+  {
+   "slug": "agentic-payments",
+   "file": "agentic-payments.glb",
+   "bytes": 1985652,
+   "triangles": 13153,
+   "vertices": 12144,
+   "height_m": 66.5,
+   "style": "track-twist",
+   "hue": 168,
+   "mark": "AP",
+   "plaque_text": "AP",
+   "node": "Landmark · Agentic Payments",
+   "shaft": {
+    "shaft_top": 52.0,
+    "floors": 12,
+    "modules": 6,
+    "twist_deg_per_module": 9.7
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     66.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.34728
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.66874
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (track-twist, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 466927
+    },
+    {
+     "use": "facade normal (track-twist, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 263398
+    },
+    {
+     "use": "facade ORM (track-twist; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 96872
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 10352
+    }
+   ],
+   "sha256": "975db46e42fd99583d90455e68baf611bc6d4caef3a96eb2567c1ed80fcfec4a",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -34.0
+    ],
+    "yaw_deg": -22.5,
+    "clearance_m": 3.16
+   }
+  },
+  {
+   "slug": "agents-deploy-infrastructure",
+   "file": "agents-deploy-infrastructure.glb",
+   "bytes": 1957028,
+   "triangles": 12669,
+   "vertices": 11192,
+   "height_m": 52.0,
+   "style": "track-twist",
+   "hue": 283,
+   "mark": "ATD",
+   "plaque_text": "ATD",
+   "node": "Landmark · Agents That Deploy Infrastructure",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "modules": 5,
+    "twist_deg_per_module": 9.3
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     52.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.30019,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.55311,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (track-twist, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 466927
+    },
+    {
+     "use": "facade normal (track-twist, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 263398
+    },
+    {
+     "use": "facade ORM (track-twist; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 96872
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 12214
+    }
+   ],
+   "sha256": "ecc6aa6311157f80cc1562a4785001605b6ab96f7bb5e0f96111f2b1e85bb067",
+   "placement": {
+    "translation": [
+     13.5,
+     0.0,
+     -50.5
+    ],
+    "yaw_deg": -15.0,
+    "clearance_m": 3.15
+   }
+  },
+  {
+   "slug": "autonomous-organizations",
+   "file": "autonomous-organizations.glb",
+   "bytes": 1959888,
+   "triangles": 12669,
+   "vertices": 11192,
+   "height_m": 54.0,
+   "style": "track-twist",
+   "hue": 152,
+   "mark": "AO",
+   "plaque_text": "AO",
+   "node": "Landmark · Autonomous Organizations",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "modules": 5,
+    "twist_deg_per_module": -9.7
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     54.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.21036
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.34244
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (track-twist, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 466927
+    },
+    {
+     "use": "facade normal (track-twist, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 263398
+    },
+    {
+     "use": "facade ORM (track-twist; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 96872
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 15104
+    }
+   ],
+   "sha256": "601bf3f6f29e734611c8fbeea78b519a0cf022ca9875ee7e04c65fb68659635f",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "biota-blockchain",
+   "file": "biota-blockchain.glb",
+   "bytes": 1798080,
+   "triangles": 8260,
+   "vertices": 7622,
+   "height_m": 30.5,
+   "style": "platform-prism",
+   "hue": 194,
+   "mark": "BB(",
+   "plaque_text": "BB",
+   "node": "Landmark · Biota.blockchain (BioDAO.X)",
+   "shaft": {
+    "shaft_top": 20.0,
+    "floors": 4,
+    "tiers": [
+     2,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     30.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.32796,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.62095,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (platform-prism, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 373437
+    },
+    {
+     "use": "facade normal (platform-prism, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323558
+    },
+    {
+     "use": "facade ORM (platform-prism; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 103248
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7156
+    }
+   ],
+   "sha256": "a5371139436d388ea70175884ddabfa2ca7c9d88c5dd41535fada0589799b491",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "cancer-dao",
+   "file": "cancer-dao.glb",
+   "bytes": 2647112,
+   "triangles": 23786,
+   "vertices": 21225,
+   "height_m": 51.0,
+   "style": "focus-rotunda",
+   "hue": 106,
+   "mark": "CD",
+   "plaque_text": "CD",
+   "node": "Landmark · Cancer DAO",
+   "shaft": {
+    "shaft_top": 40.0,
+    "floors": 9,
+    "tiers": [
+     5,
+     4
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     51.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.10168,
+    0.477,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    0.11652,
+    1.0,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14093
+    }
+   ],
+   "sha256": "74a5e8211ccd71359a0a57434c060d9e97b1b15e0d4ac6006299f47ce6e8592e",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "climate-dao",
+   "file": "climate-dao.glb",
+   "bytes": 2712928,
+   "triangles": 25514,
+   "vertices": 22959,
+   "height_m": 60.0,
+   "style": "focus-rotunda",
+   "hue": 172,
+   "mark": "CD",
+   "plaque_text": "CD",
+   "node": "Landmark · Climate DAO",
+   "shaft": {
+    "shaft_top": 48.0,
+    "floors": 11,
+    "tiers": [
+     7,
+     4
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     60.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.38787
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.77058
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14052
+    }
+   ],
+   "sha256": "4651cfca0d7e3c86585ace0d8f10f281afe618b378b23919016221aacba7be81",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "diagnostic-x",
+   "file": "diagnostic-x.glb",
+   "bytes": 1835348,
+   "triangles": 8740,
+   "vertices": 8486,
+   "height_m": 39.5,
+   "style": "platform-prism",
+   "hue": 33,
+   "mark": "DX",
+   "plaque_text": "DX",
+   "node": "Landmark · Diagnostic.X",
+   "shaft": {
+    "shaft_top": 32.0,
+    "floors": 7,
+    "tiers": [
+     4,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     39.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.21776,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.35919,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (platform-prism, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 373437
+    },
+    {
+     "use": "facade normal (platform-prism, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323558
+    },
+    {
+     "use": "facade ORM (platform-prism; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 103248
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 13883
+    }
+   ],
+   "sha256": "3d0f1662eb47ff75645653d2ebb8b3ad493bab49d5d899dfb5b28055b22a00aa",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -34.0
+    ],
+    "yaw_deg": -22.5,
+    "clearance_m": 3.16
+   }
+  },
+  {
+   "slug": "ecology-dao",
+   "file": "ecology-dao.glb",
+   "bytes": 2772060,
+   "triangles": 27242,
+   "vertices": 24693,
+   "height_m": 65.5,
+   "style": "focus-rotunda",
+   "hue": 352,
+   "mark": "ED",
+   "plaque_text": "ED",
+   "node": "Landmark · Ecology DAO",
+   "shaft": {
+    "shaft_top": 56.0,
+    "floors": 13,
+    "tiers": [
+     8,
+     5
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     65.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.07524
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.07047
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7328
+    }
+   ],
+   "sha256": "3b2b0367fc3946891acac29cea79ef45dfbc8e5fab94ea87d05f19cc839822a0",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "education-dao",
+   "file": "education-dao.glb",
+   "bytes": 2640344,
+   "triangles": 23786,
+   "vertices": 21225,
+   "height_m": 52.0,
+   "style": "focus-rotunda",
+   "hue": 201,
+   "mark": "ED",
+   "plaque_text": "ED",
+   "node": "Landmark · Education DAO",
+   "shaft": {
+    "shaft_top": 40.0,
+    "floors": 9,
+    "tiers": [
+     5,
+     4
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     52.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.26537,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.46969,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7313
+    }
+   ],
+   "sha256": "42476e4413f0d6f811e8aaf51f8b6a61718b1ce71fb8cacced1f03be09ee4984",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "empathic-x",
+   "file": "empathic-x.glb",
+   "bytes": 1892872,
+   "triangles": 9700,
+   "vertices": 10214,
+   "height_m": 63.5,
+   "style": "platform-prism",
+   "hue": 82,
+   "mark": "EX",
+   "plaque_text": "EX",
+   "node": "Landmark · Empathic.X",
+   "shaft": {
+    "shaft_top": 56.0,
+    "floors": 13,
+    "tiers": [
+     8,
+     5
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     63.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.25705,
+    0.477,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    0.45007,
+    1.0,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (platform-prism, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 373437
+    },
+    {
+     "use": "facade normal (platform-prism, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323558
+    },
+    {
+     "use": "facade ORM (platform-prism; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 103248
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 10356
+    }
+   ],
+   "sha256": "8bbcd50f97d8482ff3f1b0b8450382e1db12e18c276b7d8bf0bc58fa7005158c",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "locator-x",
+   "file": "locator-x.glb",
+   "bytes": 1851824,
+   "triangles": 9060,
+   "vertices": 9062,
+   "height_m": 48.0,
+   "style": "platform-prism",
+   "hue": 121,
+   "mark": "LX",
+   "plaque_text": "LX",
+   "node": "Landmark · Locator.X",
+   "shaft": {
+    "shaft_top": 40.0,
+    "floors": 9,
+    "tiers": [
+     6,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     48.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.05008
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.03291
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (platform-prism, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 373437
+    },
+    {
+     "use": "facade normal (platform-prism, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323558
+    },
+    {
+     "use": "facade ORM (platform-prism; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 103248
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 10018
+    }
+   ],
+   "sha256": "6369d53b1533e206f134e190ec64ef23647619a52146ca38064f2df63dcd46f8",
+   "placement": {
+    "translation": [
+     13.5,
+     0.0,
+     -50.5
+    ],
+    "yaw_deg": -15.0,
+    "clearance_m": 3.15
+   }
+  },
+  {
+   "slug": "public-health-dao",
+   "file": "public-health-dao.glb",
+   "bytes": 2756940,
+   "triangles": 26666,
+   "vertices": 24115,
+   "height_m": 63.0,
+   "style": "focus-rotunda",
+   "hue": 4,
+   "mark": "PHD",
+   "plaque_text": "PHD",
+   "node": "Landmark · Public Health DAO",
+   "shaft": {
+    "shaft_top": 52.0,
+    "floors": 12,
+    "tiers": [
+     7,
+     5
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     63.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.06013,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.04699,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 9503
+    }
+   ],
+   "sha256": "747b32d033353b1d26a8967340fa442a99d0c47ec29cf5beec4db6f504962a6e",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "robotics-dao",
+   "file": "robotics-dao.glb",
+   "bytes": 2709564,
+   "triangles": 25514,
+   "vertices": 22959,
+   "height_m": 58.0,
+   "style": "focus-rotunda",
+   "hue": 157,
+   "mark": "RD",
+   "plaque_text": "RD",
+   "node": "Landmark · Robotics DAO",
+   "shaft": {
+    "shaft_top": 48.0,
+    "floors": 11,
+    "tiers": [
+     7,
+     4
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     58.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.24889
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.43093
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (focus-rotunda, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 636747
+    },
+    {
+     "use": "facade normal (focus-rotunda, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 323427
+    },
+    {
+     "use": "facade ORM (focus-rotunda; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 115310
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 10683
+    }
+   ],
+   "sha256": "b8eb3904b32bca03ce3c2a2f003547414e0c16c680a030345c048464667f1a8d",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s04-curable-x",
+   "file": "s04-curable-x.glb",
+   "bytes": 1955672,
+   "triangles": 8701,
+   "vertices": 8452,
+   "height_m": 37.0,
+   "style": "series-setback",
+   "hue": 162,
+   "mark": "CX(",
+   "plaque_text": "CX",
+   "node": "Landmark · Curable.X (Series 4)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     2,
+     2,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     37.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.29125
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.5315
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 16859
+    }
+   ],
+   "sha256": "b9b3e0a3612e9086db125b6a98214075422e1ef0ce9ab531ccf7799b67a875fa",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s05-biopharma-go",
+   "file": "s05-biopharma-go.glb",
+   "bytes": 1960144,
+   "triangles": 8797,
+   "vertices": 8644,
+   "height_m": 40.5,
+   "style": "series-setback",
+   "hue": 120,
+   "mark": "BG(",
+   "plaque_text": "BG",
+   "node": "Landmark · BioPharma.Go (Series 5)",
+   "shaft": {
+    "shaft_top": 28.0,
+    "floors": 6,
+    "tiers": [
+     2,
+     2,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     40.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 13826
+    }
+   ],
+   "sha256": "c97763e77aa11a5f4842b406e844e6ec44709b3d7687084be570619087f0aa43",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s06-blockchain",
+   "file": "s06-blockchain.glb",
+   "bytes": 2038904,
+   "triangles": 12557,
+   "vertices": 10859,
+   "height_m": 43.0,
+   "style": "series-setback",
+   "hue": 232,
+   "mark": "B(6",
+   "plaque_text": "B6",
+   "node": "Landmark · Blockchain (Series 6)",
+   "shaft": {
+    "shaft_top": 32.0,
+    "floors": 7,
+    "tiers": [
+     2,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     43.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.07524,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.07047,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14573
+    }
+   ],
+   "sha256": "08204dcca6caf51ce4c73285df7229eba595e8c7d3bd31918858531e0085cb3d",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s07-divine-dao",
+   "file": "s07-divine-dao.glb",
+   "bytes": 1998548,
+   "triangles": 9373,
+   "vertices": 9796,
+   "height_m": 65.0,
+   "style": "series-setback",
+   "hue": 276,
+   "mark": "DD(",
+   "plaque_text": "DD",
+   "node": "Landmark · Divine.DAO (Series 7)",
+   "shaft": {
+    "shaft_top": 52.0,
+    "floors": 12,
+    "tiers": [
+     5,
+     4,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     65.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.24088,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.41228,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7309
+    }
+   ],
+   "sha256": "2c94e48f090e96e9d432d6f710211b640f431f72371b3a973640c3e1061daf65",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s09-astrological-x",
+   "file": "s09-astrological-x.glb",
+   "bytes": 2061320,
+   "triangles": 12845,
+   "vertices": 11435,
+   "height_m": 55.5,
+   "style": "series-setback",
+   "hue": 345,
+   "mark": "AX(",
+   "plaque_text": "AX",
+   "node": "Landmark · Astrological.X (Series 9)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     3,
+     4,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     55.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.10654
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.12552
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14501
+    }
+   ],
+   "sha256": "e438b436656c325711f7566dbd5aa8959c139bca01dab4b2fe1eeee96d0eb5fb",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s11-molecular",
+   "file": "s11-molecular.glb",
+   "bytes": 1984876,
+   "triangles": 9181,
+   "vertices": 9412,
+   "height_m": 54.0,
+   "style": "series-setback",
+   "hue": 231,
+   "mark": "M(1",
+   "plaque_text": "M1",
+   "node": "Landmark · Molecular (Series 11)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     5,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     54.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.07932,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.07722,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 8619
+    }
+   ],
+   "sha256": "bd12d5fe842282afbfde943ab7abf52a4b61594383c067b21dcdbcb3e18a2d81",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s12-parking-smart-x",
+   "file": "s12-parking-smart-x.glb",
+   "bytes": 1951296,
+   "triangles": 8605,
+   "vertices": 8260,
+   "height_m": 31.5,
+   "style": "series-setback",
+   "hue": 229,
+   "mark": "PSX",
+   "plaque_text": "PSX",
+   "node": "Landmark · Parking Smart.X (Series 12)",
+   "shaft": {
+    "shaft_top": 20.0,
+    "floors": 4,
+    "tiers": [
+     2,
+     1,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     31.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.08788,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.09182,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 19937
+    }
+   ],
+   "sha256": "d78ca0e6baf429fbd3edb99116dbe6cf6f2e5dd571b42eeac1dcb5140b3c78bc",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s13-gonstead-x",
+   "file": "s13-gonstead-x.glb",
+   "bytes": 1985360,
+   "triangles": 9085,
+   "vertices": 9220,
+   "height_m": 51.0,
+   "style": "series-setback",
+   "hue": 299,
+   "mark": "GX(",
+   "plaque_text": "GX",
+   "node": "Landmark · Gonstead.X (Series 13)",
+   "shaft": {
+    "shaft_top": 40.0,
+    "floors": 9,
+    "tiers": [
+     4,
+     2,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     51.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.46527,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.96941,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 16583
+    }
+   ],
+   "sha256": "7180bbb166f906bab20021e2b56626ae3ea7c6f6335b1225cc6018cd7ae46bde",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s14-askdoc-x",
+   "file": "s14-askdoc-x.glb",
+   "bytes": 1990796,
+   "triangles": 9181,
+   "vertices": 9412,
+   "height_m": 57.0,
+   "style": "series-setback",
+   "hue": 226,
+   "mark": "AX(",
+   "plaque_text": "AX",
+   "node": "Landmark · AskDoc.X (Series 14)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     5,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     57.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.10168,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.11652,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14542
+    }
+   ],
+   "sha256": "660f439099af839bc0ef99cf61b2369425d7257f83c05753c170b6d1a2ed72ec",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s15-romanbridge-dao",
+   "file": "s15-romanbridge-dao.glb",
+   "bytes": 1986916,
+   "triangles": 9181,
+   "vertices": 9412,
+   "height_m": 54.0,
+   "style": "series-setback",
+   "hue": 30,
+   "mark": "RD(",
+   "plaque_text": "RD",
+   "node": "Landmark · RomanBridge DAO (Series 15)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     4,
+     3,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     54.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.19599,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.31032,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 10627
+    }
+   ],
+   "sha256": "84a05ebec9d292fbdef6938046fb5943ad14db6286142dd0c64c79ee3fff2f22",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s16-echodawn-dao",
+   "file": "s16-echodawn-dao.glb",
+   "bytes": 2016700,
+   "triangles": 12365,
+   "vertices": 10475,
+   "height_m": 35.5,
+   "style": "series-setback",
+   "hue": 281,
+   "mark": "ED(",
+   "plaque_text": "ED",
+   "node": "Landmark · EchoDawn DAO (Series 16)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     2,
+     2,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     35.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.28247,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.5104,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7334
+    }
+   ],
+   "sha256": "5787de6b762281e1a2e22220c4e310e6dd75340ab6ba29d7934e452c2dec3cb0",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s17-curable-blockchain-dao",
+   "file": "s17-curable-blockchain-dao.glb",
+   "bytes": 1979104,
+   "triangles": 8989,
+   "vertices": 9028,
+   "height_m": 48.0,
+   "style": "series-setback",
+   "hue": 315,
+   "mark": "CBD",
+   "plaque_text": "CBD",
+   "node": "Landmark · Curable.Blockchain DAO (Series 17)",
+   "shaft": {
+    "shaft_top": 36.0,
+    "floors": 8,
+    "tiers": [
+     4,
+     2,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     48.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.31855
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.59782
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 17756
+    }
+   ],
+   "sha256": "ceedc42d1c9616aa9759d79cfc1cb598279e17f3a69f7e38278aa32cf67306c6",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s19-moscone-x",
+   "file": "s19-moscone-x.glb",
+   "bytes": 1960496,
+   "triangles": 8797,
+   "vertices": 8644,
+   "height_m": 41.0,
+   "style": "series-setback",
+   "hue": 267,
+   "mark": "MX(",
+   "plaque_text": "MX",
+   "node": "Landmark · Moscone.X (Series 19)",
+   "shaft": {
+    "shaft_top": 28.0,
+    "floors": 6,
+    "tiers": [
+     3,
+     1,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     41.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.17555,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.26556,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14190
+    }
+   ],
+   "sha256": "147c253a83fdd22efffa017bc99479ccbce2b0d0e602cd3a919984519caa707f",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s20-cmmc",
+   "file": "s20-cmmc.glb",
+   "bytes": 2024688,
+   "triangles": 12365,
+   "vertices": 10475,
+   "height_m": 35.5,
+   "style": "series-setback",
+   "hue": 113,
+   "mark": "C(2",
+   "plaque_text": "C2",
+   "node": "Landmark · CMMC (Series 20)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     2,
+     2,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     35.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.07127,
+    0.477,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    0.06408,
+    1.0,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 15358
+    }
+   ],
+   "sha256": "02c27ce51eb59c6e5bf91bd3418eb3752edd41e9f996d655c66b88bc8b35a450",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s21-incubator-dao",
+   "file": "s21-incubator-dao.glb",
+   "bytes": 1968176,
+   "triangles": 8989,
+   "vertices": 9028,
+   "height_m": 47.5,
+   "style": "series-setback",
+   "hue": 311,
+   "mark": "ID(",
+   "plaque_text": "ID",
+   "node": "Landmark · Incubator DAO (Series 21)",
+   "shaft": {
+    "shaft_top": 36.0,
+    "floors": 8,
+    "tiers": [
+     4,
+     2,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     47.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.35718
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.69341
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 6926
+    }
+   ],
+   "sha256": "628c6323a2f4b48f153b51fde2b8b8b57a2ac424d0f72e4a9d2dedb553b15451",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s22-get-delivery-dao",
+   "file": "s22-get-delivery-dao.glb",
+   "bytes": 1953188,
+   "triangles": 8701,
+   "vertices": 8452,
+   "height_m": 37.0,
+   "style": "series-setback",
+   "hue": 8,
+   "mark": "GDD",
+   "plaque_text": "GDD",
+   "node": "Landmark · Get.Delivery DAO (Series 22)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     3,
+     1,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     37.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.07524,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.07047,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14339
+    }
+   ],
+   "sha256": "cab1c43ae3fb7349e6796610f238fb0016cd41adf602689bf486c9cc4d7a2c0a",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s23-avatar-chat",
+   "file": "s23-avatar-chat.glb",
+   "bytes": 1991244,
+   "triangles": 9181,
+   "vertices": 9412,
+   "height_m": 57.5,
+   "style": "series-setback",
+   "hue": 136,
+   "mark": "AC(",
+   "plaque_text": "AC",
+   "node": "Landmark · Avatar.Chat (Series 23)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     4,
+     4,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     57.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.11153
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.13492
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14974
+    }
+   ],
+   "sha256": "6bc35ea13ab11a561718d49d3a29a51d6b4f779abce2bc0a9e11681386170086",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s24-donatello-dao",
+   "file": "s24-donatello-dao.glb",
+   "bytes": 1991048,
+   "triangles": 9277,
+   "vertices": 9604,
+   "height_m": 59.0,
+   "style": "series-setback",
+   "hue": 43,
+   "mark": "DD(",
+   "plaque_text": "DD",
+   "node": "Landmark · Donatello DAO (Series 24)",
+   "shaft": {
+    "shaft_top": 48.0,
+    "floors": 11,
+    "tiers": [
+     5,
+     3,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     59.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.30019,
+    0.04696
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.55311,
+    0.02885
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7281
+    }
+   ],
+   "sha256": "40e545479d667b740825f73799ff2553a1c6a36aacd440154e18d368dc75945f",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s25-mypet-ai",
+   "file": "s25-mypet-ai.glb",
+   "bytes": 2043756,
+   "triangles": 12653,
+   "vertices": 11051,
+   "height_m": 48.5,
+   "style": "series-setback",
+   "hue": 138,
+   "mark": "MA(",
+   "plaque_text": "MA",
+   "node": "Landmark · MyPet.AI (Series 25)",
+   "shaft": {
+    "shaft_top": 36.0,
+    "floors": 8,
+    "tiers": [
+     5,
+     2,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     48.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.12193
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.15491
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 11944
+    }
+   ],
+   "sha256": "0f39d87b5b892c7e052a9eb9aea25004ba68334ebe1f8c1a722f0b8521c316c2",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s26-lyka-dao",
+   "file": "s26-lyka-dao.glb",
+   "bytes": 1998268,
+   "triangles": 9373,
+   "vertices": 9796,
+   "height_m": 65.5,
+   "style": "series-setback",
+   "hue": 159,
+   "mark": "LD(",
+   "plaque_text": "LD",
+   "node": "Landmark · Lyka DAO (Series 26)",
+   "shaft": {
+    "shaft_top": 52.0,
+    "floors": 12,
+    "tiers": [
+     5,
+     4,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     65.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.477,
+    0.26537
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    1.0,
+    0.46969
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 7040
+    }
+   ],
+   "sha256": "9c73d957a9ac3b86cd8e52b224afd45c6be0c81509eb39c11902b871c277a81c",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s27-genomic-dao",
+   "file": "s27-genomic-dao.glb",
+   "bytes": 1952656,
+   "triangles": 8701,
+   "vertices": 8452,
+   "height_m": 37.0,
+   "style": "series-setback",
+   "hue": 321,
+   "mark": "GD(",
+   "plaque_text": "GD",
+   "node": "Landmark · Genomic.DAO (Series 27)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     2,
+     2,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     37.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.26537
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.46969
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 13829
+    }
+   ],
+   "sha256": "c999e2e3e73fa09cce18a9919ba9596a4fd2e4a65885df9bdf09726dbfa1ead8",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s28-genomic-blockchain",
+   "file": "s28-genomic-blockchain.glb",
+   "bytes": 1945156,
+   "triangles": 8605,
+   "vertices": 8260,
+   "height_m": 31.0,
+   "style": "series-setback",
+   "hue": 256,
+   "mark": "GB(",
+   "plaque_text": "GB",
+   "node": "Landmark · Genomic.Blockchain (Series 28)",
+   "shaft": {
+    "shaft_top": 20.0,
+    "floors": 4,
+    "tiers": [
+     2,
+     1,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     31.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.11153,
+    0.04696,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.13492,
+    0.02885,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 13783
+    }
+   ],
+   "sha256": "73e52e52f18b09dc79b742dd4430801432ae27be9e07418e28715a130bba8d1f",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s29-metaverse-dao",
+   "file": "s29-metaverse-dao.glb",
+   "bytes": 1980092,
+   "triangles": 9085,
+   "vertices": 9220,
+   "height_m": 53.0,
+   "style": "series-setback",
+   "hue": 313,
+   "mark": "MD(",
+   "plaque_text": "MD",
+   "node": "Landmark · Metaverse DAO (Series 29)",
+   "shaft": {
+    "shaft_top": 40.0,
+    "floors": 9,
+    "tiers": [
+     4,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     53.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.33754
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.64458
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 11304
+    }
+   ],
+   "sha256": "85c63d6191673bd3767d5f629ca42fec3b55bac10e1dbcbf1250ad533cf924e4",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s31-aerospace-dao",
+   "file": "s31-aerospace-dao.glb",
+   "bytes": 2081136,
+   "triangles": 13133,
+   "vertices": 12011,
+   "height_m": 69.0,
+   "style": "series-setback",
+   "hue": 336,
+   "mark": "AD(",
+   "plaque_text": "AD",
+   "node": "Landmark · Aerospace DAO (Series 31)",
+   "shaft": {
+    "shaft_top": 56.0,
+    "floors": 13,
+    "tiers": [
+     5,
+     4,
+     4
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     69.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.15641
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.22482
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 11855
+    }
+   ],
+   "sha256": "068832a972f026d8dc811b2979b394ba9c312f68b2ba44c01cc70c6deaf4feb5",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s32-solar-dao",
+   "file": "s32-solar-dao.glb",
+   "bytes": 2069000,
+   "triangles": 12941,
+   "vertices": 11627,
+   "height_m": 59.0,
+   "style": "series-setback",
+   "hue": 329,
+   "mark": "SD(",
+   "plaque_text": "SD",
+   "node": "Landmark · Solar DAO (Series 32)",
+   "shaft": {
+    "shaft_top": 48.0,
+    "floors": 11,
+    "tiers": [
+     6,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     59.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.2031
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.32615
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 14714
+    }
+   ],
+   "sha256": "cab165d7f63cfdb164090554a7e540ca70d715f342940fea1d8bbf9c1dbabf35",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s33-infogurus",
+   "file": "s33-infogurus.glb",
+   "bytes": 2001184,
+   "triangles": 9373,
+   "vertices": 9796,
+   "height_m": 62.5,
+   "style": "series-setback",
+   "hue": 333,
+   "mark": "I(3",
+   "plaque_text": "I3",
+   "node": "Landmark · InfoGurus (Series 33)",
+   "shaft": {
+    "shaft_top": 52.0,
+    "floors": 12,
+    "tiers": [
+     5,
+     4,
+     3
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     62.5,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.17555
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.26556
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 9945
+    }
+   ],
+   "sha256": "ef593e7004e8a19d7f5efd4335ccad000b2ad10f976605194b7be119e0ac0320",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s34-als-dao",
+   "file": "s34-als-dao.glb",
+   "bytes": 1988164,
+   "triangles": 9181,
+   "vertices": 9412,
+   "height_m": 54.0,
+   "style": "series-setback",
+   "hue": 235,
+   "mark": "AD(",
+   "plaque_text": "AD",
+   "node": "Landmark · ALS DAO (Series 34)",
+   "shaft": {
+    "shaft_top": 44.0,
+    "floors": 10,
+    "tiers": [
+     5,
+     3,
+     2
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     54.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.04696,
+    0.06372,
+    0.477
+   ],
+   "glow_rgb_linear": [
+    0.02885,
+    0.05235,
+    1.0
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 11916
+    }
+   ],
+   "sha256": "2d58ca409641e926efe7901c94b61d36e60389b94132ad5a1e2a5f8f3fc76640",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  },
+  {
+   "slug": "s35-parkinsons-dao",
+   "file": "s35-parkinsons-dao.glb",
+   "bytes": 2018672,
+   "triangles": 12365,
+   "vertices": 10475,
+   "height_m": 34.0,
+   "style": "series-setback",
+   "hue": 320,
+   "mark": "PD(",
+   "plaque_text": "PD",
+   "node": "Landmark · Parkinsons DAO (Series 35)",
+   "shaft": {
+    "shaft_top": 24.0,
+    "floors": 5,
+    "tiers": [
+     3,
+     1,
+     1
+    ]
+   },
+   "bounds": {
+    "min": [
+     -6.0,
+     0.0,
+     -6.0
+    ],
+    "max": [
+     6.0,
+     34.0,
+     6.0
+    ]
+   },
+   "materials": [
+    "LM_Stone",
+    "LM_Facade",
+    "LM_Glass",
+    "LM_Fin_Tint",
+    "LM_Metal",
+    "LM_Crown_Glow",
+    "LM_Plaque"
+   ],
+   "fin_rgb_linear": [
+    0.477,
+    0.04696,
+    0.27384
+   ],
+   "glow_rgb_linear": [
+    1.0,
+    0.02885,
+    0.4898
+   ],
+   "textures": [
+    {
+     "use": "stone plinth baseColor (granite ashlar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 235864
+    },
+    {
+     "use": "stone plinth normal (joints, chamfers)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 244384
+    },
+    {
+     "use": "stone plinth ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 180292
+    },
+    {
+     "use": "facade baseColor (series-setback, neutral, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 405552
+    },
+    {
+     "use": "facade normal (series-setback, panel seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 391089
+    },
+    {
+     "use": "facade ORM (series-setback; R occlusion, G roughness, B metallic)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg",
+     "bytes": 123555
+    },
+    {
+     "use": "glass curtain wall baseColor (dark, framed panes)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 17357
+    },
+    {
+     "use": "glass curtain wall normal (frames)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 20636
+    },
+    {
+     "use": "glass curtain wall ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg",
+     "bytes": 30917
+    },
+    {
+     "use": "emblem plaque (brand mark letters only)",
+     "width": 1024,
+     "height": 512,
+     "mimeType": "image/png",
+     "bytes": 9301
+    }
+   ],
+   "sha256": "f1eb2a9c83027738acac2e1169af5c131e217fed4d145d93e52b682f008e7bfc",
+   "placement": {
+    "translation": [
+     14.0,
+     0.0,
+     -33.0
+    ],
+    "yaw_deg": -23.0,
+    "clearance_m": 3.13
+   }
+  }
+ ]
+}

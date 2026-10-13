@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:s05-biopharma-go",
+ "rootCardId": "world:s05-biopharma-go",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:s05-biopharma-go/charter-hall",
+   "displayName": "Charter Hall",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "displayName": "Research Synthesis Lab",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s05-biopharma-go/proposal-forum",
+   "displayName": "Proposal Forum",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s05-biopharma-go/operations-deck",
+   "displayName": "Operations Deck",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s05-biopharma-go/progress-observatory",
+   "displayName": "Progress Observatory",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:s05-biopharma-go/floor",
+   "parentCardId": "plaza:s05-biopharma-go",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:s05-biopharma-go/avatar",
+   "parentCardId": "coordinator:s05-biopharma-go",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s05-biopharma-go/host/avatar",
+   "parentCardId": "advisor:s05-biopharma-go/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s05-biopharma-go/steward/avatar",
+   "parentCardId": "advisor:s05-biopharma-go/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s05-biopharma-go/alignment/avatar",
+   "parentCardId": "advisor:s05-biopharma-go/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:s05-biopharma-go/arch",
+   "parentCardId": "gate:s05-biopharma-go",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:s05-biopharma-go/chamber",
+   "parentCardId": "council:s05-biopharma-go",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:s05-biopharma-go/steward-1/chair",
+   "parentCardId": "seat:s05-biopharma-go/steward-1",
+   "zoneCardId": "council:s05-biopharma-go",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s05-biopharma-go/steward-2/chair",
+   "parentCardId": "seat:s05-biopharma-go/steward-2",
+   "zoneCardId": "council:s05-biopharma-go",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s05-biopharma-go/steward-3/chair",
+   "parentCardId": "seat:s05-biopharma-go/steward-3",
+   "zoneCardId": "council:s05-biopharma-go",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:s05-biopharma-go/avatar",
+   "parentCardId": "omega:s05-biopharma-go",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/charter-hall/pad",
+   "parentCardId": "zone:s05-biopharma-go/charter-hall",
+   "zoneCardId": "zone:s05-biopharma-go/charter-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/charter-hall/hall",
+   "parentCardId": "zone:s05-biopharma-go/charter-hall",
+   "zoneCardId": "zone:s05-biopharma-go/charter-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    12,
+    10
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/research-synthesis-lab/pad",
+   "parentCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "zoneCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/research-synthesis-lab/hall",
+   "parentCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "zoneCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/evidence-monitor/avatar",
+   "parentCardId": "agent:s05-biopharma-go/evidence-monitor",
+   "zoneCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/research-synthesis-agent/avatar",
+   "parentCardId": "agent:s05-biopharma-go/research-synthesis-agent",
+   "zoneCardId": "zone:s05-biopharma-go/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/proposal-forum/pad",
+   "parentCardId": "zone:s05-biopharma-go/proposal-forum",
+   "zoneCardId": "zone:s05-biopharma-go/proposal-forum",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/proposal-forum/hall",
+   "parentCardId": "zone:s05-biopharma-go/proposal-forum",
+   "zoneCardId": "zone:s05-biopharma-go/proposal-forum",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/proposal-grant-drafter/avatar",
+   "parentCardId": "agent:s05-biopharma-go/proposal-grant-drafter",
+   "zoneCardId": "zone:s05-biopharma-go/proposal-forum",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/operations-deck/pad",
+   "parentCardId": "zone:s05-biopharma-go/operations-deck",
+   "zoneCardId": "zone:s05-biopharma-go/operations-deck",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/operations-deck/hall",
+   "parentCardId": "zone:s05-biopharma-go/operations-deck",
+   "zoneCardId": "zone:s05-biopharma-go/operations-deck",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/collaborator-scout/avatar",
+   "parentCardId": "agent:s05-biopharma-go/collaborator-scout",
+   "zoneCardId": "zone:s05-biopharma-go/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/task-router/avatar",
+   "parentCardId": "agent:s05-biopharma-go/task-router",
+   "zoneCardId": "zone:s05-biopharma-go/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/progress-observatory/pad",
+   "parentCardId": "zone:s05-biopharma-go/progress-observatory",
+   "zoneCardId": "zone:s05-biopharma-go/progress-observatory",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s05-biopharma-go/progress-observatory/hall",
+   "parentCardId": "zone:s05-biopharma-go/progress-observatory",
+   "zoneCardId": "zone:s05-biopharma-go/progress-observatory",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s05-biopharma-go/progress-tracker/avatar",
+   "parentCardId": "agent:s05-biopharma-go/progress-tracker",
+   "zoneCardId": "zone:s05-biopharma-go/progress-observatory",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:s05-biopharma-go/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/charter-hall",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/research-synthesis-lab",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/proposal-forum",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/operations-deck",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s05-biopharma-go/progress-observatory",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

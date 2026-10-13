@@ -1,0 +1,2686 @@
+{
+ "schemaVersion": "glewme-master-cards/0.1",
+ "world": "autonomous-organizations",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "rights": [
+  "view",
+  "enter",
+  "build",
+  "operate",
+  "delegate",
+  "transfer",
+  "govern"
+ ],
+ "principle": "Agents operate; people govern.",
+ "cards": [
+  {
+   "cardId": "world:autonomous-organizations",
+   "kind": "world",
+   "parentCardId": null,
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Autonomous Organizations · Powered by AGI Corp",
+   "name": "Autonomous Organizations",
+   "tagline": "Teams of agents that coordinate through Slack, Linear and other surfaces to reach a high-level goal - assigning, communicating, deciding and executing with minimal human intervention",
+   "status": "coming soon",
+   "management_style": "Agent-managed DAO",
+   "anchor": {
+    "lat": null,
+    "lon": null,
+    "rad": 6371000,
+    "rp1": null
+   },
+   "omega_steward": {
+    "id": "omega.autonomous-organizations",
+    "status": "defined, not seated",
+    "seated_agent": null,
+    "source": "agents/advisory/omega_agents.json"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     40,
+     0
+    ],
+    "halfExtents": [
+     150,
+     40,
+     150
+    ]
+   },
+   "source": "my-fabric/worlds/index.json"
+  },
+  {
+   "cardId": "plaza:autonomous-organizations",
+   "kind": "plaza",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Autonomous Organizations… · Powered by AGI Corp",
+   "purpose": "the shared round plaza every world opens onto",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     5,
+     0
+    ],
+    "halfExtents": [
+     24,
+     5,
+     24
+    ]
+   },
+   "source": "README.md (shared PBC management model)"
+  },
+  {
+   "cardId": "coordinator:autonomous-organizations",
+   "kind": "coordinator",
+   "parentCardId": "plaza:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Autonomous Organizations… · Powered by AGI Corp",
+   "name": "Autonomous Organizations Coordinator",
+   "role": "swarm coordinator (hub-hybrid: coordinator supervises, specialists hand off swarm-style): routes turns, answers unroutable ones, hands off to specialists",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "coordinator",
+    "model_ref": "worldforge/out/assets/avatars/coordinator.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.coordinator",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Autonomous Organizations Coordinator"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     8
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/swarms/autonomous-organizations.json#coordinator"
+  },
+  {
+   "cardId": "advisor:autonomous-organizations/host",
+   "kind": "advisor",
+   "parentCardId": "plaza:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Host Advisor · Powered by AGI Corp",
+   "name": "Host Advisor",
+   "manages": "welcoming visitors and pointing them to the right zone",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "host",
+    "model_ref": "worldforge/out/assets/avatars/host.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/autonomous-organizations.json#advisors[id=host]"
+  },
+  {
+   "cardId": "advisor:autonomous-organizations/steward",
+   "kind": "advisor",
+   "parentCardId": "plaza:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Liaison · Powered by AGI Corp",
+   "name": "Steward Liaison",
+   "manages": "connecting visitors and agents to the human stewards",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "liaison",
+    "model_ref": "worldforge/out/assets/avatars/liaison.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -14
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/autonomous-organizations.json#advisors[id=steward]"
+  },
+  {
+   "cardId": "advisor:autonomous-organizations/alignment",
+   "kind": "advisor",
+   "parentCardId": "plaza:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Advisor · Powered by AGI Corp",
+   "name": "Alignment Advisor",
+   "manages": "the Alignment Evaluation Gate and the agents' limits",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "alignment",
+    "model_ref": "worldforge/out/assets/avatars/alignment.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/autonomous-organizations.json#advisors[id=alignment]"
+  },
+  {
+   "cardId": "gate:autonomous-organizations",
+   "kind": "gate",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Evaluation Gate · Powered by AGI Corp",
+   "purpose": "Pre-registered safety evaluation before deployment",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     130
+    ],
+    "halfExtents": [
+     10,
+     6,
+     3
+    ]
+   },
+   "source": "worlds/PBC.json#programs"
+  },
+  {
+   "cardId": "council:autonomous-organizations",
+   "kind": "council",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Council · Powered by AGI Corp",
+   "name": "Steward Council",
+   "purpose": "Human stewards: oversight, values alignment and final governance",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     -130
+    ],
+    "halfExtents": [
+     14,
+     6,
+     10
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-6.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Steward Council",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   }
+  },
+  {
+   "cardId": "seat:autonomous-organizations/steward-1",
+   "kind": "seat",
+   "parentCardId": "council:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 1 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     -6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:autonomous-organizations/steward-2",
+   "kind": "seat",
+   "parentCardId": "council:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 2 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:autonomous-organizations/steward-3",
+   "kind": "seat",
+   "parentCardId": "council:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 3 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "omega:autonomous-organizations",
+   "kind": "omega",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Omega Steward · Powered by AGI Corp",
+   "name": "Omega Steward · Autonomous Organizations",
+   "omega_id": "omega.autonomous-organizations",
+   "status": "defined, not seated",
+   "seated_agent": null,
+   "persona": {
+    "temperament": "practical and hands-on about teams of agents coordinating through work surfaces toward a high-level goal, within the PBC's human-governed model",
+    "style": "short, plain sentences; names its zones (Goal Wall, Coordination Floor, Assignment Board), cites the record it reads, and always says who decides (the stewards, 2 of 3 signed votes)",
+    "values": [
+     "people decide: Agent-managed DAO, human-governed",
+     "stewards decide by 2 of 3 signed votes",
+     "report probe scores exactly as measured",
+     "draft quotes with every term left null",
+     "serve its focus: teams of agents coordinating through work surfaces toward a high-level goal, within the PBC's human-governed model"
+    ],
+    "refuses": [
+     "governance.final_vote",
+     "charter.amend",
+     "treasury.transfer",
+     "proposal.enact",
+     "windfall.distribute",
+     "steward.appoint",
+     "set_price",
+     "accept_equity",
+     "accept_crypto",
+     "issue_invoice",
+     "move_funds"
+    ]
+   },
+   "voice": {
+    "kokoro": "bm_george",
+    "browser_fallback": {
+     "pitch": 0.9,
+     "rate": 0.96,
+     "lang": "en-GB"
+    },
+    "audio_note": "audio is the expected path; it exists once the hive voices the line (agents/hive.mjs --voice), else the viewer falls back to a labelled browser voice",
+    "lines": [
+     {
+      "id": "greet",
+      "text": "Hello, I am the Omega Steward for Autonomous Organizations. You are hearing a synthetic voice; I am an agent, not a person.",
+      "audio": "agents/hive/voices/autonomous-organizations/greet.mp4"
+     },
+     {
+      "id": "role",
+      "text": "I look after Autonomous Organizations's world: Goal Wall, Coordination Floor, Assignment Board, plus its probe scores and its installer's dry run.",
+      "audio": "agents/hive/voices/autonomous-organizations/role.mp4"
+     },
+     {
+      "id": "boundary",
+      "text": "Agents draft and route; people decide. I will never move funds: that is held for the Steward Council.",
+      "audio": "agents/hive/voices/autonomous-organizations/boundary.mp4"
+     },
+     {
+      "id": "services",
+      "text": "For services, ask the Decision Drafter in Decision Room about research synthesis. Autonomous Organizations lists 3 service cards; people confirm every step.",
+      "audio": "agents/hive/voices/autonomous-organizations/services.mp4"
+     }
+    ]
+   },
+   "hive_ref": "agents/hive/index.json#omegas[world=autonomous-organizations]",
+   "avatar": {
+    "kind": "omega-avatar",
+    "role": "omega",
+    "model_ref": "worldforge/out/assets/avatars/omega.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     26,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "source": "agents/advisory/omega_agents.json"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/goal-wall",
+   "kind": "zone",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Goal Wall · Powered by AGI Corp",
+   "name": "Goal Wall",
+   "purpose": "The high-level goal the team is accomplishing, written where every agent can read it",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-1.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Goal Wall",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -52.9,
+     8,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/goal-keeper",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/goal-wall",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Goal Keeper · Powered by AGI Corp",
+   "name": "Goal Keeper",
+   "role": "Keeps the high-level goal current and measurable",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.goal-keeper",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Goal Keeper",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Goal Keeper]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -56.43,
+     1,
+     77.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/coordination-floor",
+   "kind": "zone",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Coordination Floor · Powered by AGI Corp",
+   "name": "Coordination Floor",
+   "purpose": "Coordinating through surfaces like Slack, Linear and other tools",
+   "building": {
+    "kind": "ops",
+    "exterior": "my-fabric/worlds/models/spaces-ext-ops.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-2.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Coordination Floor",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1742,
+     "interior": 1392
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -85.6,
+     10,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     12,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces like Slack, Linear, and other tools'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/coordinator-agent",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/coordination-floor",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Coordinator Agent · Powered by AGI Corp",
+   "name": "Coordinator Agent",
+   "role": "Coordinates the team through Slack, Linear and other surfaces",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.coordinator-agent",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Coordinator Agent",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Coordinator Agent]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -91.84,
+     1,
+     -28
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/communicator",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/coordination-floor",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Communicator · Powered by AGI Corp",
+   "name": "Communicator",
+   "role": "Communicates status and blockers across the team",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.communicator",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Communicator",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Communicator]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -90.76,
+     1,
+     -31.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'communicating'"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/assignment-board",
+   "kind": "zone",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Assignment Board · Powered by AGI Corp",
+   "name": "Assignment Board",
+   "purpose": "Assigning work across the team",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-3.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Assignment Board",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     8,
+     -90
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/assigner",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/assignment-board",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Assigner · Powered by AGI Corp",
+   "name": "Assigner",
+   "role": "Assigns work and tracks who holds what",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.assigner",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Assigner",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Assigner]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -96
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/decision-room",
+   "kind": "zone",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Decision Room · Powered by AGI Corp",
+   "name": "Decision Room",
+   "purpose": "Making decisions - drafted by agents, with the final vote reserved for human stewards",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-4.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Decision Room",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     85.6,
+     8,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/decision-drafter",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/decision-room",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Decision Drafter · Powered by AGI Corp",
+   "name": "Decision Drafter",
+   "role": "Drafts decisions with evidence; never enacts one",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.decision-drafter",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Decision Drafter",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Decision Drafter]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     91.3,
+     1,
+     -29.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/execution-bay",
+   "kind": "zone",
+   "parentCardId": "world:autonomous-organizations",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Execution Bay · Powered by AGI Corp",
+   "name": "Execution Bay",
+   "purpose": "Executing the assigned work with minimal human intervention, inside the reserved-actions line",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-autonomous-organizations-5.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Execution Bay",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=autonomous-organizations]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     52.9,
+     8,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing with minimal human intervention'"
+  },
+  {
+   "cardId": "agent:autonomous-organizations/executor",
+   "kind": "agent",
+   "parentCardId": "zone:autonomous-organizations/execution-bay",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Executor · Powered by AGI Corp",
+   "name": "Executor",
+   "role": "Executes assigned work and reports back",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "autonomous-organizations.executor",
+    "metaprompt": "agents/prompts/autonomous-organizations.json",
+    "fabricNode": "Agent · Executor",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[name=Executor]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     56.43,
+     1,
+     77.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing'"
+  }
+ ],
+ "gaps": [
+  "no RP1 anchor yet: lat/lon are null until a steward writes them into worlds/focus.json"
+ ]
+}

@@ -1,0 +1,759 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Climate DAO",
+ "slug": "climate-dao",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:climate-dao/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "climate-dao",
+   "zone": "Climate DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/climate-dao.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=climate-dao].tagline"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=climate-dao].zones[*].name"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=climate-dao].agents[*].name"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Climate DAO is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=climate-dao].status"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/climate-dao.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:climate-dao/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "climate-dao",
+   "zone": "Climate DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/climate-dao.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=climate-dao].reserved_for_humans"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=climate-dao].stewards"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/climate-dao.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:climate-dao/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "climate-dao",
+   "zone": "Climate DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/climate-dao.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/climate-dao.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/climate-dao.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:climate-dao/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Climate DAO routes a question",
+   "world": "climate-dao",
+   "zone": "Climate DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/climate-dao.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/climate-dao.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Evidence Monitor (Research Synthesis Lab): Monitors developments in climate resilience and summarizes the evidence",
+     "keywords": [
+      "monitor",
+      "monitors",
+      "summarizes"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.evidence-monitor]"
+    },
+    {
+     "n": 2,
+     "do": "Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on climate resilience for the stewards",
+     "keywords": [
+      "synthesizes",
+      "stewards"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.research-synthesis-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Collaborator Scout (Operations Deck): Identifies experts and collaborators working on climate resilience",
+     "keywords": [
+      "collaborator",
+      "scout",
+      "identifies",
+      "experts",
+      "collaborators"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.collaborator-scout]"
+    },
+    {
+     "n": 4,
+     "do": "Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles",
+     "keywords": [
+      "router",
+      "routes",
+      "tasks",
+      "coordinates",
+      "between",
+      "decision",
+      "cycles"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.task-router]"
+    },
+    {
+     "n": 5,
+     "do": "Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them",
+     "keywords": [
+      "proposal",
+      "grant",
+      "drafter",
+      "drafts",
+      "proposals",
+      "grants",
+      "human",
+      "review",
+      "never",
+      "enacts",
+      "them",
+      "forum",
+      "drafted",
+      "agents",
+      "debated",
+      "decided",
+      "people"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.proposal-grant-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes",
+     "keywords": [
+      "tracker",
+      "tracks",
+      "against",
+      "charter",
+      "measurable",
+      "outcomes",
+      "observatory",
+      "tracking"
+     ],
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.progress-tracker]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/climate-dao.json#coordinator",
+    "agents/swarms/climate-dao.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:climate-dao/zone/research-synthesis-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Research Synthesis Lab: what happens here",
+   "world": "climate-dao",
+   "zone": "Research Synthesis Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Research Synthesis Lab",
+    "room_model": "my-fabric/worlds/models/room-climate-dao-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/research-synthesis-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Monitoring developments and summarizing evidence",
+     "quote": "Monitoring developments and summarizing evidence",
+     "from": "worlds/climate-dao/spec.json#zones[name=Research Synthesis Lab].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Evidence Monitor's role: Monitors developments in climate resilience and summarizes the evidence",
+     "quote": "Monitors developments in climate resilience and summarizes the evidence",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.evidence-monitor].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Research Synthesis Agent's role: Synthesizes research on climate resilience for the stewards",
+     "quote": "Synthesizes research on climate resilience for the stewards",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.research-synthesis-agent].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Research Synthesis Lab\"",
+     "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/research-synthesis-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Evidence Monitor: Monitors developments in climate resilience and summarizes the evidence",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/evidence-monitor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Research Synthesis Agent: Synthesizes research on climate resilience for the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/research-synthesis-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Climate DAO Coordinator",
+     "from": "agents/swarms/climate-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/specialist/evidence-monitor",
+    "avatar:climate-dao/specialist/research-synthesis-agent"
+   ],
+   "sources": [
+    "worlds/climate-dao/spec.json#zones[name=Research Synthesis Lab]",
+    "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/research-synthesis-lab]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.evidence-monitor]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.research-synthesis-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:climate-dao/zone/proposal-forum",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Proposal Forum: what happens here",
+   "world": "climate-dao",
+   "zone": "Proposal Forum",
+   "room": {
+    "kind": "forum",
+    "sign": "Proposal Forum",
+    "room_model": "my-fabric/worlds/models/room-climate-dao-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/proposal-forum].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Proposals drafted by agents, debated and decided by people",
+     "quote": "Proposals drafted by agents, debated and decided by people",
+     "from": "worlds/climate-dao/spec.json#zones[name=Proposal Forum].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Proposal & Grant Drafter's role: Drafts proposals and grants for human review; never enacts them",
+     "quote": "Drafts proposals and grants for human review; never enacts them",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.proposal-grant-drafter].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Proposal Forum\"",
+     "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/proposal-forum].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/proposal-grant-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Climate DAO Coordinator",
+     "from": "agents/swarms/climate-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/specialist/proposal-grant-drafter"
+   ],
+   "sources": [
+    "worlds/climate-dao/spec.json#zones[name=Proposal Forum]",
+    "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/proposal-forum]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.proposal-grant-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:climate-dao/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "climate-dao",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-climate-dao-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Task routing, working groups and operational coordination",
+     "quote": "Task routing, working groups and operational coordination",
+     "from": "worlds/climate-dao/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Collaborator Scout's role: Identifies experts and collaborators working on climate resilience",
+     "quote": "Identifies experts and collaborators working on climate resilience",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.collaborator-scout].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Task Router's role: Routes tasks and coordinates working groups between decision cycles",
+     "quote": "Routes tasks and coordinates working groups between decision cycles",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.task-router].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Operations Deck\"",
+     "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Collaborator Scout: Identifies experts and collaborators working on climate resilience",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/collaborator-scout].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Task Router: Routes tasks and coordinates working groups between decision cycles",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/task-router].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Climate DAO Coordinator",
+     "from": "agents/swarms/climate-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/specialist/collaborator-scout",
+    "avatar:climate-dao/specialist/task-router"
+   ],
+   "sources": [
+    "worlds/climate-dao/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/operations-deck]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.collaborator-scout]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.task-router]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:climate-dao/zone/progress-observatory",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Progress Observatory: what happens here",
+   "world": "climate-dao",
+   "zone": "Progress Observatory",
+   "room": {
+    "kind": "forum",
+    "sign": "Progress Observatory",
+    "room_model": "my-fabric/worlds/models/room-climate-dao-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/progress-observatory].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Progress tracking against the charter's measurable outcomes",
+     "quote": "Progress tracking against the charter's measurable outcomes",
+     "from": "worlds/climate-dao/spec.json#zones[name=Progress Observatory].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Progress Tracker's role: Tracks progress against the charter's measurable outcomes",
+     "quote": "Tracks progress against the charter's measurable outcomes",
+     "from": "agents/swarms/climate-dao.json#agents[id=climate-dao.progress-tracker].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Progress Observatory\"",
+     "from": "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/progress-observatory].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Progress Tracker: Tracks progress against the charter's measurable outcomes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:climate-dao/specialist/progress-tracker].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Climate DAO Coordinator",
+     "from": "agents/swarms/climate-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:climate-dao/specialist/progress-tracker"
+   ],
+   "sources": [
+    "worlds/climate-dao/spec.json#zones[name=Progress Observatory]",
+    "worldforge/out/climate-dao/cards.json#cards[cardId=zone:climate-dao/progress-observatory]",
+    "agents/swarms/climate-dao.json#agents[id=climate-dao.progress-tracker]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:climate-dao/coordinator",
+   "avatarId": "avatar:climate-dao/coordinator",
+   "kind": "coordinator",
+   "name": "Climate DAO Coordinator",
+   "persona_prompt": {
+    "id": "persona:climate-dao/coordinator",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "1c3124310b0f42d7b9adc9f4f3387cf8773aea934e6572712b0429252c918a1d"
+   },
+   "lessons": [
+    "lesson:climate-dao/routing"
+   ],
+   "chars": 2759,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Climate DAO Coordinator (avatar:climate-dao/coordinator) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/coordinator in worldforge/out/avatars/prompts/climate-dao.json (sha256 1c3124310b0f42d7); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Climate DAO (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Climate DAO Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/routing: How Climate DAO routes a question\n    Steps: 1. Evidence Monitor (Research Synthesis Lab): Monitors developments in climate resilience and summarizes the evidence 2. Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on climate resilience for the stewards 3. Collaborator Scout (Operations Deck): Identifies experts and collaborators working on climate resilience 4. Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles 5. Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them 6. Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/evidence-monitor",
+   "avatarId": "avatar:climate-dao/specialist/evidence-monitor",
+   "kind": "specialist",
+   "name": "Evidence Monitor",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/evidence-monitor",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "7c7d06c33cc8fb82ff2b9c1e0e96ea700e37f49ba6fee8a7daceee48bc2138da"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2651,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Evidence Monitor (avatar:climate-dao/specialist/evidence-monitor) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/evidence-monitor in worldforge/out/avatars/prompts/climate-dao.json (sha256 7c7d06c33cc8fb82); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Monitors developments in climate resilience and summarizes the evidence (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: monitor, monitors, summarizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in climate resilience and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on climate resilience for the stewards 4. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/research-synthesis-agent",
+   "avatarId": "avatar:climate-dao/specialist/research-synthesis-agent",
+   "kind": "specialist",
+   "name": "Research Synthesis Agent",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/research-synthesis-agent",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "f12a1e46b9cdaf41ee9adce60cbeb4511cb8fa43cb1d520bc3719d2a201d15aa"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2655,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research Synthesis Agent (avatar:climate-dao/specialist/research-synthesis-agent) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/research-synthesis-agent in worldforge/out/avatars/prompts/climate-dao.json (sha256 f12a1e46b9cdaf41); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Synthesizes research on climate resilience for the stewards (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: synthesizes, stewards.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in climate resilience and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on climate resilience for the stewards 4. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/proposal-grant-drafter",
+   "avatarId": "avatar:climate-dao/specialist/proposal-grant-drafter",
+   "kind": "specialist",
+   "name": "Proposal & Grant Drafter",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/proposal-grant-drafter",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "ff18be2e122e90df31dd562eb741dab94b775c8357a59253f04410d115198b73"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/proposal-forum"
+   ],
+   "chars": 2649,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Proposal & Grant Drafter (avatar:climate-dao/specialist/proposal-grant-drafter) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/proposal-grant-drafter in worldforge/out/avatars/prompts/climate-dao.json (sha256 ff18be2e122e90df); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Proposal Forum - Proposals drafted by agents, debated and decided by people.\nYour role: Drafts proposals and grants for human review; never enacts them (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: proposal, grant, drafter, drafts, proposals, grants, human, review, never, enacts, them, forum, drafted, agents, debated, decided, people.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/proposal-forum: Proposal Forum: what happens here [room: Proposal Forum]\n    Steps: 1. Enter the forum signed \"Proposal Forum\" 2. Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them 3. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/collaborator-scout",
+   "avatarId": "avatar:climate-dao/specialist/collaborator-scout",
+   "kind": "specialist",
+   "name": "Collaborator Scout",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/collaborator-scout",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "73520dec9f5968c0f50c9e1ed5041b3be90bdde4964e4533f86246470d75803e"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/operations-deck"
+   ],
+   "chars": 2644,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Collaborator Scout (avatar:climate-dao/specialist/collaborator-scout) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/collaborator-scout in worldforge/out/avatars/prompts/climate-dao.json (sha256 73520dec9f5968c0); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Identifies experts and collaborators working on climate resilience (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: collaborator, scout, identifies, experts, collaborators.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on climate resilience 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/task-router",
+   "avatarId": "avatar:climate-dao/specialist/task-router",
+   "kind": "specialist",
+   "name": "Task Router",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/task-router",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "8558bb031768a35c072045afcae9db7857c3a7441740ffcfe5fce770f495f55f"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/operations-deck"
+   ],
+   "chars": 2630,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Task Router (avatar:climate-dao/specialist/task-router) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/task-router in worldforge/out/avatars/prompts/climate-dao.json (sha256 8558bb031768a35c); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Routes tasks and coordinates working groups between decision cycles (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: router, routes, tasks, coordinates, between, decision, cycles.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on climate resilience 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:climate-dao/specialist/progress-tracker",
+   "avatarId": "avatar:climate-dao/specialist/progress-tracker",
+   "kind": "specialist",
+   "name": "Progress Tracker",
+   "persona_prompt": {
+    "id": "persona:climate-dao/specialist/progress-tracker",
+    "file": "worldforge/out/avatars/prompts/climate-dao.json",
+    "sha256": "7f7b50ad971d9650418693b4316a0a34458449e646267992daf4195711066ef2"
+   },
+   "lessons": [
+    "lesson:climate-dao/zone/progress-observatory"
+   ],
+   "chars": 2581,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Progress Tracker (avatar:climate-dao/specialist/progress-tracker) teaches draft lessons in Climate DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:climate-dao/specialist/progress-tracker in worldforge/out/avatars/prompts/climate-dao.json (sha256 7f7b50ad971d9650); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Progress Observatory - Progress tracking against the charter's measurable outcomes.\nYour role: Tracks progress against the charter's measurable outcomes (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: tracker, tracks, against, charter, measurable, outcomes, observatory, tracking.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:climate-dao/zone/progress-observatory: Progress Observatory: what happens here [room: Progress Observatory]\n    Steps: 1. Enter the forum signed \"Progress Observatory\" 2. Meet Progress Tracker: Tracks progress against the charter's measurable outcomes 3. A question that belongs to another zone goes back to Climate DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to climate-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "zone \"Charter Hall\" seats no specialist: no model-taught lesson for it",
+  "spec gap: No RP1 location given for this DAO yet",
+  "spec gap: No named people, partners or budgets: the charter's measurable outcomes are not yet set"
+ ]
+}

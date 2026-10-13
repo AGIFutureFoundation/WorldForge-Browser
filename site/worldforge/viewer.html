@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>WorldForge Viewer</title>
+<link rel="icon" href="data:,">
+<meta name="description" content="Walkable WorldForge viewer: every coming-soon world's Master Cards with its real building shells, interiors and agent avatars. Powered by AGI Corp.">
+<style>
+  :root {
+    --bg:#0b0f14; --panel:#121821; --panel2:#18202b; --line:#263040; --text:#e6edf3; --muted:#8d9aab;
+    --accent:#3fb6a8; --world:#3fb6a8; --warn:#e3b341; --bad:#f0716a; --held:#e3b341;
+    --hud:rgba(11,15,20,.78); --shadow:0 6px 24px rgba(0,0,0,.35); --radius:8px;
+    color-scheme: dark;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--text); font:14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  #app { display:grid; grid-template-columns:248px minmax(0,1fr) 372px; height:100vh; height:100dvh; }
+  aside, #detail { overflow:auto; background:var(--panel); }
+  aside { border-right:1px solid var(--line); }
+  #detail { border-left:1px solid var(--line); padding:14px 16px 28px; }
+  header { padding:14px 16px 10px; }
+  h1 { font-size:15px; margin:0 0 4px; } h2 { font-size:13px; margin:16px 0 6px; text-transform:uppercase; letter-spacing:.04em; color:var(--muted); } h3 { font-size:17px; margin:0 0 2px; }
+  .muted { color:var(--muted); font-size:12px; }
+  #filter { width:calc(100% - 32px); margin:0 16px 10px; padding:7px 9px; border-radius:6px; border:1px solid var(--line); background:var(--bg); color:var(--text); font:inherit; }
+  #worlds button { display:flex; justify-content:space-between; gap:8px; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--line); color:var(--text); padding:8px 16px; cursor:pointer; font:inherit; }
+  #worlds button:hover, #worlds button.on { background:var(--panel2); }
+  #worlds button.on { box-shadow:inset 3px 0 0 var(--world); }
+  #worlds .badge { color:var(--muted); font-size:12px; white-space:nowrap; }
+  #stage { position:relative; overflow:hidden; background:#000; min-height:0; }
+  #stage canvas { display:block; width:100%; height:100%; touch-action:none; outline:none; }
+  .hud { position:absolute; z-index:2; }
+  #topbar { left:12px; top:12px; right:12px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; pointer-events:none; }
+  #topbar > * { pointer-events:auto; }
+  .chip { background:var(--hud); border:1px solid var(--line); border-radius:var(--radius); padding:6px 10px; font-size:12px; box-shadow:var(--shadow); backdrop-filter:blur(6px); }
+  #lockup b { color:var(--world); }
+  .seg { display:inline-flex; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; box-shadow:var(--shadow); }
+  .seg button, .btn { background:var(--hud); color:var(--text); border:0; padding:7px 12px; font:inherit; font-size:12px; cursor:pointer; }
+  .seg button[aria-pressed="true"] { background:var(--world); color:#071014; font-weight:600; }
+  .btn { border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); }
+  .btn:hover, .seg button:hover { filter:brightness(1.2); }
+  .btn[disabled] { opacity:.45; cursor:not-allowed; }
+  .btn.primary { background:var(--world); color:#071014; font-weight:600; border-color:transparent; }
+  #status { margin-left:auto; max-width:46ch; }
+  #help { left:12px; bottom:12px; max-width:min(560px, calc(100% - 24px)); }
+  #voicebar { right:12px; bottom:12px; max-width:min(420px, calc(100% - 24px)); border-color:var(--warn); }
+  #crosshair { left:50%; top:50%; width:14px; height:14px; margin:-7px 0 0 -7px; border:2px solid rgba(255,255,255,.75); border-radius:50%; pointer-events:none; }
+  #joy { left:22px; bottom:64px; width:116px; height:116px; border-radius:50%; background:rgba(11,15,20,.45); border:1px solid rgba(255,255,255,.25); touch-action:none; }
+  #knob { position:absolute; left:38px; top:38px; width:40px; height:40px; border-radius:50%; background:rgba(255,255,255,.55); }
+  #access { left:12px; top:58px; width:min(300px, calc(100% - 24px)); max-height:calc(100% - 150px); overflow:auto; padding:8px 10px; font-size:12px; }
+  #access h4 { margin:8px 0 4px; font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); font-weight:600; }
+  #access h4:first-child { margin-top:0; }
+  #access button.ap { display:flex; justify-content:space-between; gap:8px; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--line); color:var(--text); padding:5px 2px; cursor:pointer; font:inherit; font-size:12px; }
+  #access button.ap:hover, #access button.ap.on { color:var(--world); }
+  #access .tag { color:var(--muted); white-space:nowrap; } #access .tag.go { color:var(--world); } #access .tag.held { color:var(--held); }
+  #gateNote { left:50%; top:58px; transform:translateX(-50%); max-width:min(520px, calc(100% - 24px)); border-color:var(--warn); color:var(--text); }
+  [hidden] { display:none !important; }
+  table { border-collapse:collapse; width:100%; font-size:12px; margin:6px 0; table-layout:fixed; }
+  td, th { border-top:1px solid var(--line); padding:5px 6px; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
+  th { width:34%; color:var(--muted); font-weight:500; }
+  .held { color:var(--held); } .ok { color:var(--accent); } .bad { color:var(--bad); }
+  code { font:12px ui-monospace, SFMono-Regular, Menlo, monospace; color:var(--muted); overflow-wrap:anywhere; }
+  .kind { display:inline-block; border:1px solid var(--line); border-radius:999px; padding:1px 8px; font-size:11px; color:var(--world); margin-right:6px; }
+  .row { display:flex; flex-wrap:wrap; gap:6px; margin:10px 0; }
+  .line { border-top:1px solid var(--line); padding:8px 0; }
+  .line p { margin:0 0 6px; }
+  .speak { background:var(--panel2); color:var(--text); border:1px solid var(--line); border-radius:6px; padding:5px 10px; cursor:pointer; font:inherit; font-size:12px; }
+  .speak:hover { border-color:var(--world); }
+  .voicelab { font-size:12px; color:var(--warn); min-height:1.2em; }
+  .note { font-size:12px; color:var(--muted); background:var(--panel2); border:1px solid var(--line); border-radius:6px; padding:8px 10px; margin:10px 0; }
+  ul.tight { margin:4px 0; padding-left:18px; font-size:12px; color:var(--muted); }
+  #cardlist button { display:block; width:100%; text-align:left; background:none; border:0; border-top:1px solid var(--line); color:var(--text); padding:5px 2px; cursor:pointer; font:inherit; font-size:12px; }
+  #cardlist button:hover, #cardlist button.on { color:var(--world); }
+  #cardlist .k { color:var(--muted); display:inline-block; min-width:56px; }
+  body.clean #app { grid-template-columns:1fr; }
+  body.clean aside, body.clean #detail, body.clean .hud { display:none !important; }
+  @media (max-width: 900px) {
+    #app { grid-template-columns:1fr; grid-template-rows:62vh auto auto; height:auto; }
+    #stage { grid-row:1; height:62vh; } #detail { grid-row:2; border-left:0; border-top:1px solid var(--line); } aside { grid-row:3; border-right:0; border-top:1px solid var(--line); }
+    #status { margin-left:0; } #help { display:none; } #access { top:96px; max-height:calc(100% - 120px); }
+    body.clean #app { grid-template-rows:100vh; } body.clean #stage { height:100vh; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside>
+    <header><h1>WorldForge Worlds</h1><div class="muted" id="totals">loading…</div></header>
+    <input id="filter" type="search" placeholder="Filter worlds" aria-label="Filter worlds">
+    <div id="worlds" role="list"></div>
+  </aside>
+  <main id="stage">
+    <div id="topbar" class="hud">
+      <span class="chip" id="lockup">WorldForge</span>
+      <span class="seg" role="group" aria-label="View mode"><button type="button" id="mOrbit" aria-pressed="true">Orbit</button><button type="button" id="mWalk" aria-pressed="false">Walk</button></span>
+      <button type="button" class="btn primary" id="enterBtn" hidden>Enter</button>
+      <button type="button" class="btn" id="exitBtn" hidden>Exit</button>
+      <button type="button" class="btn" id="accessBtn" aria-expanded="true" aria-controls="access">Access</button>
+      <span class="chip" id="status">loading…</span>
+    </div>
+    <div id="help" class="hud chip">Orbit: drag to turn, scroll to zoom, click a building, the landmark, an avatar, seat or pad for its card. Walk: click the view to look with the mouse (Esc frees it), W A S D or arrows to move, Shift to run, E at a door to go in or out. Access lists every door and room for one-click teleport; council rooms are view only (stewards enter).</div>
+    <div id="voicebar" class="hud chip" hidden></div>
+    <nav id="access" class="hud chip" aria-label="Access points" hidden></nav>
+    <div id="gateNote" class="hud chip" role="status" hidden></div>
+    <div id="crosshair" class="hud" hidden></div>
+    <div id="joy" class="hud" hidden><div id="knob"></div></div>
+  </main>
+  <section id="detail" aria-live="polite"><div class="muted">Loading the world…</div></section>
+</div>
+<audio id="voice" preload="none"></audio>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+<script>
+// Bootstrap: cdn.jsdelivr.net sometimes resets a connection, and a failed module fetch cannot be retried in place.
+// So warm the exact module URLs the importmap points at (with retries) into the HTTP cache, then start the viewer.
+(async () => {
+  const base = 'https://cdn.jsdelivr.net/npm/three@0.160.0/';
+  const urls = ['build/three.module.js', 'examples/jsm/loaders/GLTFLoader.js', 'examples/jsm/controls/OrbitControls.js', 'examples/jsm/utils/BufferGeometryUtils.js'];
+  let failed = [];
+  for (const u of urls) {
+    let ok = false;
+    for (let i = 0; i < 5 && !ok; i++) { try { const r = await fetch(base + u, { mode: 'cors' }); if (r.ok) { await r.arrayBuffer(); ok = true; } } catch (e) {} if (!ok) await new Promise((r) => setTimeout(r, 700 * (i + 1))); }
+    if (!ok) failed.push(u);
+  }
+  window.__wfBootFailed = failed; (window.__wfT = window.__wfT || {}).warm = Math.round(performance.now());
+  window.__errs = window.__errs || [];
+  if (failed.length) window.__errs.push('cdn.jsdelivr.net did not serve: ' + failed.join(', '));
+  addEventListener('unhandledrejection', (e) => { window.__errs.push('unhandled: ' + String(e.reason?.message ?? e.reason)); });
+  addEventListener('error', (e) => { window.__errs.push(String(e.message)); });
+  addEventListener('error', (e) => { const st = document.getElementById('status'); if (st && /three|import|module|fetch/i.test(String(e.message))) st.textContent = 'three.js could not be fetched from cdn.jsdelivr.net: ' + e.message; window.__wfError = String(e.message); });
+  const s = document.createElement('script'); s.type = 'module'; s.textContent = document.getElementById('wf-main').textContent; document.body.appendChild(s);
+})();
+</script>
+<script type="text/plain" id="wf-main">
+// WorldForge viewer v2. A world's Master Cards (worldforge/out/<slug>/cards.json) drive everything here: the card-tagged
+// blockout GLB is the fallback and the card index; each zone and the council get the real building shell, room and
+// fit-out the spaces build made for them (my-fabric/worlds/models); each agent and the Omega Steward get an avatar.
+// Nothing on screen is invented: names, roles, purposes, personas and voice lines come from the cards, and the cards
+// cite their registries. Agents operate; people govern: the panel marks every steward-quorum right as held.
+//
+// Recording contract (worldforge/review/record.mjs): ?world=<slug> &card=<cardId> &hud=0 &tour=1, window.__wfReady,
+// window.__wfShot(mode, t) for mode in orbit | flyin | building | omega | council | landmark, t in [0,1]; renders synchronously.
+// Access contract: &access=<cardId> teleports to that access point (plaza, gate, landmark:<slug>, a building's door) and
+// &inside=1 goes into its room. Entry follows card.permissions.enter: this viewer is a visitor (public), so a card whose
+// enter right is held by stewards (the council hall and its seats) is view only: the visitor gets the exterior and a note.
+// LOD: worldforge/out/assets/lod/index.json maps each landmark / avatar GLB to a LOD1 file used beyond LOD_M metres.
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+(window.__wfT = window.__wfT || {}).module = Math.round(performance.now());
+const P = new URLSearchParams(location.search);
+const HUD = P.get('hud') !== '0', TOUR = P.get('tour') === '1', LABELS = P.get('labels') !== '0';
+if (!HUD) document.body.classList.add('clean');
+const OUT = new URL('./out/', location.href);              // worldforge/out/
+const ROOT = new URL('../', location.href);                 // repo root (the server root)
+const repo = (p) => new URL(p, ROOT).href;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const smooth = (t) => t * t * t * (t * (t * 6 - 15) + 10);
+const lerp = (a, b, t) => a + (b - a) * t;
+const angDiff = (a, b) => { const d = (((a - b) % (2 * Math.PI)) + 3 * Math.PI) % (2 * Math.PI) - Math.PI; return Math.abs(d); };
+async function getJSON(url) { try { const r = await fetch(url, { cache: 'no-cache' }); return r.ok ? await r.json() : null; } catch { return null; } }
+function mulberry32(a) { return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+function hashStr(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
+
+const PAD_TOP = 0.4, PLAZA_TOP = 0.4, ROAD_TOP = 0.06, EYE = 1.65, WALK_R = 0.3;
+// The spaces shells, measured from their GLBs (my-fabric/worlds/models/spaces-ext-*.glb): origin at the floor centre,
+// facade x +-5.3, z -4.3..+4.3 with the door on +z (half width 1.2, head 2.8), plinth and apron out to z 6.3.
+// Fit-outs (spaces-int-*.glb): a 10 x 8 m room, floor top 0.12, ceiling 3.32..3.65, front wall at z +4.
+const SHELL = { x: 5.95, zBack: -4.95, zFront: 4.35 }, ROOM = { x: 5.0, z: 4.0, floor: 0.12 };
+
+// ------------------------------------------------------------------------------------------ renderer ----
+const stage = $('#stage');
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: TOUR, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio || 1, TOUR ? 1 : 1.5));
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.domElement.tabIndex = 0;
+stage.prepend(renderer.domElement);
+const ANISO = Math.min(8, renderer.capabilities.getMaxAnisotropy());
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#9fb6c8');
+scene.fog = new THREE.Fog('#9fb6c8', 300, 1150);
+const camera = new THREE.PerspectiveCamera(52, 1, 0.5, 2600);
+camera.position.set(160, 110, 220);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = !TOUR; controls.dampingFactor = 0.08; controls.maxPolarAngle = Math.PI * 0.495; controls.minDistance = 1.5; controls.maxDistance = 900;
+if (TOUR) controls.enabled = false;
+
+const hemi = new THREE.HemisphereLight('#cfe3ff', '#3a4030', 1.05); scene.add(hemi);
+const sun = new THREE.DirectionalLight('#fff0dc', 2.7);
+sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.03; sun.shadow.radius = 3;
+scene.add(sun, sun.target);
+const roomLight = new THREE.PointLight('#fff1dd', 0, 16, 1.6); scene.add(roomLight);
+const sunDir = new THREE.Vector3(-0.45, 0.62, -0.64).normalize();
+function fitShadow(cx, cz, r) {
+  sun.target.position.set(cx, 0, cz);
+  sun.position.set(cx + sunDir.x * (r * 2 + 120), sunDir.y * (r * 2 + 120), cz + sunDir.z * (r * 2 + 120));
+  const c = sun.shadow.camera; c.left = c.bottom = -r; c.right = c.top = r; c.near = 1; c.far = r * 4 + 400; c.updateProjectionMatrix();
+  sun.target.updateMatrixWorld(); sun.updateMatrixWorld();
+}
+fitShadow(0, 0, 200);
+
+function size() {
+  const r = stage.getBoundingClientRect(); const w = Math.max(1, r.width), h = Math.max(1, r.height);
+  renderer.setSize(w, h, false); camera.aspect = w / h; camera.updateProjectionMatrix();
+  if (TOUR && S.ready) renderFrame();
+}
+addEventListener('resize', size);
+
+// ------------------------------------------------------------------------------- shared assets ----
+const loader = new GLTFLoader();
+const glbCache = new Map();          // url -> Promise<THREE.Object3D | null>, shared across worlds (exteriors repeat)
+function loadGLB(url) {
+  if (!glbCache.has(url)) glbCache.set(url, loader.loadAsync(url).then((g) => {
+    const root = g.scene; root.updateMatrixWorld(true);
+    root.traverse((o) => { if (o.isMesh) { const m = o.material; const tr = m && (m.transparent || m.opacity < 1); o.castShadow = !tr; o.receiveShadow = true; } });
+    return root;
+  }, () => null));
+  return glbCache.get(url);
+}
+// LOD1 (worldforge/lod/build_lod.py): far copies of the landmark and avatar GLBs, used beyond LOD_M metres. Interactive
+// views stream LOD1 first and fetch LOD0 only when the camera comes within LOD_FETCH_M; tour/recording views load both
+// up front so a synchronous __wfShot never waits. Without an index entry the LOD0 file is used alone, as before.
+const LOD_M = 60, LOD_FETCH_M = 95;
+function lod1Of(ref) {
+  const idx = S.lodIdx; if (!idx || !ref) return null;
+  const rel = String(ref).replace(/^worldforge\/out\//, '');
+  S.lodMap ??= new Map((idx.items ?? []).map((i) => [i.lod0, `worldforge/out/${i.lod1}`]));
+  return S.lodMap.get(rel) ?? null;
+}
+// make(src) turns a loaded GLB scene into the level object. Returns { obj, near } where obj is a THREE.LOD when a LOD1 exists.
+async function loadLevels(ref, make) {
+  const far = lod1Of(ref);
+  if (!far) { const src = await loadGLB(repo(ref)); return src ? { obj: make(src), lod: false } : null; }
+  if (TOUR) {
+    const [s0, s1] = await Promise.all([loadGLB(repo(ref)), loadGLB(repo(far))]);
+    if (!s0 && !s1) return null;
+    const L = new THREE.LOD(); if (s0) L.addLevel(make(s0), 0); if (s1) L.addLevel(make(s1), LOD_M); L.userData.lodRefs = [ref, far];
+    return { obj: L, lod: true, near: !!s0 };
+  }
+  const s1 = await loadGLB(repo(far));
+  if (!s1) { const src = await loadGLB(repo(ref)); return src ? { obj: make(src), lod: false } : null; }
+  const L = new THREE.LOD(); L.addLevel(make(s1), LOD_M); L.userData.lodRefs = [ref, far];
+  S.lazy.push({ L, ref, make, asked: false });
+  return { obj: L, lod: true, near: false };
+}
+const _lp = new THREE.Vector3();
+function pumpLazy(cam) {
+  for (const z of S.lazy) {
+    if (z.asked || !z.L.parent) continue;
+    z.L.getWorldPosition(_lp); if (_lp.distanceTo(cam) > LOD_FETCH_M) continue;
+    z.asked = true; const slug = S.slug;
+    loadGLB(repo(z.ref)).then((src) => { if (src && S.slug === slug) { z.L.addLevel(z.make(src), 0); z.near = true; } });
+  }
+}
+function makeTex(w, h, seed, draw, { repeat = true, srgb = true } = {}) {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+  draw(g, w, h, mulberry32(seed));
+  const t = new THREE.CanvasTexture(c); if (repeat) t.wrapS = t.wrapT = THREE.RepeatWrapping;
+  t.colorSpace = srgb ? THREE.SRGBColorSpace : THREE.NoColorSpace; t.anisotropy = ANISO; return t;
+}
+function wrapDot(g, x, y, w, h, n, m = n) { for (const dx of [0, -n, n]) for (const dy of [0, -m, m]) { const X = x + dx, Y = y + dy; if (X + w < 0 || Y + h < 0 || X > n || Y > m) continue; g.fillRect(X, Y, w, h); } }
+const TEX = {
+  get grass() { return this._g ??= makeTex(512, 512, 11, (g, n, _, r) => {
+    g.fillStyle = '#56713f'; g.fillRect(0, 0, n, n);
+    for (let i = 0; i < 60; i++) { const x = r() * n, y = r() * n, rad = 30 + r() * 70; const gr = g.createRadialGradient(x, y, 0, x, y, rad); const l = r() < .5; gr.addColorStop(0, l ? 'rgba(140,160,80,.16)' : 'rgba(30,50,25,.18)'); gr.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = gr; for (const dx of [0, -n, n]) for (const dy of [0, -n, n]) { g.save(); g.translate(dx, dy); g.fillRect(x - rad, y - rad, rad * 2, rad * 2); g.restore(); } }
+    for (let i = 0; i < 16000; i++) { g.fillStyle = `hsla(${82 + r() * 26},${30 + r() * 18}%,${26 + r() * 14}%,${0.35 + r() * 0.4})`; const w = 0.8 + r() * 1.4; wrapDot(g, r() * n, r() * n, w, w * (1.5 + r() * 2.5), n); }
+  }); },
+  get paving() { return this._p ??= makeTex(512, 512, 23, (g, n, _, r) => {
+    g.fillStyle = '#8f8a80'; g.fillRect(0, 0, n, n);
+    const tw = 128, th = 64;
+    for (let row = 0; row < n / th; row++) for (let col = -1; col < n / tw + 1; col++) {
+      const x = col * tw + (row % 2 ? tw / 2 : 0), y = row * th, l = 64 + r() * 9, hu = 36 + r() * 12;
+      g.fillStyle = `hsl(${hu},${8 + r() * 6}%,${l}%)`; g.fillRect(x + 2, y + 2, tw - 4, th - 4);
+    }
+    for (let i = 0; i < 9000; i++) { g.fillStyle = `rgba(${r() < .5 ? '40,38,34' : '250,248,240'},${.05 + r() * .09})`; wrapDot(g, r() * n, r() * n, 1 + r() * 2, 1 + r() * 2, n); }
+  }); },
+  get asphalt() { return this._a ??= makeTex(256, 512, 37, (g, w, h, r) => {
+    g.fillStyle = '#3b3e43'; g.fillRect(0, 0, w, h);
+    for (let i = 0; i < 9000; i++) { g.fillStyle = `rgba(${r() < .5 ? '20,20,22' : '150,150,150'},${.08 + r() * .14})`; wrapDot(g, r() * w, r() * h, 1 + r() * 1.6, 1 + r() * 1.6, w, h); }
+    g.fillStyle = 'rgba(235,235,225,.85)'; g.fillRect(w * .04, 0, w * .03, h); g.fillRect(w * .93, 0, w * .03, h);
+    g.fillStyle = 'rgba(240,205,90,.85)'; g.fillRect(w * .49, 0, w * .02, h * .5);
+  }); },
+};
+// World-space UVs so a tile stays a metre whatever the slab's size.
+function worldUV(geo, scale, ox = 0, oz = 0) { const p = geo.attributes.position, uv = geo.attributes.uv; for (let i = 0; i < p.count; i++) uv.setXY(i, (p.getX(i) + ox) / scale, (p.getZ(i) + oz) / scale); uv.needsUpdate = true; return geo; }
+
+function labelTexture(title, sub, accent) {
+  const fs = 44, pad = 22, c = document.createElement('canvas'), g = c.getContext('2d');
+  g.font = `600 ${fs}px system-ui, sans-serif`; const w1 = g.measureText(title).width; g.font = `400 ${fs * .62}px system-ui, sans-serif`; const w2 = sub ? g.measureText(sub).width : 0;
+  c.width = Math.ceil(Math.max(w1, w2) + pad * 2 + 10); c.height = sub ? 132 : 84;
+  g.fillStyle = 'rgba(10,14,20,.82)'; g.beginPath(); g.roundRect(0, 0, c.width, c.height, 18); g.fill();
+  g.fillStyle = accent; g.fillRect(0, 0, 8, c.height);
+  g.fillStyle = '#ffffff'; g.font = `600 ${fs}px system-ui, sans-serif`; g.textBaseline = 'top'; g.fillText(title, pad + 6, 16);
+  if (sub) { g.fillStyle = '#c9d4e0'; g.font = `400 ${fs * .62}px system-ui, sans-serif`; g.fillText(sub, pad + 6, 76); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = ANISO; return { t, aspect: c.width / c.height };
+}
+
+// ------------------------------------------------------------------------------------------- state ----
+const S = {
+  token: 0, slug: null, doc: null, cards: new Map(), blockout: null, brand: null, hue: 170, ready: false, loadMs: 0,
+  group: null, track: [], pick: [], buildings: [], byCard: new Map(), avatars: [], pads: [], roads: [], boxes: [],
+  labels: [], zoneLabels: [], inside: null, selected: null, mode: 'orbit', avIdx: null, coordinator: null, notes: [], lazy: [], lodIdx: null, denied: null,
+  extent: 200, ring: 100, gateZ: 140, councilZ: -140, stats: {},
+};
+let simT = 0;
+const track = (...xs) => { S.track.push(...xs); return xs[0]; };
+
+// --------------------------------------------------------------------------------------- world list ----
+const index = await getJSON(new URL('index.json', OUT));
+const list = $('#worlds');
+if (index) {
+  const t = index.totals;
+  $('#totals').textContent = `${t.worlds} worlds · ${t.cards} cards · ${t.evals} evals, ${t.failed} failed`;
+  for (const w of index.worlds) {
+    const b = document.createElement('button'); b.type = 'button'; b.dataset.slug = w.slug; b.setAttribute('role', 'listitem');
+    b.innerHTML = `<span>${esc(w.name)}</span><span class="badge">${w.zones} zones · ${w.agents} agents${w.failed.length ? ' · RED' : ''}</span>`;
+    b.onclick = () => openWorld(w.slug);
+    list.appendChild(b);
+  }
+  $('#filter').addEventListener('input', (e) => { const q = e.target.value.toLowerCase(); for (const b of list.children) b.hidden = q && !b.textContent.toLowerCase().includes(q); });
+} else $('#totals').textContent = 'worldforge/out/index.json did not load';
+
+// ------------------------------------------------------------------------------------ world build ----
+function disposeWorld() {
+  stopVoice(); setInside(null);
+  if (S.group) scene.remove(S.group);
+  for (const x of S.track) try { x.dispose?.(); } catch {}
+  Object.assign(S, { group: null, track: [], pick: [], buildings: [], byCard: new Map(), avatars: [], pads: [], roads: [], boxes: [], labels: [], zoneLabels: [], selected: null, coordinator: null, notes: [], stats: {}, lazy: [], denied: null,
+    planter: null, chairG: null, stationM: null, avRows: null, gapCount: -1, landmark: null, seatsPlaced: false, blockRoot: null, plazaR: undefined, shX: undefined, shZ: undefined, treeCount: 0 });
+  selRing.visible = false;
+}
+const status = (s) => { $('#status').textContent = s; };
+
+async function openWorld(slug) {
+  const token = ++S.token; window.__wfReady = false; S.ready = false; window.__wfT.open = Math.round(performance.now());
+  const t0 = performance.now();
+  for (const b of list.children) b.classList.toggle('on', b.dataset.slug === slug);
+  if (!TOUR && HUD) { const u = new URL(location.href); u.searchParams.set('world', slug); if (S.slug && S.slug !== slug) { u.searchParams.delete('card'); u.searchParams.delete('access'); u.searchParams.delete('inside'); } history.replaceState(null, '', u); }
+  if (S.mode === 'walk') setMode('orbit');
+  disposeWorld(); S.slug = slug;
+  status('Loading cards…');
+  const [doc, blockout, team, avIdx, lmIdx, lodIdx] = await Promise.all([
+    getJSON(new URL(`${slug}/cards.json`, OUT)), getJSON(new URL(`${slug}/blockout.generated.json`, OUT)),
+    getJSON(repo(`worlds/generated/teams/${slug}.json`)), S.avIdxCache ??= getJSON(new URL('avatars/index.json', OUT)),
+    S.lmIdxCache ??= getJSON(new URL('assets/landmarks/index.json', OUT)),
+    S.lodIdxCache ??= getJSON(new URL('assets/lod/index.json', OUT)),
+  ]);
+  if (token !== S.token) return;
+  if (!doc || !blockout) { status(`World ${slug} did not load (cards or blockout missing)`); $('#detail').innerHTML = `<p class="bad">No cards for <code>${esc(slug)}</code>.</p>`; window.__wfReady = true; return; }
+  S.doc = doc; S.blockout = blockout; S.cards = new Map(doc.cards.map((c) => [c.cardId, c])); S.avIdx = avIdx; S.lodIdx = lodIdx;
+  S.brand = team?.brand ?? null; S.hue = Number.isFinite(+S.brand?.hue) ? +S.brand.hue : hashStr(slug) % 360;
+  document.documentElement.style.setProperty('--world', `hsl(${S.hue} 62% 62%)`);
+  const worldCard = doc.cards.find((c) => c.kind === 'world');
+  $('#lockup').innerHTML = `<b>${esc(S.brand?.mark ?? '')}</b> ${esc(S.brand?.lockup ?? worldCard?.name ?? slug)}`;
+  S.extent = blockout.coordinateFrame.extentXZ[1]; S.ring = S.extent - 60;
+  S.gateZ = doc.cards.find((c) => c.kind === 'gate')?.volum.center[2] ?? S.ring + 40;
+  S.councilZ = doc.cards.find((c) => c.kind === 'council')?.volum.center[2] ?? -(S.ring + 40);
+  S.group = new THREE.Group(); S.group.name = `world:${slug}`; scene.add(S.group);
+  const C = {
+    accent: new THREE.Color().setStyle(`hsl(${S.hue}, 85%, 56%)`), tint: new THREE.Color().setStyle(`hsl(${S.hue}, 55%, 74%)`),
+    deep: new THREE.Color().setStyle(`hsl(${S.hue}, 45%, 30%)`), css: `hsl(${S.hue} 70% 60%)`,
+  };
+  S.C = C;
+
+  let done = 0, total = 0; const tick = (label) => { done++; status(`Loading ${label} · ${done}/${total}`); };
+  const task = (p, label) => { total++; return p.finally(() => token === S.token && tick(label)); };
+
+  buildGround(); buildPlazaPadsRoads(); buildGate(); buildMonument();
+  const skyP = task(buildSky(slug), 'sky');
+  const blockP = task(loadBlockout(slug), 'blockout');
+  const bCards = doc.cards.filter((c) => c.building);
+  const firstZone = bCards.find((c) => c.kind === 'zone'), council = bCards.find((c) => c.kind === 'council');
+  const buildP = Promise.all(bCards.map((c) => task(placeBuilding(c, c === firstZone || c === council), 'buildings')));
+  // Every embodied card gets an avatar from its own card: agents, the Omega Steward, the coordinator and the advisors
+  // (card.volum.center, card.avatar.model_ref). Only a world without a coordinator card falls back to the index entry.
+  const AV_KINDS = ['agent', 'omega', 'coordinator', 'advisor'];
+  const avP = Promise.all(doc.cards.filter((c) => AV_KINDS.includes(c.kind)).map((c) => task(placeAvatar(c, avatarOpts(c)), 'avatars')));
+  const coP = doc.cards.some((c) => c.kind === 'coordinator') ? Promise.resolve() : task(placeCoordinator(), 'coordinator');
+  const lmP = task(placeLandmark(slug, lmIdx), 'landmark');
+  await Promise.all([skyP, blockP, buildP, avP, coP, lmP]);
+  if (token !== S.token) return;
+  S.coordinator = S.coordinator ?? S.avatars.find((a) => a.card.kind === 'coordinator') ?? null;
+  buildPadDressing(); buildTrees(); buildLamps(); buildHills(); placeSeats(); hideReplacedBlockout();
+  S.loadMs = Math.round(performance.now() - t0);
+  const nb = S.buildings.length, nbOk = S.buildings.filter((b) => b.ext).length, na = S.avatars.length, naModel = S.avatars.filter((a) => a.model).length;
+  const byKind = (k) => S.avatars.filter((a) => a.card.kind === k).length;
+  S.stats = { buildings: `${nbOk}/${nb}`, interiors: S.buildings.filter((b) => b.int).length, avatars: `${naModel}/${na}`,
+    avatarKinds: { agent: byKind('agent'), omega: byKind('omega'), coordinator: byKind('coordinator'), advisor: byKind('advisor') }, landmark: S.landmark?.model ? 'loaded' : S.landmark ? 'missing' : 'none' };
+  status(`${worldCard?.name ?? slug} · loaded in ${(S.loadMs / 1000).toFixed(1)} s · ${nbOk}/${nb} buildings · ${naModel}/${na} avatar models (${byKind('agent')} agents, ${byKind('advisor')} advisors, ${byKind('coordinator')} coordinator, ${byKind('omega')} Omega)${naModel < na ? ` · ${na - naModel} stand-ins` : ''}${S.landmark?.model ? ' · landmark' : ''}`);
+  window.__wfLoadMs = S.loadMs; window.__wfStats = S.stats;
+  renderCardList();
+  const deep = !S.deepUsed && P.get('card') ? S.cards.get(P.get('card')) : null; S.deepUsed = true;
+  overview();
+  if (deep) { select(deep); frameCard(deep); } else show(worldCard);
+  S.ready = true;
+  const acc = !S.accUsed && !TOUR ? P.get('access') : null; S.accUsed = true;
+  if (acc) S.accessResult = goAccess(acc, P.get('inside') === '1');
+  renderAccess();
+  window.__wfReady = true; window.__wfT.ready = Math.round(performance.now());
+  if (TOUR) renderFrame();
+  else { for (const b of S.buildings) if (b.ext && !b.int && b.card.building.interior) { await ensureInterior(b); if (token !== S.token) return; } }
+}
+
+function buildGround() {
+  const geo = track(worldUV(new THREE.CircleGeometry(1150, 128).rotateX(-Math.PI / 2), 9));
+  const m = track(new THREE.MeshStandardMaterial({ map: TEX.grass, roughness: 0.96, metalness: 0 }));
+  const g = new THREE.Mesh(geo, m); g.receiveShadow = true; g.name = 'ground'; S.group.add(g);
+}
+function slab(geo, mat, x, y, z, cardId, rotY = 0) {
+  const m = new THREE.Mesh(geo, mat); m.position.set(x, y, z); m.rotation.y = rotY; m.receiveShadow = true; m.castShadow = false;
+  if (cardId) { m.userData.cardId = cardId; S.pick.push(m); }
+  S.group.add(m); return m;
+}
+function buildPlazaPadsRoads() {
+  const pave = track(new THREE.MeshStandardMaterial({ map: TEX.paving, roughness: 0.82 }));
+  const curb = track(new THREE.MeshStandardMaterial({ color: '#cfc9bb', roughness: 0.75 }));
+  const inlay = track(new THREE.MeshStandardMaterial({ color: S.C.deep, emissive: S.C.accent, emissiveIntensity: 0.12, roughness: 0.5 }));
+  const road = track(new THREE.MeshStandardMaterial({ map: TEX.asphalt, roughness: 0.92 }));
+  for (const p of S.blockout.primitives) {
+    if (p.massingType === 'plaza') {
+      const R = Math.min(p.dimensions[0], p.dimensions[2]) / 2;
+      const top = track(worldUV(new THREE.CircleGeometry(R, 96).rotateX(-Math.PI / 2), 4));
+      slab(top, pave, 0, PLAZA_TOP, 0, p.parentCardId);
+      slab(track(new THREE.CylinderGeometry(R + 0.35, R + 0.45, PLAZA_TOP + 0.02, 96, 1, true)), curb, 0, PLAZA_TOP / 2, 0, null);
+      for (const [a, b] of [[R * .36, R * .38], [R * .86, R * .885]]) slab(track(new THREE.RingGeometry(a, b, 96).rotateX(-Math.PI / 2)), inlay, 0, PLAZA_TOP + 0.005, 0, null);
+      S.plazaR = R;
+    } else if (p.massingType === 'zone-pad') {
+      const [w, h, d] = p.dimensions;
+      const geo = track(worldUV(new THREE.BoxGeometry(w, h, d), 4, p.position[0], p.position[2]));
+      slab(geo, pave, p.position[0], h / 2, p.position[2], p.parentCardId);
+      const edge = track(new THREE.BoxGeometry(w + 0.5, h - 0.02, d + 0.5)); slab(edge, curb, p.position[0], (h - 0.02) / 2, p.position[2], null);
+      S.pads.push({ x: p.position[0], z: p.position[2], hx: w / 2 + 0.25, hz: d / 2 + 0.25, top: h, cardId: p.parentCardId });
+    }
+  }
+  for (const rd of S.blockout.roads) {
+    const [ax, az] = rd.startXZ, [bx, bz] = rd.endXZ, len = Math.hypot(bx - ax, bz - az), yaw = Math.atan2(bx - ax, bz - az);
+    const geo = track(new THREE.BoxGeometry(rd.widthMeters, ROAD_TOP, len));
+    const pos = geo.attributes.position, uv = geo.attributes.uv; for (let i = 0; i < pos.count; i++) uv.setXY(i, pos.getX(i) / rd.widthMeters + 0.5, pos.getZ(i) / 8); uv.needsUpdate = true;
+    slab(geo, road, (ax + bx) / 2, ROAD_TOP / 2, (az + bz) / 2, null, yaw);
+    S.roads.push({ ax, az, bx, bz, w: rd.widthMeters, len, yaw });
+  }
+}
+function buildGate() {
+  const g = S.cards.get(`gate:${S.slug}`); if (!g) return;
+  const z = g.volum.center[2], grp = new THREE.Group(); grp.position.set(0, 0, z); grp.userData.cardId = g.cardId; grp.name = 'gate';
+  const stone = track(new THREE.MeshStandardMaterial({ color: '#d8d2c4', roughness: 0.7 }));
+  const glow = track(new THREE.MeshStandardMaterial({ color: S.C.deep, emissive: S.C.accent, emissiveIntensity: 0.9, roughness: 0.4 }));
+  const pillar = track(new THREE.BoxGeometry(1.6, 10, 2.2)), lintel = track(new THREE.BoxGeometry(17, 1.6, 2.4)), strip = track(new THREE.BoxGeometry(12.6, 0.18, 2.5)), base = track(new THREE.BoxGeometry(2.4, 0.5, 3));
+  for (const x of [-7.2, 7.2]) { const p = new THREE.Mesh(pillar, stone); p.position.set(x, 5, 0); const b = new THREE.Mesh(base, stone); b.position.set(x, 0.25, 0); grp.add(p, b); S.boxes.push({ x, z, hx: 1.2, hz: 1.5 }); }
+  const l = new THREE.Mesh(lintel, stone); l.position.set(0, 10.4, 0); grp.add(l);
+  const s = new THREE.Mesh(strip, glow); s.position.set(0, 9.45, 0); grp.add(s);
+  const tex = track(makeTex(1024, 96, 5, (c, w, h) => { c.fillStyle = '#1b2230'; c.fillRect(0, 0, w, h); c.fillStyle = '#f3efe4'; c.font = '600 54px system-ui, sans-serif'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText('ALIGNMENT EVALUATION GATE', w / 2, h / 2 + 2); }, { repeat: false }));
+  const signM = track(new THREE.MeshStandardMaterial({ map: tex, emissiveMap: tex, emissive: '#ffffff', emissiveIntensity: 0.55, roughness: 0.6 }));
+  for (const side of [1, -1]) { const sg = new THREE.Mesh(track(new THREE.PlaneGeometry(11.5, 1.08)), signM); sg.position.set(0, 10.4, side * 1.22); if (side < 0) sg.rotation.y = Math.PI; grp.add(sg); }
+  grp.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  S.group.add(grp); S.pick.push(grp);
+  S.byCard.set(g.cardId, { pos: new THREE.Vector3(0, 5, z), radius: 10, facing: new THREE.Vector3(0, 0, -1), obj: grp });
+}
+function buildMonument() {
+  const plaza = S.cards.get(`plaza:${S.slug}`); if (!plaza) return;
+  const grp = new THREE.Group(); grp.userData.cardId = plaza.cardId; grp.name = 'plaza-mark';
+  const stone = track(new THREE.MeshStandardMaterial({ color: '#cfc8b8', roughness: 0.65 }));
+  const plinth = new THREE.Mesh(track(new THREE.CylinderGeometry(2.8, 3.1, 0.7, 48)), stone); plinth.position.y = PLAZA_TOP + 0.35; grp.add(plinth);
+  const mark = S.brand?.mark ?? '', lock = S.brand?.lockup ?? `${S.doc.cards[0].name} · ${S.doc.umbrella}`;
+  const tex = track(makeTex(1024, 640, 9, (c, w, h) => {
+    const gr = c.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, `hsl(${S.hue},40%,22%)`); gr.addColorStop(1, `hsl(${S.hue},45%,10%)`); c.fillStyle = gr; c.fillRect(0, 0, w, h);
+    c.strokeStyle = `hsl(${S.hue},80%,62%)`; c.lineWidth = 10; c.strokeRect(18, 18, w - 36, h - 36);
+    c.fillStyle = '#ffffff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.font = '700 260px system-ui, sans-serif'; c.fillText(mark, w / 2, h * 0.42);
+    c.font = '500 50px system-ui, sans-serif'; c.fillStyle = '#dfe8f0'; let size = 50; while (c.measureText(lock).width > w - 90 && size > 20) { size -= 2; c.font = `500 ${size}px system-ui, sans-serif`; } c.fillText(lock, w / 2, h * 0.8);
+  }, { repeat: false }));
+  const face = track(new THREE.MeshStandardMaterial({ map: tex, emissiveMap: tex, emissive: '#ffffff', emissiveIntensity: 0.35, roughness: 0.5 }));
+  const slabM = new THREE.Mesh(track(new THREE.BoxGeometry(4.0, 2.5, 0.32)), [stone, stone, stone, stone, face, face]);
+  slabM.position.y = PLAZA_TOP + 0.7 + 1.25 + 0.05; grp.add(slabM);
+  grp.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  S.group.add(grp); S.pick.push(grp); S.boxes.push({ x: 0, z: 0, hx: 3.1, hz: 3.1 });
+  S.byCard.set(plaza.cardId, { pos: new THREE.Vector3(0, 2, 0), radius: 24, facing: new THREE.Vector3(0, 0, 1), obj: grp });
+}
+async function buildSky(slug) {
+  const src = await loadGLB(repo(`my-fabric/worlds/models/env-sky-${slug}.glb`));
+  let horizon = null;
+  if (src) {
+    const sky = src.clone(true); sky.name = 'sky';
+    sky.traverse((o) => {
+      if (!o.isMesh) return; o.castShadow = o.receiveShadow = false; o.frustumCulled = false; o.renderOrder = -10;
+      const m = o.material = o.material.clone(); track(m); m.fog = false; m.depthWrite = false; m.toneMapped = false;
+      if (/sun/i.test(m.name)) { const b = new THREE.Box3().setFromObject(o), c = b.getCenter(new THREE.Vector3()); const az = Math.atan2(c.x, c.z); sunDir.set(Math.sin(az) * 0.72, 0.69, Math.cos(az) * 0.72).normalize(); }
+      else horizon = horizon ?? horizonOf(o);
+    });
+    sky.scale.setScalar(1.6); sky.position.y = -2;
+    S.group.add(sky);
+  } else {
+    const top = new THREE.Color().setStyle(`hsl(${(S.hue + 200) % 360}, 45%, 46%)`), bot = new THREE.Color().setStyle(`hsl(${(S.hue + 200) % 360}, 30%, 78%)`);
+    const m = track(new THREE.ShaderMaterial({ side: THREE.BackSide, depthWrite: false, fog: false, uniforms: { top: { value: top }, bot: { value: bot } },
+      vertexShader: 'varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }',
+      fragmentShader: 'uniform vec3 top; uniform vec3 bot; varying vec3 vP; void main(){ float h = clamp(vP.y * 1.6, 0.0, 1.0); gl_FragColor = vec4(mix(bot, top, pow(h, 0.7)), 1.0); }' }));
+    const dome = new THREE.Mesh(track(new THREE.SphereGeometry(1000, 32, 16)), m); dome.renderOrder = -10; dome.frustumCulled = false; S.group.add(dome);
+    horizon = bot; S.notes.push(`env-sky-${slug}.glb did not load; a gradient sky stands in`);
+  }
+  if (horizon) { scene.fog.color.copy(horizon); scene.background = horizon.clone(); }
+  // light follows the world's own sky: a night sky (dark horizon band) gets moonlight, a day or dusk sky gets sun
+  const h = (horizon ?? new THREE.Color('#c8d6e0')).getRGB({ r: 0, g: 0, b: 0 }, THREE.SRGBColorSpace), L = 0.2126 * h.r + 0.7152 * h.g + 0.0722 * h.b;
+  const day = THREE.MathUtils.smoothstep(L, 0.12, 0.4); S.daylight = +day.toFixed(2);
+  sun.intensity = lerp(0.95, 2.7, day); sun.color.set('#9db2ff').lerp(new THREE.Color('#fff0dc'), day);
+  hemi.intensity = lerp(0.62, 1.05, day); hemi.groundColor.set('#141a20').lerp(new THREE.Color('#3a4030'), day);
+  hemi.color.copy(new THREE.Color(day > 0.5 ? '#d4e6ff' : '#5a6c9a').lerp(scene.fog.color, 0.35));
+}
+// The sky dome's own colour where it meets the ground, so the fog fades the land into that exact band.
+function horizonOf(mesh) {
+  try {
+    const m = mesh.material, img = (m.emissiveMap || m.map)?.image, pos = mesh.geometry.attributes.position, uv = mesh.geometry.attributes.uv;
+    if (!img || !uv) return null; let sv = 0, n = 0; for (let i = 0; i < pos.count; i++) if (pos.getY(i) < 25) { sv += uv.getY(i); n++; }
+    if (!n) return null; const c = document.createElement('canvas'); c.width = 64; c.height = 64; const x = c.getContext('2d'); x.drawImage(img, 0, 0, 64, 64);
+    const row = x.getImageData(0, clamp(Math.round((sv / n) * 63), 0, 63), 64, 1).data; let r = 0, g = 0, b = 0; for (let i = 0; i < 64; i++) { r += row[i * 4]; g += row[i * 4 + 1]; b += row[i * 4 + 2]; }
+    return new THREE.Color().setRGB(r / 64 / 255, g / 64 / 255, b / 64 / 255, THREE.SRGBColorSpace);
+  } catch { return null; }
+}
+async function loadBlockout(slug) {
+  try {
+    const g = await loader.loadAsync(new URL(`${slug}/${slug}.glb`, OUT).href);
+    const root = g.scene; root.name = 'blockout';
+    root.traverse((o) => { if (o.isMesh) { track(o.geometry); track(o.material); o.castShadow = true; o.receiveShadow = true; } });
+    S.blockRoot = root; S.group.add(root); S.pick.push(root);
+  } catch { S.notes.push('the card-tagged blockout GLB did not load'); }
+}
+function blockNode(primId) { let f = null; S.blockRoot?.traverse((o) => { if (!f && o.userData?.worldforgePrimitiveId === primId) f = o; }); return f; }
+function hideReplacedBlockout() {
+  if (!S.blockRoot) return;
+  const prim = new Map(S.blockout.primitives.map((p) => [p.primitiveId, p]));
+  S.blockRoot.traverse((o) => {
+    const id = o.userData?.worldforgePrimitiveId; if (!id) return;
+    const p = prim.get(id);
+    if (id.startsWith('ground:') || id.startsWith('road:')) o.visible = false;                          // textured ground and roads above
+    else if (p && ['plaza', 'zone-pad', 'gate', 'agent-avatar'].includes(p.massingType)) o.visible = false;  // paved, built, embodied above
+    else if (p && (p.massingType === 'zone-hall' || p.massingType === 'council')) o.visible = !S.buildings.some((b) => b.ext && b.card.cardId === p.parentCardId);
+    else if (p && p.massingType === 'seat') o.visible = !S.seatsPlaced;
+  });
+}
+
+// --------------------------------------------------------------------------------------- buildings ----
+function floorAt(x, z) {
+  if (Math.hypot(x, z) <= (S.plazaR ?? 24)) return PLAZA_TOP;
+  for (const p of S.pads) if (Math.abs(x - p.x) <= p.hx && Math.abs(z - p.z) <= p.hz) return p.top;
+  for (const r of S.roads) { const dx = r.bx - r.ax, dz = r.bz - r.az, L = dx * dx + dz * dz, t = clamp(((x - r.ax) * dx + (z - r.az) * dz) / L, 0, 1); if (Math.hypot(x - (r.ax + dx * t), z - (r.az + dz * t)) <= r.w / 2) return ROAD_TOP; }
+  return 0;
+}
+const toLocal = (b, x, z) => { const dx = x - b.x, dz = z - b.z, c = Math.cos(b.yaw), s = Math.sin(b.yaw); return [dx * c - dz * s, dx * s + dz * c]; };
+const toWorld = (b, xl, zl) => { const c = Math.cos(b.yaw), s = Math.sin(b.yaw); return [b.x + xl * c + zl * s, b.z - xl * s + zl * c]; };
+
+async function placeBuilding(card, preloadInterior) {
+  const B = card.building;
+  const hall = S.blockout.primitives.find((p) => p.parentCardId === card.cardId && (p.massingType === 'zone-hall' || p.massingType === 'council'));
+  const x = hall ? hall.position[0] : card.volum.center[0], z = hall ? hall.position[2] : card.volum.center[2];
+  const y = hall ? hall.position[1] : floorAt(x, z);
+  const yaw = Math.atan2(-x, -z);       // the door (+z in the shell's frame) turns to face the plaza at the origin
+  const b = { card, x, z, y, yaw, group: new THREE.Group(), ext: null, room: null, int: null, extras: new THREE.Group(), intP: null };
+  b.group.position.set(x, y, z); b.group.rotation.y = yaw; b.group.userData.cardId = card.cardId; b.group.name = `building:${card.cardId}`;
+  b.extras.visible = false; b.group.add(b.extras);
+  S.buildings.push(b);
+  const [ext, room] = await Promise.all([loadGLB(repo(B.exterior)), B.room ? loadGLB(repo(B.room)) : null]);
+  if (!ext) { S.notes.push(`${card.name}: exterior ${B.exterior} did not load; the blockout hall stands in`); const hb = hallBox(hall, card); S.boxes.push(hb); S.byCard.set(card.cardId, { pos: new THREE.Vector3(hb.x, 6, hb.z), radius: Math.max(hb.hx, hb.hz), facing: new THREE.Vector3(-hb.x, 0, -hb.z).normalize(), obj: null }); return; }
+  b.ext = ext.clone(true); b.group.add(b.ext);
+  if (room) { b.room = room.clone(true); b.group.add(b.room); }
+  // planters either side of the apron, on the pad
+  const pm = S.planter ??= { box: track(new THREE.BoxGeometry(1.3, 0.7, 1.3)), bush: track(new THREE.IcosahedronGeometry(0.72, 1)), stone: track(new THREE.MeshStandardMaterial({ color: '#b9b2a4', roughness: 0.8 })), leaf: track(new THREE.MeshStandardMaterial({ color: '#4f7a3a', roughness: 0.9, flatShading: true })) };
+  for (const px of [-3.6, 3.6]) { const bx = new THREE.Mesh(pm.box, pm.stone); bx.position.set(px, 0.35, 7.4); const bu = new THREE.Mesh(pm.bush, pm.leaf); bu.position.set(px, 1.15, 7.4); bx.castShadow = bu.castShadow = true; bx.receiveShadow = true; b.group.add(bx, bu); }
+  S.group.add(b.group); S.pick.push(b.group);
+  S.byCard.set(card.cardId, { pos: new THREE.Vector3(x, y + 3, z), radius: 9, facing: new THREE.Vector3(Math.sin(yaw), 0, Math.cos(yaw)), obj: b.group, building: b });
+  if (HUD && LABELS) addZoneLabel(b);
+  if (preloadInterior && B.interior) await ensureInterior(b);
+}
+function hallBox(hall, card) { const d = hall?.dimensions ?? [card.volum.halfExtents[0] * 2, 0, card.volum.halfExtents[2] * 2]; const p = hall?.position ?? card.volum.center; return { x: p[0], z: p[2], hx: d[0] / 2, hz: d[2] / 2 }; }
+function ensureInterior(b) {
+  if (!b.card.building.interior) return Promise.resolve(null);
+  return b.intP ??= loadGLB(repo(b.card.building.interior)).then((src) => {
+    if (!src || S.slug !== b.card.cardId.split(':')[1].split('/')[0]) return null;
+    b.int = src.clone(true); b.int.visible = false;
+    b.int.traverse((o) => { if (o.isMesh) { const em = o.material?.emissive && o.material.emissive.getHex() > 0; o.castShadow = !em && !o.material.transparent; o.receiveShadow = true; } });
+    b.group.add(b.int); return b.int;
+  });
+}
+function setInside(b) {
+  if (S.inside && S.inside !== b) { const o = S.inside; if (o.ext) o.ext.visible = true; if (o.int) o.int.visible = false; o.extras.visible = false; if (o.label) o.label.visible = true; }
+  S.inside = b || null; roomLight.intensity = 0;
+  if (b) {
+    if (b.ext) b.ext.visible = false; if (b.int) b.int.visible = true; b.extras.visible = true; if (b.label) b.label.visible = false;
+    const [wx, wz] = toWorld(b, 0, -0.5); roomLight.position.set(wx, b.y + 3.0, wz); roomLight.intensity = 22;
+  }
+  $('#exitBtn').hidden = !S.inside; updateEnterBtn();
+  if (!TOUR && S.selected && S.ready) { const el = $('#dEnter'); if (el) el.hidden = !!S.inside && buildingOf(S.selected) === S.inside; }
+}
+function addZoneLabel(b) {
+  const { t, aspect } = labelTexture(b.card.name, b.card.kind === 'council' ? 'Steward Council · 3 human seats' : `${b.card.building.kind} · zone`, S.C.css); track(t);
+  const m = track(new THREE.SpriteMaterial({ map: t, depthTest: true, sizeAttenuation: false, fog: false })); const sp = new THREE.Sprite(m);
+  sp.scale.set(0.05 * aspect, 0.05, 1); sp.position.set(0, 8.2, 0); sp.renderOrder = 5; b.group.add(sp); b.label = sp; S.zoneLabels.push(sp);
+}
+
+// ------------------------------------------------------------------------------------------ avatars ----
+const AV = { body: new THREE.CapsuleGeometry(0.3, 0.86, 6, 14), head: new THREE.SphereGeometry(0.19, 20, 14), halo: new THREE.TorusGeometry(0.34, 0.03, 8, 40), badge: new THREE.OctahedronGeometry(0.11, 0),
+  disc: new THREE.CylinderGeometry(0.82, 0.88, 0.08, 40), ring: new THREE.RingGeometry(0.6, 0.72, 48).rotateX(-Math.PI / 2) };
+function tintedClone(src) {
+  const obj = src.clone(true), seen = new Map();
+  obj.traverse((o) => {
+    if (!o.isMesh) return;
+    const tint = (m) => { if (!seen.has(m)) { const c = track(m.clone()); if (c.color) c.color.multiply(S.C.tint); if (c.emissive && c.emissive.getHex() > 0) c.emissive.multiply(S.C.tint); seen.set(m, c); } return seen.get(m); };
+    o.material = Array.isArray(o.material) ? o.material.map(tint) : tint(o.material);
+  });
+  return obj;
+}
+function standIn(kind) {
+  const g = new THREE.Group();
+  const skin = track(new THREE.MeshStandardMaterial({ color: new THREE.Color('#eef2f6').multiply(S.C.tint), roughness: 0.5, metalness: 0.05 }));
+  const glow = track(new THREE.MeshStandardMaterial({ color: S.C.deep, emissive: kind === 'omega' ? new THREE.Color('#e2b55c') : S.C.accent, emissiveIntensity: 1.1, roughness: 0.4 }));
+  const s = kind === 'omega' ? 1.12 : 1;
+  const body = new THREE.Mesh(AV.body, skin); body.position.y = 0.73 * s; body.scale.setScalar(s);
+  const head = new THREE.Mesh(AV.head, skin); head.position.y = 1.62 * s; head.scale.setScalar(s);
+  const visor = new THREE.Mesh(track(new THREE.BoxGeometry(0.26, 0.07, 0.06)), glow); visor.position.set(0, 1.64 * s, 0.17 * s);
+  g.add(body, head, visor);
+  if (kind === 'omega' || kind === 'coordinator') { const halo = new THREE.Mesh(AV.halo, glow); halo.rotation.x = Math.PI / 2; halo.position.y = 2.02 * s; g.add(halo); g.userData.halo = halo; const bd = new THREE.Mesh(AV.badge, glow); bd.position.set(0, 1.18 * s, 0.33 * s); g.add(bd); g.userData.badge = bd; }
+  g.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+  g.userData.height = 1.85 * s; return g;
+}
+function addAvatarLabel(parent, title, sub, y) {
+  if (!LABELS) return null;
+  const { t, aspect } = labelTexture(title, sub, S.C.css); track(t);
+  const sp = new THREE.Sprite(track(new THREE.SpriteMaterial({ map: t, depthTest: true, fog: false })));
+  const h = 0.36; sp.scale.set(h * aspect, h, 1); sp.position.y = y; sp.renderOrder = 4; parent.add(sp); S.labels.push(sp); return sp;
+}
+async function placeAvatar(card, opt = {}) {
+  const role = card.avatar?.role ?? (card.kind === 'omega' ? 'omega' : 'specialist');
+  let [x, , z] = opt.at ?? card.volum.center;
+  if (!opt.at && Math.hypot(x, z) < 4) { const k = S.gapCount = (S.gapCount ?? -1) + 1; const a = Math.PI + 0.55 + k * 0.62; x = Math.sin(a) * 6.2; z = Math.cos(a) * 6.2; }   // spec-gap agents parked round the plaza mark (counted before any await)
+  const y = floorAt(x, z);
+  const grp = new THREE.Group(); grp.position.set(x, y, z); grp.userData.cardId = card.cardId; grp.name = `avatar:${card.cardId}`;
+  // facing: the Omega Steward and plaza agents face the plaza; zone agents face their zone's pad (towards the plaza)
+  let tx = 0, tz = 0; const zone = S.cards.get(card.parentCardId);
+  if (card.kind === 'agent' && zone?.kind === 'zone') { const pad = S.pads.find((p) => p.cardId === zone.cardId); if (pad) { tx = pad.x; tz = pad.z; } }
+  if (opt.face) [tx, tz] = opt.face;
+  if (Math.hypot(tx - x, tz - z) < 0.5) { tx = x; tz = z + 1; }
+  const yaw = Math.atan2(tx - x, tz - z); grp.rotation.y = yaw;
+  const stationM = S.stationM ??= { disc: track(new THREE.MeshStandardMaterial({ color: '#2a3038', roughness: 0.4, metalness: 0.6 })), ring: track(new THREE.MeshStandardMaterial({ color: S.C.deep, emissive: S.C.accent, emissiveIntensity: 1.2 })), gold: track(new THREE.MeshStandardMaterial({ color: '#3a2e14', emissive: '#e2b55c', emissiveIntensity: 1.2 })) };
+  const disc = new THREE.Mesh(AV.disc, stationM.disc); disc.position.y = 0.04; disc.receiveShadow = true; const ring = new THREE.Mesh(AV.ring, card.kind === 'omega' ? stationM.gold : stationM.ring); ring.position.y = 0.085; grp.add(disc, ring);
+  const ref = opt.model_ref ?? card.avatar?.model_ref;
+  // each level (LOD0 and, when built, LOD1) is tinted and scaled the same way; the first level loaded fixes the scale
+  let fit = null;
+  const makeAv = (src) => {
+    const o = tintedClone(src), box = new THREE.Box3().setFromObject(o), sz = box.getSize(new THREE.Vector3());
+    if (!fit) { let s = 1; if (sz.y < 1.2 || sz.y > 3.4) s = (card.kind === 'omega' ? 2.0 : 1.8) / Math.max(sz.y, 1e-3); fit = { s, h: sz.y * s + 0.08 }; }
+    o.scale.setScalar(fit.s); o.position.y = 0.08 - box.min.y * fit.s;
+    o.traverse((m) => { if (m.isMesh) { m.castShadow = true; m.receiveShadow = true; } });
+    return o;
+  };
+  const got = ref ? await loadLevels(ref, makeAv) : null;
+  let body, height, model = false, lod1 = null;
+  if (got) { body = got.obj; height = fit.h; model = true; lod1 = got.lod ? lod1Of(ref) : null; }
+  else { body = standIn(card.kind === 'omega' ? 'omega' : role); body.position.y = 0.08; height = body.userData.height + 0.08; }
+  grp.add(body);
+  const sub = card.kind === 'omega' ? `${card.status ?? 'defined, not seated'} · synthetic voice` : opt.sub ?? (card.kind === 'advisor' ? 'advisor · scripted guide, synthetic voice'
+    : card.kind === 'coordinator' ? 'coordinator · synthetic voice' : zone?.kind === 'zone' ? `agent · ${zone.name}` : 'agent');
+  addAvatarLabel(grp, card.kind === 'omega' ? 'Omega Steward' : card.name, sub, height + 0.42);
+  S.group.add(grp); S.pick.push(grp);
+  const a = { card, x, z, y, yaw, grp, body, model, height, ref, lod1, phase: hashStr(card.cardId) % 628 / 100 };
+  S.avatars.push(a);
+  S.byCard.set(card.cardId, { pos: new THREE.Vector3(x, y + height * 0.6, z), radius: 1.6, facing: new THREE.Vector3(Math.sin(yaw), 0, Math.cos(yaw)), obj: grp, avatar: a });
+  if (!model && ref) S.notes.push(`${card.kind === 'omega' ? 'Omega Steward' : card.name}: ${ref} did not load; a tinted stand-in shows where it stands`);
+  return a;
+}
+// worldforge/out/avatars/index.json (written by another builder) may carry intro lines and a swarm coordinator.
+function avEntry(cardId) {
+  if (!S.avIdx || !cardId) return null;
+  if (!S.avRows) { S.avRows = new Map(); for (const r of S.avIdx.rows ?? []) if (r && r.cardId && (r.world === S.slug || String(r.cardId).includes(`:${S.slug}`))) S.avRows.set(r.cardId, r); }
+  return S.avRows.get(cardId) ?? null;
+}
+const introOf = (e) => e && (e.intro?.text ?? e.intro ?? e.intro_line ?? e.line ?? e.greeting?.text ?? null);
+async function placeCoordinator() {
+  const I = S.avIdx; if (!I) return;
+  const w = (Array.isArray(I.worlds) ? I.worlds.find((x) => x.slug === S.slug || x.world === S.slug) : I.worlds?.[S.slug]) ?? I[S.slug] ?? null;
+  const co = w?.coordinator ?? (Array.isArray(w?.avatars) ? w.avatars.find((a) => a.role === 'coordinator' || a.kind === 'coordinator') : null)
+    ?? (Array.isArray(I.avatars) ? I.avatars.find((a) => (a.world === S.slug || a.slug === S.slug) && (a.role === 'coordinator' || a.kind === 'coordinator')) : null);
+  if (!co) return;
+  const at = co.volum?.center ?? co.position ?? co.at ?? null;
+  const plaza = S.cards.get(`plaza:${S.slug}`);
+  const pseudo = { cardId: co.cardId ?? co.avatarId ?? `coordinator:${S.slug}`, kind: 'coordinator', name: co.name ?? co.title ?? 'Swarm Coordinator', role: co.role_text ?? co.purpose ?? co.role ?? 'coordinator',
+    owner: S.avIdx.owner ?? S.doc.owner, source: co.source ?? 'worldforge/out/avatars/index.json', avatar: { role: 'coordinator', model_ref: co.model_ref ?? co.avatar?.model_ref ?? 'worldforge/out/assets/avatars/coordinator.glb' },
+    binding: co.binding ?? null, volum: co.volum ?? null, permissions: co.permissions ?? plaza?.permissions, reserved_for_humans: plaza?.reserved_for_humans, stands_on: co.position?.relative_to ?? co.zone ?? null, _index: co };
+  if (!S.cards.has(pseudo.cardId)) S.cards.set(pseudo.cardId, pseudo);
+  const p0 = at ?? [-(S.plazaR ?? 24) + 3, 0, 6], fv = co.facing ?? co.position?.facing;
+  S.coordinator = await placeAvatar(pseudo, { at: p0, face: Array.isArray(fv) ? [p0[0] + fv[0], p0[2] + fv[2]] : [0, 0], sub: 'coordinator · synthetic voice' });
+  if (!at) S.notes.push('the coordinator entry gives no position; the viewer stands it at the plaza edge');
+}
+// Placement options for a card-placed avatar: the coordinator faces the way its avatars/index.json row says (a unit
+// vector from the plaza centre to its card); advisors and everyone else use placeAvatar's own facing rule.
+function avatarOpts(card) {
+  if (card.kind !== 'coordinator') return {};
+  const fv = avEntry(card.cardId)?.position?.facing, c = card.volum?.center;
+  return Array.isArray(fv) && c ? { face: [c[0] + fv[0], c[2] + fv[2]] } : {};
+}
+
+// ---------------------------------------------------------------------------------------- landmark ----
+// worldforge/out/assets/landmarks/<slug>.glb at index.json worlds[slug].placement {translation, yaw_deg}: the +Z entrance
+// turned to the plaza. Its materials are used as authored (the brand hue is already in its fin and crown materials).
+// A synthetic procedural civic landmark, not a real building; it gets a viewer-only card so it can be selected.
+async function placeLandmark(slug, idx) {
+  const w = idx ? (Array.isArray(idx.worlds) ? idx.worlds.find((x) => x.slug === slug) : idx.worlds?.[slug]) : null;
+  if (!w) { if (idx) S.notes.push('worldforge/out/assets/landmarks/index.json lists no landmark for this world'); return; }
+  const pl = w.placement ?? idx.universal_placement; if (!pl?.translation) { S.notes.push('the landmark entry gives no placement; it is not shown'); return; }
+  const [x, y, z] = pl.translation, yaw = (+pl.yaw_deg || 0) * Math.PI / 180, H = +w.height_m || (w.bounds?.max?.[1] ?? 40);
+  const card = { cardId: `landmark:${slug}`, kind: 'landmark', name: w.node ?? `Landmark · ${slug}`, owner: idx.owner ?? S.doc.owner,
+    role: idx.note ?? 'synthetic procedural civic landmark; not a real building and not modelled on one', style: w.style, height_m: H, mark: w.mark, hue: w.hue,
+    styleForm: idx.styles?.[w.style]?.form ?? null, styleBasis: idx.styles?.[w.style]?.basis ?? null, placement: pl, placementRule: idx.placement_rule ?? null,
+    file: `worldforge/out/assets/landmarks/${w.file ?? `${slug}.glb`}`, triangles: w.triangles, bytes: w.bytes, source: 'worldforge/out/assets/landmarks/index.json', permissions: null };
+  S.cards.set(card.cardId, card);
+  const grp = new THREE.Group(); grp.position.set(x, y, z); grp.rotation.y = yaw; grp.userData.cardId = card.cardId; grp.name = `landmark:${slug}`;
+  const got = await loadLevels(card.file, (src) => { const m = src.clone(true); m.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } }); return m; });
+  if (S.slug !== slug) return;
+  let model = false;
+  if (got) { grp.add(got.obj); model = true; card.lod1 = got.lod ? lod1Of(card.file) : null; }
+  else S.notes.push(`${card.file} did not load; the landmark is not shown`);
+  S.group.add(grp); if (model) S.pick.push(grp);
+  const half = 6 * (Math.abs(Math.cos(yaw)) + Math.abs(Math.sin(yaw)));      // the 12 x 12 m footprint, turned, as an axis box
+  if (model) S.boxes.push({ x, z, hx: half, hz: half });
+  const f = new THREE.Vector3(Math.sin(yaw), 0, Math.cos(yaw));
+  S.landmark = { card, x, y, z, yaw, H, grp, model, facing: f, half };
+  S.byCard.set(card.cardId, { pos: new THREE.Vector3(x, y + H * 0.42, z), radius: 9, facing: f, obj: grp, landmark: S.landmark });
+}
+function placeSeats() {
+  const seats = S.doc.cards.filter((c) => c.kind === 'seat'); if (!seats.length) return;
+  const council = S.buildings.find((b) => b.card.kind === 'council' && b.ext);
+  if (!council) return;            // the blockout chamber and its seat boxes stay as the fallback
+  const inRoom = !!council.int;
+  const up = track(new THREE.MeshStandardMaterial({ color: '#5b4a86', roughness: 0.62 })), steel = track(new THREE.MeshStandardMaterial({ color: '#9aa1ab', roughness: 0.35, metalness: 0.8 }));
+  const glow = track(new THREE.MeshStandardMaterial({ color: '#2a2140', emissive: '#a58cff', emissiveIntensity: 1.0 }));
+  const G = S.chairG ??= { seat: track(new THREE.BoxGeometry(0.58, 0.08, 0.54)), back: track(new THREE.BoxGeometry(0.58, 0.66, 0.07)), leg: track(new THREE.BoxGeometry(0.05, 0.46, 0.05)), ring: track(new THREE.RingGeometry(0.52, 0.6, 40).rotateX(-Math.PI / 2)) };
+  seats.forEach((c, i) => {
+    const ch = new THREE.Group(); ch.userData.cardId = c.cardId; ch.name = `seat:${c.cardId}`;
+    const seat = new THREE.Mesh(G.seat, up); seat.position.y = 0.5; const back = new THREE.Mesh(G.back, up); back.position.set(0, 0.86, -0.25);
+    ch.add(seat, back); for (const [lx, lz] of [[-.25, -.22], [.25, -.22], [-.25, .22], [.25, .22]]) { const l = new THREE.Mesh(G.leg, steel); l.position.set(lx, 0.23, lz); ch.add(l); }
+    const r = new THREE.Mesh(G.ring, glow); r.position.y = 0.01; ch.add(r);
+    ch.traverse((o) => { if (o.isMesh) { o.castShadow = true; o.receiveShadow = true; } });
+    const n = seats.length, lx = (i - (n - 1) / 2) * 2.4;
+    // inside the forum fit-out the seats stand on the floor between the lectern (z 1.8) and the tiers (z < -0.4), facing the tiers
+    if (inRoom) { ch.position.set(lx, ROOM.floor, 0.55); ch.rotation.y = Math.PI; council.extras.add(ch); }
+    else { ch.position.set(lx, 0, 8.6); council.group.add(ch); }
+    if (LABELS) { const { t, aspect } = labelTexture(`Steward Seat ${i + 1}`, `${c.seat_type ?? 'human'} seat · ${c.seated ? 'seated' : 'empty'}`, '#a58cff'); track(t); const sp = new THREE.Sprite(track(new THREE.SpriteMaterial({ map: t, fog: false }))); sp.scale.set(0.3 * aspect, 0.3, 1); sp.position.y = 1.55; ch.add(sp); }
+    S.pick.push(ch);
+    const [wx, wz] = toWorld(council, lx, inRoom ? 0.55 : 8.6);
+    S.byCard.set(c.cardId, { pos: new THREE.Vector3(wx, council.y + 0.7, wz), radius: 1.2, facing: null, obj: ch, seatIn: inRoom ? council : null });
+  });
+  S.seatsPlaced = true;
+}
+
+// ---------------------------------------------------------------------------------------- scenery ----
+function clearOf(x, z, m) {
+  if (Math.hypot(x, z) < (S.plazaR ?? 24) + 6 + m) return false;
+  for (const p of S.pads) if (Math.abs(x - p.x) < p.hx + 3 + m && Math.abs(z - p.z) < p.hz + 3 + m) return false;
+  for (const r of S.roads) { const dx = r.bx - r.ax, dz = r.bz - r.az, L = dx * dx + dz * dz, t = clamp(((x - r.ax) * dx + (z - r.az) * dz) / L, 0, 1); if (Math.hypot(x - (r.ax + dx * t), z - (r.az + dz * t)) < r.w / 2 + 3.5 + m) return false; }
+  for (const b of S.buildings) if (Math.hypot(x - b.x, z - b.z) < 13 + m) return false;
+  for (const a of S.avatars) if (Math.hypot(x - a.x, z - a.z) < (a.card.kind === 'omega' ? 10 : 5) + m) return false;
+  if (Math.abs(x) < 16 + m && Math.abs(z - S.gateZ) < 10 + m) return false;
+  if (Math.abs(x) < 24 + m && Math.abs(z - S.councilZ) < 22 + m) return false;
+  if (S.landmark && Math.hypot(x - S.landmark.x, z - S.landmark.z) < S.landmark.half + 5 + m) return false;
+  return true;
+}
+function buildTrees() {
+  const rnd = mulberry32(hashStr(S.slug + ':trees')), pts = [];
+  const maxR = Math.min(S.extent + 150, 520);
+  for (let i = 0; i < 5000 && pts.length < 520; i++) {
+    const a = rnd() * Math.PI * 2, r = 30 + Math.sqrt(rnd()) * (maxR - 30), x = Math.cos(a) * r, z = Math.sin(a) * r;
+    if (!clearOf(x, z, 0)) continue; if (pts.some((p) => Math.hypot(p[0] - x, p[1] - z) < 5.5)) continue;
+    pts.push([x, z, 0.75 + rnd() * 0.8, rnd(), rnd() * Math.PI * 2]);
+  }
+  const trunkG = track(new THREE.CylinderGeometry(0.16, 0.26, 2.4, 7).translate(0, 1.2, 0));
+  const broadG = track(new THREE.IcosahedronGeometry(1.7, 1).translate(0, 3.4, 0)), conG = track(new THREE.ConeGeometry(1.35, 4.6, 8).translate(0, 4.2, 0));
+  const trunkM = track(new THREE.MeshStandardMaterial({ color: '#5a4636', roughness: 0.95 })), leafM = track(new THREE.MeshStandardMaterial({ color: '#ffffff', roughness: 0.88, flatShading: true }));
+  const broad = pts.filter((p) => p[3] < 0.62), con = pts.filter((p) => p[3] >= 0.62);
+  const trunks = new THREE.InstancedMesh(trunkG, trunkM, pts.length), bm = new THREE.InstancedMesh(broadG, leafM, Math.max(1, broad.length)), cm = new THREE.InstancedMesh(conG, leafM, Math.max(1, con.length));
+  const M = new THREE.Matrix4(), q = new THREE.Quaternion(), s = new THREE.Vector3(), v = new THREE.Vector3(), col = new THREE.Color(), crng = mulberry32(hashStr(S.slug + ':leaf'));
+  pts.forEach((p, i) => { q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), p[4]); s.setScalar(p[2]); v.set(p[0], 0, p[1]); M.compose(v, q, s); trunks.setMatrixAt(i, M); });
+  broad.forEach((p, i) => { q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), p[4]); s.set(p[2], p[2] * (0.85 + crng() * 0.3), p[2]); v.set(p[0], 0, p[1]); M.compose(v, q, s); bm.setMatrixAt(i, M); bm.setColorAt(i, col.setHSL(0.24 + crng() * 0.08, 0.38 + crng() * 0.2, 0.26 + crng() * 0.1, THREE.SRGBColorSpace)); });
+  con.forEach((p, i) => { q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), p[4]); s.setScalar(p[2]); v.set(p[0], 0, p[1]); M.compose(v, q, s); cm.setMatrixAt(i, M); cm.setColorAt(i, col.setHSL(0.31 + crng() * 0.06, 0.35 + crng() * 0.15, 0.2 + crng() * 0.07, THREE.SRGBColorSpace)); });
+  if (!broad.length) bm.count = 0; if (!con.length) cm.count = 0;
+  for (const m of [trunks, bm, cm]) { m.castShadow = true; m.receiveShadow = true; S.group.add(m); }
+  S.treeCount = pts.length;
+}
+// Each zone pad: a low hedge round its edge (open where the road arrives) and a wayfinding totem carrying the zone's
+// card name, so a zone reads from the road before its sign does.
+function buildPadDressing() {
+  const hedgeG = track(new THREE.BoxGeometry(1, 0.9, 1).translate(0, 0.45, 0)), hedgeM = track(new THREE.MeshStandardMaterial({ color: '#3f6a34', roughness: 0.95 }));
+  const segs = [];
+  for (const p of S.pads) {
+    const card = S.cards.get(p.cardId); if (!card) continue;
+    const a = Math.atan2(p.z, p.x), inX = -Math.cos(a), inZ = -Math.sin(a);          // towards the plaza
+    const hx = p.hx - 0.9, hz = p.hz - 0.9;
+    for (const [sx, sz, len, horiz] of [[0, -hz, hx * 2, true], [0, hz, hx * 2, true], [-hx, 0, hz * 2, false], [hx, 0, hz * 2, false]]) {
+      const n = Math.round(len / 2);
+      for (let i = 0; i < n; i++) {
+        const u = -len / 2 + (i + 0.5) * len / n, x = p.x + (horiz ? u : sx), z = p.z + (horiz ? sz : u);
+        const rx = x - p.x, rz = z - p.z, d = Math.hypot(rx, rz) || 1; if ((rx * inX + rz * inZ) / d > 0.86) continue;   // the gap the road comes through
+        if (S.buildings.some((b) => b.ext && Math.abs(toLocal(b, x, z)[0]) < SHELL.x + 1 && toLocal(b, x, z)[1] > SHELL.zBack - 1 && toLocal(b, x, z)[1] < 9)) continue;
+        segs.push([x, p.top, z, horiz ? 2 * len / n / 2 : 1, horiz ? 1 : 2 * len / n / 2]);
+      }
+    }
+    // totem beside the road's end, facing the road
+    const tx = p.x + inX * (p.hx - 1.2) + -inZ * 5.2, tz = p.z + inZ * (p.hz - 1.2) + inX * 5.2;
+    const tex = track(makeTex(256, 640, 3, (c, w, h) => {
+      c.fillStyle = '#141a22'; c.fillRect(0, 0, w, h); c.fillStyle = `hsl(${S.hue},75%,58%)`; c.fillRect(0, 0, w, 18);
+      c.fillStyle = '#ffffff'; c.textAlign = 'center'; c.font = '700 34px system-ui, sans-serif';
+      const words = String(card.name).split(' '); let line = '', y = 92; const lines = [];
+      for (const wd of words) { const t2 = line ? line + ' ' + wd : wd; if (c.measureText(t2).width > w - 30 && line) { lines.push(line); line = wd; } else line = t2; } lines.push(line);
+      for (const l of lines.slice(0, 5)) { c.fillText(l, w / 2, y); y += 44; }
+      c.font = '500 22px system-ui, sans-serif'; c.fillStyle = '#b8c4d2'; c.fillText(`${card.building?.kind ?? 'zone'} · zone`, w / 2, y + 16);
+      c.fillText(S.doc.umbrella, w / 2, h - 34);
+    }, { repeat: false }));
+    const face = track(new THREE.MeshStandardMaterial({ map: tex, emissiveMap: tex, emissive: '#ffffff', emissiveIntensity: 0.5, roughness: 0.5 }));
+    const body = track(new THREE.MeshStandardMaterial({ color: '#232a33', roughness: 0.4, metalness: 0.5 }));
+    const tm = new THREE.Mesh(track(new THREE.BoxGeometry(0.9, 2.3, 0.22)), [body, body, body, body, face, face]);
+    tm.position.set(tx, p.top + 1.15, tz); tm.rotation.y = Math.atan2(inX, inZ); tm.castShadow = true; tm.userData.cardId = card.cardId; S.group.add(tm); S.pick.push(tm);
+    S.boxes.push({ x: tx, z: tz, hx: 0.6, hz: 0.6 });
+  }
+  const hedges = new THREE.InstancedMesh(hedgeG, hedgeM, Math.max(1, segs.length)); hedges.count = segs.length;
+  const M = new THREE.Matrix4(), q = new THREE.Quaternion(), v = new THREE.Vector3(), s = new THREE.Vector3();
+  segs.forEach((h, i) => { v.set(h[0], h[1], h[2]); s.set(h[3], 1, h[4]); M.compose(v, q, s); hedges.setMatrixAt(i, M); });
+  hedges.castShadow = true; hedges.receiveShadow = true; S.group.add(hedges);
+}
+// A ring of low hills far out, so the horizon has depth; the fog fades them into the sky band.
+function buildHills() {
+  const rnd = mulberry32(hashStr(S.slug + ':hills')), n = 54;
+  const geo = track(new THREE.ConeGeometry(1, 1, 7, 1).translate(0, 0.5, 0)), mat = track(new THREE.MeshStandardMaterial({ color: '#3d5a3f', roughness: 1, flatShading: true }));
+  const hills = new THREE.InstancedMesh(geo, mat, n), M = new THREE.Matrix4(), q = new THREE.Quaternion(), v = new THREE.Vector3(), sc = new THREE.Vector3(), col = new THREE.Color();
+  for (let i = 0; i < n; i++) {
+    const a = (i + rnd() * 0.8) / n * Math.PI * 2, r = 930 + rnd() * 200, h = 14 + rnd() * 34, w = 150 + rnd() * 170;
+    v.set(Math.cos(a) * r, -2, Math.sin(a) * r); q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), rnd() * 6.28); sc.set(w, h, w * (0.7 + rnd() * 0.6)); M.compose(v, q, sc); hills.setMatrixAt(i, M);
+    hills.setColorAt(i, col.setHSL(0.3 + rnd() * 0.08, 0.22 + rnd() * 0.12, 0.22 + rnd() * 0.08, THREE.SRGBColorSpace));
+  }
+  hills.frustumCulled = false; S.group.add(hills);
+}
+function buildLamps() {
+  const spots = [];
+  for (const r of S.roads) { const n = Math.floor(r.len / 12); for (let i = 1; i < n; i++) { const t = i / n, x = lerp(r.ax, r.bx, t), z = lerp(r.az, r.bz, t), ox = Math.cos(r.yaw) * (r.w / 2 + 0.8), oz = -Math.sin(r.yaw) * (r.w / 2 + 0.8); spots.push([x + ox, z + oz, r.yaw], [x - ox, z - oz, r.yaw + Math.PI]); } }
+  const R = (S.plazaR ?? 24) + 1.2;
+  for (let k = 0; k < 16; k++) { const a = (k + 0.5) / 16 * Math.PI * 2, x = Math.cos(a) * R, z = Math.sin(a) * R; if (S.roads.some((r) => angDiff(Math.atan2(r.az, r.ax), a) < 0.2 && Math.hypot(r.ax, r.az) < R + 2)) continue; spots.push([x, z, Math.atan2(-x, -z)]); }
+  const poleG = track(new THREE.CylinderGeometry(0.06, 0.09, 4.6, 6).translate(0, 2.3, 0)), headG = track(new THREE.BoxGeometry(0.34, 0.16, 0.7).translate(0, 4.62, 0.2));
+  const poleM = track(new THREE.MeshStandardMaterial({ color: '#30353d', roughness: 0.5, metalness: 0.6 })), headM = track(new THREE.MeshStandardMaterial({ color: '#fff4e0', emissive: '#ffe3b0', emissiveIntensity: 1.4 }));
+  const poles = new THREE.InstancedMesh(poleG, poleM, spots.length), heads = new THREE.InstancedMesh(headG, headM, spots.length);
+  const M = new THREE.Matrix4(), q = new THREE.Quaternion(), one = new THREE.Vector3(1, 1, 1), v = new THREE.Vector3();
+  spots.forEach((p, i) => { q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), p[2] + Math.PI / 2); v.set(p[0], floorAt(p[0], p[1]), p[1]); M.compose(v, q, one); poles.setMatrixAt(i, M); heads.setMatrixAt(i, M); });
+  poles.castShadow = true; S.group.add(poles, heads);
+}
+
+// ---------------------------------------------------------------------------------- selection + UI ----
+const selRing = new THREE.Mesh(new THREE.RingGeometry(1, 1.09, 72).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.55, depthWrite: false, fog: false }));
+selRing.visible = false; selRing.renderOrder = 3; scene.add(selRing);
+function cardFor(obj) {
+  for (let o = obj; o; o = o.parent) { const id = o.userData?.cardId ?? o.userData?.parentCardId; if (id && S.cards.has(id)) return S.cards.get(id); }
+  return null;
+}
+const visibleChain = (o) => { for (; o; o = o.parent) if (!o.visible) return false; return true; };
+function select(card) {
+  S.selected = card; const info = S.byCard.get(card.cardId);
+  if (info && HUD && card.kind !== 'world') {
+    const r = info.building ? 8.5 : info.radius; selRing.scale.setScalar(r); selRing.material.color.copy(S.C.accent);
+    const base = info.building ? info.building.y : floorAt(info.pos.x, info.pos.z);
+    selRing.position.set(info.pos.x, (info.seatIn ? info.pos.y - 0.6 : base) + 0.03, info.pos.z); selRing.visible = !(info.seatIn && S.inside !== info.seatIn);
+  } else selRing.visible = false;
+  show(card); updateEnterBtn();
+  for (const b of document.querySelectorAll('#cardlist button')) b.classList.toggle('on', b.dataset.id === card.cardId);
+  if (!TOUR && HUD) { const u = new URL(location.href); u.searchParams.set('card', card.cardId); history.replaceState(null, '', u); }
+}
+function buildingOf(card) { return card && S.buildings.find((b) => b.card.cardId === card.cardId && b.ext); }
+function updateEnterBtn() {
+  const b = buildingOf(S.selected), btn = $('#enterBtn');
+  const may = b && canEnter(b.card);
+  btn.hidden = !b || S.inside === b; btn.disabled = !!b && (!b.card.building.interior || !may);
+  btn.textContent = b ? (!b.card.building.interior ? 'No interior' : may ? `Enter ${b.card.name}` : `${b.card.name}: view only (stewards enter)`) : 'Enter';
+  $('#exitBtn').textContent = S.inside ? `Exit ${S.inside.card.name}` : 'Exit';
+  renderAccess();
+}
+// ------------------------------------------------------------------------------------------ access ----
+// The viewer is a visitor: it may go where card.permissions.enter lists 'public' (or lists nothing). The council hall
+// and its seats give enter: ['stewards'], so they are view only here: the exterior is shown with a note, never the room.
+const VIEWER_ROLES = ['public'];
+function canEnter(card) { const e = card?.permissions?.enter; return !Array.isArray(e) || e.some((r) => VIEWER_ROLES.includes(r)); }
+function enterHolders(card) { return (card?.permissions?.enter ?? []).join(', ') || 'public'; }
+let gateTimer = 0;
+function gateNote(msg) {
+  const el = $('#gateNote'); clearTimeout(gateTimer);
+  if (!msg) { el.hidden = true; return; }
+  el.textContent = msg; el.hidden = !HUD; if (!TOUR) gateTimer = setTimeout(() => { el.hidden = true; }, 9000);
+}
+function deniedNote(card) { return `${card.name}: view only (stewards enter). Its card gives enter: ${enterHolders(card)}, so visitors see the exterior; the room and its seats are not opened here.`; }
+function accessPoints() {
+  if (!S.doc) return [];
+  const pts = [], get = (k) => S.doc.cards.find((c) => c.kind === k);
+  const plaza = get('plaza'), gate = get('gate');
+  if (plaza) pts.push({ id: plaza.cardId, inside: false, side: 'exterior', label: plaza.name ?? 'Plaza', kind: 'plaza', allowed: true });
+  if (gate) pts.push({ id: gate.cardId, inside: false, side: 'exterior', label: gate.name ?? 'Gate', kind: 'gate', allowed: true });
+  if (S.landmark?.model) pts.push({ id: S.landmark.card.cardId, inside: false, side: 'exterior', label: 'Landmark', kind: 'landmark', allowed: true });
+  const bs = S.buildings.filter((b) => b.ext).sort((a, b) => (a.card.kind === 'council') - (b.card.kind === 'council'));
+  for (const b of bs) pts.push({ id: b.card.cardId, inside: false, side: 'exterior', label: `${b.card.name} · door`, kind: b.card.kind, allowed: true });
+  for (const b of bs) if (b.card.building.interior) pts.push({ id: b.card.cardId, inside: true, side: 'interior', label: b.card.kind === 'council' ? `${b.card.name} hall` : `${b.card.name} · room`, kind: b.card.kind, allowed: canEnter(b.card), holders: enterHolders(b.card) });
+  return pts;
+}
+function renderAccess() {
+  const el = $('#access'); if (!el || TOUR || !HUD) return;
+  if (!S.ready && !S.doc) { el.hidden = true; return; }
+  const pts = accessPoints(); el.hidden = S.accessHidden ?? (matchMedia('(max-width: 900px)').matches);
+  $('#accessBtn').setAttribute('aria-expanded', String(!el.hidden));
+  const row = (p) => {
+    const here = p.inside ? S.inside?.card.cardId === p.id : S.at === p.id && !S.inside;
+    const tag = p.inside ? (!p.allowed ? '<span class="tag held">view only (stewards enter)</span>' : S.inside?.card.cardId === p.id ? '<span class="tag go">Exit</span>' : '<span class="tag go">Enter</span>') : `<span class="tag">${esc(p.kind)}</span>`;
+    return `<button type="button" class="ap${here ? ' on' : ''}" data-id="${esc(p.id)}" data-inside="${p.inside ? 1 : 0}">${esc(p.label)}${tag}</button>`;
+  };
+  const ext = pts.filter((p) => p.side === 'exterior'), int = pts.filter((p) => p.side === 'interior');
+  el.innerHTML = `<h4>Access · exterior (${ext.length})</h4>${ext.map(row).join('')}<h4>Access · interior (${int.length})</h4>${int.map(row).join('') || '<div class="muted">no interiors in this world</div>'}`;
+  el.querySelectorAll('button.ap').forEach((bt) => bt.addEventListener('click', () => {
+    const inside = bt.dataset.inside === '1';
+    if (inside && S.inside?.card.cardId === bt.dataset.id) { exitBuilding(true); setAccessURL(bt.dataset.id, false); return; }
+    goAccess(bt.dataset.id, inside);
+  }));
+}
+function setAccessURL(id, inside) {
+  if (TOUR || !HUD) return;
+  const u = new URL(location.href); u.searchParams.set('access', id); if (inside) u.searchParams.set('inside', '1'); else u.searchParams.delete('inside'); history.replaceState(null, '', u);
+}
+// One-click teleport. Exterior points put the visitor on foot in front of the plaza, gate, landmark or a door;
+// inside=1 opens a building's room when its card lets a visitor in, and otherwise shows the door with the note.
+function goAccess(id, inside = false) {
+  const c = S.cards.get(id);
+  if (!c) { status(`No access point ${id} in this world`); return { ok: false, reason: 'unknown' }; }
+  const b = S.buildings.find((x) => x.card.cardId === id && x.ext);
+  gateNote(null); S.denied = null;
+  if (inside) {
+    if (!b || !c.building?.interior) { gateNote(`${c.name ?? id} has no interior; showing the exterior.`); inside = false; }
+    else if (!canEnter(c)) { teleportOutside(c, b); S.denied = id; gateNote(deniedNote(c)); status(deniedNote(c)); setAccessURL(id, true); return { ok: false, reason: 'stewards-only' }; }
+    else { select(c); enterBuilding(b); S.at = id; setAccessURL(id, true); renderAccess(); return { ok: true, inside: true }; }
+  }
+  teleportOutside(c, b); setAccessURL(id, false);
+  return { ok: true, inside: false };
+}
+function teleportOutside(c, b) {
+  setInside(null); if (S.mode !== 'walk') setMode('walk');
+  const plazaR = S.plazaR ?? 24;
+  if (b) { const [x, z] = toWorld(b, 0, 12.5); walk.x = x; walk.z = z; walk.yaw = b.yaw; walk.pitch = 0.02; }
+  else if (c.kind === 'landmark' && S.landmark) { const L = S.landmark, d = Math.max(30, L.H * 0.7); walk.x = L.x + L.facing.x * d; walk.z = L.z + L.facing.z * d; walk.yaw = Math.atan2(L.facing.x, L.facing.z); walk.pitch = 0.32; }
+  else if (c.kind === 'gate') { walk.x = 0; walk.z = S.gateZ - 16; walk.yaw = Math.PI; walk.pitch = 0.08; }
+  else if (c.kind === 'plaza') { walk.x = 0; walk.z = plazaR + 4; walk.yaw = 0; walk.pitch = -0.02; }
+  else { const info = S.byCard.get(c.cardId); if (info) { const f = info.facing ?? new THREE.Vector3(0, 0, 1); walk.x = info.pos.x + f.x * 4; walk.z = info.pos.z + f.z * 4; walk.yaw = Math.atan2(f.x, f.z); walk.pitch = -0.04; } }
+  walk.eye = floorAt(walk.x, walk.z) + EYE; camera.near = 0.08; camera.updateProjectionMatrix(); fitShadow(walk.x, walk.z, 70);
+  S.at = c.cardId; if (S.selected?.cardId !== c.cardId) select(c); else renderAccess();
+}
+$('#accessBtn').onclick = () => { S.accessHidden = !$('#access').hidden; renderAccess(); };
+const RIGHT_NOTE = { view: 'see it', enter: 'go in', build: 'change its build', operate: 'run it day to day', delegate: 'hand a right to someone', transfer: 'move it or its assets', govern: 'decide its rules' };
+function permTable(c) {
+  const rights = S.doc.rights ?? Object.keys(c.permissions ?? {});
+  return `<table><tr><th>Right</th><th style="width:auto">Held by</th></tr>${rights.map((r) => { const h = c.permissions?.[r] ?? []; const held = h.includes('steward-quorum');
+    return `<tr><td>${esc(r)} <span class="muted">(${esc(RIGHT_NOTE[r] ?? '')})</span></td><td class="${held ? 'held' : h.some((x) => x.startsWith('agents')) ? 'ok' : ''}">${held ? '<b>held</b> for the 2-of-3 Steward Council' : h.map(esc).join(', ')}</td></tr>`; }).join('')}</table>`;
+}
+function show(c) {
+  if (!c) return;
+  const info = S.byCard.get(c.cardId), V = c.volum, B = c.building, wc = S.doc.cards[0];
+  const rows = [];
+  const tr = (k, v) => rows.push(`<tr><th>${k}</th><td>${v}</td></tr>`);
+  tr('Owner', esc(c.owner ?? S.doc.owner));
+  if (c.parentCardId !== undefined) tr('Parent', `<code>${esc(c.parentCardId ?? 'none (root)')}</code>`);
+  if (V) tr('Volum', `centre ${V.center.join(', ')} · half ${V.halfExtents.join(', ')} m`);
+  if (c.kind === 'world') { tr('Status', esc(c.status)); tr('Management', esc(c.management_style)); tr('RP1 anchor', c.anchor?.lat ? `${esc(c.anchor.lat)}, ${esc(c.anchor.lon)}` : '<span class="held">none yet</span>'); if (c.omega_steward) tr('Omega Steward', `${esc(c.omega_steward.id)} · <span class="held">${esc(c.omega_steward.status)}</span>`); }
+  if (c.kind === 'seat') tr('Seat', `${esc(c.seat_type)} seat · <b>${c.seated ? esc(c.seated) : 'empty'}</b>`);
+  if (c.kind === 'omega') { tr('Omega id', `<code>${esc(c.omega_id)}</code>`); tr('Status', `<span class="held">${esc(c.status)}</span>`); tr('Seated agent', esc(c.seated_agent ?? 'none')); }
+  if (B) {
+    tr('Building', `${esc(B.kind)} · exterior ${esc(B.resolution?.exterior ?? '?')} px, interior ${esc(B.resolution?.interior ?? 'none')} px textures · ${esc(B.triangles?.exterior ?? '?')} + ${esc(B.triangles?.interior ?? 0)} triangles`);
+    tr('Models', `<code>${esc(B.exterior)}</code><br><code>${esc(B.interior ?? 'no interior')}</code><br><code>${esc(B.room)}</code>`);
+    tr('Door', `+z face, centre ${esc(B.door?.centre?.join(', '))}, half width ${esc(B.door?.half_width)} m, head ${esc(B.door?.head)} m · turned to the plaza`);
+    tr('Access', B.interior ? (canEnter(c) ? `<span class="ok">visitors may enter</span> (enter: ${esc(enterHolders(c))})` : `<span class="held">view only (stewards enter)</span> · enter: ${esc(enterHolders(c))}; visitors see the exterior`) : 'exterior only (no interior)');
+    const b = buildingOf(c); tr('In this view', b ? `real shell${b.room ? ' + room sign' : ''}${b.int ? ' + fit-out loaded' : B.interior ? ' (fit-out loads on Enter)' : ''}` : '<span class="bad">did not load; blockout massing shown</span>');
+    tr('Building source', `<code>${esc(B.source)}</code>`);
+  }
+  if (c.binding) { const mp = c.binding.metaprompt; tr('Swarm', `<code>${esc(c.binding.swarm)}</code>`); if (mp) tr('Metaprompt', `<code>${esc(typeof mp === 'object' ? `${mp.file ?? ''}${mp.id ? ' #' + mp.id : ''}` : mp)}</code>`); if (c.binding.fabricNode) tr('Fabric node', esc(c.binding.fabricNode)); if (c.binding.registry) tr('Registry', `<code>${esc(c.binding.registry)}</code>`); }
+  if (c.stands_on) tr('Stands on', `<code>${esc(c.stands_on)}</code> (no coordinator card yet; placed from worldforge/out/avatars/index.json)`);
+  if (c.avatar) { const a = info?.avatar; tr('Avatar', `<code>${esc(c.avatar.model_ref)}</code> · ${a ? (a.model ? '<span class="ok">model loaded</span>' : '<span class="held">did not load: tinted stand-in</span>') : ''}`); }
+  if (c.hive_ref) tr('Hive record', `<code>${esc(c.hive_ref)}</code>`);
+  tr('Source', `<code>${esc(c.source)}</code>`);
+  if (c.kind === 'advisor') { if (c.manages) tr('Manages', esc(c.manages)); tr('Kind', `<span class="held">${esc(c.note ?? 'a scripted guide, not an AI model')}</span>`); if (c.binding?.advisor) tr('Advisor file', `<code>${esc(c.binding.advisor.file ?? '')}${c.binding.advisor.id ? ' #' + esc(c.binding.advisor.id) : ''}</code>`); }
+  if (c.kind === 'landmark') {
+    tr('Style', `${esc(c.style)}${c.styleForm ? ` · <span class="muted">${esc(c.styleForm)}</span>` : ''}`);
+    tr('Height', `${esc(c.height_m)} m · 12 x 12 m footprint`);
+    tr('What it is', '<span class="held">synthetic civic landmark, not a real building</span>');
+    tr('Placement', `translation ${esc(c.placement?.translation?.join(', '))} · yaw ${esc(c.placement?.yaw_deg)}° (entrance turned to the plaza) · <span class="muted">suggested by the landmarks build, not written into the world's cards</span>`);
+    tr('Model', `<code>${esc(c.file)}</code> · ${esc(c.triangles)} triangles · ${S.landmark?.model ? '<span class="ok">loaded</span>' : '<span class="bad">did not load</span>'}`);
+    if (c.mark) tr('Plaque', `brand mark letters only: <b>${esc(c.mark)}</b>`);
+  }
+  const lead = c.kind === 'advisor' ? `Scripted guide for ${c.manages ?? 'this world'}.` : c.purpose ?? c.role ?? c.tagline ?? '';
+  let extra = '';
+  if (['agent', 'coordinator', 'advisor', 'omega'].includes(c.kind)) {
+    const e = c._index ?? avEntry(c.cardId), intro = introOf(e) ?? (c.kind === 'omega' ? c.voice?.lines?.find((l) => l.id === 'greet')?.text ?? null : null), vv = e?.voice;
+    const audio = e?.audio ?? null;
+    extra += `<h2>Intro line</h2><div class="line">${intro ? `<p>“${esc(intro)}”</p>${vv ? `<p class="muted">Assigned synthetic voice: ${esc(vv.engine ?? '')} <code>${esc(vv.id ?? '')}</code>. From <code>worldforge/out/avatars/index.json</code>.</p>` : ''}` : `<p class="muted">No intro line yet: ${S.avIdx ? 'worldforge/out/avatars/index.json has none for this card' : 'worldforge/out/avatars/index.json is not written yet'}. Speak reads the card's role text instead.</p>`}
+      ${audio ? `<p class="muted">Recording: <code>${esc(audio)}</code> · <span id="rec-intro">checking…</span></p>` : ''}
+      <button type="button" class="speak" data-intro="1">Speak${intro ? ' intro' : ' role'}</button><div class="voicelab" id="vl-intro"></div></div>`;
+  }
+  if (c.kind === 'omega') {
+    const p = c.persona, v = c.voice;
+    if (p) extra += `<h2>Persona</h2><table><tr><th>Temperament</th><td>${esc(p.temperament)}</td></tr><tr><th>Style</th><td>${esc(p.style)}</td></tr><tr><th>Values</th><td>${(p.values ?? []).map(esc).join(' · ')}</td></tr><tr><th>Refuses</th><td class="held">${(p.refuses ?? []).map(esc).join(', ')}</td></tr></table>`;
+    if (v?.lines?.length) extra += `<h2>Voice lines</h2><div class="muted">Recorded voice: Kokoro <code>${esc(v.kokoro)}</code>, a synthetic voice. If a recording is missing the browser's own synthetic voice reads the line (pitch ${esc(v.browser_fallback?.pitch)}, rate ${esc(v.browser_fallback?.rate)}, ${esc(v.browser_fallback?.lang)}).</div>` +
+      v.lines.map((l, i) => `<div class="line"><p>“${esc(l.text)}”</p><button type="button" class="speak" data-line="${i}">Speak · ${esc(l.id)}</button> <code>${esc(l.audio)}</code><div class="voicelab" id="vl-${i}"></div></div>`).join('');
+  }
+  const may = c.may_never ? `<h2>May never</h2><div class="muted">${c.may_never.map(esc).join(' · ')}</div>` : '';
+  const reserved = c.reserved_for_humans ? `<h2>Held for the Steward Council (2-of-3)</h2><ul class="tight">${c.reserved_for_humans.map((x) => `<li><code>${esc(x.action)}</code> · ${esc(x.held_for?.holder ?? 'Steward Council')}, ${esc(x.held_for?.quorum ?? '2-of-3')}</li>`).join('')}</ul>` : '';
+  const b = buildingOf(c);
+  const actions = `<div class="row">${c.kind !== 'world' && info ? '<button type="button" class="btn" id="dFrame">Frame</button>' : ''}${b && c.building.interior ? (canEnter(c) ? `<button type="button" class="btn primary" id="dEnter">Enter ${esc(c.name)}</button>` : '<button type="button" class="btn" disabled title="enter: stewards">View only (stewards enter)</button>') : ''}${info && c.kind !== 'world' ? '<button type="button" class="btn" id="dWalk">Walk here</button>' : ''}</div>`;
+  const worldNotes = c.kind === 'world' ? `<h2>Gaps the cards list</h2><ul class="tight">${(S.doc.gaps ?? []).map((g) => `<li>${esc(g)}</li>`).join('') || '<li>none</li>'}</ul>
+    <div class="note"><b>What this view is and is not.</b> Buildings are the spaces build's shared shells for each zone's kind, with that zone's own room sign; they are not bespoke architecture. Ground, roads, trees, lamps and the gate arch are drawn by this viewer from the blockout layout. ${S.avatars.some((a) => !a.model) ? 'Avatar models are not built yet, so tinted stand-ins mark where each agent stands. ' : ''}The civic landmark is a synthetic procedural building from the landmarks build (worldforge/out/assets/landmarks), not a real building and not modelled on one; its placement is suggested by that build, not written into the cards. Advisors are scripted guides, not AI models. The Omega Steward is defined, not seated; every voice here is synthetic, and agents never hold a steward-quorum right.${S.notes.length ? `</div><h2>Viewer notes</h2><ul class="tight">${S.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : '</div>'}` : '';
+  const kindLabel = c.kind === 'omega' ? 'Omega Steward' : c.kind;
+  $('#detail').innerHTML = `<span class="kind">${esc(kindLabel)}</span><code>${esc(c.cardId)}</code><h3 style="margin-top:6px">${esc(c.name ?? c.displayName)}</h3>
+    ${lead ? `<p>${esc(lead)}</p>` : ''}${actions}<table>${rows.join('')}</table>${extra}${c.kind === 'landmark' ? `<div class="note">No Master Card: the landmark is a viewer-only entry read from <code>worldforge/out/assets/landmarks/index.json</code>, so it carries no permissions or Volum of its own. It is a synthetic procedural model, not a real building and not modelled on one; nothing here is built, deployed or minted.</div>` : `<h2>Permissions</h2>${permTable(c)}`}${reserved}${may}${worldNotes}
+    <h2>Cards in this world</h2><div id="cardlist"></div>`;
+  renderCardList();
+  $('#dFrame')?.addEventListener('click', () => { if (S.mode === 'walk') setMode('orbit'); frameCard(c); });
+  $('#dEnter')?.addEventListener('click', () => enterBuilding(b));
+  $('#dWalk')?.addEventListener('click', () => walkTo(c));
+  document.querySelectorAll('#detail .speak').forEach((el) => el.addEventListener('click', () => {
+    if (el.dataset.intro) speakIntro(c, $('#vl-intro'));
+    else speakLine(c, +el.dataset.line, $(`#vl-${el.dataset.line}`));
+  }));
+  // the recording status is the HEAD check's answer, never assumed
+  const recEl = $('#rec-intro'), ea = (c._index ?? avEntry(c.cardId))?.audio;
+  if (recEl && ea) headOk(repo(ea)).then((ok) => { if (S.selected === c || $('#rec-intro') === recEl) { recEl.textContent = ok ? 'recorded synthetic line present' : `not voiced yet${c.kind === 'omega' ? ' (the hive greet line is tried next)' : ' (a labelled browser voice reads it)'}`; recEl.className = ok ? 'ok' : 'held'; } });
+}
+function renderCardList() {
+  const el = $('#cardlist'); if (!el || !S.doc) return;
+  const order = ['world', 'plaza', 'landmark', 'gate', 'council', 'seat', 'omega', 'coordinator', 'advisor', 'zone', 'agent'];
+  const cards = [...S.cards.values()].sort((a, b) => order.indexOf(a.kind) - order.indexOf(b.kind));
+  el.innerHTML = cards.map((c) => `<button type="button" data-id="${esc(c.cardId)}" class="${S.selected?.cardId === c.cardId ? 'on' : ''}"><span class="k">${esc(c.kind)}</span>${esc(c.kind === 'omega' ? 'Omega Steward' : c.name ?? c.displayName)}</button>`).join('');
+  el.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => { const c = S.cards.get(b.dataset.id); if (S.mode === 'walk') setMode('orbit'); select(c); frameCard(c); }));
+}
+
+// -------------------------------------------------------------------------------------------- voice ----
+const audioEl = $('#voice');
+function stopVoice() { try { audioEl.pause(); } catch {} try { window.speechSynthesis?.cancel(); } catch {} }
+function voiceTell(el, msg) { if (el) el.textContent = msg; const vb = $('#voicebar'); vb.textContent = msg; vb.hidden = !msg; }
+function browserSay(text, fb, el, msg) {
+  stopVoice();
+  if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') { voiceTell(el, 'No synthetic voice in this browser; the line is shown as text.'); return; }
+  const u = new SpeechSynthesisUtterance(text);
+  if (fb) { if (Number.isFinite(+fb.pitch)) u.pitch = clamp(+fb.pitch, 0, 2); if (Number.isFinite(+fb.rate)) u.rate = clamp(+fb.rate, 0.1, 3); if (fb.lang) u.lang = fb.lang; }
+  u.onend = () => setTimeout(() => { $('#voicebar').hidden = true; }, 1200);
+  voiceTell(el, msg); speechSynthesis.speak(u);
+}
+// HEAD checks are cached per URL for the session: a recording either exists on the server or it does not.
+const headCache = new Map();
+function headOk(url) {
+  if (!headCache.has(url)) headCache.set(url, fetch(url, { method: 'HEAD', cache: 'no-store' }).then((r) => r.ok).catch(() => false));
+  return headCache.get(url);
+}
+async function playRecorded(url, el, label) {
+  audioEl.src = url;
+  try { await audioEl.play(); voiceTell(el, label); audioEl.onended = () => setTimeout(() => { $('#voicebar').hidden = true; }, 1200); window.__wfVoice = { src: url, label }; return true; }
+  catch { return false; }
+}
+// Intro line for an agent, the coordinator, an advisor or the Omega Steward. Contract (avatars/index.json audio_contract):
+// HEAD-check rows[].audio (worldforge/out/voices/<world>/<id>.mp4); the Omega then tries its hive greet line; else a
+// labelled browser voice reads the line with voice.browser_fallback.
+async function speakIntro(c, el) {
+  const e = c._index ?? avEntry(c.cardId), v = e?.voice ?? null;
+  const greet = c.kind === 'omega' ? c.voice?.lines?.find((l) => l.id === 'greet') ?? null : null;
+  const intro = introOf(e) ?? greet?.text ?? null;
+  const who = c.kind === 'advisor' ? "a scripted guide's voice: not an AI model, not a person" : "an agent's voice, not a person";
+  stopVoice(); voiceTell(el, 'checking for the recorded line…');
+  const tries = [];
+  if (e?.audio) tries.push([e.audio, `recorded synthetic voice (Kokoro ${v?.id ?? '?'}) — ${who}`]);
+  if (c.kind === 'omega') { const g = v?.audio?.greet ?? greet?.audio; if (g) tries.push([g, `recorded synthetic voice (Kokoro ${c.voice?.kokoro ?? v?.id ?? '?'}), the hive greet line — ${who}`]); }
+  for (const [p, label] of tries) if (await headOk(repo(p)) && await playRecorded(repo(p), el, label)) return;
+  window.__wfVoice = { src: '', label: 'browser' };
+  browserSay(intro ?? `Synthetic voice. ${c.name}. ${c.role ?? c.manages ?? ''}`, v?.browser_fallback ?? c.voice?.browser_fallback ?? null, el,
+    intro ? (tries.length ? 'browser voice — the recorded synthetic line is not voiced yet' : 'browser voice (synthetic) — no recording path is listed for this line') : 'browser voice (synthetic) reading the card text — no intro line yet');
+}
+async function speakLine(card, i, el) {
+  const v = card.voice, line = v?.lines?.[i]; if (!line) return;
+  stopVoice(); voiceTell(el, 'checking for the recorded line…');
+  const url = repo(line.audio);
+  // fetch(url, { method: 'HEAD' }) through headOk: play only what the server has
+  if (await headOk(url) && await playRecorded(url, el, `recorded synthetic voice (Kokoro ${v.kokoro}) — an agent's voice, not a person`)) return;
+  window.__wfVoice = { src: '', label: 'browser' };
+  browserSay(line.text, v.browser_fallback, el, 'browser voice — the recorded synthetic line is not voiced yet');
+}
+
+// ---------------------------------------------------------------------------------------- framing ----
+function overview() {
+  camera.fov = 52;
+  const R = S.ring + 80, H = S.ring * 0.62 + 30;
+  camera.position.set(R * 0.55, H, R * 0.85); controls.target.set(0, 2, -S.ring * 0.1); camera.near = 0.5; camera.updateProjectionMatrix();
+  fitShadow(0, 0, S.extent + 10); camera.lookAt(controls.target); if (!TOUR) controls.update();
+}
+function frameCard(c) {
+  camera.fov = 52;
+  if (c.kind === 'world') { setInside(null); overview(); return; }
+  const info = S.byCard.get(c.cardId); if (!info) return;
+  if (info.seatIn && !TOUR && (!canEnter(c) || !canEnter(info.seatIn.card))) { gateNote(deniedNote(info.seatIn.card)); S.denied = c.cardId; c = info.seatIn.card; return frameCard(c); }
+  if (info.seatIn) { setInside(info.seatIn); const b = info.seatIn; const [cx, cz] = toWorld(b, 0.8, -3.0), [tx, tz] = toWorld(b, 0, 0.6); camera.position.set(cx, b.y + 2.1, cz); controls.target.set(tx, b.y + 0.8, tz); camera.near = 0.05; camera.updateProjectionMatrix(); fitShadow(b.x, b.z, 30); if (!TOUR) controls.update(); else camera.lookAt(controls.target); return; }
+  setInside(null);
+  const f = info.facing ?? new THREE.Vector3(-info.pos.x, 0, -info.pos.z).normalize();
+  if (info.landmark) { const L = info.landmark, d = L.H * 0.85 + 12; camera.position.set(L.x + L.facing.x * d + L.facing.z * d * 0.3, L.y + L.H * 0.3, L.z + L.facing.z * d - L.facing.x * d * 0.3);
+    controls.target.set(L.x, L.y + L.H * 0.45, L.z); camera.near = 0.3; camera.updateProjectionMatrix(); fitShadow(L.x, L.z, L.H + 20); camera.lookAt(controls.target); if (!TOUR) controls.update(); return; }
+  const dist = info.building ? 26 : info.avatar ? 4.6 : info.radius * 2.6 + 6;
+  const side = new THREE.Vector3(f.z, 0, -f.x).multiplyScalar(dist * 0.35);
+  camera.position.copy(info.pos).addScaledVector(f, dist).add(side); camera.position.y = info.pos.y + (info.building ? 9 : info.avatar ? 0.6 : dist * 0.45);
+  controls.target.copy(info.pos); camera.near = info.avatar ? 0.1 : 0.3; camera.updateProjectionMatrix();
+  fitShadow(info.pos.x, info.pos.z, info.building ? 40 : 30);
+  camera.lookAt(controls.target); if (!TOUR) controls.update();
+}
+
+// ------------------------------------------------------------------------------------------ modes ----
+const walk = { x: 0, z: 30, eye: PLAZA_TOP + EYE, yaw: 0, pitch: -0.04, keys: new Set(), joy: [0, 0] };
+const coarse = matchMedia('(pointer: coarse)').matches;
+function setMode(m) {
+  if (m === S.mode) return; S.mode = m;
+  $('#mOrbit').setAttribute('aria-pressed', String(m === 'orbit')); $('#mWalk').setAttribute('aria-pressed', String(m === 'walk'));
+  if (m === 'walk') {
+    controls.enabled = false;
+    const d = new THREE.Vector3(); camera.getWorldDirection(d);
+    if (camera.position.y > 12 || Math.hypot(camera.position.x, camera.position.z) > S.extent + 40) {
+      const s = S.selected && S.byCard.get(S.selected.cardId);
+      if (s?.building) { const [x, z] = toWorld(s.building, 0, 14); walk.x = x; walk.z = z; walk.yaw = s.building.yaw; }
+      else if (s?.avatar) { walk.x = s.pos.x + s.facing.x * 3.2; walk.z = s.pos.z + s.facing.z * 3.2; walk.yaw = Math.atan2(s.facing.x, s.facing.z); }
+      else { walk.x = 0; walk.z = (S.plazaR ?? 24) + 6; walk.yaw = 0; }
+      walk.pitch = -0.04;
+    } else { walk.x = camera.position.x; walk.z = camera.position.z; walk.yaw = Math.atan2(-d.x, -d.z); walk.pitch = clamp(Math.asin(d.y), -0.6, 0.6); }
+    walk.eye = floorAt(walk.x, walk.z) + EYE; camera.near = 0.08; camera.updateProjectionMatrix();
+    $('#crosshair').hidden = coarse; $('#joy').hidden = !coarse;
+  } else {
+    if (S.inside) exitBuilding(true);
+    if (document.pointerLockElement) document.exitPointerLock?.();
+    controls.enabled = !TOUR; const d = new THREE.Vector3(); camera.getWorldDirection(d); controls.target.copy(camera.position).addScaledVector(d, 14);
+    camera.near = 0.3; camera.updateProjectionMatrix(); $('#crosshair').hidden = true; $('#joy').hidden = true; fitShadow(0, 0, S.extent + 10);
+  }
+}
+function enterBuilding(b) {
+  if (!b) return;
+  if (!canEnter(b.card)) { S.denied = b.card.cardId; gateNote(deniedNote(b.card)); status(deniedNote(b.card)); updateEnterBtn(); return; }
+  const go = () => {
+    if (!b.int) { status(`${b.card.name}: the fit-out did not load`); return; }
+    setInside(b); if (S.mode !== 'walk') setMode('walk');
+    const [x, z] = toWorld(b, 0, 2.7); walk.x = x; walk.z = z; walk.yaw = b.yaw; walk.pitch = -0.06; walk.eye = b.y + ROOM.floor + EYE;
+    camera.near = 0.05; camera.updateProjectionMatrix(); fitShadow(b.x, b.z, 24);
+    if (S.selected?.cardId !== b.card.cardId) select(b.card); else updateEnterBtn();
+  };
+  if (b.int) go(); else { status(`Loading the ${b.card.name} fit-out…`); ensureInterior(b).then(go); }
+}
+function exitBuilding(keepMode) {
+  const b = S.inside; if (!b) return; setInside(null);
+  if (new URL(location.href).searchParams.get('inside')) setAccessURL(b.card.cardId, false);
+  const [x, z] = toWorld(b, 0, 8.2); walk.x = x; walk.z = z; walk.yaw = b.yaw + Math.PI; walk.eye = floorAt(x, z) + EYE;
+  if (!keepMode && S.mode === 'orbit') frameCard(b.card);
+  updateEnterBtn();
+}
+function walkTo(c) {
+  const info = S.byCard.get(c.cardId); if (!info) return;
+  if (info.seatIn) { if (canEnter(c) && canEnter(info.seatIn.card)) enterBuilding(info.seatIn); else goAccess(info.seatIn.card.cardId, true); return; }
+  setInside(null); if (S.mode !== 'walk') setMode('walk');
+  if (info.building) { const [x, z] = toWorld(info.building, 0, 13); walk.x = x; walk.z = z; walk.yaw = info.building.yaw; }
+  else { const f = info.facing ?? new THREE.Vector3(0, 0, 1); walk.x = info.pos.x + f.x * 3.4; walk.z = info.pos.z + f.z * 3.4; walk.yaw = Math.atan2(f.x, f.z); }
+  walk.pitch = -0.05; walk.eye = floorAt(walk.x, walk.z) + EYE;
+}
+$('#mOrbit').onclick = () => setMode('orbit');
+$('#mWalk').onclick = () => setMode('walk');
+$('#enterBtn').onclick = () => enterBuilding(buildingOf(S.selected));
+$('#exitBtn').onclick = () => exitBuilding(false);
+
+function collide(nx, nz) {
+  const b = S.inside;
+  if (b) {
+    let [xl, zl] = toLocal(b, nx, nz); const lim = ROOM.x - WALK_R, door = b.card.building.door?.half_width ?? 1.2;
+    if (zl > ROOM.z - WALK_R && Math.abs(xl) < door - 0.25) { if (zl > ROOM.z + 0.45) { exitBuilding(true); return [walk.x, walk.z]; } }
+    else zl = clamp(zl, -ROOM.z + WALK_R, ROOM.z - WALK_R);
+    xl = clamp(xl, -lim, lim);
+    return toWorld(b, xl, zl);
+  }
+  for (const bb of S.buildings) {
+    if (!bb.ext || Math.hypot(nx - bb.x, nz - bb.z) > 12) continue;
+    let [xl, zl] = toLocal(bb, nx, nz); const r = WALK_R, door = bb.card.building.door?.half_width ?? 1.2;
+    if (xl < -SHELL.x - r || xl > SHELL.x + r || zl < SHELL.zBack - r || zl > SHELL.zFront + r) continue;
+    if (Math.abs(xl) < door - 0.25 && bb.card.building.interior && canEnter(bb.card)) { if (zl < ROOM.z - 0.35) { enterBuilding(bb); return [walk.x, walk.z]; } continue; }
+    if (Math.abs(xl) < door - 0.25 && bb.card.building.interior && S.denied !== bb.card.cardId) { S.denied = bb.card.cardId; gateNote(deniedNote(bb.card)); }
+    const pens = [[xl - (-SHELL.x - r), 'l'], [SHELL.x + r - xl, 'r'], [zl - (SHELL.zBack - r), 'b'], [SHELL.zFront + r - zl, 'f']].sort((a, c) => a[0] - c[0]);
+    const side = pens[0][1]; if (side === 'l') xl = -SHELL.x - r; else if (side === 'r') xl = SHELL.x + r; else if (side === 'b') zl = SHELL.zBack - r; else zl = SHELL.zFront + r;
+    [nx, nz] = toWorld(bb, xl, zl);
+  }
+  for (const q of S.boxes) {
+    const dx = nx - q.x, dz = nz - q.z, px = q.hx + WALK_R - Math.abs(dx), pz = q.hz + WALK_R - Math.abs(dz);
+    if (px > 0 && pz > 0) { if (px < pz) nx += Math.sign(dx || 1) * px; else nz += Math.sign(dz || 1) * pz; }
+  }
+  const rr = Math.hypot(nx, nz), lim = 560; if (rr > lim) { nx *= lim / rr; nz *= lim / rr; }
+  return [nx, nz];
+}
+function updateWalk(dt) {
+  const k = walk.keys, run = k.has('ShiftLeft') || k.has('ShiftRight');
+  let F = (k.has('KeyW') || k.has('ArrowUp') ? 1 : 0) - (k.has('KeyS') || k.has('ArrowDown') ? 1 : 0);
+  let R = (k.has('KeyD') || k.has('ArrowRight') ? 1 : 0) - (k.has('KeyA') || k.has('ArrowLeft') ? 1 : 0);
+  F += -walk.joy[1]; R += walk.joy[0];
+  const len = Math.hypot(F, R); if (len > 1) { F /= len; R /= len; }
+  const sp = (run ? 9 : 4.2) * dt, fx = -Math.sin(walk.yaw), fz = -Math.cos(walk.yaw), rx = Math.cos(walk.yaw), rz = -Math.sin(walk.yaw);
+  if (F || R) { const [x, z] = collide(walk.x + (fx * F + rx * R) * sp, walk.z + (fz * F + rz * R) * sp); walk.x = x; walk.z = z; }
+  const floor = S.inside ? S.inside.y + ROOM.floor : floorAt(walk.x, walk.z);
+  walk.eye += (floor + EYE - walk.eye) * Math.min(1, dt * 10);
+  camera.position.set(walk.x, walk.eye, walk.z); camera.rotation.set(walk.pitch, walk.yaw, 0, 'YXZ');
+  if (!S.inside) { const gx = Math.round(walk.x / 8) * 8, gz = Math.round(walk.z / 8) * 8; if (gx !== S.shX || gz !== S.shZ) { S.shX = gx; S.shZ = gz; fitShadow(gx, gz, 70); } }
+}
+addEventListener('keydown', (e) => {
+  if (e.target.closest?.('input, textarea')) return;
+  if (S.mode === 'walk' && /^(Key[WASDE]|Arrow|Shift)/.test(e.code)) { walk.keys.add(e.code); if (e.code.startsWith('Arrow')) e.preventDefault(); }
+  if (e.code === 'KeyE' && S.mode === 'walk') {
+    if (S.inside) { const [, zl] = toLocal(S.inside, walk.x, walk.z); if (zl > 1.5) exitBuilding(true); }
+    else { let best = null, bd = 7; for (const b of S.buildings) { if (!b.ext) continue; const [dx, dz] = toWorld(b, 0, 5.2); const d = Math.hypot(walk.x - dx, walk.z - dz); if (d < bd) { bd = d; best = b; } } if (best) enterBuilding(best); }
+  }
+});
+addEventListener('keyup', (e) => walk.keys.delete(e.code));
+addEventListener('blur', () => walk.keys.clear());
+
+// pointer: click/tap picks; in walk mode drag (or pointer lock) looks
+const cv = renderer.domElement, ray = new THREE.Raycaster(), ptr = new THREE.Vector2();
+let down = null, dragging = false;
+function pickAt(cx, cy) {
+  const r = cv.getBoundingClientRect();
+  ptr.set(((cx - r.left) / r.width) * 2 - 1, -((cy - r.top) / r.height) * 2 + 1); ray.setFromCamera(ptr, camera);
+  const hits = ray.intersectObjects(S.pick, true);
+  for (const h of hits) { if (!visibleChain(h.object)) continue; const c = cardFor(h.object); if (c) return c; }
+  return null;
+}
+cv.addEventListener('pointerdown', (e) => { down = [e.clientX, e.clientY, performance.now()]; dragging = S.mode === 'walk' && document.pointerLockElement !== cv; cv.setPointerCapture?.(e.pointerId); });
+cv.addEventListener('pointermove', (e) => {
+  if (S.mode !== 'walk') return;
+  if (document.pointerLockElement === cv) { walk.yaw -= e.movementX * 0.0024; walk.pitch = clamp(walk.pitch - e.movementY * 0.0024, -1.3, 1.3); return; }
+  if (dragging && down) { walk.yaw -= e.movementX * 0.0042; walk.pitch = clamp(walk.pitch - e.movementY * 0.0042, -1.3, 1.3); }
+});
+cv.addEventListener('pointerup', (e) => {
+  const tap = down && Math.hypot(e.clientX - down[0], e.clientY - down[1]) < 7 && performance.now() - down[2] < 450; dragging = false; down = null;
+  if (!tap) return;
+  if (S.mode === 'walk' && document.pointerLockElement === cv) { const r = cv.getBoundingClientRect(); const c = pickAt(r.left + r.width / 2, r.top + r.height / 2); if (c) select(c); return; }
+  const c = pickAt(e.clientX, e.clientY);
+  if (c) select(c);
+  else if (S.mode === 'walk' && !coarse && cv.requestPointerLock) { try { const p = cv.requestPointerLock(); p?.catch?.(() => {}); } catch {} }
+});
+cv.addEventListener('dblclick', (e) => { if (S.mode !== 'orbit') return; const c = pickAt(e.clientX, e.clientY); if (c) { select(c); frameCard(c); } });
+// on-screen joystick for touch walking
+{
+  const joy = $('#joy'), knob = $('#knob'); let id = null;
+  const set = (e) => { const r = joy.getBoundingClientRect(), dx = e.clientX - (r.left + r.width / 2), dy = e.clientY - (r.top + r.height / 2), m = Math.min(1, Math.hypot(dx, dy) / 46), a = Math.atan2(dy, dx); walk.joy = [Math.cos(a) * m, Math.sin(a) * m]; knob.style.transform = `translate(${walk.joy[0] * 38}px, ${walk.joy[1] * 38}px)`; };
+  joy.addEventListener('pointerdown', (e) => { id = e.pointerId; joy.setPointerCapture(id); set(e); e.preventDefault(); });
+  joy.addEventListener('pointermove', (e) => { if (e.pointerId === id) set(e); });
+  const end = (e) => { if (e.pointerId !== id) return; id = null; walk.joy = [0, 0]; knob.style.transform = ''; };
+  joy.addEventListener('pointerup', end); joy.addEventListener('pointercancel', end);
+}
+
+// ---------------------------------------------------------------------------------------- render ----
+const _v = new THREE.Vector3();
+function animate(t) {
+  for (const a of S.avatars) {
+    const u = a.body.userData; if (u.halo) u.halo.rotation.z = t * 0.9; if (u.badge) { u.badge.rotation.y = t * 1.4; u.badge.position.y = 1.18 * 1.12 + Math.sin(t * 2 + a.phase) * 0.03; }
+  }
+}
+function renderFrame() {
+  camera.getWorldPosition(_v);
+  if (S.lazy.length) pumpLazy(_v);
+  let lit = S.inside, ld = 30;
+  for (const b of S.buildings) { if (!b.int || S.inside === b) continue; const d = Math.hypot(_v.x - b.x, _v.z - b.z), near = d < 30 && _v.y < b.y + 14; b.int.visible = near; b.extras.visible = near; if (near && !S.inside && d < ld) { ld = d; lit = b; } }
+  if (lit) { const [wx, wz] = toWorld(lit, 0, -0.5); roomLight.position.set(wx, lit.y + 3.0, wz); roomLight.intensity = S.inside ? 22 : 12 + 10 * (1 - (S.daylight ?? 1)); } else roomLight.intensity = 0;
+  for (const sp of S.zoneLabels) { const p = sp.getWorldPosition(new THREE.Vector3()); sp.visible = sp.parent?.parent && !(S.inside && S.inside.label === sp) && p.distanceTo(_v) > 34; }
+  renderer.render(scene, camera);
+}
+const clock = new THREE.Clock();
+if (!TOUR) renderer.setAnimationLoop(() => {
+  const dt = Math.min(clock.getDelta(), 0.1); simT += dt;
+  if (S.mode === 'walk') updateWalk(dt); else controls.update();
+  animate(simT); renderFrame();
+});
+
+// --------------------------------------------------------------------------------- shot contract ----
+// Every shot sets the camera, the inside/outside state and the shadow frame from (mode, t) alone, then renders.
+const V3 = (x, y, z) => new THREE.Vector3(x, y, z);
+function lw(b, xl, y, zl) { const [x, z] = toWorld(b, xl, zl); return V3(x, b.y + y, z); }
+function shotCam(pos, look, near, fov = 52) { camera.position.copy(pos); camera.up.set(0, 1, 0); camera.lookAt(look); camera.near = near; camera.fov = fov; camera.updateProjectionMatrix(); }
+window.__wfShot = (mode, t = 0) => {
+  if (!S.ready) return false;
+  t = clamp(+t || 0, 0, 1); simT = t * 24; animate(simT);
+  selRing.visible = false; roomLight.intensity = 0; setInside(null);
+  const zoneB = S.buildings.find((b) => b.card.kind === 'zone' && b.ext), councilB = S.buildings.find((b) => b.card.kind === 'council' && b.ext);
+  if (mode === 'orbit') {
+    const R = S.ring + 130, H = S.ring * 0.45 + 28, a = t * Math.PI * 2;
+    fitShadow(0, 0, S.extent + 10); shotCam(V3(Math.sin(a) * R, H, Math.cos(a) * R), V3(0, 0, 0), 0.5);
+  } else if (mode === 'flyin') {
+    const g = S.gateZ, e = smooth(t);
+    const pc = new THREE.CatmullRomCurve3([V3(0, 150, g + 90), V3(0, 72, g + 18), V3(0, 24, g * 0.42), V3(0, 3.6, (S.plazaR ?? 24) + 9)]);
+    const lc = new THREE.CatmullRomCurve3([V3(0, 0, g - 40), V3(0, 1, g * 0.25), V3(0, 3, 0), V3(0, 3.2, -45)]);
+    fitShadow(0, lerp(g * 0.6, 0, e), lerp(S.extent, 70, e)); shotCam(pc.getPoint(e), lc.getPoint(e), 0.3);
+  } else if (mode === 'building') {
+    const b = zoneB; if (!b) return window.__wfShot('orbit', t);
+    const e = smooth(t), pts = [[1.6, 5.5, 40, 0, 2.6, 4], [1.1, 3.2, 22, 0, 2.2, 4], [0.7, 2.1, 11, 0, 1.8, 3], [0, 1.68, 4.8, 0, 1.5, -2], [0, 1.62, 1.4, 0, 1.25, -4]];
+    const pc = new THREE.CatmullRomCurve3(pts.map((p) => lw(b, p[0], p[1], p[2]))), lc = new THREE.CatmullRomCurve3(pts.map((p) => lw(b, p[3], p[4], p[5])));
+    const pos = pc.getPoint(e), [, zl] = toLocal(b, pos.x, pos.z);
+    if (zl < 4.95 && b.int) setInside(b);
+    fitShadow(b.x, b.z, 34); shotCam(pos, lc.getPoint(e), zl < 9 ? 0.05 : 0.2, 56);
+  } else if (mode === 'omega') {
+    const o = S.avatars.find((a) => a.card.kind === 'omega'); if (!o) return window.__wfShot('council', t);
+    const f = V3(Math.sin(o.yaw), 0, Math.cos(o.yaw)), side = V3(f.z, 0, -f.x), a = lerp(0.8, 1.3, smooth(t));
+    const d = f.clone().multiplyScalar(Math.cos(a)).addScaledVector(side, Math.sin(a)).normalize();
+    const cb = councilB ?? { x: 0, z: S.councilZ }, toC = V3(cb.x - o.x, 0, cb.z - o.z).normalize();
+    const chest = V3(o.x, o.y + o.height * 0.7, o.z), pos = chest.clone().addScaledVector(d, 3.9).add(V3(0, 0.2, 0));
+    fitShadow(o.x - 8, o.z, 30); shotCam(pos, chest.clone().addScaledVector(toC, 0.9), 0.05, 46);
+  } else if (mode === 'landmark') {
+    // from plaza level in front of the landmark's entrance, rising up its face to the crown
+    const L = S.landmark; if (!L?.model) return window.__wfShot('orbit', t);
+    const e = smooth(t), f = L.facing, side = V3(f.z, 0, -f.x), d = lerp(27, 36, e), sw = lerp(-5, 9, e);
+    const pos = V3(L.x + f.x * d + side.x * sw, L.y + lerp(PLAZA_TOP + EYE, L.H * 1.04, e), L.z + f.z * d + side.z * sw);
+    const look = V3(L.x, L.y + lerp(7, L.H * 0.9, smooth(clamp(t * 1.08, 0, 1))), L.z);
+    fitShadow(L.x + f.x * 14, L.z + f.z * 14, L.H + 26); shotCam(pos, look, 0.3, 50);
+  } else if (mode === 'council') {
+    const b = councilB;
+    if (!b || !b.int) { const c = S.cards.get(`council:${S.slug}`); const z = c?.volum.center[2] ?? S.councilZ; fitShadow(0, z, 40); shotCam(V3(lerp(-14, 14, t), 14, z + 30), V3(0, 6, z), 0.3); }
+    else { setInside(b); const e = smooth(t); fitShadow(b.x, b.z, 22); shotCam(lw(b, 4.3, 2.35, lerp(-2.4, -1.5, e)), lw(b, lerp(-0.5, -0.9, e), 0.75, 0.6), 0.05, 54); }
+  } else return false;
+  renderFrame(); return true;
+};
+// test hook: walk collision and floor heights without depending on frame rate
+window.__wfDebug = { collide: (x, z) => collide(x, z), floorAt, toLocal: (cardId, x, z) => { const b = S.buildings.find((q) => q.card.cardId === cardId); return b ? toLocal(b, x, z) : null; }, toWorld: (cardId, xl, zl) => { const b = S.buildings.find((q) => q.card.cardId === cardId); return b ? toWorld(b, xl, zl) : null; }, setWalk: (x, z) => { walk.x = x; walk.z = z; }, inside: () => S.inside?.card.cardId ?? null };
+window.__wfAccess = { list: () => accessPoints(), go: (id, inside) => goAccess(id, !!inside), exit: () => exitBuilding(true), canEnter: (id) => canEnter(S.cards.get(id)),
+  state: () => ({ at: S.at ?? null, inside: S.inside?.card.cardId ?? null, denied: S.denied, note: $('#gateNote').hidden ? null : $('#gateNote').textContent, result: S.accessResult ?? null }) };
+window.__wfLod = () => ({ distance_m: LOD_M, index: !!S.lodIdx, landmark: S.landmark ? { lod1: S.landmark.card.lod1 ?? null, near: S.landmark.grp.children[0]?.isLOD ? S.landmark.grp.children[0].levels.length > 1 : null, level: S.landmark.grp.children[0]?.isLOD ? S.landmark.grp.children[0].getCurrentLevel() : null } : null,
+  avatars: S.avatars.filter((a) => a.model).map((a) => ({ card: a.card.cardId, lod1: a.lod1, levels: a.body.isLOD ? a.body.levels.length : 1, level: a.body.isLOD ? a.body.getCurrentLevel() : 0 })), lazyPending: S.lazy.filter((z) => !z.near).length });
+window.__wfCam = () => ({ mode: S.mode, inside: S.inside?.card.cardId ?? null, pos: camera.position.toArray().map((v) => +v.toFixed(2)), selected: S.selected?.cardId ?? null });
+window.__wfInfo = () => ({ world: S.slug, ready: S.ready, loadMs: S.loadMs, stats: S.stats, trees: S.treeCount, daylight: S.daylight, notes: S.notes,
+  buildings: S.buildings.map((b) => ({ card: b.card.cardId, ext: !!b.ext, room: !!b.room, int: !!b.int, at: [+b.x.toFixed(2), +b.y.toFixed(2), +b.z.toFixed(2)], yawDeg: +(b.yaw * 180 / Math.PI).toFixed(1) })),
+  landmark: S.landmark ? { card: S.landmark.card.cardId, model: S.landmark.model, at: [S.landmark.x, S.landmark.y, S.landmark.z], yawDeg: +(S.landmark.yaw * 180 / Math.PI).toFixed(1), height: S.landmark.H, style: S.landmark.card.style } : null,
+  avatars: S.avatars.map((a) => ({ card: a.card.cardId, kind: a.card.kind, model: a.model, ref: a.ref ?? null, at: [+a.x.toFixed(2), +a.y.toFixed(2), +a.z.toFixed(2)], height: +a.height.toFixed(2) })) });
+
+size();
+const first = P.get('world') || 'locator-x';
+openWorld(index?.worlds?.some((w) => w.slug === first) ? first : (index?.worlds?.[0]?.slug ?? first));
+</script>
+</body>
+</html>

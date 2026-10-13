@@ -1,0 +1,3815 @@
+{
+ "bytes": 126313972,
+ "checks": {
+  "missing_required": [],
+  "ok": true,
+  "over_25MiB": []
+ },
+ "contents": {
+  "agents/hive/voices/agentic-payments/boundary.mp4": {
+   "bytes": 44377,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agentic-payments/greet.mp4": {
+   "bytes": 55319,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agentic-payments/role.mp4": {
+   "bytes": 70507,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agentic-payments/services.mp4": {
+   "bytes": 71440,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agents-deploy-infrastructure/boundary.mp4": {
+   "bytes": 34820,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agents-deploy-infrastructure/greet.mp4": {
+   "bytes": 46336,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agents-deploy-infrastructure/role.mp4": {
+   "bytes": 52280,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/agents-deploy-infrastructure/services.mp4": {
+   "bytes": 61586,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/autonomous-organizations/boundary.mp4": {
+   "bytes": 43849,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/autonomous-organizations/greet.mp4": {
+   "bytes": 57430,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/autonomous-organizations/role.mp4": {
+   "bytes": 67545,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/autonomous-organizations/services.mp4": {
+   "bytes": 70571,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/biota-blockchain/boundary.mp4": {
+   "bytes": 40673,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/biota-blockchain/greet.mp4": {
+   "bytes": 50483,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/biota-blockchain/role.mp4": {
+   "bytes": 69194,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/biota-blockchain/services.mp4": {
+   "bytes": 72189,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/cancer-dao/boundary.mp4": {
+   "bytes": 41063,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/cancer-dao/greet.mp4": {
+   "bytes": 43606,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/cancer-dao/role.mp4": {
+   "bytes": 47215,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/cancer-dao/services.mp4": {
+   "bytes": 63180,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/climate-dao/boundary.mp4": {
+   "bytes": 45141,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/climate-dao/greet.mp4": {
+   "bytes": 49962,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/climate-dao/role.mp4": {
+   "bytes": 48231,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/climate-dao/services.mp4": {
+   "bytes": 70513,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/diagnostic-x/boundary.mp4": {
+   "bytes": 40987,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/diagnostic-x/greet.mp4": {
+   "bytes": 46491,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/diagnostic-x/role.mp4": {
+   "bytes": 63238,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/diagnostic-x/services.mp4": {
+   "bytes": 68898,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/ecology-dao/boundary.mp4": {
+   "bytes": 39055,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/ecology-dao/greet.mp4": {
+   "bytes": 45629,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/ecology-dao/role.mp4": {
+   "bytes": 48521,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/ecology-dao/services.mp4": {
+   "bytes": 63116,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/education-dao/boundary.mp4": {
+   "bytes": 40900,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/education-dao/greet.mp4": {
+   "bytes": 48356,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/education-dao/role.mp4": {
+   "bytes": 46446,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/education-dao/services.mp4": {
+   "bytes": 65596,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/empathic-x/boundary.mp4": {
+   "bytes": 40315,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/empathic-x/greet.mp4": {
+   "bytes": 41576,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/empathic-x/role.mp4": {
+   "bytes": 51622,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/empathic-x/services.mp4": {
+   "bytes": 55265,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/locator-x/boundary.mp4": {
+   "bytes": 46947,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/locator-x/greet.mp4": {
+   "bytes": 51608,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/locator-x/role.mp4": {
+   "bytes": 64696,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/locator-x/services.mp4": {
+   "bytes": 71344,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/public-health-dao/boundary.mp4": {
+   "bytes": 41299,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/public-health-dao/greet.mp4": {
+   "bytes": 46969,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/public-health-dao/role.mp4": {
+   "bytes": 45545,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/public-health-dao/services.mp4": {
+   "bytes": 67638,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/robotics-dao/boundary.mp4": {
+   "bytes": 42510,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/robotics-dao/greet.mp4": {
+   "bytes": 49931,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/robotics-dao/role.mp4": {
+   "bytes": 73845,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/robotics-dao/services.mp4": {
+   "bytes": 71058,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s04-curable-x/boundary.mp4": {
+   "bytes": 36166,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s04-curable-x/greet.mp4": {
+   "bytes": 38992,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s04-curable-x/role.mp4": {
+   "bytes": 45477,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s04-curable-x/services.mp4": {
+   "bytes": 56882,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s05-biopharma-go/boundary.mp4": {
+   "bytes": 37112,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s05-biopharma-go/greet.mp4": {
+   "bytes": 42570,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s05-biopharma-go/role.mp4": {
+   "bytes": 49770,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s05-biopharma-go/services.mp4": {
+   "bytes": 59671,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s06-blockchain/boundary.mp4": {
+   "bytes": 58397,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s06-blockchain/greet.mp4": {
+   "bytes": 63818,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s06-blockchain/role.mp4": {
+   "bytes": 70469,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s06-blockchain/services.mp4": {
+   "bytes": 77579,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s07-divine-dao/boundary.mp4": {
+   "bytes": 45014,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s07-divine-dao/greet.mp4": {
+   "bytes": 54187,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s07-divine-dao/role.mp4": {
+   "bytes": 63743,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s07-divine-dao/services.mp4": {
+   "bytes": 73013,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s09-astrological-x/boundary.mp4": {
+   "bytes": 38050,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s09-astrological-x/greet.mp4": {
+   "bytes": 45526,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s09-astrological-x/role.mp4": {
+   "bytes": 54460,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s09-astrological-x/services.mp4": {
+   "bytes": 66656,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s11-molecular/boundary.mp4": {
+   "bytes": 49671,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s11-molecular/greet.mp4": {
+   "bytes": 45487,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s11-molecular/role.mp4": {
+   "bytes": 54778,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s11-molecular/services.mp4": {
+   "bytes": 66591,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s12-parking-smart-x/boundary.mp4": {
+   "bytes": 40869,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s12-parking-smart-x/greet.mp4": {
+   "bytes": 45288,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s12-parking-smart-x/role.mp4": {
+   "bytes": 54197,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s12-parking-smart-x/services.mp4": {
+   "bytes": 60234,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s13-gonstead-x/boundary.mp4": {
+   "bytes": 39551,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s13-gonstead-x/greet.mp4": {
+   "bytes": 41537,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s13-gonstead-x/role.mp4": {
+   "bytes": 50265,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s13-gonstead-x/services.mp4": {
+   "bytes": 58435,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s14-askdoc-x/boundary.mp4": {
+   "bytes": 44465,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s14-askdoc-x/greet.mp4": {
+   "bytes": 51044,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s14-askdoc-x/role.mp4": {
+   "bytes": 58214,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s14-askdoc-x/services.mp4": {
+   "bytes": 69513,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s15-romanbridge-dao/boundary.mp4": {
+   "bytes": 37141,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s15-romanbridge-dao/greet.mp4": {
+   "bytes": 43169,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s15-romanbridge-dao/role.mp4": {
+   "bytes": 51124,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s15-romanbridge-dao/services.mp4": {
+   "bytes": 59711,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s16-echodawn-dao/boundary.mp4": {
+   "bytes": 45618,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s16-echodawn-dao/greet.mp4": {
+   "bytes": 52971,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s16-echodawn-dao/role.mp4": {
+   "bytes": 64215,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s16-echodawn-dao/services.mp4": {
+   "bytes": 70894,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s17-curable-blockchain-dao/boundary.mp4": {
+   "bytes": 33824,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s17-curable-blockchain-dao/greet.mp4": {
+   "bytes": 45106,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s17-curable-blockchain-dao/role.mp4": {
+   "bytes": 52192,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s17-curable-blockchain-dao/services.mp4": {
+   "bytes": 59272,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s19-moscone-x/boundary.mp4": {
+   "bytes": 40754,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s19-moscone-x/greet.mp4": {
+   "bytes": 46001,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s19-moscone-x/role.mp4": {
+   "bytes": 55377,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s19-moscone-x/services.mp4": {
+   "bytes": 66154,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s20-cmmc/boundary.mp4": {
+   "bytes": 39802,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s20-cmmc/greet.mp4": {
+   "bytes": 46101,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s20-cmmc/role.mp4": {
+   "bytes": 52432,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s20-cmmc/services.mp4": {
+   "bytes": 64034,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s21-incubator-dao/boundary.mp4": {
+   "bytes": 36007,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s21-incubator-dao/greet.mp4": {
+   "bytes": 43487,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s21-incubator-dao/role.mp4": {
+   "bytes": 53634,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s21-incubator-dao/services.mp4": {
+   "bytes": 59717,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s22-get-delivery-dao/boundary.mp4": {
+   "bytes": 41342,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s22-get-delivery-dao/greet.mp4": {
+   "bytes": 42889,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s22-get-delivery-dao/role.mp4": {
+   "bytes": 51796,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s22-get-delivery-dao/services.mp4": {
+   "bytes": 60730,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s23-avatar-chat/boundary.mp4": {
+   "bytes": 40045,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s23-avatar-chat/greet.mp4": {
+   "bytes": 46141,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s23-avatar-chat/role.mp4": {
+   "bytes": 55829,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s23-avatar-chat/services.mp4": {
+   "bytes": 64017,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s24-donatello-dao/boundary.mp4": {
+   "bytes": 45056,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s24-donatello-dao/greet.mp4": {
+   "bytes": 46738,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s24-donatello-dao/role.mp4": {
+   "bytes": 55677,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s24-donatello-dao/services.mp4": {
+   "bytes": 63670,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s25-mypet-ai/boundary.mp4": {
+   "bytes": 41425,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s25-mypet-ai/greet.mp4": {
+   "bytes": 42141,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s25-mypet-ai/role.mp4": {
+   "bytes": 53555,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s25-mypet-ai/services.mp4": {
+   "bytes": 61230,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s26-lyka-dao/boundary.mp4": {
+   "bytes": 42617,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s26-lyka-dao/greet.mp4": {
+   "bytes": 43633,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s26-lyka-dao/role.mp4": {
+   "bytes": 53942,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s26-lyka-dao/services.mp4": {
+   "bytes": 61553,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s27-genomic-dao/boundary.mp4": {
+   "bytes": 42119,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s27-genomic-dao/greet.mp4": {
+   "bytes": 47563,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s27-genomic-dao/role.mp4": {
+   "bytes": 57748,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s27-genomic-dao/services.mp4": {
+   "bytes": 64668,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s28-genomic-blockchain/boundary.mp4": {
+   "bytes": 36484,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s28-genomic-blockchain/greet.mp4": {
+   "bytes": 45949,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s28-genomic-blockchain/role.mp4": {
+   "bytes": 55713,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s28-genomic-blockchain/services.mp4": {
+   "bytes": 64111,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s29-metaverse-dao/boundary.mp4": {
+   "bytes": 42342,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s29-metaverse-dao/greet.mp4": {
+   "bytes": 45638,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s29-metaverse-dao/role.mp4": {
+   "bytes": 56709,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s29-metaverse-dao/services.mp4": {
+   "bytes": 65505,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s31-aerospace-dao/boundary.mp4": {
+   "bytes": 32515,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s31-aerospace-dao/greet.mp4": {
+   "bytes": 39547,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s31-aerospace-dao/role.mp4": {
+   "bytes": 47114,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s31-aerospace-dao/services.mp4": {
+   "bytes": 55910,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s32-solar-dao/boundary.mp4": {
+   "bytes": 34600,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s32-solar-dao/greet.mp4": {
+   "bytes": 41689,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s32-solar-dao/role.mp4": {
+   "bytes": 52397,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s32-solar-dao/services.mp4": {
+   "bytes": 59219,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s33-infogurus/boundary.mp4": {
+   "bytes": 73766,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s33-infogurus/greet.mp4": {
+   "bytes": 68976,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s33-infogurus/role.mp4": {
+   "bytes": 73458,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s33-infogurus/services.mp4": {
+   "bytes": 81205,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s34-als-dao/boundary.mp4": {
+   "bytes": 43438,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s34-als-dao/greet.mp4": {
+   "bytes": 51284,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s34-als-dao/role.mp4": {
+   "bytes": 65008,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s34-als-dao/services.mp4": {
+   "bytes": 72013,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s35-parkinsons-dao/boundary.mp4": {
+   "bytes": 48573,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s35-parkinsons-dao/greet.mp4": {
+   "bytes": 50104,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s35-parkinsons-dao/role.mp4": {
+   "bytes": 62411,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "agents/hive/voices/s35-parkinsons-dao/services.mp4": {
+   "bytes": 67819,
+   "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
+  },
+  "consoles/worldforge/index.html": {
+   "bytes": 1293307,
+   "why": "page"
+  },
+  "my-fabric/worlds/models/env-sky-agentic-payments.glb": {
+   "bytes": 126620,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-agents-deploy-infrastructure.glb": {
+   "bytes": 313388,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-autonomous-organizations.glb": {
+   "bytes": 313388,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-biota-blockchain.glb": {
+   "bytes": 126612,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-cancer-dao.glb": {
+   "bytes": 126340,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-climate-dao.glb": {
+   "bytes": 126608,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-diagnostic-x.glb": {
+   "bytes": 126300,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-ecology-dao.glb": {
+   "bytes": 126456,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-education-dao.glb": {
+   "bytes": 126604,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-empathic-x.glb": {
+   "bytes": 126604,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-locator-x.glb": {
+   "bytes": 126612,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-public-health-dao.glb": {
+   "bytes": 126352,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-robotics-dao.glb": {
+   "bytes": 126308,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s04-curable-x.glb": {
+   "bytes": 126300,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s05-biopharma-go.glb": {
+   "bytes": 126304,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s06-blockchain.glb": {
+   "bytes": 126616,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s07-divine-dao.glb": {
+   "bytes": 313364,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s09-astrological-x.glb": {
+   "bytes": 126652,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s11-molecular.glb": {
+   "bytes": 126300,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s12-parking-smart-x.glb": {
+   "bytes": 126584,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s13-gonstead-x.glb": {
+   "bytes": 126344,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s14-askdoc-x.glb": {
+   "bytes": 126348,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s15-romanbridge-dao.glb": {
+   "bytes": 126624,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s16-echodawn-dao.glb": {
+   "bytes": 126648,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s17-curable-blockchain-dao.glb": {
+   "bytes": 126312,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s19-moscone-x.glb": {
+   "bytes": 126616,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s20-cmmc.glb": {
+   "bytes": 313364,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s21-incubator-dao.glb": {
+   "bytes": 126352,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s22-get-delivery-dao.glb": {
+   "bytes": 313372,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s23-avatar-chat.glb": {
+   "bytes": 313368,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s24-donatello-dao.glb": {
+   "bytes": 126608,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s25-mypet-ai.glb": {
+   "bytes": 126304,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s26-lyka-dao.glb": {
+   "bytes": 126348,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s27-genomic-dao.glb": {
+   "bytes": 126304,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s28-genomic-blockchain.glb": {
+   "bytes": 126308,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s29-metaverse-dao.glb": {
+   "bytes": 126648,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s31-aerospace-dao.glb": {
+   "bytes": 126636,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s32-solar-dao.glb": {
+   "bytes": 126632,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s33-infogurus.glb": {
+   "bytes": 126608,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s34-als-dao.glb": {
+   "bytes": 126348,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/env-sky-s35-parkinsons-dao.glb": {
+   "bytes": 126304,
+   "why": "viewer: sky (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agentic-payments-1.glb": {
+   "bytes": 8760,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agentic-payments-2.glb": {
+   "bytes": 8860,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agentic-payments-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agentic-payments-4.glb": {
+   "bytes": 8908,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agentic-payments-5.glb": {
+   "bytes": 8728,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-1.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-2.glb": {
+   "bytes": 8812,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-3.glb": {
+   "bytes": 8764,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-4.glb": {
+   "bytes": 8832,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-5.glb": {
+   "bytes": 8868,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-6.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-agents-deploy-infrastructure-7.glb": {
+   "bytes": 8760,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-1.glb": {
+   "bytes": 8684,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-2.glb": {
+   "bytes": 8768,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-3.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-4.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-5.glb": {
+   "bytes": 8736,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-autonomous-organizations-6.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-1.glb": {
+   "bytes": 8832,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-2.glb": {
+   "bytes": 8776,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-3.glb": {
+   "bytes": 8816,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-4.glb": {
+   "bytes": 8828,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-5.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-biota-blockchain-6.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-cancer-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-climate-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-diagnostic-x-1.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-diagnostic-x-2.glb": {
+   "bytes": 8756,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-diagnostic-x-3.glb": {
+   "bytes": 8768,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-diagnostic-x-4.glb": {
+   "bytes": 8812,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-diagnostic-x-5.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-ecology-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-education-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-1.glb": {
+   "bytes": 8764,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-2.glb": {
+   "bytes": 8780,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-3.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-4.glb": {
+   "bytes": 8756,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-empathic-x-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-1.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-2.glb": {
+   "bytes": 8768,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-3.glb": {
+   "bytes": 8732,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-4.glb": {
+   "bytes": 8672,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-5.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-6.glb": {
+   "bytes": 8816,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-locator-x-7.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-1.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-2.glb": {
+   "bytes": 8816,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-3.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-4.glb": {
+   "bytes": 8756,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-5.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-public-health-dao-6.glb": {
+   "bytes": 8728,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-robotics-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s04-curable-x-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s05-biopharma-go-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s06-blockchain-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s07-divine-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s09-astrological-x-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-1.glb": {
+   "bytes": 8684,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-2.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-3.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-5.glb": {
+   "bytes": 8780,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s11-molecular-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-4.glb": {
+   "bytes": 8752,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s12-parking-smart-x-6.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s13-gonstead-x-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-1.glb": {
+   "bytes": 8684,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-2.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-3.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-5.glb": {
+   "bytes": 8780,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s14-askdoc-x-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-1.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-2.glb": {
+   "bytes": 8812,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-3.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-4.glb": {
+   "bytes": 8752,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-5.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s15-romanbridge-dao-6.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s16-echodawn-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-1.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-2.glb": {
+   "bytes": 8824,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-3.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-4.glb": {
+   "bytes": 8764,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-5.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s17-curable-blockchain-dao-6.glb": {
+   "bytes": 8736,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s19-moscone-x-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-1.glb": {
+   "bytes": 8676,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-2.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-3.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-4.glb": {
+   "bytes": 8728,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-5.glb": {
+   "bytes": 8772,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s20-cmmc-6.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s21-incubator-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-1.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-2.glb": {
+   "bytes": 8812,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-3.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-4.glb": {
+   "bytes": 8752,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-5.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s22-get-delivery-dao-6.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s23-avatar-chat-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s24-donatello-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-1.glb": {
+   "bytes": 8684,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-2.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-3.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-5.glb": {
+   "bytes": 8780,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s25-mypet-ai-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-1.glb": {
+   "bytes": 8680,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-2.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-3.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-4.glb": {
+   "bytes": 8736,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-5.glb": {
+   "bytes": 8776,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s26-lyka-dao-6.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-4.glb": {
+   "bytes": 8744,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s27-genomic-dao-6.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-1.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-2.glb": {
+   "bytes": 8816,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-3.glb": {
+   "bytes": 8716,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-4.glb": {
+   "bytes": 8760,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-5.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s28-genomic-blockchain-6.glb": {
+   "bytes": 8732,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s29-metaverse-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-1.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-2.glb": {
+   "bytes": 8804,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-3.glb": {
+   "bytes": 8704,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-4.glb": {
+   "bytes": 8748,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-5.glb": {
+   "bytes": 8788,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s31-aerospace-dao-6.glb": {
+   "bytes": 8720,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-1.glb": {
+   "bytes": 8688,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-2.glb": {
+   "bytes": 8800,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-3.glb": {
+   "bytes": 8700,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-5.glb": {
+   "bytes": 8784,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s32-solar-dao-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-1.glb": {
+   "bytes": 8684,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-2.glb": {
+   "bytes": 8796,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-3.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-4.glb": {
+   "bytes": 8740,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-5.glb": {
+   "bytes": 8780,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s33-infogurus-6.glb": {
+   "bytes": 8712,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-1.glb": {
+   "bytes": 8680,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-2.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-3.glb": {
+   "bytes": 8692,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-4.glb": {
+   "bytes": 8736,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-5.glb": {
+   "bytes": 8776,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s34-als-dao-6.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-1.glb": {
+   "bytes": 8696,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-2.glb": {
+   "bytes": 8808,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-3.glb": {
+   "bytes": 8708,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-4.glb": {
+   "bytes": 8752,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-5.glb": {
+   "bytes": 8792,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/room-s35-parkinsons-dao-6.glb": {
+   "bytes": 8724,
+   "why": "viewer: building room (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-clinic.glb": {
+   "bytes": 793308,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-desk.glb": {
+   "bytes": 608972,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-forum.glb": {
+   "bytes": 605132,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-lab.glb": {
+   "bytes": 621024,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-library.glb": {
+   "bytes": 924452,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-ops.glb": {
+   "bytes": 765920,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-ext-studio.glb": {
+   "bytes": 827176,
+   "why": "viewer: building exterior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-clinic.glb": {
+   "bytes": 1051920,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-desk.glb": {
+   "bytes": 719500,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-forum.glb": {
+   "bytes": 775172,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-lab.glb": {
+   "bytes": 790792,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-library.glb": {
+   "bytes": 785764,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-ops.glb": {
+   "bytes": 567600,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "my-fabric/worlds/models/spaces-int-studio.glb": {
+   "bytes": 597684,
+   "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "worldforge/out/agentic-payments/agentic-payments.glb": {
+   "bytes": 17420,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/agentic-payments/blockout.generated.json": {
+   "bytes": 10202,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/agentic-payments/cards.json": {
+   "bytes": 50822,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/agents-deploy-infrastructure/agents-deploy-infrastructure.glb": {
+   "bytes": 21952,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/agents-deploy-infrastructure/blockout.generated.json": {
+   "bytes": 13465,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/agents-deploy-infrastructure/cards.json": {
+   "bytes": 59381,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/assets/avatars/alignment.glb": {
+   "bytes": 2071608,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/avatars/coordinator.glb": {
+   "bytes": 2180424,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/avatars/host.glb": {
+   "bytes": 2136140,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/avatars/liaison.glb": {
+   "bytes": 2187888,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/avatars/omega.glb": {
+   "bytes": 2122088,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/avatars/specialist.glb": {
+   "bytes": 2205748,
+   "why": "viewer: avatar model"
+  },
+  "worldforge/out/assets/landmarks/agentic-payments.glb": {
+   "bytes": 492340,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/agentic-payments.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/agents-deploy-infrastructure.glb": {
+   "bytes": 479796,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/agents-deploy-infrastructure.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/autonomous-organizations.glb": {
+   "bytes": 477692,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/autonomous-organizations.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/biota-blockchain.glb": {
+   "bytes": 418336,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/biota-blockchain.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/cancer-dao.glb": {
+   "bytes": 896780,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/cancer-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/climate-dao.glb": {
+   "bytes": 871704,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/climate-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/diagnostic-x.glb": {
+   "bytes": 437236,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/diagnostic-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/ecology-dao.glb": {
+   "bytes": 915768,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/ecology-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/education-dao.glb": {
+   "bytes": 895244,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/education-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/empathic-x.glb": {
+   "bytes": 476356,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/empathic-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/index.json": {
+   "bytes": 114371,
+   "why": "viewer: landmark index"
+  },
+  "worldforge/out/assets/landmarks/locator-x.glb": {
+   "bytes": 448680,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/locator-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/public-health-dao.glb": {
+   "bytes": 910168,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/public-health-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/robotics-dao.glb": {
+   "bytes": 871252,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/robotics-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s04-curable-x.glb": {
+   "bytes": 445552,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s04-curable-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s05-biopharma-go.glb": {
+   "bytes": 450584,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s05-biopharma-go.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s06-blockchain.glb": {
+   "bytes": 505332,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s06-blockchain.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s07-divine-dao.glb": {
+   "bytes": 486492,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s07-divine-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s09-astrological-x.glb": {
+   "bytes": 520900,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s09-astrological-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s11-molecular.glb": {
+   "bytes": 471060,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s11-molecular.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s12-parking-smart-x.glb": {
+   "bytes": 442200,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s12-parking-smart-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s13-gonstead-x.glb": {
+   "bytes": 467340,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s13-gonstead-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s14-askdoc-x.glb": {
+   "bytes": 472160,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s14-askdoc-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s15-romanbridge-dao.glb": {
+   "bytes": 477520,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s15-romanbridge-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s16-echodawn-dao.glb": {
+   "bytes": 490948,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s16-echodawn-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s17-curable-blockchain-dao.glb": {
+   "bytes": 467472,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s17-curable-blockchain-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s19-moscone-x.glb": {
+   "bytes": 455580,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s19-moscone-x.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s20-cmmc.glb": {
+   "bytes": 489728,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s20-cmmc.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s21-incubator-dao.glb": {
+   "bytes": 460460,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s21-incubator-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s22-get-delivery-dao.glb": {
+   "bytes": 453288,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s22-get-delivery-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s23-avatar-chat.glb": {
+   "bytes": 471724,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s23-avatar-chat.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s24-donatello-dao.glb": {
+   "bytes": 480388,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s24-donatello-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s25-mypet-ai.glb": {
+   "bytes": 505952,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s25-mypet-ai.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s26-lyka-dao.glb": {
+   "bytes": 482736,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s26-lyka-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s27-genomic-dao.glb": {
+   "bytes": 445136,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s27-genomic-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s28-genomic-blockchain.glb": {
+   "bytes": 439788,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s28-genomic-blockchain.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s29-metaverse-dao.glb": {
+   "bytes": 466584,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s29-metaverse-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s31-aerospace-dao.glb": {
+   "bytes": 538440,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s31-aerospace-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s32-solar-dao.glb": {
+   "bytes": 525952,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s32-solar-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s33-infogurus.glb": {
+   "bytes": 485032,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s33-infogurus.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s34-als-dao.glb": {
+   "bytes": 478312,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s34-als-dao.lod1.glb)"
+  },
+  "worldforge/out/assets/landmarks/s35-parkinsons-dao.glb": {
+   "bytes": 488848,
+   "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s35-parkinsons-dao.lod1.glb)"
+  },
+  "worldforge/out/autonomous-organizations/autonomous-organizations.glb": {
+   "bytes": 19920,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/autonomous-organizations/blockout.generated.json": {
+   "bytes": 11909,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/autonomous-organizations/cards.json": {
+   "bytes": 56422,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/avatars/index.json": {
+   "bytes": 1301446,
+   "why": "viewer: avatar index"
+  },
+  "worldforge/out/biota-blockchain/biota-blockchain.glb": {
+   "bytes": 19316,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/biota-blockchain/blockout.generated.json": {
+   "bytes": 11719,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/biota-blockchain/cards.json": {
+   "bytes": 56199,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/cancer-dao/blockout.generated.json": {
+   "bytes": 10906,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/cancer-dao/cancer-dao.glb": {
+   "bytes": 17916,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/cancer-dao/cards.json": {
+   "bytes": 55075,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/climate-dao/blockout.generated.json": {
+   "bytes": 10993,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/climate-dao/cards.json": {
+   "bytes": 55140,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/climate-dao/climate-dao.glb": {
+   "bytes": 18088,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/diagnostic-x/blockout.generated.json": {
+   "bytes": 9441,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/diagnostic-x/cards.json": {
+   "bytes": 47965,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/diagnostic-x/diagnostic-x.glb": {
+   "bytes": 16208,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/ecology-dao/blockout.generated.json": {
+   "bytes": 10993,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/ecology-dao/cards.json": {
+   "bytes": 55189,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/ecology-dao/ecology-dao.glb": {
+   "bytes": 18088,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/education-dao/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/education-dao/cards.json": {
+   "bytes": 55269,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/education-dao/education-dao.glb": {
+   "bytes": 18436,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/empathic-x/blockout.generated.json": {
+   "bytes": 10615,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/empathic-x/cards.json": {
+   "bytes": 52802,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/empathic-x/empathic-x.glb": {
+   "bytes": 17424,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/index.json": {
+   "bytes": 14249,
+   "why": "viewer: world index"
+  },
+  "worldforge/out/locator-x/blockout.generated.json": {
+   "bytes": 11636,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/locator-x/cards.json": {
+   "bytes": 57260,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/locator-x/locator-x.glb": {
+   "bytes": 18572,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/overview/README.md": {
+   "bytes": 12440,
+   "why": "overview"
+  },
+  "worldforge/out/overview/agentic-payments.md": {
+   "bytes": 26764,
+   "why": "overview"
+  },
+  "worldforge/out/overview/agents-deploy-infrastructure.md": {
+   "bytes": 30692,
+   "why": "overview"
+  },
+  "worldforge/out/overview/autonomous-organizations.md": {
+   "bytes": 28872,
+   "why": "overview"
+  },
+  "worldforge/out/overview/biota-blockchain.md": {
+   "bytes": 28754,
+   "why": "overview"
+  },
+  "worldforge/out/overview/cancer-dao.md": {
+   "bytes": 26306,
+   "why": "overview"
+  },
+  "worldforge/out/overview/climate-dao.md": {
+   "bytes": 26440,
+   "why": "overview"
+  },
+  "worldforge/out/overview/diagnostic-x.md": {
+   "bytes": 25416,
+   "why": "overview"
+  },
+  "worldforge/out/overview/ecology-dao.md": {
+   "bytes": 26511,
+   "why": "overview"
+  },
+  "worldforge/out/overview/education-dao.md": {
+   "bytes": 26725,
+   "why": "overview"
+  },
+  "worldforge/out/overview/empathic-x.md": {
+   "bytes": 26464,
+   "why": "overview"
+  },
+  "worldforge/out/overview/locator-x.md": {
+   "bytes": 27923,
+   "why": "overview"
+  },
+  "worldforge/out/overview/public-health-dao.md": {
+   "bytes": 27470,
+   "why": "overview"
+  },
+  "worldforge/out/overview/robotics-dao.md": {
+   "bytes": 26893,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s04-curable-x.md": {
+   "bytes": 26983,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s05-biopharma-go.md": {
+   "bytes": 27541,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s06-blockchain.md": {
+   "bytes": 27143,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s07-divine-dao.md": {
+   "bytes": 27171,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s09-astrological-x.md": {
+   "bytes": 27915,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s11-molecular.md": {
+   "bytes": 27024,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s12-parking-smart-x.md": {
+   "bytes": 28109,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s13-gonstead-x.md": {
+   "bytes": 27209,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s14-askdoc-x.md": {
+   "bytes": 26820,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s15-romanbridge-dao.md": {
+   "bytes": 28113,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s16-echodawn-dao.md": {
+   "bytes": 27562,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s17-curable-blockchain-dao.md": {
+   "bytes": 29409,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s19-moscone-x.md": {
+   "bytes": 26988,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s20-cmmc.md": {
+   "bytes": 26016,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s21-incubator-dao.md": {
+   "bytes": 27636,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s22-get-delivery-dao.md": {
+   "bytes": 28200,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s23-avatar-chat.md": {
+   "bytes": 27294,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s24-donatello-dao.md": {
+   "bytes": 27647,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s25-mypet-ai.md": {
+   "bytes": 26749,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s26-lyka-dao.md": {
+   "bytes": 26729,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s27-genomic-dao.md": {
+   "bytes": 27294,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s28-genomic-blockchain.md": {
+   "bytes": 28563,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s29-metaverse-dao.md": {
+   "bytes": 27636,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s31-aerospace-dao.md": {
+   "bytes": 27634,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s32-solar-dao.md": {
+   "bytes": 26904,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s33-infogurus.md": {
+   "bytes": 26867,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s34-als-dao.md": {
+   "bytes": 26541,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s35-parkinsons-dao.md": {
+   "bytes": 27829,
+   "why": "overview"
+  },
+  "worldforge/out/public-health-dao/blockout.generated.json": {
+   "bytes": 11515,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/public-health-dao/cards.json": {
+   "bytes": 55693,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/public-health-dao/public-health-dao.glb": {
+   "bytes": 19116,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/robotics-dao/blockout.generated.json": {
+   "bytes": 11080,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/robotics-dao/cards.json": {
+   "bytes": 55514,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/robotics-dao/robotics-dao.glb": {
+   "bytes": 18260,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s04-curable-x/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s04-curable-x/cards.json": {
+   "bytes": 55503,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s04-curable-x/s04-curable-x.glb": {
+   "bytes": 18452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s05-biopharma-go/blockout.generated.json": {
+   "bytes": 11428,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s05-biopharma-go/cards.json": {
+   "bytes": 55788,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s05-biopharma-go/s05-biopharma-go.glb": {
+   "bytes": 18960,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s06-blockchain/blockout.generated.json": {
+   "bytes": 11254,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s06-blockchain/cards.json": {
+   "bytes": 55593,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s06-blockchain/s06-blockchain.glb": {
+   "bytes": 18624,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s07-divine-dao/blockout.generated.json": {
+   "bytes": 11254,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s07-divine-dao/cards.json": {
+   "bytes": 55596,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s07-divine-dao/s07-divine-dao.glb": {
+   "bytes": 18624,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s09-astrological-x/blockout.generated.json": {
+   "bytes": 11602,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s09-astrological-x/cards.json": {
+   "bytes": 55985,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s09-astrological-x/s09-astrological-x.glb": {
+   "bytes": 19292,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s11-molecular/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s11-molecular/cards.json": {
+   "bytes": 55516,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s11-molecular/s11-molecular.glb": {
+   "bytes": 18452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s12-parking-smart-x/blockout.generated.json": {
+   "bytes": 11689,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s12-parking-smart-x/cards.json": {
+   "bytes": 56082,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s12-parking-smart-x/s12-parking-smart-x.glb": {
+   "bytes": 19452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s13-gonstead-x/blockout.generated.json": {
+   "bytes": 11254,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s13-gonstead-x/cards.json": {
+   "bytes": 55609,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s13-gonstead-x/s13-gonstead-x.glb": {
+   "bytes": 18624,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s14-askdoc-x/blockout.generated.json": {
+   "bytes": 11080,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s14-askdoc-x/cards.json": {
+   "bytes": 55405,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s14-askdoc-x/s14-askdoc-x.glb": {
+   "bytes": 18280,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s15-romanbridge-dao/blockout.generated.json": {
+   "bytes": 11689,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s15-romanbridge-dao/cards.json": {
+   "bytes": 56091,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s15-romanbridge-dao/s15-romanbridge-dao.glb": {
+   "bytes": 19452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s16-echodawn-dao/blockout.generated.json": {
+   "bytes": 11428,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s16-echodawn-dao/cards.json": {
+   "bytes": 55800,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s16-echodawn-dao/s16-echodawn-dao.glb": {
+   "bytes": 18960,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s17-curable-blockchain-dao/blockout.generated.json": {
+   "bytes": 12298,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s17-curable-blockchain-dao/cards.json": {
+   "bytes": 56756,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s17-curable-blockchain-dao/s17-curable-blockchain-dao.glb": {
+   "bytes": 20556,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s19-moscone-x/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s19-moscone-x/cards.json": {
+   "bytes": 55503,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s19-moscone-x/s19-moscone-x.glb": {
+   "bytes": 18452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s20-cmmc/blockout.generated.json": {
+   "bytes": 10732,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s20-cmmc/cards.json": {
+   "bytes": 55016,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s20-cmmc/s20-cmmc.glb": {
+   "bytes": 17588,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s21-incubator-dao/blockout.generated.json": {
+   "bytes": 11515,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s21-incubator-dao/cards.json": {
+   "bytes": 55891,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s21-incubator-dao/s21-incubator-dao.glb": {
+   "bytes": 19128,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s22-get-delivery-dao/blockout.generated.json": {
+   "bytes": 11776,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s22-get-delivery-dao/cards.json": {
+   "bytes": 56196,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s22-get-delivery-dao/s22-get-delivery-dao.glb": {
+   "bytes": 19620,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s23-avatar-chat/blockout.generated.json": {
+   "bytes": 11341,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s23-avatar-chat/cards.json": {
+   "bytes": 55700,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s23-avatar-chat/s23-avatar-chat.glb": {
+   "bytes": 18792,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s24-donatello-dao/blockout.generated.json": {
+   "bytes": 11515,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s24-donatello-dao/cards.json": {
+   "bytes": 55899,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s24-donatello-dao/s24-donatello-dao.glb": {
+   "bytes": 19128,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s25-mypet-ai/blockout.generated.json": {
+   "bytes": 11080,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s25-mypet-ai/cards.json": {
+   "bytes": 55409,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s25-mypet-ai/s25-mypet-ai.glb": {
+   "bytes": 18280,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s26-lyka-dao/blockout.generated.json": {
+   "bytes": 11080,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s26-lyka-dao/cards.json": {
+   "bytes": 55412,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s26-lyka-dao/s26-lyka-dao.glb": {
+   "bytes": 18280,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s27-genomic-dao/blockout.generated.json": {
+   "bytes": 11341,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s27-genomic-dao/cards.json": {
+   "bytes": 55700,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s27-genomic-dao/s27-genomic-dao.glb": {
+   "bytes": 18792,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s28-genomic-blockchain/blockout.generated.json": {
+   "bytes": 11950,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s28-genomic-blockchain/cards.json": {
+   "bytes": 56370,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s28-genomic-blockchain/s28-genomic-blockchain.glb": {
+   "bytes": 19940,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s29-metaverse-dao/blockout.generated.json": {
+   "bytes": 11515,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s29-metaverse-dao/cards.json": {
+   "bytes": 55891,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s29-metaverse-dao/s29-metaverse-dao.glb": {
+   "bytes": 19128,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s31-aerospace-dao/blockout.generated.json": {
+   "bytes": 11515,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s31-aerospace-dao/cards.json": {
+   "bytes": 55894,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s31-aerospace-dao/s31-aerospace-dao.glb": {
+   "bytes": 19128,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s32-solar-dao/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s32-solar-dao/cards.json": {
+   "bytes": 55499,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s32-solar-dao/s32-solar-dao.glb": {
+   "bytes": 18452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s33-infogurus/blockout.generated.json": {
+   "bytes": 11167,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s33-infogurus/cards.json": {
+   "bytes": 55520,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s33-infogurus/s33-infogurus.glb": {
+   "bytes": 18452,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s34-als-dao/blockout.generated.json": {
+   "bytes": 10993,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s34-als-dao/cards.json": {
+   "bytes": 55313,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s34-als-dao/s34-als-dao.glb": {
+   "bytes": 18108,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/s35-parkinsons-dao/blockout.generated.json": {
+   "bytes": 11602,
+   "why": "viewer: blockout"
+  },
+  "worldforge/out/s35-parkinsons-dao/cards.json": {
+   "bytes": 55999,
+   "why": "viewer: cards"
+  },
+  "worldforge/out/s35-parkinsons-dao/s35-parkinsons-dao.glb": {
+   "bytes": 19292,
+   "why": "viewer: card-tagged blockout GLB"
+  },
+  "worldforge/out/voices/agentic-payments/alignment.mp4": {
+   "bytes": 52075,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agentic-payments/buyer-agent.mp4": {
+   "bytes": 55617,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agentic-payments/coordinator.mp4": {
+   "bytes": 57945,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agentic-payments/host.mp4": {
+   "bytes": 54389,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agentic-payments/steward.mp4": {
+   "bytes": 55974,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agents-deploy-infrastructure/alignment.mp4": {
+   "bytes": 64854,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agents-deploy-infrastructure/coordinator.mp4": {
+   "bytes": 56029,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agents-deploy-infrastructure/host.mp4": {
+   "bytes": 50420,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agents-deploy-infrastructure/planner.mp4": {
+   "bytes": 51168,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/agents-deploy-infrastructure/steward.mp4": {
+   "bytes": 63729,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/autonomous-organizations/alignment.mp4": {
+   "bytes": 96337,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/autonomous-organizations/coordinator.mp4": {
+   "bytes": 57741,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/autonomous-organizations/goal-keeper.mp4": {
+   "bytes": 52649,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/autonomous-organizations/host.mp4": {
+   "bytes": 53079,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/autonomous-organizations/steward.mp4": {
+   "bytes": 63729,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/biota-blockchain/alignment.mp4": {
+   "bytes": 67100,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/biota-blockchain/coordinator.mp4": {
+   "bytes": 64763,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/biota-blockchain/host.mp4": {
+   "bytes": 55675,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/biota-blockchain/research-development-agent.mp4": {
+   "bytes": 61249,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/biota-blockchain/steward.mp4": {
+   "bytes": 57820,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/cancer-dao/alignment.mp4": {
+   "bytes": 67169,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/cancer-dao/coordinator.mp4": {
+   "bytes": 46817,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/cancer-dao/evidence-monitor.mp4": {
+   "bytes": 54938,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/cancer-dao/host.mp4": {
+   "bytes": 92350,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/cancer-dao/steward.mp4": {
+   "bytes": 63711,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/climate-dao/alignment.mp4": {
+   "bytes": 65814,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/climate-dao/coordinator.mp4": {
+   "bytes": 56586,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/climate-dao/evidence-monitor.mp4": {
+   "bytes": 53070,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/climate-dao/host.mp4": {
+   "bytes": 56306,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/climate-dao/steward.mp4": {
+   "bytes": 59607,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/diagnostic-x/alignment.mp4": {
+   "bytes": 58760,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/diagnostic-x/coordinator.mp4": {
+   "bytes": 62311,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/diagnostic-x/host.mp4": {
+   "bytes": 63006,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/diagnostic-x/medical-ai-avatar.mp4": {
+   "bytes": 59048,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/diagnostic-x/steward.mp4": {
+   "bytes": 56632,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/ecology-dao/alignment.mp4": {
+   "bytes": 67169,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/ecology-dao/coordinator.mp4": {
+   "bytes": 51934,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/ecology-dao/evidence-monitor.mp4": {
+   "bytes": 63385,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/ecology-dao/host.mp4": {
+   "bytes": 50573,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/ecology-dao/steward.mp4": {
+   "bytes": 56943,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/education-dao/alignment.mp4": {
+   "bytes": 64854,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/education-dao/coordinator.mp4": {
+   "bytes": 54966,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/education-dao/evidence-monitor.mp4": {
+   "bytes": 56892,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/education-dao/host.mp4": {
+   "bytes": 57696,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/education-dao/steward.mp4": {
+   "bytes": 57820,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/empathic-x/alignment.mp4": {
+   "bytes": 60757,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/empathic-x/coordinator.mp4": {
+   "bytes": 56948,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/empathic-x/host.mp4": {
+   "bytes": 53843,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/empathic-x/self-reader-guide.mp4": {
+   "bytes": 61425,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/empathic-x/steward.mp4": {
+   "bytes": 62519,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/locator-x/alignment.mp4": {
+   "bytes": 57807,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/locator-x/coordinator.mp4": {
+   "bytes": 68966,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/locator-x/guide.mp4": {
+   "bytes": 43082,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/locator-x/host.mp4": {
+   "bytes": 55687,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/locator-x/steward.mp4": {
+   "bytes": 54315,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/public-health-dao/alignment.mp4": {
+   "bytes": 57565,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/public-health-dao/coordinator.mp4": {
+   "bytes": 52723,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/public-health-dao/evidence-monitor.mp4": {
+   "bytes": 55434,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/public-health-dao/host.mp4": {
+   "bytes": 61864,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/public-health-dao/steward.mp4": {
+   "bytes": 59823,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/robotics-dao/alignment.mp4": {
+   "bytes": 69337,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/robotics-dao/coordinator.mp4": {
+   "bytes": 57974,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/robotics-dao/evidence-monitor.mp4": {
+   "bytes": 54023,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/robotics-dao/host.mp4": {
+   "bytes": 55835,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/robotics-dao/steward.mp4": {
+   "bytes": 64165,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s04-curable-x/alignment.mp4": {
+   "bytes": 66125,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s04-curable-x/coordinator.mp4": {
+   "bytes": 64045,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s04-curable-x/evidence-monitor.mp4": {
+   "bytes": 56845,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s04-curable-x/host.mp4": {
+   "bytes": 53843,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s04-curable-x/steward.mp4": {
+   "bytes": 59823,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s05-biopharma-go/alignment.mp4": {
+   "bytes": 58793,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s05-biopharma-go/coordinator.mp4": {
+   "bytes": 48890,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s05-biopharma-go/evidence-monitor.mp4": {
+   "bytes": 94685,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s05-biopharma-go/host.mp4": {
+   "bytes": 54716,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s05-biopharma-go/steward.mp4": {
+   "bytes": 64165,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s06-blockchain/alignment.mp4": {
+   "bytes": 57565,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s06-blockchain/coordinator.mp4": {
+   "bytes": 61717,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s06-blockchain/evidence-monitor.mp4": {
+   "bytes": 56376,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s06-blockchain/host.mp4": {
+   "bytes": 61864,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s06-blockchain/steward.mp4": {
+   "bytes": 56780,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s07-divine-dao/alignment.mp4": {
+   "bytes": 65008,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s07-divine-dao/coordinator.mp4": {
+   "bytes": 55296,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s07-divine-dao/evidence-monitor.mp4": {
+   "bytes": 57224,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s07-divine-dao/host.mp4": {
+   "bytes": 53843,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s07-divine-dao/steward.mp4": {
+   "bytes": 53577,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s09-astrological-x/alignment.mp4": {
+   "bytes": 65008,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s09-astrological-x/coordinator.mp4": {
+   "bytes": 59011,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s09-astrological-x/evidence-monitor.mp4": {
+   "bytes": 65416,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s09-astrological-x/host.mp4": {
+   "bytes": 92350,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s09-astrological-x/steward.mp4": {
+   "bytes": 57820,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s11-molecular/alignment.mp4": {
+   "bytes": 57397,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s11-molecular/coordinator.mp4": {
+   "bytes": 49102,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s11-molecular/evidence-monitor.mp4": {
+   "bytes": 65379,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s11-molecular/host.mp4": {
+   "bytes": 58915,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s11-molecular/steward.mp4": {
+   "bytes": 55974,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s12-parking-smart-x/alignment.mp4": {
+   "bytes": 60818,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s12-parking-smart-x/coordinator.mp4": {
+   "bytes": 54847,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s12-parking-smart-x/evidence-monitor.mp4": {
+   "bytes": 87251,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s12-parking-smart-x/host.mp4": {
+   "bytes": 57696,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s12-parking-smart-x/steward.mp4": {
+   "bytes": 55190,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s13-gonstead-x/alignment.mp4": {
+   "bytes": 52075,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s13-gonstead-x/coordinator.mp4": {
+   "bytes": 68319,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s13-gonstead-x/evidence-monitor.mp4": {
+   "bytes": 58599,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s13-gonstead-x/host.mp4": {
+   "bytes": 62026,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s13-gonstead-x/steward.mp4": {
+   "bytes": 51066,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s14-askdoc-x/alignment.mp4": {
+   "bytes": 60818,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s14-askdoc-x/coordinator.mp4": {
+   "bytes": 61730,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s14-askdoc-x/evidence-monitor.mp4": {
+   "bytes": 51646,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s14-askdoc-x/host.mp4": {
+   "bytes": 65514,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s14-askdoc-x/steward.mp4": {
+   "bytes": 63677,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s15-romanbridge-dao/alignment.mp4": {
+   "bytes": 58292,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s15-romanbridge-dao/coordinator.mp4": {
+   "bytes": 59793,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s15-romanbridge-dao/evidence-monitor.mp4": {
+   "bytes": 62766,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s15-romanbridge-dao/host.mp4": {
+   "bytes": 65514,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s15-romanbridge-dao/steward.mp4": {
+   "bytes": 96938,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s16-echodawn-dao/alignment.mp4": {
+   "bytes": 57565,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s16-echodawn-dao/coordinator.mp4": {
+   "bytes": 57493,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s16-echodawn-dao/evidence-monitor.mp4": {
+   "bytes": 60340,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s16-echodawn-dao/host.mp4": {
+   "bytes": 55675,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s16-echodawn-dao/steward.mp4": {
+   "bytes": 58046,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s17-curable-blockchain-dao/alignment.mp4": {
+   "bytes": 58451,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s17-curable-blockchain-dao/coordinator.mp4": {
+   "bytes": 61523,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s17-curable-blockchain-dao/evidence-monitor.mp4": {
+   "bytes": 56479,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s17-curable-blockchain-dao/host.mp4": {
+   "bytes": 55675,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s17-curable-blockchain-dao/steward.mp4": {
+   "bytes": 56442,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s19-moscone-x/coordinator.mp4": {
+   "bytes": 55906,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s19-moscone-x/evidence-monitor.mp4": {
+   "bytes": 54414,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s19-moscone-x/host.mp4": {
+   "bytes": 54202,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s19-moscone-x/steward.mp4": {
+   "bytes": 51066,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s20-cmmc/coordinator.mp4": {
+   "bytes": 48217,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s20-cmmc/evidence-monitor.mp4": {
+   "bytes": 58237,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s21-incubator-dao/coordinator.mp4": {
+   "bytes": 58358,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s21-incubator-dao/evidence-monitor.mp4": {
+   "bytes": 45963,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s22-get-delivery-dao/coordinator.mp4": {
+   "bytes": 59458,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s22-get-delivery-dao/evidence-monitor.mp4": {
+   "bytes": 61357,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s23-avatar-chat/coordinator.mp4": {
+   "bytes": 64396,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s23-avatar-chat/evidence-monitor.mp4": {
+   "bytes": 54613,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s24-donatello-dao/coordinator.mp4": {
+   "bytes": 58791,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s24-donatello-dao/evidence-monitor.mp4": {
+   "bytes": 68945,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s25-mypet-ai/coordinator.mp4": {
+   "bytes": 59562,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s25-mypet-ai/evidence-monitor.mp4": {
+   "bytes": 71727,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s26-lyka-dao/coordinator.mp4": {
+   "bytes": 65453,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s26-lyka-dao/evidence-monitor.mp4": {
+   "bytes": 52289,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s27-genomic-dao/coordinator.mp4": {
+   "bytes": 60761,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s27-genomic-dao/evidence-monitor.mp4": {
+   "bytes": 59773,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s28-genomic-blockchain/coordinator.mp4": {
+   "bytes": 57494,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s28-genomic-blockchain/evidence-monitor.mp4": {
+   "bytes": 107523,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s29-metaverse-dao/coordinator.mp4": {
+   "bytes": 62839,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s29-metaverse-dao/evidence-monitor.mp4": {
+   "bytes": 54992,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s31-aerospace-dao/coordinator.mp4": {
+   "bytes": 52944,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s31-aerospace-dao/evidence-monitor.mp4": {
+   "bytes": 57488,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s32-solar-dao/coordinator.mp4": {
+   "bytes": 53333,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s32-solar-dao/evidence-monitor.mp4": {
+   "bytes": 53071,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s33-infogurus/coordinator.mp4": {
+   "bytes": 65695,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s33-infogurus/evidence-monitor.mp4": {
+   "bytes": 51455,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s34-als-dao/coordinator.mp4": {
+   "bytes": 56763,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s34-als-dao/evidence-monitor.mp4": {
+   "bytes": 60646,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s35-parkinsons-dao/coordinator.mp4": {
+   "bytes": 60188,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/out/voices/s35-parkinsons-dao/evidence-monitor.mp4": {
+   "bytes": 60587,
+   "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
+  },
+  "worldforge/review/out/media/frame-cancer-dao-orbit.jpg": {
+   "bytes": 52287,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/media/frame-locator-x-building.jpg": {
+   "bytes": 39751,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/media/frame-locator-x-omega.jpg": {
+   "bytes": 48140,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/media/frame-locator-x-orbit.jpg": {
+   "bytes": 55106,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/media/frame-s29-metaverse-dao-orbit.jpg": {
+   "bytes": 51944,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/media/review-poster.jpg": {
+   "bytes": 50838,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/review-film.mp4": {
+   "bytes": 10902633,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/review.vtt": {
+   "bytes": 2574,
+   "why": "referenced by worldforge/review/out/whitepaper.html"
+  },
+  "worldforge/review/out/whitepaper.html": {
+   "bytes": 120369,
+   "why": "page"
+  },
+  "worldforge/viewer.html": {
+   "bytes": 116242,
+   "why": "page"
+  },
+  "worldforge/whitepaper/out/film-features.mp4": {
+   "bytes": 9070022,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/film-features.vtt": {
+   "bytes": 2033,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/film-roadmap-stack.mp4": {
+   "bytes": 2851038,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/film-roadmap-stack.vtt": {
+   "bytes": 2251,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/index.html": {
+   "bytes": 298757,
+   "why": "page"
+  },
+  "worldforge/whitepaper/out/media/avatars-preview.jpg": {
+   "bytes": 93546,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/frame-cancer-dao-flyin.jpg": {
+   "bytes": 71220,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/frame-cancer-dao-omega.jpg": {
+   "bytes": 47183,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/landmarks-preview.jpg": {
+   "bytes": 192270,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/plan-locator-x.jpg": {
+   "bytes": 42322,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/poster-features.jpg": {
+   "bytes": 50874,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/poster-roadmap-stack.jpg": {
+   "bytes": 52727,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/still-console.jpg": {
+   "bytes": 155755,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/still-viewer-building.jpg": {
+   "bytes": 94730,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/still-viewer-council.jpg": {
+   "bytes": 152248,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/still-viewer-omega.jpg": {
+   "bytes": 88178,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worldforge/whitepaper/out/media/still-viewer-orbit.jpg": {
+   "bytes": 115356,
+   "why": "referenced by worldforge/whitepaper/out/index.html"
+  },
+  "worlds/generated/teams/agentic-payments.json": {
+   "bytes": 498154,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/agents-deploy-infrastructure.json": {
+   "bytes": 521130,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/autonomous-organizations.json": {
+   "bytes": 511360,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/biota-blockchain.json": {
+   "bytes": 509896,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/cancer-dao.json": {
+   "bytes": 496555,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/climate-dao.json": {
+   "bytes": 497083,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/diagnostic-x.json": {
+   "bytes": 512969,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/ecology-dao.json": {
+   "bytes": 498313,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/education-dao.json": {
+   "bytes": 498409,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/empathic-x.json": {
+   "bytes": 501000,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/locator-x.json": {
+   "bytes": 484570,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/public-health-dao.json": {
+   "bytes": 505482,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/robotics-dao.json": {
+   "bytes": 506934,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s04-curable-x.json": {
+   "bytes": 506430,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s05-biopharma-go.json": {
+   "bytes": 511243,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s06-blockchain.json": {
+   "bytes": 508060,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s07-divine-dao.json": {
+   "bytes": 508060,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s09-astrological-x.json": {
+   "bytes": 514363,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s11-molecular.json": {
+   "bytes": 506651,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s12-parking-smart-x.json": {
+   "bytes": 516052,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s13-gonstead-x.json": {
+   "bytes": 508269,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s14-askdoc-x.json": {
+   "bytes": 505009,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s15-romanbridge-dao.json": {
+   "bytes": 516051,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s16-echodawn-dao.json": {
+   "bytes": 511452,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s17-curable-blockchain-dao.json": {
+   "bytes": 526377,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s19-moscone-x.json": {
+   "bytes": 506639,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s20-cmmc.json": {
+   "bytes": 499593,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s21-incubator-dao.json": {
+   "bytes": 512982,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s22-get-delivery-dao.json": {
+   "bytes": 517640,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s23-avatar-chat.json": {
+   "bytes": 509822,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s24-donatello-dao.json": {
+   "bytes": 512981,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s25-mypet-ai.json": {
+   "bytes": 505009,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s26-lyka-dao.json": {
+   "bytes": 505009,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s27-genomic-dao.json": {
+   "bytes": 509822,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s28-genomic-blockchain.json": {
+   "bytes": 520669,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s29-metaverse-dao.json": {
+   "bytes": 512982,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s31-aerospace-dao.json": {
+   "bytes": 512982,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s32-solar-dao.json": {
+   "bytes": 506639,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s33-infogurus.json": {
+   "bytes": 506639,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s34-als-dao.json": {
+   "bytes": 503379,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  },
+  "worlds/generated/teams/s35-parkinsons-dao.json": {
+   "bytes": 514572,
+   "why": "viewer: team brand (../worlds/generated/teams)"
+  }
+ },
+ "files": 913,
+ "generated_by": "worldforge/site/build_site.py",
+ "layout": "repository paths, copied byte-for-byte; nothing rewritten",
+ "limits": {
+  "max_files": 20000,
+  "per_file_MiB": 25
+ },
+ "substituted": [
+  {
+   "served_at": "worldforge/out/assets/landmarks/agentic-payments.glb",
+   "source": "worldforge/out/assets/lod/landmarks/agentic-payments.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/agents-deploy-infrastructure.glb",
+   "source": "worldforge/out/assets/lod/landmarks/agents-deploy-infrastructure.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/autonomous-organizations.glb",
+   "source": "worldforge/out/assets/lod/landmarks/autonomous-organizations.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/biota-blockchain.glb",
+   "source": "worldforge/out/assets/lod/landmarks/biota-blockchain.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/cancer-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/cancer-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/climate-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/climate-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/diagnostic-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/diagnostic-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/ecology-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/ecology-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/education-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/education-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/empathic-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/empathic-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/locator-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/locator-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/public-health-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/public-health-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/robotics-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/robotics-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s04-curable-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s04-curable-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s05-biopharma-go.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s05-biopharma-go.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s06-blockchain.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s06-blockchain.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s07-divine-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s07-divine-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s09-astrological-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s09-astrological-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s11-molecular.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s11-molecular.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s12-parking-smart-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s12-parking-smart-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s13-gonstead-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s13-gonstead-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s14-askdoc-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s14-askdoc-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s15-romanbridge-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s15-romanbridge-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s16-echodawn-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s16-echodawn-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s17-curable-blockchain-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s17-curable-blockchain-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s19-moscone-x.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s19-moscone-x.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s20-cmmc.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s20-cmmc.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s21-incubator-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s21-incubator-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s22-get-delivery-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s22-get-delivery-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s23-avatar-chat.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s23-avatar-chat.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s24-donatello-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s24-donatello-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s25-mypet-ai.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s25-mypet-ai.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s26-lyka-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s26-lyka-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s27-genomic-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s27-genomic-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s28-genomic-blockchain.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s28-genomic-blockchain.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s29-metaverse-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s29-metaverse-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s31-aerospace-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s31-aerospace-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s32-solar-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s32-solar-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s33-infogurus.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s33-infogurus.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s34-als-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s34-als-dao.lod1.glb"
+  },
+  {
+   "served_at": "worldforge/out/assets/landmarks/s35-parkinsons-dao.glb",
+   "source": "worldforge/out/assets/lod/landmarks/s35-parkinsons-dao.lod1.glb"
+  }
+ ]
+}

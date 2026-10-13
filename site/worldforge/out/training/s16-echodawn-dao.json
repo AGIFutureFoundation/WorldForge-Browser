@@ -1,0 +1,756 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "EchoDawn DAO (Series 16)",
+ "slug": "s16-echodawn-dao",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:s16-echodawn-dao/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "s16-echodawn-dao",
+   "zone": "EchoDawn DAO (Series 16) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].tagline"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].zones[*].name"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[*].name"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "EchoDawn DAO (Series 16) is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].status"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/s16-echodawn-dao.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "s16-echodawn-dao",
+   "zone": "EchoDawn DAO (Series 16) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].reserved_for_humans"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].stewards"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/s16-echodawn-dao.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "s16-echodawn-dao",
+   "zone": "EchoDawn DAO (Series 16) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How EchoDawn DAO (Series 16) routes a question",
+   "world": "s16-echodawn-dao",
+   "zone": "EchoDawn DAO (Series 16) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/s16-echodawn-dao.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/s16-echodawn-dao.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Evidence Monitor (Research Synthesis Lab): Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "keywords": [
+      "monitor",
+      "monitors",
+      "summarizes"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.evidence-monitor]"
+    },
+    {
+     "n": 2,
+     "do": "Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "keywords": [
+      "synthesizes"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.research-synthesis-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Collaborator Scout (Operations Deck): Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "keywords": [
+      "collaborator",
+      "scout",
+      "identifies",
+      "experts",
+      "collaborators"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.collaborator-scout]"
+    },
+    {
+     "n": 4,
+     "do": "Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles",
+     "keywords": [
+      "router",
+      "routes",
+      "tasks",
+      "coordinates",
+      "between",
+      "decision",
+      "cycles"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.task-router]"
+    },
+    {
+     "n": 5,
+     "do": "Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them",
+     "keywords": [
+      "proposal",
+      "grant",
+      "drafter",
+      "drafts",
+      "proposals",
+      "grants",
+      "human",
+      "review",
+      "never",
+      "enacts",
+      "them",
+      "forum",
+      "drafted",
+      "agents",
+      "debated",
+      "decided",
+      "people"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.proposal-grant-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes",
+     "keywords": [
+      "tracker",
+      "tracks",
+      "against",
+      "measurable",
+      "outcomes",
+      "observatory",
+      "tracking"
+     ],
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.progress-tracker]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/s16-echodawn-dao.json#coordinator",
+    "agents/swarms/s16-echodawn-dao.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/zone/research-synthesis-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Research Synthesis Lab: what happens here",
+   "world": "s16-echodawn-dao",
+   "zone": "Research Synthesis Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Research Synthesis Lab",
+    "room_model": "my-fabric/worlds/models/room-s16-echodawn-dao-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/research-synthesis-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Monitoring developments and summarizing evidence",
+     "quote": "Monitoring developments and summarizing evidence",
+     "from": "worlds/s16-echodawn-dao/spec.json#zones[name=Research Synthesis Lab].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Evidence Monitor's role: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "quote": "Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.evidence-monitor].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Research Synthesis Agent's role: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "quote": "Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.research-synthesis-agent].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Research Synthesis Lab\"",
+     "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/research-synthesis-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/evidence-monitor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/research-synthesis-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator",
+     "from": "agents/swarms/s16-echodawn-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/specialist/evidence-monitor",
+    "avatar:s16-echodawn-dao/specialist/research-synthesis-agent"
+   ],
+   "sources": [
+    "worlds/s16-echodawn-dao/spec.json#zones[name=Research Synthesis Lab]",
+    "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/research-synthesis-lab]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.evidence-monitor]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.research-synthesis-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/zone/proposal-forum",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Proposal Forum: what happens here",
+   "world": "s16-echodawn-dao",
+   "zone": "Proposal Forum",
+   "room": {
+    "kind": "forum",
+    "sign": "Proposal Forum",
+    "room_model": "my-fabric/worlds/models/room-s16-echodawn-dao-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/proposal-forum].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Proposals drafted by agents, debated and decided by people",
+     "quote": "Proposals drafted by agents, debated and decided by people",
+     "from": "worlds/s16-echodawn-dao/spec.json#zones[name=Proposal Forum].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Proposal & Grant Drafter's role: Drafts proposals and grants for human review; never enacts them",
+     "quote": "Drafts proposals and grants for human review; never enacts them",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.proposal-grant-drafter].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Proposal Forum\"",
+     "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/proposal-forum].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/proposal-grant-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator",
+     "from": "agents/swarms/s16-echodawn-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/specialist/proposal-grant-drafter"
+   ],
+   "sources": [
+    "worlds/s16-echodawn-dao/spec.json#zones[name=Proposal Forum]",
+    "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/proposal-forum]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.proposal-grant-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "s16-echodawn-dao",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-s16-echodawn-dao-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Task routing, working groups and operational coordination",
+     "quote": "Task routing, working groups and operational coordination",
+     "from": "worlds/s16-echodawn-dao/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Collaborator Scout's role: Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "quote": "Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.collaborator-scout].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Task Router's role: Routes tasks and coordinates working groups between decision cycles",
+     "quote": "Routes tasks and coordinates working groups between decision cycles",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.task-router].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Operations Deck\"",
+     "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/collaborator-scout].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Task Router: Routes tasks and coordinates working groups between decision cycles",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/task-router].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator",
+     "from": "agents/swarms/s16-echodawn-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/specialist/collaborator-scout",
+    "avatar:s16-echodawn-dao/specialist/task-router"
+   ],
+   "sources": [
+    "worlds/s16-echodawn-dao/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/operations-deck]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.collaborator-scout]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.task-router]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s16-echodawn-dao/zone/progress-observatory",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Progress Observatory: what happens here",
+   "world": "s16-echodawn-dao",
+   "zone": "Progress Observatory",
+   "room": {
+    "kind": "forum",
+    "sign": "Progress Observatory",
+    "room_model": "my-fabric/worlds/models/room-s16-echodawn-dao-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/progress-observatory].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Progress tracking against the charter's measurable outcomes",
+     "quote": "Progress tracking against the charter's measurable outcomes",
+     "from": "worlds/s16-echodawn-dao/spec.json#zones[name=Progress Observatory].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Progress Tracker's role: Tracks progress against the charter's measurable outcomes",
+     "quote": "Tracks progress against the charter's measurable outcomes",
+     "from": "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.progress-tracker].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Progress Observatory\"",
+     "from": "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/progress-observatory].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Progress Tracker: Tracks progress against the charter's measurable outcomes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s16-echodawn-dao/specialist/progress-tracker].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator",
+     "from": "agents/swarms/s16-echodawn-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s16-echodawn-dao/specialist/progress-tracker"
+   ],
+   "sources": [
+    "worlds/s16-echodawn-dao/spec.json#zones[name=Progress Observatory]",
+    "worldforge/out/s16-echodawn-dao/cards.json#cards[cardId=zone:s16-echodawn-dao/progress-observatory]",
+    "agents/swarms/s16-echodawn-dao.json#agents[id=s16-echodawn-dao.progress-tracker]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:s16-echodawn-dao/coordinator",
+   "avatarId": "avatar:s16-echodawn-dao/coordinator",
+   "kind": "coordinator",
+   "name": "EchoDawn DAO (Series 16) Coordinator",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/coordinator",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "0d37c6509c4066b936c7fb71d009b51216978b02ca4b08bb72c435cd84222ba2"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/routing"
+   ],
+   "chars": 2936,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: EchoDawn DAO (Series 16) Coordinator (avatar:s16-echodawn-dao/coordinator) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/coordinator in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 0d37c6509c4066b9); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate EchoDawn DAO (Series 16) (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from EchoDawn DAO (Series 16) Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/routing: How EchoDawn DAO (Series 16) routes a question\n    Steps: 1. Evidence Monitor (Research Synthesis Lab): Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 2. Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 3. Collaborator Scout (Operations Deck): Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 4. Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles 5. Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them 6. Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/evidence-monitor",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/evidence-monitor",
+   "kind": "specialist",
+   "name": "Evidence Monitor",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/evidence-monitor",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "393e9597b52cd7d85030952dc6c4683c4f7877fa04d26ff181b048b5388041aa"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2789,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Evidence Monitor (avatar:s16-echodawn-dao/specialist/evidence-monitor) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/evidence-monitor in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 393e9597b52cd7d8); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: monitor, monitors, summarizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 4. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/research-synthesis-agent",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/research-synthesis-agent",
+   "kind": "specialist",
+   "name": "Research Synthesis Agent",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/research-synthesis-agent",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "50cd2961392d5de9d8e7be2cf18bfd695dd990bec3d62e013c986a515d9dbbf6"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2783,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research Synthesis Agent (avatar:s16-echodawn-dao/specialist/research-synthesis-agent) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/research-synthesis-agent in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 50cd2961392d5de9); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: synthesizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 4. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/proposal-grant-drafter",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/proposal-grant-drafter",
+   "kind": "specialist",
+   "name": "Proposal & Grant Drafter",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/proposal-grant-drafter",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "0d2c37dad4d93f119e597ca657f6fdc12256c0ca92c58a8285d45d6318ee75ef"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/proposal-forum"
+   ],
+   "chars": 2700,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Proposal & Grant Drafter (avatar:s16-echodawn-dao/specialist/proposal-grant-drafter) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/proposal-grant-drafter in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 0d2c37dad4d93f11); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Proposal Forum - Proposals drafted by agents, debated and decided by people.\nYour role: Drafts proposals and grants for human review; never enacts them (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: proposal, grant, drafter, drafts, proposals, grants, human, review, never, enacts, them, forum, drafted, agents, debated, decided, people.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/proposal-forum: Proposal Forum: what happens here [room: Proposal Forum]\n    Steps: 1. Enter the forum signed \"Proposal Forum\" 2. Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them 3. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/collaborator-scout",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/collaborator-scout",
+   "kind": "specialist",
+   "name": "Collaborator Scout",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/collaborator-scout",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "257e94ca23bfafef64bd3e08dd53dbc5858229d41f57c0461e79458164d50025"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/operations-deck"
+   ],
+   "chars": 2753,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Collaborator Scout (avatar:s16-echodawn-dao/specialist/collaborator-scout) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/collaborator-scout in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 257e94ca23bfafef); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: collaborator, scout, identifies, experts, collaborators.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/task-router",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/task-router",
+   "kind": "specialist",
+   "name": "Task Router",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/task-router",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "d74d4b7087fe3cd689eada0fda6b86913fe784187a7391e2a1808d13a0c4c377"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/operations-deck"
+   ],
+   "chars": 2710,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Task Router (avatar:s16-echodawn-dao/specialist/task-router) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/task-router in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 d74d4b7087fe3cd6); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Routes tasks and coordinates working groups between decision cycles (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: router, routes, tasks, coordinates, between, decision, cycles.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s16-echodawn-dao/specialist/progress-tracker",
+   "avatarId": "avatar:s16-echodawn-dao/specialist/progress-tracker",
+   "kind": "specialist",
+   "name": "Progress Tracker",
+   "persona_prompt": {
+    "id": "persona:s16-echodawn-dao/specialist/progress-tracker",
+    "file": "worldforge/out/avatars/prompts/s16-echodawn-dao.json",
+    "sha256": "cf0509c0d4793a525279c9038082d40e57c3e67f757149284840d27f168ffcdb"
+   },
+   "lessons": [
+    "lesson:s16-echodawn-dao/zone/progress-observatory"
+   ],
+   "chars": 2623,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Progress Tracker (avatar:s16-echodawn-dao/specialist/progress-tracker) teaches draft lessons in EchoDawn DAO (Series 16) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s16-echodawn-dao/specialist/progress-tracker in worldforge/out/avatars/prompts/s16-echodawn-dao.json (sha256 cf0509c0d4793a52); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Progress Observatory - Progress tracking against the charter's measurable outcomes.\nYour role: Tracks progress against the charter's measurable outcomes (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: tracker, tracks, against, measurable, outcomes, observatory, tracking.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s16-echodawn-dao/zone/progress-observatory: Progress Observatory: what happens here [room: Progress Observatory]\n    Steps: 1. Enter the forum signed \"Progress Observatory\" 2. Meet Progress Tracker: Tracks progress against the charter's measurable outcomes 3. A question that belongs to another zone goes back to EchoDawn DAO (Series 16) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s16-echodawn-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "zone \"Charter Hall\" seats no specialist: no model-taught lesson for it",
+  "spec gap: Focus, charter outcomes and RP1 location not given yet"
+ ]
+}

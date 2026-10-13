@@ -1,0 +1,778 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Biota.blockchain (BioDAO.X)",
+ "slug": "biota-blockchain",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:biota-blockchain/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "biota-blockchain",
+   "zone": "Biota.blockchain (BioDAO.X) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].tagline"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].zones[*].name"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].agents[*].name"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Biota.blockchain (BioDAO.X) is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].status"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/biota-blockchain.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:biota-blockchain/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "biota-blockchain",
+   "zone": "Biota.blockchain (BioDAO.X) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].reserved_for_humans"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=biota-blockchain].stewards"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/biota-blockchain.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:biota-blockchain/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "biota-blockchain",
+   "zone": "Biota.blockchain (BioDAO.X) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/biota-blockchain.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/biota-blockchain.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:biota-blockchain/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Biota.blockchain (BioDAO.X) routes a question",
+   "world": "biota-blockchain",
+   "zone": "Biota.blockchain (BioDAO.X) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/biota-blockchain.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/biota-blockchain.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Health Agent (Healthcare Data Exchange): Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access",
+     "keywords": [
+      "health",
+      "tasks",
+      "e.g.",
+      "encrypting",
+      "patient",
+      "managing",
+      "access",
+      "healthcare",
+      "exchange",
+      "sharing",
+      "smart",
+      "contract",
+      "consent"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.health-agent]"
+    },
+    {
+     "n": 2,
+     "do": "Security Agent (Multi-Blockchain Ledger): Monitors blockchain transactions for potential threats",
+     "keywords": [
+      "security",
+      "monitors",
+      "potential",
+      "threats",
+      "multi",
+      "ledger",
+      "interoperable",
+      "ledgers",
+      "ethereum",
+      "hyperledger",
+      "polkadot",
+      "cosmos",
+      "verified",
+      "cross",
+      "network"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.security-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Compliance Agent (DAO Governance Hall): Ensures regulatory adherence across different jurisdictions",
+     "keywords": [
+      "compliance",
+      "ensures",
+      "regulatory",
+      "adherence",
+      "across",
+      "different",
+      "jurisdictions"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.compliance-agent]"
+    },
+    {
+     "n": 4,
+     "do": "Finance Agent (DAO Governance Hall): Scans blockchain transactions for fraud patterns and triggers DAO notifications",
+     "keywords": [
+      "finance",
+      "scans",
+      "fraud",
+      "patterns",
+      "triggers",
+      "notifications"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.finance-agent]"
+    },
+    {
+     "n": 5,
+     "do": "Communication Agent (DAO Governance Hall): Specialized AGI agent for secure communication (phone 2FA, encrypted messaging)",
+     "keywords": [
+      "communication",
+      "secure",
+      "phone",
+      "messaging"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.communication-agent]"
+    },
+    {
+     "n": 6,
+     "do": "Research & Development Agent (Personalized Therapy Lab): Biopharma AGI agent role for research and development",
+     "keywords": [
+      "research",
+      "development",
+      "biopharma",
+      "role",
+      "personalized",
+      "therapy",
+      "molecular",
+      "modeling",
+      "optimize",
+      "compounds",
+      "rare",
+      "neurodegenerative",
+      "diseases",
+      "parkinson"
+     ],
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.research-development-agent]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/biota-blockchain.json#coordinator",
+    "agents/swarms/biota-blockchain.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:biota-blockchain/zone/personalized-therapy-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Personalized Therapy Lab: what happens here",
+   "world": "biota-blockchain",
+   "zone": "Personalized Therapy Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Personalized Therapy Lab",
+    "room_model": "my-fabric/worlds/models/room-biota-blockchain-1.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/personalized-therapy-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: AI and molecular modeling to optimize AGI compounds for rare and neurodegenerative diseases (ALS, Parkinson's)",
+     "quote": "AI and molecular modeling to optimize AGI compounds for rare and neurodegenerative diseases (ALS, Parkinson's)",
+     "from": "worlds/biota-blockchain/spec.json#zones[name=Personalized Therapy Lab].purpose",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, p.1, Q1 and Q3"
+    },
+    {
+     "text": "Research & Development Agent's role: Biopharma AGI agent role for research and development",
+     "quote": "Biopharma AGI agent role for research and development",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.research-development-agent].role",
+     "origin": "~/Downloads/AGI Corp Biopharma Suite .webp, node 'Research & Development' (image)"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Personalized Therapy Lab\"",
+     "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/personalized-therapy-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Research & Development Agent: Biopharma AGI agent role for research and development",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/research-development-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator",
+     "from": "agents/swarms/biota-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/specialist/research-development-agent"
+   ],
+   "sources": [
+    "worlds/biota-blockchain/spec.json#zones[name=Personalized Therapy Lab]",
+    "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/personalized-therapy-lab]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.research-development-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:biota-blockchain/zone/dao-governance-hall",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "DAO Governance Hall: what happens here",
+   "world": "biota-blockchain",
+   "zone": "DAO Governance Hall",
+   "room": {
+    "kind": "forum",
+    "sign": "DAO Governance Hall",
+    "room_model": "my-fabric/worlds/models/room-biota-blockchain-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/dao-governance-hall].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Each agency or organization runs its own DAO for governance, resource allocation and policy-making",
+     "quote": "Each agency or organization runs its own DAO for governance, resource allocation and policy-making",
+     "from": "worlds/biota-blockchain/spec.json#zones[name=DAO Governance Hall].purpose",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: DAO Integration"
+    },
+    {
+     "text": "Compliance Agent's role: Ensures regulatory adherence across different jurisdictions",
+     "quote": "Ensures regulatory adherence across different jurisdictions",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.compliance-agent].role",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+    },
+    {
+     "text": "Finance Agent's role: Scans blockchain transactions for fraud patterns and triggers DAO notifications",
+     "quote": "Scans blockchain transactions for fraud patterns and triggers DAO notifications",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.finance-agent].role",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 2. Financial Compliance and Fraud Detection"
+    },
+    {
+     "text": "Communication Agent's role: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging)",
+     "quote": "Specialized AGI agent for secure communication (phone 2FA, encrypted messaging)",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.communication-agent].role",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Phone Number Authentication"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"DAO Governance Hall\"",
+     "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/dao-governance-hall].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Compliance Agent: Ensures regulatory adherence across different jurisdictions",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/compliance-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Finance Agent: Scans blockchain transactions for fraud patterns and triggers DAO notifications",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/finance-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "Meet Communication Agent: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging)",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/communication-agent].role_text"
+    },
+    {
+     "n": 5,
+     "do": "A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator",
+     "from": "agents/swarms/biota-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/specialist/compliance-agent",
+    "avatar:biota-blockchain/specialist/finance-agent",
+    "avatar:biota-blockchain/specialist/communication-agent"
+   ],
+   "sources": [
+    "worlds/biota-blockchain/spec.json#zones[name=DAO Governance Hall]",
+    "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/dao-governance-hall]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.compliance-agent]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.finance-agent]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.communication-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:biota-blockchain/zone/multi-blockchain-ledger",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Multi-Blockchain Ledger: what happens here",
+   "world": "biota-blockchain",
+   "zone": "Multi-Blockchain Ledger",
+   "room": {
+    "kind": "lab",
+    "sign": "Multi-Blockchain Ledger",
+    "room_model": "my-fabric/worlds/models/room-biota-blockchain-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/multi-blockchain-ledger].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Interoperable ledgers (Ethereum, Hyperledger, Polkadot, Cosmos) for verified cross-network data",
+     "quote": "Interoperable ledgers (Ethereum, Hyperledger, Polkadot, Cosmos) for verified cross-network data",
+     "from": "worlds/biota-blockchain/spec.json#zones[name=Multi-Blockchain Ledger].purpose",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: Multi-Blockchain Integration"
+    },
+    {
+     "text": "Security Agent's role: Monitors blockchain transactions for potential threats",
+     "quote": "Monitors blockchain transactions for potential threats",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.security-agent].role",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Multi-Blockchain Ledger\"",
+     "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/multi-blockchain-ledger].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Security Agent: Monitors blockchain transactions for potential threats",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/security-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator",
+     "from": "agents/swarms/biota-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/specialist/security-agent"
+   ],
+   "sources": [
+    "worlds/biota-blockchain/spec.json#zones[name=Multi-Blockchain Ledger]",
+    "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/multi-blockchain-ledger]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.security-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:biota-blockchain/zone/healthcare-data-exchange",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Healthcare Data Exchange: what happens here",
+   "world": "biota-blockchain",
+   "zone": "Healthcare Data Exchange",
+   "room": {
+    "kind": "lab",
+    "sign": "Healthcare Data Exchange",
+    "room_model": "my-fabric/worlds/models/room-biota-blockchain-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/healthcare-data-exchange].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Encrypted patient data sharing with smart-contract access and SMS patient consent",
+     "quote": "Encrypted patient data sharing with smart-contract access and SMS patient consent",
+     "from": "worlds/biota-blockchain/spec.json#zones[name=Healthcare Data Exchange].purpose",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 3. Healthcare Data Exchange and Security"
+    },
+    {
+     "text": "Health Agent's role: Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access",
+     "quote": "Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access",
+     "from": "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.health-agent].role",
+     "origin": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Use Case 3"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Healthcare Data Exchange\"",
+     "from": "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/healthcare-data-exchange].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Health Agent: Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:biota-blockchain/specialist/health-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator",
+     "from": "agents/swarms/biota-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:biota-blockchain/specialist/health-agent"
+   ],
+   "sources": [
+    "worlds/biota-blockchain/spec.json#zones[name=Healthcare Data Exchange]",
+    "worldforge/out/biota-blockchain/cards.json#cards[cardId=zone:biota-blockchain/healthcare-data-exchange]",
+    "agents/swarms/biota-blockchain.json#agents[id=biota-blockchain.health-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:biota-blockchain/coordinator",
+   "avatarId": "avatar:biota-blockchain/coordinator",
+   "kind": "coordinator",
+   "name": "Biota.blockchain (BioDAO.X) Coordinator",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/coordinator",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "1d270d5f23fb9809f5355791299b75b876fa3b9372a1c9dfea6639d84d736887"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/routing"
+   ],
+   "chars": 2906,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Biota.blockchain (BioDAO.X) Coordinator (avatar:biota-blockchain/coordinator) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/coordinator in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 1d270d5f23fb9809); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Biota.blockchain (BioDAO.X) (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Biota.blockchain (BioDAO.X) Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/routing: How Biota.blockchain (BioDAO.X) routes a question\n    Steps: 1. Health Agent (Healthcare Data Exchange): Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access 2. Security Agent (Multi-Blockchain Ledger): Monitors blockchain transactions for potential threats 3. Compliance Agent (DAO Governance Hall): Ensures regulatory adherence across different jurisdictions 4. Finance Agent (DAO Governance Hall): Scans blockchain transactions for fraud patterns and triggers DAO notifications 5. Communication Agent (DAO Governance Hall): Specialized AGI agent for secure communication (phone 2FA, encrypted messaging) 6. Research & Development Agent (Personalized Therapy Lab): Biopharma AGI agent role for research and development\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/research-development-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/research-development-agent",
+   "kind": "specialist",
+   "name": "Research & Development Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/research-development-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "79cf9c16768510db6950d8c468c719ce2fe2c943a939dab2d21bc074e0dec63d"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/personalized-therapy-lab"
+   ],
+   "chars": 2794,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research & Development Agent (avatar:biota-blockchain/specialist/research-development-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/research-development-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 79cf9c16768510db); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Personalized Therapy Lab - AI and molecular modeling to optimize AGI compounds for rare and neurodegenerative diseases (ALS, Parkinson's).\nYour role: Biopharma AGI agent role for research and development (source: ~/Downloads/AGI Corp Biopharma Suite .webp, node 'Research & Development' (image)).\nYou answer on: research, development, biopharma, role, personalized, therapy, molecular, modeling, optimize, compounds, rare, neurodegenerative, diseases, parkinson.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/personalized-therapy-lab: Personalized Therapy Lab: what happens here [room: Personalized Therapy Lab]\n    Steps: 1. Enter the lab signed \"Personalized Therapy Lab\" 2. Meet Research & Development Agent: Biopharma AGI agent role for research and development 3. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/compliance-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/compliance-agent",
+   "kind": "specialist",
+   "name": "Compliance Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/compliance-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "bebf7c1b46a994346ce90d81f2a4683395411c4ffc0a5090978126509b35c6e7"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/dao-governance-hall"
+   ],
+   "chars": 2876,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Compliance Agent (avatar:biota-blockchain/specialist/compliance-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/compliance-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 bebf7c1b46a99434); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: DAO Governance Hall - Each agency or organization runs its own DAO for governance, resource allocation and policy-making.\nYour role: Ensures regulatory adherence across different jurisdictions (source: ~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents).\nYou answer on: compliance, ensures, regulatory, adherence, across, different, jurisdictions.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/dao-governance-hall: DAO Governance Hall: what happens here [room: DAO Governance Hall]\n    Steps: 1. Enter the forum signed \"DAO Governance Hall\" 2. Meet Compliance Agent: Ensures regulatory adherence across different jurisdictions 3. Meet Finance Agent: Scans blockchain transactions for fraud patterns and triggers DAO notifications 4. Meet Communication Agent: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging) 5. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/finance-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/finance-agent",
+   "kind": "specialist",
+   "name": "Finance Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/finance-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "fa33dc04eeb4b618ab7aed5b3018c109dec2874de8b538c574c7d36cc834a421"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/dao-governance-hall"
+   ],
+   "chars": 2892,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Finance Agent (avatar:biota-blockchain/specialist/finance-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/finance-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 fa33dc04eeb4b618); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: DAO Governance Hall - Each agency or organization runs its own DAO for governance, resource allocation and policy-making.\nYour role: Scans blockchain transactions for fraud patterns and triggers DAO notifications (source: ~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 2. Financial Compliance and Fraud Detection).\nYou answer on: finance, scans, fraud, patterns, triggers, notifications.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/dao-governance-hall: DAO Governance Hall: what happens here [room: DAO Governance Hall]\n    Steps: 1. Enter the forum signed \"DAO Governance Hall\" 2. Meet Compliance Agent: Ensures regulatory adherence across different jurisdictions 3. Meet Finance Agent: Scans blockchain transactions for fraud patterns and triggers DAO notifications 4. Meet Communication Agent: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging) 5. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/communication-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/communication-agent",
+   "kind": "specialist",
+   "name": "Communication Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/communication-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "df36bdc0c82fdbe5b4cf1e68a655b195254d7c42f8c80e6bba1d27f4a52d8af1"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/dao-governance-hall"
+   ],
+   "chars": 2897,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Communication Agent (avatar:biota-blockchain/specialist/communication-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/communication-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 df36bdc0c82fdbe5); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: DAO Governance Hall - Each agency or organization runs its own DAO for governance, resource allocation and policy-making.\nYour role: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging) (source: ~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Phone Number Authentication).\nYou answer on: communication, secure, phone, messaging.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/dao-governance-hall: DAO Governance Hall: what happens here [room: DAO Governance Hall]\n    Steps: 1. Enter the forum signed \"DAO Governance Hall\" 2. Meet Compliance Agent: Ensures regulatory adherence across different jurisdictions 3. Meet Finance Agent: Scans blockchain transactions for fraud patterns and triggers DAO notifications 4. Meet Communication Agent: Specialized AGI agent for secure communication (phone 2FA, encrypted messaging) 5. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/security-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/security-agent",
+   "kind": "specialist",
+   "name": "Security Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/security-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "c04b5f60f09dff0637bb44a1366c7f353af660fd5446b532d6bae9a24926b798"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/multi-blockchain-ledger"
+   ],
+   "chars": 2729,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Security Agent (avatar:biota-blockchain/specialist/security-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/security-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 c04b5f60f09dff06); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Multi-Blockchain Ledger - Interoperable ledgers (Ethereum, Hyperledger, Polkadot, Cosmos) for verified cross-network data.\nYour role: Monitors blockchain transactions for potential threats (source: ~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents).\nYou answer on: security, monitors, potential, threats, multi, ledger, interoperable, ledgers, ethereum, hyperledger, polkadot, cosmos, verified, cross, network.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/multi-blockchain-ledger: Multi-Blockchain Ledger: what happens here [room: Multi-Blockchain Ledger]\n    Steps: 1. Enter the lab signed \"Multi-Blockchain Ledger\" 2. Meet Security Agent: Monitors blockchain transactions for potential threats 3. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:biota-blockchain/specialist/health-agent",
+   "avatarId": "avatar:biota-blockchain/specialist/health-agent",
+   "kind": "specialist",
+   "name": "Health Agent",
+   "persona_prompt": {
+    "id": "persona:biota-blockchain/specialist/health-agent",
+    "file": "worldforge/out/avatars/prompts/biota-blockchain.json",
+    "sha256": "007ffc9023b8ef81dc01466bc4ca1ee9254fb18f44d181be78c6689482809aba"
+   },
+   "lessons": [
+    "lesson:biota-blockchain/zone/healthcare-data-exchange"
+   ],
+   "chars": 2763,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Health Agent (avatar:biota-blockchain/specialist/health-agent) teaches draft lessons in Biota.blockchain (BioDAO.X) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:biota-blockchain/specialist/health-agent in worldforge/out/avatars/prompts/biota-blockchain.json (sha256 007ffc9023b8ef81); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Healthcare Data Exchange - Encrypted patient data sharing with smart-contract access and SMS patient consent.\nYour role: Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access (source: ~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Use Case 3).\nYou answer on: health, tasks, e.g., encrypting, patient, managing, access, healthcare, exchange, sharing, smart, contract, consent.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:biota-blockchain/zone/healthcare-data-exchange: Healthcare Data Exchange: what happens here [room: Healthcare Data Exchange]\n    Steps: 1. Enter the lab signed \"Healthcare Data Exchange\" 2. Meet Health Agent: Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access 3. A question that belongs to another zone goes back to Biota.blockchain (BioDAO.X) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to biota-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "zone \"Biopharma AGI Agents Hub\" seats no specialist: no model-taught lesson for it",
+  "spec gap: No source describes 'Biota.blockchain' or BioDAO.X itself; BioDAO.X is only a domain NFT image (biodao.x) and the video content was not inspected",
+  "spec gap: Zones and agents are drawn from the Curable.X PDF and Biopharma Suite image, not a BioDAO-specific document",
+  "spec gap: No named people, tokenomics, chain choice or launch date for BioDAO.X in the sources",
+  "spec gap: Biopharma Suite image text is partly garbled; only legible labels (Research & Development, Clinical Support) were used"
+ ]
+}

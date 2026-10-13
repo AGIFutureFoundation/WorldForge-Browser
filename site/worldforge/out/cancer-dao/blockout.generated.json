@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:cancer-dao",
+ "rootCardId": "world:cancer-dao",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:cancer-dao/charter-hall",
+   "displayName": "Charter Hall",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:cancer-dao/research-synthesis-lab",
+   "displayName": "Research Synthesis Lab",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:cancer-dao/proposal-forum",
+   "displayName": "Proposal Forum",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:cancer-dao/operations-deck",
+   "displayName": "Operations Deck",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:cancer-dao/progress-observatory",
+   "displayName": "Progress Observatory",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:cancer-dao/floor",
+   "parentCardId": "plaza:cancer-dao",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:cancer-dao/avatar",
+   "parentCardId": "coordinator:cancer-dao",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:cancer-dao/host/avatar",
+   "parentCardId": "advisor:cancer-dao/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:cancer-dao/steward/avatar",
+   "parentCardId": "advisor:cancer-dao/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:cancer-dao/alignment/avatar",
+   "parentCardId": "advisor:cancer-dao/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:cancer-dao/arch",
+   "parentCardId": "gate:cancer-dao",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:cancer-dao/chamber",
+   "parentCardId": "council:cancer-dao",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:cancer-dao/steward-1/chair",
+   "parentCardId": "seat:cancer-dao/steward-1",
+   "zoneCardId": "council:cancer-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:cancer-dao/steward-2/chair",
+   "parentCardId": "seat:cancer-dao/steward-2",
+   "zoneCardId": "council:cancer-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:cancer-dao/steward-3/chair",
+   "parentCardId": "seat:cancer-dao/steward-3",
+   "zoneCardId": "council:cancer-dao",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:cancer-dao/avatar",
+   "parentCardId": "omega:cancer-dao",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/charter-hall/pad",
+   "parentCardId": "zone:cancer-dao/charter-hall",
+   "zoneCardId": "zone:cancer-dao/charter-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/charter-hall/hall",
+   "parentCardId": "zone:cancer-dao/charter-hall",
+   "zoneCardId": "zone:cancer-dao/charter-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    12,
+    10
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/research-synthesis-lab/pad",
+   "parentCardId": "zone:cancer-dao/research-synthesis-lab",
+   "zoneCardId": "zone:cancer-dao/research-synthesis-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/research-synthesis-lab/hall",
+   "parentCardId": "zone:cancer-dao/research-synthesis-lab",
+   "zoneCardId": "zone:cancer-dao/research-synthesis-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/evidence-monitor/avatar",
+   "parentCardId": "agent:cancer-dao/evidence-monitor",
+   "zoneCardId": "zone:cancer-dao/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/research-synthesis-agent/avatar",
+   "parentCardId": "agent:cancer-dao/research-synthesis-agent",
+   "zoneCardId": "zone:cancer-dao/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/proposal-forum/pad",
+   "parentCardId": "zone:cancer-dao/proposal-forum",
+   "zoneCardId": "zone:cancer-dao/proposal-forum",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/proposal-forum/hall",
+   "parentCardId": "zone:cancer-dao/proposal-forum",
+   "zoneCardId": "zone:cancer-dao/proposal-forum",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/proposal-grant-drafter/avatar",
+   "parentCardId": "agent:cancer-dao/proposal-grant-drafter",
+   "zoneCardId": "zone:cancer-dao/proposal-forum",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/operations-deck/pad",
+   "parentCardId": "zone:cancer-dao/operations-deck",
+   "zoneCardId": "zone:cancer-dao/operations-deck",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/operations-deck/hall",
+   "parentCardId": "zone:cancer-dao/operations-deck",
+   "zoneCardId": "zone:cancer-dao/operations-deck",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/collaborator-scout/avatar",
+   "parentCardId": "agent:cancer-dao/collaborator-scout",
+   "zoneCardId": "zone:cancer-dao/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/task-router/avatar",
+   "parentCardId": "agent:cancer-dao/task-router",
+   "zoneCardId": "zone:cancer-dao/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/progress-observatory/pad",
+   "parentCardId": "zone:cancer-dao/progress-observatory",
+   "zoneCardId": "zone:cancer-dao/progress-observatory",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:cancer-dao/progress-observatory/hall",
+   "parentCardId": "zone:cancer-dao/progress-observatory",
+   "zoneCardId": "zone:cancer-dao/progress-observatory",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:cancer-dao/progress-tracker/avatar",
+   "parentCardId": "agent:cancer-dao/progress-tracker",
+   "zoneCardId": "zone:cancer-dao/progress-observatory",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:cancer-dao/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:cancer-dao/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:cancer-dao/charter-hall",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:cancer-dao/research-synthesis-lab",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:cancer-dao/proposal-forum",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:cancer-dao/operations-deck",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:cancer-dao/progress-observatory",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

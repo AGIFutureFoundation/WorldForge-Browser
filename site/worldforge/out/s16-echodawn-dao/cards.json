@@ -1,0 +1,2685 @@
+{
+ "schemaVersion": "glewme-master-cards/0.1",
+ "world": "s16-echodawn-dao",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "rights": [
+  "view",
+  "enter",
+  "build",
+  "operate",
+  "delegate",
+  "transfer",
+  "govern"
+ ],
+ "principle": "Agents operate; people govern.",
+ "cards": [
+  {
+   "cardId": "world:s16-echodawn-dao",
+   "kind": "world",
+   "parentCardId": null,
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "EchoDawn DAO (Series 16) · Powered by AGI Corp",
+   "name": "EchoDawn DAO (Series 16)",
+   "tagline": "Series 16 of W3 LLC: an agent-managed, human-governed DAO cell",
+   "status": "coming soon",
+   "management_style": "Agent-managed DAO",
+   "anchor": {
+    "lat": null,
+    "lon": null,
+    "rad": 6371000,
+    "rp1": null
+   },
+   "omega_steward": {
+    "id": "omega.s16-echodawn-dao",
+    "status": "defined, not seated",
+    "seated_agent": null,
+    "source": "agents/advisory/omega_agents.json"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     40,
+     0
+    ],
+    "halfExtents": [
+     150,
+     40,
+     150
+    ]
+   },
+   "source": "my-fabric/worlds/index.json"
+  },
+  {
+   "cardId": "plaza:s16-echodawn-dao",
+   "kind": "plaza",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "EchoDawn DAO (Series 16)… · Powered by AGI Corp",
+   "purpose": "the shared round plaza every world opens onto",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     5,
+     0
+    ],
+    "halfExtents": [
+     24,
+     5,
+     24
+    ]
+   },
+   "source": "README.md (shared PBC management model)"
+  },
+  {
+   "cardId": "coordinator:s16-echodawn-dao",
+   "kind": "coordinator",
+   "parentCardId": "plaza:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "EchoDawn DAO (Series 16)… · Powered by AGI Corp",
+   "name": "EchoDawn DAO (Series 16) Coordinator",
+   "role": "swarm coordinator (hub-hybrid: coordinator supervises, specialists hand off swarm-style): routes turns, answers unroutable ones, hands off to specialists",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "coordinator",
+    "model_ref": "worldforge/out/assets/avatars/coordinator.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.coordinator",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · EchoDawn DAO (Series 16) Coordinator"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     8
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/swarms/s16-echodawn-dao.json#coordinator"
+  },
+  {
+   "cardId": "advisor:s16-echodawn-dao/host",
+   "kind": "advisor",
+   "parentCardId": "plaza:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Host Advisor · Powered by AGI Corp",
+   "name": "Host Advisor",
+   "manages": "welcoming visitors and pointing them to the right zone",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "host",
+    "model_ref": "worldforge/out/assets/avatars/host.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/s16-echodawn-dao.json#advisors[id=host]"
+  },
+  {
+   "cardId": "advisor:s16-echodawn-dao/steward",
+   "kind": "advisor",
+   "parentCardId": "plaza:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Liaison · Powered by AGI Corp",
+   "name": "Steward Liaison",
+   "manages": "connecting visitors and agents to the human stewards",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "liaison",
+    "model_ref": "worldforge/out/assets/avatars/liaison.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -14
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/s16-echodawn-dao.json#advisors[id=steward]"
+  },
+  {
+   "cardId": "advisor:s16-echodawn-dao/alignment",
+   "kind": "advisor",
+   "parentCardId": "plaza:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Advisor · Powered by AGI Corp",
+   "name": "Alignment Advisor",
+   "manages": "the Alignment Evaluation Gate and the agents' limits",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "alignment",
+    "model_ref": "worldforge/out/assets/avatars/alignment.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/s16-echodawn-dao.json#advisors[id=alignment]"
+  },
+  {
+   "cardId": "gate:s16-echodawn-dao",
+   "kind": "gate",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Evaluation Gate · Powered by AGI Corp",
+   "purpose": "Pre-registered safety evaluation before deployment",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     130
+    ],
+    "halfExtents": [
+     10,
+     6,
+     3
+    ]
+   },
+   "source": "worlds/PBC.json#programs"
+  },
+  {
+   "cardId": "council:s16-echodawn-dao",
+   "kind": "council",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Council · Powered by AGI Corp",
+   "name": "Steward Council",
+   "purpose": "Human stewards: oversight, values alignment and final governance",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     -130
+    ],
+    "halfExtents": [
+     14,
+     6,
+     10
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-6.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Steward Council",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   }
+  },
+  {
+   "cardId": "seat:s16-echodawn-dao/steward-1",
+   "kind": "seat",
+   "parentCardId": "council:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 1 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     -6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:s16-echodawn-dao/steward-2",
+   "kind": "seat",
+   "parentCardId": "council:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 2 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:s16-echodawn-dao/steward-3",
+   "kind": "seat",
+   "parentCardId": "council:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 3 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "omega:s16-echodawn-dao",
+   "kind": "omega",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Omega Steward · Powered by AGI Corp",
+   "name": "Omega Steward · EchoDawn DAO",
+   "omega_id": "omega.s16-echodawn-dao",
+   "status": "defined, not seated",
+   "seated_agent": null,
+   "persona": {
+    "temperament": "patient and exact: Series 16 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission",
+    "style": "short, plain sentences; names its zones (Charter Hall, Research Synthesis Lab, Proposal Forum), cites the record it reads, and always says who decides (the stewards, 2 of 3 signed votes)",
+    "values": [
+     "people decide: Agent-managed DAO, human-governed",
+     "stewards decide by 2 of 3 signed votes",
+     "report probe scores exactly as measured",
+     "draft quotes with every term left null"
+    ],
+    "refuses": [
+     "governance.final_vote",
+     "charter.amend",
+     "treasury.transfer",
+     "proposal.enact",
+     "windfall.distribute",
+     "steward.appoint",
+     "set_price",
+     "accept_equity",
+     "accept_crypto",
+     "issue_invoice",
+     "move_funds"
+    ]
+   },
+   "voice": {
+    "kokoro": "bm_george",
+    "browser_fallback": {
+     "pitch": 0.95,
+     "rate": 0.96,
+     "lang": "en-GB"
+    },
+    "audio_note": "audio is the expected path; it exists once the hive voices the line (agents/hive.mjs --voice), else the viewer falls back to a labelled browser voice",
+    "lines": [
+     {
+      "id": "greet",
+      "text": "Hello, I am the Omega Steward for EchoDawn DAO. You are hearing a synthetic voice; I am an agent, not a person.",
+      "audio": "agents/hive/voices/s16-echodawn-dao/greet.mp4"
+     },
+     {
+      "id": "role",
+      "text": "I look after EchoDawn DAO, Series 16 of W3 LLC. Its focus is not set yet, so I keep its zones and records.",
+      "audio": "agents/hive/voices/s16-echodawn-dao/role.mp4"
+     },
+     {
+      "id": "boundary",
+      "text": "Agents draft and route; people decide. I will never appoint a steward: that is held for the Steward Council.",
+      "audio": "agents/hive/voices/s16-echodawn-dao/boundary.mp4"
+     },
+     {
+      "id": "services",
+      "text": "For services, ask the Evidence Monitor in Research Synthesis Lab about research synthesis. EchoDawn DAO lists 6 service cards; people confirm every step.",
+      "audio": "agents/hive/voices/s16-echodawn-dao/services.mp4"
+     }
+    ]
+   },
+   "hive_ref": "agents/hive/index.json#omegas[world=s16-echodawn-dao]",
+   "avatar": {
+    "kind": "omega-avatar",
+    "role": "omega",
+    "model_ref": "worldforge/out/assets/avatars/omega.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     26,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "source": "agents/advisory/omega_agents.json"
+  },
+  {
+   "cardId": "zone:s16-echodawn-dao/charter-hall",
+   "kind": "zone",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Charter Hall · Powered by AGI Corp",
+   "name": "Charter Hall",
+   "purpose": "The DAO's charter, contribution model and measurable outcomes",
+   "building": {
+    "kind": "lab",
+    "exterior": "my-fabric/worlds/models/spaces-ext-lab.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-1.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Charter Hall",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 2046,
+     "interior": 1716
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -52.9,
+     6,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     8,
+     18
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): How It Works"
+  },
+  {
+   "cardId": "zone:s16-echodawn-dao/research-synthesis-lab",
+   "kind": "zone",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Research Synthesis Lab · Powered by AGI Corp",
+   "name": "Research Synthesis Lab",
+   "purpose": "Monitoring developments and summarizing evidence",
+   "building": {
+    "kind": "lab",
+    "exterior": "my-fabric/worlds/models/spaces-ext-lab.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-2.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Research Synthesis Lab",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 2046,
+     "interior": 1716
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -85.6,
+     10,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     12,
+     18
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/evidence-monitor",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/research-synthesis-lab",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Evidence Monitor · Powered by AGI Corp",
+   "name": "Evidence Monitor",
+   "role": "Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.evidence-monitor",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Evidence Monitor",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Evidence Monitor]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -91.84,
+     1,
+     -28
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/research-synthesis-agent",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/research-synthesis-lab",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Research Synthesis Agent · Powered by AGI Corp",
+   "name": "Research Synthesis Agent",
+   "role": "Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.research-synthesis-agent",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Research Synthesis Agent",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Research Synthesis Agent]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -90.76,
+     1,
+     -31.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "zone:s16-echodawn-dao/proposal-forum",
+   "kind": "zone",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Proposal Forum · Powered by AGI Corp",
+   "name": "Proposal Forum",
+   "purpose": "Proposals drafted by agents, debated and decided by people",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-3.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Proposal Forum",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     8,
+     -90
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/proposal-grant-drafter",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/proposal-forum",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Proposal & Grant Drafter · Powered by AGI Corp",
+   "name": "Proposal & Grant Drafter",
+   "role": "Drafts proposals and grants for human review; never enacts them",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.proposal-grant-drafter",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Proposal & Grant Drafter",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Proposal & Grant Drafter]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -96
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "zone:s16-echodawn-dao/operations-deck",
+   "kind": "zone",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Operations Deck · Powered by AGI Corp",
+   "name": "Operations Deck",
+   "purpose": "Task routing, working groups and operational coordination",
+   "building": {
+    "kind": "ops",
+    "exterior": "my-fabric/worlds/models/spaces-ext-ops.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-4.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Operations Deck",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1742,
+     "interior": 1392
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     85.6,
+     10,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     12,
+     18
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/collaborator-scout",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/operations-deck",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Collaborator Scout · Powered by AGI Corp",
+   "name": "Collaborator Scout",
+   "role": "Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.collaborator-scout",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Collaborator Scout",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Collaborator Scout]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     90.76,
+     1,
+     -31.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/task-router",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/operations-deck",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Task Router · Powered by AGI Corp",
+   "name": "Task Router",
+   "role": "Routes tasks and coordinates working groups between decision cycles",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.task-router",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Task Router",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Task Router]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     91.84,
+     1,
+     -28
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "cardId": "zone:s16-echodawn-dao/progress-observatory",
+   "kind": "zone",
+   "parentCardId": "world:s16-echodawn-dao",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Progress Observatory · Powered by AGI Corp",
+   "name": "Progress Observatory",
+   "purpose": "Progress tracking against the charter's measurable outcomes",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-s16-echodawn-dao-5.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Progress Observatory",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=s16-echodawn-dao]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     52.9,
+     8,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  },
+  {
+   "cardId": "agent:s16-echodawn-dao/progress-tracker",
+   "kind": "agent",
+   "parentCardId": "zone:s16-echodawn-dao/progress-observatory",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Progress Tracker · Powered by AGI Corp",
+   "name": "Progress Tracker",
+   "role": "Tracks progress against the charter's measurable outcomes",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "s16-echodawn-dao.progress-tracker",
+    "metaprompt": "agents/prompts/s16-echodawn-dao.json",
+    "fabricNode": "Agent · Progress Tracker",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=s16-echodawn-dao].agents[name=Progress Tracker]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     56.43,
+     1,
+     77.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  }
+ ],
+ "gaps": [
+  "no RP1 anchor yet: lat/lon are null until a steward writes them into worlds/focus.json"
+ ]
+}

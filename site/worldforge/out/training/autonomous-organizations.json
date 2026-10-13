@@ -1,0 +1,818 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Autonomous Organizations",
+ "slug": "autonomous-organizations",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:autonomous-organizations/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "autonomous-organizations",
+   "zone": "Autonomous Organizations Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].tagline"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].zones[*].name"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].agents[*].name"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Autonomous Organizations is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].status"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/autonomous-organizations.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:autonomous-organizations/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "autonomous-organizations",
+   "zone": "Autonomous Organizations Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].reserved_for_humans"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=autonomous-organizations].stewards"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/autonomous-organizations.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:autonomous-organizations/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "autonomous-organizations",
+   "zone": "Autonomous Organizations Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/autonomous-organizations.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/autonomous-organizations.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:autonomous-organizations/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Autonomous Organizations routes a question",
+   "world": "autonomous-organizations",
+   "zone": "Autonomous Organizations Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/autonomous-organizations.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/autonomous-organizations.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Goal Keeper (Goal Wall): Keeps the high-level goal current and measurable",
+     "keywords": [
+      "goal",
+      "keeper",
+      "keeps",
+      "high",
+      "level",
+      "current",
+      "measurable",
+      "wall",
+      "accomplishing",
+      "written",
+      "where",
+      "read"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.goal-keeper]"
+    },
+    {
+     "n": 2,
+     "do": "Coordinator Agent (Coordination Floor): Coordinates the team through Slack, Linear and other surfaces",
+     "keywords": [
+      "coordinator",
+      "coordinates"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.coordinator-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Assigner (Assignment Board): Assigns work and tracks who holds what",
+     "keywords": [
+      "assigner",
+      "assigns",
+      "tracks",
+      "holds",
+      "what",
+      "assignment",
+      "board",
+      "assigning"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.assigner]"
+    },
+    {
+     "n": 4,
+     "do": "Communicator (Coordination Floor): Communicates status and blockers across the team",
+     "keywords": [
+      "communicator",
+      "communicates",
+      "status",
+      "blockers"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.communicator]"
+    },
+    {
+     "n": 5,
+     "do": "Decision Drafter (Decision Room): Drafts decisions with evidence; never enacts one",
+     "keywords": [
+      "decision",
+      "drafter",
+      "drafts",
+      "decisions",
+      "evidence",
+      "never",
+      "enacts",
+      "making",
+      "drafted",
+      "agents",
+      "final",
+      "vote",
+      "stewards"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.decision-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Executor (Execution Bay): Executes assigned work and reports back",
+     "keywords": [
+      "executor",
+      "executes",
+      "assigned",
+      "reports",
+      "back",
+      "execution",
+      "executing",
+      "minimal",
+      "intervention",
+      "inside",
+      "actions",
+      "line"
+     ],
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.executor]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/autonomous-organizations.json#coordinator",
+    "agents/swarms/autonomous-organizations.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:autonomous-organizations/zone/goal-wall",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Goal Wall: what happens here",
+   "world": "autonomous-organizations",
+   "zone": "Goal Wall",
+   "room": {
+    "kind": "studio",
+    "sign": "Goal Wall",
+    "room_model": "my-fabric/worlds/models/room-autonomous-organizations-1.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/goal-wall].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: The high-level goal the team is accomplishing, written where every agent can read it",
+     "quote": "The high-level goal the team is accomplishing, written where every agent can read it",
+     "from": "worlds/autonomous-organizations/spec.json#zones[name=Goal Wall].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"
+    },
+    {
+     "text": "Goal Keeper's role: Keeps the high-level goal current and measurable",
+     "quote": "Keeps the high-level goal current and measurable",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.goal-keeper].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Goal Wall\"",
+     "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/goal-wall].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Goal Keeper: Keeps the high-level goal current and measurable",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/goal-keeper].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Autonomous Organizations Coordinator",
+     "from": "agents/swarms/autonomous-organizations.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/specialist/goal-keeper"
+   ],
+   "sources": [
+    "worlds/autonomous-organizations/spec.json#zones[name=Goal Wall]",
+    "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/goal-wall]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.goal-keeper]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:autonomous-organizations/zone/coordination-floor",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Coordination Floor: what happens here",
+   "world": "autonomous-organizations",
+   "zone": "Coordination Floor",
+   "room": {
+    "kind": "ops",
+    "sign": "Coordination Floor",
+    "room_model": "my-fabric/worlds/models/room-autonomous-organizations-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/coordination-floor].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Coordinating through surfaces like Slack, Linear and other tools",
+     "quote": "Coordinating through surfaces like Slack, Linear and other tools",
+     "from": "worlds/autonomous-organizations/spec.json#zones[name=Coordination Floor].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces like Slack, Linear, and other tools'"
+    },
+    {
+     "text": "Coordinator Agent's role: Coordinates the team through Slack, Linear and other surfaces",
+     "quote": "Coordinates the team through Slack, Linear and other surfaces",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.coordinator-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces'"
+    },
+    {
+     "text": "Communicator's role: Communicates status and blockers across the team",
+     "quote": "Communicates status and blockers across the team",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.communicator].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'communicating'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Coordination Floor\"",
+     "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/coordination-floor].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Coordinator Agent: Coordinates the team through Slack, Linear and other surfaces",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/coordinator-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Communicator: Communicates status and blockers across the team",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/communicator].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Autonomous Organizations Coordinator",
+     "from": "agents/swarms/autonomous-organizations.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/specialist/coordinator-agent",
+    "avatar:autonomous-organizations/specialist/communicator"
+   ],
+   "sources": [
+    "worlds/autonomous-organizations/spec.json#zones[name=Coordination Floor]",
+    "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/coordination-floor]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.coordinator-agent]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.communicator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:autonomous-organizations/zone/assignment-board",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Assignment Board: what happens here",
+   "world": "autonomous-organizations",
+   "zone": "Assignment Board",
+   "room": {
+    "kind": "studio",
+    "sign": "Assignment Board",
+    "room_model": "my-fabric/worlds/models/room-autonomous-organizations-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/assignment-board].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Assigning work across the team",
+     "quote": "Assigning work across the team",
+     "from": "worlds/autonomous-organizations/spec.json#zones[name=Assignment Board].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"
+    },
+    {
+     "text": "Assigner's role: Assigns work and tracks who holds what",
+     "quote": "Assigns work and tracks who holds what",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.assigner].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Assignment Board\"",
+     "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/assignment-board].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Assigner: Assigns work and tracks who holds what",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/assigner].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Autonomous Organizations Coordinator",
+     "from": "agents/swarms/autonomous-organizations.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/specialist/assigner"
+   ],
+   "sources": [
+    "worlds/autonomous-organizations/spec.json#zones[name=Assignment Board]",
+    "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/assignment-board]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.assigner]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:autonomous-organizations/zone/decision-room",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Decision Room: what happens here",
+   "world": "autonomous-organizations",
+   "zone": "Decision Room",
+   "room": {
+    "kind": "forum",
+    "sign": "Decision Room",
+    "room_model": "my-fabric/worlds/models/room-autonomous-organizations-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/decision-room].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Making decisions - drafted by agents, with the final vote reserved for human stewards",
+     "quote": "Making decisions - drafted by agents, with the final vote reserved for human stewards",
+     "from": "worlds/autonomous-organizations/spec.json#zones[name=Decision Room].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"
+    },
+    {
+     "text": "Decision Drafter's role: Drafts decisions with evidence; never enacts one",
+     "quote": "Drafts decisions with evidence; never enacts one",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.decision-drafter].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Decision Room\"",
+     "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/decision-room].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Decision Drafter: Drafts decisions with evidence; never enacts one",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/decision-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Autonomous Organizations Coordinator",
+     "from": "agents/swarms/autonomous-organizations.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/specialist/decision-drafter"
+   ],
+   "sources": [
+    "worlds/autonomous-organizations/spec.json#zones[name=Decision Room]",
+    "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/decision-room]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.decision-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:autonomous-organizations/zone/execution-bay",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Execution Bay: what happens here",
+   "world": "autonomous-organizations",
+   "zone": "Execution Bay",
+   "room": {
+    "kind": "studio",
+    "sign": "Execution Bay",
+    "room_model": "my-fabric/worlds/models/room-autonomous-organizations-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/execution-bay].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Executing the assigned work with minimal human intervention, inside the reserved-actions line",
+     "quote": "Executing the assigned work with minimal human intervention, inside the reserved-actions line",
+     "from": "worlds/autonomous-organizations/spec.json#zones[name=Execution Bay].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing with minimal human intervention'"
+    },
+    {
+     "text": "Executor's role: Executes assigned work and reports back",
+     "quote": "Executes assigned work and reports back",
+     "from": "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.executor].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Execution Bay\"",
+     "from": "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/execution-bay].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Executor: Executes assigned work and reports back",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:autonomous-organizations/specialist/executor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Autonomous Organizations Coordinator",
+     "from": "agents/swarms/autonomous-organizations.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:autonomous-organizations/specialist/executor"
+   ],
+   "sources": [
+    "worlds/autonomous-organizations/spec.json#zones[name=Execution Bay]",
+    "worldforge/out/autonomous-organizations/cards.json#cards[cardId=zone:autonomous-organizations/execution-bay]",
+    "agents/swarms/autonomous-organizations.json#agents[id=autonomous-organizations.executor]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:autonomous-organizations/coordinator",
+   "avatarId": "avatar:autonomous-organizations/coordinator",
+   "kind": "coordinator",
+   "name": "Autonomous Organizations Coordinator",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/coordinator",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "ac38b860a193f3c83cf4147e6ca4d415432392db3e0e83f13a98761698c8de25"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/routing"
+   ],
+   "chars": 2730,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Autonomous Organizations Coordinator (avatar:autonomous-organizations/coordinator) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/coordinator in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 ac38b860a193f3c8); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Autonomous Organizations (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Autonomous Organizations Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/routing: How Autonomous Organizations routes a question\n    Steps: 1. Goal Keeper (Goal Wall): Keeps the high-level goal current and measurable 2. Coordinator Agent (Coordination Floor): Coordinates the team through Slack, Linear and other surfaces 3. Assigner (Assignment Board): Assigns work and tracks who holds what 4. Communicator (Coordination Floor): Communicates status and blockers across the team 5. Decision Drafter (Decision Room): Drafts decisions with evidence; never enacts one 6. Executor (Execution Bay): Executes assigned work and reports back\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/goal-keeper",
+   "avatarId": "avatar:autonomous-organizations/specialist/goal-keeper",
+   "kind": "specialist",
+   "name": "Goal Keeper",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/goal-keeper",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "a8ca99b0ce0747c201f840cc4b38f311fd357fb2367524582cc4e4e4265a3824"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/goal-wall"
+   ],
+   "chars": 2623,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Goal Keeper (avatar:autonomous-organizations/specialist/goal-keeper) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/goal-keeper in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 a8ca99b0ce0747c2); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Goal Wall - The high-level goal the team is accomplishing, written where every agent can read it.\nYour role: Keeps the high-level goal current and measurable (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal').\nYou answer on: goal, keeper, keeps, high, level, current, measurable, wall, accomplishing, written, where, read.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/goal-wall: Goal Wall: what happens here [room: Goal Wall]\n    Steps: 1. Enter the studio signed \"Goal Wall\" 2. Meet Goal Keeper: Keeps the high-level goal current and measurable 3. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/coordinator-agent",
+   "avatarId": "avatar:autonomous-organizations/specialist/coordinator-agent",
+   "kind": "specialist",
+   "name": "Coordinator Agent",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/coordinator-agent",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "13afd9afa907734012e124847799f144458c32278b8df1fe6b6b07a13a6ad9b9"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/coordination-floor"
+   ],
+   "chars": 2693,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Coordinator Agent (avatar:autonomous-organizations/specialist/coordinator-agent) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/coordinator-agent in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 13afd9afa9077340); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Coordination Floor - Coordinating through surfaces like Slack, Linear and other tools.\nYour role: Coordinates the team through Slack, Linear and other surfaces (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces').\nYou answer on: coordinator, coordinates.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/coordination-floor: Coordination Floor: what happens here [room: Coordination Floor]\n    Steps: 1. Enter the ops signed \"Coordination Floor\" 2. Meet Coordinator Agent: Coordinates the team through Slack, Linear and other surfaces 3. Meet Communicator: Communicates status and blockers across the team 4. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/communicator",
+   "avatarId": "avatar:autonomous-organizations/specialist/communicator",
+   "kind": "specialist",
+   "name": "Communicator",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/communicator",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "0c5d5fd4b449a92ec8501f299ef06897902ffb75f11f2f396747f0390f56a246"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/coordination-floor"
+   ],
+   "chars": 2671,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Communicator (avatar:autonomous-organizations/specialist/communicator) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/communicator in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 0c5d5fd4b449a92e); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Coordination Floor - Coordinating through surfaces like Slack, Linear and other tools.\nYour role: Communicates status and blockers across the team (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'communicating').\nYou answer on: communicator, communicates, status, blockers.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/coordination-floor: Coordination Floor: what happens here [room: Coordination Floor]\n    Steps: 1. Enter the ops signed \"Coordination Floor\" 2. Meet Coordinator Agent: Coordinates the team through Slack, Linear and other surfaces 3. Meet Communicator: Communicates status and blockers across the team 4. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/assigner",
+   "avatarId": "avatar:autonomous-organizations/specialist/assigner",
+   "kind": "specialist",
+   "name": "Assigner",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/assigner",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "6b2aa20341270b193a1c21968c33fe07cc8df2244c30df398d8a4854ebe8fe69"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/assignment-board"
+   ],
+   "chars": 2530,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Assigner (avatar:autonomous-organizations/specialist/assigner) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/assigner in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 6b2aa20341270b19); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Assignment Board - Assigning work across the team.\nYour role: Assigns work and tracks who holds what (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work').\nYou answer on: assigner, assigns, tracks, holds, what, assignment, board, assigning.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/assignment-board: Assignment Board: what happens here [room: Assignment Board]\n    Steps: 1. Enter the studio signed \"Assignment Board\" 2. Meet Assigner: Assigns work and tracks who holds what 3. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/decision-drafter",
+   "avatarId": "avatar:autonomous-organizations/specialist/decision-drafter",
+   "kind": "specialist",
+   "name": "Decision Drafter",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/decision-drafter",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "4d7a99082f72cd87f177e89f3d6dfbb71f17dd6841ceb078e5931ffd9d559377"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/decision-room"
+   ],
+   "chars": 2664,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Decision Drafter (avatar:autonomous-organizations/specialist/decision-drafter) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/decision-drafter in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 4d7a99082f72cd87); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Decision Room - Making decisions - drafted by agents, with the final vote reserved for human stewards.\nYour role: Drafts decisions with evidence; never enacts one (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions').\nYou answer on: decision, drafter, drafts, decisions, evidence, never, enacts, making, drafted, agents, final, vote, stewards.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/decision-room: Decision Room: what happens here [room: Decision Room]\n    Steps: 1. Enter the forum signed \"Decision Room\" 2. Meet Decision Drafter: Drafts decisions with evidence; never enacts one 3. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:autonomous-organizations/specialist/executor",
+   "avatarId": "avatar:autonomous-organizations/specialist/executor",
+   "kind": "specialist",
+   "name": "Executor",
+   "persona_prompt": {
+    "id": "persona:autonomous-organizations/specialist/executor",
+    "file": "worldforge/out/avatars/prompts/autonomous-organizations.json",
+    "sha256": "63833ff9751f5fe4c184400235c23789fad3d361ec1414267ceffb7816b75275"
+   },
+   "lessons": [
+    "lesson:autonomous-organizations/zone/execution-bay"
+   ],
+   "chars": 2618,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Executor (avatar:autonomous-organizations/specialist/executor) teaches draft lessons in Autonomous Organizations (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:autonomous-organizations/specialist/executor in worldforge/out/avatars/prompts/autonomous-organizations.json (sha256 63833ff9751f5fe4); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Execution Bay - Executing the assigned work with minimal human intervention, inside the reserved-actions line.\nYour role: Executes assigned work and reports back (source: worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing').\nYou answer on: executor, executes, assigned, reports, back, execution, executing, minimal, intervention, inside, actions, line.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:autonomous-organizations/zone/execution-bay: Execution Bay: what happens here [room: Execution Bay]\n    Steps: 1. Enter the studio signed \"Execution Bay\" 2. Meet Executor: Executes assigned work and reports back 3. A question that belongs to another zone goes back to Autonomous Organizations Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to autonomous-organizations.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "spec gap: No Slack or Linear workspace is connected and no goal is given; the surfaces are named, not wired",
+  "spec gap: 'Minimal human intervention' is bounded by the PBC reserved list: final votes and enactment stay with stewards",
+  "spec gap: No RP1 location given yet"
+ ]
+}

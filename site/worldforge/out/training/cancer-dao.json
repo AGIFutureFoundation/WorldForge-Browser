@@ -1,0 +1,759 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Cancer DAO",
+ "slug": "cancer-dao",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:cancer-dao/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "cancer-dao",
+   "zone": "Cancer DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/cancer-dao.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].tagline"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].zones[*].name"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].agents[*].name"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Cancer DAO is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].status"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/cancer-dao.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:cancer-dao/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "cancer-dao",
+   "zone": "Cancer DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/cancer-dao.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].reserved_for_humans"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=cancer-dao].stewards"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/cancer-dao.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:cancer-dao/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "cancer-dao",
+   "zone": "Cancer DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/cancer-dao.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/cancer-dao.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/cancer-dao.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:cancer-dao/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Cancer DAO routes a question",
+   "world": "cancer-dao",
+   "zone": "Cancer DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/cancer-dao.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/cancer-dao.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Evidence Monitor (Research Synthesis Lab): Monitors developments in cancer research support and summarizes the evidence",
+     "keywords": [
+      "monitor",
+      "monitors",
+      "summarizes"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.evidence-monitor]"
+    },
+    {
+     "n": 2,
+     "do": "Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on cancer research support for the stewards",
+     "keywords": [
+      "synthesizes",
+      "stewards"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.research-synthesis-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Collaborator Scout (Operations Deck): Identifies experts and collaborators working on cancer research support",
+     "keywords": [
+      "collaborator",
+      "scout",
+      "identifies",
+      "experts",
+      "collaborators"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.collaborator-scout]"
+    },
+    {
+     "n": 4,
+     "do": "Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles",
+     "keywords": [
+      "router",
+      "routes",
+      "tasks",
+      "coordinates",
+      "between",
+      "decision",
+      "cycles"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.task-router]"
+    },
+    {
+     "n": 5,
+     "do": "Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them",
+     "keywords": [
+      "proposal",
+      "grant",
+      "drafter",
+      "drafts",
+      "proposals",
+      "grants",
+      "human",
+      "review",
+      "never",
+      "enacts",
+      "them",
+      "forum",
+      "drafted",
+      "agents",
+      "debated",
+      "decided",
+      "people"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.proposal-grant-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes",
+     "keywords": [
+      "tracker",
+      "tracks",
+      "against",
+      "charter",
+      "measurable",
+      "outcomes",
+      "observatory",
+      "tracking"
+     ],
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.progress-tracker]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/cancer-dao.json#coordinator",
+    "agents/swarms/cancer-dao.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:cancer-dao/zone/research-synthesis-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Research Synthesis Lab: what happens here",
+   "world": "cancer-dao",
+   "zone": "Research Synthesis Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Research Synthesis Lab",
+    "room_model": "my-fabric/worlds/models/room-cancer-dao-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/research-synthesis-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Monitoring developments and summarizing evidence",
+     "quote": "Monitoring developments and summarizing evidence",
+     "from": "worlds/cancer-dao/spec.json#zones[name=Research Synthesis Lab].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Evidence Monitor's role: Monitors developments in cancer research support and summarizes the evidence",
+     "quote": "Monitors developments in cancer research support and summarizes the evidence",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.evidence-monitor].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Research Synthesis Agent's role: Synthesizes research on cancer research support for the stewards",
+     "quote": "Synthesizes research on cancer research support for the stewards",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.research-synthesis-agent].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Research Synthesis Lab\"",
+     "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/research-synthesis-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Evidence Monitor: Monitors developments in cancer research support and summarizes the evidence",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/evidence-monitor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Research Synthesis Agent: Synthesizes research on cancer research support for the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/research-synthesis-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Cancer DAO Coordinator",
+     "from": "agents/swarms/cancer-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/specialist/evidence-monitor",
+    "avatar:cancer-dao/specialist/research-synthesis-agent"
+   ],
+   "sources": [
+    "worlds/cancer-dao/spec.json#zones[name=Research Synthesis Lab]",
+    "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/research-synthesis-lab]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.evidence-monitor]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.research-synthesis-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:cancer-dao/zone/proposal-forum",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Proposal Forum: what happens here",
+   "world": "cancer-dao",
+   "zone": "Proposal Forum",
+   "room": {
+    "kind": "forum",
+    "sign": "Proposal Forum",
+    "room_model": "my-fabric/worlds/models/room-cancer-dao-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/proposal-forum].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Proposals drafted by agents, debated and decided by people",
+     "quote": "Proposals drafted by agents, debated and decided by people",
+     "from": "worlds/cancer-dao/spec.json#zones[name=Proposal Forum].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Proposal & Grant Drafter's role: Drafts proposals and grants for human review; never enacts them",
+     "quote": "Drafts proposals and grants for human review; never enacts them",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.proposal-grant-drafter].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Proposal Forum\"",
+     "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/proposal-forum].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/proposal-grant-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Cancer DAO Coordinator",
+     "from": "agents/swarms/cancer-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/specialist/proposal-grant-drafter"
+   ],
+   "sources": [
+    "worlds/cancer-dao/spec.json#zones[name=Proposal Forum]",
+    "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/proposal-forum]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.proposal-grant-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:cancer-dao/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "cancer-dao",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-cancer-dao-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Task routing, working groups and operational coordination",
+     "quote": "Task routing, working groups and operational coordination",
+     "from": "worlds/cancer-dao/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Collaborator Scout's role: Identifies experts and collaborators working on cancer research support",
+     "quote": "Identifies experts and collaborators working on cancer research support",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.collaborator-scout].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Task Router's role: Routes tasks and coordinates working groups between decision cycles",
+     "quote": "Routes tasks and coordinates working groups between decision cycles",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.task-router].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Operations Deck\"",
+     "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Collaborator Scout: Identifies experts and collaborators working on cancer research support",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/collaborator-scout].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Task Router: Routes tasks and coordinates working groups between decision cycles",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/task-router].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Cancer DAO Coordinator",
+     "from": "agents/swarms/cancer-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/specialist/collaborator-scout",
+    "avatar:cancer-dao/specialist/task-router"
+   ],
+   "sources": [
+    "worlds/cancer-dao/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/operations-deck]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.collaborator-scout]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.task-router]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:cancer-dao/zone/progress-observatory",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Progress Observatory: what happens here",
+   "world": "cancer-dao",
+   "zone": "Progress Observatory",
+   "room": {
+    "kind": "forum",
+    "sign": "Progress Observatory",
+    "room_model": "my-fabric/worlds/models/room-cancer-dao-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/progress-observatory].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Progress tracking against the charter's measurable outcomes",
+     "quote": "Progress tracking against the charter's measurable outcomes",
+     "from": "worlds/cancer-dao/spec.json#zones[name=Progress Observatory].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Progress Tracker's role: Tracks progress against the charter's measurable outcomes",
+     "quote": "Tracks progress against the charter's measurable outcomes",
+     "from": "agents/swarms/cancer-dao.json#agents[id=cancer-dao.progress-tracker].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Progress Observatory\"",
+     "from": "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/progress-observatory].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Progress Tracker: Tracks progress against the charter's measurable outcomes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:cancer-dao/specialist/progress-tracker].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Cancer DAO Coordinator",
+     "from": "agents/swarms/cancer-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:cancer-dao/specialist/progress-tracker"
+   ],
+   "sources": [
+    "worlds/cancer-dao/spec.json#zones[name=Progress Observatory]",
+    "worldforge/out/cancer-dao/cards.json#cards[cardId=zone:cancer-dao/progress-observatory]",
+    "agents/swarms/cancer-dao.json#agents[id=cancer-dao.progress-tracker]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:cancer-dao/coordinator",
+   "avatarId": "avatar:cancer-dao/coordinator",
+   "kind": "coordinator",
+   "name": "Cancer DAO Coordinator",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/coordinator",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "a8d84c1bee6789d495b3bf00b18d5d27f1bee76804ee1329bf102ad6a7dfd4ab"
+   },
+   "lessons": [
+    "lesson:cancer-dao/routing"
+   ],
+   "chars": 2764,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Cancer DAO Coordinator (avatar:cancer-dao/coordinator) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/coordinator in worldforge/out/avatars/prompts/cancer-dao.json (sha256 a8d84c1bee6789d4); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Cancer DAO (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Cancer DAO Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/routing: How Cancer DAO routes a question\n    Steps: 1. Evidence Monitor (Research Synthesis Lab): Monitors developments in cancer research support and summarizes the evidence 2. Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on cancer research support for the stewards 3. Collaborator Scout (Operations Deck): Identifies experts and collaborators working on cancer research support 4. Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles 5. Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them 6. Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/evidence-monitor",
+   "avatarId": "avatar:cancer-dao/specialist/evidence-monitor",
+   "kind": "specialist",
+   "name": "Evidence Monitor",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/evidence-monitor",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "1f5a0d7ba9f618a75652ca84d26c7fb9da3f85f5ec0f0e03d53300c5ae992833"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2659,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Evidence Monitor (avatar:cancer-dao/specialist/evidence-monitor) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/evidence-monitor in worldforge/out/avatars/prompts/cancer-dao.json (sha256 1f5a0d7ba9f618a7); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Monitors developments in cancer research support and summarizes the evidence (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: monitor, monitors, summarizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in cancer research support and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on cancer research support for the stewards 4. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/research-synthesis-agent",
+   "avatarId": "avatar:cancer-dao/specialist/research-synthesis-agent",
+   "kind": "specialist",
+   "name": "Research Synthesis Agent",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/research-synthesis-agent",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "952ef1baac515fab8996612ac959fc190623f7778d81966a3b3478649210edfe"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2663,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research Synthesis Agent (avatar:cancer-dao/specialist/research-synthesis-agent) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/research-synthesis-agent in worldforge/out/avatars/prompts/cancer-dao.json (sha256 952ef1baac515fab); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Synthesizes research on cancer research support for the stewards (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: synthesizes, stewards.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in cancer research support and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on cancer research support for the stewards 4. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/proposal-grant-drafter",
+   "avatarId": "avatar:cancer-dao/specialist/proposal-grant-drafter",
+   "kind": "specialist",
+   "name": "Proposal & Grant Drafter",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/proposal-grant-drafter",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "82e26856a84009f6458e7c5eb5df4b1d4055b5e2156fd5140a9a44714519da89"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/proposal-forum"
+   ],
+   "chars": 2642,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Proposal & Grant Drafter (avatar:cancer-dao/specialist/proposal-grant-drafter) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/proposal-grant-drafter in worldforge/out/avatars/prompts/cancer-dao.json (sha256 82e26856a84009f6); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Proposal Forum - Proposals drafted by agents, debated and decided by people.\nYour role: Drafts proposals and grants for human review; never enacts them (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: proposal, grant, drafter, drafts, proposals, grants, human, review, never, enacts, them, forum, drafted, agents, debated, decided, people.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/proposal-forum: Proposal Forum: what happens here [room: Proposal Forum]\n    Steps: 1. Enter the forum signed \"Proposal Forum\" 2. Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them 3. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/collaborator-scout",
+   "avatarId": "avatar:cancer-dao/specialist/collaborator-scout",
+   "kind": "specialist",
+   "name": "Collaborator Scout",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/collaborator-scout",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "279015f1f0e7588e0d0aff4ba1f262398d8dbb660c16dd460d6939ade39fff81"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/operations-deck"
+   ],
+   "chars": 2647,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Collaborator Scout (avatar:cancer-dao/specialist/collaborator-scout) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/collaborator-scout in worldforge/out/avatars/prompts/cancer-dao.json (sha256 279015f1f0e7588e); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Identifies experts and collaborators working on cancer research support (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: collaborator, scout, identifies, experts, collaborators.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on cancer research support 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/task-router",
+   "avatarId": "avatar:cancer-dao/specialist/task-router",
+   "kind": "specialist",
+   "name": "Task Router",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/task-router",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "a344ef3ec22b2a47fd24b7f68817d5ab1b3079ed1945b7152992944eaac4a37d"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/operations-deck"
+   ],
+   "chars": 2628,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Task Router (avatar:cancer-dao/specialist/task-router) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/task-router in worldforge/out/avatars/prompts/cancer-dao.json (sha256 a344ef3ec22b2a47); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Routes tasks and coordinates working groups between decision cycles (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: router, routes, tasks, coordinates, between, decision, cycles.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on cancer research support 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:cancer-dao/specialist/progress-tracker",
+   "avatarId": "avatar:cancer-dao/specialist/progress-tracker",
+   "kind": "specialist",
+   "name": "Progress Tracker",
+   "persona_prompt": {
+    "id": "persona:cancer-dao/specialist/progress-tracker",
+    "file": "worldforge/out/avatars/prompts/cancer-dao.json",
+    "sha256": "5069a3d09d199c2178368ea62eb697c427e9131e4b6e271c5362e831023af652"
+   },
+   "lessons": [
+    "lesson:cancer-dao/zone/progress-observatory"
+   ],
+   "chars": 2574,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Progress Tracker (avatar:cancer-dao/specialist/progress-tracker) teaches draft lessons in Cancer DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:cancer-dao/specialist/progress-tracker in worldforge/out/avatars/prompts/cancer-dao.json (sha256 5069a3d09d199c21); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Progress Observatory - Progress tracking against the charter's measurable outcomes.\nYour role: Tracks progress against the charter's measurable outcomes (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: tracker, tracks, against, charter, measurable, outcomes, observatory, tracking.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:cancer-dao/zone/progress-observatory: Progress Observatory: what happens here [room: Progress Observatory]\n    Steps: 1. Enter the forum signed \"Progress Observatory\" 2. Meet Progress Tracker: Tracks progress against the charter's measurable outcomes 3. A question that belongs to another zone goes back to Cancer DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to cancer-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "zone \"Charter Hall\" seats no specialist: no model-taught lesson for it",
+  "spec gap: No RP1 location given for this DAO yet",
+  "spec gap: No named people, partners or budgets: the charter's measurable outcomes are not yet set"
+ ]
+}

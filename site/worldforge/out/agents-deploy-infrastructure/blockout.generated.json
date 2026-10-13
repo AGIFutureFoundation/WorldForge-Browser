@@ -1,0 +1,674 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:agents-deploy-infrastructure",
+ "rootCardId": "world:agents-deploy-infrastructure",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -156,
+   156
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "displayName": "Idea Bench",
+   "centerXZ": [
+    -48,
+    83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "displayName": "Provisioning Yard",
+   "centerXZ": [
+    -96,
+    0
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "displayName": "Deployment Bay",
+   "centerXZ": [
+    -48,
+    -83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "displayName": "Domain Registry Desk",
+   "centerXZ": [
+    48,
+    -83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "displayName": "Service Configuration Room",
+   "centerXZ": [
+    96,
+    0
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "displayName": "Operations Deck",
+   "centerXZ": [
+    48,
+    83.14
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:agents-deploy-infrastructure/floor",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:agents-deploy-infrastructure/avatar",
+   "parentCardId": "coordinator:agents-deploy-infrastructure",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agents-deploy-infrastructure/host/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agents-deploy-infrastructure/steward/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agents-deploy-infrastructure/alignment/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:agents-deploy-infrastructure/arch",
+   "parentCardId": "gate:agents-deploy-infrastructure",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    136
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:agents-deploy-infrastructure/chamber",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -136
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:agents-deploy-infrastructure/steward-1/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-1",
+   "zoneCardId": "council:agents-deploy-infrastructure",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:agents-deploy-infrastructure/steward-2/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-2",
+   "zoneCardId": "council:agents-deploy-infrastructure",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:agents-deploy-infrastructure/steward-3/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-3",
+   "zoneCardId": "council:agents-deploy-infrastructure",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -136
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:agents-deploy-infrastructure/avatar",
+   "parentCardId": "omega:agents-deploy-infrastructure",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -136
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/idea-bench/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -48,
+    0,
+    83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/idea-bench/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -44,
+    0.4,
+    76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/planner/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/planner",
+   "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -51,
+    0.4,
+    88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/provisioning-yard/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -96,
+    0,
+    0
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/provisioning-yard/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -88,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/provisioner/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/provisioner",
+   "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -102,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/deployment-bay/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -48,
+    0,
+    -83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/deployment-bay/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -44,
+    0.4,
+    -76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/deployer/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/deployer",
+   "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -51,
+    0.4,
+    -88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/domain-registry-desk/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    48,
+    0,
+    -83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/domain-registry-desk/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    44,
+    0.4,
+    -76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/domain-steward/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/domain-steward",
+   "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    51,
+    0.4,
+    -88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/service-configuration-room/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    96,
+    0,
+    0
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/service-configuration-room/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    88,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/configurator/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/configurator",
+   "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    102,
+    0.4,
+    0
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/operations-deck/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    48,
+    0,
+    83.14
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agents-deploy-infrastructure/operations-deck/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    44,
+    0.4,
+    76.21
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agents-deploy-infrastructure/operator/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/operator",
+   "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    51,
+    0.4,
+    88.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/gate",
+   "startXZ": [
+    0,
+    136
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -126
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/idea-bench",
+   "startXZ": [
+    -12,
+    20.78
+   ],
+   "endXZ": [
+    -40,
+    69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/provisioning-yard",
+   "startXZ": [
+    -24,
+    0
+   ],
+   "endXZ": [
+    -80,
+    0
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/deployment-bay",
+   "startXZ": [
+    -12,
+    -20.78
+   ],
+   "endXZ": [
+    -40,
+    -69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/domain-registry-desk",
+   "startXZ": [
+    12,
+    -20.78
+   ],
+   "endXZ": [
+    40,
+    -69.28
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/service-configuration-room",
+   "startXZ": [
+    24,
+    0
+   ],
+   "endXZ": [
+    80,
+    0
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agents-deploy-infrastructure/operations-deck",
+   "startXZ": [
+    12,
+    20.78
+   ],
+   "endXZ": [
+    40,
+    69.28
+   ],
+   "widthMeters": 6
+  }
+ ]
+}
