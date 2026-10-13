@@ -20,7 +20,7 @@ _Source: `worldforge/out/s14-askdoc-x/cards.json#world:s14-askdoc-x`, `worlds/ge
 
 ## Ownership and permissions
 
-Every object in AskDoc.X (Series 14) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in AskDoc.X (Series 14) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **AskDoc.X (Series 14)** (world) `world:s14-askdoc-x`: coming soon; Agent-managed DAO
   - **AskDoc.X (Series 14) Plaza** (plaza) `plaza:s14-askdoc-x`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s14-askdoc-x]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `5438ee14a73f3dd322d3f6db7941cb5e141296eeef6bd56b8a5ebfd80f1b1936` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `2d4926635f54fd4b0340d426284fd3eb500510695292942658952d554e61a8ab` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

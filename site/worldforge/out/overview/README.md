@@ -1,4 +1,4 @@
-# SmartCiti.X worlds: GLEWME network overview
+# SmartCiti.X worlds: network overview
 
 AGI Future Foundation PBC · Powered by AGI Corp. 41 agentic virtual worlds, each described card by card in its own overview. Every number below is read from a registry at build time by `worldforge/overview.mjs`; the source path sits next to it.
 
@@ -22,13 +22,13 @@ Open the [3-D viewer](../../viewer.html) or the [WorldForge console](../../../co
 | Landmarks (triangles) | 41 (508,339) | worldforge/out/assets/landmarks/index.json#totals |
 | Landmark height range | 30.5 to 69 m | worldforge/out/assets/landmarks/index.json#totals |
 | Onchain-ready tokens (deployed) | 939 (not deployed, not minted) | worldforge/out/onchain/index.json#totals,status |
-| Onchain network root | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` | worldforge/out/onchain/index.json#network_root |
+| Onchain network root | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` | worldforge/out/onchain/index.json#network_root |
 | Mount plans / nodes | 41 / 2,042 | worldforge/native/conformance-report.json#totals |
 | Native conformance violations | 0 | worldforge/native/conformance-report.json#totals.native |
 
-## The GLEWME model
+## The SmartCiti.X Master Card model
 
-**Master Cards.** Every object in a world is one card (`glewme-master-cards/0.1`), owned by AGI Future Foundation PBC and carrying the umbrella "Powered by AGI Corp". Cards form one tree per world through `parentCardId`: world, then plaza (a coordinator and scripted advisors), the Alignment Evaluation Gate, the Steward Council with its human seats, the Omega Steward, and zones holding agent avatars. Across the network the kinds are: advisor 123, agent 242, coordinator 41, council 41, gate 41, omega 41, plaza 41, seat 123, world 41, zone 205.
+**Master Cards.** Every object in a world is one card (`smartcitix-master-cards/0.1`), owned by AGI Future Foundation PBC and carrying the umbrella "Powered by AGI Corp". Cards form one tree per world through `parentCardId`: world, then plaza (a coordinator and scripted advisors), the Alignment Evaluation Gate, the Steward Council with its human seats, the Omega Steward, and zones holding agent avatars. Across the network the kinds are: advisor 123, agent 242, coordinator 41, council 41, gate 41, omega 41, plaza 41, seat 123, world 41, zone 205.
 
 **Volum.** Each card covers a bounded 3-D region, stored as a box centre and half-extents in metres (shapes used: box).
 

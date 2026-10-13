@@ -224,7 +224,7 @@ table {{ border-collapse:collapse; width:100%; font-size:14px }} th,td {{ text-a
 </section>
 
 <section id="what" aria-labelledby="what-h"><p class="eyebrow">What it is</p><h2 id="what-h">Every place, agent and seat is an owned Master Card</h2>
-  <p>A world is a tree of GLEWME Master Cards. Each card has an owner (the PBC), a <b>Volum</b> (the bounded 3D region it governs) and a seven-right permission table. Agents may view, enter and operate their own zone. Building, delegating, transferring and governing belong to people, and six actions are always held for a 2-of-3 human Steward Council.</p>
+  <p>A world is a tree of SmartCiti.X Master Cards. Each card has an owner (the PBC), a <b>Volum</b> (the bounded 3D region it governs) and a seven-right permission table. Agents may view, enter and operate their own zone. Building, delegating, transferring and governing belong to people, and six actions are always held for a 2-of-3 human Steward Council.</p>
   <div class="model">
    <div><span class="lbl">Card kinds</span><p>world, plaza, coordinator, 3 scripted advisors, Alignment Evaluation Gate, council with 3 empty human seats, Omega Steward, zones with buildings, agents</p></div>
    <div><span class="lbl">Seven rights</span><p><code>view · enter · build · operate · delegate · transfer · govern</code></p></div>

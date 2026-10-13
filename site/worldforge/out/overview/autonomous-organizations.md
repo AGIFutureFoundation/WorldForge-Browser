@@ -20,7 +20,7 @@ _Source: `worldforge/out/autonomous-organizations/cards.json#world:autonomous-or
 
 ## Ownership and permissions
 
-Every object in Autonomous Organizations is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Autonomous Organizations is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Autonomous Organizations** (world) `world:autonomous-organizations`: coming soon; Agent-managed DAO
   - **Autonomous Organizations Plaza** (plaza) `plaza:autonomous-organizations`: the shared round plaza every world opens onto
@@ -230,8 +230,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=autonomous-orga
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `fcec18e063b0ecd61a4c2e060db20a89bf9c420d9937d95cab38b3ed8fd638da` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `effda36f80dcfadaf0327296b90c274eccec1feb65676ff85ec3268022bfb07b` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

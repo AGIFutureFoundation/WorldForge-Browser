@@ -616,7 +616,7 @@ def stack_layers(D):
                    f"{V(D, 'exteriors')} building exteriors + {V(D, 'interiors')} interiors; {V(D, 'at_2048')} facade maps at 2048 px",
                    f"{V(D, 'landmarks')} civic landmarks and {V(D, 'avatar_glbs')} avatar role models, {V(D, 'landmark_val_errors') + V(D, 'avatar_val_errors')} validator errors"],
          "source": "evidence/heartbeat.log; my-fabric/worlds/spaces_index.json; worldforge/out/assets/*/validation.json", "status": "in use"},
-        {"id": "cards", "name": "GLEWME Master Cards", "sub": "one card per object: Volum, 7 rights, 6 reserved actions",
+        {"id": "cards", "name": "SmartCiti.X Master Cards", "sub": "one card per object: Volum, 7 rights, 6 reserved actions",
          "facts": [f"{fmt(V(D, 'cards'))} cards in {V(D, 'card_kinds')} kinds across {V(D, 'worlds')} worlds",
                    f"rights: {', '.join(D['rights'])}",
                    f"{fmt(V(D, 'reserved_entries'))} reservation entries, each held for the Steward Council"],
@@ -690,7 +690,7 @@ def narration(D, film):
 
 def spoken(text):
     """What the synthetic voice reads: the captions keep the written form."""
-    for a, b in (("SmartCiti.X", "SmartCiti dot X"), ("Locator.X", "Locator dot X"), ("GLEWME ", ""), ("2 of 3", "two of three")):
+    for a, b in (("SmartCiti.X", "SmartCiti dot X"), ("Locator.X", "Locator dot X"), ("2 of 3", "two of three")):
         text = text.replace(a, b)
     return text
 
@@ -743,7 +743,7 @@ def walk_line(D, slug, mode, first, first_of_world):
     return f"Then {s}"
 
 
-LAYER_SAY = {"assets": "assets", "cards": "GLEWME Master Cards", "agents": "agents", "evidence": "heartbeat, evals and ledger",
+LAYER_SAY = {"assets": "assets", "cards": "SmartCiti.X Master Cards", "agents": "agents", "evidence": "heartbeat, evals and ledger",
              "engines": "engines, RP1 and Sneeze", "onchain": "the onchain-ready export"}
 ORDINAL = ["one", "two", "three", "four", "five", "six", "seven", "eight"]
 
@@ -1901,7 +1901,7 @@ def build_html(D, films):
     # ---------------- hero
     hero_stats = "".join(x.replace('<div class="stat', '<div role="listitem" class="stat', 1) for x in [
         stat(V(D, "worlds"), "worlds, all coming soon", S(D, "worlds")),
-        stat(fmt(V(D, "cards")), "GLEWME Master Cards", S(D, "cards"), "purple"),
+        stat(fmt(V(D, "cards")), "SmartCiti.X Master Cards", S(D, "cards"), "purple"),
         stat(f"{fmt(V(D, 'evals'))} / {V(D, 'failed')}", "evals / failing", S(D, "evals"), "green"),
         stat(V(D, "avatars.avatars"), "avatars bound to agents", S(D, "avatars.avatars"), "pink"),
         stat(f"{V(D, 'hive.omegas')} / {V(D, 'hive.seated')}", "Omega Stewards / seated", S(D, "hive.omegas")),
@@ -1949,7 +1949,7 @@ def build_html(D, films):
     # ---------------- how
     kinds_txt = ", ".join(f"{k} {v}" for k, v in D["kinds"].items())
     how_cards = [
-        ("Master Cards and Volum", fmt(V(D, "cards")), f"One GLEWME Master Card for every object in a world, in {V(D, 'card_kinds')} kinds ({kinds_txt}). Each card carries its owner, its Volum (a box in world space), a permission matrix and the reserved actions.", "worldforge/out/<slug>/cards.json; worldforge/out/index.json"),
+        ("Master Cards and Volum", fmt(V(D, "cards")), f"One SmartCiti.X Master Card for every object in a world, in {V(D, 'card_kinds')} kinds ({kinds_txt}). Each card carries its owner, its Volum (a box in world space), a permission matrix and the reserved actions.", "worldforge/out/<slug>/cards.json; worldforge/out/index.json"),
         ("Permissions: seven rights", str(V(D, "rights")), f"Every card names who may {', '.join(D['rights'])}. Agents get one extra right, operating their own zone; {fmt(V(D, 'reserved_entries'))} reservation entries hold the {V(D, 'reserved_actions')} reserved actions for the Steward Council.", "worldforge/out/<slug>/cards.json#rights; worlds/PBC.json"),
         ("Swarms", str(V(D, "swarms")), f"Each world runs a hub-hybrid swarm: one coordinator and its specialists ({V(D, 'specialists')} specialist agents in all). Agents answer with deterministic stubs today and hand off between zones.", "agents/swarms/*.json"),
         ("Metaprompts", str(V(D, "prompts")), f"{V(D, 'prompts')} prompts, {V(D, 'prompts_failing')} failing their checks. {V(D, 'prompts_awaiting_focus')} spec metaprompts wait on a founder-written focus, and say so.", "agents/prompts/index.json"),

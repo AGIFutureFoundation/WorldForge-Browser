@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// worldforge/overview.mjs: deep GLEWME overviews, one Markdown file per world plus a network README.
+// worldforge/overview.mjs: deep SmartCiti.X overviews, one Markdown file per world plus a network README.
 //
 //   node worldforge/overview.mjs           writes worldforge/out/overview/*.md and runs the evals (exit 1 on any failure)
 //   node worldforge/overview.mjs --check   exit 1 if worldforge/out/overview/ is behind its registries
@@ -171,7 +171,7 @@ function worldDoc(R, W, F) {
 
   // Ownership and permissions
   d.blank().p('## Ownership and permissions', '');
-  d.p(`Every object in ${w.name} is a GLEWME Master Card owned by ${W.cards.owner}. The tree below follows ${code('parentCardId')}: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.`, '');
+  d.p(`Every object in ${w.name} is a SmartCiti.X Master Card owned by ${W.cards.owner}. The tree below follows ${code('parentCardId')}: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.`, '');
   const kids = new Map();
   for (const c of F.cards) {
     const k = c.parentCardId ?? '__root';
@@ -444,7 +444,7 @@ function readmeDoc(R, FS) {
   const recorded = sum((F) => F.omegaRecorded);
   const buildings = sum((F) => F.buildings.length);
 
-  d.p('# SmartCiti.X worlds: GLEWME network overview', '');
+  d.p('# SmartCiti.X worlds: network overview', '');
   d.p(`${R.index.owner} · ${R.index.umbrella}. ${R.index.totals.worlds} agentic virtual worlds, each described card by card in its own overview. Every number below is read from a registry at build time by ${code('worldforge/overview.mjs')}; the source path sits next to it.`, '');
   d.p(`Open the ${d.link('3-D viewer', SRC.viewer)} or the ${d.link('WorldForge console', SRC.console)}.`);
 
@@ -469,7 +469,7 @@ function readmeDoc(R, FS) {
     ['Native conformance violations', fmt(R.conformance.totals.native.violations), SRC.conformance + '#totals.native'],
   ]);
 
-  d.blank().p('## The GLEWME model', '');
+  d.blank().p('## The SmartCiti.X Master Card model', '');
   const sample = FS[0].cards;
   const rights = R.worlds[0].cards.rights;
   d.p(`**Master Cards.** Every object in a world is one card (${code(R.worlds[0].cards.schemaVersion)}), owned by ${R.index.owner} and carrying the umbrella "${R.index.umbrella}". Cards form one tree per world through ${code('parentCardId')}: world, then plaza (a coordinator and scripted advisors), the Alignment Evaluation Gate, the Steward Council with its human seats, the Omega Steward, and zones holding agent avatars. Across the network the kinds are: ${Object.entries(R.onchain.totals.by_kind).map(([k, n]) => `${k} ${fmt(n)}`).join(', ')}.`, '');

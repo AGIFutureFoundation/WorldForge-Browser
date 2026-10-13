@@ -20,7 +20,7 @@ _Source: `worldforge/out/s35-parkinsons-dao/cards.json#world:s35-parkinsons-dao`
 
 ## Ownership and permissions
 
-Every object in Parkinsons DAO (Series 35) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Parkinsons DAO (Series 35) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Parkinsons DAO (Series 35)** (world) `world:s35-parkinsons-dao`: coming soon; Agent-managed DAO
   - **Parkinsons DAO (Series 35) Plaza** (plaza) `plaza:s35-parkinsons-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s35-parkinsons-
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `da7a529396b70eb43a16637d838355967e3d50632ddde03f72310c33c88d13af` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `a1b5ea5fa4c4aadc29cfc2d8dc1baeac4aea02f6d215bbae4c5dfc2514f72198` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 2 |
 

@@ -20,7 +20,7 @@ _Source: `worldforge/out/cancer-dao/cards.json#world:cancer-dao`, `worlds/genera
 
 ## Ownership and permissions
 
-Every object in Cancer DAO is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Cancer DAO is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Cancer DAO** (world) `world:cancer-dao`: coming soon; Agent-managed DAO
   - **Cancer DAO Plaza** (plaza) `plaza:cancer-dao`: the shared round plaza every world opens onto
@@ -230,8 +230,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=cancer-dao]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `aaefb34c51d996e8cb26c865a9e45fa669c762b5779902afe3516d755be19f05` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `d82633dfe6f4b1a59f7bdaa3ddc31a5f0241aab1ac32f25383eb3a4a7c6958b4` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

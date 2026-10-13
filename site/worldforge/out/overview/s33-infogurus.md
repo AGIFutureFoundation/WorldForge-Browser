@@ -20,7 +20,7 @@ _Source: `worldforge/out/s33-infogurus/cards.json#world:s33-infogurus`, `worlds/
 
 ## Ownership and permissions
 
-Every object in InfoGurus (Series 33) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in InfoGurus (Series 33) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **InfoGurus (Series 33)** (world) `world:s33-infogurus`: coming soon; Agent-managed DAO
   - **InfoGurus (Series 33) Plaza** (plaza) `plaza:s33-infogurus`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s33-infogurus]`
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `332a300e5c83e2ecad22aca9d4b2fab04202802e37beb6e03533daf145e63a1c` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `0bb66033639d02d7381dd4061934d7258115063cbe35b17a771da8ab7d9501c6` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 5 |
 

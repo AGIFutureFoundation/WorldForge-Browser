@@ -20,7 +20,7 @@ _Source: `worldforge/out/s25-mypet-ai/cards.json#world:s25-mypet-ai`, `worlds/ge
 
 ## Ownership and permissions
 
-Every object in MyPet.AI (Series 25) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in MyPet.AI (Series 25) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **MyPet.AI (Series 25)** (world) `world:s25-mypet-ai`: coming soon; Agent-managed DAO
   - **MyPet.AI (Series 25) Plaza** (plaza) `plaza:s25-mypet-ai`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s25-mypet-ai]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `233c0f87807100b3553cce032c6c6ffffd90a1b49d643cdff87a20acf9472e2e` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `59a8783b4f80849270a63843cc5791a74e60a603c9773ee989e953fe940881d5` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

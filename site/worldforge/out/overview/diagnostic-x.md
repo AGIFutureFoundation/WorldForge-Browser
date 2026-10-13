@@ -20,7 +20,7 @@ _Source: `worldforge/out/diagnostic-x/cards.json#world:diagnostic-x`, `worlds/ge
 
 ## Ownership and permissions
 
-Every object in Diagnostic.X is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Diagnostic.X is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Diagnostic.X** (world) `world:diagnostic-x`: coming soon; Agent-managed DAO
   - **Diagnostic.X Plaza** (plaza) `plaza:diagnostic-x`: the shared round plaza every world opens onto
@@ -218,8 +218,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=diagnostic-x]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 20 / 20 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `9912ccddac47afe49b3b7d7a0cb979f6f163656bbcbbe9e9a03800bec1a87a9c` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `204a2aa50adf2e825645237a90ae82e314eed24488d51f7b21cd0d0e2f93bee9` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

@@ -1,7 +1,7 @@
 # WorldForge-Browser
 
 **The SmartCiti.X world builder, in the browser.** WorldForge turns the 41 AGI Corp "coming soon" worlds into
-walkable 3-D scenes: GLEWME Master Cards, card-tagged glTF worlds, agent avatars, civic landmarks, lessons and
+walkable 3-D scenes: SmartCiti.X Master Cards, card-tagged glTF worlds, agent avatars, civic landmarks, lessons and
 Omega Steward personas. You can open all of it from a static site, with no build step and no backend.
 
 *Agents operate; people govern. Powered by AGI Corp. Owned by AGI Future Foundation PBC.*
@@ -29,7 +29,7 @@ The viewer loads `three@0.160.0` from cdn.jsdelivr.net, so it needs internet acc
 
 | File | What it is |
 |---|---|
-| `cards.json` | GLEWME Master Cards: world → plaza, Alignment Evaluation Gate, Steward Council (3 human seats, all empty), zones → agent avatars. Each card has an owner, a **Volum** (its bounded 3-D region) and a permission matrix (`view, enter, build, operate, delegate, transfer, govern`). |
+| `cards.json` | SmartCiti.X Master Cards: world → plaza, Alignment Evaluation Gate, Steward Council (3 human seats, all empty), zones → agent avatars. Each card has an owner, a **Volum** (its bounded 3-D region) and a permission matrix (`view, enter, build, operate, delegate, transfer, govern`). |
 | `<slug>.glb` | glTF 2.0. Every node carries `cardId`/`parentCardId` in its extras. |
 | `blockout.generated.json` | The deterministic, synthetic generated core: zones, primitives and roads in metres. |
 | `sneeze-mount-plan.json` | Ordered RP1/Sneeze Scene Object Model node specs, parents first. Names are ASCII, ≤ 47 units. |

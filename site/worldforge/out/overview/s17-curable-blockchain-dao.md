@@ -20,7 +20,7 @@ _Source: `worldforge/out/s17-curable-blockchain-dao/cards.json#world:s17-curable
 
 ## Ownership and permissions
 
-Every object in Curable.Blockchain DAO (Series 17) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Curable.Blockchain DAO (Series 17) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Curable.Blockchain DAO (Series 17)** (world) `world:s17-curable-blockchain-dao`: coming soon; Agent-managed DAO
   - **Curable.Blockchain DAO (Series 17) Plaza** (plaza) `plaza:s17-curable-blockchain-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s17-curable-blo
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `25b2bf7fdc93a9fb4adc97d9c9d960591fd382417352ed43d25a02caaa0c614a` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `083c66b5f0c6db27934e78d876e6fd5a6e44f67677a9899ce225f257e8a080fc` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

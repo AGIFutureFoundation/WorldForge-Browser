@@ -20,7 +20,7 @@ _Source: `worldforge/out/s29-metaverse-dao/cards.json#world:s29-metaverse-dao`, 
 
 ## Ownership and permissions
 
-Every object in Metaverse DAO (Series 29) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Metaverse DAO (Series 29) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Metaverse DAO (Series 29)** (world) `world:s29-metaverse-dao`: coming soon; Agent-managed DAO
   - **Metaverse DAO (Series 29) Plaza** (plaza) `plaza:s29-metaverse-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s29-metaverse-d
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `c06ec9390470362aa2423daa9c5f5596fae3838b358c1e3658761e245055b85d` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `3de33f56b7a58e359bab7befe7d0b0044d235f451322194b1f2e0b268c40f9ce` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 5 |
 

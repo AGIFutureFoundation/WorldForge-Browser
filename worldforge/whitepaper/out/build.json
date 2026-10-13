@@ -5,8 +5,8 @@
   "heartbeat_line": "13:02:27 GREEN | GLB: 673 GLBs validated, 0 with errors/warnings | REFS: 197 fabrics, 0 missing refs or over-long names | SERVE: skipped (sandbox blocks local binding), files present | ARTEMIS errors: 0 | SWARMS: 41 swarms, 242 agents + 41 coordinators + 1 concierge; 0 failing evals | LEDGER: ledger: 284 entries (41 worlds), 0 failing checks | PROMPTS: 41 worlds, 571 prompts, 28 spec metaprompts awaiting a founder focus; 0 failing prompt evals | CONSOLE: console current (862841a0e00c7c7b) | RP1: 46 installers dry-run, 0 failing | FACTORY: 43 teams, 4300 scaffold worlds over 20 custom spaces; 0 failing world evals, 0 failing prompt evals | TEAMS: teams console current (af3ee6fa8e602db3) | DEEP: 41 deep worlds, 246 rooms, 1211 hotspots, 738 checks; 0 failing deep evals | DAO: 43 DAO teams, 352 seats, 155 open proposals, 44 agent attempts held, 352 role prompts; 0 failing dao evals | DAOC: dao console current (9949c79b045cc93b) | CORPS: corporations: 35 series cells (35 with a world, 35 with a team), 6 focus DAOs, 3 tracks, 44 teams, 155 open proposals, 5 findings; 0 failing corporation evals | CORPSC: corporations console current (f2bbe5bd32d5b566) | GOV: governance: 4 layers (1 filed), 13 shield items (2 evidenced, 7 open, 4 for counsel), 6 discrepancies; 0 failing governance evals | GOVC: governance console current (c5a681197234b9db) | ATLAS: atlas current (9f5263cfdd7a574c) | PROJECTS: projects current (d0a3d60101eb45a0) | WALK: walk current (4eb645b7e6a36ea9) | MEMBERSHIP: membership: 3 levels, 0 purchasable, 4 founder-gated items, 28 checks; 0 failing membership evals | SIGNING: pass signing: 3 levels, 0 signable today (price null on 3, board price approval null on 3, counsel terms approval null on 3, name/benefits null on 3, Apple and Google issuer ids unset, no certificates supplied), 0 failing signing evals | NEON: neon current (62cb601ec7146222) | FILM: film current (48e174de09f46f93): features 110 s, loop 190 s | DECK: deck current (1136dea48a31b920) · 5 versions | SERVICES: services: 231 service cards across 44 worlds, 8 metrics (2 measured), 0 failing services evals | BENEFICIAL: beneficial: 36 cells, mean W 1.00, 36 regenerative, risk GREEN, forge 1 accepted/1 rejected, 0 failing beneficial evals | NARRATION: narration current (b36b24c197aa6baf): features: narrated atlas/film/features-film-narrated.mp4 (110.0 s); loop: narrated atlas/film/family-film-narrated.mp4 (190.0 s); robotics: narrated atlas/film/robotics-film-narrated.mp4 (60.0 s); holodeck: narrated atlas/film/holodeck-film-narrated.mp4 (110.0 s); review: narrated atlas/film/review-film-narrated.mp4 (120.0 s) | W3C: w3 console current (a8473757eda6d3c9) | ADVISORY: advisory: 5 example engagements, 3 rails (0 enabled), 44 omega agents, 0 failing advisory evals | ROBOTICS: robotics: 19 modules across 2 worlds, 23 simulated runs, 0 failing robotics evals | TRAINING: training: 19 modules, 19 human tracks, 19 robot tracks, 19 tutors, 0 certified, 0 failing training evals | RUBRICS: rubrics: 19 modules, 88 axes measured, 87 not measurable, 38 certificate drafts (0 signed), 0 failing rubric evals | KEYRING: keyring: 0 registered (0 today), 0 pending requests, 0 failing keyring evals | PUBLISH: rp1 publish: 6 worlds ready, 38 blocked (38 no anchor), 117.1 MB bundle, 0 failing publish evals | WING: wing current (18 bays, 96 nodes, 46 models); 0 failing wing evals | ADVISORS: advisors: 41 sessions, 1230 messages, 533 topics, 41 held, 164 redactions, 7 biomes; 0 failing advisor evals | COMMS: comms: 41 channels, 529 messages, 41 held attempts, 41 routed questions, 123 human seats; 0 failing comms evals | COSHELL: coshell bridge: 41 sessions planned, dry-run, CLI not installed, 4 founder steps open; 0 failing bridge evals | COMMSC: comms console current (43f012478e96a0d5) | X402: x402: 42 worlds, 307 priced items, 126 rehearsed flows (42 held, 42 would-settle, 42 refused, 0 settled); 0 failing x402 evals | ROBOPITCH: robotics pitch current (2c0e41230beee9c1) | HIVE: hive: 44 omegas, 44 personas, 27 voices, 176 lines (173 spoken), 0 failing hive evals | HIVEC: hive console current (dc442c48f8790f08) | WORLDFORGE: WORLDFORGE current: 41 worlds, 939 cards, 1066 evals, 0 failing | DIALOGUES: hive dialogues: 44 omegas, 264 answers, 44 handoffs, 170 spoken, 0 failing dialogue evals | SPACESC: spaces console current (ad23f01fb0a21fab) | NETWORK: network: 2 layers, 2 tags, 2 rules, 0 secrets in the kit, 0 failing network evals | MODELS: models: 10 providers (0 keys present), 8 task routes, 5 open/free options, 0 failing model evals | MODELPLAN: model plan: 352 jobs, 3 routes used, 352 cross-provider judges, 0 live calls, 0 failing plan evals | DISK free: 36Gi",
   "beats_total": 101,
   "beats_green": 71,
-  "date": "2026-10-12",
-  "built_at": "2026-10-12T15:09:02-07:00",
+  "date": "2026-10-13",
+  "built_at": "2026-10-13T15:36:09-07:00",
   "narration": "say:Samantha",
   "base_url": null,
   "contact": null
@@ -713,10 +713,10 @@
     },
     {
      "section": "stack",
-     "text": "Layer two, GLEWME Master Cards: 939 cards, each with a Volum and 7 rights.",
+     "text": "Layer two, SmartCiti.X Master Cards: 939 cards, each with a Volum and 7 rights.",
      "start": 13.173,
-     "end": 17.808,
-     "seconds": 4.64,
+     "end": 18.733,
+     "seconds": 5.56,
      "tempo": 1.275
     },
     {
@@ -858,8 +858,8 @@
     ],
     [
      13.173,
-     18.408,
-     "Layer two, GLEWME Master Cards: 939 cards, each with a Volum and 7 rights."
+     19.333,
+     "Layer two, SmartCiti.X Master Cards: 939 cards, each with a Volum and 7 rights."
     ],
     [
      19.483,
@@ -991,7 +991,7 @@
     "section": "pipeline-and-validation",
     "label": "World GLBs",
     "text": "41, 769,296 bytes, 1,103 card-tagged primitives",
-    "registry_now": 769004,
+    "registry_now": 769448,
     "pointer": "worldforge/out/index.json#worlds[].glbBytes (sum)"
    },
    {
@@ -1122,7 +1122,7 @@
   }
  ],
  "sections": 19,
- "page_sha256": "e21bb9489dc3cf4bf95d03776ad1a5225910789a1480da01f6fa7b39311def0b",
+ "page_sha256": "baefa01a0a3489a147a640413269197e5c557c12f096040e569a432e8c15b794",
  "media": [
   "avatars-preview.jpg",
   "frame-cancer-dao-flyin.jpg",

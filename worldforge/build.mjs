@@ -1,4 +1,4 @@
-// WorldForge: the GLEWME Master Card layer for every coming-soon world, carried through the gates the
+// WorldForge: the SmartCiti.X Master Card layer for every coming-soon world, carried through the gates the
 // ChatGPT "Create SmartCiti.X Roadmap" thread laid out (generated core -> card-tagged GLB -> Sneeze mount plan).
 //   node worldforge/build.mjs           # writes worldforge/out/, runs every world's evals, exit 1 on any failure
 //   node worldforge/build.mjs --check   # exit 1 if worldforge/out/ is behind its sources (writes nothing)
@@ -375,7 +375,7 @@ export function blockoutToGlb(built) {
     addMesh(0, rd.primitiveId, 'road', [(ax + bx) / 2, 0.04, (az + bz) / 2], [rd.widthMeters, 0.08, r2(len)], { parentCardId: blockout.rootCardId, zoneCardId: null, shape: 'road_segment' }, [0, r2(Math.sin(yaw / 2) * 1e4) / 1e4, 0, r2(Math.cos(yaw / 2) * 1e4) / 1e4]);
   }
   nodes.forEach((n) => { delete n._abs; });
-  return writeGlb(nodes, `WorldForge GLEWME Core · ${built.world.slug}`);
+  return writeGlb(nodes, `WorldForge SmartCiti.X Core · ${built.world.slug}`);
 }
 
 // ------------------------------------------------------------------------------------- mount plan ----
@@ -495,7 +495,7 @@ function main() {
     const plan = mountPlan(built, glbHash, cubeHash);
     const ev = runEvals({ ...built, glb, plan });
     failures += ev.failed.length;
-    const cardsDoc = { schemaVersion: 'glewme-master-cards/0.1', world: w.slug, owner: PBC.name, umbrella: PBC.umbrella, rights: RIGHTS, principle: 'Agents operate; people govern.', cards: built.cards, gaps: built.gaps };
+    const cardsDoc = { schemaVersion: 'smartcitix-master-cards/0.1', world: w.slug, owner: PBC.name, umbrella: PBC.umbrella, rights: RIGHTS, principle: 'Agents operate; people govern.', cards: built.cards, gaps: built.gaps };
     const files = { 'cards.json': stable(cardsDoc), 'blockout.generated.json': stable(built.blockout), [`${w.slug}.glb`]: glb, 'sneeze-mount-plan.json': stable(plan) };
     for (const [f, d] of Object.entries(files)) put(`${w.slug}/${f}`, d);
     const manifest = {

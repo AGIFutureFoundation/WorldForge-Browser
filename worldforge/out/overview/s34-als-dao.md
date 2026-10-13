@@ -20,7 +20,7 @@ _Source: `worldforge/out/s34-als-dao/cards.json#world:s34-als-dao`, `worlds/gene
 
 ## Ownership and permissions
 
-Every object in ALS DAO (Series 34) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in ALS DAO (Series 34) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **ALS DAO (Series 34)** (world) `world:s34-als-dao`: coming soon; Agent-managed DAO
   - **ALS DAO (Series 34) Plaza** (plaza) `plaza:s34-als-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s34-als-dao]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `5cd79a0664b1b905095a9eaad4cd6fdb0d97bd1548269e950cb2064efd6b980c` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `b55506018285636a6d57f7368841d9181119f0c6b32f19332a25e9b0cff619d8` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 5 |
 

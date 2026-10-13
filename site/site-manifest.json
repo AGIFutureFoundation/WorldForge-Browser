@@ -1,5 +1,5 @@
 {
- "bytes": 126313972,
+ "bytes": 127535363,
  "checks": {
   "missing_required": [],
   "ok": true,
@@ -1871,7 +1871,7 @@
    "why": "viewer: building interior (../my-fabric/worlds/models)"
   },
   "worldforge/out/agentic-payments/agentic-payments.glb": {
-   "bytes": 17420,
+   "bytes": 17428,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/agentic-payments/blockout.generated.json": {
@@ -1879,11 +1879,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/agentic-payments/cards.json": {
-   "bytes": 50822,
+   "bytes": 50826,
    "why": "viewer: cards"
   },
   "worldforge/out/agents-deploy-infrastructure/agents-deploy-infrastructure.glb": {
-   "bytes": 21952,
+   "bytes": 21964,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/agents-deploy-infrastructure/blockout.generated.json": {
@@ -1891,7 +1891,7 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/agents-deploy-infrastructure/cards.json": {
-   "bytes": 59381,
+   "bytes": 59385,
    "why": "viewer: cards"
   },
   "worldforge/out/assets/avatars/alignment.glb": {
@@ -2087,7 +2087,7 @@
    "why": "viewer: landmark LOD1 served at the LOD0 path the viewer requests (source worldforge/out/assets/lod/landmarks/s35-parkinsons-dao.lod1.glb)"
   },
   "worldforge/out/autonomous-organizations/autonomous-organizations.glb": {
-   "bytes": 19920,
+   "bytes": 19932,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/autonomous-organizations/blockout.generated.json": {
@@ -2095,7 +2095,7 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/autonomous-organizations/cards.json": {
-   "bytes": 56422,
+   "bytes": 56426,
    "why": "viewer: cards"
   },
   "worldforge/out/avatars/index.json": {
@@ -2103,7 +2103,7 @@
    "why": "viewer: avatar index"
   },
   "worldforge/out/biota-blockchain/biota-blockchain.glb": {
-   "bytes": 19316,
+   "bytes": 19328,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/biota-blockchain/blockout.generated.json": {
@@ -2111,7 +2111,7 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/biota-blockchain/cards.json": {
-   "bytes": 56199,
+   "bytes": 56203,
    "why": "viewer: cards"
   },
   "worldforge/out/cancer-dao/blockout.generated.json": {
@@ -2119,11 +2119,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/cancer-dao/cancer-dao.glb": {
-   "bytes": 17916,
+   "bytes": 17924,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/cancer-dao/cards.json": {
-   "bytes": 55075,
+   "bytes": 55079,
    "why": "viewer: cards"
   },
   "worldforge/out/climate-dao/blockout.generated.json": {
@@ -2131,11 +2131,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/climate-dao/cards.json": {
-   "bytes": 55140,
+   "bytes": 55144,
    "why": "viewer: cards"
   },
   "worldforge/out/climate-dao/climate-dao.glb": {
-   "bytes": 18088,
+   "bytes": 18100,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/diagnostic-x/blockout.generated.json": {
@@ -2143,11 +2143,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/diagnostic-x/cards.json": {
-   "bytes": 47965,
+   "bytes": 47969,
    "why": "viewer: cards"
   },
   "worldforge/out/diagnostic-x/diagnostic-x.glb": {
-   "bytes": 16208,
+   "bytes": 16220,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/ecology-dao/blockout.generated.json": {
@@ -2155,11 +2155,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/ecology-dao/cards.json": {
-   "bytes": 55189,
+   "bytes": 55193,
    "why": "viewer: cards"
   },
   "worldforge/out/ecology-dao/ecology-dao.glb": {
-   "bytes": 18088,
+   "bytes": 18100,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/education-dao/blockout.generated.json": {
@@ -2167,11 +2167,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/education-dao/cards.json": {
-   "bytes": 55269,
+   "bytes": 55273,
    "why": "viewer: cards"
   },
   "worldforge/out/education-dao/education-dao.glb": {
-   "bytes": 18436,
+   "bytes": 18444,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/empathic-x/blockout.generated.json": {
@@ -2179,11 +2179,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/empathic-x/cards.json": {
-   "bytes": 52802,
+   "bytes": 52806,
    "why": "viewer: cards"
   },
   "worldforge/out/empathic-x/empathic-x.glb": {
-   "bytes": 17424,
+   "bytes": 17436,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/index.json": {
@@ -2195,179 +2195,179 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/locator-x/cards.json": {
-   "bytes": 57260,
+   "bytes": 57264,
    "why": "viewer: cards"
   },
   "worldforge/out/locator-x/locator-x.glb": {
-   "bytes": 18572,
+   "bytes": 18584,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/overview/README.md": {
-   "bytes": 12440,
+   "bytes": 12454,
    "why": "overview"
   },
   "worldforge/out/overview/agentic-payments.md": {
-   "bytes": 26764,
+   "bytes": 26769,
    "why": "overview"
   },
   "worldforge/out/overview/agents-deploy-infrastructure.md": {
-   "bytes": 30692,
+   "bytes": 30697,
    "why": "overview"
   },
   "worldforge/out/overview/autonomous-organizations.md": {
-   "bytes": 28872,
+   "bytes": 28877,
    "why": "overview"
   },
   "worldforge/out/overview/biota-blockchain.md": {
-   "bytes": 28754,
+   "bytes": 28759,
    "why": "overview"
   },
   "worldforge/out/overview/cancer-dao.md": {
-   "bytes": 26306,
+   "bytes": 26311,
    "why": "overview"
   },
   "worldforge/out/overview/climate-dao.md": {
-   "bytes": 26440,
+   "bytes": 26445,
    "why": "overview"
   },
   "worldforge/out/overview/diagnostic-x.md": {
-   "bytes": 25416,
+   "bytes": 25421,
    "why": "overview"
   },
   "worldforge/out/overview/ecology-dao.md": {
-   "bytes": 26511,
+   "bytes": 26516,
    "why": "overview"
   },
   "worldforge/out/overview/education-dao.md": {
-   "bytes": 26725,
+   "bytes": 26730,
    "why": "overview"
   },
   "worldforge/out/overview/empathic-x.md": {
-   "bytes": 26464,
+   "bytes": 26469,
    "why": "overview"
   },
   "worldforge/out/overview/locator-x.md": {
-   "bytes": 27923,
+   "bytes": 27928,
    "why": "overview"
   },
   "worldforge/out/overview/public-health-dao.md": {
-   "bytes": 27470,
+   "bytes": 27475,
    "why": "overview"
   },
   "worldforge/out/overview/robotics-dao.md": {
-   "bytes": 26893,
+   "bytes": 26898,
    "why": "overview"
   },
   "worldforge/out/overview/s04-curable-x.md": {
-   "bytes": 26983,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s05-biopharma-go.md": {
-   "bytes": 27541,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s06-blockchain.md": {
-   "bytes": 27143,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s07-divine-dao.md": {
-   "bytes": 27171,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s09-astrological-x.md": {
-   "bytes": 27915,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s11-molecular.md": {
-   "bytes": 27024,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s12-parking-smart-x.md": {
-   "bytes": 28109,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s13-gonstead-x.md": {
-   "bytes": 27209,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s14-askdoc-x.md": {
-   "bytes": 26820,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s15-romanbridge-dao.md": {
-   "bytes": 28113,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s16-echodawn-dao.md": {
-   "bytes": 27562,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s17-curable-blockchain-dao.md": {
-   "bytes": 29409,
-   "why": "overview"
-  },
-  "worldforge/out/overview/s19-moscone-x.md": {
    "bytes": 26988,
    "why": "overview"
   },
+  "worldforge/out/overview/s05-biopharma-go.md": {
+   "bytes": 27546,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s06-blockchain.md": {
+   "bytes": 27148,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s07-divine-dao.md": {
+   "bytes": 27176,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s09-astrological-x.md": {
+   "bytes": 27920,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s11-molecular.md": {
+   "bytes": 27029,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s12-parking-smart-x.md": {
+   "bytes": 28114,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s13-gonstead-x.md": {
+   "bytes": 27214,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s14-askdoc-x.md": {
+   "bytes": 26825,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s15-romanbridge-dao.md": {
+   "bytes": 28118,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s16-echodawn-dao.md": {
+   "bytes": 27567,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s17-curable-blockchain-dao.md": {
+   "bytes": 29414,
+   "why": "overview"
+  },
+  "worldforge/out/overview/s19-moscone-x.md": {
+   "bytes": 26993,
+   "why": "overview"
+  },
   "worldforge/out/overview/s20-cmmc.md": {
-   "bytes": 26016,
+   "bytes": 26021,
    "why": "overview"
   },
   "worldforge/out/overview/s21-incubator-dao.md": {
-   "bytes": 27636,
+   "bytes": 27641,
    "why": "overview"
   },
   "worldforge/out/overview/s22-get-delivery-dao.md": {
-   "bytes": 28200,
+   "bytes": 28205,
    "why": "overview"
   },
   "worldforge/out/overview/s23-avatar-chat.md": {
-   "bytes": 27294,
+   "bytes": 27299,
    "why": "overview"
   },
   "worldforge/out/overview/s24-donatello-dao.md": {
-   "bytes": 27647,
+   "bytes": 27652,
    "why": "overview"
   },
   "worldforge/out/overview/s25-mypet-ai.md": {
-   "bytes": 26749,
+   "bytes": 26754,
    "why": "overview"
   },
   "worldforge/out/overview/s26-lyka-dao.md": {
-   "bytes": 26729,
+   "bytes": 26734,
    "why": "overview"
   },
   "worldforge/out/overview/s27-genomic-dao.md": {
-   "bytes": 27294,
+   "bytes": 27299,
    "why": "overview"
   },
   "worldforge/out/overview/s28-genomic-blockchain.md": {
-   "bytes": 28563,
+   "bytes": 28568,
    "why": "overview"
   },
   "worldforge/out/overview/s29-metaverse-dao.md": {
-   "bytes": 27636,
+   "bytes": 27641,
    "why": "overview"
   },
   "worldforge/out/overview/s31-aerospace-dao.md": {
-   "bytes": 27634,
+   "bytes": 27639,
    "why": "overview"
   },
   "worldforge/out/overview/s32-solar-dao.md": {
-   "bytes": 26904,
+   "bytes": 26909,
    "why": "overview"
   },
   "worldforge/out/overview/s33-infogurus.md": {
-   "bytes": 26867,
+   "bytes": 26872,
    "why": "overview"
   },
   "worldforge/out/overview/s34-als-dao.md": {
-   "bytes": 26541,
+   "bytes": 26546,
    "why": "overview"
   },
   "worldforge/out/overview/s35-parkinsons-dao.md": {
-   "bytes": 27829,
+   "bytes": 27834,
    "why": "overview"
   },
   "worldforge/out/public-health-dao/blockout.generated.json": {
@@ -2375,11 +2375,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/public-health-dao/cards.json": {
-   "bytes": 55693,
+   "bytes": 55697,
    "why": "viewer: cards"
   },
   "worldforge/out/public-health-dao/public-health-dao.glb": {
-   "bytes": 19116,
+   "bytes": 19128,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/robotics-dao/blockout.generated.json": {
@@ -2387,11 +2387,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/robotics-dao/cards.json": {
-   "bytes": 55514,
+   "bytes": 55518,
    "why": "viewer: cards"
   },
   "worldforge/out/robotics-dao/robotics-dao.glb": {
-   "bytes": 18260,
+   "bytes": 18272,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s04-curable-x/blockout.generated.json": {
@@ -2399,11 +2399,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s04-curable-x/cards.json": {
-   "bytes": 55503,
+   "bytes": 55507,
    "why": "viewer: cards"
   },
   "worldforge/out/s04-curable-x/s04-curable-x.glb": {
-   "bytes": 18452,
+   "bytes": 18460,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s05-biopharma-go/blockout.generated.json": {
@@ -2411,11 +2411,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s05-biopharma-go/cards.json": {
-   "bytes": 55788,
+   "bytes": 55792,
    "why": "viewer: cards"
   },
   "worldforge/out/s05-biopharma-go/s05-biopharma-go.glb": {
-   "bytes": 18960,
+   "bytes": 18968,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s06-blockchain/blockout.generated.json": {
@@ -2423,11 +2423,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s06-blockchain/cards.json": {
-   "bytes": 55593,
+   "bytes": 55597,
    "why": "viewer: cards"
   },
   "worldforge/out/s06-blockchain/s06-blockchain.glb": {
-   "bytes": 18624,
+   "bytes": 18632,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s07-divine-dao/blockout.generated.json": {
@@ -2435,11 +2435,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s07-divine-dao/cards.json": {
-   "bytes": 55596,
+   "bytes": 55600,
    "why": "viewer: cards"
   },
   "worldforge/out/s07-divine-dao/s07-divine-dao.glb": {
-   "bytes": 18624,
+   "bytes": 18632,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s09-astrological-x/blockout.generated.json": {
@@ -2447,11 +2447,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s09-astrological-x/cards.json": {
-   "bytes": 55985,
+   "bytes": 55989,
    "why": "viewer: cards"
   },
   "worldforge/out/s09-astrological-x/s09-astrological-x.glb": {
-   "bytes": 19292,
+   "bytes": 19300,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s11-molecular/blockout.generated.json": {
@@ -2459,11 +2459,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s11-molecular/cards.json": {
-   "bytes": 55516,
+   "bytes": 55520,
    "why": "viewer: cards"
   },
   "worldforge/out/s11-molecular/s11-molecular.glb": {
-   "bytes": 18452,
+   "bytes": 18464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s12-parking-smart-x/blockout.generated.json": {
@@ -2471,11 +2471,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s12-parking-smart-x/cards.json": {
-   "bytes": 56082,
+   "bytes": 56086,
    "why": "viewer: cards"
   },
   "worldforge/out/s12-parking-smart-x/s12-parking-smart-x.glb": {
-   "bytes": 19452,
+   "bytes": 19464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s13-gonstead-x/blockout.generated.json": {
@@ -2483,11 +2483,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s13-gonstead-x/cards.json": {
-   "bytes": 55609,
+   "bytes": 55613,
    "why": "viewer: cards"
   },
   "worldforge/out/s13-gonstead-x/s13-gonstead-x.glb": {
-   "bytes": 18624,
+   "bytes": 18632,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s14-askdoc-x/blockout.generated.json": {
@@ -2495,11 +2495,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s14-askdoc-x/cards.json": {
-   "bytes": 55405,
+   "bytes": 55409,
    "why": "viewer: cards"
   },
   "worldforge/out/s14-askdoc-x/s14-askdoc-x.glb": {
-   "bytes": 18280,
+   "bytes": 18292,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s15-romanbridge-dao/blockout.generated.json": {
@@ -2507,11 +2507,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s15-romanbridge-dao/cards.json": {
-   "bytes": 56091,
+   "bytes": 56095,
    "why": "viewer: cards"
   },
   "worldforge/out/s15-romanbridge-dao/s15-romanbridge-dao.glb": {
-   "bytes": 19452,
+   "bytes": 19464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s16-echodawn-dao/blockout.generated.json": {
@@ -2519,11 +2519,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s16-echodawn-dao/cards.json": {
-   "bytes": 55800,
+   "bytes": 55804,
    "why": "viewer: cards"
   },
   "worldforge/out/s16-echodawn-dao/s16-echodawn-dao.glb": {
-   "bytes": 18960,
+   "bytes": 18972,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s17-curable-blockchain-dao/blockout.generated.json": {
@@ -2531,11 +2531,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s17-curable-blockchain-dao/cards.json": {
-   "bytes": 56756,
+   "bytes": 56760,
    "why": "viewer: cards"
   },
   "worldforge/out/s17-curable-blockchain-dao/s17-curable-blockchain-dao.glb": {
-   "bytes": 20556,
+   "bytes": 20568,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s19-moscone-x/blockout.generated.json": {
@@ -2543,11 +2543,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s19-moscone-x/cards.json": {
-   "bytes": 55503,
+   "bytes": 55507,
    "why": "viewer: cards"
   },
   "worldforge/out/s19-moscone-x/s19-moscone-x.glb": {
-   "bytes": 18452,
+   "bytes": 18464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s20-cmmc/blockout.generated.json": {
@@ -2555,11 +2555,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s20-cmmc/cards.json": {
-   "bytes": 55016,
+   "bytes": 55020,
    "why": "viewer: cards"
   },
   "worldforge/out/s20-cmmc/s20-cmmc.glb": {
-   "bytes": 17588,
+   "bytes": 17600,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s21-incubator-dao/blockout.generated.json": {
@@ -2567,11 +2567,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s21-incubator-dao/cards.json": {
-   "bytes": 55891,
+   "bytes": 55895,
    "why": "viewer: cards"
   },
   "worldforge/out/s21-incubator-dao/s21-incubator-dao.glb": {
-   "bytes": 19128,
+   "bytes": 19140,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s22-get-delivery-dao/blockout.generated.json": {
@@ -2579,11 +2579,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s22-get-delivery-dao/cards.json": {
-   "bytes": 56196,
+   "bytes": 56200,
    "why": "viewer: cards"
   },
   "worldforge/out/s22-get-delivery-dao/s22-get-delivery-dao.glb": {
-   "bytes": 19620,
+   "bytes": 19628,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s23-avatar-chat/blockout.generated.json": {
@@ -2591,11 +2591,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s23-avatar-chat/cards.json": {
-   "bytes": 55700,
+   "bytes": 55704,
    "why": "viewer: cards"
   },
   "worldforge/out/s23-avatar-chat/s23-avatar-chat.glb": {
-   "bytes": 18792,
+   "bytes": 18800,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s24-donatello-dao/blockout.generated.json": {
@@ -2603,11 +2603,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s24-donatello-dao/cards.json": {
-   "bytes": 55899,
+   "bytes": 55903,
    "why": "viewer: cards"
   },
   "worldforge/out/s24-donatello-dao/s24-donatello-dao.glb": {
-   "bytes": 19128,
+   "bytes": 19140,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s25-mypet-ai/blockout.generated.json": {
@@ -2615,11 +2615,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s25-mypet-ai/cards.json": {
-   "bytes": 55409,
+   "bytes": 55413,
    "why": "viewer: cards"
   },
   "worldforge/out/s25-mypet-ai/s25-mypet-ai.glb": {
-   "bytes": 18280,
+   "bytes": 18292,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s26-lyka-dao/blockout.generated.json": {
@@ -2627,11 +2627,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s26-lyka-dao/cards.json": {
-   "bytes": 55412,
+   "bytes": 55416,
    "why": "viewer: cards"
   },
   "worldforge/out/s26-lyka-dao/s26-lyka-dao.glb": {
-   "bytes": 18280,
+   "bytes": 18292,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s27-genomic-dao/blockout.generated.json": {
@@ -2639,11 +2639,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s27-genomic-dao/cards.json": {
-   "bytes": 55700,
+   "bytes": 55704,
    "why": "viewer: cards"
   },
   "worldforge/out/s27-genomic-dao/s27-genomic-dao.glb": {
-   "bytes": 18792,
+   "bytes": 18800,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s28-genomic-blockchain/blockout.generated.json": {
@@ -2651,11 +2651,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s28-genomic-blockchain/cards.json": {
-   "bytes": 56370,
+   "bytes": 56374,
    "why": "viewer: cards"
   },
   "worldforge/out/s28-genomic-blockchain/s28-genomic-blockchain.glb": {
-   "bytes": 19940,
+   "bytes": 19952,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s29-metaverse-dao/blockout.generated.json": {
@@ -2663,11 +2663,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s29-metaverse-dao/cards.json": {
-   "bytes": 55891,
+   "bytes": 55895,
    "why": "viewer: cards"
   },
   "worldforge/out/s29-metaverse-dao/s29-metaverse-dao.glb": {
-   "bytes": 19128,
+   "bytes": 19140,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s31-aerospace-dao/blockout.generated.json": {
@@ -2675,11 +2675,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s31-aerospace-dao/cards.json": {
-   "bytes": 55894,
+   "bytes": 55898,
    "why": "viewer: cards"
   },
   "worldforge/out/s31-aerospace-dao/s31-aerospace-dao.glb": {
-   "bytes": 19128,
+   "bytes": 19140,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s32-solar-dao/blockout.generated.json": {
@@ -2687,11 +2687,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s32-solar-dao/cards.json": {
-   "bytes": 55499,
+   "bytes": 55503,
    "why": "viewer: cards"
   },
   "worldforge/out/s32-solar-dao/s32-solar-dao.glb": {
-   "bytes": 18452,
+   "bytes": 18464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s33-infogurus/blockout.generated.json": {
@@ -2699,11 +2699,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s33-infogurus/cards.json": {
-   "bytes": 55520,
+   "bytes": 55524,
    "why": "viewer: cards"
   },
   "worldforge/out/s33-infogurus/s33-infogurus.glb": {
-   "bytes": 18452,
+   "bytes": 18464,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s34-als-dao/blockout.generated.json": {
@@ -2711,11 +2711,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s34-als-dao/cards.json": {
-   "bytes": 55313,
+   "bytes": 55317,
    "why": "viewer: cards"
   },
   "worldforge/out/s34-als-dao/s34-als-dao.glb": {
-   "bytes": 18108,
+   "bytes": 18120,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/s35-parkinsons-dao/blockout.generated.json": {
@@ -2723,11 +2723,11 @@
    "why": "viewer: blockout"
   },
   "worldforge/out/s35-parkinsons-dao/cards.json": {
-   "bytes": 55999,
+   "bytes": 56003,
    "why": "viewer: cards"
   },
   "worldforge/out/s35-parkinsons-dao/s35-parkinsons-dao.glb": {
-   "bytes": 19292,
+   "bytes": 19304,
    "why": "viewer: card-tagged blockout GLB"
   },
   "worldforge/out/voices/agentic-payments/alignment.mp4": {
@@ -3367,23 +3367,23 @@
    "why": "viewer: recorded synthetic line (optional; HEAD-checked)"
   },
   "worldforge/review/out/media/frame-cancer-dao-orbit.jpg": {
-   "bytes": 52287,
+   "bytes": 52603,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/media/frame-locator-x-building.jpg": {
-   "bytes": 39751,
+   "bytes": 51556,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/media/frame-locator-x-omega.jpg": {
-   "bytes": 48140,
+   "bytes": 46373,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/media/frame-locator-x-orbit.jpg": {
-   "bytes": 55106,
+   "bytes": 55102,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/media/frame-s29-metaverse-dao-orbit.jpg": {
-   "bytes": 51944,
+   "bytes": 52955,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/media/review-poster.jpg": {
@@ -3391,15 +3391,15 @@
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/review-film.mp4": {
-   "bytes": 10902633,
+   "bytes": 12093568,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/review.vtt": {
-   "bytes": 2574,
+   "bytes": 2948,
    "why": "referenced by worldforge/review/out/whitepaper.html"
   },
   "worldforge/review/out/whitepaper.html": {
-   "bytes": 120369,
+   "bytes": 120385,
    "why": "page"
   },
   "worldforge/viewer.html": {
@@ -3407,7 +3407,7 @@
    "why": "page"
   },
   "worldforge/whitepaper/out/film-features.mp4": {
-   "bytes": 9070022,
+   "bytes": 9070025,
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/film-features.vtt": {
@@ -3415,15 +3415,15 @@
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/film-roadmap-stack.mp4": {
-   "bytes": 2851038,
+   "bytes": 2868620,
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/film-roadmap-stack.vtt": {
-   "bytes": 2251,
+   "bytes": 2256,
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/index.html": {
-   "bytes": 298757,
+   "bytes": 298828,
    "why": "page"
   },
   "worldforge/whitepaper/out/media/avatars-preview.jpg": {
@@ -3447,11 +3447,11 @@
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/media/poster-features.jpg": {
-   "bytes": 50874,
+   "bytes": 50873,
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/media/poster-roadmap-stack.jpg": {
-   "bytes": 52727,
+   "bytes": 52726,
    "why": "referenced by worldforge/whitepaper/out/index.html"
   },
   "worldforge/whitepaper/out/media/still-console.jpg": {

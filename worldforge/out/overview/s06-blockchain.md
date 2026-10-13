@@ -20,7 +20,7 @@ _Source: `worldforge/out/s06-blockchain/cards.json#world:s06-blockchain`, `world
 
 ## Ownership and permissions
 
-Every object in Blockchain (Series 6) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Blockchain (Series 6) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Blockchain (Series 6)** (world) `world:s06-blockchain`: coming soon; Agent-managed DAO
   - **Blockchain (Series 6) Plaza** (plaza) `plaza:s06-blockchain`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s06-blockchain]
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `8515d47f9ea9641406e9f2d18ab08f53cfdd6d7696caa5aa6d990da329ed552a` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `7b6ed897bcf5824cc0f71dae101c272ba1c815e2a3b72f5381e6048ba548b7d7` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

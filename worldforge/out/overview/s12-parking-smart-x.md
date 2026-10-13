@@ -20,7 +20,7 @@ _Source: `worldforge/out/s12-parking-smart-x/cards.json#world:s12-parking-smart-
 
 ## Ownership and permissions
 
-Every object in Parking Smart.X (Series 12) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Parking Smart.X (Series 12) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Parking Smart.X (Series 12)** (world) `world:s12-parking-smart-x`: coming soon; Agent-managed DAO
   - **Parking Smart.X (Series 12) Plaza** (plaza) `plaza:s12-parking-smart-x`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s12-parking-sma
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `22fca6aa9372cc16c5bfa11e45014d2eb1b4893a8c94a2394d36f24c5aa302fc` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `4f38f57053febc6cc1dbe0cb8c46db8d7ba85a6cbec0e7217b50d4f4dbd8c653` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

@@ -262,10 +262,10 @@
   },
   {
    "id": "master-cards",
-   "title": "GLEWME Master Cards: Volum, seven rights and six reserved actions",
+   "title": "SmartCiti.X Master Cards: Volum, seven rights and six reserved actions",
    "dek": "Every object in every world is a card that says what space it covers, who may do what there, and which decisions only people can make.",
    "paragraphs": [
-    "A Master Card is the unit of record in WorldForge. The code calls the card layer GLEWME; no registry expands the acronym, so this paper does not either. Each card carries an id, a kind, a parent, an owner (AGI Future Foundation PBC), the umbrella, a source citation, a Volum, a permission matrix and the list of reserved actions. A world's cards form one tree, root first, and the same tree is written into the world's glTF file. Every node carries its cardId and parentCardId in its extras, so a loader can index cards without trusting display names.",
+    "A Master Card is the unit of record in WorldForge. The card layer carries the SmartCiti.X name: every card is a SmartCiti.X Master Card. Each card carries an id, a kind, a parent, an owner (AGI Future Foundation PBC), the umbrella, a source citation, a Volum, a permission matrix and the list of reserved actions. A world's cards form one tree, root first, and the same tree is written into the world's glTF file. Every node carries its cardId and parentCardId in its extras, so a loader can index cards without trusting display names.",
     "There are ten kinds. Across the 41 worlds the counts are 41 world, 41 plaza, 41 coordinator, 123 advisor, 41 gate, 41 council, 123 seat, 41 omega, 205 zone and 242 agent cards, 939 in all. Each world has one of each singular kind, three advisors and three seats. Zones and agents vary with the world's spec.",
     "A Volum is the bounded 3-D region a card covers: a box given as a centre and half-extents in metres, Y up, in the world's frame. Volums do real work. They place buildings and avatars, and evals read them. One check confirms that each Omega Steward's Volum sits clear of the council's, so the Omega stands beside the council and never inside it. The geometry is synthetic placeholder massing, not surveyed land.",
     "The permission matrix has seven rights: view, enter, build, operate, delegate, transfer and govern. Across all 939 cards it takes only a few shapes. View is public everywhere. Enter is public except on the council and its seats, which only stewards enter. Build and delegate belong to stewards. Operate belongs to stewards, and agents gain it in one form only, \"agents:zone\", on plaza, zone, coordinator and agent cards: an agent operates its own zone and nothing else. Transfer and govern belong to the steward quorum on every card.",
@@ -351,7 +351,7 @@
     "No card has been minted and no contract written. No chain is chosen.",
     "No person holds a steward right yet. Every seat is empty, so build, delegate, transfer and govern have no holder today.",
     "Volums are synthetic layout and are not tied to land or to any RP1 claim.",
-    "The acronym GLEWME is not expanded in any registry read for this paper."
+    "The SmartCiti.X Master Card is a WorldForge record, not a registered standard outside this project."
    ]
   },
   {
@@ -609,8 +609,8 @@
    "definition": "The WorldForge record for one object in a world (world, plaza, coordinator, advisor, gate, council, seat, omega, zone or agent), carrying its owner, Volum, permission matrix, reserved actions and source."
   },
   {
-   "term": "GLEWME",
-   "definition": "The name the WorldForge code gives its Master Card layer. The registries do not expand the acronym."
+   "term": "SmartCiti.X Master Card layer",
+   "definition": "The name WorldForge gives its Master Card layer: the SmartCiti.X platform name applied to the cards."
   },
   {
    "term": "Volum",

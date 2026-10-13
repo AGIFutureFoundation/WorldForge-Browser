@@ -20,7 +20,7 @@ _Source: `worldforge/out/s19-moscone-x/cards.json#world:s19-moscone-x`, `worlds/
 
 ## Ownership and permissions
 
-Every object in Moscone.X (Series 19) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Moscone.X (Series 19) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Moscone.X (Series 19)** (world) `world:s19-moscone-x`: coming soon; Agent-managed DAO
   - **Moscone.X (Series 19) Plaza** (plaza) `plaza:s19-moscone-x`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s19-moscone-x]`
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `868fd06d9cc5d722785c9d24288b57b032c44193d7c36730086f20fedf0e26ec` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `2e3f901cfde43e4c6111551ae6afe67b51d839fd7c57e236af41933c31e0ce8d` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

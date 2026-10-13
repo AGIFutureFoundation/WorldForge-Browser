@@ -486,7 +486,7 @@ def numbers_tiles(D):
     broken_ok = sum(1 for x in D["broken"] if x.get("ok"))
     tiles = [
         (str(t["worlds"]), "worlds", f"{t['anchored']} with an RP1 anchor", CYAN),
-        (str(t["cards"]), "GLEWME Master Cards", f"{t['primitives']} primitives in the GLBs", PURPLE),
+        (str(t["cards"]), "SmartCiti.X Master Cards", f"{t['primitives']} primitives in the GLBs", PURPLE),
         (str(t["evals"]), f"evals · {t['failed']} failing", f"{broken_ok}/{len(D['broken'])} broken worlds fail only their own check", GREEN),
         (f"{b['linked']}/{b['slots']}", "buildings linked", f"{(D['spaces'].get('totals') or {}).get('exteriors', '?')} exteriors, {(D['spaces'].get('totals') or {}).get('interiors', '?')} interiors in spaces_index", GOLD),
     ]
@@ -1043,7 +1043,7 @@ def build_html(D, film_seconds=None, film=None):
 
     banner = '<p class="banner">Placeholder round file: the lead has not filled worldforge/review/round.json yet (fields read "TODO by lead").</p>' if rd["placeholder"] else ""
     S.append(f'''<section class="slide" id="cover"><div class="frame">{banner}<div class="grid g2" style="align-items:center"><div><p class="eyebrow">AGI Future Foundation PBC · SmartCiti.X virtual worlds</p>
-<h1>WorldForge</h1><p class="lede">GLEWME Master Cards for {t["worlds"]} coming-soon worlds: every object knows who owns it, the region it covers and who may change it. Agents operate; people govern.</p>
+<h1>WorldForge</h1><p class="lede">SmartCiti.X Master Cards for {t["worlds"]} coming-soon worlds: every object knows who owns it, the region it covers and who may change it. Agents operate; people govern.</p>
 <p class="muted">Review {e(rd["n"])} · {e(rd["window"])} · {e(rd["date"])} · Powered by AGI Corp</p>
 <div class="cta"><a class="primary" href="#review">Watch the 2-minute review</a><a href="mailto:{EMAIL}">Contact</a></div></div>
 <div>{fig(*imgs["worlds"][0])}<div class="stats" style="margin-top:12px">{stat(t["worlds"], "worlds")}{stat(t["cards"], "cards", "", "purple")}{stat(t["evals"], "evals", f"{t['failed']} failing", "green")}</div></div></div></div></section>''')
@@ -1058,7 +1058,7 @@ def build_html(D, film_seconds=None, film=None):
     kind_list = ", ".join(f"{n} {k}" for k, n in kinds.items())
     z = D["rep"]["zone"]
     sample = {k: z[k] for k in ("cardId", "kind", "parentCardId", "owner", "volum")} if z else {}
-    S.append(slide("built", "What we built", "GLEWME Master Cards, Volum and permissions", f'''<div class="grid g2"><div>
+    S.append(slide("built", "What we built", "SmartCiti.X Master Cards, Volum and permissions", f'''<div class="grid g2"><div>
 <p class="lede" style="font-size:clamp(17px,1.6vw,22px)">{t["cards"]} cards across {t["worlds"]} worlds: {e(kind_list)}.</p>
 <p>Each card carries an <strong>owner</strong> ({e(D["rep"]["world"]["owner"])}), a <strong>Volum</strong> (a box: centre and half-extents in metres, Y up) and a permission matrix over <code>{e(", ".join(D["rep"]["world"]["permissions"].keys()))}</code>. Every node in each world's GLB carries its <code>cardId</code> in extras, so a loader indexes cards without display names.</p>
 <pre>{e(json.dumps(sample, indent=1, ensure_ascii=False))}</pre></div>
@@ -1183,7 +1183,7 @@ def build_html(D, film_seconds=None, film=None):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WorldForge Whitepaper</title>
-<meta name="description" content="WorldForge review {e(rd["n"])}: GLEWME Master Cards, buildings, avatars and the Omega Hive for {t["worlds"]} SmartCiti.X worlds. Powered by AGI Corp.">
+<meta name="description" content="WorldForge review {e(rd["n"])}: SmartCiti.X Master Cards, buildings, avatars and the Omega Hive for {t["worlds"]} SmartCiti.X worlds. Powered by AGI Corp.">
 <style>{CSS}</style>
 </head>
 <body>

@@ -20,7 +20,7 @@ _Source: `worldforge/out/s32-solar-dao/cards.json#world:s32-solar-dao`, `worlds/
 
 ## Ownership and permissions
 
-Every object in Solar DAO (Series 32) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Solar DAO (Series 32) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Solar DAO (Series 32)** (world) `world:s32-solar-dao`: coming soon; Agent-managed DAO
   - **Solar DAO (Series 32) Plaza** (plaza) `plaza:s32-solar-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s32-solar-dao]`
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `eafcbb5e61746ac5724b29336782c1846d67ac5c0fc2af265885f8333c82fe27` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `2ae410d862b1c96ac0f0638b1b92e9e3ec5141db156e3947c491e74e116e9cdb` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 5 |
 

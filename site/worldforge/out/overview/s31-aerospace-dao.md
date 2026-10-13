@@ -20,7 +20,7 @@ _Source: `worldforge/out/s31-aerospace-dao/cards.json#world:s31-aerospace-dao`, 
 
 ## Ownership and permissions
 
-Every object in Aerospace DAO (Series 31) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Aerospace DAO (Series 31) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Aerospace DAO (Series 31)** (world) `world:s31-aerospace-dao`: coming soon; Agent-managed DAO
   - **Aerospace DAO (Series 31) Plaza** (plaza) `plaza:s31-aerospace-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s31-aerospace-d
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `6c8e540d32b24078d6638cf4f565f6b898fe82bc9bc61d5bdc299417da5ffa81` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `4c155fbd1cd9988d09ab64aa99d0de06d03a2266ec6c8cffcb03ab6935af76a6` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 5 |
 

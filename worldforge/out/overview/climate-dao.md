@@ -20,7 +20,7 @@ _Source: `worldforge/out/climate-dao/cards.json#world:climate-dao`, `worlds/gene
 
 ## Ownership and permissions
 
-Every object in Climate DAO is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Climate DAO is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Climate DAO** (world) `world:climate-dao`: coming soon; Agent-managed DAO
   - **Climate DAO Plaza** (plaza) `plaza:climate-dao`: the shared round plaza every world opens onto
@@ -230,8 +230,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=climate-dao]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `325c73686926c2024710ab4599625f25a2ff73e98ce72bcb5a2db6278fb0e462` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `57e6ae6f9a4f70daf22761f27139a2df3cab59c25c24e919f856cafe16d08dcc` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

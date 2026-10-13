@@ -20,7 +20,7 @@ _Source: `worldforge/out/biota-blockchain/cards.json#world:biota-blockchain`, `w
 
 ## Ownership and permissions
 
-Every object in Biota.blockchain (BioDAO.X) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Biota.blockchain (BioDAO.X) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Biota.blockchain (BioDAO.X)** (world) `world:biota-blockchain`: coming soon; Agent-managed DAO
   - **Biota.blockchain (BioDAO.X) Plaza** (plaza) `plaza:biota-blockchain`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=biota-blockchai
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `6a20efc4ea623e6e17c2c24a5e7e59ce45eb166021986ae595fcdbe9b46642b9` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `d9d1bfbd5f4f2c60c57f051bb5263eb75df5aff1224107cabad863331ce23237` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

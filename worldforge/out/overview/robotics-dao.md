@@ -20,7 +20,7 @@ _Source: `worldforge/out/robotics-dao/cards.json#world:robotics-dao`, `worlds/ge
 
 ## Ownership and permissions
 
-Every object in Robotics DAO is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Robotics DAO is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Robotics DAO** (world) `world:robotics-dao`: coming soon; Agent-managed DAO
   - **Robotics DAO Plaza** (plaza) `plaza:robotics-dao`: the shared round plaza every world opens onto
@@ -230,8 +230,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=robotics-dao]`_
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `a3ba8a61671f3922aa429111379a260f5a717ccbadfcb9a2b05b91ba3e21cf3c` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `0a17f661570640aa777d74a05d9b5a276c33d74e232ff3df71fa2078c0ea35c3` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

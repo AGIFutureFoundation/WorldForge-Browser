@@ -20,7 +20,7 @@ _Source: `worldforge/out/s11-molecular/cards.json#world:s11-molecular`, `worlds/
 
 ## Ownership and permissions
 
-Every object in Molecular (Series 11) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Molecular (Series 11) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Molecular (Series 11)** (world) `world:s11-molecular`: coming soon; Agent-managed DAO
   - **Molecular (Series 11) Plaza** (plaza) `plaza:s11-molecular`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s11-molecular]`
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `b741d16dc7e4a863d84fbd35bf3b1bdfdfa46f12baee77759753f191d4540910` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `30b31937173d210cc2b3a2b2c02ea504c49044d2d0a40f5e085ce54385522d49` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

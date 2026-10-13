@@ -19,7 +19,7 @@
 BEGIN;
 
 CREATE SCHEMA IF NOT EXISTS worldforge;
-COMMENT ON SCHEMA worldforge IS 'WorldForge GLEWME Master Cards, avatars, persona prompts, landmarks, mount plans and draft (undeployed) on-chain metadata, seeded from worldforge/out by worldforge/neon/build_seed.py. Powered by AGI Corp.';
+COMMENT ON SCHEMA worldforge IS 'WorldForge SmartCiti.X Master Cards, avatars, persona prompts, landmarks, mount plans and draft (undeployed) on-chain metadata, seeded from worldforge/out by worldforge/neon/build_seed.py. Powered by AGI Corp.';
 
 -- -------------------------------------------------------------------------------------------- worlds_ref ----
 -- One row per world WorldForge builds (worldforge/out/index.json "worlds"). family_slug names the same world in the
@@ -52,7 +52,7 @@ CREATE TABLE IF NOT EXISTS worldforge.worlds_ref (
 );
 
 -- ------------------------------------------------------------------------------------------------- cards ----
--- One row per GLEWME Master Card (worldforge/out/<slug>/cards.json). volum is the bounded 3-D region, permissions the
+-- One row per SmartCiti.X Master Card (worldforge/out/<slug>/cards.json). volum is the bounded 3-D region, permissions the
 -- seven-right matrix. attrs holds every other key of the card verbatim (avatar, binding, building, persona, voice,
 -- may_never, anchor, ...) so the card can be rebuilt exactly; its reserved_for_humans list is in card_reserved_actions.
 -- parent_card_id is deferred so a re-seed is checked at COMMIT.

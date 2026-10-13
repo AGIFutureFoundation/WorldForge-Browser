@@ -1,4 +1,4 @@
-# WorldForge: GLEWME Master Cards for every world
+# WorldForge: SmartCiti.X Master Cards for every world
 
 WorldForge takes the 41 coming-soon worlds in `my-fabric/worlds/index.json` through the gates from the
 "Create SmartCiti.X Roadmap" ChatGPT thread:
@@ -15,7 +15,7 @@ node worldforge/build.mjs --check   # exit 1 if worldforge/out/ is behind its so
 
 | File | What it is |
 |---|---|
-| `cards.json` | GLEWME Master Cards: world → plaza, Alignment Evaluation Gate, Steward Council (3 human seats, all empty), and zones → agent avatars. Each card has an owner (AGI Future Foundation PBC), a **Volum** (the bounded 3-D region it covers) and a permission matrix (`view, enter, build, operate, delegate, transfer, govern`). |
+| `cards.json` | SmartCiti.X Master Cards: world → plaza, Alignment Evaluation Gate, Steward Council (3 human seats, all empty), and zones → agent avatars. Each card has an owner (AGI Future Foundation PBC), a **Volum** (the bounded 3-D region it covers) and a permission matrix (`view, enter, build, operate, delegate, transfer, govern`). |
 | `blockout.generated.json` | The generated core: zones, primitives and roads in metres. It is deterministic and synthetic, with no imported coordinates or geometry. |
 | `<slug>.glb` | glTF 2.0. Every node carries its `cardId`/`parentCardId` in its extras, so a native loader can index cards without relying on display names. The Khronos validator reports 0 errors and 0 warnings on all 42 GLBs. |
 | `sneeze-mount-plan.json` | Ordered SOM node specs, parents first, for `CONTAINER::Node_Open`. They share one `unit-cube.glb` resource whose URL fits the 128-byte `Resource.sReference` limit. |

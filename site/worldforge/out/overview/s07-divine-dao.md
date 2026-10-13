@@ -20,7 +20,7 @@ _Source: `worldforge/out/s07-divine-dao/cards.json#world:s07-divine-dao`, `world
 
 ## Ownership and permissions
 
-Every object in Divine.DAO (Series 7) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Divine.DAO (Series 7) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Divine.DAO (Series 7)** (world) `world:s07-divine-dao`: coming soon; Agent-managed DAO
   - **Divine.DAO (Series 7) Plaza** (plaza) `plaza:s07-divine-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s07-divine-dao]
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `4015fcc967704c5671334ab7e66a72e2677c839697d028fde5b1baef071e689c` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `2a9dd43cc4434531168d6aac7edd321e510b7532b07bba61d40dd2f13b7db4d4` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 

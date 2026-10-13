@@ -20,7 +20,7 @@ _Source: `worldforge/out/s21-incubator-dao/cards.json#world:s21-incubator-dao`, 
 
 ## Ownership and permissions
 
-Every object in Incubator DAO (Series 21) is a GLEWME Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
+Every object in Incubator DAO (Series 21) is a SmartCiti.X Master Card owned by AGI Future Foundation PBC. The tree below follows `parentCardId`: world, plaza (coordinator and scripted advisors), gate, council (human seats), Omega Steward, then zones with their agent avatars.
 
 - **Incubator DAO (Series 21)** (world) `world:s21-incubator-dao`: coming soon; Agent-managed DAO
   - **Incubator DAO (Series 21) Plaza** (plaza) `plaza:s21-incubator-dao`: the shared round plaza every world opens onto
@@ -229,8 +229,8 @@ _Source: `worldforge/out/assets/landmarks/index.json#worlds[slug=s21-incubator-d
 | Standard | ERC-721 metadata JSON (draft, not deployed) |
 | Tokens / cards | 23 / 23 |
 | Token id rule | first 16 hex characters of sha256(cardId), lowercase, no prefix (64 bits) |
-| Merkle root | `52367cdec3492574a52c09015d27a24e1740f6bb19871cb2fab10c1db6d695af` |
-| Network root (all worlds) | `826c3f0c3067e0f1cbcf595e1fec8e45d66b2f5045f0d9078bf30b994a8730d8` |
+| Merkle root | `ef95106a3fb65817a96b3e9ebeb913ec14c3f58f249b07ca33af43f0fe0e1c7d` |
+| Network root (all worlds) | `4496b45d7430322d719912d4ba31b2381651d944677bba1aea692d0ec4b13a93` |
 | Deployment status | not deployed; chain none, contract none, minted 0, transactions 0 |
 | Network proof length | 6 |
 
