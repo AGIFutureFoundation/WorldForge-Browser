@@ -1,0 +1,1315 @@
+{
+ "schemaVersion": "worldforge-voices/0.1",
+ "generator": "worldforge/voice/voice_intros.py",
+ "engine": "Kokoro v1.0 (kokoro-onnx), local",
+ "settings": {
+  "speed": 1.0,
+  "prepend": null,
+  "threads": 2,
+  "loudnorm": {
+   "integrated_lufs": -16.0,
+   "true_peak_dbtp": -1.5,
+   "lra": 11.0,
+   "passes": 2
+  },
+  "output": {
+   "container": "mp4",
+   "codec": "aac",
+   "channels": 1,
+   "bitrate": "48k",
+   "sample_rate": 24000
+  }
+ },
+ "path_contract": "worldforge/out/voices/<world>/<last path segment of avatarId>.mp4",
+ "scope": "intro lines of coordinator, specialist and advisor rows; omega greet lines are the hive's (agents/hive_voice.py)",
+ "honesty": [
+  "Synthetic voice: every line is Kokoro text-to-speech of a scripted intro that itself says the voice is synthetic.",
+  "This manifest lists only lines actually rendered; a missing entry means not voiced.",
+  "No model speaks live here; the intro lines are scripted text from worldforge/out/avatars/index.json."
+ ],
+ "lines": [
+  {
+   "avatarId": "avatar:agentic-payments/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/agentic-payments/alignment.mp4",
+   "voice": "af_river",
+   "seconds": 8.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:agentic-payments/specialist/buyer-agent",
+   "role": "specialist",
+   "path": "worldforge/out/voices/agentic-payments/buyer-agent.mp4",
+   "voice": "af_aoede",
+   "seconds": 8.6,
+   "text_sha256": "cb4df795810ca1fe0bb49d30e50d1900d16a321ff70b04f6b24df5d0875b6e9c"
+  },
+  {
+   "avatarId": "avatar:agentic-payments/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/agentic-payments/coordinator.mp4",
+   "voice": "af_kore",
+   "seconds": 9.1,
+   "text_sha256": "e16cbe9070e6b583f4de741a0120b3615c6de7d8969ea7f2592ba5238d2a8b8c"
+  },
+  {
+   "avatarId": "avatar:agentic-payments/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/agentic-payments/host.mp4",
+   "voice": "bf_isabella",
+   "seconds": 8.6,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:agentic-payments/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/agentic-payments/steward.mp4",
+   "voice": "bf_emma",
+   "seconds": 8.8,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:agents-deploy-infrastructure/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/agents-deploy-infrastructure/alignment.mp4",
+   "voice": "af_heart",
+   "seconds": 10.1,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:agents-deploy-infrastructure/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/agents-deploy-infrastructure/coordinator.mp4",
+   "voice": "am_onyx",
+   "seconds": 8.9,
+   "text_sha256": "1da8b9f7ab32edd81e9b8cb4a031bcc68cf9bb76116fad0c008bb56584d0727c"
+  },
+  {
+   "avatarId": "avatar:agents-deploy-infrastructure/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/agents-deploy-infrastructure/host.mp4",
+   "voice": "am_eric",
+   "seconds": 8.0,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:agents-deploy-infrastructure/specialist/planner",
+   "role": "specialist",
+   "path": "worldforge/out/voices/agents-deploy-infrastructure/planner.mp4",
+   "voice": "am_onyx",
+   "seconds": 8.2,
+   "text_sha256": "243379be6603df17a1e6adc50472e3e557e70faf44a673910d9a60212a0dea83"
+  },
+  {
+   "avatarId": "avatar:agents-deploy-infrastructure/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/agents-deploy-infrastructure/steward.mp4",
+   "voice": "am_puck",
+   "seconds": 10.1,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:autonomous-organizations/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/autonomous-organizations/alignment.mp4",
+   "voice": "af_nicole",
+   "seconds": 15.2,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:autonomous-organizations/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/autonomous-organizations/coordinator.mp4",
+   "voice": "bf_alice",
+   "seconds": 9.2,
+   "text_sha256": "e89b39ee46311d9165a9145b32ded060c184cd5121146ec80eb4a98aa3f6f188"
+  },
+  {
+   "avatarId": "avatar:autonomous-organizations/specialist/goal-keeper",
+   "role": "specialist",
+   "path": "worldforge/out/voices/autonomous-organizations/goal-keeper.mp4",
+   "voice": "am_adam",
+   "seconds": 8.3,
+   "text_sha256": "95d76ed69d96ef05f5ccc4004605abbff452acf7419d0cedf162dacb4b479869"
+  },
+  {
+   "avatarId": "avatar:autonomous-organizations/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/autonomous-organizations/host.mp4",
+   "voice": "bm_daniel",
+   "seconds": 8.4,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:autonomous-organizations/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/autonomous-organizations/steward.mp4",
+   "voice": "am_puck",
+   "seconds": 10.1,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:biota-blockchain/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/biota-blockchain/alignment.mp4",
+   "voice": "af_kore",
+   "seconds": 10.5,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:biota-blockchain/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/biota-blockchain/coordinator.mp4",
+   "voice": "af_heart",
+   "seconds": 10.3,
+   "text_sha256": "b4bb35bd5f2bd6c1fc39ef048b38c43ae4a841dfe0e12fe7ac600b0c0d2e292e"
+  },
+  {
+   "avatarId": "avatar:biota-blockchain/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/biota-blockchain/host.mp4",
+   "voice": "af_sky",
+   "seconds": 8.8,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:biota-blockchain/specialist/research-development-agent",
+   "role": "specialist",
+   "path": "worldforge/out/voices/biota-blockchain/research-development-agent.mp4",
+   "voice": "bm_fable",
+   "seconds": 9.8,
+   "text_sha256": "6aee8ff0209bf93f8971df9c8c0c333c57742e95ceb1f07c78fe19d32a02b9b0"
+  },
+  {
+   "avatarId": "avatar:biota-blockchain/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/biota-blockchain/steward.mp4",
+   "voice": "am_adam",
+   "seconds": 9.0,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:cancer-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/cancer-dao/alignment.mp4",
+   "voice": "bm_george",
+   "seconds": 10.8,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:cancer-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/cancer-dao/coordinator.mp4",
+   "voice": "af_jessica",
+   "seconds": 7.5,
+   "text_sha256": "d5fcb41f5ea5c844fc73ed75c9423591789f80ccc03778d681d4754490141c18"
+  },
+  {
+   "avatarId": "avatar:cancer-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/cancer-dao/evidence-monitor.mp4",
+   "voice": "af_alloy",
+   "seconds": 8.6,
+   "text_sha256": "9dc4e4caf7e71912a70e7ab1b4129c6d0855821f035326d079830c06cfaad584"
+  },
+  {
+   "avatarId": "avatar:cancer-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/cancer-dao/host.mp4",
+   "voice": "af_nicole",
+   "seconds": 14.9,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:cancer-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/cancer-dao/steward.mp4",
+   "voice": "af_heart",
+   "seconds": 9.9,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:climate-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/climate-dao/alignment.mp4",
+   "voice": "af_bella",
+   "seconds": 10.4,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:climate-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/climate-dao/coordinator.mp4",
+   "voice": "af_kore",
+   "seconds": 9.1,
+   "text_sha256": "97dfe33998db0245fbf01e866a0d1d749cef77cc0fafbc0b44465dd8287a38fc"
+  },
+  {
+   "avatarId": "avatar:climate-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/climate-dao/evidence-monitor.mp4",
+   "voice": "bm_daniel",
+   "seconds": 8.3,
+   "text_sha256": "8eb68fa18dadc1fe97542934939d13afc0c66ac2ab7bc48529f0c6acd55607c9"
+  },
+  {
+   "avatarId": "avatar:climate-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/climate-dao/host.mp4",
+   "voice": "bf_alice",
+   "seconds": 9.0,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:climate-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/climate-dao/steward.mp4",
+   "voice": "af_sarah",
+   "seconds": 9.5,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:diagnostic-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/diagnostic-x/alignment.mp4",
+   "voice": "bf_emma",
+   "seconds": 9.2,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:diagnostic-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/diagnostic-x/coordinator.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.8,
+   "text_sha256": "e55d99a3ac429a04badc49e8aa60fb7a2c27449476652c75a46b8288d894f70c"
+  },
+  {
+   "avatarId": "avatar:diagnostic-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/diagnostic-x/host.mp4",
+   "voice": "af_kore",
+   "seconds": 10.0,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:diagnostic-x/specialist/medical-ai-avatar",
+   "role": "specialist",
+   "path": "worldforge/out/voices/diagnostic-x/medical-ai-avatar.mp4",
+   "voice": "af_sarah",
+   "seconds": 9.3,
+   "text_sha256": "393b4121c9274e44e3028f4194caafc7431ddcce216ecffcad63e5e48bc22492"
+  },
+  {
+   "avatarId": "avatar:diagnostic-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/diagnostic-x/steward.mp4",
+   "voice": "am_echo",
+   "seconds": 9.0,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:ecology-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/ecology-dao/alignment.mp4",
+   "voice": "bm_george",
+   "seconds": 10.8,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:ecology-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/ecology-dao/coordinator.mp4",
+   "voice": "af_alloy",
+   "seconds": 8.3,
+   "text_sha256": "62c63d6487c91855c9a3cce2df882a0c7b0a76ee93caf68fcf678000218796ee"
+  },
+  {
+   "avatarId": "avatar:ecology-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/ecology-dao/evidence-monitor.mp4",
+   "voice": "bm_lewis",
+   "seconds": 9.8,
+   "text_sha256": "c837bdf7149b8f734e3ba1116969802d415427057d395f3549290049d5752950"
+  },
+  {
+   "avatarId": "avatar:ecology-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/ecology-dao/host.mp4",
+   "voice": "af_river",
+   "seconds": 8.1,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:ecology-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/ecology-dao/steward.mp4",
+   "voice": "bf_isabella",
+   "seconds": 8.9,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:education-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/education-dao/alignment.mp4",
+   "voice": "af_heart",
+   "seconds": 10.1,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:education-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/education-dao/coordinator.mp4",
+   "voice": "af_sarah",
+   "seconds": 8.8,
+   "text_sha256": "480d4bd0de9245d367d6f56e1aa9f048c5ad8ffd3b2573f4e94271981d8bc29a"
+  },
+  {
+   "avatarId": "avatar:education-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/education-dao/evidence-monitor.mp4",
+   "voice": "bf_isabella",
+   "seconds": 8.7,
+   "text_sha256": "30c2ae7c2585f8c4633d3ad370dda72a3a33639af3c05ffa98554fde52dcf57f"
+  },
+  {
+   "avatarId": "avatar:education-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/education-dao/host.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.2,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:education-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/education-dao/steward.mp4",
+   "voice": "am_adam",
+   "seconds": 9.0,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:empathic-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/empathic-x/alignment.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.7,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:empathic-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/empathic-x/coordinator.mp4",
+   "voice": "af_nova",
+   "seconds": 9.2,
+   "text_sha256": "3ae75af5ece0286bff69974172e84593676d938ea34702d214e76afc3a300def"
+  },
+  {
+   "avatarId": "avatar:empathic-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/empathic-x/host.mp4",
+   "voice": "am_echo",
+   "seconds": 8.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:empathic-x/specialist/self-reader-guide",
+   "role": "specialist",
+   "path": "worldforge/out/voices/empathic-x/self-reader-guide.mp4",
+   "voice": "bm_lewis",
+   "seconds": 9.5,
+   "text_sha256": "f49f539273da0303279908837afce515ebfb54b18de65d3c9905a2c49cfe947c"
+  },
+  {
+   "avatarId": "avatar:empathic-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/empathic-x/steward.mp4",
+   "voice": "am_fenrir",
+   "seconds": 9.9,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:locator-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/locator-x/alignment.mp4",
+   "voice": "af_alloy",
+   "seconds": 9.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:locator-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/locator-x/coordinator.mp4",
+   "voice": "bm_george",
+   "seconds": 11.0,
+   "text_sha256": "fbf5bc6262a22de8fd46bbfe2ed3cd839130ad8650c59ed6836ac1ea4c3811bc"
+  },
+  {
+   "avatarId": "avatar:locator-x/specialist/guide",
+   "role": "specialist",
+   "path": "worldforge/out/voices/locator-x/guide.mp4",
+   "voice": "am_liam",
+   "seconds": 6.8,
+   "text_sha256": "8443d85931b5efe62424db7fb812d48d62b142895236d909943d1276f6320805"
+  },
+  {
+   "avatarId": "avatar:locator-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/locator-x/host.mp4",
+   "voice": "bf_lily",
+   "seconds": 8.9,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:locator-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/locator-x/steward.mp4",
+   "voice": "bm_daniel",
+   "seconds": 8.6,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:public-health-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/public-health-dao/alignment.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:public-health-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/public-health-dao/coordinator.mp4",
+   "voice": "am_adam",
+   "seconds": 8.3,
+   "text_sha256": "1879cd2c4d7d5ad54ba0e7ae34120b8fd5a8f991a77e1116f55c1bfbd47a5b74"
+  },
+  {
+   "avatarId": "avatar:public-health-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/public-health-dao/evidence-monitor.mp4",
+   "voice": "af_alloy",
+   "seconds": 8.9,
+   "text_sha256": "a9206f6b32012e1aec223dba31e506db37bb1b5370daaa55e8bbfd6800365877"
+  },
+  {
+   "avatarId": "avatar:public-health-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/public-health-dao/host.mp4",
+   "voice": "am_puck",
+   "seconds": 9.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:public-health-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/public-health-dao/steward.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.5,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:robotics-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/robotics-dao/alignment.mp4",
+   "voice": "am_michael",
+   "seconds": 10.9,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:robotics-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/robotics-dao/coordinator.mp4",
+   "voice": "bm_george",
+   "seconds": 9.3,
+   "text_sha256": "7ccb7dc909a35ad0e80c5acf6c7d288ce9c57ff10c14812ce844d559aee84cd9"
+  },
+  {
+   "avatarId": "avatar:robotics-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/robotics-dao/evidence-monitor.mp4",
+   "voice": "bm_daniel",
+   "seconds": 8.5,
+   "text_sha256": "e8c55dd2e236b7b15564212e1de65390d0a33dcdf0017c6e7303a65e88bd8e64"
+  },
+  {
+   "avatarId": "avatar:robotics-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/robotics-dao/host.mp4",
+   "voice": "af_alloy",
+   "seconds": 8.9,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:robotics-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/robotics-dao/steward.mp4",
+   "voice": "af_bella",
+   "seconds": 10.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s04-curable-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s04-curable-x/alignment.mp4",
+   "voice": "bm_lewis",
+   "seconds": 10.5,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s04-curable-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s04-curable-x/coordinator.mp4",
+   "voice": "bm_lewis",
+   "seconds": 10.0,
+   "text_sha256": "708d2035e38c1525f05b509210f6570b9b5cdf0a0d1059b53a72c93bda723706"
+  },
+  {
+   "avatarId": "avatar:s04-curable-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s04-curable-x/evidence-monitor.mp4",
+   "voice": "bm_fable",
+   "seconds": 9.1,
+   "text_sha256": "5d088975c056b89d50c84292c746ecabe9456edc14a79dda79b0d8dac71deb14"
+  },
+  {
+   "avatarId": "avatar:s04-curable-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s04-curable-x/host.mp4",
+   "voice": "am_echo",
+   "seconds": 8.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s04-curable-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s04-curable-x/steward.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.5,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s05-biopharma-go/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s05-biopharma-go/alignment.mp4",
+   "voice": "bf_lily",
+   "seconds": 9.4,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s05-biopharma-go/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s05-biopharma-go/coordinator.mp4",
+   "voice": "am_eric",
+   "seconds": 7.8,
+   "text_sha256": "a44bc7cb42bae615fd6e6996ad214f18e77a598977753112ebeaa0b395ce0e11"
+  },
+  {
+   "avatarId": "avatar:s05-biopharma-go/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s05-biopharma-go/evidence-monitor.mp4",
+   "voice": "af_nicole",
+   "seconds": 15.1,
+   "text_sha256": "8d72ca4aac2ca980415b10a93cdc2269c5a588384c68dd70ed23502b7aa9ae5e"
+  },
+  {
+   "avatarId": "avatar:s05-biopharma-go/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s05-biopharma-go/host.mp4",
+   "voice": "af_nova",
+   "seconds": 8.8,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s05-biopharma-go/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s05-biopharma-go/steward.mp4",
+   "voice": "af_bella",
+   "seconds": 10.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s06-blockchain/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s06-blockchain/alignment.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s06-blockchain/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s06-blockchain/coordinator.mp4",
+   "voice": "af_kore",
+   "seconds": 9.7,
+   "text_sha256": "e0a1e1c4c294a548635d937ded23a66c72a97f9c4ad9edef1ee6b2dd0d1f40ef"
+  },
+  {
+   "avatarId": "avatar:s06-blockchain/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s06-blockchain/evidence-monitor.mp4",
+   "voice": "am_adam",
+   "seconds": 8.9,
+   "text_sha256": "30736fef35ab64f1825b0932f04cdb989bf6d0accd953dff7323b9b86aa22dcb"
+  },
+  {
+   "avatarId": "avatar:s06-blockchain/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s06-blockchain/host.mp4",
+   "voice": "am_puck",
+   "seconds": 9.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s06-blockchain/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s06-blockchain/steward.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.1,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s07-divine-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s07-divine-dao/alignment.mp4",
+   "voice": "am_puck",
+   "seconds": 10.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s07-divine-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s07-divine-dao/coordinator.mp4",
+   "voice": "bm_fable",
+   "seconds": 8.9,
+   "text_sha256": "13272217a27f248d3c43fe1e51cdc0ccb32e7a77c2483100487f4ac8a080ddef"
+  },
+  {
+   "avatarId": "avatar:s07-divine-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s07-divine-dao/evidence-monitor.mp4",
+   "voice": "bf_lily",
+   "seconds": 9.1,
+   "text_sha256": "f787e57b7feae36cb1ac109209f0141b414a44f5e5d6e919e5bcef7bf0c84611"
+  },
+  {
+   "avatarId": "avatar:s07-divine-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s07-divine-dao/host.mp4",
+   "voice": "am_echo",
+   "seconds": 8.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s07-divine-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s07-divine-dao/steward.mp4",
+   "voice": "am_liam",
+   "seconds": 8.5,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s09-astrological-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s09-astrological-x/alignment.mp4",
+   "voice": "am_puck",
+   "seconds": 10.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s09-astrological-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s09-astrological-x/coordinator.mp4",
+   "voice": "bm_fable",
+   "seconds": 9.2,
+   "text_sha256": "48f7fbb74f3e369e9969bb5a14839f9e5b45c722db7ab4c5745e5566f897fbc0"
+  },
+  {
+   "avatarId": "avatar:s09-astrological-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s09-astrological-x/evidence-monitor.mp4",
+   "voice": "am_puck",
+   "seconds": 10.3,
+   "text_sha256": "2036228041fba7917f4936286301c77ffe3e5b28427715252eaf10a37ccbbbcd"
+  },
+  {
+   "avatarId": "avatar:s09-astrological-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s09-astrological-x/host.mp4",
+   "voice": "af_nicole",
+   "seconds": 14.9,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s09-astrological-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s09-astrological-x/steward.mp4",
+   "voice": "am_adam",
+   "seconds": 9.0,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s11-molecular/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s11-molecular/alignment.mp4",
+   "voice": "am_echo",
+   "seconds": 9.2,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s11-molecular/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s11-molecular/coordinator.mp4",
+   "voice": "am_eric",
+   "seconds": 7.9,
+   "text_sha256": "2f0edad58f7672c2b7491d03bbeef7c95137ab7c9d35a2234a118f9072a1cde3"
+  },
+  {
+   "avatarId": "avatar:s11-molecular/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s11-molecular/evidence-monitor.mp4",
+   "voice": "bm_george",
+   "seconds": 10.4,
+   "text_sha256": "656c27fd129e9cb2aacd5a2c255e85c3c97a18fabbfe0f2513407aa2ae435876"
+  },
+  {
+   "avatarId": "avatar:s11-molecular/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s11-molecular/host.mp4",
+   "voice": "af_heart",
+   "seconds": 9.3,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s11-molecular/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s11-molecular/steward.mp4",
+   "voice": "bf_emma",
+   "seconds": 8.8,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s12-parking-smart-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s12-parking-smart-x/alignment.mp4",
+   "voice": "af_sarah",
+   "seconds": 9.7,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s12-parking-smart-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s12-parking-smart-x/coordinator.mp4",
+   "voice": "af_nova",
+   "seconds": 8.8,
+   "text_sha256": "5f5c92af9281a2754123e3541266320d1affc5f285134c75ea8758d676de4a33"
+  },
+  {
+   "avatarId": "avatar:s12-parking-smart-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s12-parking-smart-x/evidence-monitor.mp4",
+   "voice": "af_nicole",
+   "seconds": 13.9,
+   "text_sha256": "a292a823470850ae146d065351740549ad3bf3c4f5700a7b13109b6746b224bf"
+  },
+  {
+   "avatarId": "avatar:s12-parking-smart-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s12-parking-smart-x/host.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.2,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s12-parking-smart-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s12-parking-smart-x/steward.mp4",
+   "voice": "af_nova",
+   "seconds": 8.9,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s13-gonstead-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s13-gonstead-x/alignment.mp4",
+   "voice": "af_river",
+   "seconds": 8.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s13-gonstead-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s13-gonstead-x/coordinator.mp4",
+   "voice": "am_michael",
+   "seconds": 10.6,
+   "text_sha256": "00884ad73c162ea2b3ab7cccd4705c8478202b08972201a2a1b618f21173c398"
+  },
+  {
+   "avatarId": "avatar:s13-gonstead-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s13-gonstead-x/evidence-monitor.mp4",
+   "voice": "bf_lily",
+   "seconds": 9.3,
+   "text_sha256": "f2d27e95f7aaf69465de8fc255bcf415f39ad7706c279bfa204d76917058d7b4"
+  },
+  {
+   "avatarId": "avatar:s13-gonstead-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s13-gonstead-x/host.mp4",
+   "voice": "af_bella",
+   "seconds": 9.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s13-gonstead-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s13-gonstead-x/steward.mp4",
+   "voice": "af_river",
+   "seconds": 8.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s14-askdoc-x/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s14-askdoc-x/alignment.mp4",
+   "voice": "af_sarah",
+   "seconds": 9.7,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s14-askdoc-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s14-askdoc-x/coordinator.mp4",
+   "voice": "am_fenrir",
+   "seconds": 9.8,
+   "text_sha256": "9c596a9b5cb683a57adcdafa5fae0bbe68a142afa052796667e44920a6722309"
+  },
+  {
+   "avatarId": "avatar:s14-askdoc-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s14-askdoc-x/evidence-monitor.mp4",
+   "voice": "am_eric",
+   "seconds": 8.2,
+   "text_sha256": "6de98d749edae1cb2a432345479ce96a7b051e704b906be8e0bedbebd340f0a0"
+  },
+  {
+   "avatarId": "avatar:s14-askdoc-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s14-askdoc-x/host.mp4",
+   "voice": "am_michael",
+   "seconds": 10.4,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s14-askdoc-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s14-askdoc-x/steward.mp4",
+   "voice": "bm_george",
+   "seconds": 10.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s15-romanbridge-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s15-romanbridge-dao/alignment.mp4",
+   "voice": "am_adam",
+   "seconds": 9.2,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s15-romanbridge-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s15-romanbridge-dao/coordinator.mp4",
+   "voice": "bf_emma",
+   "seconds": 9.4,
+   "text_sha256": "0aea9c6a6cf6262a242b0e6786c364cb7b488b5d8ccf97460450d6c0e525aae8"
+  },
+  {
+   "avatarId": "avatar:s15-romanbridge-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s15-romanbridge-dao/evidence-monitor.mp4",
+   "voice": "af_kore",
+   "seconds": 10.0,
+   "text_sha256": "f85b125e30447ece731f080556eef80616c396fa3069a742681030c38b241294"
+  },
+  {
+   "avatarId": "avatar:s15-romanbridge-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s15-romanbridge-dao/host.mp4",
+   "voice": "am_michael",
+   "seconds": 10.4,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s15-romanbridge-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s15-romanbridge-dao/steward.mp4",
+   "voice": "af_nicole",
+   "seconds": 15.3,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s16-echodawn-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s16-echodawn-dao/alignment.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.3,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s16-echodawn-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s16-echodawn-dao/coordinator.mp4",
+   "voice": "am_echo",
+   "seconds": 9.0,
+   "text_sha256": "1dd86f30f8585e53907ef5c56a4599d1a561d7cf03497b991e2c921722af3cff"
+  },
+  {
+   "avatarId": "avatar:s16-echodawn-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s16-echodawn-dao/evidence-monitor.mp4",
+   "voice": "af_heart",
+   "seconds": 9.4,
+   "text_sha256": "1efc984c4e33a580d805254bf3401217dc6dd32da1f58bd10a0d0459f97469da"
+  },
+  {
+   "avatarId": "avatar:s16-echodawn-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s16-echodawn-dao/host.mp4",
+   "voice": "af_sky",
+   "seconds": 8.8,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s16-echodawn-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s16-echodawn-dao/steward.mp4",
+   "voice": "bm_fable",
+   "seconds": 9.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s17-curable-blockchain-dao/advisor/alignment",
+   "role": "alignment",
+   "path": "worldforge/out/voices/s17-curable-blockchain-dao/alignment.mp4",
+   "voice": "bf_isabella",
+   "seconds": 9.2,
+   "text_sha256": "ad3087758f7e7c983bbc2d7750d8b15314145b54fb779de2a32f6ebe5f13c070"
+  },
+  {
+   "avatarId": "avatar:s17-curable-blockchain-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s17-curable-blockchain-dao/coordinator.mp4",
+   "voice": "af_nova",
+   "seconds": 9.5,
+   "text_sha256": "d65954f259bc24a8d95a4203514acda4127447b0f9cfd1e5869d2b4b238f0038"
+  },
+  {
+   "avatarId": "avatar:s17-curable-blockchain-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s17-curable-blockchain-dao/evidence-monitor.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.0,
+   "text_sha256": "61696116522b03126c4b2e529cead7daa7c1671014bab755ea0c1ed65fa08720"
+  },
+  {
+   "avatarId": "avatar:s17-curable-blockchain-dao/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s17-curable-blockchain-dao/host.mp4",
+   "voice": "af_sky",
+   "seconds": 8.8,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s17-curable-blockchain-dao/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s17-curable-blockchain-dao/steward.mp4",
+   "voice": "bf_lily",
+   "seconds": 9.0,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s19-moscone-x/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s19-moscone-x/coordinator.mp4",
+   "voice": "bf_emma",
+   "seconds": 8.9,
+   "text_sha256": "69722a915cf469cab93c1d59ceb51208ac6f39144af2e84567c15de1da268a83"
+  },
+  {
+   "avatarId": "avatar:s19-moscone-x/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s19-moscone-x/evidence-monitor.mp4",
+   "voice": "af_jessica",
+   "seconds": 8.7,
+   "text_sha256": "ee30bd68191cbc4864e583170e0fc173fcd488c19854ee26d0280c2bd361caed"
+  },
+  {
+   "avatarId": "avatar:s19-moscone-x/advisor/host",
+   "role": "host",
+   "path": "worldforge/out/voices/s19-moscone-x/host.mp4",
+   "voice": "bf_emma",
+   "seconds": 8.7,
+   "text_sha256": "7fec6639e395d1ac4b91df8bc8d26ca4f24a8ede44a261bcfd730368b0132f15"
+  },
+  {
+   "avatarId": "avatar:s19-moscone-x/advisor/steward",
+   "role": "liaison",
+   "path": "worldforge/out/voices/s19-moscone-x/steward.mp4",
+   "voice": "af_river",
+   "seconds": 8.2,
+   "text_sha256": "37e15041fb6950f1a6ba3412760c0f3d73055c1859cf3316ab0fc348f517c884"
+  },
+  {
+   "avatarId": "avatar:s20-cmmc/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s20-cmmc/coordinator.mp4",
+   "voice": "af_river",
+   "seconds": 7.7,
+   "text_sha256": "5e6027230b3cc914778c788daef5ae3d41ff6bb29e6de8df0eb02a405a5b96d2"
+  },
+  {
+   "avatarId": "avatar:s20-cmmc/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s20-cmmc/evidence-monitor.mp4",
+   "voice": "bf_isabella",
+   "seconds": 9.2,
+   "text_sha256": "e23458e7226e5df2664e7e25bc31586e486736e79af4287309c18b7e31be3afb"
+  },
+  {
+   "avatarId": "avatar:s21-incubator-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s21-incubator-dao/coordinator.mp4",
+   "voice": "am_onyx",
+   "seconds": 9.2,
+   "text_sha256": "bd8d13a406b392cf229dc14f7c0109c1c5a7ed23e40af11acc39c71deb7d452a"
+  },
+  {
+   "avatarId": "avatar:s21-incubator-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s21-incubator-dao/evidence-monitor.mp4",
+   "voice": "am_eric",
+   "seconds": 7.4,
+   "text_sha256": "7d89fd6bd7b5c5327453d19bd780dadae93f1790da4c81b68f02daab339eaca6"
+  },
+  {
+   "avatarId": "avatar:s22-get-delivery-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s22-get-delivery-dao/coordinator.mp4",
+   "voice": "bf_lily",
+   "seconds": 9.4,
+   "text_sha256": "71ed05c64dc1556498a63bfebea68b5f1a7a8b432304f56ead520ec85444929f"
+  },
+  {
+   "avatarId": "avatar:s22-get-delivery-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s22-get-delivery-dao/evidence-monitor.mp4",
+   "voice": "af_heart",
+   "seconds": 9.8,
+   "text_sha256": "3128ac3e14ff2b10ffb9d469005a89cda34d12fc129dcfabf610ca8414538f09"
+  },
+  {
+   "avatarId": "avatar:s23-avatar-chat/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s23-avatar-chat/coordinator.mp4",
+   "voice": "bm_george",
+   "seconds": 10.2,
+   "text_sha256": "cf9c785cd4eabbe368ad5c87dbcdb4d23fd550694f417e43cb0054c66da355ff"
+  },
+  {
+   "avatarId": "avatar:s23-avatar-chat/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s23-avatar-chat/evidence-monitor.mp4",
+   "voice": "af_river",
+   "seconds": 8.7,
+   "text_sha256": "c43e8c8a7de80e069de1e69792188beb605c06889b23b0b47d3e6113b3f488a2"
+  },
+  {
+   "avatarId": "avatar:s24-donatello-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s24-donatello-dao/coordinator.mp4",
+   "voice": "am_adam",
+   "seconds": 9.4,
+   "text_sha256": "291d68e422a682e617b176f5b22a69b33408d235d04d4cfacceb88b5f85b84e9"
+  },
+  {
+   "avatarId": "avatar:s24-donatello-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s24-donatello-dao/evidence-monitor.mp4",
+   "voice": "am_michael",
+   "seconds": 10.5,
+   "text_sha256": "cb41a314964a726b32693eae09be1310bb097123101f81ac12e25ccc22aadb30"
+  },
+  {
+   "avatarId": "avatar:s25-mypet-ai/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s25-mypet-ai/coordinator.mp4",
+   "voice": "bf_isabella",
+   "seconds": 9.4,
+   "text_sha256": "47ab5643f6c639f2bffbd5208d32dbe9f4e4b68c04144bc15dae0102fb3e22b5"
+  },
+  {
+   "avatarId": "avatar:s25-mypet-ai/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s25-mypet-ai/evidence-monitor.mp4",
+   "voice": "bm_lewis",
+   "seconds": 11.3,
+   "text_sha256": "55d3392029bb4fb8d50dd00a2923a4b580cf2dd0aded213d16ffac71b1a86b1c"
+  },
+  {
+   "avatarId": "avatar:s26-lyka-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s26-lyka-dao/coordinator.mp4",
+   "voice": "bm_george",
+   "seconds": 10.4,
+   "text_sha256": "5c5c0e0251066cd5b0d3ce55e4519ef5b1a0407246677c5fc16ca2a145e6131f"
+  },
+  {
+   "avatarId": "avatar:s26-lyka-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s26-lyka-dao/evidence-monitor.mp4",
+   "voice": "am_onyx",
+   "seconds": 8.4,
+   "text_sha256": "488335017314601d8c0f53a83d2861a655cced52930ed1aee82ce1e677cb709b"
+  },
+  {
+   "avatarId": "avatar:s27-genomic-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s27-genomic-dao/coordinator.mp4",
+   "voice": "af_aoede",
+   "seconds": 9.6,
+   "text_sha256": "3005968249566cdd3e201cc910c246c68471a0352d083d4b73cbf997ed40448d"
+  },
+  {
+   "avatarId": "avatar:s27-genomic-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s27-genomic-dao/evidence-monitor.mp4",
+   "voice": "am_echo",
+   "seconds": 9.4,
+   "text_sha256": "83c6c5be824ceb40342b28daf08adf3adbac31b875f4c3932a45fbd7852bc69a"
+  },
+  {
+   "avatarId": "avatar:s28-genomic-blockchain/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s28-genomic-blockchain/coordinator.mp4",
+   "voice": "am_echo",
+   "seconds": 9.1,
+   "text_sha256": "0dc3810ae178ca33cac986ad65b7ab5f40e9b8bec62dec3d718c88c2143300b4"
+  },
+  {
+   "avatarId": "avatar:s28-genomic-blockchain/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s28-genomic-blockchain/evidence-monitor.mp4",
+   "voice": "af_nicole",
+   "seconds": 16.6,
+   "text_sha256": "454dd9dbe58c5c8f879b827e2b1d28c4e55d17c04b63d3c6faf1521711eac4bb"
+  },
+  {
+   "avatarId": "avatar:s29-metaverse-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s29-metaverse-dao/coordinator.mp4",
+   "voice": "af_aoede",
+   "seconds": 10.0,
+   "text_sha256": "4102ee9e9b3fd33bb47e01c8540ff7125274acdd2a7db1a4e9c4790b3b08b697"
+  },
+  {
+   "avatarId": "avatar:s29-metaverse-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s29-metaverse-dao/evidence-monitor.mp4",
+   "voice": "am_onyx",
+   "seconds": 8.6,
+   "text_sha256": "2951fa09fc68edf72625b9aff7db0db5cefaf3e0c1576ec9365f4618bfdd46b2"
+  },
+  {
+   "avatarId": "avatar:s31-aerospace-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s31-aerospace-dao/coordinator.mp4",
+   "voice": "af_river",
+   "seconds": 8.4,
+   "text_sha256": "417fcc01bac18277ca64b7980349fed2c301c086bcdb48ec788d273af57dedd3"
+  },
+  {
+   "avatarId": "avatar:s31-aerospace-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s31-aerospace-dao/evidence-monitor.mp4",
+   "voice": "af_sky",
+   "seconds": 9.2,
+   "text_sha256": "57a06e73107d7864fbd015392c5efba15746bdc04349a8b21e99a036311eeca4"
+  },
+  {
+   "avatarId": "avatar:s32-solar-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s32-solar-dao/coordinator.mp4",
+   "voice": "af_jessica",
+   "seconds": 8.4,
+   "text_sha256": "d186f95a1dbe97aeea11919fee9efba2eabb426885001fe837a1146eb9dcc473"
+  },
+  {
+   "avatarId": "avatar:s32-solar-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s32-solar-dao/evidence-monitor.mp4",
+   "voice": "am_onyx",
+   "seconds": 8.5,
+   "text_sha256": "8793f3fba1280a6c59e097ee592906e7aff70000dd09bb665d10c723089cd626"
+  },
+  {
+   "avatarId": "avatar:s33-infogurus/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s33-infogurus/coordinator.mp4",
+   "voice": "bm_lewis",
+   "seconds": 10.3,
+   "text_sha256": "d7c00c6fb5abf8c171faac08fbe0d8485ea16e86690c550b6281fcdbad5c6c03"
+  },
+  {
+   "avatarId": "avatar:s33-infogurus/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s33-infogurus/evidence-monitor.mp4",
+   "voice": "am_eric",
+   "seconds": 8.2,
+   "text_sha256": "27a2c875e84579bb72350dda0020e047ca273848f9be5c83e3b7dc0b6c421a07"
+  },
+  {
+   "avatarId": "avatar:s34-als-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s34-als-dao/coordinator.mp4",
+   "voice": "bf_alice",
+   "seconds": 9.0,
+   "text_sha256": "5918a947beba16e808420685a6dc7798f8e6f6fcdd102631269131d710efb472"
+  },
+  {
+   "avatarId": "avatar:s34-als-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s34-als-dao/evidence-monitor.mp4",
+   "voice": "am_fenrir",
+   "seconds": 9.5,
+   "text_sha256": "df0a4d14f7f9f533d9f797232f437e919fc465405917061eb00556a0d1debfb8"
+  },
+  {
+   "avatarId": "avatar:s35-parkinsons-dao/coordinator",
+   "role": "coordinator",
+   "path": "worldforge/out/voices/s35-parkinsons-dao/coordinator.mp4",
+   "voice": "bm_fable",
+   "seconds": 9.6,
+   "text_sha256": "6967f47eb4b338e7490c5515637ca0936442ba7b2630492d2bbb709fdfecf9ef"
+  },
+  {
+   "avatarId": "avatar:s35-parkinsons-dao/specialist/evidence-monitor",
+   "role": "specialist",
+   "path": "worldforge/out/voices/s35-parkinsons-dao/evidence-monitor.mp4",
+   "voice": "af_sarah",
+   "seconds": 9.3,
+   "text_sha256": "8e3cbc9aa75eaf81cf5dcd49f1148acf2d2b562bf4c22caceb62e00abd7fbb2d"
+  }
+ ],
+ "totals": {
+  "lines": 159,
+  "seconds": 1510.6,
+  "by_role": {
+   "alignment": 25,
+   "coordinator": 41,
+   "host": 26,
+   "liaison": 26,
+   "specialist": 41
+  }
+ }
+}

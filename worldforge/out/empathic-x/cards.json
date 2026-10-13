@@ -1,0 +1,2565 @@
+{
+ "schemaVersion": "glewme-master-cards/0.1",
+ "world": "empathic-x",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "rights": [
+  "view",
+  "enter",
+  "build",
+  "operate",
+  "delegate",
+  "transfer",
+  "govern"
+ ],
+ "principle": "Agents operate; people govern.",
+ "cards": [
+  {
+   "cardId": "world:empathic-x",
+   "kind": "world",
+   "parentCardId": null,
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Empathic.X · Powered by AGI Corp",
+   "name": "Empathic.X",
+   "tagline": "Empathy & Emotional Intelligence",
+   "status": "coming soon",
+   "management_style": "Agent-managed DAO",
+   "anchor": {
+    "lat": 47.43990000744796,
+    "lon": -179.34952851914045,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=47.43990000744796&lon=-179.34952851914045&rad=6371000"
+   },
+   "omega_steward": {
+    "id": "omega.empathic-x",
+    "status": "defined, not seated",
+    "seated_agent": null,
+    "source": "agents/advisory/omega_agents.json"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     40,
+     0
+    ],
+    "halfExtents": [
+     150,
+     40,
+     150
+    ]
+   },
+   "source": "my-fabric/worlds/index.json"
+  },
+  {
+   "cardId": "plaza:empathic-x",
+   "kind": "plaza",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Empathic.X Plaza · Powered by AGI Corp",
+   "purpose": "the shared round plaza every world opens onto",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     5,
+     0
+    ],
+    "halfExtents": [
+     24,
+     5,
+     24
+    ]
+   },
+   "source": "README.md (shared PBC management model)"
+  },
+  {
+   "cardId": "coordinator:empathic-x",
+   "kind": "coordinator",
+   "parentCardId": "plaza:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Empathic.X Coordinator · Powered by AGI Corp",
+   "name": "Empathic.X Coordinator",
+   "role": "swarm coordinator (hub-hybrid: coordinator supervises, specialists hand off swarm-style): routes turns, answers unroutable ones, hands off to specialists",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "coordinator",
+    "model_ref": "worldforge/out/assets/avatars/coordinator.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.coordinator",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Empathic.X Coordinator"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     8
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/swarms/empathic-x.json#coordinator"
+  },
+  {
+   "cardId": "advisor:empathic-x/host",
+   "kind": "advisor",
+   "parentCardId": "plaza:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Host Advisor · Powered by AGI Corp",
+   "name": "Host Advisor",
+   "manages": "welcoming visitors and pointing them to the right zone",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "host",
+    "model_ref": "worldforge/out/assets/avatars/host.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/empathic-x.json#advisors[id=host]"
+  },
+  {
+   "cardId": "advisor:empathic-x/steward",
+   "kind": "advisor",
+   "parentCardId": "plaza:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Liaison · Powered by AGI Corp",
+   "name": "Steward Liaison",
+   "manages": "connecting visitors and agents to the human stewards",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "liaison",
+    "model_ref": "worldforge/out/assets/avatars/liaison.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -14
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/empathic-x.json#advisors[id=steward]"
+  },
+  {
+   "cardId": "advisor:empathic-x/alignment",
+   "kind": "advisor",
+   "parentCardId": "plaza:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Advisor · Powered by AGI Corp",
+   "name": "Alignment Advisor",
+   "manages": "the Alignment Evaluation Gate and the agents' limits",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "alignment",
+    "model_ref": "worldforge/out/assets/avatars/alignment.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/empathic-x.json#advisors[id=alignment]"
+  },
+  {
+   "cardId": "gate:empathic-x",
+   "kind": "gate",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Evaluation Gate · Powered by AGI Corp",
+   "purpose": "Pre-registered safety evaluation before deployment",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     130
+    ],
+    "halfExtents": [
+     10,
+     6,
+     3
+    ]
+   },
+   "source": "worlds/PBC.json#programs"
+  },
+  {
+   "cardId": "council:empathic-x",
+   "kind": "council",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Council · Powered by AGI Corp",
+   "name": "Steward Council",
+   "purpose": "Human stewards: oversight, values alignment and final governance",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     -130
+    ],
+    "halfExtents": [
+     14,
+     6,
+     10
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-6.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Steward Council",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-1",
+   "kind": "seat",
+   "parentCardId": "council:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 1 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     -6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:empathic-x/steward-2",
+   "kind": "seat",
+   "parentCardId": "council:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 2 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:empathic-x/steward-3",
+   "kind": "seat",
+   "parentCardId": "council:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 3 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     6,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "omega:empathic-x",
+   "kind": "omega",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Omega Steward · Powered by AGI Corp",
+   "name": "Omega Steward · Empathic.X",
+   "omega_id": "omega.empathic-x",
+   "status": "defined, not seated",
+   "seated_agent": null,
+   "persona": {
+    "temperament": "attentive and concrete about its tagline: Empathy & Emotional Intelligence",
+    "style": "short, plain sentences; names its zones (Self-Reader Grove, Other-Reader Commons, Repairer's Hall), cites the record it reads, and always says who decides (the stewards, 2 of 3 signed votes)",
+    "values": [
+     "people decide: Agent-managed DAO, human-governed",
+     "stewards decide by 2 of 3 signed votes",
+     "report probe scores exactly as measured",
+     "draft quotes with every term left null"
+    ],
+    "refuses": [
+     "governance.final_vote",
+     "charter.amend",
+     "treasury.transfer",
+     "proposal.enact",
+     "windfall.distribute",
+     "steward.appoint",
+     "set_price",
+     "accept_equity",
+     "accept_crypto",
+     "issue_invoice",
+     "move_funds"
+    ]
+   },
+   "voice": {
+    "kokoro": "bf_emma",
+    "browser_fallback": {
+     "pitch": 1.15,
+     "rate": 1.04,
+     "lang": "en-GB"
+    },
+    "audio_note": "audio is the expected path; it exists once the hive voices the line (agents/hive.mjs --voice), else the viewer falls back to a labelled browser voice",
+    "lines": [
+     {
+      "id": "greet",
+      "text": "Hello, I am the Omega Steward for Empathic.X. You are hearing a synthetic voice; I am an agent, not a person.",
+      "audio": "agents/hive/voices/empathic-x/greet.mp4"
+     },
+     {
+      "id": "role",
+      "text": "I look after Empathic.X's world: Self-Reader Grove, Other-Reader Commons, Repairer's Hall, plus its probe scores and its installer's dry run.",
+      "audio": "agents/hive/voices/empathic-x/role.mp4"
+     },
+     {
+      "id": "boundary",
+      "text": "Agents draft and route; people decide. I will never transfer treasury funds: that is held for the Steward Council.",
+      "audio": "agents/hive/voices/empathic-x/boundary.mp4"
+     },
+     {
+      "id": "services",
+      "text": "For services, ask the Self-Reader Guide in Self-Reader Grove about task routing. Empathic.X lists 2 service cards; people confirm every step.",
+      "audio": "agents/hive/voices/empathic-x/services.mp4"
+     }
+    ]
+   },
+   "hive_ref": "agents/hive/index.json#omegas[world=empathic-x]",
+   "avatar": {
+    "kind": "omega-avatar",
+    "role": "omega",
+    "model_ref": "worldforge/out/assets/avatars/omega.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     26,
+     1,
+     -130
+    ],
+    "halfExtents": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "source": "agents/advisory/omega_agents.json"
+  },
+  {
+   "cardId": "zone:empathic-x/self-reader-grove",
+   "kind": "zone",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Self-Reader Grove · Powered by AGI Corp",
+   "name": "Self-Reader Grove",
+   "purpose": "Self-awareness (SA): naming what you feel before you act, where it lands in your body",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-1.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Self-Reader Grove",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -52.9,
+     8,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+  },
+  {
+   "cardId": "agent:empathic-x/self-reader-guide",
+   "kind": "agent",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Self-Reader Guide · Powered by AGI Corp",
+   "name": "Self-Reader Guide",
+   "role": "Guide for SA themes and transfer checks, e.g. name three states you were in this week",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.self-reader-guide",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Self-Reader Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=empathic-x].agents[name=Self-Reader Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -56.43,
+     1,
+     77.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+  },
+  {
+   "cardId": "zone:empathic-x/other-reader-commons",
+   "kind": "zone",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Other-Reader Commons · Powered by AGI Corp",
+   "name": "Other-Reader Commons",
+   "purpose": "Awareness of others (AO): asking instead of assuming, listening without preparing a reply",
+   "building": {
+    "kind": "clinic",
+    "exterior": "my-fabric/worlds/models/spaces-ext-clinic.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-clinic.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-2.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Other-Reader Commons",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 2058,
+     "interior": 1440
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -85.6,
+     8,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+  },
+  {
+   "cardId": "agent:empathic-x/other-reader-guide",
+   "kind": "agent",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Other-Reader Guide · Powered by AGI Corp",
+   "name": "Other-Reader Guide",
+   "role": "Guide for AO themes, e.g. reading a face without deciding what it means",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.other-reader-guide",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Other-Reader Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=empathic-x].agents[name=Other-Reader Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -91.3,
+     1,
+     -29.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+  },
+  {
+   "cardId": "zone:empathic-x/repairer-s-hall",
+   "kind": "zone",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Repairer's Hall · Powered by AGI Corp",
+   "name": "Repairer's Hall",
+   "purpose": "Repair (RR): coming down, apologising properly, saying the hard thing kindly",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-3.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Repairer's Hall",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     8,
+     -90
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+  },
+  {
+   "cardId": "agent:empathic-x/repair-guide",
+   "kind": "agent",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Repair Guide · Powered by AGI Corp",
+   "name": "Repair Guide",
+   "role": "Guide for RR themes, e.g. staying in a hard conversation, receiving an apology",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.repair-guide",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Repair Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=empathic-x].agents[name=Repair Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -96
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+  },
+  {
+   "cardId": "zone:empathic-x/room-reader-plaza",
+   "kind": "zone",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Room-Reader Plaza · Powered by AGI Corp",
+   "name": "Room-Reader Plaza",
+   "purpose": "Reading the room (RM): where the energy is, who is idle, the moment before it goes wrong",
+   "building": {
+    "kind": "library",
+    "exterior": "my-fabric/worlds/models/spaces-ext-library.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-library.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-4.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Room-Reader Plaza",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1722,
+     "interior": 4588
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     85.6,
+     8,
+     -27.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+  },
+  {
+   "cardId": "agent:empathic-x/room-reader-guide",
+   "kind": "agent",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Room-Reader Guide · Powered by AGI Corp",
+   "name": "Room-Reader Guide",
+   "role": "Guide for RM themes, e.g. a room with a newcomer in it, when to do nothing",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.room-reader-guide",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Room-Reader Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=empathic-x].agents[name=Room-Reader Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     91.3,
+     1,
+     -29.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+  },
+  {
+   "cardId": "zone:empathic-x/practitioner-workshop",
+   "kind": "zone",
+   "parentCardId": "world:empathic-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Practitioner Workshop · Powered by AGI Corp",
+   "name": "Practitioner Workshop",
+   "purpose": "Emotion at work (EW): feedback that can be used, saying no at work, emotional labour",
+   "building": {
+    "kind": "ops",
+    "exterior": "my-fabric/worlds/models/spaces-ext-ops.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "room": "my-fabric/worlds/models/room-empathic-x-5.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Practitioner Workshop",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1742,
+     "interior": 1392
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=empathic-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     52.9,
+     8,
+     72.81
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+  },
+  {
+   "cardId": "agent:empathic-x/practitioner-guide",
+   "kind": "agent",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Practitioner Guide · Powered by AGI Corp",
+   "name": "Practitioner Guide",
+   "role": "Guide for EW themes, e.g. the colleague who is struggling, leaving well",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "empathic-x.practitioner-guide",
+    "metaprompt": "agents/prompts/empathic-x.json",
+    "fabricNode": "Agent · Practitioner Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=empathic-x].agents[name=Practitioner Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     56.43,
+     1,
+     77.67
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+  }
+ ],
+ "gaps": []
+}

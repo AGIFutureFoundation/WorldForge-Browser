@@ -1,0 +1,1142 @@
+{
+ "schemaVersion": "smartcitix-whitepaper-build/0.1",
+ "title": "SmartCiti.X Agentic Worlds — Whitepaper",
+ "pinned": {
+  "heartbeat_line": "13:02:27 GREEN | GLB: 673 GLBs validated, 0 with errors/warnings | REFS: 197 fabrics, 0 missing refs or over-long names | SERVE: skipped (sandbox blocks local binding), files present | ARTEMIS errors: 0 | SWARMS: 41 swarms, 242 agents + 41 coordinators + 1 concierge; 0 failing evals | LEDGER: ledger: 284 entries (41 worlds), 0 failing checks | PROMPTS: 41 worlds, 571 prompts, 28 spec metaprompts awaiting a founder focus; 0 failing prompt evals | CONSOLE: console current (862841a0e00c7c7b) | RP1: 46 installers dry-run, 0 failing | FACTORY: 43 teams, 4300 scaffold worlds over 20 custom spaces; 0 failing world evals, 0 failing prompt evals | TEAMS: teams console current (af3ee6fa8e602db3) | DEEP: 41 deep worlds, 246 rooms, 1211 hotspots, 738 checks; 0 failing deep evals | DAO: 43 DAO teams, 352 seats, 155 open proposals, 44 agent attempts held, 352 role prompts; 0 failing dao evals | DAOC: dao console current (9949c79b045cc93b) | CORPS: corporations: 35 series cells (35 with a world, 35 with a team), 6 focus DAOs, 3 tracks, 44 teams, 155 open proposals, 5 findings; 0 failing corporation evals | CORPSC: corporations console current (f2bbe5bd32d5b566) | GOV: governance: 4 layers (1 filed), 13 shield items (2 evidenced, 7 open, 4 for counsel), 6 discrepancies; 0 failing governance evals | GOVC: governance console current (c5a681197234b9db) | ATLAS: atlas current (9f5263cfdd7a574c) | PROJECTS: projects current (d0a3d60101eb45a0) | WALK: walk current (4eb645b7e6a36ea9) | MEMBERSHIP: membership: 3 levels, 0 purchasable, 4 founder-gated items, 28 checks; 0 failing membership evals | SIGNING: pass signing: 3 levels, 0 signable today (price null on 3, board price approval null on 3, counsel terms approval null on 3, name/benefits null on 3, Apple and Google issuer ids unset, no certificates supplied), 0 failing signing evals | NEON: neon current (62cb601ec7146222) | FILM: film current (48e174de09f46f93): features 110 s, loop 190 s | DECK: deck current (1136dea48a31b920) · 5 versions | SERVICES: services: 231 service cards across 44 worlds, 8 metrics (2 measured), 0 failing services evals | BENEFICIAL: beneficial: 36 cells, mean W 1.00, 36 regenerative, risk GREEN, forge 1 accepted/1 rejected, 0 failing beneficial evals | NARRATION: narration current (b36b24c197aa6baf): features: narrated atlas/film/features-film-narrated.mp4 (110.0 s); loop: narrated atlas/film/family-film-narrated.mp4 (190.0 s); robotics: narrated atlas/film/robotics-film-narrated.mp4 (60.0 s); holodeck: narrated atlas/film/holodeck-film-narrated.mp4 (110.0 s); review: narrated atlas/film/review-film-narrated.mp4 (120.0 s) | W3C: w3 console current (a8473757eda6d3c9) | ADVISORY: advisory: 5 example engagements, 3 rails (0 enabled), 44 omega agents, 0 failing advisory evals | ROBOTICS: robotics: 19 modules across 2 worlds, 23 simulated runs, 0 failing robotics evals | TRAINING: training: 19 modules, 19 human tracks, 19 robot tracks, 19 tutors, 0 certified, 0 failing training evals | RUBRICS: rubrics: 19 modules, 88 axes measured, 87 not measurable, 38 certificate drafts (0 signed), 0 failing rubric evals | KEYRING: keyring: 0 registered (0 today), 0 pending requests, 0 failing keyring evals | PUBLISH: rp1 publish: 6 worlds ready, 38 blocked (38 no anchor), 117.1 MB bundle, 0 failing publish evals | WING: wing current (18 bays, 96 nodes, 46 models); 0 failing wing evals | ADVISORS: advisors: 41 sessions, 1230 messages, 533 topics, 41 held, 164 redactions, 7 biomes; 0 failing advisor evals | COMMS: comms: 41 channels, 529 messages, 41 held attempts, 41 routed questions, 123 human seats; 0 failing comms evals | COSHELL: coshell bridge: 41 sessions planned, dry-run, CLI not installed, 4 founder steps open; 0 failing bridge evals | COMMSC: comms console current (43f012478e96a0d5) | X402: x402: 42 worlds, 307 priced items, 126 rehearsed flows (42 held, 42 would-settle, 42 refused, 0 settled); 0 failing x402 evals | ROBOPITCH: robotics pitch current (2c0e41230beee9c1) | HIVE: hive: 44 omegas, 44 personas, 27 voices, 176 lines (173 spoken), 0 failing hive evals | HIVEC: hive console current (dc442c48f8790f08) | WORLDFORGE: WORLDFORGE current: 41 worlds, 939 cards, 1066 evals, 0 failing | DIALOGUES: hive dialogues: 44 omegas, 264 answers, 44 handoffs, 170 spoken, 0 failing dialogue evals | SPACESC: spaces console current (ad23f01fb0a21fab) | NETWORK: network: 2 layers, 2 tags, 2 rules, 0 secrets in the kit, 0 failing network evals | MODELS: models: 10 providers (0 keys present), 8 task routes, 5 open/free options, 0 failing model evals | MODELPLAN: model plan: 352 jobs, 3 routes used, 352 cross-provider judges, 0 live calls, 0 failing plan evals | DISK free: 36Gi",
+  "beats_total": 101,
+  "beats_green": 71,
+  "date": "2026-10-12",
+  "built_at": "2026-10-12T15:09:02-07:00",
+  "narration": "say:Samantha",
+  "base_url": null,
+  "contact": null
+ },
+ "numbers": {
+  "worlds": {
+   "value": 41,
+   "source": "worldforge/out/index.json#totals.worlds"
+  },
+  "cards": {
+   "value": 939,
+   "source": "worldforge/out/index.json#totals.cards"
+  },
+  "evals": {
+   "value": 1066,
+   "source": "worldforge/out/index.json#totals.evals"
+  },
+  "failed": {
+   "value": 0,
+   "source": "worldforge/out/index.json#totals.failed"
+  },
+  "anchored": {
+   "value": 4,
+   "source": "worldforge/out/index.json#totals.anchored"
+  },
+  "primitives": {
+   "value": 1103,
+   "source": "worldforge/out/index.json#totals.primitives"
+  },
+  "zones": {
+   "value": 246,
+   "source": "worldforge/out/index.json#worlds[].zones (sum)"
+  },
+  "broken": {
+   "value": 6,
+   "source": "worldforge/out/index.json#broken"
+  },
+  "card_kinds": {
+   "value": 10,
+   "source": "worldforge/out/<slug>/cards.json (distinct kind)"
+  },
+  "bound": {
+   "value": 283,
+   "source": "worldforge/out/<slug>/cards.json (binding.swarm + metaprompt + fabricNode)"
+  },
+  "omega_cards_dns": {
+   "value": 41,
+   "source": "worldforge/out/<slug>/cards.json (kind omega, status 'defined, not seated', seated_agent null)"
+  },
+  "seats": {
+   "value": 123,
+   "source": "worldforge/out/<slug>/cards.json (kind seat)"
+  },
+  "seats_empty": {
+   "value": 123,
+   "source": "worldforge/out/<slug>/cards.json (kind seat, seated null)"
+  },
+  "reserved_entries": {
+   "value": 5634,
+   "source": "worldforge/out/<slug>/cards.json (reserved_for_humans entries, summed)"
+  },
+  "rights": {
+   "value": 7,
+   "source": "worldforge/out/<slug>/cards.json#rights"
+  },
+  "steward_seats": {
+   "value": 3,
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  "reserved_actions": {
+   "value": 6,
+   "source": "worlds/PBC.json#reserved_for_humans"
+  },
+  "avatars.avatars": {
+   "value": 447,
+   "source": "worldforge/out/avatars/index.json#totals.avatars"
+  },
+  "avatars.specialists": {
+   "value": 242,
+   "source": "worldforge/out/avatars/index.json#totals.specialists"
+  },
+  "avatars.coordinators": {
+   "value": 41,
+   "source": "worldforge/out/avatars/index.json#totals.coordinators"
+  },
+  "avatars.advisors": {
+   "value": 123,
+   "source": "worldforge/out/avatars/index.json#totals.advisors"
+  },
+  "avatars.omegas": {
+   "value": 41,
+   "source": "worldforge/out/avatars/index.json#totals.omegas"
+  },
+  "avatars.persona_prompts": {
+   "value": 324,
+   "source": "worldforge/out/avatars/index.json#totals.persona_prompts"
+  },
+  "avatars.prompt_gates": {
+   "value": 5225,
+   "source": "worldforge/out/avatars/index.json#totals.prompt_gates"
+  },
+  "avatars.prompt_gates_failing": {
+   "value": 0,
+   "source": "worldforge/out/avatars/index.json#totals.prompt_gates_failing"
+  },
+  "avatars.evals": {
+   "value": 892,
+   "source": "worldforge/out/avatars/index.json#totals.evals"
+  },
+  "avatars.failing": {
+   "value": 0,
+   "source": "worldforge/out/avatars/index.json#totals.failing"
+  },
+  "avatar_glbs": {
+   "value": 6,
+   "source": "worldforge/out/assets/avatars/index.json#totals.roles"
+  },
+  "avatar_triangles": {
+   "value": 99972,
+   "source": "worldforge/out/assets/avatars/index.json#totals.triangles"
+  },
+  "avatar_validated": {
+   "value": 6,
+   "source": "worldforge/out/assets/avatars/validation.json#files"
+  },
+  "avatar_val_errors": {
+   "value": 0,
+   "source": "worldforge/out/assets/avatars/validation.json#files[].errors (sum)"
+  },
+  "landmarks": {
+   "value": 41,
+   "source": "worldforge/out/assets/landmarks/index.json#totals.worlds"
+  },
+  "landmark_validated": {
+   "value": 41,
+   "source": "worldforge/out/assets/landmarks/validation.json#files"
+  },
+  "landmark_val_errors": {
+   "value": 0,
+   "source": "worldforge/out/assets/landmarks/validation.json#files[].errors (sum)"
+  },
+  "tokens": {
+   "value": 939,
+   "source": "worldforge/out/onchain/index.json#totals.tokens"
+  },
+  "minted": {
+   "value": 0,
+   "source": "worldforge/out/onchain/index.json#deployment.minted"
+  },
+  "onchain_evals": {
+   "value": 537,
+   "source": "worldforge/out/onchain/index.json#evals.total"
+  },
+  "onchain_failed": {
+   "value": 0,
+   "source": "worldforge/out/onchain/index.json#evals.failed"
+  },
+  "merkle_world_roots": {
+   "value": 41,
+   "source": "worldforge/out/onchain/index.json#network.worlds"
+  },
+  "hive.omegas": {
+   "value": 44,
+   "source": "agents/hive/index.json#totals.omegas"
+  },
+  "hive.voices": {
+   "value": 27,
+   "source": "agents/hive/index.json#totals.voices"
+  },
+  "hive.lines": {
+   "value": 176,
+   "source": "agents/hive/index.json#totals.lines"
+  },
+  "hive.spoken": {
+   "value": 173,
+   "source": "agents/hive/index.json#totals.spoken"
+  },
+  "hive.seated": {
+   "value": 0,
+   "source": "agents/hive/index.json#omegas[].seated"
+  },
+  "dialogues.answers": {
+   "value": 264,
+   "source": "agents/hive/dialogues.json#totals.answers"
+  },
+  "dialogues.handoffs": {
+   "value": 44,
+   "source": "agents/hive/dialogues.json#totals.handoffs"
+  },
+  "dialogues.turns": {
+   "value": 88,
+   "source": "agents/hive/dialogues.json#totals.turns"
+  },
+  "dialogues.spoken": {
+   "value": 170,
+   "source": "agents/hive/dialogues.json#totals.spoken"
+  },
+  "dialogues.citations": {
+   "value": 1510,
+   "source": "agents/hive/dialogues.json#totals.citations"
+  },
+  "swarms": {
+   "value": 41,
+   "source": "agents/swarms/*.json (every file except agi-corp.json)"
+  },
+  "specialists": {
+   "value": 242,
+   "source": "agents/swarms/<slug>.json#agents (sum)"
+  },
+  "prompts": {
+   "value": 571,
+   "source": "agents/prompts/index.json#totals.prompts"
+  },
+  "prompts_failing": {
+   "value": 0,
+   "source": "agents/prompts/index.json#totals.failing"
+  },
+  "prompts_awaiting_focus": {
+   "value": 28,
+   "source": "agents/prompts/index.json#totals.spec_metaprompts_awaiting_focus"
+  },
+  "ledger_entries": {
+   "value": 284,
+   "source": "agents/ledger/ledger.jsonl (line count)"
+  },
+  "exteriors": {
+   "value": 246,
+   "source": "my-fabric/worlds/spaces_index.json#totals.exteriors"
+  },
+  "interiors": {
+   "value": 246,
+   "source": "my-fabric/worlds/spaces_index.json#totals.interiors"
+  },
+  "at_2048": {
+   "value": 21,
+   "source": "my-fabric/worlds/spaces_index.json#totals.at_2048"
+  },
+  "forecourts": {
+   "value": 246,
+   "source": "my-fabric/worlds/scenes_index.json#totals.forecourts"
+  },
+  "voiced_intros": {
+   "value": 159,
+   "source": "worldforge/out/voices/manifest.json#totals.lines"
+  },
+  "voiced_seconds": {
+   "value": 1510.6,
+   "source": "worldforge/out/voices/manifest.json#totals.seconds"
+  },
+  "voiced_by_role": {
+   "value": {
+    "alignment": 25,
+    "coordinator": 41,
+    "host": 26,
+    "liaison": 26,
+    "specialist": 41
+   },
+   "source": "worldforge/out/voices/manifest.json#totals.by_role"
+  },
+  "rp1.installers": {
+   "value": 46,
+   "source": "rp1/publish/manifest.json#summary.installers"
+  },
+  "rp1.dry_runs_ok": {
+   "value": 46,
+   "source": "rp1/publish/manifest.json#summary.dry_runs_ok"
+  },
+  "rp1.ready": {
+   "value": 6,
+   "source": "rp1/publish/manifest.json#summary.ready"
+  },
+  "rp1.blocked": {
+   "value": 38,
+   "source": "rp1/publish/manifest.json#summary.blocked"
+  },
+  "rp1.worlds": {
+   "value": 44,
+   "source": "rp1/publish/manifest.json#summary.worlds"
+  },
+  "mount_nodes": {
+   "value": 2042,
+   "source": "worldforge/native/conformance-report.json#totals.nodes"
+  },
+  "mount_plans": {
+   "value": 41,
+   "source": "worldforge/native/conformance-report.json#totals.plans"
+  },
+  "beats_total": {
+   "value": 101,
+   "source": "evidence/heartbeat.log (lines beginning with a time and a status, when built)"
+  },
+  "beats_green": {
+   "value": 71,
+   "source": "evidence/heartbeat.log (GREEN lines, when built)"
+  },
+  "glb_sweep": {
+   "value": 673,
+   "source": "evidence/heartbeat.log (GLB field of the cited beat)"
+  },
+  "glb_sweep_bad": {
+   "value": 0,
+   "source": "evidence/heartbeat.log (GLB field of the cited beat)"
+  },
+  "artemis_logs": {
+   "value": 12,
+   "source": "evidence/artemis-*.log (file count)"
+  }
+ },
+ "sources": {
+  "registries": [
+   "agents/hive/dialogues.json",
+   "agents/hive/index.json",
+   "agents/ledger/ledger.jsonl",
+   "agents/prompts/index.json",
+   "agents/swarms/*.json",
+   "agents/swarms/<slug>.json",
+   "atlas/roadmap.json",
+   "evidence/artemis-*.log",
+   "evidence/heartbeat.log",
+   "my-fabric/worlds/avatars_mount.json",
+   "my-fabric/worlds/scenes_index.json",
+   "my-fabric/worlds/spaces_index.json",
+   "rp1/publish/manifest.json",
+   "worldforge/native/conformance-report.json",
+   "worldforge/out/<slug>/cards.json",
+   "worldforge/out/assets/avatars/index.json",
+   "worldforge/out/assets/avatars/validation.json",
+   "worldforge/out/assets/landmarks/index.json",
+   "worldforge/out/assets/landmarks/validation.json",
+   "worldforge/out/avatars/index.json",
+   "worldforge/out/cancer-dao/manifest.json",
+   "worldforge/out/index.json",
+   "worldforge/out/onchain/index.json",
+   "worldforge/out/voices/manifest.json",
+   "worlds/PBC.json",
+   "worlds/generated/teams/<slug>.json"
+  ],
+  "market": "worldforge/whitepaper/content/market.json",
+  "explainers": [
+   "worldforge/whitepaper/content/explainers-agents-and-hive.json",
+   "worldforge/whitepaper/content/explainers-environments-and-stack.json",
+   "worldforge/whitepaper/content/explainers-world-and-governance.json"
+  ]
+ },
+ "claims": [
+  {
+   "n": 1,
+   "id": "gartner-apps-2026",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 2,
+   "id": "kpmg-agents-q3-2026",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 3,
+   "id": "agents-mkt-bcc",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 4,
+   "id": "agents-mkt-mnm",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 5,
+   "id": "gartner-sprawl-2028",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 6,
+   "id": "gartner-autonomy-2025",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 7,
+   "id": "kpmg-highrisk-q3-2026",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 8,
+   "id": "gartner-cancel-2027",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 9,
+   "id": "gov-euaiact-force",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 10,
+   "id": "gov-euaiact-highrisk",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 11,
+   "id": "gov-nist-rmf",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 12,
+   "id": "vw-abi-45bn",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 13,
+   "id": "vw-statista-490bn",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 14,
+   "id": "vw-eu-800bn",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 15,
+   "id": "vw-citi-13tn",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 16,
+   "id": "xr-idc-headsets-2025",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 17,
+   "id": "xr-idc-mr-lowered-2025",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 18,
+   "id": "xr-idc-mr-2026",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 19,
+   "id": "xr-idc-glasses-2025",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 20,
+   "id": "dt-mnm-2030",
+   "verdict": "confirmed"
+  },
+  {
+   "n": 21,
+   "id": "city-eu-citiverse",
+   "verdict": "corrected"
+  },
+  {
+   "n": 22,
+   "id": "city-un-45pct",
+   "verdict": "confirmed"
+  }
+ ],
+ "films": {
+  "features": {
+   "file": "worldforge/whitepaper/out/film-features.mp4",
+   "seconds": 120.0,
+   "frames": 2880,
+   "narration": "say:Samantha",
+   "narration_lines": [
+    {
+     "section": "title",
+     "text": "SmartCiti.X agentic worlds: the features. You are hearing a synthetic voice.",
+     "start": 0.5,
+     "end": 5.59,
+     "seconds": 5.09,
+     "tempo": 1.0
+    },
+    {
+     "section": "network",
+     "text": "41 coming-soon worlds in 4 families share one charter and one rulebook: 939 Master Cards and 1,066 evals, 0 failing.",
+     "start": 6.5,
+     "end": 16.08,
+     "seconds": 9.58,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "A walk through Cancer DAO, recorded in the WorldForge viewer. First, the fly-in, from above the gate down to the plaza.",
+     "start": 20.15,
+     "end": 27.1,
+     "seconds": 6.95,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then a building in the Charter Hall zone, up to the door and inside.",
+     "start": 27.35,
+     "end": 30.89,
+     "seconds": 3.54,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then the Omega Steward: defined, not seated. Its synthetic voice is defined, not played here.",
+     "start": 32.15,
+     "end": 38.13,
+     "seconds": 5.98,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then the Steward Council: 3 human seats, 3 empty. 2 of 3 signatures decide.",
+     "start": 38.38,
+     "end": 43.71,
+     "seconds": 5.33,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then the civic landmark, a 51 metre tower, its placement suggested, not applied.",
+     "start": 44.15,
+     "end": 49.7,
+     "seconds": 5.55,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then an orbit: 5 zones and 6 specialist agents.",
+     "start": 50.15,
+     "end": 53.38,
+     "seconds": 3.23,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Locator.X: a building in the Master Dashboard zone, up to the door and inside.",
+     "start": 56.15,
+     "end": 61.31,
+     "seconds": 5.16,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Metaverse DAO (Series 29): the civic landmark, a 53 metre tower, its placement suggested, not applied.",
+     "start": 62.15,
+     "end": 70.0,
+     "seconds": 7.85,
+     "tempo": 1.0
+    },
+    {
+     "section": "walk",
+     "text": "Then an orbit: 5 zones and 6 specialist agents.",
+     "start": 70.25,
+     "end": 73.48,
+     "seconds": 3.23,
+     "tempo": 1.0
+    },
+    {
+     "section": "avatars",
+     "text": "447 avatars are bound to agent records with persona prompts. 6 role models pass the Khronos validator with 0 errors.",
+     "start": 74.5,
+     "end": 82.42,
+     "seconds": 7.92,
+     "tempo": 1.0
+    },
+    {
+     "section": "hive",
+     "text": "The Omega Hive: 44 Omega Stewards, defined, not seated. 173 of 176 lines are voiced with synthetic voices.",
+     "start": 86.5,
+     "end": 95.82,
+     "seconds": 9.32,
+     "tempo": 1.0
+    },
+    {
+     "section": "gov",
+     "text": "Agents operate; people govern. 6 actions, from the final vote to treasury transfers, are held for a two-of-three human Steward Council.",
+     "start": 98.5,
+     "end": 106.87,
+     "seconds": 8.37,
+     "tempo": 1.0
+    },
+    {
+     "section": "end",
+     "text": "Not mounted in Sneeze. Nothing deployed or minted. Most worlds have no anchor. The narration was a synthetic voice.",
+     "start": 110.5,
+     "end": 117.36,
+     "seconds": 6.86,
+     "tempo": 1.0
+    }
+   ],
+   "captions": [
+    [
+     0.5,
+     5.9,
+     "SmartCiti.X agentic worlds: the features. You are hearing a synthetic voice."
+    ],
+    [
+     6.5,
+     16.68,
+     "41 coming-soon worlds in 4 families share one charter and one rulebook: 939 Master Cards and 1,066 evals, 0 failing."
+    ],
+    [
+     20.15,
+     27.3,
+     "A walk through Cancer DAO, recorded in the WorldForge viewer. First, the fly-in, from above the gate down to the plaza."
+    ],
+    [
+     27.35,
+     31.49,
+     "Then a building in the Charter Hall zone, up to the door and inside."
+    ],
+    [
+     32.15,
+     38.33,
+     "Then the Omega Steward: defined, not seated. Its synthetic voice is defined, not played here."
+    ],
+    [
+     38.38,
+     44.1,
+     "Then the Steward Council: 3 human seats, 3 empty. 2 of 3 signatures decide."
+    ],
+    [
+     44.15,
+     50.1,
+     "Then the civic landmark, a 51 metre tower, its placement suggested, not applied."
+    ],
+    [
+     50.15,
+     53.98,
+     "Then an orbit: 5 zones and 6 specialist agents."
+    ],
+    [
+     56.15,
+     61.91,
+     "Locator.X: a building in the Master Dashboard zone, up to the door and inside."
+    ],
+    [
+     62.15,
+     70.2,
+     "Metaverse DAO (Series 29): the civic landmark, a 53 metre tower, its placement suggested, not applied."
+    ],
+    [
+     70.25,
+     73.9,
+     "Then an orbit: 5 zones and 6 specialist agents."
+    ],
+    [
+     74.5,
+     83.02,
+     "447 avatars are bound to agent records with persona prompts. 6 role models pass the Khronos validator with 0 errors."
+    ],
+    [
+     86.5,
+     96.42,
+     "The Omega Hive: 44 Omega Stewards, defined, not seated. 173 of 176 lines are voiced with synthetic voices."
+    ],
+    [
+     98.5,
+     107.47,
+     "Agents operate; people govern. 6 actions, from the final vote to treasury transfers, are held for a two-of-three human Steward Council."
+    ],
+    [
+     110.5,
+     117.96,
+     "Not mounted in Sneeze. Nothing deployed or minted. Most worlds have no anchor. The narration was a synthetic voice."
+    ]
+   ],
+   "clips": [
+    "worldforge/review/out/clips/cancer-dao-flyin.mp4",
+    "worldforge/review/out/clips/cancer-dao-building.mp4",
+    "worldforge/review/out/clips/cancer-dao-omega.mp4",
+    "worldforge/review/out/clips/cancer-dao-council.mp4",
+    "worldforge/review/out/clips/cancer-dao-landmark.mp4",
+    "worldforge/review/out/clips/cancer-dao-orbit.mp4",
+    "worldforge/review/out/clips/locator-x-building.mp4",
+    "worldforge/review/out/clips/s29-metaverse-dao-landmark.mp4",
+    "worldforge/review/out/clips/s29-metaverse-dao-orbit.mp4"
+   ],
+   "cited_beat": "13:02:27 GREEN"
+  },
+  "roadmap-stack": {
+   "file": "worldforge/whitepaper/out/film-roadmap-stack.mp4",
+   "seconds": 120.0,
+   "frames": 2880,
+   "narration": "say:Samantha",
+   "narration_lines": [
+    {
+     "section": "title",
+     "text": "SmartCiti.X: the roadmap and the stack. You are hearing a synthetic voice.",
+     "start": 0.5,
+     "end": 5.26,
+     "seconds": 4.76,
+     "tempo": 1.0
+    },
+    {
+     "section": "stack",
+     "text": "The stack, layer by layer.",
+     "start": 6.5,
+     "end": 7.771,
+     "seconds": 1.27,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer one, assets: 673 GLBs in the heartbeat sweep, 0 with errors.",
+     "start": 8.021,
+     "end": 12.923,
+     "seconds": 4.9,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer two, GLEWME Master Cards: 939 cards, each with a Volum and 7 rights.",
+     "start": 13.173,
+     "end": 17.808,
+     "seconds": 4.64,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer three, agents: 41 swarms, 447 avatars and 44 Omega Stewards, 0 seated.",
+     "start": 19.483,
+     "end": 25.593,
+     "seconds": 6.11,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer four, heartbeat, evals and ledger: 1,066 evals, 0 failing, and a ledger signed with test keys.",
+     "start": 26.15,
+     "end": 32.299,
+     "seconds": 6.15,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer five, engines, RP1 and Sneeze: 46 RP1 installers, dry runs only; nothing is mounted in Sneeze.",
+     "start": 32.817,
+     "end": 39.303,
+     "seconds": 6.49,
+     "tempo": 1.275
+    },
+    {
+     "section": "stack",
+     "text": "Layer six, the onchain-ready export: 939 draft token records; nothing deployed, 0 minted.",
+     "start": 39.553,
+     "end": 45.522,
+     "seconds": 5.97,
+     "tempo": 1.275
+    },
+    {
+     "section": "evidence",
+     "text": "Evidence: 673 GLBs validated, 1,066 WorldForge evals with 0 failing, 101 heartbeat beats logged. The beat cited here was GREEN.",
+     "start": 46.5,
+     "end": 57.77,
+     "seconds": 11.27,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "The roadmap: 1 phase done and 5 open. Every open phase waits on a named human gate.",
+     "start": 60.5,
+     "end": 65.82,
+     "seconds": 5.32,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Built and checked: done.",
+     "start": 66.07,
+     "end": 67.6,
+     "seconds": 1.53,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Shared state on Neon. Gate: the founder authorizes the Neon connector.",
+     "start": 67.85,
+     "end": 72.32,
+     "seconds": 4.47,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Worlds on RP1's Earth. Gate: the founder, on the RP1 Dev Center account.",
+     "start": 72.57,
+     "end": 77.83,
+     "seconds": 5.26,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Real stewards, real signatures. Gate: the board appoints stewards.",
+     "start": 78.08,
+     "end": 82.56,
+     "seconds": 4.48,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Membership goes live. Gate: the board sets every price.",
+     "start": 82.81,
+     "end": 86.33,
+     "seconds": 3.52,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "Entities and shared benefit. Gate: the board and counsel.",
+     "start": 87.65,
+     "end": 91.13,
+     "seconds": 3.48,
+     "tempo": 1.0
+    },
+    {
+     "section": "roadmap",
+     "text": "WorldForge gates on the Sneeze native path: 2 done, 3 not done. Nothing is mounted.",
+     "start": 93.15,
+     "end": 98.77,
+     "seconds": 5.62,
+     "tempo": 1.0
+    },
+    {
+     "section": "ask",
+     "text": "Next steps are human decisions: anchors, the shared database, real stewards, and whether to publish on RP1.",
+     "start": 100.5,
+     "end": 107.95,
+     "seconds": 7.45,
+     "tempo": 1.0
+    },
+    {
+     "section": "end",
+     "text": "Nothing deployed, minted or mounted. Omegas are defined, not seated. The voice was synthetic.",
+     "start": 110.5,
+     "end": 116.4,
+     "seconds": 5.9,
+     "tempo": 1.0
+    }
+   ],
+   "captions": [
+    [
+     0.5,
+     5.86,
+     "SmartCiti.X: the roadmap and the stack. You are hearing a synthetic voice."
+    ],
+    [
+     6.5,
+     7.971,
+     "The stack, layer by layer."
+    ],
+    [
+     8.021,
+     13.123,
+     "Layer one, assets: 673 GLBs in the heartbeat sweep, 0 with errors."
+    ],
+    [
+     13.173,
+     18.408,
+     "Layer two, GLEWME Master Cards: 939 cards, each with a Volum and 7 rights."
+    ],
+    [
+     19.483,
+     26.1,
+     "Layer three, agents: 41 swarms, 447 avatars and 44 Omega Stewards, 0 seated."
+    ],
+    [
+     26.15,
+     32.767,
+     "Layer four, heartbeat, evals and ledger: 1,066 evals, 0 failing, and a ledger signed with test keys."
+    ],
+    [
+     32.817,
+     39.503,
+     "Layer five, engines, RP1 and Sneeze: 46 RP1 installers, dry runs only; nothing is mounted in Sneeze."
+    ],
+    [
+     39.553,
+     45.9,
+     "Layer six, the onchain-ready export: 939 draft token records; nothing deployed, 0 minted."
+    ],
+    [
+     46.5,
+     58.37,
+     "Evidence: 673 GLBs validated, 1,066 WorldForge evals with 0 failing, 101 heartbeat beats logged. The beat cited here was GREEN."
+    ],
+    [
+     60.5,
+     66.02,
+     "The roadmap: 1 phase done and 5 open. Every open phase waits on a named human gate."
+    ],
+    [
+     66.07,
+     67.8,
+     "Built and checked: done."
+    ],
+    [
+     67.85,
+     72.52,
+     "Shared state on Neon. Gate: the founder authorizes the Neon connector."
+    ],
+    [
+     72.57,
+     78.03,
+     "Worlds on RP1's Earth. Gate: the founder, on the RP1 Dev Center account."
+    ],
+    [
+     78.08,
+     82.76,
+     "Real stewards, real signatures. Gate: the board appoints stewards."
+    ],
+    [
+     82.81,
+     86.93,
+     "Membership goes live. Gate: the board sets every price."
+    ],
+    [
+     87.65,
+     91.73,
+     "Entities and shared benefit. Gate: the board and counsel."
+    ],
+    [
+     93.15,
+     99.37,
+     "WorldForge gates on the Sneeze native path: 2 done, 3 not done. Nothing is mounted."
+    ],
+    [
+     100.5,
+     108.55,
+     "Next steps are human decisions: anchors, the shared database, real stewards, and whether to publish on RP1."
+    ],
+    [
+     110.5,
+     117.0,
+     "Nothing deployed, minted or mounted. Omegas are defined, not seated. The voice was synthetic."
+    ]
+   ],
+   "clips": [],
+   "cited_beat": "13:02:27 GREEN"
+  }
+ },
+ "explainer_facts": {
+  "verified": 75,
+  "rebuilt_facts": 4,
+  "drift": [
+   {
+    "section": "world-network",
+    "label": "Evals run",
+    "text": "1,025",
+    "registry_now": 1066,
+    "pointer": "worldforge/out/index.json#totals.evals"
+   },
+   {
+    "section": "walkthrough-cancer-dao",
+    "label": "Native name-limit flags in this mount plan",
+    "text": "1",
+    "registry_now": 0,
+    "pointer": "worldforge/native/conformance-report.json#perPlan[slug=cancer-dao].nativeViolations"
+   },
+   {
+    "section": "master-cards",
+    "label": "Evals network-wide",
+    "text": "1,025",
+    "registry_now": 1066,
+    "pointer": "worldforge/out/index.json#totals.evals"
+   },
+   {
+    "section": "heartbeat-and-evals",
+    "label": "Beats logged",
+    "text": "92 (69 GREEN, 23 RED)",
+    "registry_now": 101,
+    "pointer": "evidence/heartbeat.log (beats logged when this page was built)"
+   },
+   {
+    "section": "heartbeat-and-evals",
+    "label": "WorldForge evals in the latest beat",
+    "text": "1,025, 0 failing",
+    "registry_now": 1066,
+    "pointer": "worldforge/out/index.json#totals.evals"
+   },
+   {
+    "section": "pipeline-and-validation",
+    "label": "WorldForge evals",
+    "text": "1,025 (25 per world × 41), 0 failing",
+    "registry_now": 1066,
+    "pointer": "worldforge/out/index.json#totals.evals"
+   },
+   {
+    "section": "pipeline-and-validation",
+    "label": "World GLBs",
+    "text": "41, 769,296 bytes, 1,103 card-tagged primitives",
+    "registry_now": 769004,
+    "pointer": "worldforge/out/index.json#worlds[].glbBytes (sum)"
+   },
+   {
+    "section": "pipeline-and-validation",
+    "label": "Heartbeat GLB sweep",
+    "text": "667 GLBs validated, 0 with errors/warnings",
+    "registry_now": 673,
+    "pointer": "evidence/heartbeat.log (GLB field of the beat this page cites)"
+   },
+   {
+    "section": "sneeze-native-path",
+    "label": "Native-route violations",
+    "text": "267, all name-utf16-units (48 vs 47)",
+    "registry_now": 0,
+    "pointer": "worldforge/native/conformance-report.json#totals.native.violations"
+   },
+   {
+    "section": "sneeze-native-path",
+    "label": "JSON-route violations",
+    "text": "1,529 on 1,139 nodes (939 non-ASCII, 323 over 47 bytes, 267 over 47 units)",
+    "registry_now": 0,
+    "pointer": "worldforge/native/conformance-report.json#totals.json.violations"
+   }
+  ],
+  "unchecked": 123
+ },
+ "rebuilt": [
+  {
+   "where": "synthetic-voices / fact 'Dialogue lines spoken'",
+   "explainer": "50 of 352",
+   "page": "170 of 352",
+   "pointer": "agents/hive/dialogues.json#totals.spoken"
+  },
+  {
+   "where": "synthetic-voices / fact 'Avatar intros voiced'",
+   "explainer": "61 (41 coordinators, 20 specialists), 568.5 s",
+   "page": "159 (41 coordinators, 41 specialists and 77 advisors), 1,510.6 s",
+   "pointer": "worldforge/out/voices/manifest.json#totals"
+  },
+  {
+   "where": "avatars-bound-to-agents / not_done",
+   "explainer": "345 of the 406 non-Omega intros are not voiced yet: all 123 advisors and 222 of 242 specialists (worldforge/out/voices/manifest.json).",
+   "page": "247 of the 406 non-Omega intros are not voiced yet: 46 of 123 advisors and 201 of 242 specialists (worldforge/out/voices/manifest.json).",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "omega-hive / not_done",
+   "explainer": "50 of 352 dialogue lines are voiced (38 answers and 12 handoff turns, covering the first seven Omegas in registry order).",
+   "page": "170 of 352 dialogue lines are voiced (agents/hive/dialogues.json).",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "synthetic-voices / bullets",
+   "explainer": "Omega dialogues (agents/hive/dialogues.json): 352 lines (264 answers and 88 handoff turns), 50 spoken.",
+   "page": "Omega dialogues (agents/hive/dialogues.json): 352 lines (264 answers and 88 handoff turns), 170 spoken.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "synthetic-voices / bullets",
+   "explainer": "Avatar intros (worldforge/out/voices/manifest.json): 61 lines voiced, 41 coordinators and 20 specialists, 568.5 seconds in total.",
+   "page": "Avatar intros (worldforge/out/voices/manifest.json): 159 lines voiced (41 coordinators, 41 specialists and 77 advisors), 1,510.6 seconds in total.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "synthetic-voices / not_done",
+   "explainer": "345 of 406 non-Omega avatar intros are not voiced: all 123 advisors and 222 of 242 specialists.",
+   "page": "247 of 406 non-Omega avatar intros are not voiced: 46 of 123 advisors and 201 of 242 specialists.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "synthetic-voices / not_done",
+   "explainer": "302 of 352 dialogue lines are not voiced.",
+   "page": "182 of 352 dialogue lines are not voiced.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "heartbeat-and-evals / paragraphs",
+   "explainer": "The log currently holds 92 beats: 69 GREEN and 23 RED, with 5 STOP lines where two REDs came in a row. The two most recent show the loop working. At 07:26:20 the beat was RED because one console had gone stale (ROBOPITCH: \"robotics pitch was built from 2d537efab0450e84, sources are now c0dad6e723d5d37c\"). It was rebuilt, and the 07:29:33 beat was GREEN. The agent fields of that latest beat are quoted below.",
+   "page": "When this explainer was written the log held 92 beats: 69 GREEN and 23 RED, with 5 STOP lines where two REDs came in a row. The two most recent show the loop working. At 07:26:20 the beat was RED because one console had gone stale (ROBOPITCH: \"robotics pitch was built from 2d537efab0450e84, sources are now c0dad6e723d5d37c\"). It was rebuilt, and the 07:29:33 beat was GREEN. The agent fields of that beat are quoted below; the beat this page cites is excerpted beside them.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "faq / How much is actually voiced?",
+   "explainer": "173 of 176 Omega lines, 50 of 352 dialogue lines and 61 avatar intros (41 coordinators and 20 specialists). The advisors and most specialists are not voiced yet. The registries store only what was rendered.",
+   "page": "173 of 176 Omega lines, 170 of 352 dialogue lines and 159 avatar intros (41 coordinators, 41 specialists and 77 advisors). 247 of the 406 non-Omega intros are not voiced yet: 46 of 123 advisors and 201 of 242 specialists. The registries store only what was rendered.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "landmarks-and-avatars / fact 'Avatars placed in the deep fabrics'",
+   "explainer": "324 across 41 worlds, from 3 models",
+   "page": "447 across 41 worlds, from 6 models",
+   "pointer": "my-fabric/worlds/avatars_mount.json#totals"
+  },
+  {
+   "where": "landmarks-and-avatars / fact 'WorldForge voiced intros'",
+   "explainer": "61 lines, 568.5 s (Kokoro v1.0, local)",
+   "page": "159 lines, 1,510.6 s (Kokoro v1.0, local)",
+   "pointer": "worldforge/out/voices/manifest.json#totals"
+  },
+  {
+   "where": "landmarks-and-avatars / paragraphs",
+   "explainer": "The voices are Kokoro v1.0 (kokoro-onnx, Apache-2.0), run locally with no account and nothing sent anywhere. WorldForge has rendered 61 intro lines (41 coordinators, 20 specialists), 568.5 s in all, normalised to −16 LUFS. The hive has spoken 173 of its 176 Omega lines, from a pool of 27 voices. Every intro says the voice is synthetic. An avatar without a rendered file falls back to a labelled browser voice.",
+   "page": "The voices are Kokoro v1.0 (kokoro-onnx, Apache-2.0), run locally with no account and nothing sent anywhere. WorldForge has rendered 159 intro lines (41 coordinators, 41 specialists and 77 advisors), 1,510.6 s in all, normalised to −16 LUFS. The hive has spoken 173 of its 176 Omega lines, from a pool of 27 voices. Every intro says the voice is synthetic. An avatar without a rendered file falls back to a labelled browser voice.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  },
+  {
+   "where": "landmarks-and-avatars / not_done",
+   "explainer": "Not every line is voiced: 61 WorldForge intros of 447 avatars, and 173 of 176 hive lines. Nothing speaks live.",
+   "page": "Not every line is voiced: 159 WorldForge intros of 447 avatars, and 173 of 176 hive lines. Nothing speaks live.",
+   "pointer": "worldforge/out/voices/manifest.json#totals; worldforge/out/avatars/index.json#totals; agents/hive/index.json#totals; agents/hive/dialogues.json#totals"
+  }
+ ],
+ "page_qualifiers": [
+  {
+   "where": "atlas/roadmap.json#phases[Built and checked].items",
+   "source": "Agent swarms, metaprompts and management teams seated by each company's own agents",
+   "page": "Agent swarms, metaprompts and management teams generated by each company's own swarm (no agent is seated)"
+  },
+  {
+   "where": "atlas/roadmap.json#phases[Built and checked].items",
+   "source": "Hash-chained agent ledger with 2-of-3 signed steward votes",
+   "page": "Hash-chained agent ledger with 2-of-3 steward approvals signed with throwaway test keys (no steward is seated)"
+  },
+  {
+   "where": "atlas/roadmap.json#stack[RP1 Artemis 0.4.0].role",
+   "source": "loads the spatial fabrics; every world's fabric is load-tested locally",
+   "page": "loads spatial fabrics; 12 fabrics have local load logs (evidence/artemis-*.log), not one per world; the deep fabrics of the 41 WorldForge worlds have not been loaded in Artemis yet"
+  }
+ ],
+ "sections": 19,
+ "page_sha256": "e21bb9489dc3cf4bf95d03776ad1a5225910789a1480da01f6fa7b39311def0b",
+ "media": [
+  "avatars-preview.jpg",
+  "frame-cancer-dao-flyin.jpg",
+  "frame-cancer-dao-omega.jpg",
+  "landmarks-preview.jpg",
+  "plan-locator-x.jpg",
+  "poster-features.jpg",
+  "poster-roadmap-stack.jpg",
+  "still-console.jpg",
+  "still-viewer-building.jpg",
+  "still-viewer-council.jpg",
+  "still-viewer-flyin.jpg",
+  "still-viewer-landmark.jpg",
+  "still-viewer-omega.jpg",
+  "still-viewer-orbit.jpg"
+ ]
+}

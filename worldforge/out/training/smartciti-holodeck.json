@@ -1,0 +1,4714 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "smartciti-holodeck",
+ "slug": "smartciti-holodeck",
+ "status": null,
+ "seated": false,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:smartciti-holodeck/module/crane-lift",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Tower Crane Lift",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 01 · Tower Crane Lift",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.crane-lift]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Tower Crane Lift\" step by step, the same steps on both tracks",
+     "quote": "Tower Crane Lift",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].title"
+    },
+    {
+     "text": "Skill: slew the jib",
+     "quote": "slew the jib",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.crane-lift].skills[0]"
+    },
+    {
+     "text": "Skill: trolley out / in",
+     "quote": "trolley out / in",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.crane-lift].skills[1]"
+    },
+    {
+     "text": "Skill: hoist up / down",
+     "quote": "hoist up / down",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.crane-lift].skills[2]"
+    },
+    {
+     "text": "Skill: hook / release the load",
+     "quote": "hook / release the load",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.crane-lift].skills[3]"
+    },
+    {
+     "text": "Hall focus (Crane Operators): Mobile, tower and overhead lifting operations",
+     "quote": "Mobile, tower and overhead lifting operations",
+     "from": "my-fabric/holodeck/data.json#halls.crane-ops.focus"
+    },
+    {
+     "text": "Hall focus (Riggers & Signalpersons): Load calculation, rigging hardware and signals",
+     "quote": "Load calculation, rigging hardware and signals",
+     "from": "my-fabric/holodeck/data.json#halls.riggers.focus"
+    },
+    {
+     "text": "Hall focus (Steel Erectors): Detailing, plumbing up, bolting and connection safety",
+     "quote": "Detailing, plumbing up, bolting and connection safety",
+     "from": "my-fabric/holodeck/data.json#halls.steel-erectors.focus"
+    },
+    {
+     "text": "Hall focus (Port Crane Technicians): STS and RTG cranes, spreaders, ropes and drives",
+     "quote": "STS and RTG cranes, spreaders, ropes and drives",
+     "from": "my-fabric/holodeck/data.json#halls.port-crane.focus"
+    },
+    {
+     "text": "Hall focus (Ironworkers): Structural steel, rebar, rigging and connecting",
+     "quote": "Structural steel, rebar, rigging and connecting",
+     "from": "my-fabric/holodeck/data.json#halls.ironworkers.focus"
+    },
+    {
+     "text": "Hall focus (Metal Deck Installers): Layout, puddle welds, shear studs and edge form",
+     "quote": "Layout, puddle welds, shear studs and edge form",
+     "from": "my-fabric/holodeck/data.json#halls.decking.focus"
+    },
+    {
+     "text": "Hall focus (Tank Erectors): Field-erected storage, floating roofs and hydrotest",
+     "quote": "Field-erected storage, floating roofs and hydrotest",
+     "from": "my-fabric/holodeck/data.json#halls.tank-erectors.focus"
+    },
+    {
+     "text": "Hall focus (Piling Crews): Driven, bored, sheet piles, refusal and integrity",
+     "quote": "Driven, bored, sheet piles, refusal and integrity",
+     "from": "my-fabric/holodeck/data.json#halls.piling.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Over the supply pad.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Lower and hook the load.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Hoist to carry height.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Carry over the stacks.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Set inside the target ring.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.crane-lift",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.crane-lift].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:placement",
+      "axis": "placement",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "distance from target centre at release (m)",
+      "pass": "<= 1.2",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:swing",
+      "axis": "swing",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "peak load swing during carry (m)",
+      "pass": "<= 2.0",
+      "reason": "the kinematic simulator has no load dynamics"
+     },
+     {
+      "id": "source:strikes",
+      "axis": "strikes",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "load or hook contacts with the stacks",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds from hook to release",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "slew, trolley, hoist stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "3 keep-out zones checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Crane Operators or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Over the supply pad.",
+      "instructor_checks": "the hook is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Lower and hook the load.",
+      "instructor_checks": "the hook is engaged; the load is held"
+     },
+     {
+      "n": 4,
+      "do": "Hoist to carry height.",
+      "instructor_checks": "the hook is above the marked height"
+     },
+     {
+      "n": 5,
+      "do": "Carry over the stacks.",
+      "instructor_checks": "every move stayed inside the limits; the hook is at the marked point"
+     },
+     {
+      "n": 6,
+      "do": "Set inside the target ring.",
+      "instructor_checks": "the hook is over the marked spot, inside the tolerance; the hook is released"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift].robot",
+    "run_id": "run.smartciti-holodeck.crane-lift",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.crane-lift]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#crane-lift",
+    "agents/training/index.json#modules[id=smartciti-holodeck.crane-lift]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.crane-lift]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.crane-lift]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.crane-lift]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/excavator-trench",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Excavator Trench Cut",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 02 · Excavator Trench Cut",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.excavator-trench]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Excavator Trench Cut\" step by step, the same steps on both tracks",
+     "quote": "Excavator Trench Cut",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].title"
+    },
+    {
+     "text": "Skill: slew the house",
+     "quote": "slew the house",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.excavator-trench].skills[0]"
+    },
+    {
+     "text": "Skill: reach out / in",
+     "quote": "reach out / in",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.excavator-trench].skills[1]"
+    },
+    {
+     "text": "Skill: bucket up / down",
+     "quote": "bucket up / down",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.excavator-trench].skills[2]"
+    },
+    {
+     "text": "Skill: dig / dump the bucket",
+     "quote": "dig / dump the bucket",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.excavator-trench].skills[3]"
+    },
+    {
+     "text": "Hall focus (Operating Engineers): Earthmoving, lifting and heavy plant operation",
+     "quote": "Earthmoving, lifting and heavy plant operation",
+     "from": "my-fabric/holodeck/data.json#halls.operating-eng.focus"
+    },
+    {
+     "text": "Hall focus (Shoring & Underpinning): Needle beams, jacking, monitoring and sequencing",
+     "quote": "Needle beams, jacking, monitoring and sequencing",
+     "from": "my-fabric/holodeck/data.json#halls.shoring.focus"
+    },
+    {
+     "text": "Hall focus (Laborers): Site prep, materials, excavation support and cleanup",
+     "quote": "Site prep, materials, excavation support and cleanup",
+     "from": "my-fabric/holodeck/data.json#halls.laborers.focus"
+    },
+    {
+     "text": "Hall focus (Demolition Workers): Selective demo, structural takedown and debris control",
+     "quote": "Selective demo, structural takedown and debris control",
+     "from": "my-fabric/holodeck/data.json#halls.demolition.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "First bite cell 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Dump in the spoil zone.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Second bite to grade.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Flagged cell past half depth: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Flagged cell stops shallow.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.excavator-trench",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.excavator-trench].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:grade",
+      "axis": "grade",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "trench cells finished at their marked depth",
+      "pass": "== all",
+      "verdict": "incomplete"
+     },
+     {
+      "id": "source:utility",
+      "axis": "utility",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "strikes on the flagged utility",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:spoil",
+      "axis": "spoil",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "buckets landed inside the spoil zone",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first dig to last dump",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:pre-check-the-flagged-cell-holds-a-live-utility-at-half-depth",
+      "axis": "pre-check: the flagged cell holds a live utility at half depth",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "slew, reach, bucket stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "1 keep-out zone checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Operating Engineers or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "First bite cell 1.",
+      "instructor_checks": "the bucket is at the marked point; the bucket is engaged"
+     },
+     {
+      "n": 3,
+      "do": "Dump in the spoil zone.",
+      "instructor_checks": "the bucket is over the marked spot, inside the tolerance; the bucket is released"
+     },
+     {
+      "n": 4,
+      "do": "Second bite to grade.",
+      "instructor_checks": "every move stayed inside the limits; every marked point was reached, in order; the bucket is released"
+     },
+     {
+      "n": 5,
+      "do": "Flagged cell past half depth: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the dig past the utility depth was refused and nothing moved"
+     },
+     {
+      "n": 6,
+      "do": "Flagged cell stops shallow.",
+      "instructor_checks": "every move stayed inside the limits; the bucket is over the marked spot, inside the tolerance; the bucket is released"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Find the flagged cell and its locate marks before the first bite",
+      "quote": "the flagged cell holds a live utility at half depth",
+      "from": "my-fabric/holodeck/sims.json#excavator-trench.task",
+      "axis": "utility",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench].robot",
+    "run_id": "run.smartciti-holodeck.excavator-trench",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.excavator-trench]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#excavator-trench",
+    "agents/training/index.json#modules[id=smartciti-holodeck.excavator-trench]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.excavator-trench]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.excavator-trench]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.excavator-trench]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/forklift-run",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Forklift Yard Run",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 03 · Forklift Yard Run",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.forklift-run]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Forklift Yard Run\" step by step, the same steps on both tracks",
+     "quote": "Forklift Yard Run",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].title"
+    },
+    {
+     "text": "Skill: drive / reverse",
+     "quote": "drive / reverse",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.forklift-run].skills[0]"
+    },
+    {
+     "text": "Skill: lift / set the pallet",
+     "quote": "lift / set the pallet",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.forklift-run].skills[1]"
+    },
+    {
+     "text": "Hall focus (Teamsters): Haul, delivery, logistics and vehicle compliance",
+     "quote": "Haul, delivery, logistics and vehicle compliance",
+     "from": "my-fabric/holodeck/data.json#halls.teamsters.focus"
+    },
+    {
+     "text": "Hall focus (Heavy Equipment Technicians): Diagnostics, hydraulics, drivetrain and field service",
+     "quote": "Diagnostics, hydraulics, drivetrain and field service",
+     "from": "my-fabric/holodeck/data.json#halls.heavy-equip.focus"
+    },
+    {
+     "text": "Hall focus (Operating Engineers): Earthmoving, lifting and heavy plant operation",
+     "quote": "Earthmoving, lifting and heavy plant operation",
+     "from": "my-fabric/holodeck/data.json#halls.operating-eng.focus"
+    },
+    {
+     "text": "Hall focus (Laborers): Site prep, materials, excavation support and cleanup",
+     "quote": "Site prep, materials, excavation support and cleanup",
+     "from": "my-fabric/holodeck/data.json#halls.laborers.focus"
+    },
+    {
+     "text": "Hall focus (Marine Terminal Operators): Mooring, loading arms, spill response and manifests",
+     "quote": "Mooring, loading arms, spill response and manifests",
+     "from": "my-fabric/holodeck/data.json#halls.marine-terminal.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Home at the start.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Thread the cone lane.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Pick the pallet square on the forks.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Set down inside the dock bay.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].human.steps[n=4]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.forklift-run",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.forklift-run].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:gates",
+      "axis": "gates",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "cone gates taken in order",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:cones",
+      "axis": "cones",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "cones struck",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:docking",
+      "axis": "docking",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "pallet inside the dock bay at set-down",
+      "pass": "required",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds start to set-down",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:steer",
+      "axis": "steer",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "travel is straight-line; a cone clipped on a turn taken too fast needs vehicle dynamics the simulator does not have"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "travel_x, travel_z, lift stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "9 keep-out zones checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Teamsters or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Home at the start.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Thread the cone lane.",
+      "instructor_checks": "every move stayed inside the limits; every marked point was reached, in order"
+     },
+     {
+      "n": 3,
+      "do": "Pick the pallet square on the forks.",
+      "instructor_checks": "the load is held; the forks are at the marked point"
+     },
+     {
+      "n": 4,
+      "do": "Set down inside the dock bay.",
+      "instructor_checks": "the forks are over the marked spot, inside the tolerance; the forks are released"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run].robot",
+    "run_id": "run.smartciti-holodeck.forklift-run",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.forklift-run]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 4,
+    "total": 4,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#forklift-run",
+    "agents/training/index.json#modules[id=smartciti-holodeck.forklift-run]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.forklift-run]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.forklift-run]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.forklift-run]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/weld-bead",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Weld Bead Run",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 04 · Weld Bead Run",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.weld-bead]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Weld Bead Run\" step by step, the same steps on both tracks",
+     "quote": "Weld Bead Run",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].title"
+    },
+    {
+     "text": "Skill: travel the torch along the seam",
+     "quote": "travel the torch along the seam",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.weld-bead].skills[0]"
+    },
+    {
+     "text": "Skill: raise / lower the torch (arc gap)",
+     "quote": "raise / lower the torch (arc gap)",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.weld-bead].skills[1]"
+    },
+    {
+     "text": "Skill: strike / break the arc",
+     "quote": "strike / break the arc",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.weld-bead].skills[2]"
+    },
+    {
+     "text": "Hall focus (Welding Trades): SMAW, GMAW, GTAW, FCAW, procedure and qualification",
+     "quote": "SMAW, GMAW, GTAW, FCAW, procedure and qualification",
+     "from": "my-fabric/holodeck/data.json#halls.welders.focus"
+    },
+    {
+     "text": "Hall focus (Boilermakers): Pressure vessels, tanks, tubes and code welding",
+     "quote": "Pressure vessels, tanks, tubes and code welding",
+     "from": "my-fabric/holodeck/data.json#halls.boilermakers.focus"
+    },
+    {
+     "text": "Hall focus (Shipfitters): Hull sections, tack and fit, alignment and launch",
+     "quote": "Hull sections, tack and fit, alignment and launch",
+     "from": "my-fabric/holodeck/data.json#halls.shipfitters.focus"
+    },
+    {
+     "text": "Hall focus (Structural Fabricators): Layout, cut, fit and weld-out in the shop",
+     "quote": "Layout, cut, fit and weld-out in the shop",
+     "from": "my-fabric/holodeck/data.json#halls.fabricators.focus"
+    },
+    {
+     "text": "Hall focus (Pipeline Trades): Mainline welding, coating, tie-ins and integrity digs",
+     "quote": "Mainline welding, coating, tie-ins and integrity digs",
+     "from": "my-fabric/holodeck/data.json#halls.pipeline.focus"
+    },
+    {
+     "text": "Hall focus (Marine Pipefitters): Shipboard systems, sea valves and pressure test",
+     "quote": "Shipboard systems, sea valves and pressure test",
+     "from": "my-fabric/holodeck/data.json#halls.marine-pipe.focus"
+    },
+    {
+     "text": "Hall focus (Tank Erectors): Field-erected storage, floating roofs and hydrotest",
+     "quote": "Field-erected storage, floating roofs and hydrotest",
+     "from": "my-fabric/holodeck/data.json#halls.tank-erectors.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Set the gap at the seam start.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Strike the arc.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Run the bead down the seam.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Break the arc and lift off.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.weld-bead",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.weld-bead].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:fusion",
+      "axis": "fusion",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "seam segments fused end to end",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:band",
+      "axis": "band",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "share of fused segments laid with the gap inside the band (%)",
+      "pass": ">= 90",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:burns",
+      "axis": "burns",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "burn-throughs from lingering heat",
+      "pass": "== 0",
+      "reason": "burn-through comes from dwell time and heat; the simulator has no clock or heat model"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first strike to last fuse",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "travel, gap stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Welding Trades or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Set the gap at the seam start.",
+      "instructor_checks": "the working end is at the marked point; the gap is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Strike the arc.",
+      "instructor_checks": "the arc is engaged"
+     },
+     {
+      "n": 4,
+      "do": "Run the bead down the seam.",
+      "instructor_checks": "the travel covered the whole marked run with the arc engaged, no gaps; the gap stayed inside its band the whole time the arc was engaged"
+     },
+     {
+      "n": 5,
+      "do": "Break the arc and lift off.",
+      "instructor_checks": "the arc is released; the gap is at its marked setting"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead].robot",
+    "run_id": "run.smartciti-holodeck.weld-bead",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.weld-bead]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#weld-bead",
+    "agents/training/index.json#modules[id=smartciti-holodeck.weld-bead]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.weld-bead]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.weld-bead]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.weld-bead]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/scaffold-bay",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Scaffold Bay Build",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 05 · Scaffold Bay Build",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.scaffold-bay]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Scaffold Bay Build\" step by step, the same steps on both tracks",
+     "quote": "Scaffold Bay Build",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].title"
+    },
+    {
+     "text": "Skill: choose the part rack",
+     "quote": "choose the part rack",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.scaffold-bay].skills[0]"
+    },
+    {
+     "text": "Skill: place the next part",
+     "quote": "place the next part",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.scaffold-bay].skills[1]"
+    },
+    {
+     "text": "Skill: sills, frames, braces, planks, then guardrails",
+     "quote": "sills, frames, braces, planks, then guardrails",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.scaffold-bay].skills[2]"
+    },
+    {
+     "text": "Hall focus (Scaffold Erectors): System scaffold, shoring, suspended access and tags",
+     "quote": "System scaffold, shoring, suspended access and tags",
+     "from": "my-fabric/holodeck/data.json#halls.scaffold.focus"
+    },
+    {
+     "text": "Hall focus (Carpenters): Framing, formwork, finish and layout",
+     "quote": "Framing, formwork, finish and layout",
+     "from": "my-fabric/holodeck/data.json#halls.carpenters.focus"
+    },
+    {
+     "text": "Hall focus (Laborers): Site prep, materials, excavation support and cleanup",
+     "quote": "Site prep, materials, excavation support and cleanup",
+     "from": "my-fabric/holodeck/data.json#halls.laborers.focus"
+    },
+    {
+     "text": "Hall focus (Bricklayers & Allied Craft): Masonry, refractory, tile and stone",
+     "quote": "Masonry, refractory, tile and stone",
+     "from": "my-fabric/holodeck/data.json#halls.bricklayers.focus"
+    },
+    {
+     "text": "Hall focus (Painters & Allied Trades): Coatings, containment, industrial and decorative finish",
+     "quote": "Coatings, containment, industrial and decorative finish",
+     "from": "my-fabric/holodeck/data.json#halls.painters.focus"
+    },
+    {
+     "text": "Hall focus (Glaziers): Curtain wall, storefront, glazing and sealants",
+     "quote": "Curtain wall, storefront, glazing and sealants",
+     "from": "my-fabric/holodeck/data.json#halls.glaziers.focus"
+    },
+    {
+     "text": "Hall focus (Roofers & Waterproofers): Low-slope, steep-slope, membranes and moisture control",
+     "quote": "Low-slope, steep-slope, membranes and moisture control",
+     "from": "my-fabric/holodeck/data.json#halls.roofers.focus"
+    },
+    {
+     "text": "Hall focus (Cement Masons): Placement, finishing, curing and decorative concrete",
+     "quote": "Placement, finishing, curing and decorative concrete",
+     "from": "my-fabric/holodeck/data.json#halls.cement-masons.focus"
+    },
+    {
+     "text": "Hall focus (Heat & Frost Insulators): Mechanical insulation, abatement and firestopping",
+     "quote": "Mechanical insulation, abatement and firestopping",
+     "from": "my-fabric/holodeck/data.json#halls.insulators.focus"
+    },
+    {
+     "text": "Hall focus (Plasterers): Three-coat, veneer, ornamental run and repair",
+     "quote": "Three-coat, veneer, ornamental run and repair",
+     "from": "my-fabric/holodeck/data.json#halls.plasterers.focus"
+    },
+    {
+     "text": "Hall focus (Below-Grade Waterproofers): Membranes, injection, drainage and blindside",
+     "quote": "Membranes, injection, drainage and blindside",
+     "from": "my-fabric/holodeck/data.json#halls.waterproofers.focus"
+    },
+    {
+     "text": "Hall focus (Firestop Installers): Penetrations, joints, listed systems and inspection",
+     "quote": "Penetrations, joints, listed systems and inspection",
+     "from": "my-fabric/holodeck/data.json#halls.firestop.focus"
+    },
+    {
+     "text": "Hall focus (Rainscreen Cladding Fitters): Substructure, panels, cavity drainage and tolerance",
+     "quote": "Substructure, panels, cavity drainage and tolerance",
+     "from": "my-fabric/holodeck/data.json#halls.cladding.focus"
+    },
+    {
+     "text": "Hall focus (Masonry Restoration): Repointing, consolidation, Dutchman and cleaning",
+     "quote": "Repointing, consolidation, Dutchman and cleaning",
+     "from": "my-fabric/holodeck/data.json#halls.masonry-restore.focus"
+    },
+    {
+     "text": "Hall focus (Curtain Wall Erectors): Unitised panels, anchors, sequencing and water test",
+     "quote": "Unitised panels, anchors, sequencing and water test",
+     "from": "my-fabric/holodeck/data.json#halls.curtainwall.focus"
+    },
+    {
+     "text": "Hall focus (Architectural Glaziers): Structural silicone, blast glazing and heritage sash",
+     "quote": "Structural silicone, blast glazing and heritage sash",
+     "from": "my-fabric/holodeck/data.json#halls.window-glazing.focus"
+    },
+    {
+     "text": "Hall focus (Lathers & Metal Framers): Metal stud, furring, ceiling grid and backing",
+     "quote": "Metal stud, furring, ceiling grid and backing",
+     "from": "my-fabric/holodeck/data.json#halls.lathers.focus"
+    },
+    {
+     "text": "Hall focus (Stone Carvers): Banker work, lettering, tracery and matching",
+     "quote": "Banker work, lettering, tracery and matching",
+     "from": "my-fabric/holodeck/data.json#halls.stone-carvers.focus"
+    },
+    {
+     "text": "Hall focus (Refractory Masons): Furnace linings, castables, gunning and dryout",
+     "quote": "Furnace linings, castables, gunning and dryout",
+     "from": "my-fabric/holodeck/data.json#halls.refractory.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Stage 1 sills.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Stage 2 frames.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Stage 3 braces.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Stage 4 planks.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Stage 5 guardrails.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.scaffold-bay",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.scaffold-bay].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:sequence",
+      "axis": "sequence",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "placements refused for coming before their stage",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:complete",
+      "axis": "complete",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "parts of the bay placed, rails last",
+      "pass": "informational",
+      "verdict": "informational"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first sill to last rail",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "gantry_x, gantry_y, gantry_z stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Scaffold Erectors or any paired hall)",
+     "Complete the Scaffold & Fall Protection station (Scaffold Erectors)",
+     "Complete the PPE & Readiness station (Bricklayers & Allied Craft)",
+     "Complete the Silica Dust & Respiratory station (Bricklayers & Allied Craft)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Stage 1 sills.",
+      "instructor_checks": "every move stayed inside the limits; sills placed in stage order"
+     },
+     {
+      "n": 3,
+      "do": "Stage 2 frames.",
+      "instructor_checks": "every move stayed inside the limits; sills, frames placed in stage order"
+     },
+     {
+      "n": 4,
+      "do": "Stage 3 braces.",
+      "instructor_checks": "every move stayed inside the limits; sills, frames, braces placed in stage order"
+     },
+     {
+      "n": 5,
+      "do": "Stage 4 planks.",
+      "instructor_checks": "every move stayed inside the limits; sills, frames, braces, planks placed in stage order"
+     },
+     {
+      "n": 6,
+      "do": "Stage 5 guardrails.",
+      "instructor_checks": "every move stayed inside the limits; sills, frames, braces, planks, guardrails placed in stage order"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay].robot",
+    "run_id": "run.smartciti-holodeck.scaffold-bay",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.scaffold-bay]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#scaffold-bay",
+    "agents/training/index.json#modules[id=smartciti-holodeck.scaffold-bay]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.scaffold-bay]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.scaffold-bay]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.scaffold-bay]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/rigging-signals",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Rigging Signal Call",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 06 · Rigging Signal Call",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.rigging-signals]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Rigging Signal Call\" step by step, the same steps on both tracks",
+     "quote": "Rigging Signal Call",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].title"
+    },
+    {
+     "text": "Skill: signal hoist up / hoist down",
+     "quote": "signal hoist up / hoist down",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.rigging-signals].skills[0]"
+    },
+    {
+     "text": "Skill: signal swing left / swing right",
+     "quote": "signal swing left / swing right",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.rigging-signals].skills[1]"
+    },
+    {
+     "text": "Skill: signal trolley out / trolley in",
+     "quote": "signal trolley out / trolley in",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.rigging-signals].skills[2]"
+    },
+    {
+     "text": "Skill: signal STOP",
+     "quote": "signal STOP",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.rigging-signals].skills[3]"
+    },
+    {
+     "text": "Hall focus (Riggers & Signalpersons): Load calculation, rigging hardware and signals",
+     "quote": "Load calculation, rigging hardware and signals",
+     "from": "my-fabric/holodeck/data.json#halls.riggers.focus"
+    },
+    {
+     "text": "Hall focus (Crane Operators): Mobile, tower and overhead lifting operations",
+     "quote": "Mobile, tower and overhead lifting operations",
+     "from": "my-fabric/holodeck/data.json#halls.crane-ops.focus"
+    },
+    {
+     "text": "Hall focus (Steel Erectors): Detailing, plumbing up, bolting and connection safety",
+     "quote": "Detailing, plumbing up, bolting and connection safety",
+     "from": "my-fabric/holodeck/data.json#halls.steel-erectors.focus"
+    },
+    {
+     "text": "Hall focus (Port Crane Technicians): STS and RTG cranes, spreaders, ropes and drives",
+     "quote": "STS and RTG cranes, spreaders, ropes and drives",
+     "from": "my-fabric/holodeck/data.json#halls.port-crane.focus"
+    },
+    {
+     "text": "Hall focus (Millwrights): Precision alignment, machinery install and vibration",
+     "quote": "Precision alignment, machinery install and vibration",
+     "from": "my-fabric/holodeck/data.json#halls.millwrights.focus"
+    },
+    {
+     "text": "Hall focus (Ironworkers): Structural steel, rebar, rigging and connecting",
+     "quote": "Structural steel, rebar, rigging and connecting",
+     "from": "my-fabric/holodeck/data.json#halls.ironworkers.focus"
+    },
+    {
+     "text": "Hall focus (Metal Deck Installers): Layout, puddle welds, shear studs and edge form",
+     "quote": "Layout, puddle welds, shear studs and edge form",
+     "from": "my-fabric/holodeck/data.json#halls.decking.focus"
+    },
+    {
+     "text": "Hall focus (Tank Erectors): Field-erected storage, floating roofs and hydrotest",
+     "quote": "Field-erected storage, floating roofs and hydrotest",
+     "from": "my-fabric/holodeck/data.json#halls.tank-erectors.focus"
+    },
+    {
+     "text": "Hall focus (Piling Crews): Driven, bored, sheet piles, refusal and integrity",
+     "quote": "Driven, bored, sheet piles, refusal and integrity",
+     "from": "my-fabric/holodeck/data.json#halls.piling.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Signal hoist up.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Signal swing left.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Signal trolley out.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Signal hoist down.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Finish the lift with the stop signal.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.rigging-signals",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.rigging-signals].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:calls",
+      "axis": "calls",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "called signals given, in order",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:wrong",
+      "axis": "wrong",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "signals given out of turn",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first signal to stop",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:hand-signals",
+      "axis": "hand signals",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "the avatar issues the called signals as commands; a person gives them with their hands"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "swing, trolley, hoist stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Riggers & Signalpersons or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Signal hoist up.",
+      "instructor_checks": "every move stayed inside the limits; the hoist is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Signal swing left.",
+      "instructor_checks": "every move stayed inside the limits; the swing is at its marked setting"
+     },
+     {
+      "n": 4,
+      "do": "Signal trolley out.",
+      "instructor_checks": "every move stayed inside the limits; the trolley is at its marked setting"
+     },
+     {
+      "n": 5,
+      "do": "Signal hoist down.",
+      "instructor_checks": "every move stayed inside the limits; the hoist is at its marked setting; every signal the lift card called was given, in order"
+     },
+     {
+      "n": 6,
+      "do": "Finish the lift with the stop signal.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals].robot",
+    "run_id": "run.smartciti-holodeck.rigging-signals",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.rigging-signals]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#rigging-signals",
+    "agents/training/index.json#modules[id=smartciti-holodeck.rigging-signals]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.rigging-signals]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.rigging-signals]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.rigging-signals]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/load-chart",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Load Chart Judgment",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 07 · Load Chart Judgment",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.load-chart]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Load Chart Judgment\" step by step, the same steps on both tracks",
+     "quote": "Load Chart Judgment",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].title"
+    },
+    {
+     "text": "Skill: accept the pick - hook it",
+     "quote": "accept the pick - hook it",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.load-chart].skills[0]"
+    },
+    {
+     "text": "Skill: refuse the pick - over the chart",
+     "quote": "refuse the pick - over the chart",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.load-chart].skills[1]"
+    },
+    {
+     "text": "Skill: walk the chart rows",
+     "quote": "walk the chart rows",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.load-chart].skills[2]"
+    },
+    {
+     "text": "Hall focus (Crane Operators): Mobile, tower and overhead lifting operations",
+     "quote": "Mobile, tower and overhead lifting operations",
+     "from": "my-fabric/holodeck/data.json#halls.crane-ops.focus"
+    },
+    {
+     "text": "Hall focus (Riggers & Signalpersons): Load calculation, rigging hardware and signals",
+     "quote": "Load calculation, rigging hardware and signals",
+     "from": "my-fabric/holodeck/data.json#halls.riggers.focus"
+    },
+    {
+     "text": "Hall focus (Port Crane Technicians): STS and RTG cranes, spreaders, ropes and drives",
+     "quote": "STS and RTG cranes, spreaders, ropes and drives",
+     "from": "my-fabric/holodeck/data.json#halls.port-crane.focus"
+    },
+    {
+     "text": "Hall focus (Heavy Equipment Technicians): Diagnostics, hydraulics, drivetrain and field service",
+     "quote": "Diagnostics, hydraulics, drivetrain and field service",
+     "from": "my-fabric/holodeck/data.json#halls.heavy-equip.focus"
+    },
+    {
+     "text": "Hall focus (Operating Engineers): Earthmoving, lifting and heavy plant operation",
+     "quote": "Earthmoving, lifting and heavy plant operation",
+     "from": "my-fabric/holodeck/data.json#halls.operating-eng.focus"
+    },
+    {
+     "text": "Hall focus (Ironworkers): Structural steel, rebar, rigging and connecting",
+     "quote": "Structural steel, rebar, rigging and connecting",
+     "from": "my-fabric/holodeck/data.json#halls.ironworkers.focus"
+    },
+    {
+     "text": "Hall focus (Tank Erectors): Field-erected storage, floating roofs and hydrotest",
+     "quote": "Field-erected storage, floating roofs and hydrotest",
+     "from": "my-fabric/holodeck/data.json#halls.tank-erectors.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Pick 1 inside the chart: hook it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Set pick 1 down.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Pick 2 over the chart: refuse it - do not take it on, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Pick 3 inside the chart: hook it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.load-chart",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.load-chart].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:judgments",
+      "axis": "judgments",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "picks judged with the chart",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:overloads",
+      "axis": "overloads",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "overweight picks accepted",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first judgment to last",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "slew, radius, hook stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:load-chart-limiter",
+      "axis": "load chart limiter",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "a hook or carry past the chart line is refused",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Crane Operators or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Pick 1 inside the chart: hook it.",
+      "instructor_checks": "every move stayed inside the limits; the load is held"
+     },
+     {
+      "n": 3,
+      "do": "Set pick 1 down.",
+      "instructor_checks": "every move stayed inside the limits; the hook is released"
+     },
+     {
+      "n": 4,
+      "do": "Pick 2 over the chart: refuse it - do not take it on, and say why.",
+      "instructor_checks": "the pick was refused because it is over the chart line at its radius"
+     },
+     {
+      "n": 5,
+      "do": "Pick 3 inside the chart: hook it.",
+      "instructor_checks": "every move stayed inside the limits; the hook is released"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.load-chart].robot",
+    "run_id": "run.smartciti-holodeck.load-chart",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.load-chart]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#load-chart",
+    "agents/training/index.json#modules[id=smartciti-holodeck.load-chart]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.load-chart]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.load-chart]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.load-chart]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/pressure-washer",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Pressure Washer Surface Clean",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 08 · Pressure Washer Surface Clean",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.pressure-washer]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Pressure Washer Surface Clean\" step by step, the same steps on both tracks",
+     "quote": "Pressure Washer Surface Clean",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].title"
+    },
+    {
+     "text": "Skill: sweep the wand left / right across the panel",
+     "quote": "sweep the wand left / right across the panel",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.pressure-washer].skills[0]"
+    },
+    {
+     "text": "Skill: sweep the wand up / down across the panel",
+     "quote": "sweep the wand up / down across the panel",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.pressure-washer].skills[1]"
+    },
+    {
+     "text": "Skill: stand off farther / move closer to the surface",
+     "quote": "stand off farther / move closer to the surface",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.pressure-washer].skills[2]"
+    },
+    {
+     "text": "Skill: pull / release the spray trigger",
+     "quote": "pull / release the spray trigger",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.pressure-washer].skills[3]"
+    },
+    {
+     "text": "Hall focus (Painters & Allied Trades): Coatings, containment, industrial and decorative finish",
+     "quote": "Coatings, containment, industrial and decorative finish",
+     "from": "my-fabric/holodeck/data.json#halls.painters.focus"
+    },
+    {
+     "text": "Hall focus (Laborers): Site prep, materials, excavation support and cleanup",
+     "quote": "Site prep, materials, excavation support and cleanup",
+     "from": "my-fabric/holodeck/data.json#halls.laborers.focus"
+    },
+    {
+     "text": "Hall focus (Hazmat & Environmental): Containment, decon, monitoring and disposal",
+     "quote": "Containment, decon, monitoring and disposal",
+     "from": "my-fabric/holodeck/data.json#halls.hazmat.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Approach at working standoff.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Pull the trigger and sweep row 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Step up and sweep row 2.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Release and stand off.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.pressure-washer",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.pressure-washer].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:coverage",
+      "axis": "coverage",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "share of the panel surface cleaned (%)",
+      "pass": ">= 95",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:damage",
+      "axis": "damage",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "substrate gouges from spraying too close or lingering too long",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:containment",
+      "axis": "containment",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "containment berm or drain cover deployed before the first spray",
+      "pass": "required",
+      "reason": "deploying the berm (C) has no verb; it stays a human check before the first spray"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first spray to last clean cell",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "sweep_x, sweep_y, standoff stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Painters & Allied Trades or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Approach at working standoff.",
+      "instructor_checks": "the standoff is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Pull the trigger and sweep row 1.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 4,
+      "do": "Step up and sweep row 2.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 5,
+      "do": "Release and stand off.",
+      "instructor_checks": "the spray trigger is released; the standoff is at its marked setting"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Set the containment berm or drain cover before the first spray",
+      "quote": "containment berm or drain cover deployed before the first spray",
+      "from": "my-fabric/holodeck/sims.json#pressure-washer.rubric[axis=containment].measure",
+      "axis": "containment",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer].robot",
+    "run_id": "run.smartciti-holodeck.pressure-washer",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.pressure-washer]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#pressure-washer",
+    "agents/training/index.json#modules[id=smartciti-holodeck.pressure-washer]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.pressure-washer]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.pressure-washer]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.pressure-washer]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/airless-sprayer",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Airless Paint Sprayer Finish",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 09 · Airless Paint Sprayer Finish",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.airless-sprayer]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Airless Paint Sprayer Finish\" step by step, the same steps on both tracks",
+     "quote": "Airless Paint Sprayer Finish",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].title"
+    },
+    {
+     "text": "Skill: sweep the gun left / right across the panel",
+     "quote": "sweep the gun left / right across the panel",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.airless-sprayer].skills[0]"
+    },
+    {
+     "text": "Skill: sweep the gun up / down across the panel",
+     "quote": "sweep the gun up / down across the panel",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.airless-sprayer].skills[1]"
+    },
+    {
+     "text": "Skill: stand off farther / move closer to the surface",
+     "quote": "stand off farther / move closer to the surface",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.airless-sprayer].skills[2]"
+    },
+    {
+     "text": "Skill: pull / release the spray trigger",
+     "quote": "pull / release the spray trigger",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.airless-sprayer].skills[3]"
+    },
+    {
+     "text": "Hall focus (Painters & Allied Trades): Coatings, containment, industrial and decorative finish",
+     "quote": "Coatings, containment, industrial and decorative finish",
+     "from": "my-fabric/holodeck/data.json#halls.painters.focus"
+    },
+    {
+     "text": "Hall focus (Laborers): Site prep, materials, excavation support and cleanup",
+     "quote": "Site prep, materials, excavation support and cleanup",
+     "from": "my-fabric/holodeck/data.json#halls.laborers.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Approach at working standoff.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Pull the trigger and sweep row 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Step up and sweep row 2.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Release and stand off.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.airless-sprayer",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.airless-sprayer].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:coverage",
+      "axis": "coverage",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "share of the panel evenly coated (%)",
+      "pass": ">= 95",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:runs",
+      "axis": "runs",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "drips from spraying too close or too slow",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:holidays",
+      "axis": "holidays",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "missed spots left uncoated",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:overspray",
+      "axis": "overspray",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "spray drift past the masked boundary",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds first spray to last coated cell",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "sweep_x, sweep_y, standoff stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "1 keep-out zone checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Painters & Allied Trades or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Approach at working standoff.",
+      "instructor_checks": "the standoff is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Pull the trigger and sweep row 1.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 4,
+      "do": "Step up and sweep row 2.",
+      "instructor_checks": "every marked point was reached, in order; the work stayed inside the marked area while the spray trigger was engaged"
+     },
+     {
+      "n": 5,
+      "do": "Release and stand off.",
+      "instructor_checks": "the spray trigger is released; the standoff is at its marked setting"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer].robot",
+    "run_id": "run.smartciti-holodeck.airless-sprayer",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.airless-sprayer]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#airless-sprayer",
+    "agents/training/index.json#modules[id=smartciti-holodeck.airless-sprayer]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.airless-sprayer]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.airless-sprayer]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.airless-sprayer]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/boom-lift",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Boom Lift Basket Work",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 10 · Boom Lift Basket Work",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.boom-lift]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Boom Lift Basket Work\" step by step, the same steps on both tracks",
+     "quote": "Boom Lift Basket Work",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].title"
+    },
+    {
+     "text": "Skill: swing the turret",
+     "quote": "swing the turret",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.boom-lift].skills[0]"
+    },
+    {
+     "text": "Skill: extend / retract the boom",
+     "quote": "extend / retract the boom",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.boom-lift].skills[1]"
+    },
+    {
+     "text": "Skill: raise / lower the boom",
+     "quote": "raise / lower the boom",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.boom-lift].skills[2]"
+    },
+    {
+     "text": "Hall focus (Electrical Workers): Power, control, low-voltage and code compliance",
+     "quote": "Power, control, low-voltage and code compliance",
+     "from": "my-fabric/holodeck/data.json#halls.electricians.focus"
+    },
+    {
+     "text": "Hall focus (Glaziers): Curtain wall, storefront, glazing and sealants",
+     "quote": "Curtain wall, storefront, glazing and sealants",
+     "from": "my-fabric/holodeck/data.json#halls.glaziers.focus"
+    },
+    {
+     "text": "Hall focus (Architectural Glaziers): Structural silicone, blast glazing and heritage sash",
+     "quote": "Structural silicone, blast glazing and heritage sash",
+     "from": "my-fabric/holodeck/data.json#halls.window-glazing.focus"
+    },
+    {
+     "text": "Hall focus (Painters & Allied Trades): Coatings, containment, industrial and decorative finish",
+     "quote": "Coatings, containment, industrial and decorative finish",
+     "from": "my-fabric/holodeck/data.json#halls.painters.focus"
+    },
+    {
+     "text": "Hall focus (Ironworkers): Structural steel, rebar, rigging and connecting",
+     "quote": "Structural steel, rebar, rigging and connecting",
+     "from": "my-fabric/holodeck/data.json#halls.ironworkers.focus"
+    },
+    {
+     "text": "Hall focus (Steel Erectors): Detailing, plumbing up, bolting and connection safety",
+     "quote": "Detailing, plumbing up, bolting and connection safety",
+     "from": "my-fabric/holodeck/data.json#halls.steel-erectors.focus"
+    },
+    {
+     "text": "Hall focus (Sheet Metal Workers): Duct fabrication, architectural metal and balancing",
+     "quote": "Duct fabrication, architectural metal and balancing",
+     "from": "my-fabric/holodeck/data.json#halls.sheetmetal.focus"
+    },
+    {
+     "text": "Hall focus (Heat & Frost Insulators): Mechanical insulation, abatement and firestopping",
+     "quote": "Mechanical insulation, abatement and firestopping",
+     "from": "my-fabric/holodeck/data.json#halls.insulators.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Stowed.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Work point 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Work point 2.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Load moment check: the instructor calls for a move past the load moment limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Work point 3.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Back down and stow.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.boom-lift",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.boom-lift].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:reach",
+      "axis": "reach",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "marked work points the basket was brought to, within tolerance, in order",
+      "pass": "== all",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:envelope",
+      "axis": "envelope",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "load-moment envelope exceedances (outreach x platform load over the rated moment)",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:tie-off",
+      "axis": "tie-off",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "harness clipped before the basket left the ground",
+      "pass": "required",
+      "reason": "clipping the harness has no verb; a human check before the basket leaves the ground"
+     },
+     {
+      "id": "source:slope",
+      "axis": "slope",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "stabilizers set on the level pad before the first lift",
+      "pass": "required",
+      "reason": "setting the stabilizers has no verb; a human check before the first lift"
+     },
+     {
+      "id": "source:strikes",
+      "axis": "strikes",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "basket entries into the overhead-line exclusion zone",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds tie-off to stowed",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "turret, boom_extend, boom_raise stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "1 keep-out zone checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:load-moment-limiter",
+      "axis": "load moment limiter",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "outreach times platform load past the rated moment is refused",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Electrical Workers or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Stowed.",
+      "instructor_checks": "every control is back at its home position; the working end is below the marked height"
+     },
+     {
+      "n": 2,
+      "do": "Work point 1.",
+      "instructor_checks": "the working end is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Work point 2.",
+      "instructor_checks": "the working end is at the marked point"
+     },
+     {
+      "n": 4,
+      "do": "Load moment check: the instructor calls for a move past the load moment limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the move past the load moment was refused and nothing moved"
+     },
+     {
+      "n": 5,
+      "do": "Work point 3.",
+      "instructor_checks": "the working end is at the marked point; every marked point was reached, in order"
+     },
+     {
+      "n": 6,
+      "do": "Back down and stow.",
+      "instructor_checks": "every control is back at its home position; the working end is below the marked height"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Set the stabilizers on the level pad before the first lift",
+      "quote": "stabilizers set on the level pad before the first lift",
+      "from": "my-fabric/holodeck/sims.json#boom-lift.rubric[axis=slope].measure",
+      "axis": "slope",
+      "done_by": "the person; the instructor confirms it before the first move"
+     },
+     {
+      "check": "Clip your harness to the basket anchor before the basket leaves the ground",
+      "quote": "harness clipped before the basket left the ground",
+      "from": "my-fabric/holodeck/sims.json#boom-lift.rubric[axis=tie-off].measure",
+      "axis": "tie-off",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift].robot",
+    "run_id": "run.smartciti-holodeck.boom-lift",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.boom-lift]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#boom-lift",
+    "agents/training/index.json#modules[id=smartciti-holodeck.boom-lift]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.boom-lift]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.boom-lift]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.boom-lift]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/overhead-crane",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Overhead Crane Shop Move",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 11 · Overhead Crane Shop Move",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.overhead-crane]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Overhead Crane Shop Move\" step by step, the same steps on both tracks",
+     "quote": "Overhead Crane Shop Move",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].title"
+    },
+    {
+     "text": "Skill: travel the bridge",
+     "quote": "travel the bridge",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.overhead-crane].skills[0]"
+    },
+    {
+     "text": "Skill: traverse the trolley",
+     "quote": "traverse the trolley",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.overhead-crane].skills[1]"
+    },
+    {
+     "text": "Skill: hoist up / down",
+     "quote": "hoist up / down",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.overhead-crane].skills[2]"
+    },
+    {
+     "text": "Skill: hook / release the load",
+     "quote": "hook / release the load",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.overhead-crane].skills[3]"
+    },
+    {
+     "text": "Hall focus (Crane Operators): Mobile, tower and overhead lifting operations",
+     "quote": "Mobile, tower and overhead lifting operations",
+     "from": "my-fabric/holodeck/data.json#halls.crane-ops.focus"
+    },
+    {
+     "text": "Hall focus (Millwrights): Precision alignment, machinery install and vibration",
+     "quote": "Precision alignment, machinery install and vibration",
+     "from": "my-fabric/holodeck/data.json#halls.millwrights.focus"
+    },
+    {
+     "text": "Hall focus (Machinists): Turning, milling, CNC setup, metrology and fits",
+     "quote": "Turning, milling, CNC setup, metrology and fits",
+     "from": "my-fabric/holodeck/data.json#halls.machinists.focus"
+    },
+    {
+     "text": "Hall focus (Foundry Workers): Moulding, pouring, shakeout and heat treatment",
+     "quote": "Moulding, pouring, shakeout and heat treatment",
+     "from": "my-fabric/holodeck/data.json#halls.foundry.focus"
+    },
+    {
+     "text": "Hall focus (Boilermakers): Pressure vessels, tanks, tubes and code welding",
+     "quote": "Pressure vessels, tanks, tubes and code welding",
+     "from": "my-fabric/holodeck/data.json#halls.boilermakers.focus"
+    },
+    {
+     "text": "Hall focus (Riggers & Signalpersons): Load calculation, rigging hardware and signals",
+     "quote": "Load calculation, rigging hardware and signals",
+     "from": "my-fabric/holodeck/data.json#halls.riggers.focus"
+    },
+    {
+     "text": "Hall focus (Port Crane Technicians): STS and RTG cranes, spreaders, ropes and drives",
+     "quote": "STS and RTG cranes, spreaders, ropes and drives",
+     "from": "my-fabric/holodeck/data.json#halls.port-crane.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Hook the load.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Hoist to carry height.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Two block check: the instructor calls for a move past the two block limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Bridge then trolley around the aisle.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Set down inside the target square.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.overhead-crane",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.overhead-crane].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "source:placement",
+      "axis": "placement",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "distance from the target centre at set-down (m)",
+      "pass": "<= 0.5",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:sway",
+      "axis": "sway",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "peak load swing during travel (m)",
+      "pass": "<= 0.6",
+      "reason": "no load dynamics; the route is single-axis moves, as the rubric asks, but sway itself is not computed"
+     },
+     {
+      "id": "source:path",
+      "axis": "path",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "loaded passes over the pedestrian aisle or the workstation exclusion zone",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:limits",
+      "axis": "limits",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "hoist upper-limit (two-block) hits",
+      "pass": "== 0",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:clear",
+      "axis": "clear",
+      "status": "measured",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "measure": "load carried above every obstacle it crossed",
+      "pass": "required",
+      "verdict": "pass"
+     },
+     {
+      "id": "source:time",
+      "axis": "time",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "measure": "seconds hook to release",
+      "pass": "informational",
+      "reason": "informational in the source; the simulator has no clock"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "bridge, trolley, hoist stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:keep-out-zones",
+      "axis": "keep-out zones",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "3 keep-out zones checked on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:payload",
+      "axis": "payload",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "a grip over the rated payload is refused",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in your hall (Crane Operators or any paired hall)",
+     "Practise the module in the simulator before the instructor session",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Hook the load.",
+      "instructor_checks": "the load is held; the hook is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Hoist to carry height.",
+      "instructor_checks": "the hoist is at its marked setting; the hook is above the marked height"
+     },
+     {
+      "n": 4,
+      "do": "Two block check: the instructor calls for a move past the two block limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the over-limit move was refused and nothing moved"
+     },
+     {
+      "n": 5,
+      "do": "Bridge then trolley around the aisle.",
+      "instructor_checks": "every move stayed inside the limits; the hook is at the marked point"
+     },
+     {
+      "n": 6,
+      "do": "Set down inside the target square.",
+      "instructor_checks": "the hook is over the marked spot, inside the tolerance; the hook is released"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane].robot",
+    "run_id": "run.smartciti-holodeck.overhead-crane",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.overhead-crane]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/sims.json#overhead-crane",
+    "agents/training/index.json#modules[id=smartciti-holodeck.overhead-crane]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.overhead-crane]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.overhead-crane]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.overhead-crane]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-robotics",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Industrial Robotics Techs",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 12 · Industrial Robotics Techs",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-robotics]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Industrial Robotics Techs\" step by step, the same steps on both tracks",
+     "quote": "Industrial Robotics Techs",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].title"
+    },
+    {
+     "text": "Skill: Cells",
+     "quote": "Cells",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-robotics].skills[0]"
+    },
+    {
+     "text": "Skill: teach pendants",
+     "quote": "teach pendants",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-robotics].skills[1]"
+    },
+    {
+     "text": "Skill: safeguarding",
+     "quote": "safeguarding",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-robotics].skills[2]"
+    },
+    {
+     "text": "Skill: payload",
+     "quote": "payload",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-robotics].skills[3]"
+    },
+    {
+     "text": "Hall focus (Industrial Robotics Techs): Cells, teach pendants, safeguarding and payload",
+     "quote": "Cells, teach pendants, safeguarding and payload",
+     "from": "my-fabric/holodeck/data.json#halls.robotics.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Teach pendant jog the base.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Reach the taught pick point.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Grip a part inside the payload.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Payload check: the instructor calls for a move past the payload limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Safeguarding: apply the stop - it latches the cell; only the instructor resets it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-robotics",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-robotics].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:cells",
+      "axis": "Cells",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"Cells\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:teach-pendants",
+      "axis": "teach pendants",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"teach pendants\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:safeguarding",
+      "axis": "safeguarding",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"safeguarding\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:payload",
+      "axis": "payload",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"payload\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:pre-check-safeguarding",
+      "axis": "pre-check: safeguarding",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "base, shoulder, elbow stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:payload",
+      "axis": "payload",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "a grip over the rated payload is refused",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Industrial Robotics Techs hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Teach pendant jog the base.",
+      "instructor_checks": "the base is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Reach the taught pick point.",
+      "instructor_checks": "the gripper is at the marked point"
+     },
+     {
+      "n": 4,
+      "do": "Grip a part inside the payload.",
+      "instructor_checks": "the load is held"
+     },
+     {
+      "n": 5,
+      "do": "Payload check: the instructor calls for a move past the payload limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the grip over the rated payload was refused and nothing moved; the gripper is released"
+     },
+     {
+      "n": 6,
+      "do": "Safeguarding: apply the stop - it latches the cell; only the instructor resets it.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it; the move after the stop was refused and nothing moved"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Confirm the cell safeguarding is in place before jogging the arm",
+      "quote": "safeguarding",
+      "from": "my-fabric/holodeck/data.json#halls.robotics.focus",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics].robot",
+    "run_id": "run.smartciti-holodeck.hall-robotics",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-robotics]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.robotics",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-robotics]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-robotics]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-robotics]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-robotics]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-plc-techs",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "PLC & Controls Technicians",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 13 · PLC & Controls Technicians",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-plc-techs]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"PLC & Controls Technicians\" step by step, the same steps on both tracks",
+     "quote": "PLC & Controls Technicians",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].title"
+    },
+    {
+     "text": "Skill: safety relays",
+     "quote": "safety relays",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-plc-techs].skills[0]"
+    },
+    {
+     "text": "Skill: commissioning",
+     "quote": "commissioning",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-plc-techs].skills[1]"
+    },
+    {
+     "text": "Hall focus (PLC & Controls Technicians): Ladder logic, I/O, safety relays and commissioning",
+     "quote": "Ladder logic, I/O, safety relays and commissioning",
+     "from": "my-fabric/holodeck/data.json#halls.plc-techs.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Commission home the axes.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Commission base to its upper limit.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Commission past the limit: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Commission return home.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Safety relay: apply the stop - it latches; only the instructor resets it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-plc-techs",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-plc-techs].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:safety-relays",
+      "axis": "safety relays",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"safety relays\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:commissioning",
+      "axis": "commissioning",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"commissioning\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:ladder-logic-i-o",
+      "axis": "Ladder logic, I/O",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "no verb reads or writes I/O; the simulator drives axes only"
+     },
+     {
+      "id": "person:pre-check-safety-relays",
+      "axis": "pre-check: safety relays",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "base, shoulder, elbow stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the PLC & Controls Technicians hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Commission home the axes.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Commission base to its upper limit.",
+      "instructor_checks": "the base is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Commission past the limit: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the over-limit move was refused and nothing moved; the base is at its marked setting"
+     },
+     {
+      "n": 4,
+      "do": "Commission return home.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 5,
+      "do": "Safety relay: apply the stop - it latches; only the instructor resets it.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it; the move after the stop was refused and nothing moved"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Confirm the safety relays before commissioning any axis",
+      "quote": "safety relays",
+      "from": "my-fabric/holodeck/data.json#halls.plc-techs.focus",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs].robot",
+    "run_id": "run.smartciti-holodeck.hall-plc-techs",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-plc-techs]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.plc-techs",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-plc-techs]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-plc-techs]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-plc-techs]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-plc-techs]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-survey-drone",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Aerial Survey Operators",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 14 · Aerial Survey Operators",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-survey-drone]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Aerial Survey Operators\" step by step, the same steps on both tracks",
+     "quote": "Aerial Survey Operators",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].title"
+    },
+    {
+     "text": "Skill: Flight planning",
+     "quote": "Flight planning",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-survey-drone].skills[0]"
+    },
+    {
+     "text": "Skill: airspace",
+     "quote": "airspace",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-survey-drone].skills[1]"
+    },
+    {
+     "text": "Skill: accuracy",
+     "quote": "accuracy",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-survey-drone].skills[2]"
+    },
+    {
+     "text": "Hall focus (Aerial Survey Operators): Flight planning, photogrammetry, airspace and accuracy",
+     "quote": "Flight planning, photogrammetry, airspace and accuracy",
+     "from": "my-fabric/holodeck/data.json#halls.survey-drone.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "On the pad.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Climb to survey altitude.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Fly survey line 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Fly survey lines 2 and 3.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Airspace check: the instructor calls for a move past the airspace limit (above the ceiling); recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=5]"
+    },
+    {
+     "n": 6,
+     "do": "Return to the pad.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human.steps[n=6]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-survey-drone",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-survey-drone].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:flight-planning",
+      "axis": "Flight planning",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"Flight planning\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:airspace",
+      "axis": "airspace",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"airspace\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:accuracy",
+      "axis": "accuracy",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"accuracy\"; the run exercises it only through the module's step checks (6 of 6 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:photogrammetry",
+      "axis": "photogrammetry",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "no camera verb; the simulator flies the plan, it does not capture images"
+     },
+     {
+      "id": "person:pre-check-airspace",
+      "axis": "pre-check: airspace",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "east, altitude, north stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Aerial Survey Operators hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "On the pad.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Climb to survey altitude.",
+      "instructor_checks": "the altitude is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Fly survey line 1.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 4,
+      "do": "Fly survey lines 2 and 3.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 5,
+      "do": "Airspace check: the instructor calls for a move past the airspace limit (above the ceiling); recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the over-limit move was refused and nothing moved"
+     },
+     {
+      "n": 6,
+      "do": "Return to the pad.",
+      "instructor_checks": "every control is back at its home position"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Confirm the airspace before the flight",
+      "quote": "airspace",
+      "from": "my-fabric/holodeck/data.json#halls.survey-drone.focus",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone].robot",
+    "run_id": "run.smartciti-holodeck.hall-survey-drone",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-survey-drone]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 6,
+    "total": 6,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.survey-drone",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-survey-drone]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-survey-drone]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-survey-drone]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-survey-drone]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-port-crane",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Port Crane Technicians",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 15 · Port Crane Technicians",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-port-crane]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Port Crane Technicians\" step by step, the same steps on both tracks",
+     "quote": "Port Crane Technicians",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].title"
+    },
+    {
+     "text": "Skill: STS and RTG cranes",
+     "quote": "STS and RTG cranes",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-port-crane].skills[0]"
+    },
+    {
+     "text": "Skill: spreaders",
+     "quote": "spreaders",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-port-crane].skills[1]"
+    },
+    {
+     "text": "Hall focus (Port Crane Technicians): STS and RTG cranes, spreaders, ropes and drives",
+     "quote": "STS and RTG cranes, spreaders, ropes and drives",
+     "from": "my-fabric/holodeck/data.json#halls.port-crane.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Spreader over the container.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Lock the spreader.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Hoist trolley and gantry.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Land and unlock.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-port-crane",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-port-crane].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:sts-and-rtg-cranes",
+      "axis": "STS and RTG cranes",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"STS and RTG cranes\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:spreaders",
+      "axis": "spreaders",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"spreaders\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:ropes-and-drives",
+      "axis": "ropes and drives",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "the simulator is kinematic; rope stretch and drive behaviour are not modelled"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "gantry, trolley, hoist stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:payload",
+      "axis": "payload",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "a grip over the rated payload is refused",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Port Crane Technicians hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Spreader over the container.",
+      "instructor_checks": "the spreader is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Lock the spreader.",
+      "instructor_checks": "the load is held"
+     },
+     {
+      "n": 4,
+      "do": "Hoist trolley and gantry.",
+      "instructor_checks": "every move stayed inside the limits; the spreader is at the marked point"
+     },
+     {
+      "n": 5,
+      "do": "Land and unlock.",
+      "instructor_checks": "the spreader is at the marked point; the spreader is released"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane].robot",
+    "run_id": "run.smartciti-holodeck.hall-port-crane",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-port-crane]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.port-crane",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-port-crane]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-port-crane]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-port-crane]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-port-crane]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-machinists",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Machinists",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 16 · Machinists",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-machinists]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Machinists\" step by step, the same steps on both tracks",
+     "quote": "Machinists",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].title"
+    },
+    {
+     "text": "Skill: CNC setup",
+     "quote": "CNC setup",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-machinists].skills[0]"
+    },
+    {
+     "text": "Skill: metrology",
+     "quote": "metrology",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-machinists].skills[1]"
+    },
+    {
+     "text": "Hall focus (Machinists): Turning, milling, CNC setup, metrology and fits",
+     "quote": "Turning, milling, CNC setup, metrology and fits",
+     "from": "my-fabric/holodeck/data.json#halls.machinists.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Machine home.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Setup move to the work offset.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Metrology touch off three points.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Soft limit check: the instructor calls for a move past the soft limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Return to machine home.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-machinists",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-machinists].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:cnc-setup",
+      "axis": "CNC setup",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"CNC setup\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:metrology",
+      "axis": "metrology",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"metrology\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:turning-milling-fits",
+      "axis": "Turning, milling, fits",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "no spindle or cutting verb; the simulator moves the slides only"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "X, Y, Z stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Machinists hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Machine home.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Setup move to the work offset.",
+      "instructor_checks": "the working end is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Metrology touch off three points.",
+      "instructor_checks": "every marked point was reached, in order"
+     },
+     {
+      "n": 4,
+      "do": "Soft limit check: the instructor calls for a move past the soft limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the over-limit move was refused and nothing moved"
+     },
+     {
+      "n": 5,
+      "do": "Return to machine home.",
+      "instructor_checks": "every control is back at its home position"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists].robot",
+    "run_id": "run.smartciti-holodeck.hall-machinists",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-machinists]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.machinists",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-machinists]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-machinists]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-machinists]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-machinists]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-elevator",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Elevator Constructors",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 17 · Elevator Constructors",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-elevator]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Elevator Constructors\" step by step, the same steps on both tracks",
+     "quote": "Elevator Constructors",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].title"
+    },
+    {
+     "text": "Skill: controls and testing",
+     "quote": "controls and testing",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-elevator].skills[0]"
+    },
+    {
+     "text": "Hall focus (Elevator Constructors): Traction and hydraulic install, controls and testing",
+     "quote": "Traction and hydraulic install, controls and testing",
+     "from": "my-fabric/holodeck/data.json#halls.elevator.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Car at the bottom landing.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Run to landing 3.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Run to the top landing.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Overtravel check: the instructor calls for a move past the overtravel limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Apply the stop - it latches the car; only the instructor resets it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-elevator",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-elevator].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:controls-and-testing",
+      "axis": "controls and testing",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"controls and testing\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:traction-and-hydraulic-install",
+      "axis": "Traction and hydraulic install",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "installation work has no verb; the simulator runs the car only"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "car stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Elevator Constructors hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Car at the bottom landing.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Run to landing 3.",
+      "instructor_checks": "the car is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Run to the top landing.",
+      "instructor_checks": "the car is at its marked setting"
+     },
+     {
+      "n": 4,
+      "do": "Overtravel check: the instructor calls for a move past the overtravel limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the over-limit move was refused and nothing moved; the car is at its marked setting"
+     },
+     {
+      "n": 5,
+      "do": "Apply the stop - it latches the car; only the instructor resets it.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it; the move after the stop was refused and nothing moved"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator].robot",
+    "run_id": "run.smartciti-holodeck.hall-elevator",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-elevator]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.elevator",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-elevator]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-elevator]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-elevator]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-elevator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:smartciti-holodeck/module/hall-concrete-pump",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "Concrete Pump Operators",
+   "world": "smartciti-holodeck",
+   "zone": "Robotics & Apprenticeship Wing",
+   "room": {
+    "kind": "wing bay",
+    "sign": "Bay 18 · Concrete Pump Operators",
+    "room_model": null,
+    "interior": null,
+    "from": "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-concrete-pump]"
+   },
+   "objectives": [
+    {
+     "text": "Run \"Concrete Pump Operators\" step by step, the same steps on both tracks",
+     "quote": "Concrete Pump Operators",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].title"
+    },
+    {
+     "text": "Skill: Boom setup",
+     "quote": "Boom setup",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].skills[0]"
+    },
+    {
+     "text": "Skill: line safety",
+     "quote": "line safety",
+     "from": "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].skills[1]"
+    },
+    {
+     "text": "Hall focus (Concrete Pump Operators): Boom setup, ground bearing, line safety and cleanout",
+     "quote": "Boom setup, ground bearing, line safety and cleanout",
+     "from": "my-fabric/holodeck/data.json#halls.concrete-pump.focus"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Boom folded.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Boom setup raise section 1.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Tip over the pour hose hanging vertical.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Reach check: the instructor calls for a move past the reach limit; recognise it and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Line safety: apply the stop - it latches the boom; only the instructor resets it.",
+     "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "smartciti-holodeck.hall-concrete-pump",
+    "from": "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:boom-setup",
+      "axis": "Boom setup",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"Boom setup\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:line-safety",
+      "axis": "line safety",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"line safety\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:ground-bearing-cleanout",
+      "axis": "ground bearing, cleanout",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "no verb; outrigger ground checks and line cleanout stay human tasks"
+     },
+     {
+      "id": "person:pre-check-ground-bearing",
+      "axis": "pre-check: ground bearing",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:pre-check-line-safety",
+      "axis": "pre-check: line safety",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "a person checks it before the first move; the robot run has no verb for it"
+     },
+     {
+      "id": "person:communication",
+      "axis": "communication",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "crew communication is taught in the hall's coordination room; the robot run has no crew"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "section_1, section_2, section_3 stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].human",
+    "prerequisites": [
+     "Complete the Induction & PPE room in the Concrete Pump Operators hall",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Boom folded.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Boom setup raise section 1.",
+      "instructor_checks": "the section 1 is at its marked setting"
+     },
+     {
+      "n": 3,
+      "do": "Tip over the pour hose hanging vertical.",
+      "instructor_checks": "the working end is at the marked point"
+     },
+     {
+      "n": 4,
+      "do": "Reach check: the instructor calls for a move past the reach limit; recognise it and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "the move past the reach was refused and nothing moved"
+     },
+     {
+      "n": 5,
+      "do": "Line safety: apply the stop - it latches the boom; only the instructor resets it.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it; the move after the stop was refused and nothing moved"
+     }
+    ],
+    "safety_prechecks": [
+     {
+      "check": "Check ground bearing before the boom is set up",
+      "quote": "ground bearing",
+      "from": "my-fabric/holodeck/data.json#halls.concrete-pump.focus",
+      "done_by": "the person; the instructor confirms it before the first move"
+     },
+     {
+      "check": "Confirm line safety before the pour",
+      "quote": "line safety",
+      "from": "my-fabric/holodeck/data.json#halls.concrete-pump.focus",
+      "done_by": "the person; the instructor confirms it before the first move"
+     }
+    ],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the smartciti-holodeck agent avatar",
+    "from": "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump].robot",
+    "run_id": "run.smartciti-holodeck.hall-concrete-pump",
+    "run_from": "agents/robotics/index.json#runs[id=run.smartciti-holodeck.hall-concrete-pump]",
+    "robotics_avatar": {
+     "agent": "Operator",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [],
+   "sources": [
+    "my-fabric/holodeck/data.json#halls.concrete-pump",
+    "agents/training/index.json#modules[id=smartciti-holodeck.hall-concrete-pump]",
+    "agents/robotics/index.json#modules[id=smartciti-holodeck.hall-concrete-pump]",
+    "agents/rubrics/index.json#modules[id=smartciti-holodeck.hall-concrete-pump]",
+    "my-fabric/holodeck/wing.json#bays[module=smartciti-holodeck.hall-concrete-pump]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [],
+ "gaps": [
+  "smartciti-holodeck has no worldforge avatar world (worldforge/out/avatars/index.json lists 41 worlds, not this one): its 18 module lessons are drafted with delivered_by [] until a world seats an avatar for them",
+  "robotics avatars named for smartciti-holodeck (Operator, Inspector) come from SmartCiti.X Trade Craft pack 3.2.0: agents/registry/advisors.json (scripted advisors): scripted advisors of the Trade Craft pack, not worldforge avatars, so none may deliver a model-taught lesson",
+  "Academy halls (111 in my-fabric/holodeck/data.json) appear only as the paired halls' focus lines inside module lessons; halls with no module have no lesson"
+ ]
+}

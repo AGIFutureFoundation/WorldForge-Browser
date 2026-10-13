@@ -1,0 +1,1896 @@
+{
+ "schemaVersion": "worldforge-sneeze-mount-plan/0.1",
+ "engine": "Sneeze",
+ "bindingStatus": "decoder-available-not-mounted",
+ "bindingNote": "worldforge/native/rmcobject_decoder.* encodes these nodes against Sneeze headers (Y-up -> Z-up conversion in the decoder); nothing is mounted or rendered yet",
+ "rp1": {
+  "nameRule": "ASCII, <= 47 bytes (displayName); UTF-8 label in extras.label",
+  "bound": "d3Max = half-extents in metres from the card Volum or primitive size"
+ },
+ "rootCardId": "world:empathic-x",
+ "mountParent": "SCENE::Fabric_Root()->Node_Root()",
+ "resourceCachePolicy": "shared-by-exact-sReference-URL",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "assets": [
+  {
+   "url": "http://127.0.0.1:8789/unit-cube.glb",
+   "localPath": "worldforge/out/assets/unit-cube.glb",
+   "sha256": "66af9d7110fb7ca21d5323ed5c3261747a282e8378290911ce4064152f99e735",
+   "role": "shared-generic-unit-cube"
+  }
+ ],
+ "previewGlb": {
+  "path": "worldforge/out/empathic-x/empathic-x.glb",
+  "sha256": "827add7f06e7303e28e74d146b82b48e4e13ba66ffde5eaf21cb75a881674242"
+ },
+ "nodes": [
+  {
+   "cardId": "world:empathic-x",
+   "displayName": "Empathic.X - Powered by AGI Corp",
+   "parentCardId": null,
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     150,
+     40,
+     150
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "world",
+    "label": "Empathic.X · Powered by AGI Corp",
+    "source": "my-fabric/worlds/index.json"
+   }
+  },
+  {
+   "cardId": "plaza:empathic-x",
+   "displayName": "Empathic.X Plaza - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     24,
+     5,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "plaza",
+    "label": "Empathic.X Plaza · Powered by AGI Corp",
+    "source": "README.md (shared PBC management model)"
+   }
+  },
+  {
+   "cardId": "coordinator:empathic-x",
+   "displayName": "Empathic.X Coordinator - Powered by AGI Corp",
+   "parentCardId": "plaza:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "coordinator",
+    "label": "Empathic.X Coordinator · Powered by AGI Corp",
+    "source": "agents/swarms/empathic-x.json#coordinator"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/host",
+   "displayName": "Host Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Host Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/empathic-x.json#advisors[id=host]"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/steward",
+   "displayName": "Steward Liaison - Powered by AGI Corp",
+   "parentCardId": "plaza:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Steward Liaison · Powered by AGI Corp",
+    "source": "agents/advisors/empathic-x.json#advisors[id=steward]"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/alignment",
+   "displayName": "Alignment Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Alignment Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/empathic-x.json#advisors[id=alignment]"
+   }
+  },
+  {
+   "cardId": "gate:empathic-x",
+   "displayName": "Alignment Evaluation Gate - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     10,
+     6,
+     3
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "gate",
+    "label": "Alignment Evaluation Gate · Powered by AGI Corp",
+    "source": "worlds/PBC.json#programs"
+   }
+  },
+  {
+   "cardId": "council:empathic-x",
+   "displayName": "Steward Council - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     14,
+     6,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "council",
+    "label": "Steward Council · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-1",
+   "displayName": "Steward Seat 1 - Powered by AGI Corp",
+   "parentCardId": "council:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 1 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-2",
+   "displayName": "Steward Seat 2 - Powered by AGI Corp",
+   "parentCardId": "council:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 2 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-3",
+   "displayName": "Steward Seat 3 - Powered by AGI Corp",
+   "parentCardId": "council:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 3 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "omega:empathic-x",
+   "displayName": "Omega Steward - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     26,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "omega",
+    "label": "Omega Steward · Powered by AGI Corp",
+    "source": "agents/advisory/omega_agents.json"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/self-reader-grove",
+   "displayName": "Self-Reader Grove - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Self-Reader Grove · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/self-reader-guide",
+   "displayName": "Self-Reader Guide - Powered by AGI Corp",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -3.53,
+     0,
+     4.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Self-Reader Guide · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/other-reader-commons",
+   "displayName": "Other-Reader Commons - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Other-Reader Commons · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/other-reader-guide",
+   "displayName": "Other-Reader Guide - Powered by AGI Corp",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.7,
+     0,
+     -1.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Other-Reader Guide · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/repairer-s-hall",
+   "displayName": "Repairer's Hall - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -90
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Repairer's Hall · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/repair-guide",
+   "displayName": "Repair Guide - Powered by AGI Corp",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -6
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Repair Guide · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/room-reader-plaza",
+   "displayName": "Room-Reader Plaza - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Room-Reader Plaza · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/room-reader-guide",
+   "displayName": "Room-Reader Guide - Powered by AGI Corp",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     5.7,
+     0,
+     -1.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Room-Reader Guide · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/practitioner-workshop",
+   "displayName": "Practitioner Workshop - Powered by AGI Corp",
+   "parentCardId": "world:empathic-x",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Practitioner Workshop · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/practitioner-guide",
+   "displayName": "Practitioner Guide - Powered by AGI Corp",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     3.53,
+     0,
+     4.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Practitioner Guide · Powered by AGI Corp",
+    "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+   }
+  },
+  {
+   "cardId": "plaza:empathic-x/floor",
+   "displayName": "plaza:empathic-x/floor",
+   "parentCardId": "plaza:empathic-x",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     24,
+     0.2,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     48,
+     0.4,
+     48
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "pad",
+    "massingType": "plaza",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "coordinator:empathic-x/avatar",
+   "displayName": "coordinator:empathic-x/avatar",
+   "parentCardId": "coordinator:empathic-x",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/host/avatar",
+   "displayName": "advisor:empathic-x/host/avatar",
+   "parentCardId": "advisor:empathic-x/host",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/steward/avatar",
+   "displayName": "advisor:empathic-x/steward/avatar",
+   "parentCardId": "advisor:empathic-x/steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:empathic-x/alignment/avatar",
+   "displayName": "advisor:empathic-x/alignment/avatar",
+   "parentCardId": "advisor:empathic-x/alignment",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "gate:empathic-x/arch",
+   "displayName": "gate:empathic-x/arch",
+   "parentCardId": "gate:empathic-x",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     8,
+     5,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     16,
+     10,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "arch",
+    "massingType": "gate",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "council:empathic-x/chamber",
+   "displayName": "council:empathic-x/chamber",
+   "parentCardId": "council:empathic-x",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     14,
+     4,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     28,
+     8,
+     20
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "box",
+    "massingType": "council",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-1/chair",
+   "displayName": "seat:empathic-x/steward-1/chair",
+   "parentCardId": "seat:empathic-x/steward-1",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:empathic-x",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-2/chair",
+   "displayName": "seat:empathic-x/steward-2/chair",
+   "parentCardId": "seat:empathic-x/steward-2",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:empathic-x",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:empathic-x/steward-3/chair",
+   "displayName": "seat:empathic-x/steward-3/chair",
+   "parentCardId": "seat:empathic-x/steward-3",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:empathic-x",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "omega:empathic-x/avatar",
+   "displayName": "omega:empathic-x/avatar",
+   "parentCardId": "omega:empathic-x",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.6,
+     1.1,
+     0.6
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1.2,
+     2.2,
+     1.2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/self-reader-grove/pad",
+   "displayName": "zone:empathic-x/self-reader-grove/pad",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/self-reader-grove",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/self-reader-grove/hall",
+   "displayName": "zone:empathic-x/self-reader-grove/hall",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     4.7,
+     8.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/self-reader-grove",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/self-reader-guide/avatar",
+   "displayName": "agent:empathic-x/self-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/self-reader-guide",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/self-reader-grove",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/other-reader-commons/pad",
+   "displayName": "zone:empathic-x/other-reader-commons/pad",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/other-reader-commons",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/other-reader-commons/hall",
+   "displayName": "zone:empathic-x/other-reader-commons/hall",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     7.61,
+     8.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/other-reader-commons",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/other-reader-guide/avatar",
+   "displayName": "agent:empathic-x/other-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/other-reader-guide",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/other-reader-commons",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/repairer-s-hall/pad",
+   "displayName": "zone:empathic-x/repairer-s-hall/pad",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/repairer-s-hall",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/repairer-s-hall/hall",
+   "displayName": "zone:empathic-x/repairer-s-hall/hall",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     8.4,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/repairer-s-hall",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/repair-guide/avatar",
+   "displayName": "agent:empathic-x/repair-guide/avatar",
+   "parentCardId": "agent:empathic-x/repair-guide",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/repairer-s-hall",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/room-reader-plaza/pad",
+   "displayName": "zone:empathic-x/room-reader-plaza/pad",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/room-reader-plaza",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/room-reader-plaza/hall",
+   "displayName": "zone:empathic-x/room-reader-plaza/hall",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -7.61,
+     8.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/room-reader-plaza",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/room-reader-guide/avatar",
+   "displayName": "agent:empathic-x/room-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/room-reader-guide",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/room-reader-plaza",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/practitioner-workshop/pad",
+   "displayName": "zone:empathic-x/practitioner-workshop/pad",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/practitioner-workshop",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:empathic-x/practitioner-workshop/hall",
+   "displayName": "zone:empathic-x/practitioner-workshop/hall",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4.7,
+     8.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/practitioner-workshop",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:empathic-x/practitioner-guide/avatar",
+   "displayName": "agent:empathic-x/practitioner-guide/avatar",
+   "parentCardId": "agent:empathic-x/practitioner-guide",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:empathic-x/practitioner-workshop",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  }
+ ],
+ "acceptanceRequirements": [
+  "Parent nodes must be created before child nodes",
+  "Each returned native handle must resolve via CONTAINER::Node_Find",
+  "Every resource-bearing NODE must eventually expose Gltf_Render_Model()!=nullptr",
+  "Timeout/fetch/parse failure must fail the load",
+  "Scene mutations must use the engine's safe lifecycle/thread boundary"
+ ]
+}

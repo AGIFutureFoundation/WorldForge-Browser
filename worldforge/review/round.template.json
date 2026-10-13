@@ -1,0 +1,14 @@
+{
+  "_note": "Template for worldforge/review/round.json. The lead copies this to round.json each round and fills every field; build_review.py refuses a round file without n/date/window/headline and the four lists. Drop 'placeholder' (or set it false) once the fields are real.",
+  "placeholder": false,
+  "n": 2,
+  "date": "YYYY-MM-DD",
+  "window": "HH:MM-HH:MM local",
+  "headline": "One line: what this round changed",
+  "landed": ["Up to 6 lines are shown in the film; all of them on the whitepaper's Review slide"],
+  "doing": ["In progress now"],
+  "next": ["Up to 4 lines are shown in the film"],
+  "gates": ["A plain string", {"name": "1.4 rendered frame", "status": "open"}],
+  "worlds": ["locator-x", "cancer-dao", "s29-metaverse-dao"],
+  "modes": ["flyin", "building", "omega", "orbit"]
+}

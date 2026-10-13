@@ -1,0 +1,2806 @@
+{
+ "schemaVersion": "glewme-master-cards/0.1",
+ "world": "locator-x",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "rights": [
+  "view",
+  "enter",
+  "build",
+  "operate",
+  "delegate",
+  "transfer",
+  "govern"
+ ],
+ "principle": "Agents operate; people govern.",
+ "cards": [
+  {
+   "cardId": "world:locator-x",
+   "kind": "world",
+   "parentCardId": null,
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Locator.X · Powered by AGI Corp",
+   "name": "Locator.X",
+   "tagline": "Real-estate development and investment predictive tooling, plus the Academy that teaches it",
+   "status": "coming soon",
+   "management_style": "Agent-managed DAO",
+   "anchor": {
+    "lat": 21.09705311564314,
+    "lon": 142.69254864512746,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=21.09705311564314&lon=142.69254864512746&rad=6371000"
+   },
+   "omega_steward": {
+    "id": "omega.locator-x",
+    "status": "defined, not seated",
+    "seated_agent": null,
+    "source": "agents/advisory/omega_agents.json"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     40,
+     0
+    ],
+    "halfExtents": [
+     156,
+     40,
+     156
+    ]
+   },
+   "source": "my-fabric/worlds/index.json"
+  },
+  {
+   "cardId": "plaza:locator-x",
+   "kind": "plaza",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Locator.X Plaza · Powered by AGI Corp",
+   "purpose": "the shared round plaza every world opens onto",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     5,
+     0
+    ],
+    "halfExtents": [
+     24,
+     5,
+     24
+    ]
+   },
+   "source": "README.md (shared PBC management model)"
+  },
+  {
+   "cardId": "coordinator:locator-x",
+   "kind": "coordinator",
+   "parentCardId": "plaza:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Locator.X Coordinator · Powered by AGI Corp",
+   "name": "Locator.X Coordinator",
+   "role": "swarm coordinator (hub-hybrid: coordinator supervises, specialists hand off swarm-style): routes turns, answers unroutable ones, hands off to specialists",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "coordinator",
+    "model_ref": "worldforge/out/assets/avatars/coordinator.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.coordinator",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Locator.X Coordinator"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     8
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/swarms/locator-x.json#coordinator"
+  },
+  {
+   "cardId": "advisor:locator-x/host",
+   "kind": "advisor",
+   "parentCardId": "plaza:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Host Advisor · Powered by AGI Corp",
+   "name": "Host Advisor",
+   "manages": "welcoming visitors and pointing them to the right zone",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "host",
+    "model_ref": "worldforge/out/assets/avatars/host.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/locator-x.json#advisors[id=host]"
+  },
+  {
+   "cardId": "advisor:locator-x/steward",
+   "kind": "advisor",
+   "parentCardId": "plaza:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Liaison · Powered by AGI Corp",
+   "name": "Steward Liaison",
+   "manages": "connecting visitors and agents to the human stewards",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "liaison",
+    "model_ref": "worldforge/out/assets/avatars/liaison.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -14
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/locator-x.json#advisors[id=steward]"
+  },
+  {
+   "cardId": "advisor:locator-x/alignment",
+   "kind": "advisor",
+   "parentCardId": "plaza:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Advisor · Powered by AGI Corp",
+   "name": "Alignment Advisor",
+   "manages": "the Alignment Evaluation Gate and the agents' limits",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "alignment",
+    "model_ref": "worldforge/out/assets/avatars/alignment.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/locator-x.json#advisors[id=alignment]"
+  },
+  {
+   "cardId": "gate:locator-x",
+   "kind": "gate",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Evaluation Gate · Powered by AGI Corp",
+   "purpose": "Pre-registered safety evaluation before deployment",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     136
+    ],
+    "halfExtents": [
+     10,
+     6,
+     3
+    ]
+   },
+   "source": "worlds/PBC.json#programs"
+  },
+  {
+   "cardId": "council:locator-x",
+   "kind": "council",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Council · Powered by AGI Corp",
+   "name": "Steward Council",
+   "purpose": "Human stewards: oversight, values alignment and final governance",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     -136
+    ],
+    "halfExtents": [
+     14,
+     6,
+     10
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-7.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Steward Council",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   }
+  },
+  {
+   "cardId": "seat:locator-x/steward-1",
+   "kind": "seat",
+   "parentCardId": "council:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 1 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     -6,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:locator-x/steward-2",
+   "kind": "seat",
+   "parentCardId": "council:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 2 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:locator-x/steward-3",
+   "kind": "seat",
+   "parentCardId": "council:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 3 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     6,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "omega:locator-x",
+   "kind": "omega",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Omega Steward · Powered by AGI Corp",
+   "name": "Omega Steward · Locator.X",
+   "omega_id": "omega.locator-x",
+   "status": "defined, not seated",
+   "seated_agent": null,
+   "persona": {
+    "temperament": "attentive and concrete about its tagline: Real-estate development and investment predictive tooling, plus the Academy that teaches it",
+    "style": "short, plain sentences; names its zones (Master Dashboard, Underwriting Desk, Evidence Layer), cites the record it reads, and always says who decides (the stewards, 2 of 3 signed votes)",
+    "values": [
+     "people decide: Agent-managed DAO, human-governed",
+     "stewards decide by 2 of 3 signed votes",
+     "report probe scores exactly as measured",
+     "draft quotes with every term left null"
+    ],
+    "refuses": [
+     "governance.final_vote",
+     "charter.amend",
+     "treasury.transfer",
+     "proposal.enact",
+     "windfall.distribute",
+     "steward.appoint",
+     "set_price",
+     "accept_equity",
+     "accept_crypto",
+     "issue_invoice",
+     "move_funds"
+    ]
+   },
+   "voice": {
+    "kokoro": "bm_lewis",
+    "browser_fallback": {
+     "pitch": 0.85,
+     "rate": 0.92,
+     "lang": "en-GB"
+    },
+    "audio_note": "audio is the expected path; it exists once the hive voices the line (agents/hive.mjs --voice), else the viewer falls back to a labelled browser voice",
+    "lines": [
+     {
+      "id": "greet",
+      "text": "Hello, I am the Omega Steward for Locator.X. You are hearing a synthetic voice; I am an agent, not a person.",
+      "audio": "agents/hive/voices/locator-x/greet.mp4"
+     },
+     {
+      "id": "role",
+      "text": "I look after Locator.X's world: Master Dashboard, Underwriting Desk, Evidence Layer, plus its probe scores and its installer's dry run.",
+      "audio": "agents/hive/voices/locator-x/role.mp4"
+     },
+     {
+      "id": "boundary",
+      "text": "Agents draft and route; people decide. I will never accept crypto: that is held for the Steward Council.",
+      "audio": "agents/hive/voices/locator-x/boundary.mp4"
+     },
+     {
+      "id": "services",
+      "text": "For services, ask the Forecast Agent in Underwriting Desk about research synthesis. Locator.X lists 5 service cards; people confirm every step.",
+      "audio": "agents/hive/voices/locator-x/services.mp4"
+     }
+    ]
+   },
+   "hive_ref": "agents/hive/index.json#omegas[world=locator-x]",
+   "avatar": {
+    "kind": "omega-avatar",
+    "role": "omega",
+    "model_ref": "worldforge/out/assets/avatars/omega.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     26,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "source": "agents/advisory/omega_agents.json"
+  },
+  {
+   "cardId": "zone:locator-x/master-dashboard",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Master Dashboard · Powered by AGI Corp",
+   "name": "Master Dashboard",
+   "purpose": "Central hub: portfolio summary, cross-market comparison and navigation to market editions",
+   "building": {
+    "kind": "desk",
+    "exterior": "my-fabric/worlds/models/spaces-ext-desk.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-1.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Master Dashboard",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1958,
+     "interior": 2440
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -48,
+     8,
+     83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Platform Structure > Master Dashboard"
+  },
+  {
+   "cardId": "agent:locator-x/guide",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/master-dashboard",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Guide · Powered by AGI Corp",
+   "name": "Guide",
+   "role": "Persistent floating assistant: guided tour of every section and live search over help text",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.guide",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Guide",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Guide]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -51,
+     1,
+     88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/src/assistant.js, header comment"
+  },
+  {
+   "cardId": "zone:locator-x/underwriting-desk",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Underwriting Desk · Powered by AGI Corp",
+   "name": "Underwriting Desk",
+   "purpose": "Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-2.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Underwriting Desk",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -96,
+     8,
+     0
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers and §3 The LOCATOR framework"
+  },
+  {
+   "cardId": "agent:locator-x/forecast-agent",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/underwriting-desk",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Forecast Agent · Powered by AGI Corp",
+   "name": "Forecast Agent",
+   "role": "Predictive models over the ZIP value series with point forecast and ~80% band",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.forecast-agent",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Forecast Agent",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Forecast Agent]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -102,
+     1,
+     0
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/src/scout.js, 'Forecast agent' section (line 10)"
+  },
+  {
+   "cardId": "zone:locator-x/evidence-layer",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Evidence Layer · Powered by AGI Corp",
+   "name": "Evidence Layer",
+   "purpose": "Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns",
+   "building": {
+    "kind": "lab",
+    "exterior": "my-fabric/worlds/models/spaces-ext-lab.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-3.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Evidence Layer",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 2046,
+     "interior": 1716
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -48,
+     8,
+     -83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers"
+  },
+  {
+   "cardId": "agent:locator-x/review-agent",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/evidence-layer",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Review Agent · Powered by AGI Corp",
+   "name": "Review Agent",
+   "role": "Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.review-agent",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Review Agent",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Review Agent]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -51,
+     1,
+     -88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/src/scout.js, 'Review agent' section (line 149)"
+  },
+  {
+   "cardId": "zone:locator-x/the-academy",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "The Academy · Powered by AGI Corp",
+   "name": "The Academy",
+   "purpose": "19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces",
+   "building": {
+    "kind": "library",
+    "exterior": "my-fabric/worlds/models/spaces-ext-library.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-library.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-4.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "The Academy",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1722,
+     "interior": 4588
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     48,
+     8,
+     -83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/README.md, The Academy"
+  },
+  {
+   "cardId": "agent:locator-x/level-gates",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/the-academy",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Level Gates · Powered by AGI Corp",
+   "name": "Level Gates",
+   "role": "Grades curriculum levels as capabilities on a real parcel; counts certainty errors",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.level-gates",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Level Gates",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Level Gates]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     51,
+     1,
+     -88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/README.md, The Academy > What makes it testable (src/gate.js)"
+  },
+  {
+   "cardId": "zone:locator-x/market-editions",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Market Editions · Powered by AGI Corp",
+   "name": "Market Editions",
+   "purpose": "National corridor baseline, Bay Area premium and New Orleans emerging-market maps",
+   "building": {
+    "kind": "ops",
+    "exterior": "my-fabric/worlds/models/spaces-ext-ops.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-5.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Market Editions",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1742,
+     "interior": 1392
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     96,
+     8,
+     0
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Market Editions 1-3"
+  },
+  {
+   "cardId": "agent:locator-x/scout-agent",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/market-editions",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Scout Agent · Powered by AGI Corp",
+   "name": "Scout Agent",
+   "role": "Scans feeds, diffs, scores and matches new listings and changes",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.scout-agent",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Scout Agent",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Scout Agent]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     102,
+     1,
+     0
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator.X-main/src/scout.js, 'Scout agent' section (line 52)"
+  },
+  {
+   "cardId": "zone:locator-x/louisiana-developer-desk",
+   "kind": "zone",
+   "parentCardId": "world:locator-x",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Louisiana Developer Desk · Powered by AGI Corp",
+   "name": "Louisiana Developer Desk",
+   "purpose": "Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero",
+   "building": {
+    "kind": "desk",
+    "exterior": "my-fabric/worlds/models/spaces-ext-desk.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "room": "my-fabric/worlds/models/room-locator-x-6.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Louisiana Developer Desk",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1958,
+     "interior": 2440
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=locator-x]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     48,
+     8,
+     83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slides 1-3"
+  },
+  {
+   "cardId": "agent:locator-x/developer-brief-desk",
+   "kind": "agent",
+   "parentCardId": "zone:locator-x/louisiana-developer-desk",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Developer Brief Desk · Powered by AGI Corp",
+   "name": "Developer Brief Desk",
+   "role": "Role-only agent: tells a developer what the parish record supports and what it caps at",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "locator-x.developer-brief-desk",
+    "metaprompt": "agents/prompts/locator-x.json",
+    "fabricNode": "Agent · Developer Brief Desk",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[name=Developer Brief Desk]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     51,
+     1,
+     88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slide 3 closing line"
+  }
+ ],
+ "gaps": []
+}

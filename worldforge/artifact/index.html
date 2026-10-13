@@ -1,0 +1,513 @@
+<title>SmartCiti.X Agentic Worlds</title>
+<meta name="description" content="41 agent-run, human-governed virtual worlds for the AGI Future Foundation PBC: Master Cards, avatars, an Omega Hive, buildings and a path to RP1.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: civic wayfinding. A city signage system: tall condensed display, plaques, a world directory you can filter. */
+:root { --bg:#f2f3ee; --surface:#ffffff; --raise:#e7e9e2; --fg:#14211f; --muted:#56635f; --line:#cdd3cb; --accent:#a8631a; --accent-fg:#ffffff; --ok:#2f7a55;
+  --display:"Big Shoulders Display", "Arial Narrow", sans-serif; --body:"IBM Plex Sans", system-ui, sans-serif; --mono:"IBM Plex Mono", ui-monospace, monospace; color-scheme: light }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#0e1514; --surface:#151f1d; --raise:#1c2825; --fg:#e6ebe5; --muted:#9caaa4; --line:#2a3834; --accent:#e3a44f; --accent-fg:#1a1206; --ok:#6fc49a; color-scheme: dark } }
+:root[data-theme="dark"] { --bg:#0e1514; --surface:#151f1d; --raise:#1c2825; --fg:#e6ebe5; --muted:#9caaa4; --line:#2a3834; --accent:#e3a44f; --accent-fg:#1a1206; --ok:#6fc49a; color-scheme: dark }
+* { box-sizing:border-box }
+body { background:var(--bg); color:var(--fg); font:16px/1.6 var(--body); padding-inline:clamp(16px,4vw,48px); padding-block:0 64px }
+.wrap { max-width:1180px; margin:0 auto; display:flex; flex-direction:column; gap:72px }
+h1,h2,h3,h4 { font-family:var(--display); font-weight:800; letter-spacing:.01em; text-wrap:balance; margin:0; line-height:1.02 }
+h1 { font-size:clamp(48px,9vw,112px); text-transform:uppercase }
+h2 { font-size:clamp(34px,5vw,56px); text-transform:uppercase }
+h3 { font-size:28px } h4 { font-size:22px; font-weight:600 }
+p { margin:0; max-width:68ch }
+a { color:var(--accent) } a:focus-visible, button:focus-visible { outline:3px solid var(--accent); outline-offset:3px }
+.eyebrow, .lbl, dt, .st, .pill { font:500 12px/1.2 var(--mono); letter-spacing:.12em; text-transform:uppercase; color:var(--muted) }
+nav.top { position:sticky; top:env(safe-area-inset-top,0px); z-index:5; background:var(--bg); border-bottom:1px solid var(--line); display:flex; gap:18px; align-items:center; padding-block:12px; overflow-x:auto; white-space:nowrap }
+nav.top b { font-family:var(--display); font-size:20px; letter-spacing:.04em; text-transform:uppercase }
+nav.top a { color:var(--fg); text-decoration:none; font-size:14px }
+.hero { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,1fr); gap:40px; align-items:end; padding-top:48px }
+.hero .lede { font-size:20px; color:var(--muted); margin-top:20px }
+.plaque { border:2px solid var(--fg); padding:18px 20px; display:grid; gap:14px; background:var(--surface) }
+.stats { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line) }
+.stats div { background:var(--surface); padding:14px }
+.stats b { display:block; font:800 38px/1 var(--display); font-variant-numeric:tabular-nums }
+.stats span { font-size:13px; color:var(--muted) }
+.film { display:grid; gap:12px }
+.film video { width:100%; max-width:100%; aspect-ratio:16/9; background:#000; border:2px solid var(--fg) }
+.film p { font-size:14px; color:var(--muted) }
+section { display:grid; gap:24px; scroll-margin-top:72px }
+.cols { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:20px }
+.claim { border-top:4px solid var(--accent); padding-top:14px; display:grid; gap:8px }
+.claim b { font:800 34px/1 var(--display) }
+.fn { font:500 12px var(--mono); text-decoration:none; margin-left:2px }
+.note { background:var(--raise); padding:16px 18px; font-size:15px }
+.model { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr)); gap:1px; background:var(--line); border:1px solid var(--line) }
+.model div { background:var(--surface); padding:16px; display:grid; gap:6px; min-width:0 }
+.model code, .mono { font-family:var(--mono); font-size:13px }
+.stack { display:grid; gap:6px }
+.stack div { display:grid; grid-template-columns:minmax(0,180px) minmax(0,1fr); gap:16px; padding:12px 16px; background:var(--surface); border-left:6px solid var(--accent) }
+.stack div:nth-child(2n) { border-left-color:var(--fg) }
+.stack b { font-family:var(--display); font-size:20px; text-transform:uppercase }
+table { border-collapse:collapse; width:100%; font-size:14px } th,td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top }
+.tbl { overflow-x:auto }
+.chips { display:flex; flex-wrap:wrap; gap:8px }
+.chip { font:500 13px var(--body); border:1px solid var(--line); background:var(--surface); color:var(--fg); padding:6px 12px; cursor:pointer }
+.chip.on { background:var(--fg); color:var(--bg); border-color:var(--fg) } .chip span { opacity:.7 }
+.windex { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px }
+.directory { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr)); gap:18px }
+.world { --tone:hsl(var(--hue) 45% 42%); background:var(--surface); border:1px solid var(--line); border-top:6px solid var(--tone); padding:18px; display:flex; flex-direction:column; gap:12px; min-width:0; scroll-margin-top:72px }
+.world:target { outline:3px solid var(--accent) }
+.world header { display:flex; gap:12px; align-items:center }
+.mark { font:800 22px/1 var(--display); width:48px; height:48px; display:grid; place-items:center; background:var(--tone); color:#fff; flex:none }
+.kind { font-size:13px; color:var(--muted) } .tag { font-size:15px }
+.zones { list-style:none; padding:0; margin:0; display:grid; gap:6px; font-size:13.5px }
+.zones li { display:grid; gap:2px } .zones span { color:var(--muted) }
+.agents, .omega { font-size:13.5px }
+.facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 }
+.facts div { background:var(--raise); padding:8px } .facts dd { margin:2px 0 0; font:600 15px var(--body); font-variant-numeric:tabular-nums; overflow-wrap:anywhere }
+.world footer { margin-top:auto; display:flex; flex-wrap:wrap; gap:8px }
+.btn { font:600 13px var(--body); padding:8px 12px; background:var(--accent); color:var(--accent-fg); text-decoration:none }
+.btn.ghost { background:transparent; color:var(--fg); border:1px solid var(--line) }
+.pill { border:1px dashed var(--line); padding:8px 10px }
+.road { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr)); gap:16px }
+.ph { background:var(--surface); border:1px solid var(--line); padding:16px; display:grid; gap:10px; align-content:start }
+.ph.done { border-top:6px solid var(--ok) } .ph.now { border-top:6px solid var(--accent) } .ph.next, .ph.later { border-top:6px solid var(--line) }
+.ph ul { margin:0; padding-left:18px; font-size:14px } .gate { font-size:14px }
+.not li { margin-bottom:6px }
+.sources { font-size:13.5px; padding-left:22px }
+.contact { display:flex; flex-wrap:wrap; gap:10px; align-items:center } .contact code { font:500 16px var(--mono); background:var(--raise); padding:8px 12px; user-select:all }
+@media (max-width:760px) { .hero { grid-template-columns:1fr } .stats { grid-template-columns:repeat(2,minmax(0,1fr)) } .stack div { grid-template-columns:1fr } }
+@media (prefers-reduced-motion:reduce) { * { scroll-behavior:auto !important } }
+</style>
+<nav class="top" aria-label="Sections"><b>SmartCiti.X</b><a href="#film">Film</a><a href="#why">Why</a><a href="#what">What</a><a href="#how">How</a><a href="#governance">Governance</a><a href="#worlds">41 worlds</a><a href="#roadmap">Roadmap</a><a href="#sources">Sources</a></nav>
+<main class="wrap">
+<header class="hero">
+  <div><p class="eyebrow">AGI Future Foundation PBC · Powered by AGI Corp</p>
+  <h1>Agentic worlds, governed by people</h1>
+  <p class="lede">SmartCiti.X is a network of 41 virtual worlds where AI agents run the day-to-day work and people keep every decision that matters. Each world is a set of owned, permissioned Master Cards that can be streamed into RP1, walked in a browser, and checked by evals on every heartbeat.</p></div>
+  <div class="plaque"><span class="lbl">The network today</span>
+   <div class="stats"><div><b>41</b><span>worlds</span></div><div><b>939</b><span>Master Cards</span></div><div><b>447</b><span>agent avatars</span></div>
+   <div><b>44</b><span>Omega Stewards, none seated</span></div><div><b>335</b><span>draft lessons</span></div><div><b>1066</b><span>WorldForge evals, 0 failing</span></div></div>
+   <span class="lbl">Source: worldforge/out/index.json, avatars, training and hive registries</span></div>
+</header>
+
+<section id="film" class="film" aria-labelledby="film-h"><h2 id="film-h">The two-minute explainer</h2>
+  <video controls preload="metadata" poster="media/poster-features.jpg">
+    <source src="media/film-features.mp4" type="video/mp4">
+  </video>
+  <p>Features film, 120 seconds: the world network, a walkthrough recorded in the WorldForge viewer (fly-in, a building and its interior, the Omega Steward, the council, a landmark), avatars bound to agents, the Omega Hive, and governance. The narration is a synthetic voice.</p>
+</section>
+
+<section id="why" aria-labelledby="why-h"><p class="eyebrow">Why we built it</p><h2 id="why-h">Agents are arriving faster than governance</h2>
+  <div class="cols">
+   <div class="claim"><b>$7.84bn → $52.62bn</b><p>AI agents market, 2025 to 2030, as projected by MarketsandMarkets.<a class="fn" href="#src-1" aria-label="source 1">[1]</a></p></div>
+   <div class="claim"><b>40%</b><p>of enterprise applications expected to integrate task-specific agents by 2026, up from under 5%, says Gartner.<a class="fn" href="#src-2" aria-label="source 2">[2]</a></p></div>
+   <div class="claim"><b>150,000+</b><p>AI agents per Global Fortune 500 enterprise expected by 2028, with a warning about ungoverned sprawl.<a class="fn" href="#src-3" aria-label="source 3">[3]</a></p></div>
+   <div class="claim"><b>49%</b><p>of leaders have defined high-risk uses where autonomous agent decisions are not allowed (KPMG, Q3 2026).<a class="fn" href="#src-4" aria-label="source 4">[4]</a></p></div>
+   <div class="claim"><b>45%</b><p>of the world's 8.2 billion people live in cities, the setting SmartCiti.X models.<a class="fn" href="#src-8" aria-label="source 8">[8]</a></p></div>
+   <div class="claim"><b>Aug 2024</b><p>the EU AI Act entered into force; it became applicable in August 2026, with some exceptions.<a class="fn" href="#src-9" aria-label="source 9">[9]</a></p></div>
+  </div>
+  <p class="note">Virtual-world forecasts disagree widely: the European Commission cites a market of over EUR 800 billion by 2030<a class="fn" href="#src-5" aria-label="source 5">[5]</a>, while ABI Research held a US$45 billion view<a class="fn" href="#src-6" aria-label="source 6">[6]</a>. We read that spread as uncertainty about demand, not as a target. Digital twins are forecast to reach USD 149.81 billion by 2030<a class="fn" href="#src-7" aria-label="source 7">[7]</a>. SmartCiti.X has no revenue or users to report yet.</p>
+</section>
+
+<section id="what" aria-labelledby="what-h"><p class="eyebrow">What it is</p><h2 id="what-h">Every place, agent and seat is an owned Master Card</h2>
+  <p>A world is a tree of GLEWME Master Cards. Each card has an owner (the PBC), a <b>Volum</b> (the bounded 3D region it governs) and a seven-right permission table. Agents may view, enter and operate their own zone. Building, delegating, transferring and governing belong to people, and six actions are always held for a 2-of-3 human Steward Council.</p>
+  <div class="model">
+   <div><span class="lbl">Card kinds</span><p>world, plaza, coordinator, 3 scripted advisors, Alignment Evaluation Gate, council with 3 empty human seats, Omega Steward, zones with buildings, agents</p></div>
+   <div><span class="lbl">Seven rights</span><p><code>view · enter · build · operate · delegate · transfer · govern</code></p></div>
+   <div><span class="lbl">Held for people</span><p><code>governance.final_vote · charter.amend · treasury.transfer · proposal.enact · windfall.distribute · steward.appoint</code></p></div>
+   <div><span class="lbl">Buildings</span><p>246 exteriors and 246 interiors with PBR textures, doors aligned to each zone's room, plus 41 civic landmarks</p></div>
+  </div>
+</section>
+
+<section id="how" aria-labelledby="how-h"><p class="eyebrow">How it works</p><h2 id="how-h">The stack, layer by layer</h2>
+  <div class="stack">
+   <div><b>Assets</b><p>glTF 2.0 worlds, buildings, interiors, landmarks and six rig-free avatar models, all checked by the Khronos validator. Lighter LOD versions exist for streaming.</p></div>
+   <div><b>Master Cards</b><p>Card-tagged GLBs and mount plans for the Sneeze engine. Names fit the engine's 47-character limit, and Sneeze conformance shows 0 violations.</p></div>
+   <div><b>Agents</b><p>242 specialists, 41 coordinators and 123 scripted advisors, each bound to its card, swarm and metaprompt. 324 persona prompts pass 5225 gate checks.</p></div>
+   <div><b>Omega Hive</b><p>44 Omega Stewards with grounded personas and synthetic voices. They are defined, not seated: none acts until a person seats it.</p></div>
+   <div><b>Gateway</b><p>A guarded service between visitors and the model. It strips personal data and refuses the six human-only actions in code, before the model sees them.</p></div>
+   <div><b>Evidence</b><p>A heartbeat runs every generator and eval. There is a hash-chained agent ledger and an on-chain-ready export of 939 card tokens with Merkle roots (draft, not deployed).</p></div>
+   <div><b>Compute</b><p>On the Akamai inference workshop's GPU, Qwen3-4B on vLLM drafted all 246 zone expansions in 66 seconds at 32 concurrent requests. The drafts are unreviewed.</p></div>
+  </div>
+</section>
+
+<section id="governance" aria-labelledby="gov-h"><p class="eyebrow">Governance</p><h2 id="gov-h">Built to leave the "basic AI drives" spine</h2>
+  <p>Ben Goertzel's restatement of Omohundro's argument lists six assumptions under which an AI drifts toward self-protection and resource grabbing. We check every world's design against the ways out of that argument:</p>
+  <ul>
+   <li>many objectives, not a single score;</li>
+   <li>held actions that can't be outweighed;</li>
+   <li>self-change gated by people;</li>
+   <li>goal changes only under governance;</li>
+   <li>prompts that care how goals are reached;</li>
+   <li>an off switch that stays with people.</li>
+  </ul>
+  <p><b>41 of 41</b> worlds pass all seven checks.</p>
+  <p class="note">These checks measure design, not a running model's values. In a live test, a raw Qwen3-4B offered to move treasury funds when only its prompt forbade it. That is why the gateway enforces the held actions in code.</p>
+</section>
+
+<section id="worlds" aria-labelledby="worlds-h"><p class="eyebrow">The directory</p><h2 id="worlds-h">41 worlds</h2>
+  <p>Each card shows the world's zones and agents, its Omega Steward's temperament, and its counts. Where the founder has chosen an RP1 location (4 so far), it links straight into RP1. The 3D viewer and team consoles run from the team's own server and are available on request.</p>
+  <div class="chips" role="group" aria-label="Filter worlds"><button type="button" class="chip on" data-k="all">All 41</button><button type="button" class="chip" data-k="PBC focus DAO">PBC focus DAO <span>6</span></button><button type="button" class="chip" data-k="Platform world">Platform world <span>4</span></button><button type="button" class="chip" data-k="Program track">Program track <span>3</span></button><button type="button" class="chip" data-k="W3 LLC series world">W3 LLC series world <span>28</span></button></div>
+  <div class="windex"><a href="#agentic-payments">Agentic Payments</a><a href="#agents-deploy-infrastructure">Agents That Deploy Infrastructure</a><a href="#autonomous-organizations">Autonomous Organizations</a><a href="#biota-blockchain">Biota.blockchain (BioDAO.X)</a><a href="#cancer-dao">Cancer DAO</a><a href="#climate-dao">Climate DAO</a><a href="#diagnostic-x">Diagnostic.X</a><a href="#ecology-dao">Ecology DAO</a><a href="#education-dao">Education DAO</a><a href="#empathic-x">Empathic.X</a><a href="#locator-x">Locator.X</a><a href="#public-health-dao">Public Health DAO</a><a href="#robotics-dao">Robotics DAO</a><a href="#s04-curable-x">Curable.X (Series 4)</a><a href="#s05-biopharma-go">BioPharma.Go (Series 5)</a><a href="#s06-blockchain">Blockchain (Series 6)</a><a href="#s07-divine-dao">Divine.DAO (Series 7)</a><a href="#s09-astrological-x">Astrological.X (Series 9)</a><a href="#s11-molecular">Molecular (Series 11)</a><a href="#s12-parking-smart-x">Parking Smart.X (Series 12)</a><a href="#s13-gonstead-x">Gonstead.X (Series 13)</a><a href="#s14-askdoc-x">AskDoc.X (Series 14)</a><a href="#s15-romanbridge-dao">RomanBridge DAO (Series 15)</a><a href="#s16-echodawn-dao">EchoDawn DAO (Series 16)</a><a href="#s17-curable-blockchain-dao">Curable.Blockchain DAO (Series 17)</a><a href="#s19-moscone-x">Moscone.X (Series 19)</a><a href="#s20-cmmc">CMMC (Series 20)</a><a href="#s21-incubator-dao">Incubator DAO (Series 21)</a><a href="#s22-get-delivery-dao">Get.Delivery DAO (Series 22)</a><a href="#s23-avatar-chat">Avatar.Chat (Series 23)</a><a href="#s24-donatello-dao">Donatello DAO (Series 24)</a><a href="#s25-mypet-ai">MyPet.AI (Series 25)</a><a href="#s26-lyka-dao">Lyka DAO (Series 26)</a><a href="#s27-genomic-dao">Genomic.DAO (Series 27)</a><a href="#s28-genomic-blockchain">Genomic.Blockchain (Series 28)</a><a href="#s29-metaverse-dao">Metaverse DAO (Series 29)</a><a href="#s31-aerospace-dao">Aerospace DAO (Series 31)</a><a href="#s32-solar-dao">Solar DAO (Series 32)</a><a href="#s33-infogurus">InfoGurus (Series 33)</a><a href="#s34-als-dao">ALS DAO (Series 34)</a><a href="#s35-parkinsons-dao">Parkinsons DAO (Series 35)</a></div>
+  <div class="directory"><article class="world" id="agentic-payments" data-kind="Program track" style="--hue:168">
+  <header><span class="mark" aria-hidden="true">AP</span><div><h3>Agentic Payments</h3><p class="kind">Program track · coming soon</p></div></header>
+  <p class="tag">Agents that transact, buy, sell, provision services and manage budgets - with every transfer of funds held for human stewards</p>
+  <ul class="zones"><li><b>Transaction Desk</b><span>Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent</span></li><li><b>Service Provisioning Counter</b><span>Provisioning services an agent may order within a steward-set budget</span></li><li><b>Budget Office</b><span>Managing budgets: proposals, ledgers and variance drafted for the stewards</span></li><li><b>Financial Infrastructure Gateway</b><span>Interacting with financial infrastructure in rehearsal: reads, quotes and dry runs</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Buyer Agent, Seller Agent, Provisioning Agent, Budget Agent, Rail Agent</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> practical and hands-on about agents interacting with financial infrastructure autonomously, under the PBC&#x27;s reserved-for-humans list</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>21</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>66.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">6eddace49e70…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#agentic-payments">Link to this world</a></footer>
+</article><article class="world" id="agents-deploy-infrastructure" data-kind="Program track" style="--hue:283">
+  <header><span class="mark" aria-hidden="true">ATD</span><div><h3>Agents That Deploy Infrastructure</h3><p class="kind">Program track · coming soon</p></div></header>
+  <p class="tag">Agents that take software from an idea to something running in production - provisioning, deploying, configuring and operating the stack</p>
+  <ul class="zones"><li><b>Idea Bench</b><span>Where an idea is turned into a plan of what to build and run</span></li><li><b>Provisioning Yard</b><span>Provisioning infrastructure: compute, storage and networks, as rehearsed plans</span></li><li><b>Deployment Bay</b><span>Deploying applications: builds, releases and rollbacks</span></li><li><b>Domain Registry Desk</b><span>Managing domains and their records</span></li><li><b>Service Configuration Room</b><span>Configuring services: settings, secrets handling policy and wiring</span></li><li><b>Operations Deck</b><span>Operating the stack: health, logs, incidents and the on-call handoff to people</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Planner, Provisioner, Deployer, Domain Steward, Configurator, Operator</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> practical and hands-on about agents taking software from an idea to production and operating the stack</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>24</dd></div><div><dt>Lessons</dt><dd>10</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>52.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">7ae489630aba…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#agents-deploy-infrastructure">Link to this world</a></footer>
+</article><article class="world" id="autonomous-organizations" data-kind="Program track" style="--hue:152">
+  <header><span class="mark" aria-hidden="true">AO</span><div><h3>Autonomous Organizations</h3><p class="kind">Program track · coming soon</p></div></header>
+  <p class="tag">Teams of agents that coordinate through Slack, Linear and other surfaces to reach a high-level goal - assigning, communicating, deciding and executing with minimal human intervention</p>
+  <ul class="zones"><li><b>Goal Wall</b><span>The high-level goal the team is accomplishing, written where every agent can read it</span></li><li><b>Coordination Floor</b><span>Coordinating through surfaces like Slack, Linear and other tools</span></li><li><b>Assignment Board</b><span>Assigning work across the team</span></li><li><b>Decision Room</b><span>Making decisions - drafted by agents, with the final vote reserved for human stewards</span></li><li><b>Execution Bay</b><span>Executing the assigned work with minimal human intervention, inside the reserved-actions line</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Goal Keeper, Coordinator Agent, Communicator, Assigner, Decision Drafter, Executor</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> practical and hands-on about teams of agents coordinating through work surfaces toward a high-level goal, within the PBC&#x27;s human-governed model</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>9</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>54.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">fcec18e063b0…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#autonomous-organizations">Link to this world</a></footer>
+</article><article class="world" id="biota-blockchain" data-kind="Platform world" style="--hue:194">
+  <header><span class="mark" aria-hidden="true">BB(</span><div><h3>Biota.blockchain (BioDAO.X)</h3><p class="kind">Platform world · coming soon</p></div></header>
+  <p class="tag">AI-driven platform for personalized therapies, with blockchain transparency and a DAO framework</p>
+  <ul class="zones"><li><b>Personalized Therapy Lab</b><span>AI and molecular modeling to optimize AGI compounds for rare and neurodegenerative diseases (ALS, Parkinson&#x27;s)</span></li><li><b>DAO Governance Hall</b><span>Each agency or organization runs its own DAO for governance, resource allocation and policy-making</span></li><li><b>Multi-Blockchain Ledger</b><span>Interoperable ledgers (Ethereum, Hyperledger, Polkadot, Cosmos) for verified cross-network data</span></li><li><b>Healthcare Data Exchange</b><span>Encrypted patient data sharing with smart-contract access and SMS patient consent</span></li><li><b>Biopharma AGI Agents Hub</b><span>Hub linking biopharma agent roles such as Research &amp; Development and Clinical Support</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Research &amp; Development Agent, Compliance Agent, Finance Agent, Communication Agent, Security Agent, Health Agent</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> attentive and concrete about its tagline: AI-driven platform for personalized therapies, with blockchain transparency and a DAO framework</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>30.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">6a20efc4ea62…</dd></div></dl>
+  <footer><a class="btn" href="https://enter.rp1.com?start_cid=553&amp;lat=-38.71260348427612&amp;lon=-27.248278366617797&amp;rad=6371000" target="_blank" rel="noopener">Enter on RP1 ↗</a><a class="btn ghost" href="#biota-blockchain">Link to this world</a></footer>
+</article><article class="world" id="cancer-dao" data-kind="PBC focus DAO" style="--hue:106">
+  <header><span class="mark" aria-hidden="true">CD</span><div><h3>Cancer DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for cancer research support, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> mission-minded and evidence-first about cancer research support</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>51.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">aaefb34c51d9…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#cancer-dao">Link to this world</a></footer>
+</article><article class="world" id="climate-dao" data-kind="PBC focus DAO" style="--hue:172">
+  <header><span class="mark" aria-hidden="true">CD</span><div><h3>Climate DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for climate resilience, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> mission-minded and evidence-first about climate resilience</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>60.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">325c73686926…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#climate-dao">Link to this world</a></footer>
+</article><article class="world" id="diagnostic-x" data-kind="Platform world" style="--hue:33">
+  <header><span class="mark" aria-hidden="true">DX</span><div><h3>Diagnostic.X</h3><p class="kind">Platform world · coming soon</p></div></header>
+  <p class="tag">Revolutionary 4D medical imaging in the metaverse</p>
+  <ul class="zones"><li><b>Medical Kiosk</b><span>Standalone diagnostic kiosk with screen, flanked by monitor workstations</span></li><li><b>4D Imaging Room</b><span>Doctor and patient walk around a 4D image of an injury; resize to focus, shown beside 2D X-ray</span></li><li><b>Virtual Molecular Lab</b><span>VR lab to view and edit molecules from inside the structure, for chemists and protein engineers</span></li><li><b>Metaverse Medical Office</b><span>Customized metaverse medical office offered as a service to independent practitioners</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Medical AI Avatar, Imaging AI, Scientist Assistant Avatar, Office AI Avatar</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> attentive and concrete about its tagline: Revolutionary 4D medical imaging in the metaverse</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>20</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>39.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">9912ccddac47…</dd></div></dl>
+  <footer><a class="btn" href="https://enter.rp1.com?start_cid=553&amp;lat=5.342706937662501&amp;lon=101.5663444901012&amp;rad=6371000" target="_blank" rel="noopener">Enter on RP1 ↗</a><a class="btn ghost" href="#diagnostic-x">Link to this world</a></footer>
+</article><article class="world" id="ecology-dao" data-kind="PBC focus DAO" style="--hue:352">
+  <header><span class="mark" aria-hidden="true">ED</span><div><h3>Ecology DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for ecology and biodiversity, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> mission-minded and evidence-first about ecology and biodiversity</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>65.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">e21e1b67a5c7…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#ecology-dao">Link to this world</a></footer>
+</article><article class="world" id="education-dao" data-kind="PBC focus DAO" style="--hue:201">
+  <header><span class="mark" aria-hidden="true">ED</span><div><h3>Education DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for education, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> mission-minded and evidence-first about education</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>52.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">295dc2300045…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#education-dao">Link to this world</a></footer>
+</article><article class="world" id="empathic-x" data-kind="Platform world" style="--hue:82">
+  <header><span class="mark" aria-hidden="true">EX</span><div><h3>Empathic.X</h3><p class="kind">Platform world · coming soon</p></div></header>
+  <p class="tag">Empathy &amp; Emotional Intelligence</p>
+  <ul class="zones"><li><b>Self-Reader Grove</b><span>Self-awareness (SA): naming what you feel before you act, where it lands in your body</span></li><li><b>Other-Reader Commons</b><span>Awareness of others (AO): asking instead of assuming, listening without preparing a reply</span></li><li><b>Repairer&#x27;s Hall</b><span>Repair (RR): coming down, apologising properly, saying the hard thing kindly</span></li><li><b>Room-Reader Plaza</b><span>Reading the room (RM): where the energy is, who is idle, the moment before it goes wrong</span></li><li><b>Practitioner Workshop</b><span>Emotion at work (EW): feedback that can be used, saying no at work, emotional labour</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Self-Reader Guide, Other-Reader Guide, Repair Guide, Room-Reader Guide, Practitioner Guide</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> attentive and concrete about its tagline: Empathy &amp; Emotional Intelligence</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>22</dd></div><div><dt>Lessons</dt><dd>9</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>63.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">2a094b16432b…</dd></div></dl>
+  <footer><a class="btn" href="https://enter.rp1.com?start_cid=553&amp;lat=47.43990000744796&amp;lon=-179.34952851914045&amp;rad=6371000" target="_blank" rel="noopener">Enter on RP1 ↗</a><a class="btn ghost" href="#empathic-x">Link to this world</a></footer>
+</article><article class="world" id="locator-x" data-kind="Platform world" style="--hue:121">
+  <header><span class="mark" aria-hidden="true">LX</span><div><h3>Locator.X</h3><p class="kind">Platform world · coming soon</p></div></header>
+  <p class="tag">Real-estate development and investment predictive tooling, plus the Academy that teaches it</p>
+  <ul class="zones"><li><b>Master Dashboard</b><span>Central hub: portfolio summary, cross-market comparison and navigation to market editions</span></li><li><b>Underwriting Desk</b><span>Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20</span></li><li><b>Evidence Layer</b><span>Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns</span></li><li><b>The Academy</b><span>19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces</span></li><li><b>Market Editions</b><span>National corridor baseline, Bay Area premium and New Orleans emerging-market maps</span></li><li><b>Louisiana Developer Desk</b><span>Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Guide, Forecast Agent, Review Agent, Level Gates, Scout Agent, Developer Brief Desk</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> attentive and concrete about its tagline: Real-estate development and investment predictive tooling, plus the Academy that teaches it</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>24</dd></div><div><dt>Lessons</dt><dd>10</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>48.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">7737ffd6b17e…</dd></div></dl>
+  <footer><a class="btn" href="https://enter.rp1.com?start_cid=553&amp;lat=21.09705311564314&amp;lon=142.69254864512746&amp;rad=6371000" target="_blank" rel="noopener">Enter on RP1 ↗</a><a class="btn ghost" href="#locator-x">Link to this world</a></footer>
+</article><article class="world" id="public-health-dao" data-kind="PBC focus DAO" style="--hue:4">
+  <header><span class="mark" aria-hidden="true">PHD</span><div><h3>Public Health DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for public health, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> mission-minded and evidence-first about public health</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>63.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">dea2b29b9bc4…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#public-health-dao">Link to this world</a></footer>
+</article><article class="world" id="robotics-dao" data-kind="PBC focus DAO" style="--hue:157">
+  <header><span class="mark" aria-hidden="true">RD</span><div><h3>Robotics DAO</h3><p class="kind">PBC focus DAO · coming soon</p></div></header>
+  <p class="tag">A mission-focused DAO for robotics and automation; physical-AI deployment governance, agent-managed and human-governed</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> practical and hands-on about robotics and automation; physical-AI deployment governance</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>9</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>58.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">a3ba8a61671f…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#robotics-dao">Link to this world</a></footer>
+</article><article class="world" id="s04-curable-x" data-kind="W3 LLC series world" style="--hue:162">
+  <header><span class="mark" aria-hidden="true">CX(</span><div><h3>Curable.X (Series 4)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 4 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 4 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>37.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">4a6da15f8864…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s04-curable-x">Link to this world</a></footer>
+</article><article class="world" id="s05-biopharma-go" data-kind="W3 LLC series world" style="--hue:120">
+  <header><span class="mark" aria-hidden="true">BG(</span><div><h3>BioPharma.Go (Series 5)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 5 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 5 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>40.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">768d8bba7ee6…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s05-biopharma-go">Link to this world</a></footer>
+</article><article class="world" id="s06-blockchain" data-kind="W3 LLC series world" style="--hue:232">
+  <header><span class="mark" aria-hidden="true">B(6</span><div><h3>Blockchain (Series 6)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 6 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 6 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>43.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">8515d47f9ea9…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s06-blockchain">Link to this world</a></footer>
+</article><article class="world" id="s07-divine-dao" data-kind="W3 LLC series world" style="--hue:276">
+  <header><span class="mark" aria-hidden="true">DD(</span><div><h3>Divine.DAO (Series 7)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 7 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 7 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>65.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">4015fcc96770…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s07-divine-dao">Link to this world</a></footer>
+</article><article class="world" id="s09-astrological-x" data-kind="W3 LLC series world" style="--hue:345">
+  <header><span class="mark" aria-hidden="true">AX(</span><div><h3>Astrological.X (Series 9)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 9 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 9 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>55.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">e7a50a4becfe…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s09-astrological-x">Link to this world</a></footer>
+</article><article class="world" id="s11-molecular" data-kind="W3 LLC series world" style="--hue:231">
+  <header><span class="mark" aria-hidden="true">M(1</span><div><h3>Molecular (Series 11)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 11 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 11 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>54.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">b741d16dc7e4…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s11-molecular">Link to this world</a></footer>
+</article><article class="world" id="s12-parking-smart-x" data-kind="W3 LLC series world" style="--hue:229">
+  <header><span class="mark" aria-hidden="true">PSX</span><div><h3>Parking Smart.X (Series 12)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 12 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 12 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>31.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">22fca6aa9372…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s12-parking-smart-x">Link to this world</a></footer>
+</article><article class="world" id="s13-gonstead-x" data-kind="W3 LLC series world" style="--hue:299">
+  <header><span class="mark" aria-hidden="true">GX(</span><div><h3>Gonstead.X (Series 13)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 13 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 13 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>51.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">6cc22aa08c37…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s13-gonstead-x">Link to this world</a></footer>
+</article><article class="world" id="s14-askdoc-x" data-kind="W3 LLC series world" style="--hue:226">
+  <header><span class="mark" aria-hidden="true">AX(</span><div><h3>AskDoc.X (Series 14)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 14 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 14 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>57.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">5438ee14a73f…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s14-askdoc-x">Link to this world</a></footer>
+</article><article class="world" id="s15-romanbridge-dao" data-kind="W3 LLC series world" style="--hue:30">
+  <header><span class="mark" aria-hidden="true">RD(</span><div><h3>RomanBridge DAO (Series 15)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 15 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 15 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>54.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">68090edcaab4…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s15-romanbridge-dao">Link to this world</a></footer>
+</article><article class="world" id="s16-echodawn-dao" data-kind="W3 LLC series world" style="--hue:281">
+  <header><span class="mark" aria-hidden="true">ED(</span><div><h3>EchoDawn DAO (Series 16)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 16 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 16 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>35.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">8861f7ecd5e1…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s16-echodawn-dao">Link to this world</a></footer>
+</article><article class="world" id="s17-curable-blockchain-dao" data-kind="W3 LLC series world" style="--hue:315">
+  <header><span class="mark" aria-hidden="true">CBD</span><div><h3>Curable.Blockchain DAO (Series 17)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 17 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 17 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>5</dd></div><div><dt>Landmark</dt><dd>48.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">25b2bf7fdc93…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s17-curable-blockchain-dao">Link to this world</a></footer>
+</article><article class="world" id="s19-moscone-x" data-kind="W3 LLC series world" style="--hue:267">
+  <header><span class="mark" aria-hidden="true">MX(</span><div><h3>Moscone.X (Series 19)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 19 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 19 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>4</dd></div><div><dt>Landmark</dt><dd>41.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">868fd06d9cc5…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s19-moscone-x">Link to this world</a></footer>
+</article><article class="world" id="s20-cmmc" data-kind="W3 LLC series world" style="--hue:113">
+  <header><span class="mark" aria-hidden="true">C(2</span><div><h3>CMMC (Series 20)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 20 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 20 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>35.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">3770d7ccb789…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s20-cmmc">Link to this world</a></footer>
+</article><article class="world" id="s21-incubator-dao" data-kind="W3 LLC series world" style="--hue:311">
+  <header><span class="mark" aria-hidden="true">ID(</span><div><h3>Incubator DAO (Series 21)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 21 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 21 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>47.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">52367cdec349…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s21-incubator-dao">Link to this world</a></footer>
+</article><article class="world" id="s22-get-delivery-dao" data-kind="W3 LLC series world" style="--hue:8">
+  <header><span class="mark" aria-hidden="true">GDD</span><div><h3>Get.Delivery DAO (Series 22)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 22 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 22 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>37.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">feead665d491…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s22-get-delivery-dao">Link to this world</a></footer>
+</article><article class="world" id="s23-avatar-chat" data-kind="W3 LLC series world" style="--hue:136">
+  <header><span class="mark" aria-hidden="true">AC(</span><div><h3>Avatar.Chat (Series 23)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 23 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 23 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>57.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">5b0256d91e70…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s23-avatar-chat">Link to this world</a></footer>
+</article><article class="world" id="s24-donatello-dao" data-kind="W3 LLC series world" style="--hue:43">
+  <header><span class="mark" aria-hidden="true">DD(</span><div><h3>Donatello DAO (Series 24)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 24 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 24 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>59.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">3e4870e1cdc2…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s24-donatello-dao">Link to this world</a></footer>
+</article><article class="world" id="s25-mypet-ai" data-kind="W3 LLC series world" style="--hue:138">
+  <header><span class="mark" aria-hidden="true">MA(</span><div><h3>MyPet.AI (Series 25)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 25 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 25 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>48.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">233c0f878071…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s25-mypet-ai">Link to this world</a></footer>
+</article><article class="world" id="s26-lyka-dao" data-kind="W3 LLC series world" style="--hue:159">
+  <header><span class="mark" aria-hidden="true">LD(</span><div><h3>Lyka DAO (Series 26)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 26 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 26 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>65.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">51e33b1cde71…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s26-lyka-dao">Link to this world</a></footer>
+</article><article class="world" id="s27-genomic-dao" data-kind="W3 LLC series world" style="--hue:321">
+  <header><span class="mark" aria-hidden="true">GD(</span><div><h3>Genomic.DAO (Series 27)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 27 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 27 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>37.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">0682b5dfc59e…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s27-genomic-dao">Link to this world</a></footer>
+</article><article class="world" id="s28-genomic-blockchain" data-kind="W3 LLC series world" style="--hue:256">
+  <header><span class="mark" aria-hidden="true">GB(</span><div><h3>Genomic.Blockchain (Series 28)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 28 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 28 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>31.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">4e402d94fb98…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s28-genomic-blockchain">Link to this world</a></footer>
+</article><article class="world" id="s29-metaverse-dao" data-kind="W3 LLC series world" style="--hue:313">
+  <header><span class="mark" aria-hidden="true">MD(</span><div><h3>Metaverse DAO (Series 29)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 29 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 29 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>53.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">c06ec9390470…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s29-metaverse-dao">Link to this world</a></footer>
+</article><article class="world" id="s31-aerospace-dao" data-kind="W3 LLC series world" style="--hue:336">
+  <header><span class="mark" aria-hidden="true">AD(</span><div><h3>Aerospace DAO (Series 31)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 31 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 31 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>69.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">6c8e540d32b2…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s31-aerospace-dao">Link to this world</a></footer>
+</article><article class="world" id="s32-solar-dao" data-kind="W3 LLC series world" style="--hue:329">
+  <header><span class="mark" aria-hidden="true">SD(</span><div><h3>Solar DAO (Series 32)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 32 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 32 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>59.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">eafcbb5e6174…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s32-solar-dao">Link to this world</a></footer>
+</article><article class="world" id="s33-infogurus" data-kind="W3 LLC series world" style="--hue:333">
+  <header><span class="mark" aria-hidden="true">I(3</span><div><h3>InfoGurus (Series 33)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 33 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 33 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>62.5 m</dd></div><div><dt>Merkle root</dt><dd class="mono">332a300e5c83…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s33-infogurus">Link to this world</a></footer>
+</article><article class="world" id="s34-als-dao" data-kind="W3 LLC series world" style="--hue:235">
+  <header><span class="mark" aria-hidden="true">AD(</span><div><h3>ALS DAO (Series 34)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 34 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 34 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>54.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">5cd79a0664b1…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s34-als-dao">Link to this world</a></footer>
+</article><article class="world" id="s35-parkinsons-dao" data-kind="W3 LLC series world" style="--hue:320">
+  <header><span class="mark" aria-hidden="true">PD(</span><div><h3>Parkinsons DAO (Series 35)</h3><p class="kind">W3 LLC series world · coming soon</p></div></header>
+  <p class="tag">Series 35 of W3 LLC: an agent-managed, human-governed DAO cell</p>
+  <ul class="zones"><li><b>Charter Hall</b><span>The DAO&#x27;s charter, contribution model and measurable outcomes</span></li><li><b>Research Synthesis Lab</b><span>Monitoring developments and summarizing evidence</span></li><li><b>Proposal Forum</b><span>Proposals drafted by agents, debated and decided by people</span></li><li><b>Operations Deck</b><span>Task routing, working groups and operational coordination</span></li><li><b>Progress Observatory</b><span>Progress tracking against the charter&#x27;s measurable outcomes</span></li></ul>
+  <p class="agents"><span class="lbl">Agents</span> Evidence Monitor, Research Synthesis Agent, Proposal &amp; Grant Drafter, Collaborator Scout, Task Router, Progress Tracker</p>
+  <p class="omega"><span class="lbl">Omega Steward</span> patient and exact: Series 35 of W3 LLC: an agent-managed, human-governed DAO cell, whose focus the stewards have not set, so it describes its zones and never guesses a mission</p>
+  <dl class="facts"><div><dt>Master Cards</dt><dd>23</dd></div><div><dt>Lessons</dt><dd>8</dd></div><div><dt>Voiced intros</dt><dd>2</dd></div><div><dt>Landmark</dt><dd>34.0 m</dd></div><div><dt>Merkle root</dt><dd class="mono">da7a529396b7…</dd></div></dl>
+  <footer><span class="pill muted">RP1 anchor not chosen yet</span><a class="btn ghost" href="#s35-parkinsons-dao">Link to this world</a></footer>
+</article></div>
+</section>
+
+<section id="roadmap" aria-labelledby="road-h"><p class="eyebrow">Roadmap</p><h2 id="road-h">Every phase names the person who decides</h2>
+  <ol class="road"><li class="ph done"><span class="st">done</span><h4>Built and checked</h4><ul><li>35 walkable 4 km series worlds with districts, landmarks, a Steward Council and a Projects Pavilion</li><li>SmartCiti.X Holodeck: 8 districts of union halls and an 11-simulator yard</li><li>RP1 fabric files for every world; 506 glTF models pass the Khronos validator</li><li>Agent swarms, metaprompts and management teams seated by each company&#x27;s own agents</li></ul><p class="gate"><span class="lbl">Human gate</span> none: this is the evidence the later phases build on</p></li><li class="ph now"><span class="st">now</span><h4>Shared state on Neon</h4><ul><li>Postgres schema and seed for worlds, teams, seats, proposals, projects and the ledger</li><li>Consoles and worlds read one database instead of rebuilt JSON files</li><li>Heartbeat beats written as rows, so a report is a query</li></ul><p class="gate"><span class="lbl">Human gate</span> the founder authorizes the Neon connector; the connection string stays in the environment, never in the repository</p></li><li class="ph next"><span class="st">next</span><h4>Worlds on RP1&#x27;s Earth</h4><ul><li>An RP1 Dev Center company for the family</li><li>A public HTTPS map service hosting the fabrics</li><li>Land claims at each world&#x27;s anchor, then attach-to-Earth</li><li>Publication kit ready: 6 worlds pass every check; 38 wait only on a founder-chosen anchor</li></ul><p class="gate"><span class="lbl">Human gate</span> the founder, on the RP1 Dev Center account; publishing public content is the founder&#x27;s call</p></li><li class="ph next"><span class="st">next</span><h4>Real stewards, real signatures</h4><ul><li>Seat three human stewards on each Steward Council</li><li>Replace the throwaway test keys with the stewards&#x27; own Ed25519 public keys</li><li>First signed votes on the open proposals</li><li>Keyring ready: stewards and instructors make their own signing keys and register only the public half</li></ul><p class="gate"><span class="lbl">Human gate</span> the board appoints stewards (steward.appoint is reserved for people)</p></li><li class="ph later"><span class="st">later</span><h4>Membership goes live</h4><ul><li>Apple Wallet and Google Wallet passes signed with the family&#x27;s own certificates</li><li>Prices for each membership level</li><li>Checkout opened only after the levels and terms are approved</li></ul><p class="gate"><span class="lbl">Human gate</span> the board sets every price; the founder supplies the signing certificates; counsel reviews the terms</p></li><li class="ph later"><span class="st">later</span><h4>Entities and shared benefit</h4><ul><li>AGI Corp and W3 LLC filings, and written agreements between the nonprofit, the management company and each cell</li><li>Open Global Investment terms, kept separate from control</li><li>The Windfall Clause threshold, share and recipients</li></ul><p class="gate"><span class="lbl">Human gate</span> the board and counsel</p></li></ol>
+</section>
+
+<section aria-labelledby="not-h"><h2 id="not-h">What we do not claim</h2>
+  <ul class="not">
+   <li>Nothing is mounted or rendered in the Sneeze engine yet. The mount plans and decoder are ready, and the native gates are open.</li>
+   <li>Nothing is deployed or minted on any chain. The Merkle roots are commitments a future contract could anchor, by a human decision.</li>
+   <li>No steward is seated and no Omega acts. Only 4 of 41 worlds have an RP1 location, and publishing on RP1 is the founder's call.</li>
+   <li>Lessons are drafts and none is certified. The Akamai expansions are unreviewed model drafts. Every voice is synthetic.</li>
+  </ul>
+</section>
+
+<section id="sources" aria-labelledby="src-h"><h2 id="src-h">Sources</h2>
+  <ol class="sources"><li id="src-1"><a href="https://www.marketsandmarkets.com/Market-Reports/ai-agents-market-15761548.html" target="_blank" rel="noopener">MarketsandMarkets, 2025</a>. MarketsandMarkets projects the AI agents market to grow from USD 7.84 billion in 2025 to USD 52.62 billion by 2030, a CAGR of 46.3%.</li><li id="src-2"><a href="https://www.processexcellencenetwork.com/ai/news/gartner-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026" target="_blank" rel="noopener">Gartner, Inc. (as reported by PEX Network), 2025</a>. Gartner predicts that 40 percent of enterprise applications will be integrated with task-specific AI agents by 2026, up from less than 5 percent in 2025.</li><li id="src-3"><a href="https://www.theregister.com/software/2026/04/30/govern-your-bots-carefully-or-chaos-could-ensue/5229506" target="_blank" rel="noopener">Gartner, Inc. (as reported by The Register), 2026</a>. Gartner expects the average Global Fortune 500 enterprise to run more than 150,000 AI agents by 2028, up from fewer than 15, and warns that without governance they will multiply unchecked.</li><li id="src-4"><a href="https://kpmg.com/us/en/media/news/q3-ai-pulse-2026.html" target="_blank" rel="noopener">KPMG LLP (US), 2026</a>. KPMG&#x27;s Q3 2026 AI Pulse Survey found that 49% of leaders have defined high-risk use cases in which autonomous decision-making by AI agents is not allowed.</li><li id="src-5"><a href="https://digital-strategy.ec.europa.eu/en/news/european-commission-launches-european-partnership-virtual-worlds" target="_blank" rel="noopener">European Commission (Shaping Europe&#x27;s digital future), 2025</a>. The European Commission states that the global virtual worlds market is forecast to rise from EUR 27 billion in 2022 to over EUR 800 billion by 2030.</li><li id="src-6"><a href="https://www.abiresearch.com/press/laying-the-foundation-of-the-metaverse-streaming-video-social-gaming-and-broader-digital-advertising-markets-to-collectively-clear-us2-trillion-by-2030" target="_blank" rel="noopener">ABI Research, 2022</a>. ABI Research held a modest 2022 forecast that virtual spaces would approach US$45 billion by 2030, warning that headwinds could dampen more optimistic metaverse expectations.</li><li id="src-7"><a href="https://www.marketsandmarkets.com/ResearchInsight/digital-twin-market-size.asp" target="_blank" rel="noopener">MarketsandMarkets, 2025</a>. MarketsandMarkets expects the global digital twin market to grow from USD 21.14 billion in 2025 to USD 149.81 billion in 2030, a CAGR of 47.9%.</li><li id="src-8"><a href="https://www.un.org/sustainabledevelopment/blog/2025/11/press-release-wup2025/" target="_blank" rel="noopener">United Nations Department of Economic and Social Affairs (UN DESA), 2025</a>. UN DESA&#x27;s World Urbanization Prospects 2025 reports that cities are now home to 45 per cent of the global population of 8.2 billion.</li><li id="src-9"><a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener">European Commission (Shaping Europe&#x27;s digital future), 2026</a>. The European Commission states that the EU AI Act entered into force on 1 August 2024 and became applicable on 2 August 2026, with some exceptions, after GPAI obligations applied from 2 August 2025.</li></ol>
+  <p class="note">External figures were checked against their sources on 2026-10-12. Project figures are read from the WorldForge registries at build time.</p>
+  <div class="contact"><span class="lbl">Contact</span><code>x@agifuturefoundation.org</code><button type="button" class="chip" id="copy">Copy address</button></div>
+</section>
+</main>
+<script>
+(() => {
+  const chips = document.querySelectorAll('.chip[data-k]'), cards = document.querySelectorAll('.world');
+  chips.forEach(c => c.addEventListener('click', () => {
+    chips.forEach(x => x.classList.toggle('on', x === c));
+    cards.forEach(w => { w.hidden = c.dataset.k !== 'all' && w.dataset.kind !== c.dataset.k; });
+  }));
+  const b = document.getElementById('copy');
+  b.addEventListener('click', () => {
+    navigator.clipboard?.writeText('x@agifuturefoundation.org').then(() => { b.textContent = 'Copied'; }, () => {
+      const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected: press copy';
+    });
+  });
+})();
+</script>

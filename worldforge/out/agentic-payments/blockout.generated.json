@@ -1,0 +1,545 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:agentic-payments",
+ "rootCardId": "world:agentic-payments",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -144,
+   144
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:agentic-payments/transaction-desk",
+   "displayName": "Transaction Desk",
+   "centerXZ": [
+    -59.4,
+    59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agentic-payments/service-provisioning-counter",
+   "displayName": "Service Provisioning Counter",
+   "centerXZ": [
+    -59.4,
+    -59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agentic-payments/budget-office",
+   "displayName": "Budget Office",
+   "centerXZ": [
+    59.4,
+    -59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "displayName": "Financial Infrastructure Gateway",
+   "centerXZ": [
+    59.4,
+    59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:agentic-payments/floor",
+   "parentCardId": "plaza:agentic-payments",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:agentic-payments/avatar",
+   "parentCardId": "coordinator:agentic-payments",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agentic-payments/host/avatar",
+   "parentCardId": "advisor:agentic-payments/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agentic-payments/steward/avatar",
+   "parentCardId": "advisor:agentic-payments/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:agentic-payments/alignment/avatar",
+   "parentCardId": "advisor:agentic-payments/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:agentic-payments/arch",
+   "parentCardId": "gate:agentic-payments",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    124
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:agentic-payments/chamber",
+   "parentCardId": "council:agentic-payments",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -124
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:agentic-payments/steward-1/chair",
+   "parentCardId": "seat:agentic-payments/steward-1",
+   "zoneCardId": "council:agentic-payments",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:agentic-payments/steward-2/chair",
+   "parentCardId": "seat:agentic-payments/steward-2",
+   "zoneCardId": "council:agentic-payments",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:agentic-payments/steward-3/chair",
+   "parentCardId": "seat:agentic-payments/steward-3",
+   "zoneCardId": "council:agentic-payments",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:agentic-payments/avatar",
+   "parentCardId": "omega:agentic-payments",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -124
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/transaction-desk/pad",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "zoneCardId": "zone:agentic-payments/transaction-desk",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -59.4,
+    0,
+    59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/transaction-desk/hall",
+   "parentCardId": "zone:agentic-payments/transaction-desk",
+   "zoneCardId": "zone:agentic-payments/transaction-desk",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -53.74,
+    0.4,
+    53.74
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agentic-payments/buyer-agent/avatar",
+   "parentCardId": "agent:agentic-payments/buyer-agent",
+   "zoneCardId": "zone:agentic-payments/transaction-desk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -62.4,
+    0.4,
+    64.88
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:agentic-payments/seller-agent/avatar",
+   "parentCardId": "agent:agentic-payments/seller-agent",
+   "zoneCardId": "zone:agentic-payments/transaction-desk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -64.88,
+    0.4,
+    62.4
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/service-provisioning-counter/pad",
+   "parentCardId": "zone:agentic-payments/service-provisioning-counter",
+   "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -59.4,
+    0,
+    -59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/service-provisioning-counter/hall",
+   "parentCardId": "zone:agentic-payments/service-provisioning-counter",
+   "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -53.74,
+    0.4,
+    -53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agentic-payments/provisioning-agent/avatar",
+   "parentCardId": "agent:agentic-payments/provisioning-agent",
+   "zoneCardId": "zone:agentic-payments/service-provisioning-counter",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -63.64,
+    0.4,
+    -63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/budget-office/pad",
+   "parentCardId": "zone:agentic-payments/budget-office",
+   "zoneCardId": "zone:agentic-payments/budget-office",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    59.4,
+    0,
+    -59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/budget-office/hall",
+   "parentCardId": "zone:agentic-payments/budget-office",
+   "zoneCardId": "zone:agentic-payments/budget-office",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    53.74,
+    0.4,
+    -53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agentic-payments/budget-agent/avatar",
+   "parentCardId": "agent:agentic-payments/budget-agent",
+   "zoneCardId": "zone:agentic-payments/budget-office",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    63.64,
+    0.4,
+    -63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/financial-infrastructure-gateway/pad",
+   "parentCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    59.4,
+    0,
+    59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:agentic-payments/financial-infrastructure-gateway/hall",
+   "parentCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    53.74,
+    0.4,
+    53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:agentic-payments/rail-agent/avatar",
+   "parentCardId": "agent:agentic-payments/rail-agent",
+   "zoneCardId": "zone:agentic-payments/financial-infrastructure-gateway",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    63.64,
+    0.4,
+    63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:agentic-payments/gate",
+   "startXZ": [
+    0,
+    124
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:agentic-payments/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -114
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agentic-payments/transaction-desk",
+   "startXZ": [
+    -16.97,
+    16.97
+   ],
+   "endXZ": [
+    -48.08,
+    48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agentic-payments/service-provisioning-counter",
+   "startXZ": [
+    -16.97,
+    -16.97
+   ],
+   "endXZ": [
+    -48.08,
+    -48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agentic-payments/budget-office",
+   "startXZ": [
+    16.97,
+    -16.97
+   ],
+   "endXZ": [
+    48.08,
+    -48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:agentic-payments/financial-infrastructure-gateway",
+   "startXZ": [
+    16.97,
+    16.97
+   ],
+   "endXZ": [
+    48.08,
+    48.08
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

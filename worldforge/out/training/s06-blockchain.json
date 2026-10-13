@@ -1,0 +1,756 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Blockchain (Series 6)",
+ "slug": "s06-blockchain",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:s06-blockchain/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "s06-blockchain",
+   "zone": "Blockchain (Series 6) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].tagline"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].zones[*].name"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].agents[*].name"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Blockchain (Series 6) is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].status"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/s06-blockchain.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s06-blockchain/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "s06-blockchain",
+   "zone": "Blockchain (Series 6) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].reserved_for_humans"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=s06-blockchain].stewards"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/s06-blockchain.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s06-blockchain/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "s06-blockchain",
+   "zone": "Blockchain (Series 6) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/s06-blockchain.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/s06-blockchain.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:s06-blockchain/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Blockchain (Series 6) routes a question",
+   "world": "s06-blockchain",
+   "zone": "Blockchain (Series 6) Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/s06-blockchain.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/s06-blockchain.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Evidence Monitor (Research Synthesis Lab): Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "keywords": [
+      "monitor",
+      "monitors",
+      "summarizes"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.evidence-monitor]"
+    },
+    {
+     "n": 2,
+     "do": "Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "keywords": [
+      "synthesizes"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.research-synthesis-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Collaborator Scout (Operations Deck): Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "keywords": [
+      "collaborator",
+      "scout",
+      "identifies",
+      "experts",
+      "collaborators"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.collaborator-scout]"
+    },
+    {
+     "n": 4,
+     "do": "Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles",
+     "keywords": [
+      "router",
+      "routes",
+      "tasks",
+      "coordinates",
+      "between",
+      "decision",
+      "cycles"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.task-router]"
+    },
+    {
+     "n": 5,
+     "do": "Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them",
+     "keywords": [
+      "proposal",
+      "grant",
+      "drafter",
+      "drafts",
+      "proposals",
+      "grants",
+      "human",
+      "review",
+      "never",
+      "enacts",
+      "them",
+      "forum",
+      "drafted",
+      "agents",
+      "debated",
+      "decided",
+      "people"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.proposal-grant-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes",
+     "keywords": [
+      "tracker",
+      "tracks",
+      "against",
+      "measurable",
+      "outcomes",
+      "observatory",
+      "tracking"
+     ],
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.progress-tracker]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/s06-blockchain.json#coordinator",
+    "agents/swarms/s06-blockchain.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s06-blockchain/zone/research-synthesis-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Research Synthesis Lab: what happens here",
+   "world": "s06-blockchain",
+   "zone": "Research Synthesis Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Research Synthesis Lab",
+    "room_model": "my-fabric/worlds/models/room-s06-blockchain-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/research-synthesis-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Monitoring developments and summarizing evidence",
+     "quote": "Monitoring developments and summarizing evidence",
+     "from": "worlds/s06-blockchain/spec.json#zones[name=Research Synthesis Lab].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Evidence Monitor's role: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "quote": "Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.evidence-monitor].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Research Synthesis Agent's role: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "quote": "Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.research-synthesis-agent].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Research Synthesis Lab\"",
+     "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/research-synthesis-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/evidence-monitor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/research-synthesis-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator",
+     "from": "agents/swarms/s06-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/specialist/evidence-monitor",
+    "avatar:s06-blockchain/specialist/research-synthesis-agent"
+   ],
+   "sources": [
+    "worlds/s06-blockchain/spec.json#zones[name=Research Synthesis Lab]",
+    "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/research-synthesis-lab]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.evidence-monitor]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.research-synthesis-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s06-blockchain/zone/proposal-forum",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Proposal Forum: what happens here",
+   "world": "s06-blockchain",
+   "zone": "Proposal Forum",
+   "room": {
+    "kind": "forum",
+    "sign": "Proposal Forum",
+    "room_model": "my-fabric/worlds/models/room-s06-blockchain-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/proposal-forum].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Proposals drafted by agents, debated and decided by people",
+     "quote": "Proposals drafted by agents, debated and decided by people",
+     "from": "worlds/s06-blockchain/spec.json#zones[name=Proposal Forum].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Proposal & Grant Drafter's role: Drafts proposals and grants for human review; never enacts them",
+     "quote": "Drafts proposals and grants for human review; never enacts them",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.proposal-grant-drafter].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Proposal Forum\"",
+     "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/proposal-forum].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/proposal-grant-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator",
+     "from": "agents/swarms/s06-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/specialist/proposal-grant-drafter"
+   ],
+   "sources": [
+    "worlds/s06-blockchain/spec.json#zones[name=Proposal Forum]",
+    "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/proposal-forum]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.proposal-grant-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s06-blockchain/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "s06-blockchain",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-s06-blockchain-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Task routing, working groups and operational coordination",
+     "quote": "Task routing, working groups and operational coordination",
+     "from": "worlds/s06-blockchain/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Collaborator Scout's role: Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "quote": "Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.collaborator-scout].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Task Router's role: Routes tasks and coordinates working groups between decision cycles",
+     "quote": "Routes tasks and coordinates working groups between decision cycles",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.task-router].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Operations Deck\"",
+     "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/collaborator-scout].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Task Router: Routes tasks and coordinates working groups between decision cycles",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/task-router].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator",
+     "from": "agents/swarms/s06-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/specialist/collaborator-scout",
+    "avatar:s06-blockchain/specialist/task-router"
+   ],
+   "sources": [
+    "worlds/s06-blockchain/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/operations-deck]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.collaborator-scout]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.task-router]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:s06-blockchain/zone/progress-observatory",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Progress Observatory: what happens here",
+   "world": "s06-blockchain",
+   "zone": "Progress Observatory",
+   "room": {
+    "kind": "forum",
+    "sign": "Progress Observatory",
+    "room_model": "my-fabric/worlds/models/room-s06-blockchain-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/progress-observatory].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Progress tracking against the charter's measurable outcomes",
+     "quote": "Progress tracking against the charter's measurable outcomes",
+     "from": "worlds/s06-blockchain/spec.json#zones[name=Progress Observatory].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Progress Tracker's role: Tracks progress against the charter's measurable outcomes",
+     "quote": "Tracks progress against the charter's measurable outcomes",
+     "from": "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.progress-tracker].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Progress Observatory\"",
+     "from": "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/progress-observatory].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Progress Tracker: Tracks progress against the charter's measurable outcomes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:s06-blockchain/specialist/progress-tracker].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator",
+     "from": "agents/swarms/s06-blockchain.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:s06-blockchain/specialist/progress-tracker"
+   ],
+   "sources": [
+    "worlds/s06-blockchain/spec.json#zones[name=Progress Observatory]",
+    "worldforge/out/s06-blockchain/cards.json#cards[cardId=zone:s06-blockchain/progress-observatory]",
+    "agents/swarms/s06-blockchain.json#agents[id=s06-blockchain.progress-tracker]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:s06-blockchain/coordinator",
+   "avatarId": "avatar:s06-blockchain/coordinator",
+   "kind": "coordinator",
+   "name": "Blockchain (Series 6) Coordinator",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/coordinator",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "4d2c118e929fd3954a6f6efdda49dbd5cd6f1d7028b6c732333a8ebad959cb33"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/routing"
+   ],
+   "chars": 2911,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Blockchain (Series 6) Coordinator (avatar:s06-blockchain/coordinator) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/coordinator in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 4d2c118e929fd395); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Blockchain (Series 6) (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Blockchain (Series 6) Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/routing: How Blockchain (Series 6) routes a question\n    Steps: 1. Evidence Monitor (Research Synthesis Lab): Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 2. Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 3. Collaborator Scout (Operations Deck): Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 4. Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles 5. Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them 6. Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/evidence-monitor",
+   "avatarId": "avatar:s06-blockchain/specialist/evidence-monitor",
+   "kind": "specialist",
+   "name": "Evidence Monitor",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/evidence-monitor",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "c79be0a7eb43d7c1f352cb09275324f748aece3a0d6125b8d3b69931a0855169"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/research-synthesis-lab"
+   ],
+   "chars": 2773,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Evidence Monitor (avatar:s06-blockchain/specialist/evidence-monitor) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/evidence-monitor in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 c79be0a7eb43d7c1); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: monitor, monitors, summarizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 4. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/research-synthesis-agent",
+   "avatarId": "avatar:s06-blockchain/specialist/research-synthesis-agent",
+   "kind": "specialist",
+   "name": "Research Synthesis Agent",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/research-synthesis-agent",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "ac59118990f4394fbc77d10769e144f5cd7c5ada8a2f17bdd8b77fcae0f90942"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/research-synthesis-lab"
+   ],
+   "chars": 2767,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research Synthesis Agent (avatar:s06-blockchain/specialist/research-synthesis-agent) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/research-synthesis-agent in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 ac59118990f4394f); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: synthesizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on its charter (focus not yet set by the stewards) for the stewards 4. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/proposal-grant-drafter",
+   "avatarId": "avatar:s06-blockchain/specialist/proposal-grant-drafter",
+   "kind": "specialist",
+   "name": "Proposal & Grant Drafter",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/proposal-grant-drafter",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "82602886fb5d5c4c629c34fe6072b994470711a8a57647b47107d7df3cbf2463"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/proposal-forum"
+   ],
+   "chars": 2684,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Proposal & Grant Drafter (avatar:s06-blockchain/specialist/proposal-grant-drafter) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/proposal-grant-drafter in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 82602886fb5d5c4c); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Proposal Forum - Proposals drafted by agents, debated and decided by people.\nYour role: Drafts proposals and grants for human review; never enacts them (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: proposal, grant, drafter, drafts, proposals, grants, human, review, never, enacts, them, forum, drafted, agents, debated, decided, people.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/proposal-forum: Proposal Forum: what happens here [room: Proposal Forum]\n    Steps: 1. Enter the forum signed \"Proposal Forum\" 2. Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them 3. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/collaborator-scout",
+   "avatarId": "avatar:s06-blockchain/specialist/collaborator-scout",
+   "kind": "specialist",
+   "name": "Collaborator Scout",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/collaborator-scout",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "3fbac6c8ea530b574e0de4b6c29ac4b1d32bbf1264f23d7ddaaaf5df3380e31c"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/operations-deck"
+   ],
+   "chars": 2737,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Collaborator Scout (avatar:s06-blockchain/specialist/collaborator-scout) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/collaborator-scout in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 3fbac6c8ea530b57); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: collaborator, scout, identifies, experts, collaborators.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/task-router",
+   "avatarId": "avatar:s06-blockchain/specialist/task-router",
+   "kind": "specialist",
+   "name": "Task Router",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/task-router",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "194db5a81365f81fe7920e09a375fbe72fb2036e40eca0d8cf5364dd974c75f1"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/operations-deck"
+   ],
+   "chars": 2694,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Task Router (avatar:s06-blockchain/specialist/task-router) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/task-router in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 194db5a81365f81f); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Routes tasks and coordinates working groups between decision cycles (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: router, routes, tasks, coordinates, between, decision, cycles.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on its charter (focus not yet set by the stewards) 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:s06-blockchain/specialist/progress-tracker",
+   "avatarId": "avatar:s06-blockchain/specialist/progress-tracker",
+   "kind": "specialist",
+   "name": "Progress Tracker",
+   "persona_prompt": {
+    "id": "persona:s06-blockchain/specialist/progress-tracker",
+    "file": "worldforge/out/avatars/prompts/s06-blockchain.json",
+    "sha256": "0eaa3640399938290068c12aee3f40b6f9934a978ab3ec181185d83b124a11d8"
+   },
+   "lessons": [
+    "lesson:s06-blockchain/zone/progress-observatory"
+   ],
+   "chars": 2607,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Progress Tracker (avatar:s06-blockchain/specialist/progress-tracker) teaches draft lessons in Blockchain (Series 6) (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:s06-blockchain/specialist/progress-tracker in worldforge/out/avatars/prompts/s06-blockchain.json (sha256 0eaa364039993829); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Progress Observatory - Progress tracking against the charter's measurable outcomes.\nYour role: Tracks progress against the charter's measurable outcomes (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: tracker, tracks, against, measurable, outcomes, observatory, tracking.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:s06-blockchain/zone/progress-observatory: Progress Observatory: what happens here [room: Progress Observatory]\n    Steps: 1. Enter the forum signed \"Progress Observatory\" 2. Meet Progress Tracker: Tracks progress against the charter's measurable outcomes 3. A question that belongs to another zone goes back to Blockchain (Series 6) Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to s06-blockchain.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "zone \"Charter Hall\" seats no specialist: no model-taught lesson for it",
+  "spec gap: Focus, charter outcomes and RP1 location not given yet"
+ ]
+}

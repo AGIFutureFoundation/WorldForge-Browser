@@ -1,0 +1,1973 @@
+{
+ "schemaVersion": "worldforge-sneeze-mount-plan/0.1",
+ "engine": "Sneeze",
+ "bindingStatus": "decoder-available-not-mounted",
+ "bindingNote": "worldforge/native/rmcobject_decoder.* encodes these nodes against Sneeze headers (Y-up -> Z-up conversion in the decoder); nothing is mounted or rendered yet",
+ "rp1": {
+  "nameRule": "ASCII, <= 47 bytes (displayName); UTF-8 label in extras.label",
+  "bound": "d3Max = half-extents in metres from the card Volum or primitive size"
+ },
+ "rootCardId": "world:s29-metaverse-dao",
+ "mountParent": "SCENE::Fabric_Root()->Node_Root()",
+ "resourceCachePolicy": "shared-by-exact-sReference-URL",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "assets": [
+  {
+   "url": "http://127.0.0.1:8789/unit-cube.glb",
+   "localPath": "worldforge/out/assets/unit-cube.glb",
+   "sha256": "66af9d7110fb7ca21d5323ed5c3261747a282e8378290911ce4064152f99e735",
+   "role": "shared-generic-unit-cube"
+  }
+ ],
+ "previewGlb": {
+  "path": "worldforge/out/s29-metaverse-dao/s29-metaverse-dao.glb",
+  "sha256": "029ccfda6231be1ec085beba677bec15d0931d7695d269ab46c7ce6a401fa879"
+ },
+ "nodes": [
+  {
+   "cardId": "world:s29-metaverse-dao",
+   "displayName": "Metaverse DAO (Series 29) - Powered by AGI Corp",
+   "parentCardId": null,
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     150,
+     40,
+     150
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "world",
+    "label": "Metaverse DAO (Series 29) · Powered by AGI Corp",
+    "source": "my-fabric/worlds/index.json"
+   }
+  },
+  {
+   "cardId": "plaza:s29-metaverse-dao",
+   "displayName": "Metaverse DAO (Series 29~ - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     24,
+     5,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "plaza",
+    "label": "Metaverse DAO (Series 29… · Powered by AGI Corp",
+    "source": "README.md (shared PBC management model)"
+   }
+  },
+  {
+   "cardId": "coordinator:s29-metaverse-dao",
+   "displayName": "Metaverse DAO (Series 29~ - Powered by AGI Corp",
+   "parentCardId": "plaza:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "coordinator",
+    "label": "Metaverse DAO (Series 29… · Powered by AGI Corp",
+    "source": "agents/swarms/s29-metaverse-dao.json#coordinator"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/host",
+   "displayName": "Host Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Host Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/s29-metaverse-dao.json#advisors[id=host]"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/steward",
+   "displayName": "Steward Liaison - Powered by AGI Corp",
+   "parentCardId": "plaza:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Steward Liaison · Powered by AGI Corp",
+    "source": "agents/advisors/s29-metaverse-dao.json#advisors[id=steward]"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/alignment",
+   "displayName": "Alignment Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Alignment Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/s29-metaverse-dao.json#advisors[id=alignment]"
+   }
+  },
+  {
+   "cardId": "gate:s29-metaverse-dao",
+   "displayName": "Alignment Evaluation Gate - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     10,
+     6,
+     3
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "gate",
+    "label": "Alignment Evaluation Gate · Powered by AGI Corp",
+    "source": "worlds/PBC.json#programs"
+   }
+  },
+  {
+   "cardId": "council:s29-metaverse-dao",
+   "displayName": "Steward Council - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     14,
+     6,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "council",
+    "label": "Steward Council · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-1",
+   "displayName": "Steward Seat 1 - Powered by AGI Corp",
+   "parentCardId": "council:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 1 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-2",
+   "displayName": "Steward Seat 2 - Powered by AGI Corp",
+   "parentCardId": "council:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 2 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-3",
+   "displayName": "Steward Seat 3 - Powered by AGI Corp",
+   "parentCardId": "council:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 3 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "omega:s29-metaverse-dao",
+   "displayName": "Omega Steward - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     26,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "omega",
+    "label": "Omega Steward · Powered by AGI Corp",
+    "source": "agents/advisory/omega_agents.json"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/charter-hall",
+   "displayName": "Charter Hall - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     8,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Charter Hall · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): How It Works"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+   "displayName": "Research Synthesis Lab - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     12,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Research Synthesis Lab · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/evidence-monitor",
+   "displayName": "Evidence Monitor - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6.24,
+     0,
+     -0.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Evidence Monitor · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/research-synthesis-agent",
+   "displayName": "Research Synthesis Agent - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.16,
+     0,
+     -3.52
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Research Synthesis Agent · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/proposal-forum",
+   "displayName": "Proposal Forum - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -90
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Proposal Forum · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/proposal-grant-drafter",
+   "displayName": "Proposal & Grant Drafter - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/proposal-forum",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -6
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Proposal & Grant Drafter · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/operations-deck",
+   "displayName": "Operations Deck - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     12,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Operations Deck · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/collaborator-scout",
+   "displayName": "Collaborator Scout - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/operations-deck",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     5.16,
+     0,
+     -3.52
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Collaborator Scout · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/task-router",
+   "displayName": "Task Router - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/operations-deck",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     6.24,
+     0,
+     -0.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Task Router · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/progress-observatory",
+   "displayName": "Progress Observatory - Powered by AGI Corp",
+   "parentCardId": "world:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Progress Observatory · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/progress-tracker",
+   "displayName": "Progress Tracker - Powered by AGI Corp",
+   "parentCardId": "zone:s29-metaverse-dao/progress-observatory",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     3.53,
+     0,
+     4.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Progress Tracker · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+   }
+  },
+  {
+   "cardId": "plaza:s29-metaverse-dao/floor",
+   "displayName": "plaza:s29-metaverse-dao/floor",
+   "parentCardId": "plaza:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     24,
+     0.2,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     48,
+     0.4,
+     48
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "pad",
+    "massingType": "plaza",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "coordinator:s29-metaverse-dao/avatar",
+   "displayName": "coordinator:s29-metaverse-dao/avatar",
+   "parentCardId": "coordinator:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/host/avatar",
+   "displayName": "advisor:s29-metaverse-dao/host/avatar",
+   "parentCardId": "advisor:s29-metaverse-dao/host",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/steward/avatar",
+   "displayName": "advisor:s29-metaverse-dao/steward/avatar",
+   "parentCardId": "advisor:s29-metaverse-dao/steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:s29-metaverse-dao/alignment/avatar",
+   "displayName": "advisor:s29-metaverse-dao/alignment/avatar",
+   "parentCardId": "advisor:s29-metaverse-dao/alignment",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "gate:s29-metaverse-dao/arch",
+   "displayName": "gate:s29-metaverse-dao/arch",
+   "parentCardId": "gate:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     8,
+     5,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     16,
+     10,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "arch",
+    "massingType": "gate",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "council:s29-metaverse-dao/chamber",
+   "displayName": "council:s29-metaverse-dao/chamber",
+   "parentCardId": "council:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     14,
+     4,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     28,
+     8,
+     20
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "box",
+    "massingType": "council",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-1/chair",
+   "displayName": "seat:s29-metaverse-dao/steward-1/chair",
+   "parentCardId": "seat:s29-metaverse-dao/steward-1",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:s29-metaverse-dao",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-2/chair",
+   "displayName": "seat:s29-metaverse-dao/steward-2/chair",
+   "parentCardId": "seat:s29-metaverse-dao/steward-2",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:s29-metaverse-dao",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:s29-metaverse-dao/steward-3/chair",
+   "displayName": "seat:s29-metaverse-dao/steward-3/chair",
+   "parentCardId": "seat:s29-metaverse-dao/steward-3",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:s29-metaverse-dao",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "omega:s29-metaverse-dao/avatar",
+   "displayName": "omega:s29-metaverse-dao/avatar",
+   "parentCardId": "omega:s29-metaverse-dao",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.6,
+     1.1,
+     0.6
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1.2,
+     2.2,
+     1.2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/charter-hall/pad",
+   "displayName": "zone:s29-metaverse-dao/charter-hall/pad",
+   "parentCardId": "zone:s29-metaverse-dao/charter-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/charter-hall",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/charter-hall/hall",
+   "displayName": "zone:s29-metaverse-dao/charter-hall/hall",
+   "parentCardId": "zone:s29-metaverse-dao/charter-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     6,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     4.7,
+     6.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     12,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/charter-hall",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/research-synthesis-lab/pad",
+   "displayName": "ne:s29-metaverse-dao/research-synthesis-lab/pad",
+   "parentCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/research-synthesis-lab/hall",
+   "displayName": "e:s29-metaverse-dao/research-synthesis-lab/hall",
+   "parentCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     10,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     7.61,
+     10.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     20,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/evidence-monitor/avatar",
+   "displayName": "agent:s29-metaverse-dao/evidence-monitor/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/evidence-monitor",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/research-synthesis-agent/avatar",
+   "displayName": "9-metaverse-dao/research-synthesis-agent/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/research-synthesis-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/research-synthesis-lab",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/proposal-forum/pad",
+   "displayName": "zone:s29-metaverse-dao/proposal-forum/pad",
+   "parentCardId": "zone:s29-metaverse-dao/proposal-forum",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/proposal-forum",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/proposal-forum/hall",
+   "displayName": "zone:s29-metaverse-dao/proposal-forum/hall",
+   "parentCardId": "zone:s29-metaverse-dao/proposal-forum",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     8.4,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/proposal-forum",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/proposal-grant-drafter/avatar",
+   "displayName": "s29-metaverse-dao/proposal-grant-drafter/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/proposal-grant-drafter",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/proposal-forum",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/operations-deck/pad",
+   "displayName": "zone:s29-metaverse-dao/operations-deck/pad",
+   "parentCardId": "zone:s29-metaverse-dao/operations-deck",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/operations-deck",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/operations-deck/hall",
+   "displayName": "zone:s29-metaverse-dao/operations-deck/hall",
+   "parentCardId": "zone:s29-metaverse-dao/operations-deck",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     10,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -7.61,
+     10.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     20,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/operations-deck",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/collaborator-scout/avatar",
+   "displayName": "ent:s29-metaverse-dao/collaborator-scout/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/collaborator-scout",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/operations-deck",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/task-router/avatar",
+   "displayName": "agent:s29-metaverse-dao/task-router/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/task-router",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/operations-deck",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/progress-observatory/pad",
+   "displayName": "zone:s29-metaverse-dao/progress-observatory/pad",
+   "parentCardId": "zone:s29-metaverse-dao/progress-observatory",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/progress-observatory",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:s29-metaverse-dao/progress-observatory/hall",
+   "displayName": "one:s29-metaverse-dao/progress-observatory/hall",
+   "parentCardId": "zone:s29-metaverse-dao/progress-observatory",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4.7,
+     8.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/progress-observatory",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:s29-metaverse-dao/progress-tracker/avatar",
+   "displayName": "agent:s29-metaverse-dao/progress-tracker/avatar",
+   "parentCardId": "agent:s29-metaverse-dao/progress-tracker",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:s29-metaverse-dao/progress-observatory",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  }
+ ],
+ "acceptanceRequirements": [
+  "Parent nodes must be created before child nodes",
+  "Each returned native handle must resolve via CONTAINER::Node_Find",
+  "Every resource-bearing NODE must eventually expose Gltf_Render_Model()!=nullptr",
+  "Timeout/fetch/parse failure must fail the load",
+  "Scene mutations must use the engine's safe lifecycle/thread boundary"
+ ]
+}

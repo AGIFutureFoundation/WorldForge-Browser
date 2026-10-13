@@ -1,0 +1,962 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Robotics DAO",
+ "slug": "robotics-dao",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:robotics-dao/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "robotics-dao",
+   "zone": "Robotics DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/robotics-dao.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].tagline"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].zones[*].name"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].agents[*].name"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Robotics DAO is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].status"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/robotics-dao.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:robotics-dao/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "robotics-dao",
+   "zone": "Robotics DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/robotics-dao.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].reserved_for_humans"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=robotics-dao].stewards"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/robotics-dao.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:robotics-dao/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "robotics-dao",
+   "zone": "Robotics DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/robotics-dao.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/robotics-dao.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/robotics-dao.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:robotics-dao/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Robotics DAO routes a question",
+   "world": "robotics-dao",
+   "zone": "Robotics DAO Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/robotics-dao.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/robotics-dao.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Evidence Monitor (Research Synthesis Lab): Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence",
+     "keywords": [
+      "monitor",
+      "monitors",
+      "summarizes"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.evidence-monitor]"
+    },
+    {
+     "n": 2,
+     "do": "Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards",
+     "keywords": [
+      "synthesizes",
+      "stewards"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.research-synthesis-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Collaborator Scout (Operations Deck): Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance",
+     "keywords": [
+      "collaborator",
+      "scout",
+      "identifies",
+      "experts",
+      "collaborators"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.collaborator-scout]"
+    },
+    {
+     "n": 4,
+     "do": "Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles",
+     "keywords": [
+      "router",
+      "routes",
+      "tasks",
+      "coordinates",
+      "between",
+      "decision",
+      "cycles"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.task-router]"
+    },
+    {
+     "n": 5,
+     "do": "Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them",
+     "keywords": [
+      "proposal",
+      "grant",
+      "drafter",
+      "drafts",
+      "proposals",
+      "grants",
+      "human",
+      "review",
+      "never",
+      "enacts",
+      "them",
+      "forum",
+      "drafted",
+      "agents",
+      "debated",
+      "decided",
+      "people"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.proposal-grant-drafter]"
+    },
+    {
+     "n": 6,
+     "do": "Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes",
+     "keywords": [
+      "tracker",
+      "tracks",
+      "against",
+      "charter",
+      "measurable",
+      "outcomes",
+      "observatory",
+      "tracking"
+     ],
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.progress-tracker]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/robotics-dao.json#coordinator",
+    "agents/swarms/robotics-dao.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:robotics-dao/zone/research-synthesis-lab",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Research Synthesis Lab: what happens here",
+   "world": "robotics-dao",
+   "zone": "Research Synthesis Lab",
+   "room": {
+    "kind": "lab",
+    "sign": "Research Synthesis Lab",
+    "room_model": "my-fabric/worlds/models/room-robotics-dao-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/research-synthesis-lab].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Monitoring developments and summarizing evidence",
+     "quote": "Monitoring developments and summarizing evidence",
+     "from": "worlds/robotics-dao/spec.json#zones[name=Research Synthesis Lab].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Evidence Monitor's role: Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence",
+     "quote": "Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.evidence-monitor].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Research Synthesis Agent's role: Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards",
+     "quote": "Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.research-synthesis-agent].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Research Synthesis Lab\"",
+     "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/research-synthesis-lab].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Evidence Monitor: Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/evidence-monitor].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Research Synthesis Agent: Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/research-synthesis-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Robotics DAO Coordinator",
+     "from": "agents/swarms/robotics-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/specialist/evidence-monitor",
+    "avatar:robotics-dao/specialist/research-synthesis-agent"
+   ],
+   "sources": [
+    "worlds/robotics-dao/spec.json#zones[name=Research Synthesis Lab]",
+    "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/research-synthesis-lab]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.evidence-monitor]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.research-synthesis-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:robotics-dao/zone/proposal-forum",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Proposal Forum: what happens here",
+   "world": "robotics-dao",
+   "zone": "Proposal Forum",
+   "room": {
+    "kind": "forum",
+    "sign": "Proposal Forum",
+    "room_model": "my-fabric/worlds/models/room-robotics-dao-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/proposal-forum].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Proposals drafted by agents, debated and decided by people",
+     "quote": "Proposals drafted by agents, debated and decided by people",
+     "from": "worlds/robotics-dao/spec.json#zones[name=Proposal Forum].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Proposal & Grant Drafter's role: Drafts proposals and grants for human review; never enacts them",
+     "quote": "Drafts proposals and grants for human review; never enacts them",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.proposal-grant-drafter].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Proposal Forum\"",
+     "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/proposal-forum].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/proposal-grant-drafter].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Robotics DAO Coordinator",
+     "from": "agents/swarms/robotics-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/specialist/proposal-grant-drafter"
+   ],
+   "sources": [
+    "worlds/robotics-dao/spec.json#zones[name=Proposal Forum]",
+    "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/proposal-forum]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.proposal-grant-drafter]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:robotics-dao/zone/operations-deck",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Operations Deck: what happens here",
+   "world": "robotics-dao",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-robotics-dao-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Task routing, working groups and operational coordination",
+     "quote": "Task routing, working groups and operational coordination",
+     "from": "worlds/robotics-dao/spec.json#zones[name=Operations Deck].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Collaborator Scout's role: Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance",
+     "quote": "Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.collaborator-scout].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    },
+    {
+     "text": "Task Router's role: Routes tasks and coordinates working groups between decision cycles",
+     "quote": "Routes tasks and coordinates working groups between decision cycles",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.task-router].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Operations Deck\"",
+     "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/operations-deck].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Collaborator Scout: Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/collaborator-scout].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Task Router: Routes tasks and coordinates working groups between decision cycles",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/task-router].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Robotics DAO Coordinator",
+     "from": "agents/swarms/robotics-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/specialist/collaborator-scout",
+    "avatar:robotics-dao/specialist/task-router"
+   ],
+   "sources": [
+    "worlds/robotics-dao/spec.json#zones[name=Operations Deck]",
+    "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/operations-deck]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.collaborator-scout]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.task-router]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:robotics-dao/zone/progress-observatory",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Progress Observatory: what happens here",
+   "world": "robotics-dao",
+   "zone": "Progress Observatory",
+   "room": {
+    "kind": "forum",
+    "sign": "Progress Observatory",
+    "room_model": "my-fabric/worlds/models/room-robotics-dao-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/progress-observatory].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Progress tracking against the charter's measurable outcomes",
+     "quote": "Progress tracking against the charter's measurable outcomes",
+     "from": "worlds/robotics-dao/spec.json#zones[name=Progress Observatory].purpose",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+    },
+    {
+     "text": "Progress Tracker's role: Tracks progress against the charter's measurable outcomes",
+     "quote": "Tracks progress against the charter's measurable outcomes",
+     "from": "agents/swarms/robotics-dao.json#agents[id=robotics-dao.progress-tracker].role",
+     "origin": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Progress Observatory\"",
+     "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/progress-observatory].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Progress Tracker: Tracks progress against the charter's measurable outcomes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:robotics-dao/specialist/progress-tracker].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Robotics DAO Coordinator",
+     "from": "agents/swarms/robotics-dao.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/specialist/progress-tracker"
+   ],
+   "sources": [
+    "worlds/robotics-dao/spec.json#zones[name=Progress Observatory]",
+    "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/progress-observatory]",
+    "agents/swarms/robotics-dao.json#agents[id=robotics-dao.progress-tracker]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:robotics-dao/module/deployment-gate",
+   "kind": "module",
+   "mode": "model-taught",
+   "title": "physical-AI deployment governance",
+   "world": "robotics-dao",
+   "zone": "Operations Deck",
+   "room": {
+    "kind": "ops",
+    "sign": "Operations Deck",
+    "room_model": "my-fabric/worlds/models/room-robotics-dao-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/robotics-dao/cards.json#cards[cardId=zone:robotics-dao/operations-deck].building"
+   },
+   "objectives": [
+    {
+     "text": "Run \"physical-AI deployment governance\" step by step, the same steps on both tracks",
+     "quote": "physical-AI deployment governance",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].title"
+    },
+    {
+     "text": "Skill: robotics and automation",
+     "quote": "robotics and automation",
+     "from": "agents/robotics/index.json#modules[id=robotics-dao.deployment-gate].skills[0]"
+    },
+    {
+     "text": "Skill: physical-AI deployment governance",
+     "quote": "physical-AI deployment governance",
+     "from": "agents/robotics/index.json#modules[id=robotics-dao.deployment-gate].skills[1]"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Start with every control at its home position.",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human.steps[n=1]"
+    },
+    {
+     "n": 2,
+     "do": "Simulated move the stewards review.",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human.steps[n=2]"
+    },
+    {
+     "n": 3,
+     "do": "Physical with only the agent signature: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human.steps[n=3]"
+    },
+    {
+     "n": 4,
+     "do": "Physical with 2 of 3 steward signatures passes in simulation only.",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human.steps[n=4]"
+    },
+    {
+     "n": 5,
+     "do": "Stop needs no signature.",
+     "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human.steps[n=5]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": "robotics-dao.deployment-gate",
+    "from": "agents/rubrics/index.json#modules[id=robotics-dao.deployment-gate].robot_scoring",
+    "proposal_status": "awaiting steward approval",
+    "axes": [
+     {
+      "id": "skill:robotics-and-automation",
+      "axis": "robotics and automation",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"robotics and automation\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "skill:physical-ai-deployment-governance",
+      "axis": "physical-AI deployment governance",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "robot",
+       "person"
+      ],
+      "reason": "the source gives no measure or pass threshold for \"physical-AI deployment governance\"; the run exercises it only through the module's step checks (5 of 5 passed), so nothing is scored until the stewards set a measure"
+     },
+     {
+      "id": "person:measurable-outcomes",
+      "axis": "measurable outcomes",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "the charter's measurable outcomes are not yet set (worlds/robotics-dao/spec.json gaps)"
+     },
+     {
+      "id": "person:judgement",
+      "axis": "judgement",
+      "status": "not measurable in simulation",
+      "applies_to": [
+       "person"
+      ],
+      "reason": "when to stop, refuse or ask is a person's call, observed by the instructor; the robot's equivalent is a mechanical limit check"
+     },
+     {
+      "id": "machine:joint-limits",
+      "axis": "joint limits",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "base, shoulder, elbow stay inside their limits on every substep",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:workspace-bounds",
+      "axis": "workspace bounds",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "the end point and any hanging load stay inside the workspace",
+      "verdict": "pass"
+     },
+     {
+      "id": "machine:signed-run-log",
+      "axis": "signed run log",
+      "status": "measured",
+      "applies_to": [
+       "robot"
+      ],
+      "measure": "every command is hash-chained and signed by the avatar; the run must re-verify",
+      "verdict": "pass"
+     }
+    ]
+   },
+   "human_track": {
+    "who": "a person: a trade apprentice",
+    "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].human",
+    "prerequisites": [
+     "Read the Robotics DAO charter focus before the module",
+     "A human instructor is present for every attempt; the tutor avatar is not an instructor"
+    ],
+    "steps": [
+     {
+      "n": 1,
+      "do": "Start with every control at its home position.",
+      "instructor_checks": "every control is back at its home position"
+     },
+     {
+      "n": 2,
+      "do": "Simulated move the stewards review.",
+      "instructor_checks": "the working end is at the marked point"
+     },
+     {
+      "n": 3,
+      "do": "Physical with only the agent signature: recognise that this is not allowed and refuse it - stop, do not make the move, and say why.",
+      "instructor_checks": "physical work without steward signatures is refused; the working end is at the marked point"
+     },
+     {
+      "n": 4,
+      "do": "Physical with 2 of 3 steward signatures passes in simulation only.",
+      "instructor_checks": "with 2 of 3 steward signatures the move passes in simulation only; nothing is dispatched; the working end is at the marked point"
+     },
+     {
+      "n": 5,
+      "do": "Stop needs no signature.",
+      "instructor_checks": "the stop is applied and holds until the instructor resets it"
+     }
+    ],
+    "safety_prechecks": [],
+    "instructor_signoff": "no instructor is registered; this needs a partner",
+    "certificate": null
+   },
+   "robot_track": {
+    "who": "a simulated robot driven by the robotics-dao agent avatar",
+    "from": "agents/training/index.json#modules[id=robotics-dao.deployment-gate].robot",
+    "run_id": "run.robotics-dao.deployment-gate",
+    "run_from": "agents/robotics/index.json#runs[id=run.robotics-dao.deployment-gate]",
+    "robotics_avatar": {
+     "agent": "Task Router",
+     "role": "operations",
+     "title": "Operations Coordinator"
+    },
+    "status": "passed every step in simulation",
+    "passed": 5,
+    "total": 5,
+    "certificate": null
+   },
+   "delivered_by": [
+    "avatar:robotics-dao/specialist/research-synthesis-agent",
+    "avatar:robotics-dao/specialist/task-router",
+    "avatar:robotics-dao/specialist/progress-tracker"
+   ],
+   "sources": [
+    "my-fabric/worlds/index.json#worlds[slug=robotics-dao].tagline",
+    "agents/training/index.json#modules[id=robotics-dao.deployment-gate]",
+    "agents/robotics/index.json#modules[id=robotics-dao.deployment-gate]",
+    "agents/rubrics/index.json#modules[id=robotics-dao.deployment-gate]",
+    "agents/robotics/index.json#avatars.robotics-dao"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:robotics-dao/coordinator",
+   "avatarId": "avatar:robotics-dao/coordinator",
+   "kind": "coordinator",
+   "name": "Robotics DAO Coordinator",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/coordinator",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "3ee29fdc1bc9086872f0cae70f4592adda1512c351ac29584058d63482faa54b"
+   },
+   "lessons": [
+    "lesson:robotics-dao/routing"
+   ],
+   "chars": 2889,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Robotics DAO Coordinator (avatar:robotics-dao/coordinator) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/coordinator in worldforge/out/avatars/prompts/robotics-dao.json (sha256 3ee29fdc1bc90868); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Robotics DAO (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Robotics DAO Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/routing: How Robotics DAO routes a question\n    Steps: 1. Evidence Monitor (Research Synthesis Lab): Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence 2. Research Synthesis Agent (Research Synthesis Lab): Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards 3. Collaborator Scout (Operations Deck): Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance 4. Task Router (Operations Deck): Routes tasks and coordinates working groups between decision cycles 5. Proposal & Grant Drafter (Proposal Forum): Drafts proposals and grants for human review; never enacts them 6. Progress Tracker (Progress Observatory): Tracks progress against the charter's measurable outcomes\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/evidence-monitor",
+   "avatarId": "avatar:robotics-dao/specialist/evidence-monitor",
+   "kind": "specialist",
+   "name": "Evidence Monitor",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/evidence-monitor",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "42a1d559941597c8dfe36e53b44890f221b7a24b9ff8cd32774f1d20bfb29396"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/research-synthesis-lab"
+   ],
+   "chars": 2778,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Evidence Monitor (avatar:robotics-dao/specialist/evidence-monitor) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/evidence-monitor in worldforge/out/avatars/prompts/robotics-dao.json (sha256 42a1d559941597c8); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: monitor, monitors, summarizes.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards 4. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/research-synthesis-agent",
+   "avatarId": "avatar:robotics-dao/specialist/research-synthesis-agent",
+   "kind": "specialist",
+   "name": "Research Synthesis Agent",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/research-synthesis-agent",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "64dc2f67b8378ae8022a988804c4136d856919d56d6c006a17181785a7afa1ec"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/research-synthesis-lab",
+    "lesson:robotics-dao/module/deployment-gate"
+   ],
+   "chars": 3675,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Research Synthesis Agent (avatar:robotics-dao/specialist/research-synthesis-agent) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/research-synthesis-agent in worldforge/out/avatars/prompts/robotics-dao.json (sha256 64dc2f67b8378ae8); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Research Synthesis Lab - Monitoring developments and summarizing evidence.\nYour role: Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: synthesizes, stewards.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/research-synthesis-lab: Research Synthesis Lab: what happens here [room: Research Synthesis Lab]\n    Steps: 1. Enter the lab signed \"Research Synthesis Lab\" 2. Meet Evidence Monitor: Monitors developments in robotics and automation; physical-AI deployment governance and summarizes the evidence 3. Meet Research Synthesis Agent: Synthesizes research on robotics and automation; physical-AI deployment governance for the stewards 4. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\n  - lesson:robotics-dao/module/deployment-gate: physical-AI deployment governance [room: Operations Deck]\n    Steps: 1. Start with every control at its home position. 2. Simulated move the stewards review. 3. Physical with only the agent signature: recognise that this is not allowed and refuse it - stop, do not make the move, and say why. 4. Physical with 2 of 3 steward signatures passes in simulation only. 5. Stop needs no signature.\n    Assessment: robotics and automation (not measurable in simulation); physical-AI deployment governance (not measurable in simulation); measurable outcomes (not measurable in simulation); judgement (not measurable in simulation); joint limits (measured); workspace bounds (measured); signed run log (measured).\n    Two tracks: a person (human instructor present for every attempt) and a simulated robot run; never claim the robot run qualifies anyone.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/proposal-grant-drafter",
+   "avatarId": "avatar:robotics-dao/specialist/proposal-grant-drafter",
+   "kind": "specialist",
+   "name": "Proposal & Grant Drafter",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/proposal-grant-drafter",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "d06170e13ec5971812ca27c3dfcc443d6c588837d99936405a16abe56c8196b5"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/proposal-forum"
+   ],
+   "chars": 2656,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Proposal & Grant Drafter (avatar:robotics-dao/specialist/proposal-grant-drafter) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/proposal-grant-drafter in worldforge/out/avatars/prompts/robotics-dao.json (sha256 d06170e13ec59718); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Proposal Forum - Proposals drafted by agents, debated and decided by people.\nYour role: Drafts proposals and grants for human review; never enacts them (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: proposal, grant, drafter, drafts, proposals, grants, human, review, never, enacts, them, forum, drafted, agents, debated, decided, people.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/proposal-forum: Proposal Forum: what happens here [room: Proposal Forum]\n    Steps: 1. Enter the forum signed \"Proposal Forum\" 2. Meet Proposal & Grant Drafter: Drafts proposals and grants for human review; never enacts them 3. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/collaborator-scout",
+   "avatarId": "avatar:robotics-dao/specialist/collaborator-scout",
+   "kind": "specialist",
+   "name": "Collaborator Scout",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/collaborator-scout",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "1cdda954804796ebdb177deb6ec334a8337662fb3cca93c3d54db9e7a85af2d1"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/operations-deck"
+   ],
+   "chars": 2731,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Collaborator Scout (avatar:robotics-dao/specialist/collaborator-scout) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/collaborator-scout in worldforge/out/avatars/prompts/robotics-dao.json (sha256 1cdda954804796eb); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: collaborator, scout, identifies, experts, collaborators.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/task-router",
+   "avatarId": "avatar:robotics-dao/specialist/task-router",
+   "kind": "specialist",
+   "name": "Task Router",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/task-router",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "bd4b8bf6107a585504975679f884142b43edd9658b38c3d943f29322a6436793"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/operations-deck",
+    "lesson:robotics-dao/module/deployment-gate"
+   ],
+   "chars": 3570,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Task Router (avatar:robotics-dao/specialist/task-router) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/task-router in worldforge/out/avatars/prompts/robotics-dao.json (sha256 bd4b8bf6107a5855); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Operations Deck - Task routing, working groups and operational coordination.\nYour role: Routes tasks and coordinates working groups between decision cycles (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: router, routes, tasks, coordinates, between, decision, cycles.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/operations-deck: Operations Deck: what happens here [room: Operations Deck]\n    Steps: 1. Enter the ops signed \"Operations Deck\" 2. Meet Collaborator Scout: Identifies experts and collaborators working on robotics and automation; physical-AI deployment governance 3. Meet Task Router: Routes tasks and coordinates working groups between decision cycles 4. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\n  - lesson:robotics-dao/module/deployment-gate: physical-AI deployment governance [room: Operations Deck]\n    Steps: 1. Start with every control at its home position. 2. Simulated move the stewards review. 3. Physical with only the agent signature: recognise that this is not allowed and refuse it - stop, do not make the move, and say why. 4. Physical with 2 of 3 steward signatures passes in simulation only. 5. Stop needs no signature.\n    Assessment: robotics and automation (not measurable in simulation); physical-AI deployment governance (not measurable in simulation); measurable outcomes (not measurable in simulation); judgement (not measurable in simulation); joint limits (measured); workspace bounds (measured); signed run log (measured).\n    Two tracks: a person (human instructor present for every attempt) and a simulated robot run; never claim the robot run qualifies anyone.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:robotics-dao/specialist/progress-tracker",
+   "avatarId": "avatar:robotics-dao/specialist/progress-tracker",
+   "kind": "specialist",
+   "name": "Progress Tracker",
+   "persona_prompt": {
+    "id": "persona:robotics-dao/specialist/progress-tracker",
+    "file": "worldforge/out/avatars/prompts/robotics-dao.json",
+    "sha256": "5f9476347498888eb42d3dd67a45c20e82acc204eab632726405f5129e5a4c66"
+   },
+   "lessons": [
+    "lesson:robotics-dao/zone/progress-observatory",
+    "lesson:robotics-dao/module/deployment-gate"
+   ],
+   "chars": 3481,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Progress Tracker (avatar:robotics-dao/specialist/progress-tracker) teaches draft lessons in Robotics DAO (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:robotics-dao/specialist/progress-tracker in worldforge/out/avatars/prompts/robotics-dao.json (sha256 5f9476347498888e); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Progress Observatory - Progress tracking against the charter's measurable outcomes.\nYour role: Tracks progress against the charter's measurable outcomes (source: AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works).\nYou answer on: tracker, tracks, against, charter, measurable, outcomes, observatory, tracking.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:robotics-dao/zone/progress-observatory: Progress Observatory: what happens here [room: Progress Observatory]\n    Steps: 1. Enter the forum signed \"Progress Observatory\" 2. Meet Progress Tracker: Tracks progress against the charter's measurable outcomes 3. A question that belongs to another zone goes back to Robotics DAO Coordinator\n    Assessment: not measurable in simulation.\n  - lesson:robotics-dao/module/deployment-gate: physical-AI deployment governance [room: Operations Deck]\n    Steps: 1. Start with every control at its home position. 2. Simulated move the stewards review. 3. Physical with only the agent signature: recognise that this is not allowed and refuse it - stop, do not make the move, and say why. 4. Physical with 2 of 3 steward signatures passes in simulation only. 5. Stop needs no signature.\n    Assessment: robotics and automation (not measurable in simulation); physical-AI deployment governance (not measurable in simulation); measurable outcomes (not measurable in simulation); judgement (not measurable in simulation); joint limits (measured); workspace bounds (measured); signed run log (measured).\n    Two tracks: a person (human instructor present for every attempt) and a simulated robot run; never claim the robot run qualifies anyone.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to robotics-dao.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "zone \"Charter Hall\" seats no specialist: no model-taught lesson for it",
+  "spec gap: No RP1 location given for this DAO yet",
+  "spec gap: No named people, partners or budgets: the charter's measurable outcomes are not yet set"
+ ]
+}

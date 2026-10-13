@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agent Avatars</title>
+<!-- WorldForge agent avatars: the six role GLBs from worldforge/avatars/build_avatars.py.
+     http://127.0.0.1:8080/worldforge/avatars/preview.html            orbit + turntable + world-hue tint
+     http://127.0.0.1:8080/worldforge/avatars/preview.html?sheet=1    contact sheet (front and back rows) for preview.jpg
+     optional: &hue=<0-360> tints the AV_Fabric_* materials the way a world viewer would with its brand hue. -->
+<style>
+  :root { --bg: #12161d; --panel: rgba(18, 22, 29, 0.82); --fg: #e9ecf1; --muted: #9aa4b3; --line: #2a313c; --accent: #e9d094; }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) { --bg: #eef0f3; --panel: rgba(255, 255, 255, 0.86); --fg: #161a20; --muted: #5a6371; --line: #d5dae1; --accent: #8a6a1c; }
+  }
+  :root[data-theme="dark"] { --bg: #12161d; --panel: rgba(18, 22, 29, 0.82); --fg: #e9ecf1; --muted: #9aa4b3; --line: #2a313c; --accent: #e9d094; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  body { overflow: hidden; }
+  #stage { position: fixed; inset: 0; }
+  header { position: fixed; top: 0; left: 0; right: 0; padding: 12px 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: baseline;
+           background: var(--panel); border-bottom: 1px solid var(--line); z-index: 2; }
+  header b { font-size: 16px; letter-spacing: 0.01em; }
+  header .muted { color: var(--muted); }
+  #controls { position: fixed; left: 16px; bottom: 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; padding: 10px 12px;
+              background: var(--panel); border: 1px solid var(--line); border-radius: 10px; z-index: 2; max-width: calc(100vw - 56px); }
+  #controls label { display: inline-flex; gap: 6px; align-items: center; color: var(--muted); }
+  #labels { position: fixed; left: 0; right: 0; pointer-events: none; z-index: 1; }
+  .col { position: absolute; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+  .col b { display: block; font-size: 15px; color: var(--fg); }
+  .col span { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .row { position: absolute; left: 16px; color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  body.sheet #controls { display: none; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+               "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+</script>
+</head>
+<body>
+<header>
+  <b>WorldForge agent avatars</b>
+  <span>Synthetic, stylised figures for agents. They are agents, not people.</span>
+  <span class="muted" id="status">loading…</span>
+</header>
+<div id="stage"></div>
+<div id="labels"></div>
+<div id="controls">
+  <label><input type="checkbox" id="spin" checked> turntable</label>
+  <label>world hue <input type="range" id="hue" min="-1" max="360" step="1" value="-1"> <span id="hueval">none</span></label>
+</div>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const q = new URLSearchParams(location.search);
+const SHEET = q.has('sheet');
+const BASE = '../out/assets/avatars/';
+const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+document.body.classList.toggle('sheet', SHEET);
+
+try {
+  const [index, validation] = await Promise.all([
+    fetch(BASE + 'index.json').then((r) => r.json()),
+    fetch(BASE + 'validation.json').then((r) => (r.ok ? r.json() : null)).catch(() => null),
+  ]);
+  const roles = index.roles;
+  const v = validation ? Object.values(validation.files) : [];
+  const errs = v.reduce((a, f) => a + f.errors, 0), warns = v.reduce((a, f) => a + f.warnings, 0);
+  document.getElementById('status').textContent =
+    `${roles.length} roles · ${index.totals.triangles.toLocaleString()} triangles · ${(index.totals.bytes / 1e6).toFixed(1)} MB` +
+    (validation ? ` · Khronos validator: ${errs} errors, ${warns} warnings` : '') + ' · static, rig-free: no animation or lip-sync yet';
+
+  const stage = document.getElementById('stage');
+  const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: SHEET });
+  renderer.setPixelRatio(SHEET ? 1 : Math.min(devicePixelRatio, 2));
+  renderer.setSize(innerWidth, innerHeight);
+  renderer.outputColorSpace = THREE.SRGBColorSpace;
+  renderer.toneMapping = THREE.ACESFilmicToneMapping;
+  renderer.toneMappingExposure = 1.05;
+  stage.appendChild(renderer.domElement);
+
+  const scene = new THREE.Scene();
+  scene.background = new THREE.Color(css('--bg'));
+  const pmrem = new THREE.PMREMGenerator(renderer);
+  scene.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+  scene.add(new THREE.HemisphereLight(0xdfe8ff, 0x2a2622, 0.6));
+  const key = new THREE.DirectionalLight(0xffffff, 1.6); key.position.set(3, 6, 5); scene.add(key);
+  const rim = new THREE.DirectionalLight(0xb8d4ff, 0.9); rim.position.set(-4, 3, -5); scene.add(rim);
+
+  // soft contact shadow under each figure
+  const sc = document.createElement('canvas'); sc.width = sc.height = 128;
+  const g = sc.getContext('2d'); const grad = g.createRadialGradient(64, 64, 4, 64, 64, 64);
+  grad.addColorStop(0, 'rgba(0,0,0,0.55)'); grad.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = grad; g.fillRect(0, 0, 128, 128);
+  const shadowMat = new THREE.MeshBasicMaterial({ map: new THREE.CanvasTexture(sc), transparent: true, depthWrite: false });
+
+  const loader = new GLTFLoader();
+  const spacing = SHEET ? 1.19 : 1.05;
+  const figs = [];
+  for (const [i, r] of roles.entries()) {
+    const gltf = await loader.loadAsync(BASE + r.file);
+    const x = (i - (roles.length - 1) / 2) * spacing;
+    const holder = new THREE.Group(); holder.position.x = x; holder.add(gltf.scene); scene.add(holder);
+    const shadow = new THREE.Mesh(new THREE.PlaneGeometry(0.9, 0.9), shadowMat); shadow.rotation.x = -Math.PI / 2; shadow.position.set(x, 0.002, 0); scene.add(shadow);
+    const fabrics = [];
+    gltf.scene.traverse((o) => { if (o.isMesh && /^AV_Fabric_/.test(o.material.name)) fabrics.push({ m: o.material, base: o.material.color.clone() }); });
+    let halo = null; gltf.scene.traverse((o) => { if (!halo && /Halo$/.test(o.name)) halo = o; });   // loader sanitises spaces
+    figs.push({ r, holder, fabrics, halo });
+  }
+
+  const tint = (hue) => {
+    for (const f of figs) for (const { m, base } of f.fabrics) {
+      m.color.copy(base);
+      if (hue >= 0) m.color.multiply(new THREE.Color().setHSL(hue / 360, 0.45, 0.62));
+    }
+  };
+  const hue0 = q.has('hue') ? Number(q.get('hue')) : -1;
+  tint(hue0);
+
+  const labels = document.getElementById('labels');
+  if (SHEET) {
+    // Two rows, one render each through a scissor: front three-quarter on top, back three-quarter below.
+    const W = innerWidth, top = document.querySelector('header').offsetHeight, rowH = Math.floor((innerHeight - top) / 2);
+    const aspect = W / rowH, frustH = 2.62;
+    const cam = new THREE.OrthographicCamera(-frustH * aspect / 2, frustH * aspect / 2, frustH / 2, -frustH / 2, 0.1, 50);
+    cam.position.set(0, 2.6, 10); cam.lookAt(0, 1.08, 0);
+    renderer.setScissorTest(true);
+    const rows = [['front three-quarter', 0.42], ['back three-quarter', Math.PI + 0.42]];
+    rows.forEach(([name, yaw], k) => {
+      for (const f of figs) f.holder.rotation.y = yaw;
+      const y = innerHeight - top - (k + 1) * rowH;
+      renderer.setViewport(0, y, W, rowH); renderer.setScissor(0, y, W, rowH);
+      renderer.render(scene, cam);
+      const rl = document.createElement('div'); rl.className = 'row'; rl.style.top = `${top + k * rowH + 10}px`; rl.textContent = name; labels.appendChild(rl);
+    });
+    labels.style.top = '0'; labels.style.bottom = '0';
+    figs.forEach((f, i) => {
+      const d = document.createElement('div'); d.className = 'col';
+      d.style.left = `${50 + ((i - (figs.length - 1) / 2) * spacing) / (frustH * aspect) * 100}%`;
+      d.style.top = `${top + rowH - 46}px`;
+      d.innerHTML = `<b>${f.r.role}</b><span>${f.r.triangles.toLocaleString()} tris · ${(f.r.bytes / 1e6).toFixed(2)} MB · ${f.r.height_m} m</span>`;
+      labels.appendChild(d);
+    });
+    window.__avatarsReady = true;
+  } else {
+    const cam = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 0.1, 100);
+    cam.position.set(0, 1.6, 9.5);
+    const controls = new OrbitControls(cam, renderer.domElement);
+    controls.target.set(0, 1.05, 0); controls.enableDamping = true; controls.update();
+    const ground = new THREE.Mesh(new THREE.CircleGeometry(6, 64), new THREE.MeshStandardMaterial({ color: css('--line'), roughness: 0.95 }));
+    ground.rotation.x = -Math.PI / 2; scene.add(ground);
+    const spin = document.getElementById('spin');
+    const hue = document.getElementById('hue'), hv = document.getElementById('hueval');
+    hue.value = String(hue0); hv.textContent = hue0 >= 0 ? `${hue0}°` : 'none';
+    hue.addEventListener('input', () => { const h = Number(hue.value); hv.textContent = h >= 0 ? `${h}°` : 'none'; tint(h); });
+    const place = () => {
+      labels.innerHTML = '';
+      for (const f of figs) {
+        const p = new THREE.Vector3(f.holder.position.x, -0.12, 0).project(cam);
+        const d = document.createElement('div'); d.className = 'col';
+        d.style.left = `${(p.x * 0.5 + 0.5) * 100}%`; d.style.top = `${(-p.y * 0.5 + 0.5) * innerHeight}px`;
+        d.innerHTML = `<b>${f.r.role}</b><span>${f.r.triangles.toLocaleString()} tris</span>`;
+        labels.appendChild(d);
+      }
+    };
+    labels.style.top = '0';
+    addEventListener('resize', () => { renderer.setSize(innerWidth, innerHeight); cam.aspect = innerWidth / innerHeight; cam.updateProjectionMatrix(); });
+    const clock = new THREE.Clock();
+    renderer.setAnimationLoop(() => {
+      const t = clock.getElapsedTime();
+      if (spin.checked) for (const f of figs) f.holder.rotation.y = t * 0.4;
+      for (const f of figs) if (f.halo) f.halo.rotateY(0.01);
+      controls.update(); renderer.render(scene, cam); place();
+    });
+    window.__avatarsReady = true;
+  }
+} catch (e) {
+  window.__avatarsError = String(e && e.message || e);
+  document.getElementById('status').textContent = 'failed to load: ' + window.__avatarsError;
+}
+</script>
+</body>
+</html>

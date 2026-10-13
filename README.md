@@ -73,13 +73,36 @@ CI runs the same check on every push and pull request (`.github/workflows/ci.yml
 
 - **GitHub Pages:** in Settings → Pages → Source, choose **GitHub Actions** (an admin has to do this once). Then run
   the *pages* workflow from the Actions tab. It publishes `site/` as is.
-- **Cloudflare Pages:** `npx wrangler pages deploy` (see `wrangler.toml` and [`tools/DEPLOY.md`](tools/DEPLOY.md),
-  including how to put the site behind Cloudflare Access if it shouldn't be public yet).
+- **Cloudflare Pages:** `npx wrangler pages deploy` (see `wrangler.toml` and
+  [`worldforge/site/DEPLOY.md`](worldforge/site/DEPLOY.md), including how to put the site behind Cloudflare Access
+  if it shouldn't be public yet).
 
-## Where it comes from
+## WorldForge source (`worldforge/`, `consoles/worldforge/`)
 
-`site/` is the output of `tools/build_site.py`, run in the SmartCiti.X worlds monorepo. It copies files
-byte-for-byte and rewrites nothing. The script expects that repository layout and is kept here for provenance.
+This is the full world-builder source that produced `site/`. Until now it lived only in the private worlds monorepo.
+
+| Path | What it does |
+|---|---|
+| `worldforge/build.mjs` | Builds the Master Cards, GLBs and Sneeze mount plans, then runs the per-world evals (`--check`: exit 1 if `out/` is behind its sources) |
+| `worldforge/avatars.mjs`, `avatars/` | Agent avatar registry and the six rig-free avatar models |
+| `worldforge/training.mjs`, `training/` | Draft lessons and tutor metaprompts per world |
+| `worldforge/onchain.mjs`, `onchain/` | ERC-721 metadata and Merkle roots for the cards (**drafts, nothing deployed**) |
+| `worldforge/overview.mjs` | The per-world overview documents |
+| `worldforge/drives.mjs` | Design checks drawn from "Basic AI Drives Revisited" (A1–A6) |
+| `worldforge/landmarks/`, `lod/` | Civic landmark builder and LOD1 reduction |
+| `worldforge/native/` | RP1/Sneeze RMCOBJECT decoder (C++) and the mount-plan conformance check |
+| `worldforge/neon/` | Postgres schema and seed (`schema 'worldforge'`). Not applied anywhere, and no connection string is included |
+| `worldforge/akamai/` | GPU zone-expansion run results (drafts, unreviewed) |
+| `worldforge/viewer.html`, `viewer/` | The 3-D viewer, plus its check and recording scripts |
+| `worldforge/review/`, `whitepaper/`, `artifact/` | Review round, whitepaper and pitch page builders, with their films |
+| `worldforge/site/` | `build_site.py` (assembles `site/`), `DEPLOY.md` |
+| `consoles/worldforge/` | WorldForge console builder |
+| `worldforge/out/` | Built output: per-world cards, GLBs, plans, avatars, landmarks, training, onchain drafts |
+
+**Running the builders** (`build.mjs`, `build_site.py` and the rest) needs the worlds monorepo layout. They read
+registries this repository doesn't include, such as `worlds/PBC.json`, `my-fabric/worlds/`, `agents/swarms/` and
+`agents/hive/`. Here the source is published to read and review, and `out/` and `site/` are its checked results. In
+the monorepo, `node worldforge/build.mjs --check` reports 41 worlds, 939 cards, 1066 evals and 0 failing.
 The Trade Craft Academy itself lives in [AGIFutureFoundation/SmartCiti.X](https://github.com/AGIFutureFoundation/SmartCiti.X),
 and the onchain agent layer in [AGIFutureFoundation/Metropolis-SmartCiti](https://github.com/AGIFutureFoundation/Metropolis-SmartCiti).
 

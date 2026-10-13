@@ -1,0 +1,6 @@
+# Review films and the recorded 3D clips are build artifacts (rebuild: node worldforge/review/record.mjs, then
+# python3 worldforge/review/build_review.py). The whitepaper, captions, poster, stills and build.json are small and
+# committed so the page renders from the repository; only the video is missing until rebuilt.
+out/*.mp4
+out/clips/
+out/tmp/

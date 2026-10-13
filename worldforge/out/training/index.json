@@ -1,0 +1,759 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "owner": "AGI Future Foundation PBC",
+ "principle": "Agents operate; people govern.",
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "sources": [
+  "worldforge/out/avatars/index.json",
+  "agents/training/index.json",
+  "agents/rubrics/index.json",
+  "agents/robotics/index.json",
+  "my-fabric/holodeck/data.json",
+  "my-fabric/holodeck/wing.json",
+  "my-fabric/worlds/index.json",
+  "worlds/<slug>/spec.json",
+  "agents/swarms/<slug>.json",
+  "agents/advisors/<slug>.json",
+  "worldforge/out/<slug>/cards.json",
+  "worldforge/out/avatars/prompts/<slug>.json",
+  "agents/metaprompt.mjs (evalPrompt)"
+ ],
+ "delivery_rules": {
+  "scripted-orientation": "the scripted advisor whose topics it is (scripted, never model-taught)",
+  "routing": "the world’s coordinator",
+  "zone-orientation": "specialists seated in that zone",
+  "module": "specialists the robotics registry names for that world (agents/robotics/index.json#avatars.<world>)",
+  "omega": "never: Omegas are defined, not seated"
+ },
+ "worlds": [
+  {
+   "slug": "agentic-payments",
+   "name": "Agentic Payments",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 6,
+   "orientation_only": true,
+   "gaps": 5
+  },
+  {
+   "slug": "agents-deploy-infrastructure",
+   "name": "Agents That Deploy Infrastructure",
+   "lessons": 10,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 6
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "autonomous-organizations",
+   "name": "Autonomous Organizations",
+   "lessons": 9,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 5
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "biota-blockchain",
+   "name": "Biota.blockchain (BioDAO.X)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 6
+  },
+  {
+   "slug": "cancer-dao",
+   "name": "Cancer DAO",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "climate-dao",
+   "name": "Climate DAO",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "diagnostic-x",
+   "name": "Diagnostic.X",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 5,
+   "orientation_only": true,
+   "gaps": 6
+  },
+  {
+   "slug": "ecology-dao",
+   "name": "Ecology DAO",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "education-dao",
+   "name": "Education DAO",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "empathic-x",
+   "name": "Empathic.X",
+   "lessons": 9,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 5
+   },
+   "tutors": 6,
+   "orientation_only": true,
+   "gaps": 6
+  },
+  {
+   "slug": "locator-x",
+   "name": "Locator.X",
+   "lessons": 10,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 6
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 7
+  },
+  {
+   "slug": "public-health-dao",
+   "name": "Public Health DAO",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 4
+  },
+  {
+   "slug": "robotics-dao",
+   "name": "Robotics DAO",
+   "lessons": 9,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4,
+    "module": 1
+   },
+   "tutors": 7,
+   "orientation_only": false,
+   "gaps": 3
+  },
+  {
+   "slug": "s04-curable-x",
+   "name": "Curable.X (Series 4)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s05-biopharma-go",
+   "name": "BioPharma.Go (Series 5)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s06-blockchain",
+   "name": "Blockchain (Series 6)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s07-divine-dao",
+   "name": "Divine.DAO (Series 7)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s09-astrological-x",
+   "name": "Astrological.X (Series 9)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s11-molecular",
+   "name": "Molecular (Series 11)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s12-parking-smart-x",
+   "name": "Parking Smart.X (Series 12)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s13-gonstead-x",
+   "name": "Gonstead.X (Series 13)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s14-askdoc-x",
+   "name": "AskDoc.X (Series 14)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s15-romanbridge-dao",
+   "name": "RomanBridge DAO (Series 15)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s16-echodawn-dao",
+   "name": "EchoDawn DAO (Series 16)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s17-curable-blockchain-dao",
+   "name": "Curable.Blockchain DAO (Series 17)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s19-moscone-x",
+   "name": "Moscone.X (Series 19)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s20-cmmc",
+   "name": "CMMC (Series 20)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s21-incubator-dao",
+   "name": "Incubator DAO (Series 21)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s22-get-delivery-dao",
+   "name": "Get.Delivery DAO (Series 22)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s23-avatar-chat",
+   "name": "Avatar.Chat (Series 23)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s24-donatello-dao",
+   "name": "Donatello DAO (Series 24)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s25-mypet-ai",
+   "name": "MyPet.AI (Series 25)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s26-lyka-dao",
+   "name": "Lyka DAO (Series 26)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s27-genomic-dao",
+   "name": "Genomic.DAO (Series 27)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s28-genomic-blockchain",
+   "name": "Genomic.Blockchain (Series 28)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s29-metaverse-dao",
+   "name": "Metaverse DAO (Series 29)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s31-aerospace-dao",
+   "name": "Aerospace DAO (Series 31)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s32-solar-dao",
+   "name": "Solar DAO (Series 32)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s33-infogurus",
+   "name": "InfoGurus (Series 33)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s34-als-dao",
+   "name": "ALS DAO (Series 34)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  },
+  {
+   "slug": "s35-parkinsons-dao",
+   "name": "Parkinsons DAO (Series 35)",
+   "lessons": 8,
+   "kinds": {
+    "scripted-orientation": 3,
+    "routing": 1,
+    "zone-orientation": 4
+   },
+   "tutors": 7,
+   "orientation_only": true,
+   "gaps": 3
+  }
+ ],
+ "unseated": [
+  {
+   "slug": "smartciti-holodeck",
+   "lessons": 18,
+   "gaps": [
+    "smartciti-holodeck has no worldforge avatar world (worldforge/out/avatars/index.json lists 41 worlds, not this one): its 18 module lessons are drafted with delivered_by [] until a world seats an avatar for them",
+    "robotics avatars named for smartciti-holodeck (Operator, Inspector) come from SmartCiti.X Trade Craft pack 3.2.0: agents/registry/advisors.json (scripted advisors): scripted advisors of the Trade Craft pack, not worldforge avatars, so none may deliver a model-taught lesson",
+    "Academy halls (111 in my-fabric/holodeck/data.json) appear only as the paired halls' focus lines inside module lessons; halls with no module have no lesson"
+   ]
+  }
+ ],
+ "evals": [
+  {
+   "name": "every lesson cites a source that exists",
+   "ok": true,
+   "detail": "353 lessons; every source, objective and step pointer resolves"
+  },
+  {
+   "name": "every delivered_by avatar exists in this world",
+   "ok": true,
+   "detail": "409 deliveries across 335 seated lessons, all in worldforge/out/avatars/index.json"
+  },
+  {
+   "name": "every seated lesson has at least one deliverer, and an unseated one has none",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "every deliverer is allowed for the lesson kind",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "no advisor or omega delivers a model-taught lesson",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "no lesson is marked certified",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "rubric axes match agents/rubrics exactly",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "module lessons carry a human and a robot track wherever the source module has both",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "every tutor prompt passes every evalPrompt gate",
+   "ok": true,
+   "detail": "283 tutor prompts, each at most 6000 characters"
+  },
+  {
+   "name": "exactly one tutor prompt per delivering specialist or coordinator, none for advisors or omegas",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "tutor prompts bind the avatar’s current persona prompt",
+   "ok": true,
+   "detail": "283 tutor prompts, each naming its persona prompt id and matching its sha256"
+  },
+  {
+   "name": "outputs carry no PII, keys or the retired name",
+   "ok": true,
+   "detail": "353 lessons"
+  },
+  {
+   "name": "deterministic: a second build is byte-identical",
+   "ok": true,
+   "detail": "no clock, no randomness"
+  }
+ ],
+ "broken_fixtures": [
+  {
+   "what": "a lesson citing a file that does not exist",
+   "expect": "every lesson cites a source that exists",
+   "ok": true,
+   "failed": [
+    "every lesson cites a source that exists"
+   ]
+  },
+  {
+   "what": "a lesson delivered by an avatar id that does not exist",
+   "expect": "every delivered_by avatar exists in this world",
+   "ok": true,
+   "failed": [
+    "every delivered_by avatar exists in this world"
+   ]
+  },
+  {
+   "what": "a specialist delivering a scripted orientation",
+   "expect": "every deliverer is allowed for the lesson kind",
+   "ok": true,
+   "failed": [
+    "every deliverer is allowed for the lesson kind"
+   ]
+  },
+  {
+   "what": "an advisor delivering a model-taught zone lesson",
+   "expect": "no advisor or omega delivers a model-taught lesson",
+   "ok": true,
+   "failed": [
+    "no advisor or omega delivers a model-taught lesson"
+   ]
+  },
+  {
+   "what": "an omega delivering the routing lesson",
+   "expect": "no advisor or omega delivers a model-taught lesson",
+   "ok": true,
+   "failed": [
+    "no advisor or omega delivers a model-taught lesson"
+   ]
+  },
+  {
+   "what": "a lesson marked certified",
+   "expect": "no lesson is marked certified",
+   "ok": true,
+   "failed": [
+    "no lesson is marked certified"
+   ]
+  },
+  {
+   "what": "a rubric axis dropped from a module lesson",
+   "expect": "rubric axes match agents/rubrics exactly",
+   "ok": true,
+   "failed": [
+    "rubric axes match agents/rubrics exactly"
+   ]
+  },
+  {
+   "what": "an unscored lesson given an invented status",
+   "expect": "rubric axes match agents/rubrics exactly",
+   "ok": true,
+   "failed": [
+    "rubric axes match agents/rubrics exactly"
+   ]
+  },
+  {
+   "what": "a module lesson with its robot track removed",
+   "expect": "module lessons carry a human and a robot track wherever the source module has both",
+   "ok": true,
+   "failed": [
+    "module lessons carry a human and a robot track wherever the source module has both"
+   ]
+  },
+  {
+   "what": "a tutor prompt with the umbrella dropped",
+   "expect": "every tutor prompt passes every evalPrompt gate",
+   "ok": true,
+   "failed": [
+    "every tutor prompt passes every evalPrompt gate"
+   ]
+  },
+  {
+   "what": "a tutor prompt bound to a stale persona hash",
+   "expect": "tutor prompts bind the avatar’s current persona prompt",
+   "ok": true,
+   "failed": [
+    "tutor prompts bind the avatar’s current persona prompt"
+   ]
+  },
+  {
+   "what": "a lesson leaking an email address",
+   "expect": "outputs carry no PII, keys or the retired name",
+   "ok": true,
+   "failed": [
+    "outputs carry no PII, keys or the retired name"
+   ]
+  }
+ ],
+ "totals": {
+  "worlds": 41,
+  "unseated_worlds": 1,
+  "lessons": 353,
+  "lessons_by_kind": {
+   "scripted-orientation": 123,
+   "routing": 41,
+   "zone-orientation": 170,
+   "module": 19
+  },
+  "tutor_prompts": 283,
+  "tutor_gates": 3556,
+  "orientation_only_worlds": 40,
+  "certified": 0,
+  "evals": 25,
+  "failing": 0
+ }
+}

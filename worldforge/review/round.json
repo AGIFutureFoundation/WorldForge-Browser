@@ -1,0 +1,21 @@
+{
+  "_note": "PLACEHOLDER written by the review-pipeline builder. TODO by lead: overwrite this whole file every round (see round.template.json). Nothing below is a real round report.",
+  "placeholder": true,
+  "n": 1,
+  "date": "TODO by lead",
+  "window": "TODO by lead",
+  "headline": "TODO by lead: one-line headline for this round",
+  "landed": [
+    "TODO by lead: what landed this round (the film shows the first 6)"
+  ],
+  "doing": [
+    "TODO by lead: what is in progress"
+  ],
+  "next": [
+    "TODO by lead: what comes next (the film shows the first 4)"
+  ],
+  "gates": [
+    "TODO by lead: gate status lines (strings, or {\"name\", \"status\"} objects)"
+  ],
+  "worlds": ["locator-x", "cancer-dao", "s29-metaverse-dao"]
+}

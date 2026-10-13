@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:biota-blockchain",
+ "rootCardId": "world:biota-blockchain",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "displayName": "Personalized Therapy Lab",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:biota-blockchain/dao-governance-hall",
+   "displayName": "DAO Governance Hall",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "displayName": "Multi-Blockchain Ledger",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "displayName": "Healthcare Data Exchange",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "displayName": "Biopharma AGI Agents Hub",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:biota-blockchain/floor",
+   "parentCardId": "plaza:biota-blockchain",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:biota-blockchain/avatar",
+   "parentCardId": "coordinator:biota-blockchain",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:biota-blockchain/host/avatar",
+   "parentCardId": "advisor:biota-blockchain/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:biota-blockchain/steward/avatar",
+   "parentCardId": "advisor:biota-blockchain/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:biota-blockchain/alignment/avatar",
+   "parentCardId": "advisor:biota-blockchain/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:biota-blockchain/arch",
+   "parentCardId": "gate:biota-blockchain",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:biota-blockchain/chamber",
+   "parentCardId": "council:biota-blockchain",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:biota-blockchain/steward-1/chair",
+   "parentCardId": "seat:biota-blockchain/steward-1",
+   "zoneCardId": "council:biota-blockchain",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:biota-blockchain/steward-2/chair",
+   "parentCardId": "seat:biota-blockchain/steward-2",
+   "zoneCardId": "council:biota-blockchain",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:biota-blockchain/steward-3/chair",
+   "parentCardId": "seat:biota-blockchain/steward-3",
+   "zoneCardId": "council:biota-blockchain",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:biota-blockchain/avatar",
+   "parentCardId": "omega:biota-blockchain",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/personalized-therapy-lab/pad",
+   "parentCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/personalized-therapy-lab/hall",
+   "parentCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/research-development-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/research-development-agent",
+   "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/dao-governance-hall/pad",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/dao-governance-hall/hall",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    24,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/compliance-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/compliance-agent",
+   "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -92.38,
+    0.4,
+    -26.34
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/finance-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/finance-agent",
+   "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.3,
+    0.4,
+    -29.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/communication-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/communication-agent",
+   "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.22,
+    0.4,
+    -32.99
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/multi-blockchain-ledger/pad",
+   "parentCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/multi-blockchain-ledger/hall",
+   "parentCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/security-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/security-agent",
+   "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/healthcare-data-exchange/pad",
+   "parentCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/healthcare-data-exchange/hall",
+   "parentCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:biota-blockchain/health-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/health-agent",
+   "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.3,
+    0.4,
+    -29.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/biopharma-agi-agents-hub/pad",
+   "parentCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "zoneCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:biota-blockchain/biopharma-agi-agents-hub/hall",
+   "parentCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "zoneCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    12,
+    10
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:biota-blockchain/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:biota-blockchain/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:biota-blockchain/personalized-therapy-lab",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:biota-blockchain/dao-governance-hall",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:biota-blockchain/multi-blockchain-ledger",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:biota-blockchain/healthcare-data-exchange",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:biota-blockchain/biopharma-agi-agents-hub",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

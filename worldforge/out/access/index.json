@@ -1,0 +1,5372 @@
+{
+ "schemaVersion": "worldforge-access/0.1",
+ "generator": "worldforge/lod/access_shots.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "viewer": "worldforge/viewer.html",
+ "url_params": {
+  "access": "<cardId> of an access point",
+  "inside": "1 = go into its room (visitors only where card.permissions.enter includes public)"
+ },
+ "rule": "The viewer is a visitor. Rooms whose card gives enter: ['stewards'] (the council hall and its seats) are view only: the exterior is shown with a 'view only (stewards enter)' note.",
+ "totals": {
+  "worlds": 41,
+  "access_points": 615,
+  "interiors": 246,
+  "steward_only_interiors": 41
+ },
+ "verified": {
+  "base": "http://127.0.0.1:8093",
+  "world": "locator-x",
+  "shots": [
+   {
+    "file": "worldforge/out/access/exterior-landmark.jpg",
+    "bytes": 195226,
+    "what": "Access → Landmark (exterior teleport, on foot)",
+    "state": {
+     "access": {
+      "at": "landmark:locator-x",
+      "inside": null,
+      "denied": null,
+      "note": null,
+      "result": null
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": null,
+      "pos": [
+       4.8,
+       2.05,
+       -18.04
+      ],
+      "selected": "landmark:locator-x"
+     }
+    }
+   },
+   {
+    "file": "worldforge/out/access/exterior-door.jpg",
+    "bytes": 200120,
+    "what": "Access → Master Dashboard · door (exterior)",
+    "state": {
+     "access": {
+      "at": "zone:locator-x/master-dashboard",
+      "inside": null,
+      "denied": null,
+      "note": null,
+      "result": null
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": null,
+      "pos": [
+       -37.75,
+       1.71,
+       65.38
+      ],
+      "selected": "zone:locator-x/master-dashboard"
+     }
+    }
+   },
+   {
+    "file": "worldforge/out/access/interior-room.jpg",
+    "bytes": 187672,
+    "what": "Access → Master Dashboard · room (Enter)",
+    "state": {
+     "access": {
+      "at": "zone:locator-x/master-dashboard",
+      "inside": "zone:locator-x/master-dashboard",
+      "denied": null,
+      "note": null,
+      "result": null
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": "zone:locator-x/master-dashboard",
+      "pos": [
+       -42.65,
+       2.17,
+       73.87
+      ],
+      "selected": "zone:locator-x/master-dashboard"
+     }
+    }
+   },
+   {
+    "file": "worldforge/out/access/council-denied.jpg",
+    "bytes": 198808,
+    "what": "Access → Steward Council hall as a visitor: exterior + \"view only (stewards enter)\" note",
+    "state": {
+     "access": {
+      "at": "council:locator-x",
+      "inside": null,
+      "denied": "council:locator-x",
+      "note": null,
+      "result": null
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": null,
+      "pos": [
+       0,
+       1.71,
+       -123.5
+      ],
+      "selected": "council:locator-x"
+     }
+    }
+   },
+   {
+    "file": "worldforge/out/access/council-deeplink-denied.jpg",
+    "bytes": 198808,
+    "what": "deep link &access=council:locator-x&inside=1",
+    "state": {
+     "access": {
+      "at": "council:locator-x",
+      "inside": null,
+      "denied": "council:locator-x",
+      "note": null,
+      "result": {
+       "ok": false,
+       "reason": "stewards-only"
+      }
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": null,
+      "pos": [
+       0,
+       1.71,
+       -123.5
+      ],
+      "selected": "council:locator-x"
+     }
+    }
+   },
+   {
+    "file": "worldforge/out/access/room-deeplink.jpg",
+    "bytes": 187647,
+    "what": "deep link &access=zone:locator-x/master-dashboard&inside=1",
+    "state": {
+     "access": {
+      "at": "zone:locator-x/master-dashboard",
+      "inside": "zone:locator-x/master-dashboard",
+      "denied": null,
+      "note": null,
+      "result": {
+       "ok": true,
+       "inside": true
+      }
+     },
+     "cam": {
+      "mode": "walk",
+      "inside": "zone:locator-x/master-dashboard",
+      "pos": [
+       -42.65,
+       2.17,
+       73.87
+      ],
+      "selected": "zone:locator-x/master-dashboard"
+     }
+    }
+   }
+  ],
+  "checks": [
+   {
+    "name": "access list matches cards",
+    "ok": true,
+    "detail": {
+     "viewer": 17,
+     "cards": 17
+    }
+   },
+   {
+    "name": "council interior is view only",
+    "ok": true,
+    "detail": {
+     "id": "council:locator-x",
+     "inside": true,
+     "side": "interior",
+     "label": "Steward Council hall",
+     "kind": "council",
+     "allowed": false,
+     "holders": "stewards"
+    }
+   },
+   {
+    "name": "overview uses LOD1 for the far landmark",
+    "ok": true,
+    "detail": {
+     "lod1": "worldforge/out/assets/lod/landmarks/locator-x.lod1.glb",
+     "near": false,
+     "level": 0
+    }
+   },
+   {
+    "name": "landmark LOD0 streamed in near it",
+    "ok": false,
+    "detail": {
+     "lod1": "worldforge/out/assets/lod/landmarks/locator-x.lod1.glb",
+     "near": false,
+     "level": 0
+    }
+   },
+   {
+    "name": "exterior teleport stays outside",
+    "ok": true,
+    "detail": {
+     "at": "zone:locator-x/master-dashboard",
+     "inside": null,
+     "denied": null,
+     "note": null,
+     "result": null
+    }
+   },
+   {
+    "name": "interior teleport enters the room",
+    "ok": true,
+    "detail": {
+     "at": "zone:locator-x/master-dashboard",
+     "inside": "zone:locator-x/master-dashboard",
+     "denied": null,
+     "note": null,
+     "result": null
+    }
+   },
+   {
+    "name": "Exit leaves the room",
+    "ok": true,
+    "detail": {
+     "at": "zone:locator-x/master-dashboard",
+     "inside": null,
+     "denied": null,
+     "note": null,
+     "result": null
+    }
+   },
+   {
+    "name": "council hall not entered by a visitor",
+    "ok": false,
+    "detail": {
+     "at": "council:locator-x",
+     "inside": null,
+     "denied": "council:locator-x",
+     "note": null,
+     "result": null
+    }
+   },
+   {
+    "name": "deep link to council interior is denied",
+    "ok": true,
+    "detail": {
+     "at": "council:locator-x",
+     "inside": null,
+     "denied": "council:locator-x",
+     "note": null,
+     "result": {
+      "ok": false,
+      "reason": "stewards-only"
+     }
+    }
+   },
+   {
+    "name": "deep link into a public room enters it",
+    "ok": true,
+    "detail": {
+     "at": "zone:locator-x/master-dashboard",
+     "inside": "zone:locator-x/master-dashboard",
+     "denied": null,
+     "note": null,
+     "result": {
+      "ok": true,
+      "inside": true
+     }
+    }
+   },
+   {
+    "name": "seat card deep link does not put a visitor inside the council",
+    "ok": true,
+    "detail": {
+     "a": {
+      "at": null,
+      "inside": null,
+      "denied": "seat:locator-x/steward-1",
+      "note": "Steward Council: view only (stewards enter). Its card gives enter: stewards, so visitors see the exterior; the room and its seats are not opened here.",
+      "result": null
+     },
+     "c": {
+      "mode": "orbit",
+      "inside": null,
+      "pos": [
+       9.1,
+       12,
+       -110
+      ],
+      "selected": "seat:locator-x/steward-1"
+     }
+    }
+   }
+  ],
+  "errors": [],
+  "viewer_points": [
+   {
+    "id": "plaza:locator-x",
+    "inside": false,
+    "side": "exterior",
+    "label": "Plaza",
+    "kind": "plaza",
+    "allowed": true
+   },
+   {
+    "id": "gate:locator-x",
+    "inside": false,
+    "side": "exterior",
+    "label": "Gate",
+    "kind": "gate",
+    "allowed": true
+   },
+   {
+    "id": "landmark:locator-x",
+    "inside": false,
+    "side": "exterior",
+    "label": "Landmark",
+    "kind": "landmark",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/master-dashboard",
+    "inside": false,
+    "side": "exterior",
+    "label": "Master Dashboard · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/underwriting-desk",
+    "inside": false,
+    "side": "exterior",
+    "label": "Underwriting Desk · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/evidence-layer",
+    "inside": false,
+    "side": "exterior",
+    "label": "Evidence Layer · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/the-academy",
+    "inside": false,
+    "side": "exterior",
+    "label": "The Academy · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/market-editions",
+    "inside": false,
+    "side": "exterior",
+    "label": "Market Editions · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/louisiana-developer-desk",
+    "inside": false,
+    "side": "exterior",
+    "label": "Louisiana Developer Desk · door",
+    "kind": "zone",
+    "allowed": true
+   },
+   {
+    "id": "council:locator-x",
+    "inside": false,
+    "side": "exterior",
+    "label": "Steward Council · door",
+    "kind": "council",
+    "allowed": true
+   },
+   {
+    "id": "zone:locator-x/master-dashboard",
+    "inside": true,
+    "side": "interior",
+    "label": "Master Dashboard · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "zone:locator-x/underwriting-desk",
+    "inside": true,
+    "side": "interior",
+    "label": "Underwriting Desk · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "zone:locator-x/evidence-layer",
+    "inside": true,
+    "side": "interior",
+    "label": "Evidence Layer · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "zone:locator-x/the-academy",
+    "inside": true,
+    "side": "interior",
+    "label": "The Academy · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "zone:locator-x/market-editions",
+    "inside": true,
+    "side": "interior",
+    "label": "Market Editions · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "zone:locator-x/louisiana-developer-desk",
+    "inside": true,
+    "side": "interior",
+    "label": "Louisiana Developer Desk · room",
+    "kind": "zone",
+    "allowed": true,
+    "holders": "public"
+   },
+   {
+    "id": "council:locator-x",
+    "inside": true,
+    "side": "interior",
+    "label": "Steward Council hall",
+    "kind": "council",
+    "allowed": false,
+    "holders": "stewards"
+   }
+  ],
+  "lod_overview": {
+   "distance_m": 60,
+   "index": true,
+   "landmark": {
+    "lod1": "worldforge/out/assets/lod/landmarks/locator-x.lod1.glb",
+    "near": false,
+    "level": 0
+   },
+   "avatars": [
+    {
+     "card": "coordinator:locator-x",
+     "lod1": "worldforge/out/assets/lod/avatars/coordinator.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/host",
+     "lod1": "worldforge/out/assets/lod/avatars/host.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/steward",
+     "lod1": "worldforge/out/assets/lod/avatars/liaison.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/alignment",
+     "lod1": "worldforge/out/assets/lod/avatars/alignment.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "omega:locator-x",
+     "lod1": "worldforge/out/assets/lod/avatars/omega.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/guide",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/forecast-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/review-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/level-gates",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/scout-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/developer-brief-desk",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    }
+   ],
+   "lazyPending": 12
+  },
+  "lod_landmark_near": {
+   "distance_m": 60,
+   "index": true,
+   "landmark": {
+    "lod1": "worldforge/out/assets/lod/landmarks/locator-x.lod1.glb",
+    "near": false,
+    "level": 0
+   },
+   "avatars": [
+    {
+     "card": "coordinator:locator-x",
+     "lod1": "worldforge/out/assets/lod/avatars/coordinator.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/host",
+     "lod1": "worldforge/out/assets/lod/avatars/host.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/steward",
+     "lod1": "worldforge/out/assets/lod/avatars/liaison.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "advisor:locator-x/alignment",
+     "lod1": "worldforge/out/assets/lod/avatars/alignment.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "omega:locator-x",
+     "lod1": "worldforge/out/assets/lod/avatars/omega.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/guide",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/forecast-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/review-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/level-gates",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/scout-agent",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    },
+    {
+     "card": "agent:locator-x/developer-brief-desk",
+     "lod1": "worldforge/out/assets/lod/avatars/specialist.lod1.glb",
+     "levels": 1,
+     "level": 0
+    }
+   ],
+   "lazyPending": 12
+  },
+  "passed": 9,
+  "failed": 2,
+  "at": "2026-10-12T21:03:07.316Z"
+ },
+ "worlds": {
+  "agentic-payments": {
+   "access_points": 13,
+   "exterior": 8,
+   "interior_count": 5,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:agentic-payments",
+    "seat:agentic-payments/steward-1",
+    "seat:agentic-payments/steward-2",
+    "seat:agentic-payments/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:agentic-payments",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:agentic-payments",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:agentic-payments",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:agentic-payments/transaction-desk",
+      "label": "Transaction Desk · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agentic-payments/service-provisioning-counter",
+      "label": "Service Provisioning Counter · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agentic-payments/budget-office",
+      "label": "Budget Office · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agentic-payments/financial-infrastructure-gateway",
+      "label": "Financial Infrastructure Gateway · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:agentic-payments",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:agentic-payments/transaction-desk",
+      "label": "Transaction Desk · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agentic-payments/service-provisioning-counter",
+      "label": "Service Provisioning Counter · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agentic-payments/budget-office",
+      "label": "Budget Office · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agentic-payments/financial-infrastructure-gateway",
+      "label": "Financial Infrastructure Gateway · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:agentic-payments",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "agents-deploy-infrastructure": {
+   "access_points": 17,
+   "exterior": 10,
+   "interior_count": 7,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:agents-deploy-infrastructure",
+    "seat:agents-deploy-infrastructure/steward-1",
+    "seat:agents-deploy-infrastructure/steward-2",
+    "seat:agents-deploy-infrastructure/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:agents-deploy-infrastructure",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:agents-deploy-infrastructure",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:agents-deploy-infrastructure",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/idea-bench",
+      "label": "Idea Bench · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/provisioning-yard",
+      "label": "Provisioning Yard · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/deployment-bay",
+      "label": "Deployment Bay · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/domain-registry-desk",
+      "label": "Domain Registry Desk · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/service-configuration-room",
+      "label": "Service Configuration Room · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:agents-deploy-infrastructure",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:agents-deploy-infrastructure/idea-bench",
+      "label": "Idea Bench · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/provisioning-yard",
+      "label": "Provisioning Yard · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/deployment-bay",
+      "label": "Deployment Bay · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/domain-registry-desk",
+      "label": "Domain Registry Desk · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/service-configuration-room",
+      "label": "Service Configuration Room · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:agents-deploy-infrastructure/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:agents-deploy-infrastructure",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "autonomous-organizations": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:autonomous-organizations",
+    "seat:autonomous-organizations/steward-1",
+    "seat:autonomous-organizations/steward-2",
+    "seat:autonomous-organizations/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:autonomous-organizations",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:autonomous-organizations",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:autonomous-organizations",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:autonomous-organizations/goal-wall",
+      "label": "Goal Wall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:autonomous-organizations/coordination-floor",
+      "label": "Coordination Floor · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:autonomous-organizations/assignment-board",
+      "label": "Assignment Board · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:autonomous-organizations/decision-room",
+      "label": "Decision Room · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:autonomous-organizations/execution-bay",
+      "label": "Execution Bay · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:autonomous-organizations",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:autonomous-organizations/goal-wall",
+      "label": "Goal Wall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:autonomous-organizations/coordination-floor",
+      "label": "Coordination Floor · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:autonomous-organizations/assignment-board",
+      "label": "Assignment Board · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:autonomous-organizations/decision-room",
+      "label": "Decision Room · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:autonomous-organizations/execution-bay",
+      "label": "Execution Bay · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:autonomous-organizations",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "biota-blockchain": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:biota-blockchain",
+    "seat:biota-blockchain/steward-1",
+    "seat:biota-blockchain/steward-2",
+    "seat:biota-blockchain/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:biota-blockchain",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:biota-blockchain",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:biota-blockchain",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:biota-blockchain/personalized-therapy-lab",
+      "label": "Personalized Therapy Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:biota-blockchain/dao-governance-hall",
+      "label": "DAO Governance Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:biota-blockchain/multi-blockchain-ledger",
+      "label": "Multi-Blockchain Ledger · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:biota-blockchain/healthcare-data-exchange",
+      "label": "Healthcare Data Exchange · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:biota-blockchain/biopharma-agi-agents-hub",
+      "label": "Biopharma AGI Agents Hub · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:biota-blockchain",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:biota-blockchain/personalized-therapy-lab",
+      "label": "Personalized Therapy Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:biota-blockchain/dao-governance-hall",
+      "label": "DAO Governance Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:biota-blockchain/multi-blockchain-ledger",
+      "label": "Multi-Blockchain Ledger · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:biota-blockchain/healthcare-data-exchange",
+      "label": "Healthcare Data Exchange · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:biota-blockchain/biopharma-agi-agents-hub",
+      "label": "Biopharma AGI Agents Hub · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:biota-blockchain",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "cancer-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:cancer-dao",
+    "seat:cancer-dao/steward-1",
+    "seat:cancer-dao/steward-2",
+    "seat:cancer-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:cancer-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:cancer-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:cancer-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:cancer-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:cancer-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:cancer-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:cancer-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:cancer-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:cancer-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:cancer-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:cancer-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:cancer-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:cancer-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:cancer-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:cancer-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "climate-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:climate-dao",
+    "seat:climate-dao/steward-1",
+    "seat:climate-dao/steward-2",
+    "seat:climate-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:climate-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:climate-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:climate-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:climate-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:climate-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:climate-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:climate-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:climate-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:climate-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:climate-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:climate-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:climate-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:climate-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:climate-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:climate-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "diagnostic-x": {
+   "access_points": 13,
+   "exterior": 8,
+   "interior_count": 5,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:diagnostic-x",
+    "seat:diagnostic-x/steward-1",
+    "seat:diagnostic-x/steward-2",
+    "seat:diagnostic-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:diagnostic-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:diagnostic-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:diagnostic-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:diagnostic-x/medical-kiosk",
+      "label": "Medical Kiosk · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:diagnostic-x/4d-imaging-room",
+      "label": "4D Imaging Room · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:diagnostic-x/virtual-molecular-lab",
+      "label": "Virtual Molecular Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:diagnostic-x/metaverse-medical-office",
+      "label": "Metaverse Medical Office · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:diagnostic-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:diagnostic-x/medical-kiosk",
+      "label": "Medical Kiosk · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:diagnostic-x/4d-imaging-room",
+      "label": "4D Imaging Room · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:diagnostic-x/virtual-molecular-lab",
+      "label": "Virtual Molecular Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:diagnostic-x/metaverse-medical-office",
+      "label": "Metaverse Medical Office · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:diagnostic-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "ecology-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:ecology-dao",
+    "seat:ecology-dao/steward-1",
+    "seat:ecology-dao/steward-2",
+    "seat:ecology-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:ecology-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:ecology-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:ecology-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:ecology-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:ecology-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:ecology-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:ecology-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:ecology-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:ecology-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:ecology-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:ecology-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:ecology-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:ecology-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:ecology-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:ecology-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "education-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:education-dao",
+    "seat:education-dao/steward-1",
+    "seat:education-dao/steward-2",
+    "seat:education-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:education-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:education-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:education-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:education-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:education-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:education-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:education-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:education-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:education-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:education-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:education-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:education-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:education-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:education-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:education-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "empathic-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:empathic-x",
+    "seat:empathic-x/steward-1",
+    "seat:empathic-x/steward-2",
+    "seat:empathic-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:empathic-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:empathic-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:empathic-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:empathic-x/self-reader-grove",
+      "label": "Self-Reader Grove · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:empathic-x/other-reader-commons",
+      "label": "Other-Reader Commons · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:empathic-x/repairer-s-hall",
+      "label": "Repairer's Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:empathic-x/room-reader-plaza",
+      "label": "Room-Reader Plaza · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:empathic-x/practitioner-workshop",
+      "label": "Practitioner Workshop · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:empathic-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:empathic-x/self-reader-grove",
+      "label": "Self-Reader Grove · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:empathic-x/other-reader-commons",
+      "label": "Other-Reader Commons · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:empathic-x/repairer-s-hall",
+      "label": "Repairer's Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:empathic-x/room-reader-plaza",
+      "label": "Room-Reader Plaza · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:empathic-x/practitioner-workshop",
+      "label": "Practitioner Workshop · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:empathic-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "locator-x": {
+   "access_points": 17,
+   "exterior": 10,
+   "interior_count": 7,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:locator-x",
+    "seat:locator-x/steward-1",
+    "seat:locator-x/steward-2",
+    "seat:locator-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:locator-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:locator-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:locator-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:locator-x/master-dashboard",
+      "label": "Master Dashboard · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:locator-x/underwriting-desk",
+      "label": "Underwriting Desk · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:locator-x/evidence-layer",
+      "label": "Evidence Layer · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:locator-x/the-academy",
+      "label": "The Academy · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:locator-x/market-editions",
+      "label": "Market Editions · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:locator-x/louisiana-developer-desk",
+      "label": "Louisiana Developer Desk · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:locator-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:locator-x/master-dashboard",
+      "label": "Master Dashboard · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:locator-x/underwriting-desk",
+      "label": "Underwriting Desk · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:locator-x/evidence-layer",
+      "label": "Evidence Layer · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:locator-x/the-academy",
+      "label": "The Academy · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:locator-x/market-editions",
+      "label": "Market Editions · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:locator-x/louisiana-developer-desk",
+      "label": "Louisiana Developer Desk · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:locator-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "public-health-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:public-health-dao",
+    "seat:public-health-dao/steward-1",
+    "seat:public-health-dao/steward-2",
+    "seat:public-health-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:public-health-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:public-health-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:public-health-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:public-health-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:public-health-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:public-health-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:public-health-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:public-health-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:public-health-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:public-health-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:public-health-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:public-health-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:public-health-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:public-health-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:public-health-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "robotics-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:robotics-dao",
+    "seat:robotics-dao/steward-1",
+    "seat:robotics-dao/steward-2",
+    "seat:robotics-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:robotics-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:robotics-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:robotics-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:robotics-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:robotics-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:robotics-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:robotics-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:robotics-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:robotics-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:robotics-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:robotics-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:robotics-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:robotics-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:robotics-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:robotics-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s04-curable-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s04-curable-x",
+    "seat:s04-curable-x/steward-1",
+    "seat:s04-curable-x/steward-2",
+    "seat:s04-curable-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s04-curable-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s04-curable-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s04-curable-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s04-curable-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s04-curable-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s04-curable-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s04-curable-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s04-curable-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s04-curable-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s04-curable-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s04-curable-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s04-curable-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s04-curable-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s04-curable-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s04-curable-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s05-biopharma-go": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s05-biopharma-go",
+    "seat:s05-biopharma-go/steward-1",
+    "seat:s05-biopharma-go/steward-2",
+    "seat:s05-biopharma-go/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s05-biopharma-go",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s05-biopharma-go",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s05-biopharma-go",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s05-biopharma-go/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s05-biopharma-go/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s05-biopharma-go/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s05-biopharma-go/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s05-biopharma-go/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s05-biopharma-go",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s05-biopharma-go/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s05-biopharma-go/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s05-biopharma-go/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s05-biopharma-go/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s05-biopharma-go/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s05-biopharma-go",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s06-blockchain": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s06-blockchain",
+    "seat:s06-blockchain/steward-1",
+    "seat:s06-blockchain/steward-2",
+    "seat:s06-blockchain/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s06-blockchain",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s06-blockchain",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s06-blockchain",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s06-blockchain/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s06-blockchain/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s06-blockchain/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s06-blockchain/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s06-blockchain/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s06-blockchain",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s06-blockchain/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s06-blockchain/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s06-blockchain/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s06-blockchain/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s06-blockchain/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s06-blockchain",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s07-divine-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s07-divine-dao",
+    "seat:s07-divine-dao/steward-1",
+    "seat:s07-divine-dao/steward-2",
+    "seat:s07-divine-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s07-divine-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s07-divine-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s07-divine-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s07-divine-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s07-divine-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s07-divine-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s07-divine-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s07-divine-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s07-divine-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s07-divine-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s07-divine-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s07-divine-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s07-divine-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s07-divine-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s07-divine-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s09-astrological-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s09-astrological-x",
+    "seat:s09-astrological-x/steward-1",
+    "seat:s09-astrological-x/steward-2",
+    "seat:s09-astrological-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s09-astrological-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s09-astrological-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s09-astrological-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s09-astrological-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s09-astrological-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s09-astrological-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s09-astrological-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s09-astrological-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s09-astrological-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s09-astrological-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s09-astrological-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s09-astrological-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s09-astrological-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s09-astrological-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s09-astrological-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s11-molecular": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s11-molecular",
+    "seat:s11-molecular/steward-1",
+    "seat:s11-molecular/steward-2",
+    "seat:s11-molecular/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s11-molecular",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s11-molecular",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s11-molecular",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s11-molecular/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s11-molecular/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s11-molecular/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s11-molecular/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s11-molecular/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s11-molecular",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s11-molecular/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s11-molecular/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s11-molecular/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s11-molecular/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s11-molecular/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s11-molecular",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s12-parking-smart-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s12-parking-smart-x",
+    "seat:s12-parking-smart-x/steward-1",
+    "seat:s12-parking-smart-x/steward-2",
+    "seat:s12-parking-smart-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s12-parking-smart-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s12-parking-smart-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s12-parking-smart-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s12-parking-smart-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s12-parking-smart-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s12-parking-smart-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s12-parking-smart-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s13-gonstead-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s13-gonstead-x",
+    "seat:s13-gonstead-x/steward-1",
+    "seat:s13-gonstead-x/steward-2",
+    "seat:s13-gonstead-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s13-gonstead-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s13-gonstead-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s13-gonstead-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s13-gonstead-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s13-gonstead-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s13-gonstead-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s13-gonstead-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s13-gonstead-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s13-gonstead-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s13-gonstead-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s13-gonstead-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s13-gonstead-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s13-gonstead-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s13-gonstead-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s13-gonstead-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s14-askdoc-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s14-askdoc-x",
+    "seat:s14-askdoc-x/steward-1",
+    "seat:s14-askdoc-x/steward-2",
+    "seat:s14-askdoc-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s14-askdoc-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s14-askdoc-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s14-askdoc-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s14-askdoc-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s14-askdoc-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s14-askdoc-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s14-askdoc-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s14-askdoc-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s14-askdoc-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s14-askdoc-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s14-askdoc-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s14-askdoc-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s14-askdoc-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s14-askdoc-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s14-askdoc-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s15-romanbridge-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s15-romanbridge-dao",
+    "seat:s15-romanbridge-dao/steward-1",
+    "seat:s15-romanbridge-dao/steward-2",
+    "seat:s15-romanbridge-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s15-romanbridge-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s15-romanbridge-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s15-romanbridge-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s15-romanbridge-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s15-romanbridge-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s15-romanbridge-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s15-romanbridge-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s16-echodawn-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s16-echodawn-dao",
+    "seat:s16-echodawn-dao/steward-1",
+    "seat:s16-echodawn-dao/steward-2",
+    "seat:s16-echodawn-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s16-echodawn-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s16-echodawn-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s16-echodawn-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s16-echodawn-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s16-echodawn-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s16-echodawn-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s16-echodawn-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s17-curable-blockchain-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s17-curable-blockchain-dao",
+    "seat:s17-curable-blockchain-dao/steward-1",
+    "seat:s17-curable-blockchain-dao/steward-2",
+    "seat:s17-curable-blockchain-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s17-curable-blockchain-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s17-curable-blockchain-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s17-curable-blockchain-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s17-curable-blockchain-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s17-curable-blockchain-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s17-curable-blockchain-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s17-curable-blockchain-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s19-moscone-x": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s19-moscone-x",
+    "seat:s19-moscone-x/steward-1",
+    "seat:s19-moscone-x/steward-2",
+    "seat:s19-moscone-x/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s19-moscone-x",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s19-moscone-x",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s19-moscone-x",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s19-moscone-x/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s19-moscone-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s19-moscone-x/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s19-moscone-x/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s19-moscone-x/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s19-moscone-x",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s19-moscone-x/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s19-moscone-x/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s19-moscone-x/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s19-moscone-x/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s19-moscone-x/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s19-moscone-x",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s20-cmmc": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s20-cmmc",
+    "seat:s20-cmmc/steward-1",
+    "seat:s20-cmmc/steward-2",
+    "seat:s20-cmmc/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s20-cmmc",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s20-cmmc",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s20-cmmc",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s20-cmmc/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s20-cmmc/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s20-cmmc/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s20-cmmc/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s20-cmmc/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s20-cmmc",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s20-cmmc/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s20-cmmc/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s20-cmmc/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s20-cmmc/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s20-cmmc/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s20-cmmc",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s21-incubator-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s21-incubator-dao",
+    "seat:s21-incubator-dao/steward-1",
+    "seat:s21-incubator-dao/steward-2",
+    "seat:s21-incubator-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s21-incubator-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s21-incubator-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s21-incubator-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s21-incubator-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s21-incubator-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s21-incubator-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s21-incubator-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s21-incubator-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s21-incubator-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s21-incubator-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s21-incubator-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s21-incubator-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s21-incubator-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s21-incubator-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s21-incubator-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s22-get-delivery-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s22-get-delivery-dao",
+    "seat:s22-get-delivery-dao/steward-1",
+    "seat:s22-get-delivery-dao/steward-2",
+    "seat:s22-get-delivery-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s22-get-delivery-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s22-get-delivery-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s22-get-delivery-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s22-get-delivery-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s22-get-delivery-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s22-get-delivery-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s22-get-delivery-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s23-avatar-chat": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s23-avatar-chat",
+    "seat:s23-avatar-chat/steward-1",
+    "seat:s23-avatar-chat/steward-2",
+    "seat:s23-avatar-chat/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s23-avatar-chat",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s23-avatar-chat",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s23-avatar-chat",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s23-avatar-chat/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s23-avatar-chat/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s23-avatar-chat/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s23-avatar-chat/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s23-avatar-chat/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s23-avatar-chat",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s23-avatar-chat/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s23-avatar-chat/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s23-avatar-chat/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s23-avatar-chat/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s23-avatar-chat/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s23-avatar-chat",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s24-donatello-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s24-donatello-dao",
+    "seat:s24-donatello-dao/steward-1",
+    "seat:s24-donatello-dao/steward-2",
+    "seat:s24-donatello-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s24-donatello-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s24-donatello-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s24-donatello-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s24-donatello-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s24-donatello-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s24-donatello-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s24-donatello-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s24-donatello-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s24-donatello-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s24-donatello-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s24-donatello-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s24-donatello-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s24-donatello-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s24-donatello-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s24-donatello-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s25-mypet-ai": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s25-mypet-ai",
+    "seat:s25-mypet-ai/steward-1",
+    "seat:s25-mypet-ai/steward-2",
+    "seat:s25-mypet-ai/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s25-mypet-ai",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s25-mypet-ai",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s25-mypet-ai",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s25-mypet-ai/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s25-mypet-ai/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s25-mypet-ai/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s25-mypet-ai/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s25-mypet-ai/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s25-mypet-ai",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s25-mypet-ai/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s25-mypet-ai/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s25-mypet-ai/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s25-mypet-ai/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s25-mypet-ai/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s25-mypet-ai",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s26-lyka-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s26-lyka-dao",
+    "seat:s26-lyka-dao/steward-1",
+    "seat:s26-lyka-dao/steward-2",
+    "seat:s26-lyka-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s26-lyka-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s26-lyka-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s26-lyka-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s26-lyka-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s26-lyka-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s26-lyka-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s26-lyka-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s26-lyka-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s26-lyka-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s26-lyka-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s26-lyka-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s26-lyka-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s26-lyka-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s26-lyka-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s26-lyka-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s27-genomic-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s27-genomic-dao",
+    "seat:s27-genomic-dao/steward-1",
+    "seat:s27-genomic-dao/steward-2",
+    "seat:s27-genomic-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s27-genomic-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s27-genomic-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s27-genomic-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s27-genomic-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s27-genomic-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s27-genomic-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s27-genomic-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s27-genomic-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s27-genomic-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s27-genomic-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s27-genomic-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s27-genomic-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s27-genomic-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s27-genomic-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s27-genomic-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s28-genomic-blockchain": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s28-genomic-blockchain",
+    "seat:s28-genomic-blockchain/steward-1",
+    "seat:s28-genomic-blockchain/steward-2",
+    "seat:s28-genomic-blockchain/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s28-genomic-blockchain",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s28-genomic-blockchain",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s28-genomic-blockchain",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s28-genomic-blockchain",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s28-genomic-blockchain/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s28-genomic-blockchain/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s28-genomic-blockchain",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s29-metaverse-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s29-metaverse-dao",
+    "seat:s29-metaverse-dao/steward-1",
+    "seat:s29-metaverse-dao/steward-2",
+    "seat:s29-metaverse-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s29-metaverse-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s29-metaverse-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s29-metaverse-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s29-metaverse-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s29-metaverse-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s29-metaverse-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s29-metaverse-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s31-aerospace-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s31-aerospace-dao",
+    "seat:s31-aerospace-dao/steward-1",
+    "seat:s31-aerospace-dao/steward-2",
+    "seat:s31-aerospace-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s31-aerospace-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s31-aerospace-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s31-aerospace-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s31-aerospace-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s31-aerospace-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s31-aerospace-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s31-aerospace-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s32-solar-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s32-solar-dao",
+    "seat:s32-solar-dao/steward-1",
+    "seat:s32-solar-dao/steward-2",
+    "seat:s32-solar-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s32-solar-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s32-solar-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s32-solar-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s32-solar-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s32-solar-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s32-solar-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s32-solar-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s32-solar-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s32-solar-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s32-solar-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s32-solar-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s32-solar-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s32-solar-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s32-solar-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s32-solar-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s33-infogurus": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s33-infogurus",
+    "seat:s33-infogurus/steward-1",
+    "seat:s33-infogurus/steward-2",
+    "seat:s33-infogurus/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s33-infogurus",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s33-infogurus",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s33-infogurus",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s33-infogurus/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s33-infogurus/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s33-infogurus/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s33-infogurus/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s33-infogurus/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s33-infogurus",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s33-infogurus/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s33-infogurus/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s33-infogurus/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s33-infogurus/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s33-infogurus/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s33-infogurus",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s34-als-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s34-als-dao",
+    "seat:s34-als-dao/steward-1",
+    "seat:s34-als-dao/steward-2",
+    "seat:s34-als-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s34-als-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s34-als-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s34-als-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s34-als-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s34-als-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s34-als-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s34-als-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s34-als-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s34-als-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s34-als-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s34-als-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s34-als-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s34-als-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s34-als-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s34-als-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  },
+  "s35-parkinsons-dao": {
+   "access_points": 15,
+   "exterior": 9,
+   "interior_count": 6,
+   "steward_only_count": 4,
+   "steward_only_interiors": 1,
+   "steward_only_cards": [
+    "council:s35-parkinsons-dao",
+    "seat:s35-parkinsons-dao/steward-1",
+    "seat:s35-parkinsons-dao/steward-2",
+    "seat:s35-parkinsons-dao/steward-3"
+   ],
+   "points": {
+    "exterior": [
+     {
+      "id": "plaza:s35-parkinsons-dao",
+      "kind": "plaza"
+     },
+     {
+      "id": "gate:s35-parkinsons-dao",
+      "kind": "gate"
+     },
+     {
+      "id": "landmark:s35-parkinsons-dao",
+      "label": "Landmark",
+      "kind": "landmark"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/charter-hall",
+      "label": "Charter Hall · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/proposal-forum",
+      "label": "Proposal Forum · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/operations-deck",
+      "label": "Operations Deck · door",
+      "kind": "zone"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/progress-observatory",
+      "label": "Progress Observatory · door",
+      "kind": "zone"
+     },
+     {
+      "id": "council:s35-parkinsons-dao",
+      "label": "Steward Council · door",
+      "kind": "council"
+     }
+    ],
+    "interior": [
+     {
+      "id": "zone:s35-parkinsons-dao/charter-hall",
+      "label": "Charter Hall · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/research-synthesis-lab",
+      "label": "Research Synthesis Lab · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/proposal-forum",
+      "label": "Proposal Forum · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/operations-deck",
+      "label": "Operations Deck · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "zone:s35-parkinsons-dao/progress-observatory",
+      "label": "Progress Observatory · room",
+      "kind": "zone",
+      "enter": [
+       "public"
+      ],
+      "visitor": "enter"
+     },
+     {
+      "id": "council:s35-parkinsons-dao",
+      "label": "Steward Council hall",
+      "kind": "council",
+      "enter": [
+       "stewards"
+      ],
+      "visitor": "view only (stewards enter)"
+     }
+    ]
+   }
+  }
+ }
+}

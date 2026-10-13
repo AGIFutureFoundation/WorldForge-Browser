@@ -1,0 +1,2809 @@
+{
+ "schemaVersion": "glewme-master-cards/0.1",
+ "world": "agents-deploy-infrastructure",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "rights": [
+  "view",
+  "enter",
+  "build",
+  "operate",
+  "delegate",
+  "transfer",
+  "govern"
+ ],
+ "principle": "Agents operate; people govern.",
+ "cards": [
+  {
+   "cardId": "world:agents-deploy-infrastructure",
+   "kind": "world",
+   "parentCardId": null,
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Agents That Deploy Infra… · Powered by AGI Corp",
+   "name": "Agents That Deploy Infrastructure",
+   "tagline": "Agents that take software from an idea to something running in production - provisioning, deploying, configuring and operating the stack",
+   "status": "coming soon",
+   "management_style": "Agent-managed DAO",
+   "anchor": {
+    "lat": null,
+    "lon": null,
+    "rad": 6371000,
+    "rp1": null
+   },
+   "omega_steward": {
+    "id": "omega.agents-deploy-infrastructure",
+    "status": "defined, not seated",
+    "seated_agent": null,
+    "source": "agents/advisory/omega_agents.json"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     40,
+     0
+    ],
+    "halfExtents": [
+     156,
+     40,
+     156
+    ]
+   },
+   "source": "my-fabric/worlds/index.json"
+  },
+  {
+   "cardId": "plaza:agents-deploy-infrastructure",
+   "kind": "plaza",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Agents That Deploy Infra… · Powered by AGI Corp",
+   "purpose": "the shared round plaza every world opens onto",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     5,
+     0
+    ],
+    "halfExtents": [
+     24,
+     5,
+     24
+    ]
+   },
+   "source": "README.md (shared PBC management model)"
+  },
+  {
+   "cardId": "coordinator:agents-deploy-infrastructure",
+   "kind": "coordinator",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Agents That Deploy Infra… · Powered by AGI Corp",
+   "name": "Agents That Deploy Infrastructure Coordinator",
+   "role": "swarm coordinator (hub-hybrid: coordinator supervises, specialists hand off swarm-style): routes turns, answers unroutable ones, hands off to specialists",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "coordinator",
+    "model_ref": "worldforge/out/assets/avatars/coordinator.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.coordinator",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Agents That Deploy Infrastructure Coordinator"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     8
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/host",
+   "kind": "advisor",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Host Advisor · Powered by AGI Corp",
+   "name": "Host Advisor",
+   "manages": "welcoming visitors and pointing them to the right zone",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "host",
+    "model_ref": "worldforge/out/assets/avatars/host.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host]"
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/steward",
+   "kind": "advisor",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Liaison · Powered by AGI Corp",
+   "name": "Steward Liaison",
+   "manages": "connecting visitors and agents to the human stewards",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "liaison",
+    "model_ref": "worldforge/out/assets/avatars/liaison.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -14
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward]"
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/alignment",
+   "kind": "advisor",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Advisor · Powered by AGI Corp",
+   "name": "Alignment Advisor",
+   "manages": "the Alignment Evaluation Gate and the agents' limits",
+   "scripted": true,
+   "note": "a scripted guide under the advisor contract (agents/advisors), not an AI model",
+   "avatar": {
+    "kind": "advisor-avatar",
+    "role": "alignment",
+    "model_ref": "worldforge/out/assets/avatars/alignment.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -9.9,
+     1,
+     -9.9
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment]"
+  },
+  {
+   "cardId": "gate:agents-deploy-infrastructure",
+   "kind": "gate",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Alignment Evaluation Gate · Powered by AGI Corp",
+   "purpose": "Pre-registered safety evaluation before deployment",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     136
+    ],
+    "halfExtents": [
+     10,
+     6,
+     3
+    ]
+   },
+   "source": "worlds/PBC.json#programs"
+  },
+  {
+   "cardId": "council:agents-deploy-infrastructure",
+   "kind": "council",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Council · Powered by AGI Corp",
+   "name": "Steward Council",
+   "purpose": "Human stewards: oversight, values alignment and final governance",
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     6,
+     -136
+    ],
+    "halfExtents": [
+     14,
+     6,
+     10
+    ]
+   },
+   "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-7.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Steward Council",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-1",
+   "kind": "seat",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 1 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     -6,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-2",
+   "kind": "seat",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 2 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     0,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-3",
+   "kind": "seat",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "stewards"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Steward Seat 3 · Powered by AGI Corp",
+   "seat_type": "human",
+   "seated": null,
+   "volum": {
+    "shape": "box",
+    "center": [
+     6,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "source": "worlds/PBC.json#steward_seats"
+  },
+  {
+   "cardId": "omega:agents-deploy-infrastructure",
+   "kind": "omega",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Omega Steward · Powered by AGI Corp",
+   "name": "Omega Steward · Agents That Deploy Infrastructure",
+   "omega_id": "omega.agents-deploy-infrastructure",
+   "status": "defined, not seated",
+   "seated_agent": null,
+   "persona": {
+    "temperament": "practical and hands-on about agents taking software from an idea to production and operating the stack",
+    "style": "short, plain sentences; names its zones (Idea Bench, Provisioning Yard, Deployment Bay), cites the record it reads, and always says who decides (the stewards, 2 of 3 signed votes)",
+    "values": [
+     "people decide: Agent-managed DAO, human-governed",
+     "stewards decide by 2 of 3 signed votes",
+     "report probe scores exactly as measured",
+     "draft quotes with every term left null",
+     "serve its focus: agents taking software from an idea to production and operating the stack"
+    ],
+    "refuses": [
+     "governance.final_vote",
+     "charter.amend",
+     "treasury.transfer",
+     "proposal.enact",
+     "windfall.distribute",
+     "steward.appoint",
+     "set_price",
+     "accept_equity",
+     "accept_crypto",
+     "issue_invoice",
+     "move_funds"
+    ]
+   },
+   "voice": {
+    "kokoro": "am_liam",
+    "browser_fallback": {
+     "pitch": 0.9,
+     "rate": 1.08,
+     "lang": "en-US"
+    },
+    "audio_note": "audio is the expected path; it exists once the hive voices the line (agents/hive.mjs --voice), else the viewer falls back to a labelled browser voice",
+    "lines": [
+     {
+      "id": "greet",
+      "text": "Hello, I am the Omega Steward for Agents That Deploy Infrastructure. You are hearing a synthetic voice; I am an agent, not a person.",
+      "audio": "agents/hive/voices/agents-deploy-infrastructure/greet.mp4"
+     },
+     {
+      "id": "role",
+      "text": "I look after Agents That Deploy Infrastructure's world: Idea Bench, Provisioning Yard, Deployment Bay, plus its probe scores and its installer's dry run.",
+      "audio": "agents/hive/voices/agents-deploy-infrastructure/role.mp4"
+     },
+     {
+      "id": "boundary",
+      "text": "Agents draft and route; people decide. I will never issue an invoice: that is held for the Steward Council.",
+      "audio": "agents/hive/voices/agents-deploy-infrastructure/boundary.mp4"
+     },
+     {
+      "id": "services",
+      "text": "For services, ask the Operator in Operations Deck about operational coordination. Agents That Deploy Infrastructure lists 1 service card; people confirm every step.",
+      "audio": "agents/hive/voices/agents-deploy-infrastructure/services.mp4"
+     }
+    ]
+   },
+   "hive_ref": "agents/hive/index.json#omegas[world=agents-deploy-infrastructure]",
+   "avatar": {
+    "kind": "omega-avatar",
+    "role": "omega",
+    "model_ref": "worldforge/out/assets/avatars/omega.glb",
+    "seated_model": null
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     26,
+     1,
+     -136
+    ],
+    "halfExtents": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "source": "agents/advisory/omega_agents.json"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Idea Bench · Powered by AGI Corp",
+   "name": "Idea Bench",
+   "purpose": "Where an idea is turned into a plan of what to build and run",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-1.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Idea Bench",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -48,
+     8,
+     83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/planner",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Planner · Powered by AGI Corp",
+   "name": "Planner",
+   "role": "Turns an idea into a build-and-run plan the stewards can read",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.planner",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Planner",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Planner]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -51,
+     1,
+     88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea to something running in production'"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Provisioning Yard · Powered by AGI Corp",
+   "name": "Provisioning Yard",
+   "purpose": "Provisioning infrastructure: compute, storage and networks, as rehearsed plans",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-2.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Provisioning Yard",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -96,
+     8,
+     0
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/provisioner",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Provisioner · Powered by AGI Corp",
+   "name": "Provisioner",
+   "role": "Provisions infrastructure from the plan, in rehearsal until a steward approves",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.provisioner",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Provisioner",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Provisioner]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -102,
+     1,
+     0
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Deployment Bay · Powered by AGI Corp",
+   "name": "Deployment Bay",
+   "purpose": "Deploying applications: builds, releases and rollbacks",
+   "building": {
+    "kind": "studio",
+    "exterior": "my-fabric/worlds/models/spaces-ext-studio.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-3.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Deployment Bay",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1704,
+     "interior": 1492
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     -48,
+     8,
+     -83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/deployer",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Deployer · Powered by AGI Corp",
+   "name": "Deployer",
+   "role": "Deploys applications and keeps a rollback ready",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.deployer",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Deployer",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Deployer]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     -51,
+     1,
+     -88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Domain Registry Desk · Powered by AGI Corp",
+   "name": "Domain Registry Desk",
+   "purpose": "Managing domains and their records",
+   "building": {
+    "kind": "desk",
+    "exterior": "my-fabric/worlds/models/spaces-ext-desk.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-4.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Domain Registry Desk",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1958,
+     "interior": 2440
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     48,
+     8,
+     -83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/domain-steward",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Domain Steward · Powered by AGI Corp",
+   "name": "Domain Steward",
+   "role": "Manages domains and records; registrations are a steward decision",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.domain-steward",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Domain Steward",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Domain Steward]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     51,
+     1,
+     -88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Service Configuration Ro… · Powered by AGI Corp",
+   "name": "Service Configuration Room",
+   "purpose": "Configuring services: settings, secrets handling policy and wiring",
+   "building": {
+    "kind": "forum",
+    "exterior": "my-fabric/worlds/models/spaces-ext-forum.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-5.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Service Configuration Room",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 1602,
+     "interior": 1776
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     96,
+     8,
+     0
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/configurator",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Configurator · Powered by AGI Corp",
+   "name": "Configurator",
+   "role": "Configures services; never holds a live secret in a prompt",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.configurator",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Configurator",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Configurator]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     102,
+     1,
+     0
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "kind": "zone",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Operations Deck · Powered by AGI Corp",
+   "name": "Operations Deck",
+   "purpose": "Operating the stack: health, logs, incidents and the on-call handoff to people",
+   "building": {
+    "kind": "clinic",
+    "exterior": "my-fabric/worlds/models/spaces-ext-clinic.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-clinic.glb",
+    "room": "my-fabric/worlds/models/room-agents-deploy-infrastructure-6.glb",
+    "door": {
+     "centre": [
+      0,
+      0,
+      4
+     ],
+     "half_width": 1.2,
+     "head": 2.8
+    },
+    "sign": "Operations Deck",
+    "resolution": {
+     "exterior": 2048,
+     "interior": 1024
+    },
+    "triangles": {
+     "exterior": 2058,
+     "interior": 1440
+    },
+    "source": "my-fabric/worlds/spaces_index.json#worlds[slug=agents-deploy-infrastructure]"
+   },
+   "volum": {
+    "shape": "box",
+    "center": [
+     48,
+     8,
+     83.14
+    ],
+    "halfExtents": [
+     18,
+     10,
+     18
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/operator",
+   "kind": "agent",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "owner": "AGI Future Foundation PBC",
+   "umbrella": "Powered by AGI Corp",
+   "permissions": {
+    "view": [
+     "public"
+    ],
+    "enter": [
+     "public"
+    ],
+    "build": [
+     "stewards"
+    ],
+    "operate": [
+     "stewards",
+     "agents:zone"
+    ],
+    "delegate": [
+     "stewards"
+    ],
+    "transfer": [
+     "steward-quorum"
+    ],
+    "govern": [
+     "steward-quorum"
+    ]
+   },
+   "reserved_for_humans": [
+    {
+     "action": "governance.final_vote",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "charter.amend",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "treasury.transfer",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "proposal.enact",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "windfall.distribute",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    },
+    {
+     "action": "steward.appoint",
+     "held_for": {
+      "holder": "Steward Council",
+      "quorum": "2-of-3",
+      "seats": 3
+     }
+    }
+   ],
+   "displayName": "Operator · Powered by AGI Corp",
+   "name": "Operator",
+   "role": "Operates the stack and hands incidents to people",
+   "avatar": {
+    "kind": "agent-avatar",
+    "role": "specialist",
+    "model_ref": "worldforge/out/assets/avatars/specialist.glb",
+    "seated_model": null
+   },
+   "binding": {
+    "swarm": "agents-deploy-infrastructure.operator",
+    "metaprompt": "agents/prompts/agents-deploy-infrastructure.json",
+    "fabricNode": "Agent · Operator",
+    "registry": "my-fabric/worlds/index.json#worlds[slug=agents-deploy-infrastructure].agents[name=Operator]"
+   },
+   "may_never": [
+    "governance.final_vote",
+    "charter.amend",
+    "treasury.transfer",
+    "proposal.enact",
+    "windfall.distribute",
+    "steward.appoint"
+   ],
+   "volum": {
+    "shape": "box",
+    "center": [
+     51,
+     1,
+     88.33
+    ],
+    "halfExtents": [
+     1,
+     1,
+     1
+    ]
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+  }
+ ],
+ "gaps": [
+  "no RP1 anchor yet: lat/lon are null until a steward writes them into worlds/focus.json"
+ ]
+}

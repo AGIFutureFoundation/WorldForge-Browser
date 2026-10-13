@@ -1,0 +1,528 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:diagnostic-x",
+ "rootCardId": "world:diagnostic-x",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -144,
+   144
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:diagnostic-x/medical-kiosk",
+   "displayName": "Medical Kiosk",
+   "centerXZ": [
+    -59.4,
+    59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:diagnostic-x/4d-imaging-room",
+   "displayName": "4D Imaging Room",
+   "centerXZ": [
+    -59.4,
+    -59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "displayName": "Virtual Molecular Lab",
+   "centerXZ": [
+    59.4,
+    -59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:diagnostic-x/metaverse-medical-office",
+   "displayName": "Metaverse Medical Office",
+   "centerXZ": [
+    59.4,
+    59.4
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:diagnostic-x/floor",
+   "parentCardId": "plaza:diagnostic-x",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:diagnostic-x/avatar",
+   "parentCardId": "coordinator:diagnostic-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:diagnostic-x/host/avatar",
+   "parentCardId": "advisor:diagnostic-x/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:diagnostic-x/steward/avatar",
+   "parentCardId": "advisor:diagnostic-x/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:diagnostic-x/alignment/avatar",
+   "parentCardId": "advisor:diagnostic-x/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:diagnostic-x/arch",
+   "parentCardId": "gate:diagnostic-x",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    124
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:diagnostic-x/chamber",
+   "parentCardId": "council:diagnostic-x",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -124
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:diagnostic-x/steward-1/chair",
+   "parentCardId": "seat:diagnostic-x/steward-1",
+   "zoneCardId": "council:diagnostic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:diagnostic-x/steward-2/chair",
+   "parentCardId": "seat:diagnostic-x/steward-2",
+   "zoneCardId": "council:diagnostic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:diagnostic-x/steward-3/chair",
+   "parentCardId": "seat:diagnostic-x/steward-3",
+   "zoneCardId": "council:diagnostic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -124
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:diagnostic-x/avatar",
+   "parentCardId": "omega:diagnostic-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -124
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/medical-kiosk/pad",
+   "parentCardId": "zone:diagnostic-x/medical-kiosk",
+   "zoneCardId": "zone:diagnostic-x/medical-kiosk",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -59.4,
+    0,
+    59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/medical-kiosk/hall",
+   "parentCardId": "zone:diagnostic-x/medical-kiosk",
+   "zoneCardId": "zone:diagnostic-x/medical-kiosk",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -53.74,
+    0.4,
+    53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:diagnostic-x/medical-ai-avatar/avatar",
+   "parentCardId": "agent:diagnostic-x/medical-ai-avatar",
+   "zoneCardId": "zone:diagnostic-x/medical-kiosk",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -63.64,
+    0.4,
+    63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/4d-imaging-room/pad",
+   "parentCardId": "zone:diagnostic-x/4d-imaging-room",
+   "zoneCardId": "zone:diagnostic-x/4d-imaging-room",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -59.4,
+    0,
+    -59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/4d-imaging-room/hall",
+   "parentCardId": "zone:diagnostic-x/4d-imaging-room",
+   "zoneCardId": "zone:diagnostic-x/4d-imaging-room",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -53.74,
+    0.4,
+    -53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:diagnostic-x/imaging-ai/avatar",
+   "parentCardId": "agent:diagnostic-x/imaging-ai",
+   "zoneCardId": "zone:diagnostic-x/4d-imaging-room",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -63.64,
+    0.4,
+    -63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/virtual-molecular-lab/pad",
+   "parentCardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "zoneCardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    59.4,
+    0,
+    -59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/virtual-molecular-lab/hall",
+   "parentCardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "zoneCardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    53.74,
+    0.4,
+    -53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:diagnostic-x/scientist-assistant-avatar/avatar",
+   "parentCardId": "agent:diagnostic-x/scientist-assistant-avatar",
+   "zoneCardId": "zone:diagnostic-x/virtual-molecular-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    63.64,
+    0.4,
+    -63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/metaverse-medical-office/pad",
+   "parentCardId": "zone:diagnostic-x/metaverse-medical-office",
+   "zoneCardId": "zone:diagnostic-x/metaverse-medical-office",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    59.4,
+    0,
+    59.4
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:diagnostic-x/metaverse-medical-office/hall",
+   "parentCardId": "zone:diagnostic-x/metaverse-medical-office",
+   "zoneCardId": "zone:diagnostic-x/metaverse-medical-office",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    53.74,
+    0.4,
+    53.74
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:diagnostic-x/office-ai-avatar/avatar",
+   "parentCardId": "agent:diagnostic-x/office-ai-avatar",
+   "zoneCardId": "zone:diagnostic-x/metaverse-medical-office",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    63.64,
+    0.4,
+    63.64
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:diagnostic-x/gate",
+   "startXZ": [
+    0,
+    124
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:diagnostic-x/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -114
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:diagnostic-x/medical-kiosk",
+   "startXZ": [
+    -16.97,
+    16.97
+   ],
+   "endXZ": [
+    -48.08,
+    48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:diagnostic-x/4d-imaging-room",
+   "startXZ": [
+    -16.97,
+    -16.97
+   ],
+   "endXZ": [
+    -48.08,
+    -48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:diagnostic-x/virtual-molecular-lab",
+   "startXZ": [
+    16.97,
+    -16.97
+   ],
+   "endXZ": [
+    48.08,
+    -48.08
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:diagnostic-x/metaverse-medical-office",
+   "startXZ": [
+    16.97,
+    16.97
+   ],
+   "endXZ": [
+    48.08,
+    48.08
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

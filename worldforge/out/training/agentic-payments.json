@@ -1,0 +1,718 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Agentic Payments",
+ "slug": "agentic-payments",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:agentic-payments/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "agentic-payments",
+   "zone": "Agentic Payments Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/agentic-payments.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].tagline"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].zones[*].name"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].agents[*].name"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Agentic Payments is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].status"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/agentic-payments.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agentic-payments/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "agentic-payments",
+   "zone": "Agentic Payments Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/agentic-payments.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].reserved_for_humans"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=agentic-payments].stewards"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/agentic-payments.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agentic-payments/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "agentic-payments",
+   "zone": "Agentic Payments Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/agentic-payments.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/agentic-payments.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/agentic-payments.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:agentic-payments/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Agentic Payments routes a question",
+   "world": "agentic-payments",
+   "zone": "Agentic Payments Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/agentic-payments.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/agentic-payments.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Buyer Agent (Transaction Desk): Drafts purchases against a steward-set budget and hands the settlement to the stewards",
+     "keywords": [
+      "buyer",
+      "purchases",
+      "hands",
+      "settlement"
+     ],
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.buyer-agent]"
+    },
+    {
+     "n": 2,
+     "do": "Seller Agent (Transaction Desk): Drafts sale offers and reconciles what was sold; never moves the proceeds",
+     "keywords": [
+      "seller",
+      "sale",
+      "offers",
+      "reconciles",
+      "sold",
+      "moves",
+      "proceeds"
+     ],
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.seller-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Provisioning Agent (Service Provisioning Counter): Orders services within budget and records what was provisioned",
+     "keywords": [
+      "provisioning",
+      "orders",
+      "services",
+      "within",
+      "records",
+      "provisioned",
+      "service",
+      "counter",
+      "order"
+     ],
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.provisioning-agent]"
+    },
+    {
+     "n": 4,
+     "do": "Budget Agent (Budget Office): Manages budget drafts, ledgers and variance reports for steward review",
+     "keywords": [
+      "manages",
+      "ledgers",
+      "variance",
+      "reports",
+      "review",
+      "office",
+      "managing",
+      "budgets",
+      "proposals"
+     ],
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.budget-agent]"
+    },
+    {
+     "n": 5,
+     "do": "Rail Agent (Financial Infrastructure Gateway): Reads balances, fetches quotes and dry-runs transactions against financial infrastructure",
+     "keywords": [
+      "rail",
+      "reads",
+      "balances",
+      "fetches",
+      "quotes",
+      "runs",
+      "transactions",
+      "financial",
+      "infrastructure",
+      "gateway",
+      "interacting",
+      "rehearsal"
+     ],
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.rail-agent]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/agentic-payments.json#coordinator",
+    "agents/swarms/agentic-payments.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agentic-payments/zone/transaction-desk",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Transaction Desk: what happens here",
+   "world": "agentic-payments",
+   "zone": "Transaction Desk",
+   "room": {
+    "kind": "studio",
+    "sign": "Transaction Desk",
+    "room_model": "my-fabric/worlds/models/room-agentic-payments-1.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/transaction-desk].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent",
+     "quote": "Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent",
+     "from": "worlds/agentic-payments/spec.json#zones[name=Transaction Desk].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'transact, buy, sell'"
+    },
+    {
+     "text": "Buyer Agent's role: Drafts purchases against a steward-set budget and hands the settlement to the stewards",
+     "quote": "Drafts purchases against a steward-set budget and hands the settlement to the stewards",
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.buyer-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'buy'"
+    },
+    {
+     "text": "Seller Agent's role: Drafts sale offers and reconciles what was sold; never moves the proceeds",
+     "quote": "Drafts sale offers and reconciles what was sold; never moves the proceeds",
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.seller-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'sell'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Transaction Desk\"",
+     "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/transaction-desk].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Buyer Agent: Drafts purchases against a steward-set budget and hands the settlement to the stewards",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/specialist/buyer-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "Meet Seller Agent: Drafts sale offers and reconciles what was sold; never moves the proceeds",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/specialist/seller-agent].role_text"
+    },
+    {
+     "n": 4,
+     "do": "A question that belongs to another zone goes back to Agentic Payments Coordinator",
+     "from": "agents/swarms/agentic-payments.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/specialist/buyer-agent",
+    "avatar:agentic-payments/specialist/seller-agent"
+   ],
+   "sources": [
+    "worlds/agentic-payments/spec.json#zones[name=Transaction Desk]",
+    "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/transaction-desk]",
+    "agents/swarms/agentic-payments.json#agents[id=agentic-payments.buyer-agent]",
+    "agents/swarms/agentic-payments.json#agents[id=agentic-payments.seller-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agentic-payments/zone/service-provisioning-counter",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Service Provisioning Counter: what happens here",
+   "world": "agentic-payments",
+   "zone": "Service Provisioning Counter",
+   "room": {
+    "kind": "studio",
+    "sign": "Service Provisioning Counter",
+    "room_model": "my-fabric/worlds/models/room-agentic-payments-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/service-provisioning-counter].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Provisioning services an agent may order within a steward-set budget",
+     "quote": "Provisioning services an agent may order within a steward-set budget",
+     "from": "worlds/agentic-payments/spec.json#zones[name=Service Provisioning Counter].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"
+    },
+    {
+     "text": "Provisioning Agent's role: Orders services within budget and records what was provisioned",
+     "quote": "Orders services within budget and records what was provisioned",
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.provisioning-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Service Provisioning Counter\"",
+     "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/service-provisioning-counter].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Provisioning Agent: Orders services within budget and records what was provisioned",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/specialist/provisioning-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agentic Payments Coordinator",
+     "from": "agents/swarms/agentic-payments.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/specialist/provisioning-agent"
+   ],
+   "sources": [
+    "worlds/agentic-payments/spec.json#zones[name=Service Provisioning Counter]",
+    "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/service-provisioning-counter]",
+    "agents/swarms/agentic-payments.json#agents[id=agentic-payments.provisioning-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agentic-payments/zone/budget-office",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Budget Office: what happens here",
+   "world": "agentic-payments",
+   "zone": "Budget Office",
+   "room": {
+    "kind": "forum",
+    "sign": "Budget Office",
+    "room_model": "my-fabric/worlds/models/room-agentic-payments-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-forum.glb",
+    "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/budget-office].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Managing budgets: proposals, ledgers and variance drafted for the stewards",
+     "quote": "Managing budgets: proposals, ledgers and variance drafted for the stewards",
+     "from": "worlds/agentic-payments/spec.json#zones[name=Budget Office].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"
+    },
+    {
+     "text": "Budget Agent's role: Manages budget drafts, ledgers and variance reports for steward review",
+     "quote": "Manages budget drafts, ledgers and variance reports for steward review",
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.budget-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the forum signed \"Budget Office\"",
+     "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/budget-office].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Budget Agent: Manages budget drafts, ledgers and variance reports for steward review",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/specialist/budget-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agentic Payments Coordinator",
+     "from": "agents/swarms/agentic-payments.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/specialist/budget-agent"
+   ],
+   "sources": [
+    "worlds/agentic-payments/spec.json#zones[name=Budget Office]",
+    "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/budget-office]",
+    "agents/swarms/agentic-payments.json#agents[id=agentic-payments.budget-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:agentic-payments/zone/financial-infrastructure-gateway",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Financial Infrastructure Gateway: what happens here",
+   "world": "agentic-payments",
+   "zone": "Financial Infrastructure Gateway",
+   "room": {
+    "kind": "studio",
+    "sign": "Financial Infrastructure Gateway",
+    "room_model": "my-fabric/worlds/models/room-agentic-payments-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/financial-infrastructure-gateway].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Interacting with financial infrastructure in rehearsal: reads, quotes and dry runs",
+     "quote": "Interacting with financial infrastructure in rehearsal: reads, quotes and dry runs",
+     "from": "worlds/agentic-payments/spec.json#zones[name=Financial Infrastructure Gateway].purpose",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure autonomously'"
+    },
+    {
+     "text": "Rail Agent's role: Reads balances, fetches quotes and dry-runs transactions against financial infrastructure",
+     "quote": "Reads balances, fetches quotes and dry-runs transactions against financial infrastructure",
+     "from": "agents/swarms/agentic-payments.json#agents[id=agentic-payments.rail-agent].role",
+     "origin": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure'"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Financial Infrastructure Gateway\"",
+     "from": "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/financial-infrastructure-gateway].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Rail Agent: Reads balances, fetches quotes and dry-runs transactions against financial infrastructure",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:agentic-payments/specialist/rail-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Agentic Payments Coordinator",
+     "from": "agents/swarms/agentic-payments.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:agentic-payments/specialist/rail-agent"
+   ],
+   "sources": [
+    "worlds/agentic-payments/spec.json#zones[name=Financial Infrastructure Gateway]",
+    "worldforge/out/agentic-payments/cards.json#cards[cardId=zone:agentic-payments/financial-infrastructure-gateway]",
+    "agents/swarms/agentic-payments.json#agents[id=agentic-payments.rail-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:agentic-payments/coordinator",
+   "avatarId": "avatar:agentic-payments/coordinator",
+   "kind": "coordinator",
+   "name": "Agentic Payments Coordinator",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/coordinator",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "41e6c9345ed3c45c2453010974c552621b99fcf5d83b53f86adb5d0db62d8ff1"
+   },
+   "lessons": [
+    "lesson:agentic-payments/routing"
+   ],
+   "chars": 2748,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Agentic Payments Coordinator (avatar:agentic-payments/coordinator) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/coordinator in worldforge/out/avatars/prompts/agentic-payments.json (sha256 41e6c9345ed3c45c); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Agentic Payments (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Agentic Payments Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/routing: How Agentic Payments routes a question\n    Steps: 1. Buyer Agent (Transaction Desk): Drafts purchases against a steward-set budget and hands the settlement to the stewards 2. Seller Agent (Transaction Desk): Drafts sale offers and reconciles what was sold; never moves the proceeds 3. Provisioning Agent (Service Provisioning Counter): Orders services within budget and records what was provisioned 4. Budget Agent (Budget Office): Manages budget drafts, ledgers and variance reports for steward review 5. Rail Agent (Financial Infrastructure Gateway): Reads balances, fetches quotes and dry-runs transactions against financial infrastructure\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agentic-payments/specialist/buyer-agent",
+   "avatarId": "avatar:agentic-payments/specialist/buyer-agent",
+   "kind": "specialist",
+   "name": "Buyer Agent",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/specialist/buyer-agent",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "f0ad14beb59b1904b01c0dd9c03bed8e50f4873914f90afdb042449538d2af31"
+   },
+   "lessons": [
+    "lesson:agentic-payments/zone/transaction-desk"
+   ],
+   "chars": 2688,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Buyer Agent (avatar:agentic-payments/specialist/buyer-agent) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/specialist/buyer-agent in worldforge/out/avatars/prompts/agentic-payments.json (sha256 f0ad14beb59b1904); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Transaction Desk - Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent.\nYour role: Drafts purchases against a steward-set budget and hands the settlement to the stewards (source: worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'buy').\nYou answer on: buyer, purchases, hands, settlement.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/zone/transaction-desk: Transaction Desk: what happens here [room: Transaction Desk]\n    Steps: 1. Enter the studio signed \"Transaction Desk\" 2. Meet Buyer Agent: Drafts purchases against a steward-set budget and hands the settlement to the stewards 3. Meet Seller Agent: Drafts sale offers and reconciles what was sold; never moves the proceeds 4. A question that belongs to another zone goes back to Agentic Payments Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agentic-payments/specialist/seller-agent",
+   "avatarId": "avatar:agentic-payments/specialist/seller-agent",
+   "kind": "specialist",
+   "name": "Seller Agent",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/specialist/seller-agent",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "e66b737f9dc49fc573b84eed6d7cb32596315577cc3eee65abf9ce6b53dc21dd"
+   },
+   "lessons": [
+    "lesson:agentic-payments/zone/transaction-desk"
+   ],
+   "chars": 2699,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Seller Agent (avatar:agentic-payments/specialist/seller-agent) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/specialist/seller-agent in worldforge/out/avatars/prompts/agentic-payments.json (sha256 e66b737f9dc49fc5); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Transaction Desk - Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent.\nYour role: Drafts sale offers and reconciles what was sold; never moves the proceeds (source: worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'sell').\nYou answer on: seller, sale, offers, reconciles, sold, moves, proceeds.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/zone/transaction-desk: Transaction Desk: what happens here [room: Transaction Desk]\n    Steps: 1. Enter the studio signed \"Transaction Desk\" 2. Meet Buyer Agent: Drafts purchases against a steward-set budget and hands the settlement to the stewards 3. Meet Seller Agent: Drafts sale offers and reconciles what was sold; never moves the proceeds 4. A question that belongs to another zone goes back to Agentic Payments Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agentic-payments/specialist/provisioning-agent",
+   "avatarId": "avatar:agentic-payments/specialist/provisioning-agent",
+   "kind": "specialist",
+   "name": "Provisioning Agent",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/specialist/provisioning-agent",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "175bf79d6d3aebf1065fe4eab47e9b7d1b52a8daceab26b4e9caa7d7b3074486"
+   },
+   "lessons": [
+    "lesson:agentic-payments/zone/service-provisioning-counter"
+   ],
+   "chars": 2673,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Provisioning Agent (avatar:agentic-payments/specialist/provisioning-agent) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/specialist/provisioning-agent in worldforge/out/avatars/prompts/agentic-payments.json (sha256 175bf79d6d3aebf1); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Service Provisioning Counter - Provisioning services an agent may order within a steward-set budget.\nYour role: Orders services within budget and records what was provisioned (source: worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services').\nYou answer on: provisioning, orders, services, within, records, provisioned, service, counter, order.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/zone/service-provisioning-counter: Service Provisioning Counter: what happens here [room: Service Provisioning Counter]\n    Steps: 1. Enter the studio signed \"Service Provisioning Counter\" 2. Meet Provisioning Agent: Orders services within budget and records what was provisioned 3. A question that belongs to another zone goes back to Agentic Payments Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agentic-payments/specialist/budget-agent",
+   "avatarId": "avatar:agentic-payments/specialist/budget-agent",
+   "kind": "specialist",
+   "name": "Budget Agent",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/specialist/budget-agent",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "b38371b7a0ff4fcf2be329259b1692cfdfbcc461d4d94a3e91ccb298ef9821cd"
+   },
+   "lessons": [
+    "lesson:agentic-payments/zone/budget-office"
+   ],
+   "chars": 2587,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Budget Agent (avatar:agentic-payments/specialist/budget-agent) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/specialist/budget-agent in worldforge/out/avatars/prompts/agentic-payments.json (sha256 b38371b7a0ff4fcf); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Budget Office - Managing budgets: proposals, ledgers and variance drafted for the stewards.\nYour role: Manages budget drafts, ledgers and variance reports for steward review (source: worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets').\nYou answer on: manages, ledgers, variance, reports, review, office, managing, budgets, proposals.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/zone/budget-office: Budget Office: what happens here [room: Budget Office]\n    Steps: 1. Enter the forum signed \"Budget Office\" 2. Meet Budget Agent: Manages budget drafts, ledgers and variance reports for steward review 3. A question that belongs to another zone goes back to Agentic Payments Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:agentic-payments/specialist/rail-agent",
+   "avatarId": "avatar:agentic-payments/specialist/rail-agent",
+   "kind": "specialist",
+   "name": "Rail Agent",
+   "persona_prompt": {
+    "id": "persona:agentic-payments/specialist/rail-agent",
+    "file": "worldforge/out/avatars/prompts/agentic-payments.json",
+    "sha256": "8c21e8e17d366303f625c0c7f7b9370815ad88c7a7bb025fb841fc974a22f1b2"
+   },
+   "lessons": [
+    "lesson:agentic-payments/zone/financial-infrastructure-gateway"
+   ],
+   "chars": 2782,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Rail Agent (avatar:agentic-payments/specialist/rail-agent) teaches draft lessons in Agentic Payments (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:agentic-payments/specialist/rail-agent in worldforge/out/avatars/prompts/agentic-payments.json (sha256 8c21e8e17d366303); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Financial Infrastructure Gateway - Interacting with financial infrastructure in rehearsal: reads, quotes and dry runs.\nYour role: Reads balances, fetches quotes and dry-runs transactions against financial infrastructure (source: worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure').\nYou answer on: rail, reads, balances, fetches, quotes, runs, transactions, financial, infrastructure, gateway, interacting, rehearsal.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:agentic-payments/zone/financial-infrastructure-gateway: Financial Infrastructure Gateway: what happens here [room: Financial Infrastructure Gateway]\n    Steps: 1. Enter the studio signed \"Financial Infrastructure Gateway\" 2. Meet Rail Agent: Reads balances, fetches quotes and dry-runs transactions against financial infrastructure 3. A question that belongs to another zone goes back to Agentic Payments Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to agentic-payments.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "spec gap: No rails, currencies, limits, wallets or counterparties are named; nothing in this world moves money",
+  "spec gap: treasury.transfer is reserved for human stewards, so 'autonomously' here means drafting and reconciling, not settling",
+  "spec gap: No RP1 location given yet",
+  "spec gap: No source names a person, partner or budget figure"
+ ]
+}

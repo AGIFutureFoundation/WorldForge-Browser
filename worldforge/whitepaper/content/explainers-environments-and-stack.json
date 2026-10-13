@@ -1,0 +1,635 @@
+{
+ "group": "environments-and-stack",
+ "about": "Explainers on environments and assets, the technical stack and the roadmap for the SmartCiti.X agentic virtual worlds (AGI Future Foundation PBC, Powered by AGI Corp). Every number was read from the registry named in its fact's source on 2026-10-12.",
+ "sections": [
+  {
+   "id": "spaces-buildings",
+   "title": "Buildings: 246 shells, 246 fit-outs and one texture library",
+   "dek": "Every zone in every world, the Steward Council hall included, stands inside a textured building whose door lines up with the room behind it.",
+   "paragraphs": [
+    "Each world's spec names its zones. The deep-world builder turns every zone into a room 10 m wide, 8 m deep and 3.6 m high, and my-fabric/spaces.py wraps that room twice: an exterior shell (a facade with a window grid and mullions, an entrance portal, a plinth with steps, a roof slab with parapet and rooftop plant, and a sign band) and an interior fit-out (a patterned floor with an inlay border, wall panelling, skirting and a dado rail, a coffered ceiling with light panels, and the furniture and fixtures of the room's kind). Across the 41 worlds that makes 246 exteriors and 246 interiors. The count matches WorldForge's 246 zones because the Steward Council that every spec lists gets a hall too, even though its card is the council card, not a zone card.",
+    "A room's kind comes from its own purpose text, matched by build_deep.kind_of() against seven kinds: forum (113 rooms), lab (74), ops (37), studio (13, also the fallback), desk (4), clinic (3) and library (2). Each kind has its own style recipe: a bonded stone facade with veining for the forum, bolted white panels for the lab, brick and mortar for the library, small glossy tiles for the clinic. Every texture is procedural, made with numpy and Pillow from a fixed seed, so the same registries always produce the same bytes. No building is modelled on a real one.",
+    "The textures are PBR sets: albedo, a normal map, and an ORM map that packs occlusion, roughness and metalness into one image. The hero facade of each kind is 2048 px; floor, wall and ceiling are 1024 px. That is 84 library textures (7 kinds, 4 surfaces, 3 maps), 21 of them at 2048 px. Each set is embedded once, in its kind's two hero models (14 shared models, 10,434,416 bytes), and every room of that kind in every world points at those two models. A room's own GLB keeps only what is unique to it: the sign band lettered with the zone's name (246 sign textures), the world's accent colour, the console and the placard. All room models together come to 2,151,432 bytes, and the whole layer to 12.6 MB. The sets are embedded rather than linked because a GLB that points at an external image fails this repository's validator loop, and the RP1 exporter and publish bundle carry .glb files only.",
+    "The doors are aligned by construction and then checked. All 246 exteriors carry the same opening: 2.4 m wide and 2.8 m high, centred on the room's front wall at (0, 0, 4.0) in the model frame. The spaces check asserts that each shell and fit-out is a child node at its room's origin with no rotation or scale, and that every room's door faces the plaza centre. It casts rays through the doorway for each of the seven kinds: they must pass clear through shell, fit-out and room, while rays beside the doorway must hit the facade. It also checks that every sign shows its zone's registry name, that no texture exceeds 2048 px, that a rebuild is byte-for-byte identical, and that every spaces model passes the Khronos validator with 0 errors and 0 warnings. Each WorldForge zone card links its building through a building block, and the buildings_resolve eval checks that link."
+   ],
+   "facts": [
+    {
+     "label": "Building exteriors",
+     "value": "246",
+     "source": "my-fabric/worlds/spaces_index.json#totals.exteriors"
+    },
+    {
+     "label": "Building interiors",
+     "value": "246",
+     "source": "my-fabric/worlds/spaces_index.json#totals.interiors"
+    },
+    {
+     "label": "Zones across the 41 worlds",
+     "value": "246",
+     "source": "worldforge/out/index.json#worlds[].zones (sum)"
+    },
+    {
+     "label": "Rooms by kind",
+     "value": "forum 113, lab 74, ops 37, studio 13, desk 4, clinic 3, library 2",
+     "source": "my-fabric/worlds/spaces_index.json#worlds[].exteriors[].kind (count)"
+    },
+    {
+     "label": "Library textures",
+     "value": "84 (21 facade maps at 2048 px; 63 floor, wall and ceiling maps at 1024 px)",
+     "source": "my-fabric/worlds/spaces_index.json#totals.library_textures, #totals.at_2048, #library[].size"
+    },
+    {
+     "label": "Sign textures",
+     "value": "246",
+     "source": "my-fabric/worlds/spaces_index.json#totals.sign_textures"
+    },
+    {
+     "label": "Shared hero models",
+     "value": "14 GLBs, 10,434,416 bytes",
+     "source": "my-fabric/worlds/spaces_index.json#shared, #totals.shared_bytes"
+    },
+    {
+     "label": "All room models",
+     "value": "2,151,432 bytes",
+     "source": "my-fabric/worlds/spaces_index.json#totals.room_bytes"
+    },
+    {
+     "label": "Spaces layer total",
+     "value": "12.6 MB",
+     "source": "my-fabric/worlds/spaces_index.json#totals.mb"
+    },
+    {
+     "label": "Hero model triangles",
+     "value": "exteriors 1,528 to 1,984; interiors 1,392 to 4,588",
+     "source": "my-fabric/worlds/spaces_index.json#shared[].triangles"
+    },
+    {
+     "label": "Door opening",
+     "value": "2.4 m wide (half-width 1.2 m), 2.8 m head, centred at (0, 0, 4.0)",
+     "source": "my-fabric/worlds/spaces_index.json#worlds[].exteriors[].door"
+    },
+    {
+     "label": "Bundle size before spaces, and the growth budget",
+     "value": "108.6 MB baseline; 40 MB budget",
+     "source": "my-fabric/worlds/spaces_index.json#baseline.bundle_mb; my-fabric/spaces.py BUDGET_MB"
+    }
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-building.jpg; clip worldforge/review/out/clips/locator-x-building.mp4; plans, elevations and texture swatches in consoles/spaces/index.html",
+   "not_done": [
+    "my-fabric/spaces.py --check takes minutes, so it runs at review time and not on every heartbeat beat. Its last pass or fail is not stored in any registry, so this paper reports none.",
+    "Every texture is procedural. Nothing is photographed, scanned or taken from a real building.",
+    "The interiors are generic fit-outs for seven room kinds. They are not designed room by room for each zone's real work."
+   ]
+  },
+  {
+   "id": "forecourts-land-sky",
+   "title": "Forecourts, land and sky",
+   "dek": "Every building gets a forecourt laid out from one shared kit, and every world stands on its own layered land under a sky chosen from words in its name.",
+   "paragraphs": [
+    "my-fabric/scenes.py lays out a forecourt in front of all 246 buildings from one kit of 19 GLB models (970,660 bytes). Each kit model is written once and linked into every RP1 installer instead of copied. The kit is paving with a 2048 px PBR set, kerbs, steps, trees with a trunk and a layered canopy, planters, low hedges, a lawn, benches, lamp posts with emissive heads, bollards, a bike rack, a wayfinding totem, and one water feature or sculpture for each room kind.",
+    "Every building gets the same 40-item plan, read from its footprint and its door. A paved walk runs along the front from the foot of the building's steps, with two short flights up to the plaza's first tier. Side walks edged by kerbs run back along both flanks. Lawns with trees and hedges sit beside them, benches face the walks, and six lamps stand at the steps and the corners, along with planters, bollards, the bike rack, the totem and the kind's feature. These nodes are children of the room's exterior node, in the room's own frame. Any item that would touch a building, the plaza, another model of the world or another item is left out, and the index records the reason. Of 9,840 candidate placements (246 forecourts × 40), 9,092 were placed and 748 were dropped, all for touching another model. The totem names its zone exactly as the spec registry spells it, and the index stores the citation path beside each name.",
+    "The lamp heads are emissive, warm white (colour 1.0, 0.85, 0.62), and the stated intent is on from dusk to dawn. The spatial fabric schema has no metadata field on a model node, so that intent lives where a schema can carry it: in the lamp GLB's glTF extras and in the scenes index. No fabric light node was added.",
+    "my-fabric/build_env.py gives each of the 41 worlds its own land model and sky model, 82 GLBs in all. The biome is a styling choice made from words in the world's name, slug or tagline. The first rule that matches wins, and the rule and the matched word are recorded for each world. Seven biomes are in use: clinical campus (14 worlds), urban plaza (6), conifer forest (6), industrial yard (5), observatory highland (5), wetland delta (3) and solar mesa (2). The default temperate-park rule matched no world. The land is built in layers that show at the rim of the disc: bedrock, subsoil, topsoil, ground cover, a paved apron with a ring path, water, vegetation, props, and a horizon ring of landforms. That is 357 layers in all, 7 to 9 per world. Locator.X, for example, matched urban plaza on the word \"locator\". It has a ground-cover disc 326 m in radius, one pond 18.4 m in radius, 40 street trees, 18 blocks, 28 skyline forms on a horizon ring 360 to 470 m out, and a dusk sky dome 600 m in radius with the sun 6° above the horizon. Times of day are spread across the worlds: dusk 17, morning 12, night 6, noon 5, dawn 1."
+   ],
+   "facts": [
+    {
+     "label": "Forecourts",
+     "value": "246",
+     "source": "my-fabric/worlds/scenes_index.json#totals.forecourts"
+    },
+    {
+     "label": "Kit models",
+     "value": "19 GLBs, 970,660 bytes",
+     "source": "my-fabric/worlds/scenes_index.json#totals.kit_models, #totals.kit_bytes"
+    },
+    {
+     "label": "Items in each forecourt plan",
+     "value": "40",
+     "source": "my-fabric/worlds/scenes_index.json#plan.items"
+    },
+    {
+     "label": "Placements made and dropped",
+     "value": "9,092 placed; 748 dropped (all: touches another model of the world)",
+     "source": "my-fabric/worlds/scenes_index.json#totals.placements, #totals.dropped, #worlds[].dropped[].why"
+    },
+    {
+     "label": "Lamps per forecourt",
+     "value": "6, emissive; night intent in glTF extras, no fabric light node",
+     "source": "my-fabric/worlds/scenes_index.json#lighting"
+    },
+    {
+     "label": "Land and sky models",
+     "value": "41 land + 41 sky",
+     "source": "my-fabric/env/index.json#totals.land_models, #totals.sky_models"
+    },
+    {
+     "label": "Biomes in use",
+     "value": "7: clinical campus 14, urban plaza 6, conifer forest 6, industrial yard 5, observatory highland 5, wetland delta 3, solar mesa 2",
+     "source": "my-fabric/env/index.json#biomes"
+    },
+    {
+     "label": "Land layers",
+     "value": "357 in all; 7 to 9 per world",
+     "source": "my-fabric/env/index.json#totals.layers, #worlds[].layers"
+    },
+    {
+     "label": "Time of day",
+     "value": "dusk 17, morning 12, night 6, noon 5, dawn 1",
+     "source": "my-fabric/env/index.json#worlds[].time (count)"
+    },
+    {
+     "label": "Example world environment",
+     "value": "Locator.X: urban plaza (word \"locator\"), 326 m ground disc, 600 m dusk sky dome",
+     "source": "my-fabric/env/locator-x.json"
+    }
+   ],
+   "visual_hint": "clip worldforge/review/out/clips/cancer-dao-flyin.mp4 (fly-in across forecourts, land and sky); still worldforge/out/stills/viewer-orbit.jpg",
+   "not_done": [
+    "my-fabric/scenes.py --check is also a review-time check. No current pass or fail is recorded in a registry, so none is reported here.",
+    "748 planned forecourt items were left out where they would collide. The gaps are recorded, but those forecourts have not been redesigned.",
+    "The lamps' night-light intent is declared, not executed. No fabric light node exists for them, and no engine has been shown to act on the glTF extras.",
+    "Biomes are styling choices. They depict no real place, and every layer is procedural."
+   ]
+  },
+  {
+   "id": "landmarks-and-avatars",
+   "title": "Civic landmarks, agent avatars and synthetic voices",
+   "dek": "Each world has a synthetic civic tower for a skyline, and every agent card has a stylised, rig-free body, a tint in its world's colour, and a voice labelled synthetic.",
+   "paragraphs": [
+    "worldforge/landmarks/build_landmarks.py writes one procedural tower per world, 41 GLBs, and generates every texture from scratch. Each root node's extras declare it synthetic and not modelled on a real building. Every tower sits on a 12 × 12 m footprint. Its height comes from a hash rule, 30 + 40·u where u is taken from sha256 of the world's slug, rounded to 0.5 m, so heights run from 30.5 m (Biota.blockchain) to 69.0 m (Aerospace DAO, Series 31). The style follows registry facts. Series worlds get series-setback (28 towers), DAOs whose zones cite the PBC mission get focus-rotunda (6), worlds whose zones cite the founder tracks get track-twist (3), and the rest get platform-prism (4). The facade, glass and stone textures are neutral and shared within each style. A world's brand hue appears only in the fin tint, the crown glow and the plaque, and the plaque carries nothing but the brand-mark letters. Each tower embeds a 2048 px facade set and 1024 px stone, glass and plaque maps. Altogether the towers have 508,339 triangles (8,260 to 27,242 each) and weigh 85,396,200 bytes. The Khronos validator reports 0 errors and 0 warnings on all 41, and its report hashes match the files on disk. Each tower also has a computed placement, north of the plaza, at least 3 m clear of every primitive, road and card volume, with the entrance turned to face the plaza. That placement is a suggestion only: no viewer, fabric or build loads the towers yet.",
+    "worldforge/avatars/build_avatars.py writes six role models: specialist, coordinator, omega, host, liaison and alignment. They are stylised agents, not people. They are static and rig-free, stand with their feet at y = 0 facing +Z, and are 1.8 m tall; the omega is 2.1 m with a halo. Each has 15,280 to 18,216 triangles, for 99,972 in all and 12,903,896 bytes. The body fabric carries a 2048 px base colour and normal map, and the ORM, visor, light-bar and emblem maps are 1024 px. The models are neutral grey, and each world tints them by multiplying the body and garment base colour by its brand hue. All six pass the validator with 0 errors and 0 warnings.",
+    "The avatar registry binds 447 avatars to their records: 242 specialists (one per agent card), 41 coordinators, 123 advisors and 41 Omegas. The 324 persona prompts pass 5,225 prompt gates with none failing. Advisors speak scripted intros and have no prompt. The registry runs 892 evals with 0 failing, and 28 broken fixtures each fail their own check. In the deep fabrics, 324 avatars stand in place: specialists face their room's door, coordinators the gate road, Omegas the plaza. Every Omega is defined, not seated.",
+    "The voices are Kokoro v1.0 (kokoro-onnx, Apache-2.0), run locally with no account and nothing sent anywhere. WorldForge has rendered 61 intro lines (41 coordinators, 20 specialists), 568.5 s in all, normalised to −16 LUFS. The hive has spoken 173 of its 176 Omega lines, from a pool of 27 voices. Every intro says the voice is synthetic. An avatar without a rendered file falls back to a labelled browser voice."
+   ],
+   "facts": [
+    {
+     "label": "Civic landmarks",
+     "value": "41 GLBs, 508,339 triangles, 85,396,200 bytes",
+     "source": "worldforge/out/assets/landmarks/index.json#totals"
+    },
+    {
+     "label": "Landmark heights",
+     "value": "30.5 m to 69.0 m on a 12 × 12 m footprint",
+     "source": "worldforge/out/assets/landmarks/index.json#totals.min_height_m, #totals.max_height_m, #footprint_m"
+    },
+    {
+     "label": "Landmark styles",
+     "value": "series-setback 28, focus-rotunda 6, platform-prism 4, track-twist 3",
+     "source": "worldforge/out/assets/landmarks/index.json#totals.styles"
+    },
+    {
+     "label": "Landmark validation",
+     "value": "41 files, 0 errors, 0 warnings (gltf-validator 2.0.0-dev.3.10)",
+     "source": "worldforge/out/assets/landmarks/validation.json"
+    },
+    {
+     "label": "Avatar role models",
+     "value": "6 GLBs, 99,972 triangles, 12,903,896 bytes, rig-free",
+     "source": "worldforge/out/assets/avatars/index.json#totals, #rig"
+    },
+    {
+     "label": "Avatar validation",
+     "value": "6 files, 0 errors, 0 warnings",
+     "source": "worldforge/out/assets/avatars/validation.json"
+    },
+    {
+     "label": "Avatars bound to records",
+     "value": "447 (242 specialists, 41 coordinators, 123 advisors, 41 Omegas)",
+     "source": "worldforge/out/avatars/index.json#totals"
+    },
+    {
+     "label": "Persona prompts and gates",
+     "value": "324 prompts; 5,225 gates, 0 failing; 892 registry evals, 0 failing",
+     "source": "worldforge/out/avatars/index.json#totals"
+    },
+    {
+     "label": "Avatars placed in the deep fabrics",
+     "value": "324 across 41 worlds, from 3 models",
+     "source": "my-fabric/worlds/avatars_mount.json#totals"
+    },
+    {
+     "label": "WorldForge voiced intros",
+     "value": "61 lines, 568.5 s (Kokoro v1.0, local)",
+     "source": "worldforge/out/voices/manifest.json#totals, #engine"
+    },
+    {
+     "label": "Omega Hive voices",
+     "value": "44 Omegas, 27 voices, 173 of 176 lines spoken",
+     "source": "agents/hive/index.json#totals"
+    }
+   ],
+   "visual_hint": "worldforge/out/assets/landmarks/preview.jpg (contact sheet of all 41 towers); worldforge/out/assets/avatars/preview.jpg; clip worldforge/review/out/clips/s29-metaverse-dao-omega.mp4",
+   "not_done": [
+    "The landmarks are not placed in any world. worldforge/build.mjs, both viewers, the deep fabrics and the RP1 bundle do not load them; the placements in the index are suggestions.",
+    "The avatars have no rig and no animation. They stand still.",
+    "The RP1 publication budget is 2 MiB per model, and the three avatar models in the bundle (2,122,088 to 2,205,748 bytes) are over it. The manifest treats this as a warning, not a blocker.",
+    "Not every line is voiced: 61 WorldForge intros of 447 avatars, and 173 of 176 hive lines. Nothing speaks live.",
+    "No Omega Steward is seated. A person must seat an agent before any Omega acts."
+   ]
+  },
+  {
+   "id": "pipeline-and-validation",
+   "title": "One pipeline: generators, glTF 2.0 and a validator on every beat",
+   "dek": "Every asset is written by a deterministic Python or Node generator, re-checked by that generator's --check mode, and validated against the Khronos glTF 2.0 specification.",
+   "paragraphs": [
+    "The files under worldforge/out and my-fabric/worlds/models are generator output, not hand edits. Geometry and textures come from Python 3 builders using numpy and Pillow: spaces.py, scenes.py, build_env.py, build_deep.py, build_landmarks.py and build_avatars.py. The card layer and the registries come from Node builders: worldforge/build.mjs, avatars.mjs, onchain.mjs, and the agent builders under agents/. Each has a --check mode that rebuilds in memory, compares the result byte for byte with what is on disk, runs its evals, and exits 1 when anything is stale or failing. The same registries always produce the same bytes. The spaces and onchain builders both test that directly.",
+    "Every model is binary glTF 2.0 (GLB), Y-up, in metres, with its textures embedded so that each file stands alone. WorldForge writes one GLB per world: blockout massing built from one shared unit-cube mesh, in which every node carries its cardId and parentCardId in glTF extras. A native loader can therefore rebuild the Master Card tree without trusting display names. The 41 world GLBs total 769,296 bytes and carry 1,103 tagged primitives. For each world, 25 evals cover unique ids, parents before children, the 48-character name limit, no agent holding a reserved right, the six reserved actions held verbatim for a 2-of-3 quorum, three empty human seats, citations, nothing invented, the GLB parsing, and the GLB card tree matching the cards. That is 1,025 evals, with 0 failing. Six deliberately broken worlds each fail exactly their own check, which shows the suite can tell good from bad.",
+    "Validation uses the Khronos glTF-Validator (2.0.0-dev.3.10) on raw bytes with no external resources allowed. The heartbeat runs deploy/evals.sh every five minutes for its window. Its 07:29:33 beat on 2026-10-12 was GREEN: 667 GLBs validated across the my-fabric model folders with 0 errors or warnings, 197 fabrics with 0 missing references or over-long names, and 46 RP1 installers dry-run with 0 failing. Outside that sweep, WorldForge's 42 GLBs (41 worlds plus the shared unit cube) were re-validated for this paper with 0 errors and 0 warnings, and the landmark (41) and avatar (6) reports show the same. The roadmap's figure of \"506 glTF models\" is an earlier count.",
+    "The browser viewers use three.js. worldforge/viewer.html loads three@0.160.0 through an importmap, with GLTFLoader and OrbitControls. It draws each world's buildings, rooms, interiors, sky and avatars, and it falls back to a blockout hall, a gradient sky or a tinted stand-in when a model is missing. It exposes a small recording contract, window.__wfReady and window.__wfShot, for five camera modes: orbit, flyin, building, omega and council. worldforge/review/record.mjs drives that contract in headless Chrome and captures 12 frames a second for 5 s, encoded as 960×540 clips. If the viewer cannot shoot, the recorder exits 1 rather than fake a frame. my-fabric/viewer.html, also three@0.160.0, adds a WebXR button. The walkable family page uses three.js r128."
+   ],
+   "facts": [
+    {
+     "label": "WorldForge evals",
+     "value": "1,025 (25 per world × 41), 0 failing",
+     "source": "worldforge/out/index.json#totals.evals, #totals.failed; worldforge/out/<slug>/manifest.json#evals"
+    },
+    {
+     "label": "Broken worlds that must fail",
+     "value": "6, each failing exactly its own check",
+     "source": "worldforge/out/index.json#broken"
+    },
+    {
+     "label": "World GLBs",
+     "value": "41, 769,296 bytes, 1,103 card-tagged primitives",
+     "source": "worldforge/out/index.json#worlds[].glbBytes, #totals.primitives"
+    },
+    {
+     "label": "Heartbeat GLB sweep",
+     "value": "667 GLBs validated, 0 with errors/warnings",
+     "source": "evidence/heartbeat.log (beat at 07:29:33, 2026-10-12)"
+    },
+    {
+     "label": "Fabric reference check",
+     "value": "197 fabrics, 0 missing refs or over-long names",
+     "source": "evidence/heartbeat.log (beat at 07:29:33, 2026-10-12)"
+    },
+    {
+     "label": "WorldForge GLB validation",
+     "value": "42 GLBs, 0 errors, 0 warnings (re-run 2026-10-12 with tools/gltf-validator/v.mjs)",
+     "source": "tools/gltf-validator/v.mjs over worldforge/out/<slug>/ and worldforge/out/assets/"
+    },
+    {
+     "label": "Validator",
+     "value": "gltf-validator 2.0.0-dev.3.10",
+     "source": "worldforge/out/assets/landmarks/validation.json#validator; tools/gltf-validator/package.json"
+    },
+    {
+     "label": "Viewer library",
+     "value": "three@0.160.0 (WorldForge and fabric viewers); three.js r128 (walkable page)",
+     "source": "worldforge/viewer.html; my-fabric/viewer.html; atlas/roadmap.json#stack"
+    },
+    {
+     "label": "Recorded clip format",
+     "value": "5 s at 12 fps capture, 960×540, 24 fps encode",
+     "source": "worldforge/review/README.md"
+    }
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-council.jpg; clip worldforge/review/out/clips/locator-x-orbit.mp4; the WorldForge console at consoles/worldforge/index.html",
+   "not_done": [
+    "Parsing a GLB in JavaScript and validating it proves the file and its card tree. It does not prove that any native engine has loaded or rendered it.",
+    "The heartbeat GLB sweep covers the my-fabric model folders. WorldForge, landmark and avatar GLBs are validated by their own generators and are not part of that sweep.",
+    "The viewers are local pages. No world is hosted on a public server."
+   ]
+  },
+  {
+   "id": "rp1-spatial-fabrics",
+   "title": "RP1: spatial fabrics, Artemis and the publication kit",
+   "dek": "Each world is also an RP1 spatial fabric with a scene installer for RP1's map service, checked locally and packed for publication, and the decision to publish rests with the founder.",
+   "paragraphs": [
+    "A spatial fabric is a JSON document in the MSF format. It holds a container name, the modules the client runs (here a map.wasm), primary lighting, and a Data.Scene tree. In that tree every node has a name, a Resource.sReference pointing at a GLB, a transform, and its children. The deep fabrics in my-fabric/worlds/<slug>/deep.json hold 41 worlds and 246 rooms. Each room node references its kind's shared hero models (../models/spaces-ext-<kind>.glb and spaces-int-<kind>.glb) and its own room GLB. Forecourt nodes hang under the room's exterior node, and avatar nodes stand in the rooms and on the plaza. Node names are capped at 48 characters, because RP1's Artemis 0.4.0 client aborts on longer ones.",
+    "Artemis is the RP1 client that loads fabrics, and the roadmap lists it as in use. The heartbeat's ARTEMIS field scans the Artemis load logs kept in evidence/ (12 logs for base and campus fabrics) for load-time ERROR lines and finds none. The deep fabrics, the ones that carry buildings, forecourts and avatars, have not been loaded in Artemis yet.",
+    "tools/rp1_export.py turns each fabric into a scene installer for MSF_Map_Svc, RP1's MySQL map service: rp1/<world>/install_scene.js plus an objects/ folder. The Locator.X deep installer creates 361 objects from 52 models. Shared spaces and forecourt models are linked, not copied. All 46 installers dry-run with no database driver installed, and none fails. The steps to go live are written down: copy the objects into the map service, dry-run, run, publish in Scene Assembler to get the Spatial Fabric URL, then attach that URL to Earth at the world's anchor in the RP1 Dev Center.",
+    "tools/rp1_publish.py gathers everything into rp1/publish/manifest.json. It covers 44 worlds: the 41 WorldForge worlds plus the AGI Corp Hub, Cognition.X and the SmartCiti.X Holodeck. Six are ready. The other 38 are blocked, and every one of them for the same reason: no anchor. The bundle holds 663 objects and 46 installers, 110.7 MB in all, of which the ready worlds account for 44.1 MB. The manifest finds no missing references, no names over 48 characters, no dry-run failures, no duplicate anchors and no parcel overlaps. Of the 41 WorldForge worlds, four have anchors: Biota.blockchain, Diagnostic.X, Empathic.X and Locator.X. The other 37 list the missing anchor as their gap. The manifest derives land claims from the fabrics and assumes no domain."
+   ],
+   "facts": [
+    {
+     "label": "Deep fabrics",
+     "value": "41 worlds, 246 rooms",
+     "source": "my-fabric/worlds/deep_index.json#totals"
+    },
+    {
+     "label": "Fabric node-name limit",
+     "value": "48 characters (Artemis 0.4.0)",
+     "source": "worldforge/build.mjs NAME_LIMIT; deploy/evals.sh REFS"
+    },
+    {
+     "label": "Artemis load-time errors",
+     "value": "0 across the logs in evidence/",
+     "source": "evidence/heartbeat.log (beat at 07:29:33, 2026-10-12) ARTEMIS field"
+    },
+    {
+     "label": "RP1 installers",
+     "value": "46, all dry-run, 0 failing",
+     "source": "rp1/publish/manifest.json#summary.installers, #summary.dry_runs_ok"
+    },
+    {
+     "label": "Worlds in the publication manifest",
+     "value": "44: 6 ready, 38 blocked (all 38: no anchor)",
+     "source": "rp1/publish/manifest.json#summary"
+    },
+    {
+     "label": "Publication bundle",
+     "value": "663 objects + 46 installers, 110.7 MB (ready worlds 44.1 MB)",
+     "source": "rp1/publish/manifest.json#checks.bundle_total, #summary.ready_bundle_mb"
+    },
+    {
+     "label": "Per-model budget",
+     "value": "2 MiB (about 1.7 s at 10 Mbit/s); 3 models over, as a warning",
+     "source": "rp1/publish/manifest.json#budget, #checks.over_budget"
+    },
+    {
+     "label": "WorldForge worlds with an anchor",
+     "value": "4 of 41",
+     "source": "worldforge/out/index.json#totals.anchored, #worlds[].anchored"
+    },
+    {
+     "label": "Example installer",
+     "value": "Locator.X deep: 361 objects, 52 models",
+     "source": "rp1/locator-x/README.md"
+    }
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-orbit.jpg; the publication checklist rp1/publish/CHECKLIST.md as a figure of the founder's steps",
+   "not_done": [
+    "Nothing has been uploaded, claimed, installed or published on RP1. Every step that touches RP1 or the public internet is the founder's, and publication is the founder's call.",
+    "No installer has been tested against a live map service. MSF_Map_Svc runs as a dry run only, and the live service is founder-gated.",
+    "No anchor has been chosen for 37 of the 41 WorldForge worlds.",
+    "No deep fabric has been loaded in Artemis or installed in a map service.",
+    "No public HTTPS host serves the fabrics yet."
+   ]
+  },
+  {
+   "id": "sneeze-native-path",
+   "title": "The Sneeze native path: gates 1.1 to 1.4",
+   "dek": "WorldForge carries each world toward MetaversalCorp's Sneeze engine through five gates: two are done, one is prepared with a decoder checked against the engine's real headers, and two are open.",
+   "paragraphs": [
+    "The native path runs in five steps: generated core, card-tagged GLB, Sneeze Scene Object Model (SOM) mount plan, native load, rendered frame. Gate 1.1, a generated core for every world, is done for all 41. Gate 1.2, a GLB written, parsed and checked against its card tree, is done in JavaScript and confirmed by the Khronos validator. Gate 1.2n, a native fastgltf load in a Sneeze host, is open. Gate 1.3, the SOM mount plan, is prepared but not mounted. Gate 1.4, a mounted scene rendered in the Sneeze viewport with a frame captured, is open.",
+    "Each world's sneeze-mount-plan.json lists its nodes parents first, ready for CONTAINER::Node_Open. The 41 plans hold 2,042 nodes: 939 card nodes of class MAP_OBJECT_TERRESTRIAL (72) and 1,103 resource nodes of class MAP_OBJECT_PHYSICAL (73). All the resource nodes share one unit-cube resource whose URL is 35 bytes, well inside the 127 usable bytes of the engine's 128-byte sReference field. Every node keeps its cardId and an extras block (its kind and source, or the zone it belongs to) in the plan.",
+    "worldforge/native holds an RMCOBJECT decoder written against the real headers: Sneeze 0008d08, Map 0e6d26a and RMAP 0fd7efb. The repositories were cloned to a temporary folder, not into this repository. The engine's native node record is a 504-byte POD, and static_asserts pin its layout, so any upstream change breaks the check. The decoder compiles with clang++ -std=c++17 -fsyntax-only in two configurations. A smoke run over all 41 plans and 2,042 nodes found 0 decode errors and 0 invariant failures.",
+    "The conformance script turned up real mismatches. On the native route there are 267 violations, all of one kind: names of 48 UTF-16 units where the engine allows 47, since it keeps a final NUL. Clamping would turn \"· Powered by AGI Corp\" into \"· Powered by AGI Cor\". The fix belongs in worldforge/build.mjs, whose 48-character limit was set for Artemis. On the JSON (MSF Data) route there are 1,529 violations on 1,139 nodes, because that decoder copies UTF-8 bytes one per unit: 939 names are non-ASCII, 323 are over 47 bytes and 267 are over 47 units. The plans are Y-up and Sneeze is Z-up, so the decoder converts each position to (x, −z, y) and conjugates each rotation. Sent unconverted, every world would mount on its side. The native record has no slot for card identity, extras or bounds, so those travel beside it. Reading the source also turned up eight upstream defects and doc drifts, among them a JSON name copy that can overrun its 48-unit field. They are recorded, not patched. The --check mode of mount_plan_conformance.mjs exits 1 until the name limit is fixed."
+   ],
+   "facts": [
+    {
+     "label": "Gate status",
+     "value": "1.1 done; 1.2 done (JavaScript + Khronos); 1.2n open; 1.3 prepared, not mounted; 1.4 open",
+     "source": "worldforge/out/<slug>/manifest.json#gates; worldforge/native/RMCOBJECT_MAPPING.md"
+    },
+    {
+     "label": "Mount-plan nodes",
+     "value": "2,042 in 41 plans: 939 TERRESTRIAL (class 72), 1,103 PHYSICAL (class 73)",
+     "source": "worldforge/native/RMCOBJECT_MAPPING.md §4; worldforge/native/conformance-report.json#totals.nodes"
+    },
+    {
+     "label": "Resource URL length",
+     "value": "35 bytes, against 127 usable",
+     "source": "worldforge/native/RMCOBJECT_MAPPING.md §3, M5"
+    },
+    {
+     "label": "Headers verified against",
+     "value": "Sneeze 0008d08, Map 0e6d26a, RMAP 0fd7efb",
+     "source": "worldforge/native/conformance-report.json#verifiedAgainst"
+    },
+    {
+     "label": "Native node record",
+     "value": "504-byte POD, layout pinned by static_assert",
+     "source": "worldforge/native/RMCOBJECT_MAPPING.md §2"
+    },
+    {
+     "label": "Decoder smoke run",
+     "value": "41 plans, 2,042 nodes, 0 decode errors, 0 invariant failures",
+     "source": "worldforge/native/RMCOBJECT_MAPPING.md §8"
+    },
+    {
+     "label": "Native-route violations",
+     "value": "267, all name-utf16-units (48 vs 47)",
+     "source": "worldforge/native/conformance-report.json#totals.native"
+    },
+    {
+     "label": "JSON-route violations",
+     "value": "1,529 on 1,139 nodes (939 non-ASCII, 323 over 47 bytes, 267 over 47 units)",
+     "source": "worldforge/native/conformance-report.json#totals.json"
+    },
+    {
+     "label": "Upstream defects and doc drift recorded",
+     "value": "8 (U1 to U8), none patched",
+     "source": "worldforge/native/RMCOBJECT_MAPPING.md §7"
+    }
+   ],
+   "visual_hint": "worldforge/review/out/media/plan-locator-x.png (the plan the mount nodes come from) beside a table of gates 1.1 to 1.4; worldforge/native/RMCOBJECT_MAPPING.md §6 as a figure",
+   "not_done": [
+    "Nothing is mounted in Sneeze. No Sneeze host has been built; by Sneeze's own README the dependency phase alone takes one to two hours.",
+    "The decoder has not been linked against Map, RMAP or Sneeze. RmcObjectCreate, MountPlanApply and RmcObjectCrossCheck are syntax-checked only and have never run.",
+    "No frame has been rendered in the Sneeze viewport. Gates 1.2n and 1.4 are open.",
+    "The plans still carry 267 names of 48 units and a stale bindingStatus. Both fixes belong in worldforge/build.mjs.",
+    "How a world should be mounted, into a fabric it owns or under the scene's root container, is an open design decision."
+   ]
+  },
+  {
+   "id": "state-onchain-roadmap",
+   "title": "Shared state, onchain-ready records and the roadmap",
+   "dek": "Neon Postgres is prepared but not applied, the Master Cards are written as draft ERC-721 metadata with Merkle roots but nothing is deployed, and every later phase waits on a named person's decision.",
+   "paragraphs": [
+    "neon/ turns the registries into a Postgres 16 database: 9 tables and 1,522 rows, made up of 1,188 seed rows and 334 activity rows (284 ledger entries and the last 50 heartbeat lines). The SQL is idempotent and only upserts. A CHECK constraint keeps any agent-drafted proposal in draft or under review unless a steward quorum decided it, and all 155 proposals are seeded under review with no decider, because no steward has voted. None of this has been applied. No Neon project, role or connection string exists. Applying it waits for the founder to authorise the Neon connector, and the connection string will live only in the environment.",
+    "worldforge/onchain.mjs writes every Master Card as draft ERC-721 metadata JSON, 939 tokens for 939 cards. A token's id is the first 16 hex characters of sha256 of its cardId. Each leaf is the sha256 of the token's canonical JSON. Each world has a Merkle root over its tokens, a network root sits over the 41 world roots, and every token has a proof. The export runs 537 evals (13 for each world plus 4 for the network) with 0 failing, and 17 broken fixtures each fail as they must. The deployment block says it plainly: no chain, no contract, 0 minted, 0 transactions, and no price, royalty or fee recipient. The image is null because no card image has been hosted. Minting or transferring a Master Card is reserved for the 2-of-3 Steward Council. Agents operate; people govern. The six actions held for people are governance.final_vote, charter.amend, treasury.transfer, proposal.enact, windfall.distribute and steward.appoint.",
+    "The roadmap in atlas/roadmap.json carries no dates. Each gate is a named person's decision, and nothing is promised until that person makes it. Done: built and checked, the evidence everything else rests on. Now: shared state on Neon, gated on the founder authorising the connector. Next: worlds on RP1's Earth, gated on the founder and the RP1 Dev Center account, with publishing public content the founder's call; and real stewards with real signatures, gated on the board appointing stewards, since steward.appoint is reserved for people. Later: membership going live, gated on the board setting every price, the founder supplying signing certificates and counsel reviewing the terms; and entities and shared benefit, gated on the board and counsel.",
+    "The WorldForge gates sit beside these phases. Gates 1.1 and 1.2 are done, 1.3 is prepared, and 1.2n and 1.4 are open. The engineering steps that need no new permission are concrete: set a 47-unit name limit in build.mjs, build a Sneeze host and run the mount, and wire the landmarks into the viewers and fabrics. Anchors for the remaining 37 worlds are the founder's to choose."
+   ],
+   "bullets": [
+    "Done: 41 worlds, 939 Master Cards and 1,025 evals passing; 246 buildings with forecourts, land and sky; 41 landmarks and 6 avatar models validated; 46 RP1 installers dry-run; Sneeze decoder syntax-checked against the real headers.",
+    "Now: shared state on Neon (prepared offline; waiting on the founder's authorisation).",
+    "Next: worlds on RP1's Earth (anchors and publication are the founder's); seated Steward Councils with stewards' own keys (the board); gates 1.2n to 1.4 in a built Sneeze host.",
+    "Later: membership passes and prices (the board, the founder's certificates, counsel); entity filings and Windfall Clause terms (the board and counsel)."
+   ],
+   "facts": [
+    {
+     "label": "Neon tables and rows",
+     "value": "9 tables; 1,522 rows (1,188 seed, 334 activity)",
+     "source": "neon/manifest.json#tables, #rows"
+    },
+    {
+     "label": "Proposals seeded",
+     "value": "155, all under review, none decided",
+     "source": "neon/manifest.json#tables.proposals; neon/README.md"
+    },
+    {
+     "label": "Draft ERC-721 tokens",
+     "value": "939, one per Master Card",
+     "source": "worldforge/out/onchain/index.json#totals"
+    },
+    {
+     "label": "Tokens by card kind",
+     "value": "agent 242, zone 205, advisor 123, seat 123, world 41, plaza 41, coordinator 41, gate 41, council 41, omega 41",
+     "source": "worldforge/out/onchain/index.json#totals.by_kind"
+    },
+    {
+     "label": "Merkle roots",
+     "value": "41 world roots + 1 network root (sha256, sorted pairs)",
+     "source": "worldforge/out/onchain/index.json#merkle, #network"
+    },
+    {
+     "label": "Onchain evals",
+     "value": "537, 0 failing; 17 broken fixtures discriminated",
+     "source": "worldforge/out/onchain/index.json#evals, #broken"
+    },
+    {
+     "label": "Deployment",
+     "value": "chain null, contract null, minted 0, transactions 0",
+     "source": "worldforge/out/onchain/index.json#deployment"
+    },
+    {
+     "label": "Roadmap phases",
+     "value": "1 done, 1 now, 2 next, 2 later, each with a named human gate",
+     "source": "atlas/roadmap.json#phases"
+    },
+    {
+     "label": "Reserved for people (2-of-3 Steward Council)",
+     "value": "6 actions",
+     "source": "worlds/PBC.json#reserved_for_humans"
+    }
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-council.jpg (the Steward Council with three empty seats); a gate ladder drawn from atlas/roadmap.json#phases",
+   "not_done": [
+    "No database has been created or written. The Neon files are built and checked offline only.",
+    "Nothing is deployed or minted on any chain. No contract, wallet, key, address or transaction exists, and nothing is offered for sale.",
+    "No Steward Council is seated. Every council has 3 defined seats and 0 seated, and the stewards' own signing keys are not registered.",
+    "Membership is not live: no price is set, no pass is signed, and checkout stays closed.",
+    "Entity filings, investment terms and the Windfall Clause threshold are for the board and counsel, and none is settled here."
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "term": "glTF 2.0 / GLB",
+   "definition": "The Khronos Group's open format for 3-D scenes. A GLB is its single-file binary form; every model here is a GLB with its textures embedded."
+  },
+  {
+   "term": "Khronos glTF-Validator",
+   "definition": "The reference checker for glTF files. This project runs version 2.0.0-dev.3.10 on raw bytes (tools/gltf-validator/v.mjs) and accepts only 0 errors and 0 warnings."
+  },
+  {
+   "term": "PBR texture set",
+   "definition": "Physically based rendering maps: albedo (base colour), a normal map for surface relief, and an ORM map."
+  },
+  {
+   "term": "ORM map",
+   "definition": "One image that packs ambient occlusion (red), roughness (green) and metalness (blue)."
+  },
+  {
+   "term": "Hero model",
+   "definition": "One of the 14 shared building models (an exterior and an interior for each of seven room kinds) that carries a kind's full texture set once, for every room of that kind to reference."
+  },
+  {
+   "term": "Forecourt",
+   "definition": "The paved and planted area in front of a building, laid out by my-fabric/scenes.py from a shared 19-model kit."
+  },
+  {
+   "term": "Biome",
+   "definition": "A styling choice for a world's land and sky, picked from words in its name, slug or tagline. It depicts no real place."
+  },
+  {
+   "term": "Master Card (GLEWME Master Card)",
+   "definition": "WorldForge's record for one governed thing in a world: world, plaza, gate, council, seat, zone, coordinator, advisor, agent or Omega. Each card has an owner, a Volum and a permission matrix. The repository uses the name GLEWME without expanding it."
+  },
+  {
+   "term": "Volum",
+   "definition": "The bounded 3-D region a card covers: a box given by its centre and half-extents in metres, Y up."
+  },
+  {
+   "term": "Permission matrix",
+   "definition": "Seven rights on every card: view, enter, build, operate, delegate, transfer and govern. Agents may only view, enter and operate within their own zone."
+  },
+  {
+   "term": "Steward Council",
+   "definition": "Three human seats per world. A 2-of-3 quorum holds transfer, govern and the six reserved actions. All seats are currently empty."
+  },
+  {
+   "term": "Omega Steward",
+   "definition": "A defined agent persona for each world in the Omega Hive. Every Omega is defined, not seated; a person must seat an agent before it acts."
+  },
+  {
+   "term": "Spatial fabric (MSF)",
+   "definition": "RP1's JSON scene format: a container, modules, lighting and a Data.Scene tree of named nodes that reference GLB models."
+  },
+  {
+   "term": "Artemis",
+   "definition": "RP1's client that loads spatial fabrics (version 0.4.0 here). It aborts on node names longer than 48 characters."
+  },
+  {
+   "term": "MSF_Map_Svc",
+   "definition": "RP1's MySQL map service. The scene installers in rp1/<world>/ are written for it and have only been dry-run."
+  },
+  {
+   "term": "Anchor",
+   "definition": "The place on RP1's Earth where a world is attached. Choosing anchors is the founder's decision; 4 of the 41 WorldForge worlds have one."
+  },
+  {
+   "term": "Sneeze",
+   "definition": "MetaversalCorp's native C++ engine. WorldForge's gates 1.2n to 1.4 target it; it has not been built in this project."
+  },
+  {
+   "term": "SOM mount plan",
+   "definition": "sneeze-mount-plan.json: each world's nodes for the Sneeze Scene Object Model, ordered parents first, for CONTAINER::Node_Open."
+  },
+  {
+   "term": "RMCOBJECT",
+   "definition": "Sneeze's flat wire form of a scene node: a class number, an object index and a 504-byte MAP_OBJECT_POD. The decoder in worldforge/native produces it from a mount-plan node."
+  },
+  {
+   "term": "--check",
+   "definition": "The mode every generator here supports. It rebuilds in memory, compares with the files on disk, runs the evals, and exits 1 when anything is stale or failing."
+  },
+  {
+   "term": "Heartbeat",
+   "definition": "deploy/heartbeat.sh runs deploy/evals.sh every five minutes for its window and appends one line per beat to evidence/heartbeat.log. It stops after two RED beats in a row."
+  },
+  {
+   "term": "Kokoro",
+   "definition": "An open-source text-to-speech model (v1.0, kokoro-onnx, Apache-2.0), run locally. Every voice made with it here is synthetic and says so."
+  },
+  {
+   "term": "Merkle root",
+   "definition": "One sha256 hash that commits to every token in a set. A short proof shows that a given token is included without revealing the rest."
+  },
+  {
+   "term": "ERC-721 metadata",
+   "definition": "The JSON shape used to describe non-fungible tokens. Here it is a draft only: nothing is deployed or minted."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Are any of these worlds live on RP1 today?",
+   "a": "No. Six worlds pass every publication check and 38 are blocked only by a missing anchor (rp1/publish/manifest.json), but nothing has been uploaded, claimed, installed or published. Choosing anchors and publishing public content are the founder's decisions."
+  },
+  {
+   "q": "Has a world been loaded or rendered in Sneeze?",
+   "a": "No. Gates 1.1 and 1.2 are done, and gate 1.3 has a decoder that compiles against Sneeze's real headers and decodes all 2,042 plan nodes. No Sneeze host has been built, nothing has been mounted, and no frame has been rendered (worldforge/native/RMCOBJECT_MAPPING.md §9)."
+  },
+  {
+   "q": "Are the buildings, towers or landscapes modelled on real places?",
+   "a": "No. Every building, forecourt, biome and landmark is procedural and generated from the project's own registries. The landmark GLBs declare this in their root node, and each environment file includes an honesty line."
+  },
+  {
+   "q": "Why embed textures in every GLB instead of sharing image files?",
+   "a": "A GLB that points at an external image fails the repository's validator loop, and the RP1 exporter and publish bundle carry only .glb files. So each kind's full texture set is embedded once in two shared hero models that every room references. The whole spaces layer comes to 12.6 MB (my-fabric/worlds/spaces_index.json)."
+  },
+  {
+   "q": "Are the avatars or voices real people?",
+   "a": "No. The six avatar models are stylised agents, and the registry notes say so. Every voice is Kokoro text-to-speech run locally, and each scripted intro states that the voice is synthetic."
+  },
+  {
+   "q": "Has anything been minted or deployed on a blockchain?",
+   "a": "No. worldforge/out/onchain holds draft ERC-721 metadata and sha256 Merkle roots for 939 cards, with chain and contract set to null, 0 minted and 0 transactions. Minting or transferring a Master Card is reserved for a 2-of-3 Steward Council, and no council is seated."
+  },
+  {
+   "q": "Why does the Sneeze conformance check report 267 violations if gate 1.3 is prepared?",
+   "a": "\"Prepared\" means the plans and the decoder exist and are checked. The 267 violations are all one rule: names of 48 UTF-16 units where Sneeze allows 47. The decoder clamps them safely, but the real fix is a separate 47-unit limit in worldforge/build.mjs, and until then the conformance --check exits 1 on purpose."
+  },
+  {
+   "q": "Is the Neon database running?",
+   "a": "No. neon/ holds the schema and seed for 9 tables and 1,522 rows, built and checked offline. It is applied only after the founder authorises the Neon connector, and the connection string stays in the environment, never in the repository."
+  },
+  {
+   "q": "How can a reader check a number in this paper?",
+   "a": "Every fact names its source file. The generators' --check modes rebuild their outputs and fail when the files on disk disagree, and evidence/heartbeat.log records each beat's results."
+  }
+ ]
+}

@@ -1,0 +1,456 @@
+{
+ "schemaVersion": "worldforge-avatar-glbs/0.1",
+ "generator": "worldforge/avatars/build_avatars.py",
+ "synthetic": true,
+ "note": "stylised agent avatar; an agent, not a person",
+ "units": "metres",
+ "up": "+Y",
+ "facing": "+Z",
+ "feet_at_y": 0.0,
+ "rig": "none (static, rig-free)",
+ "tinting": "textures are neutral light grey; tint per world by multiplying the baseColorFactor of the AV_Fabric_Body / AV_Fabric_Garment materials (brand hue: worlds/generated/teams/<slug>.json .brand.hue)",
+ "card_refs": "worldforge/build.mjs AVATAR_DIR/AVATAR_ROLES; agent cards -> specialist.glb, omega cards -> omega.glb",
+ "validation": "worldforge/out/assets/avatars/validation.json",
+ "totals": {
+  "roles": 6,
+  "triangles": 99972,
+  "bytes": 12903896
+ },
+ "roles": [
+  {
+   "role": "specialist",
+   "file": "specialist.glb",
+   "node": "Avatar · Specialist",
+   "bytes": 2205748,
+   "triangles": 18216,
+   "vertices": 10565,
+   "height_m": 1.8,
+   "bounds": {
+    "min": [
+     -0.2988,
+     0.0,
+     -0.1299
+    ],
+    "max": [
+     0.2988,
+     1.8,
+     0.167
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Fabric_Garment",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "specialist emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [],
+   "sha256": "925ffece788df5df6d2a1c6493a0bac2a078f7e212e11eccf5eb7cf773f4c482",
+   "figure_top_m": 1.8
+  },
+  {
+   "role": "coordinator",
+   "file": "coordinator.glb",
+   "node": "Avatar · Coordinator",
+   "bytes": 2180424,
+   "triangles": 17368,
+   "vertices": 10288,
+   "height_m": 1.8,
+   "bounds": {
+    "min": [
+     -0.2857,
+     0.0,
+     -0.1294
+    ],
+    "max": [
+     0.2857,
+     1.8,
+     0.167
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Fabric_Garment",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "coordinator emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [],
+   "sha256": "1bd442eedc7438e8f239c97e36c14f2767763309ad6ad7c1606031ff251bd037",
+   "figure_top_m": 1.8
+  },
+  {
+   "role": "omega",
+   "file": "omega.glb",
+   "node": "Avatar · Omega",
+   "bytes": 2122088,
+   "triangles": 15280,
+   "vertices": 8926,
+   "height_m": 2.1,
+   "bounds": {
+    "min": [
+     -0.4072,
+     0.0,
+     -0.285
+    ],
+    "max": [
+     0.4072,
+     2.2342,
+     0.3637
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Fabric_Garment",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem",
+    "AV_Halo"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "omega emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [
+    "KHR_materials_emissive_strength"
+   ],
+   "sha256": "2471ee54cbf498293126224d40886699030ca89d21227fd4d24f196bd855447e",
+   "figure_top_m": 2.1
+  },
+  {
+   "role": "host",
+   "file": "host.glb",
+   "node": "Avatar · Host",
+   "bytes": 2136140,
+   "triangles": 16088,
+   "vertices": 9579,
+   "height_m": 1.8,
+   "bounds": {
+    "min": [
+     -0.4991,
+     0.0,
+     -0.1139
+    ],
+    "max": [
+     0.4991,
+     1.8,
+     0.3663
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "host emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [],
+   "sha256": "28203042a95125918948a7138b3b19a01d242d5258b322d52c6afd0feb8209eb",
+   "figure_top_m": 1.8
+  },
+  {
+   "role": "liaison",
+   "file": "liaison.glb",
+   "node": "Avatar · Liaison",
+   "bytes": 2187888,
+   "triangles": 17240,
+   "vertices": 10258,
+   "height_m": 1.8,
+   "bounds": {
+    "min": [
+     -0.2857,
+     0.0,
+     -0.1169
+    ],
+    "max": [
+     0.2857,
+     1.8,
+     0.167
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Fabric_Garment",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "liaison emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [],
+   "sha256": "34d33eba801ac2b79f8daedebd0cf2eccf86ad6a3d52e7a2209065386f3315de",
+   "figure_top_m": 1.8
+  },
+  {
+   "role": "alignment",
+   "file": "alignment.glb",
+   "node": "Avatar · Alignment",
+   "bytes": 2071608,
+   "triangles": 15780,
+   "vertices": 9386,
+   "height_m": 1.8,
+   "bounds": {
+    "min": [
+     -0.2857,
+     0.0,
+     -0.1139
+    ],
+    "max": [
+     0.2857,
+     1.8,
+     0.167
+    ]
+   },
+   "materials": [
+    "AV_Fabric_Body",
+    "AV_Shell",
+    "AV_Visor",
+    "AV_Trim",
+    "AV_Boot",
+    "AV_Emblem"
+   ],
+   "textures": [
+    {
+     "use": "body fabric baseColor (neutral light grey, woven)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric normal (weave + seams)",
+     "width": 2048,
+     "height": 2048,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "body fabric ORM (R occlusion, G roughness, B metallic)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor baseColor (glossy dark glass)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "visor emissive (light bar)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/jpeg"
+    },
+    {
+     "use": "alignment emblem baseColor (abstract mark)",
+     "width": 1024,
+     "height": 1024,
+     "mimeType": "image/png"
+    }
+   ],
+   "extensionsUsed": [],
+   "sha256": "094f9106b5d7f348091e319064f25383dba6872663ca19b40b32d34603285e4e",
+   "figure_top_m": 1.8
+  }
+ ],
+ "sha256": {
+  "specialist.glb": "925ffece788df5df6d2a1c6493a0bac2a078f7e212e11eccf5eb7cf773f4c482",
+  "coordinator.glb": "1bd442eedc7438e8f239c97e36c14f2767763309ad6ad7c1606031ff251bd037",
+  "omega.glb": "2471ee54cbf498293126224d40886699030ca89d21227fd4d24f196bd855447e",
+  "host.glb": "28203042a95125918948a7138b3b19a01d242d5258b322d52c6afd0feb8209eb",
+  "liaison.glb": "34d33eba801ac2b79f8daedebd0cf2eccf86ad6a3d52e7a2209065386f3315de",
+  "alignment.glb": "094f9106b5d7f348091e319064f25383dba6872663ca19b40b32d34603285e4e"
+ }
+}

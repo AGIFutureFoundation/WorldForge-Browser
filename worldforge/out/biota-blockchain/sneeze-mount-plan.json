@@ -1,0 +1,1973 @@
+{
+ "schemaVersion": "worldforge-sneeze-mount-plan/0.1",
+ "engine": "Sneeze",
+ "bindingStatus": "decoder-available-not-mounted",
+ "bindingNote": "worldforge/native/rmcobject_decoder.* encodes these nodes against Sneeze headers (Y-up -> Z-up conversion in the decoder); nothing is mounted or rendered yet",
+ "rp1": {
+  "nameRule": "ASCII, <= 47 bytes (displayName); UTF-8 label in extras.label",
+  "bound": "d3Max = half-extents in metres from the card Volum or primitive size"
+ },
+ "rootCardId": "world:biota-blockchain",
+ "mountParent": "SCENE::Fabric_Root()->Node_Root()",
+ "resourceCachePolicy": "shared-by-exact-sReference-URL",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "assets": [
+  {
+   "url": "http://127.0.0.1:8789/unit-cube.glb",
+   "localPath": "worldforge/out/assets/unit-cube.glb",
+   "sha256": "66af9d7110fb7ca21d5323ed5c3261747a282e8378290911ce4064152f99e735",
+   "role": "shared-generic-unit-cube"
+  }
+ ],
+ "previewGlb": {
+  "path": "worldforge/out/biota-blockchain/biota-blockchain.glb",
+  "sha256": "e5de4bf8b807a4797c147f7fea5f7dbff107acf15d17a49c214dcb39290e900a"
+ },
+ "nodes": [
+  {
+   "cardId": "world:biota-blockchain",
+   "displayName": "Biota.blockchain (BioDAO~ - Powered by AGI Corp",
+   "parentCardId": null,
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     150,
+     40,
+     150
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "world",
+    "label": "Biota.blockchain (BioDAO… · Powered by AGI Corp",
+    "source": "my-fabric/worlds/index.json"
+   }
+  },
+  {
+   "cardId": "plaza:biota-blockchain",
+   "displayName": "Biota.blockchain (BioDAO~ - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     24,
+     5,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "plaza",
+    "label": "Biota.blockchain (BioDAO… · Powered by AGI Corp",
+    "source": "README.md (shared PBC management model)"
+   }
+  },
+  {
+   "cardId": "coordinator:biota-blockchain",
+   "displayName": "Biota.blockchain (BioDAO~ - Powered by AGI Corp",
+   "parentCardId": "plaza:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "coordinator",
+    "label": "Biota.blockchain (BioDAO… · Powered by AGI Corp",
+    "source": "agents/swarms/biota-blockchain.json#coordinator"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/host",
+   "displayName": "Host Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Host Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/biota-blockchain.json#advisors[id=host]"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/steward",
+   "displayName": "Steward Liaison - Powered by AGI Corp",
+   "parentCardId": "plaza:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Steward Liaison · Powered by AGI Corp",
+    "source": "agents/advisors/biota-blockchain.json#advisors[id=steward]"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/alignment",
+   "displayName": "Alignment Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Alignment Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/biota-blockchain.json#advisors[id=alignment]"
+   }
+  },
+  {
+   "cardId": "gate:biota-blockchain",
+   "displayName": "Alignment Evaluation Gate - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     10,
+     6,
+     3
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "gate",
+    "label": "Alignment Evaluation Gate · Powered by AGI Corp",
+    "source": "worlds/PBC.json#programs"
+   }
+  },
+  {
+   "cardId": "council:biota-blockchain",
+   "displayName": "Steward Council - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     14,
+     6,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "council",
+    "label": "Steward Council · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-1",
+   "displayName": "Steward Seat 1 - Powered by AGI Corp",
+   "parentCardId": "council:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 1 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-2",
+   "displayName": "Steward Seat 2 - Powered by AGI Corp",
+   "parentCardId": "council:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 2 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-3",
+   "displayName": "Steward Seat 3 - Powered by AGI Corp",
+   "parentCardId": "council:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 3 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "omega:biota-blockchain",
+   "displayName": "Omega Steward - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     26,
+     0,
+     -130
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "omega",
+    "label": "Omega Steward · Powered by AGI Corp",
+    "source": "agents/advisory/omega_agents.json"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "displayName": "Personalized Therapy Lab - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Personalized Therapy Lab · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, p.1, Q1 and Q3"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/research-development-agent",
+   "displayName": "Research & Development A~ - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -3.53,
+     0,
+     4.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Research & Development A… · Powered by AGI Corp",
+    "source": "~/Downloads/AGI Corp Biopharma Suite .webp, node 'Research & Development' (image)"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/dao-governance-hall",
+   "displayName": "DAO Governance Hall - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     14,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "DAO Governance Hall · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: DAO Integration"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/compliance-agent",
+   "displayName": "Compliance Agent - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6.78,
+     0,
+     1.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Compliance Agent · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/finance-agent",
+   "displayName": "Finance Agent - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -5.7,
+     0,
+     -1.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Finance Agent · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 2. Financial Compliance and Fraud Detection"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/communication-agent",
+   "displayName": "Communication Agent - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4.62,
+     0,
+     -5.18
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Communication Agent · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Phone Number Authentication"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "displayName": "Multi-Blockchain Ledger - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -90
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Multi-Blockchain Ledger · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: Multi-Blockchain Integration"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/security-agent",
+   "displayName": "Security Agent - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -6
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Security Agent · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "displayName": "Healthcare Data Exchange - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     85.6,
+     0,
+     -27.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Healthcare Data Exchange · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 3. Healthcare Data Exchange and Security"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/health-agent",
+   "displayName": "Health Agent - Powered by AGI Corp",
+   "parentCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     5.7,
+     0,
+     -1.86
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Health Agent · Powered by AGI Corp",
+    "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Use Case 3"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "displayName": "Biopharma AGI Agents Hub - Powered by AGI Corp",
+   "parentCardId": "world:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     8,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     52.9,
+     0,
+     72.81
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Biopharma AGI Agents Hub · Powered by AGI Corp",
+    "source": "~/Downloads/AGI Corp Biopharma Suite .webp, central node 'Biopharma AGI Agents' (image)"
+   }
+  },
+  {
+   "cardId": "plaza:biota-blockchain/floor",
+   "displayName": "plaza:biota-blockchain/floor",
+   "parentCardId": "plaza:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     24,
+     0.2,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     48,
+     0.4,
+     48
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "pad",
+    "massingType": "plaza",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "coordinator:biota-blockchain/avatar",
+   "displayName": "coordinator:biota-blockchain/avatar",
+   "parentCardId": "coordinator:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/host/avatar",
+   "displayName": "advisor:biota-blockchain/host/avatar",
+   "parentCardId": "advisor:biota-blockchain/host",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/steward/avatar",
+   "displayName": "advisor:biota-blockchain/steward/avatar",
+   "parentCardId": "advisor:biota-blockchain/steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:biota-blockchain/alignment/avatar",
+   "displayName": "advisor:biota-blockchain/alignment/avatar",
+   "parentCardId": "advisor:biota-blockchain/alignment",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "gate:biota-blockchain/arch",
+   "displayName": "gate:biota-blockchain/arch",
+   "parentCardId": "gate:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     8,
+     5,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     16,
+     10,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "arch",
+    "massingType": "gate",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "council:biota-blockchain/chamber",
+   "displayName": "council:biota-blockchain/chamber",
+   "parentCardId": "council:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     14,
+     4,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     28,
+     8,
+     20
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "box",
+    "massingType": "council",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-1/chair",
+   "displayName": "seat:biota-blockchain/steward-1/chair",
+   "parentCardId": "seat:biota-blockchain/steward-1",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:biota-blockchain",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-2/chair",
+   "displayName": "seat:biota-blockchain/steward-2/chair",
+   "parentCardId": "seat:biota-blockchain/steward-2",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:biota-blockchain",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:biota-blockchain/steward-3/chair",
+   "displayName": "seat:biota-blockchain/steward-3/chair",
+   "parentCardId": "seat:biota-blockchain/steward-3",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:biota-blockchain",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "omega:biota-blockchain/avatar",
+   "displayName": "omega:biota-blockchain/avatar",
+   "parentCardId": "omega:biota-blockchain",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.6,
+     1.1,
+     0.6
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1.2,
+     2.2,
+     1.2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/personalized-therapy-lab/pad",
+   "displayName": "e:biota-blockchain/personalized-therapy-lab/pad",
+   "parentCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/personalized-therapy-lab/hall",
+   "displayName": ":biota-blockchain/personalized-therapy-lab/hall",
+   "parentCardId": "zone:biota-blockchain/personalized-therapy-lab",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     4.7,
+     8.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/research-development-agent/avatar",
+   "displayName": "ta-blockchain/research-development-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/research-development-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/personalized-therapy-lab",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/dao-governance-hall/pad",
+   "displayName": "zone:biota-blockchain/dao-governance-hall/pad",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/dao-governance-hall/hall",
+   "displayName": "zone:biota-blockchain/dao-governance-hall/hall",
+   "parentCardId": "zone:biota-blockchain/dao-governance-hall",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     12,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     7.61,
+     12.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     24,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/compliance-agent/avatar",
+   "displayName": "agent:biota-blockchain/compliance-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/compliance-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/finance-agent/avatar",
+   "displayName": "agent:biota-blockchain/finance-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/finance-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/communication-agent/avatar",
+   "displayName": "ent:biota-blockchain/communication-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/communication-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/dao-governance-hall",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/multi-blockchain-ledger/pad",
+   "displayName": "ne:biota-blockchain/multi-blockchain-ledger/pad",
+   "parentCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/multi-blockchain-ledger/hall",
+   "displayName": "e:biota-blockchain/multi-blockchain-ledger/hall",
+   "parentCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     8.4,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/security-agent/avatar",
+   "displayName": "agent:biota-blockchain/security-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/security-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/multi-blockchain-ledger",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/healthcare-data-exchange/pad",
+   "displayName": "e:biota-blockchain/healthcare-data-exchange/pad",
+   "parentCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/healthcare-data-exchange/hall",
+   "displayName": ":biota-blockchain/healthcare-data-exchange/hall",
+   "parentCardId": "zone:biota-blockchain/healthcare-data-exchange",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -7.61,
+     8.4,
+     2.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:biota-blockchain/health-agent/avatar",
+   "displayName": "agent:biota-blockchain/health-agent/avatar",
+   "parentCardId": "agent:biota-blockchain/health-agent",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/healthcare-data-exchange",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/biopharma-agi-agents-hub/pad",
+   "displayName": "e:biota-blockchain/biopharma-agi-agents-hub/pad",
+   "parentCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:biota-blockchain/biopharma-agi-agents-hub/hall",
+   "displayName": ":biota-blockchain/biopharma-agi-agents-hub/hall",
+   "parentCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     6,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4.7,
+     6.4,
+     -6.47
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     12,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:biota-blockchain/biopharma-agi-agents-hub",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  }
+ ],
+ "acceptanceRequirements": [
+  "Parent nodes must be created before child nodes",
+  "Each returned native handle must resolve via CONTAINER::Node_Find",
+  "Every resource-bearing NODE must eventually expose Gltf_Render_Model()!=nullptr",
+  "Timeout/fetch/parse failure must fail the load",
+  "Scene mutations must use the engine's safe lifecycle/thread boundary"
+ ]
+}

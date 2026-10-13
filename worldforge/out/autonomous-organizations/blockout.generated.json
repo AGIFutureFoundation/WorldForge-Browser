@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:autonomous-organizations",
+ "rootCardId": "world:autonomous-organizations",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:autonomous-organizations/goal-wall",
+   "displayName": "Goal Wall",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/coordination-floor",
+   "displayName": "Coordination Floor",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/assignment-board",
+   "displayName": "Assignment Board",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/decision-room",
+   "displayName": "Decision Room",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:autonomous-organizations/execution-bay",
+   "displayName": "Execution Bay",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:autonomous-organizations/floor",
+   "parentCardId": "plaza:autonomous-organizations",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:autonomous-organizations/avatar",
+   "parentCardId": "coordinator:autonomous-organizations",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:autonomous-organizations/host/avatar",
+   "parentCardId": "advisor:autonomous-organizations/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:autonomous-organizations/steward/avatar",
+   "parentCardId": "advisor:autonomous-organizations/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:autonomous-organizations/alignment/avatar",
+   "parentCardId": "advisor:autonomous-organizations/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:autonomous-organizations/arch",
+   "parentCardId": "gate:autonomous-organizations",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:autonomous-organizations/chamber",
+   "parentCardId": "council:autonomous-organizations",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:autonomous-organizations/steward-1/chair",
+   "parentCardId": "seat:autonomous-organizations/steward-1",
+   "zoneCardId": "council:autonomous-organizations",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:autonomous-organizations/steward-2/chair",
+   "parentCardId": "seat:autonomous-organizations/steward-2",
+   "zoneCardId": "council:autonomous-organizations",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:autonomous-organizations/steward-3/chair",
+   "parentCardId": "seat:autonomous-organizations/steward-3",
+   "zoneCardId": "council:autonomous-organizations",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:autonomous-organizations/avatar",
+   "parentCardId": "omega:autonomous-organizations",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/goal-wall/pad",
+   "parentCardId": "zone:autonomous-organizations/goal-wall",
+   "zoneCardId": "zone:autonomous-organizations/goal-wall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/goal-wall/hall",
+   "parentCardId": "zone:autonomous-organizations/goal-wall",
+   "zoneCardId": "zone:autonomous-organizations/goal-wall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/goal-keeper/avatar",
+   "parentCardId": "agent:autonomous-organizations/goal-keeper",
+   "zoneCardId": "zone:autonomous-organizations/goal-wall",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/coordination-floor/pad",
+   "parentCardId": "zone:autonomous-organizations/coordination-floor",
+   "zoneCardId": "zone:autonomous-organizations/coordination-floor",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/coordination-floor/hall",
+   "parentCardId": "zone:autonomous-organizations/coordination-floor",
+   "zoneCardId": "zone:autonomous-organizations/coordination-floor",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/coordinator-agent/avatar",
+   "parentCardId": "agent:autonomous-organizations/coordinator-agent",
+   "zoneCardId": "zone:autonomous-organizations/coordination-floor",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/communicator/avatar",
+   "parentCardId": "agent:autonomous-organizations/communicator",
+   "zoneCardId": "zone:autonomous-organizations/coordination-floor",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/assignment-board/pad",
+   "parentCardId": "zone:autonomous-organizations/assignment-board",
+   "zoneCardId": "zone:autonomous-organizations/assignment-board",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/assignment-board/hall",
+   "parentCardId": "zone:autonomous-organizations/assignment-board",
+   "zoneCardId": "zone:autonomous-organizations/assignment-board",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/assigner/avatar",
+   "parentCardId": "agent:autonomous-organizations/assigner",
+   "zoneCardId": "zone:autonomous-organizations/assignment-board",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/decision-room/pad",
+   "parentCardId": "zone:autonomous-organizations/decision-room",
+   "zoneCardId": "zone:autonomous-organizations/decision-room",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/decision-room/hall",
+   "parentCardId": "zone:autonomous-organizations/decision-room",
+   "zoneCardId": "zone:autonomous-organizations/decision-room",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/decision-drafter/avatar",
+   "parentCardId": "agent:autonomous-organizations/decision-drafter",
+   "zoneCardId": "zone:autonomous-organizations/decision-room",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.3,
+    0.4,
+    -29.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/execution-bay/pad",
+   "parentCardId": "zone:autonomous-organizations/execution-bay",
+   "zoneCardId": "zone:autonomous-organizations/execution-bay",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:autonomous-organizations/execution-bay/hall",
+   "parentCardId": "zone:autonomous-organizations/execution-bay",
+   "zoneCardId": "zone:autonomous-organizations/execution-bay",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:autonomous-organizations/executor/avatar",
+   "parentCardId": "agent:autonomous-organizations/executor",
+   "zoneCardId": "zone:autonomous-organizations/execution-bay",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:autonomous-organizations/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/goal-wall",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/coordination-floor",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/assignment-board",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/decision-room",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:autonomous-organizations/execution-bay",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

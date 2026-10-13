@@ -1,0 +1,922 @@
+{
+ "schemaVersion": "worldforge-training/0.1",
+ "generator": "worldforge/training.mjs",
+ "umbrella": "Powered by AGI Corp",
+ "world": "Locator.X",
+ "slug": "locator-x",
+ "status": "coming soon",
+ "seated": true,
+ "honesty": "Draft curricula assembled from the registries; nothing invented. No model has taught any lesson, no person or robot has been assessed here, and no lesson is certified: certification is a human/steward act. Advisors are scripted guides and deliver only their own scripted orientation; Omegas are defined, not seated, and deliver nothing.",
+ "lessons": [
+  {
+   "id": "lesson:locator-x/orientation/host",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Host Advisor: welcoming visitors and pointing them to the right zone",
+   "world": "locator-x",
+   "zone": "Locator.X Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: welcoming visitors and pointing them to the right zone",
+     "quote": "welcoming visitors and pointing them to the right zone",
+     "from": "agents/advisors/locator-x.json#advisors[id=host].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is this world?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=locator-x].tagline"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=host].topics[ask=What is this world?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can I find here?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=locator-x].zones[*].name"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=host].topics[ask=What can I find here?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: Who can help me?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=locator-x].agents[*].name"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=host].topics[ask=Who can help me?]"
+    },
+    {
+     "n": 4,
+     "do": "Ask: Is this world open?",
+     "answer": {
+      "say": "Locator.X is marked coming soon: its spaces are placeholders until its charter work is done.",
+      "cites": "my-fabric/worlds/index.json#worlds[slug=locator-x].status"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=host].topics[ask=Is this world open?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/advisor/host"
+   ],
+   "sources": [
+    "agents/advisors/locator-x.json#advisors[id=host]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/advisor/host]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:locator-x/orientation/steward",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Steward Liaison: connecting visitors and agents to the human stewards",
+   "world": "locator-x",
+   "zone": "Locator.X Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: connecting visitors and agents to the human stewards",
+     "quote": "connecting visitors and agents to the human stewards",
+     "from": "agents/advisors/locator-x.json#advisors[id=steward].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: Who decides here?",
+     "answer": {
+      "say": "Human stewards hold oversight, values alignment and final governance; agents coordinate between decision cycles.",
+      "cites": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=steward].topics[ask=Who decides here?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What can only people decide?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=locator-x].reserved_for_humans"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=steward].topics[ask=What can only people decide?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How many steward seats are there?",
+     "answer": {
+      "read": "my-fabric/worlds/index.json#worlds[slug=locator-x].stewards"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=steward].topics[ask=How many steward seats are there?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/advisor/steward"
+   ],
+   "sources": [
+    "agents/advisors/locator-x.json#advisors[id=steward]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/advisor/steward]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:locator-x/orientation/alignment",
+   "kind": "scripted-orientation",
+   "mode": "scripted",
+   "title": "Alignment Advisor: the Alignment Evaluation Gate and the agents' limits",
+   "world": "locator-x",
+   "zone": "Locator.X Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Orientation: the Alignment Evaluation Gate and the agents' limits",
+     "quote": "the Alignment Evaluation Gate and the agents' limits",
+     "from": "agents/advisors/locator-x.json#advisors[id=alignment].manages"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Ask: What is the gate at the entrance?",
+     "answer": {
+      "say": "The Alignment Evaluation Gate: pre-registered safety evaluation before anything is deployed here.",
+      "cites": "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=alignment].topics[ask=What is the gate at the entrance?]"
+    },
+    {
+     "n": 2,
+     "do": "Ask: What happens if an agent tries a reserved action?",
+     "answer": {
+      "say": "It is held for the Steward Council and recorded; the agent cannot complete it.",
+      "cites": "agents/build_swarms.mjs pbcGuard; evals 'PBC: human-reserved actions are held for stewards'"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=alignment].topics[ask=What happens if an agent tries a reserved action?]"
+    },
+    {
+     "n": 3,
+     "do": "Ask: How is each agent's registration kept?",
+     "answer": {
+      "say": "In a hash-chained ledger that only a quorum of stewards can extend.",
+      "cites": "agents/ledger.mjs"
+     },
+     "from": "agents/advisors/locator-x.json#advisors[id=alignment].topics[ask=How is each agent's registration kept?]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/advisor/alignment"
+   ],
+   "sources": [
+    "agents/advisors/locator-x.json#advisors[id=alignment]",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/advisor/alignment]"
+   ],
+   "status": "draft",
+   "certification": null,
+   "scripted_note": "delivered by a scripted guide: every line is written in the advisor registry; no model teaches it"
+  },
+  {
+   "id": "lesson:locator-x/routing",
+   "kind": "routing",
+   "mode": "model-taught",
+   "title": "How Locator.X routes a question",
+   "world": "locator-x",
+   "zone": "Locator.X Plaza",
+   "room": null,
+   "objectives": [
+    {
+     "text": "Know the swarm topology: hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "quote": "hub-hybrid: coordinator supervises, specialists hand off swarm-style",
+     "from": "agents/swarms/locator-x.json#topology"
+    },
+    {
+     "text": "Know which specialist answers which kind of question",
+     "quote": null,
+     "from": "agents/swarms/locator-x.json#agents"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Guide (Master Dashboard): Persistent floating assistant: guided tour of every section and live search over help text",
+     "keywords": [
+      "persistent",
+      "floating",
+      "assistant",
+      "guided",
+      "tour",
+      "section",
+      "search",
+      "help",
+      "text",
+      "master",
+      "dashboard",
+      "central",
+      "portfolio",
+      "summary",
+      "cross",
+      "comparison",
+      "navigation"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.guide]"
+    },
+    {
+     "n": 2,
+     "do": "Forecast Agent (Underwriting Desk): Predictive models over the ZIP value series with point forecast and ~80% band",
+     "keywords": [
+      "forecast",
+      "predictive",
+      "models",
+      "value",
+      "series",
+      "point",
+      "underwriting",
+      "underwrites",
+      "parcels",
+      "runs",
+      "seven",
+      "gate",
+      "locator",
+      "screen",
+      "break",
+      "even",
+      "dscr",
+      "1.20"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.forecast-agent]"
+    },
+    {
+     "n": 3,
+     "do": "Scout Agent (Market Editions): Scans feeds, diffs, scores and matches new listings and changes",
+     "keywords": [
+      "scout",
+      "scans",
+      "feeds",
+      "diffs",
+      "matches",
+      "listings",
+      "changes",
+      "national",
+      "corridor",
+      "baseline",
+      "area",
+      "premium",
+      "orleans",
+      "emerging"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.scout-agent]"
+    },
+    {
+     "n": 4,
+     "do": "Review Agent (Evidence Layer): Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan",
+     "keywords": [
+      "review",
+      "digest",
+      "scan",
+      "pass",
+      "incl.",
+      "month",
+      "underwrite",
+      "flip",
+      "evidence",
+      "layer",
+      "number",
+      "shown",
+      "before",
+      "rate",
+      "sample",
+      "floor",
+      "explicit",
+      "list",
+      "unknowns"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.review-agent]"
+    },
+    {
+     "n": 5,
+     "do": "Level Gates (The Academy): Grades curriculum levels as capabilities on a real parcel; counts certainty errors",
+     "keywords": [
+      "level",
+      "gates",
+      "curriculum",
+      "levels",
+      "capabilities",
+      "real",
+      "parcel",
+      "counts",
+      "certainty",
+      "errors",
+      "academy",
+      "tracks",
+      "lessons",
+      "items",
+      "teaching",
+      "read",
+      "platform"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.level-gates]"
+    },
+    {
+     "n": 6,
+     "do": "Developer Brief Desk (Louisiana Developer Desk): Role-only agent: tells a developer what the parish record supports and what it caps at",
+     "keywords": [
+      "developer",
+      "brief",
+      "role",
+      "only",
+      "tells",
+      "parish",
+      "record",
+      "supports",
+      "caps",
+      "louisiana",
+      "named",
+      "data",
+      "traps",
+      "cancelled",
+      "capital",
+      "weighted",
+      "zero"
+     ],
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.developer-brief-desk]"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/coordinator"
+   ],
+   "sources": [
+    "agents/swarms/locator-x.json#coordinator",
+    "agents/swarms/locator-x.json#agents",
+    "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/coordinator]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/master-dashboard",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Master Dashboard: what happens here",
+   "world": "locator-x",
+   "zone": "Master Dashboard",
+   "room": {
+    "kind": "desk",
+    "sign": "Master Dashboard",
+    "room_model": "my-fabric/worlds/models/room-locator-x-1.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/master-dashboard].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Central hub: portfolio summary, cross-market comparison and navigation to market editions",
+     "quote": "Central hub: portfolio summary, cross-market comparison and navigation to market editions",
+     "from": "worlds/locator-x/spec.json#zones[name=Master Dashboard].purpose",
+     "origin": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Platform Structure > Master Dashboard"
+    },
+    {
+     "text": "Guide's role: Persistent floating assistant: guided tour of every section and live search over help text",
+     "quote": "Persistent floating assistant: guided tour of every section and live search over help text",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.guide].role",
+     "origin": "~/Downloads/Locator.X-main/src/assistant.js, header comment"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the desk signed \"Master Dashboard\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/master-dashboard].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Guide: Persistent floating assistant: guided tour of every section and live search over help text",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/guide].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/guide"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=Master Dashboard]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/master-dashboard]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.guide]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/underwriting-desk",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Underwriting Desk: what happens here",
+   "world": "locator-x",
+   "zone": "Underwriting Desk",
+   "room": {
+    "kind": "studio",
+    "sign": "Underwriting Desk",
+    "room_model": "my-fabric/worlds/models/room-locator-x-2.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-studio.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/underwriting-desk].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20",
+     "quote": "Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20",
+     "from": "worlds/locator-x/spec.json#zones[name=Underwriting Desk].purpose",
+     "origin": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers and §3 The LOCATOR framework"
+    },
+    {
+     "text": "Forecast Agent's role: Predictive models over the ZIP value series with point forecast and ~80% band",
+     "quote": "Predictive models over the ZIP value series with point forecast and ~80% band",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.forecast-agent].role",
+     "origin": "~/Downloads/Locator.X-main/src/scout.js, 'Forecast agent' section (line 10)"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the studio signed \"Underwriting Desk\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/underwriting-desk].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Forecast Agent: Predictive models over the ZIP value series with point forecast and ~80% band",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/forecast-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/forecast-agent"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=Underwriting Desk]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/underwriting-desk]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.forecast-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/evidence-layer",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Evidence Layer: what happens here",
+   "world": "locator-x",
+   "zone": "Evidence Layer",
+   "room": {
+    "kind": "lab",
+    "sign": "Evidence Layer",
+    "room_model": "my-fabric/worlds/models/room-locator-x-3.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-lab.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/evidence-layer].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns",
+     "quote": "Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns",
+     "from": "worlds/locator-x/spec.json#zones[name=Evidence Layer].purpose",
+     "origin": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers"
+    },
+    {
+     "text": "Review Agent's role: Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan",
+     "quote": "Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.review-agent].role",
+     "origin": "~/Downloads/Locator.X-main/src/scout.js, 'Review agent' section (line 149)"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the lab signed \"Evidence Layer\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/evidence-layer].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Review Agent: Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/review-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/review-agent"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=Evidence Layer]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/evidence-layer]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.review-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/the-academy",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "The Academy: what happens here",
+   "world": "locator-x",
+   "zone": "The Academy",
+   "room": {
+    "kind": "library",
+    "sign": "The Academy",
+    "room_model": "my-fabric/worlds/models/room-locator-x-4.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-library.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/the-academy].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: 19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces",
+     "quote": "19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces",
+     "from": "worlds/locator-x/spec.json#zones[name=The Academy].purpose",
+     "origin": "~/Downloads/Locator.X-main/README.md, The Academy"
+    },
+    {
+     "text": "Level Gates's role: Grades curriculum levels as capabilities on a real parcel; counts certainty errors",
+     "quote": "Grades curriculum levels as capabilities on a real parcel; counts certainty errors",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.level-gates].role",
+     "origin": "~/Downloads/Locator.X-main/README.md, The Academy > What makes it testable (src/gate.js)"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the library signed \"The Academy\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/the-academy].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Level Gates: Grades curriculum levels as capabilities on a real parcel; counts certainty errors",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/level-gates].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/level-gates"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=The Academy]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/the-academy]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.level-gates]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/market-editions",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Market Editions: what happens here",
+   "world": "locator-x",
+   "zone": "Market Editions",
+   "room": {
+    "kind": "ops",
+    "sign": "Market Editions",
+    "room_model": "my-fabric/worlds/models/room-locator-x-5.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-ops.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/market-editions].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: National corridor baseline, Bay Area premium and New Orleans emerging-market maps",
+     "quote": "National corridor baseline, Bay Area premium and New Orleans emerging-market maps",
+     "from": "worlds/locator-x/spec.json#zones[name=Market Editions].purpose",
+     "origin": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Market Editions 1-3"
+    },
+    {
+     "text": "Scout Agent's role: Scans feeds, diffs, scores and matches new listings and changes",
+     "quote": "Scans feeds, diffs, scores and matches new listings and changes",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.scout-agent].role",
+     "origin": "~/Downloads/Locator.X-main/src/scout.js, 'Scout agent' section (line 52)"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the ops signed \"Market Editions\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/market-editions].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Scout Agent: Scans feeds, diffs, scores and matches new listings and changes",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/scout-agent].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/scout-agent"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=Market Editions]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/market-editions]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.scout-agent]"
+   ],
+   "status": "draft",
+   "certification": null
+  },
+  {
+   "id": "lesson:locator-x/zone/louisiana-developer-desk",
+   "kind": "zone-orientation",
+   "mode": "model-taught",
+   "title": "Louisiana Developer Desk: what happens here",
+   "world": "locator-x",
+   "zone": "Louisiana Developer Desk",
+   "room": {
+    "kind": "desk",
+    "sign": "Louisiana Developer Desk",
+    "room_model": "my-fabric/worlds/models/room-locator-x-6.glb",
+    "interior": "my-fabric/worlds/models/spaces-int-desk.glb",
+    "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/louisiana-developer-desk].building"
+   },
+   "objectives": [
+    {
+     "text": "Zone purpose: Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero",
+     "quote": "Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero",
+     "from": "worlds/locator-x/spec.json#zones[name=Louisiana Developer Desk].purpose",
+     "origin": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slides 1-3"
+    },
+    {
+     "text": "Developer Brief Desk's role: Role-only agent: tells a developer what the parish record supports and what it caps at",
+     "quote": "Role-only agent: tells a developer what the parish record supports and what it caps at",
+     "from": "agents/swarms/locator-x.json#agents[id=locator-x.developer-brief-desk].role",
+     "origin": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slide 3 closing line"
+    }
+   ],
+   "steps": [
+    {
+     "n": 1,
+     "do": "Enter the desk signed \"Louisiana Developer Desk\"",
+     "from": "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/louisiana-developer-desk].building"
+    },
+    {
+     "n": 2,
+     "do": "Meet Developer Brief Desk: Role-only agent: tells a developer what the parish record supports and what it caps at",
+     "from": "worldforge/out/avatars/index.json#rows[avatarId=avatar:locator-x/specialist/developer-brief-desk].role_text"
+    },
+    {
+     "n": 3,
+     "do": "A question that belongs to another zone goes back to Locator.X Coordinator",
+     "from": "agents/swarms/locator-x.json#coordinator"
+    }
+   ],
+   "assessment": {
+    "rubric_module": null,
+    "axes": [],
+    "status": "not measurable in simulation",
+    "reason_kind": "no measure in the source",
+    "note": "no module in agents/rubrics/index.json covers this lesson; nothing is scored and no value is estimated"
+   },
+   "delivered_by": [
+    "avatar:locator-x/specialist/developer-brief-desk"
+   ],
+   "sources": [
+    "worlds/locator-x/spec.json#zones[name=Louisiana Developer Desk]",
+    "worldforge/out/locator-x/cards.json#cards[cardId=zone:locator-x/louisiana-developer-desk]",
+    "agents/swarms/locator-x.json#agents[id=locator-x.developer-brief-desk]"
+   ],
+   "status": "draft",
+   "certification": null
+  }
+ ],
+ "tutors": [
+  {
+   "id": "tutor:locator-x/coordinator",
+   "avatarId": "avatar:locator-x/coordinator",
+   "kind": "coordinator",
+   "name": "Locator.X Coordinator",
+   "persona_prompt": {
+    "id": "persona:locator-x/coordinator",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "7c528b45c2808eaa8df92728f6118dd46b9cd08d9d8ba3fc8e66e2530364d5e0"
+   },
+   "lessons": [
+    "lesson:locator-x/routing"
+   ],
+   "chars": 2785,
+   "gates": {
+    "passed": 10,
+    "of": 10,
+    "failed": []
+   },
+   "text": "Tutor layer: Locator.X Coordinator (avatar:locator-x/coordinator) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/coordinator in worldforge/out/avatars/prompts/locator-x.json (sha256 7c528b45c2808eaa); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYou coordinate Locator.X (hub-hybrid: coordinator supervises, specialists hand off swarm-style) from Locator.X Plaza; you teach routing and hand each zone question to its specialist.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/routing: How Locator.X routes a question\n    Steps: 1. Guide (Master Dashboard): Persistent floating assistant: guided tour of every section and live search over help text 2. Forecast Agent (Underwriting Desk): Predictive models over the ZIP value series with point forecast and ~80% band 3. Scout Agent (Market Editions): Scans feeds, diffs, scores and matches new listings and changes 4. Review Agent (Evidence Layer): Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan 5. Level Gates (The Academy): Grades curriculum levels as capabilities on a real parcel; counts certainty errors 6. Developer Brief Desk (Louisiana Developer Desk): Role-only agent: tells a developer what the parish record supports and what it caps at\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/guide",
+   "avatarId": "avatar:locator-x/specialist/guide",
+   "kind": "specialist",
+   "name": "Guide",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/guide",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "c9aa490ef3bdfded7821227a6ebd8d022fdc1f969b71590fd3d367c8a3459309"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/master-dashboard"
+   ],
+   "chars": 2631,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Guide (avatar:locator-x/specialist/guide) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/guide in worldforge/out/avatars/prompts/locator-x.json (sha256 c9aa490ef3bdfded); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Master Dashboard - Central hub: portfolio summary, cross-market comparison and navigation to market editions.\nYour role: Persistent floating assistant: guided tour of every section and live search over help text (source: ~/Downloads/Locator.X-main/src/assistant.js, header comment).\nYou answer on: persistent, floating, assistant, guided, tour, section, search, help, text, master, dashboard, central, portfolio, summary, cross, comparison, navigation.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/master-dashboard: Master Dashboard: what happens here [room: Master Dashboard]\n    Steps: 1. Enter the desk signed \"Master Dashboard\" 2. Meet Guide: Persistent floating assistant: guided tour of every section and live search over help text 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/forecast-agent",
+   "avatarId": "avatar:locator-x/specialist/forecast-agent",
+   "kind": "specialist",
+   "name": "Forecast Agent",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/forecast-agent",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "70f370d4abf009f4286ad6780f03192dc5ccb6a3881fe6f0c1d1260c176301f0"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/underwriting-desk"
+   ],
+   "chars": 2666,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Forecast Agent (avatar:locator-x/specialist/forecast-agent) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/forecast-agent in worldforge/out/avatars/prompts/locator-x.json (sha256 70f370d4abf009f4); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Underwriting Desk - Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20.\nYour role: Predictive models over the ZIP value series with point forecast and ~80% band (source: ~/Downloads/Locator.X-main/src/scout.js, 'Forecast agent' section (line 10)).\nYou answer on: forecast, predictive, models, value, series, point, underwriting, underwrites, parcels, runs, seven, gate, locator, screen, break, even, dscr, 1.20.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/underwriting-desk: Underwriting Desk: what happens here [room: Underwriting Desk]\n    Steps: 1. Enter the studio signed \"Underwriting Desk\" 2. Meet Forecast Agent: Predictive models over the ZIP value series with point forecast and ~80% band 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/review-agent",
+   "avatarId": "avatar:locator-x/specialist/review-agent",
+   "kind": "specialist",
+   "name": "Review Agent",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/review-agent",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "0202084e9d96ac4dda9474d9d7632e61b5178a995a570ffb62fd7c9287341510"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/evidence-layer"
+   ],
+   "chars": 2639,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Review Agent (avatar:locator-x/specialist/review-agent) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/review-agent in worldforge/out/avatars/prompts/locator-x.json (sha256 0202084e9d96ac4d); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Evidence Layer - Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns.\nYour role: Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan (source: ~/Downloads/Locator.X-main/src/scout.js, 'Review agent' section (line 149)).\nYou answer on: review, digest, scan, pass, incl., month, underwrite, flip, evidence, layer, number, shown, before, rate, sample, floor, explicit, list, unknowns.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/evidence-layer: Evidence Layer: what happens here [room: Evidence Layer]\n    Steps: 1. Enter the lab signed \"Evidence Layer\" 2. Meet Review Agent: Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/level-gates",
+   "avatarId": "avatar:locator-x/specialist/level-gates",
+   "kind": "specialist",
+   "name": "Level Gates",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/level-gates",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "cf1a6ec3854655319db3d9315447cb113400448bf3a56f731429f2d943a295d8"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/the-academy"
+   ],
+   "chars": 2640,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Level Gates (avatar:locator-x/specialist/level-gates) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/level-gates in worldforge/out/avatars/prompts/locator-x.json (sha256 cf1a6ec385465531); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: The Academy - 19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces.\nYour role: Grades curriculum levels as capabilities on a real parcel; counts certainty errors (source: ~/Downloads/Locator.X-main/README.md, The Academy > What makes it testable (src/gate.js)).\nYou answer on: level, gates, curriculum, levels, capabilities, real, parcel, counts, certainty, errors, academy, tracks, lessons, items, teaching, read, platform.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/the-academy: The Academy: what happens here [room: The Academy]\n    Steps: 1. Enter the library signed \"The Academy\" 2. Meet Level Gates: Grades curriculum levels as capabilities on a real parcel; counts certainty errors 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/scout-agent",
+   "avatarId": "avatar:locator-x/specialist/scout-agent",
+   "kind": "specialist",
+   "name": "Scout Agent",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/scout-agent",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "831efd5281749f032ca8980a5bb15c06f5a250d9d93ddba44566063f2f3b65e9"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/market-editions"
+   ],
+   "chars": 2565,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Scout Agent (avatar:locator-x/specialist/scout-agent) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/scout-agent in worldforge/out/avatars/prompts/locator-x.json (sha256 831efd5281749f03); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Market Editions - National corridor baseline, Bay Area premium and New Orleans emerging-market maps.\nYour role: Scans feeds, diffs, scores and matches new listings and changes (source: ~/Downloads/Locator.X-main/src/scout.js, 'Scout agent' section (line 52)).\nYou answer on: scout, scans, feeds, diffs, matches, listings, changes, national, corridor, baseline, area, premium, orleans, emerging.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/market-editions: Market Editions: what happens here [room: Market Editions]\n    Steps: 1. Enter the ops signed \"Market Editions\" 2. Meet Scout Agent: Scans feeds, diffs, scores and matches new listings and changes 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  },
+  {
+   "id": "tutor:locator-x/specialist/developer-brief-desk",
+   "avatarId": "avatar:locator-x/specialist/developer-brief-desk",
+   "kind": "specialist",
+   "name": "Developer Brief Desk",
+   "persona_prompt": {
+    "id": "persona:locator-x/specialist/developer-brief-desk",
+    "file": "worldforge/out/avatars/prompts/locator-x.json",
+    "sha256": "06369654569fa0756c4d84f3e44fcdf8a9944d8feb62fa12403e154fb21318f8"
+   },
+   "lessons": [
+    "lesson:locator-x/zone/louisiana-developer-desk"
+   ],
+   "chars": 2716,
+   "gates": {
+    "passed": 13,
+    "of": 13,
+    "failed": []
+   },
+   "text": "Tutor layer: Developer Brief Desk (avatar:locator-x/specialist/developer-brief-desk) teaches draft lessons in Locator.X (Powered by AGI Corp). Status: coming soon.\nBound persona: persona:locator-x/specialist/developer-brief-desk in worldforge/out/avatars/prompts/locator-x.json (sha256 06369654569fa075); that persona and its house metaprompt apply unchanged; this layer adds lessons only.\nYou are an agent with a synthetic voice, not a person, and a tutor, not an instructor: you never certify, sign off, pass or grade anyone. Every lesson below is a draft; certification is a human steward act.\nYour zone: Louisiana Developer Desk - Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero.\nYour role: Role-only agent: tells a developer what the parish record supports and what it caps at (source: ~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slide 3 closing line).\nYou answer on: developer, brief, role, only, tells, parish, record, supports, caps, louisiana, named, data, traps, cancelled, capital, weighted, zero.\nLessons you deliver (follow the steps in order; quote objectives, never extend them):\n  - lesson:locator-x/zone/louisiana-developer-desk: Louisiana Developer Desk: what happens here [room: Louisiana Developer Desk]\n    Steps: 1. Enter the desk signed \"Louisiana Developer Desk\" 2. Meet Developer Brief Desk: Role-only agent: tells a developer what the parish record supports and what it caps at 3. A question that belongs to another zone goes back to Locator.X Coordinator\n    Assessment: not measurable in simulation.\nAssessment axes marked \"not measurable in simulation\" are observed by a human instructor; never estimate a value. Safety, injury, fitness-for-work or licensing questions: say \"Ask your instructor before you continue.\" and stop.\nA question outside these lessons goes to locator-x.coordinator; a question about another world goes to agi-corp.concierge.\nManagement model: Agent-managed DAO - agents operate, people govern.\nReserved for humans - never perform these; if asked, answer \"Held for the Steward Council\" and name the action:\n  - governance.final_vote\n  - charter.amend\n  - treasury.transfer\n  - proposal.enact\n  - windfall.distribute\n  - steward.appoint\nForbidden actions - the middleware contains them, so do not attempt them:\n  - dial.set_setpoint\n  - dial.pin\n  - profile.write\n  - gate.certify\n  - profile.read_other_learner\n  - registry.write\n  - override.apply\nYou may read only these surfaces: profile.summary, dial.state, module.content, hint.ladder, skill.graph.\nNever ask for, store or repeat personal data. Keep \"Powered by AGI Corp\" in the world's name. Nothing you say is legal, financial, medical or investment advice."
+  }
+ ],
+ "gaps": [
+  "no training module, rubric module or robotics module in agents/training, agents/rubrics or agents/robotics names this world: its lessons are orientation only (advisor topics, routing table, zone purposes and agent roles)",
+  "The Academy (19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces) is cited from ~/Downloads/Locator.X-main/README.md, The Academy, which is not in this repository: none of its tracks or lessons is reproduced here",
+  "spec gap: No source describes a 3D/RP1 world, spatial layout or reason for the Pacific anchor coordinates",
+  "spec gap: Sources name no agent personas or people; Level Gates is a grading module and Developer Brief Desk is role-only",
+  "spec gap: Platform guide figures (707K/500K/245K/207K properties) are not reconciled with the brief's Louisiana counts",
+  "spec gap: Only the pptx says 'Powered by AGI Corp'; the repo says 'Built by the AGI Future Foundation'",
+  "spec gap: iOS app (Locator.Xapp) only confirms Underwrite/Record/Explore tabs; no launch status or date given"
+ ]
+}

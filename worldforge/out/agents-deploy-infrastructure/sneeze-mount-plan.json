@@ -1,0 +1,2090 @@
+{
+ "schemaVersion": "worldforge-sneeze-mount-plan/0.1",
+ "engine": "Sneeze",
+ "bindingStatus": "decoder-available-not-mounted",
+ "bindingNote": "worldforge/native/rmcobject_decoder.* encodes these nodes against Sneeze headers (Y-up -> Z-up conversion in the decoder); nothing is mounted or rendered yet",
+ "rp1": {
+  "nameRule": "ASCII, <= 47 bytes (displayName); UTF-8 label in extras.label",
+  "bound": "d3Max = half-extents in metres from the card Volum or primitive size"
+ },
+ "rootCardId": "world:agents-deploy-infrastructure",
+ "mountParent": "SCENE::Fabric_Root()->Node_Root()",
+ "resourceCachePolicy": "shared-by-exact-sReference-URL",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -156,
+   156
+  ]
+ },
+ "assets": [
+  {
+   "url": "http://127.0.0.1:8789/unit-cube.glb",
+   "localPath": "worldforge/out/assets/unit-cube.glb",
+   "sha256": "66af9d7110fb7ca21d5323ed5c3261747a282e8378290911ce4064152f99e735",
+   "role": "shared-generic-unit-cube"
+  }
+ ],
+ "previewGlb": {
+  "path": "worldforge/out/agents-deploy-infrastructure/agents-deploy-infrastructure.glb",
+  "sha256": "cf5b5c88e2cecb9593e584b71dbfe10d456e7a62782a7b4bb2e58ff5ebaf5cc9"
+ },
+ "nodes": [
+  {
+   "cardId": "world:agents-deploy-infrastructure",
+   "displayName": "Agents That Deploy Infra~ - Powered by AGI Corp",
+   "parentCardId": null,
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     156,
+     40,
+     156
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "world",
+    "label": "Agents That Deploy Infra… · Powered by AGI Corp",
+    "source": "my-fabric/worlds/index.json"
+   }
+  },
+  {
+   "cardId": "plaza:agents-deploy-infrastructure",
+   "displayName": "Agents That Deploy Infra~ - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     24,
+     5,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "plaza",
+    "label": "Agents That Deploy Infra… · Powered by AGI Corp",
+    "source": "README.md (shared PBC management model)"
+   }
+  },
+  {
+   "cardId": "coordinator:agents-deploy-infrastructure",
+   "displayName": "Agents That Deploy Infra~ - Powered by AGI Corp",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     8
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "coordinator",
+    "label": "Agents That Deploy Infra… · Powered by AGI Corp",
+    "source": "agents/swarms/agents-deploy-infrastructure.json#coordinator"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/host",
+   "displayName": "Host Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Host Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=host]"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/steward",
+   "displayName": "Steward Liaison - Powered by AGI Corp",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Steward Liaison · Powered by AGI Corp",
+    "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=steward]"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/alignment",
+   "displayName": "Alignment Advisor - Powered by AGI Corp",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -9.9,
+     0,
+     -9.9
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "advisor",
+    "label": "Alignment Advisor · Powered by AGI Corp",
+    "source": "agents/advisors/agents-deploy-infrastructure.json#advisors[id=alignment]"
+   }
+  },
+  {
+   "cardId": "gate:agents-deploy-infrastructure",
+   "displayName": "Alignment Evaluation Gate - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     10,
+     6,
+     3
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     136
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "gate",
+    "label": "Alignment Evaluation Gate · Powered by AGI Corp",
+    "source": "worlds/PBC.json#programs"
+   }
+  },
+  {
+   "cardId": "council:agents-deploy-infrastructure",
+   "displayName": "Steward Council - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     14,
+     6,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     -136
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "council",
+    "label": "Steward Council · Powered by AGI Corp",
+    "source": "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis): Agent-Managed DAO System"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-1",
+   "displayName": "Steward Seat 1 - Powered by AGI Corp",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 1 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-2",
+   "displayName": "Steward Seat 2 - Powered by AGI Corp",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 2 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-3",
+   "displayName": "Steward Seat 3 - Powered by AGI Corp",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "seat",
+    "label": "Steward Seat 3 · Powered by AGI Corp",
+    "source": "worlds/PBC.json#steward_seats"
+   }
+  },
+  {
+   "cardId": "omega:agents-deploy-infrastructure",
+   "displayName": "Omega Steward - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1.5,
+     1.2,
+     1.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     26,
+     0,
+     -136
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "omega",
+    "label": "Omega Steward · Powered by AGI Corp",
+    "source": "agents/advisory/omega_agents.json"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "displayName": "Idea Bench - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -48,
+     0,
+     83.14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Idea Bench · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/planner",
+   "displayName": "Planner - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -3,
+     0,
+     5.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Planner · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea to something running in production'"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "displayName": "Provisioning Yard - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -96,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Provisioning Yard · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/provisioner",
+   "displayName": "Provisioner - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Provisioner · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "displayName": "Deployment Bay - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     -48,
+     0,
+     -83.14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Deployment Bay · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/deployer",
+   "displayName": "Deployer - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     -3,
+     0,
+     -5.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Deployer · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "displayName": "Domain Registry Desk - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     48,
+     0,
+     -83.14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Domain Registry Desk · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/domain-steward",
+   "displayName": "Domain Steward - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     3,
+     0,
+     -5.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Domain Steward · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "displayName": "Service Configuration Ro~ - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     96,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Service Configuration Ro… · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/configurator",
+   "displayName": "Configurator - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     6,
+     0,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Configurator · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "displayName": "Operations Deck - Powered by AGI Corp",
+   "parentCardId": "world:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     18,
+     10,
+     18
+    ]
+   },
+   "transform": {
+    "translation": [
+     48,
+     0,
+     83.14
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "zone",
+    "label": "Operations Deck · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/operator",
+   "displayName": "Operator - Powered by AGI Corp",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "nativeClass": "MAP_OBJECT_TERRESTRIAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     3,
+     0,
+     5.19
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1,
+     1
+    ]
+   },
+   "resource": null,
+   "extras": {
+    "kind": "agent",
+    "label": "Operator · Powered by AGI Corp",
+    "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"
+   }
+  },
+  {
+   "cardId": "plaza:agents-deploy-infrastructure/floor",
+   "displayName": "plaza:agents-deploy-infrastructure/floor",
+   "parentCardId": "plaza:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     24,
+     0.2,
+     24
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     48,
+     0.4,
+     48
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "pad",
+    "massingType": "plaza",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "coordinator:agents-deploy-infrastructure/avatar",
+   "displayName": "coordinator:agents-deploy-infrastructure/avatar",
+   "parentCardId": "coordinator:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/host/avatar",
+   "displayName": "dvisor:agents-deploy-infrastructure/host/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/host",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/steward/avatar",
+   "displayName": "sor:agents-deploy-infrastructure/steward/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "advisor:agents-deploy-infrastructure/alignment/avatar",
+   "displayName": "r:agents-deploy-infrastructure/alignment/avatar",
+   "parentCardId": "advisor:agents-deploy-infrastructure/alignment",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "gate:agents-deploy-infrastructure/arch",
+   "displayName": "gate:agents-deploy-infrastructure/arch",
+   "parentCardId": "gate:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     8,
+     5,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     16,
+     10,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "arch",
+    "massingType": "gate",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "council:agents-deploy-infrastructure/chamber",
+   "displayName": "council:agents-deploy-infrastructure/chamber",
+   "parentCardId": "council:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     14,
+     4,
+     10
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     28,
+     8,
+     20
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "box",
+    "massingType": "council",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-1/chair",
+   "displayName": "at:agents-deploy-infrastructure/steward-1/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-1",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agents-deploy-infrastructure",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-2/chair",
+   "displayName": "at:agents-deploy-infrastructure/steward-2/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-2",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agents-deploy-infrastructure",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "seat:agents-deploy-infrastructure/steward-3/chair",
+   "displayName": "at:agents-deploy-infrastructure/steward-3/chair",
+   "parentCardId": "seat:agents-deploy-infrastructure/steward-3",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     1,
+     1,
+     1
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     9,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     2,
+     2,
+     2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "council:agents-deploy-infrastructure",
+    "shape": "box",
+    "massingType": "seat",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "omega:agents-deploy-infrastructure/avatar",
+   "displayName": "omega:agents-deploy-infrastructure/avatar",
+   "parentCardId": "omega:agents-deploy-infrastructure",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.6,
+     1.1,
+     0.6
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.5,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1.2,
+     2.2,
+     1.2
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": null,
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/idea-bench/pad",
+   "displayName": "one:agents-deploy-infrastructure/idea-bench/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/idea-bench/hall",
+   "displayName": "ne:agents-deploy-infrastructure/idea-bench/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/idea-bench",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     4,
+     8.4,
+     -6.93
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/planner/avatar",
+   "displayName": "ent:agents-deploy-infrastructure/planner/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/planner",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/idea-bench",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/provisioning-yard/pad",
+   "displayName": "nts-deploy-infrastructure/provisioning-yard/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/provisioning-yard/hall",
+   "displayName": "ts-deploy-infrastructure/provisioning-yard/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     8,
+     8.4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/provisioner/avatar",
+   "displayName": "agents-deploy-infrastructure/provisioner/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/provisioner",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/provisioning-yard",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/deployment-bay/pad",
+   "displayName": "agents-deploy-infrastructure/deployment-bay/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/deployment-bay/hall",
+   "displayName": "gents-deploy-infrastructure/deployment-bay/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     4,
+     8.4,
+     6.93
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/deployer/avatar",
+   "displayName": "nt:agents-deploy-infrastructure/deployer/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/deployer",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/deployment-bay",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/domain-registry-desk/pad",
+   "displayName": "-deploy-infrastructure/domain-registry-desk/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/domain-registry-desk/hall",
+   "displayName": "deploy-infrastructure/domain-registry-desk/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4,
+     8.4,
+     6.93
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/domain-steward/avatar",
+   "displayName": "nts-deploy-infrastructure/domain-steward/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/domain-steward",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/domain-registry-desk",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/service-configuration-room/pad",
+   "displayName": "y-infrastructure/service-configuration-room/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/service-configuration-room/hall",
+   "displayName": "-infrastructure/service-configuration-room/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -8,
+     8.4,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/configurator/avatar",
+   "displayName": "gents-deploy-infrastructure/configurator/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/configurator",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/service-configuration-room",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/operations-deck/pad",
+   "displayName": "gents-deploy-infrastructure/operations-deck/pad",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     16,
+     0.2,
+     16
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     0.2,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     32,
+     0.4,
+     32
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+    "shape": "pad",
+    "massingType": "zone-pad",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "zone:agents-deploy-infrastructure/operations-deck/hall",
+   "displayName": "ents-deploy-infrastructure/operations-deck/hall",
+   "parentCardId": "zone:agents-deploy-infrastructure/operations-deck",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     7,
+     8,
+     5
+    ]
+   },
+   "transform": {
+    "translation": [
+     -4,
+     8.4,
+     -6.93
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     14,
+     16,
+     10
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+    "shape": "box",
+    "massingType": "zone-hall",
+    "geometrySource": "procedurally-generated-original"
+   }
+  },
+  {
+   "cardId": "agent:agents-deploy-infrastructure/operator/avatar",
+   "displayName": "nt:agents-deploy-infrastructure/operator/avatar",
+   "parentCardId": "agent:agents-deploy-infrastructure/operator",
+   "nativeClass": "MAP_OBJECT_PHYSICAL",
+   "bound": {
+    "d3Max": [
+     0.5,
+     0.9,
+     0.5
+    ]
+   },
+   "transform": {
+    "translation": [
+     0,
+     1.3,
+     0
+    ],
+    "rotation": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "scale": [
+     1,
+     1.8,
+     1
+    ]
+   },
+   "resource": {
+    "sReference": "http://127.0.0.1:8789/unit-cube.glb"
+   },
+   "extras": {
+    "zoneCardId": "zone:agents-deploy-infrastructure/operations-deck",
+    "shape": "capsule",
+    "massingType": "agent-avatar",
+    "geometrySource": "procedurally-generated-original"
+   }
+  }
+ ],
+ "acceptanceRequirements": [
+  "Parent nodes must be created before child nodes",
+  "Each returned native handle must resolve via CONTAINER::Node_Find",
+  "Every resource-bearing NODE must eventually expose Gltf_Render_Model()!=nullptr",
+  "Timeout/fetch/parse failure must fail the load",
+  "Scene mutations must use the engine's safe lifecycle/thread boundary"
+ ]
+}

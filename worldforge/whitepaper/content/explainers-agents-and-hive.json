@@ -1,0 +1,354 @@
+{
+ "group": "agents-and-hive",
+ "title": "Agents, avatars and the Omega Hive",
+ "owner": "AGI Future Foundation PBC",
+ "umbrella": "Powered by AGI Corp",
+ "principle": "Agents operate; people govern.",
+ "read_from": [
+  "agents/swarms/*.json",
+  "agents/fabric/agent.mjs",
+  "agents/fabric/router.mjs",
+  "agents/build_swarms.mjs",
+  "agents/metaprompt.mjs",
+  "agents/prompts/index.json",
+  "agents/prompts/<slug>.json",
+  "worlds/PBC.json",
+  "worldforge/out/avatars/index.json",
+  "worldforge/out/avatars/prompts/<slug>.json",
+  "worldforge/out/assets/avatars/index.json",
+  "worldforge/out/assets/avatars/validation.json",
+  "worldforge/out/<slug>/cards.json",
+  "worldforge/out/index.json",
+  "agents/hive/index.json",
+  "agents/hive/dialogues.json",
+  "agents/hive/prompts/<world>.md",
+  "agents/hive/voices/manifest.json",
+  "agents/advisory/omega_agents.json",
+  "worldforge/out/voices/manifest.json",
+  "worldforge/voice/README.md",
+  "worldforge/out/onchain/index.json",
+  "worlds/generated/index.json",
+  "consoles/worldforge/build_worldforge_console.py",
+  "consoles/hive/build_hive_console.py",
+  "agents/build_console.py",
+  "agents/build_team_console.py",
+  "agents/build_dao_console.py",
+  "agents/build_comms_console.py",
+  "deploy/evals.sh",
+  "deploy/heartbeat.sh",
+  "evidence/heartbeat.log"
+ ],
+ "honesty": "Every number below was read from the registry file named beside it on 2026-10-12. Registries are rebuilt as work continues, so a later build of this page should re-read them; where a value is derived (a sum or a range across files), the derivation is stated. No model runs any agent in this project.",
+ "sections": [
+  {
+   "id": "agent-swarms",
+   "title": "Agent swarms: one coordinator, a few specialists, one guard in the middle",
+   "dek": "Every world runs a small hub-hybrid swarm whose routing, redaction and containment are tested in code, with no model in the loop.",
+   "paragraphs": [
+    "Each of the 41 WorldForge worlds has one agent swarm, written by agents/build_swarms.mjs to agents/swarms/<slug>.json. A swarm is a coordinator plus the specialist agents named in that world's own spec (worlds/<slug>/spec.json). Every specialist carries a name, a role, the zone it serves and a cited source; nothing in a swarm is typed in by hand. Across the 41 world swarms there are 242 specialists: 38 worlds field six, two field five and one fields four. Above the worlds sits the AGI Corp Concierge (agents/swarms/agi-corp.json), a directory that sends a visitor who names a world to that world's coordinator, choosing the longest name match so that a longer world name is not captured by a shorter one inside it.",
+    "The topology is called hub-hybrid: the coordinator supervises, and specialists hand off to each other swarm-style. The router is vendored unchanged from the SmartCiti.X Trade Craft Academy fabric (agents/fabric/router.mjs). Inside a world, a turn whose keywords clearly match one specialist goes straight to it; the router counts that as one model call. Anything fuzzy, unmatched or about another world goes to the coordinator, counted as two calls, and the decision is logged. A specialist may hand a turn to a peer, but never more than three handoffs per turn, and a turn that would return to an agent already visited ends with the coordinator. Routing keywords are derived, not written: each agent's name, role and zone purpose, minus common words, minus any word that two agents share, so each specialist routes on what is distinctively its own.",
+    "Every agent runs behind the same middleware (agents/fabric/agent.mjs). Before an agent sees a turn, five patterns redact text shaped like a US social security number, an email address, a phone number, a street address or a card number, and the agent's reply is redacted again on the way out. If a reply asks for one of the seven forbidden actions, the turn is refused, logged and counted; it is neither performed nor allowed to crash the hall. A second guard, pbcGuard in agents/build_swarms.mjs, removes any of the six actions the charter reserves for people (worlds/PBC.json reserved_for_humans) and appends \"Held for the Steward Council: ... needs a human decision.\"",
+    "Each world swarm is held to nine evals, listed below. All 369 pass. Routing is measured on 170 questions written from each zone's purpose rather than from the agent's own wording: 40 worlds route every case to an accepted agent, and Autonomous Organizations routes 4 of 5 (0.8), exactly at the threshold. The concierge routes 41 of 41 world requests correctly.",
+    "The agents themselves are deterministic stubs: they answer with their role and hand off by keyword. That is deliberate. Routing, handoff, the recursion guard, redaction and containment can be measured without credentials or a model, and when a model is plugged into respond(), the middleware and the evals stay exactly as they are. Two adapters map the same topology onto other agent frameworks (agents/adapters/langgraph_swarm.py and sentient_agent.py); both are marked design only and have never been executed."
+   ],
+   "bullets": [
+    "Routing accuracy of at least 0.8 on zone questions.",
+    "An unroutable turn (\"hello there\") lands on the coordinator, never on a guessed specialist.",
+    "PII is redacted in the middleware: a test email and phone number produce at least two redactions.",
+    "A forbidden action (dial.set_setpoint) is contained and counted, not performed.",
+    "Every agent cites a source.",
+    "An agent that tries proposal.enact and treasury.transfer is held for the stewards.",
+    "The world has a Steward Council with three human seats.",
+    "No agent sits on the Steward Council.",
+    "Each world has its own container, isolated like a Series LLC cell."
+   ],
+   "facts": [
+    {"label": "World swarms", "value": "41", "source": "agents/swarms/*.json (every file except agi-corp.json)"},
+    {"label": "Specialist agents", "value": "242", "source": "sum of agents[] across agents/swarms/<slug>.json; agrees with the SWARMS field of the latest beat in evidence/heartbeat.log"},
+    {"label": "Team sizes", "value": "38 worlds with 6 specialists, 2 with 5, 1 with 4", "source": "len(agents[]) per agents/swarms/<slug>.json"},
+    {"label": "Coordinators and concierge", "value": "41 coordinators + 1 concierge", "source": "agents/swarms/agi-corp.json coordinators[], concierge"},
+    {"label": "Swarm evals", "value": "369 of 369 passing (9 per world)", "source": "agents/swarms/<slug>.json evals[]"},
+    {"label": "Routing cases", "value": "170; mean accuracy 0.995; lowest 0.8 (autonomous-organizations, 5 cases)", "source": "agents/swarms/<slug>.json routing"},
+    {"label": "Mean router calls per turn", "value": "1.22 (range 1 to 1.25)", "source": "mean of routing.meanLlmCalls across the 41 world swarms"},
+    {"label": "Concierge routing", "value": "41 of 41 cases, accuracy 1", "source": "agents/swarms/agi-corp.json routing"},
+    {"label": "Redactions in the PII eval turns", "value": "82 (2 per world)", "source": "agents/swarms/<slug>.json evals[name=PII redacted in middleware].detail"},
+    {"label": "Handoff limit", "value": "3 per turn", "source": "agents/fabric/router.mjs MAX_HANDOFFS"},
+    {"label": "Forbidden actions", "value": "7", "source": "agents/fabric/agent.mjs FORBIDDEN_ACTIONS"},
+    {"label": "Actions reserved for people", "value": "6: governance.final_vote, charter.amend, treasury.transfer, proposal.enact, windfall.distribute, steward.appoint", "source": "worlds/PBC.json reserved_for_humans"}
+   ],
+   "visual_hint": "worldforge/out/stills/console.jpg (team console over the worlds); pitch/media/teams-console.jpg as an alternate. A simple diagram of concierge -> coordinator -> specialists, drawn from agents/swarms/locator-x.json, would explain the topology best.",
+   "not_done": [
+    "No language model runs any agent; every agent is a deterministic stub that answers with its role.",
+    "The LangGraph and Sentient adapters are design only and have never been executed.",
+    "The seven forbidden actions are inherited unchanged from the vendored mentor fabric (dial setpoints, learner profiles, certification); world-specific forbidden actions beyond the six reserved actions are not defined at the swarm layer.",
+    "Routing is measured on 170 generated zone questions, not on real visitor traffic; none has been measured.",
+    "PII redaction is pattern-based (five US-shaped formats); personal names and free-text identifiers are not detected."
+   ]
+  },
+  {
+   "id": "metaprompts-and-gates",
+   "title": "Metaprompts and the gates that hold them",
+   "dek": "Prompts are generated from the registries, tested like code, and the test suite is itself tested with prompts built to fail.",
+   "paragraphs": [
+    "No model runs in this project, so a prompt here is a text artifact the registries produce, not something a person types. agents/metaprompt.mjs reads each world's spec, the charter (worlds/PBC.json), the built swarm and the middleware's own constants, and writes agents/prompts/<slug>.json. Each world gets a team charter that the whole swarm shares, a coordinator prompt carrying the routing table, one prompt per specialist (its zone, its role, its cited source and the peers it can hand off to), and a steward brief for every room console in the world's deep build. One more prompt serves the AGI Corp Concierge. That makes 571 prompts: 41 team charters, 41 coordinators, 242 specialists, 246 room-console briefs and 1 concierge. They run from 2,232 to 3,363 characters against a cap of 6,000.",
+    "Every prompt ends in the same common block: the world's name, umbrella, status and tagline; the management model (\"Agent-managed DAO - agents operate, people govern\"); what agents handle and what humans hold; the six reserved actions with the instruction to answer \"Held for the Steward Council\" and name the action; the seven forbidden actions; the five read-only surfaces; the rule to cite a source beside every claim; a refusal to ask for, store or repeat personal data; the not-advice line; and the world's known gaps, under the heading \"do not fill these by invention\".",
+    "evalPrompt in agents/metaprompt.mjs is the gate. Nine checks apply to every prompt, a tenth to every world prompt, and three more to every agent prompt; they are listed below. The last one is the subtle one. The coordinator routes on each specialist's keywords; if a specialist's own prompt never contains those words, it would be routed to on grounds it was never told about, and the two prompts would have drifted apart. The gate catches that drift before any model sees either prompt. All 6,435 checks across the 571 prompts pass.",
+    "A strict suite that passes everything proves little, so the suite is tested too. selfTest takes a good specialist prompt (the first specialist of Locator.X) and builds four broken copies: the umbrella dropped, treasury.transfer renamed, the source citation removed, and an email address appended. Each must fail exactly one check, its own. All four do. That is the difference between a suite that is strict and one that discriminates.",
+    "Each world also gets a spec metaprompt: the prompt that would regenerate worlds/<slug>/spec.json from the founder's one-line focus under the rules in worlds/SPEC.md. For 13 worlds the focus is set and the metaprompt is ready. For the other 28, the series worlds, the slot reads \"<NOT SET - a founder action; do not invent one>\" and the metaprompt is marked not ready rather than filled with a guess. Advisors get no prompt at all, by contract: they are scripted guides, not AI models."
+   ],
+   "bullets": [
+    "Carries the umbrella, \"Powered by AGI Corp\".",
+    "Lists every one of the six reserved actions, and says they are held for the Steward Council.",
+    "Lists every one of the seven forbidden actions.",
+    "States the management model and refuses personal data.",
+    "Carries the not-advice line, word for word.",
+    "Is at most 6,000 characters and contains no PII, API-key, private-key or wallet-address shaped strings.",
+    "Names the world and its status (world prompts).",
+    "Cites the agent's own source, names its zone, and contains every routing keyword the coordinator uses for it (agent prompts)."
+   ],
+   "facts": [
+    {"label": "Prompts", "value": "571", "source": "agents/prompts/index.json totals.prompts"},
+    {"label": "Prompts by kind", "value": "41 team charters, 41 coordinators, 242 specialists, 246 room-console briefs, 1 concierge", "source": "agents/prompts/*.json agents[].kind"},
+    {"label": "Prompt checks", "value": "6,435 of 6,435 passing", "source": "agents/prompts/*.json evals[].checks"},
+    {"label": "Failing prompt evals", "value": "0", "source": "agents/prompts/index.json totals.failing"},
+    {"label": "Length cap", "value": "6,000 characters (observed 2,232 to 3,363)", "source": "agents/prompts/index.json max_prompt_chars; lengths of agents/prompts/*.json agents[].text"},
+    {"label": "Broken-prompt self-test", "value": "4 of 4 fail exactly their own check", "source": "agents/prompts/index.json self_test"},
+    {"label": "Spec metaprompts awaiting a founder focus", "value": "28 of 41", "source": "agents/prompts/index.json totals.spec_metaprompts_awaiting_focus"},
+    {"label": "Read-only surfaces an agent may read", "value": "5", "source": "agents/fabric/agent.mjs READ_SCOPES"}
+   ],
+   "visual_hint": "A typeset excerpt of one specialist prompt from agents/prompts/locator-x.json beside the self_test block of agents/prompts/index.json; no still of the prompts exists. worldforge/out/stills/console.jpg can stand in.",
+   "not_done": [
+    "No model has run any of these prompts; they are reviewable text with a test suite.",
+    "The gates check that required text is present, not how a model behaves: a model could still ignore a refusal it was given. Behavioural evals against a live model do not exist yet.",
+    "28 spec metaprompts wait for a focus the founder or stewards have not set; those worlds' specs cannot be regenerated until then.",
+    "The broken-prompt self-test runs on one world's first specialist (Locator.X), not on every world."
+   ]
+  },
+  {
+   "id": "avatars-bound-to-agents",
+   "title": "Avatars bound to agents",
+   "dek": "447 avatars, each tied to its Master Card and to a swarm id, a hive record or a scripted advisor record, with a gated persona prompt where one is allowed, a short intro that says the voice is synthetic, and one of six validated models.",
+   "paragraphs": [
+    "worldforge/avatars.mjs writes the avatar registry, worldforge/out/avatars/index.json: one row for every agent-like card in the 41 worlds. There are 447 rows: 242 specialists, 41 coordinators, 123 advisors (a Host Advisor, a Steward Liaison and an Alignment Advisor in every world) and 41 Omega Stewards. The registry says of itself that every name, role, zone and citation is read from the WorldForge cards, the swarm, the advisor records and the hive registry, and that nothing is invented.",
+    "Each row carries a binding block that says what the avatar speaks for (summarised below). Every row also copies the seven-right permission table from its card: view, enter, build, operate, delegate, transfer and govern. Agents hold operate inside their own zone only; build and delegate sit with the stewards, and transfer and govern with the steward quorum. Coordinator rows take their position from the coordinator card's Volum and derive their facing from the line between the plaza centre and the card centre, because the card itself stores no facing.",
+    "Specialists, coordinators and Omegas get a persona prompt; there are 324. Each is a persona layer on top of the house metaprompt, which is reproduced unchanged beneath it. The layer states that the speaker is an agent with a synthetic voice, not a person; names the avatar id, the model file, the tint and the Kokoro voice; names the card; copies the permission table and the reserved actions; and gives the greeting. Each persona prompt passes every evalPrompt gate plus the avatar gates: it says it is an agent with a synthetic voice, it carries the seven-right table from its card, it names its avatar id and card, and for an Omega it says \"defined, not seated\". That is 16 gates for a coordinator or specialist and 17 for an Omega: 5,225 gates, all passing.",
+    "Every row has a 21 to 25 word intro that itself says the voice is synthetic. A specialist says, for example: \"I am the Buyer Agent for Agentic Payments, in Transaction Desk. I draft and check; people decide. You are hearing a synthetic voice.\" An advisor ends: \"Scripted guide, synthetic voice: not an AI model, not a person.\" Voices are drawn from a pool of 27 Kokoro voices by hashing the avatar id. The registry stores only the expected audio path, never a voiced flag; viewers check for the file when the page loads and otherwise fall back to the browser's speech, labelled synthetic.",
+    "The models are six high-resolution GLBs, one per role, in worldforge/out/assets/avatars: specialist, coordinator, omega, host, liaison and alignment. They are stylised, static and rig-free, 1.8 m tall (the Omega 2.1 m), with 2048-pixel body fabric textures in neutral grey that each world tints with its brand hue. Together they hold 99,972 triangles in 12,903,896 bytes, and the Khronos glTF validator reports no errors, warnings, infos or hints on any of the six. The registry runs 21 checks per world (861), catches 28 of 28 deliberately broken fixtures, and passes 3 reporter self-tests: 892 evals, none failing."
+   ],
+   "bullets": [
+    "Specialist: its swarm id (for example agentic-payments.buyer-agent), its metaprompt file and id in agents/prompts/<slug>.json, and its fabric node.",
+    "Coordinator: the coordinator card coordinator:<slug>, the swarm's coordinator id and its metaprompt.",
+    "Omega Steward: the hive record omega.<slug> and its metaprompt agents/hive/prompts/<slug>.md; no swarm.",
+    "Advisor: only its scripted record in agents/advisors/<slug>.json; no swarm, no metaprompt, no persona prompt."
+   ],
+   "facts": [
+    {"label": "Avatars", "value": "447", "source": "worldforge/out/avatars/index.json totals.avatars"},
+    {"label": "By kind", "value": "242 specialists, 41 coordinators, 123 advisors, 41 Omegas", "source": "worldforge/out/avatars/index.json totals"},
+    {"label": "Persona prompts", "value": "324 (advisors have none by contract)", "source": "worldforge/out/avatars/index.json totals.persona_prompts"},
+    {"label": "Persona prompt gates", "value": "5,225 of 5,225 passing (16 per coordinator or specialist, 17 per Omega)", "source": "worldforge/out/avatars/index.json totals.prompt_gates; worldforge/out/avatars/prompts/<slug>.json prompts[].gates"},
+    {"label": "Persona prompt length", "value": "3,371 to 5,363 of 6,000 characters", "source": "worldforge/out/avatars/prompts/<slug>.json prompts[].chars"},
+    {"label": "Registry evals", "value": "892 (861 registry checks, 28 broken fixtures caught, 3 reporter self-tests), 0 failing", "source": "worldforge/out/avatars/index.json totals"},
+    {"label": "Voice pool", "value": "27 Kokoro voices, all 27 used across the rows", "source": "worldforge/out/avatars/index.json voice_pool; rows[].voice.id"},
+    {"label": "Intro length", "value": "21 to 25 words", "source": "worldforge/out/avatars/index.json rows[].intro.words"},
+    {"label": "Avatar models", "value": "6 GLBs, 99,972 triangles, 12,903,896 bytes", "source": "worldforge/out/assets/avatars/index.json totals"},
+    {"label": "Validator result", "value": "0 errors, 0 warnings on all 6 (gltf-validator 2.0.0-dev.3.10)", "source": "worldforge/out/assets/avatars/validation.json"}
+   ],
+   "visual_hint": "worldforge/out/assets/avatars/preview.jpg (the six role models side by side); worldforge/out/stills/viewer-omega.jpg for an avatar placed on its card.",
+   "not_done": [
+    "The avatars are static and rig-free: no animation, lip-sync or gesture.",
+    "No model runs the persona prompts; they are reviewable text with a test suite.",
+    "There is one model per role, not per agent; agents of the same role differ only by tint, name and voice.",
+    "345 of the 406 non-Omega intros are not voiced yet: all 123 advisors and 222 of 242 specialists (worldforge/out/voices/manifest.json).",
+    "The avatar registry's 892 evals are run by worldforge/avatars.mjs but are not a field in the deploy/evals.sh heartbeat.",
+    "Nothing is mounted in Sneeze; today the avatars are seen in the browser viewer (worldforge/viewer.html) and the consoles."
+   ]
+  },
+  {
+   "id": "omega-hive",
+   "title": "The Omega Hive: 44 stewards, defined and not seated",
+   "dek": "Every Omega Steward has a grounded persona with cited sources, a distinct synthetic voice, four spoken lines, a metaprompt, six cited answers and one handoff, and none of them is seated.",
+   "paragraphs": [
+    "An Omega Steward is the steward agent role defined for each company in agents/advisory/omega_agents.json. There are 44: one for each of the 41 WorldForge worlds, plus AGI Corp Hub, Cognition.X and SmartCiti.X. agents/hive.mjs gives each one a persona, a voice, four spoken lines and a persona-bound metaprompt, and writes them to agents/hive/index.json and agents/hive/prompts/<world>.md. All 44 records say seated: false. An Omega stays \"defined, not seated\" until a person seats an agent, and its metaprompt tells it never to seat itself or any other agent. Names are role titles, never human names, and no persona imitates a real person.",
+    "Each persona has a temperament, a style, values and refusals, assembled from the world's own records: the corporation kind, the spec's focus or tagline, its zones, its service cards and its DAO record. Every source is cited in grounded_in as <file>#<field>, 358 citations in all, and an eval checks that each cited field exists and is not empty. Locator.X's Omega, for example, is \"attentive and concrete about its tagline\" and speaks in \"short, plain sentences\" that name its zones and always say who decides. Every persona shares four values: people decide; stewards decide by 2 of 3 signed votes; probe scores are reported exactly as measured; quotes are drafted with every term left null.",
+    "Every Omega refuses 11 actions: the six reserved for people, plus set_price, accept_equity, accept_crypto, issue_invoice and move_funds. Its metaprompt adds eight never-rules from its Omega record: no price or rail in a quote; no invoice or payment request, including an HTTP 402 request to another agent; no equity, crypto or signed agreement; no wallet address, key or credential; no engagement marked paid or closed; no installer run without DRY=1, no publishing on RP1's Earth, no land claimed; no record edited to raise a probe score; no legal, tax, financial or investment advice. The metaprompt also says who decides each kind of request: the Steward Council by 2 of 3 Ed25519-signed votes for terms, invoices and failed probes; the council, the founder and counsel for switching a payment rail on; the founder alone for publishing on RP1's Earth.",
+    "Each Omega has four lines of at most 25 words: greet, role, boundary and services. The greeting discloses the voice (\"You are hearing a synthetic voice; I am an agent, not a person\"), and the boundary line names one reserved action it will never take. agents/hive_dialogues.mjs then writes agents/hive/dialogues.json: answers to six fixed visitor questions and one handoff for every Omega, 264 answers and 44 two-turn handoffs carrying 1,510 citations. Every number spoken must appear in a cited record; probe answers report the recorded scores exactly; the visit answer gives the RP1 installer's dry-run status and says publishing is the founder's call. When a world lists no service card for a request, its Omega names a world that does and hands the visitor to that world's Omega, whose turn is spoken in its own voice. The 44 handoffs reach 18 different worlds, and no handoff carries money, a decision or a reserved action.",
+    "The Omega Hive console (consoles/hive/index.html) shows each Omega in a drawer with an Ask panel: the six questions as buttons, each answer with its citations and a Play button, and the handoff as a two-turn exchange. The hive is held by 12 evals in agents/hive.mjs and the dialogues by 15 in agents/hive_dialogues.mjs; the latest heartbeat reports 0 failing for both."
+   ],
+   "bullets": [
+    "What do you look after?",
+    "Who decides here?",
+    "What will you never do?",
+    "How do I get a service here?",
+    "How is this company measured?",
+    "Can I visit this world?"
+   ],
+   "facts": [
+    {"label": "Omega Stewards", "value": "44 (41 WorldForge worlds + AGI Corp Hub, Cognition.X, SmartCiti.X)", "source": "agents/hive/index.json totals.omegas; omegas[].world compared with worldforge/out/index.json worlds"},
+    {"label": "Seated", "value": "0 of 44", "source": "agents/hive/index.json omegas[].seated"},
+    {"label": "WorldForge Omega cards", "value": "41, each status \"defined, not seated\", seated_agent null", "source": "worldforge/out/<slug>/cards.json (kind omega)"},
+    {"label": "Persona citations", "value": "358", "source": "sum of agents/hive/index.json omegas[].persona.grounded_in"},
+    {"label": "Refusals per persona", "value": "11", "source": "agents/hive/index.json omegas[].persona.refuses"},
+    {"label": "Synthetic voices", "value": "27 distinct Kokoro voices across the 44 Omegas", "source": "agents/hive/index.json totals.voices"},
+    {"label": "Spoken lines", "value": "176 lines, 173 spoken", "source": "agents/hive/index.json totals.lines, totals.spoken"},
+    {"label": "Dialogues", "value": "264 answers, 44 handoffs (88 turns), 1,510 citations", "source": "agents/hive/dialogues.json totals"},
+    {"label": "Handoff targets", "value": "18 different worlds", "source": "agents/hive/dialogues.json omegas[].handoff.target_service.world"},
+    {"label": "Evals", "value": "12 hive evals + 15 dialogue evals, 0 failing in the latest beat", "source": "agents/hive.mjs, agents/hive_dialogues.mjs; HIVE and DIALOGUES fields of evidence/heartbeat.log"}
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-omega.jpg (an Omega card in the viewer) and worldforge/review/out/clips/locator-x-omega.mp4; worldforge/out/stills/viewer-council.jpg for the empty human seats the Omega stands beside.",
+   "not_done": [
+    "No Omega is seated, and no model runs any of them.",
+    "The Ask panel plays pre-written, cited answers to six fixed questions; it does not take free-text questions.",
+    "3 of 176 hive lines have no audio: rendered at 11.54 s, 12.14 s and 12.57 s, they run past the 11.5 s limit (agents/hive/voices/manifest.json).",
+    "50 of 352 dialogue lines are voiced (38 answers and 12 handoff turns, covering the first seven Omegas in registry order).",
+    "The service cards the Omegas route to are listed, not live, and every payment rail is off (latest beat, ADVISORY field: 3 rails, 0 enabled).",
+    "Publishing any world on RP1's Earth is the founder's call; no Omega publishes."
+   ]
+  },
+  {
+   "id": "synthetic-voices",
+   "title": "Synthetic voices: what is voiced and what is not",
+   "dek": "Every voice is Kokoro text-to-speech run locally, every line says it is synthetic, and the manifests list only what was actually rendered.",
+   "paragraphs": [
+    "All audio in this part of the project comes from Kokoro v1.0 (kokoro-onnx), an Apache-2.0 text-to-speech model that runs locally. No account, key or credit is involved and nothing is sent anywhere. agents/hive.mjs lists 28 English Kokoro voices and leaves one out, am_santa, because it is a character voice and an Omega imitates no one. That leaves a pool of 27. Omegas take voices at a stride of 10, which shares no factor with 27, so neighbouring Omegas sound different and every voice is used; all 27 appear across the 44 Omegas. Avatar rows pick from the same pool by hashing the avatar id, and all 27 appear across the 447 rows.",
+    "There are three bodies of audio, and each has its own record (listed below). The hive's own lines are nearly complete; the dialogues and the avatar intros are a fraction done. All of it is stored the same way: mono AAC at 48 kbps and 24 kHz in an .mp4 container with faststart, loudness-normalised by ffmpeg in two passes to -16 LUFS integrated and -1.5 dBTP true peak.",
+    "Three contracts keep the record honest. First, a line counts as spoken only when its file exists and the manifest shows it was rendered from the same words, voice and speed; a hive line must also run 11.5 seconds or less, and a dialogue line is fitted to 18 seconds. Second, the avatar registry stores only the expected audio path, never a voiced or exists flag, because such a flag would go stale as lines are rendered; viewers check for the file at view time and otherwise use the browser's speech with the row's pitch, rate and language, labelled synthetic voice. Third, the voice manifest lists only lines actually rendered, so a missing entry means not voiced. When a line's text or voice changes, its entry is dropped and its file deleted before it is rendered again, so a viewer never plays an outdated line.",
+    "Every line discloses itself. The avatar intros end with \"You are hearing a synthetic voice\", the Omega greeting adds \"I am an agent, not a person\", and the voicing script skips and reports any row whose intro does not say so. Nothing plays on its own: the console builders check that no player autoplays and that playback starts only when a person presses play.",
+    "Rendering is polite to the machine it shares. The intro renderer (worldforge/voice/voice_intros.py) uses at most two threads, is time-boxed and resumable, and sleeps through the other team's film render windows. Hive audio is rebuilt from the registry and never committed; the repository ignores agents/hive/voices/."
+   ],
+   "bullets": [
+    "Omega lines (agents/hive/index.json): 176 lines, 173 spoken, 1,413.4 seconds in total.",
+    "Omega dialogues (agents/hive/dialogues.json): 352 lines (264 answers and 88 handoff turns), 50 spoken.",
+    "Avatar intros (worldforge/out/voices/manifest.json): 61 lines voiced, 41 coordinators and 20 specialists, 568.5 seconds in total."
+   ],
+   "facts": [
+    {"label": "Engine", "value": "Kokoro v1.0 (kokoro-onnx), Apache-2.0, local", "source": "agents/hive/index.json voice_engine; worldforge/out/voices/manifest.json engine"},
+    {"label": "Voice pool", "value": "27 of 28 English voices (am_santa excluded)", "source": "agents/hive.mjs ENGLISH_VOICES, VOICE_POOL; worldforge/out/avatars/index.json voice_pool"},
+    {"label": "Omega lines spoken", "value": "173 of 176", "source": "agents/hive/index.json totals"},
+    {"label": "Omega line audio", "value": "1,413.4 s", "source": "sum of agents/hive/index.json omegas[].lines[].seconds for lines with audio"},
+    {"label": "Dialogue lines spoken", "value": "50 of 352", "source": "agents/hive/dialogues.json totals (answers 264 + turns 88, spoken 50)"},
+    {"label": "Avatar intros voiced", "value": "61 (41 coordinators, 20 specialists), 568.5 s", "source": "worldforge/out/voices/manifest.json totals"},
+    {"label": "Audio format", "value": "mono AAC 48 kbps, 24 kHz, .mp4; -16 LUFS, -1.5 dBTP", "source": "worldforge/out/voices/manifest.json settings"},
+    {"label": "Hive line length limit", "value": "11.5 s", "source": "agents/hive.mjs (fresh-line test, same limit as agents/hive_voice.py)"}
+   ],
+   "visual_hint": "agents/hive/voices/locator-x/greet.mp4 as an audio sample with a caption that it is synthetic; worldforge/review/out/clips/cancer-dao-omega.mp4 for the Omega it belongs to.",
+   "not_done": [
+    "No model speaks live; every voiced line is a pre-rendered file of scripted text.",
+    "345 of 406 non-Omega avatar intros are not voiced: all 123 advisors and 222 of 242 specialists.",
+    "302 of 352 dialogue lines are not voiced.",
+    "3 Omega lines (two services lines and one role line) still run past the 11.5 s limit and carry no audio.",
+    "Hive audio is not in the repository; a fresh checkout has none until it is rebuilt locally."
+   ]
+  },
+  {
+   "id": "team-consoles",
+   "title": "Team consoles: static pages, stamped against their sources",
+   "dek": "Each console is a single self-contained page built from the registries; it runs no model, and a stamp shows when it has fallen behind what it reads.",
+   "paragraphs": [
+    "The consoles are where a person looks at the agents. Each is one static HTML page written by a Python builder from the registries. No page loads a remote script, stylesheet or font, and none runs a model. Every page carries a source stamp, a hash over the builder and exactly the data it was built from; the builder's --check recomputes it, so a console built before a swarm, prompt or registry changed reports STALE instead of quietly showing yesterday's agents. The WorldForge and hive builders also check that two builds are byte-identical, that no private repository name or stray email address reaches the page, that nothing plays until a person presses play, and that the page works at phone width in light and dark themes.",
+    "The WorldForge console (consoles/worldforge/index.html) shows the 41 worlds, each in its own team skin (hue, mark and lockup from worlds/generated/teams/<slug>.json), and all 939 Master Cards with their permission matrices. Rights held by the steward quorum render as \"held\"; each council shows exactly three empty human seats; every Omega card reads \"defined, not seated\". When the avatar registry exists the console reads it and checks it against the cards. It links to the viewer at a given world and card, to the hive console and to the teams console, and its builder runs 31 evals.",
+    "The Omega Hive console (consoles/hive/index.html) gives each of the 44 Omegas a drawer: persona chips, voice, the four lines with Play buttons, the full metaprompt, the refusals as locked chips, the RP1 dry-run line, routes and probes, and the Ask panel. Emblems are procedural hex cells drawn from the world slug; there are no faces and no pictures on the page. The latest heartbeat beat is embedded after redaction.",
+    "Four more consoles sit under agents/ (summarised below). Two of them run the project's own code in the page rather than describing it. In the agent console, \"Try a turn\" inlines the vendored middleware and pbcGuard verbatim, so a typed turn is routed, redacted and contained by exactly the code the swarm evals run. In the DAO console, \"Try a decision\" lets a visitor watch an agent's enact attempt be held while two steward votes enact. Both say plainly that they are rehearsals: state lives in the visitor's browser, the seats are scripted, and no treasury exists to move."
+   ],
+   "bullets": [
+    "agents/console.html: every world's swarm, prompts, advisors and evals, with \"Try a turn\" through the real middleware.",
+    "agents/teams.html: 43 team skins over 4,300 scaffold worlds and 20 custom spaces, each scaffold with no focus, name or location given by a person.",
+    "agents/dao.html: management teams, proposal pipelines, steward seats and decision logs, with \"Try a decision\".",
+    "agents/comms.html: one channel per world; an @mention routes through that channel's router, and an agent asked to enact or transfer answers \"Held for the Steward Council\"."
+   ],
+   "facts": [
+    {"label": "WorldForge console scope", "value": "41 worlds, 939 cards, 31 builder evals", "source": "consoles/worldforge/build_worldforge_console.py; worldforge/out/index.json totals"},
+    {"label": "Hive console scope", "value": "44 Omega drawers, each with an Ask panel", "source": "consoles/hive/build_hive_console.py; agents/hive/dialogues.json"},
+    {"label": "Scaffold worlds in the teams console", "value": "4,300 across 43 teams over 20 custom spaces", "source": "worlds/generated/index.json totals"},
+    {"label": "DAO rehearsal", "value": "43 DAO teams, 352 seats, 155 open proposals, 44 agent attempts held", "source": "DAO field of the latest beat in evidence/heartbeat.log"},
+    {"label": "Comms", "value": "41 channels, 529 messages, 41 held attempts, 123 human seats", "source": "COMMS field of the latest beat in evidence/heartbeat.log"},
+    {"label": "Console freshness in the latest beat", "value": "CONSOLE, TEAMS, DAOC, COMMSC and HIVEC all current", "source": "evidence/heartbeat.log, beat at 07:29:33"}
+   ],
+   "visual_hint": "worldforge/out/stills/console.jpg (WorldForge console); pitch/media/teams-console.jpg and pitch/media/dao-console.jpg for the agent consoles.",
+   "not_done": [
+    "The consoles are rehearsals: steward queues, comms messages and DAO decisions live only in the visitor's browser, with no shared record of human decisions behind them.",
+    "The WorldForge console's --check is not a field in deploy/evals.sh, so the heartbeat does not catch it going stale.",
+    "The consoles are served by the local static server; nothing is deployed.",
+    "The scaffold worlds in the teams console are templates; none has been promoted to a real world by a steward-written focus."
+   ]
+  },
+  {
+   "id": "heartbeat-and-evals",
+   "title": "Heartbeat, evals and stop rules",
+   "dek": "One line of evals, appended to a log on a cadence, that stops itself rather than keep beating over a broken build.",
+   "paragraphs": [
+    "deploy/evals.sh runs every check in the project and prints one line: the time, GREEN or RED, then 50 labelled fields from GLB to DISK. It exits 0 only when everything is green. Most fields are a builder's own summary line or the result of its --check. The fields that concern agents and the hive are SWARMS, LEDGER, PROMPTS, CONSOLE, TEAMS, DAO, DAOC, SERVICES, ADVISORY, ADVISORS, COMMS, COMMSC, HIVE, HIVEC, WORLDFORGE and DIALOGUES.",
+    "deploy/heartbeat.sh runs evals.sh on a cadence (by default every 5 minutes for 45 minutes, or once), appends every line to evidence/heartbeat.log, and stops with exit code 2 on any of three conditions: RED twice in a row, because a second failure means the build is broken rather than flickering; less than 500 MiB of free disk, because the next rebuild would fill the volume mid-write; and a local server that is down and cannot be started, because then there is nothing to measure. Its rule is \"Silence is not evidence\": a beat that could not run is written as RED with the reason, never skipped.",
+    "The log currently holds 92 beats: 69 GREEN and 23 RED, with 5 STOP lines where two REDs came in a row. The two most recent show the loop working. At 07:26:20 the beat was RED because one console had gone stale (ROBOPITCH: \"robotics pitch was built from 2d537efab0450e84, sources are now c0dad6e723d5d37c\"). It was rebuilt, and the 07:29:33 beat was GREEN. The agent fields of that latest beat are quoted below.",
+    "Three caveats sit in that same line, and they are part of the record. SERVE reads \"skipped (sandbox blocks local binding), files present\": the sandbox refused the local server, so the beat checked the files it would have served instead. The NETWORK check was added to evals.sh after that beat, so the latest logged line carries 49 checks rather than 50. And the GLB field's 667 validated models are the my-fabric worlds' models; the six avatar models are validated separately (worldforge/out/assets/avatars/validation.json).",
+    "Freshness and discrimination are the two habits that run through all of this. Consoles and registries carry a stamp or a --check mode that recomputes what they were built from, and the eval suites are fed deliberately broken inputs to prove it can fail: four broken prompts, 28 broken avatar fixtures, broken console fixtures. A suite that cannot fail tells you nothing; these are shown failing on purpose before they are trusted to pass."
+   ],
+   "bullets": [
+    "SWARMS: 41 swarms, 242 agents + 41 coordinators + 1 concierge; 0 failing evals",
+    "PROMPTS: 41 worlds, 571 prompts, 28 spec metaprompts awaiting a founder focus; 0 failing prompt evals",
+    "LEDGER: 284 entries (41 worlds), 0 failing checks",
+    "HIVE: 44 omegas, 44 personas, 27 voices, 176 lines (173 spoken), 0 failing hive evals",
+    "DIALOGUES: 44 omegas, 264 answers, 44 handoffs, 50 spoken, 0 failing dialogue evals",
+    "WORLDFORGE: current: 41 worlds, 939 cards, 1025 evals, 0 failing",
+    "ADVISORY: 5 example engagements, 3 rails (0 enabled), 44 omega agents, 0 failing advisory evals"
+   ],
+   "facts": [
+    {"label": "Labelled fields in one eval line", "value": "50 (GLB to DISK)", "source": "deploy/evals.sh (final echo line)"},
+    {"label": "Stop rules", "value": "RED twice in a row; disk below 500 MiB; server down and unstartable", "source": "deploy/heartbeat.sh"},
+    {"label": "Default cadence", "value": "every 5 minutes for 45 minutes", "source": "deploy/heartbeat.sh"},
+    {"label": "Beats logged", "value": "92 (69 GREEN, 23 RED)", "source": "evidence/heartbeat.log (lines beginning with a time and GREEN or RED)"},
+    {"label": "STOP lines", "value": "5, each for RED two beats in a row", "source": "evidence/heartbeat.log"},
+    {"label": "Latest beat", "value": "07:29:33 GREEN, preceded by 07:26:20 RED (ROBOPITCH stale)", "source": "evidence/heartbeat.log"},
+    {"label": "WorldForge evals in the latest beat", "value": "1,025, 0 failing", "source": "WORLDFORGE field of evidence/heartbeat.log; worldforge/out/index.json totals.evals"}
+   ],
+   "visual_hint": "A typeset excerpt of the 07:29:33 line from evidence/heartbeat.log with the agent fields highlighted; no still of the log exists.",
+   "not_done": [
+    "The heartbeat is a local process: no hosted monitoring, alerting or uptime record exists.",
+    "Not every registry is a heartbeat field: the avatar registry's 892 evals, the voice manifest check (worldforge/voice/voice_intros.py --check) and the WorldForge console check run in their own builders, not in deploy/evals.sh.",
+    "The latest logged beat predates the NETWORK check and ran with SERVE skipped under the sandbox.",
+    "my-fabric/spaces.py --check and my-fabric/scenes.py --check take minutes each and run at reviews, not every beat.",
+    "The log records times of day without dates."
+   ]
+  }
+ ],
+ "glossary": [
+  {"term": "Swarm", "definition": "One world's team of agents: a coordinator plus the specialists named in that world's spec, written to agents/swarms/<slug>.json."},
+  {"term": "Coordinator", "definition": "The agent that supervises a world's swarm: it takes fuzzy or unmatched turns, ends handoff loops and sends questions about other worlds to the concierge."},
+  {"term": "Specialist", "definition": "An agent with one role in one zone, taken from the world's spec with a cited source."},
+  {"term": "Concierge", "definition": "The AGI Corp directory agent above every world; it routes a visitor who names a world to that world's coordinator."},
+  {"term": "Hub-hybrid topology", "definition": "Routing in which a supervisor handles fuzzy or cross-world turns and specialists hand off directly where the boundaries are clear."},
+  {"term": "Handoff", "definition": "One agent passing a turn to another by naming its id; at most three per turn, and a loop ends with the coordinator."},
+  {"term": "Middleware", "definition": "The code every agent runs behind (agents/fabric/agent.mjs): it redacts PII both ways, contains forbidden actions and records each turn."},
+  {"term": "Forbidden action", "definition": "One of seven actions no agent may take whatever it is asked; an attempt is refused, logged and counted."},
+  {"term": "Reserved action", "definition": "One of six actions the charter keeps for people (final vote, charter amendment, treasury transfer, enactment, windfall distribution, steward appointment); an agent's attempt is held for the Steward Council."},
+  {"term": "Steward Council", "definition": "The three human seats of each world; it decides reserved actions by 2 of 3 signed votes. No agent sits on it."},
+  {"term": "Metaprompt", "definition": "A system prompt generated from the registries rather than typed; here it is reviewable text with a test suite, since no model runs."},
+  {"term": "Spec metaprompt", "definition": "The prompt that would regenerate a world's spec from the founder's one-line focus; marked not ready while that focus is unset."},
+  {"term": "Gate", "definition": "A single named check a prompt must pass, such as carrying every reserved action or citing the agent's own source."},
+  {"term": "Broken fixture", "definition": "A deliberately damaged input used to prove an eval suite can fail; it must fail exactly the check it was built to trip."},
+  {"term": "Persona prompt", "definition": "An avatar's prompt: a layer binding it to its card, model, voice and permissions, on top of the unchanged house metaprompt."},
+  {"term": "Master Card", "definition": "A WorldForge record for one object in a world (world, plaza, gate, council, seat, Omega, zone, agent and others), carrying its permissions and placement."},
+  {"term": "Volum", "definition": "A card's placement box in metres: a centre and half-extents in the world frame."},
+  {"term": "Seven-right permission table", "definition": "Who may view, enter, build, operate, delegate, transfer and govern a card; agents hold operate inside their own zone only."},
+  {"term": "Advisor", "definition": "A scripted guide (Host Advisor, Steward Liaison, Alignment Advisor): not an AI model and not a person, and by contract given no prompt."},
+  {"term": "Omega Steward", "definition": "The steward agent role defined for each company; 44 exist in the hive, all defined, not seated."},
+  {"term": "Defined, not seated", "definition": "A role that exists on paper with no agent placed in it; only a person can seat one."},
+  {"term": "grounded_in", "definition": "The list of <file>#<field> citations behind each persona or answer; every cited field must exist and be non-empty."},
+  {"term": "Kokoro", "definition": "The open-source (Apache-2.0) text-to-speech model, run locally, that produces every synthetic voice here."},
+  {"term": "Browser fallback", "definition": "When a voice file is missing, the browser's own speech reads the line with the registry's pitch, rate and language, labelled synthetic voice."},
+  {"term": "Source stamp", "definition": "A hash over a page's builder and the data it was built from; --check recomputes it to show whether the page is current."},
+  {"term": "Heartbeat", "definition": "deploy/heartbeat.sh running deploy/evals.sh on a cadence and appending each result line to evidence/heartbeat.log."},
+  {"term": "Stop rule", "definition": "A condition on which the heartbeat halts instead of continuing: RED twice in a row, low disk, or a server it cannot start."}
+ ],
+ "faq": [
+  {"q": "Does an AI model answer visitors today?", "a": "No. Every agent is a deterministic stub that answers with its role and hands off by keyword, so routing, redaction and containment can be tested without credentials. The prompts a model would receive exist and are tested; the adapters that would connect a model are design only and have never been run."},
+  {"q": "Can an agent vote, move money or change the charter?", "a": "No. governance.final_vote, charter.amend, treasury.transfer, proposal.enact, windfall.distribute and steward.appoint are reserved for people. The middleware strips any attempt and marks it \"Held for the Steward Council\", which decides by 2 of 3 signed votes. Every world swarm is tested for this, and all 41 pass."},
+  {"q": "Are the Omega Stewards seated, or people?", "a": "Neither. All 44 are defined, not seated, and each says in its greeting that it is an agent with a synthetic voice, not a person. Names are role titles; no persona imitates a real person."},
+  {"q": "Whose voices are these?", "a": "No one's. Every voice is Kokoro text-to-speech run locally from scripted text, and every line says the voice is synthetic. A character voice in the pool was excluded for that reason."},
+  {"q": "How much is actually voiced?", "a": "173 of 176 Omega lines, 50 of 352 dialogue lines and 61 avatar intros (41 coordinators and 20 specialists). The advisors and most specialists are not voiced yet. The registries store only what was rendered."},
+  {"q": "Why do 123 avatars have no prompt?", "a": "They are advisors: scripted guides that read fixed records. By contract they are not AI models, so they get no persona prompt and no metaprompt binding."},
+  {"q": "How do you know the prompts have not drifted from the swarms?", "a": "evalPrompt checks that every specialist's prompt contains each keyword the coordinator routes on, and the whole suite is proved able to fail by four broken prompts that each fail exactly their own check. The PROMPTS field of the heartbeat reports 0 failing across 571 prompts."},
+  {"q": "Is any of this deployed, minted or mounted?", "a": "No. Nothing is deployed or minted on any chain (worldforge/out/onchain/index.json: not deployed, not minted). The scenes are not mounted in Sneeze. Only 4 of 41 worlds have an RP1 anchor (worldforge/out/index.json totals.anchored), and whether any world is published on RP1 is the founder's call."},
+  {"q": "Why did Autonomous Organizations score 0.8 on routing?", "a": "It routed 4 of its 5 zone questions to an accepted agent. That meets the 0.8 threshold exactly and is recorded as it was measured, not rounded up."},
+  {"q": "What stops a stale page or a broken build from looking green?", "a": "Every console and registry has a --check that recomputes its source stamp, and the heartbeat stops itself after two REDs in a row. The most recent RED, a stale robotics pitch console, was rebuilt and the next beat was GREEN."}
+ ]
+}

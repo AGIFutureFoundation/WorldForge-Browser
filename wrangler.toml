@@ -1,4 +1,4 @@
-# Cloudflare Pages project config for the WorldForge static site (see tools/DEPLOY.md).
+# Cloudflare Pages project config for the WorldForge static site (see worldforge/site/DEPLOY.md).
 # No account id, token or secret belongs in this file: `npx wrangler login` keeps the founder's login outside the repo.
 # "smartciti-worldforge" is a placeholder project name; the founder picks the real one.
 name = "smartciti-worldforge"

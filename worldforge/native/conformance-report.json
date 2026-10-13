@@ -1,0 +1,411 @@
+{
+ "schemaVersion": "worldforge-sneeze-conformance/0.1",
+ "generator": "worldforge/native/mount_plan_conformance.mjs",
+ "status": "static-check-only-nothing-mounted-or-rendered",
+ "verifiedAgainst": {
+  "sneeze": {
+   "url": "https://github.com/MetaversalCorp/Sneeze",
+   "commit": "0008d08bc46546a29a93b447f3b173202358b69a"
+  },
+  "map": {
+   "url": "https://github.com/MetaversalCorp/Map",
+   "commit": "0e6d26ac34f4627baf86c333062a3981a6c40742"
+  },
+  "rmap": {
+   "url": "https://github.com/MetaversalCorp/RMAP",
+   "commit": "0fd7efba6febda9dc97a9f629732a380ef7f2dc7"
+  }
+ },
+ "limits": {
+  "nameUnitsField": {
+   "value": 48,
+   "cite": "Map/include/Map/Map_Object.h:28 (uint16_t wsName[48])"
+  },
+  "nameUnitsMax": {
+   "value": 47,
+   "cite": "every engine writer that clamps keeps a NUL: Map/src/Map_Object.cpp:142 via RMAP/RMAP/src/Utils.cpp:192-202 (nLength - 1), Sneeze/src/deps/wasm/HostFunctions.cpp:1009-1013, Sneeze/src/context/scene/Scene.md:299-304. The only reader, Sneeze/src/context/scene/Node.cpp:715-717, stops at NUL or 48, so 47 is the round-trip limit, not a crash limit"
+  },
+  "nameBmpOnly": {
+   "value": true,
+   "cite": "Sneeze/src/context/scene/Node.cpp:713-735 (NODE::Name decodes BMP UTF-16 only)"
+  },
+  "nameJsonBytesMax": {
+   "value": 47,
+   "cite": "Sneeze/src/context/scene/RmcObject.cpp:136-145,172 (copies bytes one-per-unit with limit sizeof(wsName)-1 = 95, which overruns wsName[48] past 48 bytes)"
+  },
+  "nameJsonAsciiOnly": {
+   "value": true,
+   "cite": "Sneeze/src/context/scene/RmcObject.cpp:141-143 (static_cast<uint16_t>(s[i]) per byte, no UTF-8 decode)"
+  },
+  "referenceBytesField": {
+   "value": 128,
+   "cite": "Map/include/Map/Map_Object.h:48 (char sReference[128])"
+  },
+  "referenceBytesMax": {
+   "value": 127,
+   "cite": "Sneeze/src/context/scene/RmcObject.cpp:126-134,190 (copies nMax - 1); Node.cpp:155,208 read it as a C string"
+  },
+  "referenceNotAction": {
+   "value": "action:",
+   "cite": "Sneeze/src/context/scene/Node.cpp:207 (an \"action:\" reference is never fetched)"
+  },
+  "referenceMapServiceBytes": {
+   "value": 64,
+   "cite": "Map/src/pch.h:48 MVO_SIZE_RMREFERENCE, Map/src/Source_SB_Object.h:86-91 (map-service route only; advisory here)"
+  },
+  "classes": {
+   "value": {
+    "MAP_OBJECT_ROOT": 70,
+    "MAP_OBJECT_CELESTIAL": 71,
+    "MAP_OBJECT_TERRESTRIAL": 72,
+    "MAP_OBJECT_PHYSICAL": 73,
+    "MAP_OBJECT_PANEL": 74,
+    "MAP_OBJECT_LIGHT": 75,
+    "MAP_OBJECT_CLASS_ROOT": 70,
+    "MAP_OBJECT_CLASS_CELESTIAL": 71,
+    "MAP_OBJECT_CLASS_TERRESTRIAL": 72,
+    "MAP_OBJECT_CLASS_PHYSICAL": 73,
+    "MAP_OBJECT_CLASS_PANEL": 74,
+    "MAP_OBJECT_CLASS_LIGHT": 75
+   },
+   "cite": "Map/include/Map/Map_Object.h:16-24 (enum MAP_OBJECT_CLASS); derived-type spellings from Sneeze/src/context/scene/Scene.md:364-371; Map/src/Map_Object.cpp:98-113 returns nullptr for any other value"
+  },
+  "quaternion": {
+   "value": {
+    "order": "x,y,z,w",
+    "tolerance": 0.000001
+   },
+   "cite": "Map/include/Map/Map_Object.h:54,159-165; Map/src/Map_Object.cpp:185-192; Sneeze/src/sneeze/control/Compositor.cpp:231-249 (matrix built from q without normalising)"
+  },
+  "scaleNonZero": {
+   "value": true,
+   "cite": "Sneeze/src/context/scene/RmcObject.h:25-28 (a zero-scale ancestor collapses every descendant)"
+  },
+  "parentBeforeChild": {
+   "value": true,
+   "cite": "Sneeze/src/context/Container.cpp:297-312 (Node_Open needs the parent handle, found via Node_Find), 280-295 (Node_Root once per fabric), 409-489 (Branch_Add: first node is the root)"
+  },
+  "upAxis": {
+   "value": "Z",
+   "cite": "Sneeze/src/context/viewport/GltfMesh.cpp:1827-1830, Sneeze/src/sneeze/control/Compositor.cpp:1125-1126"
+  }
+ },
+ "totals": {
+  "plans": 41,
+  "nodes": 2042,
+  "native": {
+   "violations": 0,
+   "byRule": {},
+   "nameUnitsByOrigin": {
+    "umbrellaSuffix": {
+     "nodes": 0,
+     "byKind": {},
+     "source": "worldforge/build.mjs:94 nodeName(): \"<label> · <PBC.umbrella>\" budgeted to NAME_LIMIT = 48 (:37); clamping to 47 drops the last letter of the umbrella"
+    },
+    "primitiveIdTail": {
+     "nodes": 0,
+     "byKind": {},
+     "source": "worldforge/build.mjs:388 mountPlan(): displayName = primitiveId.slice(-NAME_LIMIT); clamping to 47 drops the last character of the path (\".../pad\" -> \".../pa\")"
+    },
+    "other": {
+     "nodes": 0,
+     "byKind": {},
+     "source": "neither of the above"
+    }
+   }
+  },
+  "json": {
+   "violations": 0,
+   "nodesAffected": 0,
+   "byRule": {},
+   "nameBytesSplit": {
+    "exactly48NoNul": {
+     "nodes": 0,
+     "note": "fills wsName[48] with no NUL; NODE::Name stops at 48 (Node.cpp:715-717), so no overrun"
+    },
+    "over48IntoType": {
+     "nodes": 0,
+     "note": "bytes 49 on land at POD offset 96 (Type) and beyond (RmcObject.cpp:141-143, 172; U1)"
+    }
+   }
+  }
+ },
+ "advisories": {
+  "frameConversion": {
+   "plans": 41,
+   "note": "plan declares up = \"Y\"; the decoder applies Rx(+90) per node (GltfMesh.cpp:1827-1830)"
+  },
+  "mountParentRootFabric": {
+   "plans": 41,
+   "note": "mountParent names the scene root fabric. Node_Root needs a fabric without a root (Container.cpp:290), so the plan root would be Node_Open-ed under the root container's ROOT node (as Scene.cpp:205-221 does for the primary attach node), owned by no MSF. The content route is a fabric of its own: RMCOBJECT_MAPPING.md section 5."
+  },
+  "noNativeSlot": {
+   "nodes": 2042,
+   "note": "cardId, parentCardId and extras have no MAP_OBJECT_POD field (Map_Object.h:124-134); the mounting code keeps cardId -> handle"
+  },
+  "noBound": {
+   "nodes": 2042,
+   "note": "plan carries no volume, so Bound.d3Max stays zero (Compositor.cpp:647-653 use it for framing)"
+  },
+  "mapServiceReference": {
+   "nodes": 0,
+   "note": "references over 63 bytes would not fit the map-service STRING(64) (map-managed route only)"
+  },
+  "classNotACppType": {
+   "nodes": 1103,
+   "note": "MAP_OBJECT_PHYSICAL is not a C++ class in Map; class 73 builds a base MAP_OBJECT (Map_Object.cpp:107). The discriminator is valid."
+  }
+ },
+ "perPlan": [
+  {
+   "slug": "agentic-payments",
+   "nodes": 45,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "agents-deploy-infrastructure",
+   "nodes": 53,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "autonomous-organizations",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "biota-blockchain",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "cancer-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "climate-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "diagnostic-x",
+   "nodes": 43,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "ecology-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "education-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "empathic-x",
+   "nodes": 48,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "locator-x",
+   "nodes": 53,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "public-health-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "robotics-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s04-curable-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s05-biopharma-go",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s06-blockchain",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s07-divine-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s09-astrological-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s11-molecular",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s12-parking-smart-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s13-gonstead-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s14-askdoc-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s15-romanbridge-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s16-echodawn-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s17-curable-blockchain-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s19-moscone-x",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s20-cmmc",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s21-incubator-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s22-get-delivery-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s23-avatar-chat",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s24-donatello-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s25-mypet-ai",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s26-lyka-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s27-genomic-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s28-genomic-blockchain",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s29-metaverse-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s31-aerospace-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s32-solar-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s33-infogurus",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s34-als-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  },
+  {
+   "slug": "s35-parkinsons-dao",
+   "nodes": 50,
+   "nativeViolations": 0,
+   "jsonRouteViolations": 0
+  }
+ ],
+ "violations": {
+  "native": [],
+  "jsonOnlyExamples": []
+ }
+}

@@ -1,0 +1,618 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:s09-astrological-x",
+ "rootCardId": "world:s09-astrological-x",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:s09-astrological-x/charter-hall",
+   "displayName": "Charter Hall",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "displayName": "Research Synthesis Lab",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s09-astrological-x/proposal-forum",
+   "displayName": "Proposal Forum",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s09-astrological-x/operations-deck",
+   "displayName": "Operations Deck",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:s09-astrological-x/progress-observatory",
+   "displayName": "Progress Observatory",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:s09-astrological-x/floor",
+   "parentCardId": "plaza:s09-astrological-x",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:s09-astrological-x/avatar",
+   "parentCardId": "coordinator:s09-astrological-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s09-astrological-x/host/avatar",
+   "parentCardId": "advisor:s09-astrological-x/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s09-astrological-x/steward/avatar",
+   "parentCardId": "advisor:s09-astrological-x/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:s09-astrological-x/alignment/avatar",
+   "parentCardId": "advisor:s09-astrological-x/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:s09-astrological-x/arch",
+   "parentCardId": "gate:s09-astrological-x",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:s09-astrological-x/chamber",
+   "parentCardId": "council:s09-astrological-x",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:s09-astrological-x/steward-1/chair",
+   "parentCardId": "seat:s09-astrological-x/steward-1",
+   "zoneCardId": "council:s09-astrological-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s09-astrological-x/steward-2/chair",
+   "parentCardId": "seat:s09-astrological-x/steward-2",
+   "zoneCardId": "council:s09-astrological-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:s09-astrological-x/steward-3/chair",
+   "parentCardId": "seat:s09-astrological-x/steward-3",
+   "zoneCardId": "council:s09-astrological-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:s09-astrological-x/avatar",
+   "parentCardId": "omega:s09-astrological-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/charter-hall/pad",
+   "parentCardId": "zone:s09-astrological-x/charter-hall",
+   "zoneCardId": "zone:s09-astrological-x/charter-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/charter-hall/hall",
+   "parentCardId": "zone:s09-astrological-x/charter-hall",
+   "zoneCardId": "zone:s09-astrological-x/charter-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    12,
+    10
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/research-synthesis-lab/pad",
+   "parentCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "zoneCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/research-synthesis-lab/hall",
+   "parentCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "zoneCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/evidence-monitor/avatar",
+   "parentCardId": "agent:s09-astrological-x/evidence-monitor",
+   "zoneCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/research-synthesis-agent/avatar",
+   "parentCardId": "agent:s09-astrological-x/research-synthesis-agent",
+   "zoneCardId": "zone:s09-astrological-x/research-synthesis-lab",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/proposal-forum/pad",
+   "parentCardId": "zone:s09-astrological-x/proposal-forum",
+   "zoneCardId": "zone:s09-astrological-x/proposal-forum",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/proposal-forum/hall",
+   "parentCardId": "zone:s09-astrological-x/proposal-forum",
+   "zoneCardId": "zone:s09-astrological-x/proposal-forum",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/proposal-grant-drafter/avatar",
+   "parentCardId": "agent:s09-astrological-x/proposal-grant-drafter",
+   "zoneCardId": "zone:s09-astrological-x/proposal-forum",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/operations-deck/pad",
+   "parentCardId": "zone:s09-astrological-x/operations-deck",
+   "zoneCardId": "zone:s09-astrological-x/operations-deck",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/operations-deck/hall",
+   "parentCardId": "zone:s09-astrological-x/operations-deck",
+   "zoneCardId": "zone:s09-astrological-x/operations-deck",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    20,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/collaborator-scout/avatar",
+   "parentCardId": "agent:s09-astrological-x/collaborator-scout",
+   "zoneCardId": "zone:s09-astrological-x/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    90.76,
+    0.4,
+    -31.33
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/task-router/avatar",
+   "parentCardId": "agent:s09-astrological-x/task-router",
+   "zoneCardId": "zone:s09-astrological-x/operations-deck",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.84,
+    0.4,
+    -28
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/progress-observatory/pad",
+   "parentCardId": "zone:s09-astrological-x/progress-observatory",
+   "zoneCardId": "zone:s09-astrological-x/progress-observatory",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:s09-astrological-x/progress-observatory/hall",
+   "parentCardId": "zone:s09-astrological-x/progress-observatory",
+   "zoneCardId": "zone:s09-astrological-x/progress-observatory",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:s09-astrological-x/progress-tracker/avatar",
+   "parentCardId": "agent:s09-astrological-x/progress-tracker",
+   "zoneCardId": "zone:s09-astrological-x/progress-observatory",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:s09-astrological-x/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/charter-hall",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/research-synthesis-lab",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/proposal-forum",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/operations-deck",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:s09-astrological-x/progress-observatory",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

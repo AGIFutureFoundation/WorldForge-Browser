@@ -1,0 +1,601 @@
+{
+ "schemaVersion": "worldforge-blockout/0.1",
+ "blockoutId": "blockout:empathic-x",
+ "rootCardId": "world:empathic-x",
+ "coordinateFrame": {
+  "units": "metres",
+  "up": "Y",
+  "extentXZ": [
+   -150,
+   150
+  ]
+ },
+ "provenance": {
+  "authorship": "independently-generated-synthetic-massing",
+  "sourceCoordinatesImported": false,
+  "externalGeometryImported": false,
+  "spec": "my-fabric/worlds/index.json"
+ },
+ "zones": [
+  {
+   "cardId": "zone:empathic-x/self-reader-grove",
+   "displayName": "Self-Reader Grove",
+   "centerXZ": [
+    -52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:empathic-x/other-reader-commons",
+   "displayName": "Other-Reader Commons",
+   "centerXZ": [
+    -85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:empathic-x/repairer-s-hall",
+   "displayName": "Repairer's Hall",
+   "centerXZ": [
+    0,
+    -90
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:empathic-x/room-reader-plaza",
+   "displayName": "Room-Reader Plaza",
+   "centerXZ": [
+    85.6,
+    -27.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  },
+  {
+   "cardId": "zone:empathic-x/practitioner-workshop",
+   "displayName": "Practitioner Workshop",
+   "centerXZ": [
+    52.9,
+    72.81
+   ],
+   "researchTags": [],
+   "evidenceStatus": "cited-in-spec"
+  }
+ ],
+ "primitives": [
+  {
+   "primitiveId": "plaza:empathic-x/floor",
+   "parentCardId": "plaza:empathic-x",
+   "zoneCardId": null,
+   "shape": "pad",
+   "massingType": "plaza",
+   "position": [
+    0,
+    0,
+    0
+   ],
+   "dimensions": [
+    48,
+    0.4,
+    48
+   ]
+  },
+  {
+   "primitiveId": "coordinator:empathic-x/avatar",
+   "parentCardId": "coordinator:empathic-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    8
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:empathic-x/host/avatar",
+   "parentCardId": "advisor:empathic-x/host",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:empathic-x/steward/avatar",
+   "parentCardId": "advisor:empathic-x/steward",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -14
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "advisor:empathic-x/alignment/avatar",
+   "parentCardId": "advisor:empathic-x/alignment",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -9.9,
+    0.4,
+    -9.9
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "gate:empathic-x/arch",
+   "parentCardId": "gate:empathic-x",
+   "zoneCardId": null,
+   "shape": "arch",
+   "massingType": "gate",
+   "position": [
+    0,
+    0,
+    130
+   ],
+   "dimensions": [
+    16,
+    10,
+    2
+   ]
+  },
+  {
+   "primitiveId": "council:empathic-x/chamber",
+   "parentCardId": "council:empathic-x",
+   "zoneCardId": null,
+   "shape": "box",
+   "massingType": "council",
+   "position": [
+    0,
+    0,
+    -130
+   ],
+   "dimensions": [
+    28,
+    8,
+    20
+   ]
+  },
+  {
+   "primitiveId": "seat:empathic-x/steward-1/chair",
+   "parentCardId": "seat:empathic-x/steward-1",
+   "zoneCardId": "council:empathic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    -6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:empathic-x/steward-2/chair",
+   "parentCardId": "seat:empathic-x/steward-2",
+   "zoneCardId": "council:empathic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    0,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "seat:empathic-x/steward-3/chair",
+   "parentCardId": "seat:empathic-x/steward-3",
+   "zoneCardId": "council:empathic-x",
+   "shape": "box",
+   "massingType": "seat",
+   "position": [
+    6,
+    8,
+    -130
+   ],
+   "dimensions": [
+    2,
+    2,
+    2
+   ]
+  },
+  {
+   "primitiveId": "omega:empathic-x/avatar",
+   "parentCardId": "omega:empathic-x",
+   "zoneCardId": null,
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    26,
+    0.4,
+    -130
+   ],
+   "dimensions": [
+    1.2,
+    2.2,
+    1.2
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/self-reader-grove/pad",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "zoneCardId": "zone:empathic-x/self-reader-grove",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/self-reader-grove/hall",
+   "parentCardId": "zone:empathic-x/self-reader-grove",
+   "zoneCardId": "zone:empathic-x/self-reader-grove",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:empathic-x/self-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/self-reader-guide",
+   "zoneCardId": "zone:empathic-x/self-reader-grove",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/other-reader-commons/pad",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "zoneCardId": "zone:empathic-x/other-reader-commons",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    -85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/other-reader-commons/hall",
+   "parentCardId": "zone:empathic-x/other-reader-commons",
+   "zoneCardId": "zone:empathic-x/other-reader-commons",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    -77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:empathic-x/other-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/other-reader-guide",
+   "zoneCardId": "zone:empathic-x/other-reader-commons",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    -91.3,
+    0.4,
+    -29.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/repairer-s-hall/pad",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "zoneCardId": "zone:empathic-x/repairer-s-hall",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    0,
+    0,
+    -90
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/repairer-s-hall/hall",
+   "parentCardId": "zone:empathic-x/repairer-s-hall",
+   "zoneCardId": "zone:empathic-x/repairer-s-hall",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    0,
+    0.4,
+    -82
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:empathic-x/repair-guide/avatar",
+   "parentCardId": "agent:empathic-x/repair-guide",
+   "zoneCardId": "zone:empathic-x/repairer-s-hall",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    0,
+    0.4,
+    -96
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/room-reader-plaza/pad",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "zoneCardId": "zone:empathic-x/room-reader-plaza",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    85.6,
+    0,
+    -27.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/room-reader-plaza/hall",
+   "parentCardId": "zone:empathic-x/room-reader-plaza",
+   "zoneCardId": "zone:empathic-x/room-reader-plaza",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    77.99,
+    0.4,
+    -25.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:empathic-x/room-reader-guide/avatar",
+   "parentCardId": "agent:empathic-x/room-reader-guide",
+   "zoneCardId": "zone:empathic-x/room-reader-plaza",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    91.3,
+    0.4,
+    -29.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/practitioner-workshop/pad",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "zoneCardId": "zone:empathic-x/practitioner-workshop",
+   "shape": "pad",
+   "massingType": "zone-pad",
+   "position": [
+    52.9,
+    0,
+    72.81
+   ],
+   "dimensions": [
+    32,
+    0.4,
+    32
+   ]
+  },
+  {
+   "primitiveId": "zone:empathic-x/practitioner-workshop/hall",
+   "parentCardId": "zone:empathic-x/practitioner-workshop",
+   "zoneCardId": "zone:empathic-x/practitioner-workshop",
+   "shape": "box",
+   "massingType": "zone-hall",
+   "position": [
+    48.2,
+    0.4,
+    66.34
+   ],
+   "dimensions": [
+    14,
+    16,
+    10
+   ]
+  },
+  {
+   "primitiveId": "agent:empathic-x/practitioner-guide/avatar",
+   "parentCardId": "agent:empathic-x/practitioner-guide",
+   "zoneCardId": "zone:empathic-x/practitioner-workshop",
+   "shape": "capsule",
+   "massingType": "agent-avatar",
+   "position": [
+    56.43,
+    0.4,
+    77.67
+   ],
+   "dimensions": [
+    1,
+    1.8,
+    1
+   ]
+  }
+ ],
+ "roads": [
+  {
+   "primitiveId": "road:empathic-x/gate",
+   "startXZ": [
+    0,
+    130
+   ],
+   "endXZ": [
+    0,
+    24
+   ],
+   "widthMeters": 8
+  },
+  {
+   "primitiveId": "road:empathic-x/council",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -120
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:empathic-x/self-reader-grove",
+   "startXZ": [
+    -14.11,
+    19.42
+   ],
+   "endXZ": [
+    -43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:empathic-x/other-reader-commons",
+   "startXZ": [
+    -22.83,
+    -7.42
+   ],
+   "endXZ": [
+    -70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:empathic-x/repairer-s-hall",
+   "startXZ": [
+    0,
+    -24
+   ],
+   "endXZ": [
+    0,
+    -74
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:empathic-x/room-reader-plaza",
+   "startXZ": [
+    22.83,
+    -7.42
+   ],
+   "endXZ": [
+    70.38,
+    -22.87
+   ],
+   "widthMeters": 6
+  },
+  {
+   "primitiveId": "road:empathic-x/practitioner-workshop",
+   "startXZ": [
+    14.11,
+    19.42
+   ],
+   "endXZ": [
+    43.5,
+    59.87
+   ],
+   "widthMeters": 6
+  }
+ ]
+}

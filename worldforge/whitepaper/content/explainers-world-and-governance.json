@@ -1,0 +1,770 @@
+{
+ "group": "world-and-governance",
+ "schema": "whitepaper-explainers/0.1",
+ "umbrella": "Powered by AGI Corp",
+ "owner": "AGI Future Foundation PBC",
+ "principle": "Agents operate; people govern.",
+ "checked": "2026-10-12: every fact value was re-read from the source it names and asserted before this file was written",
+ "sources_read": [
+  "agents/advisors/cancer-dao.json",
+  "agents/hive/dialogues.json",
+  "agents/hive/index.json",
+  "agents/keyring.mjs",
+  "agents/ledger/ONCHAIN.md",
+  "agents/ledger/ledger.jsonl",
+  "agents/ledger/stewards.json",
+  "agents/swarms/cancer-dao.json",
+  "agents/x402/cancer-dao.json",
+  "agents/x402/index.json",
+  "agents/x402/keyring_gate.json",
+  "governance/advisory_rails.md",
+  "governance/entities.json",
+  "governance/keyring/HEAD",
+  "governance/keyring/registry.json",
+  "my-fabric/worlds/index.json",
+  "worldforge/README.md",
+  "worldforge/native/conformance-report.json",
+  "worldforge/out/<slug>/cards.json",
+  "worldforge/out/<slug>/manifest.json",
+  "worldforge/out/assets/landmarks/index.json",
+  "worldforge/out/cancer-dao/cards.json",
+  "worldforge/out/cancer-dao/manifest.json",
+  "worldforge/out/index.json",
+  "worldforge/out/onchain/index.json",
+  "worlds/PBC.json",
+  "worlds/focus.json",
+  "worlds/series.json",
+  "worlds/sources/founder-tracks-2026-09-28.md"
+ ],
+ "sections": [
+  {
+   "id": "world-network",
+   "title": "The world network: 41 worlds in four families",
+   "dek": "Forty-one coming-soon worlds share one charter and one rulebook, and each family of worlds exists for a reason the registries record.",
+   "paragraphs": [
+    "The network starts as a list. my-fabric/worlds/index.json names 41 worlds, and WorldForge carries every one of them into worldforge/out/index.json, where each world gets its Master Cards, a blockout, a card-tagged glTF file and a manifest. All 41 are marked \"coming soon\". All 41 use the same management model, the Agent-managed DAO, with three steward seats and the same six actions reserved for people. Every world names its owner, AGI Future Foundation PBC, and carries the umbrella \"Powered by AGI Corp\".",
+    "The worlds fall into four families, and the family decides where a world's content comes from. The six PBC focus DAOs (Cancer, Robotics, Ecology, Climate, Education and Public Health) come from the Global Issue Focus in the foundation's mission, recorded under focus_domains in worlds/PBC.json. The 28 W3 LLC series worlds, slugs s04 to s35, come from the founder's series list in worlds/series.json. They have a name and a series number and nothing more yet, so worlds/focus.json records \"focus and RP1 location not yet given\" for each one. The three program-track worlds (Agentic Payments, Agents That Deploy Infrastructure and Autonomous Organizations) are built only from three track descriptions the founder pasted on 2026-09-28, and every zone and agent in them cites a line of that text. The four earlier worlds (Locator.X, Biota.blockchain, Empathic.X and Diagnostic.X) came before the shared template and draw their zones from their own source documents.",
+    "The families overlap with the W3 LLC series list, and the overlap is worth stating exactly. worlds/series.json lists 35 series. Thirty-three of them are among the 41 worlds: the 28 named-only worlds, the four earlier worlds (Series 2, 3, 8 and 18), and Robotics DAO, which is both a focus DAO and Series 30. The other two, Cognition.X (Series 1) and SmartCiti.X (Series 10), are fabrics that were already built. They are listed separately under \"built\" in my-fabric/worlds/index.json and are not counted in the 41.",
+    "A named-only world has no charter yet, so its spaces follow the shared PBC template: Charter Hall, Research Synthesis Lab, Proposal Forum, Operations Deck and Progress Observatory, plus the Steward Council. That is why 28 worlds look alike, and it is deliberate. The template shows the governance shape without inventing a mission. When the stewards write a focus line into worlds/focus.json, it flows into that world's spec. Until then the world's Omega Steward says plainly that its focus is not set.",
+    "Across the network WorldForge counts 939 Master Cards, 242 specialist agents, 246 zones and councils, 1,103 blockout primitives and 287 roads. It runs 1,025 evals, and none fails. A rule, not a hand choice, gives each family its own civic landmark style: setback towers for the 28 series worlds, a rotunda for the six focus DAOs, a twisting tower for the three tracks and an octagonal prism for the four earlier worlds. What makes this a network rather than 41 separate scenes is the shared rulebook, the shared building and avatar sets, and the handoffs between worlds. Each Omega Steward has one scripted handoff that sends a visitor to another world's Omega when its own world lacks the service asked for."
+   ],
+   "bullets": [
+    "PBC focus DAOs: 6 worlds, 138 cards, 36 specialist agents, 0 anchored on RP1.",
+    "W3 LLC series worlds (named only): 28 worlds, 644 cards, 168 specialist agents, 0 anchored.",
+    "Program tracks: 3 worlds, 68 cards, 17 specialist agents, 0 anchored.",
+    "Earlier worlds with their own sources: 4 worlds, 89 cards, 21 specialist agents, 4 anchored."
+   ],
+   "facts": [
+    {
+     "label": "Worlds in the network",
+     "value": "41",
+     "source": "worldforge/out/index.json#totals.worlds"
+    },
+    {
+     "label": "PBC focus DAOs",
+     "value": "6",
+     "source": "worlds/PBC.json#focus_domains (6 entries)"
+    },
+    {
+     "label": "W3 LLC series worlds, named only",
+     "value": "28",
+     "source": "worlds/focus.json#worlds (28 notes read \"W3 LLC series named only\")"
+    },
+    {
+     "label": "Program-track worlds",
+     "value": "3",
+     "source": "worldforge/out/assets/landmarks/index.json#styles.track-twist.count; worlds/sources/founder-tracks-2026-09-28.md"
+    },
+    {
+     "label": "Earlier worlds with their own source documents",
+     "value": "4",
+     "source": "worldforge/out/assets/landmarks/index.json#styles.platform-prism.count"
+    },
+    {
+     "label": "Series in the W3 LLC list",
+     "value": "35",
+     "source": "worlds/series.json#series (35 entries)"
+    },
+    {
+     "label": "Master Cards",
+     "value": "939",
+     "source": "worldforge/out/index.json#totals.cards"
+    },
+    {
+     "label": "Specialist agents",
+     "value": "242",
+     "source": "worldforge/out/index.json#worlds[*].agents (sum)"
+    },
+    {
+     "label": "Zones including councils",
+     "value": "246",
+     "source": "worldforge/out/index.json#worlds[*].zones (sum)"
+    },
+    {
+     "label": "Blockout primitives",
+     "value": "1,103",
+     "source": "worldforge/out/index.json#totals.primitives"
+    },
+    {
+     "label": "Roads",
+     "value": "287",
+     "source": "worldforge/out/index.json#worlds[*].roads (sum)"
+    },
+    {
+     "label": "Evals run",
+     "value": "1,025",
+     "source": "worldforge/out/index.json#totals.evals"
+    },
+    {
+     "label": "Evals failing",
+     "value": "0",
+     "source": "worldforge/out/index.json#totals.failed"
+    },
+    {
+     "label": "Worlds with an RP1 anchor",
+     "value": "4",
+     "source": "worldforge/out/index.json#totals.anchored"
+    },
+    {
+     "label": "Status of every world",
+     "value": "coming soon",
+     "source": "my-fabric/worlds/index.json#worlds[*].status"
+    },
+    {
+     "label": "Chartered worlds with a focus set",
+     "value": "0",
+     "source": "worlds/focus.json#worlds[*].focus (34 entries, all null)"
+    }
+   ],
+   "visual_hint": "worldforge/out/assets/landmarks/preview.jpg (all 41 landmarks, one style per family); worldforge/out/stills/viewer-orbit.jpg for one world from above",
+   "not_done": [
+    "37 of 41 worlds have no RP1 anchor; only Locator.X, Biota.blockchain, Empathic.X and Diagnostic.X carry coordinates.",
+    "All 34 chartered worlds (6 focus DAOs and 28 series worlds) have a null focus in worlds/focus.json, so no charter outcomes are set.",
+    "No world is published on RP1's Earth. Publication is the founder's call.",
+    "No world is mounted in Sneeze. Every world's mount-plan gate reads \"prepared-not-mounted\".",
+    "The W3 LLC series are described, not documented: no formation document or series designation has been provided (governance/entities.json)."
+   ]
+  },
+  {
+   "id": "walkthrough-cancer-dao",
+   "title": "One world, gate to council: a walk through Cancer DAO",
+   "dek": "Cancer DAO shows the whole template in 23 cards, laid out on one axis that runs from the Alignment Evaluation Gate to the Steward Council.",
+   "paragraphs": [
+    "Every world follows the same layout pattern, so one walk shows it. Cancer DAO is a focus DAO; its card calls it a mission-focused DAO for cancer research support, agent-managed and human-governed. Its world card covers a Volum 300 m wide, 300 m deep and 80 m high, and the world holds 23 cards: the world itself, a plaza, a coordinator, three advisors, a gate, a council with three seats, an Omega Steward, five zones and six agents. Distances are card centres in metres, from worldforge/out/cancer-dao/cards.json.",
+    "The gate. You arrive at the Alignment Evaluation Gate, 130 m from the plaza centre on the world's main axis. It is 20 m wide and 12 m high, and its card gives its purpose as pre-registered safety evaluation before deployment, citing worlds/PBC.json. Past the gate, five zone buildings stand on a 90 m ring around the plaza. The first two you pass are Charter Hall and the Progress Observatory, one on each side of the axis.",
+    "The plaza. The plaza is a 48 m square pad at the centre. The Cancer DAO Coordinator stands 8 m from its centre on the gate side, facing arrivals. It runs a hub-hybrid swarm: it supervises, routes each question to a specialist and answers whatever it cannot route. Its recorded swarm evals pass, including routing accuracy 1.0 on 4 test questions against a 0.8 threshold, at 1.25 model calls per turn. Four questions is a small test, and the record shows the count. On the council side of the plaza stand three advisors: the Host Advisor, the Steward Liaison and the Alignment Advisor. They are scripted guides, not AI models. Every line they can say is either written out with the record it cites or read at view time from a named registry path. None of it is legal, financial or medical advice.",
+    "The zones. Each zone is a building on a 36 m square footprint, with exterior textures at 2048 px and interior textures at 1024 px. Charter Hall holds the charter, contribution model and measurable outcomes; it has no agent of its own yet. The Research Synthesis Lab houses the Evidence Monitor and the Research Synthesis Agent. The Proposal Forum, on the axis beyond the plaza, houses the Proposal & Grant Drafter, whose role says it drafts for human review and never enacts. The Operations Deck houses the Collaborator Scout and the Task Router, and the Progress Observatory houses the Progress Tracker. Each agent card is bound to its swarm entry and to the world's metaprompt, and each lists the six reserved actions under may_never.",
+    "The council. At the end of the axis, 130 m beyond the plaza centre, stands the Steward Council: a forum building 28 m wide whose card admits stewards only. Inside are three human seats, 6 m apart, and each one reads seated: null. Twenty-six metres to the side, outside the council's Volum, stands the Omega Steward, defined, not seated. Its voice is synthetic (Kokoro, run locally), and its greeting says so: it is an agent, not a person. It then answers six fixed questions from the records. Asked who decides, it says the Steward Council does, by 2 of 3 signed votes, and that publishing the world is the founder's call.",
+    "The landmark. WorldForge draws a 51 m civic rotunda for Cancer DAO, synthetic and procedural, and suggests a spot 14 m off the axis and 33 m from the plaza centre toward the council, turned to face the plaza with 3.13 m of clearance. The build does not place it yet."
+   ],
+   "facts": [
+    {
+     "label": "Cards in Cancer DAO",
+     "value": "23",
+     "source": "worldforge/out/cancer-dao/manifest.json#counts.cards"
+    },
+    {
+     "label": "World Volum (width x depth x height)",
+     "value": "300 m x 300 m x 80 m",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=world:cancer-dao].volum.halfExtents = [150, 40, 150]"
+    },
+    {
+     "label": "Gate distance from plaza centre",
+     "value": "130 m",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=gate:cancer-dao].volum.center = [0, 6, 130]"
+    },
+    {
+     "label": "Council distance from plaza centre",
+     "value": "130 m (opposite side)",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=council:cancer-dao].volum.center = [0, 6, -130]"
+    },
+    {
+     "label": "Plaza pad",
+     "value": "48 m square",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=plaza:cancer-dao].volum.halfExtents = [24, 5, 24]"
+    },
+    {
+     "label": "Zone ring radius",
+     "value": "90 m (all 5 zones)",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[kind=zone].volum.center (distance from origin)"
+    },
+    {
+     "label": "Buildings (5 zones + council)",
+     "value": "6",
+     "source": "worldforge/out/cancer-dao/manifest.json#counts.zones"
+    },
+    {
+     "label": "Specialist agents",
+     "value": "6",
+     "source": "worldforge/out/cancer-dao/manifest.json#counts.agents"
+    },
+    {
+     "label": "Scripted advisors",
+     "value": "3",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[kind=advisor].scripted = true; agents/advisors/cancer-dao.json#honesty"
+    },
+    {
+     "label": "Human seats filled",
+     "value": "0 of 3",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[kind=seat].seated = null"
+    },
+    {
+     "label": "Omega Steward position",
+     "value": "26 m beside the council centre, outside its Volum",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=omega:cancer-dao].volum.center = [26, 1, -130]"
+    },
+    {
+     "label": "Omega Steward status",
+     "value": "defined, not seated",
+     "source": "worldforge/out/cancer-dao/cards.json#cards[cardId=omega:cancer-dao].status"
+    },
+    {
+     "label": "Omega voice",
+     "value": "Kokoro af_sarah (synthetic)",
+     "source": "agents/hive/index.json#omegas[id=omega.cancer-dao].voice.kokoro"
+    },
+    {
+     "label": "Coordinator routing test",
+     "value": "accuracy 1.0 on 4 cases (threshold 0.8), 1.25 calls per turn",
+     "source": "agents/swarms/cancer-dao.json#routing; #evals[0]"
+    },
+    {
+     "label": "Landmark",
+     "value": "51 m focus-rotunda, 23,786 triangles",
+     "source": "worldforge/out/assets/landmarks/index.json#worlds[slug=cancer-dao]"
+    },
+    {
+     "label": "Landmark placement",
+     "value": "(14, 0, -33) m, yaw -23 degrees, 3.13 m clearance; suggested, not applied",
+     "source": "worldforge/out/assets/landmarks/index.json#worlds[slug=cancer-dao].placement; #placement_rule"
+    },
+    {
+     "label": "Evals passing",
+     "value": "25 of 25",
+     "source": "worldforge/out/cancer-dao/manifest.json#evals"
+    },
+    {
+     "label": "Native name-limit flags in this mount plan",
+     "value": "1",
+     "source": "worldforge/native/conformance-report.json#perPlan[slug=cancer-dao].nativeViolations"
+    }
+   ],
+   "visual_hint": "worldforge/review/out/clips/cancer-dao-flyin.mp4, then cancer-dao-building.mp4 and cancer-dao-omega.mp4; plan view worldforge/review/out/media/plan-cancer-dao.png; council still worldforge/out/stills/viewer-council.jpg",
+   "not_done": [
+    "All three council seats are empty. No steward has been appointed, and steward.appoint is reserved for people.",
+    "The Omega Steward is defined, not seated: no agent sits in it and it takes no action.",
+    "No RP1 anchor: latitude and longitude stay null until a steward writes them into worlds/focus.json.",
+    "Not mounted or rendered in Sneeze. Gates 1.2n (native load) and 1.4 (rendered frame) are open and 1.3 is prepared-not-mounted. A static conformance check flags 1 node name in this plan as longer than the native 47-unit limit.",
+    "The landmark placement is suggested, not applied.",
+    "The charter focus and its measurable outcomes are not set. Cancer DAO is not a probe cell, so its Omega reports no score.",
+    "Its six service cards are listed, not live."
+   ]
+  },
+  {
+   "id": "master-cards",
+   "title": "GLEWME Master Cards: Volum, seven rights and six reserved actions",
+   "dek": "Every object in every world is a card that says what space it covers, who may do what there, and which decisions only people can make.",
+   "paragraphs": [
+    "A Master Card is the unit of record in WorldForge. The code calls the card layer GLEWME; no registry expands the acronym, so this paper does not either. Each card carries an id, a kind, a parent, an owner (AGI Future Foundation PBC), the umbrella, a source citation, a Volum, a permission matrix and the list of reserved actions. A world's cards form one tree, root first, and the same tree is written into the world's glTF file. Every node carries its cardId and parentCardId in its extras, so a loader can index cards without trusting display names.",
+    "There are ten kinds. Across the 41 worlds the counts are 41 world, 41 plaza, 41 coordinator, 123 advisor, 41 gate, 41 council, 123 seat, 41 omega, 205 zone and 242 agent cards, 939 in all. Each world has one of each singular kind, three advisors and three seats. Zones and agents vary with the world's spec.",
+    "A Volum is the bounded 3-D region a card covers: a box given as a centre and half-extents in metres, Y up, in the world's frame. Volums do real work. They place buildings and avatars, and evals read them. One check confirms that each Omega Steward's Volum sits clear of the council's, so the Omega stands beside the council and never inside it. The geometry is synthetic placeholder massing, not surveyed land.",
+    "The permission matrix has seven rights: view, enter, build, operate, delegate, transfer and govern. Across all 939 cards it takes only a few shapes. View is public everywhere. Enter is public except on the council and its seats, which only stewards enter. Build and delegate belong to stewards. Operate belongs to stewards, and agents gain it in one form only, \"agents:zone\", on plaza, zone, coordinator and agent cards: an agent operates its own zone and nothing else. Transfer and govern belong to the steward quorum on every card.",
+    "On top of the matrix, every card carries the six actions the PBC reserves for people, copied verbatim from worlds/PBC.json: governance.final_vote, charter.amend, treasury.transfer, proposal.enact, windfall.distribute and steward.appoint. Each is held for the Steward Council, with a 2-of-3 quorum over 3 seats. That makes 5,634 reservation entries across the network, all identical. Agent, coordinator and advisor cards also list the same six under may_never. This is the working form of the line every cards file carries: agents operate; people govern.",
+    "WorldForge runs 25 evals on every world, 1,025 in all, and none fails. They include agents_hold_no_reserved_right, reserved_actions_verbatim, three_human_seats, no_agent_on_council, council_not_a_zone, cited and nothing_invented. Six deliberately broken fixtures must each fail exactly their own check, which shows the suite can tell a good world from a bad one. The cards are also drafted as ERC-721-style token metadata: 939 tokens, one per card, each ID the first 16 hex characters of sha256(cardId), with a Merkle root per world and one network root over the 41. Those drafts pass 537 checks. Their deployment record reads chain null, contract null, minted 0."
+   ],
+   "bullets": [
+    "view: public on every card.",
+    "enter: public, except stewards only on council and seat cards.",
+    "build, delegate: stewards on every card.",
+    "operate: stewards; plus agents:zone on plaza, zone, coordinator and agent cards.",
+    "transfer, govern: steward-quorum on every card."
+   ],
+   "facts": [
+    {
+     "label": "Card kinds",
+     "value": "10",
+     "source": "worldforge/out/onchain/index.json#totals.by_kind"
+    },
+    {
+     "label": "Cards by kind",
+     "value": "world 41, plaza 41, coordinator 41, advisor 123, gate 41, council 41, seat 123, omega 41, zone 205, agent 242",
+     "source": "worldforge/out/onchain/index.json#totals.by_kind; worldforge/out/<slug>/cards.json"
+    },
+    {
+     "label": "Rights in the permission matrix",
+     "value": "7",
+     "source": "worldforge/out/cancer-dao/cards.json#rights"
+    },
+    {
+     "label": "Reserved actions per card",
+     "value": "6",
+     "source": "worlds/PBC.json#reserved_for_humans"
+    },
+    {
+     "label": "Reservation entries network-wide",
+     "value": "5,634",
+     "source": "worldforge/out/<slug>/cards.json#cards[*].reserved_for_humans (sum over 41 worlds)"
+    },
+    {
+     "label": "Holder and quorum",
+     "value": "Steward Council, 2-of-3, 3 seats",
+     "source": "worldforge/out/<slug>/cards.json#cards[*].reserved_for_humans[*].held_for"
+    },
+    {
+     "label": "Evals per world",
+     "value": "25",
+     "source": "worldforge/out/<slug>/manifest.json#evals"
+    },
+    {
+     "label": "Evals network-wide",
+     "value": "1,025",
+     "source": "worldforge/out/index.json#totals.evals"
+    },
+    {
+     "label": "Broken fixtures, each failing its own check",
+     "value": "6",
+     "source": "worldforge/out/index.json#broken"
+    },
+    {
+     "label": "Draft tokens",
+     "value": "939",
+     "source": "worldforge/out/onchain/index.json#totals.tokens"
+    },
+    {
+     "label": "On-chain draft checks / failed",
+     "value": "537 / 0",
+     "source": "worldforge/out/onchain/index.json#evals.total, #evals.failed"
+    },
+    {
+     "label": "Tokens minted",
+     "value": "0",
+     "source": "worldforge/out/onchain/index.json#deployment.minted"
+    },
+    {
+     "label": "Chain",
+     "value": "none (null)",
+     "source": "worldforge/out/onchain/index.json#deployment.chain"
+    }
+   ],
+   "visual_hint": "worldforge/out/stills/viewer-council.jpg (council, seats and Omega Volums); a card-tree diagram drawn from worldforge/out/cancer-dao/cards.json would show the parent links",
+   "not_done": [
+    "No card has been minted and no contract written. No chain is chosen.",
+    "No person holds a steward right yet. Every seat is empty, so build, delegate, transfer and govern have no holder today.",
+    "Volums are synthetic layout and are not tied to land or to any RP1 claim.",
+    "The acronym GLEWME is not expanded in any registry read for this paper."
+   ]
+  },
+  {
+   "id": "pbc-structure",
+   "title": "The PBC behind the worlds: structure, share classes and four programs",
+   "dek": "The worlds encode a charter written for AGI Future Foundation PBC, and this section separates what the charter describes from what the filed documents establish.",
+   "paragraphs": [
+    "The foundation's mission, as recorded in worlds/PBC.json, is to ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges. Its management model is the Agent-managed DAO. The same file lists eight things agents handle (research synthesis, task routing, proposal generation, operational coordination, progress tracking, monitoring developments, identifying collaborators and drafting grants) and five things humans hold (oversight, values alignment, final governance, accountability and ethical guardrails). The world specs turn that split into zones, agents and permissions.",
+    "worlds/PBC.json, drawn from the foundation's site, describes three tiers. The apex is a California PBC that provides fiduciary protection and mission oversight. The commercial engine is a Wyoming Series LLC housing DAO subsidiaries with isolated assets and liability; in this project that is W3 LLC, whose series list names 35 cells. Ownership is split into Class C founder shares for mission control, Class A for profit participation and Class B for aligned participation. The founder's deck gives them 1,000, 1 and 10 votes per share respectively. In the worlds, each DAO cell runs in its own container, isolated like a series cell, and a swarm eval checks this for every world.",
+    "The filed documents do not yet match that description in every respect, and governance/entities.json records the gaps plainly. The entity on file is a California Nonprofit Public Benefit Corporation. A nonprofit public benefit corporation has no shareholders and issues no stock, so the Class A, B and C shares cannot be shares of that entity. Where they sit is a structure decision for counsel. W3 LLC is recorded as claimed: no formation document, operating agreement or series designation has been provided, and the deck counts 33 profit-generating entities where the series list counts 35. AGI Corp, the name on every world's umbrella, is recorded as named, not established as an entity by the documents provided. No tax-exemption determination has been provided either. None of this is legal advice; each open item waits on the founder and counsel.",
+    "The four programs, as the site describes them: the Fiduciary Shield gives PBC legal protection to decisions that put safety first. Open Global Investment offers broad international ownership, decoupled from governance. The Windfall Clause redistributes profits above a set threshold globally. The Alignment Evaluation Gate requires a pre-registered safety evaluation before deployment.",
+    "Two programs have a direct, checkable presence in the worlds. The Alignment Evaluation Gate is a card at the entrance of all 41 worlds, explained by each world's Alignment Advisor. The Windfall Clause appears as windfall.distribute, one of the six reserved actions, so no agent can distribute a windfall. Open Global Investment's separation of ownership from governance is echoed in the permission matrix, where viewing and entering are public but govern is held by the steward quorum; the investment program itself has no software form here. The Fiduciary Shield is a legal protection and lives in the charter, not in the worlds."
+   ],
+   "facts": [
+    {
+     "label": "Tasks agents handle",
+     "value": "8",
+     "source": "worlds/PBC.json#management_style.agents_handle"
+    },
+    {
+     "label": "Responsibilities humans hold",
+     "value": "5",
+     "source": "worlds/PBC.json#management_style.humans_hold"
+    },
+    {
+     "label": "Structure tiers described",
+     "value": "3",
+     "source": "worlds/PBC.json#structure"
+    },
+    {
+     "label": "Programs",
+     "value": "4",
+     "source": "worlds/PBC.json#programs"
+    },
+    {
+     "label": "Steward seats per council",
+     "value": "3",
+     "source": "worlds/PBC.json#steward_seats"
+    },
+    {
+     "label": "Actions reserved for people",
+     "value": "6",
+     "source": "worlds/PBC.json#reserved_for_humans"
+    },
+    {
+     "label": "Votes per share in the deck",
+     "value": "Class A 1, Class B 10, Class C 1,000",
+     "source": "governance/entities.json#share_classes_in_deck"
+    },
+    {
+     "label": "Entity on file",
+     "value": "California Nonprofit Public Benefit Corporation (FILED)",
+     "source": "governance/entities.json#entities[id=agi-future-foundation].type, .status"
+    },
+    {
+     "label": "W3 LLC status",
+     "value": "CLAIMED (no formation document provided)",
+     "source": "governance/entities.json#entities[id=w3-llc].status"
+    },
+    {
+     "label": "AGI Corp status",
+     "value": "NAMED (not established by the documents provided)",
+     "source": "governance/entities.json#entities[id=agi-corp].status"
+    },
+    {
+     "label": "Entities in the deck vs series in the list",
+     "value": "33 vs 35",
+     "source": "governance/entities.json#entities[id=w3-llc].type; worlds/series.json#series"
+    },
+    {
+     "label": "Alignment Evaluation Gate cards",
+     "value": "41",
+     "source": "worldforge/out/onchain/index.json#totals.by_kind.gate"
+    }
+   ],
+   "visual_hint": "no existing still fits; draw a three-tier diagram from worlds/PBC.json#structure (apex PBC, W3 LLC series cells, the 41 worlds) and mark the governance/entities.json status (FILED, CLAIMED, NAMED) on each box",
+   "not_done": [
+    "Where the Class A, B and C shares sit is undecided; they cannot be shares of the filed nonprofit.",
+    "W3 LLC formation documents and series designations have not been provided, and the 33-versus-35 count is unresolved.",
+    "AGI Corp is not established as an entity by any document provided.",
+    "The Windfall Clause threshold, share and recipient vehicle are not stated.",
+    "No registry read for this paper defines the evaluation suite, thresholds or pre-registration record behind the Alignment Evaluation Gate; the gate card states its purpose only.",
+    "No tax-exemption determination has been provided."
+   ]
+  },
+  {
+   "id": "ledger-and-keyring",
+   "title": "The agent ledger and the keyring: who signed what",
+   "dek": "Every agent's place in its world is recorded in a hash-chained log that only steward signatures can extend, and the keyring is how real people will replace the test keys.",
+   "paragraphs": [
+    "An agent never registers itself. agents/ledger.mjs writes agents/ledger/ledger.jsonl: one genesis entry followed by 283 registrations, one for each of the 41 coordinators and 242 specialists across the 41 worlds. A registration records the world, the agent id, its role, its zone and the source its role was taken from. Each entry is hashed with SHA-256 over its canonical JSON, which includes the previous entry's hash, so the entries form a chain back to a genesis whose previous hash is all zeros.",
+    "Each registration carries two Ed25519 signatures, from steward-1 and steward-2, meeting the 2-of-3 quorum. Verification walks the whole chain and fails on a broken link, on an entry altered after approval, on an entry with fewer than two valid steward signatures, and on any approval made by the agent itself. It is a blockchain-shaped log kept locally, not a public chain.",
+    "The signatures are labelled for what they are. The three steward keys are throwaway test keys, generated in memory on each run and never written to disk. Only their public halves are saved, in agents/ledger/stewards.json, under the label \"test (no registered stewards yet)\". No private key belongs in the project.",
+    "The keyring is the path from test keys to people. With agents/keyring.mjs a person generates their own Ed25519 key on their own machine, and the private key may only be written outside the repository and outside any git working tree. They submit a self-signed request naming the role, seat and scope. Because steward.appoint is reserved for people, the first council is seated by a board appointment record that people write and sign; the tool never writes one. After that, a steward request needs approvals from 2 of 3 registered stewards covering the scope. A scope holds at most three stewards, and one key never holds two seats. The registry is append-only and hash-chained, pinned by a HEAD line that gives the entry count and the last hash. A revocation is a new entry, never an edit.",
+    "Today the registry is empty: governance/keyring/registry.json has no entries, and HEAD reads 0 followed by an all-zero hash. Settlement code follows one rule. A world's signatures count from one council only: its registered stewards, else the foundation-wide council, else the labelled test stewards, never a mix. A keyring that fails verification closes the gate instead of falling back to test keys. The x402 keyring gate currently counts 0 registered councils and 42 on test keys.",
+    "A design note, agents/ledger/ONCHAIN.md, maps each ledger rule to an on-chain equivalent: a registry contract with one record per agent, a steward multisig in place of the 2-of-3 signatures, and functions only that multisig may call for the reserved actions. That contract has not been written or tested."
+   ],
+   "facts": [
+    {
+     "label": "Ledger entries",
+     "value": "284",
+     "source": "agents/ledger/ledger.jsonl (line count)"
+    },
+    {
+     "label": "Agent registrations",
+     "value": "283",
+     "source": "agents/ledger/ledger.jsonl (entries with type \"register\")"
+    },
+    {
+     "label": "Coordinators / specialists registered",
+     "value": "41 / 242",
+     "source": "agents/ledger/ledger.jsonl#[type=register].role"
+    },
+    {
+     "label": "Worlds in the ledger",
+     "value": "41",
+     "source": "agents/ledger/ledger.jsonl#[type=register].world (distinct)"
+    },
+    {
+     "label": "Signatures per registration",
+     "value": "2 (steward-1, steward-2)",
+     "source": "agents/ledger/ledger.jsonl#[*].approvals"
+    },
+    {
+     "label": "Quorum",
+     "value": "2 of 3",
+     "source": "agents/ledger/stewards.json#quorum; worlds/PBC.json#steward_seats"
+    },
+    {
+     "label": "Key label",
+     "value": "test (no registered stewards yet)",
+     "source": "agents/ledger/stewards.json#keys"
+    },
+    {
+     "label": "Registered keyring entries",
+     "value": "0",
+     "source": "governance/keyring/registry.json#entries"
+    },
+    {
+     "label": "Keyring HEAD",
+     "value": "0 entries, all-zero last hash",
+     "source": "governance/keyring/HEAD"
+    },
+    {
+     "label": "Councils by key mode",
+     "value": "registered 0, test 42, closed 0",
+     "source": "agents/x402/keyring_gate.json#teams"
+    }
+   ],
+   "visual_hint": "no existing still fits; draw the chain from agents/ledger/ledger.jsonl (genesis, then entries linked prev to hash, two steward signatures on each) beside the keyring flow (own key, self-signed request, board appointment record, 2-of-3 approvals)",
+   "not_done": [
+    "No steward is registered. Every signature in the ledger comes from a labelled test key.",
+    "Signing ledger entries with registered stewards' own keys is not built. Once a world has a registered council, its entries will stop verifying until people sign them.",
+    "No board appointment record exists yet.",
+    "The ledger is not on any chain, and the on-chain contract is unwritten and untested."
+   ]
+  },
+  {
+   "id": "x402-rehearsal",
+   "title": "x402 payment rehearsal: priced, signed and held",
+   "dek": "The project rehearses the whole x402 exchange between agents with the real field names, and every flow stops before any value moves.",
+   "paragraphs": [
+    "x402 is a payment-request pattern built on HTTP status 402, Payment Required. The rehearsal in agents/x402 copies its field names and headers (PAYMENT-REQUIRED, PAYMENT-SIGNATURE, PAYMENT-RESPONSE and the version 1 X-PAYMENT header) from the x402.org site and the coinbase/x402 README, read on 2026-10-06. The flow has not been tested against any facilitator.",
+    "Each world gets a catalogue of things a visitor's agent might pay for, priced in rehearsal units, which are not a currency. Every item cites the registry record it prices. When an agent asks for an item, the world answers with a 402 payment requirement whose scheme is \"exact\" and whose network, asset and payTo fields are null, because those are founder decisions and none is set in the repository. The visitor's avatar signs a payment payload with a per-run Ed25519 key, and only the public half is written. The world verifies the signature and checks the amount against a steward-set budget. Then it decides. Settlement needs two steward signatures, because treasury.transfer is reserved for people.",
+    "Cancer DAO shows the three outcomes. Its budget is 20 units and its catalogue has 7 items: six room sessions at 5 units each, one for each building including the Steward Council room, and one scaffold visit at 1 unit. A Charter Hall session signed by one steward is held. A Research Synthesis Lab session signed by two stewards would settle, but nothing is sent, because no rail is configured. A 70-unit scaffold request is refused as over budget.",
+    "Across 42 worlds (the 41 plus the SmartCiti.X Holodeck) the rehearsal lists 307 items and runs 126 flows: 42 held, 42 would-settle, 42 refused and 0 settled, with 0 failing checks. Each world file carries 14 checks. They confirm that payTo, asset and network stay unset, that prices are never a currency, that no flow settles, that no private key is written and that no personal data appears. Four deliberately broken self-tests, such as a filled-in payTo or a flow that settled, are each caught.",
+    "Agents are forbidden every money verb the rehearsal touches: set_price, accept_crypto, issue_invoice, move_funds and treasury.transfer. The crypto rail itself reads \"not enabled until the board sets prices and counsel approves\", with 9 prerequisites open. governance/advisory_rails.md lists what comes first. The Steward Council sets prices with 2 of 3 signatures, counsel and the founder decide which entity contracts, counsel approves standard terms, and every payer is identified and screened. For crypto it adds a money-transmission review, a tax treatment, wallet custody chosen by people so that moving funds takes more than one person, and a rule for mistaken or disputed agent payments."
+   ],
+   "bullets": [
+    "held: one steward signature; treasury.transfer needs two.",
+    "would-settle: two steward signatures; nothing is sent because no rail, wallet, asset or network is set.",
+    "refused: the signed amount is over the steward-set budget."
+   ],
+   "facts": [
+    {
+     "label": "Worlds rehearsed",
+     "value": "42",
+     "source": "agents/x402/index.json#totals.worlds"
+    },
+    {
+     "label": "Catalogue items",
+     "value": "307",
+     "source": "agents/x402/index.json#totals.items"
+    },
+    {
+     "label": "Flows",
+     "value": "126",
+     "source": "agents/x402/index.json#totals.flows"
+    },
+    {
+     "label": "Held / would-settle / refused",
+     "value": "42 / 42 / 42",
+     "source": "agents/x402/index.json#totals.held, .would_settle, .refused"
+    },
+    {
+     "label": "Settled",
+     "value": "0",
+     "source": "agents/x402/index.json#totals.settled"
+    },
+    {
+     "label": "Failing checks",
+     "value": "0",
+     "source": "agents/x402/index.json#totals.failing"
+    },
+    {
+     "label": "Price unit",
+     "value": "rehearsal-unit",
+     "source": "agents/x402/index.json#unit"
+    },
+    {
+     "label": "Scheme",
+     "value": "exact",
+     "source": "agents/x402/index.json#scheme"
+    },
+    {
+     "label": "Cancer DAO budget",
+     "value": "20 rehearsal units",
+     "source": "agents/x402/cancer-dao.json#budget"
+    },
+    {
+     "label": "Cancer DAO catalogue",
+     "value": "7 items (6 room sessions at 5, 1 scaffold visit at 1)",
+     "source": "agents/x402/cancer-dao.json#catalogue"
+    },
+    {
+     "label": "Checks per world file",
+     "value": "14",
+     "source": "agents/x402/cancer-dao.json#evals"
+    },
+    {
+     "label": "Broken self-tests caught",
+     "value": "4",
+     "source": "agents/x402/index.json#self_test"
+    },
+    {
+     "label": "Crypto rail prerequisites open",
+     "value": "9",
+     "source": "agents/x402/cancer-dao.json#rail.prerequisites_open"
+    }
+   ],
+   "visual_hint": "no existing still fits; draw the exchange from agents/x402/cancer-dao.json#flows: request, PAYMENT-REQUIRED (payTo null), signed payload, budget check, then the three endings held / would-settle / refused",
+   "not_done": [
+    "Nothing has settled and nothing has been sent: 0 of 126 flows settled.",
+    "No wallet, asset, network or payment rail is configured; payTo is null everywhere.",
+    "No real prices exist. Rehearsal units are not money.",
+    "The flow is untested against any x402 facilitator.",
+    "KYC/AML screening, counsel review and tax advice are not in place, so the rail stays off.",
+    "Settlement under registered stewards' keys has only been exercised in a throwaway test keyring; no real council is registered."
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Master Card",
+   "definition": "The WorldForge record for one object in a world (world, plaza, coordinator, advisor, gate, council, seat, omega, zone or agent), carrying its owner, Volum, permission matrix, reserved actions and source."
+  },
+  {
+   "term": "GLEWME",
+   "definition": "The name the WorldForge code gives its Master Card layer. The registries do not expand the acronym."
+  },
+  {
+   "term": "Volum",
+   "definition": "The bounded 3-D region a card covers: a box given by a centre and half-extents in metres, Y up, in the world's frame."
+  },
+  {
+   "term": "Seven rights",
+   "definition": "The permission matrix on every card: view, enter, build, operate, delegate, transfer and govern."
+  },
+  {
+   "term": "agents:zone",
+   "definition": "The only right an agent holds beyond public view and entry: operating its own zone, granted on plaza, zone, coordinator and agent cards."
+  },
+  {
+   "term": "Steward quorum",
+   "definition": "2 of the 3 human seats on a world's Steward Council; it holds transfer and govern on every card and all six reserved actions."
+  },
+  {
+   "term": "Reserved actions",
+   "definition": "governance.final_vote, charter.amend, treasury.transfer, proposal.enact, windfall.distribute and steward.appoint: decisions only people make, listed in worlds/PBC.json."
+  },
+  {
+   "term": "Steward Council",
+   "definition": "The human-only council building in each world, with three seats. It is never a zone, because agents operate zones."
+  },
+  {
+   "term": "Omega Steward",
+   "definition": "One defined agent persona per world (44 in the hive, 41 of them in these worlds) that answers from the records in a synthetic voice. Every one is defined, not seated."
+  },
+  {
+   "term": "Defined, not seated",
+   "definition": "The persona, voice and limits are written down, but no agent has been placed in the role by a person, so it takes no action."
+  },
+  {
+   "term": "Scripted advisor",
+   "definition": "The Host Advisor, Steward Liaison or Alignment Advisor: a guide whose every line is written with a citation or read from a registry path. No AI model runs behind it."
+  },
+  {
+   "term": "Coordinator",
+   "definition": "The agent at the plaza that routes each question to a specialist in a hub-hybrid swarm and answers what it cannot route."
+  },
+  {
+   "term": "Alignment Evaluation Gate",
+   "definition": "The PBC program for pre-registered safety evaluation before deployment, and the gate card at every world's entrance."
+  },
+  {
+   "term": "PBC focus DAO",
+   "definition": "One of six worlds drawn from the foundation's Global Issue Focus: Cancer, Robotics, Ecology, Climate, Education and Public Health."
+  },
+  {
+   "term": "W3 LLC series world",
+   "definition": "A world for one numbered series cell of W3 LLC. Twenty-eight of them have a name only and use the shared template."
+  },
+  {
+   "term": "Program-track world",
+   "definition": "Agentic Payments, Agents That Deploy Infrastructure or Autonomous Organizations, each built only from a founder-supplied track description."
+  },
+  {
+   "term": "RP1 anchor",
+   "definition": "The latitude and longitude that would place a world on RP1's Earth. Four of 41 worlds have one."
+  },
+  {
+   "term": "Sneeze mount plan",
+   "definition": "An ordered list of scene nodes, parents first, prepared for the Sneeze host. It is checked statically and has not been mounted."
+  },
+  {
+   "term": "Agent ledger",
+   "definition": "agents/ledger/ledger.jsonl: a local hash-chained log of agent registrations, each approved by 2 of 3 steward signatures."
+  },
+  {
+   "term": "Test keys",
+   "definition": "Throwaway Ed25519 steward keys made in memory on each run. Only their public halves are saved, labelled \"test (no registered stewards yet)\"."
+  },
+  {
+   "term": "Keyring",
+   "definition": "The append-only registry and tool through which people register the public halves of their own steward and instructor keys. It is empty today."
+  },
+  {
+   "term": "Board appointment record",
+   "definition": "A record people write and sign to seat the first stewards of a scope; the keyring tool never writes one."
+  },
+  {
+   "term": "x402",
+   "definition": "A payment-request pattern built on HTTP status 402 (Payment Required), rehearsed here with its real field names and no settlement."
+  },
+  {
+   "term": "Rehearsal unit",
+   "definition": "The price unit in the x402 rehearsal. It is not a currency."
+  },
+  {
+   "term": "Held / would-settle / refused",
+   "definition": "The three rehearsal outcomes: one steward signature; two signatures with nothing sent; or over the steward-set budget."
+  },
+  {
+   "term": "Merkle root",
+   "definition": "A single sha256 hash that commits to every draft token in a world; one network root commits to the 41 world roots. Nothing is on a chain."
+  },
+  {
+   "term": "Windfall Clause",
+   "definition": "The PBC program to redistribute profits above a set threshold globally. Its threshold, share and recipient are not stated."
+  },
+  {
+   "term": "Fiduciary Shield",
+   "definition": "The PBC program that gives legal protection to decisions that put safety first."
+  },
+  {
+   "term": "Open Global Investment",
+   "definition": "The PBC program for broad international ownership, decoupled from governance."
+  }
+ ],
+ "faq": [
+  {
+   "q": "Are any of these worlds open to the public?",
+   "a": "No. All 41 are marked \"coming soon\". None is published on RP1's Earth, which is the founder's call, and none is mounted in Sneeze. Four have an RP1 anchor; 37 do not."
+  },
+  {
+   "q": "Can an agent move money, vote or change the charter?",
+   "a": "No. Those actions are among the six reserved for people, held on every card for a 2-of-3 Steward Council. Agents hold one extra right, operating their own zone. An eval on every world checks that no agent card holds a reserved right."
+  },
+  {
+   "q": "Who are the stewards?",
+   "a": "Nobody yet. Every council's three seats read seated: null, and the keyring has no registered keys. The first stewards are seated by a board appointment record that people write and sign. Until then the ledger is signed with labelled test keys."
+  },
+  {
+   "q": "Are the Omega Stewards live AI agents?",
+   "a": "They are defined, not seated. Each has a written persona, a synthetic voice that says it is synthetic, and scripted answers grounded in cited records. No person has seated an agent in any of them, and none takes action."
+  },
+  {
+   "q": "Are the advisors AI?",
+   "a": "No. The Host Advisor, Steward Liaison and Alignment Advisor are scripted guides. Every line they can say is written with a citation or read from a registry path."
+  },
+  {
+   "q": "Is anything on a blockchain?",
+   "a": "No. The 939 Master Cards are drafted as ERC-721-style metadata with Merkle roots, and the deployment record reads chain null, contract null, minted 0. The agent ledger is a local hash-chained log; its on-chain contract is a design note only."
+  },
+  {
+   "q": "Has any payment happened?",
+   "a": "No. The x402 rehearsal ran 126 flows across 42 worlds and settled none. Prices are rehearsal units, and no wallet, asset, network or rail is configured."
+  },
+  {
+   "q": "Why do 28 of the worlds look alike?",
+   "a": "They are W3 LLC series worlds with a name and a number only. Rather than invent a mission, they use the shared PBC template until the stewards write a focus line into worlds/focus.json."
+  },
+  {
+   "q": "What legal entity stands behind the worlds?",
+   "a": "The filed entity is a California Nonprofit Public Benefit Corporation. The site's three-tier description, the W3 LLC series and the Class A, B and C shares are recorded as claimed or open, and where the share classes sit is for counsel to decide. This paper is not legal advice."
+  },
+  {
+   "q": "Where do the numbers in this paper come from?",
+   "a": "Each fact names the registry file and field it was read from, and the build that writes this file re-reads every value and stops if a registry has changed. Nothing is estimated."
+  },
+  {
+   "q": "Are the voices real people?",
+   "a": "No. Every rendered line is Kokoro text-to-speech run locally, and each greeting says it is a synthetic voice. Where a line has not been rendered, viewers fall back to a labelled browser voice."
+  }
+ ]
+}
