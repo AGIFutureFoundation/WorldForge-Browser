@@ -1,0 +1,414 @@
+{
+ "scenarios": [
+  {
+   "id": "echo-point-railing-replacement",
+   "trade": "ironworkers",
+   "zone": "Progress Observatory",
+   "task": "Replace corroded sections of steel safety railing at the Echo Point lookout platform while visitors are managed away from the work area.",
+   "hazards": [
+    "fall from height at platform edge",
+    "lead paint on old steel",
+    "hand injury during torch cutting",
+    "public exposure to hot work"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety harness with lanyard",
+    "cut-resistant gloves",
+    "welding shield",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Complete permit-to-work and confirm exclusion zone with rangers",
+    "Install temporary edge protection before removing old railing",
+    "Test old steel coating for lead and set up containment",
+    "Cut out corroded sections and prep connection points",
+    "Fit and tack new galvanized rail sections, then full-weld",
+    "Inspect welds, remove containment, and sign off with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "fall_protection",
+     "pass_if": "Harness tied off to approved anchor 100% of time at the edge"
+    },
+    {
+     "axis": "lead_control",
+     "pass_if": "Containment and decontamination set before disturbing coated steel"
+    },
+    {
+     "axis": "weld_quality",
+     "pass_if": "All welds visually inspected with no undercut or porosity flagged"
+    },
+    {
+     "axis": "public_safety",
+     "pass_if": "Exclusion zone maintained with no visitor entry during hot work"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and railing stock along the uneven lookout path and performs a pre-shift visual inspection of remaining corrosion."
+  },
+  {
+   "id": "jamison-valley-trail-lighting",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Run low-voltage lighting circuits along the upper Jamison Valley walking track, trenching through root-filled eucalypt soil.",
+   "hazards": [
+    "underground services strike",
+    "trip hazard on track",
+    "electrical arc when terminating",
+    "manual handling injury in soft soil"
+   ],
+   "ppe": [
+    "hard hat",
+    "insulated gloves",
+    "safety glasses",
+    "steel-toe boots",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Obtain service plans and pothole to locate buried cables",
+    "Set up track diversion signage with parks staff",
+    "Trench to depth and lay conduit with swept bends",
+    "Pull cable with correct draw-in pits at each light position",
+    "Terminate at IP65-rated fittings rated for outdoor use",
+    "Insulation-resistance test each circuit before energizing"
+   ],
+   "rubric": [
+    {
+     "axis": "locates",
+     "pass_if": "All underground services located and marked before excavation"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Insulation resistance test passed and recorded before energization"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Conduit runs sealed with no water-entry points"
+    },
+    {
+     "axis": "public_management",
+     "pass_if": "Track users safely diverted at all times"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "katoomba-drainage-upgrade",
+   "trade": "pipefitters",
+   "zone": "Charter Hall",
+   "task": "Replace a failed stormwater drainage line behind the visitor amenities to stop erosion toward the cliff edge walkway.",
+   "hazards": [
+    "trench collapse",
+    "confined space at pit",
+    "heavy pipe manual handling",
+    "erosion undermining walkway footings"
+   ],
+   "ppe": [
+    "hard hat",
+    "hi-vis vest",
+    "gloves",
+    "steel-toe boots",
+    "hearing protection"
+   ],
+   "steps": [
+    "Open trench with benching per shoring code",
+    "Dewater and inspect existing line failure point",
+    "Bed and lay new PVC stormwater pipe to grade",
+    "Connect to existing pit with rubber-ring joints",
+    "Backfill in compacted lifts and restore surface",
+    "Water-test the line and photograph as-built condition"
+   ],
+   "rubric": [
+    {
+     "axis": "trench_safety",
+     "pass_if": "Shoring or benching correct before any entry"
+    },
+    {
+     "axis": "grade_accuracy",
+     "pass_if": "Line falls within tolerance to outlet with no ponding"
+    },
+    {
+     "axis": "compaction",
+     "pass_if": "Backfill compacted in lifts with no later settlement"
+    },
+    {
+     "axis": "asbuilt_records",
+     "pass_if": "Photos and line location recorded for Progress Tracker"
+    }
+   ],
+   "minutes": 100,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "lookout-boardwalk-timber-repair",
+   "trade": "carpenters",
+   "zone": "Proposal Forum",
+   "task": "Replace rotten hardwood decking boards on the cliff-edge boardwalk access to the viewing platform.",
+   "hazards": [
+    "fall from cliff edge",
+    "splinters and nail strikes",
+    "load shift when lifting boards out",
+    "weather exposure on exposed ridge"
+   ],
+   "ppe": [
+    "hard hat",
+    "harness at edge zones",
+    "gloves",
+    "safety glasses",
+    "boots"
+   ],
+   "steps": [
+    "Survey boards and mark those failing the punch test",
+    "Rope off work section of boardwalk",
+    "Cut fasteners and remove failed boards safely",
+    "Check joists and bearers for rot, replace as needed",
+    "Fix new treated hardwood boards with correct gaps",
+    "Punch and putty fasteners, clean site, reopen walkway"
+   ],
+   "rubric": [
+    {
+     "axis": "edge_safety",
+     "pass_if": "Edge work done with harness or guard intact at all times"
+    },
+    {
+     "axis": "structural_check",
+     "pass_if": "Supporting joists inspected before new boards fixed"
+    },
+    {
+     "axis": "finish_quality",
+     "pass_if": "Boards even, gapped, and fasteners set below surface"
+    },
+    {
+     "axis": "site_reinstatement",
+     "pass_if": "Walkway reopened clean with no trip edges"
+    }
+   ],
+   "minutes": 80,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Shuttles fasteners and small tools between the van and the ridge work point."
+  },
+  {
+   "id": "viewing-platform-concrete-pour",
+   "trade": "cement-masons",
+   "zone": "Progress Observatory",
+   "task": "Pour and finish a new accessible viewing pad adjacent to the Progress Observatory platform extension.",
+   "hazards": [
+    "cement burns to skin",
+    "concrete pump line whip",
+    "heat and UV on exposed site",
+    "silica dust when cutting forms later"
+   ],
+   "ppe": [
+    "long sleeves and pants",
+    "waterproof gloves",
+    "safety glasses",
+    "boots",
+    "hard hat"
+   ],
+   "steps": [
+    "Check formwork set, level, and braced",
+    "Confirm reinforcement chairs and cover to mesh",
+    "Coordinate pump setup away from public path",
+    "Pour in lifts and internal-vibrate each layer",
+    "Screed, float, and broom-finish for slip resistance",
+    "Cure with membrane and barricade until strength reached"
+   ],
+   "rubric": [
+    {
+     "axis": "formwork_check",
+     "pass_if": "Forms verified level and braced before pour starts"
+    },
+    {
+     "axis": "skin_protection",
+     "pass_if": "No wet-concrete skin contact; correct gloves and sleeves worn"
+    },
+    {
+     "axis": "finish_quality",
+     "pass_if": "Surface within level tolerance with consistent broom texture"
+    },
+    {
+     "axis": "curing_and_barricade",
+     "pass_if": "Curing membrane applied and area barricaded"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "interpretive-shelter-roof-flash",
+   "trade": "roofers",
+   "zone": "Charter Hall",
+   "task": "Reflash the valley of the colorbond interpretive shelter roof after storm damage, working at height above a public gathering area.",
+   "hazards": [
+    "fall through or from roof",
+    "sharp sheet-metal edges",
+    "hot metal in sun",
+    "falling tools onto public below"
+   ],
+   "ppe": [
+    "hard hat with chin strap",
+    "harness and rope adjustment",
+    "cut-resistant gloves",
+    "boots",
+    "sun protection"
+   ],
+   "steps": [
+    "Establish drop zone and public exclusion below",
+    "Install roof anchor points and tie off before ascent",
+    "Remove damaged flashing without tearing surrounding sheets",
+    "Form and fit new flashing with correct lap into gutter",
+    "Seal, fasten, and torque all screws to spec",
+    "Water-test with hose and clear site of offcuts"
+   ],
+   "rubric": [
+    {
+     "axis": "heights_control",
+     "pass_if": "Anchor and harness used for entire roof work"
+    },
+    {
+     "axis": "drop_prevention",
+     "pass_if": "No tools or offcuts allowed to fall; zone controlled"
+    },
+    {
+     "axis": "weatherproofing",
+     "pass_if": "Water test shows no penetration at valley"
+    },
+    {
+     "axis": "edge_protection",
+     "pass_if": "Guardrail or edge protection in place where required"
+    }
+   ],
+   "minutes": 70,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "visitor-centre-switchboard-arc",
+   "trade": "line-workers",
+   "zone": "Operations Deck",
+   "task": "Replace a damaged supply cable from the street to the visitor centre switchboard under an agreed outage with the local distributor.",
+   "hazards": [
+    "arc flash at switchboard",
+    "backfeed from solar PV",
+    "traffic near work zone",
+    "cable fault on re-energization"
+   ],
+   "ppe": [
+    "arc-rated suit and hood",
+    "insulated gloves",
+    "hard hat",
+    "face shield",
+    "boots"
+   ],
+   "steps": [
+    "Apply isolation, lock-out/tag-out, and verify de-energized",
+    "Test for backfeed from rooftop PV and isolate it",
+    "Pull new supply cable through existing duct",
+    "Terminate at pillar and switchboard to torque spec",
+    "Insulation-test and phase-check before re-energizing",
+    "Remove locks, restore supply, and complete test sheets"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation_discipline",
+     "pass_if": "LOTO applied and tested dead before any work"
+    },
+    {
+     "axis": "backfeed_control",
+     "pass_if": "PV and alternate sources isolated and proven"
+    },
+    {
+     "axis": "arc_protection",
+     "pass_if": "Arc-rated PPE worn per switchboard label"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Test results recorded and signed before energization"
+    }
+   ],
+   "minutes": 110,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "asbestos-era-amenities-demo",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Remove suspected asbestos cement sheeting from a 1970s park amenities block wall before refurbishment, under a Class B friable-free removal plan.",
+   "hazards": [
+    "asbestos fiber release",
+    "gross contamination of the valley environment",
+    "heat stress in full enclosure",
+    "sharps and old wiring in wall cavity"
+   ],
+   "ppe": [
+    "P2/P3 respirator",
+    "disposable coveralls class B",
+    "gloves",
+    "boot covers",
+    "safety glasses"
+   ],
+   "steps": [
+    "Confirm asbestos register and removal control plan",
+    "Set up enclosure, negative-pressure unit, and decontamination unit",
+    "Wet down sheeting and remove with minimal breakage",
+    "Double-bag, tag, and manifest waste to licensed facility",
+    "Clearance air-monitor and visual inspection by hygienist",
+    "Break down enclosure and complete decontamination records"
+   ],
+   "rubric": [
+    {
+     "axis": "containment",
+     "pass_if": "Enclosure and negative pressure verified before removal begins"
+    },
+    {
+     "axis": "wet_method",
+     "pass_if": "All ACM kept wet with no dry cutting or breaking"
+    },
+    {
+     "axis": "waste_chain",
+     "pass_if": "Waste manifested and transported by licensed carrier"
+    },
+    {
+     "axis": "clearance",
+     "pass_if": "Independent clearance certificate obtained before re-entry"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Stages sealed waste bags from the enclosure exit to the licensed skip, keeping workers out of repeated decon cycles."
+  }
+ ],
+ "credential": {
+  "name": "EchoDawn Lookout Site Readiness Card",
+  "requires": [
+   "echo-point-railing-replacement",
+   "lookout-boardwalk-timber-repair",
+   "viewing-platform-concrete-pour",
+   "katoomba-drainage-upgrade",
+   "jamison-valley-trail-lighting"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s16-echodawn-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

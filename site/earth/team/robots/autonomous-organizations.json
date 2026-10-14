@@ -1,0 +1,302 @@
+{
+ "tasks": [
+  {
+   "id": "goal-wall-waypoint-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Goal Wall",
+   "goal": "Patrol the Goal Wall perimeter on the campus ring road so agents can read the posted goal, pausing at each display kiosk.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/goal_wall_pose_array",
+     "/odom",
+     "/plan",
+     "/goal_readout_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Paved campus roads and paths (741 road features) ringing the lagoon; watch for curb cuts, tree wells (177 trees) and lagoon-edge drop-offs near water.",
+   "success": [
+    "Visits all kiosk waypoints within 15 min",
+    "Mean position error < 0.3 m at each stop",
+    "Zero curb collisions",
+    "Publishes /goal_readout_status at every stop"
+   ],
+   "safety_stops": [
+    "E-stop on slope > 15 deg (max relief 5.3 m, gentle)",
+    "Stop if water within 1 m of path edge",
+    "Stop on unmapped pedestrian within 2 m"
+   ],
+   "human_in_loop": "A steward approves the patrol route file and the posted goal text before each run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_id",
+     "pos_error_m",
+     "stop_duration_s",
+     "obstacle_events",
+     "human_approved",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "coordination-floor-slam-mapping",
+   "robot": "unitree-go2",
+   "zone": "Coordination Floor",
+   "goal": "Map the Coordination Floor atrium where Slack/Linear status screens live, building an occupancy grid for agent-navigation services.",
+   "ros": {
+    "action": "/slam_toolbox/run",
+    "topics": [
+     "/scan",
+     "/odom",
+     "/map",
+     "/screen_beacon_detections"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Polished atrium floors between the four large campus buildings; glass walls, planters, pillars and furniture clusters are primary obstacles.",
+   "success": [
+    "Map coverage > 90% of walkable atrium",
+    "Loop-closure error < 0.1 m",
+    "Glass-wall false-free cells < 5%",
+    "Beacon detections for all status screens logged"
+   ],
+   "safety_stops": [
+    "Stop on human within 1.5 m",
+    "Low-battery return-to-dock at 20%",
+    "Tip detection from IMU stops gait"
+   ],
+   "human_in_loop": "A person reviews and signs off the final map before it is served to other agents.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "coverage_pct",
+     "loop_closure_error_m",
+     "glass_false_free_pct",
+     "beacons_found",
+     "human_map_approved",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "assignment-board-board-inspection",
+   "robot": "softbank-nao",
+   "zone": "Assignment Board",
+   "goal": "Stand at the Assignment Board and read ticket cards aloud, converting assignments into speech and JSON for the Assigner agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/assignment_board_image",
+     "/ocr_result",
+     "/speech",
+     "/battery_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Flat indoor floor in front of the board; ensure stable stance on smooth tile with no trip hazards within 1 m.",
+   "success": [
+    "OCR accuracy > 95% on ticket cards",
+    "Reads all cards within 5 min",
+    "Zero falls",
+    "JSON payloads validated against schema"
+   ],
+   "safety_stops": [
+    "Fall detection terminates task",
+    "Stop if a human reaches for the board",
+    "Battery < 15% triggers sit-and-halt"
+   ],
+   "human_in_loop": "A person verifies assignment text before it is dispatched to executors.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "cards_read",
+     "ocr_accuracy",
+     "falls",
+     "human_text_verified",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "decision-room-tally-delivery",
+   "robot": "boston-dynamics-spot",
+   "zone": "Decision Room",
+   "goal": "Carry printed decision drafts from the Decision Room to human stewards around the lagoon loop for final vote - never enacting anything itself.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/mission_state",
+     "/steward_location",
+     "/payload_secured",
+     "/vote_receipt_scan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Outdoor campus paths with mild grade (5.3 m relief), pedestrian traffic, benches and tree root heave along the lagoon ring; wet pavement near slough edges.",
+   "success": [
+    "Delivers to all steward stations within 20 min",
+    "Payload secured flag true 100% of transit",
+    "Zero pedestrian contact events",
+    "Each delivery yields a scanned receipt"
+   ],
+   "safety_stops": [
+    "Stop on detected human within 2 m",
+    "Abort if payload_secured goes false",
+    "Rain/wet-surface speed limit or hold",
+    "E-stop on stair or dock edge near lagoon"
+   ],
+   "human_in_loop": "Only stewards cast the final vote; Spot carries paper and never signs, enacts or transfers anything.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "deliveries_complete",
+     "transit_time_s",
+     "pedestrian_events",
+     "receipts_scanned",
+     "human_final_vote_logged",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "execution-bay-manipulation-drill",
+   "robot": "franka-fr3",
+   "zone": "Execution Bay",
+   "goal": "Pick task kits from inbound totes and place them on the assignment staging shelf for executor agents, tracking every pick in JSONL.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/joint_states",
+     "/wrist_camera/color/image_raw",
+     "/grasp_pose",
+     "/task_result"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed workbench in an indoor bay; clutter limited to totes, bins and shelf slots; no floor hazards for the fixed base.",
+   "success": [
+    "Pick success rate > 92% over 50 trials",
+    "Place error < 2 cm in shelf slot",
+    "Zero gripper-forced collisions",
+    "JSONL record per pick within 100 ms"
+   ],
+   "safety_stops": [
+    "Joint-torque anomaly stops arm",
+    "Human hand within workspace envelope stops motion",
+    "Dual-channel e-stop accessible",
+    "Abnormal force on grasp releases object"
+   ],
+   "human_in_loop": "A person approves the kit manifest; reserved actions like proposal.enact stay outside the bay entirely.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "trial_id",
+     "pick_success",
+     "place_error_m",
+     "collision_count",
+     "human_manifest_approved",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "lagoon-perimeter-swarm-survey",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Execution Bay",
+   "goal": "Fly a low-altitude swarm survey along the lagoon perimeter to verify execution-bay delivery routes are clear, streaming positions back to the Coordinator Agent.",
+   "ros": {
+    "action": "/follow_path",
+    "topics": [
+     "/cf_swarm/pose",
+     "/cf_swarm/range",
+     "/route_clearance",
+     "/battery"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open air over the lagoon ring; hazards are building corners on the four-building campus, tree canopies (177 trees) and wind funneling between structures near Belmont Slough.",
+   "success": [
+    "Completes perimeter loop within 8 min",
+    "Position RMSE < 0.5 m vs plan",
+    "Zero inter-drone collisions",
+    "Route clearance verdict published per segment"
+   ],
+   "safety_stops": [
+    "Wind gust > 8 m/s lands swarm",
+    "Battery < 25% returns to pad",
+    "Geofence breach triggers auto-land",
+    "Human detected within 3 m of landing pad holds descent"
+   ],
+   "human_in_loop": "A person authorizes each flight window and reviews the clearance verdicts before routes are committed.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loop_time_s",
+     "pos_rmse_m",
+     "near_miss_count",
+     "clearance_verdict",
+     "human_flight_approved",
+     "ts"
+    ]
+   }
+  },
+  {
+   "id": "steward-station-tablet-handover",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Decision Room",
+   "goal": "Deliver voting tablets from the Decision Room supply cart to the steward table and back away, supporting the human-only final vote.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth/image",
+     "/move_base/goal",
+     "/gripper_state",
+     "/delivery_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor carpet-to-tile transitions, table legs and chair cluster around the steward table; doorway widths ~0.9 m between rooms.",
+   "success": [
+    "Tablet grasp success > 90%",
+    "Places tablet within 5 cm of table target",
+    "Backs away 1.5 m after handover cue",
+    "Zero table or chair collisions"
+   ],
+   "safety_stops": [
+    "Stop on human within 1 m of arm",
+    "Torque limit on grasp aborts pick",
+    "Cart-cliff detection (depth) halts base",
+    "Battery < 20% docks"
+   ],
+   "human_in_loop": "Stewards take the tablets and cast final votes themselves; the robot only fetches and places.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_success",
+     "place_error_m",
+     "collision_count",
+     "backup_distance_m",
+     "human_vote_recorded",
+     "ts"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "autonomous-organizations",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

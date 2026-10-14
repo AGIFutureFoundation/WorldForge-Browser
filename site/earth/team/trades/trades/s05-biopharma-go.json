@@ -1,0 +1,367 @@
+{
+ "scenarios": [
+  {
+   "id": "riverside-rebar-deck",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Tie rebar cages for a new below-grade utility vault along the Rhine-side promenade walkway.",
+   "hazards": [
+    "Rebar impalement ends",
+    "Crane load swing near walkway",
+    "Wet surfaces from river mist",
+    "Crushed hands during cage collapse"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "High-visibility vest",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend the daily huddle and confirm the lift plan with the operator.",
+    "Inspect rebar caps and place them on all exposed vertical ends.",
+    "Set your work zone with barricades to separate the walkway from the deck.",
+    "Tie cage corners first, then interior ties, checking spacing against the drawing.",
+    "Use a tag line to control the cage during the crane set.",
+    "Step clear and give the all-clear signal before the crane releases.",
+    "Check tied cage for loose bars and secure or re-tie as needed."
+   ],
+   "rubric": [
+    {
+     "axis": "Impalement control",
+     "pass_if": "Caps or troughs on every exposed end before work begins"
+    },
+    {
+     "axis": "Rigging communication",
+     "pass_if": "Standard hand signals used and no one under suspended load"
+    },
+    {
+     "axis": "Tie quality",
+     "pass_if": "Ties tight, spacing within tolerance, no loose bars left"
+    },
+    {
+     "axis": "Public protection",
+     "pass_if": "Walkway barricaded and pedestrians rerouted before first lift"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows bundled rebar from the laydown area to the vault edge, keeping hands away from manual carrying on the congested walkway."
+  },
+  {
+   "id": "pharma-panel-pull",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Pull feeder circuits through existing conduit to a new lab equipment panel inside an occupied research building.",
+   "hazards": [
+    "Energized circuits in shared panels",
+    "Arc flash",
+    "Conduit burrs cutting hands",
+    "Lead-dust from old cable insulation"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Insulated gloves (rated for panel voltage)",
+    "Long-sleeve flame-resistant shirt",
+    "Hard hat"
+   ],
+   "steps": [
+    "Pull the permit and verify lockout/tagout on the target panel.",
+    "Confirm zero-energy with a tested meter before opening any cover.",
+    "Deburr and ream conduit ends before starting the pull.",
+    "Set up the pull with proper grips and a steady two-person rhythm.",
+    "Terminate at the panel following the print torqued to spec.",
+    "Label both ends and update the as-built drawing.",
+    "Restore power only after inspection sign-off and remove your locks."
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Lock applied, meter tested on known source before and after verification"
+    },
+    {
+     "axis": "Conduit prep",
+     "pass_if": "Reaming done, no wire damage observed after pull"
+    },
+    {
+     "axis": "Termination",
+     "pass_if": "Torque marks present and lugs labeled"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "As-built updated and panel schedule legible"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds cable off the reel at a controlled tension so apprentices keep hands clear of the conduit mouth."
+  },
+  {
+   "id": "rin-tunnel-confined-entry",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Replace a corroded steam condensate line segment in a campus utility tunnel beneath the production buildings.",
+   "hazards": [
+    "Confined space atmosphere",
+    "Live steam lines",
+    "Low headroom pinch points",
+    "Heat stress"
+   ],
+   "ppe": [
+    "Full-body harness with retrieval line",
+    "Four-gas personal monitor",
+    "Face shield over safety glasses",
+    "Heat-resistant gloves"
+   ],
+   "steps": [
+    "Retrieve the confined space permit and log entry with the attendant.",
+    "Test the tunnel atmosphere top-down before entry.",
+    "Isolate and lock out the steam line, then verify cooldown by temperature check.",
+    "Set ventilation running and monitor continuously during the work.",
+    "Cut out the corroded segment and prep both pipe ends.",
+    "Fit and weld the replacement spool, then pressure-test per procedure.",
+    "Log exit, restore isolations and close the permit."
+   ],
+   "rubric": [
+    {
+     "axis": "Atmosphere control",
+     "pass_if": "Four-gas readings within limits before entry and monitored throughout"
+    },
+    {
+     "axis": "Isolation",
+     "pass_if": "Steam locked out, tagged, and cooldown verified before cutting"
+    },
+    {
+     "axis": "Entry protocol",
+     "pass_if": "Attendant posted, retrieval line rigged, entry/exit logged"
+    },
+    {
+     "axis": "Joint integrity",
+     "pass_if": "Pressure test held with no leaks at rated pressure"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries the gas monitor through the tunnel ahead of entry for a remote pre-check of the atmosphere."
+  },
+  {
+   "id": "glass-curtain-glazing",
+   "trade": "glaziers",
+   "zone": "Progress Observatory",
+   "task": "Set insulated glass units into an aluminum curtain-wall frame on a riverside facade above a public esplanade.",
+   "hazards": [
+    "Glass fall from height onto public walk",
+    "Wind gusts off the Rhine",
+    "Lacerations from broken units",
+    "Suction-cup failure on wet glass"
+   ],
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Full-body harness tied to anchor points",
+    "Hard hat with chin strap"
+   ],
+   "steps": [
+    "Check the wind forecast and stop work if gusts exceed the site limit for glazing.",
+    "Rig the exclusion zone and sidewalk closure below the pick.",
+    "Inspect the vacuum lifter seals on the ground before the lift.",
+    "Set the unit with the crane, guiding with tag lines only.",
+    "Insert setting blocks, square the unit and drive the pressure plates.",
+    "Torque all fasteners and apply the weather seal.",
+    "Remove the exclusion zone only after debris sweep and inspection."
+   ],
+   "rubric": [
+    {
+     "axis": "Overhead protection",
+     "pass_if": "Exclusion zone established and signposted before the first lift"
+    },
+    {
+     "axis": "Equipment inspection",
+     "pass_if": "Vacuum lifter seals inspected and function-tested on record"
+    },
+    {
+     "axis": "Weather decision",
+     "pass_if": "Work paused when wind exceeds the limit"
+    },
+    {
+     "axis": "Weather-tightness",
+     "pass_if": "Setting blocks placed, seal continuous, fasteners torqued"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "chem-drain-hazmat",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Confined drain-line cleanout after a reported solvent spill in a lab waste line serving the research wing.",
+   "hazards": [
+    "Solvent vapor exposure",
+    "Unknown chemical incompatibility",
+    "Skin contact with caustic waste",
+    "Oxygen deficiency in the pit"
+   ],
+   "ppe": [
+    "Chemical-resistant suit",
+    "Full-face respirator with organic vapor cartridges",
+    "Chemical-resistant gloves and boots",
+    "Four-gas monitor"
+   ],
+   "steps": [
+    "Review the safety data sheets and confirm the spilled solvent identity.",
+    "Set exclusion zone and notify the building lab safety officer.",
+    "Verify respirator fit test is current and don PPE with a buddy check.",
+    "Test pit atmosphere before entry and ventilate continuously.",
+    "Pump and containerize waste, labeling each drum for disposal.",
+    "Decontaminate tools and personnel through the wash station.",
+    "Complete the hazardous waste manifest with the disposal coordinator."
+   ],
+   "rubric": [
+    {
+     "axis": "Identity confirmation",
+     "pass_if": "SDS reviewed and solvent identity confirmed before PPE selection"
+    },
+    {
+     "axis": "Respiratory protection",
+     "pass_if": "Fit-tested respirator donned with recorded buddy check"
+    },
+    {
+     "axis": "Waste handling",
+     "pass_if": "All waste containerized, labeled and manifested"
+    },
+    {
+     "axis": "Decon",
+     "pass_if": "Full decon sequence performed before doffing"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Enters the pit first with gas sensors and a camera so the crew sizes up atmosphere and standing liquid without exposure."
+  },
+  {
+   "id": "campus-canopy-solar",
+   "trade": "solar",
+   "zone": "Charter Hall",
+   "task": "Install rooftop photovoltaic modules on a flat roof of an administrative building over occupied offices.",
+   "hazards": [
+    "Roof edge fall exposure",
+    "Live DC circuits during tie-in",
+    "Heat on dark membrane roofing",
+    "Tripping over ballast and racking"
+   ],
+   "hazards_note": "Roof edge has no parapet on the river side.",
+   "ppe": [
+    "Full-body harness with restraint lanyard",
+    "Safety glasses",
+    "Insulated gloves for DC work",
+    "Sun hat and sunscreen",
+    "High-visibility vest"
+   ],
+   "steps": [
+    "Stage materials away from the roof edge and mark the warning line.",
+    "Set anchor points and rig restraint systems before approaching edges.",
+    "Lay ballasted racking per the engineered layout, sealing every penetration.",
+    "Torque modules to spec and connect strings, keeping each string open until commissioning.",
+    "Verify polarity of each string with the meter before tie-in.",
+    "Torque-check a sample of fasteners and walk the array for damage.",
+    "Housekeeping pass: remove all scrap and coil leads off walk paths."
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Restraint system rigged before any work outside the warning line"
+    },
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Strings verified open and polarity checked before any tie-in"
+    },
+    {
+     "axis": "Structural layout",
+     "pass_if": "Ballast and module placement matches the engineered drawing"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Roof clear of scrap and leads secured"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "quad-crane-pick",
+   "trade": "crane-ops",
+   "zone": "Operations Deck",
+   "task": "Lift an air-handling unit across the inner courtyard to a rooftop mechanical pit between occupied lab wings.",
+   "hazards": [
+    "Suspended load over occupied space",
+    "Crane overload on courtyard pavement",
+    "Power line proximity at courtyard edge",
+    "Load swing from building wind tunneling"
+   ],
+   "ppe": [
+    "Hard hat",
+    "High-visibility vest",
+    "Safety glasses",
+    "Gloves"
+   ],
+   "steps": [
+    "Walk the lift plan, confirm load weight and crane capacity chart.",
+    "Check exclusion zones over the courtyard entrances and post spotters.",
+    "Verify ground bearing and matting under outriggers.",
+    "Inspect rigging hardware and slings against the load chart.",
+    "Complete a trial lift a few centimeters and check balance.",
+    "Execute the pick on radio, one voice directing the operator.",
+    "Land and secure the unit before releasing the rigging."
+   ],
+   "rubric": [
+    {
+     "axis": "Lift planning",
+     "pass_if": "Weight verified, chart checked, plan signed before setup"
+    },
+    {
+     "axis": "Exclusion control",
+     "pass_if": "No personnel under the load path at any time"
+    },
+    {
+     "axis": "Rigging inspection",
+     "pass_if": "All slings and hardware inspected, defects tagged out"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Single designated signal person and clear radio protocol"
+    }
+   ],
+   "minutes": 90,
+   "level": "foreman",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries the load chart and inspection checklist between outrigger points so the crew chief verifies setup hands-free."
+  }
+ ],
+ "credential": {
+  "name": "Novartis Riverside Campus Trades Readiness Card",
+  "requires": [
+   "riverside-rebar-deck",
+   "rin-tunnel-confined-entry",
+   "chem-drain-hazmat",
+   "quad-crane-pick"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s05-biopharma-go",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

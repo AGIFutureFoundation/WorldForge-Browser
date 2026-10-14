@@ -1,0 +1,324 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-waypoint-tour",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the Charter Hall perimeter, pausing at each exhibit node so charter displays can be read and logged.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/scan",
+     "/amcl_pose"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Compacted gravel pathways along the Echo Point cliff edge; keep 2 m clearance from sandstone escarpment drop above Jamison Valley.",
+   "success": [
+    "Visit 4 exhibit waypoints in order",
+    "Mean lateral error < 0.15 m",
+    "No obstacle-stop events on gravel slopes < 15 deg"
+   ],
+   "safety_stops": [
+    "E-stop if within 1.5 m of cliff edge line",
+    "Stop on tilt > 20 deg",
+    "Stop on LiDAR obstacle < 0.5 m"
+   ],
+   "human_in_loop": "A steward confirms the patrol route file before each session.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_id",
+     "pos_error_m",
+     "stops_triggered",
+     "duration_s",
+     "gravel_slip_flag",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-book-scan-sweep",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Traverse lab shelving, scan research binder spines and place a summary printout in the steward inbox.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/image_raw",
+     "/torso_controller/command",
+     "/arm_controller/follow_joint_trajectory",
+     "/move_base/result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat timber floor; low lab stools and cable runs as ground clutter; eucalypt-scented humidity noted only for sensor logging.",
+   "success": [
+    "Scan >= 20 binder labels with > 95% OCR confidence",
+    "Successful pick-and-place of printout",
+    "Zero grasps on unintended objects"
+   ],
+   "safety_stops": [
+    "Stop arm if force torque > 15 N",
+    "Base stop if obstacle < 0.3 m",
+    "Abort pick if gripper slip detected twice"
+   ],
+   "human_in_loop": "A person verifies scanned evidence summaries before filing to the evidence base.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "labels_scanned",
+     "ocr_conf_avg",
+     "pick_success",
+     "ft_peak_n",
+     "misgrasp_count",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-doc-carry",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry printed proposal drafts from the drafting table to the human voting desks between decision cycles.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/lf_foot_contacts",
+     "/tof_range"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Slightly uneven sandstone-paved forum floor with mist-slick patches at dawn; low bench seating as obstacles.",
+   "success": [
+    "Deliver >= 5 documents to correct desks",
+    "Zero drops of carried item",
+    "No slip-induced falls (all foot contacts > 90% of stride)"
+   ],
+   "safety_stops": [
+    "Stop if ToF obstacle < 0.4 m",
+    "Sit down if IMU detects pitch > 30 deg",
+    "Release-carry alert if payload sensor reports tilt"
+   ],
+   "human_in_loop": "Stewards open and debate the drafts; agents never enact proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "deliveries",
+     "drops",
+     "slip_events",
+     "fall_flags",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect task-routing consoles and cabling across the tiered deck, reading status LEDs and thermal markers.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/frontleft_cam/image_raw",
+     "/odom",
+     "/spot/status",
+     "/thermal/image_raw"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Tiered timber deck stairs (3 steps, 18 cm rise) and under-desk cable trays; morning valley mist may condense on decking.",
+   "success": [
+    "Inspect 6 consoles with legible LED reads",
+    "Climb/descend stairs twice without intervention",
+    "Zero collisions logged"
+   ],
+   "safety_stops": [
+    "Stop if stair edge detected within 0.2 m of footfall",
+    "Stop on condensation slip (foot force variance spike)",
+    "Auto-dock if battery < 20%"
+   ],
+   "human_in_loop": "A coordinator approves the inspection checklist and receives flagged anomalies.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "consoles_inspected",
+     "led_flags",
+     "stair_cycles",
+     "collisions",
+     "slip_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-mist-survey-flight",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow indoor hover circuit over the progress board, capturing per-zone outcome chart imagery for the tracker agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/cmd_vel",
+     "/cf2/range",
+     "/camera/image_raw"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Calm indoor air; open observation windows admit sunrise updrafts and mist from the Jamison Valley, gusts under 2 m/s.",
+   "success": [
+    "Complete 3 laps at 1.5 m altitude",
+    ">= 90% sharp chart frames (blur metric below threshold)",
+    "No wall proximity events < 0.5 m"
+   ],
+   "safety_stops": [
+    "Land if gust > 2.5 m/s",
+    "Land if range sensor reads < 0.4 m to any surface",
+    "Failsafe land on pose estimate loss > 1 s"
+   ],
+   "human_in_loop": "A person confirms flight clearance and reviews captured chart images.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "laps",
+     "sharp_frame_pct",
+     "gust_peak_ms",
+     "proximity_events",
+     "flight_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "talos-charter-reading-demo",
+   "robot": "pal-robotics-talos",
+   "zone": "Charter Hall",
+   "goal": "Stand at the charter display, point to each mission clause and read it aloud for visitor sessions, then bow to the human stewards.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/talos/whole_body_controller/action",
+     "/talos/imu",
+     "/talos/left_ankle_ft",
+     "/speech/output"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Level polished floor of the hall entrance; avoid the stone plinth base of the charter display (0.6 m radius).",
+   "success": [
+    "Complete 5 clause gestures within 5 cm pointing accuracy",
+    "Whole-body balance maintained (CoP inside support polygon)",
+    "Speech aligned to gestures within 0.5 s"
+   ],
+   "safety_stops": [
+    "Stop if ankle F/T imbalance > threshold",
+    "Sit-protect if push detected > 20 N",
+    "Abort if plinth proximity < 0.5 m"
+   ],
+   "human_in_loop": "A steward opens and closes each demo session and may halt it at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "clauses_presented",
+     "point_error_m",
+     "cop_margin",
+     "halt_requested",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ur10e-evidence-shelving",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mount at the evidence shelf, sort scanned research binders into topic slots flagged by the Evidence Monitor agent.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/ur10e/joint_trajectory",
+     "/ur10e/wrench",
+     "/wrist_camera/image_raw",
+     "/io_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed bench next to shelf wall; binder weight up to 1.5 kg; no floor hazards (static cell).",
+   "success": [
+    "Sort >= 10 binders to correct slots",
+    "Grip force held within 20-40 N",
+    "Zero slot misplacements"
+   ],
+   "safety_stops": [
+    "Joint stop if torque > 80% rating",
+    "Release if slip detected",
+    "Speed reduce to 250 mm/s if steward enters cell"
+   ],
+   "human_in_loop": "A person validates the topic-to-slot mapping before automated sorting begins.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "binders_sorted",
+     "slot_errors",
+     "grip_force_n",
+     "torque_peaks",
+     "operator_in_cell",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "kinova-cliff-edge-planting-demo",
+   "robot": "kinova-gen3",
+   "zone": "Progress Observatory",
+   "goal": "Mounted at the observatory rail, use the arm to seed native eucalypt seedlings into trays for the bush-regeneration outcome metric.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/gen3/joint_command",
+     "/gen3/wrench",
+     "/gen3/pose",
+     "/ gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Arm fixed to observation railing; wind gusts over the open valley; trays on a 15 deg sloped shelf.",
+   "success": [
+    "Place >= 12 seedlings upright in tray cells",
+    "Placement error < 1 cm per cell",
+    "No dropped seedlings over the rail"
+   ],
+   "safety_stops": [
+    "Stop if wrist F/T exceeds limit in gusts",
+    "Pause if wind sensor > 5 m/s",
+    "Retract if rail vibration exceeds threshold"
+   ],
+   "human_in_loop": "A steward confirms the planting schedule and accepts the regeneration count.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "seedlings_placed",
+     "placement_err_cm",
+     "drops",
+     "wind_ms",
+     "torque_peak",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s16-echodawn-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

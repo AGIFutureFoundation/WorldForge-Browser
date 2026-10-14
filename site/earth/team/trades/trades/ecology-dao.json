@@ -1,0 +1,368 @@
+{
+ "scenarios": [
+  {
+   "id": "canopy-walkway-cable-tension",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Tension and torque suspension cables on a canopy walkway span above a cloud-forest ravine.",
+   "hazards": [
+    "Fall from height over ravine",
+    "Wet, mossy steel creating slip hazards",
+    "Load shift if cable tension is uneven",
+    "Wind gusts through the gap"
+   ],
+   "ppe": [
+    "Full-body harness with double lanyards",
+    "Hard hat with chin strap",
+    "Cut-resistant gloves",
+    "Non-slip boots"
+   ],
+   "steps": [
+    "Attend toolbox talk and confirm rescue plan.",
+    "Inspect turnbuckles, thimbles and anchor points for corrosion.",
+    "Rig load line and verify torque wrench calibration.",
+    "Tension both cables incrementally, alternating sides.",
+    "Check sag with surveyor's level against spec.",
+    "Torque-lock all fittings and apply corrosion-resistant coating.",
+    "Log final tension readings for the Progress Tracker."
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Apprentice stays 100% tied off above 6 feet"
+    },
+    {
+     "axis": "Symmetry",
+     "pass_if": "Cable tensions within 5% of each other at completion"
+    },
+    {
+     "axis": "Hardware care",
+     "pass_if": "All locknuts torqued and logged before leaving span"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standardized hand signals with partner at all times"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Shuttles tensioning tools and cable hardware across muddy trail sections to the ravine anchor point."
+  },
+  {
+   "id": "research-lab-conduit-run",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Install EMT conduit and pulls circuits for sensor outlets in the Research Synthesis Lab, keeping dust out of electronics.",
+   "hazards": [
+    "Energized circuits in adjacent panels",
+    "Conduit cuts and burrs",
+    "Ladder work near overhead ducts",
+    "Conductive dust ingress"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Insulated gloves for panel work",
+    "Hard hat",
+    "Dust mask"
+   ],
+   "steps": [
+    "Lock out and tag out the feeder breaker.",
+    "Verify zero energy with a meter.",
+    "Measure, cut and ream conduit runs along wall route.",
+    "Bend offsets with hand bender; deburr all ends.",
+    "Secure straps within code spacing; bond ground continuity.",
+    "Pull conductors with fish tape; terminate at outlets.",
+    "Remove locks, test circuits and record readings."
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Applies and verifies lockout before any panel contact"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Conduit runs plumb, strapped and fully deburred"
+    },
+    {
+     "axis": "Grounding",
+     "pass_if": "Continuity verified and documented before energizing"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "No metal filings or dust left near lab equipment"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds and rotates conduit stock for cutting and reaming at bench height."
+  },
+  {
+   "id": "observation-deck-decking",
+   "trade": "carpenters",
+   "zone": "Progress Observatory",
+   "task": "Frame and deck a viewing platform for the Progress Observatory on a steep cloud-forest slope.",
+   "hazards": [
+    "Uneven, wet ground and slope",
+    "Heavy timber handling",
+    "Nail and saw injuries",
+    "Buried sensor lines in the work zone"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Gloves",
+    "High-visibility vest",
+    "Boots with ankle support"
+   ],
+   "steps": [
+    "Confirm survey stakes and locate marked sensor lines before digging.",
+    "Set post bases on poured footings; check plumb both ways.",
+    "Cut ledgers and joists to layout; crown all joists up.",
+    "Fasten hardware with hot-dip galvanized hangers and nails.",
+    "Lay decking with gaps for rainwater drainage.",
+    "Install guardrail posts and midrails before crew leaves deck.",
+    "Sweep site and stage offcuts for removal."
+   ],
+   "rubric": [
+    {
+     "axis": "Layout accuracy",
+     "pass_if": "Joist spacing and deck squareness within 1/4 inch over 12 feet"
+    },
+    {
+     "axis": "Utility protection",
+     "pass_if": "Calls for locate sheet and hand-digs near marked lines"
+    },
+    {
+     "axis": "Guardrail first",
+     "pass_if": "Guardrails complete before open deck edges are left unattended"
+    },
+    {
+     "axis": "Weather detailing",
+     "pass_if": "Drainage gaps and galvanized hardware used throughout"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries fasteners and small tools up slope trails too muddy for the cart."
+  },
+  {
+   "id": "rainwater-cistern-piping",
+   "trade": "pipefitters",
+   "zone": "Charter Hall",
+   "task": "Fabricate and hang CPVC and copper lines feeding the rainwater cistern serving Charter Hall restrooms.",
+   "hazards": [
+    "Solvent cement vapors in enclosed spaces",
+    "Soldering burns and torch fire risk near wood framing",
+    "Heavy pipe lifting overhead",
+    "Hot pressurized flush test"
+   ],
+   "ppe": [
+    "Vapor respirator",
+    "Safety glasses",
+    "Gloves",
+    "Hearing protection for power threading"
+   ],
+   "steps": [
+    "Isolate supply and drain existing lines.",
+    "Measure and cut pipe; dry-fit the full run first.",
+    "Solvent-weld CPVC with ventilation running; label cure times.",
+    "Sweat copper joints with fire watch and heat shield.",
+    "Hang runs with insulated clamps at proper spacing.",
+    "Pressure-test to 1.5x working pressure and hold 30 minutes.",
+    "Flush, chlorinate potable lines and sign off."
+   ],
+   "rubric": [
+    {
+     "axis": "Joint integrity",
+     "pass_if": "Zero leaks on 30-minute pressure test"
+    },
+    {
+     "axis": "Ventilation",
+     "pass_if": "Exhaust fan running and respirator worn during solvent work"
+    },
+    {
+     "axis": "Fire watch",
+     "pass_if": "Fire extinguisher and shield in place for all torch work"
+    },
+    {
+     "axis": "Support spacing",
+     "pass_if": "Clamps spaced per spec with no sag"
+    }
+   ],
+   "minutes": 100,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "trail-equipment-transport",
+   "trade": "teamsters",
+   "zone": "Operations Deck",
+   "task": "Haul gravel and timber up a narrow, wet mountain road to a walkway staging area without blocking the single lane.",
+   "hazards": [
+    "Soft shoulders and drop-offs",
+    "Rolling loads on grade",
+    "Pedestrians and researchers on the road",
+    "Blind curves in fog"
+   ],
+   "ppe": [
+    "High-visibility vest",
+    "Gloves",
+    "Hard hat",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Perform pre-trip inspection; check brakes and load binders.",
+    "Confirm staging coordinates with Task Router dispatch.",
+    "Walk the last 200 meters for shoulder condition and overhead clearance.",
+    "Flag blind curves with a spotter before proceeding.",
+    "Spot the truck at staging; chock wheels on grade.",
+    "Unload with tag lines; keep no one under suspended loads.",
+    "Secure tarps for return and report road hazards."
+   ],
+   "rubric": [
+    {
+     "axis": "Pre-trip rigor",
+     "pass_if": "Documented inspection completed before moving"
+    },
+    {
+     "axis": "Spotter protocol",
+     "pass_if": "Blind curves flagged every trip, no exceptions"
+    },
+    {
+     "axis": "Load security",
+     "pass_if": "Binders and tarps checked after unloading"
+    },
+    {
+     "axis": "Site respect",
+     "pass_if": "No blocking of researcher access or drainage ditches"
+    }
+   ],
+   "minutes": 80,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Walks the route ahead to map washouts, soft shoulders and downed limbs before the truck climbs."
+  },
+  {
+   "id": "boardwalk-slip-resistant-refinish",
+   "trade": "painters",
+   "zone": "Proposal Forum",
+   "task": "Strip failing finish and apply slip-resistant marine coating to boardwalk planks around the Proposal Forum deck.",
+   "hazards": [
+    "VOC and stripper exposure",
+    "Cloud-forest moisture delaying cure",
+    "Slips on half-finished decking",
+    "Lead or unknown coatings on old planks"
+   ],
+   "ppe": [
+    "Organic vapor respirator",
+    "Chemical-resistant gloves",
+    "Safety glasses",
+    "Non-slip footwear"
+   ],
+   "steps": [
+    "Test old coating for lead; set up containment if positive.",
+    "Post closure signage and barricade alternate route.",
+    "Strip failed finish; collect debris in sealed bags.",
+    "Wash with degreaser; moisture-test planks to spec.",
+    "Apply marine primer within recoat window.",
+    "Broadcast anti-slip aggregate into wet topcoat.",
+    "Cure-check before reopening to foot traffic."
+   ],
+   "rubric": [
+    {
+     "axis": "Containment",
+     "pass_if": "All stripper debris captured and bagged, none to soil"
+    },
+    {
+     "axis": "Moisture control",
+     "pass_if": "Moisture readings meet spec before coating"
+    },
+    {
+     "axis": "Anti-slip",
+     "pass_if": "Aggregate broadcast on every plank before tack-over"
+    },
+    {
+     "axis": "Reopening",
+     "pass_if": "Signage removed only after cure verified"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "solar-array-battery-install",
+   "trade": "battery-storage",
+   "zone": "Progress Observatory",
+   "task": "Set up off-grid solar battery bank and inverter cabinet powering Progress Observatory instruments.",
+   "hazards": [
+    "Arc flash and short-circuit burns",
+    "Hydrogen off-gassing during charging",
+    "Heavy battery lifting",
+    "DC live-front work"
+   ],
+   "ppe": [
+    "Arc-rated face shield and gloves",
+    "Flame-resistant clothing",
+    "Insulated tools",
+    "Rubber matting"
+   ],
+   "steps": [
+    "Mount battery rack on elevated platform above splash zone.",
+    "Torque battery terminals with insulated tools; never bridge poles.",
+    "Connect cells per series diagram; verify polarity each step.",
+    "Ground rack and cabinet; install hydrogen vent fan.",
+    "Land DC feeds at inverter with lockout on PV strings.",
+    "Program charge limits; log commissioning data.",
+    "Post warning labels and one-line diagram inside door."
+   ],
+   "rubric": [
+    {
+     "axis": "Polarity checks",
+     "pass_if": "Continuity and polarity verified after every connection"
+    },
+    {
+     "axis": "Ventilation",
+     "pass_if": "Vent fan operational before first charge cycle"
+    },
+    {
+     "axis": "Grounding/bonding",
+     "pass_if": "Rack and cabinet grounds verified to spec"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Labels and one-line diagram posted before close-up"
+    }
+   ],
+   "minutes": 110,
+   "level": "apprentice",
+   "robot_assist": "franka-fr3",
+   "robot_role": "Presents and positions batteries at rack height with torque-monitored terminal driving."
+  }
+ ],
+ "credential": {
+  "name": "Cloud-Forest Construction Apprentice Certificate (Ecology DAO, Monteverde Reserve)",
+  "requires": [
+   "canopy-walkway-cable-tension",
+   "research-lab-conduit-run",
+   "observation-deck-decking",
+   "rainwater-cistern-piping",
+   "trail-equipment-transport",
+   "boardwalk-slip-resistant-refinish",
+   "solar-array-battery-install"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "ecology-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

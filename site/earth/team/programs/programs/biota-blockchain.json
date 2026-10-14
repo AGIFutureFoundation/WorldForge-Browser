@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Health Data Rights on the Blockchain: A Worker Education Series",
+   "grade_or_level": "Adult continuing education / worksite training",
+   "outcomes": [
+    "Explain how encrypted health data exchange and smart-contract access controls affect workplace benefits and privacy",
+    "Interpret a DAO governance workflow and identify where member voice enters decisions",
+    "Recognize fraud-detection and compliance alerts that protect member funds"
+   ],
+   "sessions": [
+    {
+     "zone": "Healthcare Data Exchange",
+     "activity": "Hands-on walkthrough of SMS-based patient consent and encrypted data sharing, role-playing patient, provider and Health Agent perspectives.",
+     "minutes": 60
+    },
+    {
+     "zone": "DAO Governance Hall",
+     "activity": "Mock DAO session: members review a Finance Agent fraud alert, debate a resource-allocation proposal and record outcomes without touching human-reserved votes.",
+     "minutes": 75
+    },
+    {
+     "zone": "Multi-Blockchain Ledger",
+     "activity": "Guided exploration of how a Security Agent monitors cross-network transactions (Ethereum, Hyperledger, Polkadot, Cosmos) and what members can and cannot see.",
+     "minutes": 45
+    },
+    {
+     "zone": "Personalized Therapy Lab",
+     "activity": "Panel discussion with R&D Agent demonstrations on ALS and Parkinson's compound modeling, focused on jobs, safety and worker questions.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized post-session quiz scores and consent-workflow exercise outcomes (no personal health data) aggregated to improve union training materials.",
+   "consent": "Voluntary participation with signed digital consent; any example data is synthetic; no member health or biometric data is collected; withdrawal deletes contributions."
+  },
+  {
+   "audience": "k12",
+   "title": "BioDAO Explorers: Genes, Blocks and Bay Mud",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Describe how AI helps model therapies for rare diseases like ALS and Parkinson's",
+    "Explain simply how a blockchain ledger keeps records verifiable",
+    "Connect the Oyster Point coastal setting to why location matters for biotech campuses"
+   ],
+   "sessions": [
+    {
+     "zone": "Personalized Therapy Lab",
+     "activity": "Age-appropriate intro to molecular modeling: students use bead-and-paper models to see how the R&D Agent screens compounds for neurodegenerative diseases.",
+     "minutes": 45
+    },
+    {
+     "zone": "Multi-Blockchain Ledger",
+     "activity": "Unplugged blockchain game: teams link paper 'blocks' across four colored ledgers to understand verified cross-network data.",
+     "minutes": 40
+    },
+    {
+     "zone": "Healthcare Data Exchange",
+     "activity": "Privacy scenario cards: students decide who should see a patient's data and act out SMS consent with the Health Agent concept.",
+     "minutes": 35
+    },
+    {
+     "zone": "DAO Governance Hall",
+     "activity": "Classroom DAO: students propose and discuss a class project; teachers model human-only final votes per the 'Agents operate; people govern' rule.",
+     "minutes": 50
+    }
+   ],
+   "data_shared": "Anonymized pre/post concept-quiz scores and aggregated lesson feedback only; no student names, identifiers or personal data.",
+   "consent": "Signed guardian/parent consent forms required before participation; teachers act as data stewards; all data aggregated and de-identified; parents may opt out at any time and contributions are removed."
+  },
+  {
+   "audience": "ngo",
+   "title": "Transparent Health Data Stewardship with DAOs",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Apply DAO governance frameworks to multi-stakeholder health programs",
+    "Design consent-first data sharing using smart contracts and SMS consent",
+    "Assess cross-jurisdiction compliance needs with the Compliance Agent model"
+   ],
+   "sessions": [
+    {
+     "zone": "DAO Governance Hall",
+     "activity": "Workshop mapping an NGO program onto DAO structures: which decisions stay human-reserved, which flows agents can automate.",
+     "minutes": 90
+    },
+    {
+     "zone": "Healthcare Data Exchange",
+     "activity": "Case-lab drafting smart-contract access rules and SMS consent scripts for community health data sharing.",
+     "minutes": 75
+    },
+    {
+     "zone": "Multi-Blockchain Ledger",
+     "activity": "Comparison exercise across Ethereum, Hyperledger, Polkadot and Cosmos ledgers for verified, interoperable program records.",
+     "minutes": 60
+    },
+    {
+     "zone": "Biopharma AGI Agents Hub",
+     "activity": "Structured dialogue on biopharma agent roles (R&D, Clinical Support) and where NGO community voices plug in.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized workshop templates and de-identified case outcomes shared across participating NGOs to build a common DAO-governance practice library.",
+   "consent": "Facilitators obtain organizational and individual consent before any case data is used; all shared material is de-identified and reviewed by program leads before release."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Blockchain for Rare-Disease Nonprofits: From Lab to Ledger",
+   "grade_or_level": "Board and program staff / introductory professional",
+   "outcomes": [
+    "Understand how AI-driven personalized therapy pipelines serve ALS and Parkinson's communities",
+    "Explain blockchain transparency for donations and program records",
+    "Build a patient-consent-first data policy for nonprofit health programs"
+   ],
+   "sessions": [
+    {
+     "zone": "Personalized Therapy Lab",
+     "activity": "Guided tour of AI compound optimization for rare diseases, with discussion of what nonprofit advocates should ask researchers.",
+     "minutes": 60
+    },
+    {
+     "zone": "Multi-Blockchain Ledger",
+     "activity": "Donation-tracing exercise: follow a simulated gift across interoperable ledgers to see verifiable, auditable records.",
+     "minutes": 45
+    },
+    {
+     "zone": "Healthcare Data Exchange",
+     "activity": "Draft a community data policy covering encrypted sharing, smart-contract access and SMS patient consent.",
+     "minutes": 75
+    },
+    {
+     "zone": "DAO Governance Hall",
+     "activity": "Simulated nonprofit DAO meeting: discuss budget reallocation using Finance Agent alerts; humans retain all final decisions.",
+     "minutes": 60
+    },
+    {
+     "zone": "Biopharma AGI Agents Hub",
+     "activity": "Closing roundtable connecting nonprofit missions to biopharma agent roles and partnership questions for future planning.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized policy drafts and aggregated exercise results contributed to a shared open library of nonprofit blockchain-governance templates.",
+   "consent": "Individual consent collected for any shared material; patient scenarios are synthetic; no real beneficiary health data is used; organizations may withdraw contributions at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "biota-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

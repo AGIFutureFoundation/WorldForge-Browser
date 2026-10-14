@@ -1,0 +1,297 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-waypoint-tour-husky",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the perimeter path of Charter Hall, stopping at each charter display pillar for a status readout.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/gps/fix",
+     "/plan",
+     "/cmd_vel"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Compacted shell-rock service roads over reclaimed Merritt Island wetland; soft shoulders, standing water ruts after rain, alligator burrow holes at pad margins.",
+   "success": [
+    "Visit all display pillars within +/- 0.5 m",
+    "Zero wheel-slip stall events > 5 s",
+    "Complete loop under 20 min",
+    "Log GPS track continuity > 99%"
+   ],
+   "safety_stops": [
+    "E-stop if standing water depth sensor reads > 15 cm",
+    "Stop for any human within 2 m",
+    "Halt on roll/pitch exceeding 15 deg",
+    "Stop if wheel slip exceeds 20% for 3 s"
+   ],
+   "human_in_loop": "A steward confirms the patrol log and approves posting the charter status readout to the DAO record.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "pose_error_m",
+     "water_depth_cm",
+     "wheel_slip_pct",
+     "pillars_visited",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-doc-delivery-fetch",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve printed evidence summaries from the print station and deliver them to each researcher desk in the lab.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/object_detection",
+     "/arm_controller/follow_joint_trajectory",
+     "/move_base/result",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Flat raised lab flooring inside the Operations building; cable ramps, door thresholds, and server rack edges as ground obstacles.",
+   "success": [
+    "Pick success rate >= 90% across 10 trials",
+    "Deliver to correct desk 10/10",
+    "No dropped papers",
+    "Cycle time under 4 min per delivery"
+   ],
+   "safety_stops": [
+    "Stop arm if unexpected object enters workspace",
+    "E-stop on collision force > 10 N",
+    "Abort if gripper slip detected",
+    "Stop if a person crosses base path"
+   ],
+   "human_in_loop": "A researcher signs off on delivery completion before evidence summaries are archived.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "pick_success",
+     "delivery_correct",
+     "cycle_time_s",
+     "gripper_force_n",
+     "collisions",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-crowd-mapping-crazyflie",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Fly a low-altitude sweep of the Proposal Forum to map attendee density before a debate session.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/range/front",
+     "/range/up",
+     "/scan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor forum hall with high ceiling beams, hanging banners, and open doors to humid coastal air; crosswind gusts from Atlantic-side doors.",
+   "success": [
+    "Coverage of >= 90% of forum floor area",
+    "Position hold within 10 cm at waypoints",
+    "Zero collisions",
+    "Complete sweep under 5 min"
+   ],
+   "safety_stops": [
+    "Land immediately if battery < 20%",
+    "Land if a person is within 1.5 m below",
+    "Return-to-home on loss of positioning > 1 s",
+    "Land on propeller anomaly vibration threshold"
+   ],
+   "human_in_loop": "A steward approves the density map before it is shared with Proposal Forum facilitators.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "coverage_pct",
+     "position_error_cm",
+     "collisions",
+     "battery_min_pct",
+     "flight_time_s",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-inspection-spot",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect conduit runs and cooling units along the Operations Deck walls and report thermal anomalies to the Task Router.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/thermal/image_raw",
+     "/odom",
+     "/spot/foot_contacts"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Raised grated decking with gaps, cable trays, and step-over conduits; humid salt-air corrosion patches on metal flooring near lagoon side.",
+   "success": [
+    "Detect and localize >= 95% of seeded hotspot targets",
+    "Maintain stair/grating traversal with zero falls",
+    "Report anomalies within 30 s of detection",
+    "Complete circuit in under 15 min"
+   ],
+   "safety_stops": [
+    "Sit down if foot slip detected on grating",
+    "Stop for humans within 2 m",
+    "Abort on body temperature or joint fault",
+    "Stop if grating gap > safe span detected ahead"
+   ],
+   "human_in_loop": "A facilities operator reviews flagged thermal anomalies before any maintenance task is routed.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "hotspots_detected",
+     "localization_error_cm",
+     "falls",
+     "anomaly_report_latency_s",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-greeting-nao",
+   "robot": "softbank-nao",
+   "zone": "Progress Observatory",
+   "goal": "Greet visitors, present the current progress dashboard summary, and gesture toward the metrics wall.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/speech",
+     "/nao/pose",
+     "/joint_states",
+     "/leds"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Smooth observatory floor with display plinths and visitor queue barriers; occasional wet shoe tracks from marsh boardwalk entrance.",
+   "success": [
+    "Speech intelligibility score >= 4/5 from visitor survey",
+    "Gesture accuracy to correct metrics panel 10/10",
+    "Uptime >= 95% during session",
+    "No falls on floor transitions"
+   ],
+   "safety_stops": [
+    "Sit and stop if tipped or pushed",
+    "Pause speech if a visitor is within 0.5 m of arms",
+    "Stop on joint overcurrent",
+    "Shutdown on battery < 15%"
+   ],
+   "human_in_loop": "A steward approves the dashboard narration script updates each decision cycle.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "speech_score",
+     "gesture_correct",
+     "uptime_pct",
+     "fall_events",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "pad-39a-perimeter-survey-go2",
+   "robot": "unitree-go2",
+   "zone": "Operations Deck",
+   "goal": "Survey the outdoor staging yard adjacent to Launch Complex 39A pad perimeter for debris and fence-line gaps.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/lidar/scan",
+     "/odom",
+     "/front_cam/image_raw",
+     "/anomaly_events"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Pad-adjacent crushed concrete and coquina fill with loose gravel, marsh grass encroachment, drainage culverts, and salty standing puddles between the pad and banana river lagoon side.",
+   "success": [
+    "Detect 100% of seeded debris items >= 10 cm",
+    "Map 500 m fence line with <= 0.3 m gap-resolution",
+    "Return-to-base without manual recovery",
+    "Survey complete under 30 min"
+   ],
+   "safety_stops": [
+    "Stop and reverse if water depth > 10 cm",
+    "Stop for any wildlife or human within 3 m",
+    "Low-power sit if battery < 20%",
+    "E-stop on gravel slip detected over 3 consecutive steps"
+   ],
+   "human_in_loop": "A steward approves dispatching any follow-up maintenance task from the survey report.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "debris_detected",
+     "fence_gap_count",
+     "water_depth_cm",
+     "battery_min_pct",
+     "duration_s",
+     "human_approved"
+    ]
+   }
+  },
+  {
+   "id": "charter-exhibit-arm-demo-fr3",
+   "robot": "franka-fr3",
+   "zone": "Charter Hall",
+   "goal": "Demonstrate the contribution-model display by sorting charter tokens into the correct outcome bins on the exhibit table.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/fr3/joint_states",
+     "/camera/color/image_raw",
+     "/gripper/state",
+     "/contact_torque"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed exhibit plinth indoors; table surface with felt liner, visitor hand intrusions at table edge as dynamic obstacles.",
+   "success": [
+    "Sorting accuracy >= 95% over 40 tokens",
+    "No contact force exceeding 5 N on intrusion",
+    "Zero dropped tokens",
+    "Cycle time <= 8 s per token"
+   ],
+   "safety_stops": [
+    "Stop arm instantly on contact detection",
+    "Reduce to gravity mode on visitor proximity",
+    "E-stop on self-collision prediction",
+    "Stop on torque limit breach"
+   ],
+   "human_in_loop": "An exhibit steward approves start of each public demo session and reviews any contact incidents.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "sort_accuracy",
+     "max_contact_force_n",
+     "dropped_tokens",
+     "cycle_time_s",
+     "intrusion_events",
+     "human_approved"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s31-aerospace-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

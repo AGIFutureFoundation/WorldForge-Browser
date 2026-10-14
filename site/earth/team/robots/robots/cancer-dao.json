@@ -1,0 +1,322 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the Charter Hall exhibits, narrating the DAO charter and contribution model waypoints.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/move_base/status",
+     "/speech"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor polished floors among 668-campus building interiors; avoid exhibit plinths and cabling.",
+   "success": [
+    "Visits all 5 exhibit waypoints in order",
+    "Keeps speed under 0.4 m/s",
+    "Zero collisions logged",
+    "Speech utterance at each waypoint"
+   ],
+   "safety_stops": [
+    "E-stop on human within 0.5 m",
+    "Stop if IMU tilt > 20 deg",
+    "Stop on wheel-current spike"
+   ],
+   "human_in_loop": "A steward approves the tour script content before deployment.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_reached",
+     "collisions",
+     "min_human_distance",
+     "duration_s"
+    ]
+   }
+  },
+  {
+   "id": "lab-evidence-inspection-with-arm",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Manipipulate lab evidence trays: grasp sample trays from the bench and place them at the agent workstation for scanning.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrist_camera/image_raw",
+     "/moveit/result",
+     "/ft_sensor/wrench"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Lab benches and racks in a South Lake Union research interior; avoid glassware and shelf edges.",
+   "success": [
+    "10 of 10 tray pick-places completed",
+    "Grasp force within 5-15 N band",
+    "Zero dropped items",
+    "Final pose error < 1 cm"
+   ],
+   "safety_stops": [
+    "Stop if external force > 40 N",
+    "Stop on human within 1 m of workspace",
+    "Stop on vision loss of grasp target"
+   ],
+   "human_in_loop": "A lab staff member approves each tray before the robot lifts it.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "picks_ok",
+     "drops",
+     "mean_grasp_force_n",
+     "pose_error_m",
+     "cycle_time_s"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-doc-delivery",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Proposal Forum",
+   "goal": "Deliver printed proposal drafts from the drafting desk to the human voting table without dropping documents.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/image_raw",
+     "/cmd_vel",
+     "/gripper/state",
+     "/move_base/status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Forum floor with chairs and tables; doorways ~0.9 m wide between rooms.",
+   "success": [
+    "5 deliveries completed",
+    "Tray level within +/-5 deg at all times",
+    "Zero document drops",
+    "Doorway transits without contact"
+   ],
+   "safety_stops": [
+    "Stop on obstacle < 0.4 m",
+    "Stop if tilt sensor > 10 deg",
+    "Stop on gripper fault"
+   ],
+   "human_in_loop": "A person confirms receipt of each delivered proposal bundle.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "deliveries_ok",
+     "drops",
+     "min_doorway_clearance_m",
+     "distance_traveled_m"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-patrol",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Patrol the Operations Deck during coordination sessions, checking task-board displays and routing desk occupancy.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/front_camera/image_raw",
+     "/body_pose",
+     "/patrol/status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Mixed hard flooring and raised cable ramps on an urban campus floor; stairs to mezzanine optional route.",
+   "success": [
+    "Completes 4 patrol loops",
+    "Stairs traversed with zero slips",
+    "All 6 display checkpoints imaged",
+    "No unplanned stops > 10 s"
+   ],
+   "safety_stops": [
+    "Stop on human within 1 m",
+    "Stop if terrain slip detected",
+    "Stop on battery < 20%"
+   ],
+   "human_in_loop": "An operator approves stair traversal segments each session.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "loops_done",
+     "slips",
+     "checkpoints_imaged",
+     "battery_end_pct",
+     "min_human_distance"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-aerial-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a low-altitude scan of the Progress Observatory wall displays to capture metric-board imagery for the Progress Tracker agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/camera/image_raw",
+     "/cf2/battery",
+     "/scan/status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open atrium volume near Lake Union windows; avoid ceiling fixtures, pendant lights and glass edges.",
+   "success": [
+    "Images all 5 metric boards",
+    "Maintains 1.5-2.5 m altitude band",
+    "Zero wall contacts",
+    "Flight time under 4 min per battery"
+   ],
+   "safety_stops": [
+    "Land immediately on battery < 15%",
+    "Land on human entering flight volume",
+    "Land on position-estimate loss"
+   ],
+   "human_in_loop": "A steward authorizes each flight volume before takeoff.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "boards_captured",
+     "min_altitude_m",
+     "wall_contacts",
+     "battery_end_pct"
+    ]
+   }
+  },
+  {
+   "id": "campus-lakefront-recon",
+   "robot": "unitree-go2",
+   "zone": "Operations Deck",
+   "goal": "Trot a lakeside recon loop on the Lake Union shoreline path to verify outdoor staging areas for working-group meetups.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/lidar_scan",
+     "/gps/fix",
+     "/route/status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Gravel and paved shoreline path beside Lake Union water (7 water features in map); watch tree roots and bollards.",
+   "success": [
+    "Completes 800 m loop",
+    "Mean speed 1.0-1.5 m/s",
+    "Zero falls or flips",
+    "GPS fix maintained > 95% of route"
+   ],
+   "safety_stops": [
+    "Stop within 1 m of water edge marker",
+    "Stop on human within 2 m",
+    "Stop on low ground-contact confidence"
+   ],
+   "human_in_loop": "A person approves routes that run closer than 2 m to the water.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "distance_m",
+     "falls",
+     "min_water_edge_distance_m",
+     "gps_fix_ratio",
+     "mean_speed_mps"
+    ]
+   }
+  },
+  {
+   "id": "charter-precise-artifact-placement",
+   "robot": "franka-fr3",
+   "zone": "Charter Hall",
+   "goal": "Precisely place charter replica plaques into the display grid at mm-level alignment for the exhibit refresh.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/camera/color/image_raw",
+     "/ft_sensor",
+     "/franka_gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Display grid at bench height; fragile plaque edges and adjacent glass case at 0.3 m.",
+   "success": [
+    "8 of 8 plaques placed within 2 mm tolerance",
+    "Zero contact with glass case",
+    "Grasp success rate >= 90%",
+    "Cycle time < 30 s per plaque"
+   ],
+   "safety_stops": [
+    "Reflex stop on force > 20 N",
+    "Stop if human within 0.8 m",
+    "Stop on camera frame loss > 0.5 s"
+   ],
+   "human_in_loop": "A curator approves final plaque layout before each run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "placements_ok",
+     "max_pos_error_mm",
+     "glass_clearance_m",
+     "grasp_success_rate",
+     "cycle_time_s"
+    ]
+   }
+  },
+  {
+   "id": "forum-av-mast-adjust",
+   "robot": "kinova-gen3",
+   "zone": "Proposal Forum",
+   "goal": "Adjust the forum's camera mast height and angle between debate sessions for hybrid voter participation.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/vision/color/image_raw",
+     "/wrench",
+     "/mast/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Mounted beside A/V cabinet with cable bundles; low ceiling clearance at 2.1 m.",
+   "success": [
+    "Reaches 3 preset mast poses",
+    "Repeatability within 3 mm",
+    "Zero cable snags",
+    "Setup completes in under 90 s"
+   ],
+   "safety_stops": [
+    "Stop if joint torque > 80% rated",
+    "Stop on human within 1 m",
+    "Stop on unexpected payload force"
+   ],
+   "human_in_loop": "An AV steward approves mast presets before the session begins.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "presets_reached",
+     "repeatability_mm",
+     "snags",
+     "setup_time_s",
+     "max_torque_pct"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "cancer-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,282 @@
+{
+ "title": "Autonomous Organizations at Oracle Lagoon",
+ "summary": "A walkable campus ringing the Redwood Shores lagoon: five districts mapped to the world's zones, from the Goal Wall to the Execution Bay, with the Decision Room kept at the human-reserved line.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Goal Wall",
+   "real_anchor": "Dolphin Park",
+   "buildings": [
+    {
+     "name": "Goal Wall Kiosk",
+     "use": "Public display of the team's high-level goal, kept current and measurable",
+     "floors": 1
+    },
+    {
+     "name": "Measurability Annex",
+     "use": "Workshop for turning goals into trackable metrics",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Wall Gallery",
+    "Metric Room",
+    "Restatement Booth",
+    "Overlook Deck"
+   ],
+   "props": [
+    "illuminated goal wall",
+    "metric chalkboard",
+    "lagoon overlook bench",
+    "goal history plaque"
+   ],
+   "npc_agents": [
+    "Goal Keeper"
+   ]
+  },
+  {
+   "zone": "Coordination Floor",
+   "real_anchor": "Club Oracle",
+   "buildings": [
+    {
+     "name": "Channels Hall",
+     "use": "Slack-style channel floor for agent chatter",
+     "floors": 3
+    },
+    {
+     "name": "Threads Pavilion",
+     "use": "Thread and status-update spaces for cross-team sync",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "#general Atrium",
+    "Thread Rooms",
+    "Status Board Corridor",
+    "Blocker Desk",
+    "Quiet Channel"
+   ],
+   "props": [
+    "message ribbon wall",
+    "channel directory sign",
+    "status dot lanterns",
+    "ring-lagoon boardwalk",
+    "ping bell"
+   ],
+   "npc_agents": [
+    "Coordinator Agent",
+    "Communicator"
+   ]
+  },
+  {
+   "zone": "Assignment Board",
+   "real_anchor": "Bldg 100 plaza (Numbered Buildings row)",
+   "buildings": [
+    {
+     "name": "Board House",
+     "use": "Task assignment and ownership tracking",
+     "floors": 2
+    },
+    {
+     "name": "Backlog Barn",
+     "use": "Linear-style backlog triage and sizing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Triage Floor",
+    "Ownership Grid",
+    "Estimation Corner",
+    "Handoff Window",
+    "Reassignment Alcove"
+   ],
+   "props": [
+    "magnetic assignment board",
+    "task card crates",
+    "owner tag dispenser",
+    "triage hourglass",
+    "creekside stand-up rail"
+   ],
+   "npc_agents": [
+    "Assigner"
+   ]
+  },
+  {
+   "zone": "Decision Room",
+   "real_anchor": "Building 1",
+   "buildings": [
+    {
+     "name": "Decision Chamber",
+     "use": "Agent-drafted decisions staged for human final vote",
+     "floors": 2
+    },
+    {
+     "name": "Evidence Library",
+     "use": "Research and evidence packets supporting each draft",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Table Hall",
+    "Evidence Stacks",
+    "Reserved Line Foyer",
+    "Deliberation Room",
+    "Vote Waiting Gallery"
+   ],
+   "props": [
+    "evidence packet shelves",
+    "draft decision lectern",
+    "reserved-for-humans brass line",
+    "steward seating",
+    "lagoon-facing deliberation window",
+    "charter plaque"
+   ],
+   "npc_agents": [
+    "Decision Drafter"
+   ]
+  },
+  {
+   "zone": "Execution Bay",
+   "real_anchor": "Belmont Slough",
+   "buildings": [
+    {
+     "name": "Execution Bay Workshop",
+     "use": "Hands-on completion of assigned work",
+     "floors": 2
+    },
+    {
+     "name": "Report-Back Dock",
+     "use": "Where executors report results to the Coordination Floor",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Build Floor",
+    "Tool Crib",
+    "Test Rig Room",
+    "Report-Back Dock",
+    "Slough Overlook"
+   ],
+   "props": [
+    "workbenches",
+    "tool walls",
+    "test rigs",
+    "report bell",
+    "slough-side loading dock",
+    "task-complete stamp station"
+   ],
+   "npc_agents": [
+    "Executor"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "coast live oak",
+   "Monterey pine",
+   "California buckeye",
+   "western sycamore",
+   "coast redwood"
+  ],
+  "shrubs": [
+   "coyote brush",
+   "California sagebrush",
+   "toyon"
+  ],
+  "flowers": [
+   "California poppy",
+   "seaside daisy",
+   "yarrow",
+   " Douglas iris"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.3,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "The Reserved Line Court",
+  "style": "Deliberation plaza with a brass inlay marking the reserved-for-humans boundary",
+  "why_here": "The Decision Room's final vote and enactment stay with human stewards; the court stages that boundary at the campus center."
+ },
+ "quests": [
+  {
+   "title": "Pin the Goal",
+   "from_zone": "Goal Wall",
+   "to_zone": "Assignment Board",
+   "steps": [
+    "Read the high-level goal on the wall",
+    "Help Goal Keeper make it measurable",
+    "Send the measurable goal to the Assigner",
+    "Watch the first task cards appear on the board"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Surface Sync",
+   "from_zone": "Coordination Floor",
+   "to_zone": "Execution Bay",
+   "steps": [
+    "Join a channel on Channels Hall's message ribbon",
+    "Collect a status update from the Communicator",
+    "Carry a blocker report to the Report-Back Dock",
+    "Return with the executor's reply"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Draft, Don't Enact",
+   "from_zone": "Coordination Floor",
+   "to_zone": "Decision Room",
+   "steps": [
+    "Gather evidence from the Evidence Library",
+    "Watch Decision Drafter assemble the packet",
+    "Stand at the brass Reserved Line",
+    "Confirm the draft goes to human stewards for final vote"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Rebalance the Board",
+   "from_zone": "Assignment Board",
+   "to_zone": "Goal Wall",
+   "steps": [
+    "Find an unowned task on the Ownership Grid",
+    "Reassign it with the Assigner",
+    "Track completion at the Execution Bay report bell",
+    "Post the progress metric back on the Goal Wall"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Lagoon Loop",
+   "from_zone": "Goal Wall",
+   "to_zone": "Execution Bay",
+   "steps": [
+    "Walk the ring-lagoon boardwalk",
+    "Collect one update from each district",
+    "Stamp the loop complete at the Report-Back Dock",
+    "Log the run on the Goal Wall metric board"
+   ],
+   "xp": 30
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "autonomous-organizations",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

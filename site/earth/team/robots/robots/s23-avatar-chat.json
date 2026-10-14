@@ -1,0 +1,324 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide-nao",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the Charter Hall exhibit path and narrate the charter's contribution model waypoints.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/move_base/status",
+     "/speech"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Sloped boardwalk planks between exhibit plinths modelled on Yuanjiajie park walkways; low steps under 10 cm require stable biped foot placement.",
+   "success": [
+    "Reach all 5 exhibit waypoints within 2 m accuracy",
+    "Speech utterance logged at each waypoint",
+    "Zero falls over a 15-min run"
+   ],
+   "safety_stops": [
+    "E-stop on torso tilt over 20 degrees",
+    "Stop if human within 0.5 m on planned path",
+    "Pause narration if battery below 15%"
+   ],
+   "human_in_loop": "A steward approves the final charter narration script before public tours begin.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoint_reached",
+     "pose_error_m",
+     "speech_delivered",
+     "fall_events",
+     "duration_s",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-fetch-books",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Fetch printed research binders from the lab shelf and deliver them to the synthesis desks.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth/image",
+     "/arm_with_torso_controller/follow_joint_trajectory",
+     "/move_base/status",
+     "/odom"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Smooth lab floor with cable runs and chair legs; shelf heights 0.4-1.6 m require torso extension.",
+   "success": [
+    "Pick success rate at least 8 of 10 attempts",
+    "No object drops during transit",
+    "Delivery within 0.2 m of desk target"
+   ],
+   "safety_stops": [
+    "Stop arm on unexpected force over 20 N",
+    "Base stop on obstacle under 0.3 m clearance",
+    "Abort pick if gripper slip detected"
+   ],
+   "human_in_loop": "A librarian confirms binder loan records after each delivery batch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "pick_attempts",
+     "pick_successes",
+     "drop_events",
+     "gripper_force_n",
+     "delivery_error_m",
+     "cycle_time_s"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-doc-distribution-ur10e",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Stamp and stack printed proposal drafts from the forum printer into trays per working group.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/io_and_status_controller",
+     "/speed_scaling_factor"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed pedestal mount beside printer; paper trays at 0.6 m and 1.1 m; no locomotion, only reach planning around tray dividers.",
+   "success": [
+    "Stack 20 proposals with alignment within 5 mm",
+    "Zero paper jams induced",
+    "Cycle time under 8 s per document"
+   ],
+   "safety_stops": [
+    "Stop on end-effector force over 15 N",
+    "Reduced speed mode when humans within 1.5 m",
+    "Halt on joint velocity anomaly over 10% above plan"
+   ],
+   "human_in_loop": "A steward verifies stamped proposals are the agent-drafted versions before circulation; agents never enact them.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "docs_processed",
+     "alignment_error_mm",
+     "max_wrench_n",
+     "jam_events",
+     "cycle_time_s",
+     "speed_mode"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-scout-husky",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the Operations Deck perimeter mapping task-routing kiosk positions and Wi-Fi signal strength.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/scan",
+     "/odometry/filtered",
+     "/map",
+     "/signal_strength"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Uneven stone-flagged floor echoing Zhangjiajie trail surfaces; planter boxes as fixed obstacles; one 8-degree ramp to mezzanine.",
+   "success": [
+    "Map coverage over 95% of the deck",
+    "Signal readings at all 8 kiosks",
+    "Localization error under 0.3 m vs ground truth"
+   ],
+   "safety_stops": [
+    "Stop on pitch over 15 degrees on ramp",
+    "Stop if bump event detected",
+    "Return to dock below 20% battery"
+   ],
+   "human_in_loop": "An operator approves the patrol route and reviews the kiosk coverage report.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "map_coverage_pct",
+     "kiosks_surveyed",
+     "localization_error_m",
+     "bump_events",
+     "battery_pct",
+     "patrol_time_s"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-climb-talos",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Climb the observatory's viewing steps while carrying a progress-display tablet to the upper dashboard console.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/whole_body_kdl/pose",
+     "/joint_states",
+     "/foot_contact_sensor_states",
+     "/base_pose"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Stone staircase of 15 steps, 17 cm rise each, modeled on park viewing towers; handrail on left; wet-season slip coefficient included.",
+   "success": [
+    "Ascend 15 steps without handrail contact",
+    "Maintain CoM within support polygon at all times",
+    "Mount tablet on console within 5 cm slot tolerance"
+   ],
+   "safety_stops": [
+    "Stop on foot slip detection over 3 cm drift",
+    "Sit-down fall arrest on CoM exit of support polygon",
+    "Abort on any joint torque over 110% nominal"
+   ],
+   "human_in_loop": "A steward accepts or rejects the delivered progress dataset upload at the console.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "steps_climbed",
+     "slip_events",
+     "com_margin_m",
+     "max_torque_pct",
+     "mount_error_cm",
+     "elapsed_s"
+    ]
+   }
+  },
+  {
+   "id": "avatar-peaks-survey-crazyflie-swarm",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a 3-drone swarm through the pillar-gallery atrium to photogrammetry-scan miniature floating-peak replicas for the observatory display.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/range_front",
+     "/mode",
+     "/scan_matches"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Atrium with suspended sandstone-pillar replicas spaced 1.5-3 m apart; updrafts from vents; ceiling mesh at 8 m acts as a soft boundary.",
+   "success": [
+    "Capture 80% overlap imagery of all 6 replicas",
+    "No inter-drone proximity under 0.5 m",
+    "Complete scan circuit within 10 minutes"
+   ],
+   "safety_stops": [
+    "Land immediately on localization loss over 1 s",
+    "Return-home on battery under 25%",
+    "Halt swarm on pilot kill-switch or vent updraft over 3 m/s"
+   ],
+   "human_in_loop": "A safety pilot holds the kill-switch; a steward approves imagery before it enters the exhibit.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "replicas_scanned",
+     "image_overlap_pct",
+     "min_separation_m",
+     "localization_drops",
+     "battery_min_pct",
+     "flight_time_s"
+    ]
+   }
+  },
+  {
+   "id": "pillar-trail-mapping-spot-go2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "With a Unitree Go2 scout, map the outdoor pillar-trail terrace behind the lab for the digital-twin terrain update.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/spot/odom",
+     "/go2/scan",
+     "/terrain_map",
+     "/go2/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Narrow sandstone pillar trail with mossy patches, gravel washouts, and 10-20 cm root steps; Go2 leads through 60 cm gaps Spot cannot test first.",
+   "success": [
+    "Terrain map covers 200 m of trail at 5 cm resolution",
+    "Go2 passes 3 gap checkpoints without scraping",
+    "Zero slips requiring recovery over the run"
+   ],
+   "safety_stops": [
+    "Spot crouch-stop on detected slip over 10 degrees",
+    "Recall Go2 if gap width under 55 cm",
+    "Both robots retreat if rain-slick moss detected on grade over 12 degrees"
+   ],
+   "human_in_loop": "A park-site steward approves trail access each session and reviews the terrain map before twin update.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "trail_length_m",
+     "map_resolution_cm",
+     "gap_passes",
+     "slip_events",
+     "min_gap_width_cm",
+     "session_duration_s"
+    ]
+   }
+  },
+  {
+   "id": "lab-arm-kinova-sample-handoff",
+   "robot": "kinova-gen3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Hand soil and plant samples from the Go2's cargo tray into the lab analysis bench slots.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/j2n6s300/joint_states",
+     "/camera/color/image_raw",
+     "/driver/in/cartesian_velocity",
+     "/wrench"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Bench edge at 0.85 m; sample vials 4 cm diameter in foam tray; tray vibration from adjacent HVAC unit adds 2 mm jitter.",
+   "success": [
+    "Place 12 vials into correct slots with under 1 cm error",
+    "Zero vial tip-over events",
+    "Handoff latency under 6 s per vial"
+   ],
+   "safety_stops": [
+    "Stop on end-effector force over 10 N",
+    "Pause if human hand enters workspace envelope",
+    "Retry once then flag for human on two consecutive grasp failures"
+   ],
+   "human_in_loop": "A lab technician confirms sample chain-of-custody labels after each tray.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "vials_placed",
+     "placement_error_cm",
+     "tipover_events",
+     "max_force_n",
+     "grasp_retries",
+     "handoff_latency_s"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s23-avatar-chat",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

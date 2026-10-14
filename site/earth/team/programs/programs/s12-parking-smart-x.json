@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Smart Parking, Safe Jobs: Agents and Worker Voice at 1111 Lincoln Road",
+   "grade_or_level": "Adult workforce / continuing education (building, parking and transport workers)",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO routes tasks and drafts proposals while people hold final votes",
+    "Map parking and facilities job tasks to agent roles like Task Router and Progress Tracker",
+    "Draft a worker-authored proposal for the Proposal Forum",
+    "Identify governance actions reserved for humans only"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter: mission, contribution model and reserved human actions; workers annotate which decisions affect their jobs.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Hands-on with the Task Router: workers simulate routing a maintenance task to a working group and log handoffs.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare evidence summaries from the Evidence Monitor against shop-floor knowledge; mark gaps and uncertainties.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a one-page proposal with the Proposal & Grant Drafter; humans debate, agents never enact.",
+     "minutes": 75
+    }
+   ],
+   "data_shared": "Anonymized task-routing times and handoff counts from the simulation, plus de-identified worker feedback tags on agent-drafted summaries, contributed to shared models of human-agent task coordination.",
+   "consent": "Participation is voluntary and off the clock or with paid training time. Adults sign an informed consent form describing anonymization; union stewards review any data release; workers may withdraw and have their contributions deleted at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Civic Tech Detectives: Parking, Governance and the Open-Air Garage",
+   "grade_or_level": "Grades 6-8 (middle school), adaptable to grades 9-10",
+   "outcomes": [
+    "Describe the 1111 Lincoln Road garage as an urban landmark and explain why open-air design matters in Miami Beach's coastal climate",
+    "Explain the difference between what AI agents do and what only people may decide in a DAO",
+    "Collect and visualize simple parking or mobility observations",
+    "Present a mini-proposal to a mock Proposal Forum"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the charter mission; students sort decision cards into 'agents can do' vs 'only people vote' piles.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students act as Evidence Monitors: gather facts about the garage from the brief and flag what is unknown vs. invented.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple progress tracker poster with measurable outcomes for a school-yard improvement idea.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams pitch mini-proposals; class holds the final vote, mirroring human-only governance.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "De-identified class tallies from the decision-card sorting activity and anonymized proposal-topic counts, contributed as example datasets for shared civic-education models. No individual student data.",
+   "consent": "Signed guardian/parent consent is required for all data contributions; a school-approved media and privacy form covers photos and work samples. Teachers verify no personal identifiers are included; guardians may opt out at any time and student work is removed on request."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governance Without Gatekeepers: DAO Methods for Mission Teams",
+   "grade_or_level": "Professional / NGO staff and program leads",
+   "outcomes": [
+    "Apply the agent-managed, human-governed model to an NGO decision workflow",
+    "Use zones (Charter Hall to Progress Observatory) as an organizational template",
+    "Define measurable outcomes and a contribution model for a program charter",
+    "Recognize the six human-reserved governance actions and design safeguards around them"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop: draft a mini-charter with mission, measurable outcomes and explicitly reserved human decisions.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a decision cycle: agents draft, staff debate, leadership (humans) hold the final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Map one real NGO workflow onto Task Router and Collaborator Scout roles; identify friction points.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 3-5 indicators and build a tracking template with the Progress Tracker pattern.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized workflow-mapping results and de-identified friction-point tags across participating teams, contributed to shared models of human-agent organizational design.",
+   "consent": "Organizations sign a data-sharing agreement specifying anonymization and aggregation before any contribution; individual staff participation is opt-in; teams can withdraw their workflow data at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "From Landmark to Learning Lab: Nonprofit Programs at the Parking Smart.X Cell",
+   "grade_or_level": "Nonprofit program designers and volunteer coordinators",
+   "outcomes": [
+    "Design a place-based program using the 1111 Lincoln Road garage and its five zones",
+    "Connect a nonprofit mission to measurable charter outcomes tracked in the Progress Observatory",
+    "Practice agent-assisted drafting with human-only enactment rules",
+    "Build a volunteer contribution model modeled on the DAO's structure"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the contribution model; each nonprofit drafts its own contributor ladder linking volunteers to outcomes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use the Evidence Monitor pattern to build a literature scan template for the nonprofit's cause area.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a grant concept note with the Proposal & Grant Drafter role; peers critique; humans decide enactment.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set up an outcomes dashboard template and agree on review cadence between decision cycles.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized program-design templates and de-identified outcome-indicator sets from participating nonprofits, contributed to shared open models of nonprofit program design. No beneficiary data.",
+   "consent": "Program leads sign a memorandum covering anonymized sharing; all contributed materials are scrubbed of beneficiary and donor identifiers; any nonprofit can request removal of its templates at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s12-parking-smart-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

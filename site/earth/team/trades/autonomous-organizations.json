@@ -1,0 +1,295 @@
+{
+ "scenarios": [
+  {
+   "id": "lagoon-dock-pile-rigging",
+   "trade": "riggers",
+   "zone": "Execution Bay",
+   "task": "Rig and signal steel piles for a new lakeside viewing deck foundation on the lagoon edge.",
+   "hazards": [
+    "Load drop over water",
+    "Pinch points during pile handling",
+    "Slippery marine footing",
+    "Crane swing radius contact"
+   ],
+   "ppe": [
+    "Hard hat",
+    "High-visibility vest",
+    "Cut-resistant gloves",
+    "Steel-toe boots",
+    "Type V PFD near water"
+   ],
+   "steps": [
+    "Attend pre-lift huddle and confirm load chart",
+    "Inspect slings and shackles; tag and remove damaged gear",
+    "Rig pile with correct hitch and balance check",
+    "Give standard hand signals to crane operator only",
+    "Guide pile to template and hold for landing",
+    "Wait for hands-off confirmation before unrigging",
+    "Inspect rigging after set and report wear"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging inspection",
+     "pass_if": "Identifies damaged sling and removes it from service before lift"
+    },
+    {
+     "axis": "Signals",
+     "pass_if": "Uses only standard hand signals with eye contact to operator"
+    },
+    {
+     "axis": "Water safety",
+     "pass_if": "Wears PFD and never positions between load and water edge"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Confirms load weight against chart before signaling"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows rigged pile sections along the shore path so apprentices never walk loads by hand near the water."
+  },
+  {
+   "id": "goal-wall-ledger-wiring",
+   "trade": "electricians",
+   "zone": "Goal Wall",
+   "task": "Pull branch-circuit wiring for a large electronic goal-display wall in the campus plaza building lobby.",
+   "hazards": [
+    "Energized panels in work area",
+    "Ladder falls near glass atrium",
+    "Conductor strain injuries"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Class 0 gloves for voltage check",
+    "Hard hat",
+    "Insulated footwear"
+   ],
+   "steps": [
+    "Request and verify lockout/tagout on the feeder breaker",
+    "Test panel de-energized with meter and check meter on known source",
+    "Plan conduit route and measure pulls",
+    "Use wire-pulling lubricant and proper grip technique",
+    "Torque terminations to spec and label circuits",
+    "Remove lock only after visual inspection and cleanup",
+    "Energize under journey-level supervision and verify with meter"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Applies personal lock and verifies zero energy before touching conductors"
+    },
+    {
+     "axis": "Termination quality",
+     "pass_if": "All lugs torqued and circuits labeled per drawing"
+    },
+    {
+     "axis": "Verification",
+     "pass_if": "Live-dead-live test performed on meter"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds wire from spool reel at constant tension so the puller keeps two hands on the conductor path."
+  },
+  {
+   "id": "coordination-floor-hvac-duct",
+   "trade": "sheetmetal",
+   "zone": "Coordination Floor",
+   "task": "Hang rectangular supply duct 18 feet up in an open-ceiling coordination hub above workstations.",
+   "hazards": [
+    "Overhead duct fall",
+    "Scaffold edge exposure",
+    "Sharp duct edges and screws"
+   ],
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Hard hat",
+    "Full-body harness on scaffold"
+   ],
+   "steps": [
+    "Confirm duct layout against coordination-floor drawings",
+    "Stage duct with forklift and inspect hanger hardware",
+    "Assemble scaffold and inspect guardrails",
+    "Lift duct sections with hoist; never hand-carry up ladder",
+    "Fasten hangers to structure with rated anchors",
+    "Seal joints and screws to specification",
+    "Break down scaffold and clear debris from workstation area"
+   ],
+   "rubric": [
+    {
+     "axis": "Overhead protection",
+     "pass_if": "No one works under suspended duct; area taped off"
+    },
+    {
+     "axis": "Hardware rating",
+     "pass_if": "Hangers and anchors matched to load spec, not field-improvised"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Workstation area clear of screws and off-cuts at end"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries duct sections up the freight route and holds them at install height, keeping hands clear of seams."
+  },
+  {
+   "id": "decision-room-fire-sprinkler",
+   "trade": "fire-sprinkler",
+   "zone": "Decision Room",
+   "task": "Install branch lines and heads in a finished decision-room ceiling while room stays on the shutdown permit.",
+   "hazards": [
+    "Working overhead on ladder",
+    "Dust and debris in finished space",
+    "Live electrical in ceiling plenum",
+    "Hydrostatic test pressure"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Dust mask",
+    "Gloves"
+   ],
+   "steps": [
+    "Verify permit and fire-watch plan with steward",
+    "Locate in-ceiling electrical before drilling hangers",
+    "Install branch line with proper pitch to drain",
+    "Hang heads at required clearance from ceiling and obstructions",
+    "Pressure test at hydrostatic test pressure and hold",
+    "Inspect every head for damage and correct orientation",
+    "Report completion and flag anything decision-drafter agents must document"
+   ],
+   "rubric": [
+    {
+     "axis": "Head placement",
+     "pass_if": "Obstruction and clearance rules followed at each head"
+    },
+    {
+     "axis": "Pressure test",
+     "pass_if": "Holds test pressure with zero weeps and witnessed by journey worker"
+    },
+    {
+     "axis": "Finished-space care",
+     "pass_if": "No ceiling damage; drop cloths used"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "assignment-board-formwork",
+   "trade": "carpenters",
+   "zone": "Assignment Board",
+   "task": "Build edge formwork for a concrete seat wall along the campus walkway per the assignment ticket.",
+   "hazards": [
+    "Saw cuts and nail strikes",
+    "Lifting strain on long forms",
+    "Form blowout during pour prep"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Hearing protection",
+    "Gloves",
+    "Hard hat"
+   ],
+   "steps": [
+    "Read assignment ticket and confirm dimensions at layout",
+    "Snip strings and set batter boards from surveyor hubs",
+    "Cut plywood and studs; keep guards on saws",
+    "Assemble and brace form to line and grade",
+    "Install form ties and spreaders at spacing on ticket",
+    "Check braces and clean release-agent overspray off walkway",
+    "Report ticket complete and request pour inspection"
+   ],
+   "rubric": [
+    {
+     "axis": "Layout accuracy",
+     "pass_if": "Form within tolerance of survey hubs before pour request"
+    },
+    {
+     "axis": "Bracing",
+     "pass_if": "Ties and braces spaced to ticket, no field shortcuts"
+    },
+    {
+     "axis": "Tool safety",
+     "pass_if": "Saw guards and PPE in use throughout"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferries fasteners and tape from the tool crib to the form line so the apprentice stays off the saw station."
+  },
+  {
+   "id": "lagoon-water-quality-grounds",
+   "trade": "grounds",
+   "zone": "Coordination Floor",
+   "task": "Perform routine lagoon-edge vegetation and drainage maintenance along the campus waterfront trail.",
+   "hazards": [
+    "Waterfall into lagoon",
+    "Heat exposure",
+    "Pesticide and fuel exposure",
+    "Tripping on irregular bank"
+   ],
+   "ppe": [
+    "Sun hat and sunscreen",
+    "Gloves",
+    "Boots with tread",
+    "Safety glasses when cutting"
+   ],
+   "steps": [
+    "Review SDS for any herbicide before mixing",
+    "Set cones and signage along trail before mowing or trimming",
+    "Inspect bank slope and stay three feet from water edge",
+    "Cut vegetation away from drains; keep drainage clear",
+    "Refuel equipment only when cool and away from water",
+    "Double-bag and stage green waste for pickup",
+    "Report any erosion or drain blockage to coordinator"
+   ],
+   "rubric": [
+    {
+     "axis": "Chemical handling",
+     "pass_if": "SDS reviewed and no mixing near water"
+    },
+    {
+     "axis": "Public protection",
+     "pass_if": "Trail users signed around work area before power tools start"
+    },
+    {
+     "axis": "Environmental",
+     "pass_if": "Nothing left in or entering the lagoon; drains left clear"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Oracle Lagoon Campus - Union Apprentice Site Readiness Card",
+  "requires": [
+   "lagoon-dock-pile-rigging",
+   "goal-wall-ledger-wiring",
+   "coordination-floor-hvac-duct",
+   "decision-room-fire-sprinkler",
+   "assignment-board-formwork",
+   "lagoon-water-quality-grounds"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "autonomous-organizations",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

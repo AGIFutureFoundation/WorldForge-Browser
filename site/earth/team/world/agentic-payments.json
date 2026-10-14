@@ -1,0 +1,259 @@
+{
+ "title": "Agentic Payments: The Bull's Clearing Ground",
+ "summary": "A walkable slice of Lower Manhattan around Charging Bull and New York Harbor where agents draft trades, provision services, manage budgets and rehearse rail calls—every settlement held for human stewards.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Transaction Desk",
+   "real_anchor": "Charging Bull, Broadway at Bowling Green",
+   "buildings": [
+    {
+     "name": "Cedar Street Exchange Hall",
+     "use": "Drafting hall for buy and sell tickets",
+     "floors": 4
+    },
+    {
+     "name": "Adams Express Building Annex",
+     "use": "Reconciliation and ticket-matching office",
+     "floors": 3
+    },
+    {
+     "name": "100 Wall Street Counter",
+     "use": "Public transaction counters",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Draft Desk",
+    "Ticket Queue",
+    "Reconciliation Loft",
+    "Steward Handoff Window",
+    "Settlement Hold Vault"
+   ],
+   "props": [
+    "bronze bull statue",
+    "ticker board",
+    "ledgers on oak tables",
+    "queue ropes",
+    "stamped ticket rolls",
+    "brass handoff window grille"
+   ],
+   "npc_agents": [
+    "Buyer Agent",
+    "Seller Agent"
+   ]
+  },
+  {
+   "zone": "Service Provisioning Counter",
+   "real_anchor": "10 Hanover Square",
+   "buildings": [
+    {
+     "name": "Hanover Provisioning Arcade",
+     "use": "Service catalog and ordering counter",
+     "floors": 3
+    },
+    {
+     "name": "55 Water Street Kiosk Row",
+     "use": "Vendor kiosks for agent-ordered services",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Catalog Atrium",
+    "Order Kiosk Lane",
+    "Provision Ledger Room",
+    "Budget Check Desk",
+    "Fulfillment Noticeboard"
+   ],
+   "props": [
+    "service catalog boards",
+    "ordering kiosks",
+    "numbered queue tickets",
+    "provision tags",
+    "ledger stands",
+    "steward budget placard"
+   ],
+   "npc_agents": [
+    "Provisioning Agent"
+   ]
+  },
+  {
+   "zone": "Budget Office",
+   "real_anchor": "28 Liberty",
+   "buildings": [
+    {
+     "name": "28 Liberty Budget Office",
+     "use": "Budget drafting, ledgers and variance reporting",
+     "floors": 6
+    },
+    {
+     "name": "33 Maiden Lane Annex",
+     "use": "Variance analysis room",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Table",
+    "Ledger Stacks",
+    "Variance Room",
+    "Forecast Wall",
+    "Steward Review Chamber"
+   ],
+   "props": [
+    "spiral-bound budget books",
+    "variance charts",
+    "abacus and calculator props",
+    "proposal trays",
+    "review bell",
+    "locked steward drawer"
+   ],
+   "npc_agents": [
+    "Budget Agent"
+   ]
+  },
+  {
+   "zone": "Financial Infrastructure Gateway",
+   "real_anchor": "South Street harbor front near 90 Washington Street",
+   "buildings": [
+    {
+     "name": "Gateway Terminal at Old Slip",
+     "use": "Read-only terminal to financial rails, quotes and dry runs",
+     "floors": 3
+    },
+    {
+     "name": "90 West Street Watchtower",
+     "use": "Rail observation and dry-run monitoring",
+     "floors": 5
+    }
+   ],
+   "interior_rooms": [
+    "Quote Board Room",
+    "Dry Run Terminal Bank",
+    "Balance Read Hall",
+    "Rehearsal Console",
+    "Harbor Overlook"
+   ],
+   "props": [
+    "quote screens",
+    "dry-run terminals",
+    "ticker tape printer",
+    "tide gauge",
+    "harbor telescope",
+    "no-settlement placard"
+   ],
+   "npc_agents": [
+    "Rail Agent"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "London plane",
+   "honey locust",
+   "northern red oak",
+   "ginkgo",
+   "callery pear"
+  ],
+  "shrubs": [
+   "bayberry",
+   "yew hedge",
+   "hydrangea"
+  ],
+  "flowers": [
+   "tulip",
+   "daffodil",
+   "black-eyed susan",
+   "daylily"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "bay",
+  "flow_mps": 1,
+  "wave_m": 1
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "The Settlement Hold Court",
+  "style": "open-air granite amphitheater beside the bull",
+  "why_here": "Every drafted trade and transfer ends here, held for human stewards—treasury.transfer never executes by agent hand, only by steward vote on the stones where Wall Street's bull watches the harbor."
+ },
+ "quests": [
+  {
+   "title": "First Draft: Buy Without Settling",
+   "from_zone": "Transaction Desk",
+   "to_zone": "Financial Infrastructure Gateway",
+   "steps": [
+    "Take a purchase request at the Draft Desk",
+    "Fetch a price quote from the Rail Agent at Old Slip",
+    "Dry-run the transaction against the rails",
+    "Return the draft to the Steward Handoff Window for hold"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Provision Within the Line",
+   "from_zone": "Service Provisioning Counter",
+   "to_zone": "Budget Office",
+   "steps": [
+    "Read the steward budget placard at the catalog",
+    "Place a service order at the kiosk",
+    "Carry the order record to the Budget Office",
+    "Confirm remaining budget headroom in the ledger",
+    "Post the fulfilled provision to the noticeboard"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "The Variance Report",
+   "from_zone": "Budget Office",
+   "to_zone": "Transaction Desk",
+   "steps": [
+    "Pull the week's ledgers from the stacks",
+    "Flag variances in the Variance Room",
+    "Reconcile flagged tickets with the Seller Agent",
+    "Deliver the report to the Steward Review Chamber"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Harbor Rehearsal",
+   "from_zone": "Financial Infrastructure Gateway",
+   "to_zone": "Transaction Desk",
+   "steps": [
+    "Read balances at the Balance Read Hall",
+    "Dry-run a settlement draft with the Rail Agent",
+    "Verify no transfer executes under the no-settlement placard",
+    "File the rehearsal tape with the Buyer Agent"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Steward's Handoff",
+   "from_zone": "Transaction Desk",
+   "to_zone": "Budget Office",
+   "steps": [
+    "Collect a settled-by-steward ticket from the handoff window",
+    "Log the settlement in the Budget Office ledger",
+    "Update the forecast wall",
+    "Post the variance entry for review"
+   ],
+   "xp": 70
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "agentic-payments",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

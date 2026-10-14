@@ -1,0 +1,274 @@
+{
+ "title": "Incubator DAO (Series 21) — Kendall Square Cell",
+ "summary": "A walkable agent-managed DAO campus in Kendall Square: five zones from Charter Hall to Progress Observatory threaded between MIT's towers and the Charles River, where agents operate and humans govern.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "45 Schwarzman Building",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display and contribution model registry",
+     "floors": 2
+    },
+    {
+     "name": "Outcomes Ledger House",
+     "use": "Measurable outcomes boardroom",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Mission Atrium",
+    "Contribution Registry",
+    "Reserved-Powers Vault",
+    "Outcome Ledger Room"
+   ],
+   "props": [
+    "mission statement stele",
+    "contribution ledger kiosk",
+    "human-reserved-actions plaque",
+    "series banner (W3 LLC / Series 21)",
+    "governance voting booth shells",
+    "benches along Memorial Drive side"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "32 Stata Center",
+   "buildings": [
+    {
+     "name": "Evidence Monitor Lab",
+     "use": "Monitoring and evidence summarization",
+     "floors": 3
+    },
+    {
+     "name": "Synthesis Annex",
+     "use": "Research synthesis for stewards",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Floor",
+    "Evidence Wall Room",
+    "Synthesis Studio",
+    "Steward Briefing Room",
+    "Source Archive"
+   ],
+   "props": [
+    "evidence ticker displays",
+    "citation shelves",
+    "summation printing press",
+    "tiered reading steps",
+    "map wall of named places",
+    "standing desks for stewards"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "300 Technology Square",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "Agent-drafted proposals debated by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Gallery",
+    "Debate Ring",
+    "Human Decision Chamber",
+    "Amendment Alcove"
+   ],
+   "props": [
+    "proposal draft stations",
+    "debate podium",
+    "tally board",
+    "comment string boards",
+    "bench seating rings",
+    "quorum bell"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "200 Technology Square",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting experts and collaborators",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Console Room",
+    "Working Group Docks",
+    "Collaborator Map Room",
+    "Intersession Coordination Hall"
+   ],
+   "props": [
+    "task routing board",
+    "working group signage",
+    "collaborator pin map",
+    "kanban walls",
+    "courier bike racks",
+    "coordination chronometers"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "100 Memorial Drive Apartments",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "Tracking outcomes against the charter",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Panorama Deck",
+    "Outcome Metrics Hall",
+    "Cycle Review Room",
+    "Steward Gallery"
+   ],
+   "props": [
+    "metric dials",
+    "progress timeline mural",
+    "river-facing telescopes",
+    "milestone cairns",
+    "quarterly review calendar",
+    "lantern string lights"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Northern red oak",
+   "Sugar maple",
+   "American elm",
+   "London plane",
+   "Eastern white pine",
+   "Ginkgo"
+  ],
+  "shrubs": [
+   "Bayberry",
+   "Inkberry holly",
+   "Hydrangea",
+   "Common juniper"
+  ],
+  "flowers": [
+   "Daylily",
+   "Black-eyed Susan",
+   "Purple coneflower",
+   "Bee balm"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.6,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:10",
+  "sunset_local": "19:20"
+ },
+ "court": {
+  "name": "The Stewards' Ring",
+  "style": "Open-air circular amphitheater of granite steps facing the Charles River",
+  "why_here": "Placed on the riverfront edge of the square so every human-only vote — the reserved powers — happens in full view of the water and the city the mission serves."
+ },
+ "quests": [
+  {
+   "title": "Trace the Reserved Powers",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter stele in the Mission Atrium",
+    "List the six human-reserved actions on the ledger kiosk",
+    "Visit the Drafting Gallery and confirm the Proposal & Grant Drafter cannot enact",
+    "Watch a mock debate ring session and record who holds final vote"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "From Evidence to Brief",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Collect three summaries from the Evidence Monitor",
+    "Have the Research Synthesis Agent compile a steward brief",
+    "Deliver the brief to the Task Router at the Routing Console",
+    "Join a working group dock stand-up"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Draft, Debate, Decide",
+   "from_zone": "Operations Deck",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Request a proposal draft from the Proposal & Grant Drafter",
+    "Carry the draft to the Debate Ring",
+    "Log steward comments on the string boards",
+    "Ring the quorum bell and observe the human-only final vote"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Measure the Mission",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Register the enacted outcome in the Outcome Ledger Room",
+    "Climb to the Panorama Deck",
+    "Match outcome dials against the charter metrics",
+    "Record one gap for the next cycle's Research Synthesis Lab brief"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Map the Square Mile",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Survey named towers from the Panorama Deck with telescopes",
+    "Chart the campus path past the Stata Center and Technology Square",
+    "Close the loop at the Contribution Registry",
+    "Add your contribution entry to the ledger"
+   ],
+   "xp": 35
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s21-incubator-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

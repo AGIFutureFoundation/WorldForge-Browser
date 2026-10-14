@@ -1,0 +1,285 @@
+{
+ "title": "Avatar.Chat Series 23: Pillar Council of Yuanjiajie",
+ "summary": "An agent-managed DAO cell carved into Zhangjiajie's sandstone pillars. Six zones span cliff-halls and ravine walks where agents monitor, draft and track, while humans alone vote, amend and enact.",
+ "biome": "tropical",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "索水 ravine approach, Yuanjiajie plateau rim",
+   "buildings": [
+    {
+     "name": "Charter Pillar Hall",
+     "use": "Charter display and measurable-outcomes ledger",
+     "floors": 3
+    },
+    {
+     "name": "Stewards' Balcony",
+     "use": "Human-only voting overlook",
+     "floors": 1
+    },
+    {
+     "name": "Contribution Registry",
+     "use": "Contribution model records",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Mission Wall",
+    "Outcomes Ledger Room",
+    "Reserved-for-Humans Vault",
+    "Contribution Gallery",
+    "Steward Alcove"
+   ],
+   "props": [
+    "carved charter stele",
+    "red banner pillars",
+    "bamboo scroll racks",
+    "stone tea table",
+    "outcome metric boards",
+    "guardian bell"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "sandstone pillar cluster below Yuanjiajie viewpoint",
+   "buildings": [
+    {
+     "name": "Evidence Cave Lab",
+     "use": "Development monitoring and evidence summaries",
+     "floors": 2
+    },
+    {
+     "name": "Synthesis Spire",
+     "use": "Research synthesis for stewards",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Chamber",
+    "Evidence Stack Room",
+    "Synthesis Study",
+    "Citation Vault",
+    "Focus-Pending Board"
+   ],
+   "props": [
+    "hanging evidence scrolls",
+    "cliff-root desks",
+    "lantern cluster",
+    "specimen crates",
+    "chalkboard of open questions",
+    "rope bridge anchors"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "open terrace on the Yuanjiajie sandstone platform",
+   "buildings": [
+    {
+     "name": "Proposal Pavilion",
+     "use": "Agent-drafted proposals, human debate",
+     "floors": 1
+    },
+    {
+     "name": "Debate Ring",
+     "use": "Open-air deliberation circle",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Desk Hall",
+    "Debate Circle",
+    "Review Benches",
+    "Enactment Threshold Gate",
+    "Amendment Nook"
+   ],
+   "props": [
+    "draft proposal stands",
+    "speaking stone",
+    "hourglass of decision cycles",
+    "comment ribbon lines",
+    "seating mats",
+    "gong for cycle open"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "trailhead junction near 索水",
+   "buildings": [
+    {
+     "name": "Operations Signal Tower",
+     "use": "Task routing and coordination",
+     "floors": 4
+    },
+    {
+     "name": "Working Group Sheds",
+     "use": "Working group workspaces",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Board Room",
+    "Working Group Bay",
+    "Task Queue Hall",
+    "Collaborator Map Room",
+    "Courier Post"
+   ],
+   "props": [
+    "task pigeonholes",
+    "signal flags",
+    "trail map table",
+    "collaborator Rolodex",
+    "lanterns",
+    "rope and harness racks"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "highest pillar lookout over the ravine",
+   "buildings": [
+    {
+     "name": "Observatory Skybridge",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Milestone Gallery",
+    "Indicator Dome",
+    "Progress Bell Deck",
+    "Retrospective Room"
+   ],
+   "props": [
+    "outcome telescopes",
+    "progress ring charts",
+    "milestone cairns",
+    "wind chimes",
+    "ledger glass panels"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Chinese dove tree (Davidia involucrata)",
+   "Masson pine (Pinus massoniana)",
+   "Ginkgo (Ginkgo biloba)",
+   "Liriodendron chinense",
+   "cunninghamia fir"
+  ],
+  "shrubs": [
+   "Indocalamus bamboo",
+   "Rhododendron simsii",
+   "camellia",
+   "loquat"
+  ],
+  "flowers": [
+   "primrose",
+   "orchid (Bletilla striata)",
+   "iris",
+   "wild chrysanthemum"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "NE",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:00"
+ },
+ "court": {
+  "name": "Pillar Council Court",
+  "style": "Open-air sandstone circle with hanging walkways",
+  "why_here": "Mirrors Zhangjiajie's Avatar-inspiring pillars: decisions float between agents below and human stewards above."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the mission wall and the focus-pending board",
+    "Ask Evidence Monitor what focus gaps exist",
+    "Collect three candidate focus scrolls",
+    "Return a focus recommendation to the Charter Hall alcove"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Review the evidence stack in the Monitoring Chamber",
+    "Watch the Proposal & Grant Drafter compose a draft",
+    "Debate the draft in the Debate Ring",
+    "Confirm only humans carry the enactment vote"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Take the approved proposal outcome to the Signal Tower",
+    "Let Task Router assign working groups",
+    "Follow Collaborator Scout's collaborator leads",
+    "Post tasks to the queue hall board"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Climb to the Indicator Dome",
+    "Log milestones with the Progress Tracker",
+    "Compare outcomes against the charter ledger",
+    "Ring the progress bell when a target is met"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Guard the Human Keys",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Audit five actions taken between cycles",
+    "Flag any of the six human-reserved powers",
+    "Deliver the audit to the Reserved-for-Humans Vault",
+    "Witness a steward sign the final vote"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s23-avatar-chat",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

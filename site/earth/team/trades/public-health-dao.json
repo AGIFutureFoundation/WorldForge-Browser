@@ -1,0 +1,410 @@
+{
+ "scenarios": [
+  {
+   "id": "broad-street-excavation-support",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Hand-dig trial pits and shore a trench for a new utility duct near the Broad Street Pump replica plaza.",
+   "hazards": [
+    "cave-in of unsupported trench",
+    "buried legacy utilities in old Soho street",
+    "struck-by from plant working in tight plaza",
+    "manual handling strain"
+   ],
+   "ppe": [
+    "hard hat",
+    "hi-vis vest",
+    "steel-toe boots",
+    "gloves",
+    "dust mask"
+   ],
+   "steps": [
+    "Complete permit-to-dig and utility scan review.",
+    "Set up barriers and pedestrian walkway around the pit.",
+    "Hand-dig trial pits to locate buried services.",
+    "Install trench box and ladder access.",
+    "Backfill and compact in lifts on completion.",
+    "Restore plaza paving and clear the site."
+   ],
+   "rubric": [
+    {
+     "axis": "Utility safety",
+     "pass_if": "Verifies scans and hand-digs within 500 mm of marked services before striking."
+    },
+    {
+     "axis": "Shoring",
+     "pass_if": "Enters trench only after shoring or box is installed and inspected."
+    },
+    {
+     "axis": "Public protection",
+     "pass_if": "Maintains continuous barriers and safe pedestrian route."
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Removes spoil from trench edge and clears walkways."
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows spoil bins and carries trench box panels across the plaza so laborers stay clear of plant movement."
+  },
+  {
+   "id": "pump-replica-rigging",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and set the cast-iron Broad Street Pump replica onto its new granite plinth in the Soho plaza.",
+   "hazards": [
+    "crush points during load transfer",
+    "load instability and dropped load",
+    "overhead work over public plaza",
+    "uneven ground affecting crane setup"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "steel-toe boots",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Confirm exclusion zone with signallers at plaza edges.",
+    "Inspect slings, shackles and pump lifting points.",
+    "Rig pump with tag line attached.",
+    "Direct crane pick with agreed hand signals.",
+    "Guide pump over plinth and lower onto setting blocks.",
+    "Final position, unrig and clear rigging gear."
+   ],
+   "rubric": [
+    {
+     "axis": "Exclusion zone",
+     "pass_if": "Public kept out of landing zone for entire lift."
+    },
+    {
+     "axis": "Rigging inspection",
+     "pass_if": "Rejects any damaged sling or shackle before the lift."
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standard hand signals and confirms each with the crane op."
+    },
+    {
+     "axis": "Load control",
+     "pass_if": "Tag line keeps load controlled and no one under suspended load."
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "map-kiosk-branch-circuit",
+   "trade": "electricians",
+   "zone": "Progress Observatory",
+   "task": "Install and commission a new branch circuit and data drop for the Progress Observatory public health map kiosk beside the pump replica.",
+   "hazards": [
+    "live services in existing plaza columns",
+    "tripping public during cable routing",
+    "working at height on kiosk header",
+    "arc flash at distribution board"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "insulated gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Isolate and lock out the feed at the local board.",
+    "Verify de-energized with proven tester.",
+    "Contour cable in plaza ducting to kiosk base.",
+    "Terminate at kiosk RCD-protected spur and data outlet.",
+    "Test polarity, earth continuity and RCD trip.",
+    "Energize, function-test kiosk and label circuit."
+   ],
+   "rubric": [
+    {
+     "axis": "Isolation",
+     "pass_if": "Applies lockout-tagout and proves dead before working."
+    },
+    {
+     "axis": "Test verification",
+     "pass_if": "All tests pass and are recorded before energizing."
+    },
+    {
+     "axis": "Public safety",
+     "pass_if": "Cable routing leaves no trip hazards or open duct covers unattended."
+    },
+    {
+     "axis": "Protection",
+     "pass_if": "Circuit is RCD-protected and correctly labelled."
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "observatory-display-mount",
+   "trade": "carpenters",
+   "zone": "Progress Observatory",
+   "task": "Build and level a timber-framed display wall for outcome-tracking exhibits inside the Progress Observatory pavilion.",
+   "hazards": [
+    "dust from cutting MDF panels",
+    "manual handling of long timbers",
+    "nail and fastener punctures",
+    "temporary works instability"
+   ],
+   "ppe": [
+    "safety glasses",
+    "dust mask",
+    "gloves",
+    "hearing protection"
+   ],
+   "steps": [
+    "Set out frame lines from approved drawing.",
+    "Cut studs and rails; keep saw bench dust-extracted.",
+    "Assemble frame square on the floor.",
+    "Raise, plumb and brace frame to slab.",
+    "Fix ply sheathing, leaving service cutouts.",
+    "Check tolerances and hand over for finishing."
+   ],
+   "rubric": [
+    {
+     "axis": "Dust control",
+     "pass_if": "Uses extraction or cutting station and wears respiratory PPE."
+    },
+    {
+     "axis": "Framing accuracy",
+     "pass_if": "Frame square and plumb within tolerance."
+    },
+    {
+     "axis": "Temporary works",
+     "pass_if": "Braces frame before it is sheeted."
+    },
+    {
+     "axis": "Tool safety",
+     "pass_if": "Keeps hands clear of nailer line and triggers guarded."
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds panels in position for fastening, reducing manual handling of heavy sheet goods."
+  },
+  {
+   "id": "forum-canvas-steel-erection",
+   "trade": "ironworkers",
+   "zone": "Proposal Forum",
+   "task": "Bolt up the canopy steel frame over the Proposal Forum seating area, working from mobile elevated work platforms.",
+   "hazards": [
+    "fall from height at connection points",
+    "dropped bolts and tools onto plaza",
+    "crush injuries handling steel members",
+    "wind loading on partially bolted frame"
+   ],
+   "ppe": [
+    "full-body harness",
+    "hard hat with chinstrap",
+    "gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Confirm MEWP inspection and tie-off anchor points.",
+    "Stage members and bolts in canvas tool bags.",
+    "Torque first bolts finger-tight at each connection.",
+    "Complete bolt-up pattern per drawing sequence.",
+    "Torque-check to spec and paint-mark each bolt.",
+    "Remove all loose items and secure drop zone."
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Ties off 100% of the time at height; no free climbing steel."
+    },
+    {
+     "axis": "Dropped objects",
+     "pass_if": "All tools tethered or bagged; exclusion zone below maintained."
+    },
+    {
+     "axis": "Bolt-up quality",
+     "pass_if": "Follows sequence and torque-marks every bolt."
+    },
+    {
+     "axis": "Weather stop",
+     "pass_if": "Halts erection work when wind exceeds site limit."
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries bolt buckets and small tools up the work zone perimeter and inspects connection torque marks for QA photo record."
+  },
+  {
+   "id": "lab-fume-ductwork",
+   "trade": "sheetmetal",
+   "zone": "Research Synthesis Lab",
+   "task": "Fabricate and hang galvanized ductwork for a new fume extract system serving the Research Synthesis Lab sample-prep bench.",
+   "hazards": [
+    "sheet metal lacerations",
+    "working at height on scaffold tower",
+    "awkward manual handling of duct sections",
+    "noise from fabrication shop"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "safety glasses",
+    "harness",
+    "hearing protection"
+   ],
+   "steps": [
+    "Measure route and mark out duct runs.",
+    "Fabricate sections with safe sheet-handling technique.",
+    "Assemble tower scaffold and inspect before use.",
+    "Hang hangers and lift duct sections in sequence.",
+    "Seal joints and label isolation damper.",
+    "Balance airflow and record result."
+   ],
+   "rubric": [
+    {
+     "axis": "Sharp-edge control",
+     "pass_if": "Handles sheet with gloves and deburrs edges before carrying."
+    },
+    {
+     "axis": "Access equipment",
+     "pass_if": "Scaffold inspected and brakes set before each use."
+    },
+    {
+     "axis": "Joint integrity",
+     "pass_if": "All joints sealed and leak-tested before balance."
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Records damper positions and airflow readings."
+    }
+   ],
+   "minutes": 105,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "water-feature-repipe",
+   "trade": "pipefitters",
+   "zone": "Charter Hall",
+   "task": "Repipe the small recirculating water feature in the Charter Hall forecourt that echoes the original pump handle.",
+   "hazards": [
+    "awkward confined working chamber under plinth",
+    "chemical handling for system disinfectant",
+    "hot works risk if brazing near timber decking",
+    "residual pressure in old lines"
+   ],
+   "ppe": [
+    "gloves",
+    "safety glasses",
+    "knee pads",
+    "chemical apron"
+   ],
+   "steps": [
+    "Isolate, lock off and depressurize the recirculation loop.",
+    "Drain and capture water to prevent slip hazards.",
+    "Remove corroded pipework in the plinth chamber.",
+    "Fit new PPRA pipework and pressure test.",
+    "Dose, flush and sample per water hygiene plan.",
+    "Reinstate covers and record maintenance log."
+   ],
+   "rubric": [
+    {
+     "axis": "Isolation verified",
+     "pass_if": "Proves depressurized before breaking joints."
+    },
+    {
+     "axis": "Water hygiene",
+     "pass_if": "Follows dosing and sampling plan; no chemical spills."
+    },
+    {
+     "axis": "Confined space",
+     "pass_if": "Uses safe access and ventilation in plinth chamber."
+    },
+    {
+     "axis": "Records",
+     "pass_if": "Maintenance log and sample result completed."
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "plaza-led-night-check",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Fault-find and replace failed drivers in the plaza accent lighting that illuminates the pump replica at night, working from a small van lift.",
+   "hazards": [
+    "live testing at height in a van basket",
+    "night work near public footway",
+    "fall from basket",
+    "stored energy in LED drivers"
+   ],
+   "ppe": [
+    "harness",
+    "insulated gloves",
+    "safety glasses",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Set out night works signage and cone off lift footprint.",
+    "Inspect van lift and wear full-body harness to basket.",
+    "Isolate circuit and prove dead at first fitting.",
+    "Replace failed driver and re-lamp as needed.",
+    "Test insulation and function before re-energizing.",
+    "Sign off defects and remove temporary traffic management."
+   ],
+   "rubric": [
+    {
+     "axis": "Public interface",
+     "pass_if": "Footway protected and lit diversions in place all night."
+    },
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Proves dead before opening fittings; tests before re-energizing."
+    },
+    {
+     "axis": "MEWP discipline",
+     "pass_if": "Harness clipped and basket not overloaded."
+    },
+    {
+     "axis": "Completion",
+     "pass_if": "All fittings function and paperwork signed same night."
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries spare drivers and test gear from the van to the lift base, reducing apprentice climbs up and down."
+  }
+ ],
+ "credential": {
+  "name": "Broad Street Site Readiness Card (Soho Plaza Works)",
+  "requires": [
+   "broad-street-excavation-support",
+   "pump-replica-rigging",
+   "map-kiosk-branch-circuit",
+   "observatory-display-mount",
+   "forum-canvas-steel-erection",
+   "lab-fume-ductwork",
+   "water-feature-repipe",
+   "plaza-led-night-check"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "public-health-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

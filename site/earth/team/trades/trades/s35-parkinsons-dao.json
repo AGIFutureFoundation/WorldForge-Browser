@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "scaffold-inspect-shoreditch-church",
+   "trade": "carpenters",
+   "zone": "Operations Deck",
+   "task": "Erect and inspect tube-and-clamp scaffolding against the brick tower of St Leonard's Church for repointing work on the upper facade.",
+   "hazards": [
+    "Falls from height above 6 metres",
+    "Falling tools onto busy Shoreditch High Street pavement",
+    "Historic brickwork collapse under anchor loads",
+    "Manual handling strain"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Full-body harness with double lanyard",
+    "Hi-vis vest",
+    "Steel-toe boots",
+    "Gloves"
+   ],
+   "steps": [
+    "Verify permit to work and heritage consent conditions with the foreman",
+    "Check ground bearing on the churchyard paths and position base plates",
+    "Build scaffold bays with guardrails, toe boards and brick guards",
+    "Tie into structure only at approved anchor points per heritage survey",
+    "Tag the scaffold with Scafftag after competent-person inspection",
+    "Brief exclusion zone for pedestrians below before work begins"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "Harness tied off 100% of time above 2 metres"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "Exclusion zone and debris netting in place before first tool is raised"
+    },
+    {
+     "axis": "structural respect",
+     "pass_if": "No unapproved drilling or ties into historic fabric"
+    },
+    {
+     "axis": "inspection compliance",
+     "pass_if": "Scaffold tagged and recorded before use"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries scaffold boards and clamps up the tower stair and performs laser scan of facade condition before crews ascend."
+  },
+  {
+   "id": "lead-roof-flash-chancel",
+   "trade": "roofers",
+   "zone": "Operations Deck",
+   "task": "Repair failed lead flashing at the chancel roof gutter of St Leonard's Church without damaging adjoining slate and timbers.",
+   "hazards": [
+    "Lead fumes during soldering",
+    "Fragile slate roof panels",
+    "Hot work fire risk near 200-year-old timber",
+    "Working at height"
+   ],
+   "ppe": [
+    "Respirator with P100 cartridges",
+    "Hard hat with chin strap",
+    "Cut-resistant gloves",
+    "Hi-vis vest",
+    "Safety boots"
+   ],
+   "steps": [
+    "Set up roof ladder hooks and crawling boards over fragile slates",
+    "Remove failed flashing with non-vibratory tools",
+    "Hot work permit issued; fire watch and extinguisher staged at gutter level",
+    "Form and weld replacement lead flashing to match existing detailing",
+    "Wet down work area and complete 60-minute fire watch after hot work ends",
+    "Log material and lead waste for controlled disposal"
+   ],
+   "rubric": [
+    {
+     "axis": "fragile surface control",
+     "pass_if": "Crawling boards used; no direct foot traffic on slates"
+    },
+    {
+     "axis": "hot work safety",
+     "pass_if": "Permit, extinguisher, and fire watch all present and documented"
+    },
+    {
+     "axis": "lead exposure control",
+     "pass_if": "Respirator worn, no eating/drinking on roof, hygiene break observed"
+    },
+    {
+     "axis": "craft quality",
+     "pass_if": "New flashing detail matches original patina and joints"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "tower-lightning-protection-bond",
+   "trade": "electricians",
+   "zone": "Proposal Forum",
+   "task": "Test and re-bond the lightning protection system on St Leonard's Church tower, running new earth rods in the churchyard.",
+   "hazards": [
+    "Live electrical testing near buried services",
+    "Excavation strikes on unmarked graves and utilities",
+    "Working at height on tower ladder",
+    "Lead and copper contact hazards"
+   ],
+   "ppe": [
+    "Insulated gloves class 00",
+    "Hard hat",
+    "Safety boots",
+    "Hi-vis vest",
+    "Eye protection"
+   ],
+   "steps": [
+    "Complete CAT-and-genny scan of churchyard before any digging",
+    "Isolate and lock out any connected circuits; apply personal locks",
+    "Climb tower using twin-lanyard technique to inspect air terminal",
+    "Continuity-test down conductors and record readings against BS EN 62305",
+    "Drive new earth rods and bond with exothermic weld",
+    "Complete test certificate and hand to steward for human sign-off"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Personal lock applied and verified before testing"
+    },
+    {
+     "axis": "excavation safety",
+     "pass_if": "Utility scan completed and dig zone marked before breaking ground"
+    },
+    {
+     "axis": "test accuracy",
+     "pass_if": "Earth resistance readings within spec and documented"
+    },
+    {
+     "axis": "heritage care",
+     "pass_if": "No conductor clipped to historic stonework without consented fixings"
+    }
+   ],
+   "minutes": 100,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries test gear up the tower stairs and streams camera inspection of the air terminal to the ground crew."
+  },
+  {
+   "id": "asbestos-survey-boiler-room",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Survey and safely remove suspected asbestos lagging on pipework in the Victorian boiler room under St Leonard's Church.",
+   "hazards": [
+    "Asbestos fibre inhalation",
+    "Confined space with poor ventilation",
+    "Heat stress near live boiler",
+    "Electrical hazards from old wiring"
+   ],
+   "ppe": [
+    "Powered air-purifying respirator",
+    "Type 5/6 disposable coverall",
+    "Nitrile gloves taped at cuffs",
+    "Steel-toe wellington boots"
+   ],
+   "steps": [
+    "Review refurbishment survey and confirm enclosure plan with licensed supervisor",
+    "Build negative-pressure enclosure with airlocks and warning signage",
+    "Damp down lagging before removal; no dry cutting",
+    "Double-bag waste, clear-label, and log for licensed disposal",
+    "Four-stage clearance including air monitoring before enclosure teardown",
+    "Decontaminate personnel through shower sequence each exit"
+   ],
+   "rubric": [
+    {
+     "axis": "enclosure integrity",
+     "pass_if": "Negative pressure verified and logged before removal starts"
+    },
+    {
+     "axis": "fibre control",
+     "pass_if": "All material kept wet; no power tools used dry"
+    },
+    {
+     "axis": "waste chain",
+     "pass_if": "Every bag labelled, manifested and consignment note complete"
+    },
+    {
+     "axis": "clearance protocol",
+     "pass_if": "Analyst clearance certificate obtained before re-entry"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows bagged waste through the airlock corridor and carries fibre counters into the enclosure to reduce worker entries."
+  },
+  {
+   "id": "bell-frame-tie-replacement",
+   "trade": "riggers",
+   "zone": "Progress Observatory",
+   "task": "Rig and lift replacement oak bell-frame timbers into the tower of St Leonard's Church using a mobile crane positioned in the closed churchyard lane.",
+   "hazards": [
+    "Crush points in tight tower shaft",
+    "Suspended load over historic fabric",
+    "Overhead power lines on Shoreditch High Street",
+    "Load swing in urban wind channel"
+   ],
+   "ppe": [
+    "Hard hat with chin strap",
+    "Rigger gloves",
+    "Hi-vis vest",
+    "Safety boots",
+    "Fall arrest harness"
+   ],
+   "steps": [
+    "Attend lift plan briefing; confirm crane pad bearing on churchyard ground",
+    "Verify exclusion zones and road closure permits with foreman",
+    "Inspect slings and shackles; calculate load weights and sling angles",
+    "Direct crane via hand signals and radio; tag lines on load at all times",
+    "Land timbers onto frame shoes without contacting tower walls",
+    "Complete post-lift gear inspection and rigging log"
+   ],
+   "rubric": [
+    {
+     "axis": "lift planning",
+     "pass_if": "Can state load weight, radius and SWL margin before lift"
+    },
+    {
+     "axis": "exclusion discipline",
+     "pass_if": "No personnel under suspended load at any time"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Single designated signaller; radio check completed"
+    },
+    {
+     "axis": "rigging gear care",
+     "pass_if": "All gear inspected and tagged before and after use"
+    }
+   ],
+   "minutes": 90,
+   "level": "foreman",
+   "robot_assist": "bitcraze-crazyflie-2-1-plus",
+   "robot_role": "Flies a pre-lift camera pass into the belfry to confirm landing clearances and check for loose masonry."
+  },
+  {
+   "id": "churchyard-path-excavation-drainage",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Excavate a drainage trench along the north churchyard path of St Leonard's Church to stop water pooling against the tower foundation.",
+   "hazards": [
+    "Buried human remains and old vaults",
+    "Manual handling and repetitive digging",
+    "Underground utilities",
+    "Slips and trench edge collapse"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Steel-toe boots",
+    "Gloves",
+    "Hi-vis vest",
+    "Knee pads"
+   ],
+   "steps": [
+    "Attend heritage toolbox talk on remains protocol and stop-work triggers",
+    "Hand-dig test pits before any machine entry; watch for memorial stones",
+    "Shore or batter trench sides beyond 1.2 metres depth",
+    "Install perforated pipe and gravel filter per drawing",
+    "Backfill in layers and compact without disturbing adjacent memorials",
+    "Report any bone or vault find immediately and stop work"
+   ],
+   "rubric": [
+    {
+     "axis": "heritage protocol",
+     "pass_if": "Stops work and reports immediately on any suspected find"
+    },
+    {
+     "axis": "trench safety",
+     "pass_if": "No entry to unshored trench over 1.2 metres"
+    },
+    {
+     "axis": "utility safety",
+     "pass_if": "Hand-dig only within 500 mm of marked services"
+    },
+    {
+     "axis": "drainage quality",
+     "pass_if": "Falls and outfall match drawing; water flows clear in test"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries tools and water bottles along the trench line and uses ground-penetrating radar sled to pre-mark anomalies."
+  },
+  {
+   "id": "stained-glass-lancet-glazing",
+   "trade": "glaziers",
+   "zone": "Proposal Forum",
+   "task": "Remove, edge-protect and reinstall a Victorian stained-glass lancet window at St Leonard's Church for lead-light conservation.",
+   "hazards": "Sharp glass and lead came handling",
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Dust mask for lead came",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Photograph and number every panel before removal",
+    "Apply facing glass and edge tape to each panel",
+    "Cut old fixing ties carefully; support panel from outside",
+    "Crane-adjacent hand-off each panel to padded stillage",
+    "Reinstall with new conservation ties and isothermal glazing backing",
+    "Clean site and verify no lead dust residue remains on interior sills"
+   ],
+   "rubric": [
+    {
+     "axis": "documentation",
+     "pass_if": "Panels numbered and photographed before first removal"
+    },
+    {
+     "axis": "lead hygiene",
+     "pass_if": "Gloves and mask worn; wash-up before breaks"
+    },
+    {
+     "axis": "panel integrity",
+     "pass_if": "Zero breakages or new cracks recorded"
+    },
+    {
+     "axis": "fixing quality",
+     "pass_if": "Ties and backing installed to conservation spec"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds and rotates padded stillages so the apprentice can edge-tape heavy panels without overreaching."
+  }
+ ],
+ "credential": {
+  "name": "Heritage Church Site Readiness Card — St Leonard's Shoreditch",
+  "requires": [
+   "scaffold-inspect-shoreditch-church",
+   "asbestos-survey-boiler-room",
+   "churchyard-path-excavation-drainage",
+   "stained-glass-lancet-glazing"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s35-parkinsons-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,278 @@
+{
+ "title": "Divine.DAO (Series 7) — Ghats of Governance",
+ "summary": "An agent-managed, human-governed DAO cell set on Dashashwamedh Ghat, Varanasi. Five stone-and-marble pavilions rise above the Ganges at dawn aarti: charter carved in public, agents synthesizing evidence, humans holding every final vote.",
+ "biome": "river-valley",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Dashashwamedh Ghat main steps",
+   "buildings": [
+    {
+     "name": "Charter Mandapam",
+     "use": "Public display of the DAO charter, contribution model and measurable outcomes",
+     "floors": 1
+    },
+    {
+     "name": "Stone Ledger Gallery",
+     "use": "Inscribed outcome plaques and contribution records",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Court",
+    "Outcome Ledger Wall",
+    "Contribution Registry",
+    "Steward's Alcove"
+   ],
+   "props": [
+    "carved sandstone charter pillar",
+    "brass contribution ledger",
+    "marble outcome plaques",
+    "oil lamps at the entrance",
+    "brass bell rung before votes",
+    "woven jute floor mats"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Ganges riverbank below the ghat steps",
+   "buildings": [
+    {
+     "name": "Synthesis Yakshana",
+     "use": "Monitoring and evidence summarization workspace",
+     "floors": 2
+    },
+    {
+     "name": "Evidence Archive Vault",
+     "use": "Storage of monitored developments and summaries",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Desk",
+    "Evidence Summary Room",
+    "Source Triage Bench",
+    "Quiet Reading Nook"
+   ],
+   "props": [
+    "low study desks with inkpots",
+    "scroll racks of summaries",
+    "river-sand hourglass",
+    "copper astrolabe",
+    "hand-copied evidence scrolls",
+    "screened window shutters"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Upper ghat platform overlooking the aarti stage",
+   "buildings": [
+    {
+     "name": "Proposal Sabha",
+     "use": "Open forum where agent-drafted proposals are debated by people",
+     "floors": 1
+    },
+    {
+     "name": "Deliberation Veranda",
+     "use": "Shaded debate and amendment discussion space",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Speaker's Circle",
+    "Draft Proposal Table",
+    "Debate Veranda",
+    "Human-Only Vote Booth",
+    "Amendment Alcove"
+   ],
+   "props": [
+    "circle of low stools",
+    "stack of proposal drafts on reed paper",
+    "conch shell to open session",
+    "locked vote chest (human-keyed)",
+    "brass gong for closing debate",
+    "shade canopy of khadi cloth"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Ghat-side lane connecting to Godowlia crossing",
+   "buildings": [
+    {
+     "name": "Operations Chabutara",
+     "use": "Task routing and working-group coordination hub",
+     "floors": 2
+    },
+    {
+     "name": "Collaborators' Rest House",
+     "use": "Lodging and meeting for scouted experts and working groups",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Rooms",
+    "Scout's Map Table",
+    "Courier Alcove",
+    "Rest House Kitchen"
+   ],
+   "props": [
+    "chalk task board",
+    "runner bell-pull to each zone",
+    "clay water pots and cups",
+    "wall map of collaborator networks",
+    "wicker courier baskets",
+    "lanterns for night coordination"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Topmost terrace above the Ganges rooftop line",
+   "buildings": [
+    {
+     "name": "Progress Jharokha",
+     "use": "Terrace observatory tracking progress against charter outcomes",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Tracking Hall",
+    "Dawn Watch Terrace",
+    "Milestone Star Charts",
+    "Steward Briefing Room"
+   ],
+   "props": [
+    "bronze milestone tracker",
+    "sunrise-aligned sighting stone",
+    "framed progress timelines",
+    "telescope on a wooden tripod",
+    "brass wind chimes",
+    "terrace swing bench"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Ficus religiosa (peepal)",
+   "Neem",
+   "Banyan",
+   "Amla",
+   "Palash"
+  ],
+  "shrubs": [
+   "Holy basil (tulsi)",
+   "Kikar",
+   "Caper bush"
+  ],
+  "flowers": [
+   "Marigold",
+   "Lotus",
+   "Jasmine (mogra)",
+   "Hibiscus"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.5,
+  "wave_m": 0.3
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 3
+ },
+ "day_cycle": {
+  "sunrise_local": "05:45",
+  "sunset_local": "18:15"
+ },
+ "court": {
+  "name": "Sabha of the Rising Aarti",
+  "style": "Open-air river court on the ghat steps",
+  "why_here": "Dawn aarti makes the divine public and daily; here every final vote stays a human act, taken together at first light above the Ganges."
+ },
+ "quests": [
+  {
+   "title": "Inscribe the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter pillar in the Reading Court",
+    "Copy the reserved-for-humans list onto a reed-paper draft",
+    "Carry the draft to the Proposal Sabha for human debate",
+    "Witness the vote chest remain sealed until humans vote"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Evidence at First Light",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect the morning summaries from the Monitoring Desk",
+    "Triage sources at the Source Triage Bench",
+    "Hand verified summaries to the Progress Tracker",
+    "Log one measurable outcome on the milestone tracker"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "The Scout's Round",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Take a task chit from the Routing Board",
+    "Deliver a courier basket down the ghat lane",
+    "Collect collaborator names with the Collaborator Scout",
+    "File the findings in the Evidence Archive Vault"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Draft, Never Enact",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Watch the Proposal & Grant Drafter prepare a proposal draft",
+    "Join debate on the Deliberation Veranda",
+    "Confirm the drafter holds no enactment key",
+    "Record the outcome in the Stone Ledger Gallery"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Count the Aarti Lamps",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Climp to the Dawn Watch Terrace before sunrise",
+    "Count lit outcome lamps against the milestone tracker",
+    "Carry the progress count to the Proposal Sabha",
+    "Post the count beside the draft proposals for the next human vote"
+   ],
+   "xp": 45
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s07-divine-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

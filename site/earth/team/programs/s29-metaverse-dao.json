@@ -1,0 +1,157 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Governing the Algorithmic Workplace: DAO Skills for Worker Leaders",
+   "grade_or_level": "Adult / continuing education (worker representatives)",
+   "outcomes": [
+    "Explain how agent-managed, human-governed DAOs separate agent operations from human-reserved decisions",
+    "Draft a workplace governance charter that keeps hiring, pay and discipline votes in human hands",
+    "Evaluate AI monitoring and task-routing systems using evidence summaries",
+    "Practice collective decision-making in a proposal forum format"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the DAO charter model: mission, contribution model, measurable outcomes; map which workplace decisions must remain human-reserved.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review sample evidence summaries on AI in the workplace; practice spotting unsupported claims and asking critical questions of agent outputs.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a decision cycle: agents draft proposals, members debate and vote; compare outcomes to traditional collective bargaining processes.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Working-group exercise: design task-routing rules so AI coordinates work but never overrides worker protections.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized proposals and vote patterns (no names, no employer identifiers) contributed to a shared model of democratic decision practices.",
+   "consent": "Voluntary opt-in at enrollment with written plain-language notice; learners may participate fully without contributing data and may withdraw shared data at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Virtual Worlds on Real Wetlands: Civics and Ecology of the Metaverse",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Locate Meta HQ at 1 Hacker Way, Menlo Park on a map and describe its bayfront wetland setting",
+    "Explain what a DAO is and why humans keep the most important votes",
+    "Compare virtual worlds with the real ecosystems they are built upon",
+    "Draft a simple class charter with measurable outcomes"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the DAO's charter and mission; students draft a classroom charter listing decisions only humans in the class may vote on.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Using maps of San Francisco Bay, students investigate how the Menlo Park bayfront wetland was restored and why it matters.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Students propose a class project to help a local wetland or digital-civics goal; peers debate, then the class holds a final human vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students set measurable outcomes for their project and build a simple chart tracking progress over the term.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymous class-level project outcomes and progress charts (no student names or identifying details) added to a shared civics-education examples library.",
+   "consent": "Guardian/parent signed consent plus student assent required before any data contribution; all data is class-level and anonymous, and families may opt out without affecting participation."
+  },
+  {
+   "audience": "ngo",
+   "title": "Agent-Assisted, Human-Governed: DAO Models for Civil Society",
+   "grade_or_level": "Professional / NGO staff and program managers",
+   "outcomes": [
+    "Assess whether an agent-managed DAO structure fits their organization's mission",
+    "Design evidence-monitoring and synthesis workflows using AI agents",
+    "Build a proposal pipeline where agents draft and humans decide",
+    "Define measurable outcomes aligned with a public-good mission"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Analyze the charter structure: mission, contribution model, measurable outcomes; workshop a mission-aligned charter for participants' own NGOs.",
+     "minutes": 75
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Hands-on with evidence monitoring: participants structure a research question and outline how agents would summarize evidence for stewards.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Proposal clinic: participants draft proposals in the agent role, then switch to the human role to debate, amend and decide.",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design task-routing and working-group structures for cross-team coordination between decision cycles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress-tracking dashboard template tied to the charter's measurable outcomes.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized charter drafts and outcome frameworks (organization names removed) shared as open templates in a civil-society governance library.",
+   "consent": "Organizational consent via signed data-sharing agreement; individual participants opt in separately; identifying details stripped before sharing."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "From Mission to Measurable Outcomes: Nonprofit Governance in an Agent-Managed DAO",
+   "grade_or_level": "Board members and nonprofit leadership",
+   "outcomes": [
+    "Translate a nonprofit mission into measurable, trackable outcomes",
+    "Clarify which governance actions stay with the human board (votes, amendments, treasury, appointments)",
+    "Use agent-drafted proposals to speed board decision cycles without ceding authority",
+    "Track and report progress transparently to funders and members"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the nonprofit's mission onto a charter with explicit human-reserved actions: final votes, amendments, treasury transfers, appointments.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Simulation: agents present drafted grant proposals; the board debates and holds the final human vote on enactment.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design working groups and task routing for staff and volunteers between board meetings.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Create a progress report against the charter's outcomes, suitable for funders, using tracking examples from the DAO model.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized outcome metrics and progress-report templates (no beneficiary or donor data) contributed to a shared nonprofit governance benchmark set.",
+   "consent": "Board-approved participation policy; no personal or beneficiary data collected; all shared metrics are aggregated and de-identified, with withdrawal available on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s29-metaverse-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

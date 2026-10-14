@@ -1,0 +1,406 @@
+{
+ "scenarios": [
+  {
+   "id": "piazza-stone-repair",
+   "trade": "bricklayers",
+   "zone": "Operations Deck",
+   "task": "Repoint weathered sandstone balustrade on the Piazzale Michelangelo terrace overlooking the Arno.",
+   "hazards": [
+    "silica dust from cutting/grinding stone",
+    "fall from terrace edge (unprotected drop to hillside)",
+    "hand injury from chisel or grinder kickback",
+    "heat stress in Mediterranean summer sun"
+   ],
+   "ppe": [
+    "respirator (P100) for silica",
+    "cut-resistant gloves",
+    "safety harness with anchor to guardrail system",
+    "hard hat, eye protection, hi-vis vest"
+   ],
+   "steps": [
+    "Set up exclusion zone and dust containment barriers",
+    "Install fall-protection anchors and tie off before edge work",
+    "Rake out deteriorated mortar without damaging stone",
+    "Mix lime mortar matched to historic specification",
+    "Repoint joints, tool and cure per supervisor direction",
+    "Clean tools and dispose of silica-contaminated waste properly"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "100% tie-off while within 2 m of unprotected edge"
+    },
+    {
+     "axis": "dust control",
+     "pass_if": "wet-cutting or vacuum extraction used on all silica-generating tasks"
+    },
+    {
+     "axis": "craft quality",
+     "pass_if": "mortar joint profile and lime mix match spec sheet"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "no debris or tools left within fall zone at task end"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "bronzino-lighting-circuit",
+   "trade": "electricians",
+   "zone": "Progress Observatory",
+   "task": "Pull and terminate new lighting branch circuit for the Progress Observatory displays in the terrace loggia.",
+   "hazards": [
+    "energized circuits in existing panels",
+    "working at height on rolling scaffold",
+    "conductor damage from pulls through old conduit"
+   ],
+   "ppe": [
+    "insulated gloves (Class 00)",
+    "arc-rated face shield and FR clothing",
+    "hard hat",
+    "safety glasses"
+   ],
+   "steps": [
+    "Obtain lockout/tagout permit and apply personal locks",
+    "Verify de-energization with meter, test-meter-test",
+    "Pull THHN conductors through existing conduit with fish tape",
+    "Terminate at panel breaker and observatory fixture boxes",
+    "Ground and bond per drawings, torque lugs to spec",
+    "Remove locks, energize, and verify with meter"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "personal lock applied and zero-energy verified before any conductor handling"
+    },
+    {
+     "axis": "code compliance",
+     "pass_if": "breaker sizing, grounding and bonding match print"
+    },
+    {
+     "axis": "safe rigging of wire pulls",
+     "pass_if": "no conductor damaged; no one in pinch points during pull"
+    },
+    {
+     "axis": "verification",
+     "pass_if": "circuit tested live under supervision with correct readings"
+    }
+   ],
+   "minutes": 75,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries cable reels and tools up terrace stairs and inspects conduit runs with camera, keeping apprentice out of unnecessary trips on wet marble steps."
+  },
+  {
+   "id": "arno-drainage-pump-swap",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Replace storm-water pump in the piazza drainage vault that handles Arno hillside runoff.",
+   "hazards": [
+    "confined space (underground vault)",
+    "hydrogen sulfide and oxygen-deficient atmosphere",
+    "heavy lifting of pump assembly",
+    "unexpected water inflow during rain"
+   ],
+   "ppe": [
+    "full-body harness with retrieval line",
+    "4-gas personal monitor",
+    "rubber boots and waterproof suit",
+    "gloves, hard hat"
+   ],
+   "steps": [
+    "Complete confined-space permit and atmospheric test",
+    "Ventilate vault and post attendant at entry point",
+    "Isolate, lock out pump power and valve feeds",
+    "Disconnect flanges, rig and hoist old pump out",
+    "Set new pump, reconnect flanges and check torque",
+    "Restore power, test-run, check flow and leaks"
+   ],
+   "rubric": [
+    {
+     "axis": "permit compliance",
+     "pass_if": "confined space permit, attendant and gas log completed before entry"
+    },
+    {
+     "axis": "isolation",
+     "pass_if": "all energy sources locked out and verified"
+    },
+    {
+     "axis": "rigging safety",
+     "pass_if": "pump hoisted with rated slings and tag lines, no hands under load"
+    },
+    {
+     "axis": "functional test",
+     "pass_if": "pump runs and draws to spec without leaks"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows the pump assembly to the vault and lowers gas sensors ahead of human entry to pre-check atmosphere."
+  },
+  {
+   "id": "terrace-crane-glass-set",
+   "trade": "riggers",
+   "zone": "Proposal Forum",
+   "task": "Rig and signal a crane pick of glass panels for the Proposal Forum skylight on the crowded piazza terrace.",
+   "hazards": [
+    "suspended load over public walkway",
+    "wind load on large glass panels",
+    "crush points during landing"
+   ],
+   "ppe": [
+    "hard hat",
+    "cut-resistant gloves",
+    "hi-vis vest",
+    "safety glasses"
+   ],
+   "steps": [
+    "Complete lift plan and confirm crane inspection tag",
+    "Barricade swing radius and reroute pedestrian traffic",
+    "Inspect spreader bar, vacuum cups and slings",
+    "Rig panels, tag lines on, signal trial lift 150 mm",
+    "Direct set onto skylight curb with slow hand signals",
+    "Land, unhitch and inspect panels for damage"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging inspection",
+     "pass_if": "all rigging visually inspected and rated for panel weight before pick"
+    },
+    {
+     "axis": "communications",
+     "pass_if": "standard hand signals used and only one designated signal person"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "barricades prevent any pedestrian exposure under load"
+    },
+    {
+     "axis": "wind limits",
+     "pass_if": "pick halted if sustained wind exceeds lift-plan limit"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "solar-canopy-mount",
+   "trade": "solar",
+   "zone": "Research Synthesis Lab",
+   "task": "Mount ballasted solar modules on canopy racking powering the Research Synthesis Lab kiosks on the terrace roof deck.",
+   "hazards": [
+    "DC arc-flash and shock from series strings",
+    "roof-edge fall exposure",
+    "heat stress and sunburn on exposed deck",
+    "dropped tools onto plaza below"
+   ],
+   "ppe": [
+    "insulated tools and Class 0 gloves",
+    "fall-arrest harness tethered to anchor",
+    "sun hat, sunscreen, hydration pack",
+    "boots with high-friction soles"
+   ],
+   "steps": [
+    "Verify ballast layout and roof load limits with drawings",
+    "Stage modules with tethered tools only",
+    "Assemble racking and torque clamps to spec",
+    "Connect string wiring MC4s with breakers open",
+    "Verify polarity and insulation resistance before combiner close",
+    "Ground arrays and label per print"
+   ],
+   "rubric": [
+    {
+     "axis": "electrical safety",
+     "pass_if": "strings kept open and polarity verified before energization"
+    },
+    {
+     "axis": "fall protection",
+     "pass_if": "tether points and toe boards used near roof edge"
+    },
+    {
+     "axis": "dropped object control",
+     "pass_if": "all tools tethered; exclusion zone below maintained"
+    },
+    {
+     "axis": "mechanical quality",
+     "pass_if": "torque marks present on all clamps and ground lugs"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "franka-fr3",
+   "robot_role": "Holds and positions modules on racking while apprentice torques connections, reducing repetitive lifts."
+  },
+  {
+   "id": "loggia-scaffold-build",
+   "trade": "carpenters",
+   "zone": "Charter Hall",
+   "task": "Build tube-and-clamp scaffold in front of the Charter Hall loggia arches for façade maintenance.",
+   "hazards": [
+    "fall during scaffold erection",
+    "dropped clamps on public terrace below",
+    "clashing with tourist traffic",
+    "overhead power line near arch lighting"
+   ],
+   "ppe": [
+    "hard hat with chin strap",
+    "fall-arrest harness",
+    "gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Check scaffold plan, load rating and ground condition",
+    "Barricade footprint and post drop-zone signs",
+    "Erect base plates, standards and ledgers, level each lift",
+    "Install guardrails and toe boards before climbing to work",
+    "Tag scaffold complete after competent-person inspection",
+    "Strike scaffold in reverse order, lowering clamps by hand line"
+   ],
+   "rubric": [
+    {
+     "axis": "structural correctness",
+     "pass_if": "all standards plumb, base plates sound, couplers tight"
+    },
+    {
+     "axis": "fall protection during build",
+     "pass_if": "harness worn once lift height exceeds 3 m until guardrails complete"
+    },
+    {
+     "axis": "public safety",
+     "pass_if": "barricades and signage maintained throughout"
+    },
+    {
+     "axis": "green-tag discipline",
+     "pass_if": "scaffold used only after competent-person tag"
+    }
+   ],
+   "minutes": 100,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries clamps and boards up completed lifts and performs final plumb check with onboard sensors before tagging."
+  },
+  {
+   "id": "ev-charger-install",
+   "trade": "ev-charging",
+   "zone": "Operations Deck",
+   "task": "Install a Level 2 EV charger for the maintenance cart fleet at the Operations Deck service yard.",
+   "hazards": [
+    "energized 400 V supply",
+    "vehicle movement in yard",
+    "ground-fault risks on outdoor circuit"
+   ],
+   "ppe": [
+    "arc-rated clothing and face shield",
+    "Class 0 insulated gloves",
+    "hard hat",
+    "safety glasses"
+   ],
+   "steps": [
+    "Confirm circuit sizing, grounding electrode and GFCI protection per print",
+    "Lock out supply breaker before rough-in",
+    "Mount pedestal and pull conductors in liquid-tight conduit",
+    "Terminate charger, torque and photograph connections",
+    "Megger test circuit and check ground-fault trip",
+    "Energize and perform test charge cycle"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "supply locked out and verified before rough-in"
+    },
+    {
+     "axis": "code compliance",
+     "pass_if": "RCD/GFCI and grounding verified per manufacturer and code"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "insulation resistance and trip test pass before energization"
+    },
+    {
+     "axis": "yard traffic safety",
+     "pass_if": "cones or flagging protect work area from carts"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "hazardous-coating-removal",
+   "trade": "painters",
+   "zone": "Progress Observatory",
+   "task": "Remove lead-based paint from historic iron railings before repainting Progress Observatory perimeter.",
+   "hazards": [
+    "lead dust and fumes",
+    "hexavalent chromium in old primers",
+    "solvent exposure from strippers",
+    "public exposure on open terrace"
+   ],
+   "ppe": [
+    "P100 respirator",
+    "disposable coveralls with hood and tape",
+    "nitrile gloves",
+    "eye protection"
+   ],
+   "steps": [
+    "Set up containment with plastic sheeting and negative air",
+    "Wet-scrape or use stripper per SDS, no dry sanding",
+    "Bag and label lead waste for licensed disposal",
+    "Decontaminate tools, suit removal in sequence",
+    "Post clearance wipe test before primer application",
+    "Apply primer and finish coats with ventilation"
+   ],
+   "rubric": [
+    {
+     "axis": "containment",
+     "pass_if": "no visible dust or debris outside containment"
+    },
+    {
+     "axis": "method compliance",
+     "pass_if": "no dry abrasive methods used"
+    },
+    {
+     "axis": "decon discipline",
+     "pass_if": "PPE doffing and hygiene steps performed in order"
+    },
+    {
+     "axis": "waste handling",
+     "pass_if": "all waste labeled and manifested per supervisor"
+    }
+   ],
+   "minutes": 110,
+   "level": "apprentice",
+   "robot_assist": "pal-robotics-talos",
+   "robot_role": "Performs wet-scraping on highest railing sections under operator control, keeping the apprentice off ladder work in the containment zone."
+  }
+ ],
+ "credential": {
+  "name": "Piazzale Trades Readiness Card (Terrace & Historic Fabric)",
+  "requires": [
+   "piazza-stone-repair",
+   "bronzino-lighting-circuit",
+   "arno-drainage-pump-swap",
+   "terrace-crane-glass-set",
+   "solar-canopy-mount",
+   "loggia-scaffold-build",
+   "ev-charger-install",
+   "hazardous-coating-removal"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s24-donatello-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

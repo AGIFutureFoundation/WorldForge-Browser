@@ -1,0 +1,154 @@
+{
+ "programs": [
+  {
+   "audience": "k12",
+   "title": "Bronze Dogs and Robot Minds: Pet Care Meets AI Governance",
+   "grade_or_level": "Grades 4-8",
+   "outcomes": [
+    "Explain how the Balto statue and Central Park's lawns connect pets to community memory",
+    "Describe what an agent-managed DAO is and why humans make final decisions",
+    "Draft a simple class charter with roles reserved for people",
+    "Compare pet care rules with AI care rules"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Visit the Balto statue's story; compare 'who takes care of pets' with 'who governs AI' and write a class mission statement with human-only votes.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use a kid-safe Evidence Monitor demo to collect facts about sled dogs and AI assistants; sort evidence from opinion.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Students draft 'class pet/AI assistant rules' proposals; only student stewards cast the final vote, mirroring human governance.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track class outcomes on a wall chart modeled on the Progress Tracker agent; celebrate measurable goals met.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Anonymized tally of vote outcomes and one-sentence rule suggestions, labeled by grade band only; no names or free-text personal details.",
+   "consent": "Signed guardian/parent consent for any data contribution; teachers preview all outputs; opting out means participating on paper with nothing shared."
+  },
+  {
+   "audience": "union",
+   "title": "Agents on the Job: Worker Voice in Agent-Managed Workplaces",
+   "grade_or_level": "Workforce / adult professional development",
+   "outcomes": [
+    "Identify which decisions must remain human-reserved in automated systems",
+    "Map agent task routing to collective bargaining concerns",
+    "Draft contract language on AI agent roles and transparency"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the DAO's reserved-for-humans list; discuss what union decisions (votes, dues, grievances) should never be delegated to agents.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Examine how the Task Router agent assigns work; role-play a bargaining session over algorithmic task allocation and appeal rights.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a model proposal for worker oversight of AI agents; peers debate; facilitator plays the human-only final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review synthesized evidence on workplace AI; practice citing sources and flagging unsupported claims.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized concern categories and clause-wording suggestions aggregated across cohorts; no employer, local, or individual identifiers.",
+   "consent": "Participation is voluntary and off the clock where required; written consent for anonymized contributions with withdraw-anytime option; shop stewards review before sharing."
+  },
+  {
+   "audience": "ngo",
+   "title": "From Sled Team to DAO Cell: Distributed Missions Done Well",
+   "grade_or_level": "NGO program staff / civil society practitioners",
+   "outcomes": [
+    "Apply the five-zone DAO structure to their own program design",
+    "Set measurable charter outcomes and track them honestly",
+    "Practice agent-drafted, human-decided proposal cycles"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Deconstruct the mission statement and contribution model; participants draft a measurable-outcomes charter for their own NGO program.",
+     "minutes": 90
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Hands-on with evidence monitoring: define indicators, summarize findings, and learn to request sources from synthesis agents.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft grant-style proposals with a drafter-agent pattern, then run a human-only debate and vote to enact nothing without people.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple progress dashboard aligned to charter outcomes; commit to quarterly public reporting.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design a task-routing workflow for a multi-partner campaign, noting where humans must approve each handoff.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized, aggregated outcome indicators and program-design patterns from participating NGOs; no beneficiary or donor data.",
+   "consent": "Each NGO signs a data-sharing agreement; beneficiary data is never collected; any contribution can be withdrawn before model ingestion."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Good Governance for Small Nonprofits: Humans Decide, Agents Help",
+   "grade_or_level": "Nonprofit board members and executive directors",
+   "outcomes": [
+    "Explain agent-managed, human-governed operations to a board",
+    "Adopt a policy separating agent tasks from reserved human duties",
+    "Draft one agent-assisted proposal cycle with board vote"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board workshop on the reserved-for-humans list; adapt it into a nonprofit policy (finances, bylaws, appointments stay human).",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Exercise: an agent-style draft grant proposal is reviewed line-by-line; the board debates and holds the only binding vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learn to commission evidence summaries for board packets; practice verifying claims before presenting them.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set three measurable outcomes for the year and a simple tracking routine a volunteer can maintain.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized governance-policy templates and aggregate board-confidence survey scores; no financial, donor, or client information.",
+   "consent": "Board resolution authorizes anonymized sharing; individual survey responses are opt-in and stripped of identifiers; withdrawal permitted at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s25-mypet-ai",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

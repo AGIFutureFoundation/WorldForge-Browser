@@ -1,0 +1,281 @@
+{
+ "title": "Genomic.Blockchain (Series 28) — Torrey Pines Mesa Campus",
+ "summary": "An agent-managed, human-governed DAO cell on Illumina's Torrey Pines coastal-bluff campus: five zones from Charter Hall to Progress Observatory, six operating agents, genomic-sequencing theming, and steward quests grounded in the real mesa geography.",
+ "biome": "mediterranean",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Administration Building",
+   "buildings": [
+    {
+     "name": "Charter Hall Rotunda",
+     "use": "charter display, contribution model exhibits, measurable outcomes wall",
+     "floors": 2
+    },
+    {
+     "name": "Steward Registry Office",
+     "use": "human steward sign-in and governance calendar",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Ledger Nook",
+    "Outcomes Boardroom",
+    "Reserved-Powers Vault Antechamber",
+    "Steward Registry Desk"
+   ],
+   "props": [
+    "etched charter stele",
+    "contribution ledger terminal",
+    "measurable outcomes scoreboard",
+    "reserved-for-humans seal banner",
+    "glass double doors facing the mesa lawn"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Center for Novel Therapeutics",
+   "buildings": [
+    {
+     "name": "Evidence Monitor Wing",
+     "use": "development monitoring and evidence intake",
+     "floors": 3
+    },
+    {
+     "name": "Synthesis Reading Room",
+     "use": "research summaries for stewards",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake Bay",
+    "Literature Synthesis Studio",
+    "Steward Briefing Alcove",
+    "Sequencing Archive Vault",
+    "Focus-Pending Holding Shelf"
+   ],
+   "props": [
+    "sequence-read light tables",
+    "evidence pinboard wall",
+    "tiered summary stacks",
+    "coastal-bluff observation window",
+    "blank focus plaque awaiting stewards"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Design & Innovation Building",
+   "buildings": [
+    {
+     "name": "Proposal Forum Amphitheater",
+     "use": "agent-drafted proposals debated and voted by people",
+     "floors": 1
+    },
+    {
+     "name": "Drafter's Annex",
+     "use": "proposal and grant drafting workspace",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Debate Floor",
+    "Drafting Alcove",
+    "Human Vote Booths",
+    "Grant Review Parlor",
+    "Enactment Threshold Gate"
+   ],
+   "props": [
+    "proposal drafting terminals",
+    "tiered debate seating",
+    "hand-marked ballot boxes",
+    "quorum bell",
+    "human-only vote rope line"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "CSC Fleet Services",
+   "buildings": [
+    {
+     "name": "Operations Control Room",
+     "use": "task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Commons",
+     "use": "expert scouting huddles and working-group meets",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Huddle Rooms",
+    "Collaborator Map Table",
+    "Rover Charging Bay",
+    "Between-Cycles Lounge"
+   ],
+   "props": [
+    "illuminated task-routing board",
+    "collaborator pin map",
+    "working-group signage racks",
+    "delivery rover dock",
+    "mesa transit shuttle stop sign"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Canyonview Aquatics and Activities Center",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "progress tracking against charter outcomes",
+     "floors": 4
+    },
+    {
+     "name": "Outcome Chart Pavilion",
+     "use": "public display of outcome metrics",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Metrics Telescope Room",
+    "Outcome Chart Gallery",
+    "Steward Review Balcony",
+    "Milestone Tracking Studio",
+    "Canyonview Overlook"
+   ],
+   "props": [
+    "outcome metric mural",
+    "progress ring sculpture",
+    "tracking telescopes",
+    "milestone chime pole",
+    "overlook bench facing the coastal canyon"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Torrey pine (Pinus torreyana)",
+   "coast live oak (Quercus agrifolia)",
+   "Monterey cypress (Hesperocyparis macrocarpa)",
+   "western sycamore (Platanus racemosa)"
+  ],
+  "shrubs": [
+   "California sagebrush (Artemisia californica)",
+   "coyote brush (Baccharis pilularis)",
+   "black sage (Salvia mellifera)",
+   "toyon (Heteromeles arbutifolia)"
+  ],
+  "flowers": [
+   "California poppy (Eschscholzia californica)",
+   "bush sunflower (Encelia californica)",
+   "seaside daisy (Erigeron glaucus)",
+   "sticky monkeyflower (Diplacus aurantiacus)"
+  ],
+  "ground": "scrub"
+ },
+ "water": {
+  "kind": "ocean",
+  "flow_mps": 0.4,
+  "wave_m": 1
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "17:45"
+ },
+ "court": {
+  "name": "Charter Court",
+  "style": "Mediterranean plaza with Torrey pine shade and terrazzo inlay of a DNA double helix spiraling toward the Pacific",
+  "why_here": "The mesa's genomic anchor and coastal light make a helix plaza the natural gathering point for human votes between agent-run zones."
+ },
+ "quests": [
+  {
+   "title": "Read the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter stele and list the six reserved human powers",
+    "Log a steward entry at the Registry Desk",
+    "Trace the contribution model on the outcomes wall",
+    "Witness the human-only vote rope line at the Forum"
+   ],
+   "xp": 20
+  },
+  {
+   "title": "Evidence Round",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect the day's evidence summary from the Evidence Monitor",
+    "Review the synthesis stack with the Research Synthesis Agent",
+    "Flag one gap on the focus-pending shelf",
+    "Post findings on the Observatory metrics board"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Draft Without Enacting",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Request a draft from the Proposal & Grant Drafter",
+    "Amend the draft in the Debate Floor huddle",
+    "Observe the enactment threshold gate stay sealed for humans",
+    "Hand the approved draft to the Task Router for routing"
+   ],
+   "xp": 45
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the illuminated task-routing board",
+    "Assign tasks to two working groups in the Huddle Rooms",
+    "Charge a delivery rover at the bay",
+    "Return outcomes to the Evidence Intake Bay"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Measure the Mission",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Climb the Metrics Telescope Room at sunrise",
+    "Record progress against each measurable outcome",
+    "Sound the milestone chime for one met target",
+    "Report the progress ring tally in Charter Hall"
+   ],
+   "xp": 50
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s28-genomic-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

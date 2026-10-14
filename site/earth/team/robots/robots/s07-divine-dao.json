@@ -1,0 +1,290 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter exhibit wall and present the contribution model panels",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/move_base/status",
+     "/speech",
+     "/odom"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Polished stone plaza floor with stepped ghats edges and rope railings near exhibit panels",
+   "success": [
+    "Stops within 0.3 m of each of 5 exhibit waypoints",
+    "Speech utterance logged per panel within 2 s of arrival",
+    "Zero railing contacts"
+   ],
+   "safety_stops": [
+    "E-stop if inclination exceeds 5 degrees",
+    "Stop if human within 0.5 m of base",
+    "Halt speech on operator pause topic"
+   ],
+   "human_in_loop": "Docent approves tour script content before each public run",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_id",
+     "pose_error_m",
+     "speech_latency_s",
+     "contacts",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ghat-stair-mapping-survey",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Autonomously traverse and map the ghat staircases to update the world elevation model for progress dashboards",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/map",
+     "/odom",
+     "/scan",
+     "/terrain_analysis"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Wet sandstone ghat steps worn unevenly, morning aarti crowd residue, slick river-edge stone",
+   "success": [
+    "Covers 90% of mapped stair segments in one run",
+    "SLAM drift under 0.5 m over 500 m path",
+    "Step-height classification accuracy above 85%"
+   ],
+   "safety_stops": [
+    "Abort if step height exceeds 0.4 m",
+    "Stop within 1 m of open water edge",
+    "Sit down on low battery or lost localization"
+   ],
+   "human_in_loop": "Surveyor approves the updated elevation map before publishing to the observatory",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "segment_id",
+     "coverage_pct",
+     "slam_drift_m",
+     "step_height_m",
+     "abort_reason",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "forum-proposal-table-setup",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry proposal tablets and arrange seating markers for the human debate session",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/scan",
+     "/battery_state"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat stone platform with low thresholds, scattered marigold garland strands, cable runs for screens",
+   "success": [
+    "Places 8 seating markers within 0.2 m of plan positions",
+    "Zero cable entanglement events",
+    "Completes run under 10 minutes"
+   ],
+   "safety_stops": [
+    "Stop if payload tilt exceeds 15 degrees",
+    "Stop on obstacle under 0.1 m clearance",
+    "Return to dock below 20% battery"
+   ],
+   "human_in_loop": "Forum steward verifies seating layout and unlocks tablet content",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "marker_id",
+     "position_error_m",
+     "obstacle_events",
+     "battery_pct",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "aarti-flower-offering-relay",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Transport sealed flower-offering crates from the supply gate to the aarti distribution point along the ghats",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/gps/fix",
+     "/scan",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Packed-earth ghat road with stone culverts, crowd surge zones, wet patches near the river",
+   "success": [
+    "Reaches distribution point within 2 m of goal",
+    "Maintains under 1.0 m/s in crowd zones",
+    "Zero crate tip events"
+   ],
+   "safety_stops": [
+    "Full stop if pedestrian within 2 m front cone",
+    "Stop at water-line geofence",
+    "E-stop on wheel slip above threshold"
+   ],
+   "human_in_loop": "Priest approves crate contents and confirms delivery timing",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "goal_error_m",
+     "mean_speed_mps",
+     "min_pedestrian_dist_m",
+     "crate_tips",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-sample-retrieval-arm",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Pick research summary printouts and sample trays from the intake shelf and place them at the synthesis desk",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/camera/color/image_raw",
+     "/move_it_status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Lab bench with cluttered trays, cable bundles, and humidity-warped paper stacks",
+   "success": [
+    "Pick success rate above 90% over 20 trials",
+    "Placement error under 2 cm",
+    "Gripper force below 20 N on paper"
+   ],
+   "safety_stops": [
+    "Stop if external wrench exceeds 40 N",
+    "Stop if human hand enters workspace volume",
+    "Pause on vision confidence under 0.7"
+   ],
+   "human_in_loop": "Researcher approves each pick plan for fragile materials",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "trial",
+     "pick_success",
+     "place_error_m",
+     "grip_force_n",
+     "vision_confidence",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "forum-aerial-session-record",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Fly a fixed patrol loop to record aerial video of the proposal debate for remote stewards",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/scan",
+     "/camera/image_raw",
+     "/battery_voltage"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open-air forum canopy with overhead bamboo supports, lamp garlands, and gusts off the Ganges",
+   "success": [
+    "Maintains 5 m patrol altitude within 0.3 m",
+    "Completes 3 loops without path deviation over 1 m",
+    "Video stream uptime above 95%"
+   ],
+   "safety_stops": [
+    "Land immediately if battery under 3.3 V",
+    "Land if gust speed exceeds 6 m/s",
+    "Avoid-radius 1 m from any overhead structure"
+   ],
+   "human_in_loop": "Session chair grants launch clearance and can order landing at any time",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loop_count",
+     "alt_error_m",
+     "max_gust_mps",
+     "stream_uptime_pct",
+     "land_reason",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-display-mount-assist",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Lift and mount progress-dashboard panels onto the observatory wall brackets at head height",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/odom",
+     "/camera_depth/points",
+     "/torso_wrench"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Stone observatory floor with raised threshold at entry, wall brackets at 1.8 m, loose cable tray below",
+   "success": [
+    "Panel alignment error under 5 mm on all 4 brackets",
+    "Zero dropped-panel events",
+    "Whole-body stability margin above 0.15"
+   ],
+   "safety_stops": [
+    "Stop if panel tilt exceeds 10 degrees",
+    "Sit-to-safe-pose if wrench exceeds 80 N",
+    "Stop if a person enters 1.5 m work zone"
+   ],
+   "human_in_loop": "Facilities steward signs off bracket positions before each mount",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "panel_id",
+     "alignment_error_mm",
+     "drops",
+     "stability_margin",
+     "wrench_n",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s07-divine-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 3,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

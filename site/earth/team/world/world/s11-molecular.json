@@ -1,0 +1,271 @@
+{
+ "title": "Molecular: Spree DAO Cell",
+ "summary": "A walkable agent-managed DAO campus on the Spree at Molecule Man, Berlin. Five zones from Charter Hall to Progress Observatory host six agents who monitor, synthesize, draft and track — while humans alone vote, amend and enact.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Molecule Man sculpture, Spree River",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display and contribution-model exhibits",
+     "floors": 1
+    },
+    {
+     "name": "Molecule Man Viewing Deck",
+     "use": "Riverside amphitheater for charter readings",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Contribution Ledger Room",
+    "Mission Alcove",
+    "Reserved-for-Humans Vault"
+   ],
+   "props": [
+    "engraved charter stele",
+    "molecule-man silhouette benches",
+    "bronze contribution dials",
+    "Spree-view railing",
+    "DAO seal mosaic"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Cuvryspeicher",
+   "buildings": [
+    {
+     "name": "Synthesis Loft",
+     "use": "Evidence monitoring and summarizing workspace",
+     "floors": 3
+    },
+    {
+     "name": "River Evidence Annex",
+     "use": "Document archive and reading room",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake Bay",
+    "Summary Desk",
+    "Source Vault",
+    "Focus-Pending Boardroom"
+   ],
+   "props": [
+    "floor-to-ceiling pinboard walls",
+    "rolling archive ladders",
+    "river-facing study desks",
+    "ticker of monitored sources"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Oberhafenkantine",
+   "buildings": [
+    {
+     "name": "Forum Hall",
+     "use": "Public debate chamber for drafted proposals",
+     "floors": 2
+    },
+    {
+     "name": "Drafting Carrels",
+     "use": "Small booths for agent-drafted proposal review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Debate Floor",
+    "Draft Review Carrels",
+    "Human-Decision Chamber",
+    "Comment Rail"
+   ],
+   "props": [
+    "circular speaker podium",
+    "proposal drop slots",
+    "human-only vote lectern",
+    "annotated draft wall"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "EDGE East Side Tower",
+   "buildings": [
+    {
+     "name": "Operations Hub",
+     "use": "Task routing and working-group coordination",
+     "floors": 4
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting desk for experts and partners",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Routing Board",
+    "Working-Group Pods",
+    "Collaborator Map Room",
+    "Sync Bridge"
+   ],
+   "props": [
+    "task-card conveyor",
+    "magnetic org board",
+    "standup corner whiteboards",
+    "city skyline windows"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Stralauer One",
+   "buildings": [
+    {
+     "name": "Observatory Tower",
+     "use": "Progress tracking against measurable outcomes",
+     "floors": 6
+    },
+    {
+     "name": "Outcome Gallery",
+     "use": "Public exhibits of tracked results",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Dashboard Hall",
+    "Measures Workshop",
+    "Steward Balcony",
+    "Trend Archive"
+   ],
+   "props": [
+    "glowing outcome dials",
+    "floor-to-ceiling progress mural",
+    "timeline railing",
+    "telescope-style viewers"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Acer platanoides",
+   "Tilia cordata",
+   "Betula pendula",
+   "Populus nigra",
+   "Aesculus hippocastanum"
+  ],
+  "shrubs": [
+   "Cornus sanguinea",
+   "Sambucus nigra",
+   "Rosa canina"
+  ],
+  "flowers": [
+   "Allium schoenoprasum",
+   "Geranium pratense",
+   "Verbena bonariensis",
+   "Nepeta racemosa"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.8,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "07:50",
+  "sunset_local": "16:05"
+ },
+ "court": {
+  "name": "Molecule Court",
+  "style": "Open-air circular forum on the Spree bank beside the sculpture",
+  "why_here": "Mirrors the 30-metre Molecule Man: three linked figures in dialogue, like agents drafting and humans deciding."
+ },
+ "quests": [
+  {
+   "title": "Foundations of Governance",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter wall and list the six human-reserved actions",
+    "Trace one contribution pathway on the ledger",
+    "Watch an agent draft a proposal in the carrels",
+    "Stand at the human-only vote lectern and confirm only people decide"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect three summaries from the Evidence Monitor",
+    "Have the Research Synthesis Agent compress them into one brief",
+    "Deliver the brief to the Proposal & Grant Drafter",
+    "Observe the draft enter debate without being enacted"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Take a task card from the Routing Board",
+    "Ask the Collaborator Scout for two candidate collaborators",
+    "Deliver the card to the Synthesis Loft",
+    "Confirm completion on the Routing Board"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Record baseline readings on the Outcome Dashboard",
+    "Compare them with the charter's measurable outcomes",
+    "Report the gap to the Charter Hall mission alcove"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "A Circuit of the Cell",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Walk all five zones along the Spree",
+    "Log one agent role observed in each",
+    "Note which actions were never taken by agents",
+    "Complete the loop at the Observatory Tower"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s11-molecular",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

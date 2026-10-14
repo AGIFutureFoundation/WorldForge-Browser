@@ -1,0 +1,277 @@
+{
+ "title": "EchoDawn DAO — Echo Point, Katoomba",
+ "summary": "An agent-managed, human-governed DAO cell set on the sandstone cliffs of Echo Point, above the Jamison Valley mist. Six zones echo the DAO's charter workflow, anchored to real Katoomba landmarks.",
+ "biome": "temperate-forest",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "The Lookout",
+   "buildings": [
+    {
+     "name": "Charter Lookout Hall",
+     "use": "charter display and contribution model registry",
+     "floors": 2
+    },
+    {
+     "name": "Outcomes Plinth",
+     "use": "measurable outcomes monument wall",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Ledger",
+    "Outcome Metrics Wall",
+    "Steward's Gallery"
+   ],
+   "props": [
+    "engraved charter tablet",
+    "contribution ledger stand",
+    "sunrise viewing rail",
+    "measurable outcomes board",
+    "eucalyptus timber benches"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Blue View House",
+   "buildings": [
+    {
+     "name": "Synthesis Overlook Lab",
+     "use": "evidence monitoring and research synthesis",
+     "floors": 2
+    },
+    {
+     "name": "Valley Mist Annex",
+     "use": "document archive and quiet study",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Monitoring Desk",
+    "Synthesis Commons",
+    "Archive Stacks",
+    "Valley-Facing Reading Nook"
+   ],
+   "props": [
+    "evidence corkboard",
+    "summarized research scrolls",
+    "valley mist observation window",
+    "field notebooks",
+    "spectroscope model"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Echo Park",
+   "buildings": [
+    {
+     "name": "Echo Forum Pavilion",
+     "use": "proposal drafting, debate and human voting",
+     "floors": 1
+    },
+    {
+     "name": "Three Sisters Debate Ring",
+     "use": "open-air debate circle",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Tables",
+    "Debate Ring",
+    "Human Vote Booth",
+    "Deliberation Veranda"
+   ],
+   "props": [
+    "proposal draft stands",
+    "wooden debate lectern",
+    "sealed human-only vote urn",
+    "echo horn",
+    "public comment board"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Katoomba Tourist Information Centre",
+   "buildings": [
+    {
+     "name": "Operations Coordination Hub",
+     "use": "task routing and working group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Skyway East Signal Post",
+     "use": "comms relay and courier drop",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Bays",
+    "Courier Signal Room",
+    "Coordination Balcony"
+   ],
+   "props": [
+    "task routing board",
+    "working group sign-up sheets",
+    "signal flags",
+    "courier satchels",
+    "rope-and-pulley message line"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Silver Mist Reserve",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "tracking progress against charter outcomes",
+     "floors": 3
+    },
+    {
+     "name": "Milestone Cairn",
+     "use": "milestone marker terrace",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Progress Chart Hall",
+    "Milestone Terrace",
+    "Sunrise Calibration Deck",
+    "Steward Review Room"
+   ],
+   "props": [
+    "progress dial阵列",
+    "milestone cairn stones",
+    "sunrise alignment marker",
+    "telescope",
+    "outcome trend charts"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Eucalyptus oreades (Blue Mountains ash)",
+   "Eucalyptus piperita (Sydney peppermint)",
+   "Eucalyptus deanii (mountain gum)",
+   "Syncarpia glomulifera (turpentine)",
+   "Acacia melanoxylon (blackwood)"
+  ],
+  "shrubs": [
+   "Banksia serrata",
+   "Leptospermum polygalifolium (tea tree)",
+   "Boronia ledifolia",
+   "Hakea dactyloides"
+  ],
+  "flowers": [
+   "Telopea speciosissima (waratah)",
+   "Epacris longiflora (native fuchsia)",
+   "Wahlenbergia gloriosa (royal bluebell)",
+   "Dampiera purpurea"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.6,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SE",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:12",
+  "sunset_local": "17:48"
+ },
+ "court": {
+  "name": "The Echo Court",
+  "style": "open sandstone circle beneath the Three Sisters view",
+  "why_here": "Echo Point's namesake echoes make the cliff terrace a natural amphitheater for human deliberation and final votes."
+ },
+ "quests": [
+  {
+   "title": "Chalk the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter tablet in Charter Hall",
+    "Collect the blank outcomes ledger from the Steward's Gallery",
+    "Climb the Progress Observatory Tower to hang the outcomes board",
+    "Record the first measurable outcome marker"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Mist Over Evidence",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Summarize the morning's monitored developments with Evidence Monitor",
+    "Bundle the synthesis scroll in the archive",
+    "Carry it via Skyway East Signal Post to Operations Deck",
+    "Have Task Router file it with the right working group"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "The Echo Vote",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Watch Proposal & Grant Drafter draft a proposal",
+    "Join the debate at the Three Sisters Debate Ring",
+    "Verify the sealed vote urn is untouched by agents",
+    "Cast the human-only final vote and return the charter seal to Charter Hall"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Scout the Collaborators",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Receive a collaborator brief from Collaborator Scout",
+    "Cross Echo Park to the Synthesis Overlook Lab",
+    "Cross-check names against the archive stacks",
+    "Post the verified list on the evidence corkboard"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Sunrise Progress Check",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Align the sunrise marker on the calibration deck",
+    "Read the progress dial with Progress Tracker",
+    "Flag one off-track outcome",
+    "Deliver the flag to the Proposal Forum as a draft proposal input"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s16-echodawn-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

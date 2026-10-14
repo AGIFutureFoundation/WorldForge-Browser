@@ -1,0 +1,280 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-doc-delivery",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Charter Hall",
+   "goal": "Deliver printed charter summaries from the Operations Deck print station to the Charter Hall display table.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/amcl_pose",
+     "/move_base/status",
+     "/object_detected"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Level stone floors and 1994 mapped road segments; avoid indoor thresholds and display plinths in Charter Hall.",
+   "success": [
+    "Reaches display table within 0.3 m of goal pose",
+    "Zero collisions detected on bumper and /object_detected",
+    "Delivery tray remains level within 5 degrees during transit"
+   ],
+   "safety_stops": [
+    "E-stop on bumper contact",
+    "E-stop if any human within 0.5 m of arm sweep volume",
+    "Speed limited to 0.5 m/s in occupied rooms"
+   ],
+   "human_in_loop": "A steward confirms the charter documents are complete and correct before display.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "goal_reached",
+     "final_pose_error_m",
+     "collisions",
+     "delivery_stable",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-inspection",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Scan research binders on upper shelf rows and photograph spine labels for the Evidence Monitor.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/joint_states",
+     "/wrist_camera/image_raw",
+     "/wrist_camera/camera_info",
+     "/scan_complete"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Shelving racks up to 2.4 m in a converted urban church hall; stone walls limit repositioning space.",
+   "success": [
+    "Captures legible spine labels on 95% of target binders",
+    "End-effector stays within 5 cm of planned scan path",
+    "No shelf contact events logged"
+   ],
+   "safety_stops": [
+    "Joint torque limit trip at 80% rated",
+    "Stop if camera detects a person inside the workspace",
+    "Soft stop on unplanned force reading"
+   ],
+   "human_in_loop": "A steward reviews the scanned label index and approves it for synthesis.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "binders_scanned",
+     "labels_legible",
+     "path_deviation_m",
+     "contact_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-leg-tables",
+   "robot": "kinova-gen3",
+   "zone": "Proposal Forum",
+   "goal": "Arrange proposal placards and set voting tablets on the Forum tables before a human decision cycle.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/joint_states",
+     "/camera/color/image_raw",
+     "/grasp_pose",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed timber tables on level floor; placards are light card stock requiring gentle grasping.",
+   "success": [
+    "Places 8 of 8 placards within 2 cm of marked positions",
+    "Zero dropped or damaged placards",
+    "Tablet screens face seated positions, verified by camera"
+   ],
+   "safety_stops": [
+    "Grip force capped at 5 N",
+    "Stop if any human within 1 m of arm reach",
+    "Abort grasp if pose confidence below 0.8"
+   ],
+   "human_in_loop": "A steward verifies the table layout before the vote opens; the robot never enacts proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "placards_placed",
+     "placement_error_cm",
+     "drops",
+     "grasp_success_rate",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-perimeter-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the perimeter corridor of the Operations Deck carrying task-routing status beacons between stations.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odometry/filtered",
+     "/gps/fix",
+     "/scan"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Outdoor-grade churchyard paths near Shoreditch; 11.2 m local relief, kerbs, cobbles, and tree roots from 512 mapped trees.",
+   "success": [
+    "Completes 3 laps of the loop within 20 minutes each",
+    "Maintains centrelane tracking within 0.25 m",
+    "No rollover events on the 10-degree kerb ramps"
+   ],
+   "safety_stops": [
+    "Tip-over threshold at 20 degrees roll",
+    "Stop for pedestrians detected within 2 m on path",
+    "Low-battery return-to-dock at 20% SoC"
+   ],
+   "human_in_loop": "A coordinator approves patrol timing so it never interrupts working-group sessions.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "laps_completed",
+     "lap_time_s",
+     "lateral_error_m",
+     "tip_events",
+     "battery_end_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-aerial-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow scan above the Progress Observatory wall to photograph the outcomes dashboard for archival.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cmd_full_state",
+     "/pose",
+     "/range/front",
+     "/camera/image_raw"
+    ],
+    "frame": "map"
+   },
+   "terrain": "High-vaulted interior with beams and pendant lights; no water features; 97 nearby park zones produce occasional open-door drafts.",
+   "success": [
+    "Captures dashboard images at 90% pixel sharpness score",
+    "Maintains hover within 10 cm of planned waypoints",
+    "No obstacle proximity events under 30 cm"
+   ],
+   "safety_stops": [
+    "Land immediately on position-estimate loss",
+    "Land on obstacle under 30 cm range reading",
+    "Pilot override channel armed at all times"
+   ],
+   "human_in_loop": "A steward approves each flight window and verifies no session is in progress below.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoints_hit",
+     "sharpness_score",
+     "min_clearance_cm",
+     "flights_aborted",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "churchyard-grounds-waypoint-tour",
+   "robot": "unitree-go2",
+   "zone": "Charter Hall",
+   "goal": "Escort visitors along the outdoor waypoints between St Leonard's Church entrance and the Charter Hall door, narrating site history.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/lidar_points",
+     "/audio/playing"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Gravel and paving around the urban-park churchyard; tree roots, benches, and 1400 mapped building footprints constrain paths.",
+   "success": [
+    "Reaches all 4 waypoints in order within 0.5 m",
+    "Zero contacts with visitors or fixtures",
+    "Narration clip triggered at every waypoint"
+   ],
+   "safety_stops": [
+    "Stop and sit if visitor spacing under 1 m",
+    "E-stop on lidar obstacle under 0.4 m",
+    "Suspend in heavy rain sensor reading"
+   ],
+   "human_in_loop": "A steward sets the tour schedule and greets visitors at the start point.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoints_reached",
+     "pose_error_m",
+     "contacts",
+     "narration_triggers",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "tall-stack-cable-feed",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Route a ribbon cable along the server rack top rail to power the synthesis workstation without pinching the cable.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/franka_state_controller/franka_states",
+     "/gripper/action_goal",
+     "/contact_torque"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Rack rails at 1.9 m on uneven historic floor; cable must clear rack fans and edge trim.",
+   "success": [
+    "Cable seated along 90% of rail channel",
+    "Contact torques stay below 2 Nm throughout",
+    "Rack trim shows zero scratches in post-scan"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact torque spike",
+    "Stop if any person enters 1 m workspace",
+    "Pause on coolant fan vibration anomaly"
+   ],
+   "human_in_loop": "A steward signs off the electrical routing plan before the robot executes it.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "channel_coverage_pct",
+     "max_contact_torque_nm",
+     "surface_damage_events",
+     "task_time_s",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s35-parkinsons-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

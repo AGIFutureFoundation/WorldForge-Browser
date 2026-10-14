@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Worker Voice in AI Governance: A Moscone.X Workshop",
+   "grade_or_level": "Adult learners / working members",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO separates agent operations from human-reserved decisions",
+    "Draft a proposal outline for the Proposal Forum on AI's impact on workers",
+    "Identify which governance actions are reserved exclusively for humans"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the charter wall; map the mission to members' workplaces and list which decisions stay human-reserved.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Guided by Evidence Monitor outputs, compare claims about workplace AI and rank evidence quality in small groups.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a one-page proposal with the Proposal & Grant Drafter's template; peers debate but agents never enact.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review measurable-outcome tracking from a mock decision cycle and agree on indicators for the next workshop cohort.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized proposal topics and vote-debate themes (no names, employers, or bargaining positions) contributed to the shared synthesis models.",
+   "consent": "Members opt in per workshop; shop stewards review data-sharing terms; any member may withdraw contributions at any time with deletion honored."
+  },
+  {
+   "audience": "k12",
+   "title": "Agents and Allies: Governing AI at Moscone.X",
+   "grade_or_level": "Grades 8-10",
+   "outcomes": [
+    "Describe the difference between what AI agents may do and what only people may decide",
+    "Compare the five zones of the world and their purposes",
+    "Write a simple charter rule with a measurable outcome"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Scavenger hunt matching charter clauses to zone purposes; students flag which actions need a human vote.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students act as junior Evidence Monitors: summarize a short article and separate fact from opinion.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a class proposal using the drafter template and hold a real vote with everyone counting equally.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a paper progress tracker with one measurable outcome and check it against the class proposal results.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class proposal texts and voting tallies only; no names, ages, or identifying details are stored.",
+   "consent": "Signed guardian/parent consent forms required before participation and before any data sharing; teachers collect forms, guardians may opt out of data contribution while students still participate, and all data is deleted after the term."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Decision Lab for Civil Society Teams",
+   "grade_or_level": "Professional / staff development",
+   "outcomes": [
+    "Adapt the agent-managed DAO model to a civil-society decision cycle",
+    "Practice evidence synthesis with agent summaries and human judgment",
+    "Design measurable outcomes for a policy campaign"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare Evidence Monitor and Research Synthesis Agent outputs; annotate gaps and biases for steward review.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate Task Router coordination: form working groups and hand off scoped tasks between cycles.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Turn a synthesis finding into a drafted proposal; peer review enforces the human-reserved enactment rule.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Draft three measurable outcomes for a real campaign and set a review cadence mirroring the DAO cycle.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized campaign outcome indicators and synthesis annotations, stripped of beneficiary and partner identifiers.",
+   "consent": "Organizations sign a data-sharing MOU; staff consent individually; beneficiaries' data is never contributed, and any partner may suspend sharing."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Grant-Ready by Design: Nonprofit Proposal Practice at Moscone.X",
+   "grade_or_level": "Entry-to-mid nonprofit staff and volunteers",
+   "outcomes": [
+    "Write a clear, measurable proposal using the drafter template",
+    "Explain why enactment and treasury decisions remain human-reserved",
+    "Track program outcomes with simple indicators"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the mission statement to the nonprofit's own mission; identify shared 'public good' language.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Use the Proposal & Grant Drafter to outline a grant request; groups critique drafts against a rubric.",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Route follow-up tasks to working groups; practice the Collaborator Scout's expert-mapping method on paper.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define two measurable outcomes and a simple tracking sheet to report back to boards and funders.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized rubric scores and proposal structure patterns; no donor, client, or financial data is ever contributed.",
+   "consent": "Each organization consents via a plain-language agreement; staff opt in individually; contributions can be withdrawn and removed on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s19-moscone-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

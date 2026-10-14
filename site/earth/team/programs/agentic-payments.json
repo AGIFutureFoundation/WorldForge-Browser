@@ -1,0 +1,150 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Draft, Don't Settle: Financial Rails Literacy for Members",
+   "grade_or_level": "Adult continuing education / worker upskilling",
+   "outcomes": [
+    "Explain how agent-drafted transactions keep settlement in human hands",
+    "Read a budget ledger and variance report",
+    "Identify reserved-for-humans actions in a payments workflow",
+    "Role-play steward review of an agent-drafted purchase"
+   ],
+   "sessions": [
+    {
+     "zone": "Transaction Desk",
+     "activity": "Members walk through a Buyer/Seller Agent exchange: drafting a purchase and sale offer, then voting as mock stewards on whether to settle it.",
+     "minutes": 60
+    },
+    {
+     "zone": "Budget Office",
+     "activity": "Small groups read a sample budget ledger and variance report drafted by the Budget Agent, flagging items needing human sign-off.",
+     "minutes": 45
+    },
+    {
+     "zone": "Financial Infrastructure Gateway",
+     "activity": "Observe the Rail Agent read balances, fetch quotes and dry-run a transfer; discuss why dry runs, not settlements, are the agent's job.",
+     "minutes": 45
+    },
+    {
+     "zone": "Service Provisioning Counter",
+     "activity": "Members set a steward budget for ordering services, then audit what the Provisioning Agent recorded against it.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymised tally of which transaction steps learners marked 'must be human-approved' and common variance flags, contributing to shared steward-review training models.",
+   "consent": "Adult participants opt in via a signed consent form before session one; contributions are pseudonymised and any member may withdraw their data at any time without penalty."
+  },
+  {
+   "audience": "k12",
+   "title": "Money Machines with Rules: Agents, Budgets and Human Stewards",
+   "grade_or_level": "Grades 6-8 (ages 11-14)",
+   "outcomes": [
+    "Describe what an AI payment agent can and cannot do",
+    "Build a classroom budget with agent-drafted line items",
+    "Explain why humans make the final money decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Transaction Desk",
+     "activity": "Students simulate a classroom store: a 'Buyer Agent' team drafts orders, a 'steward' team approves or rejects each settlement.",
+     "minutes": 45
+    },
+    {
+     "zone": "Budget Office",
+     "activity": "Students draft a class-trip budget with ledger cards, then compare planned vs. actual to write a simple variance report.",
+     "minutes": 60
+    },
+    {
+     "zone": "Service Provisioning Counter",
+     "activity": "Students set spending limits for ordering art supplies 'by agent' and check receipts against the limit.",
+     "minutes": 45
+    },
+    {
+     "zone": "Financial Infrastructure Gateway",
+     "activity": "Guided dry-run demo: students watch a quote-and-read exercise and map which steps a human must finish.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised, aggregated class-level results (e.g., percent of drafted transactions correctly flagged for steward approval) to improve shared civics-of-AI lessons. No individual names or scores.",
+   "consent": "Signed guardian/parent consent is required before any data or photos; parents may decline data sharing and students still participate fully; only aggregate classroom data leaves the room."
+  },
+  {
+   "audience": "ngo",
+   "title": "Autonomy with Guardrails: Teaching NGO Staff the Agentic Payments Model",
+   "grade_or_level": "Professional development, program staff and field officers",
+   "outcomes": [
+    "Map the four zones of an agent-managed payments workflow",
+    "Apply the reserved-for-humans list to real program spending scenarios",
+    "Design steward review checkpoints for grant funds",
+    "Assess dry-run reports before recommending action"
+   ],
+   "sessions": [
+    {
+     "zone": "Financial Infrastructure Gateway",
+     "activity": "Staff interpret a Rail Agent read-and-dry-run report and draft a recommendation memo - never a settlement - for steward decision.",
+     "minutes": 60
+    },
+    {
+     "zone": "Budget Office",
+     "activity": "Teams rebuild a sample grant budget as an agent-drafted ledger and mark where human approval gates belong.",
+     "minutes": 75
+    },
+    {
+     "zone": "Transaction Desk",
+     "activity": "Case clinic: staff review drafted purchase and sale records, reconciling what was sold against what was recorded.",
+     "minutes": 60
+    },
+    {
+     "zone": "Service Provisioning Counter",
+     "activity": "Staff write provisioning rules and budget caps for local services, then stress-test them with scenario cards.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymised approval-gate placements and scenario outcomes across cohorts, aggregated to build shared training datasets for stewardship-in-payments curricula.",
+   "consent": "Organisational data-sharing agreement plus individual opt-in; field data is stripped of beneficiary and location identifiers before any aggregation."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Nonprofit Boards as Stewards: Governing Agent-Managed Money",
+   "grade_or_level": "Board members, treasurers and nonprofit leadership",
+   "outcomes": [
+    "Explain why treasury.transfer and windfall.distribute stay human",
+    "Run a mock steward vote on an agent-drafted proposal",
+    "Interpret a variance report to guide budget amendments"
+   ],
+   "sessions": [
+    {
+     "zone": "Budget Office",
+     "activity": "Board members review an agent-drafted budget ledger and variance report, then rehearse a human-only amendment discussion.",
+     "minutes": 75
+    },
+    {
+     "zone": "Transaction Desk",
+     "activity": "Mock board session: approve, defer or reject agent-drafted transactions, practising the reserved-for-humans settlement step.",
+     "minutes": 90
+    },
+    {
+     "zone": "Financial Infrastructure Gateway",
+     "activity": "Treasurers walk through read-only and dry-run outputs, learning what evidence to demand before any vote.",
+     "minutes": 45
+    },
+    {
+     "zone": "Service Provisioning Counter",
+     "activity": "Boards set provisioning budgets and caps for programs, defining what an agent may order without further approval.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised board-decision patterns (e.g., deferral rates and common evidence requests) to strengthen shared governance-training materials.",
+   "consent": "Institutional consent via board resolution plus individual opt-out at registration; all shared data is aggregated and de-identified so no organisation or vote is traceable."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "agentic-payments",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

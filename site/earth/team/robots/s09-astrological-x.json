@@ -1,0 +1,247 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-solstice-tour",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter exhibit path, narrating the mission at each station without blocking walkways.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/amcl_pose",
+     "/charter_station",
+     "/speech_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat grassland footing around exhibit plinths; uneven turf and low stone kerbs at path edges.",
+   "success": [
+    "Visits all 5 stations with <0.3 m pose error",
+    "Speech completes at each station",
+    "Zero collisions with plinths",
+    "Tour finishes within 20 min"
+   ],
+   "safety_stops": [
+    "E-stop on tilt >15 degrees",
+    "Stop if obstacle within 0.5 m",
+    "Abort speech on crowd density >8 people/m2"
+   ],
+   "human_in_loop": "A steward approves the tour script content and the daily tour start.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "station_errors",
+     "collision_events",
+     "tour_duration",
+     "visitor_count"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-doc-shuttle",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve research binders from the shelving wall and deliver them to analyst desks on request.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/color/image_raw",
+     "/move_base/result",
+     "/gripper/state",
+     "/object_detection"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth lab floor with cable ramps and desk chair castors as dynamic obstacles.",
+   "success": [
+    "Pick success rate >=90% over 20 trials",
+    "Drop-off pose error <0.15 m",
+    "Zero dropped binders",
+    "Loop time <4 min"
+   ],
+   "safety_stops": [
+    "Stop when human within 0.6 m of arm workspace",
+    "Cancel grasp if grip force below threshold",
+    "E-stop on base tilt or wheel slip"
+   ],
+   "human_in_loop": "Analysts confirm delivery destinations before the robot departs the shelf.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "pick_success",
+     "delivery_error",
+     "drops",
+     "cycle_time"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-mic-runner",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry a wireless microphone to the speaker queue position during open debate rounds.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/speaker_queue",
+     "/battery_state"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Crowded forum floor; chair legs, steps to podium, and grass-textured matting.",
+   "success": [
+    "Arrives at queue slot within 0.25 m in <30 s",
+    "Mic tray remains level within 5 degrees",
+    "No contact with attendees",
+    "Battery >20% at task end"
+   ],
+   "safety_stops": [
+    "Stop if human within 0.4 m",
+    "Abort on IMU tilt >20 degrees",
+    "Return to dock below 20% battery"
+   ],
+   "human_in_loop": "Moderator approves when debate round starts and who holds the floor.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "arrival_error",
+     "traverse_time",
+     "contacts",
+     "battery_end"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-perimeter-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the operations perimeter after hours and report anomalies for steward review.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/front_laser/scan",
+     "/anomaly_detector",
+     "/gps/fix",
+     "/patrol_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open Salisbury grassland: soft soil, tussocks, ruts, and occasional standing water after rain.",
+   "success": [
+    "Completes 8-waypoint loop with <1 m cross-track error",
+    "Flags >=1 planted anomaly in test run",
+    "Zero immobilization events",
+    "Patrol time within 10% of 25 min baseline"
+   ],
+   "safety_stops": [
+    "Stop if wheel slip exceeds 30% for 5 s",
+    "Halt on slope >25 degrees",
+    "Weather abort on lightning alert"
+   ],
+   "human_in_loop": "Stewards review flagged anomalies and approve patrol route changes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_errors",
+     "anomalies_flagged",
+     "slip_events",
+     "duration"
+    ]
+   }
+  },
+  {
+   "id": "stonehenge-solstice-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Inspect megalith lintels and footing stones on the observatory's monitoring circuit, capturing structured images.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/frontleft/camera/image_raw",
+     "/body_pose",
+     "/stone_registry",
+     "/inspection_plan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Irregular sarsen and bluestone megaliths, fallen stones, antialiasing ditches and banks, grassland slopes.",
+   "success": [
+    "Images captured for 100% of registered stones",
+    "Standoff distance kept 1.0-2.0 m from stones",
+    "No contact with any megalith",
+    "Inspection complete within 45 min"
+   ],
+   "safety_stops": [
+    "Stop if within 1.0 m of a megalith",
+    "Abort on body tilt >30 degrees",
+    "Cease imaging if site staff broadcast hold"
+   ],
+   "human_in_loop": "Heritage steward approves the inspection plan and reviews flagged stone imagery.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "stones_captured",
+     "min_standoff",
+     "contact_events",
+     "duration"
+    ]
+   }
+  },
+  {
+   "id": "observatory-solstice-drone-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a low-altitude scan over the solstice alignment axis to verify observatory sightline sensors remain clear.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/range/front",
+     "/flow_deck/quality",
+     "/scan_progress"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open sky above grassland; stone tops up to ~7 m, crosswind exposure on the plain, occasional birds.",
+   "success": [
+    "Completes axis scan with <0.5 m path deviation",
+    "Maintains 2 m clearance from all stone tops",
+    "No flow-deck quality drops below threshold",
+    "Lands within 0.2 m of pad"
+   ],
+   "safety_stops": [
+    "Land immediately if obstacle within 1.5 m",
+    "Return-to-pad on wind >8 m/s",
+    "Kill motors on position estimate loss"
+   ],
+   "human_in_loop": "A person authorizes each flight window and reviews the sightline clearance report.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "path_deviation",
+     "min_clearance",
+     "flight_time",
+     "wind_speed_max"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s09-astrological-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

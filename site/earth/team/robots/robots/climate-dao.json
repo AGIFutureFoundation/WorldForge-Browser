@@ -1,0 +1,316 @@
+{
+ "tasks": [
+  {
+   "id": "barrier-gate-rounds",
+   "robot": "clearpath-husky-a200",
+   "zone": "Progress Observatory",
+   "goal": "Patrol the flood-defense embankment route along the Thames Barrier viewing path, logging gate and pier conditions as progress telemetry.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/gps/fix",
+     "/odom",
+     "/scan",
+     "/mission_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Grass-topped river embankment, gravel viewing paths, gentle 22.4 m relief slopes; watch bollards near Barrier Point and moored MV Royal Iris.",
+   "success": [
+    "Complete 3 waypoint loops without manual recovery",
+    "Localization drift < 1.0 m per loop",
+    "Zero obstacle-contact events logged on /scan"
+   ],
+   "safety_stops": [
+    "Stop if any human enters 2 m forward cone",
+    "E-stop on tilt > 20 degrees near embankment edge",
+    "Pause in heavy rain or wet-grass slip detection"
+   ],
+   "human_in_loop": "Person reviews the patrol log and approves publication of condition findings to the Progress Observatory display.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loop_count",
+     "max_localization_drift_m",
+     "obstacle_events",
+     "operator_notes"
+    ]
+   }
+  },
+  {
+   "id": "charter-hall-docs-delivery",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Greet visitors, recite the charter summary, and deliver printed charter cards between the display plinths.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/speech",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Level indoor polished floor; cable runs near exhibit plinths, low glass cases, standing visitors.",
+   "success": [
+    "Reach 4 exhibit stops in order",
+    "Speech playback completes at each stop with < 5 s idle gap",
+    "No collisions with plinths or visitors over 20-min run"
+   ],
+   "safety_stops": [
+    "Stop and step back if visitor within 0.8 m",
+    "Shutdown speech on operator interrupt",
+    "Dock to charger below 15% battery"
+   ],
+   "human_in_loop": "Steward approves the charter wording NAO recites before public deployment.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "stops_completed",
+     "collisions",
+     "speech_duration_s",
+     "min_battery_pct",
+     "steward_approved"
+    ]
+   }
+  },
+  {
+   "id": "forum-mic-relay",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry a wireless mic pod between proposal speaker stations in the tiered forum seating during debate sessions.",
+   "ros": {
+    "action": "/follow_path",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/foot_contacts",
+     "/mic_dock_status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Carpeted tiered debate floor with step edges, chair legs, loose cables from AV racks.",
+   "success": [
+    "Complete 6 mic-pod handoffs within session window",
+    "Step-edge falls = 0",
+    "Average handoff positioning error < 10 cm"
+   ],
+   "safety_stops": [
+    "Freeze if speaker reaches toward mic pod",
+    "Sit and wait if any person within 1 m on stairs",
+    "Abort if mic dock signal lost > 5 s"
+   ],
+   "human_in_loop": "Forum moderator triggers each mic run and may cancel mid-route.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "handoffs_done",
+     "position_error_cm",
+     "fall_events",
+     "aborts",
+     "moderator_overrides"
+    ]
+   }
+  },
+  {
+   "id": "lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve labeled evidence binders from shelf bays and place them on the review desk for the Evidence Monitor station.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth",
+     "/torso_controller",
+     "/odom",
+     "/move_base/result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat lab floor; shelf rows 0.9 m apart, rolling carts, server rack for Six Degrees Data Centre style heat near one wall.",
+   "success": [
+    "8 of 10 grasp attempts succeed",
+    "Zero dropped binders",
+    "Shelf-to-desk cycle time < 90 s average"
+   ],
+   "safety_stops": [
+    "Abort grasp if binder weight estimate > 3 kg",
+    "Stop base if person enters workspace",
+    "Pause if thermal reading near rack exceeds 35 C"
+   ],
+   "human_in_loop": "Researcher confirms binder set list each morning before autonomous runs.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "grasp_attempts",
+     "grasp_successes",
+     "drops",
+     "cycle_time_s",
+     "anomalies"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-joint-tuning",
+   "robot": "franka-fr3",
+   "zone": "Operations Deck",
+   "goal": "Fine-position task-board pegs on the operations console table while operators update the task-routing board.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/franka_state_controller",
+     "/wrench",
+     "/ft_sensor"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed tabletop station; desk edge, monitors, coffee cups within arm reach envelope.",
+   "success": [
+    "Contact force < 10 N throughout insertion",
+    "10 consecutive peg insertions without fault",
+    "Joint velocity limits respected 100% of run"
+   ],
+   "safety_stops": [
+    "Reflex stop if external force > 20 N",
+    "Stop if hand detected in workspace camera",
+    "Disable on operator console e-stop button"
+   ],
+   "human_in_loop": "Operator presses enable before each session and can stop the arm anytime.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "insertions",
+     "max_contact_force_n",
+     "fault_count",
+     "enables",
+     "operator_stops"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-cable-tray",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Lay and route low-voltage cable segments into the overhead tray above the working-group desks.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/safety_status",
+     "/tcp_pose"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Overhead tray at 2.2 m, ceiling fixtures, ladder racks; ensure floor zone below stays clear.",
+   "success": [
+    "Route 5 cable segments without kinks detected",
+    "TCP repeatability < 1 mm across segments",
+    "Zero protective-stop triggers"
+   ],
+   "safety_stops": [
+    "Reduced speed mode when person below tray",
+    "Protective stop on force anomaly > 15 N",
+    "Stop if tray-mount vibration exceeds threshold"
+   ],
+   "human_in_loop": "Facilities person approves tray layout and lockout before cable runs.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "segments_routed",
+     "tcp_repeatability_mm",
+     "protective_stops",
+     "layout_approved",
+     "duration_s"
+    ]
+   }
+  },
+  {
+   "id": "warehouse-pallet-scout",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect pallet rows and dock doors at the Sainsbury's Distribution Centre edge zone used for DAO logistics staging.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/frontleft/camera/image",
+     "/odom",
+     "/gps/fix",
+     "/inspection_report"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Asphalt yard with dock levelers, pallet stacks, truck movement zones, standing water after rain near River Thames edge.",
+   "success": [
+    "Autonomous mission of 400 m with no falls",
+    "Capture 12 legible dock-door images",
+    "Report generated and uploaded within 5 min"
+   ],
+   "safety_stops": [
+    "Sit and power down if vehicle within 5 m",
+    "Avoid standing-water zones flagged in terrain map",
+    "Operator deadman hold required near dock edges"
+   ],
+   "human_in_loop": "Logistics steward reviews inspection report and clears pallet rows for use.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "distance_m",
+     "fall_events",
+     "images_captured",
+     "report_upload_s",
+     "steward_review"
+    ]
+   }
+  },
+  {
+   "id": "hall-perimeter-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Fly a slow perimeter scan of the Charter Hall ceiling to verify lighting and display integrity for the exhibits.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/range/front",
+     "/cf2/log/battery",
+     "/scan_result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor airspace under 6 m ceiling: pendant lights, banner cables, mezzanine railings at Heron Place style balconies.",
+   "success": [
+    "Complete 2 ceiling laps with < 0.2 m tracking error",
+    "Capture 20 timestamped inspection frames",
+    "No manual piloting interventions"
+   ],
+   "safety_stops": [
+    "Land immediately on position estimate loss",
+    "Avoid 1 m bubble around any person",
+    "Return-to-launch below 20% battery"
+   ],
+   "human_in_loop": "Hall manager authorizes flight window and confirms airspace clear before launch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "laps",
+     "tracking_error_m",
+     "frames",
+     "interventions",
+     "airspace_authorized"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "climate-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

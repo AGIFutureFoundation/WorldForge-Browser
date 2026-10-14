@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents at Work, Humans in Charge: A Members' Introduction to Agent-Managed Governance",
+   "grade_or_level": "Workplace education, all member levels",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' model and the six human-reserved actions",
+    "Read a DAO charter and identify measurable outcomes and accountability paths",
+    "Practice collective decision-making on agent-drafted proposals",
+    "Assess how automation could affect members' roles and representation"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided reading of the DAO charter and contribution model; members map reserved human powers (final vote, charter amend, treasury transfer) onto union equivalents like ratification votes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Members review a sample evidence summary from the Evidence Monitor and practice asking critical questions about sources, bias and gaps.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Mock decision cycle: an agent-drafted proposal is debated, amended and voted on by members only, mirroring the human-reserved final vote.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Members interpret progress dashboards and draft member-facing questions for the next steward cycle.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised post-session quiz scores and anonymised poll results on trust in agent-assisted governance, contributed as a labeled civic-education dataset.",
+   "consent": "Opt-in only; individual responses pseudonymised before aggregation; any sharing beyond the program requires a member vote consistent with the union's own decision rules."
+  },
+  {
+   "audience": "k12",
+   "title": "Shaking Palsy to Shared Decisions: James Parkinson's Shoreditch and Governing Technology",
+   "grade_or_level": "Grades 8-10 (ages 13-15)",
+   "outcomes": [
+    "Connect local history (St Leonard's Church, 1817 essay) to the history of medicine and observation",
+    "Describe how an agent-managed DAO separates agent work from human votes",
+    "Draft and debate a simple proposal as a class decision cycle",
+    "Understand basic data privacy and consent in shared projects"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners examine how the Evidence Monitor summarizes research; they compare a summary to its source and flag what is missing.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Using James Parkinson's observational method, learners write a mini-charter for a class project with two measurable outcomes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Class debate and vote on an agent-drafted mock proposal; only students cast the final vote, mirroring human-only governance.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Learners build a simple progress chart for their mini-charter outcomes and present it at St Leonard's / Shoreditch local history framing.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised (no names, no ages beyond grade band) examples of learner-drafted charters and vote tallies, shared as an open civics-education resource.",
+   "consent": "Written guardian/parent consent required for all data contributions; learners give age-appropriate assent; no individual is identifiable; any withdrawal removes that learner's contributions."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Action: Running Human-Governed Decision Cycles with Agent Support",
+   "grade_or_level": "Professional development, NGO program and policy staff",
+   "outcomes": [
+    "Design a decision cycle where agents draft and synthesize but humans decide",
+    "Translate field evidence into measurable charter outcomes",
+    "Map collaborators and working groups using agent-scouted inputs",
+    "Apply privacy-by-design to community data"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Staff workshop: turn a real program question into research questions; critique agent-generated evidence summaries for coverage and bias.",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Using the Collaborator Scout and Task Router model, staff map partners and working groups for their own program area around the Shoreditch anchor place.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Staff draft a proposal via a Proposal & Grant Drafter simulation, then run a human-only review and final vote.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Staff define indicators and a tracking cadence for their proposal's outcomes, aligned to the charter's measurable outcomes.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymised program indicators and lessons-learned notes on agent-assisted decision cycles, contributed to a shared NGO practice library.",
+   "consent": "Organizational consent via MOU; community-level data aggregated and de-identified; no beneficiary-identifiable data leaves partner organizations."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Charter First: Building Measurable Missions for Small Nonprofits",
+   "grade_or_level": "Introductory, small-nonprofit staff and volunteers",
+   "outcomes": [
+    "Write a one-page charter with 2-3 measurable outcomes",
+    "Understand the six human-reserved governance actions and why they stay with people",
+    "Set up a simple progress tracking routine",
+    "Collect and share data responsibly with tiny teams"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Hands-on clinic: each nonprofit drafts a mini-charter modeled on the DAO's charter structure, with contribution model and outcomes.",
+     "minutes": 90
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Volunteers role-play a decision cycle: agent-drafted proposals are debated and decided by the human board, never auto-enacted.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Teams set up lightweight task routing and working groups using the Task Router pattern adapted to volunteer staffing.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams build a one-page progress dashboard and schedule quarterly reviews against their charter outcomes.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised charter templates and aggregated outcome-metric patterns, contributed to a shared small-nonprofit toolkit.",
+   "consent": "Opt-in contribution; organization names and client data stripped before sharing; each team approves exactly what enters the shared toolkit."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s35-parkinsons-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

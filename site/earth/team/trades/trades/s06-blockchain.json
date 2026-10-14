@@ -1,0 +1,372 @@
+{
+ "scenarios": [
+  {
+   "id": "charter-hall-conduit-run",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Run EMT conduit along the Charter Hall ceiling grid for agent workstation circuits",
+   "hazards": [
+    "energized panels nearby",
+    "overhead work with falling fittings",
+    "ladder work near glass partitions",
+    "swiss low-voltage code conflicts"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "insulated gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Lock out the panel feeding the workstation circuit",
+    "Measure and cut EMT to layout marks with a proper bender",
+    "Deburr cut ends and assemble couplings and supports",
+    "Pull THHN conductors and torque terminal connections",
+    "Megger the run and label circuits in the panel schedule",
+    "Restore power only after inspection sign-off"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO compliance",
+     "pass_if": "Lock and tag applied before any panel work"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Conduit runs straight, supports within code spacing"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Insulation resistance test passes before re-energizing"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "proposal-forum-lift-panel",
+   "trade": "glaziers",
+   "zone": "Proposal Forum",
+   "task": "Set interior glass debate-partition panels on the mezzanine without crane access",
+   "hazards": [
+    "glass pinch points",
+    "panel weight over 50 kg",
+    "edge lacerations",
+    "mezzanine edge fall exposure"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "safety glasses",
+    "hard hat",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Stage panels vertically on A-frames near the opening",
+    "Inspect suction cups and vacuum seal before each lift",
+    "Two-person lift with glass carriers, communicate each move",
+    "Set panel into channel, shim plumb, and secure with setting blocks",
+    "Apply edge trim and clean without leaning on the panel"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging check",
+     "pass_if": "Suction equipment inspected and rated for panel weight"
+    },
+    {
+     "axis": "team communication",
+     "pass_if": "Verbal calls before every lift and move"
+    },
+    {
+     "axis": "installation",
+     "pass_if": "Panel plumb within tolerance and fully secured"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds and rotates glass panels at the channel under glazier control to reduce pinch-point exposure during final set."
+  },
+  {
+   "id": "lakeside-promenade-paver-reset",
+   "trade": "cement-masons",
+   "zone": "Progress Observatory",
+   "task": "Reset settled precast pavers along the lake promenade viewing deck",
+   "hazards": [
+    "vibration from plate compactor",
+    "hand injuries lifting pavers",
+    "uneven trip surfaces for public",
+    "lake-edge work near water"
+   ],
+   "ppe": [
+    "hi-vis vest",
+    "gloves",
+    "hearing protection",
+    "safety boots"
+   ],
+   "steps": [
+    "Cordon the work area from promenade pedestrians",
+    "Lift and stack settled pavers clear of the bed",
+    "Re-level the sand bedding with a screed",
+    "Reset pavers tight and flush, check pattern lines",
+    "Compact with plate compactor in overlapping passes",
+    "Sweep joint sand and remove barricades only when passable"
+   ],
+   "rubric": [
+    {
+     "axis": "public protection",
+     "pass_if": "Barricades in place before lifting begins"
+    },
+    {
+     "axis": "surface quality",
+     "pass_if": "No lips over 6 mm between pavers"
+    },
+    {
+     "axis": "tool safety",
+     "pass_if": "Compactor handled with two hands and hearing protection worn"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "research-lab-hvac-coil-swap",
+   "trade": "hvacr",
+   "zone": "Research Synthesis Lab",
+   "task": "Replace a fouled chilled-water coil in the server-adjacent air handler for the lab",
+   "hazards": [
+    "refrigerant and chilled-water lines under pressure",
+    "sharp fin edges",
+    "electrical disconnect inside unit",
+    "confined plenum work"
+   ],
+   "ppe": [
+    "safety glasses",
+    "cut-resistant gloves",
+    "hard hat",
+    "lockout tag"
+   ],
+   "steps": [
+    "Verify lockout of handler disconnect and pump isolation valves",
+    "Drain and vent the coil circuit before cutting lines",
+    "Remove access panels and cut pipe with tubing cutter",
+    "Slide old coil out, install new coil with gasket seals",
+    "Braze connections, pressure test with nitrogen, then recharge water circuit",
+    "Restart unit and verify airflow and temperatures"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "Electrical and hydraulic energy both locked out"
+    },
+    {
+     "axis": "leak integrity",
+     "pass_if": "Nitrogen pressure test holds with no drop"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Work order updated with pressures and readings"
+    }
+   ],
+   "minutes": 110,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "charter-hall-steel-canopy-rigging",
+   "trade": "riggers",
+   "zone": "Charter Hall",
+   "task": "Rig and set steel canopy beams over the Charter Hall entry in a tight lakeside old-town street",
+   "hazards": [
+    "suspended load over walkway",
+    "crane swing near building faces",
+    "load edge sharpness",
+    "public traffic in old town lane"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "hi-vis vest",
+    "safety harness where required"
+   ],
+   "steps": [
+    "Complete lift plan and set exclusion zone with barricades",
+    "Inspect slings, shackles and beam clamps for tags and damage",
+    "Rig beams at marked center of gravity points",
+    "Tagline the load and guide it with hands clear",
+    "Land, align bolt holes, and install erection bolts",
+    "Unrig only after load is fully connected and stable"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging inspection",
+     "pass_if": "All gear tagged and inspected before use"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "No personnel under load at any time"
+    },
+    {
+     "axis": "connection",
+     "pass_if": "All erection bolts installed before slings released"
+    }
+   ],
+   "minutes": 100,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries taglines and walks the exclusion zone perimeter checking for pedestrian intrusion during the pick."
+  },
+  {
+   "id": "observatory-roof-pv-install",
+   "trade": "solar",
+   "zone": "Progress Observatory",
+   "task": "Mount rooftop PV modules on standing-seam metal roof of the observatory",
+   "hazards": [
+    "roof-edge fall exposure",
+    "slippery wet metal seam",
+    "module handling in wind",
+    "live DC circuits once connected"
+   ],
+   "ppe": [
+    "full-body harness with lanyard",
+    "hard hat",
+    "gloves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Establish anchor points and perimeter warning line",
+    "Stage modules with seam clamps, no roof penetrations",
+    "Clamp modules to seams per torque spec",
+    "Wire strings in series, keep connectors capped until test day",
+    "Torque-check all clamps and label string conductors",
+    "Housekeep tools and debris before leaving roof"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "Harness tied off 100% of roof time"
+    },
+    {
+     "axis": "mounting",
+     "pass_if": "All seam clamps torqued to specification"
+    },
+    {
+     "axis": "electrical safety",
+     "pass_if": "Connectors capped and labeled until commissioning"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "forum-fire-sprinkler-retrofit",
+   "trade": "fire-sprinkler",
+   "zone": "Proposal Forum",
+   "task": "Retrofit sprinkler branch lines in the occupied proposal debate hall ceiling",
+   "hazards": [
+    "overhead drilling dust",
+    "hot work near finished wood",
+    "overhead pipe and fitting drops",
+    "working over occupied seating"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "dust mask",
+    "gloves"
+   ],
+   "steps": [
+    "Confirm system impairment with fire department and building owner",
+    "Drain the zone and verify with flow check",
+    "Cut and groove new branch line from the riser",
+    "Hang branch with listed hangers and attach sprinkler heads",
+    "Hydrostatic test at 200 psi for 2 hours",
+    "Restore system and post impairment tags removed only after inspection"
+   ],
+   "rubric": [
+    {
+     "axis": "impairment procedure",
+     "pass_if": "Impairment notice filed and system drained before cutting"
+    },
+    {
+     "axis": "test",
+     "pass_if": "Hydro test holds 2 hours with zero loss"
+    },
+    {
+     "axis": "head placement",
+     "pass_if": "Heads spaced and deflector positions per design"
+    }
+   ],
+   "minutes": 110,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "lakeside-storm-outfall-dive",
+   "trade": "divers",
+   "zone": "Operations Deck",
+   "task": "Inspect and clear the lakeside storm outfall serving the DAO building drainage",
+   "hazards": [
+    "cold water and low visibility",
+    "entanglement in outfall grate",
+    "contaminated sediment",
+    "boat and barge traffic on the lake"
+   ],
+   "ppe": [
+    "surface-supplied or SCUBA with dry suit",
+    "hard-wired communications",
+    "diver safety harness",
+    "gloves"
+   ],
+   "steps": [
+    "Complete dive plan, hazard assessment and communications check",
+    "Post tenders and display dive flag to lake traffic",
+    "Descend the guideline and assess outfall grate condition",
+    "Clear debris by hand, bag and send up loads",
+    "Record grate and pipe condition for the survey report",
+    "Ascend on line with decompression or safety stop per tables"
+   ],
+   "rubric": [
+    {
+     "axis": "pre-dive planning",
+     "pass_if": "Dive plan, tender and comms verified before water entry"
+    },
+    {
+     "axis": "traffic control",
+     "pass_if": "Dive flag displayed and zone marked on surface"
+    },
+    {
+     "axis": "task completion",
+     "pass_if": "Grate cleared and condition documented"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Towed surface platform carries dive flag, spare tanks and tool bags to the outfall site along the promenade."
+  }
+ ],
+ "credential": {
+  "name": "Crypto Valley DAO Hall Site Readiness Card",
+  "requires": [
+   "charter-hall-conduit-run",
+   "charter-hall-steel-canopy-rigging",
+   "forum-fire-sprinkler-retrofit",
+   "observatory-roof-pv-install"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s06-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

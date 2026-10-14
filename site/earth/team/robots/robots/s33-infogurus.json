@@ -1,0 +1,333 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-docent",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the Charter Hall exhibit walls, gesturing at each charter panel and delivering the contribution-model narration.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/amcl_pose",
+     "/speech",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Polished exhibition-hall floors near the Bibliotheca Alexandrina; avoid glass display cases and cabling along walls.",
+   "success": [
+    "Visits all 5 exhibit waypoints in order",
+    "Keeps >=0.8 m clearance from displays",
+    "Speech phrase log complete for each stop",
+    "Zero collisions during run"
+   ],
+   "safety_stops": [
+    "E-stop on person within 0.5 m",
+    "Stop if tilted >20 deg",
+    "Halt speech if crowd density >4 persons within 2 m"
+   ],
+   "human_in_loop": "A docent approves the narration script and starts/stops each public tour session.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_reached",
+     "min_clearance_m",
+     "speech_events",
+     "collisions",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Fetch labeled research binders from shelf slots and deliver them to the synthesis desk for the Evidence Monitor agents.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/color/image_raw",
+     "/move_base_simple/goal",
+     "/gripper_state",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Carpeted lab aisles 1.2 m wide; shelf lips at 0.9-1.4 m height; avoid rolling chairs and cable trays.",
+   "success": [
+    "Picks 3 of 3 requested binders",
+    "Places each within 5 cm of desk target",
+    "Arm joint velocity within limits",
+    "No dropped objects"
+   ],
+   "safety_stops": [
+    "Stop arm if human within 0.7 m of workspace",
+    "Abort pick on grasp force >30 N",
+    "E-stop on base tilt >10 deg"
+   ],
+   "human_in_loop": "A librarian confirms the binder list and acknowledges each delivery at the desk.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "pick_attempts",
+     "grasp_success",
+     "placement_error_m",
+     "workspace_intrusions",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-mic-relay",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry a wireless microphone dock between speaker stations in the tiered forum during proposal debate sessions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/battery_state",
+     "/mic_dock/dock_status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Tiered seating with steps; operate on flat central floor only; avoid podium stairs and trailing AV cables.",
+   "success": [
+    "Reaches 4 speaker stations per session",
+    "Docking alignment error <2 cm",
+    "No stair-edge proximity <0.3 m",
+    "Battery >20% at session end"
+   ],
+   "safety_stops": [
+    "Stop at detected step edge <0.3 m",
+    "Stop on human within 0.6 m",
+    "Return to charger below 20% battery"
+   ],
+   "human_in_loop": "The forum moderator approves station order and can recall the robot mid-session.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "stations_visited",
+     "dock_error_m",
+     "min_edge_distance_m",
+     "battery_end_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-cable-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the Operations Deck perimeter, inspecting cable runs and rack doors with the onboard camera for task-routing crews.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/cmd_vel",
+     "/gps/fix",
+     "/diagnostics"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Concrete deck floor with ramp transitions near the harbor-side conference center; avoid equipment racks and pallets.",
+   "success": [
+    "Completes full perimeter loop",
+    "Captures >=20 inspection images",
+    "Ramp pitch handled without slip",
+    "Zero rack contacts"
+   ],
+   "safety_stops": [
+    "Stop on obstacle <1 m ahead",
+    "Stop on wheelslip >15%",
+    "E-stop from ops console"
+   ],
+   "human_in_loop": "An operations lead reviews flagged images and authorizes each patrol route.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loop_complete",
+     "images_captured",
+     "obstacle_stops",
+     "min_obstacle_distance_m",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-drone-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a repeating scan of the Progress Observatory display wall to capture meter dashboards for archive imagery.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf1/camera/image",
+     "/cf1/pose",
+     "/cmd_full_state",
+     "/battery_voltage"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor airspace under 4 m ceiling; avoid hanging lights, banners, and wall-mounted display arms; no outdoor wind exposure.",
+   "success": [
+    "Completes 3 scan loops at 2.5 m altitude",
+    "Holds position within 10 cm of waypoints",
+    "No obstacle closer than 0.5 m",
+    "Lands on pad within 10 cm"
+   ],
+   "safety_stops": [
+    "Land immediately on battery <3.5 V",
+    "Cut motors if tilt >45 deg",
+    "Land if human enters flight volume",
+    "Ceiling proximity <0.5 m triggers descent"
+   ],
+   "human_in_loop": "An observatory steward authorizes each flight window and confirms the airspace is clear.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loops_complete",
+     "altitude_error_m",
+     "min_obstacle_distance_m",
+     "min_battery_v",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "planetarium-stair-climb-recon",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Climb the stepped seating of the adjacent planetarium lecture space to inspect row lighting and seat-mounted sensors after hours.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/frontleft/camera/image",
+     "/body_pose",
+     "/foot_contacts",
+     "/estop"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Stepped concrete rows (rise ~0.3 m), handrails, dark after-hours lighting; avoid the projection dome equipment.",
+   "success": [
+    "Ascends and descends 8 rows",
+    "Maintains 3 foot contacts per step transition",
+    "Captures sensor images from each row",
+    "Zero falls or manual interventions"
+   ],
+   "safety_stops": [
+    "Auto-stop if any foot slips >5 cm",
+    "E-stop on human detected",
+    "Abort if body pitch >35 deg"
+   ],
+   "human_in_loop": "Facilities staff schedule the after-hours window and clear the seating before the run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "rows_climbed",
+     "foot_slips",
+     "pitch_max_deg",
+     "images_captured",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "book-check-in-arm",
+   "robot": "universal-robots-ur10e",
+   "zone": "Charter Hall",
+   "goal": "Sort returned exhibition catalogs from a return bin into labeled shelf slots at the entry kiosk.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/wrist_camera/image_raw",
+     "/joint_states",
+     "/wrench",
+     "/io_and_status_controller"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed kiosk beside entry turnstiles; smooth counter surface; shelf slots at 0.6-1.8 m; avoid visitor queue lane.",
+   "success": [
+    "Sorts 10 catalogs with >=90% correct slot",
+    "Cycle time <20 s per item",
+    "No grasp force >25 N",
+    "Zero items dropped outside slots"
+   ],
+   "safety_stops": [
+    "Stop arm if visitor enters kiosk zone",
+    "Pause on joint torque >80% limit",
+    "E-stop button on kiosk"
+   ],
+   "human_in_loop": "A kiosk attendant opens/closes the sorting session and resolves mis-sorted items.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "items_sorted",
+     "slot_accuracy",
+     "max_wrench_n",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "talisman-model-assembly-demo",
+   "robot": "franka-fr3",
+   "zone": "Progress Observatory",
+   "goal": "Assemble a small demonstration model of the library disc facade for public display, placing numbered acrylic segments on a peg board.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/camera/color/image_raw",
+     "/fr3_state_controller/joint_states",
+     "/gripper/state",
+     "/ft_sensor/wrench"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Demonstration table under the observatory mezzanine; segment trays and peg board; keep clear of railing edge and visitors leaning in.",
+   "success": [
+    "Places 12 of 12 segments correctly",
+    "Insertion force <10 N",
+    "Segment alignment error <2 mm",
+    "No workspace intrusions during motion"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact force >15 N",
+    "Stop if hand detected in workspace",
+    "Pause on Cartesian velocity limit breach"
+   ],
+   "human_in_loop": "An exhibit curator approves the finished assembly for public display and may pause at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "segments_placed",
+     "insertion_force_n",
+     "alignment_error_mm",
+     "reflex_stops",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s33-infogurus",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 3,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

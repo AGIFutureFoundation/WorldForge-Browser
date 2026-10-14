@@ -1,0 +1,325 @@
+{
+ "scenarios": [
+  {
+   "id": "geothermal-pipe-hanger-swap",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Replace a corroded hanger on a geothermal supply line near the spa's pump house without interrupting flow.",
+   "hazards": [
+    "85C geothermal water under pressure",
+    "Scalding steam flash at flange",
+    "Sulfur (H2S) gas accumulation in low areas"
+   ],
+   "ppe": [
+    "Full face shield",
+    "Chemical-resistant heat gloves",
+    "H2S personal monitor",
+    "Hard hat with chin strap"
+   ],
+   "steps": [
+    "Isolate and lock out the line section per permit.",
+    "Verify zero pressure at the drain valve.",
+    "Position steam shield between flange and work area.",
+    "Cut corroded hanger with reciprocating saw.",
+    "Install new hanger and torque to spec.",
+    "Restore line and check for leaks.",
+    "Complete lockout removal and log work."
+   ],
+   "rubric": [
+    {
+     "axis": "Lockout compliance",
+     "pass_if": "Applies lockout and verifies zero energy before cutting"
+    },
+    {
+     "axis": "H2S awareness",
+     "pass_if": "Wears gas monitor and retreats on any alarm"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Hanger torqued to spec with no leak after repressurization"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Carries tools and steam shield to the pump house over rough lava access road; apprenctice performs all hot-line-adjacent work."
+  },
+  {
+   "id": "lava-field-trench-shore",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Shore and inspect a 1.5 m trench through the Reykjanes lava field for a new hot-water feed.",
+   "hazards": [
+    "Trench collapse in fractured basalt",
+    "Uneven lava footing causing trips",
+    "Buried unknown geothermal pockets"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Check trench permit and soil classification sheet.",
+    "Install trench box or hydraulic shoring top-down.",
+    "Ladder access every 7.5 m of trench.",
+    "Spoil pile set back at least 0.6 m from edge.",
+    "Daily inspection logged before entry.",
+    "Exit and report any water seepage or heat."
+   ],
+   "rubric": [
+    {
+     "axis": "Protective systems",
+     "pass_if": "Shoring installed before any entry"
+    },
+    {
+     "axis": "Spoil control",
+     "pass_if": "Spoil kept back from trench edge"
+    },
+    {
+     "axis": "Inspection discipline",
+     "pass_if": "Documents pre-entry inspection"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Scans trench line with thermal camera for hot spots before crew entry."
+  },
+  {
+   "id": "spa-panel-tie-in",
+   "trade": "electricians",
+   "zone": "Proposal Forum",
+   "task": "Tie a new subpanel for spa lighting circuits into the facility's main distribution under supervision.",
+   "hazards": [
+    "Arc flash at 400V switchgear",
+    "Wet environment near bathing areas",
+    "Energized adjacent circuits"
+   ],
+   "ppe": [
+    "Arc-rated suit (8 cal/cm2 min)",
+    "Arc-rated face shield",
+    "Insulated gloves with leather protectors",
+    "Voltage-rated mat"
+   ],
+   "steps": [
+    "Obtain energized work permit and job briefing.",
+    "Identify and de-energize target feeder; lock and tag.",
+    "Test absence of voltage with meter verified on known source.",
+    "Install subpanel feeder and bond grounding electrode.",
+    "Torque lugs to manufacturer spec.",
+    "Remove locks, re-energize, and verify phasing."
+   ],
+   "rubric": [
+    {
+     "axis": "Verification",
+     "pass_if": "Proves meter then tests absence of voltage"
+    },
+    {
+     "axis": "Grounding",
+     "pass_if": "Bonding continuous and verified under 5 ohms"
+    },
+    {
+     "axis": "Wet-area compliance",
+     "pass_if": "GFCI/A-class protection applied near bathing zones"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "silica-storage-tank-weld",
+   "trade": "welders",
+   "zone": "Research Synthesis Lab",
+   "task": "Weld a replacement section on the silica-rich reject water storage tank at the water treatment shed.",
+   "hazards": [
+    "Confined space entry",
+    "Residual sulfur dioxide vapors",
+    "Hot work spark ignition of tank liners"
+   ],
+   "steps": [
+    "Complete confined space entry permit and hot work permit.",
+    "Purge and ventilate tank; test atmosphere continuously.",
+    "Set fire watch with extinguisher at manway.",
+    "TIG weld replacement plate section per WPS.",
+    "Inspect weld visually and repair pinholes.",
+    "Exit, close permit, sign off fire watch."
+   ],
+   "ppe": [
+    "Air-purifying respirator with supplied-air standby",
+    "Welding hood",
+    "Leather welding jacket",
+    "Gas monitor"
+   ],
+   "rubric": [
+    {
+     "axis": "Permit order",
+     "pass_if": "Confined space and hot work permits complete before entry"
+    },
+    {
+     "axis": "Weld quality",
+     "pass_if": "Visual inspection shows full penetration, no pinholes"
+    },
+    {
+     "axis": "Atmosphere control",
+     "pass_if": "Continuous monitoring logged during entry"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "steam-line-insulation-rehang",
+   "trade": "insulators",
+   "zone": "Progress Observatory",
+   "task": "Reinstall mineral wool lagging and jacketing on an exposed steam line run serving spa heating.",
+   "hazards": [
+    "Contact burn from hot pipe surface",
+    "Fibrous dust inhalation",
+    "Work at 3 m on uneven lava slab footing"
+   ],
+   "steps": [
+    "Set scaffold towers on compacted pads, check plumb.",
+    "Verify line is at ambient or use heat-rated gloves for hot sections.",
+    "Score and fit mineral wool sections with wire ties.",
+    "Fit aluminum jacketing with screws pointing away from walkway.",
+    "Seal circumferential joints with weatherproof tape.",
+    "Housekeeping: vacuum fibers, no dry sweeping."
+   ],
+   "ppe": [
+    "Respirator (N95 minimum)",
+    "Long-sleeve coveralls",
+    "Cut-resistant gloves",
+    "Hard hat"
+   ],
+   "rubric": [
+    {
+     "axis": "Scaffold safety",
+     "pass_if": "Scaffold tagged and inspected before use"
+    },
+    {
+     "axis": "Dust control",
+     "pass_if": "Uses vacuum, never dry sweeps fibers"
+    },
+    {
+     "axis": "Finish quality",
+     "pass_if": "Jacketing watertight with seams shed water"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "lava-road-grader-ops",
+   "trade": "operating-eng",
+   "zone": "Operations Deck",
+   "task": "Grade a new maintenance access road across the black lava field to the pump house pad.",
+   "hazards": [
+    "Hidden voids under lava crust",
+    "Equipment rollover on grades",
+    "Dust and silica exposure in cab"
+   ],
+   "ppe": [
+    "Seat belt",
+    "High-vis vest outside cab",
+    "Dust mask when exiting cab"
+   ],
+   "steps": [
+    "Complete daily equipment inspection circle check.",
+    "Walk the route with ground crew to mark voids and lava edges.",
+    "Grade in passes keeping machine on marked line.",
+    "Use spotter when working near trench edges.",
+    "Park, lower blade, set brakes at shutdown.",
+    "Log hours and report any void collapses."
+   ],
+   "rubric": [
+    {
+     "axis": "Pre-op inspection",
+     "pass_if": "Circle check documented before engine start"
+    },
+    {
+     "axis": "Void awareness",
+     "pass_if": "Route walked and hazards flagged"
+    },
+    {
+     "axis": "Stability",
+     "pass_if": "No operation on unmarked steep or cracked sections"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Pre-surveys route with ground-penetrating sensor to flag lava voids for the operator."
+  },
+  {
+   "id": "spill-response-silica-slurry",
+   "trade": "hazmat",
+   "zone": "Charter Hall",
+   "task": "Respond to a release of sulfuric silica slurry from a treatment line coupling near the spa service yard.",
+   "hazards": [
+    "Acidic slurry skin/eye contact",
+    "H2S off-gassing at spill",
+    "Slippery wet surface spread to walkways"
+   ],
+   "steps": [
+    "Stage upwind, size up, and deny entry to public walkways.",
+    "Don chemical suit, face shield, and butyl gloves.",
+    "Dike spill with absorbent booms before drain inlets.",
+    "Neutralize and collect slurry into labeled drums.",
+    "Decontaminate personnel and suit before doffing.",
+    "Complete incident report and waste manifest."
+   ],
+   "ppe": [
+    "Level B or C chemical suit",
+    "Butyl rubber gloves and boots",
+    "Full face shield",
+    "4-gas monitor"
+   ],
+   "rubric": [
+    {
+     "axis": "Containment priority",
+     "pass_if": "Dikes before drains before cleanup begins"
+    },
+    {
+     "axis": "PPE sequence",
+     "pass_if": "Dons and doffs correctly with decon step"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Waste manifested and incident report filed"
+    }
+   ],
+   "minutes": 60,
+   "level": "journey",
+   "robot_assist": "franka-fr3",
+   "robot_role": "Positions boom and retrieves drum lids at spill edge, keeping responder farther from off-gassing slurry."
+  }
+ ],
+ "credential": {
+  "name": "Reykjanes Geothermal Site Readiness Card (apprentice track)",
+  "requires": [
+   "geothermal-pipe-hanger-swap",
+   "lava-field-trench-shore",
+   "spa-panel-tie-in",
+   "silica-storage-tank-weld",
+   "steam-line-insulation-rehang",
+   "lava-road-grader-ops",
+   "spill-response-silica-slurry"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s17-curable-blockchain-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

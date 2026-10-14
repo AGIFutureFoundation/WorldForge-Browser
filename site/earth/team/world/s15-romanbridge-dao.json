@@ -1,0 +1,276 @@
+{
+ "title": "RomanBridge DAO (Series 15) — Pont du Gard",
+ "summary": "An agent-managed, human-governed DAO cell built beside the Pont du Gard aqueduct on the Gardon River. Six zones along the Roman bridge and gorge turn governance, research, proposals, operations and progress tracking into a walkable riverside campus under Mediterranean scrub and stone pines.",
+ "biome": "mediterranean",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Pont du Gard",
+   "buildings": [
+    {
+     "name": "Aqueduct Charter House",
+     "use": "Charter display and human voting hall",
+     "floors": 2
+    },
+    {
+     "name": "Contribution Registry",
+     "use": "Records of member contributions and measurable outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Tablet Room",
+    "Outcome Ledger",
+    "Reading Alcove",
+    "Steward's Bench"
+   ],
+   "props": [
+    "stone charter stele",
+    "bronze mission plaque",
+    "voting urns",
+    "scroll racks",
+    "laurel planters",
+    "Roman measuring rod display"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Carrière romaine de L'Estel Sud",
+   "buildings": [
+    {
+     "name": "L'Estel Synthesis Lab",
+     "use": "Evidence monitoring and research synthesis workshop",
+     "floors": 2
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "Storage of monitored sources and summaries",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Desk",
+    "Synthesis Studio",
+    "Evidence Stacks",
+    "Summary Court"
+   ],
+   "props": [
+    "cork evidence boards",
+    "lab benches",
+    "field sample crates",
+    "quill-and-tablet desks",
+    "oil lamps",
+    "mapped source wall"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Le Gard",
+   "buildings": [
+    {
+     "name": "Gardon Proposal Forum",
+     "use": "Public debate space for agent-drafted proposals",
+     "floors": 1
+    },
+    {
+     "name": "Draft Review Pavilion",
+     "use": "Human review of drafts before final vote",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Speaker's Stone",
+    "Debate Ring",
+    "Draft Tables",
+    "Deliberation Shade"
+   ],
+   "props": [
+    "proposal notice boards",
+    "amphitheater stone tiers",
+    "wax tablet drafting kits",
+    "water clock",
+    "olive-tree shade canopy",
+    "herald's bell"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Le Vieux Moulin",
+   "buildings": [
+    {
+     "name": "Vieux Moulin Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting hub for experts and collaborators",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Wheel Room",
+    "Working-Group Bays",
+    "Courier Post",
+    "Coordination Balcony"
+   ],
+   "props": [
+    "task pigeonholes",
+    "message scroll tubes",
+    "river-route map table",
+    "signal flags",
+    "courier satchels",
+    "millstone desk"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Pont Pitot",
+   "buildings": [
+    {
+     "name": "Pitot Progress Observatory",
+     "use": "Tracking progress against charter outcomes",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Milestone Gallery",
+    "Progress Gauges",
+    "Observation Tower",
+    "Outcome Mirror Room"
+   ],
+   "props": [
+    "graduated stone columns",
+    "milestone markers",
+    "brass progress dials",
+    "surveying instruments",
+    "gorge-view telescope",
+    "tally wall"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Stone pine",
+   "Holm oak",
+   "Aleppo pine",
+   "Downy oak",
+   "European nettle tree",
+   "White poplar"
+  ],
+  "shrubs": [
+   "Kermes oak",
+   "Rock rose",
+   "Lavender",
+   "Mediterranean buckthorn"
+  ],
+  "flowers": [
+   "Romulea",
+   "Narrow-leaved asphodel",
+   "Star of Bethlehem",
+   "Wild gladiolus"
+  ],
+  "ground": "scrub"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 2,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "20:45"
+ },
+ "court": {
+  "name": "The Aqueduct Court",
+  "style": "Dry-limestone Roman tribunal on the Pont du Gard's left-bank terrace, framed by the aqueduct's three tiers",
+  "why_here": "Two millennia of enduring public infrastructure mirror the charter's mission: governance built to last and shared as a public good."
+ },
+ "quests": [
+  {
+   "title": "Carve the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the mission stele in the Charter Tablet Room",
+    "Copy the measurable outcomes into a ledger",
+    "Carry the draft to the Proposal Forum",
+    "Defend it in the Debate Ring"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Evidence on the Current",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect three monitored summaries at the Monitoring Desk",
+    "Cross-check them against the Evidence Stacks",
+    "Deliver the synthesis to the Milestone Gallery",
+    "Adjust the progress dials"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Collect routed task scrolls from the Routing Wheel Room",
+    "Cross Pont Pitot to brief the scouts",
+    "Return with collaborator findings to the Synthesis Studio"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "The Final Vote of the Gardon",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Review the agent-drafted proposal at the Draft Tables",
+    "Hear debate in the Debate Ring",
+    "Escalate the final vote to human stewards",
+    "Record the outcome in the Charter Hall ledger"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Bridge the Outcomes",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Audit the tally wall against the Outcome Mirror Room",
+    "Flag shortfalls to the Task Router",
+    "Watch a working group re-task on the Routing Wheel"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s15-romanbridge-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

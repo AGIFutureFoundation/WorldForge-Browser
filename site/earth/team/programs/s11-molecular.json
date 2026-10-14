@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "k12",
+   "title": "Molecules on the Spree: Atoms, Structures and Public AI",
+   "grade_or_level": "Grades 7-9 (Ages 12-15)",
+   "outcomes": [
+    "Explain basic molecular structure using the Molecule Man sculpture as a life-size model",
+    "Describe how an agent-managed, human-governed DAO makes decisions",
+    "Compare how decisions are made by voting vs. delegation"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided walk-activity linking the 30-metre molecular figure to atoms and bonds; students map a simple DAO charter like a molecular structure.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners act as 'Evidence Monitors': summarize one short, age-appropriate article about the Spree River or molecular science into a three-sentence brief.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a mock proposal to improve a neighborhood issue; agents (facilitators) draft, students debate and hold the final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students create a simple progress chart tracking their proposals against measurable outcomes, mirroring the Progress Tracker agent.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized quiz scores on molecular-structure and DAO-literacy questions; aggregate counts of proposal themes (no names, no free text with identifying details).",
+   "consent": "Written guardian/parent consent required before participation, plus student assent; no photos or personal data collected; all shared data aggregated and anonymized per school privacy policy and GDPR."
+  },
+  {
+   "audience": "union",
+   "title": "Worker Voice in Agent-Managed Systems",
+   "grade_or_level": "Vocational / Works council training",
+   "outcomes": [
+    "Explain how agent-run operations with human-reserved votes affects workers",
+    "Identify the five human-reserved governance actions",
+    "Practice drafting a workplace proposal through an agent-drafted pipeline"
+   ],
+   "sessions": [
+    {
+     "zone": "Operations Deck",
+     "activity": "Workshop mapping how the Task Router and working groups coordinate work; participants compare to shop-floor task allocation.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Participants draft a workplace-resolution; a facilitator models the Proposal & Grant Drafter role, then the group debates and votes as the human body.",
+     "minutes": 75
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Review the human-reserved actions list; small groups design a worker-protection clause for a mock charter amendment (not enacted).",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Participants define measurable outcomes for their mock clause and set up a simple tracking sheet.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized pre/post survey results on AI-governance literacy; aggregated theme counts from mock proposals; no individual responses shared.",
+   "consent": "Participation voluntary and off-worktime or per works-council agreement; GDPR-compliant notice; individuals can opt out of data sharing without losing training access."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Proposal Lab for Civil Society Teams",
+   "grade_or_level": "Professional development (program staff)",
+   "outcomes": [
+    "Run an evidence-monitoring workflow from source to summary",
+    "Convert synthesized evidence into a fundable proposal outline",
+    "Apply human-in-the-loop checks to AI-drafted documents"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Teams practice the Evidence Monitor and Research Synthesis Agent workflow: gather sources, summarize, and flag uncertainty in a one-page brief.",
+     "minutes": 90
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams turn their brief into a proposal outline using the drafter-agent pattern; peers review for claims that lack evidence before any human decision point.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Participants design a working-group structure and task-routing board for one of their own NGO projects.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams define 3 measurable outcomes for their proposal and build a simple progress-tracking dashboard.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized proposal outlines and evaluation rubric scores to a shared example library; aggregated workflow time data; organization names optional and revocable.",
+   "consent": "Organizational memorandum of consent plus individual opt-in; GDPR-compliant; teams may join the training while withholding all data contribution."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governing Shared Resources: A DAO Literacy Program for Nonprofit Boards",
+   "grade_or_level": "Board and trustee training",
+   "outcomes": [
+    "Distinguish agent operations from human-reserved governance decisions",
+    "Assess a contribution model against measurable outcomes",
+    "Draft board-level safeguards for AI-assisted workflows"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board members study the charter structure: mission, contribution model, measurable outcomes, and the list of actions reserved for humans.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Board simulation: an AI-drafted grant proposal is reviewed; the board debates and casts a mock final vote, practicing its reserved role.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Participants critique a sample progress report against charter outcomes and write improved measurable indicators.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Boards map which of their own tasks could be delegated to agents versus which must stay with trustees, using the reserved-actions list.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized board-simulation voting patterns and rubric scores; aggregated lists of which tasks boards reserve to humans; no organization-identifying detail.",
+   "consent": "Board-level participation agreement; individual anonymization guaranteed; GDPR-compliant data notice; any board may participate fully without contributing data."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s11-molecular",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the Charter Hall perimeter path so Progress Tracker can verify charter display kiosks are unobstructed.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/plan",
+     "/cmd_vel",
+     "/odom",
+     "/amcl_pose"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Asphalt and gravel service roads around the Pentagon's south parking; curb cuts, bollards, and jersey barriers near building entrances.",
+   "success": [
+    "All 6 waypoints reached within 0.3 m tolerance",
+    "No static-collision events on /plan diagnostics",
+    "Patrol loop completed under 25 minutes"
+   ],
+   "safety_stops": [
+    "E-stop bumper contact trigger",
+    "Geofence: halt 10 m from any building entrance",
+    "Pedestrian within 2 m forward cone",
+    "Wheel slip above threshold on gravel"
+   ],
+   "human_in_loop": "A steward approves the patrol route file before launch and reviews any kiosk-obstruction flags.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "waypoint_id",
+     "pose_error_m",
+     "collision_events",
+     "ground_type",
+     "steward_approved"
+    ]
+   }
+  },
+  {
+   "id": "research-volume-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve bound research volumes from library shelving and deliver them to the synthesis desk.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth/image",
+     "/torso_controller/command",
+     "/gripper_controller/gripper_action/goal",
+     "/move_base_simple/goal"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth interior lab flooring; low shelving, cable runs, and desk chairs as obstacles.",
+   "success": [
+    "Grasp success rate ≥ 85% over 20 trials",
+    "Object placed within 5 cm of desk target",
+    "No shelf-contact forces above 5 N"
+   ],
+   "safety_stops": [
+    "Human within 1.5 m of arm workspace",
+    "Grasp force limit exceeded",
+    "Tilt sensor beyond 5 degrees",
+    "Delivery zone occupied"
+   ],
+   "human_in_loop": "Lab staff approve the pick list; a person confirms each volume is correct at the desk.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "grasp_attempts",
+     "grasp_successes",
+     "place_error_cm",
+     "max_contact_force_n",
+     "timestamp",
+     "human_confirm"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-moderator-assist",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Act as forum moderator assistant, signaling speaking order and reading proposal summaries aloud to assembled participants.",
+   "ros": {
+    "action": "/speak",
+    "topics": [
+     "/speech",
+     "/led_control",
+     "/posture/pose",
+     "/audio_in"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat forum floor with tiered seating edges, microphone stands, and seated audience members.",
+   "success": [
+    "Correct speaker-order cues on 95% of turns",
+    "Speech intelligibility score ≥ 0.8 (WER-based)",
+    "No falls or self-collision events"
+   ],
+   "safety_stops": [
+    "Battery below 15%",
+    "Audience member within 0.5 m",
+    "Overheating joint detected",
+    "Operator kill switch"
+   ],
+   "human_in_loop": "A human moderator approves every summary script before Nao reads it; voting is never agent-run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "turns_moderated",
+     "cue_accuracy",
+     "speech_wer",
+     "falls",
+     "timestamp",
+     "approved_by"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-stair-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Climb the observatory mezzanine stairs to inspect outcome-metric display panels and read gauge LEDs for the Progress Tracker.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/frontleft/camera/image",
+     "/body_pose",
+     "/stair_detect",
+     "/spot/estop"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Concrete stairs, metal railings, cable trays along mezzanine edge; outdoor-adjacent humidity near the Potomac affecting floor grip.",
+   "success": [
+    "Stair ascent success ≥ 90% over 10 runs",
+    "Panel gauge readback matches ground truth 98%",
+    "Zero fall events logged"
+   ],
+   "safety_stops": [
+    "Foot slip detected on stair edge",
+    "Mezzanine edge within 0.5 m",
+    "Autonomy E-stop heartbeat loss",
+    "Payload tilt beyond limit"
+   ],
+   "human_in_loop": "An operator arms Spot each session and reviews flagged panel readings before they enter progress records.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "stair_runs",
+     "stair_successes",
+     "gauge_reads",
+     "gauge_accuracy",
+     "falls",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-swarm-sweep",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Operations Deck",
+   "goal": "Fly a small indoor swarm sweep to map task-routing whiteboard zones and verify working-group station markers.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf/pose",
+     "/cf/cmd_full_state",
+     "/flow_deck/position",
+     "/range/front"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Open high-ceiling deck; ceiling-mounted ducts, hanging signage, and desk partitions as aerial obstacles; HVAC drafts.",
+   "success": [
+    "Coverage of 95% of deck grid at 0.5 m resolution",
+    "Position hold within ±10 cm at marker stations",
+    "No airframe contact events in 20 flights"
+   ],
+   "safety_stops": [
+    "Battery below 3.7 V per cell",
+    "Obstacle within 0.4 m on range deck",
+    "Operator RF kill switch",
+    "Swarm neighbor spacing below 0.5 m"
+   ],
+   "human_in_loop": "Deck lead approves flight volume and ceiling limit; a person validates station-marker mismatches.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "flight_id",
+     "coverage_pct",
+     "pos_error_cm",
+     "contacts",
+     "battery_v",
+     "timestamp",
+     "deck_lead_ok"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-signage-assembly",
+   "robot": "franka-fr3",
+   "zone": "Operations Deck",
+   "goal": "Assemble modular working-group signage brackets at the fabrication bench so collaborator stations can be re-labeled between cycles.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/fr3/joint_commands",
+     "/fr3/gripper/grasp/goal",
+     "/fr3/force_torque_sensor_broadcaster/wrench",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Bench-top workspace: fixed vise, part bins, and tablet stand; brushed-metal bench surface affects camera exposure.",
+   "success": [
+    "Bracket assembly cycle time under 90 s",
+    "Bolt seat torque within ±0.2 Nm of spec",
+    "Zero force-limit aborts over 30 assemblies"
+   ],
+   "safety_stops": [
+    "Cartesian force above 30 N",
+    "Human hand inside workspace envelope via camera",
+    "Joint velocity or singularity fault",
+    "Reflex torque threshold trip"
+   ],
+   "human_in_loop": "A technician approves each new bracket design file and verifies first-article assemblies.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "assembly_id",
+     "cycle_time_s",
+     "torque_error_nm",
+     "force_aborts",
+     "first_article_ok",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s20-cmmc",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

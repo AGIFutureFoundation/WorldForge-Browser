@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agent-Managed, Human-Governed: A Worker Introduction to DAOs",
+   "grade_or_level": "Adult continuing education / workplace training",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' division of labor using Cancer DAO as the case",
+    "Map the six agent roles and five zones to familiar workplace structures",
+    "Practice drafting and debating a proposal that only humans vote on"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided walk-through of the Cancer DAO charter: mission, focus, reserved human-only actions; small-group matching game pairing each reserved action with why it stays human.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners read an Evidence Monitor summary draft, check it against sources, and mark where agent summaries need human verification.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Working groups refine a Proposal & Grant Drafter draft; hold a mock debate and final vote, mirroring human-reserved governance.final_vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Learners review Progress Tracker dashboards and discuss how measurable outcomes keep both agents and members accountable.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized pre/post quiz scores on DAO literacy and mock-vote participation tallies, contributed as aggregate counts with no names or employer identifiers.",
+   "consent": "Voluntary adult enrollment with a signed data-sharing opt-in; participants can decline contribution or request deletion of their records at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Lake Union Science Citizens: Cancer Research and Community Governance",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Describe what a cancer-research campus like Fred Hutch does and why research support matters",
+    "Identify the parts of a mission-driven DAO and which decisions stay with people",
+    "Simulate proposing and voting on a community research-support project"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Virtual visit to the Fred Hutch South Lake Union campus; learners compare an Evidence Monitor summary with a short article and practice spotting verified facts.",
+     "minutes": 40
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Students write a class 'mini-charter' for supporting cancer research, listing which tasks agents may do and which the class must vote on.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a small research-support proposal with the Proposal & Grant Drafter as helper; class debates and holds a paper-ballot vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students build a simple progress chart for their chosen project and present how outcomes will be measured.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Aggregate, anonymous class-level results: how many proposals were submitted and which outcome categories students chose; no individual student data is collected or shared.",
+   "consent": "Signed guardian/parent consent forms required for all activities and any data sharing; teachers collect media and participation permissions separately, and any aggregate sharing excludes names, work, or photos."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Action: Running Agent-Assisted Programs for Health Missions",
+   "grade_or_level": "Professional / NGO staff development",
+   "outcomes": [
+    "Adapt the Cancer DAO zone model (synthesis, proposal, operations, observatory) to an NGO program cycle",
+    "Use agent-drafted evidence summaries responsibly in advocacy and grant writing",
+    "Design human-governed decision checkpoints in an agent-assisted workflow"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop on commissioning and quality-checking Evidence Monitor and Research Synthesis Agent outputs for policy briefs.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Learners role-play Collaborator Scout and Task Router functions, designing a partner-mapping and working-group plan for a health campaign.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams turn a synthesis into a Proposal & Grant Drafter outline, then apply a human review checklist before mock enactment.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Participants define measurable outcomes for their own program and set up a Progress Tracker-style dashboard mock-up.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized workshop artifacts: template adoption notes and de-identified program-cycle maps, shared as examples to a common practice library.",
+   "consent": "Organizational memorandum plus individual opt-in for sharing artifacts; staff may anonymize or withhold materials, and no beneficiary or client data is ever shared."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Mission, Charter, Accountability: Nonprofit Governance in an Agent-Managed World",
+   "grade_or_level": "Board and staff / nonprofit professional development",
+   "outcomes": [
+    "Compare nonprofit fiduciary duties with DAO reserved-for-humans actions",
+    "Draft measurable charter outcomes with agent support",
+    "Establish oversight routines for agent-drafted proposals and grants"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Side-by-side mapping of board duties (budget approval, bylaw changes) onto Cancer DAO's human-reserved actions like treasury.transfer and charter.amend.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Board-simulation exercise: review a Proposal & Grant Drafter draft, amend it, and conduct a recorded human-only vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design task-routing and working-group workflows that keep staff in control of coordination while agents handle routing drafts.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners request and evaluate an agent research summary for a real program question, documenting verification steps.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Participants build a measurable-outcomes scorecard and a review cadence linking it to board meetings.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "De-identified governance templates and anonymized scorecard examples contributed to a shared nonprofit practice commons; no donor, client, or financial data included.",
+   "consent": "Board resolution authorizes participation; individual contributors opt in per artifact, all materials are scrubbed of identifying details, and any party may withdraw shared items on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "cancer-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

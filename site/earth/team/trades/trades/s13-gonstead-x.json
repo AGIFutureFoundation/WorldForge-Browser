@@ -1,0 +1,407 @@
+{
+ "scenarios": [
+  {
+   "id": "clinic-beam-setting",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Set structural steel beams for a clinic annex expansion adjacent to the occupied Gonstead Clinic in Mount Horeb.",
+   "hazards": [
+    "Overhead loads over occupied area",
+    "Fall exposure at leading edge",
+    "Pinch points between beam and column",
+    "Wind on exposed driftless ridgeline"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Full-body harness with twin lanyards",
+    "Gloves",
+    "Safety glasses",
+    "High-visibility vest"
+   ],
+   "steps": [
+    "Attend pre-task briefing and confirm lift plan",
+    "Connect to anchor points before leaving deck",
+    "Guide beam with taglines, keep hands clear of pinch points",
+    "Verify bolt-up alignment before releasing load",
+    "Complete final connection and inspect",
+    "Report near-misses to foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging control",
+     "pass_if": "Uses taglines and never positions under suspended load"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "100% tie-off above 6 feet"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standard hand signals confirmed with crane operator"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Deck clear of loose tools before lift"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Spot carries the lift plan scan and remotely checks under-beam clear zones so workers never place themselves beneath the suspended load."
+  },
+  {
+   "id": "clinic-panel-wiring",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Rough-in branch circuit wiring for exam rooms in the clinic annex while building is energized.",
+   "hazards": [
+    "Live panels in existing building",
+    "Ladder work near ceilings",
+    "Conductor cuts and strippings",
+    "Dust in eyes"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Insulated gloves",
+    "Hard hat",
+    "Dust mask"
+   ],
+   "steps": [
+    "Request and verify lockout/tagout on affected circuits",
+    "Test for absence of voltage with rated meter",
+    "Secure ladder and maintain three points of contact",
+    "Pull and staple conductors per code",
+    "Ground and bond boxes",
+    "Label circuits at panel and request inspection"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Applies personal lock and verifies zero energy before work"
+    },
+    {
+     "axis": "Code compliance",
+     "pass_if": "Conductor sizes, box fill and grounding match plan"
+    },
+    {
+     "axis": "Ladder safety",
+     "pass_if": "Maintains three points of contact and proper ladder angle"
+    },
+    {
+     "axis": "Labeling",
+     "pass_if": "All circuits labeled at panel before close-out"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "clinic-medgas-piping",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Install copper medical-grade compressed air piping for treatment rooms, braze joints in confined utility corridor.",
+   "hazards": [
+    "Hot work and brazing torch flame",
+    "Confined space corridor",
+    "Nitrogen purging pressure",
+    "Copper fumes"
+   ],
+   "ppe": [
+    "Welding goggles (shade 4)",
+    "Flame-resistant jacket",
+    "Ventilated respirator",
+    "Gloves"
+   ],
+   "steps": [
+    "Complete hot work permit and fire watch setup",
+    "Purge lines with nitrogen during brazing",
+    "Brazing joints to spec, check internal fit-up",
+    "Pressure test with inert gas and soap solution",
+    "Flush and document system cleanliness",
+    "Label valves and record as-builts"
+   ],
+   "rubric": [
+    {
+     "axis": "Hot work control",
+     "pass_if": "Permit posted, fire extinguisher present, watch maintained 30 min after"
+    },
+    {
+     "axis": "Joint quality",
+     "pass_if": "All joints pass pressure test first time"
+    },
+    {
+     "axis": "Confined space",
+     "pass_if": "Confirms ventilation and attendant before entry"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Cleanliness and test records completed"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "driftless-excavation-trench",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Hand-dig and shore a 6-foot utility trench in clay soil for the clinic water service connection.",
+   "hazards": [
+    "Cave-in of unshored trench",
+    "Buried utilities",
+    "Struck-by from equipment",
+    "Mud slip hazards"
+   ],
+   "ppe": [
+    "Hard hat",
+    "High-visibility vest",
+    "Gloves",
+    "Waterproof boots"
+   ],
+   "steps": [
+    "Call Diggers Hotline and verify utility locates",
+    "Confirm spoil pile set back 2 feet from edge",
+    "Enter only after competent person inspects shoring",
+    "Hand-dig within tolerance zone of marked lines",
+    "Exit trench before any equipment approaches",
+    "Report soil changes to competent person immediately"
+   ],
+   "rubric": [
+    {
+     "axis": "Protective systems",
+     "pass_if": "Never enters unprotected trench over 5 feet"
+    },
+    {
+     "axis": "Utility clearance",
+     "pass_if": "Hand-digs within 2 feet of markings"
+    },
+    {
+     "axis": "Spoil control",
+     "pass_if": "Spoil kept 2+ feet from trench edge"
+    },
+    {
+     "axis": "Equipment separation",
+     "pass_if": "Exits before excavator swings"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Husky tows the shore-box and ferries tools to the trench edge, keeping laborers out of the equipment swing radius."
+  },
+  {
+   "id": "clinic-hvac-rtu-swap",
+   "trade": "hvacr",
+   "zone": "Operations Deck",
+   "task": "Replace a rooftop packaged HVAC unit serving Gonstead Clinic exam rooms during a summer outage window.",
+   "hazards": [
+    "Roof edge fall exposure",
+    "Rigged load over entrance",
+    "Live 480V rooftop disconnect",
+    "Heat stress"
+   ],
+   "ppe": [
+    "Full-body harness",
+    "Arc-rated gloves",
+    "Hard hat",
+    "Sun hat and hydration pack"
+   ],
+   "steps": [
+    "Verify LOTO on rooftop disconnect and test",
+    "Set up warning line and tie-off points at roof edge",
+    "Disconnect and cap old refrigerant lines per EPA rules",
+    "Rig old unit off and new unit on with crane signals",
+    "Reconnect, evacuate lines, charge and start-up",
+    "Verify airflow and temperatures in exam rooms before handover"
+   ],
+   "rubric": [
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Locks disconnect and verifies zero voltage"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "Works within warning line or tied off near edge"
+    },
+    {
+     "axis": "Refrigerant handling",
+     "pass_if": "Recovers refrigerant with EPA-compliant recovery rig"
+    },
+    {
+     "axis": "Commissioning",
+     "pass_if": "Documents superheat/subcooling and room temps"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "clinic-boiler-burner",
+   "trade": "operating-eng",
+   "zone": "Operations Deck",
+   "task": "Operate and maintain the high-pressure steam boiler plant serving the clinic through a Wisconsin winter, including burner tune-up.",
+   "hazards": [
+    "Steam pressure and tube failure",
+    "Fuel oil/gas ignition",
+    "Confined boiler entry",
+    "CO exposure"
+   ],
+   "ppe": [
+    "Face shield",
+    "Heat-resistant gloves",
+    "CO monitor",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Review log and previous shift readings",
+    "Operate per start-up sequence, watch flame safeguard",
+    "Isolate, lock out and cool before opening fireside",
+    "Enter only with confined space permit and attendant",
+    "Replace nozzle, clean tubes, reassemble and test fires",
+    "Log pressures, temperatures and combustion readings"
+   ],
+   "rubric": [
+    {
+     "axis": "Safe operation",
+     "pass_if": "Never bypass flame safeguard or controls"
+    },
+    {
+     "axis": "Confined space",
+     "pass_if": "Permit, attendant and atmosphere test before entry"
+    },
+    {
+     "axis": "Combustion tuning",
+     "pass_if": "CO and efficiency readings within spec"
+    },
+    {
+     "axis": "Recordkeeping",
+     "pass_if": "Log complete and legible for state inspection"
+    }
+   ],
+   "minutes": 120,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "clinic-parking-solar",
+   "trade": "solar",
+   "zone": "Progress Observatory",
+   "task": "Install rooftop solar array on the clinic parking canopy as a charter measurable-outcome energy project.",
+   "hazards": [
+    "DC arc flash during daytime wiring",
+    "Work at height on canopy",
+    "Panel loads on hands and back",
+    "Weather exposure"
+   ],
+   "ppe": [
+    "Insulated gloves (Class 0)",
+    "Full-body harness",
+    "Hard hat",
+    "UV sunglasses"
+   ],
+   "steps": [
+    "Assemble rail and confirm waterproof penetrations",
+    "Ground racking before setting modules",
+    "Cover modules or work dark-side connectors until commissioning",
+    "Lift panels in pairs with proper lifting technique",
+    "Torque fasteners and verify with checklist",
+    "Label disconnects and complete commissioning test"
+   ],
+   "rubric": [
+    {
+     "axis": "Shock prevention",
+     "pass_if": "No energized connector handling; modules covered or wired dark"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "Tied off when within 6 feet of canopy edge"
+    },
+    {
+     "axis": "Weatherproofing",
+     "pass_if": "All penetrations flashed and sealed per detail"
+    },
+    {
+     "axis": "Quality",
+     "pass_if": "Torque marks on all fasteners and passing IV curve test"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Go2 ferries connectors and torque wrenches across the canopy deck, reducing trips at the leading edge."
+  },
+  {
+   "id": "clinic-ev-charging-install",
+   "trade": "ev-charging",
+   "zone": "Progress Observatory",
+   "task": "Install two Level-2 EV chargers in the clinic patient lot, trenching from panel and setting bollards.",
+   "hazards": [
+    "Live feeder tap",
+    "Trench collapse",
+    "Silica dust from drilling",
+    "Moving vehicles in lot"
+   ],
+   "steps": [
+    "Isolate and lock out feeder circuit before tap",
+    "Trench, lay conduit, maintain clearances to gas lines",
+    "Pull wire, size per charger spec and torque lugs",
+    "Set chargers on footings behind bollards",
+    "Energize under permit, test ground-fault function",
+    "Place traffic cones and signage for reopening"
+   ],
+   "ppe": [
+    "Arc-flash suit per incident energy analysis",
+    "Insulated gloves",
+    "Dust mask",
+    "High-visibility vest"
+   ],
+   "rubric": [
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Zero-energy verification before tap and arc-rated PPE per label"
+    },
+    {
+     "axis": "Conduit work",
+     "pass_if": "Bends, fill and burial depth meet code"
+    },
+    {
+     "axis": "Physical protection",
+     "pass_if": "Bollards set per spec before energizing"
+    },
+    {
+     "axis": "Testing",
+     "pass_if": "Ground-fault and pilot tests pass before handover"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Gonstead.X Union Apprentice Site Readiness Card",
+  "requires": [
+   "clinic-beam-setting",
+   "clinic-panel-wiring",
+   "driftless-excavation-trench",
+   "clinic-hvac-rtu-swap",
+   "clinic-parking-solar"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s13-gonstead-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

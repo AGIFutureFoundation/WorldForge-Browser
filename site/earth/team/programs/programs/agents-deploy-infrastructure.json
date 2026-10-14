@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "From Operators to Overseers: Infrastructure Careers and Worker Voice",
+   "grade_or_level": "Adult learners, apprentices and journeyworkers (e.g., operating engineers, electrical workers)",
+   "outcomes": [
+    "Map how the six build-to-operate stages mirror real infrastructure trades work",
+    "Practice reading a steward-readable plan and flagging safety and handoff gaps",
+    "Draft a worker-voice checklist for when agents must hand incidents to people"
+   ],
+   "sessions": [
+    {
+     "zone": "Idea Bench",
+     "activity": "Compare a dam construction plan with a Planner-style build-and-run plan; identify decision points reserved for humans.",
+     "minutes": 60
+    },
+    {
+     "zone": "Provisioning Yard",
+     "activity": "Walk the map's Intake Towers and Valve Houses as 'rehearsed provisioning'; discuss rehearsal-before-approval norms.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play an on-call handoff: agent detects an anomaly, workers decide escalation and shutdown authority.",
+     "minutes": 75
+    },
+    {
+     "zone": "Domain Registry Desk",
+     "activity": "Discuss accountability: why registrations and spending stay human decisions even under automation.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized handoff-role-play transcripts and checklist items, tagged by trade and experience level, to a shared incident-handoff pattern library.",
+   "consent": "Adult learners sign a plain-language consent covering optional anonymized contributions; no names, employers, or site identifiers are retained, and anyone can opt out at any session."
+  },
+  {
+   "audience": "k12",
+   "title": "Build It, Run It: How Ideas Become Infrastructure",
+   "grade_or_level": "Grades 6-8 (adaptable 5-10)",
+   "outcomes": [
+    "Sequence the six stages from idea to operations using Hoover Dam's map features",
+    "Explain why some decisions (spending, votes, appointments) stay with people",
+    "Design a simple service plan and identify who checks it"
+   ],
+   "sessions": [
+    {
+     "zone": "Idea Bench",
+     "activity": "Sketch a plan for a school announcement service; trade plans for peer review like stewards reading a build plan.",
+     "minutes": 40
+    },
+    {
+     "zone": "Provisioning Yard",
+     "activity": "Map scavenger hunt: match Intake Towers, spillways and powerhouse jobs to 'provisioning' steps on the map.",
+     "minutes": 45
+    },
+    {
+     "zone": "Deployment Bay",
+     "activity": "Paper-and-cards release exercise: build, release, and practice a rollback when a 'bug card' appears.",
+     "minutes": 30
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Gauges and logs: pretend-monitor the Exhibit Building displays and decide when to 'call a human.'",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized plan sketches and decision-choice tallies (no names, ages, or writing samples) contributed to a shared model of how learners sequence build-to-operate stages.",
+   "consent": "Signed guardian/parent consent required before participation, plus student assent; all contributions are fully anonymized, schools may opt out of data sharing, and no personal data is collected."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governed Automation for Public-Interest Programs",
+   "grade_or_level": "Program staff and civic-technology leads, introductory",
+   "outcomes": [
+    "Apply a six-zone model to a civic project lifecycle",
+    "Identify human-reserved decisions and design oversight checkpoints",
+    "Write a steward-readable plan for a small public service pilot"
+   ],
+   "sessions": [
+    {
+     "zone": "Idea Bench",
+     "activity": "Convert one real NGO program idea into a build-and-run plan with explicit human checkpoints.",
+     "minutes": 60
+    },
+    {
+     "zone": "Service Configuration Room",
+     "activity": "Draft a secrets-handling policy exercise: what agents may touch, what only people approve.",
+     "minutes": 45
+    },
+    {
+     "zone": "Domain Registry Desk",
+     "activity": "Case discussion: why public-facing names and registrations are governance, not logistics.",
+     "minutes": 30
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Build an incident-handoff runbook template for community-facing services.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized plan templates and policy excerpts, stripped of organization and beneficiary details, contributed to a shared public-interest governance pattern library.",
+   "consent": "Organizational data-sharing agreement plus individual opt-in; contributions are reviewed for de-identification before inclusion, and communities discussed in plans are never identified."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Nonprofit Stack Stewardship on a Mission Budget",
+   "grade_or_level": "Nonprofit operations and IT staff, beginner-friendly",
+   "outcomes": [
+    "Understand the idea-to-production pipeline and where costs and approvals arise",
+    "Practice rollback thinking to protect service continuity",
+    "Define which tasks agents can rehearse and which need board or staff approval"
+   ],
+   "sessions": [
+    {
+     "zone": "Idea Bench",
+     "activity": "Prioritize one mission-critical service need and outline a minimal build-and-run plan.",
+     "minutes": 45
+    },
+    {
+     "zone": "Deployment Bay",
+     "activity": "Tabletop exercise: launch a donation-page update and rehearse a clean rollback when something breaks.",
+     "minutes": 60
+    },
+    {
+     "zone": "Service Configuration Room",
+     "activity": "Set a secrets policy: who approves credentials, and how agents avoid handling live secrets.",
+     "minutes": 40
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Create a one-page on-call handoff sheet naming the human who decides during incidents.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized rollback-drill outcomes and handoff-sheet templates, with no donor, beneficiary, or organizational identifiers, added to a shared nonprofit resilience toolkit.",
+   "consent": "Participation is voluntary with a simple opt-out; any shared artifacts are anonymized and reviewed by staff before submission, and no beneficiary or donor data is ever collected."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "agents-deploy-infrastructure",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

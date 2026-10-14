@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Bridges of Work: From Roman Builders to Agent-Managed Workplaces",
+   "grade_or_level": "Adult continuing education (worker representatives)",
+   "outcomes": [
+    "Explain how an aqueduct bridge like the Pont du Gard was engineered and maintained by organized labor over two millennia",
+    "Analyze how agent-managed DAO structures change task routing and working-group coordination",
+    "Draft worker input questions for governance decisions where humans hold final votes"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the DAO charter and contribution model; compare Roman-era public works governance with the mission of governing AI as a public good.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use Evidence Monitor outputs on automation and work; practice summarizing evidence for bargaining positions.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate a working group: Task Router assigns tasks, participants negotiate roles and escalation paths.",
+     "minutes": 90
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a workplace proposal with the Proposal & Grant Drafter agent, then hold a human-only vote to enact or reject it.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized session feedback and task-routing simulation outcomes; no personal or workplace-identifying data contributed.",
+   "consent": "Voluntary enrollment with signed informed consent; participants may opt out of any data contribution; workplace identifiers never collected."
+  },
+  {
+   "audience": "k12",
+   "title": "Aqueduct Engineers: Water, Stone and Shared Decisions",
+   "grade_or_level": "Ages 10-14 (upper primary / lower secondary)",
+   "outcomes": [
+    "Describe how the Pont du Gard carried water across the Gardon gorge and why it still stands",
+    "Identify local map features (river, scrub, woodland, quarries) from the world map",
+    "Explain why some decisions in a DAO are reserved for humans"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Explore the world map of the Pont du Gard area: count bridges, woods and the river; learn how the Roman quarry at L'Estel supplied stone.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Read a kid-friendly charter; discuss what 'public good' means and list outcomes the class wants to measure.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "In teams, draft a class proposal for a bridge-themed project; the class votes, with only students casting the final vote.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track progress on the class charter outcomes using simple charts updated each week.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized, aggregated quiz scores and project rubric results; no individual names or personal details shared.",
+   "consent": "Written guardian/parent consent required for participation and any data contribution; guardians may withdraw consent at any time; no identifiable student data leaves the classroom."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Mission-Driven DAO Literacy",
+   "grade_or_level": "Professional staff and program officers",
+   "outcomes": [
+    "Map an NGO mission onto a DAO charter with measurable outcomes",
+    "Use agent-generated evidence summaries responsibly in advocacy",
+    "Design a proposal workflow that keeps enactment decisions with people"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop: translate an NGO mission statement into charter outcomes and a contribution model, using the world's charter as template.",
+     "minutes": 75
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Evaluate Evidence Monitor and Research Synthesis Agent outputs for bias, gaps and citation quality.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a real funding proposal with the Proposal & Grant Drafter; peer-review which enactment steps stay human-reserved.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress dashboard aligned to charter outcomes; define what success looks like in 6 months.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized proposal drafts and evaluation rubrics to a shared model of agent-drafting quality; organization names stripped.",
+   "consent": "Organizational consent via MOU plus individual opt-in; data minimized and anonymized before sharing; withdrawal permitted at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Shared Water, Shared Governance: Nonprofit Programs in an Agent-Managed World",
+   "grade_or_level": "Nonprofit leadership and volunteers",
+   "outcomes": [
+    "Understand the division of labor between agents (operate) and humans (govern) in resource-allocation decisions",
+    "Connect local heritage stewardship, like the Pont du Gard landscape, to long-term public-goods thinking",
+    "Run a mock decision cycle from evidence to human vote"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the five zones conceptually; discuss why treasury transfers and charter amendments are human-reserved.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Case study: evidence synthesis on a shared resource (the Gardon River), comparing agent summaries with human field knowledge.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Collaborator Scout exercise: identify stakeholder roles for a river-heritage program; Task Router simulation assigns working-group tasks.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a community program proposal; a volunteer steward panel holds the final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set measurable outcomes and a simple tracking cadence for the mock program.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized program-design templates and voting simulation results; no beneficiary or donor data shared.",
+   "consent": "Layered consent: board approval for program data, individual opt-in for participation records; privacy policy shared up front; opt-out honored immediately."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s15-romanbridge-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

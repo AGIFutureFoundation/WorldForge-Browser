@@ -1,0 +1,286 @@
+{
+ "title": "AskDoc.X (Series 14) — Mayo Rochester Cell",
+ "summary": "A walkable agent-managed DAO campus threaded through downtown Rochester's Mayo campus along the Zumbro River and Cascade Creek, with Charter Hall, Research Synthesis Lab, Proposal Forum, Operations Deck and Progress Observatory as connected district landmarks.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Annenberg Plaza",
+   "buildings": [
+    {
+     "name": "Charter House Pavilion",
+     "use": "charter reading room and contribution registry",
+     "floors": 2
+    },
+    {
+     "name": "Mission Rotunda",
+     "use": "public exhibit of measurable outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Ledger Wall",
+    "Outcome Metrics Gallery",
+    "Steward Alcove"
+   ],
+   "props": [
+    "engraved charter stele",
+    "bronze contribution ledger",
+    "mission banner of AGI Future Foundation PBC",
+    "benches around plaza fountain",
+    "info kiosk with series list of W3 LLC",
+    "human-reserved-actions plaque"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Dan Abraham Healthy Living Center",
+   "buildings": [
+    {
+     "name": "Synthesis Annex",
+     "use": "evidence monitoring and summarization workspace",
+     "floors": 3
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "document and dataset stacks",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Desk",
+    "Evidence Summary Room",
+    "Source Vault",
+    "Focus-Setting Chamber",
+    "Collaborator Whiteboard Nook"
+   ],
+   "props": [
+    "stacks of evidence briefs",
+    "wall of source citations (chat 2026-09-23)",
+    "corkboard of monitored developments",
+    "focus placeholder board (awaiting stewards)",
+    "rolling archive ladders",
+    "printing press for summaries"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Centerstone Plaza",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "debate and human voting chamber",
+     "floors": 2
+    },
+    {
+     "name": "Drafter's Workshop",
+     "use": "agent drafting office for proposals and grants",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Debate Floor",
+    "Human Voting Booths",
+    "Drafter's Desks",
+    "Review Queue",
+    "Enactment Threshold Marker"
+   ],
+   "props": [
+    "speakers' lectern",
+    "ballot boxes for human final votes",
+    "draft proposal stacks",
+    "proposal pinboard",
+    "serpentine debate table",
+    "sign reading \"Agents draft, people decide\""
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Charlton Building",
+   "buildings": [
+    {
+     "name": "Operations Deck Tower",
+     "use": "task routing and working-group coordination",
+     "floors": 4
+    },
+    {
+     "name": "Scout Outpost",
+     "use": "collaborator identification office",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Huddle Rooms",
+    "Scout's Contact Map Room",
+    "Coordination Bridge",
+    "Between-Cycle Lounge"
+   ],
+   "props": [
+    "illuminated task-routing board",
+    "wall map of regional experts",
+    "working-group sign-up sheets",
+    "messenger tubes between zones",
+    "coffee station",
+    "shift bell for decision cycles"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Central Park",
+   "buildings": [
+    {
+     "name": "Progress Observatory Dome",
+     "use": "tracking hall against charter outcomes",
+     "floors": 2
+    },
+    {
+     "name": "Milestone Lantern House",
+     "use": "public milestone celebrations",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Tracking Hall",
+    "Milestone Gallery",
+    "Lantern Room",
+    "Observation Balcony",
+    "Annual Review Theater"
+   ],
+   "props": [
+    "brass orrery of decision cycles",
+    "milestone lantern strings",
+    "tracking dials and gauges",
+    "park overlook benches",
+    "progress timeline etched in stone path"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "bur oak",
+   "silver maple",
+   "American basswood",
+   "green ash",
+   "eastern white pine",
+   "northern red oak"
+  ],
+  "shrubs": [
+   "common lilac",
+   "gray dogwood",
+   "chokecherry",
+   "snowberry"
+  ],
+  "flowers": [
+   "purple coneflower",
+   "black-eyed susan",
+   "wild bergamot",
+   "New England aster"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "05:45",
+  "sunset_local": "20:30"
+ },
+ "court": {
+  "name": "The AskDoc Forum Court",
+  "style": "open-air civic plaza court beside Annenberg Plaza and the Zumbro riverwalk",
+  "why_here": "Mayo is the world's ask-the-experts destination; the court gathers agents' drafts and human stewards' votes at the heart of the downtown campus."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the charter and note the missing focus at Charter House Pavilion",
+    "Carry the steward's focus question to the Evidence Monitor",
+    "Help the Research Synthesis Agent summarize candidate focus areas",
+    "Post the summary in the Focus-Setting Chamber"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Collect an evidence brief from the Monitoring Desk",
+    "Deliver it to the Task Router's routing board",
+    "Join Collaborator Scout to mark three regional experts on the contact map",
+    "Sign up one working group for the next decision cycle"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Draft, Debate, Decide",
+   "from_zone": "Operations Deck",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Request a proposal draft from the Proposal & Grant Drafter",
+    "Carry the draft to the Debate Floor and open debate",
+    "Ensure only humans enter the Voting Booths",
+    "Log the final vote and return the record to the Review Queue"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Track the Outcomes",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Take the enacted proposal record from the Review Queue",
+    "Deliver it to the Progress Tracker in the Outcome Tracking Hall",
+    "Wind the brass orrery to open a new tracking cycle",
+    "Light a milestone lantern on the balcony"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "The AskDoc Walk",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Review the progress timeline in Central Park",
+    "Walk the Zumbro riverwalk to Discovery Walk",
+    "Report observations at the Mission Rotunda",
+    "Close the loop by inscribing results on the charter ledger wall"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s14-askdoc-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

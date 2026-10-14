@@ -1,0 +1,400 @@
+{
+ "scenarios": [
+  {
+   "id": "torrey-pines-glass-curtainwall-rig",
+   "trade": "glaziers",
+   "zone": "Charter Hall",
+   "task": "Set curtainwall units on the coastal-facing entry of the new Charter Hall visitor wing while wind picks up off the Pacific.",
+   "hazards": [
+    "wind loads on glass panels",
+    "pinch points between units and frame",
+    "edge work near unguarded slab",
+    "salt-air corroded rigging hardware"
+   ],
+   "ppe": [
+    "hard hat",
+    "cut-resistant gloves",
+    "safety glasses",
+    "high-visibility vest",
+    "personal fall arrest"
+   ],
+   "steps": [
+    "Attend JHA briefing and confirm wind speed limit with foreman",
+    "Inspect rigging and suction cups for salt corrosion",
+    "Tag lines onto panel before the lift",
+    "Guide unit into opening, keep hands clear of pinch points",
+    "Shim, plumb and temporarily fasten per drawing",
+    "Signal crane for release and secure loose materials"
+   ],
+   "rubric": [
+    {
+     "axis": "pre-lift inspection",
+     "pass_if": "Checks all rigging and suction devices and rejects any corroded gear"
+    },
+    {
+     "axis": "tag line control",
+     "pass_if": "Keeps panel under control and never positions self downwind of load"
+    },
+    {
+     "axis": "hand placement",
+     "pass_if": "Hands remain visible and clear of pinch points at all times"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "No loose shim stock or tools left on slab edge"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "lab-conduit-rack-pull",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Pull branch circuit conduit and wire for sequencing-server racks inside the Research Synthesis Lab fit-out.",
+   "hazards": [
+    "energized panels in adjacent circuit",
+    "awkward overhead conduit work",
+    "concrete dust from slab penetrations"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "insulated gloves",
+    "hearing protection"
+   ],
+   "steps": [
+    "Lock out and tag out the affected panel",
+    "Verify zero energy with meter",
+    "Hang EMT rack to layout lines above rack rows",
+    "Make grounding bushings and bond every run",
+    "Pull conductors with proper lubricant and caps",
+    "Megger test circuits and label panel directory"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO compliance",
+     "pass_if": "Applies lock, tag, and verifies zero energy before work"
+    },
+    {
+     "axis": "grounding continuity",
+     "pass_if": "All runs bonded and megger readings within spec"
+    },
+    {
+     "axis": "conduit workmanship",
+     "pass_if": "Racks level, bends within code bend radius"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Panel directory fully labeled after testing"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds wire off spools and holds conduit steady overhead while electrician makes connections."
+  },
+  {
+   "id": "process-chilled-water-tiein",
+   "trade": "pipefitters",
+   "zone": "Research Synthesis Lab",
+   "task": "Tie in a new chilled-water branch feeding lab cooling units without shutting down the main loop.",
+   "hazards": [
+    "hot work near insulated lines",
+    "pressurized line drain-down",
+    "confined ceiling utility chase"
+   ],
+   "ppe": [
+    "hard hat",
+    "welding hood",
+    "leather gloves",
+    "FR clothing",
+    "safety glasses"
+   ],
+   "steps": [
+    "Confirm hot work permit and fire watch",
+    "Isolate, drain and verify branch line dead",
+    "Tack weld outlet fitting and cool per WPS",
+    "Full weld, inspect, and pressure test at 1.5x",
+    "Re-insulate and remove fire watch only after cooldown"
+   ],
+   "rubric": [
+    {
+     "axis": "permit control",
+     "pass_if": "Hot work permit signed and fire watch posted before arc strikes"
+    },
+    {
+     "axis": "isolation",
+     "pass_if": "Line verified drained and dead before cutting"
+    },
+    {
+     "axis": "weld quality",
+     "pass_if": "Pass visual inspection and holds test pressure"
+    },
+    {
+     "axis": "permit closeout",
+     "pass_if": "Permit closed and area cleared after cooldown"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "proposal-forum-layover",
+   "trade": "cement-masons",
+   "zone": "Proposal Forum",
+   "task": "Place and finish an exposed-aggregate patio at the Proposal Forum outdoor debate area.",
+   "hazards": [
+    "wet cement burns",
+    "sun and heat exposure",
+    "power trowel pinch"
+   ],
+   "ppe": [
+    "rubber boots",
+    "alkali-resistant gloves",
+    "long sleeves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Set screed rails to grade from benchmark",
+    "Pour and spread with rakes, watch for rebar chairs",
+    "Screed and float surface",
+    "Broadcast and embed aggregate",
+    "Wash surface at correct set time to expose aggregate",
+    "Cure and cover, rope off area"
+   ],
+   "rubric": [
+    {
+     "axis": "grade control",
+     "pass_if": "Finished surface within 1/4 inch of spec grade"
+    },
+    {
+     "axis": "skin protection",
+     "pass_if": "Keeps wet concrete off skin, wears full PPE"
+    },
+    {
+     "axis": "finish timing",
+     "pass_if": "Aggregate exposed evenly, no over-washing"
+    },
+    {
+     "axis": "site control",
+     "pass_if": "Area barricaded during cure"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "ops-deck-rooftop-unit-swap",
+   "trade": "hvacr",
+   "zone": "Operations Deck",
+   "task": "Swap a rooftop packaged unit serving the Operations Deck crane-coordination room on a windy coastal roof.",
+   "hazards": [
+    "roof edge exposure",
+    "rigged load overhead",
+    "refrigerant handling",
+    "electrical arc flash"
+   ],
+   "ppe": [
+    "hard hat",
+    "arc-rated clothing",
+    "cut-resistant gloves",
+    "safety glasses",
+    "personal fall arrest"
+   ],
+   "steps": [
+    "Establish warning line and anchor points at roof edge",
+    "Kill and LOTO unit disconnect, verify dead",
+    "Recover refrigerant into recovery cylinder before line cut",
+    "Disconnect electrical, gas and condensate, drop old unit by crane",
+    "Set new unit, reconnect and leak-test brazed joints",
+    "Evacuate system, charge by nameplate, start up and verify"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "Tied off or inside warning line 100% of time at edge"
+    },
+    {
+     "axis": "EPA refrigerant handling",
+     "pass_if": "Recovers all charge, no venting, logs quantities"
+    },
+    {
+     "axis": "electrical safety",
+     "pass_if": "LOTO and verified before disconnecting"
+    },
+    {
+     "axis": "startup verification",
+     "pass_if": "Leak test passed, superheat and airflow within spec"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "observatory-crane-pick",
+   "trade": "riggers",
+   "zone": "Progress Observatory",
+   "task": "Rig and signal the crane pick of a steel canopy truss over the Progress Observatory viewing deck as onshore wind rises.",
+   "hazards": [
+    "wind on large truss surface",
+    "load swing over occupied area",
+    "crushed-by under suspended load"
+   ],
+   "ppe": [
+    "hard hat",
+    "leather gloves",
+    "high-visibility vest",
+    "safety glasses"
+   ],
+   "steps": [
+    "Calculate weight and center of gravity, select rigging with 5:1 factor",
+    "Inspect slings and shackles, reject damaged gear",
+    "Attach tag lines before lift",
+    "Confirm exclusion zone cleared of all workers",
+    "Give standard hand signals; guide truss to connection points",
+    "Land, bolt and release only on signal person confirmation"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging selection",
+     "pass_if": "Rigging rated and configuration matches load chart"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "No personnel under load at any point"
+    },
+    {
+     "axis": "signals",
+     "pass_if": "Uses standard signals and crane operator acknowledges each"
+    },
+    {
+     "axis": "wind decision",
+     "pass_if": "Stops pick when wind exceeds site limit"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tag line and streams ground-level video so signaler can see blind side of pick."
+  },
+  {
+   "id": "coastal-bluff-erosion-control",
+   "trade": "grounds",
+   "zone": "Progress Observatory",
+   "task": "Plant native Torrey pine and coastal scrub and install erosion-control matting on the bluff trail below the Progress Observatory.",
+   "hazards": [
+    "bluff edge falls",
+    "poison oak and bees",
+    "manual lifting injuries"
+   ],
+   "ppe": [
+    "hard hat",
+    "work gloves",
+    "long sleeves",
+    "boots"
+   ],
+   "steps": [
+    "Inspect trail edge and flag no-go zone within 10 feet of bluff",
+    "Stage plants and matting with cart, not carry loads",
+    "Install biodegradeable coir matting and stake on contour",
+    "Plant natives per plan, water in",
+    "Remove invasives and haul out debris"
+   ],
+   "rubric": [
+    {
+     "axis": "edge discipline",
+     "pass_if": "Never crosses flagged bluff-edge line without fall protection"
+    },
+    {
+     "axis": "installation quality",
+     "pass_if": "Matting staked on contour, no gaps"
+    },
+    {
+     "axis": "planting spec",
+     "pass_if": "Species and spacing match landscape plan"
+    },
+    {
+     "axis": "site restoration",
+     "pass_if": "Trail and staging area left clean"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "hazmat-lab-chem-drain",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Characterize and safely remove abandoned chemical drums found during lab utility trenching.",
+   "hazards": [
+    "unknown chemical exposure",
+    "oxygen-deficient trench atmosphere",
+    "contaminated soil contact"
+   ],
+   "ppe": [
+    "Level B or C suit per reading",
+    "chemical gloves",
+    "face shield or SCBA per air monitoring",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Stop work and isolate the area 75 feet upwind",
+    "Air monitor for VOCs, oxygen and LEL before approach",
+    "Inspect labels and drum condition, never move leaking drums",
+    "Overpack and manifest per DOT and state rules",
+    "Document for disposal and decontaminate personnel leaving zone"
+   ],
+   "rubric": [
+    {
+     "axis": "initial response",
+     "pass_if": "Stops work, isolates and notifies supervisor before approaching"
+    },
+    {
+     "axis": "monitoring",
+     "pass_if": "Air readings taken and documented before entry"
+    },
+    {
+     "axis": "handling",
+     "pass_if": "No drum moved until characterized and overpacked"
+    },
+    {
+     "axis": "decon",
+     "pass_if": "Full personnel and equipment decon before leaving exclusion zone"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows air-monitoring sensors and cameras into the exclusion zone to characterize drums before human entry."
+  }
+ ],
+ "credential": {
+  "name": "Torrey Pines Mesa Site Readiness Card (Coastal Lab & DAO Campus)",
+  "requires": [
+   "torrey-pines-glass-curtainwall-rig",
+   "lab-conduit-rack-pull",
+   "ops-deck-rooftop-unit-swap",
+   "observatory-crane-pick",
+   "hazmat-lab-chem-drain"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s28-genomic-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

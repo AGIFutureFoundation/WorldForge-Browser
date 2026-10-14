@@ -1,0 +1,335 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter display wall and gesture toward each exhibit while narrating the contribution model.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/speech",
+     "/plan_execution_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat polished interior floor of a Kendall Square incubator lobby; avoid glass display cases and stanchions.",
+   "success": [
+    "Visits all 5 exhibit waypoints within 240 s",
+    "/speech topic active at each stop",
+    "No collision events logged",
+    "Deviation from path < 0.3 m RMS"
+   ],
+   "safety_stops": [
+    "E-stop on human within 0.5 m",
+    "Stop if lidar returns obstacle < 0.3 m",
+    "Halt speech on operator pause topic"
+   ],
+   "human_in_loop": "A docent approves the tour script content before each public run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_seq",
+     "pose_error_m",
+     "speech_latency_s",
+     "collisions",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-evidence-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve printed research binders from shelf slots and deliver them to the synthesis desk.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/color/image_raw",
+     "/joint_states",
+     "/move_base/result",
+     "/grasp_feedback"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Carpeted lab floor with cable runs under desk edges; narrow 0.8 m aisles between shelf racks.",
+   "success": [
+    "6 of 6 grasps succeed on first attempt",
+    "Delivery pose error < 0.15 m",
+    "Zero dropped-object events",
+    "Cycle time < 8 min"
+   ],
+   "safety_stops": [
+    "Abort grasp if force sensor > 20 N",
+    "Stop base if torso tilt > 5 deg",
+    "Halt on human entering arm workspace zone"
+   ],
+   "human_in_loop": "A researcher confirms the correct binder titles before delivery dispatch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_success_rate",
+     "drop_events",
+     "pose_error_m",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "forum-av-setup-ur10e",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Mount presentation displays onto forum wall brackets before each decision session.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/io_and_status_controller",
+     "/trajectory_execution_event"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Level concrete forum floor; wall brackets at 1.8-2.2 m height, audience seating as ground obstacles.",
+   "success": [
+    "3 displays seated in brackets within tolerance < 5 mm",
+    "Peak contact wrench < 15 N",
+    "Trajectory tracking error < 0.02 rad per joint",
+    "Setup completes in < 6 min"
+   ],
+   "safety_stops": [
+    "Stop on wrench > 15 N",
+    "Stop on joint velocity limit breach",
+    "Disable on human within 1 m of arm envelope"
+   ],
+   "human_in_loop": "A steward verifies display seating before the arm releases each item.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "seating_error_mm",
+     "peak_wrench_n",
+     "tracking_err_rad",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-patrol-husky",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the operations deck perimeter logging task-board status screens for working-group status aggregation.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/odometry/filtered",
+     "/scan",
+     "/patrol_report"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Rubberized deck flooring with raised cable ramps and movable rolling whiteboards as dynamic obstacles.",
+   "success": [
+    "Completes 4-lap patrol without intervention",
+    "OCR- readable captures of all 6 status screens",
+    "Localization drift < 0.5 m per lap",
+    "Zero threshold-tip events on cable ramps"
+   ],
+   "safety_stops": [
+    "E-stop on obstacle < 0.8 m ahead",
+    "Stop if roll angle > 10 deg on ramps",
+    "Pause on operator hold command"
+   ],
+   "human_in_loop": "An operations lead reviews the aggregated status report before it is posted.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "laps_completed",
+     "screen_capture_success",
+     "drift_m_per_lap",
+     "stops_triggered",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-mapping-spot",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Climb the observatory mezzanine stairs and capture a 3D scan of the progress-metrics mural for digital-twin updates.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/spot/camera/frontleft/image",
+     "/lidar_points",
+     "/spot/odometry",
+     "/slam/cloud_registered"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open steel staircase to mezzanine, smooth concrete floors, glass railing edges near the mural wall.",
+   "success": [
+    "Stair ascent without slip events",
+    "Point cloud coverage > 95% of mural wall",
+    "Scan completed in < 5 min",
+    "Localization error vs fiducials < 0.1 m"
+   ],
+   "safety_stops": [
+    "Sit down if body pitch > 20 deg",
+    "Stop on stair-edge detection failure",
+    "E-stop on human within 1.5 m on stairs"
+   ],
+   "human_in_loop": "A steward approves the scan before it updates the digital twin.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "slip_events",
+     "coverage_pct",
+     "scan_time_s",
+     "localization_err_m",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-precision-probe-fr3",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Perform repeatable page-turning on bound research digests at the synthesis bench for scanning.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/franka_state_controller/joint_states",
+     "/franka_gripper/grasp",
+     "/force_torque_sensor_broadcaster/wrench",
+     "/trajectory_status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed lab bench, 2 cm page edges, adjacent monitor arm intruding into upper workspace.",
+   "success": [
+    "10 consecutive successful page turns",
+    "Contact force < 3 N per turn",
+    "Zero torn-page detections",
+    "Turn cycle < 6 s"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact force > 3 N",
+    "Stop if joint torque exceeds 60% limit",
+    "Halt on human hand entering workspace via camera zone"
+   ],
+   "human_in_loop": "A lab operator confirms the digest is scan-ready and may abort any turn.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "turns_success",
+     "torn_pages",
+     "peak_force_n",
+     "cycle_time_s",
+     "reflex_stops",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "outdoor-courtyard-swarm-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a 4-drone swarm pattern over the Kendall Square courtyard to visualize progress-metric projections from the observatory windows.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/cf/pose",
+     "/cf/setpoint_group",
+     "/battery_status",
+     "/swarm_formation_error"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Open courtyard above the Charles River-adjacent plaza; gusts from riverfront high-rises and glass facade reflections affect positioning.",
+   "success": [
+    "Formation error < 0.2 m RMS over 5 min routine",
+    "No battery below 20% at any point",
+    "All 4 drones land within 0.15 m of pads",
+    "Zero manual interventions"
+   ],
+   "safety_stops": [
+    "Auto-land on battery < 25%",
+    "Land if position estimate covariance exceeds threshold",
+    "Scatter-and-land on wind gust > 8 m/s",
+    "Kill on operator command"
+   ],
+   "human_in_loop": "A steward approves each public swarm projection show before flight.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "formation_rmse_m",
+     "min_battery_pct",
+     "landing_err_m",
+     "interventions",
+     "gust_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "talos-lecture-demo",
+   "robot": "pal-robotics-talos",
+   "zone": "Charter Hall",
+   "goal": "Stand and deliver a bipedal demonstration of the DAO contribution workflow at the Charter Hall podium.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/talos/whole_body_controller/state",
+     "/talos/imu",
+     "/foot_contact_detector",
+     "/demo_progress"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Podium platform with 3 cm lip, hardwood floor, audience seating risers nearby.",
+   "success": [
+    "Maintains 5 min standing demo with zero falls",
+    "Steps onto podium platform successfully",
+    "Arm gesture timing within 0.5 s of script cues",
+    "Step-off recovery stable"
+   ],
+   "safety_stops": [
+    "Shutdown to safe crouch if ZMP leaves support polygon",
+    "Stop on foot contact anomaly",
+    "Halt demo on operator pause"
+   ],
+   "human_in_loop": "A steward approves the demo script and can stop it at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "falls",
+     "zmp_margin_m",
+     "gesture_timing_err_s",
+     "demo_duration_s",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s21-incubator-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

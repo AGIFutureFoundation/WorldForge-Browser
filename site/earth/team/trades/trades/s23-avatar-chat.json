@@ -1,0 +1,290 @@
+{
+ "scenarios": [
+  {
+   "id": "cliff-walkway-rail-replacement",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Replace corroded guardrail sections on the Yuanjiajie cliffside walkway while visitors are held at staging gates.",
+   "hazards": [
+    "fall-from-height over sandstone cliff edge",
+    "hand-arm vibration and pinch points from impact tools",
+    "wet mossy gratings underfoot",
+    "loose weathered sandstone fragments dropped onto trails below"
+   ],
+   "ppe": [
+    "full-body harness with double lanyard tied to approved anchor",
+    "hard hat with chin strap",
+    "cut-resistant gloves",
+    "Class 2 hi-vis vest",
+    "safety glasses"
+   ],
+   "steps": [
+    "Complete morning tie-off inspection and verify anchor points with foreman.",
+    "Stage replacement rail sections at the work zone behind visitor gates.",
+    "Torque-check and remove corroded rail bolts from the top down.",
+    "Install new posts and rails per drawing; never lean loads outside the rail line.",
+    "Flag and bag any loose rock fragments before they reach the trail below.",
+    "Final torque check, log the section ID, and release visitor gates."
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "100% tie-off while outside the rail line, correct anchor every time"
+    },
+    {
+     "axis": "sequence discipline",
+     "pass_if": "removes and installs top-down with no skipped bolt pattern"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "drop zone flagged and no material leaves the work zone uncontrolled"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "section ID and torque values logged before gates reopen"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries rail sections and tool bags along the narrow walkway so the crew keeps both hands free near the edge; no edge work itself."
+  },
+  {
+   "id": "glass-floor-panel-inspection",
+   "trade": "glaziers",
+   "zone": "Progress Observatory",
+   "task": "Inspect and re-seat a delaminating laminated glass floor panel on a sightseeing platform above the pillar canyon.",
+   "hazards": [
+    "working over an open void through glass",
+    "sharp glass edge exposure during re-seating",
+    "wind gusts across the exposed deck",
+    "adhesive chemical exposure in an unventilated slot"
+   ],
+   "ppe": [
+    "full-body harness with retrieval line",
+    "cut-resistant Level 5 gloves",
+    "sealed safety goggles",
+    "wind-rated hard hat with chin strap"
+   ],
+   "steps": [
+    "Review wind limits with foreman; stand down if gusts exceed site limit.",
+    "Mark off the panel and set up the support frame beneath the void.",
+    "Dress the panel edges and inspect for cracks beyond the delamination zone.",
+    "Apply structural sealant per data sheet and stage cure time.",
+    "Re-seat panel into frame; torque setting blocks evenly.",
+    "Log inspection result against the platform's panel register."
+   ],
+   "rubric": [
+    {
+     "axis": "void work setup",
+     "pass_if": "support frame and harness verified before any panel movement"
+    },
+    {
+     "axis": "glass handling",
+     "pass_if": "edges dressed and gloves worn throughout; no point loading of corners"
+    },
+    {
+     "axis": "chemical safety",
+     "pass_if": "sealant SDS reviewed, cure time respected before load test"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "mountain-stair-tread-reset",
+   "trade": "cement-masons",
+   "zone": "Operations Deck",
+   "task": "Reset cracked precast treads and repack mortar joints on the stone stairs climbing the pillar slope.",
+   "hazards": [
+    "manual handling of heavy precast treads on uneven ground",
+    "heat and humidity exertion on a tropical slope",
+    "cement burns and lime dust",
+    "trip hazards for coworkers on single-width stairs"
+   ],
+   "steps": [
+    "Set material staging points and keep stair traffic one-way.",
+    "Break out cracked tread without damaging the riser below.",
+    "Prepare mortar with correct water ratio; wet the bedding surface.",
+    "Set tread, check level front-to-back and side-to-side, tap to line.",
+    "Tool joints and cure-check; rope off the stair until set.",
+    "Clear debris; sweep and reopen the stair."
+   ],
+   "ppe": [
+    "safety glasses",
+    "chemical-resistant gloves",
+    "rubber boots",
+    "hard hat"
+   ],
+   "rubric": [
+    {
+     "axis": "tread setting",
+     "pass_if": "treads set level within tolerance with full mortar bedding, no voids"
+    },
+    {
+     "axis": "body mechanics",
+     "pass_if": "two-person lift or leg lift used for every tread; no back lifts"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "stair reopened only after joints tooled and debris cleared"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferries mortar buckets and small tools up the stair between staging points to cut crew fatigue on the slope."
+  },
+  {
+   "id": "canyon-cable-trolley-track-check",
+   "trade": "millwrights",
+   "zone": "Research Synthesis Lab",
+   "task": "Assist journey millwrights checking the haul-rope guide rollers and track bolts on the scenic canyon trolley system.",
+   "hazards": [
+    "stored energy in tensioned cables",
+    "working at height on the track platform",
+    "pinch points at roller assemblies",
+    "weather exposure on an exposed span"
+   ],
+   "ppe": [
+    "full-body harness",
+    "hard hat",
+    "impact gloves",
+    "hearing protection near impact wrench"
+   ],
+   "steps": [
+    "Lock out the drive and confirm zero-motion with the operator.",
+    "Inspect each guide roller for grooving, flat spots, and seal failure.",
+    "Re-torque track bolts to spec in the marked pattern.",
+    "Grease bearings per lube chart; wipe excess to prevent sling-out.",
+    "Report findings to the lead and release lockout per procedure."
+   ],
+   "rubric": [
+    {
+     "axis": "lockout discipline",
+     "pass_if": "LOTO applied and verified before any contact with the rope path"
+    },
+    {
+     "axis": "measurement honesty",
+     "pass_if": "roller wear reported as measured, not guessed"
+    },
+    {
+     "axis": "torque pattern",
+     "pass_if": "marked pattern followed and logged"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "forest-trail-drainage-dig",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Dig and grade a drainage cutoff alongside a rain-swamped visitor trail to stop washout of the sandstone path.",
+   "hazards": [
+    "heat and humidity exertion",
+    "ergonomic strain from digging",
+    "underground utility strike near lamp posts",
+    "slips in mud and standing water"
+   ],
+   "ppe": [
+    "gloves",
+    "mud-rated boots with ankle support",
+    "hi-vis vest",
+    "sun hat or brimmed hard hat"
+   ],
+   "steps": [
+    "Call in utility locate for the lamp-post line before digging.",
+    "Set the cutoff line with the foreman and grade stakes.",
+    "Dig trench to depth, keeping spoil one spade width from the edge.",
+    "Line with stone and set the outlet away from the path base.",
+    "Compact backfill and rake the trail edges.",
+    "Grade-check flow with a water test from the cistern tap."
+   ],
+   "rubric": [
+    {
+     "axis": "utility safety",
+     "pass_if": "locate confirmed before shovel enters ground near the lamp line"
+    },
+    {
+     "axis": "trench practice",
+     "pass_if": "spoil set back and walls stable throughout the dig"
+    },
+    {
+     "axis": "ergonomics",
+     "pass_if": "rotates tasks and lifts with legs, per toolbox talk"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Hauls spoil buckets from trench to spoil pile along the soft trail, reducing double-handling on the slope."
+  },
+  {
+   "id": "trailhead-ev-charger-install",
+   "trade": "ev-charging",
+   "zone": "Proposal Forum",
+   "task": "Rough-in a Level 2 EV charging pedestal at the park shuttle trailhead parking area under a licensed journey electrician.",
+   "hazards": [
+    "electrical shock from existing lot circuits",
+    "trench cave-in along the parking edge",
+    "arc flash at the panel",
+    "vehicle traffic in the active lot"
+   ],
+   "ppe": [
+    "Class 2 hi-vis vest",
+    "insulated gloves rated for the circuit",
+    "safety glasses",
+    "hard hat"
+   ],
+   "steps": [
+    "Confirm the panel schedule and lock out the target breaker.",
+    "Trench to pedestal location; shore or slope per soil class.",
+    "Set pedestal plumb on concrete pad forms; run conduit and pull wire.",
+    "Bond and ground the pedestal; torque lugs to spec.",
+    "Megger test and verify with the journey before energizing.",
+    "Label the station and reinstall panel covers."
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO compliance",
+     "pass_if": "breaker locked, tagged, and try-step verified before panel work"
+    },
+    {
+     "axis": "grounding and bonding",
+     "pass_if": "continuous bond verified and lug torques logged"
+    },
+    {
+     "axis": "test discipline",
+     "pass_if": "insulation resistance test passed and signed by the journey before energize"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds and bends conduit sections at the trailhead staging table so the apprentice focuses on wiring and grounding."
+  }
+ ],
+ "credential": {
+  "name": "Avatar.Chat S23 Union Apprentice Readiness Card (Yuanjiajie Site Trades)",
+  "requires": [
+   "cliff-walkway-rail-replacement",
+   "mountain-stair-tread-reset",
+   "canyon-cable-trolley-track-check",
+   "forest-trail-drainage-dig",
+   "trailhead-ev-charger-install"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s23-avatar-chat",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

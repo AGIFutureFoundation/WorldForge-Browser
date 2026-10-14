@@ -1,0 +1,292 @@
+{
+ "tasks": [
+  {
+   "id": "spot-patrol-operations-deck",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Patrol the Operations Deck atop the Hoover Dam Powerhouse, visually inspecting gauges and panel readouts along the parapet walkway.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/spot/odometry",
+     "/gauge_inspection/image",
+     "/inspection/report",
+     "/cmd_vel"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Concrete crest walkway with 331.4 m of relief around it; intake tower and cableway tower guy-points as fixed obstacles; occasional tourist crowds on the road.",
+   "success": [
+    "Covers 6 predefined waypoint poses within 0.2 m tolerance",
+    "Publishes >=20 readable gauge crops with confidence >0.8",
+    "Zero collisions in 30 min run",
+    "Report JSONL logged at 1 Hz"
+   ],
+   "safety_stops": [
+    "E-stop on proximity <1.0 m to humans",
+    "Stop if edge detection shows walkway drop-off <0.5 m ahead",
+    "Halt on gauge anomaly for human review"
+   ],
+   "human_in_loop": "A steward reviews any flagged gauge anomaly before an incident ticket is opened.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "waypoint_id",
+     "pose_error_m",
+     "gauge_reads",
+     "anomalies",
+     "humans_detected",
+     "stop_events"
+    ]
+   }
+  },
+  {
+   "id": "go2-domain-registry-inspection",
+   "robot": "unitree-go2",
+   "zone": "Domain Registry Desk",
+   "goal": "Small-dog robot carries registry checklist tablets along indoor desks in the Exhibit Building and Visitor Center corridors.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/scan",
+     "/registry_task/status",
+     "/cmd_vel"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Polished indoor visitor-center floors, door thresholds, exhibit plinths and cabling at floor level.",
+   "success": [
+    "Reaches 4 desk stations within 0.15 m",
+    "Map localization drift <0.3 m over route",
+    "No plinth or cable contact",
+    "Dock return successful"
+   ],
+   "safety_stops": [
+    "Stop on stair/threshold drop >5 cm",
+    "Yield to visitors within 2 m",
+    "Pause at doors until opened"
+   ],
+   "human_in_loop": "Person confirms each desk station is the correct registry point before log entry.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "station_id",
+     "pos_error_m",
+     "drift_m",
+     "contacts",
+     "yield_events",
+     "completed"
+    ]
+   }
+  },
+  {
+   "id": "talos-valve-house-valves",
+   "robot": "pal-robotics-talos",
+   "zone": "Provisioning Yard",
+   "goal": "Biped rehearses turning large hand-wheel valves at the Arizona Valve House as a dry-run provisioning choreography, no live flow changes.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/valve_wheel/pose_estimate",
+     "/wrench_estimated",
+     "/task_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Valve house floor is grating over the Colorado River outflow; overhead pipes limit standing height; wheel rims are wet metal.",
+   "success": [
+    "Grasps wheel within 2 cm of target pose",
+    "Completes 3 full rehearsal rotations at <=15 Nm torque",
+    "Maintains balance, no fall detected",
+    "Releases and steps back on command"
+   ],
+   "safety_stops": [
+    "Refuse torque above 20 Nm",
+    "E-stop if grating slip detected",
+    "Abort on unexpected pipe pressure noise signature"
+   ],
+   "human_in_loop": "A steward approves before any valve interaction, even in rehearsal; real flow changes are human-only.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "phase",
+     "grasp_error_m",
+     "torque_nm",
+     "balance_zmp",
+     "aborts",
+     "cycles_done"
+    ]
+   }
+  },
+  {
+   "id": "ur10e-cableway-load-rehearsal",
+   "robot": "universal-robots-ur10e",
+   "zone": "Deployment Bay",
+   "goal": "Arm rehearses pick-and-place of mock cableway payloads staged near the Cableway Power House, simulating release/rollback of loadouts.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrench",
+     "/joint_states",
+     "/payload_pose",
+     "/gripper/status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Stationary mount on powerhouse apron; mock payloads on concrete pad; wind gusts off Lake Mead affect light items.",
+   "success": [
+    "10 successful picks, >=95% grasp reliability",
+    "Place position error <2 cm",
+    "Rollback slot executes within 5 s of fault injection",
+    "No dropped payloads"
+   ],
+   "safety_stops": [
+    "Speed limit 250 mm/s when humans within 2.5 m",
+    "Stop on force spike >40 N",
+    "E-stop on payload slip detection"
+   ],
+   "human_in_loop": "Person approves each rollback drill trigger and inspects any dropped-payload event.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "pick_id",
+     "grasp_ok",
+     "place_error_m",
+     "peak_force_n",
+     "rollback_time_s",
+     "drops"
+    ]
+   }
+  },
+  {
+   "id": "husky-spillway-survey",
+   "robot": "clearpath-husky-a200",
+   "zone": "Idea Bench",
+   "goal": "Survey access roads from the Visitor Center to the Nevada Spillway to build a terrain plan for future infrastructure runs.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odometry/filtered",
+     "/terrain_map",
+     "/imu/data",
+     "/gps/fix"
+    ],
+    "frame": "map"
+   },
+   "terrain": "125 mapped road segments, desert sand and gravel switchbacks descending toward the spillway, 331.4 m relief; loose rock near Arizona Spillway channel.",
+   "success": [
+    "Completes 1.5 km route, localization error <1 m",
+    "Terrain map covers 80% of corridor",
+    "Slope estimates within 3 degrees of IMU ground truth",
+    "No rollover events on >20 degree grades"
+   ],
+   "safety_stops": [
+    "Slow to 0.5 m/s on grade >15 degrees",
+    "Stop near spillway channel edge <2 m",
+    "Abort comms loss >10 s"
+   ],
+   "human_in_loop": "Steward approves the route plan and any descent below the spillway rim.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "segment_id",
+     "slope_deg",
+     "slip_ratio",
+     "coverage_pct",
+     "stops",
+     "pos_error_m"
+    ]
+   }
+  },
+  {
+   "id": "crazyflie-intake-tower-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Service Configuration Room",
+   "goal": "Micro-UAV flies indoor calibration scans around service racks set up in the Exhibit Building, mapping cable wiring layout for configuration review.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf/pose",
+     "/cable_layout/image",
+     "/battery_voltage",
+     "/scan_progress"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Indoor hall with exhibit trusses overhead, glass display cases as no-fly buffers, HVAC drafts near doorways.",
+   "success": [
+    "Scans 5 rack faces in <=8 min",
+    "Image coverage >=90% of cable runs",
+    "Position hold within 10 cm in draft",
+    "No case or truss contact"
+   ],
+   "safety_stops": [
+    "Land immediately below 3.4 V battery",
+    "Geofence 1 m from glass cases",
+    "Hover-stop on draft gust >2 m/s"
+   ],
+   "human_in_loop": "Person reviews the generated cable layout map before it enters configuration records.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "rack_id",
+     "coverage_pct",
+     "min_gap_m",
+     "battery_v",
+     "gust_events",
+     "contacts"
+    ]
+   }
+  },
+  {
+   "id": "fetch-powerhouse-relief-check",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Operations Deck",
+   "goal": "Fetch mobile manipulator checks relief and monitoring stations inside the Hoover Dam Powerhouse hall, reading status panels while stewards stay on the deck above.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/odom",
+     "/head_camera/image_raw",
+     "/panel_reads",
+     "/move_base/status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Powerhouse hall: tiled floor, turbine gallery railings, overhead crane rails, standing water film near Colorado River intakes.",
+   "success": [
+    "Reads 8 panel stations, >=90% OCR accuracy",
+    "Keeps 1.5 m from gallery railings",
+    "Round trip under 25 min",
+    "Log streamed to deck console in real time"
+   ],
+   "safety_stops": [
+    "Stop at railing proximity <1.5 m",
+    "No-go on wet-floor zones flagged by slip sensor",
+    "E-stop on crane activity alarm"
+   ],
+   "human_in_loop": "Steward on the deck receives readings and approves escalation of any anomaly.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "station_id",
+     "ocr_accuracy",
+     "min_rail_gap_m",
+     "wet_zone_flags",
+     "anomalies",
+     "duration_s"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "agents-deploy-infrastructure",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

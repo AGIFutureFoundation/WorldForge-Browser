@@ -1,0 +1,332 @@
+{
+ "scenarios": [
+  {
+   "id": "glazing-clinic-atrium",
+   "trade": "glaziers",
+   "zone": "Charter Hall",
+   "task": "Replace a cracked curtain-wall lite above the downtown clinic atrium lobby.",
+   "hazards": [
+    "fall from height",
+    "glass handling lacerations",
+    "wind load on lite",
+    "pedestrian traffic below"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "hard hat",
+    "safety glasses",
+    "full-body harness"
+   ],
+   "steps": [
+    "Set up exclusion zone and pedestrian re-route below",
+    "Stage lite on glass dolly and inspect suction cups",
+    "Rig outriggers and verify tie-off points",
+    "Set lite with suction frame and guide into frame",
+    "Install setting blocks and structural gasket",
+    "Clean, tag, and release the exclusion zone"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "100% tie-off while outside guardrails"
+    },
+    {
+     "axis": "glass control",
+     "pass_if": "lite is never carried un-cupped or unbalanced"
+    },
+    {
+     "axis": "public safety",
+     "pass_if": "exclusion zone fully established before glass leaves ground"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "zumbro-stormwater-line",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Tie a new clinic chilled-water line into the tunnel system under the Zumbro riverbank.",
+   "hazards": [
+    "confined space",
+    "water inundation",
+    "hot work near combustibles",
+    "stored mechanical energy"
+   ],
+   "ppe": [
+    "hard hat",
+    "confined-space harness with retrieval line",
+    "face shield",
+    "gas monitor (personal)"
+   ],
+   "steps": [
+    "Pull tunnel permit and verify atmospheric testing",
+    "Set up attendant and tripod retrieval at entry",
+    "Isolate, lock out, and bleed the chilled-water header",
+    "Cut and bevel tie-in spool piece",
+    "Tack, weld, and test the joint",
+    "Hydrotest tie-in and restore insulation"
+   ],
+   "rubric": [
+    {
+     "axis": "confined space",
+     "pass_if": "attendant and permit verified before entry"
+    },
+    {
+     "axis": "isolation",
+     "pass_if": "LOTO applied to every energy source"
+    },
+    {
+     "axis": "joint quality",
+     "pass_if": "hydrotest holds with zero leaks"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Carries gas monitor and camera through the tunnel ahead of entry to pre-check atmosphere."
+  },
+  {
+   "id": "substation-feeder-swap",
+   "trade": "line-workers",
+   "zone": "Operations Deck",
+   "task": "Replace a failed primary feeder serving the clinic campus in downtown Rochester.",
+   "hazards": [
+    "energized lines",
+    "arc flash",
+    "traffic work zone",
+    "weather exposure"
+   ],
+   "ppe": [
+    "Class 2 FR clothing",
+    "rubber gloves with leather protectors",
+    "hard hat with face shield",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Complete job briefing and switching order",
+    "Ground and test the de-energized feeder",
+    "Set up traffic control around the vault",
+    "Pull and rack out the failed feeder cable",
+    "Install and torque replacement cable and terminations",
+    "Megger test and restore per switching order"
+   ],
+   "rubric": [
+    {
+     "axis": "test-before-touch",
+     "pass_if": "feeder proven de-energized before contact"
+    },
+    {
+     "axis": "traffic control",
+     "pass_if": "work zone set to MUTCD pattern before work"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "insulation readings within spec before re-energizing"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferry small tools and test leads across the work zone to keep crews off the roadway."
+  },
+  {
+   "id": "rooftop-ahu-rig",
+   "trade": "hvacr",
+   "zone": "Progress Observatory",
+   "task": "Rig and set a replacement air handler on the clinic penthouse roof.",
+   "hazards": [
+    "crane load swing",
+    "roof edge fall",
+    "pinch points during setting",
+    "load-over-rooftop workers"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "safety glasses",
+    "full-body harness near edge"
+   ],
+   "steps": [
+    "Confirm roof load rating with crane plan",
+    "Walk load path and clear roof edge guard lines",
+    "Hook, tagline, and signal crane lift",
+    "Guide unit onto curb with tagline only",
+    "Level, fasten, and connect seismic restraints",
+    "Complete setting checklist with rigger sign-off"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging",
+     "pass_if": "all hardware inspected and tagline attached before lift"
+    },
+    {
+     "axis": "crane communication",
+     "pass_if": "standard hand signals used and acknowledged"
+    },
+    {
+     "axis": "fall protection",
+     "pass_if": "nobody crosses guard line without tie-off"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "hazmat-abatement-lab",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Glove-bag removal of asbestos pipe insulation in an older research building prior to renovation.",
+   "hazards": [
+    "asbestos fiber release",
+    "heat stress in encapsulation",
+    "electrical near work area",
+    "sharps in walls"
+   ],
+   "ppe": [
+    "powered air-purifying respirator",
+    "tyvek suit with hood",
+    "double gloves",
+    "taped booties"
+   ],
+   "steps": [
+    "Verify notification and containment plan",
+    "Build decon unit and post regulated area",
+    "Set negative-air machine and verify differential",
+    "Perform glove-bag removal, wet methods only",
+    "Double-bag, label, and log waste manifest",
+    "Final clearance visual and tear-down of decon"
+   ],
+   "rubric": [
+    {
+     "axis": "containment",
+     "pass_if": "negative pressure held before disturbance begins"
+    },
+    {
+     "axis": "wet methods",
+     "pass_if": "materials kept wet throughout removal"
+    },
+    {
+     "axis": "waste handling",
+     "pass_if": "all waste manifested, labeled, and sealed"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "softbank-nao",
+   "robot_role": "Log entry/exit times and remind workers of decon sequence at the boundary."
+  },
+  {
+   "id": "operating-eng-tunnel-muck",
+   "trade": "operating-eng",
+   "zone": "Operations Deck",
+   "task": "Operate a compact loader hauling tunnel muck to a surface stockpile along the riverbank.",
+   "hazards": [
+    "pedestrian conflict",
+    "tunnel visibility",
+    "unstable stockpile slope",
+    "machine rollover on bank grade"
+   ],
+   "ppe": [
+    "hard hat",
+    "hi-vis vest",
+    "seat belt (worn at all times)",
+    "safety glasses"
+   ],
+   "steps": [
+    "Complete walkaround inspection with checklist",
+    "Verify backup alarm and camera function",
+    "Establish haul route and spotter at tunnel portal",
+    "Load, travel, and dump maintaining safe slope",
+    "Inspect spoil pile stability each hour",
+    "Park, lower bucket, and set controls neutral at shift end"
+   ],
+   "rubric": [
+    {
+     "axis": "pre-op inspection",
+     "pass_if": "documented inspection before first cycle"
+    },
+    {
+     "axis": "pedestrian control",
+     "pass_if": "spotter present whenever reversing near people"
+    },
+    {
+     "axis": "stockpile stability",
+     "pass_if": "slope never exceeds safe angle of repose"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Maps tunnel haul route and flags blind spots to the operator before cycles begin."
+  },
+  {
+   "id": "fire-sprinkler-rise-test",
+   "trade": "fire-sprinkler",
+   "zone": "Proposal Forum",
+   "task": "Install and hydrotest a new sprinkler riser for a clinic addition scheduled for inspection.",
+   "hazards": [
+    "hydrostatic test failure",
+    "overhead drilling",
+    "scaffold work",
+    "water damage to finished areas"
+   ],
+   "ppe": [
+    "safety glasses",
+    "hard hat",
+    "gloves",
+    "hearing protection"
+   ],
+   "steps": [
+    "Verify hydraulic calc and hanger layout",
+    "Drill and set seismic hangers overhead",
+    "Thread and hang riser and cross main",
+    "Install FDC, control valve, and inspector's test",
+    "Hydrotest at 200 psi for 2 hours",
+    "Flush inspector's test and document results"
+   ],
+   "rubric": [
+    {
+     "axis": "hanging",
+     "pass_if": "hanger spacing per plans before pipe is loaded"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "no pressure drop within allowable in 2 hours"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "test results recorded for the inspector"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Rochester Clinic Campus Maintenance Qualification",
+  "requires": [
+   "glazing-clinic-atrium",
+   "zumbro-stormwater-line",
+   "substation-feeder-swap",
+   "rooftop-ahu-rig",
+   "hazmat-abatement-lab",
+   "operating-eng-tunnel-muck",
+   "fire-sprinkler-rise-test"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s14-askdoc-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

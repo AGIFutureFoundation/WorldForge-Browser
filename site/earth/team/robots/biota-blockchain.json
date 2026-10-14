@@ -1,0 +1,326 @@
+{
+ "tasks": [
+  {
+   "id": "spot-patrol-therapy-lab",
+   "robot": "boston-dynamics-spot",
+   "zone": "Personalized Therapy Lab",
+   "goal": "Patrol molecular modeling benches and inspect compound storage racks along the lab floor.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/spot/odom",
+     "/spot/goal_pose",
+     "/spot/camera/front/image_raw",
+     "/spot/dock_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat sealed lab flooring with bench legs, rolling carts, and cable runs as low obstacles; verify climbs under 15 cm.",
+   "success": [
+    "Visit all 6 marked bench waypoints",
+    "Mean localization error < 0.15 m over run",
+    "Zero collisions logged via /spot/collision_events"
+   ],
+   "safety_stops": [
+    "E-stop on human within 1.0 m",
+    "Stop if battery < 20%",
+    "Halt on unexpected obstacle < 0.3 m ahead"
+   ],
+   "human_in_loop": "Lab supervisor reviews inspection images and approves rack re-scan before docking.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_id",
+     "localization_error_m",
+     "collisions",
+     "battery_pct",
+     "duration_s",
+     "supervisor_approved"
+    ]
+   }
+  },
+  {
+   "id": "go2-escort-governance-hall",
+   "robot": "unitree-go2",
+   "zone": "DAO Governance Hall",
+   "goal": "Escort visitors between seating tiers and the DAO voting terminals during sessions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/go2/odom",
+     "/go2/led_cmd",
+     "/go2/obstacle_detection",
+     "/go2/goal_pose"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Carpeted hall floor with tiered steps at edges, chair clusters, and cabling to voting terminals; avoid stairs entirely.",
+   "success": [
+    "Complete 4 escort routes with < 0.2 m path deviation",
+    "Keep pace between 0.4-0.8 m/s near seated humans",
+    "Post at designated spot within 0.1 m at route end"
+   ],
+   "safety_stops": [
+    "Stop when a person is within 0.8 m in path",
+    "Disable motion during active vote announcements",
+    "Stop on tilt > 10 degrees"
+   ],
+   "human_in_loop": "Hall steward approves each escort route while governance session is in progress.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "route_id",
+     "path_deviation_m",
+     "min_human_distance_m",
+     "avg_speed",
+     "stops_count",
+     "approved_by"
+    ]
+   }
+  },
+  {
+   "id": "talos-carry-ledger-servers",
+   "robot": "pal-robotics-talos",
+   "zone": "Multi-Blockchain Ledger",
+   "goal": "Lift and carry server drive trays between the ledger racks and maintenance bench with two arms.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/talos/joint_states",
+     "/talos/left_arm/follow_joint_trajectory",
+     "/talos/right_arm/follow_joint_trajectory",
+     "/talos/wrist_ft",
+     "/talos/odom"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Raised access floor tiles in server aisle; rack frames and cable trays limit arm clearance to 0.6 m corridors.",
+   "success": [
+    "Complete 3 pick-and-place cycles with grip force within 10% of target",
+    "No tray drop events (wrist FT spike > 50 N)",
+    "Final placement within 0.03 m of bench target"
+   ],
+   "safety_stops": [
+    "Release-and-freeze on FT anomaly > 50 N",
+    "Stop if any human enters aisle",
+    "Kneel-safe posture on power fault"
+   ],
+   "human_in_loop": "Data-center technician approves each tray extraction before robot touches rack hardware.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "cycle_index",
+     "grip_force_n",
+     "placement_error_m",
+     "ft_anomalies",
+     "human_distance_m",
+     "technician_approved"
+    ]
+   }
+  },
+  {
+   "id": "nao-consent-kiosk-assist",
+   "robot": "softbank-nao",
+   "zone": "Healthcare Data Exchange",
+   "goal": "Stand at the patient consent kiosk and gesture-guide users through SMS consent prompts.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/nao/joint_states",
+     "/nao/speech",
+     "/nao/camera/top/image_raw",
+     "/nao/touch"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Kiosk plinth edge and floor cables around the desk-height terminal; NAO must remain on flat ground beside the kiosk.",
+   "success": [
+    "Complete 5 scripted consent walkthroughs",
+    "Speech-to-intent match > 90% on 10 test phrases",
+    "No falls; base tilt < 5 degrees throughout"
+   ],
+   "safety_stops": [
+    "Pause interaction if user steps back > 1.5 m",
+    "Sit-down safe pose on low battery",
+    "Stop arm motion if touch sensor pressed firmly"
+   ],
+   "human_in_loop": "Nurse confirms patient identity and authorizes kiosk session start; NAO never collects consent itself.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "session_id",
+     "phrases_attempted",
+     "intent_match_rate",
+     "falls",
+     "tilt_max_deg",
+     "nurse_authorized"
+    ]
+   }
+  },
+  {
+   "id": "ur10e-agents-hub-manipulation",
+   "robot": "universal-robots-ur10e",
+   "zone": "Biopharma AGI Agents Hub",
+   "goal": "Sort labeled agent-task bins on the hub conveyor into R&D and Clinical Support chutes.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/ur10e/joint_states",
+     "/ur10e/wrench",
+     "/ur10e/gripper_cmd",
+     "/vision/bin_detection"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed pedestal beside conveyor; bin edges and divider guards constrain reach; no locomotion, workcell only.",
+   "success": [
+    "Sort 20 bins with > 95% correct chute assignment",
+    "Cycle time < 8 s per bin",
+    "Zero gripper faults over run"
+   ],
+   "safety_stops": [
+    "Joint stop if wrench exceeds 40 N",
+    "Halt if human enters workcell zone",
+    "Stop conveyor interface on vision loss > 2 s"
+   ],
+   "human_in_loop": "Hub operator approves bin-to-chute mapping table before each shift.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "bins_total",
+     "sort_accuracy",
+     "avg_cycle_s",
+     "wrench_peak_n",
+     "vision_dropouts",
+     "operator_approved"
+    ]
+   }
+  },
+  {
+   "id": "husky-ledger-facility-survey",
+   "robot": "clearpath-husky-a200",
+   "zone": "Multi-Blockchain Ledger",
+   "goal": "Survey the exterior ledger facility perimeter including bay-side mudflat access road.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/husky/odom",
+     "/husky/gps/fix",
+     "/husky/terrain_scan",
+     "/husky/path"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Compacted gravel and bay mudflats near San Francisco Bay shoreline; soft mud, tidal slough edges, and drainage culverts.",
+   "success": [
+    "Complete 1.2 km perimeter loop",
+    "Stay on gravel within 0.5 m of planned path",
+    "Log terrain slip estimate < 0.3 throughout"
+   ],
+   "safety_stops": [
+    "Return if GPS accuracy degrades > 3 m",
+    "Halt 5 m from slough waterline",
+    "Stop if wheel slip > 0.5 for 3 s"
+   ],
+   "human_in_loop": "Facility manager approves survey window around tide schedule before launch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "distance_m",
+     "path_deviation_m",
+     "gps_hdop",
+     "max_slip",
+     "tide_window_approved",
+     "stops_count"
+    ]
+   }
+  },
+  {
+   "id": "crazyflie-ledger-air-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Multi-Blockchain Ledger",
+   "goal": "Fly a 3-D scan of rack-top LED status arrays and thermal hotspots inside the ledger hall.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf/pose",
+     "/cf/range/front",
+     "/cf/range/down",
+     "/cf/scan_trigger"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Ceiling clearance 6 m; rack tops, cable trays, and overhead lighting as aerial obstacles; mild bay-side draft at door.",
+   "success": [
+    "Capture 4 rack rows at 1 m standoff, coverage > 90%",
+    "Maintain position hold within 0.1 m RMS",
+    "Land with battery > 15% remaining"
+   ],
+   "safety_stops": [
+    "Auto-land on battery < 20%",
+    "Land if any range sensor reads < 0.3 m",
+    "Cut motors on attitude fault or pilot command"
+   ],
+   "human_in_loop": "Flight operator issues takeoff clearance and reviews thermal scan before data is stored.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "flight_time_s",
+     "coverage_pct",
+     "hold_rms_m",
+     "min_battery_pct",
+     "min_range_m",
+     "operator_cleared"
+    ]
+   }
+  },
+  {
+   "id": "fetch-rd-lab-delivery",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Personalized Therapy Lab",
+   "goal": "Deliver sample trays from cold storage to the molecular modeling benches on schedule.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/fetch/odom",
+     "/fetch/torso_controller",
+     "/fetch/gripper_cmd",
+     "/fetch/move_base/result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth lab floor with door thresholds ~2 cm, bench overhangs at 0.75 m height, and cold-room drip zones causing slick patches.",
+   "success": [
+    "Deliver 5 trays on time within 60 s tolerance each",
+    "Tray level maintained within 3 degrees of horizontal",
+    "No slip events on slick-patch zones (logged)"
+   ],
+   "safety_stops": [
+    "Stop for humans < 1.0 m ahead",
+    "Pause delivery if cold-room door closed",
+    "Zero-torque arm hold on e-stop"
+   ],
+   "human_in_loop": "Lab manager approves cold-storage withdrawal manifest per delivery batch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "delivery_index",
+     "on_time_s",
+     "tray_tilt_deg",
+     "slip_events",
+     "human_distance_min_m",
+     "manifest_approved"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "biota-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 3,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

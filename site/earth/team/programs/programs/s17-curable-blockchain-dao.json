@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents Work, Members Govern: A Worker Introduction to Agent-Managed DAOs",
+   "grade_or_level": "Adult continuing education / worker education",
+   "outcomes": [
+    "Explain how 'Agents operate; people govern' protects worker voice in automated systems",
+    "Read a DAO charter and identify the five human-reserved actions",
+    "Draft a member proposal for the Proposal Forum",
+    "Evaluate agent-generated evidence summaries for workplace decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided reading of the Series 17 charter, mission and contribution model; small groups map which powers stay with people and which go to agents, using the Blue Lagoon setting as a case of shared natural resources.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners review sample Evidence Monitor outputs, practice checking claims against sources, and flag missing evidence in a structured worksheet.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Each group drafts a short member proposal (problem, action, measurable outcome) for agent pre-drafting, then debates another group's draft in a mock human final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play task routing: learners assign tasks to agents and working groups, observing that agents never enact treasury transfers or appointments.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized proposal-draft quality rubric scores and common questions about governance roles, aggregated to improve the Proposal & Grant Drafter's templates.",
+   "consent": "Participation is voluntary; adult learners opt in at enrollment and may withdraw anytime. No personal identifiers are collected; only anonymized rubric scores are pooled."
+  },
+  {
+   "audience": "k12",
+   "title": "Lava Fields and Rules: Exploring Governance in a Geothermal Wonderland",
+   "grade_or_level": "Grades 6-8 (ages 11-14)",
+   "outcomes": [
+    "Describe the Blue Lagoon and Reykjanes lava field biome (desert, geothermal lake) and why geothermal water is warm",
+    "Explain what a DAO is in simple terms and why some decisions stay with people",
+    "Compare rules in nature (lava fields) with rules in a community charter",
+    "Create a class charter with human-reserved decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Story-based introduction: a spa in a black lava field run by helpful robot assistants. Students learn 'robots help, people decide' and sort decision cards into agent vs. human piles.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students act as Evidence Monitors: examine simple 'fact cards' about geothermal heat and lava fields, mark which have sources and which are guesses.",
+     "minutes": 35
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Class writes and debates one simple proposal (e.g., a recycling rule for a pretend spa), then votes together, seeing that only students cast the final vote.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students design a progress chart with measurable outcomes for their class charter and track it over one week, like the Progress Tracker agent.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class-level tallies of decision-card sorting and one-word reflections; no individual student responses are shared.",
+   "consent": "Written guardian/parent consent required for all data contributions; only aggregate class data leaves the classroom, teachers de-identify everything, and families may opt out at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: NGO Training on Agent-Drafted, Human-Decided Grant Cycles",
+   "grade_or_level": "Professional / NGO program staff",
+   "outcomes": [
+    "Map an NGO program onto a charter with measurable outcomes",
+    "Use agent-generated research syntheses to strengthen a funding proposal",
+    "Run a decision cycle where agents draft and humans enact",
+    "Identify partnership opportunities via collaborator scouting methods"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop on turning field program data into evidence briefs; learners practice summarizing evidence the way the Research Synthesis Agent would for stewards.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams convert an evidence brief into a grant-style proposal using the Proposal & Grant Drafter workflow, then simulate human-only final vote and enactment steps.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Learners do a collaborator-mapping exercise modeled on the Collaborator Scout: identify experts and partner organizations without inventing claims, verifying each against public sources.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams define 2-3 measurable outcomes for their own NGO program and build a progress-tracking dashboard template.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized proposal rubric results and outcome-indicator patterns (no program names or beneficiary data), aggregated to improve shared grant-drafting templates.",
+   "consent": "Staff opt in through their organizations; only de-identified rubric and indicator data is shared, with organizational approval and an easy withdrawal path."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Stewarding Shared Resources: Nonprofit Governance Lessons from a Geothermal Commons",
+   "grade_or_level": "Board members and nonprofit leaders",
+   "outcomes": [
+    "Apply public-good governance principles to a nonprofit board context",
+    "Understand the human-reserved actions model as a check on automation",
+    "Draft measurable charter outcomes for a mission-driven organization",
+    "Practice steward-level review of agent-drafted materials"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-level seminar comparing nonprofit bylaws with the DAO charter: reserved powers, mission alignment, and contribution models, using the Blue Lagoon commons as a discussion case.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Stewards-in-training review a mock agent-drafted proposal, mark strengths and gaps, then conduct a recorded human final vote to experience the enactment boundary.",
+     "minutes": 50
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Leaders critique two evidence summaries for rigor and source quality, learning what to ask agents before trusting a synthesis.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Each participant drafts measurable outcomes for their own nonprofit and receives peer feedback using the Progress Tracker format.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance-checklist completion rates and commonly cited charter gaps, pooled to strengthen shared steward training materials.",
+   "consent": "Individual leaders consent at registration; shared data is fully anonymized and optional, with withdrawal honored without affecting participation."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s17-curable-blockchain-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Greet visitors at Charter Hall and guide them along the charter, contribution model and measurable outcomes displays.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/charter_waypoints",
+     "/speech",
+     "/amcl_pose",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat polished exhibition floor in Zug old-town building; avoid display plinths and visitor queues.",
+   "success": [
+    "Visits all 5 charter stations within 6 min",
+    "Speech utterance logged at each station",
+    "No collision events in /collision_events",
+    "Localization error < 0.3 m at each waypoint"
+   ],
+   "safety_stops": [
+    "Stop if human within 0.5 m",
+    "E-stop on tilt > 15 deg",
+    "Pause speech if battery < 20%"
+   ],
+   "human_in_loop": "A steward approves the tour script content before deployment.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "waypoint_id",
+     "arrival_error_m",
+     "speech_completed",
+     "min_human_distance_m",
+     "collisions"
+    ]
+   },
+   "id_note": null
+  },
+  {
+   "id": "research-lab-doc-delivery",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Deliver printed evidence summaries from the lab printer to the stewards' review table.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/joint_states",
+     "/move_base/result",
+     "/wrist_camera/image_raw",
+     "/object_detection"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Carpeted lab floor, cable runs under desks, narrow aisle between synthesis workbenches.",
+   "success": [
+    "Grasps paper stack with >90% grip confidence",
+    "Delivery within 5 min",
+    "Zero dropped-object events",
+    "Dock and recharge after 3 runs"
+   ],
+   "safety_stops": [
+    "Abort grasp if human hand in workspace",
+    "Stop if force sensor > 15 N",
+    "E-stop on wheel slip detected"
+   ],
+   "human_in_loop": "Steward confirms receipt of each evidence packet.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "grasp_confidence",
+     "drop_events",
+     "delivery_time_s",
+     "path_length_m",
+     "safety_stops_triggered"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-moderation-patrol",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Patrol the Proposal Forum during debate, detecting raised hands and signaling the moderator queue via tagged proposals board.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/hand_detection",
+     "/patrol_waypoints",
+     "/odom",
+     "/scan"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Hardwood forum floor with seating rows, microphone stands and cable ramps.",
+   "success": [
+    "Patrol loop completed every 4 min",
+    "Hand-raise detection recall > 85%",
+    "No contact with seating",
+    "Queue message published within 3 s of detection"
+   ],
+   "safety_stops": [
+    "Sit-and-stop if person within 1 m",
+    "Stop on stair edge detection",
+    "Low-battery return to dock"
+   ],
+   "human_in_loop": "People decide all proposals; agent only queues debate order.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "hands_detected",
+     "detection_latency_s",
+     "loop_time_s",
+     "min_person_distance_m",
+     "stops"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-drone-inspection",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Operations Deck",
+   "goal": "Fly a short indoor inspection of task-routing displays on the Operations Deck, streaming camera feeds to coordinators.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/local_position",
+     "/cf2/image_raw",
+     "/obstacle_range",
+     "/mission_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor airspace with ceiling beams, hanging signage and standing operators; lake humidity affects sensors.",
+   "success": [
+    "Covers 4 display points in < 3 min",
+    "Zero obstacle contacts",
+    "Stream uptime > 95%",
+    "Lands within 0.2 m of pad"
+   ],
+   "safety_stops": [
+    "Land immediately if obstacle < 0.5 m",
+    "Cut motors if tilted > 45 deg",
+    "Auto-land on low battery or lost localization"
+   ],
+   "human_in_loop": "A human coordinator approves each flight before takeoff.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "waypoint_id",
+     "min_obstacle_dist_m",
+     "stream_uptime_pct",
+     "landing_error_m",
+     "emergency_events"
+    ]
+   }
+  },
+  {
+   "id": "observatory-quadruped-progress-check",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Walk the Progress Observatory, scanning progress-board QR codes against charter measurable outcomes and reporting mismatches.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/odom",
+     "/qr_detections",
+     "/pose"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Smooth gallery floor with a short accessibility ramp and floor-mounted exhibit markers near the lakefront hall.",
+   "success": [
+    "Reads all QR boards (>= 8) in one pass",
+    "Report JSONL published per board",
+    "Zero falls or slips on ramp",
+    "Localization drift < 0.5 m over route"
+   ],
+   "safety_stops": [
+    "Sit if human within 1.5 m",
+    "Stop on ramp slip detection",
+    "Auto-dock at 20% battery"
+   ],
+   "human_in_loop": "Stewards interpret mismatches; robot only reports.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "board_id",
+     "qr_read_success",
+     "mismatch_flag",
+     "ramp_slip_events",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "talisman-joint-demo-calibration",
+   "robot": "pal-robotics-talos",
+   "zone": "Charter Hall",
+   "goal": "Perform a scripted upper-body demonstration of the DAO's agent-people division of labor at the Charter Hall stage, ending in a safe idle pose.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/torso_trajectory",
+     "/whole_body_controller/status",
+     "/safety_lidar"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Raised wooden stage with marked demo zone; audience seating within 2 m of stage edge.",
+   "success": [
+    "Trajectory tracking error < 0.05 rad per joint",
+    "Stays within marked 1.5 m demo zone",
+    "Completes 90 s routine without safety stop",
+    "Returns to idle pose at end"
+   ],
+   "safety_stops": [
+    "Freeze if audience member crosses stage line",
+    "Stop if joint torque > threshold",
+    "E-stop pendant active for operator"
+   ],
+   "human_in_loop": "A stage operator with e-stop authorizes start and end of demo.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "joint_name",
+     "tracking_error_rad",
+     "zone_violations",
+     "torque_peaks_nm",
+     "e_stop_events"
+    ]
+   }
+  },
+  {
+   "id": "lakefront-goods-transport",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Haul supplies from the Operations Deck loading area to the Proposal Forum along the indoor lakeside corridor.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odometry/filtered",
+     "/cmd_vel",
+     "/scan",
+     "/load_weight",
+     "/move_base/result"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Cobblestone transitions at old-town door thresholds, corridor width 1.8 m, wet shoe tracks near lake-facing entrance.",
+   "success": [
+    "Payload up to 40 kg transported without tip events",
+    "Corridor transit < 4 min",
+    "Wheel slip incidents = 0 on threshold",
+    "Parks within 0.2 m of unloading mark"
+   ],
+   "safety_stops": [
+    "Stop if pedestrian in corridor < 2 m",
+    "Halt on load-shift detection",
+    "Slow mode on wet-floor classification"
+   ],
+   "human_in_loop": "Humans unload and verify contents at the forum.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "payload_kg",
+     "parking_error_m",
+     "slip_events",
+     "tip_events",
+     "min_pedestrian_distance_m"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s06-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

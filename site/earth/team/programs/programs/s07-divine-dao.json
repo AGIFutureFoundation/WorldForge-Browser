@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Governed Together: How Agent-Managed, Human-Governed Systems Can Serve Workers",
+   "grade_or_level": "Adult continuing education / worker education program",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' model and the six human-reserved governance actions",
+    "Evaluate how DAO-style coordination could support collective bargaining and worker voice",
+    "Practice drafting and debating a proposal in a human-decision forum"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the Divine.DAO charter: mission, contribution model and measurable outcomes; map which decisions stay reserved for people and why that matters for worker governance.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Learners draft a workplace proposal modeled on agent-drafted, human-decided流程; hold a structured debate and a mock final vote reserved for human participants only.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play the Task Router: small groups route tasks among working groups and identify where agent coordination ends and human decision begins.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review sample progress metrics against charter outcomes; learners design measurable indicators for a union campaign dashboard.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized proposal drafts and voting-turnout patterns (no names, employers, or member IDs) contributed as examples to shared governance learning models.",
+   "consent": "Opt-in participation with written explanation of what anonymized data is shared; learners may attend without contributing data, and requests for removal are honored."
+  },
+  {
+   "audience": "k12",
+   "title": "Rivers, Rituals and Rules: Community Decision-Making from Varanasi's Ghats to a DAO",
+   "grade_or_level": "Grades 6-8 (ages 11-14)",
+   "outcomes": [
+    "Describe Dashashwamedh Ghat and the daily Ganga aarti as an example of a shared public ritual on a great river",
+    "Compare how communities make group decisions and why some decisions should stay with people",
+    "Co-design a simple classroom charter with roles for helpers (agents) and decision-makers (people)"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Explore the world of Divine.DAO and its river-valley place; students write their own class charter with rules, roles and measurable goals.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students act as Evidence Monitors: gather facts about the Ganges and Varanasi ghats from provided sources and summarize what the evidence shows, citing every claim.",
+     "minutes": 50
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Each team drafts one class proposal; a helper 'agent' role organizes the debate while every student casts the final vote, showing people decide.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams track their charter goals on a visual progress wall and present whether the class met its measurable outcomes.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class charter examples and proposal ideas (no student names, ages, or identifying details) shared as teaching examples for shared lesson models.",
+   "consent": "Guardian/parent consent forms obtained before any data sharing; only aggregated, anonymized classroom work is shared, and parents or guardians may withdraw consent at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Agent-Supported Research Cycles for NGO Teams",
+   "grade_or_level": "Professional development / NGO staff (intermediate)",
+   "outcomes": [
+    "Run a monitor-synthesize-propose cycle using the Research Synthesis Lab workflow",
+    "Draft fundable proposals with clear measurable outcomes for human review",
+    "Track program impact against charter-style outcome metrics"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Teams practice the Evidence Monitor and Research Synthesis Agent workflow on a real NGO question, summarizing evidence with sources for stewards.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a grant proposal with the Proposal & Grant Drafter pattern: agents draft, humans review; peers critique against measurable outcome criteria.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Use the Collaborator Scout and Task Router roles to map partners and route tasks across working groups between decision cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress tracker aligned to charter outcomes; teams present evidence of impact and gaps to peers.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized program outcome indicators and proposal structures (no beneficiary, staff, or partner identifying data) contributed to shared nonprofit effectiveness models.",
+   "consent": "NGO teams consent via data-sharing agreement; beneficiary data is never shared, only aggregated program-level metrics, with opt-out per organization."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Public-Good Governance Bootcamp: Building Human-Governed, Agent-Assisted Nonprofits",
+   "grade_or_level": "Nonprofit leadership / board-level workshop",
+   "outcomes": [
+    "Articulate a mission modeled on governing advanced AI as a public good with widely shared benefits",
+    "Define which governance actions remain reserved for humans and document them in bylaws",
+    "Design a contribution model and measurable outcomes for a mission-driven organization"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Leaders draft a charter: mission statement, contribution model, measurable outcomes, and an explicit list of human-reserved decisions modeled on Divine.DAO's.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Board-simulation exercise: agent-drafted proposals are debated and enacted only by human vote, rehearsing steward-level decision discipline.",
+     "minutes": 75
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice commissioning evidence briefs: what to ask monitors and synthesizers to produce, and how to evaluate sourced summaries.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set up outcome tracking against the new charter; define review cadence and what evidence the board will inspect each cycle.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized charter templates and governance decision frameworks (no donor, beneficiary, or organization names) contributed to shared nonprofit governance models.",
+   "consent": "Organizational consent via leadership sign-off; only de-identified templates and frameworks are shared, with any organization able to opt out or request removal."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s07-divine-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agent-Run Workplaces: Reading the Coordination Floor",
+   "grade_or_level": "Worker education, all levels",
+   "outcomes": [
+    "Explain how agent teams assign and execute work through surfaces like Slack and Linear",
+    "Identify which decisions must remain with humans under a reserved-actions list",
+    "Draft questions for bargaining over agent-assisted workflows"
+   ],
+   "sessions": [
+    {
+     "zone": "Goal Wall",
+     "activity": "Read a live Goal Wall and rewrite a workplace goal in measurable terms agents could track.",
+     "minutes": 30
+    },
+    {
+     "zone": "Coordination Floor",
+     "activity": "Trace how messages and status updates flow across surfaces; map where worker input enters the loop.",
+     "minutes": 45
+    },
+    {
+     "zone": "Assignment Board",
+     "activity": "Audit sample assignments: who holds what work, how reassignment happens, and where humans can intervene.",
+     "minutes": 45
+    },
+    {
+     "zone": "Decision Room",
+     "activity": "Compare agent-drafted decisions with the human-only final vote; role-play a steward review.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized session reflections on task-assignment clarity, tagged by role type, contribute to a shared model of human-readable agent coordination.",
+   "consent": "Participation is voluntary; reflections are de-identified before upload and workers may opt out of data contribution without losing access to training."
+  },
+  {
+   "audience": "k12",
+   "title": "Lagoon Campus of Robot Teams",
+   "grade_or_level": "Grades 6-8",
+   "outcomes": [
+    "Describe an agent team as Goal Keeper, Coordinator, Assigner and Executor roles",
+    "Distinguish agent work from human-only decisions",
+    "Build a paper goal wall and assignment board for a class project"
+   ],
+   "sessions": [
+    {
+     "zone": "Goal Wall",
+     "activity": "Write a class goal for the campus lagoon cleanup and post it where every team can read it.",
+     "minutes": 30
+    },
+    {
+     "zone": "Assignment Board",
+     "activity": "Break the goal into tasks and assign them across small teams, tracking who holds what.",
+     "minutes": 45
+    },
+    {
+     "zone": "Coordination Floor",
+     "activity": "Pass status updates between teams using message cards, mimicking Slack-style coordination.",
+     "minutes": 30
+    },
+    {
+     "zone": "Decision Room",
+     "activity": "Discuss which choices agents may draft but only people vote on; hold a class vote by secret ballot.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized examples of student goal statements and assignment boards help build a shared library of clear task language.",
+   "consent": "Guardian/parent consent is obtained in writing before any student work is collected; only de-identified samples are shared and families may withdraw at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Coordinated Agents for Field Programs",
+   "grade_or_level": "Professional development, program staff",
+   "outcomes": [
+    "Map an NGO program onto Goal Wall, Assignment Board and Execution Bay workflows",
+    "Design escalation paths that keep final decisions with human stewards",
+    "Assess readiness gaps before delegating work to agent teams"
+   ],
+   "sessions": [
+    {
+     "zone": "Goal Wall",
+     "activity": "Translate one real program objective into a measurable, agent-trackable goal statement.",
+     "minutes": 60
+    },
+    {
+     "zone": "Assignment Board",
+     "activity": "Sketch task breakdown and ownership for the goal, marking which tasks need human sign-off.",
+     "minutes": 60
+    },
+    {
+     "zone": "Execution Bay",
+     "activity": "Walk through execution-with-reporting and identify check-in points and blocker reporting.",
+     "minutes": 45
+    },
+    {
+     "zone": "Decision Room",
+     "activity": "Draft an escalation protocol: agent drafts, evidence attached, human stewards vote.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "De-identified goal statements and workflow maps contribute to a shared library of program-design patterns for agent-assisted coordination.",
+   "consent": "Staff opt in per program; no beneficiary or field data is shared, and drafts are anonymized before contributing to shared models."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Stewardship by Design: Governing Agent Teams",
+   "grade_or_level": "Board and leadership level",
+   "outcomes": [
+    "Explain the reserved-actions line and why final votes and enactment stay with humans",
+    "Draft governance language for supervising agent-executed operations",
+    "Set review cadences and audit trails for agent-assigned work"
+   ],
+   "sessions": [
+    {
+     "zone": "Decision Room",
+     "activity": "Review the reserved-actions list and draft board-level oversight language for agent decisions.",
+     "minutes": 60
+    },
+    {
+     "zone": "Assignment Board",
+     "activity": "Audit a sample assignment log for traceability and accountability to beneficiaries.",
+     "minutes": 45
+    },
+    {
+     "zone": "Goal Wall",
+     "activity": "Align a mission statement with a measurable goal an agent team can track without overstepping.",
+     "minutes": 45
+    },
+    {
+     "zone": "Execution Bay",
+     "activity": "Design audit checkpoints where executed work is reported back before any human-reserved action.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized governance templates and oversight checklists join a shared stewardship library for mission-aligned agent operations.",
+   "consent": "Board-approved data-sharing policy governs contributions; all templates are scrubbed of identifying details and donors' or clients' information is never included."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "autonomous-organizations",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

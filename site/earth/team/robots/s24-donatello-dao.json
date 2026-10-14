@@ -1,0 +1,280 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-docent",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide stewards along the Charter Hall exhibits, gesturing at each charter panel and narrating the contribution model.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/charter_exhibit_index",
+     "/speech_state",
+     "/cmd_vel"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Sloping hilltop terrace of Piazzale Michelangelo; smooth stone paving with tourists, low exhibit plinths and balustrade edges to avoid.",
+   "success": [
+    "Visits all 5 exhibit waypoints in order",
+    "Maintains >=0.5 m clearance from plinths",
+    "Speech segment per exhibit completes before moving on"
+   ],
+   "safety_stops": [
+    "E-stop on human within 0.3 m",
+    "Stop if localization covariance exceeds 0.5 m",
+    "Kneel and pause on battery below 15%"
+   ],
+   "human_in_loop": "A steward approves the final tour script and pacing before public sessions.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoint_reached",
+     "min_clearance_m",
+     "speech_completed",
+     "localization_cov",
+     "steward_rating"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-doc-scout",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Patrol lab benches carrying printed research digests to each synthesis workstation on schedule.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/scan",
+     "/package_delivery_status",
+     "/cmd_vel"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Indoor lab flooring with cable runs, chair legs and rolling carts between workstations; doorway thresholds.",
+   "success": [
+    "Delivers digest to each of 4 stations",
+    "Zero collisions (contact force threshold 0 N)",
+    "Completes round within 10 min"
+   ],
+   "safety_stops": [
+    "Stop on obstacle <0.4 m from lidar",
+    "Stop on tilt >20 deg",
+    "Abort delivery if station occupant not confirmed"
+   ],
+   "human_in_loop": "A researcher confirms receipt at each station and flags misfiled digests.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "station_id",
+     "delivery_ok",
+     "collisions",
+     "round_duration_s",
+     "recipient_confirm"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-patrol-escort",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Escort stewards between debate pods and the voting booth area, displaying active proposal summaries on body screen.",
+   "ros": {
+    "action": "/follow_path",
+    "topics": [
+     "/odom",
+     "/proposal_display_state",
+     "/people_detections",
+     "/spot_status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Open forum floor with tiered seating steps, podium steps and grouped seating pods; uneven stone-look flooring at terrace threshold.",
+   "success": [
+    "Maintains 1 m escort offset from lead steward",
+    "No step-edge violations (kerb detector silent)",
+    "Proposal summary updates within 5 s of topic change"
+   ],
+   "safety_stops": [
+    "Sit down if steward signal lost >3 s",
+    "Refuse stair descent without operator override",
+    "Stop on any human within 0.5 m in path"
+   ],
+   "human_in_loop": "Steward triggers each escort leg and can halt the robot verbally at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "escort_offset_err_m",
+     "step_events",
+     "display_lag_s",
+     "halts",
+     "steward_cmd_ack"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-manipulator-restock",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Restock task-routing consumables (printed task cards, name badges) from supply crate to deck organizer slots.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrench",
+     "/joint_states",
+     "/camera/color/image_raw",
+     "/task_card_stock"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed deck workstation; crate on table with badge holders and card stacks; cable-free clear table surface but varying card stack heights.",
+   "success": [
+    "Picks and places 12 items with >=95% placement accuracy",
+    "Gripper force within 20-40 N band",
+    "Zero dropped items"
+   ],
+   "safety_stops": [
+    "Stop if external wrench >60 N",
+    "Pause on human hand in workspace via camera",
+    "Halt if any joint exceeds velocity limit 150%"
+   ],
+   "human_in_loop": "Deck operator confirms the pick list and signs off completed restock.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "items_placed",
+     "placement_err_mm",
+     "grip_force_n",
+     "drops",
+     "operator_signoff"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-survey",
+   "robot": "clearpath-husky-a200",
+   "zone": "Progress Observatory",
+   "goal": "Map the Progress Observatory gallery and record QR-tagged outcome boards into the metric map for progress dashboards.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/scan",
+     "/odom",
+     "/tag_detections",
+     "/map_metadata"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Wide gallery aisles on hilltop terrace level; occasional rain-slick stone at open edge, display plinths and stanchion ropes.",
+   "success": [
+    "Coverage >=90% of walkable aisle area",
+    "Detects and georeferences all QR boards (>=8)",
+    "Map drift <0.2 m over loop closure"
+   ],
+   "safety_stops": [
+    "Stop on slope >15 deg",
+    "Stop at terrace edge marker line",
+    "Pause in heavy rain per weather topic"
+   ],
+   "human_in_loop": "Curator verifies georeferenced board IDs before dashboard publication.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "coverage_pct",
+     "boards_detected",
+     "loop_drift_m",
+     "rain_stop_events",
+     "curator_verify"
+    ]
+   }
+  },
+  {
+   "id": "terrace-aerial-panorama-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a lawnmower-pattern scan above the terrace capturing panorama imagery linking DAO zones to the Florence skyline context.",
+   "ros": {
+    "action": "/follow_path",
+    "topics": [
+     "/cf_pos",
+     "/cf_vel",
+     "/camera/image_raw",
+     "/battery_voltage"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open-air hilltop terrace ~100 m above the Arno; gusty mediterranean wind, cypress trees, balustrade and monument flags as obstructions.",
+   "success": [
+    "Completes full grid pattern within 12 min",
+    "Position tracking error <0.3 m RMS",
+    "Imagery covers all 5 zone entry points"
+   ],
+   "safety_stops": [
+    "Land immediately if wind >8 m/s",
+    "Return-to-home on battery <3.7 V",
+    "Avoid no-fly cylinder around monument flagpole"
+   ],
+   "human_in_loop": "Safety pilot approves flight plan and can trigger manual RTH at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "path_completion",
+     "pos_rms_err_m",
+     "wind_mps",
+     "battery_min_v",
+     "pilot_approval",
+     "zone_coverage"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-arm-demo",
+   "robot": "franka-fr3",
+   "zone": "Proposal Forum",
+   "goal": "Demonstrate collaborative drafting by physically sorting proposal cards into 'for-debate' and 'needs-revision' trays during forum sessions.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/joint_states",
+     "/franka_state",
+     "/camera/depth/image_raw",
+     "/card_sort_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Forum table surface with card stacks, tray dividers and occasional reaching hands from seated participants.",
+   "success": [
+    "Sorts >=10 cards with >=90% correct tray",
+    "Impedance-mode contact forces <10 N",
+    "Zero hard collisions with hands (reflex triggers count)"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact >10 N",
+    "Pause when hand detected within 15 cm of gripper",
+    "Stop if joint torque limit reached"
+   ],
+   "human_in_loop": "Participants may override any card's sort decision; moderator confirms session end state.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "cards_sorted",
+     "sort_accuracy",
+     "max_contact_n",
+     "reflex_events",
+     "overrides",
+     "moderator_confirm"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s24-donatello-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

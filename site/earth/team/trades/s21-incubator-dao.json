@@ -1,0 +1,385 @@
+{
+ "scenarios": [
+  {
+   "id": "tower-crane-pad-prep",
+   "trade": "operating-eng",
+   "zone": "Operations Deck",
+   "task": "Grade and compact the crane pad on a tight Kendall Square infill lot between occupied lab buildings.",
+   "hazards": [
+    "swing radius over public sidewalk",
+    "underground utilities",
+    "struck-by from equipment",
+    "noise"
+   ],
+   "ppe": [
+    "hard hat",
+    "hi-vis vest",
+    "steel-toe boots",
+    "hearing protection"
+   ],
+   "steps": [
+    "Confirm utility markouts with surveyor before cutting",
+    "Set grade stakes per site plan",
+    "Strip and stockpile topsoil away from swing radius",
+    "Compact lift in 8-inch passes",
+    "Verify compaction with nuclear gauge",
+    "Flag pedestrian walkway before crane delivery"
+   ],
+   "rubric": [
+    {
+     "axis": "utility_verification",
+     "pass_if": "Confirms markouts before any earthwork begins"
+    },
+    {
+     "axis": "compaction_quality",
+     "pass_if": "Compaction meets spec in documented lifts"
+    },
+    {
+     "axis": "public_protection",
+     "pass_if": "Pedestrian path protected before equipment moves"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows utility-mapping sensor sled across pad area and logs compaction test locations for the operator."
+  },
+  {
+   "id": "lab-feeder-pull",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Pull new feeder conduit from switchgear to lab benches in an occupied research building.",
+   "hazards": [
+    "energized panels nearby",
+    "conduit burns from rope friction",
+    "overhead work",
+    "trip hazards"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "insulated gloves",
+    "cut-resistant gloves"
+   ],
+   "steps": [
+    "Lock out and tag the target panel",
+    "Verify zero energy with meter",
+    "Set up wire trolley and lubricant",
+    "Pull conductors in stages with matched pullers",
+    "Torque lugs and phase-tape ends",
+    "Megger test before re-energizing",
+    "Remove locks and document test results"
+   ],
+   "rubric": [
+    {
+     "axis": "loto",
+     "pass_if": "Applies and verifies lockout before touching conductors"
+    },
+    {
+     "axis": "pull_technique",
+     "pass_if": "Uses lubricant and staged pulls without damaging insulation"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Megger test passes and is recorded"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds wire off the reel at controlled tension to reduce pinch injuries at the pull point."
+  },
+  {
+   "id": "charter-hall-glazing",
+   "trade": "glaziers",
+   "zone": "Charter Hall",
+   "task": "Set a structural glass wall panel on the Charter Hall atrium facing the street.",
+   "hazards": [
+    "glass handling and breakage",
+    "wind load during set",
+    "fall from lift",
+    "crushed-by swing"
+   ],
+   "ppe": [
+    "hard hat",
+    "cut-resistant gloves",
+    "safety glasses",
+    "harness in lift"
+   ],
+   "steps": [
+    "Inspect panel edges and vacuum cups",
+    "Rig panel with four-point suction frame",
+    "Check wind speed against lift chart",
+    "Signal crane operator on slow pick",
+    "Guide and set panel into prepared frame",
+    "Install temporary setting blocks and wedges",
+    "Clean up glass slurry and debris"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging_check",
+     "pass_if": "Inspects cups and rigging before the pick"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Maintains clear standardized signals with operator"
+    },
+    {
+     "axis": "securement",
+     "pass_if": "Panel temporarily blocked before rigging release"
+    }
+   ],
+   "minutes": 75,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "proposal-forum-hvac",
+   "trade": "hvacr",
+   "zone": "Proposal Forum",
+   "task": "Retrofit a rooftop VAV unit serving the Proposal Forum without interrupting building occupancy.",
+   "hazards": [
+    "roof edge exposure",
+    "refrigerant handling",
+    "live electrical inside unit",
+    "heat stress"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "cut-resistant gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Rig warning line 6 feet from roof edge",
+    "Isolate and lock out unit power and refrigerant",
+    "Recover refrigerant into certified cylinder",
+    "Replace actuator and clean coils",
+    "Pressure test and evacuate circuit",
+    "Recharge, verify airflow, and commission",
+    "Complete refrigerant log sheet"
+   ],
+   "rubric": [
+    {
+     "axis": "fall_protection",
+     "pass_if": "Warning line set before work at edge"
+    },
+    {
+     "axis": "refrigerant_compliance",
+     "pass_if": "Recovery and logging follow EPA procedures"
+    },
+    {
+     "axis": "commissioning",
+     "pass_if": "Airflow readings match design before handover"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries tools and sensors across rooftop and monitors refrigerant leak alarms at the unit."
+  },
+  {
+   "id": "sprinkler-rise-install",
+   "trade": "fire-sprinkler",
+   "zone": "Progress Observatory",
+   "task": "Install a new sprinkler riser and branch lines in the Progress Observatory fit-out.",
+   "hazards": [
+    "overhead drilling overhead occupants",
+    "pipe drops",
+    "pressure testing",
+    "working from ladder"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "gloves",
+    "dust mask"
+   ],
+   "steps": [
+    "Coordinate shutdown with building engineer",
+    "Hydrostatic-test existing tie-in point",
+    "Cut and groove pipe per shop drawings",
+    "Hang mains with seismic bracing",
+    "Install branch lines and heads per coverage drawings",
+    "Pressure test at 200 psi for 2 hours",
+    "Flush and inspect with fire marshal"
+   ],
+   "rubric": [
+    {
+     "axis": "coordination",
+     "pass_if": "Shutdown coordinated before tie-in work"
+    },
+    {
+     "axis": "seismic_bracing",
+     "pass_if": "Bracing installed per drawings before test"
+    },
+    {
+     "axis": "test_documentation",
+     "pass_if": "2-hour test recorded and witnessed"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "charles-river-outfall",
+   "trade": "wastewater",
+   "zone": "Operations Deck",
+   "task": "Inspect and repair a storm outfall line discharging to the Charles River bank.",
+   "hazards": [
+    "confined space entry",
+    "hydrogen sulfide",
+    "river current at access",
+    "biological hazards"
+   ],
+   "ppe": [
+    "full-body harness",
+    "gas monitor",
+    "waterproof boots",
+    "gloves",
+    "face shield"
+   ],
+   "steps": [
+    "Obtain confined space permit and vent line",
+    "Test atmosphere top-down before entry",
+    "Set tripod retrieval system and attendant",
+    "Enter with continuous gas monitoring",
+    "Clear debris and patch joint with hydraulic cement",
+    "Withdraw and close permit",
+    "Decontaminate gear before leaving site"
+   ],
+   "rubric": [
+    {
+     "axis": "permit_system",
+     "pass_if": "Permit, attendant, and retrieval set before entry"
+    },
+    {
+     "axis": "atmosphere",
+     "pass_if": "Continuous monitoring active throughout entry"
+    },
+    {
+     "axis": "river_safety",
+     "pass_if": "Access point secured against current"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Performs initial visual inspection and gas reading deep in the outfall before human entry."
+  },
+  {
+   "id": "site-survey-baseline",
+   "trade": "surveyors",
+   "zone": "Operations Deck",
+   "task": "Establish baseline and layout for a new lab building among existing Kendall Square structures.",
+   "hazards": [
+    "traffic exposure on urban streets",
+    "trip hazards on equipment",
+    "laser exposure",
+    "weather"
+   ],
+   "ppe": [
+    "hi-vis vest",
+    "hard hat",
+    "safety glasses",
+    "sturdy boots"
+   ],
+   "steps": [
+    "Recover and verify existing control monuments",
+    "Set up total station over primary point",
+    "Backsight on secondary control",
+    "Layout building corners and offset lines",
+    "Hub and tack critical points",
+    "Log all shots and check closures",
+    "Mark utilities observed during traverse"
+   ],
+   "rubric": [
+    {
+     "axis": "control_verification",
+     "pass_if": "Checks two monuments before layout"
+    },
+    {
+     "axis": "closure",
+     "pass_if": "Traverse closure within tolerance"
+    },
+    {
+     "axis": "street_safety",
+     "pass_if": "Crew positioned off travel lanes with cones set"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "bitcraze-crazyflie-2-1-plus",
+   "robot_role": "Flies a quick photo pass to map surface conditions and obstructions before ground layout."
+  },
+  {
+   "id": "riggers-lab-chiller",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and set a 12-ton chiller into a mechanical courtyard surrounded by active buildings.",
+   "hazards": [
+    "critical pick over occupied space",
+    "load drift",
+    "crushed-by",
+    "underground vault loading"
+   ],
+   "steps": [
+    "Review lift plan and weight certificates",
+    "Verify crane charts and matting over vault",
+    "Inspect slings, shackles, and spreader bar",
+    "Tag lines on both ends of load",
+    "Execute pick per lift plan signals",
+    "Set, level, and release rigging",
+    "Inspect gear and tag for return"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "hi-vis vest",
+    "steel-toe boots"
+   ],
+   "rubric": [
+    {
+     "axis": "lift_plan",
+     "pass_if": "Reviews and follows approved lift plan"
+    },
+    {
+     "axis": "gear_inspection",
+     "pass_if": "All rigging inspected and rated before pick"
+    },
+    {
+     "axis": "ground_bearing",
+     "pass_if": "Vault loading verified with matting placed"
+    }
+   ],
+   "minutes": 120,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Kendall Square Union Trades Readiness Card",
+  "requires": [
+   "tower-crane-pad-prep",
+   "lab-feeder-pull",
+   "charter-hall-glazing",
+   "proposal-forum-hvac",
+   "sprinkler-rise-install",
+   "charles-river-outfall",
+   "site-survey-baseline",
+   "riggers-lab-chiller"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s21-incubator-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

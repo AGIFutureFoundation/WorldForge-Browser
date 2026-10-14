@@ -1,0 +1,256 @@
+{
+ "title": "Lyka DAO (Series 26) — Wolf Country Governance Cell",
+ "summary": "An agent-managed, human-governed DAO world set at the International Wolf Center in Ely, Minnesota, on the edge of the Boundary Waters. Six agents run research and operations across five districts while stewards hold the final vote.",
+ "biome": "temperate-forest",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "International Wolf Center (Ely, Minnesota)",
+   "buildings": [
+    {
+     "name": "Charter Lodge",
+     "use": "charter display and contribution model registry",
+     "floors": 1
+    },
+    {
+     "name": "Outcome Ledger Cabin",
+     "use": "measurable-outcomes boardroom",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Model Wall",
+    "Outcome Ledger Hall",
+    "Steward Bench"
+   ],
+   "props": [
+    "framed charter scroll",
+    "contribution ledger desk",
+    "pack-observation telescope",
+    "wolf-track floor inlays",
+    "mission plaque",
+    "wooden governance bench"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Ely Memorial High School",
+   "buildings": [
+    {
+     "name": "Synthesis Lab",
+     "use": "evidence monitoring and research summarizing",
+     "floors": 2
+    },
+    {
+     "name": "Field Notes Annex",
+     "use": "archive of monitored developments",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Wall Room",
+    "Synthesis Studio",
+    "Archive Stacks",
+    "Pack Radio Room"
+   ],
+   "props": [
+    "evidence corkboard",
+    "shortwave radio",
+    "field notebooks",
+    "specimen drawers",
+    "Boundary Waters survey maps",
+    "microfiche reader"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Sheridan Street Delicatessen",
+   "buildings": [
+    {
+     "name": "Proposal Hall",
+     "use": "agent-drafted proposals debated and voted by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Bay",
+    "Debate Chamber",
+    "Human Vote Hall"
+   ],
+   "props": [
+    "proposal drop slots",
+    "debate lectern",
+    "hand-raise tally board",
+    "sealed ballot chest",
+    "quorum bell"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Whiteside Park",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "task routing and working-group coordination",
+     "floors": 1
+    },
+    {
+     "name": "Collaborator Cabin",
+     "use": "scouting experts and partners",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Board Room",
+    "Working Group Huddle",
+    "Scout Map Room"
+   ],
+   "props": [
+    "task routing board",
+    "working-group banners",
+    "collaborator rolodex",
+    "radio dispatch desk",
+    "snowshoe rack",
+    "trail markers"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Miners Lake",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "tracking outcomes against the charter",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Tracking Gallery",
+    "Signal Balcony",
+    "Milestone Vault"
+   ],
+   "props": [
+    "milestone timeline rail",
+    "progress dial cluster",
+    "bronze wolf statue",
+    "signal lantern",
+    "hand-cranked tally machine"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "white spruce",
+   "balsam fir",
+   "paper birch",
+   "quaking aspen",
+   "red pine",
+   "black ash"
+  ],
+  "shrubs": [
+   "beaked hazelnut",
+   "bush honeysuckle",
+   " Labrador tea",
+   " chokecherry"
+  ],
+  "flowers": [
+   "bunchberry",
+   "pink ladyslipper",
+   "wild columbine",
+   "large-leaved aster"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "05:15",
+  "sunset_local": "20:45"
+ },
+ "court": {
+  "name": "The Pack Circle",
+  "style": "timber-and-stone council ring facing the wolf enclosures",
+  "why_here": "Like a wolf pack, the DAO routes work to agents while the human stewards keep final say — a circle fits Ely's wolf-watching home."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the unfinished charter in the Ledger Cabin",
+    "Ask the Evidence Monitor to gather candidate focus areas",
+    "Review the synthesis brief with the stewards",
+    "Return the chosen focus to the Charter Ledger"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Proposal",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect three evidence cards from the Synthesis Studio",
+    "Have the Proposal & Grant Drafter draft a proposal",
+    "Debate the draft in the Debate Chamber",
+    "Ring the quorum bell for the human vote (agents never enact)"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Pick up routed tasks from the Routing Board",
+    "Recruit two collaborators via the Scout Map Room",
+    "Deliver task completion tokens to the Progress Tracker",
+    "Log the milestone on the timeline rail"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Track the Pack",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Observe the wolf pack from the Signal Balcony",
+    "Record outcome readings on the progress dials",
+    "Compare readings to the charter's measurable outcomes",
+    "Report the milestone in Charter Hall"
+   ],
+   "xp": 30
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s26-lyka-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

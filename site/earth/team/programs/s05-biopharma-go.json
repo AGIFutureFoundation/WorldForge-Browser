@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents on the Line: Governing Automation at Basel's Pharma Campus",
+   "grade_or_level": "Workforce / continuing education (adult learners)",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO assigns tasks and routes work",
+    "Identify which decisions must stay in human hands (votes, treasury, appointments)",
+    "Practice drafting a worker proposal for the Proposal Forum",
+    "Assess evidence summaries produced by AI agents"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter and contribution model; map which powers are reserved for humans and why that matters for workers",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play the Task Router: groups route sample tasks to working groups and flag risks of automated scheduling",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare two Evidence Monitor summaries; practice checking claims against sources and noting gaps",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft and debate a workplace proposal; hold a mock human final vote with agents only advising",
+     "minutes": 75
+    }
+   ],
+   "data_shared": "Anonymized task-routing exercise choices and mock-vote tallies, contributed as labeled training examples for shared routing and deliberation models.",
+   "consent": "Adult learners sign an opt-in consent form before the session; no names, employers, or personal identifiers collected; anyone may opt out of data sharing and still participate."
+  },
+  {
+   "audience": "k12",
+   "title": "River, Molecules, and Robots: A Day at the Novartis Campus DAO",
+   "grade_or_level": "Middle school (ages 11-14)",
+   "outcomes": [
+    "Describe how a pharma campus by the Rhine connects research, production and river",
+    "Explain that AI agents help but people decide in a DAO",
+    "Build a simple evidence summary from provided readings",
+    "Present a mini-proposal and vote as a class"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Story-based intro: what is this campus, what is a charter, and what jobs do agents do versus people",
+     "minutes": 30
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Small groups read short cards about a pharma topic and build a poster-sized evidence summary",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Sorting game: match sample tasks to agents or humans; discuss why some decisions stay human",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Each group pitches one mini-proposal; class debates and votes by show of hands",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized poster summaries and vote outcomes (no names, ages beyond grade band, or school identifiers) contributed to a shared civic-education example bank.",
+   "consent": "Guardian/parent consent forms required for all data sharing; only first-name-free artifacts uploaded; parents may withdraw consent at any time; no photos or personal data collected."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: NGO Program Design in an Agent-Managed DAO",
+   "grade_or_level": "Professional / NGO staff (intermediate)",
+   "outcomes": [
+    "Design a program around a charter's measurable outcomes",
+    "Use agent-generated research syntheses to inform intervention logic",
+    "Structure a grant proposal that humans, not agents, enact",
+    "Track and report progress against outcomes"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop mapping mission to measurable outcomes; teams draft an outcomes ladder for a health-access scenario",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Critique an Evidence Monitor summary: identify gaps, biases, and missing local context an NGO would add",
+     "minutes": 50
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a grant proposal with the Proposal & Grant Drafter pattern; peer review before a human mock-vote",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple indicator dashboard and rehearse a progress report to stewards",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized outcomes ladders, proposal drafts, and peer-review comments contributed as training examples for shared proposal-drafting and evaluation models.",
+   "consent": "Staff opt in via organizational agreement plus individual consent; drafts anonymized before sharing; organizations may exclude client-related material entirely."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Mission Alignment Lab: Nonprofit Governance with Human-Reserved Powers",
+   "grade_or_level": "Nonprofit leadership and board members (introductory)",
+   "outcomes": [
+    "Explain agent-managed, human-governed structures to a board",
+    "Map human-reserved powers onto nonprofit bylaws",
+    "Draft a decision rights charter for AI assistance",
+    "Plan a stewardship and accountability routine"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-level briefing: read the charter together and identify the six human-reserved actions",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Simulation: agents draft proposals, board debates and votes; reflect on where automation must stop",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Draft a decision-rights matrix for your own nonprofit: which tasks agents may route, which humans must decide",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Design a quarterly progress-review ritual with indicators and steward check-ins",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized decision-rights matrices and governance simulation outcomes contributed to a shared governance-pattern library for other nonprofits.",
+   "consent": "Organizations consent as entities; individual participants opt in separately; all artifacts stripped of organization names and beneficiary data before sharing."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s05-biopharma-go",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

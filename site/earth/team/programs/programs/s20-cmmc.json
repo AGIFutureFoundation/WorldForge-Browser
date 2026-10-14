@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Cybersecurity Maturity for the Defense Workforce",
+   "grade_or_level": "Apprentice and journeyman defense-contract workers",
+   "outcomes": [
+    "Explain what CMMC maturity levels protect in DoD supply chains",
+    "Identify phishing and credential risks on the shop floor",
+    "Practice raising compliance concerns through proper channels"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the charter's mission to workers' daily tasks; discuss why AI governance and data protection are shared stakes beside the Potomac's defense corridor.",
+     "minutes": 30
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Read an Evidence Monitor summary on supply-chain cyber risks; small groups annotate real-world breach patterns affecting contractors.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a mock worker-safety-and-cyber proposal with the Proposal & Grant Drafter; humans debate and vote; agent never enacts.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review Progress Tracker metrics on training completion; workers set personal and local goals for the next quarter.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Anonymized quiz scores and common phishing-identification error patterns, aggregated with no names, badges, or employer identifiers.",
+   "consent": "Voluntary opt-in with signed acknowledgment; union stewards briefed; any participant may withdraw and have contributions deleted at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Agents and People: Governing Technology Together",
+   "grade_or_level": "Grades 6-8",
+   "outcomes": [
+    "Describe how an agent-managed, human-governed DAO works",
+    "Distinguish tasks agents do from decisions reserved for humans",
+    "Practice respectful debate and voting on a class proposal"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the charter's six human-reserved actions; students sort scenario cards into 'agent can do' vs 'only people decide' piles.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare an Evidence Monitor summary with a news article; discuss what makes evidence trustworthy and summaries useful.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Students draft a class proposal (e.g., screen-time policy) modeled on the Proposal Forum; debate and take a final vote themselves.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Play the Task Router game: route paper task cards to the right working group and see how coordination works between votes.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Anonymous class-level tallies of card-sort answers and vote outcomes only; no individual student responses recorded.",
+   "consent": "Guardian/parent signed consent required before participation; teachers collect media and data permissions; students may opt out of any activity without penalty; no personal identifiers stored."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Advocacy: Using Synthesized Research Responsibly",
+   "grade_or_level": "Professional NGO staff and program leads",
+   "outcomes": [
+    "Apply evidence-synthesis workflows to advocacy briefs",
+    "Understand human-governed decision cycles in DAO structures",
+    "Draft funding proposals for human review"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop on turning Evidence Monitor and Research Synthesis Agent outputs into one-page advocacy briefs, with citation discipline.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Study the proposal cycle: agents draft, people debate and enact; teams outline a grant request skeleton for their own issue area.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Collaborator-mapping exercise inspired by the Collaborator Scout; build a stakeholder grid for a chosen campaign.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define measurable outcomes for a pilot program and learn how the Progress Tracker reports against them.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized brief-quality rubric scores and common citation gaps, aggregated across cohorts without organizational names.",
+   "consent": "Organizational memorandum of understanding plus individual opt-in; data contributed only in aggregate; withdrawal honored on request."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Mission Alignment for Nonprofit Teams",
+   "grade_or_level": "Nonprofit staff, board members, and volunteers",
+   "outcomes": [
+    "Connect organizational mission to measurable public-good outcomes",
+    "Run transparent, human-decided governance simulations",
+    "Build simple progress dashboards for programs"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Compare the DAO charter's mission and contribution model to the nonprofit's own mission statement; draft two measurable outcomes.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Mock decision cycle: an agent-prepared draft proposal is debated and decided entirely by participants, mirroring human-only final votes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Form working groups and route real tasks using the Task Router model; reflect on coordination without bottlenecks.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a lightweight progress tracker for one program; define indicators the board can review each quarter.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized outcome-metric templates and aggregated self-assessment ratings, stripped of organization names and beneficiary data.",
+   "consent": "Board-approved participation policy; individual written opt-in; no beneficiary data ever collected; removal from shared datasets on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s20-cmmc",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

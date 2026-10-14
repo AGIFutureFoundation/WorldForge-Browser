@@ -1,0 +1,149 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Cloud Forest Stewardship: Worker-Led Ecology Monitoring",
+   "grade_or_level": "Adult vocational / continuing education",
+   "outcomes": [
+    "Explain how the Ecology DAO's agent-managed, human-governed model applies to environmental work safety and land stewardship",
+    "Interpret evidence summaries produced in the Research Synthesis Lab",
+    "Draft a workplace or community ecology proposal for the Proposal Forum",
+    "Identify which decisions stay human-reserved in the DAO charter"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided reading of the DAO charter and reserved-for-humans list; small-group mapping of how worker voice fits an agent-managed DAO.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Hands-on with an Evidence Monitor sample: learners evaluate a summarized biodiversity claim from Monteverde Cloud Forest Reserve and check it against sources.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play a working-group task routing exercise: teams receive tasks from the Task Router simulation and assign roles, mirroring union task allocation.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a short ecology proposal with the Proposal & Grant Drafter framework; proposals are debated but never enacted by the group, honoring human-only enactment.",
+     "minutes": 75
+    }
+   ],
+   "data_shared": "Anonymized proposal drafts and task-routing decisions (no names, no employer identifiers) contributed as training examples for the DAO's proposal and coordination shared models.",
+   "consent": "Participation is voluntary with written informed consent; learners may opt out of data sharing at any time and have their contributions removed on request, per the union education agreement."
+  },
+  {
+   "audience": "k12",
+   "title": "Canopy Citizens: Kids Governing a Cloud Forest DAO",
+   "grade_or_level": "Middle school (grades 6-8)",
+   "outcomes": [
+    "Describe why Monteverde's cloud forest is a biodiversity hotspot",
+    "Explain the difference between agent work and human-only decisions in a DAO",
+    "Practice evidence-based discussion and voting on a class proposal"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Story-based tour of the Ecology DAO charter: students draw the DAO's zones and mark which five decisions only humans can make.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students act as junior Evidence Monitors: read a simplified species-summary card about Monteverde cloud-forest birds and flag what is fact vs. guess.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Class builds a wall chart of measurable outcomes; students track their own learning progress the way the Progress Tracker agent tracks the charter.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Class debate and secret-ballot vote on one simple conservation proposal drafted with the Proposal & Grant Drafter template; teacher enacts the result.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized class-level results only (aggregate quiz scores and vote tallies, no individual names or IDs) to help improve shared educational models.",
+   "consent": "Signed guardian/parent consent is required before participation; guardians receive a plain-language data notice and may withdraw their child's data at any time; no individual student data is collected."
+  },
+  {
+   "audience": "ngo",
+   "title": "NGO Observer Program: Partnering with an Agent-Managed Ecology DAO",
+   "grade_or_level": "Professional / organizational staff training",
+   "outcomes": [
+    "Map NGO programs onto the DAO's zones and agent roles",
+    "Assess how agents can support, but never replace, human governance in joint conservation work",
+    "Design a collaboration proposal respecting the reserved-for-humans list"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop comparing the NGO's own governance to the DAO charter; participants identify which decisions in a joint project must remain with human boards and voters.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Staff practice briefing stewards: turn a Research Synthesis Agent output on tropical biodiversity into a one-page decision brief for their leadership.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulation with the Collaborator Scout role: identify skill sets needed for a Monteverde-linked working group and draft a task-routing plan.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams co-draft a grant proposal using the Proposal & Grant Drafter structure; peer review focuses on clarity of human decision points.",
+     "minutes": 75
+    }
+   ],
+   "data_shared": "Anonymized briefing templates and proposal drafts (organization names and staff identifiers removed) contributed to shared models that improve agent drafting quality.",
+   "consent": "Organizational memorandum of understanding plus individual staff consent; a data-sharing annex specifies anonymization, purpose limits, and the right to withdraw organizational data."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Steward Readiness: Nonprofit Leaders in the Ecology DAO",
+   "grade_or_level": "Executive / board-level professional development",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' principle to boards and donors",
+    "Evaluate measurable outcome frameworks for an ecology charter",
+    "Prepare stewardship practices that keep final votes, treasury and amendments human-controlled"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Executive seminar on the charter and the six human-reserved actions; leaders draft a board policy stating which decisions will never be delegated to agents.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Leaders review sample Progress Tracker dashboards and workshop how to set honest, measurable biodiversity outcomes without inventing statistics.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Mock decision cycle: agents present drafted proposals; nonprofit leaders debate and hold a formal human vote, practicing final_vote responsibility.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Capstone: leaders design a working-group structure for a cloud-forest education initiative, defining what agents route and what humans approve.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance templates and vote-outcome patterns (no organizational or personal identifiers) shared to strengthen the DAO's steward-training models.",
+   "consent": "Institutional consent at registration and individual consent for any contributed materials; anonymization is verified before sharing, and contributors can request deletion at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "ecology-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

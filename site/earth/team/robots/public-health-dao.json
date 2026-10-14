@@ -1,0 +1,324 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter exhibit, gesturing at each charter panel and stopping at human-reserved action signage.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/planned_path",
+     "/speech_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat paved plaza around the Broad Street pump replica; watch for curb edges and the pump memorial base.",
+   "success": [
+    "Visits all 5 exhibit waypoints in order",
+    "Maintains >=0.4 m clearance from the pump replica",
+    "Speech/gesture completes within 300 s"
+   ],
+   "safety_stops": [
+    "E-stop if obstacle <0.3 m ahead",
+    "Stop speech if a visitor blocks the path",
+    "Battery <20% triggers return-to-dock"
+   ],
+   "human_in_loop": "A steward approves the tour script and any updates to charter text before tours begin.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoints_reached",
+     "min_clearance_m",
+     "tour_duration_s",
+     "obstacle_stops",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "pump-replica-memorial-inspection",
+   "robot": "unitree-go2",
+   "zone": "Charter Hall",
+   "goal": "Circle the Broad Street pump replica, capturing imagery of plaque text and structural condition for the Progress Tracker.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/odom",
+     "/camera/image_raw",
+     "/scan",
+     "/inspection/result"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Cobblestone-style paving around the memorial; the cast-iron pump body is the primary obstacle to avoid contact with.",
+   "success": [
+    "Completes 360-degree orbit at 1 m radius",
+    "Plaque photos readable (blur metric below threshold)",
+    "Zero contact events with the pump"
+   ],
+   "safety_stops": [
+    "Abort if slip estimate exceeds threshold on cobbles",
+    "Stop if a pedestrian enters 1 m bubble",
+    "Halt imaging if operator pause requested"
+   ],
+   "human_in_loop": "A person reviews and approves the inspection summary before it is published to the Progress Observatory.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "orbit_complete",
+     "min_distance_to_pump_m",
+     "image_sharpness_score",
+     "slip_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "evidence-lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Fetch bound research summaries from indexed shelves and deliver them to the Evidence Monitor workstation.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth_registered",
+     "/joint_states",
+     "/move_base_simple/goal",
+     "/grasp/result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor lab flooring; shelf bases and rolling carts create narrow aisles requiring careful base planning.",
+   "success": [
+    "Picks 5 of 5 requested items",
+    "Drop rate below 5%",
+    "Delivery within 420 s"
+   ],
+   "safety_stops": [
+    "Release grasp if force exceeds limit",
+    "Stop if a human enters the workspace zone",
+    "Pause on lost localization >5 s"
+   ],
+   "human_in_loop": "A librarian-agent supervisor confirms item selection; only people may archive or discard records.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "items_picked",
+     "items_dropped",
+     "cycle_time_s",
+     "grasp_force_peak_n",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-doc-courier",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Carry printed proposal drafts from the drafter station to the human review desk without performing any enactment steps.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/payload/state",
+     "/plan",
+     "/terrain_map"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Thresholds between indoor zones and the outdoor plaza; wet London pavement near the pump increases slip risk.",
+   "success": [
+    "Delivers payload to review desk within 240 s",
+    "Payload upright the whole trip (tilt <15 deg)",
+    "Route keeps >=0.5 m from stair edges"
+   ],
+   "safety_stops": [
+    "Self-right and stop on slip detected",
+    "Refuse to hand off except at the review desk",
+    "Stop in heavy rain per operator weather flag"
+   ],
+   "human_in_loop": "A human reviewer accepts each delivery and casts any final vote; the robot never enacts proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "delivery_success",
+     "max_tilt_deg",
+     "duration_s",
+     "slip_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-display-calibration",
+   "robot": "universal-robots-ur10e",
+   "zone": "Progress Observatory",
+   "goal": "Adjust the height and angle of the progress dashboard panel mount so metrics displays align for seated and standing viewers.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/execution_status",
+     "/safety_scaled_vel"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed pedestal mount beside the display wall; cable run behind the panel is a pinch hazard.",
+   "success": [
+    "Panel angle within 2 deg of target",
+    "Applied wrench below 40 N throughout",
+    "Cycle completes in under 180 s"
+   ],
+   "safety_stops": [
+    "Stop on force/torque threshold breach",
+    "Halt if a person enters the workspace envelope",
+    "Disable if joint speed exceeds scaled limit"
+   ],
+   "human_in_loop": "An operator approves target angles and confirms which metrics go on public display.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "angle_error_deg",
+     "peak_force_n",
+     "duration_s",
+     "estop_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-airspace-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Operations Deck",
+   "goal": "Fly a low-altitude scan of the Operations Deck overhead cable routing and report loose fixtures to the Task Router.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/range",
+     "/camera/image",
+     "/scan_result"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor ceiling clutter with lighting rigs and suspended signage; strong HVAC updrafts near vents to model.",
+   "success": [
+    "Covers 90% of planned scan volume",
+    "Holds position within 10 cm in hover",
+    "Returns to pad with >15% battery"
+   ],
+   "safety_stops": [
+    "Cut motors and land if position estimate diverges",
+    "Land if any human raises a hand within 1 m",
+    "Return home at 20% battery"
+   ],
+   "human_in_loop": "A person clears each flight and approves any maintenance ticket raised from findings.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "coverage_pct",
+     "hover_rms_error_m",
+     "battery_remaining_pct",
+     "min_human_distance_m",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "forum-precise-assembly-assist",
+   "robot": "franka-fr3",
+   "zone": "Proposal Forum",
+   "goal": "Assemble modular ballot-box podium hardware for the human voting station with sub-millimeter part placement.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/franka/joint_states",
+     "/camera/depth/color",
+     "/grasp/execute",
+     "/assembly_result"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Workbench surface with loose fasteners; parts tray edges constrain grasp approach vectors.",
+   "success": [
+    "8 of 8 parts placed within 1 mm tolerance",
+    "Zero dropped parts",
+    "Assembly completes within 600 s"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact force >10 N",
+    "Pause if hands detected in workspace",
+    "Stop if grasp confidence <0.7"
+   ],
+   "human_in_loop": "A steward verifies the podium and controls the voting hardware keys; the robot only assembles.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "parts_placed",
+     "placement_error_mm",
+     "dropped_parts",
+     "reflex_stops",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "outdoor-terrain-survey-husky",
+   "robot": "clearpath-husky-a200",
+   "zone": "Progress Observatory",
+   "goal": "Survey the plaza around the pump replica to map accessibility for steward site visits, logging surface types and gradients.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/husky/odom",
+     "/gps/fix",
+     "/terrain_class",
+     "/imu/data"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Mixed paved plaza with cobbles near the memorial, kerb drops at street edges, and pedestrian foot traffic typical of Soho.",
+   "success": [
+    "Covers the full plaza perimeter route",
+    "Terrain classification accuracy >=85% vs ground truth",
+    "Gradient map complete with no gaps >2 m"
+   ],
+   "safety_stops": [
+    "Stop for pedestrians within 2 m",
+    "Halt at kerb drops >10 cm",
+    "Return to base on GNSS loss >30 s"
+   ],
+   "human_in_loop": "A steward approves the published accessibility map before it informs any visit planning.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "route_completion_pct",
+     "terrain_accuracy",
+     "max_slope_deg",
+     "pedestrian_stops",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "public-health-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "scenarios": [
+  {
+   "id": "molecule-weld-inspection",
+   "trade": "welders",
+   "zone": "Operations Deck",
+   "task": "Weld inspection access on Molecule Man: rig scaffolding platform at the 30 m sculpture over the Spree to inspect corroded welds on the aluminum figure.",
+   "hazards": [
+    "fall from height over water",
+    "confined space between sculptural limbs",
+    "sharp corroded edges",
+    "wind load on suspended platform"
+   ],
+   "ppe": [
+    "full-body harness with double lanyard",
+    "welding helmet and leathers",
+    "cut-resistant gloves",
+    "non-slip boots",
+    "respirator for grinding dust"
+   ],
+   "steps": [
+    "Confirm permit-to-work and lockout of any riverside crane assist",
+    "Inspect harness, anchorage points and scaffold tags before ascent",
+    "Rig the suspended platform to engineered anchor points on the sculpture",
+    "Grind and clean suspect weld seams for visual inspection",
+    "Measure weld thickness and photograph defects for the report",
+    "Tag any failing seams and barricade below over the riverside path"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "100% tie-off with two lanyards while working over water"
+    },
+    {
+     "axis": "hot work control",
+     "pass_if": "Fire watch and extinguisher staged before any grinding"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Defect log with photos handed to foreman before end of shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Spot carries inspection camera and thickness gauge up the structure to pre-scan welds, reducing trips up the platform."
+  },
+  {
+   "id": "spree-bank-erosion-control",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Stabilize eroded Spree riverbank beside the Molecule Man sculpture footing after spring high water.",
+   "hazards": [
+    "drowning risk near water edge",
+    "soil collapse in undercut bank",
+    "hand injury from stone placement",
+    "variable weather"
+   ],
+   "ppe": [
+    "high-visibility vest",
+    "work gloves",
+    "rubber boots",
+    "hard hat"
+   ],
+   "steps": [
+    "Check the bank undercut and mark the working limit line",
+    "Stage geotextile and riprap stone along the marked line",
+    "Lay geotextile filter fabric over the scoured slope",
+    "Place riprap by hand from the bank side, never wading",
+    "Compact and dress the surface, clear the site of debris"
+   ],
+   "rubric": [
+    {
+     "axis": "water safety",
+     "pass_if": "No worker enters the water; life ring staged on the bank"
+    },
+    {
+     "axis": "bank stability",
+     "pass_if": "Undercut area flagged and no one works below it"
+    },
+    {
+     "axis": "quality",
+     "pass_if": "Fabric fully covered with stone, no exposed fabric edges"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Husky ferries stone and fabric along the muddy bank path so laborers stay off soft ground near the water."
+  },
+  {
+   "id": "spree-tour-boat-dock-electrical",
+   "trade": "electricians",
+   "zone": "Proposal Forum",
+   "task": "Replace corroded dockside lighting conduits and pull new wiring for the tour-boat dock serving Molecule Man visitors.",
+   "hazards": [
+    "electrocution near water",
+    "arc flash at feed panel",
+    "slips on wet dock planking",
+    "crushing between boat and dock"
+   ],
+   "steps": [
+    "Isolate the dock lighting circuit and apply lockout-tagout",
+    "Verify zero energy with a tested meter at the panel",
+    "Remove corroded conduit and fittings along the dock edge",
+    "Install new sealed conduit and pull THWN conductors",
+    "Terminate, megger test, and re-energize under permit",
+    "Function-test all dock lights at dusk"
+   ],
+   "ppe": [
+    "arc-rated clothing",
+    "insulated gloves rated for the panel voltage",
+    "rubber-soled boots",
+    "safety glasses"
+   ],
+   "rubric": [
+    {
+     "axis": "lockout-tagout",
+     "pass_if": "Personal locks applied and zero-energy verified before work"
+    },
+    {
+     "axis": "wet-location wiring",
+     "pass_if": "All new fittings rated for wet location with drip loops"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Insulation resistance test passed before re-energizing"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sculpture-lighting-hvacr-chiller",
+   "trade": "hvacr",
+   "zone": "Progress Observatory",
+   "task": "Service the riverside chiller unit that cools the visitor information kiosk at the Molecule Man plaza.",
+   "hazards": [
+    "refrigerant exposure",
+    "electrical hazard at disconnect",
+    "rotating fan blades",
+    "hot compressor surfaces"
+   ],
+   "ppe": [
+    "safety glasses",
+    "cut-resistant gloves",
+    "hearing protection",
+    "electrical-rated gloves"
+   ],
+   "steps": [
+    "Lock out the chiller disconnect and verify de-energized",
+    "Recover refrigerant to a recovery cylinder per EPA rules",
+    "Clean condenser coils and clear debris from riverside intake",
+    "Replace the filter drier and check for leaks with detector",
+    "Evacuate system, weigh in charge, restart and log pressures"
+   ],
+   "rubric": [
+    {
+     "axis": "refrigerant handling",
+     "pass_if": "Recovery done with no venting and cylinder logged"
+    },
+    {
+     "axis": "LOTO",
+     "pass_if": "Disconnect locked and tagged before any panel opening"
+    },
+    {
+     "axis": "commissioning",
+     "pass_if": "Subcooling and superheat readings within manufacturer spec"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Go2 fetches tools and reads zone gauges so the tech keeps hands clear during coil cleaning."
+  },
+  {
+   "id": "molecule-aluminum-paint-refinish",
+   "trade": "painters",
+   "zone": "Charter Hall",
+   "task": "Spot-repair flaking protective coating on the lower limbs of the Molecule Man aluminum sculpture.",
+   "hazards": [
+    "fall from ladder or lift",
+    "solvent vapor inhalation",
+    "overspray into the Spree",
+    "lead or chromate in old coating"
+   ],
+   "ppe": [
+    "full-body harness in lift",
+    "organic vapor respirator",
+    "nitrile gloves",
+    "paint suit"
+   ],
+   "steps": [
+    "Set up exclusion zone and containment tarps along riverbank path",
+    "Test old coating for hazardous content before abrading",
+    "Abrade flaking areas with vacuum-shrouded tools",
+    "Wipe with solvent prep and mask adjacent surfaces",
+    "Apply primer and finish coat matching specified color",
+    "Inspect coverage, remove containment, dispose of waste properly"
+   ],
+   "rubric": [
+    {
+     "axis": "containment",
+     "pass_if": "No debris or overspray reaches the river or path"
+    },
+    {
+     "axis": "surface prep",
+     "pass_if": "All loose coating removed and edges feathered"
+    },
+    {
+     "axis": "environmental",
+     "pass_if": "Hazardous waste segregated and manifested"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "plaza-crane-sculpture-bolt-torque",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and position a mobile crane to re-torque structural bolts on an upper sphere joint of Molecule Man.",
+   "hazards": [
+    "crane tip-over on soft riverbank",
+    "suspended load swing over public path",
+    "pinch points during rigging",
+    "overhead utility proximity"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-visibility vest",
+    "leather gloves",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Verify ground bearing mats placed on soft bank soils",
+    "Complete lift plan and confirm exclusion zone over public path",
+    "Rig torque equipment basket with certified slings and tagline",
+    "Execute pick with ground crew guiding tagline",
+    "Barricade drop zone until torque work and lowering complete",
+    "Inspect rigging and stow before releasing barricades"
+   ],
+   "rubric": [
+    {
+     "axis": "lift plan",
+     "pass_if": "Written lift plan signed by foreman before setup"
+    },
+    {
+     "axis": "rigging inspection",
+     "pass_if": "All slings and hardware tagged and inspected before the pick"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "Path closed and signaler posted for full lift duration"
+    }
+   ],
+   "minutes": 100,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Spot performs pre-lift visual check of bolt access and ground mats from under the structure, keeping crew clear."
+  }
+ ],
+ "credential": {
+  "name": "Spree Riverside Structures Maintenance Qualification",
+  "requires": [
+   "molecule-weld-inspection",
+   "spree-bank-erosion-control",
+   "spree-tour-boat-dock-electrical",
+   "molecule-aluminum-paint-refinish",
+   "plaza-crane-sculpture-bolt-torque"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s11-molecular",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

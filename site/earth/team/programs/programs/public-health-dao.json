@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Mapping Health Hazards: From Broad Street to the Shop Floor",
+   "grade_or_level": "Workplace health and safety representatives, all industries",
+   "outcomes": [
+    "Explain how John Snow's Broad Street pump map linked data to public health action",
+    "Identify occupational health hazards and map them like an outbreak investigator",
+    "Draft a data-backed health proposal for steward or employer review"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the Broad Street Pump replica; read the DAO charter and discuss how mapped evidence stopped an 1854 outbreak and what a modern health-and-safety committee can learn from it.",
+     "minutes": 30
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use the Evidence Monitor's summaries to compare historical outbreak mapping with modern workplace hazard surveillance; learners annotate one synthesis brief.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Working groups draft a hazard-mitigation proposal with the Proposal & Grant Drafter; learners debate it and hold a mock human-only final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review how the Progress Tracker scores outcomes; each group commits to one measurable workplace indicator to track after the program.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised hazard-map sketches (hazard type, sector, shift pattern, no names or site identifiers) contributed to a shared occupational-health evidence base.",
+   "consent": "Union-led consent briefing and opt-in sign-off before any data entry; site and employer names stripped; right to withdraw data at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Detective Doctors: The Pump That Saved Soho",
+   "grade_or_level": "Ages 10-14 (Key Stages 3 / middle school)",
+   "outcomes": [
+    "Retell the story of the Broad Street pump and why mapping cases mattered",
+    "Collect and plot simple health data on a neighborhood map",
+    "Distinguish what agents may do versus what people decide in the DAO"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Story walk at the pump replica: learners act as 1854 health detectives, tallying 'cases' on a paper map of Soho streets.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Meet the Evidence Monitor agent; learners sort claim cards into 'evidence' and 'rumor' piles to see why synthesis matters.",
+     "minutes": 30
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Working groups route 'tasks' to the right agent helper, learning how the Task Router coordinates work between decisions.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Groups propose one school or neighborhood health improvement; the class debates and votes, mirroring human-only final decisions.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Classroom tally charts of activity versus symptoms (counts only, fully aggregated, no individual records) added to a shared lesson dataset.",
+   "consent": "Guardian/parent consent forms required before any shared data contribution; individual answers never recorded, only class totals; learners may opt out of the tally activity."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Action: Running Agent-Supported Health Campaigns",
+   "grade_or_level": "NGO program staff and field coordinators, professional level",
+   "outcomes": [
+    "Apply the agent-managed, human-governed model to a live public health campaign",
+    "Use synthesis briefs to ground campaign claims in evidence",
+    "Structure measurable outcomes that a Progress Tracker can report against"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Orientation on the charter's focus and measurable-outcome model; teams align one current NGO campaign to a charter-style outcome framework.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Hands-on with Evidence Monitor and Research Synthesis Agent outputs; teams grade the evidence behind three claims in their own campaign materials.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Collaborator Scout exercise: map potential expert collaborators and working groups; Task Router simulation assigns follow-up tasks.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a funding or program proposal with the Proposal & Grant Drafter; peers review; simulated human steward vote closes the cycle.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 2-3 indicators per campaign and rehearse reading Progress Tracker dashboards for donor and board reporting.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised campaign indicator definitions and baseline values (indicator name, region type, unit) for a shared cross-NGO outcomes library.",
+   "consent": "MOU-based organizational consent plus individual opt-in; all beneficiary data excluded, only aggregate indicator metadata shared; withdrawal honored on request."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governance by Design: Humans Decide, Agents Serve",
+   "grade_or_level": "Nonprofit boards, trustees and executive directors",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' principle and its five human-reserved actions",
+    "Assess readiness to adopt agent-managed workflows under board control",
+    "Design a decision-cycle calendar with clear human checkpoints"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-level briefing at the pump replica: how the charter reserves final votes, amendments, treasury, enactment and steward appointments for humans alone.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Case study: a drafted proposal moves through agent drafting, human debate and human-only enactment; trustees mark where each reserved action occurs.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Map the nonprofit's own workflows onto Task Router and working-group structures; identify which decisions must stay human-reserved.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a one-page accountability dashboard from Progress Tracker outputs suitable for trustee and funder reporting.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised governance checkpoint diagrams (decision type, cycle length, veto points, no org names) for a shared governance-pattern library.",
+   "consent": "Board resolution authorizing participation; diagrams anonymized by an independent party; any identifying detail removed before sharing; opt-out anytime."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "public-health-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

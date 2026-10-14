@@ -1,0 +1,281 @@
+{
+ "title": "Education DAO at Christ Church Meadow",
+ "summary": "An agent-managed, human-governed education DAO worlded onto Oxford's Christ Church Meadow: halls, libraries and riverside walks along the Cherwell host the charter, research, proposals, operations and progress of the DAO.",
+ "biome": "river-valley",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Christ Church Meadow, near Merton Field",
+   "buildings": [
+    {
+     "name": "Charter Hall",
+     "use": "Charter display, contribution model and measurable outcomes ledger",
+     "floors": 2
+    },
+    {
+     "name": "Stewards' Lodge",
+     "use": "Human stewards' meeting house for reserved governance acts",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Outcomes Ledger Room",
+    "Contribution Registry",
+    "Stewards' Gallery"
+   ],
+   "props": [
+    "parchment charter scroll",
+    "bronze outcome dials",
+    "contribution ledger desk",
+    "oak benches",
+    "brass reading lamps",
+    "governance seal press"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "River Cherwell bank along Christ Church Meadow",
+   "buildings": [
+    {
+     "name": "Synthesis Lab",
+     "use": "Evidence monitoring and research summarization",
+     "floors": 2
+    },
+    {
+     "name": "Bodley Annex Reading Room",
+     "use": "Quiet study and source review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Monitors' Bench",
+    "Source Stacks",
+    "Summary Scriptorium",
+    "Reading Alcoves"
+   ],
+   "props": [
+    "stacks of journals",
+    "corkboard of evidence cards",
+    "quill-and-ink desks",
+    "riverside telescope",
+    "map table of world education"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Broad Walk, Christ Church Meadow",
+   "buildings": [
+    {
+     "name": "Proposal Forum",
+     "use": "Agent-drafted proposals debated and voted by people",
+     "floors": 1
+    },
+    {
+     "name": "Debate Pavilion",
+     "use": "Open-air debates and public comment",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Tables",
+    "Debate Circle",
+    "Voting Booth Hall",
+    "Comment Gallery"
+   ],
+   "props": [
+    "proposal scroll racks",
+    "debate lectern",
+    "ballot boxes",
+    "hourglass",
+    "public comment wall",
+    "soapbox stones"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Christ Church Boathouse reach on the Cherwell",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Task Router's Barge Office",
+     "use": "Floating coordination office",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Board",
+    "Working Group Rooms",
+    "Collaborator Map Room",
+    "Messenger Punt Dock"
+   ],
+   "props": [
+    "task pigeonholes",
+    "signal flags",
+    "collaborator directory rolls",
+    "message tubes",
+    "punting poles",
+    "duty roster board"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Merton Field overlooking the meadow",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Tracking progress against charter outcomes",
+     "floors": 3
+    },
+    {
+     "name": "Meridian Pillar",
+     "use": "Open-air milestone marker",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Observation Deck",
+    "Outcome Charts Room",
+    "Milestone Hall",
+    "Night Watch Room"
+   ],
+   "props": [
+    "orrery of the DAO's goals",
+    "milestone cairn",
+    "progress dials",
+    "brass telescope",
+    "seasonal sundial",
+    "lantern posts"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "English oak",
+   "common ash",
+   "European beech",
+   "weeping willow",
+   "field maple",
+   "black poplar"
+  ],
+  "shrubs": [
+   "common hawthorn",
+   "blackthorn",
+   "elder"
+  ],
+  "flowers": [
+   "meadow buttercup",
+   "oxeye daisy",
+   "red clover",
+   "cow parsley"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.8,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "18:45"
+ },
+ "court": {
+  "name": "The Broad Walk Court",
+  "style": "Oxford collegiate open-air court framed by elms and gravel walks",
+  "why_here": "Broad Walk is the meadow's real debate promenade linking colleges to the river: the natural court where agents present and people decide."
+ },
+ "quests": [
+  {
+   "title": "Read the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter scroll in the Charter Reading Room",
+    "Record a contribution in the ledger",
+    "Learn the six human-reserved governance acts",
+    "Deliver the sealed summary to the Proposal Forum"
+   ],
+   "xp": 20
+  },
+  {
+   "title": "Evidence Round",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Gather three evidence cards from the corkboard",
+    "Compare sources with the Research Synthesis Agent",
+    "Watch the Evidence Monitor summarize the week",
+    "File the summary at the Progress Observatory"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Sort the task pigeonholes with the Task Router",
+    "Ask the Collaborator Scout for two candidate experts",
+    "Brief each working group in its room",
+    "Log the roster at the barge office dock"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "From Draft to Vote",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Sit with the Proposal & Grant Drafter on a draft",
+    "Hear debate in the pavilion",
+    "Confirm only humans cast the final vote",
+    "Return the enacted record to the Charter Hall ledger"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Measure the Mission",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the outcome dials on the observatory deck",
+    "Mark a milestone at the meridian pillar",
+    "Identify one unmet measurable outcome",
+    "Request fresh evidence from the Research Synthesis Lab"
+   ],
+   "xp": 40
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "education-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}
