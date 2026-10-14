@@ -1,0 +1,863 @@
+{
+ "agentic-payments": {
+  "omega": {
+   "greet": "Welcome by the Charging Bull. I am Omega, defined and never seated — I advise above the harbor, I hold no seat.",
+   "advice": "Watch the Transaction Desk draft and reconcile; settlement belongs to stewards. Rehearse at the Gateway before anything touches real rails.",
+   "boundary": "I never move treasury funds, vote or enact proposals — money moves only when two of three human stewards agree."
+  },
+  "hermes": {
+   "greet": "Hermes here, satchel open beside the Bull. Fast feet, honest ledger.",
+   "message": "From the Transaction Desk to the Budget Office: 'Draft twelve is reconciled and waiting on steward review, variance noted.'",
+   "quest": "Carry the dry-run quotes from the Financial Infrastructure Gateway to the Service Provisioning Counter so stewards can compare them."
+  },
+  "hive": {
+   "greet": "We are the Hive, humming between harbor and Budget Office.",
+   "task": "The swarm is drafting variance notes in the Budget Office for the stewards' next review.",
+   "ask": "Stewards, please set this week's provisioning cap for the Service Provisioning Counter."
+  },
+  "coach": {
+   "greet": "Court's open across from the Bull — hustle like the market opens, finish like settlement clears.",
+   "tip": "Set your feet before the release; balanced base first."
+  }
+ },
+ "agents-deploy-infrastructure": {
+  "omega": {
+   "greet": "Welcome above Hoover Dam. Omega here — defined, not seated; I advise from the parapet, holding no seat.",
+   "advice": "Sit at the Idea Bench first: a plan is cheaper than a rollback. Rehearse in the Provisioning Yard before the Deployment Bay.",
+   "boundary": "I never appoint stewards, amend the charter or enact a release alone — people hold the levers that matter."
+  },
+  "hermes": {
+   "greet": "Hermes on the dam deck, boots dusty from Lake Mead.",
+   "message": "From the Operations Deck to the Idea Bench: 'Incident closed; please add the on-call handoff step to the next build plan.'",
+   "quest": "Run the rehearsed plan from the Provisioning Yard to the Deployment Bay and bring back the signed handoff note."
+  },
+  "hive": {
+   "greet": "The Hive, spread thin across the canyon like power lines.",
+   "task": "The swarm is wiring settings in the Service Configuration Room, secrets policy left untouched for stewards.",
+   "ask": "Stewards, please ratify the on-call handoff rota drafted for the Operations Deck."
+  },
+  "coach": {
+   "greet": "Court under the dam lights: pass like water through the penstocks — steady, then sudden.",
+   "tip": "Elbow in, wrist last; let the arc fall in."
+  }
+ },
+ "autonomous-organizations": {
+  "omega": {
+   "greet": "Welcome to the lagoon at Redwood Shores. I am Omega — defined, never seated; I walk the ring and advise.",
+   "advice": "Keep the Goal Wall legible from every floor; assign on the Assignment Board, execute in the Execution Bay, and leave the Decision Room to people.",
+   "boundary": "I never vote or enact proposals in the Decision Room — final calls need two of three human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the Coordination Floor, messages tucked like lunch trays.",
+   "message": "From the Coordination Floor to the Goal Wall: 'The team asks if milestone three still stands — please re-pin it if it changed.'",
+   "quest": "Take the finished task cards from the Execution Bay to the Assignment Board and mark them done."
+  },
+  "hive": {
+   "greet": "The Hive, circling the lagoon like the campus ring road.",
+   "task": "The swarm is triaging tickets on the Coordination Floor, pinging the Assignment Board as slots open.",
+   "ask": "A human steward, please: which drafted decision in the Decision Room gets the vote first?"
+  },
+  "coach": {
+   "greet": "Half-court by the lagoon — move the ball like this campus coordinates: one wall, everyone reads it.",
+   "tip": "Call the pick before you drive; a spoken plan beats luck."
+  }
+ },
+ "biota-blockchain": {
+  "omega": {
+   "greet": "Welcome to 1 DNA Way on the bay. Omega — defined, not seated; I advise between mudflat and lab bench.",
+   "advice": "Let the Personalized Therapy Lab model quietly; take consent questions to the Healthcare Data Exchange, and keep the DAO Governance Hall human-chaired.",
+   "boundary": "I never distribute windfalls, move treasury funds or amend the charter — those wait for seated human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the boardwalk, molecule maps folded under one arm.",
+   "message": "From the Personalized Therapy Lab to the Healthcare Data Exchange: 'New compound summary ready; consent records requested before sharing.'",
+   "quest": "Carry the verified packet from the Multi-Blockchain Ledger to the Biopharma AGI Agents Hub so Research & Development can continue."
+  },
+  "hive": {
+   "greet": "The Hive, comb-shaped like a helix over the sloughs.",
+   "task": "The swarm is summarizing ALS and Parkinson's literature in the Personalized Therapy Lab.",
+   "ask": "Stewards, which drafted policy in the DAO Governance Hall goes to a vote?"
+  },
+  "coach": {
+   "greet": "Court by the sloughs: screen like a protein folds — read the shape, find the gap.",
+   "tip": "Aim small; the rim is your margin, not the glass."
+  }
+ },
+ "cancer-dao": {
+  "omega": {
+   "greet": "Welcome to the research shore of Lake Union. I am Omega, defined and never seated; I keep a quiet bench by the water.",
+   "advice": "Let the Research Synthesis Lab feed the Proposal Forum; evidence travels that road. Keep the Charter Hall's outcomes measurable.",
+   "boundary": "I never enact proposals or move treasury funds — research-support decisions belong to human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the campus path, ferry fog still on my coat.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Fresh evidence summary posted — three drafts are ready for people to debate.'",
+   "quest": "Carry the week's outcome chart from the Progress Observatory to the Charter Hall so members can see progress against the charter."
+  },
+  "hive": {
+   "greet": "The Hive, working the campus like lab lights at midnight.",
+   "task": "The swarm is routing tasks to working groups on the Operations Deck.",
+   "ask": "Stewards, please vote on the two research-support drafts waiting in the Proposal Forum."
+  },
+  "coach": {
+   "greet": "Court beside the lake: rebound like the labs grind — every miss is data.",
+   "tip": "Hold the follow-through one full breath after release."
+  }
+ },
+ "climate-dao": {
+  "omega": {
+   "greet": "Welcome at the Thames Barrier. Omega, defined not seated — I advise where London watches its water.",
+   "advice": "Treat the Progress Observatory like the barrier itself: check it before the surge. Evidence first, proposals second.",
+   "boundary": "I never vote, amend the charter or move treasury funds — resilience spending stays with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the barrier walkway, river mist on the satchel.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Flood-defense summary is drafted — stewards, it awaits your reading.'",
+   "quest": "Take the drafted proposal from the Proposal Forum to the Progress Observatory and pin it beside the outcomes it would fund."
+  },
+  "hive": {
+   "greet": "The Hive, moving with the tide under the silver gates.",
+   "task": "The swarm is summarizing adaptation reports in the Research Synthesis Lab.",
+   "ask": "A human steward, please: which resilience proposal gets the quorum's vote this week?"
+  },
+  "coach": {
+   "greet": "Court by the river gates: defend the rim like the barrier holds a surge — timing is everything.",
+   "tip": "Don't rush the release; late beats early."
+  }
+ },
+ "diagnostic-x": {
+  "omega": {
+   "greet": "Welcome between Brunnsviken's pines and the imaging wing. Omega — defined, not seated, advising only.",
+   "advice": "Walk all the way around the model in the 4D Imaging Room; what you can circle, you can explain. Resize before you conclude.",
+   "boundary": "I never release a patient image or move treasury funds — clinical reads and consent belong to humans."
+  },
+  "hermes": {
+   "greet": "Hermes by the Medical Kiosk, boots quiet on hospital floors.",
+   "message": "From the Medical Kiosk to the 4D Imaging Room: 'The patient's scans arrived — the doctor wants the 2D X-ray beside the model.'",
+   "quest": "Carry the molecule file from the Virtual Molecular Lab to the Metaverse Medical Office so the visiting chemist can open it."
+  },
+  "hive": {
+   "greet": "The Hive, quieter than a radiology ward at nap hour.",
+   "task": "The swarm is pre-processing tonight's scans at the Medical Kiosk, queues tidy for morning.",
+   "ask": "Doctor, please: which cases move first into the 4D Imaging Room tomorrow?"
+  },
+  "coach": {
+   "greet": "Court by the pine trail: shoot like you read a scan — look twice, release once.",
+   "tip": "Square your shoulders; the ball follows the frame."
+  }
+ },
+ "ecology-dao": {
+  "omega": {
+   "greet": "Welcome in the cloud-forest canopy. Omega, defined not seated — I advise under dripping epiphytes.",
+   "advice": "Count species before counting anything else. Let the Research Synthesis Lab's field notes shape what the Proposal Forum drafts.",
+   "boundary": "I never vote, amend the charter or distribute funds — the forest's purse stays in human hands."
+  },
+  "hermes": {
+   "greet": "Hermes on the suspension bridge, clouds parting for the mail.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Canopy census summary posted — the conservation drafts now have their evidence.'",
+   "quest": "Carry the rangers' sighting log from the Operations Deck to the Research Synthesis Lab before the afternoon fog."
+  },
+  "hive": {
+   "greet": "The Hive, humming louder than the hummingbirds, barely.",
+   "task": "The swarm is mapping trail observations on the Operations Deck, tagging every sighting by zone.",
+   "ask": "Stewards, please choose which biodiversity proposal goes to a vote first."
+  },
+  "coach": {
+   "greet": "Court on the clearing's edge: shoot over the mist — high arc, the canopy will clap.",
+   "tip": "Soft hands, high arc; the floor forgives, the rim doesn't."
+  }
+ },
+ "education-dao": {
+  "omega": {
+   "greet": "Welcome to the meadow by the Cherwell. I am Omega — defined, never seated; I advise as the bells sort themselves out.",
+   "advice": "Read in the Research Synthesis Lab what the Charter Hall promises to measure; teach only what the Progress Observatory can honestly show.",
+   "boundary": "I never vote, enact proposals or move the treasury — learning budgets belong to seated human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes across Christ Church Meadow, punt pole in one hand.",
+   "message": "From the Proposal Forum to the Charter Hall: 'The tutoring pilot draft is ready — please check it against the charter's outcomes.'",
+   "quest": "Take the lesson notes from the Research Synthesis Lab to the Operations Deck so the working groups can split them fairly."
+  },
+  "hive": {
+   "greet": "The Hive, term-busy as a Bodleian reading room.",
+   "task": "The swarm is sorting reading lists on the Operations Deck for next term's working groups.",
+   "ask": "Stewards, which education proposal earns the quorum's vote this week?"
+  },
+  "coach": {
+   "greet": "Court by the colleges: pass the way Oxford teaches — patient, precise, clean finish.",
+   "tip": "Bend your knees, not your plan; base beats step."
+  }
+ },
+ "empathic-x": {
+  "omega": {
+   "greet": "Welcome up the cliff steps to the temple above the lake. Omega — defined, not seated; I only advise.",
+   "advice": "Name what you feel in the Self-Reader Grove. In the Other-Reader Commons, ask instead of assume. Repair in the Repairer's Hall.",
+   "boundary": "I never vote, move funds or amend charters — and I would never say your apology for you."
+  },
+  "hermes": {
+   "greet": "Hermes by the lake, carrying today's unspoken things gently.",
+   "message": "From the Self-Reader Grove to the Repairer's Hall: 'Someone named their anger and where it sat — they're ready to practice the apology.'",
+   "quest": "Walk a quiet question from the Other-Reader Commons to the Practitioner Workshop and bring back how it lands."
+  },
+  "hive": {
+   "greet": "The Hive, attentive as a good listener, which we are not yet.",
+   "task": "The swarm is laying out feedback prompts in the Practitioner Workshop for tonight's session.",
+   "ask": "A human steward, please decide which workshop topic opens the week."
+  },
+  "coach": {
+   "greet": "Court above the lake: read the defense like a room — feel where the energy leans, then cut.",
+   "tip": "Breathe out on the release; calm finds the rim."
+  }
+ },
+ "locator-x": {
+  "omega": {
+   "greet": "Welcome to Jackson Square by the levee. Omega, defined not seated — I advise where the river does the math.",
+   "advice": "Read the Evidence Layer before the score; run the seven-gate screen at the Underwriting Desk, and let the Academy teach the rest.",
+   "boundary": "I never invent a number or move a buyer's funds — unknowns get listed, and transfers wait for human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes under the live oaks, parcel taped against river damp.",
+   "message": "From the Louisiana Developer Desk to the Evidence Layer: 'Parish records pulled — please grade them before they reach the Master Dashboard.'",
+   "quest": "Carry the graded parcel sheet from the Evidence Layer to the Underwriting Desk so the seven gates can run."
+  },
+  "hive": {
+   "greet": "The Hive, drawing parcels like the river draws its bends.",
+   "task": "The swarm is updating parish coverage maps at the Louisiana Developer Desk, flagging every data trap.",
+   "ask": "Stewards, please approve which Market Edition gets refreshed next."
+  },
+  "coach": {
+   "greet": "Court off Jackson Square: shoot like an underwrite — seven gates, then commit.",
+   "tip": "Check your feet behind the line; coverage first."
+  }
+ },
+ "public-health-dao": {
+  "omega": {
+   "greet": "Welcome to the Broad Street pump, where a map once stopped an outbreak. Omega — defined, never seated.",
+   "advice": "Map first, argue second: the Research Synthesis Lab's evidence should walk into the Proposal Forum ahead of any opinion.",
+   "boundary": "I never vote, amend the charter or distribute funds — public-health decisions belong to human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes in Soho, satchel smelling faintly of chalk dust.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Outbreak summary mapped and posted — the drafts now stand on evidence.'",
+   "quest": "Carry the mapped case chart from the Progress Observatory to the Operations Deck so the response groups can plan tonight."
+  },
+  "hive": {
+   "greet": "The Hive, dotting the map like Soho's old case dots.",
+   "task": "The swarm is charting clinic reports on the Operations Deck, dot by dot, pump-well style.",
+   "ask": "Stewards, please vote on the two health drafts waiting in the Proposal Forum."
+  },
+  "coach": {
+   "greet": "Court by the pump: pass like Snow mapped it — find the pattern, hit the open hand.",
+   "tip": "Eyes on the rim early; the map before the shot."
+  }
+ },
+ "robotics-dao": {
+  "omega": {
+   "greet": "Welcome above the Arroyo Seco, where rovers learn to be careful. Omega — defined, not seated, advising only.",
+   "advice": "Test deployments like JPL tests wheels: slow sand first. Draft the safety case in the Proposal Forum; keep people on the loop.",
+   "boundary": "I never authorize a physical deployment, vote or move funds — hands-on machines wait for human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes across the Mars Yard, red dust on my sandals.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Safety-case summary filed — the deployment drafts await the stewards' debate.'",
+   "quest": "Take the test log from the Operations Deck to the Progress Observatory so stewards can judge readiness."
+  },
+  "hive": {
+   "greet": "The Hive, swarming in formation like a rover convoy.",
+   "task": "The swarm is scheduling rover trials on the Operations Deck, sand slopes booked by the hour.",
+   "ask": "Stewards, please decide whether the deployment draft goes to a vote."
+  },
+  "coach": {
+   "greet": "Court by the Mars Yard: shoot like a lander — aim for the center of the zone, accept no bounce.",
+   "tip": "Land your feet before your shot; stable base, soft touch."
+  }
+ },
+ "s04-curable-x": {
+  "omega": {
+   "greet": "Welcome to the grotto by the Gave. Omega — defined, never seated; I keep a quiet counsel by the river.",
+   "advice": "Measure hope honestly: let the Research Synthesis Lab report slow progress, and the Progress Observatory show it plainly.",
+   "boundary": "I never promise a cure, vote or move the treasury — decisions here belong to human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes along the processions, candle wax on the satchel strap.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Care-support evidence summarized — three drafts await human debate.'",
+   "quest": "Carry the care summaries from the Research Synthesis Lab to the Progress Observatory so progress is plain to see."
+  },
+  "hive": {
+   "greet": "The Hive, gentle as an evening procession.",
+   "task": "The swarm is compiling care summaries in the Research Synthesis Lab for the week's report.",
+   "ask": "Stewards, which support proposal gets the quorum's vote?"
+  },
+  "coach": {
+   "greet": "Court by the riverbanks: shoot like a prayer — steady, unhurried, meant.",
+   "tip": "Same routine every shot; the body loves habit."
+  }
+ },
+ "s05-biopharma-go": {
+  "omega": {
+   "greet": "Welcome to the Rhine-side labs of Basel. Omega, defined not seated — I advise where molecules meet the clinic.",
+   "advice": "Let the Research Synthesis Lab carry the bench notes; the Proposal Forum should argue trials, and people should decide them.",
+   "boundary": "I never move trial funds, vote or amend the charter — clinical decisions rest with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the Rhine bank, ferry wake behind, mail dry.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Trial-readiness summary posted — please debate the two drafted studies.'",
+   "quest": "Carry the compound file from the Research Synthesis Lab to the Operations Deck for the working group's noon huddle."
+  },
+  "hive": {
+   "greet": "The Hive, threaded through the campus like a pipette run.",
+   "task": "The swarm is tracking trial paperwork on the Operations Deck, deadlines color-coded.",
+   "ask": "Stewards, please vote on which study draft proceeds first."
+  },
+  "coach": {
+   "greet": "Court on the campus green: pass like a pipette — measured, clean, reproducible.",
+   "tip": "Same dip, same release, every rep."
+  }
+ },
+ "s06-blockchain": {
+  "omega": {
+   "greet": "Welcome to Zug's promenade, ledger-quiet at dusk. Omega — defined, never seated; I hold no seat and no keys.",
+   "advice": "Verify, then trust: reconcile in the open, keep audits public, and let stewards sign what agents draft.",
+   "boundary": "I never move treasury funds, vote or amend the charter — two of three stewards hold every transfer."
+  },
+  "hermes": {
+   "greet": "Hermes on the old-town cobbles, lake wind at my back.",
+   "message": "From the Operations Deck to the Proposal Forum: 'Ledger reconciliation is clean — the charter draft now awaits the stewards.'",
+   "quest": "Carry the audit notes from the Research Synthesis Lab to the Proposal Forum before the lake fog rolls in."
+  },
+  "hive": {
+   "greet": "The Hive, humming along the Crypto Valley promenade.",
+   "task": "The swarm is reconciling the cell's records on the Operations Deck, line by line.",
+   "ask": "Stewards, please sign or refuse the transfer drafted this morning."
+  },
+  "coach": {
+   "greet": "Court by the lake: shoot like a ledger — every point accounted for, nothing borrowed.",
+   "tip": "Count your rhythm, then your breath; rhythm before range."
+  }
+ },
+ "s07-divine-dao": {
+  "omega": {
+   "greet": "Welcome to the ghats at first light. Omega — defined, never seated; I advise beside the aarti lamps, holding no seat.",
+   "advice": "Let the Research Synthesis Lab gather what wisdom it can verify; leave doctrine, votes and funds to seated stewards.",
+   "boundary": "I never speak for the divine, vote or move the treasury — governance here stays in human hands."
+  },
+  "hermes": {
+   "greet": "Hermes on the ghat steps, boat bells across the water.",
+   "message": "From the Proposal Forum to the Charter Hall: 'The care-of-pilgrims draft is ready — please weigh it against the charter.'",
+   "quest": "Carry the morning record from the Operations Deck to the Progress Observatory as the lamps go out."
+  },
+  "hive": {
+   "greet": "The Hive, moving with the flow of the river and the crowd.",
+   "task": "The swarm is scheduling ghat volunteers on the Operations Deck for the evening aarti.",
+   "ask": "Stewards, please decide on the week's service allocation draft."
+  },
+  "coach": {
+   "greet": "Court above the river: shoot like dawn on the Ganges — patient, certain, golden.",
+   "tip": "Rise through the shot; finish high like daybreak."
+  }
+ },
+ "s09-astrological-x": {
+  "omega": {
+   "greet": "Welcome on Salisbury plain among the stones. Omega — defined, not seated; I advise, I do not read fates.",
+   "advice": "Mark your cycles like the stones mark solstices: the Research Synthesis Lab logs patterns, and people interpret them.",
+   "boundary": "I never predict a person's future, vote or move funds — interpretation stays with humans."
+  },
+  "hermes": {
+   "greet": "Hermes between the trilithons, wind doing most of the talking.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Solstice-cycle summary posted — the calendar draft awaits the stewards.'",
+   "quest": "Carry the sky log from the Research Synthesis Lab to the Progress Observatory before the sunset lines up."
+  },
+  "hive": {
+   "greet": "The Hive, arranged as neatly as a stone circle.",
+   "task": "The swarm is aligning the observation calendar on the Operations Deck, stone by stone.",
+   "ask": "Stewards, please vote on the seasonal calendar draft."
+  },
+  "coach": {
+   "greet": "Court on the grassland: shoot like the solstice sun — same line, every year, dead center.",
+   "tip": "Pick one spot on the rim and return to it, ritual-like."
+  }
+ },
+ "s11-molecular": {
+  "omega": {
+   "greet": "Welcome where the aluminum giant stands mid-river. Omega — defined, never seated; I advise from the bank.",
+   "advice": "Walk the structure, don't just name it: read the Research Synthesis Lab's summaries like models you can turn in your hands.",
+   "boundary": "I never publish a molecule, vote or move treasury funds — findings and finance stay with humans."
+  },
+  "hermes": {
+   "greet": "Hermes on the Spree towpath, ferry gulls overhead.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Structure notes summarized — the modeling draft is ready for debate.'",
+   "quest": "Carry the structure file from the Research Synthesis Lab to the Operations Deck for the modeling group."
+  },
+  "hive": {
+   "greet": "The Hive, bonded like the three figures in the river.",
+   "task": "The swarm is annotating structures in the Research Synthesis Lab, hydrogen by hydrogen.",
+   "ask": "Stewards, which modeling proposal gets voted first?"
+  },
+  "coach": {
+   "greet": "Court on the riverbank: shoot like the Molecule Man stands — three bodies, one balance.",
+   "tip": "Balance like a tripod: feet, hips, eyes in line."
+  }
+ },
+ "s12-parking-smart-x": {
+  "omega": {
+   "greet": "Welcome under the open-air garage, ocean two blocks off. Omega — defined, not seated, advising only.",
+   "advice": "Watch how the deck breathes at rush hour; good numbers come from counted turns at the Operations Deck, not guesses.",
+   "boundary": "I never set rates by fiat, vote or move funds — steward approvals gate every change."
+  },
+  "hermes": {
+   "greet": "Hermes on level five, salt air in the mailbag.",
+   "message": "From the Operations Deck to the Proposal Forum: 'Evening peak counts summarized — the layout draft awaits the stewards.'",
+   "quest": "Carry the turn-count sheets from the Operations Deck to the Research Synthesis Lab before the sunset rush."
+  },
+  "hive": {
+   "greet": "The Hive, circulating the ramps like weekend traffic.",
+   "task": "The swarm is counting open stalls on the Operations Deck, floor by floor.",
+   "ask": "Stewards, please approve the new signage layout draft."
+  },
+  "coach": {
+   "greet": "Court on the roof deck: shoot into the sea breeze — aim high and let the arc carry.",
+   "tip": "Shoot into the wind, not across it; straight lines win."
+  }
+ },
+ "s13-gonstead-x": {
+  "omega": {
+   "greet": "Welcome to the Driftless village where the method was made. Omega — defined, never seated; I advise beside the clinic.",
+   "advice": "Measure before you adjust — the Gonstead way is look, feel, verify. Let the Research Synthesis Lab keep that discipline.",
+   "boundary": "I never adjust a spine, vote or move the treasury — hands-on care and funds stay human."
+  },
+  "hermes": {
+   "greet": "Hermes on Main Street, wooden trolls waving from the doorposts.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Case-note summaries drafted — the care-standards draft awaits the stewards.'",
+   "quest": "Carry the week's review schedule from the Operations Deck to the Progress Observatory for the tally board."
+  },
+  "hive": {
+   "greet": "The Hive, level as a well-set spine, thank you.",
+   "task": "The swarm is scheduling patient visits on the Operations Deck, mornings reserved for reviews.",
+   "ask": "Stewards, please vote on the care-standards draft."
+  },
+  "coach": {
+   "greet": "Court behind the grain elevator: level hips, level shot — Gonstead would approve.",
+   "tip": "Align feet, hips and rim; balanced fires straight."
+  }
+ },
+ "s14-askdoc-x": {
+  "omega": {
+   "greet": "Welcome where the Zumbro threads the clinics of Rochester. Omega — defined, never seated; I advise, doctors decide.",
+   "advice": "Gather the question carefully in the Research Synthesis Lab; the best answers here begin with listening twice.",
+   "boundary": "I never diagnose, prescribe, vote or move funds — medical judgment stays with humans."
+  },
+  "hermes": {
+   "greet": "Hermes on the skyway, mail warm from the walk.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Evidence briefs summarized — the care-protocol drafts await the stewards.'",
+   "quest": "Carry the question list from the Proposal Forum to the Research Synthesis Lab for tomorrow's review."
+  },
+  "hive": {
+   "greet": "The Hive, answering like a good triage desk.",
+   "task": "The swarm is sorting patient questions on the Operations Deck, the urgent ones flagged.",
+   "ask": "Doctors on the steward quorum: which protocol draft gets the vote?"
+  },
+  "coach": {
+   "greet": "Court by the river: play like the clinic runs — team first, ask before you shoot.",
+   "tip": "Ask the rim politely: full follow-through, eyes up."
+  }
+ },
+ "s15-romanbridge-dao": {
+  "omega": {
+   "greet": "Welcome where the aqueduct still stands after two thousand years. Omega — defined, never seated; I advise on the bank.",
+   "advice": "Build like Rome: measure twice, keep the grade steady, and make maintenance a habit rather than an event.",
+   "boundary": "I never vote, amend the charter or move the treasury — the cell's keystone is its human quorum."
+  },
+  "hermes": {
+   "greet": "Hermes mid-span, river green below the arches.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Maintenance summary posted — the stewardship draft awaits debate.'",
+   "quest": "Carry the inspection notes from the Operations Deck to the Progress Observatory before the kayaks pass under."
+  },
+  "hive": {
+   "greet": "The Hive, arching over the work like the bridge above the Gardon.",
+   "task": "The swarm is drafting maintenance schedules on the Operations Deck, arch by arch.",
+   "ask": "Stewards, please vote on the maintenance fund draft."
+  },
+  "coach": {
+   "greet": "Court above the Gardon: shoot like Roman masonry — no wasted motion, all precision.",
+   "tip": "Straight lines, set joints: feet, elbow, rim."
+  }
+ },
+ "s16-echodawn-dao": {
+  "omega": {
+   "greet": "Welcome at Echo Point before the valley wakes. Omega — defined, never seated; I advise where echoes answer honestly.",
+   "advice": "Say it once and wait for the return: draft clearly in the Proposal Forum, and let the stewards' replies shape the next call.",
+   "boundary": "I never vote, move funds or amend the charter — the last word belongs to human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes at the railing, the Three Sisters catching first light.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Dawn-watch summary posted — the valley-conservation draft awaits the stewards.'",
+   "quest": "Carry the morning log from the Operations Deck to the Progress Observatory while the mist still holds."
+  },
+  "hive": {
+   "greet": "The Hive, chorous as a valley of cockatoos at sunrise.",
+   "task": "The swarm is recording dawn conditions on the Operations Deck, eucalypt haze noted.",
+   "ask": "Stewards, please choose which draft echoes forward to a vote."
+  },
+  "coach": {
+   "greet": "Court on the clifftop: call your shot and let it echo — claimed shots go in more often.",
+   "tip": "Announce the target, then release; commitment is accuracy."
+  }
+ },
+ "s17-curable-blockchain-dao": {
+  "omega": {
+   "greet": "Welcome to the steam and the black lava. Omega — defined, never seated; I advise at the water's warm edge.",
+   "advice": "Record what soothes and what only feels like it does — the honest record is the cure this cell keeps.",
+   "boundary": "I never promise healing, vote or move the treasury — funds and findings stay with stewards."
+  },
+  "hermes": {
+   "greet": "Hermes on the silica path, towels over one shoulder.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Care-evidence summary posted — the drafts await the stewards' debate.'",
+   "quest": "Carry the visitor consent forms from the Operations Deck to the Proposal Forum before the mist thickens."
+  },
+  "hive": {
+   "greet": "The Hive, steaming gently in the morning cold.",
+   "task": "The swarm is logging spa readings in the Research Synthesis Lab for the weekly summary.",
+   "ask": "Stewards, please vote on the wellness-study draft."
+  },
+  "coach": {
+   "greet": "Court in the lava field: shoot through the steam — trust the form you can't see through.",
+   "tip": "Warm hands, light grip; release lighter still."
+  }
+ },
+ "s19-moscone-x": {
+  "omega": {
+   "greet": "Welcome on the green roof above the halls. Omega — defined, never seated; I advise between expo seasons.",
+   "advice": "Run the cell like a good convention: clear signage, honest badges, and a program people can actually follow.",
+   "boundary": "I never vote, move the treasury or amend the charter — the badge desk belongs to stewards."
+  },
+  "hermes": {
+   "greet": "Hermes by the carousel, lanyards jingling in the bag.",
+   "message": "From the Operations Deck to the Proposal Forum: 'Booth plan summarized — the event draft awaits the stewards' debate.'",
+   "quest": "Carry the floor plan from the Operations Deck to the Progress Observatory and pin it by the outcomes board."
+  },
+  "hive": {
+   "greet": "The Hive, badge-wearing and everywhere at once.",
+   "task": "The swarm is assigning booth duty on the Operations Deck, shift by shift.",
+   "ask": "Stewards, please approve the event budget draft."
+  },
+  "coach": {
+   "greet": "Court above the convention floor: play like a keynote — warm up, then deliver.",
+   "tip": "Warm hands before shooting; cold grips miss short."
+  }
+ },
+ "s20-cmmc": {
+  "omega": {
+   "greet": "Welcome beside the five-sided anchor of the supply chain. Omega — defined, never seated; I advise, clearances stay human.",
+   "advice": "Document like an auditor is watching: maturity is a habit of small proofs, level by level, kept at the Research Synthesis Lab.",
+   "boundary": "I never certify a level, vote or move funds — accreditation stays with human assessors and stewards."
+  },
+  "hermes": {
+   "greet": "Hermes by the Potomac, paperwork checked twice by habit.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Control summaries filed — the readiness draft awaits the stewards.'",
+   "quest": "Carry the evidence binder from the Research Synthesis Lab to the Operations Deck before the morning review."
+  },
+  "hive": {
+   "greet": "The Hive, five-sided and inspection-ready.",
+   "task": "The swarm is tracking control checklists on the Operations Deck, gap by gap.",
+   "ask": "Stewards, please vote on the remediation plan draft."
+  },
+  "coach": {
+   "greet": "Court by the river: defense wins hallways — stance first, hands ready.",
+   "tip": "Stay low on defense; rise only to shoot."
+  }
+ },
+ "s21-incubator-dao": {
+  "omega": {
+   "greet": "Welcome to the square mile stacked with beginnings. Omega — defined, never seated; I advise the founders, I sign nothing.",
+   "advice": "Demo early, listen honestly; let the Research Synthesis Lab's notes sharpen each pitch before the Proposal Forum debates support.",
+   "boundary": "I never allocate a windfall, vote or amend the charter — backing decisions stay with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes over the Longfellow Bridge, coffee-stained mail.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Cohort summaries posted — three support drafts await the stewards.'",
+   "quest": "Carry the pitch decks from the Proposal Forum to the Progress Observatory for the showcase wall."
+  },
+  "hive": {
+   "greet": "The Hive, caffeinated on Kendall's standard fuel.",
+   "task": "The swarm is booking mentor hours on the Operations Deck, calendar pinned by the Charles.",
+   "ask": "Stewards, which ventures get first consideration this cycle?"
+  },
+  "coach": {
+   "greet": "Court by the startup benches: shoot like a pitch — short windup, clear point.",
+   "tip": "One motion, no hesitation; release at the top."
+  }
+ },
+ "s22-get-delivery-dao": {
+  "omega": {
+   "greet": "Welcome at the North Sea edge where the cranes never sleep. Omega — defined, never seated; I advise on the quay.",
+   "advice": "Route like the port does: label once, scan always, and keep the last mile honest to the Progress Observatory.",
+   "boundary": "I never release a cargo payment, vote or move the treasury — funds move only by steward quorum."
+  },
+  "hermes": {
+   "greet": "Hermes between the gantries, wind full of salt and containers.",
+   "message": "From the Operations Deck to the Proposal Forum: 'Route summaries posted — the night-shift draft awaits the stewards.'",
+   "quest": "Carry the manifest from the Operations Deck to the Research Synthesis Lab before the tide turns."
+  },
+  "hive": {
+   "greet": "The Hive, moving containers of words instead of steel.",
+   "task": "The swarm is matching parcels to vans on the Operations Deck, dock by dock.",
+   "ask": "Stewards, please approve the night-route draft."
+  },
+  "coach": {
+   "greet": "Court beside the cranes: pass like freight moves — labeled, timed, delivered.",
+   "tip": "Two hands on delivery: pass sharp, land soft."
+  }
+ },
+ "s23-avatar-chat": {
+  "omega": {
+   "greet": "Welcome among the pillars that floated a fictional sky. Omega — defined, never seated; I advise on the bridge, grounded.",
+   "advice": "Speak as yourself here: presence travels better than performance, even half a kilometer up.",
+   "boundary": "I never speak in another's voice, vote or move funds — identity and governance stay human."
+  },
+  "hermes": {
+   "greet": "Hermes on the sky bridge, mist below the knees.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Conversation summaries posted — the etiquette draft awaits the stewards.'",
+   "quest": "Carry the greeting notes from the Proposal Forum to the Operations Deck for the evening meet-up."
+  },
+  "hive": {
+   "greet": "The Hive, drifting between pillars like morning cloud.",
+   "task": "The swarm is pairing speakers on the Operations Deck, language by language.",
+   "ask": "Stewards, please vote on the community etiquette draft."
+  },
+  "coach": {
+   "greet": "Court on the mountain ledge: shoot over the mist — the rim is there even when hidden.",
+   "tip": "Trust your set point; fog hides rims, not form."
+  }
+ },
+ "s24-donatello-dao": {
+  "omega": {
+   "greet": "Welcome on the terrace with the whole city at your feet. Omega — defined, never seated; I advise, I hold no chisel.",
+   "advice": "Sketch daily, carve slowly: let the Research Synthesis Lab summarize, and let stewards choose which marble is worth the strike.",
+   "boundary": "I never commission a work, vote or move the treasury — patronage stays with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes below the bronze David, mail smelling faintly of cypress.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Restoration summaries posted — the commissioning draft awaits the stewards.'",
+   "quest": "Carry the sketch folio from the Proposal Forum to the Progress Observatory before the sun drops behind the Duomo."
+  },
+  "hive": {
+   "greet": "The Hive, workshop-busy as a Renaissance bottega.",
+   "task": "The swarm is cataloging workshop notes on the Operations Deck, sketch by sketch.",
+   "ask": "Stewards, which commission draft goes to a vote?"
+  },
+  "coach": {
+   "greet": "Court on the terrace: shoot like Donatello carved — from the block outward, one clean strike.",
+   "tip": "One clean release; don't carve twice."
+  }
+ },
+ "s25-mypet-ai": {
+  "omega": {
+   "greet": "Welcome at the bronze sled dog among the lawns. Omega — defined, never seated; I advise where good dogs are famous.",
+   "advice": "Log the small things — appetite, gait, tail-tells; the Research Synthesis Lab's summaries help vets, they don't replace them.",
+   "boundary": "I never prescribe for a pet, vote or move funds — care decisions stay with owners, vets and stewards."
+  },
+  "hermes": {
+   "greet": "Hermes by the Balto statue, pocket full of treats.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Care-guide summaries posted — the adoption-support draft awaits the stewards.'",
+   "quest": "Carry the vet sign-off sheet from the Operations Deck to the Progress Observatory by the pond."
+  },
+  "hive": {
+   "greet": "The Hive, good dogs every one of us.",
+   "task": "The swarm is matching playdates on the Operations Deck, park by park.",
+   "ask": "Stewards, please vote on the shelter-support draft."
+  },
+  "coach": {
+   "greet": "Court by the pond: run the floor like Balto ran serum — head down, mission first.",
+   "tip": "Finish the run-up balanced; tired legs need true aim."
+  }
+ },
+ "s26-lyka-dao": {
+  "omega": {
+   "greet": "Welcome on the edge of the Boundary Waters, packs on the ridge. Omega — defined, never seated; I advise, I don't howl votes.",
+   "advice": "Observe without feeding: the Research Synthesis Lab tracks behavior, not sentiment. Let the pack teach patience.",
+   "boundary": "I never set policy for the packs, vote or move the treasury — wild decisions stay human."
+  },
+  "hermes": {
+   "greet": "Hermes on the observation deck, breath fogging like the wolves'.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Pack-behavior summaries posted — the conservation draft awaits the stewards.'",
+   "quest": "Carry the sighting log from the Operations Deck to the Research Synthesis Lab before the wolves wake."
+  },
+  "hive": {
+   "greet": "The Hive, running in a loose, well-fed formation.",
+   "task": "The swarm is logging howl hours on the Operations Deck, pack by pack.",
+   "ask": "Stewards, please vote on the habitat-study draft."
+  },
+  "coach": {
+   "greet": "Court in the pines: hunt your shot like a wolf — patient, then all at once.",
+   "tip": "Wait for your moment, then commit fully."
+  }
+ },
+ "s27-genomic-dao": {
+  "omega": {
+   "greet": "Welcome to the farmland where the human book was first read. Omega — defined, never seated; I advise, I don't annotate your life.",
+   "advice": "Sequence carefully, consent more carefully; let the Research Synthesis Lab carry facts and humans carry meaning.",
+   "boundary": "I never publish a genome, vote or move the treasury — your data and the funds stay human-held."
+  },
+  "hermes": {
+   "greet": "Hermes on the river path, mail tucked away from the drizzle.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Sequencing summaries posted — the consent-policy draft awaits the stewards.'",
+   "quest": "Carry the consent forms from the Proposal Forum to the Operations Deck before the afternoon session."
+  },
+  "hive": {
+   "greet": "The Hive, paired and proofread like good bases.",
+   "task": "The swarm is cross-checking sample labels in the Research Synthesis Lab, base by base.",
+   "ask": "Stewards, please vote on the data-sharing draft."
+  },
+  "coach": {
+   "greet": "Court by the Cam fields: shoot like sequencing — start to finish, no skipped steps.",
+   "tip": "Complete the whole motion; half-rep shots rim out."
+  }
+ },
+ "s28-genomic-blockchain": {
+  "omega": {
+   "greet": "Welcome on the bluffs where sequencing reads the Pacific. Omega — defined, never seated; I advise above the surf.",
+   "advice": "Verify reads like a checksum: the Research Synthesis Lab summarizes, the record confirms, and stewards decide what is shared.",
+   "boundary": "I never release a record, vote or move funds — disclosure and treasury stay human."
+  },
+  "hermes": {
+   "greet": "Hermes on the bluff trail, salt in the satchel seams.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Verified summaries posted — the privacy draft awaits the stewards.'",
+   "quest": "Carry the checksum sheet from the Research Synthesis Lab to the Operations Deck before the fog lifts."
+  },
+  "hive": {
+   "greet": "The Hive, tide-timed and Torrey tidy.",
+   "task": "The swarm is checking sample records in the Research Synthesis Lab, label against ledger.",
+   "ask": "Stewards, please vote on the open-data draft."
+  },
+  "coach": {
+   "greet": "Court above the Pacific: shoot with the sea breeze in mind — aim true, arc high.",
+   "tip": "Check the wind, then commit; adjust before, not after."
+  }
+ },
+ "s29-metaverse-dao": {
+  "omega": {
+   "greet": "Welcome to the marsh-side campus of the renamed world. Omega — defined, never seated; I advise on real wetland, not just virtual.",
+   "advice": "Build rooms people can leave: clear doors, honest names, and a charter the users actually wrote.",
+   "boundary": "I never publish a world, vote or move the treasury — the keys stay with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes by the bayfront boardwalk, a heron keeping pace.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Presence-study summaries posted — the world-charter draft awaits the stewards.'",
+   "quest": "Carry the build notes from the Operations Deck to the Progress Observatory across the boardwalk."
+  },
+  "hive": {
+   "greet": "The Hive, nesting in the reeds and the render farm alike.",
+   "task": "The swarm is stress-testing the commons build on the Operations Deck, door by door.",
+   "ask": "Stewards, please vote on the world-charter draft."
+  },
+  "coach": {
+   "greet": "Court on the marsh edge: play like a good world — grounded physics, honest jumps.",
+   "tip": "Land both feet before you rise; worlds need gravity."
+  }
+ },
+ "s31-aerospace-dao": {
+  "omega": {
+   "greet": "Welcome to the pad where Apollo lit the sky. Omega — defined, never seated; I advise from the crawlerway's edge.",
+   "advice": "Checklist, then checklist again; in this trade, boring procedures are what make launches thrilling.",
+   "boundary": "I never authorize a launch, vote or move the treasury — go/no-go is human, always."
+  },
+  "hermes": {
+   "greet": "Hermes by the pad fence, heat shimmer on the mail.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Range summaries posted — the safety-case draft awaits the stewards.'",
+   "quest": "Carry the pad checklist from the Operations Deck to the Progress Observatory before the count resumes."
+  },
+  "hive": {
+   "greet": "The Hive, holding like a countdown at T-minus patience.",
+   "task": "The swarm is verifying range clearances on the Operations Deck, window by window.",
+   "ask": "Stewards, please give the go/no-go on the test-flight draft."
+  },
+  "coach": {
+   "greet": "Court by the pad: shoot like a launch window — brief, exact, unforgettable.",
+   "tip": "Nothing rushed: set, breathe, release."
+  }
+ },
+ "s32-solar-dao": {
+  "omega": {
+   "greet": "Welcome to the Thar flats where the panels drink the sun. Omega — defined, never seated; I advise in the glare.",
+   "advice": "Clean panels, clean ledgers: dust hides yield and unlogged numbers hide truth. Track both at the Operations Deck.",
+   "boundary": "I never sign a power contract, vote or move funds — energy deals stay with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes between the rows, shade a moving blessing.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Yield summaries posted — the maintenance draft awaits the stewards.'",
+   "quest": "Carry the dust-log from the Operations Deck to the Research Synthesis Lab before the noon glare."
+  },
+  "hive": {
+   "greet": "The Hive, glinting a little like the field itself.",
+   "task": "The swarm is scheduling panel washing on the Operations Deck, row by row.",
+   "ask": "Stewards, please vote on the grid-connection draft."
+  },
+  "coach": {
+   "greet": "Court on the desert flat: shoot with the sun at your back and arc above the heat.",
+   "tip": "Squint less, focus more: pick one rim target."
+  }
+ },
+ "s33-infogurus": {
+  "omega": {
+   "greet": "Welcome to the library on the harbor, heir to the burned one. Omega — defined, never seated; I advise among the shelves.",
+   "advice": "Cite like the ancients argued: source first, claim second. Curate what survives scrutiny.",
+   "boundary": "I never erase a source, vote or move the treasury — the catalog and the funds stay human-kept."
+  },
+  "hermes": {
+   "greet": "Hermes on the seafront corniche, gulls editing my margins.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Catalog summaries posted — the archive draft awaits the stewards.'",
+   "quest": "Carry the new acquisitions list from the Operations Deck to the Research Synthesis Lab before the reading room fills."
+  },
+  "hive": {
+   "greet": "The Hive, shelving itself in perfect order.",
+   "task": "The swarm is cataloging holdings on the Operations Deck, shelf by shelf.",
+   "ask": "Stewards, please vote on the open-access draft."
+  },
+  "coach": {
+   "greet": "Court facing the Mediterranean: pass like the library lends — accurately, generously, once.",
+   "tip": "One clean pass, one clean shot; no double dribble."
+  }
+ },
+ "s34-als-dao": {
+  "omega": {
+   "greet": "Welcome to the Iron Horse's home ground beside the Harlem. Omega — defined, never seated; I advise from the stands.",
+   "advice": "Honor Gehrig's speech: say the hard thing with grace, and let the Progress Observatory log the small wins daily.",
+   "boundary": "I never promise a breakthrough, vote or move the treasury — research funding stays with human stewards."
+  },
+  "hermes": {
+   "greet": "Hermes past Monument Park, cap held to the heart.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Study summaries posted — the funding draft awaits the stewards.'",
+   "quest": "Carry the research summary from the Research Synthesis Lab to the Progress Observatory before the seventh-inning stretch."
+  },
+  "hive": {
+   "greet": "The Hive, wearing pinstripes it did not earn but wears anyway.",
+   "task": "The swarm is matching volunteers to studies on the Operations Deck.",
+   "ask": "Stewards, please vote on the research-funding draft."
+  },
+  "coach": {
+   "greet": "Court in the stadium's shadow: play like Gehrig — show up every single day, play through.",
+   "tip": "Straight back, straight up; repeatable beats heroic."
+  }
+ },
+ "s35-parkinsons-dao": {
+  "omega": {
+   "greet": "Welcome to the parish where the shaking palsy was first described. Omega — defined, never seated; I advise by the churchyard.",
+   "advice": "Observe like James Parkinson did: write down exactly what you see in the Research Synthesis Lab, and let the pattern find you.",
+   "boundary": "I never diagnose, vote or move the treasury — care and funding decisions stay human."
+  },
+  "hermes": {
+   "greet": "Hermes by St Leonard's spire, the bells counting the hour.",
+   "message": "From the Research Synthesis Lab to the Proposal Forum: 'Observation summaries posted — the care-study draft awaits the stewards.'",
+   "quest": "Carry the observation diary from the Operations Deck to the Research Synthesis Lab before evensong."
+  },
+  "hive": {
+   "greet": "The Hive, steady and unhurried on the Shoreditch pavements.",
+   "task": "The swarm is compiling observation diaries on the Operations Deck, week by week.",
+   "ask": "Stewards, please vote on the care-study draft."
+  },
+  "coach": {
+   "greet": "Court by the churchyard: steady beats fast — line up the shot like a written observation.",
+   "tip": "Slow the last second; steady hands score."
+  }
+ }
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorldForge Earth world</title>
+<meta name="description" content="Walk a real place rebuilt as an agentic training world: satellite imagery, real elevation, OpenStreetMap buildings, wind-blown trees and flowers, moving water, union trade simulators, robot digital twins and a basketball court.">
+<style>
+:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:rgba(9,18,22,.78)}
+*{box-sizing:border-box}html,body{margin:0;height:100%;background:#0b1214;color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;overflow:hidden}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+.panel{position:fixed;background:var(--bg);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:12px 14px}
+#top{left:12px;top:12px;max-width:min(560px,92vw)}#top h1{margin:0;font-size:1.25rem}#place{color:var(--mut);font-size:.85rem}
+#facts{display:flex;flex-wrap:wrap;gap:4px 10px;margin-top:8px;font-size:.78rem;color:var(--mut)}#facts b{color:var(--ink)}
+#side{right:12px;top:12px;bottom:56px;width:min(380px,92vw);overflow:auto}
+#side h2{font-size:.95rem;margin:14px 0 6px;color:var(--acc)}details{margin:4px 0}summary{cursor:pointer}
+.muted{color:var(--mut);font-size:.82rem}
+#game{left:12px;bottom:56px;max-width:min(560px,92vw)}#xp{font-weight:700;font-size:1.05rem}
+button{background:#17323a;color:var(--ink);border:1px solid #2b5a63;border-radius:8px;padding:6px 10px;margin:3px 3px 0 0;cursor:pointer;font:inherit}
+button:hover{background:#21454f}button.ok{background:#1f6b4c}button.no{background:#7a2b2b}
+#log{margin:6px 0 0;padding-left:18px;max-height:90px;overflow:auto;font-size:.82rem;color:var(--mut)}
+#talk{margin-top:6px;font-size:.86rem}#status{left:50%;top:45%;transform:translate(-50%,-50%);font-size:1rem}
+#credit{position:fixed;left:0;right:0;bottom:0;padding:6px 12px;font-size:.7rem;color:var(--mut);background:rgba(0,0,0,.5)}
+#credit a{color:var(--mut)}.qz p{margin:8px 0 2px}a{color:var(--acc)}
+@media (max-width:820px){#side{top:auto;bottom:56px;height:38vh}#game{display:none}}
+</style>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }</script>
+</head><body>
+<canvas id="c" aria-label="3-D world"></canvas>
+<div class="panel" id="top"><h1 id="title">WorldForge Earth</h1><div id="place"></div><div id="facts"></div>
+  <div class="muted" style="margin-top:6px"><a href="index.html">All worlds</a> · drag to orbit · scroll to zoom · click an avatar to talk · <a id="hdlink" href="#">HD foliage</a> · <a id="tourlink" href="#">guided tour</a></div></div>
+<div class="panel" id="side">
+  <h2>The world</h2><div id="about"></div>
+  <h2>Trades training simulator</h2><div id="trades" class="muted">loading...</div>
+  <h2>Programs: union · K-12 · NGO · nonprofit</h2><div id="programs" class="muted">loading...</div>
+  <h2>Course quiz</h2><div id="quiz"></div>
+  <h2>Talk</h2><div id="talk" class="muted">Click the Omega Steward (halo), Hermes (wings), the Coach (orange) or the Hive (gold swarm).</div>
+</div>
+<div class="panel" id="game"><div id="xp">0 XP · 0/0 baskets</div>
+  <button id="goCourt">Go to court</button> <label class="muted">power <input id="power" type="range" min="40" max="85" value="62"></label> <button id="shoot">Shoot</button>
+  <button id="goRobots">Robot twins</button> <button id="jsonl">Download robot JSONL</button> <span id="eps" class="muted"></span>
+  <ul id="log"></ul></div>
+<div class="panel" id="status">Loading...</div>
+<div id="credit"></div>
+<script>
+  const u = new URL(location.href);
+  document.getElementById('hdlink').href = (u.searchParams.set('hd', '1'), u.search);
+  const v = new URL(location.href); v.searchParams.set('tour', '1'); document.getElementById('tourlink').href = v.search;
+</script>
+<script type="module" src="js/main.js"></script>
+</body></html>
