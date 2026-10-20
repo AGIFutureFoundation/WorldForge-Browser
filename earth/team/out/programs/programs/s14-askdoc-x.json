@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "AskDoc.X Health Systems Literacy for Healthcare Workers",
+   "grade_or_level": "Adult continuing education / union members",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO structures decisions and which actions stay human-reserved",
+    "Summarize evidence on AI-assisted healthcare using the Research Synthesis Lab's monitoring workflow",
+    "Draft a workplace question or proposal for the Proposal Forum using agent-drafted, human-decided process"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter: mission, contribution model and measurable outcomes; map the six human-reserved governance actions and discuss why they stay with people.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice reading an Evidence Monitor summary and a Research Synthesis Agent brief; compare against a Mayo-area care workflow question raised by members.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups turn a workplace concern into a proposal outline; the Proposal & Grant Drafter agent shapes it, members debate and simulate a human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review Progress Tracker outputs against charter outcomes; members identify which metrics matter for frontline healthcare work and log follow-ups.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized pre/post quiz scores and proposal-topic categories (no member names or employer identifiers) to help improve synthesis-brief clarity for worker audiences.",
+   "consent": "Union-side orientation explains data use; members opt in individually and may contribute scores anonymously or decline data sharing while fully participating."
+  },
+  {
+   "audience": "k12",
+   "title": "AskDoc.X: Who Decides? A Civics of AI Field Study",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Describe Rochester's Mayo Clinic and Zumbro River setting and why expert knowledge concentrates there",
+    "Identify the difference between agent tasks and human-reserved decisions in a DAO",
+    "Collaborate on a simple, evidence-based proposal and vote as a class"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Explore the mission of governing AI as a public good; students sort sample decisions into 'agent does' vs 'humans only' buckets.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Act as junior Evidence Monitors: read a short, kid-friendly summary about AI in medicine and list two facts and one open question.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Groups draft a class proposal to improve school health communication; a drafter agent helps refine wording, then every student casts a final vote.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students record their proposal's outcome on a simple progress chart and reflect on how measurable outcomes keep projects honest.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class-level tallies of sorted-decision answers and proposal votes (no individual student names or work samples).",
+   "consent": "Guardian/parent consent forms and school approval obtained before the unit; only aggregate, anonymous class data is shared, and parents may opt out of any data contribution."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governance-by-Design: Running Human-Decided Programs Alongside Agents",
+   "grade_or_level": "Professional development / NGO program staff",
+   "outcomes": [
+    "Design a program workflow that routes agent tasks to humans at decision points",
+    "Apply evidence-synthesis practices to a health-equity or community-health question",
+    "Structure measurable outcomes aligned with a public-good charter"
+   ],
+   "sessions": [
+    {
+     "zone": "Operations Deck",
+     "activity": "Map a real NGO program onto task-routing: what a Task Router and Collaborator Scout could support, and where staff judgment is mandatory.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Build an evidence table on a community-health question using the monitoring-to-synthesis pipeline practiced in the lab zone.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a grant-style proposal with the Proposal & Grant Drafter; peers debate; staff simulate the human-only enact step and note reserved actions.",
+     "minutes": 80
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 2-3 measurable outcomes for the drafted program and set up a tracking template mirroring the Progress Tracker.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized workflow maps and outcome-metric templates (organization names removed) to a shared library of governance-by-design patterns.",
+   "consent": "Participating organizations sign a data-sharing addendum; any client or beneficiary data stays out of scope, and submissions are scrubbed of identifiers before sharing."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Charter to Impact: A Nonprofit Board Workshop on Human-Governed AI",
+   "grade_or_level": "Board and leadership workshop",
+   "outcomes": [
+    "Explain the agent-managed, human-governed model and the six human-reserved actions to a board audience",
+    "Assess which nonprofit decisions can be agent-supported and which must remain board-reserved",
+    "Adopt a simple charter-aligned outcomes dashboard"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board walkthrough of the charter, contribution model and measurable outcomes; compare with the nonprofit's own bylaws and reserved powers.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Directors practice the proposal lifecycle: agent drafts, board debates, humans alone vote to enact; apply to one live nonprofit decision.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Identify which staff tasks could be agent-assisted versus board-governed; sketch a routing policy with clear human checkpoints.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a one-page outcomes dashboard modeled on the Progress Tracker; agree on review cadence and who sees it.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance-pattern summaries (which decision types boards reserve, cadence choices) with identifiers removed, to a shared governance-pattern library.",
+   "consent": "Board resolution authorizes participation; individual directors consent to workshop participation, and only de-identified governance patterns are shared externally."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s14-askdoc-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

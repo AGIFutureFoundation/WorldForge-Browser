@@ -1,0 +1,393 @@
+{
+ "scenarios": [
+  {
+   "id": "hospital-lake-outfall-pipe",
+   "trade": "pipefitters",
+   "zone": "Medical Kiosk",
+   "task": "Replace a corroded chilled-water supply line in a utility trench near the hospital service entrance between Brunnsviken lake and the pine forest edge.",
+   "hazards": [
+    "trench collapse in wet lakeside soil",
+    "residual glycol in line",
+    "heavy pipe near walkway",
+    "underground electrical"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "cut-resistant gloves",
+    "steel-toe boots",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Locate and mark existing utilities before excavation",
+    "Shore or slope the trench per competent person inspection",
+    "Isolate, lock out and drain the chilled-water line",
+    "Cut out corroded section and prep pipe ends",
+    "Fit and braze or fuse replacement spool",
+    "Pressure test, insulate, and backfill in lifts"
+   ],
+   "rubric": [
+    {
+     "axis": "trench_safety",
+     "pass_if": "Trench protective system in place before entry"
+    },
+    {
+     "axis": "isolation",
+     "pass_if": "LOTO applied and line verified drained"
+    },
+    {
+     "axis": "joint_quality",
+     "pass_if": "Pressure test holds with no leaks"
+    },
+    {
+     "axis": "site_restore",
+     "pass_if": "Backfill compacted and walkway restored"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Towed-material shuttle and trench-side sensor sweep for soil movement and utility detection; all shoring and pipefitting by the crew."
+  },
+  {
+   "id": "imaging-room-conduit-pull",
+   "trade": "electricians",
+   "zone": "4D Imaging Room",
+   "task": "Pull shielded branch circuits to the 4D imaging displays while the adjacent hospital wing remains occupied.",
+   "hazards": [
+    "energized panels nearby",
+    "conduit burrs and wire lube slips",
+    "ceiling dust above clinical space",
+    "patient-area noise and infection control"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "insulated gloves",
+    "dust mask"
+   ],
+   "steps": [
+    "Review drawings and coordinate downtime with hospital facilities",
+    "De-energize and lock out the target panel",
+    "Verify absence of voltage and ground the circuit",
+    "Pull conductors with proper lube and wire grips",
+    "Terminate, label, and megger test each circuit",
+    "Clean work area to clinical standards before handover"
+   ],
+   "rubric": [
+    {
+     "axis": "loto",
+     "pass_if": "Panel locked out and absence of voltage verified"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Terminations torque-spec and circuits pass megger test"
+    },
+    {
+     "axis": "labeling",
+     "pass_if": "All circuits labeled per as-built drawings"
+    },
+    {
+     "axis": "clean_handover",
+     "pass_if": "No dust or debris left in clinical corridor"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "glazing-vr-lab-partition",
+   "trade": "glaziers",
+   "zone": "Virtual Molecular Lab",
+   "task": "Install laminated glass partitions for the VR lab while protecting active equipment racks.",
+   "hazards": [
+    "heavy glass handling",
+    "sharp edges",
+    "falling panels",
+    "rack damage in occupied room"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "safety glasses",
+    "steel-toe boots",
+    "hard hat"
+   ],
+   "steps": [
+    "Measure openings and confirm glass sizes on delivery",
+    "Set up suction cups and panel rollers",
+    "Dry-fit each panel with a partner",
+    "Set, shim, and plumb panels into track",
+    "Caulk and install trim caps",
+    "Remove packing debris and inspect for chips"
+   ],
+   "rubric": [
+    {
+     "axis": "handling",
+     "pass_if": "No glass moved without suction cups and two-person lift"
+    },
+    {
+     "axis": "fit",
+     "pass_if": "Panels plumb within tolerance and fully seated"
+    },
+    {
+     "axis": "finish",
+     "pass_if": "Caulk neat, no chips or stress cracks"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "med-office-vav-balancing",
+   "trade": "hvacr",
+   "zone": "Metaverse Medical Office",
+   "task": "Balance a new variable-air-volume system serving the practitioner offices without disrupting the occupied suite.",
+   "hazards": [
+    "working on ladder near ceiling tile",
+    "moving fan components",
+    "hot reheat coils",
+    "occupied-suite disruption"
+   ],
+   "ppe": [
+    "safety glasses",
+    "hard hat",
+    "gloves"
+   ],
+   "steps": [
+    "Confirm air handler is running in design mode",
+    "Measure static pressure and fan speed at the unit",
+    "Set VAV minimum and maximum flows room by room",
+    "Recheck branch dampers and diffuser patterns",
+    "Log final readings and temperatures",
+    "Walk the suite with the occupant to confirm comfort"
+   ],
+   "rubric": [
+    {
+     "axis": "measurements",
+     "pass_if": "All flows within 10% of design values"
+    },
+    {
+     "axis": "safety",
+     "pass_if": "Ladder set and fan guarded before work"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Balance report completed and signed"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries instruments and reads remote sensors at diffusers so the tech stays off the ladder."
+  },
+  {
+   "id": "kiosk-anchor-bolts",
+   "trade": "ironworkers",
+   "zone": "Medical Kiosk",
+   "task": "Set anchor bolts and level base plates for the freestanding medical kiosk pad adjacent to monitor workstations.",
+   "hazards": [
+    "rebar impalement",
+    "pinch points setting plates",
+    "flying chips drilling",
+    "nearby live foot traffic"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "gloves",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Lay out bolt pattern from approved drawing",
+    "Drill or set template into fresh concrete",
+    "Torque anchors to specification",
+    "Plumb and grout base plates",
+    "Check layout against workstation clearances",
+    "Inspect and cap protruding bolts"
+   ],
+   "rubric": [
+    {
+     "axis": "layout",
+     "pass_if": "Bolt pattern matches drawing within tolerance"
+    },
+    {
+     "axis": "plumb",
+     "pass_if": "Base plates level before grout cures"
+    },
+    {
+     "axis": "impalement_control",
+     "pass_if": "All protruding bolts capped"
+    },
+    {
+     "axis": "clearance",
+     "pass_if": "Kiosk clearance to workstations verified"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "forest-edge-survey-control",
+   "trade": "surveyors",
+   "zone": "Medical Kiosk",
+   "task": "Establish control points for a new service-utility route running from the hospital toward the Brunnsviken lakeside and pine forest edge.",
+   "hazards": [
+    "uneven forest floor and root trip hazards",
+    "weather exposure",
+    "traffic near service road",
+    "equipment line-of-sight near occupied entrances"
+   ],
+   "ppe": [
+    "hi-vis vest",
+    "safety glasses",
+    "sturdy boots",
+    "weather gear"
+   ],
+   "steps": [
+    "Recover existing hospital control monuments",
+    "Run a closed traverse along the utility route",
+    "Check angular and distance closure against standards",
+    "Set and flag new control hubs",
+    "Record coordinates and field notes",
+    "Secure site before departure"
+   ],
+   "rubric": [
+    {
+     "axis": "closure",
+     "pass_if": "Traverse closure within allowable standard"
+    },
+    {
+     "axis": "monumentation",
+     "pass_if": "Hubs set, flagged, and clearly referenced"
+    },
+    {
+     "axis": "field_notes",
+     "pass_if": "Notes complete and reduction-ready"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "bitcraze-crazyflie-2-1-plus",
+   "robot_role": "Aerial photo pass of the wooded route to flag obstructions before ground traverse."
+  },
+  {
+   "id": "imaging-room-mri-zone-housekeeping",
+   "trade": "laborers",
+   "zone": "4D Imaging Room",
+   "task": "Maintain housekeeping and controlled-access zones during imaging suite renovation next to active diagnostic areas.",
+   "hazards": [
+    "MRI magnet fringe field pulling tools",
+    "silica dust from drilling",
+    "blocked egress paths",
+    "infection-control breach in hospital corridor"
+   ],
+   "ppe": [
+    "hard hat",
+    "dust mask (NIOSH N95)",
+    "safety glasses",
+    "hi-vis vest",
+    "gloves"
+   ],
+   "steps": [
+    "Set up dust barriers and negative-air unit",
+    "Post magnet zone signage and screen all carts and tools",
+    "Keep egress and corridor paths clear at shift start",
+    "Wet-wipe and vacuum with HEPA daily",
+    "Inspect barriers and log housekeeping checks",
+    "Break down containment at completion"
+   ],
+   "rubric": [
+    {
+     "axis": "ferrous_control",
+     "pass_if": "No ferrous items enter posted magnet zone"
+    },
+    {
+     "axis": "dust_control",
+     "pass_if": "Barriers intact and HEPA vacuuming logged daily"
+    },
+    {
+     "axis": "egress",
+     "pass_if": "Exit paths never obstructed"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Autonomous shift-end inspection patrol of barriers, signage, and egress paths; findings reported to the crew."
+  },
+  {
+   "id": "med-office-fire-sprinkler-relocate",
+   "trade": "fire-sprinkler",
+   "zone": "Metaverse Medical Office",
+   "task": "Relocate sprinkler heads to maintain coverage after partition changes in the practitioner office suite.",
+   "hazards": [
+    "live sprinkler main under pressure",
+    "working from ladder in finished space",
+    "accidental discharge over equipment",
+    "occupied-suite disruption"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "gloves"
+   ],
+   "steps": [
+    "Obtain hot-work permit and notify fire marshal monitoring",
+    "Isolate and drain the affected branch line",
+    "Cut, thread, and install relocated armovers",
+    "Install and torque new sprinkler heads",
+    "Restore water, vent air, and inspect coverage",
+    "Perform flow/inspector test and document"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "Branch drained before cutting with main secured"
+    },
+    {
+     "axis": "coverage",
+     "pass_if": "Heads positioned per code coverage pattern"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Inspection test passed and documented"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "Suite left dry and clean"
+    }
+   ],
+   "minutes": 100,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Healthcare Facility Construction Safety Card — Diagnostic.X at Karolinska Solna",
+  "requires": [
+   "hospital-lake-outfall-pipe",
+   "imaging-room-conduit-pull",
+   "glazing-vr-lab-partition",
+   "med-office-vav-balancing",
+   "kiosk-anchor-bolts",
+   "forest-edge-survey-control",
+   "imaging-room-mri-zone-housekeeping",
+   "med-office-fire-sprinkler-relocate"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "diagnostic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

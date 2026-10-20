@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Imaging Technologists' Intro to 4D Diagnostic Workflows",
+   "grade_or_level": "Continuing professional development (adult radiography and lab technologists)",
+   "outcomes": [
+    "Describe how 4D volumetric imaging complements standard 2D X-ray review",
+    "Practice patient communication while walking through a 4D injury model",
+    "Identify safe boundaries between AI assistance and technologist judgment"
+   ],
+   "sessions": [
+    {
+     "zone": "Medical Kiosk",
+     "activity": "Guided walkthrough of the diagnostic kiosk and monitor workstations; technologists role-play patient intake and discuss what the kiosk can and cannot do, logging open questions.",
+     "minutes": 40
+    },
+    {
+     "zone": "4D Imaging Room",
+     "activity": "Pairs practice resizing and rotating a 4D injury image beside its 2D X-ray, then explain findings to a partner acting as the patient.",
+     "minutes": 60
+    },
+    {
+     "zone": "Virtual Molecular Lab",
+     "activity": "Union members explore the molecule-viewing lab from inside a structure, discussing how molecular imaging roles may evolve and what training is needed.",
+     "minutes": 45
+    },
+    {
+     "zone": "Metaverse Medical Office",
+     "activity": "Debrief with the Office AI Avatar scenario; draft a union position on AI avatar coverage of off-hours office duties.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized session feedback and task-completion timestamps only; no patient images or personal health data are collected or shared.",
+   "consent": "Participation is voluntary under a signed CPD agreement; learners opt in to anonymized feedback aggregation and can withdraw at any time without workplace consequence."
+  },
+  {
+   "audience": "k12",
+   "title": "See Inside: X-rays, Molecules, and 4D Bodies",
+   "grade_or_level": "Ages 12-16 (middle/lower secondary science)",
+   "outcomes": [
+    "Explain how X-ray images are made and how 4D adds time and depth",
+    "Connect molecules to medicine through an immersive lab visit",
+    "Practice describing medical images in plain scientific language"
+   ],
+   "sessions": [
+    {
+     "zone": "Medical Kiosk",
+     "activity": "Students tour the kiosk and workstations, sketch the setup, and brainstorm what questions a diagnostic machine should ask a patient.",
+     "minutes": 30
+    },
+    {
+     "zone": "4D Imaging Room",
+     "activity": "Working in pairs, students walk around a 4D image of an injury, compare it with the 2D X-ray beside it, and record three differences they observe.",
+     "minutes": 45
+    },
+    {
+     "zone": "Virtual Molecular Lab",
+     "activity": "Students step 'inside' a simple molecule, build a paper model of what they saw, and discuss how chemists use such views to design medicines.",
+     "minutes": 40
+    },
+    {
+     "zone": "Metaverse Medical Office",
+     "activity": "Students interview the Office AI Avatar with prepared questions and reflect on where AI helps and where human doctors are still needed.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Only anonymized drawings, quiz answers, and observation notes aggregated for curriculum improvement; no personal data or health data collected.",
+   "consent": "Written guardian/parent consent is required before participation, plus verbal assent from each student; schools receive a privacy notice, no individually identifying data is shared, and families may withdraw at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Community Diagnostic Access Workshop",
+   "grade_or_level": "Adult community health advocates and NGO field staff",
+   "outcomes": [
+    "Assess how kiosk-based diagnostics could expand access in underserved areas",
+    "Understand privacy risks of AI-assisted medical avatars",
+    "Draft a community consultation checklist for deploying diagnostic kiosks"
+   ],
+   "sessions": [
+    {
+     "zone": "Medical Kiosk",
+     "activity": "Field staff simulate a kiosk health screening with a partner, mapping friction points for low-literacy and multilingual users.",
+     "minutes": 50
+    },
+    {
+     "zone": "4D Imaging Room",
+     "activity": "Participants experience a doctor-patient 4D walkthrough and discuss how visual explanations improve informed consent in real clinics.",
+     "minutes": 40
+    },
+    {
+     "zone": "Metaverse Medical Office",
+     "activity": "Role-play an after-hours consultation with the Office AI Avatar; record escalation cases where a human must be reached.",
+     "minutes": 45
+    },
+    {
+     "zone": "Virtual Molecular Lab",
+     "activity": "Brief visit linking molecular diagnostics to affordable testing; groups note one access barrier per insight.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized friction-point maps and escalation case notes, aggregated into an open community-access findings report.",
+   "consent": "Facilitated informed-consent briefing at the start; participants opt in to anonymized contribution of notes; no community members' health data is collected."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Nonprofit Health Program Design Lab",
+   "grade_or_level": "Professional staff of health-focused nonprofits (adult)",
+   "outcomes": [
+    "Map metaverse diagnostic zones to nonprofit program goals",
+    "Design a pilot evaluation plan for remote diagnostic services",
+    "Identify governance boundaries for AI-assisted health tools"
+   ],
+   "sessions": [
+    {
+     "zone": "Medical Kiosk",
+     "activity": "Teams audit the kiosk setup against a service-delivery canvas: who is served, what is diagnosed, who staffs it, what is missing.",
+     "minutes": 60
+    },
+    {
+     "zone": "4D Imaging Room",
+     "activity": "Staff experience the 4D/2D comparison workflow and draft outcome indicators a pilot could measure, such as patient understanding or consultation time.",
+     "minutes": 50
+    },
+    {
+     "zone": "Metaverse Medical Office",
+     "activity": "Review the practitioner-office-as-a-service model; define escalation and human-oversight rules for the Office AI Avatar.",
+     "minutes": 45
+    },
+    {
+     "zone": "Virtual Molecular Lab",
+     "activity": "Explore the molecule-editing lab and discuss partnerships with research nonprofits, noting capability gaps honestly.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized canvas outputs, draft indicators, and oversight rules, shared as an open toolkit for nonprofit diagnostic pilots.",
+   "consent": "Organizational memorandum of understanding plus individual opt-in for anonymized toolkit contribution; participants may exclude their organization's details before publication."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "diagnostic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

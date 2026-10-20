@@ -1,0 +1,314 @@
+{
+ "scenarios": [
+  {
+   "id": "charging-bull-bronze-patina-touch-up",
+   "trade": "painters",
+   "zone": "Transaction Desk",
+   "task": "Prep and recoat patina-worn spots on the Charging Bull bronze sculpture without damaging the artist's finish.",
+   "hazards": [
+    "Heavy bronze edges and horns cause impact injuries",
+    "Chemical patina agents irritate skin and eyes",
+    "Public crowds in urban-park setting",
+    "Slippery wet pavement near harbor spray"
+   ],
+   "ppe": [
+    "Nitrile gloves",
+    "Safety glasses",
+    "Hi-vis vest",
+    "Slip-resistant boots"
+   ],
+   "steps": [
+    "Set up cones and barriers around the sculpture",
+    "Inspect patina and photograph worn areas for the work order",
+    "Mix patina-matching solution per label",
+    "Apply solution with soft applicators only",
+    "Rinse and verify color match",
+    "Break down barriers and clear the site"
+   ],
+   "rubric": [
+    {
+     "axis": "surface protection",
+     "pass_if": "No abrasives or scraping used on bronze"
+    },
+    {
+     "axis": "chemical safety",
+     "pass_if": "Label consulted and gloves worn throughout mixing and applying"
+    },
+    {
+     "axis": "public safety",
+     "pass_if": "Barriers kept public at least 6 feet away during work"
+    },
+    {
+     "axis": "cleanup",
+     "pass_if": "All applicators and chemicals removed from park grounds"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "broadway-manhole-dc-feed-pull",
+   "trade": "electricians",
+   "zone": "Financial Infrastructure Gateway",
+   "task": "Pull new conduit and low-voltage feed beneath Broadway at Wall Street for a gateway dry-run terminal cabinet.",
+   "hazards": [
+    "Live underground utilities",
+    "Confined space entry at manhole",
+    "Vehicle traffic on Broadway",
+    "Heavy cable strain injuries"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Arc-rated gloves",
+    "Safety glasses",
+    "Hi-vis vest",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Obtain utility markouts and permit for the manhole",
+    "Set up traffic control and barricades",
+    "Test manhole atmosphere before entry",
+    "Install conduit and pull cable with a feeder",
+    "Terminate at cabinet and megger test the run",
+    "Close manhole and remove traffic control"
+   ],
+   "rubric": [
+    {
+     "axis": "markout compliance",
+     "pass_if": "Utility markouts verified before any digging or entry"
+    },
+    {
+     "axis": "atmosphere testing",
+     "pass_if": "Air tested and logged before manhole entry"
+    },
+    {
+     "axis": "traffic control",
+     "pass_if": "Barricades and cones set before opening the manhole"
+    },
+    {
+     "axis": "test discipline",
+     "pass_if": "Insulation test passed before energizing paperwork is signed"
+    }
+   ],
+   "minutes": 120,
+   "level": "journeyman",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries a gas meter camera into the manhole to visually confirm conditions before human entry."
+  },
+  {
+   "id": "hanover-square-hvac-vav-swap",
+   "trade": "hvacr",
+   "zone": "Service Provisioning Counter",
+   "task": "Replace a failed VAV box above an occupied office ceiling at 10 Hanover Square during off-hours.",
+   "hazards": [
+    "Working overhead on a ladder in tight plenum space",
+    "Fiberglass duct insulation irritation",
+    "Live electrical at box controller",
+    "Disturbed ceiling tiles and dust"
+   ],
+   "ppe": [
+    "Dust mask",
+    "Safety glasses",
+    "Cut-resistant gloves",
+    "Hard hat"
+   ],
+   "steps": [
+    "Lock out the VAV controller circuit",
+    "Remove ceiling tiles and set drop cloths",
+    "Disconnect old box and rig it down safely",
+    "Hoist new box and reconnect duct and control wiring",
+    "Verify airflow and thermostat response",
+    "Restore ceiling and clean the space"
+   ],
+   "rubric": [
+    {
+     "axis": "lockout-tagout",
+     "pass_if": "Circuit locked out before disconnecting controller"
+    },
+    {
+     "axis": "material handling",
+     "pass_if": "Old box lowered with rope or helper, never dropped"
+    },
+    {
+     "axis": "commissioning",
+     "pass_if": "Airflow readings within spec before leaving"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "Ceiling restored and area cleaned"
+    }
+   ],
+   "minutes": 90,
+   "level": "journeyman",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "water-street-rigging-glass-loads",
+   "trade": "riggers",
+   "zone": "Transaction Desk",
+   "task": "Rig and signal crane picks of curtain-wall glass units from a flatbed on Water Street to the 19 Dutch loading dock.",
+   "hazards": [
+    "Suspended load over public sidewalk",
+    "Wind gusts off New York Harbor",
+    "Sharp glass edges and crushed-toe zones",
+    "Crane swing path near overhead lines"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Hi-vis vest",
+    "Steel-toe boots",
+    "Safety harness where required"
+   ],
+   "steps": [
+    "Complete lift plan and verify crane inspection tag",
+    "Establish exclusion zone and sidewalk protection",
+    "Inspect slings, spreader bar and vacuum lifters",
+    "Use standard hand signals; tag lines on every pick",
+    "Land units on dunnage at the dock",
+    "Inspect rigging and secure load before release"
+   ],
+   "rubric": [
+    {
+     "axis": "lift plan",
+     "pass_if": "Lift plan reviewed and signed before first pick"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "No personnel under suspended loads at any time"
+    },
+    {
+     "axis": "wind limits",
+     "pass_if": "Picks halted when gusts exceed manufacturer limit"
+    },
+    {
+     "axis": "rigging inspection",
+     "pass_if": "All slings and lifters inspected each shift"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows glass units from drop point to dock staging under the rigger-in-charge direction, keeping humans clear of the swing path."
+  },
+  {
+   "id": "broad-street-excavation-trench-shore",
+   "trade": "laborers",
+   "zone": "Budget Office",
+   "task": "Excavate and shore a 5-foot trench on Broad Street for a new budget-office conduit run.",
+   "hazards": [
+    "Trench cave-in",
+    "Underground utilities",
+    "Struck-by from equipment",
+    "Pedestrian exposure on narrow sidewalk"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Hi-vis vest",
+    "Steel-toe boots",
+    "Gloves"
+   ],
+   "steps": [
+    "Confirm utility markouts and dig permit",
+    "Install pedestrian walkway protection",
+    "Cut pavement and excavate to grade",
+    "Install trench box or shoring at required depth",
+    "Spoil pile kept back at least 2 feet from edge",
+    "Backfill, compact and restore pavement"
+   ],
+   "rubric": [
+    {
+     "axis": "protective system",
+     "pass_if": "Shoring or box installed before anyone enters trench over 5 feet"
+    },
+    {
+     "axis": "spoils control",
+     "pass_if": "Spoil kept 2 feet or more from trench edge"
+    },
+    {
+     "axis": "utility protection",
+     "pass_if": "Hand digging within 2 feet of marked utilities"
+    },
+    {
+     "axis": "site restoration",
+     "pass_if": "Pavement patch meets DOT standard"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "liberty-street-roof-perimeter-leak",
+   "trade": "roofers",
+   "zone": "Financial Infrastructure Gateway",
+   "task": "Repair a membrane leak at the roof perimeter of 200 Liberty Street near the parapet.",
+   "hazards": [
+    "Fall from roof edge near unguarded parapet",
+    "Hot asphalt or torch burn hazards",
+    "Wind off harbor at height",
+    "Skylight and vent trip hazards"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "High-ankle boots",
+    "Harness with rope grab where anchored"
+   ],
+   "steps": [
+    "Set up warning line and anchor points",
+    "Locate leak with moisture survey",
+    "Clean and dry the membrane area",
+    "Apply patch per membrane system (no open torch without permit)",
+    "Flood test the repair area",
+    "Remove materials from roof and secure loose items"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "Harness tied off or warning line plus monitor used at all times"
+    },
+    {
+     "axis": "hot-work control",
+     "pass_if": "Hot work permit and fire watch in place if torching"
+    },
+    {
+     "axis": "repair quality",
+     "pass_if": "Flood test shows no leakage"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "Roof clear of debris and scrap before leaving"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Scans and maps the roof membrane with thermal payload to locate the leak before humans go near the edge."
+  }
+ ],
+ "credential": {
+  "name": "Wall Street Waterfront Trades Readiness Card",
+  "requires": [
+   "charging-bull-bronze-patina-touch-up",
+   "broadway-manhole-dc-feed-pull",
+   "hanover-square-hvac-vav-swap",
+   "water-street-rigging-glass-loads",
+   "broad-street-excavation-trench-shore",
+   "liberty-street-roof-perimeter-leak"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "agentic-payments",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

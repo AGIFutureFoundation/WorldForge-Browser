@@ -1,0 +1,299 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-waypoint-tour",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the Charter Hall perimeter path stopping at five display plinths, logging dwell time at each charter exhibit.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odometry/filtered",
+     "/goal_pose",
+     "/charter_dwell_event",
+     "/diagnostics"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Paved plaza surface like Lou Gehrig Plaza; watch curbs, tree wells (113 mapped trees) and garage entrances at 164th Street Garage.",
+   "success": [
+    "All 5 plinths reached within 20 cm",
+    "Dwell time 8-12 s per plinth",
+    "No collision events logged",
+    "Patrol completed under 15 min"
+   ],
+   "safety_stops": [
+    "Emergency stop button on bumpers",
+    "Wheel-current spike >150% nominal triggers halt",
+    "Geofence breach beyond zone polygon stops motion",
+    "Operator deadman timeout at 5 s"
+   ],
+   "human_in_loop": "A steward approves the patrol report before it is filed as a charter exhibit record; robot never edits charter content.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_reached",
+     "dwell_seconds",
+     "collision_events",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve labeled research binders from a 3-tier shelf and deliver them to the synthesis desk for agent summarization.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/rgb/image_raw",
+     "/joint_states",
+     "/move_base_simple/goal",
+     "/grasp_feedback"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Interior lab floor with cable runs and chair legs; shelf height within torso-lift range; threshold strips at doorway.",
+   "success": [
+    "Grasp success rate >=90% over 10 trials",
+    "Placement within 5 cm of desk target",
+    "No dropped objects",
+    "Cycle time under 60 s per binder"
+   ],
+   "safety_stops": [
+    "Torque limit on arm joints",
+    "Object slip detection aborts carry",
+    "Lidar obstacle <0.3 m halts base",
+    "Human proximity <1 m pause"
+   ],
+   "human_in_loop": "A researcher confirms each retrieved binder is the correct one before it enters the evidence log.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_success",
+     "placement_error_cm",
+     "cycle_time_s",
+     "slip_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-nav-demo",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry a proposal tablet to designated forum seats during a debate so participants can review drafted proposals in turn.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/goal_pose",
+     "/seat_arrival_event",
+     "/battery_state"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat indoor forum floor with chair legs, step edges at seating rows, and clutter under seats.",
+   "success": [
+    "Seat arrival accuracy within 15 cm at 6 seats",
+    "Tablet remains level within 10 deg",
+    "Zero falls or tip-overs",
+    "Average transit under 25 s per seat"
+   ],
+   "safety_stops": [
+    "IMU tilt >30 deg aborts gait",
+    "Foot-contact loss stops walk",
+    "Obstacle <20 cm ahead halts",
+    "Low battery <15% returns to dock"
+   ],
+   "human_in_loop": "A moderator selects the next seat target; the robot never decides debate order or records votes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "seat_id",
+     "arrival_error_cm",
+     "tilt_max_deg",
+     "transit_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-panel-inspect",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect the operations status wall and router console panels, capturing thermal and text images for the Task Router agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/spot/odom",
+     "/thermal/image_raw",
+     "/inspect_report"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Deck flooring with cable trays, raised server-rack plinths and stair transition to mezzanine; avoid sliding doors.",
+   "success": [
+    "All 8 panels imaged in focus",
+    "Thermal anomalies flagged within 2 s of detection",
+    "Zero stair-fall events",
+    "Inspection loop under 12 min"
+   ],
+   "safety_stops": [
+    "Stair-edge detection halts traversal",
+    "Payload joint limit stop",
+    "Operator e-stop channel",
+    "Perception dropout >2 s freezes motion"
+   ],
+   "human_in_loop": "An operator reviews flagged thermal anomalies and approves before any maintenance ticket is created.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "panels_captured",
+     "anomalies_flagged",
+     "stair_events",
+     "loop_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-crazyflie-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow scanning pass along the observatory's metric board wall to image progress indicators for the Progress Tracker agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/camera/image",
+     "/scan_progress",
+     "/battery_voltage"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Indoor flight with ceiling fans off; avoid hanging chart banners, light fixtures and the board frame edges.",
+   "success": [
+    "Wall fully covered in overlapping frames >=60% overlap",
+    "Hover position error <10 cm RMS",
+    "No wall contact",
+    "Flight under 5 min per battery"
+   ],
+   "safety_stops": [
+    "Battery voltage <3.3 V triggers land",
+    "Position estimate loss lands immediately",
+    "Obstacle <30 cm triggers retreat",
+    "Kill switch on operator radio"
+   ],
+   "human_in_loop": "A steward verifies the scanned board images before metrics are posted to the observatory display.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "frames_captured",
+     "pose_rmse_cm",
+     "contacts",
+     "flight_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "talos-charter-greeting",
+   "robot": "pal-robotics-talos",
+   "zone": "Charter Hall",
+   "goal": "Stand at the Charter Hall entrance and gesture visitors toward the charter display using whole-body motion and speech prompts.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/whole_body_controller/command",
+     "/speech_output",
+     "/torso_imu/data"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Entrance threshold and doormat, polished floor with low friction; keep clear of door swing and entry queue rails.",
+   "success": [
+    "Greeting cycle completed 20 times without falls",
+    "Gestures point within 15 deg of display",
+    "Speech delivered on 100% of detections",
+    "Zero person contacts"
+   ],
+   "safety_stops": [
+    "Foot slip detection freezes balance controller",
+    "Joint torque limit stop",
+    "Person within 1.2 m pauses gesture",
+    "Operator e-stop"
+   ],
+   "human_in_loop": "A steward approves the greeting script text before deployment; agent-authored scripts are drafts only.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "cycles_completed",
+     "gesture_error_deg",
+     "fall_events",
+     "script_version",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ur10e-evidence-desk-staging",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Stage scanned document stacks onto the synthesis desk feed tray in a repeatable pick-and-place pattern for the synthesis pipeline.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrench",
+     "/joint_states",
+     "/urscript_interface",
+     "/stack_ready_event"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed pedestal beside desk; cable bundle and monitor arm within reach envelope; paper stacks lightweight and frangible.",
+   "success": [
+    "Stack placement repeatability <5 mm",
+    "Zero crushed stacks in 50 cycles",
+    "Cycle time under 15 s",
+    "Wrench anomaly rate <1%"
+   ],
+   "safety_stops": [
+    "Force-torque threshold 20 N stop",
+    "Joint speed limited to 250 mm/s near humans",
+    "Plane detection plane category: protective stop when desk edge detected",
+    "E-stop button on controller"
+   ],
+   "human_in_loop": "A lab steward confirms stack contents and destination before each batch is staged.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "place_repeatability_mm",
+     "crush_events",
+     "cycle_time_s",
+     "wrench_anomalies",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s34-als-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

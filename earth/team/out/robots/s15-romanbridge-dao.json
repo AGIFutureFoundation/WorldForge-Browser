@@ -1,0 +1,336 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide-scan",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the Charter Hall exhibit path, stopping at each charter panel and narrating mission content.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/speech",
+     "/tour_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth indoor exhibit floor; avoid display plinths and queued visitors in the 28-building block context.",
+   "success": [
+    "Visits all 5 charter panels within 15 min",
+    "Keeps <=0.3 m lateral error from waypoint path",
+    "Speech utterance triggered at each panel",
+    "Zero collisions recorded"
+   ],
+   "safety_stops": [
+    "E-stop on torso contact >5 N",
+    "Stop if a human is within 0.5 m ahead",
+    "Abort tour if battery <20%"
+   ],
+   "human_in_loop": "A steward approves the tour script content before public delivery.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "panel_id",
+     "waypoint_error_m",
+     "collision_count",
+     "dwell_time_s",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "gardon-gorge-riverbank-mapping",
+   "robot": "clearpath-husky-a200",
+   "zone": "Research Synthesis Lab",
+   "goal": "Drive the riverside track near Pont du Gard to build an elevation map of the 95.6 m relief gorge for the evidence base.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/velodyne_points",
+     "/map_metadata",
+     "/cmd_vel",
+     "/elevation_map"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Dirt and scrub riverside track; 95.6 m relief slopes, loose sand patches (5 sand features), garrigue scrub (19).",
+   "success": [
+    "Maps >=800 m of track in one sortie",
+    "Elevation map RMS error <0.15 m vs GNSS checkpoints",
+    "No tip events (roll <10 deg)",
+    "Returns to start within 2 m"
+   ],
+   "safety_stops": [
+    "Stop on roll >10 deg or pitch >20 deg",
+    "Stop within 1 m of waterline polygon",
+    "E-stop on wheel slip >30% for 3 s"
+   ],
+   "human_in_loop": "Operator confirms route corridor along the riverbank before launch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "distance_m",
+     "elevation_rms_m",
+     "max_roll_deg",
+     "min_water_distance_m",
+     "slip_events",
+     "duration_s"
+    ]
+   }
+  },
+  {
+   "id": "aqueduct-bridge-inspection",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Inspect the lower tier arches and piers of the Pont du Gard masonry, flagging cracks and vegetation growth for stewards.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_rgb/image_raw",
+     "/depth/points",
+     "/body_pose",
+     "/crack_detections",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Irregular limestone blocks, arch ledges, sand/gravel banks of the Gardon; wet rock near the 3 water features.",
+   "success": [
+    "Captures images of >=6 arch piers at <1 m range",
+    "Crack detection precision >=0.8 on labeled test set",
+    "Body pose stays within 0.2 m of structure face",
+    "No falls (z drop >0.3 m)"
+   ],
+   "safety_stops": [
+    "Stop if distance to structure <0.2 m",
+    "Recall if z-drop >0.3 m detected",
+    "Abort on IMU impact >4 g",
+    "Abort if water detected below within 1 m during stance change"
+   ],
+   "human_in_loop": "A heritage steward approves final inspection points and receives flagged defects.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "pier_id",
+     "images_captured",
+     "crack_count",
+     "min_range_m",
+     "z_drop_events",
+     "impact_max_g"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-aerial-overview",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Fly a perimeter scan of the open forum court to produce an overhead layout image for proposal placard placement.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cf_pose",
+     "/rangefinder",
+     "/cmd_full_state",
+     "/camera/image_raw"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open air above mixed park (37 park features) and tree canopy (69 trees); gusts funneled by the gorge.",
+   "success": [
+    "Completes 4-corner perimeter at 8 m altitude in <6 min",
+    "Position error <0.5 m at each corner",
+    "Single contiguous orthomosaic with >=80% overlap",
+    "Battery reserve >15% at landing"
+   ],
+   "safety_stops": [
+    "Land immediately if position error >1 m for 2 s",
+    "Avoid tree canopy by 2 m vertical buffer",
+    "Return-to-launch on battery <25%",
+    "Kill motors on prop contact detection"
+   ],
+   "human_in_loop": "A person approves the flight plan and confirms the airspace is clear.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "corners_done",
+     "pos_error_max_m",
+     "flight_time_s",
+     "battery_end_pct",
+     "gust_events",
+     "mosaic_overlap_pct"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-manipulation-restock",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Restock task-routing bins: pick routed task cards from supply pallet and place them into labeled working-group slots.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrist_camera/image_raw",
+     "/joint_states",
+     "/wrench",
+     "/taskboard_slots"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Indoor deck with pallet racking; obstacles are bin dividers and cable runs on the console floor.",
+   "success": [
+    "Picks 12 cards with >=95% success rate",
+    "Places each within 0.02 m of slot center",
+    "Contact force <10 N on placement",
+    "Cycle time <15 s per card"
+   ],
+   "safety_stops": [
+    "Stop on wrench >20 N or 5 Nm",
+    "Pause if a human enters the 1.5 m collaborative zone",
+    "Halt on gripper slip detection"
+   ],
+   "human_in_loop": "An operator verifies slot assignments before each restock batch runs.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "cards_picked",
+     "place_error_mm",
+     "max_force_n",
+     "cycle_time_s",
+     "slip_events",
+     "human_zone_entries"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-sensor-calibration",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Walk between observatory stations and calibrate progress displays by pressing panel keys and reading gauge screens.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/whole_body_odometry",
+     "/joint_trajectory_controller/state",
+     "/torso_camera/image_raw",
+     "/foot_contact"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat observatory floor with console steps; ensure stair-safe footing near the 0.3 m display risers.",
+   "success": [
+    "Reaches 4 stations with <0.15 m positioning error",
+    "Gauge readback OCR accuracy >=95%",
+    "Zero falls; both foot contacts confirmed each step",
+    "Completes circuit in <20 min"
+   ],
+   "safety_stops": [
+    "Squat-stop if CoM offset >0.1 m from support polygon",
+    "Freeze on human within 1 m",
+    "Power down on foot contact sensor mismatch >0.5 s"
+   ],
+   "human_in_loop": "A steward confirms calibration values read from the gauges before logging.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "station_id",
+     "pos_error_m",
+     "ocr_accuracy",
+     "falls",
+     "circuit_time_s",
+     "com_excursions"
+    ]
+   }
+  },
+  {
+   "id": "scrubland-research-transect",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Collect vegetation and soil observation transects through Bois communal de Remoulins scrub for the evidence monitor.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/move_base/result",
+     "/head_camera/rgb/image_raw",
+     "/soil_probe",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Mediterranean scrub (19 scrub, 24 wood features), sandy patches, low tree branches from 69-tree canopy, 95.6 m relief slopes.",
+   "success": [
+    "Completes 6 transect points with soil probe readings",
+    "Head camera captures 360 deg panorama at each point",
+    "No snag events on vegetation",
+    "Battery >20% at extraction"
+   ],
+   "safety_stops": [
+    "Stop if branch detected <0.3 m above head",
+    "Stop on tilt >12 deg",
+    "E-stop on track jam torque >150% rated"
+   ],
+   "human_in_loop": "A researcher approves transect point selection before deployment.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "transect_point",
+     "probe_depth_cm",
+     "snag_events",
+     "tilt_max_deg",
+     "battery_end_pct",
+     "panorama_count"
+    ]
+   }
+  },
+  {
+   "id": "charter-archive-precise-shelving",
+   "robot": "kinova-gen3",
+   "zone": "Charter Hall",
+   "goal": "Shelve archived charter documents: retrieve folders from intake tray and place them precisely on archive shelf slots.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/camera/color/image_raw",
+     "/end_effector_wrench",
+     "/vacuum_gripper/status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Indoor archive room with tight 0.4 m shelf gaps; obstacle is the shelf lip and neighboring folder spines.",
+   "success": [
+    "Places 10 folders within 0.01 m of slot target",
+    "Zero vacuum-release drops",
+    "Wrench <8 N during insertion",
+    "Cycle time <20 s per folder"
+   ],
+   "safety_stops": [
+    "Retract on wrench >15 N",
+    "Pause if human hand detected in workspace",
+    "Stop on gripper vacuum loss mid-transfer"
+   ],
+   "human_in_loop": "An archivist approves shelf layout and handles any misfiled folder.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "folders_placed",
+     "place_error_mm",
+     "drops",
+     "max_force_n",
+     "cycle_time_s",
+     "retract_events"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s15-romanbridge-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-lobby-tour",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors from the Charter Hall entrance along the charter displays, gesturing toward each charter panel and stopping at the contribution model exhibit.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/move_base_simple/goal",
+     "/cmd_vel",
+     "/speech_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth indoor plaza flooring around the Molecule Man exhibit; low display plinths and visitor crowds near the Spree boardwalk entrance.",
+   "success": [
+    "Visits all 5 charter display waypoints in order",
+    "Speech utterance triggered at each waypoint",
+    "Path deviation < 0.3 m from planned route",
+    "No collision events logged"
+   ],
+   "safety_stops": [
+    "Stop if a human is detected within 0.5 m",
+    "E-stop on tilt > 15 degrees",
+    "Abort tour if battery < 20%"
+   ],
+   "human_in_loop": "A steward approves the tour script and confirms the charter text read aloud matches the posted charter.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_reached",
+     "deviation_m",
+     "collisions",
+     "speech_success",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-sample-inspect",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Walk the lab perimeter and inspect the molecule-model display pedestals, capturing RGB-D frames of each for the Evidence Monitor's records.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/odom",
+     "/camera/depth/image_raw",
+     "/scan",
+     "/inspection_result"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Riverbank-adjacent lab floor with cable runs, model pedestals, and occasional wet patches from Spree humidity near doorways.",
+   "success": [
+    "Images captured from all 6 pedestals",
+    "All images in focus (sharpness score > threshold)",
+    "Inspection tour completed in < 10 min",
+    "Slip events = 0"
+   ],
+   "safety_stops": [
+    "Stop on detected liquid on floor",
+    "Stop if pedestal contact detected",
+    "Return to dock if battery < 15%"
+   ],
+   "human_in_loop": "A researcher verifies the captured pedestal images before they are filed to the evidence log.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "pedestal_id",
+     "image_count",
+     "sharpness",
+     "slip_events",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-docs-delivery",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Carry printed proposal drafts from the drafting desk to each debate table and return signed review slips to the collection tray.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/spot/odom",
+     "/payload/gripper_state",
+     "/move_base_simple/goal",
+     "/delivery_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open forum floor with movable debate tables, chair clusters, and threshold ramps between the deck levels overlooking the Spree.",
+   "success": [
+    "Delivers to 4 debate tables",
+    "Zero dropped payloads",
+    "Return slip collected from each table",
+    "Route completed without intervention"
+   ],
+   "safety_stops": [
+    "Stop if person within 1 m of path",
+    "Pause on stair or ramp edge detection",
+    "Release-and-halt on gripper fault"
+   ],
+   "human_in_loop": "Debaters sign the review slips; a steward decides which drafts advance — the robot never enacts proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "table_id",
+     "delivery_ok",
+     "drops",
+     "slips_collected",
+     "faults",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-arm-sorting",
+   "robot": "franka-fr3",
+   "zone": "Operations Deck",
+   "goal": "Sort incoming task-routing cards into working-group trays on the Operations Deck console, using gentle grasping on the card fixture.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/franka/joint_states",
+     "/camera/color/image_raw",
+     "/gripper_action/goal",
+     "/sort_result"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed console table; tray dividers, glossy card surfaces, and cable clutter behind the work cell require precise grasp planning.",
+   "success": [
+    "Sorts 12 cards with >= 90% correct tray",
+    "Zero gripper force exceedances (> 20 N)",
+    "No card folded or damaged",
+    "Cycle time < 8 s per card"
+   ],
+   "safety_stops": [
+    "Stop on human hand in workspace",
+    "Reflex stop on joint torque anomaly",
+    "Halt if camera loses card detection for > 5 s"
+   ],
+   "human_in_loop": "An operator confirms tray assignments for any card the robot flags as ambiguous.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "card_id",
+     "tray_correct",
+     "grip_force_n",
+     "cycle_time_s",
+     "reflex_stops",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-swarm-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow scanning pass over the progress wall to capture overhead video of outcome trackers for the Progress Tracker agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf/pose",
+     "/cf/log/position",
+     "/camera/image_raw",
+     "/scan_complete"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Tall open atrium with the progress wall, hanging signage, and updrafts near the Spree-facing glass facade.",
+   "success": [
+    "Covers 95% of wall area in footage",
+    "Altitude hold within +/- 0.2 m",
+    "Flight time under battery 70% consumption",
+    "Zero proximity warnings to signage"
+   ],
+   "safety_stops": [
+    "Land immediately if person enters airspace",
+    "Land on position estimate loss",
+    "Land if wind gust > 3 m/s detected",
+    "Return-to-launch on low battery"
+   ],
+   "human_in_loop": "A steward approves the flight volume before launch and reviews the captured footage afterward.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "coverage_pct",
+     "altitude_rms_m",
+     "proximity_events",
+     "battery_used_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "spree-boardwalk-payload-run",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Haul equipment crates from the loading dock to the Research Synthesis Lab along the Spree boardwalk route beside the Molecule Man sculpture.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odometry/filtered",
+     "/gps/fix",
+     "/cmd_vel",
+     "/load_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Gravel and paved Spree boardwalk with bollards, riverside drop-off edge, and pedestrian foot traffic around the sculpture plaza.",
+   "success": [
+    "Reaches lab dock within 0.5 m accuracy",
+    "Payload secured throughout (load shift < 5 cm)",
+    "Zero pedestrian right-of-way violations",
+    "Average speed kept under 1.0 m/s in crowds"
+   ],
+   "safety_stops": [
+    "Stop if pedestrian within 2 m ahead",
+    "Stop on riverside edge-line detection",
+    "Halt on load-shift sensor trigger",
+    "E-stop on wheel slip > threshold"
+   ],
+   "human_in_loop": "A human supervisor teleoperates through the crowded sculpture plaza section and confirms final unload.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "goal_error_m",
+     "load_shift_cm",
+     "pedestrian_stops",
+     "avg_speed_mps",
+     "wheel_slips",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-exhibit-greeting",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Stand at the observatory entrance, greet visitors, and gesture toward the current progress metrics display using whole-body motion.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/talos/joint_states",
+     "/talk_and_say",
+     "/upper_body_trajectory",
+     "/greeting_count"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Level observatory floor with entrance mat transitions and a low plinth holding the metrics display; standing visitors within arm's reach.",
+   "success": [
+    "Greets >= 20 visitors per hour",
+    "Gesture points within 10 degrees of display center",
+    "Balance maintained (zero fall events)",
+    "Greeting speech intelligible in 95% of trials"
+   ],
+   "safety_stops": [
+    "Freeze upper body if visitor within 0.8 m",
+    "Sit-down protective stop on balance anomaly",
+    "Stop speech on operator mute command"
+   ],
+   "human_in_loop": "A steward reviews recorded greetings weekly and approves any change to the greeting script.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "greetings",
+     "gesture_error_deg",
+     "fall_events",
+     "intelligibility_pct",
+     "balance_faults",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s11-molecular",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

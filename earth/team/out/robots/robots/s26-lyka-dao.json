@@ -1,0 +1,290 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-waypoint-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol Charter Hall perimeter on forest trail surface, stopping at charter display kiosks for signage inspection.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/amcl_pose",
+     "/scan",
+     "/plan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Uneven dirt and gravel path with tree roots and rock outcrops typical of the Boundary Waters forest edge; wooden boardwalk sections near the entrance.",
+   "success": [
+    "Visits all 5 kiosk waypoints within +/-0.3 m",
+    "Mean speed kept at or below 0.8 m/s on boardwalk",
+    "Zero collisions logged in /scan minimum-distance check"
+   ],
+   "safety_stops": [
+    "Stop if lidar detects obstacle under 0.5 m",
+    "E-stop on boardwalk edge detection via roll angle >15 deg",
+    "Stop for any pedestrian within 1.5 m corridor"
+   ],
+   "human_in_loop": "A steward approves the patrol route and reviews any anomaly flagged at kiosks.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoint_reached",
+     "pos_error_m",
+     "min_obstacle_dist_m",
+     "collisions",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve research binders from shelving units and deliver them to the synthesis desk.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/rgb/image_raw",
+     "/joint_states",
+     "/move_group/result",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Flat lab floor with cable runs between desks and low step at doorway threshold; shelf clearance 0.6 m aisles.",
+   "success": [
+    "Grasp success rate at or above 90 percent over 10 trials",
+    "Place position error under 2 cm on desk",
+    "No dropped-object events"
+   ],
+   "safety_stops": [
+    "Abort grasp if object not detected in 5 s",
+    "Stop arm if joint torque exceeds threshold",
+    "Halt if human enters 1 m workspace radius"
+   ],
+   "human_in_loop": "A researcher confirms correct binder selection before final place.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_success",
+     "place_error_cm",
+     "drop_events",
+     "torque_max_nm",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-crowd-telepresence",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Act as telepresence moderator assistant, moving between debate pods and displaying proposal summaries to participants.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/speech",
+     "/battery_state"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Carpeted forum floor with chair legs, podium steps (7 cm riser), and crowd flow lanes between pods.",
+   "success": [
+    "Reaches 4 pod stations within +/-0.2 m",
+    "Speech prompts play at each pod with under 1 s latency",
+    "Zero tip events on step transitions"
+   ],
+   "safety_stops": [
+    "Stop if IMU tilt exceeds 20 deg",
+    "Stop for obstacle within 0.4 m",
+    "Dock at battery under 15 percent"
+   ],
+   "human_in_loop": "A human moderator approves when each proposal summary is displayed.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "station_id",
+     "pos_error_m",
+     "speech_latency_s",
+     "tip_events",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-cargo-tote",
+   "robot": "unitree-go2",
+   "zone": "Operations Deck",
+   "goal": "Carry task-routing documents and small supplies between the Task Router station and working group tables.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/lidar_points",
+     "/pose_estimate"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Rubberized deck flooring with cable trays, table legs clusters, and occasional wet boot zones near exterior door.",
+   "success": [
+    "Completes 8 delivery runs with under 0.25 m goal error",
+    "Load (1.5 kg tote) retained on all runs",
+    "No slip events on wet-zone crossings logged by IMU"
+   ],
+   "safety_stops": [
+    "Stop if lidar obstacle under 0.3 m",
+    "Crouch-stop if IMU detects slip signature",
+    "Return to dock if battery under 20 percent"
+   ],
+   "human_in_loop": "An operator approves each delivery manifest before dispatch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "run_id",
+     "goal_error_m",
+     "tote_retained",
+     "slip_events",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "observatory-sensor-mast-climb",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Climb the observatory's steep forest-side stair to inspect progress-board lighting and mounted sensors at height.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_cam/rgb/image_raw",
+     "/odom",
+     "/foot_contacts",
+     "/mission/state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Wooden stair with 30-degree incline, wet timber treads after rain, exposed tree roots and loose gravel at base, forest canopy shade affecting vision.",
+   "success": [
+    "Ascends and descends 12 steps with no foot slips logged in /foot_contacts",
+    "Captures 6 inspection images with exposure above quality threshold",
+    "Maintains body attitude within 10 deg of stair pitch"
+   ],
+   "safety_stops": [
+    "Sit-down stop if any foot slip exceeds 5 cm",
+    "Abort if battery under 20 percent before ascent",
+    "Stop if human detected within 1 m on stair"
+   ],
+   "human_in_loop": "An operator approves ascent start and reviews captured inspection images.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "steps_climbed",
+     "foot_slips",
+     "image_count",
+     "attitude_error_deg",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-drone-air-quality-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Research Synthesis Lab",
+   "goal": "Fly a low-altitude indoor scan mapping CO2 and humidity across the lab to verify ventilation for long agent work sessions.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cmd_full_state",
+     "/pose",
+     "/range_front",
+     "/co2"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Ceiling-mounted ducts and pendant lights at 2.7 m; desk clusters and shelf tops up to 1.8 m creating tight vertical corridors.",
+   "success": [
+    "Completes 5m x 4m grid scan at 3 altitude bands within 8 minutes",
+    "Maintains position error under 0.15 m using range sensors",
+    "No wall or furniture contact events"
+   ],
+   "safety_stops": [
+    "Land immediately if range sensor reads under 0.4 m",
+    "Land if battery under 20 percent",
+    "Cut motors if pose estimate variance exceeds threshold"
+   ],
+   "human_in_loop": "A lab steward approves flight plan and confirms the lab is clear of people.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grid_cells_scanned",
+     "pos_error_m",
+     "contact_events",
+     "co2_max_ppm",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "forum-poster-wall-mount",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Precision-mount printed proposal posters onto the forum wall grid at fixed mounting heights.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/urscript_interface",
+     "/safety_status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Wall grid panel with bolt-head protrusions (2 cm) and floor cable raceway limiting base placement to 0.4 m from wall.",
+   "success": [
+    "Mounting position error under 5 mm at all 6 grid slots",
+    "Contact force during press under 10 N",
+    "Cycle time per poster under 45 s"
+   ],
+   "safety_stops": [
+    "Stop if end-effector wrench exceeds 20 N",
+    "Stop if human enters collaborative workspace zone",
+    "Reduced-speed mode within 15 cm of wall"
+   ],
+   "human_in_loop": "A person verifies each poster alignment before adhesive press.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "slot_id",
+     "mount_error_mm",
+     "peak_force_n",
+     "cycle_time_s",
+     "safety_stops",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s26-lyka-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

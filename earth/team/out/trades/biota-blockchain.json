@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "biota-blockchain-ironworkers-basic",
+   "trade": "ironworkers",
+   "zone": "Personalized Therapy Lab",
+   "task": "Install systems at Genentech Building 1",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at Genentech Building 1",
+    "Verify permit and lockout/tagout",
+    "Complete work within Personalized Therapy Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "biota-blockchain-electricians-basic",
+   "trade": "electricians",
+   "zone": "DAO Governance Hall",
+   "task": "Inspect systems at Oyster Point Marina",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at Oyster Point Marina",
+    "Verify permit and lockout/tagout",
+    "Complete work within DAO Governance Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "biota-blockchain-pipefitters-basic",
+   "trade": "pipefitters",
+   "zone": "Multi-Blockchain Ledger",
+   "task": "Inspect systems at South SF City Hall",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at South SF City Hall",
+    "Verify permit and lockout/tagout",
+    "Complete work within Multi-Blockchain Ledger",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "biota-blockchain-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Healthcare Data Exchange",
+   "task": "Install systems at El Camino Real",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at El Camino Real",
+    "Verify permit and lockout/tagout",
+    "Complete work within Healthcare Data Exchange",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "biota-blockchain-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Biopharma AGI Agents Hub",
+   "task": "Maintain systems at Grand Avenue",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at Grand Avenue",
+    "Verify permit and lockout/tagout",
+    "Complete work within Biopharma AGI Agents Hub",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "biota-blockchain-laborers-basic",
+   "trade": "laborers",
+   "zone": "Personalized Therapy Lab",
+   "task": "Maintain systems at Genentech Building 1",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at Genentech Building 1",
+    "Verify permit and lockout/tagout",
+    "Complete work within Personalized Therapy Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 135,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "biota-blockchain-sheetmetal-basic",
+   "trade": "sheetmetal",
+   "zone": "DAO Governance Hall",
+   "task": "Maintain systems at Oyster Point Marina",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at Oyster Point Marina",
+    "Verify permit and lockout/tagout",
+    "Complete work within DAO Governance Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 150,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "biota-blockchain-hazmat-basic",
+   "trade": "hazmat",
+   "zone": "Multi-Blockchain Ledger",
+   "task": "Maintain systems at South SF City Hall",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Genentech Building 1",
+    "Inspect area at South SF City Hall",
+    "Verify permit and lockout/tagout",
+    "Complete work within Multi-Blockchain Ledger",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 165,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "San Francisco Bay Trades Card",
+  "requires": [
+   "biota-blockchain-ironworkers-basic",
+   "biota-blockchain-electricians-basic",
+   "biota-blockchain-pipefitters-basic",
+   "biota-blockchain-carpenters-basic"
+  ]
+ }
+}

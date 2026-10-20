@@ -1,0 +1,100 @@
+{
+ "slug": "cancer-dao",
+ "name": "Cancer DAO",
+ "umbrella": "Powered by AGI Corp",
+ "status": "coming soon",
+ "management_style": "Agent-managed DAO",
+ "tagline": "A mission-focused DAO for cancer research support, agent-managed and human-governed",
+ "anchor": {
+  "lat": null,
+  "lon": null,
+  "rad": 6371000,
+  "rp1": null
+ },
+ "charter": {
+  "focus": "cancer research support",
+  "focus_source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): mission: Global Issue Focus",
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges.",
+  "reserved_for_humans": [
+   "governance.final_vote",
+   "charter.amend",
+   "treasury.transfer",
+   "proposal.enact",
+   "windfall.distribute",
+   "steward.appoint"
+  ]
+ },
+ "zones": [
+  {
+   "name": "Charter Hall",
+   "purpose": "The DAO's charter, contribution model and measurable outcomes",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): How It Works"
+  },
+  {
+   "name": "Research Synthesis Lab",
+   "purpose": "Monitoring developments and summarizing evidence",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Proposal Forum",
+   "purpose": "Proposals drafted by agents, debated and decided by people",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  },
+  {
+   "name": "Operations Deck",
+   "purpose": "Task routing, working groups and operational coordination",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Progress Observatory",
+   "purpose": "Progress tracking against the charter's measurable outcomes",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  }
+ ],
+ "agents": [
+  {
+   "name": "Evidence Monitor",
+   "role": "Monitors developments in cancer research support and summarizes the evidence",
+   "zone": "Research Synthesis Lab",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Research Synthesis Agent",
+   "role": "Synthesizes research on cancer research support for the stewards",
+   "zone": "Research Synthesis Lab",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Collaborator Scout",
+   "role": "Identifies experts and collaborators working on cancer research support",
+   "zone": "Operations Deck",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Task Router",
+   "role": "Routes tasks and coordinates working groups between decision cycles",
+   "zone": "Operations Deck",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Proposal & Grant Drafter",
+   "role": "Drafts proposals and grants for human review; never enacts them",
+   "zone": "Proposal Forum",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Progress Tracker",
+   "role": "Tracks progress against the charter's measurable outcomes",
+   "zone": "Progress Observatory",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  }
+ ],
+ "sources": [
+  "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)",
+  "https://agi-future-foundation.kylon.app/#top, read 2026-09-23 (three-tier structure, programs, named subsidiaries)"
+ ],
+ "gaps": [
+  "No RP1 location given for this DAO yet",
+  "No named people, partners or budgets: the charter's measurable outcomes are not yet set"
+ ]
+}

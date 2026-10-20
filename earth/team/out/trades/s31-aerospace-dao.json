@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "s31-aerospace-dao-ironworkers-basic",
+   "trade": "ironworkers",
+   "zone": "Charter Hall",
+   "task": "Install systems at LC-39A Launch Pad",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at LC-39A Launch Pad",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s31-aerospace-dao-electricians-basic",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Inspect systems at Apollo/Saturn V Center",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Apollo/Saturn V Center",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s31-aerospace-dao-pipefitters-basic",
+   "trade": "pipefitters",
+   "zone": "Proposal Forum",
+   "task": "Inspect systems at Space Shuttle Atlantis",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Space Shuttle Atlantis",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s31-aerospace-dao-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Operations Deck",
+   "task": "Install systems at Vehicle Assembly Building",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Vehicle Assembly Building",
+    "Verify permit and lockout/tagout",
+    "Complete work within Operations Deck",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s31-aerospace-dao-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Progress Observatory",
+   "task": "Maintain systems at Cape Canaveral",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Cape Canaveral",
+    "Verify permit and lockout/tagout",
+    "Complete work within Progress Observatory",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s31-aerospace-dao-laborers-basic",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Maintain systems at LC-39A Launch Pad",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at LC-39A Launch Pad",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 135,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s31-aerospace-dao-sheetmetal-basic",
+   "trade": "sheetmetal",
+   "zone": "Research Synthesis Lab",
+   "task": "Maintain systems at Apollo/Saturn V Center",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Apollo/Saturn V Center",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 150,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "s31-aerospace-dao-hazmat-basic",
+   "trade": "hazmat",
+   "zone": "Proposal Forum",
+   "task": "Maintain systems at Space Shuttle Atlantis",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at LC-39A Launch Pad",
+    "Inspect area at Space Shuttle Atlantis",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 165,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Kennedy Space Center Trades Card",
+  "requires": [
+   "s31-aerospace-dao-ironworkers-basic",
+   "s31-aerospace-dao-electricians-basic",
+   "s31-aerospace-dao-pipefitters-basic",
+   "s31-aerospace-dao-carpenters-basic"
+  ]
+ }
+}

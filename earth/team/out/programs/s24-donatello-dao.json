@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents Work, People Decide: A Union Workshop on DAO Governance",
+   "grade_or_level": "Adult continuing education / worker training",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' division of labor and the six human-reserved actions",
+    "Map a DAO decision cycle from evidence to human final vote",
+    "Assess how agent-managed coordination affects worker voice and job design",
+    "Draft a worker-friendly governance clause for a DAO charter"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the Donatello DAO mission and charter; identify reserved-for-humans actions and discuss why final votes, treasury and appointments stay with people.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice Evidence Monitor-style summarizing: teams summarize a sample research brief and compare notes on bias and sourcing.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a proposal cycle: an agent-drafted proposal is debated, amended and decided by a human vote; debrief on worker representation.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate Task Router coordination of working groups between decision cycles; discuss task allocation fairness.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized workshop feedback: which governance concepts were hardest to grasp, and role-play voting patterns (no names, no employer identifiers).",
+   "consent": "Participants sign a plain-language consent form before the session; data is optional, anonymized, and any participant may opt out without affecting participation."
+  },
+  {
+   "audience": "k12",
+   "title": "Sculpting Decisions: Civics on a Florentine Hillside",
+   "grade_or_level": "Middle school (ages 11-14), adaptable to high school",
+   "outcomes": [
+    "Describe what a DAO is and why some decisions are reserved for humans",
+    "Connect Florence's history of public art and civic decision-making to modern digital governance",
+    "Practice evidence-gathering and structured debate",
+    "Explain why privacy and consent matter in shared digital systems"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Explore the mission 'AI governed as a public good'; students sort decisions into agent tasks vs. human-only votes.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Teams act as Evidence Monitors: summarize a short article on AI and public benefit, citing sources.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Class debate and vote on a simple proposal (e.g., a school garden fund), mirroring the human final-vote rule.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students build a simple progress chart tracking their proposal's outcomes, like the Progress Tracker agent.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class-level results only: vote tallies and which civics concepts needed reteaching; no individual student data.",
+   "consent": "Written guardian/parent consent is required for all participation and any data contribution; student names are never collected, and guardians may withdraw consent at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: NGO Training in Agent-Assisted Program Design",
+   "grade_or_level": "Professional development for NGO program staff",
+   "outcomes": [
+    "Use agent-generated evidence summaries to inform program design without ceding decision authority",
+    "Design measurable outcomes aligned to a charter mission",
+    "Run a proposal cycle with clear human sign-off gates",
+    "Apply responsible data-sharing practices with communities"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop on reading and interrogating agent syntheses: source quality, gaps, and when to commission follow-up research.",
+     "minutes": 60
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Draft measurable outcomes for a sample humanitarian program, modeled on the charter's measurable-outcomes zone.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Turn a program idea into an agent-drafted-style proposal, then subject it to structured human review and amendment.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define indicators and a tracking dashboard; practice monthly progress reviews against charter outcomes.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized program-design artifacts (outcome templates, indicator sets) for a shared learning library; no beneficiary or community data.",
+   "consent": "Staff consent via organizational agreement; only de-identified templates are shared, and participating NGOs approve anything before it enters the shared library."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governed by Humans: Nonprofit Board Training for Agent-Managed Systems",
+   "grade_or_level": "Board members and nonprofit leadership",
+   "outcomes": [
+    "Articulate fiduciary duties when agents draft but humans enact",
+    "Identify the six human-reserved actions and design oversight for each",
+    "Evaluate a treasury or windfall scenario reserved for human decision",
+    "Set privacy and consent policy for community data"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-level walkthrough of the mission and the reserved-for-humans list; map each to existing board duties (fiduciary, appointing, amending).",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Case study: reviewing an agent-drafted grant proposal; practice amendment, conditions, and the final human vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design oversight of agent task routing: what boards monitor between meetings, what escalates to a vote.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a board dashboard tracking charter outcomes; agree on review cadence and escalation triggers.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance patterns: oversight checklist adoption rates and common escalation triggers; no organizational or donor identities.",
+   "consent": "Board members consent individually; shared patterns are aggregated and de-identified, and any organization can exclude its data before publication."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s24-donatello-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents Work, Members Govern: A Hands-On Introduction to Agent-Managed DAOs",
+   "grade_or_level": "Adult continuing education / union chapter training",
+   "outcomes": [
+    "Explain the 'Agents operate; people govern' principle and identify the six human-reserved governance actions",
+    "Draft and debate a proposal in a simulated Proposal Forum, reserving final votes for human members",
+    "Summarize how agents monitor evidence and route tasks without replacing member decision-making"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter: members read the mission and reserved-for-humans list, then map which decisions in their own union must stay member-controlled.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Observe Evidence Monitor and Research Synthesis Agent outputs on a topic chosen by the chapter; discuss what evidence summaries add to bargaining discussions.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a mock proposal with the Proposal & Grant Drafter, debate it, and hold a human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Trace a task through Task Router and Collaborator Scout; members role-play a working group coordinating between decision cycles.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized post-session survey responses and mock proposal voting patterns (no names, IDs, or employer data) contributed to shared models of adult civic-learning outcomes.",
+   "consent": "Union facilitators obtain written informed consent before the program; participation is voluntary, data is anonymized before sharing, and any member may withdraw their data at any time without workplace consequence."
+  },
+  {
+   "audience": "k12",
+   "title": "Who Decides? Kids Governing a Robot-Run Village",
+   "grade_or_level": "Grades 6-8 (adaptable 5-10)",
+   "outcomes": [
+    "Distinguish tasks agents can do from decisions only people should make",
+    "Describe how a DAO charter works using Gonstead.X's five zones",
+    "Track a measurable outcome and report progress like the Progress Tracker"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Students read a kid-friendly version of the charter and sort sample decisions into 'agent jobs' vs. 'people-only votes' using the six reserved actions.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a classroom proposal (e.g., a school garden) with agent-style drafting help, then debate and vote as the human decision-makers.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Students role-play Task Router and Collaborator Scout to organize a mini-project, practicing coordination between decision cycles.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students set one measurable outcome for their project, build a simple tracking chart, and present progress to the class.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized, aggregated sorting-game results and proposal drafts (no names, ages, or school identifiers) to help improve shared civics-learning models.",
+   "consent": "Signed guardian/parent consent forms are required before participation, plus student assent; no individual data is collected, all contributions are anonymized at the classroom level, and guardians may opt out at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-First Governance: Running a Decision Cycle with Agent Support",
+   "grade_or_level": "Professional staff / program managers",
+   "outcomes": [
+    "Design a full decision cycle from evidence monitoring to human final vote",
+    "Use research synthesis outputs to brief boards without overstating findings",
+    "Identify which governance actions must remain human-reserved in their own organization"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Staff work with Evidence Monitor and Research Synthesis Agent outputs on a real NGO topic; practice summarizing evidence honestly, noting gaps and uncertainties.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a funding or program proposal with the Proposal & Grant Drafter; peers critique for accuracy and the drafter never enacts anything.",
+     "minutes": 60
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the NGO's own decisions against the six human-reserved actions; draft a mini-charter with measurable outcomes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set up progress tracking against one measurable outcome; review the Progress Tracker's format and adapt it for staff reporting.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized decision-cycle designs and aggregated self-assessment scores (organization names and staff identities removed) contributed to shared models of governance-training effectiveness.",
+   "consent": "Participating organizations sign a data-sharing agreement; staff give individual informed consent, contributions are de-identified before leaving the organization, and any partner may pause or end data sharing."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Mission to Measurable Outcomes: A Nonprofit Workshop in the Gonstead.X Zones",
+   "grade_or_level": "Board members, volunteers, and nonprofit staff (introductory)",
+   "outcomes": [
+    "Translate a mission statement into two or three measurable outcomes",
+    "Understand how agents support—but never replace—board authority in a DAO structure",
+    "Facilitate a community debate and human-only vote in the Proposal Forum"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Participants study the Gonstead.X charter and mission, then workshop their own nonprofit's mission into measurable outcomes on a charter canvas.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Using the Evidence Monitor's summaries as a model, teams practice turning evidence into one-page briefs for boards and donors.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Each team drafts a proposal with the Proposal & Grant Drafter, debates amendments, and holds a final vote reserved strictly for human participants.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Volunteers simulate a working group coordinated by Task Router between decision cycles; debrief on coordination challenges.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams present their measurable outcomes and a simple progress dashboard, mirroring the Progress Tracker's reporting style.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized charter canvases, outcome statements, and aggregated workshop feedback (all organization and participant identifiers removed) to inform shared models of nonprofit governance training.",
+   "consent": "Facilitators obtain informed consent at registration; data is anonymized before inclusion in shared models, participants may skip any sharing activity, and withdrawal of previously shared anonymized contributions is honored on request where feasible."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s13-gonstead-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

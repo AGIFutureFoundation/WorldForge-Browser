@@ -1,0 +1,290 @@
+{
+ "title": "Parkinson's DAO: Shoreditch Commons",
+ "summary": "A walkable urban commons around St Leonard's Church, Shoreditch, where James Parkinson described the shaking palsy in 1817. Six zones form an agent-managed DAO campus: charter, research, proposals, operations and progress, all anchored to the churchyard, Arnold Circus and Bishopsgate.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "St Leonard's Church, Shoreditch",
+   "buildings": [
+    {
+     "name": "Charter Nave",
+     "use": "DAO charter display and contribution model registry",
+     "floors": 2
+    },
+    {
+     "name": "Vestry Records Office",
+     "use": "Charter amendment reading room",
+     "floors": 1
+    },
+    {
+     "name": "Founders' Cloister",
+     "use": "Quiet study and member onboarding",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Contribution Ledger Room",
+    "Mission Reading Alcove",
+    "Vestry Archive",
+    "Stewards' Antechamber"
+   ],
+   "props": [
+    "bronze plaque of the 1817 essay on the shaking palsy",
+    "oak charter lectern",
+    "framed mission statement",
+    "contribution ledger board",
+    "benches from reclaimed pews",
+    "candle-lit memorial niches"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Art Words Bookshop, Shoreditch",
+   "buildings": [
+    {
+     "name": "Synthesis Reading House",
+     "use": "Evidence monitoring and literature synthesis workspace",
+     "floors": 2
+    },
+    {
+     "name": "Annotation Annex",
+     "use": "Open stacks and note-taking desks",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Board Room",
+    "Source Triage Desk",
+    "Summary Drafting Room",
+    "Journal Stack Aisle",
+    "Peer Review Corner"
+   ],
+   "props": [
+    "wall of pinned evidence cards",
+    "rolling library ladders",
+    "card catalog drawers",
+    "long synthesis table",
+    "citation stamp station",
+    "chalkboard of open questions"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Basing House, Shoreditch",
+   "buildings": [
+    {
+     "name": "Proposal Hall",
+     "use": "Debate chamber for drafts pending human vote",
+     "floors": 2
+    },
+    {
+     "name": "Drafting Booth Row",
+     "use": "Small booths where drafts are refined before debate",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Debate Floor",
+    "Drafting Booths",
+    "Human Vote Gallery",
+    "Amendment Table",
+    "Deliberation Courtyard"
+   ],
+   "props": [
+    "proposal podium",
+    "stack of numbered draft papers",
+    "voting ballot boxes",
+    "hourglass for debate turns",
+    "wall of past proposals",
+    "microphone stand for stewards"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Aviva Digital Garage, 201 Bishopsgate",
+   "buildings": [
+    {
+     "name": "Operations Hub",
+     "use": "Task routing and working-group coordination",
+     "floors": 3
+    },
+    {
+     "name": "Collaborator Annex",
+     "use": "Scouting desk for expert and partner mapping",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Rooms A–D",
+    "Collaborator Map Room",
+    "Standup Corner",
+    "Signal Relay Desk"
+   ],
+   "props": [
+    "magnetic task board",
+    "wall map of collaborators",
+    "kanban card rails",
+    "route tokens",
+    "shift bell",
+    "robotics charging dock"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Arnold Circus Bandstand",
+   "buildings": [
+    {
+     "name": "Observation Bandstand",
+     "use": "Open-air metrics review and progress tracking",
+     "floors": 1
+    },
+    {
+     "name": "Indicators Tower",
+     "use": "Tall thin tower displaying charter outcome meters",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Metrics Gallery",
+    "Outcome Meter Room",
+    "Quarterly Review Deck",
+    "Signal Lamp Loft"
+   ],
+   "props": [
+    "brass progress dials",
+    "circular outcome dial bandstand railing",
+    "telescope on the observatory deck",
+    "milestone flags",
+    "timeline frieze of the series"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "London plane",
+   "common lime",
+   "horse chestnut",
+   "silver birch",
+   "holly"
+  ],
+  "shrubs": [
+   "box hedge",
+   "lavender",
+   "hawthorn"
+  ],
+  "flowers": [
+   "rose (Shoreditch churchyard variety)",
+   "daffodil",
+   "snowdrop",
+   "red campion"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "fountain",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "The Shaking Palsy Court",
+  "style": "Walled Georgian churchyard garden with a central bandstand",
+  "why_here": "St Leonard's is James Parkinson's parish church; its churchyard is the natural court for a DAO bearing his name."
+ },
+ "quests": [
+  {
+   "title": "Read the 1817 Essay",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Find the bronze plaque at Charter Hall",
+    "Retrieve the essay copy from the Vestry Records Office",
+    "Deliver it to the Evidence Board Room",
+    "Summarize three key observations for the stewards"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Draft to Human Vote",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect a synthesis summary from the Reading House",
+    "Have the Proposal & Grant Drafter shape it into a draft",
+    "Post it on the Debate Floor",
+    "Wait respectfully for the human stewards' final vote"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Take the approved proposal outcome to the Operations Hub",
+    "Assign tasks on the magnetic routing board",
+    "Brief the Collaborator Scout on missing expertise",
+    "Confirm working-group rooms are scheduled"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Gather completed task cards from the Operations Hub",
+    "Carry them to the Indicators Tower",
+    "Update the brass progress dials",
+    "Raise the milestone flag on the bandstand"
+   ],
+   "xp": 45
+  },
+  {
+   "title": "Full Cycle of Governance",
+   "from_zone": "Charter Hall",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Begin at the Charter Wall",
+    "Trace one proposal through Lab, Forum and Deck",
+    "Verify outcomes at the Observatory",
+    "Record the cycle in the Contribution Ledger Room",
+    "Note which steps were reserved for humans"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s35-parkinsons-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "s20-cmmc-ironworkers-basic",
+   "trade": "ironworkers",
+   "zone": "Charter Hall",
+   "task": "Install systems at Pentagon Metro",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Pentagon Metro",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s20-cmmc-electricians-basic",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Inspect systems at Memorial Auditorium",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Memorial Auditorium",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s20-cmmc-pipefitters-basic",
+   "trade": "pipefitters",
+   "zone": "Proposal Forum",
+   "task": "Inspect systems at Pentagon City Mall",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Pentagon City Mall",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "s20-cmmc-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Operations Deck",
+   "task": "Install systems at Long Bridge",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Long Bridge",
+    "Verify permit and lockout/tagout",
+    "Complete work within Operations Deck",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s20-cmmc-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Progress Observatory",
+   "task": "Maintain systems at Washington Monument View",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Washington Monument View",
+    "Verify permit and lockout/tagout",
+    "Complete work within Progress Observatory",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s20-cmmc-laborers-basic",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Maintain systems at Pentagon Metro",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Pentagon Metro",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 135,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "s20-cmmc-sheetmetal-basic",
+   "trade": "sheetmetal",
+   "zone": "Research Synthesis Lab",
+   "task": "Maintain systems at Memorial Auditorium",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Memorial Auditorium",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 150,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "s20-cmmc-hazmat-basic",
+   "trade": "hazmat",
+   "zone": "Proposal Forum",
+   "task": "Maintain systems at Pentagon City Mall",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Pentagon Metro",
+    "Inspect area at Pentagon City Mall",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 165,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Washington DC Trades Card",
+  "requires": [
+   "s20-cmmc-ironworkers-basic",
+   "s20-cmmc-electricians-basic",
+   "s20-cmmc-pipefitters-basic",
+   "s20-cmmc-carpenters-basic"
+  ]
+ }
+}

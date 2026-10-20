@@ -1,0 +1,157 @@
+{
+ "programs": [
+  {
+   "audience": "k12",
+   "title": "Avatar.Chat Explorers: Sandstone Pillars and Floating Peaks",
+   "grade_or_level": "Grades 6-8",
+   "outcomes": [
+    "Explain how Zhangjiajie's quartzite-sandstone pillars inspired Avatar's floating peaks",
+    "Describe how an agent-managed, human-governed DAO works and what decisions stay with people",
+    "Draft a simple mini-charter for a classroom project with measurable outcomes",
+    "Practice consent and privacy basics when sharing data online"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use the Evidence Monitor's approach: gather facts about Yuanjiajie's pillars (lat 29.3153, lon 110.435) and summarize evidence in a one-page brief.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the DAO charter idea 'AI governed as a public good'; draft a class charter with roles and human-reserved decisions.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a proposal cycle: students draft a park-protection proposal, debate it, and only humans vote to enact.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple progress tracker poster measuring class outcomes against the charter's measurable goals.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized summaries of class charters and proposal votes (no names or identifying details) contributed as example artifacts for shared civics-education models.",
+   "consent": "Written parent/guardian consent required before any participation or data sharing; no personal data collected, only aggregated, anonymized classroom artifacts; guardians may opt out at any time."
+  },
+  {
+   "audience": "union",
+   "title": "Worker Voice in Agent-Managed Workplaces",
+   "grade_or_level": "Workforce / continuing education",
+   "outcomes": [
+    "Identify which decisions in an agent-managed DAO must remain human-reserved (final votes, treasury, appointments)",
+    "Assess how agent task-routing affects worker roles and safety",
+    "Draft collective bargaining language for AI governance at work",
+    "Contribute anonymized shop-floor insights to shared labor research"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the 'Agents operate; people govern' principle; map which of the six reserved actions apply to workplace governance.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Analyze the Task Router agent model; discuss how agents coordinate working groups between human decision cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a union proposal for human ratification on AI oversight; practice the agent-drafts, human-enacts workflow.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define measurable outcomes for workplace AI agreements and set up tracking indicators.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized, aggregated feedback on task-routing experiences and drafted contract clauses (no member names, employers, or sites identified).",
+   "consent": "Participation is voluntary and covered by a signed data-sharing agreement; all contributions anonymized and aggregated at source; members can withdraw consent without penalty."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence-to-Proposal: NGO Pathways through an Agent-Managed DAO",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Use evidence monitoring and synthesis workflows to brief decision-makers",
+    "Convert research findings into proposals with measurable outcomes",
+    "Apply human-in-the-loop governance to NGO program design",
+    "Understand place-based grounding using Zhangjiajie as a case study"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop with Evidence Monitor and Research Synthesis Agent roles: turn raw monitoring into decision-ready evidence briefs.",
+     "minutes": 90
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Use the Proposal & Grant Drafter pattern: agents draft, staff refine, humans debate and enact.",
+     "minutes": 60
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Align NGO missions with the charter principle 'AI governed as a public good'; define measurable outcomes.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Design a progress-tracking dashboard for a pilot program with clear indicators and review cycles.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized program outcome indicators and evidence-brief templates contributed to shared NGO effectiveness models; no beneficiary or partner data.",
+   "consent": "Staff sign a participation agreement; only aggregated program metrics shared; beneficiary data never shared; NGO may opt out of the shared model at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Nonprofit Governance Lab: Humans Decide, Agents Assist",
+   "grade_or_level": "Board and staff / nonprofit governance",
+   "outcomes": [
+    "Distinguish agent-drafted from human-enacted decisions in nonprofit governance",
+    "Practice proposal cycles with human-reserved final votes",
+    "Set measurable outcomes tied to a public-good mission",
+    "Build a progress-tracking routine for board review"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the nonprofit's bylaws onto the DAO charter model; identify which actions remain human-reserved.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Run a mock cycle: an agent-style drafter prepares a grant proposal, the board debates and holds the final vote.",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design working groups and task-routing workflows where agents coordinate between board decision cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Create a quarterly progress report template tracking measurable outcomes for stakeholder review.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice commissioning evidence summaries before each board decision, mirroring the Research Synthesis Agent role.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized governance metrics (proposal counts, cycle times, outcome attainment rates) contributed to shared nonprofit governance benchmarks.",
+   "consent": "Board-approved data-sharing policy; all data anonymized and aggregated before contribution; donors and beneficiaries excluded; revocable consent via board resolution."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s23-avatar-chat",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

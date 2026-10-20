@@ -1,0 +1,410 @@
+{
+ "scenarios": [
+  {
+   "id": "harlem-river-bulkhead-pile-cap",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Prepare pile caps along the Harlem River bulkhead while a drone-delivered world model maps the stadium district's build zones.",
+   "hazards": [
+    "Water edge fall exposure",
+    "Swing radius of pile rig",
+    "Mud and unstable fill",
+    "Cold river wind chill"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Hi-vis vest",
+    "Steel-toe boots",
+    "Gloves",
+    "Life jacket near water"
+   ],
+   "steps": [
+    "Attend shift briefing at the zone marker",
+    "Inspect the water edge and set fall barriers",
+    "Verify gang box, mats, and rigging staging",
+    "Guide pile rig spotter to position",
+    "Clear debris between pile points",
+    "Check in with Task Router agent for next work order"
+   ],
+   "rubric": [
+    {
+     "axis": "Edge safety",
+     "pass_if": "Fall barrier set before any work within 6 ft of water"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standard hand signals with rig spotter"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Walk paths clear of debris at all times"
+    },
+    {
+     "axis": "Agent workflow",
+     "pass_if": "Logs task completion to the routed work order"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Hauls mats and debris along the bulkhead tow path so laborers stay clear of the rig's swing radius."
+  },
+  {
+   "id": "stadium-lighting-circuit-troubleshoot",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Troubleshoot a faulted lighting branch circuit in a stadium concourse mockup wired to the Evidence Monitor's sensor panel.",
+   "hazards": [
+    "Arc flash",
+    "Live 480 V feeders",
+    "Working at height on scissor lift",
+    "Trip hazards in dim concourse"
+   ],
+   "ppe": [
+    "Arc-rated clothing",
+    "Face shield",
+    "Insulated gloves",
+    "Hard hat"
+   ],
+   "steps": [
+    "Pull the permit and lock out the feeder",
+    "Verify zero energy with meter and test-again step",
+    "Isolate branch circuit at panel",
+    "Megger the conductors and locate fault",
+    "Repair splice and re-identify conductors",
+    "Restore, test under Evidence Monitor logging, remove locks"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Lock, tag, verify zero energy before touching conductors"
+    },
+    {
+     "axis": "Diagnosis",
+     "pass_if": "Fault located by instrument, not guesswork"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Repair logged with circuit ID for Progress Tracker"
+    },
+    {
+     "axis": "Lift safety",
+     "pass_if": "Scissor lift inspected and harnessed before ascent"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "ironwork-upper-deck-connection-bolt",
+   "trade": "ironworkers",
+   "zone": "Progress Observatory",
+   "task": "Bolt beam-to-column connections on an upper deck frame that the Progress Tracker agent monitors for inspection readiness.",
+   "hazards": [
+    "Leading edge fall exposure",
+    "Falling tools from height",
+    "Wind load on steel",
+    "Pinch points on iron bundles"
+   ],
+   "ppe": [
+    "Full-body harness",
+    "Hard hat with chin strap",
+    "Gloves",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Complete 100% tie-off check at leading edge",
+    "Receive beam with tag line from rigger",
+    "Align connection with spud wrench",
+    "Drive first bolts snug-tight",
+    "Torque to spec with calibrated wrench",
+    "Punch-list the connection for Progress Tracker camera pass"
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "100% tie-off maintained at leading edge"
+    },
+    {
+     "axis": "Bolt sequence",
+     "pass_if": "Snug then torque per specified pattern"
+    },
+    {
+     "axis": "Rigging coordination",
+     "pass_if": "Tag line used, no hands under suspended load"
+    },
+    {
+     "axis": "Quality log",
+     "pass_if": "Connection marked and camera-verifiable"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries the inspection camera deck to deck so the Progress Tracker can verify bolted connections without extra climbs."
+  },
+  {
+   "id": "concourse-hvac-duct-hang",
+   "trade": "sheetmetal",
+   "zone": "Operations Deck",
+   "task": "Hang rectangular duct mains above a concourse ceiling using a lift, coordinating loads with the Task Router schedule.",
+   "hazards": [
+    "Overhead load over head",
+    "Scissor lift tip-over",
+    "Sharp duct edges",
+    "Crowded work area with other trades"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Hi-vis vest"
+   ],
+   "steps": [
+    "Confirm ceiling zone reservation from work order",
+    "Stage duct and hangers on lift",
+    "Drill hanger rod attachments to deck",
+    "Raise and level duct section",
+    "Fasten joints and seal seams",
+    "Fire-caulk penetrations per schedule"
+   ],
+   "rubric": [
+    {
+     "axis": "Staging",
+     "pass_if": "Duct secured on lift before raising"
+    },
+    {
+     "axis": "Level and support",
+     "pass_if": "Hangers spaced per spec, no sag"
+    },
+    {
+     "axis": "Sealing",
+     "pass_if": "Joints sealed and smoke-tested where required"
+    },
+    {
+     "axis": "Trade coordination",
+     "pass_if": "Zone conflict resolved via Task Router before start"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds fasteners and holds hanger hardware at height from the lift deck, cutting reach exposure."
+  },
+  {
+   "id": "fire-sprinkler-riser-tie-in",
+   "trade": "fire-sprinkler",
+   "zone": "Proposal Forum",
+   "task": "Tie in a sprinkler riser for a new suite level; a drafted change proposal by the Proposal & Grant Drafter agent must be human-approved before the tie-in opens the main.",
+   "hazards": [
+    "Pressurized main",
+    "Hot work nearby",
+    "Falling pipe from threader",
+    "Confined riser closet"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Gloves",
+    "Face shield when cracking main",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Read the approved proposal excerpt for the tie-in scope",
+    "Verify main isolation and drain-down",
+    "Thread and hang riser pipe",
+    "Groove-fit and torque couplings",
+    "Crack valve slowly with drain open",
+    "Flow test and log to human-approved record"
+   ],
+   "rubric": [
+    {
+     "axis": "Governance gate",
+     "pass_if": "Confirms human approval exists before opening main"
+    },
+    {
+     "axis": "Pressure safety",
+     "pass_if": "Main drained and cracked slowly with face shield"
+    },
+    {
+     "axis": "Joint quality",
+     "pass_if": "Couplings torqued and no weep on test"
+    },
+    {
+     "axis": "Records",
+     "pass_if": "Flow test results logged against proposal ID"
+    }
+   ],
+   "minutes": 60,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "field-survey-baseline-stadium-grid",
+   "trade": "surveyors",
+   "zone": "Charter Hall",
+   "task": "Establish a baseline control grid for a plaza retrofit outside Yankee Stadium, aligning stakes with the charter's measurable-outcome map frame.",
+   "hazards": [
+    "Traffic and pedestrian exposure",
+    "Trip on stakes and tape",
+    "Heat exposure in open plaza",
+    "Utility strike driving hubs"
+   ],
+   "ppe": [
+    "Hi-vis vest",
+    "Hard hat",
+    "Sun protection",
+    "Boots"
+   ],
+   "steps": [
+    "Check existing utility markouts before driving hubs",
+    "Set benchmark from known control point",
+    "Turn angles and set baseline stakes",
+    "Check closure of traverse",
+    "Record coordinates for Evidence Monitor intake",
+    "Flag all hubs and remove trip hazards"
+   ],
+   "rubric": [
+    {
+     "axis": "Accuracy",
+     "pass_if": "Traverse closes within tolerance"
+    },
+    {
+     "axis": "Utility safety",
+     "pass_if": "Markouts verified before any hub driven"
+    },
+    {
+     "axis": "Public safety",
+     "pass_if": "Work area flagged against pedestrians"
+    },
+    {
+     "axis": "Data handoff",
+     "pass_if": "Coordinates recorded in project frame"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "bitcraze-crazyflie-2-1-plus",
+   "robot_role": "Flies a quick aerial check of stake layout and pedestrian flow so the crew can adjust before closing the traverse."
+  },
+  {
+   "id": "seating-bowl-concrete-pour",
+   "trade": "cement-masons",
+   "zone": "Operations Deck",
+   "task": "Place and finish a seating-bowl slab section, coordinating the pour with mixer trucks routed by the Task Router agent.",
+   "hazards": [
+    "Fresh concrete burns",
+    "Silica dust on cut joints",
+    "Ergonomic strain screeding",
+    "Truck backing at pour point"
+   ],
+   "ppe": [
+    "Rubber boots",
+    "Alkaline-resistant gloves",
+    "Safety glasses",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Confirm truck schedule from routed work order",
+    "Set screed rails and check elevation pins",
+    "Direct trucks with spotter at backing",
+    "Place, screed, and float slab",
+    "Bull-float, then cure and cover",
+    "Wet-cut control joints with dust extraction"
+   ],
+   "rubric": [
+    {
+     "axis": "Elevation control",
+     "pass_if": "Slab within tolerance at pins"
+    },
+    {
+     "axis": "Chemical protection",
+     "pass_if": "Gloves and boots prevent skin contact with paste"
+    },
+    {
+     "axis": "Dust control",
+     "pass_if": "Wet cutting or extraction used on joints"
+    },
+    {
+     "axis": "Logistics",
+     "pass_if": "Truck sequencing matches routed schedule"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries test cylinders and tools around the pour so masons stay on the screed."
+  },
+  {
+   "id": "harlem-river-confined-sump-entry",
+   "trade": "hazmat",
+   "zone": "Research Synthesis Lab",
+   "task": "Confined-space entry into a riverfront sump to test air and clear sediment, with evidence of pre-entry readings logged for the Evidence Monitor agent.",
+   "hazards": [
+    "Atmosphere (H2S, low O2)",
+    "Engulfment by water/sediment",
+    "Entrapment in sump",
+    "Pathogen exposure in wastewater"
+   ],
+   "ppe": [
+    "Full-body harness",
+    "Gas monitor",
+    "Respirator per air results",
+    "Face shield and slicker suit"
+   ],
+   "steps": [
+    "Complete confined space permit with attendant",
+    "Calibrate four-gas monitor and log baseline",
+    "Ventilate sump and re-test at levels",
+    "Enter on retrieval line with attendant watching",
+    "Sample sediment and clear per plan",
+    "Exit, close permit, log readings for evidence record"
+   ],
+   "rubric": [
+    {
+     "axis": "Permit discipline",
+     "pass_if": "Permit issued and attendant posted before entry"
+    },
+    {
+     "axis": "Air monitoring",
+     "pass_if": "Continuous monitoring logged at all levels"
+    },
+    {
+     "axis": "Retrieval",
+     "pass_if": "Harness and tripod line rigged before entry"
+    },
+    {
+     "axis": "Evidence trail",
+     "pass_if": "Readings uploaded with entry record"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "fetch-robotics-fetch",
+   "robot_role": "Delivers sampling gear to the sump lip and retrieves samples so entrants minimize time in the space."
+  }
+ ],
+ "credential": {
+  "name": "Yankee Stadium District Union Apprentice - Site Safety Endorsement (S34)",
+  "requires": [
+   "harlem-river-bulkhead-pile-cap",
+   "stadium-lighting-circuit-troubleshoot",
+   "ironwork-upper-deck-connection-bolt",
+   "concourse-hvac-duct-hang",
+   "fire-sprinkler-riser-tie-in",
+   "field-survey-baseline-stadium-grid",
+   "seating-bowl-concrete-pour",
+   "harlem-river-confined-sump-entry"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s34-als-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

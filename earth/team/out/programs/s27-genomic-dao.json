@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Genomics, AI and the Future of Work at the Genome Campus",
+   "grade_or_level": "Adult continuing education (workplace representatives)",
+   "outcomes": [
+    "Explain how agent-managed DAOs route tasks while humans keep voting rights",
+    "Map five ways genomic data work could affect union members' jobs",
+    "Draft a worker question set for an AI governance consultation"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the DAO charter; identify the six human-reserved powers and discuss why they are never delegated to agents.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review an evidence summary on AI in genomics workplaces; practice separating claims from cited sources.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a debate: agents draft a training proposal, members amend and vote on enacting it.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Trace how the Task Router assigns work; draft member-friendly language for a workload policy.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised pre/post confidence scores and short text answers about workplace AI concerns, aggregated with no names or employers attached.",
+   "consent": "Participation is voluntary; learners sign a plain-language consent form covering anonymised contribution of survey and exercise answers, with opt-out at any session."
+  },
+  {
+   "audience": "k12",
+   "title": "Code of Life: Exploring Genomics on the Genome Campus",
+   "grade_or_level": "Ages 11-14 (Key Stage 3)",
+   "outcomes": [
+    "Describe what a genome is and why Hinxton matters in science history",
+    "Explain that AI tools help scientists but people make decisions",
+    "Design a simple rule for fair sharing of scientific benefits"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Decode a simple DNA sequence with paper strips; discuss how computers at this campus helped read the human genome.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Compare the DAO's rules to classroom rules; identify which decisions stay with people and which helpers can do.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "In teams, write a short proposal for a genomics project that helps the local community; vote as a class.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Create a poster tracking the class's project outcomes and mark progress on a big chart.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymous class tallies of votes and quiz answers only; no individual names, photos or writing samples collected.",
+   "consent": "Guardian/parent consent forms required for all data activities; teachers explain privacy in plain language, and parents may opt out while students still take part in all activities."
+  },
+  {
+   "audience": "ngo",
+   "title": "Human Governance of AI: Field Methods from a DAO Cell",
+   "grade_or_level": "Professional development (NGO programme staff)",
+   "outcomes": [
+    "Apply the agent-operates / human-decides split to programme design",
+    "Use evidence summaries to brief decision-makers honestly",
+    "Facilitate a proposal cycle with community stakeholders"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop: turn a monitored evidence stream into a one-page brief distinguishing sourced facts from inference.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Run a mock proposal cycle: agent-drafted proposals, structured stakeholder debate, human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design a task-routing workflow for a multi-partner campaign using working groups.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define measurable outcomes and a tracking dashboard for a real NGO programme.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Aggregated evaluation scores and anonymised workflow templates contributed to a shared methods library, stripped of organisational identifiers.",
+   "consent": "Staff consent via organisational agreement plus individual opt-in for the shared methods library; no beneficiary or partner data enters shared models."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Data Stewardship and Public-Good AI for Nonprofits",
+   "grade_or_level": "Board and leadership level",
+   "outcomes": [
+    "State the principles of governing AI as a public good",
+    "Assess which decisions a nonprofit board must reserve to humans",
+    "Plan a transparent progress-reporting cycle for donors"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board exercise: map your nonprofit's decisions against the six human-reserved powers; flag any risks.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Case study: how agent-drafted grants work when humans hold enactment and treasury powers.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Sketch a working-group structure and task routing plan for a small nonprofit team.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple outcome dashboard template to report measurable impact to funders.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymised board self-assessment scores and dashboard templates added to a shared open library, with no beneficiary or financial details included.",
+   "consent": "Participation under a signed organisational MOU; individual contributions anonymised before sharing, with any board able to withdraw its materials at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s27-genomic-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

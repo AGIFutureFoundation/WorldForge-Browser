@@ -1,0 +1,282 @@
+{
+ "tasks": [
+  {
+   "id": "balto-statue-perimeter-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the perimeter of the Balto Statue outcrop on Pilgrim Hill, capturing images of the bronze statue and surrounding bedrock for charter exhibit digitization.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/gps/fix",
+     "/odom",
+     "/scan",
+     "/camera/image_raw"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Central Park bedrock outcrop with exposed granite, tree roots, ice in winter, and crowds of visitors around the statue",
+   "success": [
+    "Complete 3 laps within 15 min",
+    "Maintain >=1.0 m clearance from statue plinth",
+    "<=5% localization error vs GPS track"
+   ],
+   "safety_stops": [
+    "E-stop if human within 1.5 m of path",
+    "Stop on pitch/roll > 20 deg on bedrock",
+    "Stop on wheel slip detection > 10%"
+   ],
+   "human_in_loop": "A steward approves the patrol route file and confirms captured imagery is suitable before it enters the Charter Hall exhibit.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "lap_count",
+     "min_clearance_m",
+     "slip_events",
+     "localization_rmse_m",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "pond-water-sampling-fetch",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Walk to the edge of the pond near Balto's hill and collect near-shore water surface readings to support park-environment synthesis research.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/water_sensor/reading",
+     "/odom",
+     "/camera/image_raw",
+     "/imu/data"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Grass slope down to pond edge, muddy shoreline, goose droppings, and occasional boardwalk edges",
+   "success": [
+    "Reach 3 designated shoreline points",
+    "Log 10 readings per point",
+    "No slip events requiring recovery > 2 per run"
+   ],
+   "safety_stops": [
+    "Stop 0.3 m before waterline",
+    "E-stop on human or dog within 2 m",
+    "Stop on leg joint overtemperature"
+   ],
+   "human_in_loop": "A human researcher approves shoreline sample points and signs off on sensor calibration before data enters the evidence base.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "point_id",
+     "ph",
+     "turbidity_ntu",
+     "slip_count",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-table-setup",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Arrange printed proposal packets and microphones on the forum table for a human deliberation session about pending DAO proposals.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrist_camera/image_raw",
+     "/joint_states",
+     "/force_torque_sensor",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed indoor installation; tabletop with paper packets, cups, and cables as collision hazards",
+   "success": [
+    "Place 8 packets within 2 cm of target poses",
+    "Zero dropped objects",
+    "Gripper force <= 20 N throughout"
+   ],
+   "safety_stops": [
+    "Stop on contact force > 40 N",
+    "Stop when human hand enters workspace",
+    "Stop on unexpected object in gripper"
+   ],
+   "human_in_loop": "A person verifies packet order matches the agenda and gives the final go-ahead before deliberation begins; robot never enacts proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "object_id",
+     "pose_error_mm",
+     "max_force_n",
+     "drops",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "charter-hall-doc-delivery",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Greet visitors at Charter Hall and hand-deliver printed charter summaries while reciting the contribution model.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/camera/front/image_raw",
+     "/sonar",
+     "/speech/to_text"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat marble floor with visitor queues, stanchions, and wheelchair users",
+   "success": [
+    "Greet 10 visitors in 20 min",
+    "Maintain >=0.8 m social distance",
+    "Speech recognition accuracy >= 90% on scripted lines"
+   ],
+   "safety_stops": [
+    "Stop on human within 0.5 m",
+    "Stop on tip detection from IMU",
+    "Stop if child grabs arm"
+   ],
+   "human_in_loop": "A docent approves the greeting script and can pause the robot at any time; charter text changes require human vote.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "greet_count",
+     "min_distance_m",
+     "script_accuracy",
+     "interruptions",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-aerial-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a low-altitude scan over the Progress Observatory zone to generate a live occupancy map of visitor flow for progress dashboarding.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/pose",
+     "/range/front",
+     "/scan",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor high-ceiling hall with hanging banners, balcony railings, and light rigs as aerial obstacles",
+   "success": [
+    "Complete grid scan in 8 min",
+    "Map 95% of zone volume",
+    "Land with >= 20% battery reserve"
+   ],
+   "safety_stops": [
+    "Land immediately on battery < 25%",
+    "Stop on obstacle within 0.5 m",
+    "Kill motors on attitude error > 30 deg",
+    "Follow operator kill-switch"
+   ],
+   "human_in_loop": "A steward approves the flight volume and manually verifies no visitors are beneath the flight path before launch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "coverage_pct",
+     "flight_time_s",
+     "min_obstacle_dist_m",
+     "battery_reserve_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-cable-tray-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect cable trays and router racks under the Operations Deck floor for the Task Router agent, flagging thermal and connectivity anomalies.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/thermal/image",
+     "/front_camera/image_raw",
+     "/odom",
+     "/spot/check_safety"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Raised-floor crawl space with cable bundles, support pillars, and 60 cm clearance limits",
+   "success": [
+    "Inspect all 12 rack bays",
+    "Flag anomalies with >= 90% verified precision",
+    "Zero body contacts with racks"
+   ],
+   "safety_stops": [
+    "Auto-sit on low battery < 20%",
+    "Stop on unexpected human in crawl space",
+    "Stop on thermal reading > 70 C nearby",
+    "Stop on loss of footing"
+   ],
+   "human_in_loop": "A human technician confirms flagged anomalies and authorizes any physical intervention; agents only report, never enact fixes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "bay_id",
+     "max_temp_c",
+     "anomaly_flag",
+     "contact_events",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-joint-calibration-drill",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Run a repeatable 7-DoF joint calibration trajectory on the lab bench so synthesizer readings from mounted instruments stay consistent across sessions.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/franka_state_controller/franka_states",
+     "/force_torque_sensor",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Benchtop with microscope mounts, sample trays, and glassware within the arm workspace",
+   "success": [
+    "Repeat 20 trajectories with joint repeatability <= 0.1 mm",
+    "Zero workspace collisions",
+    "Torque limits respected 100% of run"
+   ],
+   "safety_stops": [
+    "Reflex stop on torque > 80% limit",
+    "Stop on human within workspace envelope",
+    "Stop on detected contact"
+   ],
+   "human_in_loop": "A lab supervisor approves the calibration trajectory file and validates results before instruments are declared calibration-valid.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "cycle",
+     "repeatability_mm",
+     "max_torque_nm",
+     "collisions",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s25-mypet-ai",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

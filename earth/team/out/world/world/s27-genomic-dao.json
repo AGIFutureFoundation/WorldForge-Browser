@@ -1,0 +1,286 @@
+{
+ "title": "Genomic.DAO Series 27 — Genome Campus on the Cam",
+ "summary": "A walkable DAO campus on Cam farmland at Hinxton: agents monitor, synthesize and draft in labs and forums while humans hold every final vote. Six zones ring the river meadow, from Charter Hall to the Progress Observatory.",
+ "biome": "river-valley",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Wellcome Genome Campus entrance drive, Hinxton",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display and contribution-model desks",
+     "floors": 2
+    },
+    {
+     "name": "Outcome Ledger House",
+     "use": "Measurable-outcomes registry and public reading room",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Desk",
+    "Outcome Ledger Wall",
+    "Steward's Antechamber"
+   ],
+   "props": [
+    "engraved charter plinth",
+    "bronze contribution ledger",
+    "mission banner",
+    "oak benches",
+    "reserved-powers notice board",
+    "voting-hour bell"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Hinxton village edge, near the campus labs",
+   "buildings": [
+    {
+     "name": "Synthesis Laboratory",
+     "use": "Evidence monitoring and research summarization",
+     "floors": 3
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "Document store and citation stacks",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Monitoring Floor",
+    "Synthesis Studio",
+    "Citation Stacks",
+    "Seminar Nook",
+    "Server Quiet Room"
+   ],
+   "props": [
+    "double-helix model",
+    "evidence pinboard",
+    "journal racks",
+    "sequencing-era display case",
+    "lab benches",
+    "chalkboard of open questions"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "campus central lawn between laboratory blocks",
+   "buildings": [
+    {
+     "name": "Forum Rotunda",
+     "use": "Proposal debate and human decision chamber",
+     "floors": 2
+    },
+    {
+     "name": "Drafter's Annex",
+     "use": "Agent drafting office for proposals and grants",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Debate Ring",
+    "Human Voting Gallery",
+    "Drafting Office",
+    "Review Table",
+    "Amendment Alcove"
+   ],
+   "props": [
+    "circular debate dais",
+    "ballot urn",
+    "proposal bulletin board",
+    "speakers' lectern",
+    "draft stacks",
+    "tally board"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "operations buildings along the campus access road",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Scout Station",
+     "use": "Collaborator identification and outreach prep",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Console Room",
+    "Working-Group Huddle Space",
+    "Scout Map Room",
+    "Coordinator's Office",
+    "Signal Board Corridor"
+   ],
+   "props": [
+    "task routing board",
+    "working-group signage",
+    "collaborator contact map",
+    "message pneumatic tubes",
+    "shift clock",
+    "field kit rack"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "raised ground overlooking the River Cam water meadows",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Tracking outcomes against the charter",
+     "floors": 3
+    },
+    {
+     "name": "Milestone Beacon Tower",
+     "use": "Public milestone announcements",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Observation Gallery",
+    "Milestone Chart Room",
+    "Steward Review Room",
+    "Telescope Platform",
+    "Records Vault"
+   ],
+   "props": [
+    "progress dial",
+    "milestone cairn",
+    "brass telescope",
+    "outcomes heatmap wall",
+    "seasonal progress flags"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "English oak",
+   "ash",
+   "white willow",
+   "field maple",
+   "hawthorn",
+   "black poplar"
+  ],
+  "shrubs": [
+   "blackthorn",
+   "dogwood",
+   "elder",
+   "bramble"
+  ],
+  "flowers": [
+   "cowslip",
+   "meadowsweet",
+   "red clover",
+   "knapweed"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.6,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "17:30"
+ },
+ "court": {
+  "name": "The Helix Court",
+  "style": "open grass court ringed by path segments like base pairs",
+  "why_here": "A shared court on the campus lawn where sequenced genomes were decoded, letting stewards gather between zones."
+ },
+ "quests": [
+  {
+   "title": "Read the Reserved Powers",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Find the engraved charter plinth",
+    "List the six human-reserved actions",
+    "Watch agents draft at the Review Table",
+    "Cast a practice vote in the gallery"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Trace the Evidence",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Ask Evidence Monitor for the day's summary",
+    "Collect three citations from the stacks",
+    "Carry the synthesis to the Progress Tracker",
+    "Log the outcome on the heatmap wall"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Group",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Accept a routed task from the Task Router",
+    "Recruit a collaborator suggested by the Scout",
+    "Deliver the brief to the Synthesis Studio",
+    "Report back at the Signal Board"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Draft to Decision",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Review the Drafter's latest proposal",
+    "Debate it at the circular dais",
+    "Record the human vote result",
+    "Archive the outcome in the Ledger House"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Milestone on the Mead",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Climb to the Telescope Platform",
+    "Read the milestone dial",
+    "Light the Beacon Tower signal",
+    "Dispatch follow-up tasks via the Routing Console"
+   ],
+   "xp": 45
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s27-genomic-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

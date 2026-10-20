@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents Work, Members Govern: A Hands-On Tour of an Agent-Managed DAO",
+   "grade_or_level": "Working adults / union continuing education",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' division of labor and identify the six human-reserved actions",
+    "Draft a member proposal in the Proposal Forum format for agent review",
+    "Assess how agent-managed coordination could affect worker voice and bargaining"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the charter's mission and reserved-for-humans list; map which decisions can never be automated and why member control matters.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Watch Task Router and Collaborator Scout demonstrations; discuss how task routing parallels stewards and work assignments in union structures.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "In small groups, draft a sample proposal with the Proposal & Grant Drafter agent; debate and hold a mock human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review Progress Tracker outputs and agree on measurable outcomes a union would demand before adopting similar systems.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized mock-vote tallies and proposal drafts (stripped of names and employer identifiers) contributed to shared model examples of human-governed decision patterns.",
+   "consent": "Adult participants sign an informed consent form at enrollment; contributions are optional, pseudonymized, and any participant may withdraw their data at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Robot Helpers, Human Decisions: Governing AI in Kendall Square",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Describe what an agent-managed DAO is using the Incubator DAO zones",
+    "Distinguish tasks agents may do from decisions reserved for people",
+    "Design a class charter with measurable outcomes tracked in the Progress Observatory"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Meet the Evidence Monitor agent; practice sorting real claims about AI from speculation and summarizing evidence in two-sentence briefs.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Learn why the six reserved actions stay with humans; students rewrite each rule in their own words and post them as a class charter.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a fun class proposal (e.g., a field trip) with the drafting agent, then vote as humans, mirroring the DAO's decision cycle.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students set two measurable outcomes for their charter and track them weekly with a simple chart modeled on the Progress Tracker.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class charter outcomes and aggregate vote tallies (no names, ages, or identifying details) added to shared examples of youth civic decision-making.",
+   "consent": "Written guardian/parent consent is obtained before the program; only aggregate, fully anonymized classroom data is ever shared, and parents may opt out at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "From Evidence to Enactment: Running a Human-Governed AI Workflow",
+   "grade_or_level": "NGO program staff / professional development",
+   "outcomes": [
+    "Operate the evidence-to-synthesis-to-proposal pipeline across the DAO's zones",
+    "Design measurable outcomes and a progress-tracking dashboard for a mission program",
+    "Audit an agent workflow to confirm no human-reserved action is automated"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Work with Evidence Monitor and Research Synthesis Agent to build an evidence brief on a self-chosen mission topic; critique sources and gaps.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Use the Proposal & Grant Drafter to turn the brief into a full proposal; run a peer review simulating human-only debate and enactment.",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Plan a working-group structure with Task Router; assign agent-supported and human-only tasks explicitly on a responsibility matrix.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 2-3 measurable outcomes and build a simple tracking rubric modeled on the charter's Progress Tracker outputs.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized evidence-brief templates and outcome rubrics (organization names and staff identifiers removed) contributed to a shared library of open governance tools.",
+   "consent": "Staff participate under organizational data-sharing agreements; all shared materials are anonymized, reviewed by a designated privacy lead, and withdrawal is permitted without penalty."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "AI as a Public Good: A Stewardship Workshop for Nonprofit Boards",
+   "grade_or_level": "Board members and nonprofit leadership",
+   "outcomes": [
+    "Articulate the mission of governing AI as a public good with widely shared benefits",
+    "Identify which board-level powers map to the DAO's human-reserved actions",
+    "Draft a governance checklist for adopting agent support without ceding oversight"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the mission and contribution model; boards map their own reserved powers (budgets, bylaws, appointments) against the DAO's six reserved actions.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Boards review agent-drafted sample proposals and practice the human debate-and-vote step, noting where agent input ends and duty of care begins.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Tour Task Router and Collaborator Scout; assess which staff workflows could gain from agent support while keeping fiduciary control human.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Boards select measurable outcomes tied to their missions and set a review cadence with the Progress Tracker as a template.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance checklists and outcome frameworks (no organization names, financials, or client data) added to a shared stewardship model library.",
+   "consent": "Participation under a board-approved memorandum; only anonymized templates are shared, each organization approves its own submission, and withdrawal removes items from the library."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s21-incubator-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

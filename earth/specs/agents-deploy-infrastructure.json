@@ -1,0 +1,37 @@
+{
+ "slug": "agents-deploy-infrastructure",
+ "name": "Agents That Deploy Infrastructure",
+ "umbrella": "Powered by AGI Corp",
+ "status": "coming soon",
+ "management_style": "Agent-managed DAO",
+ "tagline": "Agents that take software from an idea to something running in production - provisioning, deploying, configuring and operating the stack",
+ "anchor": {"lat": null, "lon": null, "rad": 6371000, "rp1": null},
+ "charter": {
+  "focus": "agents taking software from an idea to production and operating the stack",
+  "focus_source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure",
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges.",
+  "reserved_for_humans": ["governance.final_vote", "charter.amend", "treasury.transfer", "proposal.enact", "windfall.distribute", "steward.appoint"]
+ },
+ "zones": [
+  {"name": "Idea Bench", "purpose": "Where an idea is turned into a plan of what to build and run", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea'"},
+  {"name": "Provisioning Yard", "purpose": "Provisioning infrastructure: compute, storage and networks, as rehearsed plans", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"},
+  {"name": "Deployment Bay", "purpose": "Deploying applications: builds, releases and rollbacks", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"},
+  {"name": "Domain Registry Desk", "purpose": "Managing domains and their records", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"},
+  {"name": "Service Configuration Room", "purpose": "Configuring services: settings, secrets handling policy and wiring", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"},
+  {"name": "Operations Deck", "purpose": "Operating the stack: health, logs, incidents and the on-call handoff to people", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"}
+ ],
+ "agents": [
+  {"name": "Planner", "role": "Turns an idea into a build-and-run plan the stewards can read", "zone": "Idea Bench", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'from an idea to something running in production'"},
+  {"name": "Provisioner", "role": "Provisions infrastructure from the plan, in rehearsal until a steward approves", "zone": "Provisioning Yard", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'provisioning infrastructure'"},
+  {"name": "Deployer", "role": "Deploys applications and keeps a rollback ready", "zone": "Deployment Bay", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'deploying applications'"},
+  {"name": "Domain Steward", "role": "Manages domains and records; registrations are a steward decision", "zone": "Domain Registry Desk", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'managing domains'"},
+  {"name": "Configurator", "role": "Configures services; never holds a live secret in a prompt", "zone": "Service Configuration Room", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'configuring services'"},
+  {"name": "Operator", "role": "Operates the stack and hands incidents to people", "zone": "Operations Deck", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agents That Deploy Infrastructure: 'operating the stack'"}
+ ],
+ "sources": ["worlds/sources/founder-tracks-2026-09-28.md", "worlds/PBC.json"],
+ "gaps": [
+  "No cloud, provider, domain, registrar or stack is named; nothing is deployed from this world",
+  "Spending on infrastructure is treasury.transfer, reserved for human stewards",
+  "No RP1 location given yet"
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "title": "Ecology DAO: Monteverde Cloud Walk",
+ "summary": "A canopy-hung DAO campus in the Monteverde Cloud Forest Reserve. Six zones straddle suspension bridges and misty ridgelines above Quebrada Cuecha, where agents gather evidence and humans hold every final vote.",
+ "biome": "tropical",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Reserva Biológica Bosque Nuboso Monteverde",
+   "buildings": [
+    {
+     "name": "Canopy Charter Hall",
+     "use": "Charter display, contribution model, measurable outcomes board",
+     "floors": 2
+    },
+    {
+     "name": "Mist Ledger Pavilion",
+     "use": "Public reading room for charter and outcome metrics",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Outcome Measure Hall",
+    "Contribution Registry",
+    "Steward Alcove"
+   ],
+   "props": [
+    "carved charter stele",
+    "bamboo notice boards",
+    "mist-catching lattices",
+    "lantern-lit walkway",
+    "handrail moisture gauges"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Quebrada Cuecha",
+   "buildings": [
+    {
+     "name": "Cloud Lab Tower",
+     "use": "Field evidence monitoring and synthesis",
+     "floors": 3
+    },
+    {
+     "name": "Epiphyte Study Hut",
+     "use": "Specimen sorting and summarization",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake",
+    "Synthesis Chamber",
+    "Epiphyte Bench",
+    "Databank Nook"
+   ],
+   "props": [
+    "humidity dataloggers",
+    "canopy crane platform",
+    "sample drying racks",
+    "orchid terrarium",
+    "field notebook stacks"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Reserva Biológica Bosque Nuboso Monteverde",
+   "buildings": [
+    {
+     "name": "Proposal Amphitheater",
+     "use": "Debate and human-only voting on drafted proposals",
+     "floors": 1
+    },
+    {
+     "name": "Drafter's Yurt",
+     "use": "Where agents draft proposals and grants for review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Debate Ring",
+    "Drafting Desk",
+    "Voting Booths (human-only)",
+    "Review Gallery"
+   ],
+   "props": [
+    "round timber benches",
+    "raised speaking stump",
+    "sealed vote urn",
+    "proposal scroll racks",
+    "quorum bell"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Quebrada Cuecha",
+   "buildings": [
+    {
+     "name": "Ridge Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Scout Signal Station",
+     "use": "Collaborator identification and outreach hub",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Table",
+    "Working Group Rooms",
+    "Scout Map Room",
+    "Signal Loft"
+   ],
+   "props": [
+    "trail map wall",
+    "radio mast",
+    "task pigeonholes",
+    "rope-bridge console",
+    "rain shelters"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Reserva Biológica Bosque Nuboso Monteverde",
+   "buildings": [
+    {
+     "name": "Cloud Observatory Spire",
+     "use": "Tracking progress against charter outcomes",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Telescope Floor",
+    "Progress Gallery",
+    "Trend Room",
+    "Watch Balcony"
+   ],
+   "props": [
+    "brass progress dial",
+    "chart murals",
+    "cloud-view telescope",
+    "milestone cairns",
+    "wind chimes"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Quercus copeyensis (Costa Rican oak)",
+   "Ocotea monteverdensis",
+   "Inga spp.",
+   "Sapium glandulatum",
+   "Persea americana (wild avocado)"
+  ],
+  "shrubs": [
+   "Piper auritum",
+   "Miconia spp.",
+   "Cavendishia callista"
+  ],
+  "flowers": [
+   "Begonia cooperi",
+   "Guzmania monostachya (bromeliad)",
+   "Maxillaria orchids",
+   "Fuchsia paniculata",
+   "Columnea hirta"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.8,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "NE",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "05:35",
+  "sunset_local": "17:45"
+ },
+ "court": {
+  "name": "Quorum Court of the Cloud Forest",
+  "style": "open-air timber amphitheater under the canopy",
+  "why_here": "In the reserve's heart, people gather to cast the human-reserved final votes while mist and forest witness the charter."
+ },
+ "quests": [
+  {
+   "title": "Trace the Quebrada Evidence",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect humidity dataloggers along Quebrada Cuecha",
+    "Log epiphyte counts at the canopy platform",
+    "Summarize findings in the Synthesis Chamber",
+    "Post the evidence brief on the Observatory's progress dial"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "From Draft to Human Vote",
+   "from_zone": "Operations Deck",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Route a biodiversity monitoring task at the Routing Table",
+    "Carry the draft to the Drafter's Yurt",
+    "Present the proposal at the Debate Ring",
+    "Ring the quorum bell; observe the human-only vote"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Charter Pilgrimage",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter stele in Charter Wall hall",
+    "Record the six human-reserved actions in your journal",
+    "Cross the rope bridge to the Spire",
+    "Mark one measurable outcome on the brass dial"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Scout the Canopy Collaborators",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Survey the Signal Station map for expert names",
+    "Follow the ridge trail collecting observations",
+    "Deliver the collaborator list to the Synthesis Chamber"
+   ],
+   "xp": 30
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "ecology-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,280 @@
+{
+ "title": "Cancer DAO: Lakeside Research Commons",
+ "summary": "A walkable campus on South Lake Union, Seattle, anchored at Fred Hutchinson Cancer Center. Five districts map the DAO's zones to labs, forums and observatories along the lakefront, where agents research and synthesize while humans hold every final vote.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Arnold Building, Fred Hutchinson Cancer Center",
+   "buildings": [
+    {
+     "name": "Charter Hall Rotunda",
+     "use": "Charter display and contribution-model briefing",
+     "floors": 3
+    },
+    {
+     "name": "Measurable Outcomes Wing",
+     "use": "Outcomes framework drafting suite",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Ledger Gallery",
+    "Outcomes Workshop",
+    "Steward Alcove"
+   ],
+   "props": [
+    "charter scroll cases",
+    "bronze mission plaque",
+    "contribution ledger kiosk",
+    "tiered seating steps",
+    "glass donor wall",
+    "holographic mission statement"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Adaptive Biosciences",
+   "buildings": [
+    {
+     "name": "Evidence Monitor Lab",
+     "use": "Literature monitoring and evidence triage",
+     "floors": 4
+    },
+    {
+     "name": "Synthesis Tower",
+     "use": "Research summarization for stewards",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Monitor Station",
+    "Evidence Triage Bay",
+    "Synthesis Studio",
+    "Steward Briefing Room",
+    "Journal Archive"
+   ],
+   "props": [
+    "evidence feed monitors",
+    "paper-stacked desks",
+    "annotation walls",
+    "journal archive shelves",
+    "whiteboard arrays",
+    "server racks"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Astra Hotel Seattle",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "Agent-drafted proposals, human debate",
+     "floors": 2
+    },
+    {
+     "name": "Deliberation Annex",
+     "use": "Working debate chambers",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Draft Gallery",
+    "Debate Chamber",
+    "Human-Only Voting Booth",
+    "Amendment Table"
+   ],
+   "props": [
+    "proposal display boards",
+    "debate podiums",
+    "reserved-for-humans seal at voting booth",
+    "transparent draft drawers",
+    "speaker queue lanterns"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "802 Vertex",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and coordination hub",
+     "floors": 5
+    },
+    {
+     "name": "Collaborator Lodge",
+     "use": "Expert scouting and working-group meetups",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Routing Console",
+    "Working Group Docks",
+    "Scout Map Room",
+    "Coordination Bridge"
+   ],
+   "props": [
+    "task routing board",
+    "collaborator network map",
+    "working group signage",
+    "signal lanterns",
+    "rolling whiteboards",
+    "courier carts"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Arthur Foss (historic vessel, Lake Union)",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Charter outcome tracking displays",
+     "floors": 3
+    },
+    {
+     "name": "Lakeside Metrics Pavilion",
+     "use": "Open-air progress dashboards",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tracker Balcony",
+    "Metrics Hall",
+    "Milestone Timeline Walk",
+    "Reflection Overlook"
+   ],
+   "props": [
+    "progress dashboard screens",
+    "milestone markers along the water",
+    "brass telescope",
+    "bench row at the lake edge",
+    "illuminated timeline rail"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Douglas fir",
+   "western red cedar",
+   "bigleaf maple",
+   "red alder",
+   "Pacific madrone"
+  ],
+  "shrubs": [
+   "salal",
+   "Oregon grape",
+   "red-flowering currant",
+   "Nootka rose"
+  ],
+  "flowers": [
+   "Pacific bleeding heart",
+   "foamflower",
+   "lupine",
+   "coastal strawberry"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.3,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "07:15",
+  "sunset_local": "17:00"
+ },
+ "court": {
+  "name": "The Stewards' Court",
+  "style": "Circular lakeside amphitheater with a human-only voting dais",
+  "why_here": "Beside Lake Union at the heart of the campus, a court where agents present and only people decide, enacting the DAO's reserved-for-humans governance."
+ },
+ "quests": [
+  {
+   "title": "Draft the First Charter Outcomes",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter scroll in the Rotunda",
+    "Collect the outcomes framework from the Measurable Outcomes Wing",
+    "Review milestone markers with the Progress Tracker",
+    "Deliver the framework to the Metrics Pavilion"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Evidence Run",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Triage the morning evidence feed in the Monitor Station",
+    "Carry summaries to the Synthesis Studio",
+    "Hand the steward briefing to the Proposal & Grant Drafter",
+    "Observe the human-only debate; do not vote"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Assign tasks at the Routing Console",
+    "Consult the Collaborator Scout's network map",
+    "Deliver the working-group roster to the Synthesis Tower",
+    "Confirm with the Evidence Monitor"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Audit milestone timelines on the Tracker Balcony",
+    "Flag lagging outcomes in the Metrics Hall",
+    "Report findings to the Charter Reading Room"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Lakeside Deliberation",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Review drafts in the Draft Gallery",
+    "Attend debate in the Chamber as an observer",
+    "Watch stewards cast the final vote at the human-only dais",
+    "Record the enacted outcome on the milestone rail"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "cancer-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

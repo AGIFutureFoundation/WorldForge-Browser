@@ -1,0 +1,157 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents on the Docks: Port Workers Govern the DAO",
+   "grade_or_level": "Vocational / adult continuing education",
+   "outcomes": [
+    "Explain how agent-managed, human-governed DAOs assign tasks and route work at the Maasvlakte 2 container terminals",
+    "Identify which decisions (final votes, treasury transfers, appointments) remain reserved for human members",
+    "Draft and debate a mock proposal in the Proposal Forum format",
+    "Assess data-sharing risks for logistics workers in AI-coordinated delivery systems"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the DAO charter and contribution model; map which port-side decisions agents may prepare but only humans may enact.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play with the Task Router scenario: working groups coordinate gantry-crane and delivery tasks between decision cycles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a shift-scheduling or safety proposal; the Proposal & Grant Drafter agent formats it for human debate and vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review sample progress metrics; discuss which measurable outcomes would count as success for port workers.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised session feedback on task-routing fairness and proposal priorities, aggregated with no names, employer IDs, or shift records.",
+   "consent": "Opt-in participation with a plain-language data notice in Dutch and English; union stewards briefed beforehand; any withdrawal deletes contributions."
+  },
+  {
+   "audience": "k12",
+   "title": "Cargo, Cranes and Collective Choices",
+   "grade_or_level": "Ages 11-14 (lower secondary)",
+   "outcomes": [
+    "Locate the Port of Rotterdam's Maasvlakte 2 on a map and describe why Europe's largest port matters for delivery",
+    "Describe the difference between what AI agents do and what people decide in a DAO",
+    "Practice proposing and voting on a class decision",
+    "Reflect on sharing information safely online"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use Evidence Monitor outputs to explore how goods move through the port and what agents summarize for humans.",
+     "minutes": 40
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Compare the DAO charter to class rules; identify the human-only decisions like final votes and appointments.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a fun class proposal (e.g., delivery-themed game day); everyone debates and votes like DAO members.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track class progress on a simple chart, mirroring how the Progress Tracker agent reports outcomes.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Anonymised class-vote tallies and drawings of 'what should humans decide', with no names, ages, or identifying details.",
+   "consent": "Written guardian/parent consent required before participation; teachers explain data sharing in age-appropriate terms; families may opt out at any time and contributions are removed."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governing AI as a Public Good: NGO Steward Workshop",
+   "grade_or_level": "Professional development, NGO program staff",
+   "outcomes": [
+    "Connect the mission of governing AI as a public good to their own program portfolios",
+    "Operate the five-zone DAO workflow from evidence synthesis to progress tracking",
+    "Design measurable outcomes for a charter focus",
+    "Facilitate human-only reserved decisions within their organizations"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Analyze the charter's mission and contribution model; draft candidate measurable outcomes for an NGO-relevant focus area.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Work with Evidence Monitor and Research Synthesis Agent outputs to build an evidence brief for stakeholders.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Convert the evidence brief into a drafted proposal; rehearse human debate and the final vote reserved to people.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Use the Collaborator Scout and Task Router model to map partner working groups across decision cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define indicators and reporting rhythms with the Progress Tracker approach; peer-review each organization's plan.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised outcome frameworks and evaluation templates contributed to a shared NGO practice library, with organizational identifiers removed.",
+   "consent": "Organizational data-sharing agreement plus individual opt-in; no beneficiary or community data is shared; withdrawal removes materials from the library."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "From Evidence to Enactment: Nonprofit DAO Lab",
+   "grade_or_level": "Nonprofit leadership and program designers",
+   "outcomes": [
+    "Understand the agent-managed, human-governed DAO structure of the Series 22 cell",
+    "Draft a fundable grant or proposal with agent support for human review",
+    "Apply consentful, privacy-first data practices to nonprofit programs",
+    "Report progress transparently against charter outcomes"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review synthesized evidence on a chosen delivery-logistics challenge; practice summarizing for boards and donors.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Use the Proposal & Grant Drafter pattern to outline a grant request; peers critique before any human enactment step.",
+     "minutes": 75
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Map the nonprofit's mission onto the DAO charter template, highlighting human-reserved decisions like treasury transfers.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple progress dashboard aligned to measurable outcomes; present and get feedback.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymised dashboard templates and lessons learned from proposal drafting, stripped of donor, beneficiary, and financial identifiers.",
+   "consent": "Board-level approval plus individual consent for any shared materials; privacy review before publication; opt-out honored with prompt deletion."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s22-get-delivery-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

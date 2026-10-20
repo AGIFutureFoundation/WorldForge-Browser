@@ -1,0 +1,280 @@
+{
+ "title": "Gonstead.X (Series 13) — Mount Horeb Cell",
+ "summary": "An agent-managed, human-governed DAO world set in Mount Horeb, Wisconsin, the Driftless village of the Gonstead Clinic. Agents synthesize evidence and draft proposals across five zones; humans alone vote and enact.",
+ "biome": "grassland",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Mount Horeb Village Hall",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display, contribution model and measurable outcomes",
+     "floors": 1
+    },
+    {
+     "name": "Steward's Reading Room",
+     "use": "Human-only deliberation and vote preparation",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Contribution Ledger Room",
+    "Outcomes Board",
+    "Steward Gallery",
+    "Amendment Vault (human-key)"
+   ],
+   "props": [
+    "framed charter scroll",
+    "contribution ledger desk",
+    "measurable-outcomes board",
+    "quill and wax seal",
+    "reserved-powers placard",
+    "oak benches",
+    "voting urn (locked, human-key)"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Mt Horeb Depot - Military Ridge Trail & Tourist Center",
+   "buildings": [
+    {
+     "name": "Evidence Annex",
+     "use": "Monitoring and evidence summarization",
+     "floors": 1
+    },
+    {
+     "name": "Synthesis Barn",
+     "use": "Research synthesis for the stewards",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Monitor Desk",
+    "Evidence Stacks",
+    "Synthesis Studio",
+    "Citation Vault",
+    "Focus-Pending Lounge",
+    "Briefing Nook"
+   ],
+   "props": [
+    "shortwave monitor set",
+    "evidence pinboard",
+    "citation card drawers",
+    "focus not-yet-set easel",
+    "summarizing scribe automaton",
+    "field notebooks"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Mount Horeb Opera House",
+   "buildings": [
+    {
+     "name": "Proposal Playhouse",
+     "use": "Agent-drafted proposals debated by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Gallery",
+    "Debate Floor",
+    "Human Vote Balcony",
+    "Enactment Door (sealed, human-key)",
+    "Comment Hearth"
+   ],
+   "props": [
+    "draft proposal lectern",
+    "debate hourglass",
+    "public comment scrolls",
+    "sealed enactment door-frame",
+    "chalk tally board",
+    "gallery benches"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Mount Horeb Chamber of Commerce Welcome Center",
+   "buildings": [
+    {
+     "name": "Routing Depot",
+     "use": "Task routing and working-group coordination",
+     "floors": 1
+    },
+    {
+     "name": "Scout Outfitters",
+     "use": "Collaborator identification and outreach prep",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Task Board",
+    "Router Console",
+    "Working-Group Tables",
+    "Scout Map Room",
+    "Outreach Drafting Desk"
+   ],
+   "props": [
+    "task-routing pigeonholes",
+    "working-group sign-up board",
+    "collaborator map pins",
+    "message satchels",
+    "decision-cycle calendar",
+    "telegraph-style router bell"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Driftless Historium & Mount Horeb Area Historical Museum",
+   "buildings": [
+    {
+     "name": "Progress Tower",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Chartroom",
+    "Tracker Loft",
+    "Milestone Gallery",
+    "Signal Lantern Deck"
+   ],
+   "props": [
+    "measurable-outcomes wall chart",
+    "milestone medallions",
+    "progress tracker automaton",
+    "signal lantern",
+    "ledger telescope",
+    "seasonal audit almanac"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "bur oak",
+   "white oak",
+   "shagbark hickory",
+   "sugar maple",
+   "eastern red cedar",
+   "black walnut"
+  ],
+  "shrubs": [
+   "gray dogwood",
+   "common ninebark",
+   "American hazelnut",
+   "prairie willow"
+  ],
+  "flowers": [
+   "purple coneflower",
+   "wild bergamot",
+   "black-eyed Susan",
+   "prairie smoke",
+   "leadplant"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "fountain",
+  "flow_mps": 0.2,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "17:30"
+ },
+ "court": {
+  "name": "The Military Ridge Court",
+  "style": "Driftless prairie civic square with limestone edge and telegraph-line motif",
+  "why_here": "Sited by the old Mt Horeb Depot on the Military Ridge Trail, the village's historic rail-to-trail spine, fitting a cell that routes tasks and signals progress."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus (Pending Stewards)",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the charter wall and note the focus gap",
+    "Carry the focus-pending placard to the Evidence Annex",
+    "Ask Evidence Monitor to summarize what a focus choice needs",
+    "Return the summary brief to Charter Hall for human stewards"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect a citation packet from the Evidence Stacks",
+    "Deliver it to Research Synthesis Agent in the Synthesis Studio",
+    "Hand the synthesis to Proposal & Grant Drafter at the lectern",
+    "Verify the enactment door stays sealed — only humans enact"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Take the comment scrolls from the Debate Floor",
+    "Deliver them to Task Router at the Routing Depot",
+    "Watch tasks sorted into working-group pigeonholes",
+    "Confirm Collaborator Scout has pinned three candidate experts"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Fetch the decision-cycle calendar from the Routing Depot",
+    "Log completed working-group tasks at the Progress Tower",
+    "Let Progress Tracker update the outcomes wall chart",
+    "Light the signal lantern when a milestone is met"
+   ],
+   "xp": 45
+  },
+  {
+   "title": "The Human Hand",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Audit one milestone in the Milestone Gallery",
+    "Note any reserved-power action on the ledger telescope",
+    "Carry the audit almanac to Charter Hall",
+    "Deposit it for stewards; observe the voting urn is never touched by agents"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s13-gonstead-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

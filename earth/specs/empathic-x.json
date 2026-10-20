@@ -1,0 +1,85 @@
+{
+  "slug": "empathic-x",
+  "name": "Empathic.X",
+  "umbrella": "Powered by AGI Corp",
+  "status": "coming soon",
+  "tagline": "Empathy & Emotional Intelligence",
+  "anchor": {
+    "lat": 47.43990000744796,
+    "lon": -179.34952851914045,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=47.43990000744796&lon=-179.34952851914045&rad=6371000"
+  },
+  "zones": [
+    {
+      "name": "Self-Reader Grove",
+      "purpose": "Self-awareness (SA): naming what you feel before you act, where it lands in your body",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+    },
+    {
+      "name": "Other-Reader Commons",
+      "purpose": "Awareness of others (AO): asking instead of assuming, listening without preparing a reply",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+    },
+    {
+      "name": "Repairer's Hall",
+      "purpose": "Repair (RR): coming down, apologising properly, saying the hard thing kindly",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+    },
+    {
+      "name": "Room-Reader Plaza",
+      "purpose": "Reading the room (RM): where the energy is, who is idle, the moment before it goes wrong",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+    },
+    {
+      "name": "Practitioner Workshop",
+      "purpose": "Emotion at work (EW): feedback that can be used, saying no at work, emotional labour",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Self-Reader Guide",
+      "role": "Guide for SA themes and transfer checks, e.g. name three states you were in this week",
+      "zone": "Self-Reader Grove",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Self-Reader')"
+    },
+    {
+      "name": "Other-Reader Guide",
+      "role": "Guide for AO themes, e.g. reading a face without deciding what it means",
+      "zone": "Other-Reader Commons",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Other-Reader')"
+    },
+    {
+      "name": "Repair Guide",
+      "role": "Guide for RR themes, e.g. staying in a hard conversation, receiving an apology",
+      "zone": "Repairer's Hall",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Repairer')"
+    },
+    {
+      "name": "Room-Reader Guide",
+      "role": "Guide for RM themes, e.g. a room with a newcomer in it, when to do nothing",
+      "zone": "Room-Reader Plaza",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Room-Reader')"
+    },
+    {
+      "name": "Practitioner Guide",
+      "role": "Guide for EW themes, e.g. the colleague who is struggling, leaving well",
+      "zone": "Practitioner Workshop",
+      "source": "~/Downloads/Cognition.X_all_blocks.csv (pack 'Empathy & Emotional Intelligence', credential 'Practitioner')"
+    }
+  ],
+  "sources": [
+    "~/Downloads/Empathic.X logo/logo-png.png",
+    "~/Downloads/Empathic.X logo/logo-pdf.pdf",
+    "~/Downloads/Empathic.X logo/logo-svg.svg",
+    "~/Downloads/Cognition.X_all_blocks.csv"
+  ],
+  "gaps": [
+    "Sources name no agents; all agents are role-only guides derived from the five pack credentials",
+    "No Empathic.X product description, tagline, deck or doc found; tagline is the Cognition.X pack name",
+    "Logo reads 'Empathic.X / AGI.Polygon'; no source mentions AGI Corp (umbrella set per request)",
+    "CSV 'track' and 'description' columns are empty for this pack; zones use credential and theme columns",
+    "Zone names are labels for the credential groups, not place names from any source"
+  ]
+}

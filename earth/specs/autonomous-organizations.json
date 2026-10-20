@@ -1,0 +1,36 @@
+{
+ "slug": "autonomous-organizations",
+ "name": "Autonomous Organizations",
+ "umbrella": "Powered by AGI Corp",
+ "status": "coming soon",
+ "management_style": "Agent-managed DAO",
+ "tagline": "Teams of agents that coordinate through Slack, Linear and other surfaces to reach a high-level goal - assigning, communicating, deciding and executing with minimal human intervention",
+ "anchor": {"lat": null, "lon": null, "rad": 6371000, "rp1": null},
+ "charter": {
+  "focus": "teams of agents coordinating through work surfaces toward a high-level goal, within the PBC's human-governed model",
+  "focus_source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations",
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges.",
+  "reserved_for_humans": ["governance.final_vote", "charter.amend", "treasury.transfer", "proposal.enact", "windfall.distribute", "steward.appoint"]
+ },
+ "zones": [
+  {"name": "Goal Wall", "purpose": "The high-level goal the team is accomplishing, written where every agent can read it", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"},
+  {"name": "Coordination Floor", "purpose": "Coordinating through surfaces like Slack, Linear and other tools", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces like Slack, Linear, and other tools'"},
+  {"name": "Assignment Board", "purpose": "Assigning work across the team", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"},
+  {"name": "Decision Room", "purpose": "Making decisions - drafted by agents, with the final vote reserved for human stewards", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"},
+  {"name": "Execution Bay", "purpose": "Executing the assigned work with minimal human intervention, inside the reserved-actions line", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing with minimal human intervention'"}
+ ],
+ "agents": [
+  {"name": "Goal Keeper", "role": "Keeps the high-level goal current and measurable", "zone": "Goal Wall", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'accomplish a high-level goal'"},
+  {"name": "Coordinator Agent", "role": "Coordinates the team through Slack, Linear and other surfaces", "zone": "Coordination Floor", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'coordinate through surfaces'"},
+  {"name": "Assigner", "role": "Assigns work and tracks who holds what", "zone": "Assignment Board", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'assigning work'"},
+  {"name": "Communicator", "role": "Communicates status and blockers across the team", "zone": "Coordination Floor", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'communicating'"},
+  {"name": "Decision Drafter", "role": "Drafts decisions with evidence; never enacts one", "zone": "Decision Room", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'making decisions'"},
+  {"name": "Executor", "role": "Executes assigned work and reports back", "zone": "Execution Bay", "source": "worlds/sources/founder-tracks-2026-09-28.md, Autonomous Organizations: 'executing'"}
+ ],
+ "sources": ["worlds/sources/founder-tracks-2026-09-28.md", "worlds/PBC.json"],
+ "gaps": [
+  "No Slack or Linear workspace is connected and no goal is given; the surfaces are named, not wired",
+  "'Minimal human intervention' is bounded by the PBC reserved list: final votes and enactment stay with stewards",
+  "No RP1 location given yet"
+ ]
+}

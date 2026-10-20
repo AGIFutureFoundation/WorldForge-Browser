@@ -1,0 +1,306 @@
+{
+ "tasks": [
+  {
+   "id": "self-reader-grove-gps-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Self-Reader Grove",
+   "goal": "Patrol tree-lined grove paths north of Lac des Buttes-Chaumont, mapping rough ground and reporting obstruction events for guide kiosk placement.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/gps/fix",
+     "/odom",
+     "/plan",
+     "/map"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Compacted earth and gravel grove paths, tree roots, 4080 mapped trees as fixed obstacles, gentle slopes within 51.5 m relief",
+   "success": [
+    "Full loop of grove path >=200 m with localisation error <0.5 m",
+    ">=95% of path classified as traversable",
+    "Zero collisions with tree trunks",
+    "Map published with <=0.3 m resolution"
+   ],
+   "safety_stops": [
+    "E-stop on slope >25 deg",
+    "Stop if pedestrian within 1.5 m",
+    "Low battery <20% return-to-dock",
+    "Stop on wheel slip >15%"
+   ],
+   "human_in_loop": "Guide zone steward approves final kiosk positions and patrol route before deployment runs",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "zone",
+     "path_length_m",
+     "localisation_error_m",
+     "obstacle_events",
+     "collision_count",
+     "battery_end_pct"
+    ]
+   }
+  },
+  {
+   "id": "other-reader-lake-quad-inspect",
+   "robot": "unitree-go2",
+   "zone": "Other-Reader Commons",
+   "goal": "Quadruped inspect lakeside commons around Lac des Buttes-Chaumont, checking pavement condition and visitor-density hotspots at the water edge.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/odom",
+     "/camera/image_raw",
+     "/scan",
+     "/people_count"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Paved lakeside promenade, stone edging at water boundary, benches, steps down to the lake, crowds near Pavillon du Lac",
+   "success": [
+    ">=98% of promenade segment covered",
+    "People detection accuracy validated on 50 labelled frames",
+    "Zero water-edge incursions within 0.5 m of lake boundary",
+    "Daily report JSONL published"
+   ],
+   "safety_stops": [
+    "Stop within 1 m of water edge",
+    "Stop if >8 people within 2 m (crowd)",
+    "Lie-down on tip detection >30 deg",
+    "Comm loss >5 s freeze"
+   ],
+   "human_in_loop": "Commons guide reviews crowd-hotspot heatmap and approves before publicising session times",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "segment_coverage_pct",
+     "people_count_mean",
+     "water_incursion_events",
+     "pavement_defects_found",
+     "tip_events",
+     "session_duration_s"
+    ]
+   }
+  },
+  {
+   "id": "repairer-hall-interior-nav",
+   "robot": "boston-dynamics-spot",
+   "zone": "Repairer's Hall",
+   "goal": "Navigate hall interior (cliff-top temple model near the lake), docking at listening-booth stations between seated visitor groups.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/map",
+     "/odom",
+     "/scan",
+     "/spot/check_pose"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Interior stone/concrete floors, columned hall geometry, threshold steps, benches, narrow aisle spacing near seated groups",
+   "success": [
+    "Reach 4 booth stations with <0.2 m pose error",
+    "Zero contact with benches or visitors",
+    "Aisle clearance >=0.6 m maintained on 100% of path",
+    "Dock success rate >=90% over 10 trials"
+   ],
+   "safety_stops": [
+    "Person within 1 m -> stop and yield",
+    "Tilt >20 deg",
+    "Step edge detection unverified -> halt",
+    "Manual e-stop via tablet"
+   ],
+   "human_in_loop": "Repair Guide approves booth station list and may pause robot during live sessions",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "station_id",
+     "pose_error_m",
+     "closest_person_m",
+     "docking_success",
+     "tilt_max_deg",
+     "pauses_by_guide"
+    ]
+   }
+  },
+  {
+   "id": "room-reader-cf-swarm-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Room-Reader Plaza",
+   "goal": "Small quadrotor swarm scans plaza occupancy and energy flow, streaming anonymised density maps to the Room-Reader Guide.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf/pose",
+     "/cf/battery",
+     "/range/front",
+     "/occupancy_grid"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open plaza with 30 m cliff-edge exposure on one side, tree canopy up to ~15 m, variable Paris winds, pedestrian heads as dynamic obstacles",
+   "success": [
+    "Continuous 10 min hover-scans at 8 m altitude, drift <0.3 m",
+    "Occupancy grid refreshed at 1 Hz covering >=90% plaza",
+    "Zero canopy or structure contacts",
+    "Battery reserve >=25% at land"
+   ],
+   "safety_stops": [
+    "Wind >8 m/s ground",
+    "Any person within 3 m of drone on ascent/descent",
+    "Battery <25% immediate land",
+    "Geofence breach -> RTL"
+   ],
+   "human_in_loop": "Guide approves flight windows and reviews occupancy data before any visitor-facing use",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "flight_time_s",
+     "drift_max_m",
+     "occupancy_coverage_pct",
+     "geofence_breaches",
+     "wind_max_ms",
+     "landing_battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "practitioner-workshop-table-demo",
+   "robot": "universal-robots-ur10e",
+   "zone": "Practitioner Workshop",
+   "goal": "Table-mounted arm demonstrates feedback-card sorting exercise, handing emotion-labelled cards to participants at fixed workstation slots.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrench",
+     "/joint_states",
+     "/camera/image_raw",
+     "/gripper_status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Indoor workshop tables, card trays, participant hands entering shared workspace, flat floor-mounted pedestal base",
+   "success": [
+    ">=95% pick success over 100 card grasps",
+    "Handover force <5 N at all times",
+    "Zero uncommanded motion during human contact",
+    "Card placed in correct slot 100% of 20 sorted trials"
+   ],
+   "safety_stops": [
+    "Force-torque >10 N stop",
+    "Workspace intrusion detected -> retreat to safe pose",
+    "Speed limited to 250 mm/s near humans",
+    "E-stop button at table"
+   ],
+   "human_in_loop": "Practitioner Guide supervises every session and can trigger safe-pose retreat instantly",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_attempts",
+     "grasp_success_pct",
+     "max_contact_force_n",
+     "slot_accuracy_pct",
+     "retreat_events",
+     "session_id"
+    ]
+   }
+  },
+  {
+   "id": "practitioner-dual-arm-mirror",
+   "robot": "franka-fr3",
+   "zone": "Practitioner Workshop",
+   "goal": "Dual-arm robot performs slow mirroring gesture exercises with a guide, modelling calm body language for emotion-at-work roleplay.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/fr3/joint_states",
+     "/fr3/ee_pose",
+     "/fr3/contact_torque",
+     "/mirror/tracking"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Open floor space in workshop with mirrored participant stations, no floor hazards, strict 0.8 m human-robot envelope",
+   "success": [
+    "Trajectory tracking error <0.02 m end-effector",
+    "Contact torque threshold never exceeded",
+    "10 min continuous mirroring without fault",
+    "Guide-rated naturalness score logged each session"
+   ],
+   "safety_stops": [
+    "Collision impulse >2 Nm reflex stop",
+    "Envelope breach -> zero-gravity mode",
+    "Joint velocity cap 0.5 rad/s when human within 1 m",
+    "Operator deadman release"
+   ],
+   "human_in_loop": "Practitioner Guide co-performs gestures and ends any exercise on first discomfort signal",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "tracking_error_m",
+     "max_contact_torque_nm",
+     "envelope_breaches",
+     "session_duration_s",
+     "guide_naturalness_score",
+     "stops_count"
+    ]
+   }
+  },
+  {
+   "id": "grove-tree-canopy-sampling",
+   "robot": "pal-robotics-talos",
+   "zone": "Self-Reader Grove",
+   "goal": "Bipedal robot walks grove paths carrying sensor head to sample canopy shade and noise levels at seated reflection points.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/talos/odom",
+     "/talos/sole_contacts",
+     "/map",
+     "/environment/noise"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Uneven grove soil, roots, soft leaf litter, slopes within park relief, low branches from dense tree cover",
+   "success": [
+    "Walk 5 reflection points, 100 m total, without falls",
+    "Sole-contact stability margin >0.3 on all steps",
+    "Noise/shade samples logged at each point",
+    "Mean speed >=0.2 m/s"
+   ],
+   "safety_stops": [
+    "Fall detection -> protective stop",
+    "Branch within 1.8 m head clearance halt",
+    "Slope >15 deg refuse step",
+    "Supervisor e-stop pendant"
+   ],
+   "human_in_loop": "Self-Reader Guide selects reflection points and confirms each stop before sampling resumes",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "points_visited",
+     "distance_m",
+     "falls",
+     "stability_margin_min",
+     "noise_db_mean",
+     "shade_lux_mean"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "empathic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

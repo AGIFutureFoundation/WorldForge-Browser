@@ -1,0 +1,35 @@
+{
+ "slug": "agentic-payments",
+ "name": "Agentic Payments",
+ "umbrella": "Powered by AGI Corp",
+ "status": "coming soon",
+ "management_style": "Agent-managed DAO",
+ "tagline": "Agents that transact, buy, sell, provision services and manage budgets - with every transfer of funds held for human stewards",
+ "anchor": {"lat": null, "lon": null, "rad": 6371000, "rp1": null},
+ "charter": {
+  "focus": "agents interacting with financial infrastructure autonomously, under the PBC's reserved-for-humans list",
+  "focus_source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments",
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges.",
+  "reserved_for_humans": ["governance.final_vote", "charter.amend", "treasury.transfer", "proposal.enact", "windfall.distribute", "steward.appoint"]
+ },
+ "zones": [
+  {"name": "Transaction Desk", "purpose": "Where agents transact, buy and sell - drafted and reconciled here, never settled by an agent", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'transact, buy, sell'"},
+  {"name": "Service Provisioning Counter", "purpose": "Provisioning services an agent may order within a steward-set budget", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"},
+  {"name": "Budget Office", "purpose": "Managing budgets: proposals, ledgers and variance drafted for the stewards", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"},
+  {"name": "Financial Infrastructure Gateway", "purpose": "Interacting with financial infrastructure in rehearsal: reads, quotes and dry runs", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure autonomously'"}
+ ],
+ "agents": [
+  {"name": "Buyer Agent", "role": "Drafts purchases against a steward-set budget and hands the settlement to the stewards", "zone": "Transaction Desk", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'buy'"},
+  {"name": "Seller Agent", "role": "Drafts sale offers and reconciles what was sold; never moves the proceeds", "zone": "Transaction Desk", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'sell'"},
+  {"name": "Provisioning Agent", "role": "Orders services within budget and records what was provisioned", "zone": "Service Provisioning Counter", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'provision services'"},
+  {"name": "Budget Agent", "role": "Manages budget drafts, ledgers and variance reports for steward review", "zone": "Budget Office", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'manage budgets'"},
+  {"name": "Rail Agent", "role": "Reads balances, fetches quotes and dry-runs transactions against financial infrastructure", "zone": "Financial Infrastructure Gateway", "source": "worlds/sources/founder-tracks-2026-09-28.md, Agentic Payments: 'interact with financial infrastructure'"}
+ ],
+ "sources": ["worlds/sources/founder-tracks-2026-09-28.md", "worlds/PBC.json"],
+ "gaps": [
+  "No rails, currencies, limits, wallets or counterparties are named; nothing in this world moves money",
+  "treasury.transfer is reserved for human stewards, so 'autonomously' here means drafting and reconciling, not settling",
+  "No RP1 location given yet",
+  "No source names a person, partner or budget figure"
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Governing the Grid: Worker Voice in Agent-Managed Solar DAOs",
+   "grade_or_level": "Adult workforce / continuing education",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO assigns tasks to agents and final votes to people",
+    "Identify which decisions (treasury.transfer, proposal.enact) remain reserved for humans and why",
+    "Draft a worker-informed proposal for the Proposal Forum using desert solar siting facts"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the DAO charter and map the five human-reserved actions; discuss how worker voice fits governance.final_vote",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate Task Router coordination for a Bhadla-style desert solar build; workers flag safety and skills gaps",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a proposal (agent-assisted, human-decided) and run a mock final vote with secret ballot",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review sample measurable outcomes and build a tracking dashboard for training hours and skills gained",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized training-hours, task-completion and skills-gap tallies from sessions, contributed to shared workforce models.",
+   "consent": "Opt-in participation with written notice; no personal identifiers collected; aggregated data only after group consent; withdrawal removes data at next aggregation cycle."
+  },
+  {
+   "audience": "k12",
+   "title": "Sun, Sand and Shared Decisions: A Solar DAO Civic Lab",
+   "grade_or_level": "Grades 6-8 (adaptable 5-9)",
+   "outcomes": [
+    "Locate Bhadla Solar Park in the Thar Desert and describe why desert flats suit solar",
+    "Explain 'agents operate; people govern' using the five reserved human actions",
+    "Run a classroom vote that mirrors Proposal Forum decision-making"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use Evidence Monitor-style summaries to learn about desert solar parks; separate evidence from claims",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Rewrite the DAO mission in student words; identify outcomes a class charter could measure",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a mock solar-desk proposal; agents (students in role) draft, all students vote",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track a two-week class outcome chart and present findings like the Progress Tracker agent",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class-level vote tallies and pre/post quiz scores only; no individual student data shared.",
+   "consent": "Guardian/parent signed consent required for all data sharing; lesson participation itself also requires school permission slip; students may opt out of data contribution while still attending; all data aggregated and de-identified."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: NGO Partnerships with Agent-Managed DAOs",
+   "grade_or_level": "Professional / NGO staff development",
+   "outcomes": [
+    "Assess how the Research Synthesis Lab and Proposal Forum structure supports evidence-based advocacy",
+    "Design a partnership where NGOs hold human votes while agents handle research and drafting",
+    "Define measurable outcomes an NGO could track in a desert-energy governance context"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice turning monitoring feeds into concise evidence briefs via a synthesis exercise on solar in arid regions",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a partnership grant proposal with the Proposal & Grant Drafter role modeled; humans keep enactment authority",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Map a working-group structure using Collaborator Scout and Task Router roles across partner organizations",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 3-5 measurable outcomes and a review cadence for the partnership",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized outcome indicators and proposal-stage metadata (counts, timelines) contributed to shared governance models.",
+   "consent": "Organizational MOU plus individual opt-in; no beneficiary personal data collected; results shared only in aggregate; any partner may exit and purge contributions."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Charter to Impact: Building a Human-Governed Solar DAO Program",
+   "grade_or_level": "Nonprofit leadership / program design",
+   "outcomes": [
+    "Translate the charter mission into a program plan with measurable outcomes",
+    "Assign agent roles vs human-reserved actions in a nonprofit governance blueprint",
+    "Prototype a decision cycle from drafting to human final vote"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop a charter-aligned mission and contribution model for a desert-solar public-good program",
+     "minutes": 90
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Run a full decision cycle: agent-drafted proposal, debate, recorded human final vote (never agent-enacted)",
+     "minutes": 90
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Build a task-routing board linking six agent roles to nonprofit staff and volunteers",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set baselines and a review ritual tracking progress against the charter's measurable outcomes",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Steward a living evidence log; practice summarizing findings for board and community audiences",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized program-outcome metrics and governance-cycle timing data for shared nonprofit benchmarking models.",
+   "consent": "Board-approved data policy; individual opt-in for any participant data; strictly aggregated outputs; clear withdrawal path and periodic consent renewal."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s32-solar-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

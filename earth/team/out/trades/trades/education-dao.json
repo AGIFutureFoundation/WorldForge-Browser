@@ -1,0 +1,409 @@
+{
+ "scenarios": [
+  {
+   "id": "cherwell-floodgate-rewire",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Replace corroded conduit and rewire pump controls for a floodgate on the River Cherwell towpath.",
+   "hazards": [
+    "water contact with live circuits",
+    "confined pit access",
+    "slips on wet steel",
+    "residual stored energy in VFDs"
+   ],
+   "ppe": [
+    "insulated gloves class 00",
+    "arc-flash face shield",
+    " Wellington boots",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Lock out and tag out the pump panel",
+    "Verify zero energy with a meter at the disconnect",
+    "Drain and ventilate the gate pit before entry",
+    "Remove corroded conduit and pull new THHN through PVC-coated raceway",
+    "Torque lugs to spec and megger the new runs",
+    "Restore power, test gate travel, complete permit closeout"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO sequence",
+     "pass_if": "Applies lock, tag and verifies zero energy before touching conductors"
+    },
+    {
+     "axis": "wet-location methods",
+     "pass_if": "Uses rated fittings and supports conduit per code for wet locations"
+    },
+    {
+     "axis": "confined space",
+     "pass_if": "Attendant and permit in place before pit entry"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Insulation resistance test passes before re-energizing"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows materials along the flooded towpath and carries a camera for the attendant's pre-entry pit inspection."
+  },
+  {
+   "id": "meadow-boardwalk-piles",
+   "trade": "carpenters",
+   "zone": "Charter Hall",
+   "task": "Repair timber piles and decking on the boardwalk crossing Christ Church Meadow's wet ground.",
+   "hazards": [
+    "unstable saturated soil",
+    "manual handling of green oak",
+    "hand and power tool cuts",
+    "wasps in hollow piles"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "cut-resistant gloves",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Survey the walk for soft decking and mark hazards",
+    "Set up exclusion zone around the works",
+    "Jack and brace the sagging bay before cutting out rotten piles",
+    "Fit treated replacement piles and fix with galvanized hardware",
+    "Re-nail or screw decking, checking for proud fasteners",
+    "Housekeep and clear the path for pedestrians"
+   ],
+   "rubric": [
+    {
+     "axis": "load control",
+     "pass_if": "Braces the bay before cutting so decking cannot drop"
+    },
+    {
+     "axis": "material handling",
+     "pass_if": "Lifts beams with a partner or mechanical aid, back straight"
+    },
+    {
+     "axis": "fixings",
+     "pass_if": "Uses corrosion-resistant fixings suitable for wet timber"
+    },
+    {
+     "axis": "public safety",
+     "pass_if": "Barriers and signage separate work from towpath users"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "quad-scaffold-inspect",
+   "trade": "laborers",
+   "zone": "Progress Observatory",
+   "task": "Inspect, tag and correct a tube-and-clamp scaffold against a college quad wall before masons lift stone.",
+   "hazards": [
+    "scaffold collapse",
+    "dropped objects overhead",
+    "uneven cobble ground bearing",
+    "crushing under stone loads"
+   ],
+   "ppe": [
+    "hard hat with chinstrap",
+    "hi-vis vest",
+    "gloves",
+    "safety harness for full height check"
+   ],
+   "steps": [
+    "Check base plates and sole boards on the cobbles",
+    "Verify standards plumb and all couplers tight",
+    "Confirm guardrails, toe boards and brick guards on all lifts",
+    "Check tie schedule against the wall anchors",
+    "Attach green Scafftag and record inspection",
+    "Report defects and barricade below before stone lift"
+   ],
+   "rubric": [
+    {
+     "axis": "foundation check",
+     "pass_if": "Confirms full bearing on sole boards over cobblestones"
+    },
+    {
+     "axis": "tie compliance",
+     "pass_if": "Ties match the design schedule for wall type"
+    },
+    {
+     "axis": "tag discipline",
+     "pass_if": "Scafftag signed and dated before use"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "Sets and enforces a drop zone below the lift"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries a lidar payload to scan the scaffold from the ground, flagging plumb deviation and missing guardrails for the crew."
+  },
+  {
+   "id": "boilerhouse-steam-trap-swap",
+   "trade": "pipefitters",
+   "zone": "Research Synthesis Lab",
+   "task": "Isolate a steam line and replace a failed trap in an old library boilerhouse.",
+   "hazards": [
+    "steam burns",
+    "asbestos-containing lagging on old lines",
+    "hot surfaces",
+    "pressure retention in isolated segment"
+   ],
+   "ppe": [
+    "heat-resistant gloves",
+    "face shield",
+    "coveralls",
+    "hearing protection"
+   ],
+   "steps": [
+    "Obtain hot-work permit and line isolation plan",
+    "Isolate, lock out and bleed the segment to zero pressure",
+    "Treat existing lagging as presumed asbestos; do not disturb",
+    "Break flanges with body positioned out of the steam path",
+    "Swap trap, renew gasket, torque bolts evenly",
+    "Re-energize slowly and verify trap operation"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "Bleeds to zero and locks out both sides before breaking flange"
+    },
+    {
+     "axis": "asbestos discipline",
+     "pass_if": "Stops work and reports rather than cutting lagging"
+    },
+    {
+     "axis": "body position",
+     "pass_if": "Stands clear of flange gap when cracking the joint"
+    },
+    {
+     "axis": "warm-up",
+     "pass_if": "Opens valve gradually to avoid water hammer"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "hall-roof-lead-flash-repair",
+   "trade": "roofers",
+   "zone": "Proposal Forum",
+   "task": "Repair lead flashing on a steep slate roof of a dining hall, rigged with edge protection.",
+   "hazards": [
+    "fall from height",
+    "fragile slate",
+    "hot lead burn hazards",
+    "weather exposure"
+   ],
+   "ppe": [
+    "full-body harness with rope grab",
+    "non-slip boots",
+    "gloves",
+    "hard hat"
+   ],
+   "steps": [
+    "Complete a rescue plan and pre-use check harness and anchor lines",
+    "Fix scaffold edge protection and roofing ladder runners",
+    "Strip failed flashing without breaking slates",
+    "Dress and weld new lead with the gas kit, guarding flame",
+    "Secure lead soars and dress joints with tampers",
+    "Remove all tools by hoist bag and clear gutters"
+   ],
+   "rubric": [
+    {
+     "axis": "fall protection",
+     "pass_if": "100% tie-off from ladder to roof work"
+    },
+    {
+     "axis": "slate care",
+     "pass_if": "Walks on ladders or bearers, never directly on slate"
+    },
+    {
+     "axis": "lead work",
+     "pass_if": "Welds pass visual check with no burn-through"
+    },
+    {
+     "axis": "tool control",
+     "pass_if": "No loose tools left at edge; bagged hoist used"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferries small lead offcuts and tools up the stair access, keeping hands free on ladders."
+  },
+  {
+   "id": "library-lighting-retrofit",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Retrofit reading-room luminaires to LED with switching upgrades, working around occupied library hours.",
+   "hazards": [
+    "live circuits in old wiring",
+    "lead paint dust in ceilings",
+    "working over public below",
+    "asbestos in old cable insulation"
+   ],
+   "ppe": [
+    "safety glasses",
+    "dust mask P2",
+    "insulated tools",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Survey existing circuits and confirm isolation points per room",
+    "Notify occupants and cordon the bay being retrofitted",
+    "De-energize, verify dead, and cap old feeds",
+    "Swap luminaires and drivers, dressing new flex in existing trunking",
+    "Test lux levels and emergency lighting at the stair",
+    "Clean up dust with HEPA vacuum only"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation per room",
+     "pass_if": "Each circuit verified dead at point of work before disconnecting"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "Cordons and signs prevent reader access below lifts"
+    },
+    {
+     "axis": "dust control",
+     "pass_if": "Uses HEPA vacuum and avoids dry sweeping ceiling debris"
+    },
+    {
+     "axis": "commissioning",
+     "pass_if": "Emergency lights pass discharge test"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "great-hall-stone-pointing",
+   "trade": "bricklayers",
+   "zone": "Charter Hall",
+   "task": "Rake out and repoint decayed limestone joints on a hall elevation from a mast climber.",
+   "hazards": [
+    "silica dust from raking",
+    "mast climber failure",
+    "uneven ground loading for mast base",
+    "hand-arm vibration"
+   ],
+   "ppe": [
+    "P2 respirator",
+    "safety glasses",
+    "anti-vibration gloves",
+    "hard hat"
+   ],
+   "steps": [
+    "Set mast climper base on rated cribbing, level and tied",
+    "Fit dust extraction to raking tools before starting",
+    "Rake joints to sound mortar depth only, keeping joints wet-swept",
+    "Mix lime mortar to match the existing joint profile",
+    "Firm, strike and brush joints in sequence with the weather",
+    "Protect fresh work from frost and rain before demobilizing"
+   ],
+   "rubric": [
+    {
+     "axis": "silica control",
+     "pass_if": "On-tool extraction or water suppression in use at all times"
+    },
+    {
+     "axis": "platform safety",
+     "pass_if": "Platform load limits respected and gates closed"
+    },
+    {
+     "axis": "mortar match",
+     "pass_if": "Lime mix and joint profile match original elevation"
+    },
+    {
+     "axis": "weather protection",
+     "pass_if": "Covers new joints against frost or rain"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Under supervision, runs a raking head with extraction on straight lifts, keeping the apprentice clear of vibration and dust."
+  },
+  {
+   "id": "chiller-swap-crane-lift",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and signal the replacement of a rooftop chiller over a occupied courtyard with a mobile crane.",
+   "hazards": [
+    "suspended load over people",
+    "crush points at roof steel",
+    "overhead services near crane",
+    "load spin in courtyard wind"
+   ],
+   "ppe": [
+    "hard hat",
+    "rigger gloves",
+    "hi-vis vest",
+    "safety harness at roof edge"
+   ],
+   "steps": [
+    "Attend lift plan briefing and confirm exclusion zone with college",
+    "Inspect slings, shackles and spreader beam; check tags",
+    "Rig chiller to plan, attach tag lines before lift",
+    "Run trial lift a few inches and check balance",
+    "Direct crane with standard hand signals through the courtyard gap",
+    "Land on roof skids, dog off, then derig under supervision"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging inspection",
+     "pass_if": "Rejects any untagged or damaged gear before use"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "Courtyard cleared and barriers manned for the full lift"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Single signaller using standard signals, crane pauses on any confusion"
+    },
+    {
+     "axis": "tag lines",
+     "pass_if": "Tag lines attached and controlled to prevent spin"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Oxford Heritage Campus Trades Readiness (OSHA-aligned)",
+  "requires": [
+   "cherwell-floodgate-rewire",
+   "meadow-boardwalk-piles",
+   "quad-scaffold-inspect",
+   "boilerhouse-steam-trap-swap",
+   "hall-roof-lead-flash-repair",
+   "library-lighting-retrofit",
+   "great-hall-stone-pointing",
+   "chiller-swap-crane-lift"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "education-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide-nao",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter exhibits, gesturing at each charter pillar and narrating the DAO's mission and human-reserved governance actions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/charter_waypoints",
+     "/speech_out",
+     "/visitor_position",
+     "/tour_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor concrete plaza floor with low exhibit plinths and cable ramps; flat, wheelchair-accessible routes.",
+   "success": [
+    "Visits all 5 charter exhibits within 10 min",
+    "Speech intelligibility >=90% on post-tour quiz",
+    "Zero collisions with plinths",
+    "Visitors remain within 1.5 m during narration"
+   ],
+   "safety_stops": [
+    "E-stop on contact force >5 N",
+    "Stop if visitor closer than 0.3 m",
+    "Battery below 15% returns to dock"
+   ],
+   "human_in_loop": "A steward approves the tour script wording before public delivery.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "exhibits_visited",
+     "collision_count",
+     "min_visitor_distance",
+     "speech_recognition_rate",
+     "duration_s"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-doc-delivery-fetch",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve printed research briefs from the printer station and deliver them to each synthesis desk, announcing arrival at each.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/brief_order_queue",
+     "/ar_pose_marker",
+     "/gripper_state",
+     "/delivery_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Lab aisle with tiled floor, under-desk clearance 0.35 m, loose papers and chairs as dynamic obstacles.",
+   "success": [
+    "Picks 10 briefs with >=95% grasp success",
+    "Delivers to correct desk per queue order",
+    "Zero dropped payloads",
+    "Mean delivery cycle <4 min"
+   ],
+   "safety_stops": [
+    "Stop on torso contact",
+    "Pause if aisle blocked >10 s",
+    "Release grip and stop if load shifts >15 deg"
+   ],
+   "human_in_loop": "A researcher confirms the delivery queue contents at shift start.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "grasp_success_rate",
+     "delivery_accuracy",
+     "drops",
+     "cycle_time_s",
+     "fault_stops"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-mic-relay-spot",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Carry a roving microphone dock to whichever speaker holds the floor during proposal debate, tracking debate state transitions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/speaker_of_floor",
+     "/debate_state",
+     "/spot_obstacles",
+     "/mic_dock_status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Open forum floor with riser steps (<=0.2 m), standing audience clusters and cable runs from the AV rack.",
+   "success": [
+    "Arrives within 1 m of active speaker in <8 s",
+    "Tracks 20 speaker transitions without error",
+    "Maintains >=1 m clearance from seated humans",
+    "Mic uptime >=99% of debate time"
+   ],
+   "safety_stops": [
+    "Sit down on detected trip hazard",
+    "Stop if human within 0.8 m at speed >0.5 m/s",
+    "Return to dock on comms loss >5 s"
+   ],
+   "human_in_loop": "The moderator (a person) validates each speaker-of-floor transition before Spot moves.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "transitions_handled",
+     "arrival_latency_s",
+     "min_human_clearance_m",
+     "mic_uptime_pct",
+     "e_stop_count"
+    ]
+   }
+  },
+  {
+   "id": "arroyo-perimeter-patrol-husky",
+   "robot": "clearpath-husky-a200",
+   "zone": "Progress Observatory",
+   "goal": "Patrol the observatory's outdoor perimeter trail above the Arroyo Seco, logging terrain conditions and reading outcome-display QR panels.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/gps_fix",
+     "/panel_detections",
+     "/terrain_scan",
+     "/patrol_route"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Compacted dirt trail through chaparral margins: loose gravel, seasonal dry washes, slopes to 15 deg, low scrub encroachment.",
+   "success": [
+    "Completes 1.2 km loop within 30 min",
+    "Reads >=95% of the 12 progress panels",
+    "No wheel slip events >3 s",
+    "Localization error <0.5 m vs GPS"
+   ],
+   "safety_stops": [
+    "Stop on roll-tilt >20 deg",
+    "Halt if wash crossing shows standing water",
+    "Remote e-stop on trail user detection <5 m"
+   ],
+   "human_in_loop": "An operator approves route start each day and reviews flagged terrain anomalies.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "loop_time_s",
+     "panels_read",
+     "max_tilt_deg",
+     "slip_events",
+     "gps_error_m"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-manipulation-line-ur10e",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Sort task-routing tokens and spare electronics into labeled working-group bins on the operations kitting table.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/bin_assignment",
+     "/overhead_cam_detections",
+     "/wrench_estimate",
+     "/kit_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed kitting table, ESD mats, bin walls 0.1 m high; mixed rigid and cable-like items on the table surface.",
+   "success": [
+    "Sorts 60 items with >=98% bin accuracy",
+    "No item crushed (wrench <20 N throughout)",
+    "Cycle time <12 s per item",
+    "Zero bin mix-ups between adjacent groups"
+   ],
+   "safety_stops": [
+    "Stop on external force >40 N",
+    "Stop if hand enters workspace volume",
+    "Slow mode within 0.5 m of table edge"
+   ],
+   "human_in_loop": "A working-group lead approves the bin-assignment map before each kitting run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "items_sorted",
+     "bin_accuracy",
+     "max_wrench_n",
+     "cycle_time_s",
+     "protective_stops"
+    ]
+   }
+  },
+  {
+   "id": "swarm-mapping-observation-crazyflie",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a 3-drone swarm inside the observatory dome to capture a live occupancy map and progress-display overview for stewards.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/swarm_positions",
+     "/lidar_scan",
+     "/mo_cap_pose",
+     "/coverage_grid"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Dome interior: smooth floor launch pads, catwalk railings as ceiling obstacles, exhibit towers to 4 m, mild HVAC drafts.",
+   "success": [
+    ">=90% coverage of dome volume in 8 min",
+    "Inter-drone spacing never <0.5 m",
+    "Map drift <0.2 m vs motion capture",
+    "Zero wall contacts"
+   ],
+   "safety_stops": [
+    "Land immediately on positioning error >0.3 m",
+    "Battery <20% triggers return-to-pad",
+    "Cease flight if a person enters the dome floor"
+   ],
+   "human_in_loop": "A steward clears the dome of people and authorizes each swarm flight.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "coverage_pct",
+     "min_spacing_m",
+     "map_drift_m",
+     "flight_time_s",
+     "contacts",
+     "aborts"
+    ]
+   }
+  },
+  {
+   "id": "lab-hardware-calibration-fr3",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Calibrate joint torque sensors and end-effector repeatability on the lab bench using a fixed calibration plate, recording drift for the synthesis agents.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/ft_sensor",
+     "/calibration_plate_pose",
+     "/calibration_report"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Bolted lab bench with calibration grid plate, cable umbilical within workspace, adjacent monitor arm as pinch hazard.",
+   "success": [
+    "30 touch-probe cycles with repeatability <0.1 mm",
+    "Torque residual <0.05 Nm on all 7 joints",
+    "Full report JSONL emitted",
+    "No contact force >10 N on plate"
+   ],
+   "safety_stops": [
+    "Reflex stop on any unexpected contact",
+    "Stop if umbilical tension exceeds limit",
+    "Disable on operator console e-stop"
+   ],
+   "human_in_loop": "A lab technician verifies and signs off the calibration report before robots resume experiments.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "repeatability_mm",
+     "torque_residual_nm",
+     "cycles_completed",
+     "max_contact_force_n",
+     "report_hash",
+     "tech_signoff"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "robotics-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

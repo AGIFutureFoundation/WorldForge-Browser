@@ -1,0 +1,102 @@
+{
+ "slug": "s07-divine-dao",
+ "name": "Divine.DAO (Series 7)",
+ "umbrella": "Powered by AGI Corp",
+ "status": "coming soon",
+ "management_style": "Agent-managed DAO",
+ "series": {
+  "parent": "W3 LLC",
+  "n": 7
+ },
+ "tagline": "Series 7 of W3 LLC: an agent-managed, human-governed DAO cell",
+ "anchor": {
+  "lat": null,
+  "lon": null,
+  "rad": 6371000,
+  "rp1": null
+ },
+ "charter": {
+  "focus": null,
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges.",
+  "reserved_for_humans": [
+   "governance.final_vote",
+   "charter.amend",
+   "treasury.transfer",
+   "proposal.enact",
+   "windfall.distribute",
+   "steward.appoint"
+  ]
+ },
+ "zones": [
+  {
+   "name": "Charter Hall",
+   "purpose": "The DAO's charter, contribution model and measurable outcomes",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): How It Works"
+  },
+  {
+   "name": "Research Synthesis Lab",
+   "purpose": "Monitoring developments and summarizing evidence",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Proposal Forum",
+   "purpose": "Proposals drafted by agents, debated and decided by people",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  },
+  {
+   "name": "Operations Deck",
+   "purpose": "Task routing, working groups and operational coordination",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Progress Observatory",
+   "purpose": "Progress tracking against the charter's measurable outcomes",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System"
+  }
+ ],
+ "agents": [
+  {
+   "name": "Evidence Monitor",
+   "role": "Monitors developments in its charter (focus not yet set by the stewards) and summarizes the evidence",
+   "zone": "Research Synthesis Lab",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Research Synthesis Agent",
+   "role": "Synthesizes research on its charter (focus not yet set by the stewards) for the stewards",
+   "zone": "Research Synthesis Lab",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Collaborator Scout",
+   "role": "Identifies experts and collaborators working on its charter (focus not yet set by the stewards)",
+   "zone": "Operations Deck",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Task Router",
+   "role": "Routes tasks and coordinates working groups between decision cycles",
+   "zone": "Operations Deck",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Proposal & Grant Drafter",
+   "role": "Drafts proposals and grants for human review; never enacts them",
+   "zone": "Proposal Forum",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  },
+  {
+   "name": "Progress Tracker",
+   "role": "Tracks progress against the charter's measurable outcomes",
+   "zone": "Progress Observatory",
+   "source": "AGI Future Foundation PBC mission statement (chat 2026-09-23): Agent-Managed DAO System; How It Works"
+  }
+ ],
+ "sources": [
+  "AGI Future Foundation PBC mission statement and organization description, provided by the founder in chat on 2026-09-23 (sections: Mission Statement, Agent-Managed DAO System, Global Issue Focus, How It Works, World Impact Thesis)",
+  "W3 LLC series list (names only), chat 2026-09-23"
+ ],
+ "gaps": [
+  "Focus, charter outcomes and RP1 location not given yet"
+ ]
+}

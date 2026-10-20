@@ -1,0 +1,287 @@
+{
+ "title": "Empathic.X — Buttes-Chaumont",
+ "summary": "Five walkable districts in Parc des Buttes-Chaumont: a grove for reading the self, a commons for reading others, a cliff-top repair hall, a lakeside plaza for reading the room, and a workshop pavilion for emotion at work.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Self-Reader Grove",
+   "real_anchor": "Jardin de la Butte Bergeyre",
+   "buildings": [
+    {
+     "name": "Grove Mirror Shelter",
+     "use": "reflective pavilion for naming feelings",
+     "floors": 1
+    },
+    {
+     "name": "Body-Signal Cabin",
+     "use": "somatic awareness booth",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Naming Room",
+    "Body Map Room",
+    "Pause Alcove",
+    "Threshold Bench"
+   ],
+   "props": [
+    "hand mirror stands",
+    "feeling-word boards",
+    "body-map charts",
+    "stone cairns",
+    "shade benches",
+    "wind chimes"
+   ],
+   "npc_agents": [
+    "Self-Reader Guide"
+   ]
+  },
+  {
+   "zone": "Other-Reader Commons",
+   "real_anchor": "Square Rébeval",
+   "buildings": [
+    {
+     "name": "Commons Listening Circle",
+     "use": "open-air forum for asking over assuming",
+     "floors": 1
+    },
+    {
+     "name": "Face-Reading Kiosk",
+     "use": "expression observation post",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Question Well",
+    "Silent Listening Bench",
+    "Assumption Bin",
+    "Greeting Gate"
+   ],
+   "props": [
+    "talking-stone circle",
+    "listening benches",
+    "question cards",
+    "hat of assumed meanings",
+    "chalkboard walls",
+    "water pitcher"
+   ],
+   "npc_agents": [
+    "Other-Reader Guide"
+   ]
+  },
+  {
+   "zone": "Repairer's Hall",
+   "real_anchor": "Parc des Buttes-Chaumont (cliff-top temple, Sybille)",
+   "buildings": [
+    {
+     "name": "Cliff-Top Repair Hall",
+     "use": "temple-style hall for apologies and hard conversations",
+     "floors": 1
+    },
+    {
+     "name": "Come-Down Tower",
+     "use": "de-escalation stair tower on the cliff",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Come-Down Stair",
+    "Apology Court",
+    "Hard-Kindness Parlor",
+    "Receiving Room",
+    "Reset Bell"
+   ],
+   "props": [
+    "temple columns",
+    "repair ledger",
+    "two-chair talking set",
+    "cooling water basin",
+    "brass bell",
+    "handrail rope"
+   ],
+   "npc_agents": [
+    "Repair Guide"
+   ]
+  },
+  {
+   "zone": "Room-Reader Plaza",
+   "real_anchor": "Pavillon du Lac",
+   "buildings": [
+    {
+     "name": "Lakeside Room-Reader Plaza",
+     "use": "open plaza for sensing group energy",
+     "floors": 1
+    },
+    {
+     "name": "Energy Weather Station",
+     "use": "room-mood observation post",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Energy Barometer Room",
+    "Newcomer Corner",
+    "Idle Watch Bench",
+    "Do-Nothing Step",
+    "Lakeside Rail"
+   ],
+   "props": [
+    "mood lanterns",
+    "energy weather vane",
+    "wide view benches",
+    "drums (silent)",
+    "sighting scopes",
+    "lamp posts"
+   ],
+   "npc_agents": [
+    "Room-Reader Guide"
+   ]
+  },
+  {
+   "zone": "Practitioner Workshop",
+   "real_anchor": "Pavillon Puebla",
+   "buildings": [
+    {
+     "name": "Practitioner Workshop Barn",
+     "use": "skills hall for feedback and saying no",
+     "floors": 2
+    },
+    {
+     "name": "Leaving-Well Depot",
+     "use": "transition and offboarding shed",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Feedback Forge",
+    "No-Saying Room",
+    "Emotional Labour Ledger",
+    "Colleague Care Corner",
+    "Leaving-Well Gate"
+   ],
+   "props": [
+    "feedback card racks",
+    "practice desks",
+    "boundary rope",
+    "tea station",
+    "toolbox benches",
+    "exit-door mockup"
+   ],
+   "npc_agents": [
+    "Practitioner Guide"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Aesculus hippocastanum",
+   "Platanus acerifolia",
+   "Acer pseudoplatanus",
+   "Robinia pseudoacacia",
+   "Tilia tomentosa",
+   "Fagus sylvatica"
+  ],
+  "shrubs": [
+   "Buxus sempervirens",
+   "Viburnum tinus",
+   "Cornus sanguinea",
+   "Ligustrum ovalifolium"
+  ],
+  "flowers": [
+   "Narcissus pseudonarcissus",
+   "Tulipa gesneriana",
+   "Rosa gallica",
+   "Iris germanica",
+   "Anemone nemorosa"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.1,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "07:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "The Repair Court",
+  "style": "cliff-top open colonnade above the lake",
+  "why_here": "The park's real temple viewpoint above Buttes-Chaumont lake gives gravity and distance — a fitting high place to come down, apologise properly, and speak kindly."
+ },
+ "quests": [
+  {
+   "title": "Three States This Week",
+   "from_zone": "Self-Reader Grove",
+   "to_zone": "Other-Reader Commons",
+   "steps": [
+    "Sit at the Body-Signal Cabin and name three states you were in this week",
+    "Mark where each landed in your body on the body map",
+    "Carry one named state to the Question Well and ask someone about theirs",
+    "Log the exchange on the commons chalkboard"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "The Assumption Bin",
+   "from_zone": "Other-Reader Commons",
+   "to_zone": "Room-Reader Plaza",
+   "steps": [
+    "Write an assumption you made about a face at the kiosk",
+    "Drop it in the Assumption Bin and rewrite it as a question",
+    "Ask the rewritten question at the Listening Circle",
+    "Read the plaza's energy barometer and note who was idle while you asked"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Stay In It",
+   "from_zone": "Room-Reader Plaza",
+   "to_zone": "Repairer's Hall",
+   "steps": [
+    "Spot the moment before the room goes wrong at the plaza",
+    "Climb the Come-Down Stair to cool off",
+    "Deliver a proper apology at the Apology Court",
+    "Practice receiving an apology in the Receiving Room without deflecting"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Feedback That Lands",
+   "from_zone": "Repairer's Hall",
+   "to_zone": "Practitioner Workshop",
+   "steps": [
+    "Pick a hard-kind sentence from the repair ledger",
+    "Forge it into usable feedback at the Feedback Forge",
+    "Say no cleanly once in the No-Saying Room",
+    "Record the emotional labour cost on the ledger"
+   ],
+   "xp": 55
+  },
+  {
+   "title": "Leaving Well",
+   "from_zone": "Practitioner Workshop",
+   "to_zone": "Self-Reader Grove",
+   "steps": [
+    "Visit the Colleague Care Corner for someone struggling",
+    "Pass the Leaving-Well Gate and write an exit line",
+    "Return to the grove and name the state it left in you",
+    "Mark it on the body map at the cabin"
+   ],
+   "xp": 70
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "empathic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "balto-bronze-patina-restore",
+   "trade": "painters",
+   "zone": "Progress Observatory",
+   "task": "Clean and wax the Balto bronze statue's protective patina without abrading the surface",
+   "hazards": [
+    "Lead-containing patina dust",
+    "Working on sloped rock outcrop",
+    "Slips from damp stone base"
+   ],
+   "ppe": [
+    "Nitrile gloves",
+    "Half-mask respirator with P100",
+    "Safety glasses",
+    "Non-slip boots"
+   ],
+   "steps": [
+    "Cordon the statue with barrier tape",
+    "Rinse loose soil with low-pressure water",
+    "Apply specified mild detergent with soft natural-bristle brushes",
+    "Rinse thoroughly, working top to bottom",
+    "Hand-apply microcrystalline wax in thin coats",
+    "Buff gently, remove all tools and debris"
+   ],
+   "rubric": [
+    {
+     "axis": "Surface protection",
+     "pass_if": "No wire brushes or abrasive pads used at any point"
+    },
+    {
+     "axis": "Containment",
+     "pass_if": "All rinse water and debris captured, none enters surrounding lawn"
+    },
+    {
+     "axis": "Fall safety",
+     "pass_if": "Three points of contact maintained on rock base at all times"
+    },
+    {
+     "axis": "Finish quality",
+     "pass_if": "Wax applied evenly with no streaking or pooled wax"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries water, wax, and brushes up the rocky approach so the apprentice keeps hands free for climbing."
+  },
+  {
+   "id": "pond-outfall-pipe-repair",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Replace a leaking section of cast-iron outfall pipe draining the pond near the Balto statue",
+   "hazards": [
+    "Confined space at outfall headwall",
+    "Biological water contact",
+    "Heavy cast-iron sections",
+    "Awkward lift in muddy trench"
+   ],
+   "ppe": [
+    "Rubber boots or waders",
+    "Cut-resistant gloves",
+    "Face shield for pipe cutting",
+    "Hi-vis vest",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Obtain permit and verify atmosphere at the headwall",
+    "Dewater and isolate the line with stoppers",
+    "Cut out the failed section with chain tongs or saw",
+    "Clean and prepare bell-and-spigot ends",
+    "Set replacement section with proper gasket",
+    "Test for leaks and restore flow",
+    "Backfill and compact, dress the surface"
+   ],
+   "rubric": [
+    {
+     "axis": "Confined space",
+     "pass_if": "Atmosphere tested before entry and attendant posted throughout"
+    },
+    {
+     "axis": "Joint integrity",
+     "pass_if": "Replacement section fully seated and leak-tested"
+    },
+    {
+     "axis": "Trench safety",
+     "pass_if": "Spoil pile kept back and egress maintained"
+    },
+    {
+     "axis": "Water protection",
+     "pass_if": "No debris or cuttings left in the pond"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "park-path-paver-reset",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Reset frost-heaved granite pavers on the path approaching the Balto statue",
+   "hazards": [
+    "Pinch points handling stone",
+    "Manual lifting strains",
+    "Public pedestrian traffic",
+    "Vibration from plate compactor"
+   ],
+   "ppe": [
+    "Steel-toe boots",
+    "Cut-resistant gloves",
+    "Hearing protection",
+    "Dust mask when sweeping"
+   ],
+   "steps": [
+    "Set up pedestrian detour signage",
+    "Lift and stack heaved pavers with proper lifting technique",
+    "Level and moisten the sand bedding course",
+    "Re-lay pavers tight, maintaining joint lines",
+    "Sweep in joint sand and compact in passes",
+    "Check cross-slope for drainage",
+    "Remove signage and open path"
+   ],
+   "rubric": [
+    {
+     "axis": "Public safety",
+     "pass_if": "Detour maintained until path fully reopened"
+    },
+    {
+     "axis": "Lifting technique",
+     "pass_if": "Stone lifted with legs, or team-lifted over 50 lb"
+    },
+    {
+     "axis": "Surface tolerance",
+     "pass_if": "No paver rocks under foot and joints tight"
+    },
+    {
+     "axis": "Drainage",
+     "pass_if": "Water sheds off path, no pooling pockets"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries pavers from the pallet drop to the work area, reducing repetitive lifts on uneven ground."
+  },
+  {
+   "id": "path-lighting-circuit-fix",
+   "trade": "electricians",
+   "zone": "Progress Observatory",
+   "task": "Troubleshoot a dead 120V landscape lighting circuit lighting the path to the statue",
+   "hazards": [
+    "Energized underground conductors",
+    "Faulty GFCI or damaged cable in wet ground",
+    "Lockout/tagout errors"
+   ],
+   "ppe": [
+    "Class 0 gloves",
+    "Safety glasses",
+    "Arc-rated long sleeves",
+    "Rubber boots"
+   ],
+   "steps": [
+    "Verify circuit de-energized and apply lockout/tagout",
+    "Locate the fault with an insulated locator along the path",
+    "Excavate carefully by hand near the cable",
+    "Splice with approved underground kit",
+    "Megger and verify grounding continuity",
+    "Restore power and confirm GFCI trips on test",
+    "Backfill and mark the line"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO discipline",
+     "pass_if": "Lock applied and tested dead before any cable work"
+    },
+    {
+     "axis": "Fault location",
+     "pass_if": "Located within one shovel-width without damaging conductors"
+    },
+    {
+     "axis": "Test verification",
+     "pass_if": "Insulation resistance measured and recorded before re-energizing"
+    },
+    {
+     "axis": "Wet-location code",
+     "pass_if": "All splices in rated wet-location enclosures"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "tree-limb-clearance-rig",
+   "trade": "riggers",
+   "zone": "Research Synthesis Lab",
+   "task": "Rig and lower storm-damaged tree limbs overhanging the statue's viewing terrace",
+   "hazards": [
+    "Falling limbs and swing",
+    "Load shock loading the rigging",
+    "Working near bronze monument"
+   ],
+   "ppe": [
+    "Hard hat with chin strap",
+    "Chainsaw chaps",
+    "Eye and hearing protection",
+    "Gloves"
+   ],
+   "steps": [
+    "Establish drop zone and clear public access",
+    "Set load-rated rigging above the cut point",
+    "Make relief and back cuts controlled for the rigging",
+    "Lower limbs slowly to the drop zone",
+    "Chip and clear debris, protect statue with padding",
+    "Inspect the tree for remaining hazards"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging math",
+     "pass_if": "Working load limits exceed estimated limb weight with margin"
+    },
+    {
+     "axis": "Drop zone control",
+     "pass_if": "No public access under load path at any time"
+    },
+    {
+     "axis": "Monument protection",
+     "pass_if": "Padding or standoff keeps limbs off the bronze"
+    },
+    {
+     "axis": "Cut control",
+     "pass_if": "Cuts hinge correctly, no barber-chair or runaway limbs"
+    }
+   ],
+   "minutes": 90,
+   "level": "foreman",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Stands sentry on the path, warning and redirecting pedestrians while crew's attention is aloft."
+  },
+  {
+   "id": "winter-ice-terrace-treat",
+   "trade": "grounds",
+   "zone": "Proposal Forum",
+   "task": "Apply de-icing treatment to the statue's stone terrace after a freeze while protecting bronze and plantings",
+   "hazards": [
+    "Slips on ice",
+    "Chemical burns from de-icers",
+    "Chloride damage to bronze and soil",
+    "Snowblower struck-by"
+   ],
+   "ppe": [
+    "Ice cleats",
+    "Waterproof gloves",
+    "Eye protection",
+    "Hi-vis jacket"
+   ],
+   "steps": [
+    "Inspect terrace and flag worst ice zones",
+    "Select chloride-free de-icer rated safe for bronze",
+    "Spread at label rate with hand spreader",
+    "Mechanically remove slush away from statue base",
+    "Wash salt residue off boots and tools",
+    "Record product, rate, and areas treated"
+   ],
+   "rubric": [
+    {
+     "axis": "Product selection",
+     "pass_if": "No sodium chloride or calcium chloride used near the statue"
+    },
+    {
+     "axis": "Application rate",
+     "pass_if": "Spread at or below label rate, no piles"
+    },
+    {
+     "axis": "Slip control",
+     "pass_if": "All mapped ice zones treated and rechecked"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Treatment log completed for the steward review"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "fence-weld-repair",
+   "trade": "welders",
+   "zone": "Operations Deck",
+   "task": "Repair a broken steel perimeter fence section near the pond shoreline",
+   "hazards": [
+    "Hot work near dry grass",
+    "Welding arc flash and fumes",
+    "Uneven shoreline footing"
+   ],
+   "ppe": [
+    "Welding helmet with proper shade",
+    "Frayed-free leather gloves",
+    "FR jacket",
+    "Boots"
+   ],
+   "steps": [
+    "Obtain hot-work permit and post fire watch",
+    "Clear vegetation two meters around weld zone",
+    "Grind out the cracked weld fully",
+    "Tack and complete the repair with matching filler",
+    "Wire-brush and coat the weld with cold galvanizing",
+    "Inspect, extinguish any smoldering, and sign off permit"
+   ],
+   "rubric": [
+    {
+     "axis": "Hot-work permit",
+     "pass_if": "Permit issued, fire watch present during and 30 minutes after"
+    },
+    {
+     "axis": "Weld prep",
+     "pass_if": "Crack fully removed before re-welding"
+    },
+    {
+     "axis": "Corrosion protection",
+     "pass_if": "Repair coated before leaving site"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "No smoldering material or slag left in grass"
+    }
+   ],
+   "minutes": 60,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows the welding generator and fire-extinguisher kit across soft shoreline ground unreachable by truck."
+  }
+ ],
+ "credential": {
+  "name": "Central Park Monument Trades Apprentice Certificate (S25 MyPet.AI)",
+  "requires": [
+   "balto-bronze-patina-restore",
+   "park-path-paver-reset",
+   "path-lighting-circuit-fix",
+   "winter-ice-terrace-treat"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s25-mypet-ai",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

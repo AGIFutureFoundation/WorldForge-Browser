@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "climate-dao-ironworkers-basic",
+   "trade": "ironworkers",
+   "zone": "Charter Hall",
+   "task": "Install systems at Thames Barrier Park",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Thames Barrier Park",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "climate-dao-electricians-basic",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Inspect systems at Woolwich Foot Tunnel",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Woolwich Foot Tunnel",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "climate-dao-pipefitters-basic",
+   "trade": "pipefitters",
+   "zone": "Proposal Forum",
+   "task": "Inspect systems at Barrier Gardens",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Barrier Gardens",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "climate-dao-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Operations Deck",
+   "task": "Install systems at Woolwich Arsenal",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Woolwich Arsenal",
+    "Verify permit and lockout/tagout",
+    "Complete work within Operations Deck",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "climate-dao-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Progress Observatory",
+   "task": "Maintain systems at Royal Arsenal Riverside",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Royal Arsenal Riverside",
+    "Verify permit and lockout/tagout",
+    "Complete work within Progress Observatory",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "climate-dao-laborers-basic",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Maintain systems at Thames Barrier Park",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Thames Barrier Park",
+    "Verify permit and lockout/tagout",
+    "Complete work within Charter Hall",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 135,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "climate-dao-sheetmetal-basic",
+   "trade": "sheetmetal",
+   "zone": "Research Synthesis Lab",
+   "task": "Maintain systems at Woolwich Foot Tunnel",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Woolwich Foot Tunnel",
+    "Verify permit and lockout/tagout",
+    "Complete work within Research Synthesis Lab",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 150,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "climate-dao-hazmat-basic",
+   "trade": "hazmat",
+   "zone": "Proposal Forum",
+   "task": "Maintain systems at Barrier Gardens",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Thames Barrier Park",
+    "Inspect area at Barrier Gardens",
+    "Verify permit and lockout/tagout",
+    "Complete work within Proposal Forum",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 165,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "London Trades Card",
+  "requires": [
+   "climate-dao-ironworkers-basic",
+   "climate-dao-electricians-basic",
+   "climate-dao-pipefitters-basic",
+   "climate-dao-carpenters-basic"
+  ]
+ }
+}

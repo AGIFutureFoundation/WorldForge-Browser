@@ -1,0 +1,91 @@
+{
+  "slug": "biota-blockchain",
+  "name": "Biota.blockchain (BioDAO.X)",
+  "umbrella": "Powered by AGI Corp",
+  "status": "coming soon",
+  "tagline": "AI-driven platform for personalized therapies, with blockchain transparency and a DAO framework",
+  "anchor": {
+    "lat": -38.71260348427612,
+    "lon": -27.248278366617797,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=-38.71260348427612&lon=-27.248278366617797&rad=6371000"
+  },
+  "zones": [
+    {
+      "name": "Personalized Therapy Lab",
+      "purpose": "AI and molecular modeling to optimize AGI compounds for rare and neurodegenerative diseases (ALS, Parkinson's)",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, p.1, Q1 and Q3"
+    },
+    {
+      "name": "DAO Governance Hall",
+      "purpose": "Each agency or organization runs its own DAO for governance, resource allocation and policy-making",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: DAO Integration"
+    },
+    {
+      "name": "Multi-Blockchain Ledger",
+      "purpose": "Interoperable ledgers (Ethereum, Hyperledger, Polkadot, Cosmos) for verified cross-network data",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Security Application, Key Components: Multi-Blockchain Integration"
+    },
+    {
+      "name": "Healthcare Data Exchange",
+      "purpose": "Encrypted patient data sharing with smart-contract access and SMS patient consent",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 3. Healthcare Data Exchange and Security"
+    },
+    {
+      "name": "Biopharma AGI Agents Hub",
+      "purpose": "Hub linking biopharma agent roles such as Research & Development and Clinical Support",
+      "source": "~/Downloads/AGI Corp Biopharma Suite .webp, central node 'Biopharma AGI Agents' (image)"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Health Agent",
+      "role": "Specialized AGI agent for health tasks, e.g. encrypting patient data and managing access",
+      "zone": "Healthcare Data Exchange",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Use Case 3"
+    },
+    {
+      "name": "Security Agent",
+      "role": "Monitors blockchain transactions for potential threats",
+      "zone": "Multi-Blockchain Ledger",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+    },
+    {
+      "name": "Compliance Agent",
+      "role": "Ensures regulatory adherence across different jurisdictions",
+      "zone": "DAO Governance Hall",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents"
+    },
+    {
+      "name": "Finance Agent",
+      "role": "Scans blockchain transactions for fraud patterns and triggers DAO notifications",
+      "zone": "DAO Governance Hall",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Use Case Scenarios, 2. Financial Compliance and Fraud Detection"
+    },
+    {
+      "name": "Communication Agent",
+      "role": "Specialized AGI agent for secure communication (phone 2FA, encrypted messaging)",
+      "zone": "DAO Governance Hall",
+      "source": "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf, Key Components: Specialized AGI Agents; Phone Number Authentication"
+    },
+    {
+      "name": "Research & Development Agent",
+      "role": "Biopharma AGI agent role for research and development",
+      "zone": "Personalized Therapy Lab",
+      "source": "~/Downloads/AGI Corp Biopharma Suite .webp, node 'Research & Development' (image)"
+    }
+  ],
+  "sources": [
+    "~/Downloads/BioDAO.X (SVG: Unstoppable Domains domain image reading 'biodao.x'; no other content)",
+    "~/Downloads/biodao.blockchain.mp4 (filename/size only, 14.9 MB; not viewed or transcoded)",
+    "~/Downloads/AGI Corp Biopharma Suite .webp",
+    "~/Downloads/Project Name-  AGI Corp-  Curable.X.pdf",
+    "~/Documents/SmartCiti-X/worlds/SPEC.md"
+  ],
+  "gaps": [
+    "No source describes 'Biota.blockchain' or BioDAO.X itself; BioDAO.X is only a domain NFT image (biodao.x) and the video content was not inspected",
+    "Zones and agents are drawn from the Curable.X PDF and Biopharma Suite image, not a BioDAO-specific document",
+    "No named people, tokenomics, chain choice or launch date for BioDAO.X in the sources",
+    "Biopharma Suite image text is partly garbled; only legible labels (Research & Development, Clinical Support) were used"
+  ]
+}

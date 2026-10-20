@@ -1,0 +1,268 @@
+{"event": "start", "minutes": 3.0, "workers": 3, "roles": ["trades"], "worlds": 41, "t": "2026-10-14T10:06:40"}
+{"role": "trades", "slug": "autonomous-organizations", "attempt": 1, "secs": 27.9, "errors": [], "t": "2026-10-14T10:07:08"}
+{"role": "trades", "slug": "agents-deploy-infrastructure", "attempt": 1, "secs": 34.5, "errors": ["transformer-oil-spill-response: robot_assist must be a listed robot id or null"], "t": "2026-10-14T10:07:14"}
+{"role": "trades", "slug": "agentic-payments", "attempt": 1, "secs": 38.1, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 5507 (char 5506)"], "t": "2026-10-14T10:07:18"}
+{"role": "trades", "slug": "biota-blockchain", "attempt": 1, "secs": 37.2, "errors": [], "t": "2026-10-14T10:07:45"}
+{"event": "heartbeat", "round": 1, "ok": 2, "fail": 0, "repaired": 0, "calls": 4, "chars_out": 36466, "remaining_min": 1.9, "t": "2026-10-14T10:07:45"}
+{"role": "trades", "slug": "agentic-payments", "attempt": 2, "secs": 28.4, "errors": [], "t": "2026-10-14T10:07:46"}
+{"role": "trades", "slug": "agents-deploy-infrastructure", "attempt": 2, "secs": 35.3, "errors": [], "t": "2026-10-14T10:07:50"}
+{"role": "trades", "slug": "climate-dao", "attempt": 1, "secs": 31.9, "errors": [], "t": "2026-10-14T10:08:18"}
+{"role": "trades", "slug": "cancer-dao", "attempt": 1, "secs": 34.7, "errors": [], "t": "2026-10-14T10:08:20"}
+{"role": "trades", "slug": "diagnostic-x", "attempt": 1, "secs": 42.0, "errors": [], "t": "2026-10-14T10:08:32"}
+{"role": "trades", "slug": "ecology-dao", "attempt": 1, "secs": 36.0, "errors": [], "t": "2026-10-14T10:08:54"}
+{"event": "heartbeat", "round": 1, "ok": 8, "fail": 0, "repaired": 2, "calls": 10, "chars_out": 90499, "remaining_min": 0.8, "t": "2026-10-14T10:08:54"}
+{"role": "trades", "slug": "education-dao", "attempt": 1, "secs": 38.1, "errors": [], "t": "2026-10-14T10:08:58"}
+{"role": "trades", "slug": "empathic-x", "attempt": 1, "secs": 32.9, "errors": [], "t": "2026-10-14T10:09:05"}
+{"role": "trades", "slug": "locator-x", "attempt": 1, "secs": 41.2, "errors": ["JSONDecodeError: Expecting ':' delimiter: line 166 column 63 (char 9311)"], "t": "2026-10-14T10:09:36"}
+{"role": "trades", "slug": "public-health-dao", "attempt": 1, "secs": 38.1, "errors": [], "t": "2026-10-14T10:09:36"}
+{"role": "trades", "slug": "robotics-dao", "attempt": 1, "secs": 34.7, "errors": [], "t": "2026-10-14T10:09:39"}
+{"role": "trades", "slug": "locator-x", "attempt": 2, "secs": 30.4, "errors": [], "t": "2026-10-14T10:10:06"}
+{"event": "heartbeat", "round": 1, "ok": 13, "fail": 0, "repaired": 3, "calls": 16, "chars_out": 149096, "remaining_min": -0.4, "t": "2026-10-14T10:10:06"}
+{"role": "trades", "slug": "s05-biopharma-go", "attempt": 1, "secs": 36.7, "errors": [], "t": "2026-10-14T10:10:16"}
+{"role": "trades", "slug": "s04-curable-x", "attempt": 1, "secs": 41.8, "errors": [], "t": "2026-10-14T10:10:18"}
+{"event": "end", "rounds": 1, "done": {"trades": 15}, "ok": 15, "fail": 0, "repaired": 3, "calls": 18, "chars_out": 170442, "t": "2026-10-14T10:10:18"}
+{"event": "start", "minutes": 45.0, "workers": 6, "roles": ["world", "trades", "robots", "programs"], "worlds": 41, "t": "2026-10-14T10:10:29"}
+{"role": "world", "slug": "agents-deploy-infrastructure", "attempt": 1, "secs": 17.7, "errors": [], "t": "2026-10-14T10:10:46"}
+{"role": "world", "slug": "agentic-payments", "attempt": 1, "secs": 18.6, "errors": [], "t": "2026-10-14T10:10:47"}
+{"role": "world", "slug": "climate-dao", "attempt": 1, "secs": 18.6, "errors": [], "t": "2026-10-14T10:10:47"}
+{"role": "world", "slug": "s15-romanbridge-dao", "attempt": 1, "secs": 19.4, "errors": [], "t": "2026-10-14T10:10:48"}
+{"role": "world", "slug": "autonomous-organizations", "attempt": 1, "secs": 25.1, "errors": [], "t": "2026-10-14T10:10:54"}
+{"role": "trades", "slug": "s06-blockchain", "attempt": 1, "secs": 31.6, "errors": [], "t": "2026-10-14T10:11:01"}
+{"role": "trades", "slug": "s14-askdoc-x", "attempt": 1, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:11:01"}
+{"role": "trades", "slug": "s07-divine-dao", "attempt": 1, "secs": 32.2, "errors": ["ghat-river-diver-inspect: steps must be 4-8", "ghat-river-diver-inspect: rubric must have 3-5 axes"], "t": "2026-10-14T10:11:19"}
+{"role": "trades", "slug": "s09-astrological-x", "attempt": 1, "secs": 32.0, "errors": ["lintel-crane-lift-plan: trade must be one of the listed trades"], "t": "2026-10-14T10:11:19"}
+{"role": "trades", "slug": "s11-molecular", "attempt": 1, "secs": 32.1, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7402 (char 7401)"], "t": "2026-10-14T10:11:20"}
+{"role": "trades", "slug": "s13-gonstead-x", "attempt": 1, "secs": 32.7, "errors": [], "t": "2026-10-14T10:11:27"}
+{"role": "trades", "slug": "s14-askdoc-x", "attempt": 2, "secs": 27.9, "errors": [], "t": "2026-10-14T10:11:29"}
+{"event": "heartbeat", "round": 1, "ok": 8, "fail": 0, "repaired": 1, "calls": 11, "chars_out": 77960, "remaining_min": 44.0, "t": "2026-10-14T10:11:29"}
+{"role": "trades", "slug": "s12-parking-smart-x", "attempt": 1, "secs": 41.4, "errors": [], "t": "2026-10-14T10:11:30"}
+{"role": "trades", "slug": "s11-molecular", "attempt": 2, "secs": 27.8, "errors": [], "t": "2026-10-14T10:11:47"}
+{"role": "trades", "slug": "s09-astrological-x", "attempt": 2, "secs": 31.8, "errors": [], "t": "2026-10-14T10:11:51"}
+{"role": "trades", "slug": "s07-divine-dao", "attempt": 2, "secs": 35.8, "errors": ["ghat-temp-power-rig: robot_assist must be a listed robot id or null"], "t": "2026-10-14T10:11:54"}
+{"role": "trades", "slug": "s17-curable-blockchain-dao", "attempt": 1, "secs": 28.7, "errors": [], "t": "2026-10-14T10:11:58"}
+{"role": "trades", "slug": "s15-romanbridge-dao", "attempt": 1, "secs": 38.2, "errors": [], "t": "2026-10-14T10:12:05"}
+{"role": "trades", "slug": "s16-echodawn-dao", "attempt": 1, "secs": 41.2, "errors": [], "t": "2026-10-14T10:12:10"}
+{"role": "trades", "slug": "s19-moscone-x", "attempt": 1, "secs": 28.3, "errors": [], "t": "2026-10-14T10:12:16"}
+{"role": "trades", "slug": "s21-incubator-dao", "attempt": 1, "secs": 29.0, "errors": [], "t": "2026-10-14T10:12:27"}
+{"role": "trades", "slug": "s20-cmmc", "attempt": 1, "secs": 40.4, "errors": [], "t": "2026-10-14T10:12:31"}
+{"event": "heartbeat", "round": 1, "ok": 17, "fail": 0, "repaired": 3, "calls": 21, "chars_out": 170344, "remaining_min": 43.0, "t": "2026-10-14T10:12:31"}
+{"role": "trades", "slug": "s07-divine-dao", "attempt": 3, "secs": 42.6, "errors": ["scenarios must have 5-8 entries"], "t": "2026-10-14T10:12:37"}
+{"role": "trades", "slug": "s22-get-delivery-dao", "attempt": 1, "secs": 33.3, "errors": [], "t": "2026-10-14T10:12:38"}
+{"role": "trades", "slug": "s23-avatar-chat", "attempt": 1, "secs": 32.1, "errors": [], "t": "2026-10-14T10:12:42"}
+{"role": "trades", "slug": "s24-donatello-dao", "attempt": 1, "secs": 40.4, "errors": [], "t": "2026-10-14T10:12:56"}
+{"role": "trades", "slug": "s26-lyka-dao", "attempt": 1, "secs": 25.5, "errors": [], "t": "2026-10-14T10:12:57"}
+{"role": "trades", "slug": "s25-mypet-ai", "attempt": 1, "secs": 29.9, "errors": [], "t": "2026-10-14T10:12:57"}
+{"role": "trades", "slug": "s27-genomic-dao", "attempt": 1, "secs": 32.4, "errors": [], "t": "2026-10-14T10:13:09"}
+{"role": "trades", "slug": "s28-genomic-blockchain", "attempt": 1, "secs": 33.9, "errors": [], "t": "2026-10-14T10:13:12"}
+{"role": "trades", "slug": "s29-metaverse-dao", "attempt": 1, "secs": 42.5, "errors": ["JSONDecodeError: Expecting ':' delimiter: line 1 column 5322 (char 5321)"], "t": "2026-10-14T10:13:25"}
+{"role": "trades", "slug": "s32-solar-dao", "attempt": 1, "secs": 28.4, "errors": [], "t": "2026-10-14T10:13:25"}
+{"role": "trades", "slug": "s31-aerospace-dao", "attempt": 1, "secs": 33.3, "errors": ["launch-survey-control: steps must be 4-8", "launch-survey-control: rubric must have 3-5 axes"], "t": "2026-10-14T10:13:29"}
+{"role": "trades", "slug": "s33-infogurus", "attempt": 1, "secs": 33.0, "errors": [], "t": "2026-10-14T10:13:30"}
+{"role": "trades", "slug": "s34-als-dao", "attempt": 1, "secs": 35.5, "errors": [], "t": "2026-10-14T10:13:45"}
+{"event": "heartbeat", "round": 1, "ok": 27, "fail": 1, "repaired": 3, "calls": 34, "chars_out": 287388, "remaining_min": 41.7, "t": "2026-10-14T10:13:45"}
+{"role": "trades", "slug": "s35-parkinsons-dao", "attempt": 1, "secs": 39.6, "errors": [], "t": "2026-10-14T10:13:52"}
+{"role": "robots", "slug": "agentic-payments", "attempt": 1, "secs": 34.4, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 9023 (char 9022)"], "t": "2026-10-14T10:14:00"}
+{"role": "trades", "slug": "s29-metaverse-dao", "attempt": 2, "secs": 36.3, "errors": [], "t": "2026-10-14T10:14:01"}
+{"role": "trades", "slug": "s31-aerospace-dao", "attempt": 2, "secs": 37.5, "errors": ["pad-flame-trench-rebar: robot_assist must be a listed robot id or null", "lobe-panel-weld-out: steps must be 4-8", "lox-line-insulation: steps must be 4-8", "lightning-tower-line-work: steps must be 4-8", "launch-survey-control: steps must be 4-8"], "t": "2026-10-14T10:14:07"}
+{"role": "robots", "slug": "agents-deploy-infrastructure", "attempt": 1, "secs": 36.2, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 4051 (char 4050)"], "t": "2026-10-14T10:14:07"}
+{"role": "robots", "slug": "agents-deploy-infrastructure", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:07"}
+{"role": "robots", "slug": "agents-deploy-infrastructure", "attempt": 3, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:08"}
+{"role": "robots", "slug": "climate-dao", "attempt": 1, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:08"}
+{"role": "robots", "slug": "climate-dao", "attempt": 2, "secs": 0.6, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:09"}
+{"role": "robots", "slug": "climate-dao", "attempt": 3, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:09"}
+{"role": "robots", "slug": "diagnostic-x", "attempt": 1, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:10"}
+{"role": "robots", "slug": "autonomous-organizations", "attempt": 1, "secs": 26.0, "errors": ["tasks must have 5-8 entries", "goal-wall-patrol: feedback_schema.fields must have 4-8 names", "?: robot must be one of ['boston-dynamics-spot', 'unitree-go2', 'pal-robotics-talos', 'softbank-nao', 'universal-robots-ur10e', 'franka-fr3', 'kinova-gen3', 'fetch-robotics-fetch', 'clearpath-husky-a200', 'bitcraze-crazyflie-2-1-plus']", "?: zone must be an exact zone name", "?: ros.action must start with /"], "t": "2026-10-14T10:14:11"}
+{"role": "robots", "slug": "agentic-payments", "attempt": 2, "secs": 26.6, "errors": [], "t": "2026-10-14T10:14:26"}
+{"role": "robots", "slug": "ecology-dao", "attempt": 1, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:27"}
+{"role": "robots", "slug": "ecology-dao", "attempt": 2, "secs": 0.7, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:27"}
+{"role": "robots", "slug": "ecology-dao", "attempt": 3, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:28"}
+{"role": "robots", "slug": "education-dao", "attempt": 1, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:28"}
+{"role": "robots", "slug": "education-dao", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:29"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 1, "secs": 32.7, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 7 column 1085 (char 7583)"], "t": "2026-10-14T10:14:34"}
+{"role": "trades", "slug": "s31-aerospace-dao", "attempt": 3, "secs": 27.7, "errors": [], "t": "2026-10-14T10:14:35"}
+{"role": "robots", "slug": "diagnostic-x", "attempt": 2, "secs": 25.2, "errors": ["ur10e-molecule-rack-handling: feedback_schema.fields must have 4-8 names", "husky-corridor-logistics-run: feedback_schema.fields must have 4-8 names", "crazyflie-4d-room-scan: feedback_schema.fields must have 4-8 names"], "t": "2026-10-14T10:14:35"}
+{"role": "robots", "slug": "diagnostic-x", "attempt": 3, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:36"}
+{"role": "robots", "slug": "locator-x", "attempt": 1, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:36"}
+{"role": "robots", "slug": "biota-blockchain", "attempt": 1, "secs": 44.3, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 10915 (char 10914)"], "t": "2026-10-14T10:14:36"}
+{"role": "robots", "slug": "biota-blockchain", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:36"}
+{"role": "robots", "slug": "locator-x", "attempt": 2, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:37"}
+{"role": "robots", "slug": "autonomous-organizations", "attempt": 2, "secs": 32.3, "errors": ["high-goal-aerial-overview: robot must be one of ['boston-dynamics-spot', 'unitree-go2', 'pal-robotics-talos', 'softbank-nao', 'universal-robots-ur10e', 'franka-fr3', 'kinova-gen3', 'fetch-robotics-fetch', 'clearpath-husky-a200', 'bitcraze-crazyflie-2-1-plus']"], "t": "2026-10-14T10:14:43"}
+{"role": "robots", "slug": "autonomous-organizations", "attempt": 3, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:44"}
+{"role": "robots", "slug": "public-health-dao", "attempt": 1, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:44"}
+{"role": "robots", "slug": "public-health-dao", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:45"}
+{"role": "robots", "slug": "education-dao", "attempt": 3, "secs": 27.3, "errors": [], "t": "2026-10-14T10:14:56"}
+{"event": "heartbeat", "round": 1, "ok": 32, "fail": 6, "repaired": 7, "calls": 47, "chars_out": 397850, "remaining_min": 40.5, "t": "2026-10-14T10:14:56"}
+{"role": "robots", "slug": "empathic-x", "attempt": 1, "secs": 24.4, "errors": ["grove-body-scan-patrol: feedback_schema.fields must have 4-8 names", "commons-listening-proximity: feedback_schema.fields must have 4-8 names", "hall-apology-artifact-handoff: feedback_schema.fields must have 4-8 names", "plaza-room-energy-scan: feedback_schema.fields must have 4-8 names", "workshop-feedback-ur10e-station: feedback_schema.fields must have 4-8 names"], "t": "2026-10-14T10:14:59"}
+{"role": "robots", "slug": "empathic-x", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:14:59"}
+{"role": "robots", "slug": "empathic-x", "attempt": 3, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:00"}
+{"role": "robots", "slug": "s04-curable-x", "attempt": 1, "secs": 0.6, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:00"}
+{"role": "robots", "slug": "s04-curable-x", "attempt": 2, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:01"}
+{"role": "robots", "slug": "s04-curable-x", "attempt": 3, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:01"}
+{"role": "robots", "slug": "s05-biopharma-go", "attempt": 1, "secs": 0.6, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:02"}
+{"role": "robots", "slug": "s05-biopharma-go", "attempt": 2, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:02"}
+{"role": "robots", "slug": "s05-biopharma-go", "attempt": 3, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:03"}
+{"role": "robots", "slug": "s06-blockchain", "attempt": 1, "secs": 0.4, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:03"}
+{"role": "robots", "slug": "s06-blockchain", "attempt": 2, "secs": 0.7, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:04"}
+{"role": "robots", "slug": "s06-blockchain", "attempt": 3, "secs": 0.5, "errors": ["HTTPError: HTTP Error 429: Too Many Requests"], "t": "2026-10-14T10:15:05"}
+{"role": "robots", "slug": "biota-blockchain", "attempt": 3, "secs": 30.1, "errors": [], "t": "2026-10-14T10:15:07"}
+{"event": "start", "minutes": 40.0, "workers": 4, "roles": ["world", "trades", "robots", "programs"], "worlds": 41, "t": "2026-10-14T10:15:09"}
+{"role": "world", "slug": "cancer-dao", "attempt": 1, "secs": 16.6, "errors": [], "t": "2026-10-14T10:15:25"}
+{"role": "world", "slug": "biota-blockchain", "attempt": 1, "secs": 19.6, "errors": [], "t": "2026-10-14T10:15:28"}
+{"role": "robots", "slug": "agents-deploy-infrastructure", "attempt": 1, "secs": 37.0, "errors": [], "t": "2026-10-14T10:15:46"}
+{"role": "trades", "slug": "s07-divine-dao", "attempt": 1, "secs": 38.0, "errors": [], "t": "2026-10-14T10:15:47"}
+{"role": "robots", "slug": "autonomous-organizations", "attempt": 1, "secs": 28.4, "errors": [], "t": "2026-10-14T10:15:54"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 1, "secs": 31.6, "errors": ["JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 6713 (char 6712)"], "t": "2026-10-14T10:16:00"}
+{"role": "robots", "slug": "climate-dao", "attempt": 1, "secs": 29.3, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 8133 (char 8132)"], "t": "2026-10-14T10:16:15"}
+{"role": "robots", "slug": "diagnostic-x", "attempt": 1, "secs": 29.7, "errors": [], "t": "2026-10-14T10:16:17"}
+{"event": "heartbeat", "round": 1, "ok": 6, "fail": 0, "repaired": 0, "calls": 8, "chars_out": 57737, "remaining_min": 38.9, "t": "2026-10-14T10:16:17"}
+{"role": "robots", "slug": "ecology-dao", "attempt": 1, "secs": 30.9, "errors": [], "t": "2026-10-14T10:16:25"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 2, "secs": 28.3, "errors": ["mezzanine-mapping-sweep: robot must be one of ['boston-dynamics-spot', 'unitree-go2', 'pal-robotics-talos', 'softbank-nao', 'universal-robots-ur10e', 'franka-fr3', 'kinova-gen3', 'fetch-robotics-fetch', 'clearpath-husky-a200', 'bitcraze-crazyflie-2-1-plus']"], "t": "2026-10-14T10:16:28"}
+{"role": "robots", "slug": "climate-dao", "attempt": 2, "secs": 28.0, "errors": [], "t": "2026-10-14T10:16:43"}
+{"role": "robots", "slug": "empathic-x", "attempt": 1, "secs": 27.2, "errors": ["ur10e-practitioner-workshop-table-setup: feedback_schema.fields must have 4-8 names"], "t": "2026-10-14T10:16:44"}
+{"role": "robots", "slug": "locator-x", "attempt": 1, "secs": 24.3, "errors": [], "t": "2026-10-14T10:16:49"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 3, "secs": 31.0, "errors": ["evidence-lab-shelf-pick: feedback_schema.fields must have 4-8 names", "campus-perimeter-patrol: feedback_schema.fields must have 4-8 names", "atrium-formation-scan: feedback_schema.fields must have 4-8 names"], "t": "2026-10-14T10:16:59"}
+{"role": "robots", "slug": "public-health-dao", "attempt": 1, "secs": 29.8, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 7 column 1086 (char 7748)"], "t": "2026-10-14T10:17:13"}
+{"role": "robots", "slug": "empathic-x", "attempt": 2, "secs": 31.2, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7726 (char 7725)"], "t": "2026-10-14T10:17:15"}
+{"role": "robots", "slug": "robotics-dao", "attempt": 1, "secs": 34.6, "errors": [], "t": "2026-10-14T10:17:24"}
+{"event": "heartbeat", "round": 1, "ok": 10, "fail": 1, "repaired": 1, "calls": 17, "chars_out": 125808, "remaining_min": 37.8, "t": "2026-10-14T10:17:24"}
+{"role": "robots", "slug": "s04-curable-x", "attempt": 1, "secs": 34.6, "errors": [], "t": "2026-10-14T10:17:34"}
+{"role": "robots", "slug": "public-health-dao", "attempt": 2, "secs": 27.3, "errors": [], "t": "2026-10-14T10:17:40"}
+{"role": "robots", "slug": "s06-blockchain", "attempt": 1, "secs": 23.7, "errors": [], "t": "2026-10-14T10:17:58"}
+{"role": "robots", "slug": "s05-biopharma-go", "attempt": 1, "secs": 37.8, "errors": [], "t": "2026-10-14T10:18:01"}
+{"role": "robots", "slug": "empathic-x", "attempt": 3, "secs": 46.8, "errors": ["tasks must have 5-8 entries"], "t": "2026-10-14T10:18:02"}
+{"role": "robots", "slug": "s07-divine-dao", "attempt": 1, "secs": 26.4, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7108 (char 7107)"], "t": "2026-10-14T10:18:07"}
+{"role": "robots", "slug": "s09-astrological-x", "attempt": 1, "secs": 21.0, "errors": [], "t": "2026-10-14T10:18:19"}
+{"role": "robots", "slug": "s12-parking-smart-x", "attempt": 1, "secs": 25.1, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7169 (char 7168)"], "t": "2026-10-14T10:18:27"}
+{"role": "robots", "slug": "s07-divine-dao", "attempt": 2, "secs": 29.8, "errors": ["aerial-forum-videography: robot must be one of ['boston-dynamics-spot', 'unitree-go2', 'pal-robotics-talos', 'softbank-nao', 'universal-robots-ur10e', 'franka-fr3', 'kinova-gen3', 'fetch-robotics-fetch', 'clearpath-husky-a200', 'bitcraze-crazyflie-2-1-plus']"], "t": "2026-10-14T10:18:37"}
+{"role": "robots", "slug": "s11-molecular", "attempt": 1, "secs": 39.1, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 9538 (char 9537)"], "t": "2026-10-14T10:18:40"}
+{"role": "robots", "slug": "s13-gonstead-x", "attempt": 1, "secs": 26.9, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7310 (char 7309)"], "t": "2026-10-14T10:18:46"}
+{"role": "robots", "slug": "s12-parking-smart-x", "attempt": 2, "secs": 27.8, "errors": [], "t": "2026-10-14T10:18:55"}
+{"event": "heartbeat", "round": 1, "ok": 16, "fail": 2, "repaired": 3, "calls": 29, "chars_out": 220729, "remaining_min": 36.2, "t": "2026-10-14T10:18:55"}
+{"role": "robots", "slug": "s07-divine-dao", "attempt": 3, "secs": 21.2, "errors": [], "t": "2026-10-14T10:18:58"}
+{"role": "robots", "slug": "s11-molecular", "attempt": 2, "secs": 30.2, "errors": [], "t": "2026-10-14T10:19:11"}
+{"role": "robots", "slug": "s14-askdoc-x", "attempt": 1, "secs": 23.6, "errors": [], "t": "2026-10-14T10:19:18"}
+{"role": "robots", "slug": "s13-gonstead-x", "attempt": 2, "secs": 51.6, "errors": ["tasks must have 5-8 entries"], "t": "2026-10-14T10:19:37"}
+{"role": "robots", "slug": "s15-romanbridge-dao", "attempt": 1, "secs": 40.6, "errors": [], "t": "2026-10-14T10:19:38"}
+{"role": "robots", "slug": "s16-echodawn-dao", "attempt": 1, "secs": 29.7, "errors": [], "t": "2026-10-14T10:19:40"}
+{"role": "robots", "slug": "s17-curable-blockchain-dao", "attempt": 1, "secs": 27.4, "errors": [], "t": "2026-10-14T10:19:46"}
+{"role": "robots", "slug": "s20-cmmc", "attempt": 1, "secs": 24.2, "errors": [], "t": "2026-10-14T10:20:05"}
+{"event": "heartbeat", "round": 1, "ok": 23, "fail": 2, "repaired": 5, "calls": 37, "chars_out": 287381, "remaining_min": 35.1, "t": "2026-10-14T10:20:05"}
+{"role": "robots", "slug": "s19-moscone-x", "attempt": 1, "secs": 26.4, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7320 (char 7319)"], "t": "2026-10-14T10:20:05"}
+{"role": "robots", "slug": "s13-gonstead-x", "attempt": 3, "secs": 27.9, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 1092 (char 1091)"], "t": "2026-10-14T10:20:05"}
+{"role": "robots", "slug": "s21-incubator-dao", "attempt": 1, "secs": 31.9, "errors": ["tasks must have 5-8 entries"], "t": "2026-10-14T10:20:18"}
+{"role": "robots", "slug": "s19-moscone-x", "attempt": 2, "secs": 24.8, "errors": [], "t": "2026-10-14T10:20:30"}
+{"role": "robots", "slug": "s22-get-delivery-dao", "attempt": 1, "secs": 30.0, "errors": [], "t": "2026-10-14T10:20:35"}
+{"role": "robots", "slug": "s23-avatar-chat", "attempt": 1, "secs": 32.6, "errors": [], "t": "2026-10-14T10:20:38"}
+{"role": "robots", "slug": "s21-incubator-dao", "attempt": 2, "secs": 29.2, "errors": [], "t": "2026-10-14T10:20:47"}
+{"role": "robots", "slug": "s24-donatello-dao", "attempt": 1, "secs": 29.0, "errors": [], "t": "2026-10-14T10:20:59"}
+{"role": "robots", "slug": "s25-mypet-ai", "attempt": 1, "secs": 25.6, "errors": [], "t": "2026-10-14T10:21:00"}
+{"role": "robots", "slug": "s26-lyka-dao", "attempt": 1, "secs": 34.0, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 8309 (char 8308)"], "t": "2026-10-14T10:21:12"}
+{"role": "robots", "slug": "s27-genomic-dao", "attempt": 1, "secs": 30.7, "errors": ["JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 6009 (char 6008)"], "t": "2026-10-14T10:21:17"}
+{"role": "robots", "slug": "s28-genomic-blockchain", "attempt": 1, "secs": 28.5, "errors": [], "t": "2026-10-14T10:21:27"}
+{"event": "heartbeat", "round": 1, "ok": 30, "fail": 3, "repaired": 7, "calls": 49, "chars_out": 380279, "remaining_min": 33.7, "t": "2026-10-14T10:21:27"}
+{"role": "robots", "slug": "s29-metaverse-dao", "attempt": 1, "secs": 34.8, "errors": [], "t": "2026-10-14T10:21:35"}
+{"role": "robots", "slug": "s26-lyka-dao", "attempt": 2, "secs": 24.7, "errors": [], "t": "2026-10-14T10:21:36"}
+{"role": "robots", "slug": "s27-genomic-dao", "attempt": 2, "secs": 30.9, "errors": [], "t": "2026-10-14T10:21:48"}
+{"role": "robots", "slug": "s33-infogurus", "attempt": 1, "secs": 22.6, "errors": ["atrium-swarm-dashboard-capture: robot must be one of ['boston-dynamics-spot', 'unitree-go2', 'pal-robotics-talos', 'softbank-nao', 'universal-robots-ur10e', 'franka-fr3', 'kinova-gen3', 'fetch-robotics-fetch', 'clearpath-husky-a200', 'bitcraze-crazyflie-2-1-plus']"], "t": "2026-10-14T10:21:59"}
+{"role": "robots", "slug": "s31-aerospace-dao", "attempt": 1, "secs": 33.1, "errors": [], "t": "2026-10-14T10:22:00"}
+{"role": "robots", "slug": "s32-solar-dao", "attempt": 1, "secs": 25.7, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 6152 (char 6151)"], "t": "2026-10-14T10:22:01"}
+{"role": "robots", "slug": "s34-als-dao", "attempt": 1, "secs": 23.7, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 6110 (char 6109)"], "t": "2026-10-14T10:22:12"}
+{"role": "robots", "slug": "s35-parkinsons-dao", "attempt": 1, "secs": 24.6, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 6993 (char 6992)"], "t": "2026-10-14T10:22:25"}
+{"role": "robots", "slug": "s33-infogurus", "attempt": 2, "secs": 28.8, "errors": ["tasks must have 5-8 entries"], "t": "2026-10-14T10:22:28"}
+{"role": "robots", "slug": "s32-solar-dao", "attempt": 2, "secs": 27.1, "errors": [], "t": "2026-10-14T10:22:28"}
+{"event": "heartbeat", "round": 1, "ok": 35, "fail": 3, "repaired": 10, "calls": 59, "chars_out": 452562, "remaining_min": 32.7, "t": "2026-10-14T10:22:28"}
+{"role": "robots", "slug": "s34-als-dao", "attempt": 2, "secs": 29.4, "errors": [], "t": "2026-10-14T10:22:41"}
+{"role": "programs", "slug": "agentic-payments", "attempt": 1, "secs": 18.3, "errors": [], "t": "2026-10-14T10:22:46"}
+{"role": "robots", "slug": "s35-parkinsons-dao", "attempt": 2, "secs": 25.7, "errors": [], "t": "2026-10-14T10:22:51"}
+{"role": "robots", "slug": "s33-infogurus", "attempt": 3, "secs": 26.0, "errors": [], "t": "2026-10-14T10:22:54"}
+{"role": "programs", "slug": "agents-deploy-infrastructure", "attempt": 1, "secs": 19.8, "errors": [], "t": "2026-10-14T10:23:01"}
+{"role": "programs", "slug": "autonomous-organizations", "attempt": 1, "secs": 17.1, "errors": [], "t": "2026-10-14T10:23:03"}
+{"role": "programs", "slug": "biota-blockchain", "attempt": 1, "secs": 19.6, "errors": [], "t": "2026-10-14T10:23:10"}
+{"role": "programs", "slug": "cancer-dao", "attempt": 1, "secs": 20.8, "errors": [], "t": "2026-10-14T10:23:15"}
+{"role": "programs", "slug": "diagnostic-x", "attempt": 1, "secs": 19.3, "errors": [], "t": "2026-10-14T10:23:23"}
+{"role": "programs", "slug": "climate-dao", "attempt": 1, "secs": 24.1, "errors": [], "t": "2026-10-14T10:23:25"}
+{"role": "programs", "slug": "ecology-dao", "attempt": 1, "secs": 20.4, "errors": [], "t": "2026-10-14T10:23:31"}
+{"event": "heartbeat", "round": 1, "ok": 46, "fail": 3, "repaired": 13, "calls": 70, "chars_out": 522198, "remaining_min": 31.6, "t": "2026-10-14T10:23:31"}
+{"role": "programs", "slug": "education-dao", "attempt": 1, "secs": 18.0, "errors": [], "t": "2026-10-14T10:23:33"}
+{"role": "programs", "slug": "empathic-x", "attempt": 1, "secs": 17.3, "errors": [], "t": "2026-10-14T10:23:40"}
+{"role": "programs", "slug": "locator-x", "attempt": 1, "secs": 19.5, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 5837 (char 5836)"], "t": "2026-10-14T10:23:45"}
+{"role": "programs", "slug": "public-health-dao", "attempt": 1, "secs": 19.0, "errors": [], "t": "2026-10-14T10:23:50"}
+{"role": "programs", "slug": "robotics-dao", "attempt": 1, "secs": 18.7, "errors": [], "t": "2026-10-14T10:23:51"}
+{"role": "programs", "slug": "s04-curable-x", "attempt": 1, "secs": 17.3, "errors": [], "t": "2026-10-14T10:23:57"}
+{"role": "programs", "slug": "s05-biopharma-go", "attempt": 1, "secs": 18.8, "errors": [], "t": "2026-10-14T10:24:08"}
+{"role": "programs", "slug": "locator-x", "attempt": 2, "secs": 23.8, "errors": [], "t": "2026-10-14T10:24:09"}
+{"role": "programs", "slug": "s06-blockchain", "attempt": 1, "secs": 17.8, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 5555 (char 5554)"], "t": "2026-10-14T10:24:09"}
+{"role": "programs", "slug": "s07-divine-dao", "attempt": 1, "secs": 20.1, "errors": [], "t": "2026-10-14T10:24:17"}
+{"role": "programs", "slug": "s11-molecular", "attempt": 1, "secs": 17.8, "errors": [], "t": "2026-10-14T10:24:27"}
+{"role": "programs", "slug": "s06-blockchain", "attempt": 2, "secs": 22.5, "errors": [], "t": "2026-10-14T10:24:31"}
+{"event": "heartbeat", "round": 1, "ok": 56, "fail": 3, "repaired": 15, "calls": 82, "chars_out": 594360, "remaining_min": 30.6, "t": "2026-10-14T10:24:31"}
+{"role": "programs", "slug": "s09-astrological-x", "attempt": 1, "secs": 24.6, "errors": ["nonprofit: session zone \"Proposal & Grant Drafter\" must be an exact zone name"], "t": "2026-10-14T10:24:33"}
+{"role": "programs", "slug": "s12-parking-smart-x", "attempt": 1, "secs": 22.9, "errors": [], "t": "2026-10-14T10:24:40"}
+{"role": "programs", "slug": "s13-gonstead-x", "attempt": 1, "secs": 23.2, "errors": [], "t": "2026-10-14T10:24:50"}
+{"role": "programs", "slug": "s14-askdoc-x", "attempt": 1, "secs": 18.5, "errors": [], "t": "2026-10-14T10:24:50"}
+{"role": "programs", "slug": "s09-astrological-x", "attempt": 2, "secs": 20.3, "errors": [], "t": "2026-10-14T10:24:53"}
+{"role": "programs", "slug": "s15-romanbridge-dao", "attempt": 1, "secs": 19.2, "errors": [], "t": "2026-10-14T10:24:59"}
+{"role": "programs", "slug": "s19-moscone-x", "attempt": 1, "secs": 16.4, "errors": [], "t": "2026-10-14T10:25:10"}
+{"role": "programs", "slug": "s16-echodawn-dao", "attempt": 1, "secs": 20.1, "errors": [], "t": "2026-10-14T10:25:10"}
+{"role": "programs", "slug": "s17-curable-blockchain-dao", "attempt": 1, "secs": 28.7, "errors": [], "t": "2026-10-14T10:25:19"}
+{"role": "programs", "slug": "s20-cmmc", "attempt": 1, "secs": 23.2, "errors": [], "t": "2026-10-14T10:25:23"}
+{"role": "programs", "slug": "s22-get-delivery-dao", "attempt": 1, "secs": 16.7, "errors": [], "t": "2026-10-14T10:25:27"}
+{"role": "programs", "slug": "s21-incubator-dao", "attempt": 1, "secs": 19.0, "errors": [], "t": "2026-10-14T10:25:29"}
+{"role": "programs", "slug": "s23-avatar-chat", "attempt": 1, "secs": 18.9, "errors": [], "t": "2026-10-14T10:25:38"}
+{"event": "heartbeat", "round": 1, "ok": 68, "fail": 3, "repaired": 16, "calls": 95, "chars_out": 673306, "remaining_min": 29.5, "t": "2026-10-14T10:25:38"}
+{"role": "programs", "slug": "s24-donatello-dao", "attempt": 1, "secs": 18.6, "errors": [], "t": "2026-10-14T10:25:41"}
+{"role": "programs", "slug": "s25-mypet-ai", "attempt": 1, "secs": 19.2, "errors": [], "t": "2026-10-14T10:25:46"}
+{"role": "programs", "slug": "s26-lyka-dao", "attempt": 1, "secs": 19.3, "errors": [], "t": "2026-10-14T10:25:48"}
+{"role": "programs", "slug": "s27-genomic-dao", "attempt": 1, "secs": 17.7, "errors": [], "t": "2026-10-14T10:25:55"}
+{"role": "programs", "slug": "s28-genomic-blockchain", "attempt": 1, "secs": 18.2, "errors": [], "t": "2026-10-14T10:25:59"}
+{"role": "programs", "slug": "s29-metaverse-dao", "attempt": 1, "secs": 20.5, "errors": [], "t": "2026-10-14T10:26:06"}
+{"role": "programs", "slug": "s31-aerospace-dao", "attempt": 1, "secs": 23.4, "errors": [], "t": "2026-10-14T10:26:11"}
+{"role": "programs", "slug": "s32-solar-dao", "attempt": 1, "secs": 18.9, "errors": [], "t": "2026-10-14T10:26:14"}
+{"role": "programs", "slug": "s33-infogurus", "attempt": 1, "secs": 18.0, "errors": [], "t": "2026-10-14T10:26:17"}
+{"role": "programs", "slug": "s35-parkinsons-dao", "attempt": 1, "secs": 17.7, "errors": [], "t": "2026-10-14T10:26:29"}
+{"role": "programs", "slug": "s34-als-dao", "attempt": 1, "secs": 23.8, "errors": [], "t": "2026-10-14T10:26:30"}
+{"event": "end", "rounds": 1, "done": {"world": 7, "trades": 41, "robots": 38, "programs": 41}, "ok": 79, "fail": 3, "repaired": 16, "calls": 106, "chars_out": 739295, "t": "2026-10-14T10:26:30"}
+{"event": "start", "minutes": 30.0, "workers": 4, "roles": ["world", "robots"], "worlds": 41, "t": "2026-10-14T10:47:55"}
+{"role": "world", "slug": "education-dao", "attempt": 1, "secs": 16.6, "errors": [], "t": "2026-10-14T10:48:12"}
+{"role": "world", "slug": "ecology-dao", "attempt": 1, "secs": 17.6, "errors": [], "t": "2026-10-14T10:48:13"}
+{"role": "world", "slug": "empathic-x", "attempt": 1, "secs": 19.2, "errors": [], "t": "2026-10-14T10:48:14"}
+{"role": "world", "slug": "diagnostic-x", "attempt": 1, "secs": 19.6, "errors": [], "t": "2026-10-14T10:48:15"}
+{"role": "world", "slug": "public-health-dao", "attempt": 1, "secs": 19.2, "errors": [], "t": "2026-10-14T10:48:32"}
+{"role": "world", "slug": "s04-curable-x", "attempt": 1, "secs": 18.5, "errors": [], "t": "2026-10-14T10:48:34"}
+{"role": "world", "slug": "locator-x", "attempt": 1, "secs": 22.4, "errors": [], "t": "2026-10-14T10:48:35"}
+{"role": "world", "slug": "robotics-dao", "attempt": 1, "secs": 21.9, "errors": [], "t": "2026-10-14T10:48:36"}
+{"role": "world", "slug": "s05-biopharma-go", "attempt": 1, "secs": 14.4, "errors": [], "t": "2026-10-14T10:48:48"}
+{"role": "world", "slug": "s06-blockchain", "attempt": 1, "secs": 19.6, "errors": [], "t": "2026-10-14T10:48:54"}
+{"role": "world", "slug": "s22-get-delivery-dao", "attempt": 1, "secs": 19.6, "errors": [], "t": "2026-10-14T10:48:55"}
+{"event": "heartbeat", "round": 1, "ok": 11, "fail": 0, "repaired": 0, "calls": 11, "chars_out": 57202, "remaining_min": 29.0, "t": "2026-10-14T10:48:55"}
+{"role": "world", "slug": "s23-avatar-chat", "attempt": 1, "secs": 22.0, "errors": [], "t": "2026-10-14T10:48:59"}
+{"role": "world", "slug": "s24-donatello-dao", "attempt": 1, "secs": 19.4, "errors": [], "t": "2026-10-14T10:49:08"}
+{"role": "world", "slug": "s26-lyka-dao", "attempt": 1, "secs": 16.4, "errors": [], "t": "2026-10-14T10:49:12"}
+{"role": "world", "slug": "s25-mypet-ai", "attempt": 1, "secs": 18.6, "errors": [], "t": "2026-10-14T10:49:14"}
+{"role": "world", "slug": "s27-genomic-dao", "attempt": 1, "secs": 16.9, "errors": [], "t": "2026-10-14T10:49:16"}
+{"role": "world", "slug": "s28-genomic-blockchain", "attempt": 1, "secs": 18.4, "errors": [], "t": "2026-10-14T10:49:27"}
+{"role": "world", "slug": "s29-metaverse-dao", "attempt": 1, "secs": 15.4, "errors": [], "t": "2026-10-14T10:49:28"}
+{"role": "world", "slug": "s31-aerospace-dao", "attempt": 1, "secs": 20.3, "errors": [], "t": "2026-10-14T10:49:34"}
+{"role": "world", "slug": "s32-solar-dao", "attempt": 1, "secs": 19.9, "errors": [], "t": "2026-10-14T10:49:36"}
+{"role": "world", "slug": "s34-als-dao", "attempt": 1, "secs": 15.2, "errors": [], "t": "2026-10-14T10:49:44"}
+{"role": "world", "slug": "s33-infogurus", "attempt": 1, "secs": 26.4, "errors": [], "t": "2026-10-14T10:49:54"}
+{"role": "world", "slug": "s35-parkinsons-dao", "attempt": 1, "secs": 19.8, "errors": [], "t": "2026-10-14T10:49:55"}
+{"event": "heartbeat", "round": 1, "ok": 22, "fail": 0, "repaired": 0, "calls": 23, "chars_out": 121691, "remaining_min": 28.0, "t": "2026-10-14T10:49:56"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 1, "secs": 36.4, "errors": ["tasks must have 5-8 entries", "lab-evidence-inspection-with-arm: zone must be an exact zone name"], "t": "2026-10-14T10:50:13"}
+{"role": "robots", "slug": "s13-gonstead-x", "attempt": 1, "secs": 34.2, "errors": ["JSONDecodeError: Expecting ',' delimiter: line 1 column 7852 (char 7851)"], "t": "2026-10-14T10:50:31"}
+{"role": "robots", "slug": "cancer-dao", "attempt": 2, "secs": 26.7, "errors": [], "t": "2026-10-14T10:50:40"}
+{"role": "robots", "slug": "empathic-x", "attempt": 1, "secs": 45.9, "errors": [], "t": "2026-10-14T10:50:40"}
+{"role": "robots", "slug": "s13-gonstead-x", "attempt": 2, "secs": 49.8, "errors": [], "t": "2026-10-14T10:51:21"}
+{"event": "heartbeat", "round": 1, "ok": 26, "fail": 0, "repaired": 2, "calls": 28, "chars_out": 160759, "remaining_min": 26.3, "t": "2026-10-14T10:51:37"}
+{"role": "world", "slug": "s07-divine-dao", "attempt": 1, "secs": 31.8, "errors": [], "t": "2026-10-14T10:53:01"}
+{"role": "world", "slug": "s21-incubator-dao", "attempt": 1, "secs": 24.6, "errors": [], "t": "2026-10-14T10:54:37"}
+{"role": "world", "slug": "s09-astrological-x", "attempt": 1, "secs": 21.8, "errors": [], "t": "2026-10-14T10:55:43"}
+{"role": "world", "slug": "s11-molecular", "attempt": 1, "secs": 19.0, "errors": [], "t": "2026-10-14T10:58:15"}
+{"role": "world", "slug": "s12-parking-smart-x", "attempt": 1, "secs": 16.7, "errors": [], "t": "2026-10-14T10:58:40"}
+{"role": "world", "slug": "s13-gonstead-x", "attempt": 1, "secs": 20.9, "errors": [], "t": "2026-10-14T10:59:11"}
+{"role": "world", "slug": "s20-cmmc", "attempt": 1, "secs": 17.1, "errors": [], "t": "2026-10-14T10:59:35"}
+{"role": "world", "slug": "s14-askdoc-x", "attempt": 1, "secs": 17.3, "errors": [], "t": "2026-10-14T10:59:35"}
+{"role": "world", "slug": "s19-moscone-x", "attempt": 1, "secs": 33.8, "errors": [], "t": "2026-10-14T11:00:55"}
+{"role": "world", "slug": "s16-echodawn-dao", "attempt": 1, "secs": 19.3, "errors": [], "t": "2026-10-14T11:01:31"}
+{"role": "world", "slug": "s17-curable-blockchain-dao", "attempt": 1, "secs": 22.2, "errors": [], "t": "2026-10-14T11:02:04"}
+{"event": "end", "rounds": 41, "done": {"world": 41, "robots": 41}, "ok": 37, "fail": 0, "repaired": 2, "calls": 39, "chars_out": 220097, "t": "2026-10-14T11:02:12"}

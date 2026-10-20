@@ -1,0 +1,308 @@
+{
+ "title": "Agents That Deploy Infrastructure — Hoover Dam",
+ "summary": "A walkable dam-world above Lake Mead: six zones mapped onto the real Hoover Dam structures, where agent crews take an idea from bench plan to rehearsed provisioning, deployment, domains, configuration and round-the-clock operations.",
+ "biome": "desert",
+ "districts": [
+  {
+   "zone": "Idea Bench",
+   "real_anchor": "Hoover Dam Visitor Center",
+   "buildings": [
+    {
+     "name": "Plan Gallery",
+     "use": "Where ideas become readable build-and-run plans",
+     "floors": 2
+    },
+    {
+     "name": "Drafting Terrace",
+     "use": "Open-air sketch tables overlooking the canyon",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Blueprint Hall",
+    "Assumption Wall",
+    "Plan Reading Room",
+    "Review Alcove"
+   ],
+   "props": [
+    "rolled blueprints",
+    "scale model of the dam",
+    "sticky-note wall",
+    "steward reading desk",
+    "brass telescope aimed at the intake towers"
+   ],
+   "npc_agents": [
+    "Planner"
+   ]
+  },
+  {
+   "zone": "Provisioning Yard",
+   "real_anchor": "Arizona Spillway",
+   "buildings": [
+    {
+     "name": "Rehearsal Shed",
+     "use": "Dry-run provisioning of compute, storage and networks",
+     "floors": 1
+    },
+    {
+     "name": "Crate Depot",
+     "use": "Staged infrastructure parts awaiting steward approval",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Rehearsal Floor",
+    "Staging Rack Row",
+    "Approval Queue",
+    "Crate Manifest Office"
+   ],
+   "props": [
+    "pallets of conduit",
+    "spare cable drums",
+    "rehearsal checklists on clipboards",
+    "amber awaiting-approval lamp",
+    "loading crane rail"
+   ],
+   "npc_agents": [
+    "Provisioner"
+   ]
+  },
+  {
+   "zone": "Deployment Bay",
+   "real_anchor": "Hoover Dam Powerhouse",
+   "buildings": [
+    {
+     "name": "Release Hall",
+     "use": "Builds, releases and rollbacks for deployed applications",
+     "floors": 2
+    },
+    {
+     "name": "Rollback Garage",
+     "use": "Keeps last-known-good rollback ready",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Build Floor",
+    "Release Stage",
+    "Rollback Vault",
+    "Version Board Room"
+   ],
+   "props": [
+    "turbine-styled release indicator",
+    "rollback hand-truck",
+    "version ledger board",
+    "caged release switch",
+    "hoist chains from powerhouse days"
+   ],
+   "npc_agents": [
+    "Deployer"
+   ]
+  },
+  {
+   "zone": "Domain Registry Desk",
+   "real_anchor": "Exhibit Building",
+   "buildings": [
+    {
+     "name": "Registry Desk",
+     "use": "Public desk for domain records and steward decisions",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Records Vault",
+    "Lookup Counter",
+    "Steward Decision Table"
+   ],
+   "props": [
+    "brass registration bell",
+    "leather-bound record ledgers",
+    "brass telescope",
+    "nameplate press",
+    "waiting bench"
+   ],
+   "npc_agents": [
+    "Domain Steward"
+   ]
+  },
+  {
+   "zone": "Service Configuration Room",
+   "real_anchor": "Arizona Valve House",
+   "buildings": [
+    {
+     "name": "Valve House Config Room",
+     "use": "Service settings and wiring, mirroring the real valve house",
+     "floors": 1
+    },
+    {
+     "name": "Secrets Cabinet Annex",
+     "use": "Policy and handling for secrets, never held in prompts",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Settings Console Row",
+    "Wiring Diagram Wall",
+    "Secrets Policy Alcove",
+    "Handoff Bench"
+   ],
+   "props": [
+    "giant valve wheels",
+    "hand-wired patch panel",
+    "locked secrets cabinet",
+    "configuration dials",
+    "colored pipe loom"
+   ],
+   "npc_agents": [
+    "Configurator"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Nevada Valve House",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Health, logs, incidents and on-call handoff to people",
+     "floors": 2
+    },
+    {
+     "name": "On-Call Watchtower",
+     "use": "Overlooks the dam crest for the human on-call handoff",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Gauge Hall",
+    "Log Reading Room",
+    "Incident Bridge",
+    "On-Call Handoff Station",
+    "Tea Galley"
+   ],
+   "props": [
+    "wall of analog gauges",
+    "rotating shift board",
+    "incident klaxon",
+    "red steward hotline telephone",
+    "logbook shelf",
+    "creaking leather chair"
+   ],
+   "npc_agents": [
+    "Operator"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "velvet mesquite",
+   "palo verde",
+   "desert willow",
+   "singleleaf pinyon pine",
+   "California fan palm"
+  ],
+  "shrubs": [
+   "creosote bush",
+   "brittlebush",
+   "fourwing saltbush"
+  ],
+  "flowers": [
+   "desert marigold",
+   "sand verbena",
+   "Mojave aster",
+   "globemallow"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 1,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "06:12",
+  "sunset_local": "18:45"
+ },
+ "court": {
+  "name": "The Gauge Court",
+  "style": "Art Deco intake-tower plaza set between the Nevada and Arizona intake towers",
+  "why_here": "The dam's gauges and towers embody operating infrastructure daily; here disputes are read off the dials and settled before the stewards."
+ },
+ "quests": [
+  {
+   "title": "From Idea to Blueprint",
+   "from_zone": "Idea Bench",
+   "to_zone": "Provisioning Yard",
+   "steps": [
+    "Hear the idea at the Plan Gallery",
+    "Sit with Planner to shape a build-and-run plan",
+    "Read the Assumption Wall for unstated risks",
+    "Carry the approved plan to the Provisioning Yard",
+    "Log it in the Rehearsal Floor queue"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Rehearsal Before the River",
+   "from_zone": "Provisioning Yard",
+   "to_zone": "Deployment Bay",
+   "steps": [
+    "Inspect staged crates in the Crate Depot",
+    "Watch Provisioner dry-run provisioning",
+    "Confirm the awaiting-approval lamp is lit",
+    "Hand the rehearsed plan to Deployer at Release Hall",
+    "Verify the rollback vault is stocked"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "The Named Address",
+   "from_zone": "Deployment Bay",
+   "to_zone": "Domain Registry Desk",
+   "steps": [
+    "Fetch the release record from Version Board Room",
+    "Ring the brass bell at the Registry Desk",
+    "Lay the request before the Domain Steward",
+    "Wait on the bench for the steward decision",
+    "Record the outcome in the ledgers"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Wired Without Secrets",
+   "from_zone": "Domain Registry Desk",
+   "to_zone": "Service Configuration Room",
+   "steps": [
+    "Carry the domain record to the Valve House Config Room",
+    "Match settings against the Wiring Diagram Wall",
+    "Check the secrets cabinet stays locked",
+    "Have Configurator sign the policy alcove ledger"
+   ],
+   "xp": 45
+  },
+  {
+   "title": "The Night On-Call",
+   "from_zone": "Service Configuration Room",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Signal configuration complete from the Handoff Bench",
+    "Climb to the Gauge Hall on the Operations Deck",
+    "Join Operator on the incident bridge when the klaxon sounds",
+    "Draft the incident note for the human on-call",
+    "Place the red hotline call for the steward handoff"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "agents-deploy-infrastructure",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,373 @@
+{
+ "scenarios": [
+  {
+   "id": "levee-ironwork-stair-tower",
+   "trade": "ironworkers",
+   "zone": "Louisiana Developer Desk",
+   "task": "Bolt up a temporary access stair tower on a riverside bulkhead project adjacent to the Mississippi levee.",
+   "hazards": [
+    "Lead-based coatings on existing steel",
+    "Over-water fall exposure",
+    "Rigging loads overhead",
+    "Heat and humidity"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Full-body harness with lanyard",
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "High-visibility vest"
+   ],
+   "steps": [
+    "Attend pre-task plan and confirm permit status.",
+    "Inspect connectors and pins before climbing.",
+    "Maintain 100 percent tie-off above six feet.",
+    "Torque bolts to spec and mark with paint dab.",
+    "Report damaged or corroded members to foreman.",
+    "Secure tools with lanyards near the water edge."
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Apprentice stays tied off at all working heights"
+    },
+    {
+     "axis": "Bolt-up quality",
+     "pass_if": "All bolts torqued and marked without rework"
+    },
+    {
+     "axis": "Hazard communication",
+     "pass_if": "Reports coating and corrosion concerns before work continues"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "quarter-panel-conduit-run",
+   "trade": "electricians",
+   "zone": "Underwriting Desk",
+   "task": "Pull branch conduit across a finished office ceiling above occupied desks without disturbing operations.",
+   "hazards": [
+    "Live circuits in shared raceways",
+    "Ergonomic strain from overhead work",
+    "Dust and debris above occupied space",
+    "Ladder and lift traffic"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Insulated gloves",
+    "Dust mask"
+   ],
+   "steps": [
+    "Verify circuits de-energized with a tested meter.",
+    "Install protection over desks and flooring.",
+    "Hang saddles and supports per code spacing.",
+    "Pull wire with capstan and communicate hand signals.",
+    "Terminate, label panels and circuits.",
+    "Clean area and conduct punch-walk with foreman."
+   ],
+   "rubric": [
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Lockout or verified de-energization before any contact"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Conduit runs straight, supported and labeled"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "No debris left in occupied space"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "french-quarter-hvac-retrofit",
+   "trade": "hvacr",
+   "zone": "Market Editions",
+   "task": "Replace a rooftop packaged unit on a French Quarter style building with limited street access.",
+   "hazards": [
+    "Crane load over public sidewalk",
+    "Refrigerant handling",
+    "Historic roofing fragility",
+    "Heat stress on black roof"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Cut-resistant gloves",
+    "Sun-protective clothing"
+   ],
+   "steps": [
+    "Set sidewalk closure and pedestrian controls.",
+    "Verify rooftop deck load rating before staging.",
+    "Rig unit with tagline and guided crane set.",
+    "Connect refrigerant lines and pressure test.",
+    "Evacuate system and verify charge.",
+    "Start up, balance airflow and log readings."
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging awareness",
+     "pass_if": "Apprentice stays out of load path and uses tagline"
+    },
+    {
+     "axis": "Refrigerant compliance",
+     "pass_if": "Recovery and leak test performed before charging"
+    },
+    {
+     "axis": "Startup documentation",
+     "pass_if": "Readings recorded and compared to nameplate"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "data-room-battery-rack",
+   "trade": "battery-storage",
+   "zone": "Master Dashboard",
+   "task": "Assemble and terminate a low-voltage battery rack inside a platform data room supporting dashboard uptime.",
+   "hazards": [
+    "Arc flash at DC terminals",
+    "Short-circuit from dropped tools",
+    "Confined aisle egress",
+    "Seismic anchorage"
+   ],
+   "ppe": [
+    "Arc-rated face shield",
+    "Class 0 insulated gloves",
+    "FR coveralls",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Confirm rack layout against drawings and aisle clearance.",
+    "Torque anchorage bolts to spec.",
+    "Install insulated tool protocol for all terminations.",
+    "Set torque marks on every lug.",
+    "Verify polarity before connection with meter.",
+    "Complete IR scan and document with review agent digest."
+   ],
+   "rubric": [
+    {
+     "axis": "Electrical safety",
+     "pass_if": "Insulated tools and polarity checks used throughout"
+    },
+    {
+     "axis": "Mechanical integrity",
+     "pass_if": "All anchor and lug torques marked"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Results logged into the evidence layer record"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds and positions heavy bus bars and terminal hardware under human supervision; humans make all torque and polarity verifications."
+  },
+  {
+   "id": "academy-deck-formwork",
+   "trade": "carpenters",
+   "zone": "The Academy",
+   "task": "Build deck formwork for a new training pavilion slab on a compacted urban-park site.",
+   "hazards": [
+    "Nail and tool punctures",
+    "Form blowout under concrete pressure",
+    "Manual material handling",
+    "Weather delay and lightning"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Gloves",
+    "Safety glasses",
+    "Hearing protection during cutting"
+   ],
+   "steps": [
+    "Lay out form lines from surveyor hubs.",
+    "Cut and stage panels with guards in place.",
+    "Set forms, brace and stake per drawing.",
+    "Check elevation, square and camber.",
+    "Grease faces and seal joints.",
+    "Pre-pour inspection walk with foreman."
+   ],
+   "rubric": [
+    {
+     "axis": "Layout accuracy",
+     "pass_if": "Forms within tolerance before pour"
+    },
+    {
+     "axis": "Bracing",
+     "pass_if": "All braces and stakes installed per plan"
+    },
+    {
+     "axis": "Tool safety",
+     "pass_if": "Guards in place and no nailed-on fly pieces"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "evidence-layer-confined-sewer",
+   "trade": "wastewater",
+   "zone": "Evidence Layer",
+   "task": "Entry team inspection of a brick combined-sewer manhole in an older emerging-market neighborhood; grade the evidence before trusting records.",
+   "hazards": [
+    "Atmosphere: H2S and oxygen deficiency",
+    "Engulfment and flow surge",
+    "Biological exposure",
+    "Deteriorated brick structure"
+   ],
+   "ppe": [
+    "Full-body harness with retrieval line",
+    "Four-gas personal monitor",
+    "Waterproof suit and gloves",
+    "Hard hat with lamp"
+   ],
+   "steps": [
+    "Complete permit and notify downstream operations.",
+    "Set tripod, blower and retrieval line.",
+    "Test atmosphere top, middle, bottom and log values.",
+    "Enter only on clear readings with attendant in contact.",
+    "Inspect structure, photograph and log unknowns explicitly.",
+    "Exit, decontaminate and file the record."
+   ],
+   "rubric": [
+    {
+     "axis": "Atmospheric control",
+     "pass_if": "Continuous monitoring with logged pre-entry readings"
+    },
+    {
+     "axis": "Retrieval readiness",
+     "pass_if": "Attendant and retrieval line in place before entry"
+    },
+    {
+     "axis": "Evidence discipline",
+     "pass_if": "Unknown conditions listed rather than assumed"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Delivers and retrieves tools and monitoring equipment at the manhole perimeter; confined-space entry remains human-only under permit."
+  },
+  {
+   "id": "riverfront-survey-control",
+   "trade": "surveyors",
+   "zone": "Louisiana Developer Desk",
+   "task": "Re-establish control points along the riverfront walk for a parcel underwriting survey near the Crescent City levee.",
+   "hazards": [
+    "Traffic and pedestrian conflict",
+    "Uneven historic paving",
+    "Heat exposure",
+    "Equipment theft exposure"
+   ],
+   "ppe": [
+    "High-visibility vest",
+    "Hard hat",
+    "Safety glasses",
+    "Sun hat and hydration pack"
+   ],
+   "steps": [
+    "Review prior control and coordinate with crew chief.",
+    "Set cones and spotters in pedestrian zones.",
+    "Run level loop and close within tolerance.",
+    "Set and describe monuments with sketches.",
+    "Log all observations with metadata for the evidence layer."
+   ],
+   "rubric": [
+    {
+     "axis": "Accuracy",
+     "pass_if": "Loop closes within specified tolerance"
+    },
+    {
+     "axis": "Public safety",
+     "pass_if": "Work zone controls in place during all setups"
+    },
+    {
+     "axis": "Record quality",
+     "pass_if": "Descriptions and sketches complete enough to retrace"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "wind-hazard-glass-replace",
+   "trade": "glaziers",
+   "zone": "Market Editions",
+   "task": "Replace storm-damaged storefront glass on a corner building in the emerging-market district ahead of hurricane season.",
+   "hazards": [
+    "Broken glass handling",
+    "Wind gusts on open storefront",
+    "Lifting large lites",
+    "Lead paint on old frames"
+   ],
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Hard hat",
+    "Long sleeves"
+   ],
+   "steps": [
+    "Assess and document damage for the record.",
+    "Board and secure openings before removal.",
+    "Remove damaged glazing with suction cups and guards.",
+    "Prep frame, correct lead-paint protocol if present.",
+    "Set new lite with suction lift and seal.",
+    "Punch walk and verify weather-tightness."
+   ],
+   "rubric": [
+    {
+     "axis": "Glass handling",
+     "pass_if": "Suction lifts and guards used; no hand contact with edges"
+    },
+    {
+     "axis": "Weather readiness",
+     "pass_if": "Opening sealed and tested before departure"
+    },
+    {
+     "axis": "Hazard communication",
+     "pass_if": "Lead-paint suspicion escalated before disturbance"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Crescent City Trades Readiness Card",
+  "requires": [
+   "levee-ironwork-stair-tower",
+   "quarter-panel-conduit-run",
+   "academy-deck-formwork",
+   "riverfront-survey-control"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "locator-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

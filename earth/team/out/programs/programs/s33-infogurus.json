@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "InfoGurus at the Library: Worker Voice in an Agent-Managed World",
+   "grade_or_level": "Adult continuing education / worker education",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO assigns tasks and drafts proposals while people keep final votes",
+    "Practice drafting a workplace proposal suitable for a Proposal Forum debate",
+    "Identify which decisions are reserved for humans and why that matters for worker representation"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the charter wall: map the mission and the human-reserved actions onto a union decision-making flowchart, comparing with shop-floor voting practice.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play task routing: small groups act as Task Router, Collaborator Scout and workers to negotiate fair task allocation between decision cycles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a one-page proposal on AI and job security; agents format it, but the room debates and votes as stewards would.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a simple outcomes dashboard for a campaign, then critique it against the charter's measurable-outcomes logic.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized proposal drafts and voting-pattern tallies (no names, no employer identifiers) contributed to a shared template library for future DAO proposal training.",
+   "consent": "Adult learners sign an opt-in consent form at enrollment; anonymization removes names and workplace identifiers; anyone may withdraw their contributions at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Young Gurus by the Bay: Library Science and Fair AI Rules",
+   "grade_or_level": "Grades 6-8 (ages 11-14)",
+   "outcomes": [
+    "Describe how Bibliotheca Alexandrina curates knowledge and how a DAO can govern shared information",
+    "Distinguish tasks agents can do from decisions only people should make",
+    "Collaborate on a classroom 'charter' with measurable outcomes"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Mini treasure hunt in the library spirit: teams summarize two short sources and present evidence like the Evidence Monitor agent.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Write a class charter: each team proposes one rule and one measurable outcome; the class debates and votes, mirroring human-only final votes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Craft a proposal for a school improvement idea; peer agents (students) draft, peers debate, teacher acts as steward for the final vote.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Create a poster tracker showing progress on the class charter outcomes and present it gallery-style.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized class charter wording and outcome-tracking poster photos (no student names, faces, or school identifiers) added to a shared civic-education example bank.",
+   "consent": "Written guardian/parent consent is required before participation and before any poster is photographed; only anonymized group work is shared, and families may withdraw consent at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Proposal: NGO Practice in an Agent-Managed DAO",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Apply evidence-monitoring and synthesis workflows to a live NGO issue",
+    "Convert synthesized evidence into a structured, human-decided proposal",
+    "Track program outcomes against measurable charter targets"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop: run an evidence scan on a chosen issue, practice bias checks and source triangulation modeled on the Evidence Monitor role.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Map an NGO program onto DAO working groups; assign agent-doable tasks vs. human-reserved decisions using the charter list.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft and defend a grant-style proposal for human review, following the Proposal & Grant Drafter's never-enact rule.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Design a measurable-outcomes dashboard for one program and stress-test indicators with peers.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized proposal templates and indicator frameworks (organization names and beneficiaries stripped) contributed to a shared NGO proposal-pattern library.",
+   "consent": "Staff opt in via signed data-sharing agreement; all contributions pass a de-identification checklist; withdrawal and deletion requests honored on demand."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governance by the Harbor: Nonprofit Boards and Human-Reserved Powers",
+   "grade_or_level": "Board members and nonprofit leadership",
+   "outcomes": [
+    "Map nonprofit fiduciary duties onto a DAO's human-reserved actions list",
+    "Practice steward-level review of agent-drafted proposals",
+    "Set measurable outcomes aligned with a public-good mission"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board simulation: compare your nonprofit's bylaws with the DAO charter, marking which powers must stay human (final vote, amendments, treasury).",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Review three agent-drafted proposals as a board; debate, amend, and hold a recorded final vote that only humans cast.",
+     "minutes": 90
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Receive an Evidence Monitor-style briefing and practice asking critical questions of agent-summarized research.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Draft 3-5 measurable outcomes for your mission and plan quarterly tracking with the Progress Tracker model.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Anonymized governance checklists and outcome-metric wording (no organization or donor names) added to a shared nonprofit governance pattern set.",
+   "consent": "Leadership signs an institutional consent covering shared artifacts only after de-identification; individual contributors may opt out; all shared items are reviewable before release."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s33-infogurus",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

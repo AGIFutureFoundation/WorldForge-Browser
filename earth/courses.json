@@ -1,0 +1,2011 @@
+{
+ "agentic-payments": {
+  "title": "Agentic Payments: Draft Every Deal, Never Settle",
+  "checkpoints": [
+   {
+    "zone": "Transaction Desk",
+    "q": "At the Transaction Desk, agents draft and reconcile transactions. Who settles them?",
+    "choices": [
+     "Agents settle them on the spot",
+     "The Budget Office settles them",
+     "They are never settled by an agent"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Service Provisioning Counter",
+    "q": "An agent may order services at the Service Provisioning Counter. Within what limit?",
+    "choices": [
+     "Within a budget set by stewards",
+     "Within any limit they pick",
+     "With unlimited credit"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Budget Office",
+    "q": "What does the Budget Office draft for the stewards?",
+    "choices": [
+     "Final votes on every sale",
+     "Budget proposals, ledgers and variance",
+     "New service catalogs"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Financial Infrastructure Gateway",
+    "q": "At the Financial Infrastructure Gateway, agents interact with infrastructure only how?",
+    "choices": [
+     "Through live settlements",
+     "Through agent-run audits",
+     "In rehearsal: reads, quotes and dry runs"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "agents-deploy-infrastructure": {
+  "title": "Idea to Production: The Infra Agent Trail",
+  "checkpoints": [
+   {
+    "zone": "Idea Bench",
+    "q": "What happens at the Idea Bench?",
+    "choices": [
+     "An idea is turned into a plan of what to build and run",
+     "Domains are registered",
+     "Incidents are paged out"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Provisioning Yard",
+    "q": "In the Provisioning Yard, compute, storage and networks are provisioned as what?",
+    "choices": [
+     "Wild experiments",
+     "One-off scripts",
+     "Rehearsed plans"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Deployment Bay",
+    "q": "Which activities belong to the Deployment Bay?",
+    "choices": [
+     "Hiring on-call staff",
+     "Builds, releases and rollbacks",
+     "Writing the charter"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Domain Registry Desk",
+    "q": "What is managed at the Domain Registry Desk?",
+    "choices": [
+     "Domains and their records",
+     "Secrets and settings",
+     "Health and logs"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "autonomous-organizations": {
+  "title": "Autonomous Orgs: Reach the Goal Together",
+  "checkpoints": [
+   {
+    "zone": "Goal Wall",
+    "q": "Where is the team's high-level goal written?",
+    "choices": [
+     "In a private file",
+     "Where every agent can read it",
+     "Only in direct messages"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Coordination Floor",
+    "q": "The Coordination Floor coordinates through surfaces like which tools?",
+    "choices": [
+     "Slack and Linear",
+     "Pen and paper",
+     "Filing cabinets"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Assignment Board",
+    "q": "What does the Assignment Board handle?",
+    "choices": [
+     "Budget variance",
+     "Final votes",
+     "Assigning work across the team"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Decision Room",
+    "q": "In the Decision Room, agents draft decisions. Who gets the final vote?",
+    "choices": [
+     "The fastest agent",
+     "Human stewards",
+     "No one"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "biota-blockchain": {
+  "title": "Biota.Blockchain: Therapies, DAOs & Ledgers",
+  "checkpoints": [
+   {
+    "zone": "Personalized Therapy Lab",
+    "q": "The Personalized Therapy Lab optimizes AGI compounds for which kinds of diseases?",
+    "choices": [
+     "Common colds",
+     "Skin conditions",
+     "Rare and neurodegenerative diseases"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "DAO Governance Hall",
+    "q": "In the DAO Governance Hall, who runs their own DAO?",
+    "choices": [
+     "Only the founding lab",
+     "Each agency or organization",
+     "One global committee"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Multi-Blockchain Ledger",
+    "q": "What is the Multi-Blockchain Ledger for?",
+    "choices": [
+     "Verified cross-network data",
+     "Patient appointments",
+     "Drug shipping routes"
+    ],
+    "answer": 0,
+    "xp": 30
+   },
+   {
+    "zone": "Healthcare Data Exchange",
+    "q": "How do patients consent in the Healthcare Data Exchange?",
+    "choices": [
+     "By fax",
+     "They never do",
+     "By SMS"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "cancer-dao": {
+  "title": "Cancer DAO: Research With Heart",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Final votes are cast",
+     "Developments are monitored and evidence summarized",
+     "Budgets are drafted"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The DAO's place is a working cancer-research campus on which lake?",
+    "choices": [
+     "Lake Geneva",
+     "Lake Union",
+     "Lake Mead"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "climate-dao": {
+  "title": "Climate DAO: Resilience in Real Time",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Which of these is part of the Charter Hall's contents?",
+    "choices": [
+     "Task rotas",
+     "The contribution model",
+     "Dry runs"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Summarizes evidence",
+     "Casts the deciding vote",
+     "Routes tasks"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They draft everything",
+     "They debate and decide the proposals"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The why text calls the Thames Barrier the progress observatory for which city's flood defense?",
+    "choices": [
+     "London",
+     "Leeds",
+     "Liverpool"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "diagnostic-x": {
+  "title": "Diagnostic.X: See the Body in 4D",
+  "checkpoints": [
+   {
+    "zone": "Medical Kiosk",
+    "q": "What is the Medical Kiosk?",
+    "choices": [
+     "A standalone diagnostic kiosk with a screen",
+     "A moving ambulance",
+     "A pharmacy counter"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "4D Imaging Room",
+    "q": "In the 4D Imaging Room, what is shown beside the 2D X-ray?",
+    "choices": [
+     "A paper chart",
+     "A video call",
+     "A 4D image of an injury"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Virtual Molecular Lab",
+    "q": "Who is the Virtual Molecular Lab built for?",
+    "choices": [
+     "Pilots",
+     "Chemists and protein engineers",
+     "Bankers"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Metaverse Medical Office",
+    "q": "To whom is the metaverse medical office offered as a service?",
+    "choices": [
+     "Independent practitioners",
+     "Hospital builders",
+     "Sea captains"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "ecology-dao": {
+  "title": "Ecology DAO: Lessons From the Canopy",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the why text call Monteverde's cloud-forest canopy?",
+    "choices": [
+     "A living charter hall",
+     "An operations deck",
+     "A proposal forum"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which zone summarizes evidence and monitors developments?",
+    "choices": [
+     "Operations Deck",
+     "Progress Observatory",
+     "Research Synthesis Lab"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "education-dao": {
+  "title": "Education DAO: Oxford Grounds Course",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "Task routing lists",
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The campus lies along which river, per the why text?",
+    "choices": [
+     "The Cherwell",
+     "The Charles",
+     "The Spree"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "How is the Oxford campus described in the why text?",
+    "choices": [
+     "A brand-new tech park",
+     "The oldest continuously running campus of the DAO's focus",
+     "A flooded island"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "empathic-x": {
+  "title": "Empathic.X: Level Up Your People Skills",
+  "checkpoints": [
+   {
+    "zone": "Self-Reader Grove",
+    "q": "Self-awareness here means naming what you feel before you act. Where does it land?",
+    "choices": [
+     "On the news",
+     "In your body",
+     "In your calendar"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Other-Reader Commons",
+    "q": "Awareness of others means asking instead of assuming, and listening without doing what?",
+    "choices": [
+     "Taking notes",
+     "Falling asleep",
+     "Preparing a reply"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Repairer's Hall",
+    "q": "Repair here means coming down, apologising properly and what?",
+    "choices": [
+     "Saying the hard thing kindly",
+     "Winning the argument",
+     "Avoiding the person"
+    ],
+    "answer": 0,
+    "xp": 30
+   },
+   {
+    "zone": "Room-Reader Plaza",
+    "q": "Reading the room means noticing where the energy is - and what?",
+    "choices": [
+     "The lunch menu",
+     "The stock price",
+     "The moment before it goes wrong"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "locator-x": {
+  "title": "Locator.X: Read the Land Like a Pro",
+  "checkpoints": [
+   {
+    "zone": "Master Dashboard",
+    "q": "What does the Master Dashboard give you?",
+    "choices": [
+     "Only weather maps",
+     "Portfolio summary, cross-market comparison and navigation",
+     "Video tutorials"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Underwriting Desk",
+    "q": "How many gates does the LOCATOR screen run at the Underwriting Desk?",
+    "choices": [
+     "Seven",
+     "Three",
+     "Twelve"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Evidence Layer",
+    "q": "What does the Evidence Layer do to every number shown?",
+    "choices": [
+     "Hides it",
+     "Doubles it",
+     "Grades it"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "The Academy",
+    "q": "What does the Academy teach?",
+    "choices": [
+     "How to pour concrete",
+     "How to read what the platform produces",
+     "How to fly drones"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "public-health-dao": {
+  "title": "Public Health DAO: From Pump to Progress",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "The Charter Hall holds the charter, the contribution model and what else?",
+    "choices": [
+     "Working group notes",
+     "Release logs",
+     "Measurable outcomes"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What first stopped an outbreak at the Broad Street pump, per the why text?",
+    "choices": [
+     "Mapped data",
+     "A new vaccine",
+     "A quarantine wall"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They debate and decide the proposals",
+     "They draft everything"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Operations Desk",
+     "Proposal Forum",
+     "Charter Hall"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "robotics-dao": {
+  "title": "Robotics DAO: Physical AI in the Wild",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "How are JPL's rovers described in the why text?",
+    "choices": [
+     "Simulation-only bots",
+     "Indoor factory arms",
+     "Physical AI in the wild"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is tested above the Arroyo Seco chaparral?",
+    "choices": [
+     "Marketing slogans",
+     "School exams",
+     "Deployment and operations"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s04-curable-x": {
+  "title": "Curable.X: A Cell at Lourdes",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Which of these is part of the Charter Hall's contents?",
+    "choices": [
+     "Task rotas",
+     "The contribution model",
+     "Dry runs"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Developments are monitored and evidence summarized",
+     "Final votes are cast",
+     "Budgets are drafted"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is Lourdes called in the why text?",
+    "choices": [
+     "A shipping hub",
+     "The world's emblem of hoped-for cures",
+     "A ski resort"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s05-biopharma-go": {
+  "title": "BioPharma.Go: Molecules to Clinic",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Where would you look for the DAO's measurable outcomes?",
+    "choices": [
+     "Research Synthesis Lab",
+     "Proposal Forum",
+     "Charter Hall"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What is the Rhine-side pharma campus doing, per the why text?",
+    "choices": [
+     "Building rockets",
+     "Moving molecules to clinic",
+     "Mining coal"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "Agents",
+     "People only",
+     "Outside vendors"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s06-blockchain": {
+  "title": "Blockchain: Welcome to Crypto Valley",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which zone summarizes evidence and monitors developments?",
+    "choices": [
+     "Operations Deck",
+     "Progress Observatory",
+     "Research Synthesis Lab"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What nickname does Zug carry, per the why text?",
+    "choices": [
+     "Steel City",
+     "Crypto Valley",
+     "Silicon Valley"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Operational coordination",
+     "Charter writing",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s07-divine-dao": {
+  "title": "Divine.DAO: Dawn on the Ghats",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What happens at dawn on the Ganges ghats?",
+    "choices": [
+     "A market auction",
+     "Aarti",
+     "A boat race"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Summarizes evidence",
+     "Casts the deciding vote",
+     "Routes tasks"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They draft everything",
+     "They debate and decide the proposals"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Proposal Forum",
+     "Operations Desk",
+     "Charter Hall"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s09-astrological-x": {
+  "title": "Astrological.X: Read the Sky",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "The Charter Hall holds the charter, the contribution model and what else?",
+    "choices": [
+     "Working group notes",
+     "Release logs",
+     "Measurable outcomes"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Stonehenge is called what in the why text?",
+    "choices": [
+     "A stone quarry",
+     "The original sky-reader",
+     "A modern observatory"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "Agents",
+     "People only",
+     "Outside vendors"
+    ],
+    "answer": 0,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The megaliths are aligned to what?",
+    "choices": [
+     "Shipping lanes",
+     "City streets",
+     "Solstice risings"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s11-molecular": {
+  "title": "Molecular: Walkable Chemistry",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What rises from the Spree, per the why text?",
+    "choices": [
+     "A bridge tower",
+     "A lighthouse",
+     "A 30-metre molecular figure"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Task routing, working groups and operational coordination",
+     "Deciding proposals",
+     "Tracking outcomes"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s12-parking-smart-x": {
+  "title": "Parking Smart.X: The Civic Garage",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Which of these is part of the Charter Hall's contents?",
+    "choices": [
+     "Task rotas",
+     "The contribution model",
+     "Dry runs"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Developments are monitored and evidence summarized",
+     "Final votes are cast",
+     "Budgets are drafted"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What is smart parking called at this place?",
+    "choices": [
+     "A hidden garage",
+     "A bus depot",
+     "A civic icon"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Task routing, working groups and operational coordination",
+     "Tracking outcomes"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s13-gonstead-x": {
+  "title": "Gonstead.X: The Village Method",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Where would you look for the DAO's measurable outcomes?",
+    "choices": [
+     "Charter Hall",
+     "Research Synthesis Lab",
+     "Proposal Forum"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Casts the deciding vote",
+     "Summarizes evidence",
+     "Routes tasks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They draft everything",
+     "They debate and decide the proposals"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Who built the clinic at Mount Horeb, per the why text?",
+    "choices": [
+     "Clarence Gonstead",
+     "A bank consortium",
+     "A film studio"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s14-askdoc-x": {
+  "title": "AskDoc.X: Ask the Experts",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "The Charter Hall holds the charter, the contribution model and what else?",
+    "choices": [
+     "Working group notes",
+     "Release logs",
+     "Measurable outcomes"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What is Mayo called in the why text?",
+    "choices": [
+     "The world's ask-the-experts destination",
+     "A movie studio",
+     "A spaceport"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "People",
+     "Nobody"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Proposal Forum",
+     "Charter Hall",
+     "Operations Desk"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s15-romanbridge-dao": {
+  "title": "RomanBridge DAO: Two Millennia Strong",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "Task routing lists",
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which zone summarizes evidence and monitors developments?",
+    "choices": [
+     "Operations Deck",
+     "Progress Observatory",
+     "Research Synthesis Lab"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What still spans the green Gardon gorge?",
+    "choices": [
+     "A Roman bridge-aqueduct",
+     "A steel suspension bridge",
+     "A modern tunnel"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Charter writing",
+     "Operational coordination",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s16-echodawn-dao": {
+  "title": "EchoDawn DAO: Sunrise Over the Valley",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Casts the deciding vote",
+     "Summarizes evidence",
+     "Routes tasks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which rock formation rises over the Jamison eucalypt forest?",
+    "choices": [
+     "The Three Sisters",
+     "Half Dome",
+     "The Twelve Apostles"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s17-curable-blockchain-dao": {
+  "title": "Curable.Blockchain: Waters That Heal",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Where would you look for the DAO's measurable outcomes?",
+    "choices": [
+     "Research Synthesis Lab",
+     "Proposal Forum",
+     "Charter Hall"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What are the Blue Lagoon's waters set in?",
+    "choices": [
+     "Black lava fields",
+     "White sand dunes",
+     "Green rice paddies"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s19-moscone-x": {
+  "title": "Moscone.X: The Green Roof Campus",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Which of these is part of the Charter Hall's contents?",
+    "choices": [
+     "Task rotas",
+     "The contribution model",
+     "Dry runs"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Developments are monitored and evidence summarized",
+     "Final votes are cast",
+     "Budgets are drafted"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What is Yerba Buena Gardens, per the why text?",
+    "choices": [
+     "A mountain peak",
+     "An airport runway",
+     "The green roof of the Moscone Center"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Task routing, working groups and operational coordination",
+     "Tracking outcomes"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s20-cmmc": {
+  "title": "CMMC: Guarding the Supply Chain",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which zone summarizes evidence and monitors developments?",
+    "choices": [
+     "Operations Deck",
+     "Progress Observatory",
+     "Research Synthesis Lab"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What do CMMC maturity levels exist to protect?",
+    "choices": [
+     "Movie rights",
+     "DoD supply chains",
+     "City parks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Operational coordination",
+     "Charter writing",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s21-incubator-dao": {
+  "title": "Incubator DAO: The Square Mile of Startups",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "The Charter Hall holds the charter, the contribution model and what else?",
+    "choices": [
+     "Working group notes",
+     "Release logs",
+     "Measurable outcomes"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "How is Kendall Square described?",
+    "choices": [
+     "A quiet fishing village",
+     "The densest startup incubation square mile on Earth",
+     "An industrial ruin"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "Agents",
+     "People only",
+     "Outside vendors"
+    ],
+    "answer": 0,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Desk",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s22-get-delivery-dao": {
+  "title": "Get.Delivery DAO: Cranes at the Edge",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What stands at the North Sea edge of Europe's largest port?",
+    "choices": [
+     "Gantry cranes",
+     "Windmills",
+     "Lighthouses"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Casts the deciding vote",
+     "Summarizes evidence",
+     "Routes tasks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Task routing, working groups and operational coordination",
+     "Deciding proposals",
+     "Tracking outcomes"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s23-avatar-chat": {
+  "title": "Avatar.Chat: Pillars to Floating Peaks",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "Task routing lists",
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which zone summarizes evidence and monitors developments?",
+    "choices": [
+     "Operations Deck",
+     "Progress Observatory",
+     "Research Synthesis Lab"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "What did Zhangjiajie's sandstone pillars inspire?",
+    "choices": [
+     "Avatar's floating peaks",
+     "The Eiffel Tower",
+     "Central Park"
+    ],
+    "answer": 0,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Proposal Forum",
+     "Operations Desk",
+     "Charter Hall"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s24-donatello-dao": {
+  "title": "Donatello DAO: The Sculptor's City",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Which river runs through the Florence below the terrace?",
+    "choices": [
+     "The Tiber",
+     "The Rhine",
+     "The Arno"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They debate and decide the proposals",
+     "They draft everything"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Operational coordination",
+     "Charter writing",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s25-mypet-ai": {
+  "title": "MyPet.AI: Balto's Bronze Lesson",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Where would you look for the DAO's measurable outcomes?",
+    "choices": [
+     "Research Synthesis Lab",
+     "Proposal Forum",
+     "Charter Hall"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Who is Balto?",
+    "choices": [
+     "A heroic sled dog cast in bronze",
+     "A race car",
+     "A chess computer"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Proposal Forum",
+     "Charter Hall",
+     "Operations Desk"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s26-lyka-dao": {
+  "title": "Lyka DAO: Among the Packs",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does 'Lyka' read as, per the why text?",
+    "choices": [
+     "Wolf",
+     "Whale",
+     "Eagle"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Casts the deciding vote",
+     "Summarizes evidence",
+     "Routes tasks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What does the center observe?",
+    "choices": [
+     "Real wolf packs",
+     "Robot cars",
+     "City traffic"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s27-genomic-dao": {
+  "title": "Genomic.DAO: Where the Genome Was Read",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Which of these is part of the Charter Hall's contents?",
+    "choices": [
+     "Task rotas",
+     "The contribution model",
+     "Dry runs"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happened at this campus, per the why text?",
+    "choices": [
+     "The human genome was sequenced",
+     "The first rocket launched",
+     "The first film screened"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They draft everything",
+     "They debate and decide the proposals"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Task routing, working groups and operational coordination",
+     "Tracking outcomes"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s28-genomic-blockchain": {
+  "title": "Genomic.Blockchain: DNA Above the Pacific",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "The Charter Hall holds the charter, the contribution model and what else?",
+    "choices": [
+     "Working group notes",
+     "Release logs",
+     "Measurable outcomes"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Final votes are cast",
+     "Developments are monitored and evidence summarized",
+     "Budgets are drafted"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Which ocean lies below the Torrey Pines bluffs?",
+    "choices": [
+     "The Pacific",
+     "The Atlantic",
+     "The Arctic"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s29-metaverse-dao": {
+  "title": "Metaverse DAO: A World on Wetland",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What does the headquarters sit on, per the why text?",
+    "choices": [
+     "A mountain summit",
+     "A desert plateau",
+     "Restored bayfront marsh"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "People",
+     "Nobody"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Task routing, working groups and operational coordination",
+     "Deciding proposals",
+     "Tracking outcomes"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s31-aerospace-dao": {
+  "title": "Aerospace DAO: Liftoff From 39A",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "Task routing lists",
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Developments are monitored and evidence summarized",
+     "Final votes are cast",
+     "Budgets are drafted"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Which two programs lifted from this pad, per the why text?",
+    "choices": [
+     "Gemini and Voyager",
+     "Mercury and Apollo",
+     "Apollo and Crew Dragon"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Charter writing",
+     "Operational coordination",
+     "Evidence summaries"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ },
+ "s32-solar-dao": {
+  "title": "Solar DAO: Power From the Thar",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Across which desert do the solar panels gleam?",
+    "choices": [
+     "The Thar",
+     "The Gobi",
+     "The Sahara"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "The Research Synthesis Lab monitors developments and does what?",
+    "choices": [
+     "Casts the deciding vote",
+     "Summarizes evidence",
+     "Routes tasks"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Desk covers task routing, working groups and what else?",
+    "choices": [
+     "Operational coordination",
+     "Charter writing",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s33-infogurus": {
+  "title": "InfoGurus: Knowledge by the Harbor",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "Where would you look for the DAO's measurable outcomes?",
+    "choices": [
+     "Research Synthesis Lab",
+     "Proposal Forum",
+     "Charter Hall"
+    ],
+    "answer": 2,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What does the Bibliotheca Alexandrina curate?",
+    "choices": [
+     "The world's information",
+     "Only comic books",
+     "Ship cargo"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "Who drafts the proposals at the Proposal Forum?",
+    "choices": [
+     "People only",
+     "Agents",
+     "Outside vendors"
+    ],
+    "answer": 1,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "What is the Operations Desk for?",
+    "choices": [
+     "Deciding proposals",
+     "Tracking outcomes",
+     "Task routing, working groups and operational coordination"
+    ],
+    "answer": 2,
+    "xp": 30
+   }
+  ]
+ },
+ "s34-als-dao": {
+  "title": "ALS DAO: The Iron Horse's Grounds",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "What does the Charter Hall hold?",
+    "choices": [
+     "The DAO's charter, contribution model and measurable outcomes",
+     "Task routing lists",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "Whose name does ALS carry?",
+    "choices": [
+     "Babe Ruth's",
+     "James Parkinson's",
+     "Lou Gehrig's"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "In the Proposal Forum, what role do people play?",
+    "choices": [
+     "They only watch",
+     "They debate and decide the proposals",
+     "They draft everything"
+    ],
+    "answer": 1,
+    "xp": 30
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "The Operations Deck covers task routing, working groups and what else?",
+    "choices": [
+     "Operational coordination",
+     "Charter writing",
+     "Evidence summaries"
+    ],
+    "answer": 0,
+    "xp": 30
+   }
+  ]
+ },
+ "s35-parkinsons-dao": {
+  "title": "Parkinsons DAO: The 1817 Parish",
+  "checkpoints": [
+   {
+    "zone": "Charter Hall",
+    "q": "In which year was the shaking palsy first described here?",
+    "choices": [
+     "1917",
+     "1817",
+     "2017"
+    ],
+    "answer": 1,
+    "xp": 10
+   },
+   {
+    "zone": "Research Synthesis Lab",
+    "q": "What happens in the Research Synthesis Lab?",
+    "choices": [
+     "Developments are monitored and evidence summarized",
+     "Final votes are cast",
+     "Budgets are drafted"
+    ],
+    "answer": 0,
+    "xp": 20
+   },
+   {
+    "zone": "Proposal Forum",
+    "q": "At the Proposal Forum, agents draft proposals. Who debates and decides?",
+    "choices": [
+     "Agents only",
+     "Nobody",
+     "People"
+    ],
+    "answer": 2,
+    "xp": 20
+   },
+   {
+    "zone": "Operations Deck",
+    "q": "Which zone handles task routing and working groups?",
+    "choices": [
+     "Proposal Forum",
+     "Operations Desk",
+     "Charter Hall"
+    ],
+    "answer": 1,
+    "xp": 30
+   }
+  ]
+ }
+}

@@ -1,0 +1,283 @@
+{
+ "title": "Solar DAO (Series 32) — Bhadla Solar Park",
+ "summary": "An agent-managed DAO cell on the Thar Desert flats of Bhadla Solar Park, Rajasthan. Agents synthesize evidence and draft proposals among mirror arrays; humans retain every final vote in Charter Hall.",
+ "biome": "desert",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Bhadla Solar Park phase blocks, Jodhpur district",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Display of DAO charter, contribution model and measurable outcomes",
+     "floors": 1
+    },
+    {
+     "name": "Stewards' Majlis",
+     "use": "Human-only voting chamber for reserved governance actions",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Scroll Room",
+    "Outcome Ledger Alcove",
+    "Contribution Model Gallery",
+    "Steward Seating Circle",
+    "Quiet Deliberation Nook"
+   ],
+   "props": [
+    "engraved charter stele",
+    "bronze balance scale",
+    "contribution ledger desk",
+    "voting urn",
+    "shade canopy of woven khus",
+    "solar-lit charter banners"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Solar array rows on Bhadla's flat desert pan",
+   "buildings": [
+    {
+     "name": "Synthesis Dome",
+     "use": "Evidence monitoring and research synthesis workspace",
+     "floors": 1
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "Storage and indexing of monitored developments",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake Desk",
+    "Synthesis Table Hall",
+    "Summary Scriptorium",
+    "Focus-Setting Alcove",
+    "Rest Shade Room"
+   ],
+   "props": [
+    "sun-bleached corkboards",
+    "evidence scroll racks",
+    "parabolic shade mirror",
+    "desert-dust instrument cases",
+    "chart of Thar irradiance"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Central maintenance corridor between solar phases",
+   "buildings": [
+    {
+     "name": "Proposal Amphitheatre",
+     "use": "Public drafting and debate of proposals",
+     "floors": 1
+    },
+    {
+     "name": "Drafter's Caravan",
+     "use": "Studio where agents draft proposals and grants for human review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Desks",
+    "Debate Ring",
+    "Review Queue Bench",
+    "Amendment Margin Wall",
+    "Public Comment Post"
+   ],
+   "props": [
+    "proposal scroll spindles",
+    "debate hourglass",
+    "comment token bowls",
+    "sun-shade sail",
+    "seal press (unused by agents)"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "O&M yard near the park's transformer stations",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination hub",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Caravanserai",
+     "use": "Meeting point for scouts, experts and working groups",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Pods",
+    "Collaborator Registry Desk",
+    "Signal Relay Room",
+    "Tea & Shade Veranda"
+   ],
+   "props": [
+    "routing pigeonholes",
+    "signal bunting",
+    "sand-stabilized notice boards",
+    "water cooler and lota",
+    "dusty task tokens"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Northern edge of the solar park overlooking array rows to the horizon",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "Tracking progress against charter's measurable outcomes",
+     "floors": 3
+    },
+    {
+     "name": "Milestone Cairn Court",
+     "use": "Open court marking achieved outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Horizon Gallery",
+    "Tracker's Balcony",
+    "Milestone Cairn Court",
+    "Telescope Alcove",
+    "Baseline Records Room"
+   ],
+   "props": [
+    "milestone cairns",
+    "progress dials",
+    "brass telescope",
+    "sun-bleached progress banners",
+    "panoramic array map"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Prosopis cineraria (khejri)",
+   "Acacia jacquemontii",
+   "Ziziphus nummularia (bor)",
+   "Tamarix aphytica",
+   "Azadirachta indica (neem, planted)"
+  ],
+  "shrubs": [
+   "Calligonum polygonoides (phog)",
+   "Ziziphus nummularia",
+   "Haloxylon salicornicum",
+   "Capparis decidua (kair)"
+  ],
+  "flowers": [
+   "Trianthema portulacastrum",
+   "Tribulus terrestris",
+   "Citrullus colocynthis",
+   "Aerva javanica"
+  ],
+  "ground": "sand"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "18:45"
+ },
+ "court": {
+  "name": "Stewards' Voting Circle",
+  "style": "Rajasthani desert majlis with low stone benches under a khus-shaded canopy",
+  "why_here": "The DAO's charter reserves final votes for people; a shaded human circle at the solar park's heart makes governance visible beside the arrays."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the charter stele and note the empty focus line",
+    "Ask Evidence Monitor what topics are being tracked",
+    "Help Research Synthesis Agent summarize evidence on candidate focuses",
+    "Carry a summary scroll back to Charter Hall for steward review"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect verified evidence summaries from the Archive",
+    "Bring them to Proposal & Grant Drafter's caravan",
+    "Review the drafted proposal in the Amphitheatre comment queue",
+    "Confirm no agent enacted it — the seal press stays with stewards"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check the Task Routing Board for pending tasks",
+    "Assign task tokens to working-group pods with Task Router",
+    "Ask Collaborator Scout to flag missing expertise",
+    "Report group assignments to Progress Tracker for the outcome ledger"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Measure the Milestones",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Survey the Outcome Horizon Gallery baselines",
+    "Mark completed outcomes on the milestone cairns",
+    "Record progress in the tracker's ledger",
+    "Present the updated ledger at Charter Hall"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Guard the Reserved Powers",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Audit the Proposal Forum for any agent touching reserved actions",
+    "Return the unused seal press to the Stewards' Majlis",
+    "Verify the voting urn is tended only by humans",
+    "Log the audit in the Charter Scroll Room"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s32-solar-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "title": "Donatello DAO (Series 24) — Piazzale Michelangelo",
+ "summary": "An agent-managed, human-governed DAO cell on the hillside terrace above the Arno, overlooking Donatello's Florence. Five zones for charter, synthesis, proposals, operations and progress, wired to the real gardens, villas and basilica of the Michelangelo hill.",
+ "biome": "mediterranean",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Piazzale Michelangelo terrace",
+   "buildings": [
+    {
+     "name": "Charter Loggia",
+     "use": "Charter display and contribution model registry",
+     "floors": 2
+    },
+    {
+     "name": "Measurable Outcomes Pavilion",
+     "use": "Public reading of charter outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Scroll Room",
+    "Contribution Ledger Hall",
+    "Outcome Reading Nook",
+    "Steward Vestibule"
+   ],
+   "props": [
+    "bronzed charter scroll",
+    "contribution ledger desk",
+    "mission inscription plaque",
+    "terracotta benches",
+    "olive-branch lintel carvings",
+    "visitor ledger quill"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Giardino delle Rose",
+   "buildings": [
+    {
+     "name": "Evidence Cloister",
+     "use": "Monitoring and evidence summarization",
+     "floors": 2
+    },
+    {
+     "name": "Synthesis Studio",
+     "use": "Research synthesis for stewards",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Stacks",
+    "Summary Scriptorium",
+    "Monitor Workbenches",
+    "Citation Archive",
+    "Quiet Reading Cell"
+   ],
+   "props": [
+    "labeled specimen drawers",
+    "evidence pinboard",
+    "field notebooks",
+    "rose-garden view desks",
+    "oil lamps",
+    "source-citation rail"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Basilica di San Miniato al Monte",
+   "buildings": [
+    {
+     "name": "Proposal Colonnade",
+     "use": "Agent-drafted proposals posted for human debate",
+     "floors": 2
+    },
+    {
+     "name": "Delvation Chamber",
+     "use": "Human-only final vote and enactment hall",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Arcade",
+    "Debate Balcony",
+    "Human Vote Chamber (sealed)",
+    "Proposal Archive",
+    "Steward's Bench"
+   ],
+   "props": [
+    "posted proposal scrolls",
+    "debate hourglass",
+    "sealed human-vote door",
+    "abacus tally board",
+    "rostrum of Donatello bust",
+    "amendment ledger (locked)"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Villa Agape-Arrighetti",
+   "buildings": [
+    {
+     "name": "Routing House",
+     "use": "Task routing and coordination",
+     "floors": 2
+    },
+    {
+     "name": "Working Group Sheds",
+     "use": "Working group meeting rooms",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Board Room",
+    "Router Console",
+    "Working Group Alcoves",
+    "Collaborator Map Room",
+    "Signal Relay Loft"
+   ],
+   "props": [
+    "task token board",
+    "route-slip pigeonholes",
+    "collaborator contact ledger",
+    "signal flags",
+    "courier satchels",
+    "bell pull"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Belvedere Franco Zeffirelli",
+   "buildings": [
+    {
+     "name": "Observatory Belvedere",
+     "use": "Progress tracking against measurable outcomes",
+     "floors": 3
+    },
+    {
+     "name": "Milestone Cairn Yard",
+     "use": "Open-air milestone display",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Panorama Chart Room",
+    "Milestone Gallery",
+    "Tracker's Instrument Loft",
+    "Outcome Comparison Hall"
+   ],
+   "props": [
+    "brass progress astrolabe",
+    "milestone cairns",
+    "outcome dial bank",
+    "panoramic Arno viewing rail",
+    "brass telescope",
+    "progress tapestry"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Quercus ilex",
+   "Pinus pinea",
+   "Cupressus sempervirens",
+   "Olea europaea",
+   "Platanus orientalis"
+  ],
+  "shrubs": [
+   "Rosmarinus officinalis",
+   "Cistus salvifolius",
+   "Lavandula stoechas",
+   "Pistacia lentiscus"
+  ],
+  "flowers": [
+   "Iris germanica",
+   "Rosa gallica",
+   "Helichrysum italicum",
+   "Centaurea cyanus"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "Court of the Stewards",
+  "style": "Renaissance hillside loggia court above the Arno",
+  "why_here": "The terrace panorama of Donatello's Florence frames human stewardship: agents draft below, people decide on the belvedere."
+ },
+ "quests": [
+  {
+   "title": "Post the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the mission inscription in the Charter Scroll Room",
+    "Copy the contribution model into the ledger",
+    "Carry the outcomes scroll to the Milestone Cairn Yard",
+    "Set the first outcome dial with the Progress Tracker"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Summarize the Evidence",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Gather three pinned items from the Evidence Stacks",
+    "Watch the Research Synthesis Agent draft a summary",
+    "Deliver the summary to the Drafting Arcade",
+    "Verify the Proposal & Grant Drafter did NOT enact it"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "The Sealed Vote",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Read the posted proposal in the Colonnade",
+    "Confirm the Human Vote Chamber door stays sealed to agents",
+    "Record the human decision in the locked amendment ledger",
+    "Report the outcome to the Charter Hall registry"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Collect route slips from the Router Console",
+    "Assign each slip to a Working Group Alcove",
+    "Send the Collaborator Scout's contact ledger to the Map Room",
+    "Confirm receipt at the Evidence Cloister"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Panorama Progress Run",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Read the outcome dials in the Chart Room",
+    "Note two milestones at the Milestone Gallery",
+    "Carry the progress tapestry roll down the hill",
+    "Hang it in the Task Board Room for the next cycle"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s24-donatello-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

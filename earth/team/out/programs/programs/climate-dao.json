@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Climate-Ready Shop Stewards: Reading London's Flood Defenses",
+   "grade_or_level": "Workforce / adult continuing education",
+   "outcomes": [
+    "Explain how the Thames Barrier protects river-valley workplaces like the Royal Docks area",
+    "Interpret agent-summarized climate evidence for health-and-safety bargaining",
+    "Draft a member proposal through the DAO's Proposal Forum process"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter and contribution model; map union workplaces within 1200m of the Barrier using named places like Barrier Point and Royal Wharf Gardens.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use Evidence Monitor summaries to assess flood and heat risks to dock, logistics and data-centre jobs; group exercise ranking risks.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Working groups draft a climate-safety proposal with the Proposal & Grant Drafter agent; members debate, humans only vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review Progress Tracker metrics and set steward checkpoints for the union's adopted outcomes.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized job-role flood-risk assessments and workplace heat/flood incident tallies (no names, employers, or site addresses) to improve shared resilience models.",
+   "consent": "Opt-in, per-course consent with plain-language data notice; shop stewards confirm members' agreement; withdrawable at any time; no individual identifiers leave the union."
+  },
+  {
+   "audience": "k12",
+   "title": "River Watchers: Young Geographers at the Thames Barrier",
+   "grade_or_level": "Key Stage 3 (ages 11-14)",
+   "outcomes": [
+    "Locate the Thames Barrier and explain why a river-valley city needs flood gates",
+    "Read simple elevation and water data (22.4m local relief, sea-level water)",
+    "Practice citizen science: observing and recording river conditions safely"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Guided reading of an Evidence Monitor summary on London flood defense; students annotate what the Barrier does and when it closes.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students build a class dashboard tracking one charter outcome, using Progress Tracker examples.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a mini climate-resilience proposal for their school with sentence starters; simulated human vote at the end.",
+     "minutes": 50
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Meet the Collaborator Scout's list of climate careers; students interview a steward via video about who governs the Barrier.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Aggregated class river-observation counts and drawings (e.g., barrier closures noted, wildlife seen) with no names, ages or school identifiers attached.",
+   "consent": "Parent/guardian written consent required for all data contribution and photos; teachers act as data controllers; anything shared is class-level only and withdrawable on request."
+  },
+  {
+   "audience": "ngo",
+   "title": "From Evidence to Enactment: NGO Pathways into Agent-Managed Climate Governance",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Navigate a human-governed, agent-operated DAO decision cycle end to end",
+    "Translate field evidence into charter-aligned measurable outcomes",
+    "Build cross-organization working groups via the Operations Deck"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Deep dive on charter structure and the six human-reserved actions; map NGO mandates onto the measurable-outcomes framework.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop with Research Synthesis Agent: quality-check evidence summaries and flag gaps for the Evidence Monitor.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Task Router simulation: NGOs form working groups, route tasks and set coordination norms between decision cycles.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Co-draft a joint proposal with the Proposal & Grant Drafter; rehearse steward debate; humans-only final vote explained.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "De-identified program metrics and field-evidence summaries (counts, geographies at borough level only) to the shared evidence base for the Research Synthesis Lab.",
+   "consent": "Memorandum-based data-sharing agreement; per-contributor consent; small-cell suppression and borough-level aggregation to protect partner communities; opt-out honored at any point."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Small-Nonprofit Resilience Lab: Community Outcomes on a Shoestring",
+   "grade_or_level": "Entry-level nonprofit staff and volunteers",
+   "outcomes": [
+    "Understand climate resilience basics using the Thames Barrier as a live case",
+    "Write a simple, measurable outcome for a community project",
+    "Use the Progress Observatory to report results without a data team"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Plain-language tour: what a DAO is, what agents do, what only people decide; learners match community goals to the charter's focus.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learners practice pulling one fact from an Evidence Monitor summary and citing it correctly in a one-page community brief.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Volunteer teams fill a template micro-proposal (e.g., a flood-awareness walk past Barrier Point and Green Dock); peer review follows.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a three-metric tracker with Progress Tracker examples; set a review date and assign a human steward.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Aggregate program participation counts and simple before/after quiz scores, anonymized and pooled across cohorts to strengthen shared education models.",
+   "consent": "Layered consent at signup with easy-read explanation; anonymous contribution only; no personal data collected from beneficiaries; volunteers may opt out of pooled data without losing access."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "climate-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

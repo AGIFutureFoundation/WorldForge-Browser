@@ -1,0 +1,273 @@
+{
+ "title": "ALS DAO (Series 34): Iron Horse Cell",
+ "summary": "A walkable DAO campus around Yankee Stadium and Lou Gehrig Plaza, where the Iron Horse's legacy meets agent-run, human-governed ALS work. Five zones span charter, synthesis, proposals, operations and progress along the Harlem River.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Lou Gehrig Plaza",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display and contribution model exhibits",
+     "floors": 2
+    },
+    {
+     "name": "Iron Horse Memorial Reading Room",
+     "use": "Public reading on Gehrig's legacy and the DAO mission",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Contribution Desk",
+    "Outcome Ledger",
+    "Mission Atrium",
+    "Steward Alcove"
+   ],
+   "props": [
+    "bronze Iron Horse plaque",
+    "charter scroll case",
+    "contribution ledger stand",
+    "measurable-outcomes board",
+    "benches of engraved quotes",
+    "series-34 banner",
+    "governance rule stone"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Bronx School for Law, Government and Justice",
+   "buildings": [
+    {
+     "name": "Evidence Synthesis Building",
+     "use": "Monitoring and evidence summarization labs",
+     "floors": 4
+    },
+    {
+     "name": "Mill Pond Annex",
+     "use": "Quiet study and literature review",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Monitoring Room",
+    "Evidence Archive",
+    "Summary Workshop",
+    "Citation Vault",
+    "Quiet Study Nook"
+   ],
+   "props": [
+    "evidence corkboard",
+    "journal stacks",
+    "summary printing press",
+    "citation ledger",
+    "focus-pending chalkboard",
+    "reading lamps"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Yankee Stadium",
+   "buildings": [
+    {
+     "name": "Forum Colonnade",
+     "use": "Agent-drafted proposals debated by people",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Debate Floor",
+    "Drafting Gallery",
+    "Voting Booth Hall",
+    "Comment Wall",
+    "Amendment Bench"
+   ],
+   "props": [
+    "proposal drop-box",
+    "debate podium",
+    "human-vote urn",
+    "draft stacks",
+    "comment cards",
+    "steward seal",
+    "reserved-powers plaque"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Bronx Terminal Market",
+   "buildings": [
+    {
+     "name": "Routing Depot",
+     "use": "Task routing and working-group coordination",
+     "floors": 3
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting station for experts and partners",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Task Board Room",
+    "Router Console",
+    "Working-Group Docks",
+    "Scout Map Room",
+    "Signal Tower"
+   ],
+   "props": [
+    "task ticket rails",
+    "routing switchboard",
+    "working-group flags",
+    "collaborator map pins",
+    "messenger tubes",
+    "coordination chalkboard"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Mill Pond Park",
+   "buildings": [
+    {
+     "name": "Observatory Tower",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 5
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Gallery",
+    "Progress Dial Room",
+    "Milestone Balcony",
+    "Records Vault",
+    "River Outlook"
+   ],
+   "props": [
+    "progress orrery",
+    "milestone markers",
+    "outcome dials",
+    "chart wall",
+    "telescope rail"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Norway maple",
+   "London plane",
+   "pin oak",
+   "honeylocust",
+   "eastern cottonwood"
+  ],
+  "shrubs": [
+   "common lilac",
+   "winterberry",
+   "forsythia"
+  ],
+  "flowers": [
+   "daylily",
+   "black-eyed Susan",
+   "bearded iris",
+   "hosta blooms"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0.3
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "Lou Gehrig Plaza Court",
+  "style": "granite civic plaza court with stadium arches",
+  "why_here": "Named for the Iron Horse whose fight named ALS; the plaza before the ballpark is the city's living memorial to him."
+ },
+ "quests": [
+  {
+   "title": "Set the Focus",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the pending-focus chalkboard in the Charter Wall room",
+    "Carry the open focus question to the Monitoring Room",
+    "File an evidence summary for the stewards to review"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Draft, Never Enact",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect a summary from the Evidence Archive",
+    "Watch the Proposal & Grant Drafter compose a draft",
+    "Place the draft in the drop-box for human debate",
+    "Confirm the reserved-powers plaque is untouched by agents"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Take the debated proposal notes from the Comment Wall",
+    "Deliver tickets to the Task Router's console",
+    "Assign flags to three working groups at the docks"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Measure the Milestones",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect working-group progress flags",
+    "Climb to the Progress Dial Room",
+    "Turn the outcome dials and post the milestone markers on the River Outlook"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Iron Horse Circuit",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Read the bronze plaque at the Observatory tower base",
+    "Walk the river path past Mill Pond Park to Lou Gehrig Plaza",
+    "Record one measurable outcome in the Charter Hall ledger"
+   ],
+   "xp": 70
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s34-als-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

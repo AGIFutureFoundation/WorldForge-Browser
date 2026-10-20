@@ -1,0 +1,332 @@
+{
+ "scenarios": [
+  {
+   "id": "lab-conduit-rough-in",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Rough in EMT conduit and branch circuits for a new wet-lab bench grid in a live research building.",
+   "hazards": [
+    "Live circuits in adjacent panels (NFPA 70E arc flash)",
+    "Energized lab equipment that cannot be shut down",
+    "Overhead ceiling work near sprinkler lines",
+    "Silica dust from concrete core drilling"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Class 0 insulating gloves",
+    "Hearing protection",
+    "Dust mask/respirator for drilling"
+   ],
+   "steps": [
+    "Verify energized work permit and lockout/tagout status with lab staff",
+    "Confirm lab shutdown window with facility coordinator before core drilling",
+    "Install EMT runs and boxes per blueprint above ceiling grid",
+    "Pull conductors and megger-test before terminations",
+    "Label all circuits and update as-built drawings",
+    "Restore panels under LOTO removal procedure with qualified person"
+   ],
+   "rubric": [
+    {
+     "axis": "Hazard control",
+     "pass_if": "Performs lockout/tagout and requests an energized work permit before touching live equipment"
+    },
+    {
+     "axis": "Coordination",
+     "pass_if": "Confirms shutdown window with lab staff before dust-generating drilling"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Conduit runs are supported per NEC 358 and fully labeled at completion"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries tools and scans above-ceiling route for existing conduit before the apprentice drills."
+  },
+  {
+   "id": "acid-waste-pipefit",
+   "trade": "pipefitters",
+   "zone": "Research Synthesis Lab",
+   "task": "Replace a section of corroded acid-waste drainage piping serving lab sinks without interrupting active fume hoods.",
+   "hazards": [
+    "Chemical residue in existing pipe (corrosives, unknown pH)",
+    "Confined crawlspace access under lab floor",
+    "Fumes when cutting existing drain line",
+    "Sharp pipe edges"
+   ],
+   "ppe": [
+    "Full face shield",
+    "Chemical-resistant gloves and apron",
+    "Half-mask respirator with organic vapor/acid gas cartridges",
+    "Knee pads"
+   ],
+   "steps": [
+    "Obtain lab shutdown and chemical line clearance",
+    "Drain and flush line with neutralizing solution per site SOP",
+    "Cut out corroded section using spill containment tray",
+    "Install new polypropylene pipe with fusion joints",
+    "Pressure and leak test before returning to service",
+    "Complete chemical disposal manifest for removed piping"
+   ],
+   "rubric": [
+    {
+     "axis": "Chemical safety",
+     "pass_if": "Flushes and neutralizes line before cutting and uses containment"
+    },
+    {
+     "axis": "Isolation",
+     "pass_if": "Verifies lab clearance and that fume hoods remain operational throughout"
+    },
+    {
+     "axis": "Environment",
+     "pass_if": "Disposes of pipe and flush waste through proper hazardous waste manifest"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "rooftop-ahu-rigging",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and set a replacement air-handling unit on the rooftop mechanical deck above the lakefront lab wing.",
+   "hazards": [
+    "Crane load swing near glass curtain wall",
+    "Fall exposure within 6 feet of unprotected roof edge",
+    "Overhead load over workers below",
+    "Wind gusts off Lake Union"
+   ],
+   "ppe": [
+    "Hard hat with chin strap",
+    "Full-body harness with 100% tie-off",
+    "High-visibility vest",
+    "Cut-resistant gloves"
+   ],
+   "steps": [
+    "Attend lift plan briefing and confirm signal person assignment",
+    "Inspect slings, shackles and spreader bars and remove damaged gear",
+    "Establish and enforce exclusion zone below lift path",
+    "Tie off to approved anchor points before approaching edge",
+    "Guide unit onto curbs with tag lines, hands clear of pinch points",
+    "Land, secure and sign off the rigging inspection sheet"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging inspection",
+     "pass_if": "Completes pre-lift gear inspection and rejects any damaged component"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "Maintains 100% tie-off within 6 feet of the roof edge"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standard hand signals and confirms exclusion zone before load leaves ground"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Walks the lift path and confirms the roof exclusion zone is clear before the crane picks."
+  },
+  {
+   "id": "chiller-loto-millwright",
+   "trade": "millwrights",
+   "zone": "Operations Deck",
+   "task": "Perform laser alignment on a chilled-water pump motor in the central utility plant under a group lockout.",
+   "hazards": [
+    "Stored hydraulic/thermal energy in chilled water loop",
+    "Rotating equipment restart",
+    "Confined noise in pump room",
+    "Heavy motor handling"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Hearing protection",
+    "Cut-resistant gloves",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Apply personal lock and tag to all energy isolation points",
+    "Verify zero-energy state by attempt-start and bleed loop pressure",
+    "Remove coupling guard and mount laser alignment fixtures",
+    "Shim motor to within tolerance on alignment readout",
+    "Torque hold-down bolts and reinstall guards",
+    "Remove locks per group LOTO procedure and document"
+   ],
+   "rubric": [
+    {
+     "axis": "Energy control",
+     "pass_if": "Applies personal LOTO lock and verifies zero energy with attempt-start"
+    },
+    {
+     "axis": "Precision",
+     "pass_if": "Final alignment within specified tolerance before guard reinstall"
+    },
+    {
+     "axis": "Guarding",
+     "pass_if": "Coupling guards fully reinstalled before lock removal"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds the dial indicator and logs alignment readings while the apprentice shims."
+  },
+  {
+   "id": "fume-hood-exhaust-sheetmetal",
+   "trade": "sheetmetal",
+   "zone": "Research Synthesis Lab",
+   "task": "Fabricate and install a stainless duct transition for a new fume hood exhaust riser tie-in.",
+   "hazards": [
+    "Tin cuts and sharp sheet metal edges",
+    "Work at height on rolling scaffold",
+    "Existing exhaust riser with chemical-laden air",
+    "Riveting/breaker press pinch points"
+   ],
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Hard hat",
+    "Harness if using rolling scaffold above 6 ft"
+   ],
+   "steps": [
+    "Field measure existing riser tie-in location",
+    "Fabricate transition in shop with guards on brake and shear",
+    "Cap or isolate existing riser before cutting in",
+    "Set scaffold, lock casters and tie off as required",
+    "Install transition with gaskets and seal all joints leak-tight",
+    "Smoke-test joints for negative-pressure integrity"
+   ],
+   "rubric": [
+    {
+     "axis": "Tool safety",
+     "pass_if": "Uses guards and push sticks on shear/brake and gloves for handling sheet metal"
+    },
+    {
+     "axis": "Isolation",
+     "pass_if": "Verifies riser isolation/cap before cutting into existing duct"
+    },
+    {
+     "axis": "Quality",
+     "pass_if": "Smoke test confirms all joints leak-free"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "biosafety-glycol-decon-hazmat",
+   "zone": "Progress Observatory",
+   "trade": "hazmat",
+   "task": "Decontaminate and clear a legacy cold-room interior before renovation of an observatory meeting space on the converted lab floor.",
+   "hazards": [
+    "Mold and bioresidue from years of condensation",
+    "Confined space entry in cold room",
+    "Chemical decontaminants (bleach/sporicide)",
+    "Poor lighting and limited egress"
+   ],
+   "ppe": [
+    "P100 half-mask or PAPR",
+    "Chemical splash goggles",
+    "Nitrile gloves under chemical-resistant gloves",
+    "Disposable coveralls with hood"
+   ],
+   "steps": [
+    "Obtain confined space permit and set up attendant and log",
+    "Test atmosphere for oxygen, CO and LEL before entry",
+    "Set decon zones: clean, warm, hot",
+    "Apply sporicide, dwell per label, then wet-remove residue",
+    "Bag and stage waste per biohazard profile",
+    "Final air/visual clearance and permit closeout"
+   ],
+   "rubric": [
+    {
+     "axis": "Confined space",
+     "pass_if": "Completes permit, atmosphere testing and attendant logging before entry"
+    },
+    {
+     "axis": "Decon procedure",
+     "pass_if": "Follows label dwell times and maintains zone separation"
+    },
+    {
+     "axis": "Waste handling",
+     "pass_if": "Bags, labels and stages all residue as biohazard waste"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows waste totes out of the hot zone and carries a gas monitor so attendant reads live atmospheres."
+  },
+  {
+   "id": "site-labor-groundbreaking",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Set pedestrian protection, erosion controls and material staging at the shoreline-side excavation for a new Charter Hall lobby.",
+   "hazards": [
+    "Open excavation near public walkway on Lake Union trail",
+    "Water intrusion/soft ground near shoreline",
+    "Struck-by from equipment traffic",
+    "Weather exposure"
+   ],
+   "ppe": [
+    "High-visibility vest",
+    "Hard hat",
+    "Gloves",
+    "Waterproof boots"
+   ],
+   "steps": [
+    "Install chain-link pedestrian barricade along trail detour",
+    "Lay silt fence and inlet protection between trench and lake",
+    "Set gravel staging pad and equipment exclusion markers",
+    "Verify trench access ladder placement each shift",
+    "Check weather forecast and pump readiness for rain events",
+    "Participate in daily toolbox talk and sign crew sheet"
+   ],
+   "rubric": [
+    {
+     "axis": "Public protection",
+     "pass_if": "Barricade fully separates trail users from excavation and equipment"
+    },
+    {
+     "axis": "Erosion control",
+     "pass_if": "Silt fence installed between disturbance and shoreline before rain risk"
+    },
+    {
+     "axis": "Daily readiness",
+     "pass_if": "Verifies ladder access and attends toolbox talk each shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Fred Hutch SLU Lab-Campus Apprentice Safety Card",
+  "requires": [
+   "site-labor-groundbreaking",
+   "lab-conduit-rough-in",
+   "fume-hood-exhaust-sheetmetal",
+   "chiller-loto-millwright",
+   "acid-waste-pipefit",
+   "biosafety-glycol-decon-hazmat"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "cancer-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

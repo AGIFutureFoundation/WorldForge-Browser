@@ -1,0 +1,278 @@
+{
+ "title": "Metaverse DAO (Series 29): Charter on the Marsh",
+ "summary": "A walkable DAO campus on Meta's restored bayfront marsh at 1 Hacker Way, Menlo Park. Five zones — Charter Hall, Research Synthesis Lab, Proposal Forum, Operations Deck, Progress Observatory — host six agent NPCs; humans alone hold final votes and treasury power.",
+ "biome": "wetland",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Lytton Commons",
+   "buildings": [
+    {
+     "name": "Charter Hall Pavilion",
+     "use": "Charter display, contribution model, measurable outcomes",
+     "floors": 2
+    },
+    {
+     "name": "Stewards' Gallery",
+     "use": "Human steward meeting room",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Contribution Ledger Room",
+    "Outcome Metrics Hall",
+    "Steward Reading Room"
+   ],
+   "props": [
+    "etched charter panels",
+    "mission scroll display",
+    "contribution kiosks",
+    "governance ballot box",
+    "marsh-view benches",
+    "W3 LLC series plaque"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "San Francisquito Creek",
+   "buildings": [
+    {
+     "name": "Evidence Monitoring Station",
+     "use": "Monitoring and evidence summarization",
+     "floors": 2
+    },
+    {
+     "name": "Synthesis Library",
+     "use": "Research synthesis for stewards",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake Desk",
+    "Synthesis Stacks",
+    "Creek-side Reading Nook",
+    "Briefing Room"
+   ],
+   "props": [
+    "creek-facing monitors",
+    "evidence pinboards",
+    "citation cabinets",
+    "field notebooks",
+    "signal antennas"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Park Place",
+   "buildings": [
+    {
+     "name": "Proposal Forum Amphitheater",
+     "use": "Agent-drafted proposals, human debate",
+     "floors": 1
+    },
+    {
+     "name": "Drafter's Annex",
+     "use": "Proposal and grant drafting workspace",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Open Debate Floor",
+    "Drafter Desks",
+    "Review Queue",
+    "Amendment Alcove"
+   ],
+   "props": [
+    "speaker podium",
+    "proposal posting boards",
+    "debate seating",
+    "comment tokens",
+    "hourglass for cycles"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Menlo Park Fire District Station 1",
+   "buildings": [
+    {
+     "name": "Operations Deck Hub",
+     "use": "Task routing and working group coordination",
+     "floors": 3
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Expert and collaborator scouting",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Console",
+    "Working Group Rooms",
+    "Scout Map Table",
+    "Coordination Bridge"
+   ],
+   "props": [
+    "task routing boards",
+    "collaborator map wall",
+    "comm consoles",
+    "shift schedule screens",
+    "tool lockers"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Timothy Hopkins Creekside Park",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "Tracking progress against charter outcomes",
+     "floors": 4
+    },
+    {
+     "name": "Outcome Yard",
+     "use": "Public progress exhibits",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Panorama Deck",
+    "Outcome Dashboard Room",
+    "Milestone Archive",
+    "Reflection Chamber"
+   ],
+   "props": [
+    "progress dashboards",
+    "milestone markers",
+    "telescope mounts",
+    "bench ring",
+    "outcome flags"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "coast live oak",
+   "California buckeye",
+   "willow",
+   "western sycamore",
+   "Monterey pine"
+  ],
+  "shrubs": [
+   "California sagebrush",
+   "coyote brush",
+   "wax myrtle",
+   "blackberry"
+  ],
+  "flowers": [
+   "California poppy",
+   "seaside daisy",
+   "marsh rosemary",
+   "yarrow"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.6,
+  "wave_m": 0.1
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "The Stewards' Court",
+  "style": "open-air circular stone forum beside the marsh boardwalk",
+  "why_here": "A permanent civic circle where only humans cast final votes on proposals, charter amendments, treasury transfers and steward appointments."
+ },
+ "quests": [
+  {
+   "title": "Post the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter wall in Charter Hall",
+    "Collect an outcomes ledger from the Contribution Ledger Room",
+    "Carry it to the Progress Observatory",
+    "Mount the ledger on the dashboard wall"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "From Evidence to Proposal",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Gather three evidence briefs at the Evidence Intake Desk",
+    "Have the Research Synthesis Agent summarize them",
+    "Deliver the summary to the Proposal & Grant Drafter",
+    "Watch the draft posted on the forum boards"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Ask the Task Router for open tasks",
+    "Join a working group at the Scout Map Table",
+    "Report completion back to the Routing Console",
+    "Log your contribution in Charter Hall"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "The Human Vote",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Attend debate at the Proposal Forum Amphitheater",
+    "Walk the draft to the Stewards' Court",
+    "Cast the final vote (human stewards only)",
+    "Record the outcome at the Progress Observatory"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Creek Watch",
+   "from_zone": "Progress Observatory",
+   "steps": [
+    "Survey San Francisquito Creek from the Panorama Deck",
+    "Note water levels and bird counts",
+    "File the field report with the Evidence Monitor",
+    "Add findings to the creek-side pinboard in the Research Synthesis Lab"
+   ],
+   "to_zone": "Research Synthesis Lab",
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s29-metaverse-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

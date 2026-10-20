@@ -1,0 +1,405 @@
+{
+ "scenarios": [
+  {
+   "id": "turbine-pit-confined-entry",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Enter the turbine pit to inspect and replace a worn excitation-cabinet wiring harness.",
+   "hazards": [
+    "confined space",
+    "residual stored electrical energy",
+    "noise from adjacent units",
+    "poor lighting and trip points"
+   ],
+   "ppe": [
+    "hard hat",
+    "arc-rated gloves",
+    "safety glasses",
+    "hearing protection",
+    "confined-space harness with lifeline"
+   ],
+   "steps": [
+    "Obtain confined-space permit and verify atmospheric readings",
+    "Lock out and tag out the unit breaker and field disconnect",
+    "Verify zero energy with a tested meter",
+    "Ventilate the pit and set an attendant at the entry",
+    "Replace the harness and torque all lugs to spec",
+    "Exit, remove locks, and log the work in the unit record"
+   ],
+   "rubric": [
+    {
+     "axis": "permitting",
+     "pass_if": "Confined-space permit secured and attendant posted before entry"
+    },
+    {
+     "axis": "energy control",
+     "pass_if": "LOTO applied and zero energy verified before touching conductors"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Lugs torqued and harness routed clear of rotating parts"
+    },
+    {
+     "axis": "closeout",
+     "pass_if": "Locks removed only by the workers who applied them"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries the gas monitor and camera into the pit ahead of entry so the crew sees atmosphere and obstructions first."
+  },
+  {
+   "id": "transformer-oil-spill-response",
+   "trade": "hazmat",
+   "zone": "Operations Deck",
+   "task": "Contain and clean up dielectric oil released from a step-up transformer berm during a gasket failure.",
+   "hazards": [
+    "slippery oil film",
+    "hydrocarbon vapor",
+    "hot transformer surfaces",
+    "environmental release to the penstock drain"
+   ],
+   "ppe": [
+    "chemical-resistant suit",
+    "nitrile gloves",
+    "splash goggles",
+    "steel-toed boots",
+    "respirator with organic-vapor cartridges"
+   ],
+   "steps": [
+    "Isolate the transformer with the operator and barricade the area",
+    "Stop the spread with absorbent booms at the berm drain",
+    "Diaper and dike the leading edge before it reaches the drain",
+    "Place used absorbents in labeled hazardous-waste drums",
+    "Wash down the berm with approved degreaser per spill plan",
+    "Complete the spill report with the Operations Deck"
+   ],
+   "rubric": [
+    {
+     "axis": "containment speed",
+     "pass_if": "Booms placed at the drain before absorbent work begins"
+    },
+    {
+     "axis": "waste handling",
+     "pass_if": "All oil-soaked media drummed, labeled and manifested"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Operator notified and spill report filed the same shift"
+    },
+    {
+     "axis": "decon",
+     "pass_if": "Suit and boots decontaminated before leaving the exclusion zone"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "penstock-flange-torque",
+   "trade": "pipefitters",
+   "zone": "Provisioning Yard",
+   "task": "Re-torque penstock manhole flange bolts after gasket seating, using a calibrated hydraulic torque unit.",
+   "hazards": [
+    "high-pressure water behind flange",
+    "pinch points at bolt pattern",
+    "torque wrench kickback",
+    "working at height on scaffold"
+   ],
+   "ppe": [
+    "hard hat",
+    "cut-resistant gloves",
+    "safety glasses",
+    "fall-arrest harness"
+   ],
+   "steps": [
+    "Confirm penstock isolation and drain-down with the control room",
+    "Verify calibration sticker on the torque unit",
+    "Torque bolts in the specified star pattern in three passes",
+    "Re-check the lowest and highest bolts last",
+    "Report torque values to the inspector's checklist"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation verification",
+     "pass_if": "Drain-down confirmed in writing before wrench work"
+    },
+    {
+     "axis": "pattern discipline",
+     "pass_if": "Star pattern followed in at least three ascending passes"
+    },
+    {
+     "axis": "tool control",
+     "pass_if": "Calibration current and kickback stance maintained"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "All torque values recorded and signed"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "switchyard-rigging-lift",
+   "trade": "riggers",
+   "zone": "Provisioning Yard",
+   "task": "Rig and guide a replacement disconnect switch onto its pedestal in the 287kV switchyard with a crane.",
+   "hazards": [
+    "energized adjacent bays",
+    "load swing near conductors",
+    "crushing pinch points",
+    "desert heat and sun"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-visibility vest",
+    "leather gloves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Attend the pre-lift briefing and confirm clearances to live equipment",
+    "Select shackles and slings per the load chart and inspect them",
+    "Rig the switch with a tagline on each corner",
+    "Confirm the exclusion zone and hand signals with the operator",
+    "Guide the load to the pedestal and direct setting",
+    "Land, unrig and inspect the rigging for damage"
+   ],
+   "rubric": [
+    {
+     "axis": "clearance planning",
+     "pass_if": "Minimum approach distances stated at the briefing and enforced"
+    },
+    {
+     "axis": "rigging selection",
+     "pass_if": "Gear rated for the load and inspected before use"
+    },
+    {
+     "axis": "load control",
+     "pass_if": "Taglines used and load never passes over personnel"
+    },
+    {
+     "axis": "landing",
+     "pass_if": "Load set on blocking with hands clear of pinch points"
+    }
+   ],
+   "minutes": 75,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "gallery-cable-tray-install",
+   "trade": "electricians",
+   "zone": "Deployment Bay",
+   "task": "Install a new cable tray run in the inspection gallery for a monitoring circuit back to the Operations Deck.",
+   "hazards": [
+    "awkward overhead work",
+    "sharp tray edges",
+    "existing energized circuits in adjacent tray",
+    "dust in enclosed gallery"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "cut-resistant gloves",
+    "dust mask"
+   ],
+   "steps": [
+    "Pull the layout drawing and mark tray route on gallery walls",
+    "Verify adjacent trays are de-energized or shielded",
+    "Cut and deburr tray sections; file edges smooth",
+    "Hang tray with approved brackets and torque hanger nuts",
+    "Pull the monitoring cable with a fish tape and dress it",
+    "Label both cable ends and update the as-built"
+   ],
+   "rubric": [
+    {
+     "axis": "layout accuracy",
+     "pass_if": "Tray follows drawing within tolerance and clear of services"
+    },
+    {
+     "axis": "edge control",
+     "pass_if": "All cuts deburred before tray placed"
+    },
+    {
+     "axis": "cable handling",
+     "pass_if": "Cable pulled without exceeding bend radius and labeled both ends"
+    },
+    {
+     "axis": "as-built",
+     "pass_if": "Drawing updated before shift end"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Holds and positions tray sections overhead under crew direction, reducing sustained overhead lifting."
+  },
+  {
+   "id": "intake-tower-scaffold-build",
+   "trade": "carpenters",
+   "zone": "Idea Bench",
+   "task": "Plan and build a light-duty scaffold at an intake tower so inspectors can examine trash racks after a high-inflow event.",
+   "hazards": [
+    "work over water",
+    "fall exposure at the tower edge",
+    "dropped tools into the intake",
+    "uneven tower ledge"
+   ],
+   "ppe": [
+    "hard hat with chin strap",
+    "life jacket",
+    "fall-arrest harness",
+    "gloves"
+   ],
+   "steps": [
+    "Walk the site and sketch the scaffold plan with load notes",
+    "Tie tools off and rig a toe board over the water side",
+    "Build base and standards level on the ledge",
+    "Complete guardrails, toe boards and a tagged access ladder",
+    "Have the foreman inspect and tag the scaffold before use"
+   ],
+   "rubric": [
+    {
+     "axis": "planning",
+     "pass_if": "Sketch and load notes reviewed by foreman before material is cut"
+    },
+    {
+     "axis": "fall protection",
+     "pass_if": "Guardrails complete and scaffold tagged before first use"
+    },
+    {
+     "axis": "over-water controls",
+     "pass_if": "Tools tethered and life jacket worn by all crew on the platform"
+    },
+    {
+     "axis": "plumb and level",
+     "pass_if": "Standards plumb and base plates fully supported"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "dam-face-rope-access-inspection",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Perform a rope-access visual and tap inspection of a spillway tunnel liner section flagged in the operating log.",
+   "hazards": [
+    "fall from height",
+    "water release without warning",
+    "falling scale in the tunnel",
+    "heat stress in the portal"
+   ],
+   "ppe": [
+    "full-body rope-access harness",
+    "helmet with chin strap",
+    "gloves",
+    "knee pads",
+    "headlamp"
+   ],
+   "steps": [
+    "Confirm with the control room that the spillway is locked out from releases",
+    "Rig anchors and lifelines at the portal",
+    "Descend in stages, tapping and marking liner defects",
+    "Photograph and log each defect location by station number",
+    "Ascend, derig and brief the inspector on findings"
+   ],
+   "rubric": [
+    {
+     "axis": "release control",
+     "pass_if": "Written confirmation of no-release lockout before descent"
+    },
+    {
+     "axis": "rigging",
+     "pass_if": "Two independent rope systems with inspected anchors"
+    },
+    {
+     "axis": "inspection quality",
+     "pass_if": "Defects marked, photographed and located by station"
+    },
+    {
+     "axis": "heat management",
+     "pass_if": "Work-rest cycles and water breaks followed at the portal"
+    }
+   ],
+   "minutes": 120,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Walks the tunnel floor with cameras and a thermal payload first to map defects and check air before humans rig."
+  },
+  {
+   "id": "cooler-hvac-filter-change",
+   "trade": "hvacr",
+   "zone": "Service Configuration Room",
+   "task": "Change filters and belts on rooftop cooling units serving the control-room air handlers.",
+   "hazards": [
+    "roof edge fall exposure",
+    "rotating fan belts",
+    "heat on the roof",
+    "electrical supply to units"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "gloves",
+    "high-visibility vest"
+   ],
+   "steps": [
+    "Set up roof-edge warning line and permit for roof access",
+    "Lock out the unit disconnect and verify fan stop",
+    "Replace belts and filters to spec torque and fit",
+    "Record filter sizes and static pressure readings",
+    "Restore power, verify airflow and log the runtime reset"
+   ],
+   "rubric": [
+    {
+     "axis": "roof safety",
+     "pass_if": "Warning line set and access permitted before stepping on roof"
+    },
+    {
+     "axis": "energy control",
+     "pass_if": "Disconnect locked and fans verified stopped"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Correct filter sizes and belt tension per spec"
+    },
+    {
+     "axis": "records",
+     "pass_if": "Static pressure and runtime logged after restart"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries filters and tools up the roof stair so the apprentice keeps hands free on ladders."
+  }
+ ],
+ "credential": {
+  "name": "Hoover Dam Operations Support Card",
+  "requires": [
+   "turbine-pit-confined-entry",
+   "transformer-oil-spill-response",
+   "penstock-flange-torque",
+   "gallery-cable-tray-install",
+   "cooler-hvac-filter-change"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "agents-deploy-infrastructure",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

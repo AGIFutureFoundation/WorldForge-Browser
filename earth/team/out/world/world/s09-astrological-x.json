@@ -1,0 +1,281 @@
+{
+ "title": "Astrological.X at Stonehenge",
+ "summary": "Series 9 DAO cell on Salisbury Plain: neolithic sky-watch geometry reinterpreted as an agent-run, human-governed observatory. Five zones ring the stones — charter, research, proposals, operations, progress — aligned to the solstice axis. Agents synthesize and route; stewards decide.",
+ "biome": "grassland",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Stonehenge outer sarsen circle",
+   "buildings": [
+    {
+     "name": "Sarsen Charter House",
+     "use": "Charter display and contribution model registry",
+     "floors": 1
+    },
+    {
+     "name": "Trilithon Reading Alcove",
+     "use": "Quiet study of measurable outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Rotunda",
+    "Outcome Ledger Room",
+    "Contribution Pledge Nook",
+    "Solstice Alignment Vestibule"
+   ],
+   "props": [
+    "carved charter bluestone plinth",
+    "bronze mission plaque",
+    "measurable-outcomes ledger board",
+    "candle lanterns",
+    "sheepskin rugs",
+    "linden bench"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "The Avenue (Stonehenge processional earthwork)",
+   "buildings": [
+    {
+     "name": "Avenue Synthesis Barn",
+     "use": "Evidence monitoring and summarizing",
+     "floors": 1
+    },
+    {
+     "name": "Heel Stone Lookout Post",
+     "use": "Sky and horizon observation deck",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Sorting Loft",
+    "Summary Scriptorium",
+    "Horizon Window Bay",
+    "Debate Circle"
+   ],
+   "props": [
+    "star charts on oak trestles",
+    "brass solstice sightline",
+    "parchment evidence rolls",
+    "quill and ink stands",
+    "orrery of the local sky",
+    "chalk data slates"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Stonehenge inner bluestone horseshoe",
+   "buildings": [
+    {
+     "name": "Horseshoe Debate Ring",
+     "use": "Open-air forum for proposal debate",
+     "floors": 1
+    },
+    {
+     "name": "Drafter's Roundhouse",
+     "use": "Agent drafting workshop for proposals and grants",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Hearth",
+    "Review Gallery",
+    "Amendment Alcove",
+    "Steward's Bench"
+   ],
+   "props": [
+    "talking-stone lectern",
+    "proposal scroll racks",
+    "tally pebbles and bowls",
+    "thatch canopy",
+    "oaken benches",
+    "bound drafting ledgers"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "The Cursus (long neolithic earthwork, north of the circle)",
+   "buildings": [
+    {
+     "name": "Cursus Operations Longhouse",
+     "use": "Task routing and working-group coordination",
+     "floors": 1
+    },
+    {
+     "name": "Signal Cairn Hut",
+     "use": "Courier relay and message routing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Table Hall",
+    "Working Group Bays",
+    "Signal Loft",
+    "Supplies Store"
+   ],
+   "props": [
+    "route-map chalkboard",
+    "signal flags",
+    "task token baskets",
+    "carrier-pigeon coops",
+    "lantern posts",
+    "route pegs and twine"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Stonehenge Slaughter Stone and northeast entrance",
+   "buildings": [
+    {
+     "name": "Northeast Observatory Mound",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 1
+    },
+    {
+     "name": "Milestone Cairn House",
+     "use": "Public milestone records",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Midsummer Sunrise Balcony",
+    "Milestone Hall",
+    "Trend Reading Room",
+    "Public Record Nook"
+   ],
+   "props": [
+    "summer solstice sunrise marker",
+    "bronze milestone discs",
+    "progress braid ropes",
+    "observation tripod",
+    "wind-worn standing chalk stone",
+    "record cairn stack"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "hawthorn (Crataegus monogyna)",
+   "common juniper (Juniperus communis)",
+   "field maple (Acer campestre)",
+   "English oak (Quercus robur)"
+  ],
+  "shrubs": [
+   "blackthorn (Prunus spinosa)",
+   "gorse (Ulex europaeus)",
+   "bramble (Rubus fruticosus)",
+   "hawthorn scrub"
+  ],
+  "flowers": [
+   "chalk grassland orchids",
+   "cowslip (Primula veris)",
+   "wild thyme (Thymus polytrichus)",
+   "salad burnet (Sanguisorba minor)"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 6
+ },
+ "day_cycle": {
+  "sunrise_local": "05:00",
+  "sunset_local": "21:00"
+ },
+ "court": {
+  "name": "The Solstice Court",
+  "style": "Open-air megalithic tribunal",
+  "why_here": "Judgment rendered where the stones themselves read the sky: the northeast entrance frames midsummer sunrise, the DAO's natural bench for human final votes."
+ },
+ "quests": [
+  {
+   "title": "Frame the First Sunrise",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter on the sarsen plinth",
+    "Collect an outcome ledger slate",
+    "Carry it along The Avenue to the observatory",
+    "Set the solstice sightline to midsummer sunrise"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Evidence on the Avenue",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Gather three evidence scrolls from the sorting loft",
+    "Have the Research Synthesis Agent summarize them",
+    "Deliver the summary to the Drafter's Roundhouse",
+    "Watch a proposal draft take shape — not enacted"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route Around the Cursus",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the routing chalkboard at the longhouse",
+    "Carry task tokens to two working-group bays",
+    "Return confirmation via the signal cairn hut",
+    "Report findings to the Research Synthesis Lab"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "The Stewards' Solstice Vote",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Attend debate at the Horseshoe Debate Ring",
+    "Tally pebbles cast by human stewards only",
+    "Record the enacted decision on a milestone disc",
+    "Enshrine the record in the Charter Rotunda"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Mark the Milestone",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Read the milestone cairn stack",
+    "Braid a progress rope for outcomes met",
+    "Dispatch the Task Router to open a new working group",
+    "Post the milestone on the routing chalkboard"
+   ],
+   "xp": 50
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s09-astrological-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

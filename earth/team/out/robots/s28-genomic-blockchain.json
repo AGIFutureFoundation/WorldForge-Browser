@@ -1,0 +1,324 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-wall-patrol",
+   "robot": "unitree-go2",
+   "zone": "Charter Hall",
+   "goal": "Patrol the Charter Hall perimeter and verify charter display panels and the reserved-for-humans action list are readable on camera feed.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/waypoint_reached",
+     "/camera/image_raw",
+     "/odom",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Polished exhibit hall floor with glass display cases, cable ramps along walls, and elevated charter plinths requiring low-body clearance.",
+   "success": [
+    "Visit all 5 waypoint poses within 0.15 m tolerance",
+    "Panel OCR confidence >=0.85 on each charter display",
+    "Zero collisions logged in /collision_events"
+   ],
+   "safety_stops": [
+    "E-stop on human within 0.5 m",
+    "Stop if tilt exceeds 20 degrees",
+    "Return-to-dock below 20% battery"
+   ],
+   "human_in_loop": "A steward confirms the charter text captured by camera matches the canonical copy.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoint_id",
+     "pose_error_m",
+     "ocr_confidence",
+     "collisions",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-journal-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve research summaries from a literature rack and deliver them to the evidence review desk in the Research Synthesis Lab.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/wrist_pose",
+     "/gripper_state",
+     "/object_detection",
+     "/move_base_simple/goal"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Lab linoleum with rolling chairs, paper stacks, monitor arms, and narrow aisles between benches on the mesa-side lab wing.",
+   "success": [
+    "Grasp success rate >=90% over 10 trials",
+    "Delivery pose within 0.10 m of desk marker",
+    "No dropped objects mid-transit"
+   ],
+   "safety_stops": [
+    "Release-and-halt if grip force anomaly detected",
+    "Pause on any human entering the workspace",
+    "Stop if arm joint torque exceeds 80% rated"
+   ],
+   "human_in_loop": "A researcher confirms the correct summary bundle was retrieved before it is filed.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "grasp_success",
+     "grip_force_n",
+     "delivery_error_m",
+     "drops",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-mic-relay",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Carry the speaking token among seated participants during proposal debate and announce speaker order in the Proposal Forum.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/speech",
+     "/led_state",
+     "/odom",
+     "/people_detection"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Flat forum carpet with low podium steps, loose chair legs, and audience backpacks on the floor.",
+   "success": [
+    "Token handed to correct next speaker in 95% of turns",
+    "Speech announcements match moderator queue",
+    "No falls or unplanned stops during 30-min session"
+   ],
+   "safety_stops": [
+    "Sit-down stop if IMU detects instability",
+    "Mute and halt if moderator raises stop gesture",
+    "Stop when battery below 15%"
+   ],
+   "human_in_loop": "The moderator approves the speaker queue; agents never decide debate outcomes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "turn_index",
+     "handover_success",
+     "speech_match",
+     "imu_stability",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-desk-sensor-sweep",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Walk the Operations Deck and inspect task-routing screens, cable trays, and thermal status of coordination workstations.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/thermal_image",
+     "/camera/image_raw",
+     "/foot_pose",
+     "/anomaly_score"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Raised floor tiles, under-desk cable bundles, stair edge between deck tiers, and door thresholds to the coastal-facing corridor.",
+   "success": [
+    "Complete full deck circuit in under 12 min",
+    "Thermal anomaly localization within 0.3 m of ground truth",
+    "Stair tier traversal with zero foot slips reported"
+   ],
+   "safety_stops": [
+    "Auto-sit if slip detection triggers twice in 5 s",
+    "Halt at unlit or blocked doorways",
+    "E-stop pendant authority for any nearby operator"
+   ],
+   "human_in_loop": "An operator reviews flagged anomalies before any maintenance ticket is created.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "segment_id",
+     "anomaly_score",
+     "localization_error_m",
+     "foot_slips",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-elevation-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow scan of the Progress Observatory metrics wall, imaging progress tiles against the charter's measurable outcomes.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf_pose",
+     "/range_down",
+     "/camera/image_raw",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open mezzanine airspace 4 m high with suspended light fixtures, railing edges near the bluff-view glazing, and HVAC drafts from ocean-side vents.",
+   "success": [
+    "Hover position hold within 0.10 m RMS during scans",
+    "All metrics tiles captured in focus at >=0.8 sharpness",
+    "No proximity warnings within 0.5 m of fixtures"
+   ],
+   "safety_stops": [
+    "Cut motors and controlled land on low-battery warning",
+    "Land immediately if optical flow fails",
+    "Geofence halt at railing plane"
+   ],
+   "human_in_loop": "A steward verifies captured metrics images before progress scores are published.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "tile_id",
+     "hover_rms_m",
+     "image_sharpness",
+     "min_clearance_m",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "torrey-pines-bluff-perimeter-survey",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Survey the outdoor logistics route between the Operations Deck loading area and the coastal bluff trailhead for the site supply run.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/gps/fix",
+     "/terrain_scan",
+     "/camera/image_raw",
+     "/wheel_odom"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Mediterranean coastal scrub on sandstone bluff soil, gravel service road, coastal wind gusts, and erosion gullies above the Pacific.",
+   "success": [
+    "Route of ~500 m completed with <=0.5 m lateral error",
+    "Hazard map flags all gullies wider than 0.3 m",
+    "Wheel slip ratio below 0.2 on gravel segments"
+   ],
+   "safety_stops": [
+    "Halt within 2 m of bluff edge line",
+    "Stop on GPS accuracy worse than 2 m HDOP",
+    "Return if wind gusts exceed 10 m/s"
+   ],
+   "human_in_loop": "A site supervisor approves the route plan and any supply-run schedule before dispatch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "segment_id",
+     "lateral_error_m",
+     "slip_ratio",
+     "hazards_flagged",
+     "wind_mps",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "lab-bench-instrument-tending",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Load sequencing sample racks from the bench staging cart into the analyzer bay, mirroring Illumina lab workflows in digital twin form.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/tcp_pose",
+     "/safety_radar"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed lab bench with rack slots, analyzer bay door recess, cable conduits, and a raised staging cart requiring 1.2 m reach.",
+   "success": [
+    "10/10 rack insertions with <=2 mm TCP placement error",
+    "Bay door interlock respected on every cycle",
+    "Contact force below 5 N during insertions"
+   ],
+   "safety_stops": [
+    "Joint-speed limit to 250 mm/s when any person in safety zone 2",
+    "Immediate stop on wrench threshold breach",
+    "Hold pose on loss of interlock signal"
+   ],
+   "human_in_loop": "A lab technician confirms each sample manifest before the analyzer run starts.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "cycle_index",
+     "tcp_error_mm",
+     "peak_force_n",
+     "interlock_ok",
+     "cycle_time_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "talos-demo-docent-escort",
+   "robot": "pal-robotics-talos",
+   "zone": "Charter Hall",
+   "goal": "Escort visitor groups between Charter Hall and the Proposal Forum while presenting the DAO's human-governance principle aloud.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/people_detection",
+     "/gait_state",
+     "/speech",
+     "/plan_footsteps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth concrete corridor with two 90-degree turns, entry threshold ramps, and occasional visitor strollers in the walkthrough path.",
+   "success": [
+    "Walking speed sustained at 0.4 m/s with no falls over 20 escorts",
+    "2.0 m spacing maintained behind group lead",
+    "Speech narration completes each segment without truncation"
+   ],
+   "safety_stops": [
+    "Stop and brace if a visitor cuts within 1 m",
+    "Sit-to-safe-pose on footstep planner failure",
+    "Halt at any closed door awaiting human opening"
+   ],
+   "human_in_loop": "A docent sets group size and start times; visitors approve route via kiosk.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "escort_index",
+     "mean_speed_mps",
+     "min_spacing_m",
+     "falls",
+     "speech_complete",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s28-genomic-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

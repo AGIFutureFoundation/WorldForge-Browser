@@ -1,0 +1,45 @@
+{
+  "slug": "locator-x",
+  "name": "Locator.X",
+  "umbrella": "Powered by AGI Corp",
+  "status": "coming soon",
+  "tagline": "Real-estate development and investment predictive tooling, plus the Academy that teaches it",
+  "anchor": {
+    "lat": 21.09705311564314,
+    "lon": 142.69254864512746,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=21.09705311564314&lon=142.69254864512746&rad=6371000"
+  },
+  "zones": [
+    { "name": "Master Dashboard", "purpose": "Central hub: portfolio summary, cross-market comparison and navigation to market editions", "source": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Platform Structure > Master Dashboard" },
+    { "name": "Underwriting Desk", "purpose": "Maps, scores and underwrites parcels; runs the seven-gate LOCATOR screen; break-even at DSCR 1.20", "source": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers and §3 The LOCATOR framework" },
+    { "name": "Evidence Layer", "purpose": "Grades every number shown: coverage before any rate, sample floor of 5, explicit list of unknowns", "source": "~/Downloads/Locator.X-main/docs/OVERVIEW.md, §2 The three layers" },
+    { "name": "The Academy", "purpose": "19 tracks, 92 lessons, 50 curriculum items teaching how to read what the platform produces", "source": "~/Downloads/Locator.X-main/README.md, The Academy" },
+    { "name": "Market Editions", "purpose": "National corridor baseline, Bay Area premium and New Orleans emerging-market maps", "source": "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md, Market Editions 1-3" },
+    { "name": "Louisiana Developer Desk", "purpose": "Parish-by-parish record coverage, named data traps, cancelled capital weighted to zero", "source": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slides 1-3" }
+  ],
+  "agents": [
+    { "name": "Guide", "role": "Persistent floating assistant: guided tour of every section and live search over help text", "zone": "Master Dashboard", "source": "~/Downloads/Locator.X-main/src/assistant.js, header comment" },
+    { "name": "Forecast Agent", "role": "Predictive models over the ZIP value series with point forecast and ~80% band", "zone": "Underwriting Desk", "source": "~/Downloads/Locator.X-main/src/scout.js, 'Forecast agent' section (line 10)" },
+    { "name": "Scout Agent", "role": "Scans feeds, diffs, scores and matches new listings and changes", "zone": "Market Editions", "source": "~/Downloads/Locator.X-main/src/scout.js, 'Scout agent' section (line 52)" },
+    { "name": "Review Agent", "role": "Produces a review digest per scan pass, incl. 12-month re-underwrite flip scan", "zone": "Evidence Layer", "source": "~/Downloads/Locator.X-main/src/scout.js, 'Review agent' section (line 149)" },
+    { "name": "Level Gates", "role": "Grades curriculum levels as capabilities on a real parcel; counts certainty errors", "zone": "The Academy", "source": "~/Downloads/Locator.X-main/README.md, The Academy > What makes it testable (src/gate.js)" },
+    { "name": "Developer Brief Desk", "role": "Role-only agent: tells a developer what the parish record supports and what it caps at", "zone": "Louisiana Developer Desk", "source": "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx, slide 3 closing line" }
+  ],
+  "sources": [
+    "~/Downloads/LOCATOR_X_PLATFORM_GUIDE.md",
+    "~/Downloads/Locator-X-Louisiana-Developer-Brief.pptx",
+    "~/Downloads/Locator.X-main/README.md",
+    "~/Downloads/Locator.X-main/docs/OVERVIEW.md",
+    "~/Downloads/Locator.X-main/src/assistant.js",
+    "~/Downloads/Locator.X-main/src/scout.js",
+    "~/Downloads/Locator.Xapp/Locator.X/Locator.X/ContentView.swift"
+  ],
+  "gaps": [
+    "No source describes a 3D/RP1 world, spatial layout or reason for the Pacific anchor coordinates",
+    "Sources name no agent personas or people; Level Gates is a grading module and Developer Brief Desk is role-only",
+    "Platform guide figures (707K/500K/245K/207K properties) are not reconciled with the brief's Louisiana counts",
+    "Only the pptx says 'Powered by AGI Corp'; the repo says 'Built by the AGI Future Foundation'",
+    "iOS app (Locator.Xapp) only confirms Underwrite/Record/Explore tabs; no launch status or date given"
+  ]
+}

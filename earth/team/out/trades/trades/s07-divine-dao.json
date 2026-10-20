@@ -1,0 +1,364 @@
+{
+ "scenarios": [
+  {
+   "id": "ghat-stone-step-reset",
+   "trade": "bricklayers",
+   "zone": "Operations Deck",
+   "task": "Reset displaced stone slabs on Dashashwamedh Ghat steps where river scour and crowd wear have loosened paving.",
+   "hazards": [
+    "Irregular stone pinch points",
+    "Crowd traffic during aarti hours",
+    "Uneven footing on wet steps",
+    "Heavy slab manual-handling strain"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Cut-resistant gloves",
+    "Steel-toe boots",
+    "High-visibility vest"
+   ],
+   "steps": [
+    "Barricade the work bay and post crowd marshals before aarti peak",
+    "Pry the loose slab with a long bar, keeping feet clear of drop zone",
+    "Cart debris to the spoil point; never throw stone down steps",
+    "Bed fresh mortar and set the slab level with the tread line",
+    "Strike joints and clean the surface before opening to foot traffic",
+    "Log the repaired step number for the Progress Tracker"
+   ],
+   "rubric": [
+    {
+     "axis": "Crowd control",
+     "pass_if": "Barricade and marshals in place before any slab is lifted"
+    },
+    {
+     "axis": "Manual handling",
+     "pass_if": "Slab moved with bar and cart, no lifting above waist solo"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Set slab flush within 3 mm of adjacent treads"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "No debris or mortar left on open steps at handover"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries a LIDAR scan of step displacement and ferries small tools between bays so apprentices keep both hands free on stone."
+  },
+  {
+   "id": "riverside-scaffold-ghat-lighting",
+   "trade": "electricians",
+   "zone": "Charter Hall",
+   "task": "Install weatherproof festival lighting circuits on scaffold towers above the ghat steps for evening ceremonies, with GFCI protection near water.",
+   "hazards": [
+    "Water contact and damp locations",
+    "Overhead clearance for boats and flags",
+    "Lead and old wiring in heritage fabric",
+    "Working at height on tube-and-clamp scaffold"
+   ],
+   "ppe": [
+    "Hard hat with chin strap",
+    "Class 0 gloves",
+    "Arc-rated sleeves",
+    "Non-slip boots",
+    "Life jacket near open water edge"
+   ],
+   "steps": [
+    "Verify scaffold tag and inspect planks before climbing",
+    "Kill and lock out the feeder at the temporary panel",
+    "Run Sealed connectors and drip loops on all ghat-face runs",
+    "Test GFCI trip at every receptacle before energizing",
+    "Torqued terminations checked, panel labeled, then energize under permit",
+    "Record as-built circuit list for the Progress Tracker"
+   ],
+   "rubric": [
+    {
+     "axis": "Lockout/tagout",
+     "pass_if": "Feeder locked out and tagged before any conductor work"
+    },
+    {
+     "axis": "Wet-location methods",
+     "pass_if": "All exterior joints use drip loops and rated enclosures"
+    },
+    {
+     "axis": "GFCI verification",
+     "pass_if": "Every receptacle trip-tested and logged"
+    },
+    {
+     "axis": "Height safety",
+     "pass_if": "100 percent tie-off above 1.8 m"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "ganga-edge-confined-drain",
+   "trade": "pipefitters",
+   "zone": "Proposal Forum",
+   "task": "Clear and reline a storm drain outfall under the ghat retaining wall that discharges to the Ganges, working in a short confined vault.",
+   "hazards": [
+    "Confined space atmosphere",
+    "H2S and decomposing offering material",
+    "Sudden river rise during release of upstream dam water",
+    "Biological contact with wastewater"
+   ],
+   "ppe": [
+    "Full-face respirator with P100",
+    "Chemical suit and gauntlets",
+    "Harness with retrieval line",
+    "Hard hat",
+    "Gas monitor worn on chest"
+   ],
+   "steps": [
+    "Obtain confined-space permit and test atmosphere at three depths",
+    "Station an attendant and tripod retrieval at the vault mouth",
+    "Flush the vault with the vent fan running before entry",
+    "Bench the pipe invert and set the relining sleeve",
+    "Grout annulus and verify slope with a level",
+    "Decontaminate gear and close the permit"
+   ],
+   "rubric": [
+    {
+     "axis": "Permit discipline",
+     "pass_if": "Permit opened, atmosphere logged, attendant posted before entry"
+    },
+    {
+     "axis": "Water hazard",
+     "pass_if": "River stage checked for dam release schedule before entry"
+    },
+    {
+     "axis": "Lining quality",
+     "pass_if": "Sleeve set to line and grade with sealed annulus"
+    },
+    {
+     "axis": "Decon",
+     "pass_if": "Gross decon of suit and tools completed before break"
+    }
+   ],
+   "minutes": 100,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Stages relining sleeves at the vault mouth and tows the spoil tub out along the ghat apron so no one hauls load through the confined entry."
+  },
+  {
+   "id": "crane-bell-frame-rig",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and fly a steel bell frame onto a pavilion column over the ghat plaza using a mobile crane on the stepped apron.",
+   "hazards": [
+    "Crane setup on stone steps and soft river fill",
+    "Suspended load over public plaza",
+    "Tag-line snag on scaffolds and flags",
+    "Wind gusts off the river corridor"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Gloves",
+    "High-visibility vest",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Survey the apron; mat and crib every outrigger float",
+    "Verify load chart for radius and pick weight; hold a pre-lift huddle",
+    "Rig the frame with chokers at marked pick points and a tag line",
+    "Clear the plaza and confirm wind under limit",
+    "Lift, hover, and walk the load to the column heads",
+    "Land, unbuckle, and inspect the rigging before return to the rack"
+   ],
+   "rubric": [
+    {
+     "axis": "Ground prep",
+     "pass_if": "All outriggers fully extended on mats bridging steps"
+    },
+    {
+     "axis": "Rigging selection",
+     "pass_if": "Chokers rated and set at engineered pick points"
+    },
+    {
+     "axis": "Exclusion zone",
+     "pass_if": "Plaza cleared and signal person sole voice authority"
+    },
+    {
+     "axis": "Conditions",
+     "pass_if": "Wind and radius verified against chart before the pick"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "boat-queue-mooring-ops",
+   "trade": "teamsters",
+   "zone": "Progress Observatory",
+   "task": "Coordinate boat and truck movements at the ghat landing during material delivery, keeping pilgrim boats and delivery barges separated.",
+   "hazards": [
+    "Water-side crush between hull and steps",
+    "Overcrowding during ceremony crowds",
+    "Unstable loads on wet stone",
+    "Heat and noise exposure"
+   ],
+   "ppe": [
+    "Life jacket",
+    "High-visibility vest",
+    "Gloves",
+    "Hard hat",
+    "Hearing protection near pumps"
+   ],
+   "steps": [
+    "Set the delivery window outside ceremony hours",
+    "Brief barge crew on the landing point and line plan",
+    "Heave mooring lines with no one between hull and steps",
+    "Offload pallets via gangway, three points of contact",
+    "Stage materials clear of the procession route",
+    "Log delivery counts for the Progress Tracker"
+   ],
+   "rubric": [
+    {
+     "axis": "Scheduling",
+     "pass_if": "No movements overlap ceremony crowds"
+    },
+    {
+     "axis": "Mooring safety",
+     "pass_if": "No hands or bodies between hull and stone at any time"
+    },
+    {
+     "axis": "Load control",
+     "pass_if": "Pallets banded and staged off the walkway"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Single spotter directs each movement with radio backup"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "heritage-surface-lead-paint",
+   "trade": "painters",
+   "zone": "Charter Hall",
+   "task": "Stabilize flaking lead-based paint on the ghat pavilion ceiling before repainting, using containment and wet methods.",
+   "hazards": [
+    "Lead dust inhalation",
+    "Scaffolding work at height",
+    "Debris falling on public walkway",
+    "Heat under roof panels"
+   ],
+   "ppe": [
+    "P100 respirator",
+    "Disposable coveralls with hood",
+    "Gloves",
+    "Safety glasses",
+    "Non-slip boots"
+   ],
+   "steps": [
+    "Build containment sheeting and a floor drop over the walkway",
+    "Wet-scrape and HEPA-vacuum flaking zones, no dry sanding",
+    "Bag waste as regulated lead debris and label drums",
+    "Wipe surfaces clean and verify with clearance sampling",
+    "Break containment top-down and decontaminate workers",
+    "Document waste manifest for the Progress Tracker"
+   ],
+   "rubric": [
+    {
+     "axis": "Containment",
+     "pass_if": "Sheeting and drop fully isolate the work before scraping"
+    },
+    {
+     "axis": "Method",
+     "pass_if": "Wet methods and HEPA only; zero dry abrasion"
+    },
+    {
+     "axis": "Waste control",
+     "pass_if": "All debris bagged, labeled, and manifested"
+    },
+    {
+     "axis": "Personal decon",
+     "pass_if": "Coveralls removed and hands washed before break area"
+    }
+   ],
+   "minutes": 100,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "night-aarti-thermal-scan",
+   "trade": "grounds",
+   "zone": "Research Synthesis Lab",
+   "task": "Walk the ghat steps before dawn aarti to map loose stones, water pooling, and trip hazards for the maintenance backlog.",
+   "hazards": [
+    "Dark and pre-dawn visibility",
+    "Crowd buildup near the ceremony platforms",
+    "Slippery algae on wet steps",
+    "Open edges to the river"
+   ],
+   "ppe": [
+    "High-visibility vest",
+    "Headlamp",
+    "Gloves",
+    "Non-slip boots"
+   ],
+   "steps": [
+    "Brief with the ghat committee on ceremony timing",
+    "Walk the step bays in pairs from north to south",
+    "Photograph and number each defect location",
+    "Flag immediate hazards with chalk and cones",
+    "File the defect list to the Progress Tracker before crowd arrival"
+   ],
+   "rubric": [
+    {
+     "axis": "Coverage",
+     "pass_if": "Every step bay walked and logged"
+    },
+    {
+     "axis": "Hazard flagging",
+     "pass_if": "Trip hazards marked before public access"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Defect list numbered with photos"
+    },
+    {
+     "axis": "Timing",
+     "pass_if": "Scan complete before ceremony crowd buildup"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries the thermal and LIDAR payload on the narrow step runs, flagging pooling water and loose slabs so apprentices only hand-verify flagged bays."
+  }
+ ],
+ "credential": {
+  "name": "Ghat Heritage Safety Card (Dashashwamedh)",
+  "requires": [
+   "ghat-stone-step-reset",
+   "riverside-scaffold-ghat-lighting",
+   "ganga-edge-confined-drain",
+   "crane-bell-frame-rig",
+   "boat-queue-mooring-ops",
+   "heritage-surface-lead-paint",
+   "night-aarti-thermal-scan"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s07-divine-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

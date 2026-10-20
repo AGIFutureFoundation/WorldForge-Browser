@@ -1,0 +1,341 @@
+{
+ "tasks": [
+  {
+   "id": "canopy-transect-mapping",
+   "robot": "clearpath-husky-a200",
+   "zone": "Progress Observatory",
+   "goal": "Traverse reserve boundary trails to build an occupancy map of canopy gaps and trail edges for biodiversity outcome tracking.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/husky/odom",
+     "/husky/gps/fix",
+     "/velodyne_points",
+     "/map_metadata"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Wet, muddy cloud-forest trails with exposed roots, volcanic rock, mist-slick slopes and dense understory vegetation",
+   "success": [
+    "Complete 500 m transect loop",
+    "Map covers >=90% of planned trail extent",
+    "Localization error <0.5 m vs GPS",
+    "Zero roll/pitch events >20 deg"
+   ],
+   "safety_stops": [
+    "E-stop if pitch >25 deg",
+    "Stop if wheel slip exceeds 30%",
+    "Stop for human-detected wildlife within 2 m",
+    "Battery <20% triggers return-to-start"
+   ],
+   "human_in_loop": "Steward approves transect route before launch and confirms mapped canopy-gap findings for the Progress Observatory.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "distance_m",
+     "map_coverage_pct",
+     "localization_rmse_m",
+     "slip_events",
+     "stops",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "epiphyte-canopy-inspect",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Walk to fixed orchid and bromeliad study plots and capture close-up imagery of epiphyte health for evidence summaries.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/go2/odom",
+     "/camera/color/image_raw",
+     "/camera/depth/points",
+     "/joint_states"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Narrow forest footpaths, fallen branches, moss-covered stones, persistent wet leaf litter and fog",
+   "success": [
+    "Visit all 6 marked plots",
+    ">=20 in-focus images per plot",
+    "Stand still <2 mm drift during capture",
+    "Return to base without tip-over"
+   ],
+   "safety_stops": [
+    "Stop if foot slip detected on wet moss",
+    "E-stop on body pitch >30 deg",
+    "Stop if LiDAR shows obstacle <0.3 m ahead",
+    "Thermal guard if motor temp >70 C"
+   ],
+   "human_in_loop": "Researcher selects the plot locations and validates epiphyte health classifications before synthesis.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "plots_visited",
+     "images_captured",
+     "focus_quality_score",
+     "tip_over_events",
+     "battery_pct",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "quadrat-survey-assist",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Climb steep reserve slopes to place and photograph 1 m quadrat frames along survey lines for species-count evidence.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/spot/odom",
+     "/frontleft/image",
+     "/body/pose",
+     "/lidar/points"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Steep muddy inclines up to 35 deg, slippery leaf litter, buttress roots, dense fog reducing visibility",
+   "success": [
+    "Place 8 quadrats within 5 cm of target coordinates",
+    "Readable photos at all quadrats",
+    "No falls on slopes",
+    "Complete route within 60 min"
+   ],
+   "safety_stops": [
+    "Auto-sit if slope >40 deg",
+    "Stop if payload arm misaligned",
+    "Stop on human proximity <1.5 m",
+    "Low battery return-to-dock"
+   ],
+   "human_in_loop": "Field scientist approves quadrat coordinates and reviews photos for species counts.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "quadrats_placed",
+     "placement_error_cm",
+     "slope_max_deg",
+     "fall_events",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "canopy-drone-audio-patrol",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Fly quiet dawn patrols above the canopy gap near Charter Hall to record bird and frog vocalizations for biodiversity metrics.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/range",
+     "/microphone/audio",
+     "/battery_voltage"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open canopy gap with emergent tree crowns, shifting fog layers, light rain and gusty updrafts on ridge edges",
+   "success": [
+    "Hold 10 m altitude station-keep within 0.3 m",
+    "Record 10 min of usable audio at 3 waypoints",
+    "No canopy contact",
+    "Safe landing within 0.2 m of pad"
+   ],
+   "safety_stops": [
+    "Land immediately if wind gust >8 m/s",
+    "Return if battery <3.7 V",
+    "Stop if any obstacle within 1 m",
+    "Cease flight in rain detected on hull sensor"
+   ],
+   "human_in_loop": "Steward approves flight plan and confirms vocalization identifications for the charter's measurable outcomes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "waypoints_flown",
+     "audio_minutes",
+     "station_keep_rmse_m",
+     "obstacle_events",
+     "min_battery_v",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "specimen-sample-handoff",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Pick and place labeled soil and water sample vials from field carriers into the lab rack for the Task Router's working groups.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/ur10e/joint_states",
+     "/wrist_camera/image_raw",
+     "/gripper/status",
+     "/ft_sensor/wrench"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Field station bench with wet sample carriers, condensation on vials, uneven rack slots",
+   "success": [
+    "Pick success rate >=95% over 30 vials",
+    "No dropped vials",
+    "Placement within 2 mm of slot center",
+    "Cycle time <8 s per vial"
+   ],
+   "safety_stops": [
+    "Stop if force/torque exceeds 20 N or 1.5 Nm",
+    "Stop on human within 0.5 m of workspace",
+    "Abort if gripper slip detected",
+    "Pause if vial barcode unreadable twice"
+   ],
+   "human_in_loop": "Lab technician approves rack layout and verifies chain-of-custody for each sample batch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "vials_handled",
+     "pick_success_rate",
+     "drop_events",
+     "cycle_time_s",
+     "torque_max_nm",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "boardroom-champion-demo",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Present proposal summaries and gesture to evidence displays for stewards before their human-only votes.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/nao/pose",
+     "/nao/speech",
+     "/nao/joint_states",
+     "/camera/front/image_raw"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat boardroom floor, loose cables, chairs, occasional wet shoe prints from foggy entrance",
+   "success": [
+    "Complete 5-min presentation without falls",
+    "Speech-to-text accuracy >90%",
+    "Gesture to correct display 100%",
+    "Never present a vote decision"
+   ],
+   "safety_stops": [
+    "Sit down if tilt >15 deg",
+    "Stop motion if human within 0.4 m",
+    "Pause speech on steward hand-raise",
+    "Stop if battery <15%"
+   ],
+   "human_in_loop": "People alone cast final votes and enact proposals; Nao only presents drafts for debate.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "duration_s",
+     "fall_events",
+     "stt_accuracy",
+     "gesture_errors",
+     "human_interrupts",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "sensor-mast-calibration",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Reach canopy-level sensor masts with both arms and recalibrate wind and humidity sensors mounted at 1.8 m height.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/talos/odom",
+     "/talos/left_arm/pose",
+     "/head_rgb/image_raw",
+     "/joint_states"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Gravel clearing with guy-wire anchored masts, wet grass, sensor cables at ankle height",
+   "success": [
+    "Calibrate 4 sensors in sequence",
+    "Arm positioning within 1 cm of sensor face",
+    "No guy-wire contact",
+    "Complete within 45 min"
+   ],
+   "safety_stops": [
+    "Stop if foot detects cable entanglement",
+    "E-stop on any balance disturbance",
+    "Stop if wind >10 m/s near masts",
+    "Human within 1 m of mast aborts arm motion"
+   ],
+   "human_in_loop": "Steward verifies recalibration readings before they enter progress tracking records.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "sensors_calibrated",
+     "arm_error_cm",
+     "wire_contact_events",
+     "balance_events",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "seedling-lab-manipulation",
+   "robot": "franka-fr3",
+   "zone": "Charter Hall",
+   "goal": "Gently transplant endangered native seedlings between nursery trays while logging growth-stage measurements for the contribution model.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/fr3/joint_states",
+     "/fr3/camera/image_raw",
+     "/fr3/gripper/state",
+     "/ft_sensor"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Nursery bench with soft peat trays, delicate stems, wet soil, variable seedling heights 3-15 cm",
+   "success": [
+    "Transplant 24 seedlings with zero stem damage",
+    "Grip force under 2 N on stems",
+    "Growth-stage log complete for each",
+    "Tray placement within 3 mm"
+   ],
+   "safety_stops": [
+    "Release immediately if force >2 N",
+    "Stop on human entry to workspace",
+    "Pause if seedling not detected clearly",
+    "Abort if soil moisture makes gripper slip twice consecutively"
+   ],
+   "human_in_loop": "Ecologist approves transplant schedule and confirms growth-stage labels for the contribution model.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "seedlings_transplanted",
+     "stem_damage_events",
+     "max_grip_n",
+     "slip_events",
+     "duration_s",
+     "timestamp"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "ecology-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

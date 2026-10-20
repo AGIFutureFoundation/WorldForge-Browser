@@ -1,0 +1,157 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Building Trades Reads the Numbers: Locator.X Evidence Lab",
+   "grade_or_level": "Apprentice to journeylevel (adult workforce)",
+   "outcomes": [
+    "Read a parcel record and its evidence grade before trusting any figure",
+    "Explain DSCR 1.20 break-even and the seven-gate screen in plain language",
+    "Identify parish data traps and why cancelled capital is weighted to zero",
+    "Use forecast bands (~80%) instead of single-point claims when planning work"
+   ],
+   "sessions": [
+    {
+     "zone": "Master Dashboard",
+     "activity": "Guided tour with the Guide agent: navigate portfolio summary and market editions; learners locate a Louisiana parcel and compare it against the Bay Area premium map.",
+     "minutes": 45
+    },
+    {
+     "zone": "Evidence Layer",
+     "activity": "Small groups grade three sample records using coverage-first rules and the sample floor of 5; each group writes the explicit list of unknowns they find.",
+     "minutes": 60
+    },
+    {
+     "zone": "Underwriting Desk",
+     "activity": "Hands-on run of the seven-gate LOCATOR screen on one real New Orleans parcel; debate whether DSCR 1.20 break-even holds and defend the verdict.",
+     "minutes": 75
+    },
+    {
+     "zone": "Louisiana Developer Desk",
+     "activity": "Learners query the Developer Brief Desk role-only agent on what a chosen parish record supports and what it caps at; draft a one-page jobs-impact note.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised exercise outcomes: gate-pass/fail tallies per parish, count of certainty errors found, and de-identified worksheet scores feed shared curriculum benchmarks. No names, employers, or parcel ownership details are collected.",
+   "consent": "Voluntary opt-in at enrollment with a one-page plain-language notice; shop stewards may accompany. Learners consent only to aggregate, anonymised exercise data and may withdraw at any time with their worksheets deleted."
+  },
+  {
+   "audience": "k12",
+   "title": "Map Facts, Not Map Guesses: A Jackson Square Field Study",
+   "grade_or_level": "Grades 9-12 (high school civics/geography)",
+   "outcomes": [
+    "Locate Jackson Square and the Mississippi riverfront on a map and describe the urban-park biome",
+    "Distinguish evidence-graded data from unverified claims using the sample floor of 5",
+    "Read a forecast band and explain why a range beats a single number",
+    "Present a parcel verdict with an explicit unknowns list"
+   ],
+   "sessions": [
+    {
+     "zone": "Master Dashboard",
+     "activity": "Virtual tour starting at the Jackson Square anchor; students navigate to market editions and mark one emerging-market Louisiana parcel for study.",
+     "minutes": 40
+    },
+    {
+     "zone": "Evidence Layer",
+     "activity": "Evidence detective exercise: students grade sample numbers by coverage and list unknowns; count and log certainty errors as a class scoreboard.",
+     "minutes": 50
+    },
+    {
+     "zone": "The Academy",
+     "activity": "Guided entry lessons from the 92-lesson curriculum: reading what the platform produces; short level-gate quiz graded on a real parcel.",
+     "minutes": 45
+    },
+    {
+     "zone": "Underwriting Desk",
+     "activity": "Team walkthrough of the seven-gate screen with the teacher; teams state a supported-or-not verdict with reasons and unknowns.",
+     "minutes": 60
+    }
+   ],
+   "data_shared": "Only aggregate classroom tallies: number of certainty errors counted, gate verdicts by team (no names), and anonymised quiz scores for curriculum benchmarking. No individual student data leaves the classroom.",
+   "consent": "Signed guardian/parent consent forms required before participation, plus school approval; the notice states only aggregated, anonymised tallies are shared, parents may review materials, and any student may opt out without penalty."
+  },
+  {
+   "audience": "ngo",
+   "title": "Housing Evidence Bootcamp: Reading the Louisiana Record",
+   "grade_or_level": "Practitioner level (staff and volunteers)",
+   "outcomes": [
+    "Audit a parish record for coverage, sample size, and named data traps",
+    "Explain why cancelled capital is weighted to zero and what that means for community claims",
+    "Produce an evidence-graded brief a board can act on",
+    "Train residents to read forecast bands responsibly"
+   ],
+   "sessions": [
+    {
+     "zone": "Louisiana Developer Desk",
+     "activity": "Staff work the parish-by-parish coverage map with the Developer Brief Desk role-only agent, documenting what each record supports and caps at.",
+     "minutes": 75
+    },
+    {
+     "zone": "Evidence Layer",
+     "activity": "Audit workshop: teams grade ten figures from the review digest, apply the sample floor of 5, and draft the unknowns disclosure for a community meeting.",
+     "minutes": 60
+    },
+    {
+     "zone": "The Academy",
+     "activity": "Select curriculum items from the 19 tracks matched to staff roles; each participant completes a level gate on a real parcel and logs certainty errors.",
+     "minutes": 60
+    },
+    {
+     "zone": "Market Editions",
+     "activity": "Compare the emerging-market map against the Bay Area premium map; teams present where evidence supports relocation-versus-investment narratives.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised audit results: error counts by parish, gate capability tallies, and de-identified brief-quality rubric scores, shared as aggregate benchmarks across participating organisations. No client or resident identities are included.",
+   "consent": "Organisation-level data-sharing agreement plus individual staff opt-in; participants see the aggregate-only schema before contributing and may withdraw their audit tallies at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Nonprofit Underwriting Literacy for Neighborhood Boards",
+   "grade_or_level": "Board and program-leadership level",
+   "outcomes": [
+    "Interpret the seven-gate LOCATOR screen and DSCR 1.20 break-even for funding conversations",
+    "Apply coverage-before-rate and the sample floor of 5 to any number in a grant narrative",
+    "Build a quarterly evidence review routine using the Review Agent digest",
+    "Escalate unknowns instead of guessing in public statements"
+   ],
+   "sessions": [
+    {
+     "zone": "Master Dashboard",
+     "activity": "Board orientation: Guide agent tour of portfolio summary and cross-market comparison; each board adopts one Louisiana parcel to track for a quarter.",
+     "minutes": 45
+    },
+    {
+     "zone": "Underwriting Desk",
+     "activity": "Facilitated mock underwrite: leaders run the seven-gate screen, interpret the ~80% forecast band, and vote on a documented go/no-go exercise (advisory only, no enacted proposals).",
+     "minutes": 60
+    },
+    {
+     "zone": "Evidence Layer",
+     "activity": "Policy drafting session: boards write a one-page evidence standard using coverage grading, sample floor of 5, and an unknowns disclosure for public materials.",
+     "minutes": 50
+    },
+    {
+     "zone": "The Academy",
+     "activity": "Leaders enroll in selected curriculum items from the 50-item program; level-gate results become a shared capability baseline for the board.",
+     "minutes": 45
+    },
+    {
+     "zone": "Market Editions",
+     "activity": "Quarterly review: teams read the Review Agent digest, update their parcel watch list, and practice the 12-month re-underwrite flip scan discussion.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymised board-level metrics only: aggregate gate pass rates, certainty-error counts, and de-identified rubric scores on evidence-standard drafts, contributed to shared model benchmarks. No beneficiary, donor, or parcel-owner identities are shared.",
+   "consent": "Board resolution plus individual sign-off covers aggregate data contribution; a plain-language privacy notice limits sharing to anonymised tallies, and any board or member may withdraw participation and have their aggregates removed."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "locator-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

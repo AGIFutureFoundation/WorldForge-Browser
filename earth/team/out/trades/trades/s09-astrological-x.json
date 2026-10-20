@@ -1,0 +1,367 @@
+{
+ "scenarios": [
+  {
+   "id": "trilithon-lintel-lift",
+   "trade": "crane-ops",
+   "zone": "Charter Hall",
+   "task": "Set a replacement lintel stone atop two standing megalith sarsens, matching the original trilithon configuration on open grassland.",
+   "hazards": [
+    "swing radius crush zones",
+    "soft ground outrigger settling",
+    "load uncontrolled rotation in wind",
+    "overhead suspended load"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-vis vest",
+    "gloves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Verify exclusion zone and radio checks with rigger",
+    "Set outrigger mats on compacted pads",
+    "Confirm load weight and sling angles with riggers",
+    "Trial lift 100 mm and hold",
+    "Rotate slowly to stones with tag lines",
+    "Set lintel on timber shims",
+    "Release slings only on signal from rigger"
+   ],
+   "rubric": [
+    {
+     "axis": "load control",
+     "pass_if": "No uncontrolled swing; tag lines taut throughout"
+    },
+    {
+     "axis": "ground prep",
+     "pass_if": "Outrigger mats placed before lift"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "All moves initiated on acknowledged signals"
+    },
+    {
+     "axis": "set accuracy",
+     "pass_if": "Lintel seated within shims without re-hoisting twice"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows ground-protection mats and laser-checks outrigger pad compaction before crane setup."
+  },
+  {
+   "id": "sarsen-rig-and-roll",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig a 25-tonne sarsen block on rollers and cribbing to reposition it along the stone avenue during conservation works.",
+   "hazards": [
+    "caught-between rolling load",
+    "cribbing failure",
+    "pinch points on rollers",
+    "hand injury at leading edge"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "steel-toe boots",
+    "high-vis vest"
+   ],
+   "steps": [
+    "Inspect slings, shackles and levers before use",
+    "Establish no-go zones on both sides of roll path",
+    "Build cribbing stacks square and interlocked",
+    "Rig block with certified slings at marked points",
+    "Advance rollers on command, never hands on leading edge",
+    "Reset cribbing in increments",
+    "Land block on final cribbing and secure"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging inspection",
+     "pass_if": "Defective gear tagged out before use"
+    },
+    {
+     "axis": "hand placement",
+     "pass_if": "Hands never between block and rollers"
+    },
+    {
+     "axis": "cribbing quality",
+     "pass_if": "Stacks square, interlocked, rated capacity respected"
+    },
+    {
+     "axis": "team coordination",
+     "pass_if": "Single caller giving commands"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries tag lines through the roll path and monitors exclusion-zone entry with onboard sensors."
+  },
+  {
+   "id": "solstice-alignment-survey",
+   "trade": "surveyors",
+   "zone": "Progress Observatory",
+   "task": "Re-establish the solstice sunrise alignment baseline for the heel stone and avenue using total station and GNSS.",
+   "hazards": [
+    "uneven ground trips",
+    "livestock in work area",
+    "weather exposure",
+    "laser exposure to eyes"
+   ],
+   "ppe": [
+    "high-vis vest",
+    "boots",
+    "sun hat",
+    "laser safety glasses where required"
+   ],
+   "steps": [
+    "Set control points on stable ground off the monument",
+    "Set up total station and level over benchmark",
+    "Shoot heel stone and avenue centers from two stations",
+    "Check solstice azimuth against archived bearings",
+    "Mark verified line with survey pins",
+    "Log all readings and close traverse",
+    "Brief stewards on deviation findings"
+   ],
+   "rubric": [
+    {
+     "axis": "instrument setup",
+     "pass_if": "Total station leveled and backsight checked"
+    },
+    {
+     "axis": "accuracy",
+     "pass_if": "Traverse closes within tolerance"
+    },
+    {
+     "axis": "records",
+     "pass_if": "All shots logged legibly"
+    },
+    {
+     "axis": "site safety",
+     "pass_if": "Walked path checked for hazards before work"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "visitor-path-excavation",
+   "trade": "laborers",
+   "zone": "Charter Hall",
+   "task": "Hand-dig trial trenches for a new accessible visitor path near the grassland perimeter, avoiding buried archaeology.",
+   "hazards": [
+    "archaeological material damage",
+    "trench collapse",
+    "manual handling strain",
+    "underground services unknown"
+   ],
+   "ppe": [
+    "gloves",
+    "boots",
+    "hard hat",
+    "high-vis vest"
+   ],
+   "steps": [
+    "Attend archaeological briefing and mark exclusion lines",
+    "Scan for services before any dig",
+    "Hand-dig in spits, checking each spoil layer",
+    "Shore or batter trench over 1.2 m",
+    "Barrow spoil to stockpile away from edge",
+    "Stop work and report on any finds",
+    "Backfill per archaeologist instructions"
+   ],
+   "rubric": [
+    {
+     "axis": "finds protocol",
+     "pass_if": "Work stopped and finds reported immediately"
+    },
+    {
+     "axis": "trench safety",
+     "pass_if": "Battering or shoring in place before entry below 1.2 m"
+    },
+    {
+     "axis": "technique",
+     "pass_if": "Dug in spits with clean spoil separation"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "Spoil kept back from trench edge"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "softbank-nao",
+   "robot_role": "Delivers the site induction briefing and quizzes apprentices on the archaeological finds stop-work protocol."
+  },
+  {
+   "id": "interpretive-steel-frame-erect",
+   "trade": "ironworkers",
+   "zone": "Proposal Forum",
+   "task": "Bolt up a small steel interpretive shelter frame for proposal display boards, anchored away from the stone circle.",
+   "hazards": [
+    "working at height",
+    "dropped objects",
+    "power tool pinch",
+    "unstable members before bolting"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "safety harness above 2 m",
+    "boots"
+   ],
+   "steps": [
+    "Check bolts, torque wrench calibration and drawings",
+    "Stage members on dunnage in erect order",
+    "Plumb columns and hold with guy lines",
+    "Bolt initial connections finger-tight",
+    "Install bracing before releasing guys",
+    "Torque all bolts to spec and mark",
+    "Inspect frame with foreman before sign-off"
+   ],
+   "rubric": [
+    {
+     "axis": "sequence",
+     "pass_if": "Bracing installed before guy lines released"
+    },
+    {
+     "axis": "torque",
+     "pass_if": "All bolts torqued and marked"
+    },
+    {
+     "axis": "fall protection",
+     "pass_if": "Harness tied off above 2 m"
+    },
+    {
+     "axis": "plumb",
+     "pass_if": "Frame within tolerance on two axes"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds and staggers bolts and plates at the work station so ironworkers keep hands away from the laydown edge."
+  },
+  {
+   "id": "site-electrical-tie-in",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Wire a temporary site distribution board and task lighting for night-time monitoring of conservation works.",
+   "hazards": [
+    "live circuits",
+    "wet grassland environment",
+    "trip hazards from runs",
+    "overloaded circuits"
+   ],
+   "steps": [
+    "Confirm supply isolated and locked out",
+    "Verify safe system of work permit",
+    "Install RCD-protected board on plinth",
+    "Run armoured cables on cable ramps",
+    "Test continuity and polarity before energizing",
+    "Energize, then verify RCD trip test",
+    "Label all circuits in the board"
+   ],
+   "ppe": [
+    "gloves",
+    "safety glasses",
+    "insulated footwear",
+    "high-vis vest"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "LOTO verified before any connection"
+    },
+    {
+     "axis": "protection",
+     "pass_if": "RCDs fitted and trip-tested"
+    },
+    {
+     "axis": "cable management",
+     "pass_if": "Runs on ramps, no unprotected crossings"
+    },
+    {
+     "axis": "labels",
+     "pass_if": "Every circuit labeled at the board"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "grassland-groundkeeping",
+   "trade": "grounds",
+   "zone": "Progress Observatory",
+   "task": "Maintain the grassland turf around the stones using pedestrian mowers and manual cutting near archaeology.",
+   "hazards": [
+    "thrown objects from mowers",
+    "noise and vibration",
+    "uneven ground rollover",
+    "fuel handling"
+   ],
+   "ppe": [
+    "eye protection",
+    "hearing protection",
+    "boots",
+    "gloves"
+   ],
+   "steps": [
+    "Walk area and remove stones and debris first",
+    "Check mower guards and cutoffs",
+    "Cut wide areas with pedestrian mower",
+    "Hand-scythe or strim marked buffer zones only",
+    "Refuel cold engine away from sources",
+    "Clean machine and record any ground disturbance",
+    "Report any surface finds to supervisor"
+   ],
+   "rubric": [
+    {
+     "axis": "pre-checks",
+     "pass_if": "Guards intact and area cleared before mowing"
+    },
+    {
+     "axis": "buffer respect",
+     "pass_if": "No powered cutting inside archaeology buffer"
+    },
+    {
+     "axis": "fuel safety",
+     "pass_if": "Refueled only with engine cold"
+    },
+    {
+     "axis": "finds response",
+     "pass_if": "Surface finds reported same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Heritage Stone Site Readiness Card",
+  "requires": [
+   "trilithon-lintel-lift",
+   "sarsen-rig-and-roll",
+   "solstice-alignment-survey",
+   "visitor-path-excavation",
+   "interpretive-steel-frame-erect",
+   "site-electrical-tie-in",
+   "grassland-groundkeeping"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s09-astrological-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "diagnostic-x",
+  "name": "Diagnostic.X",
+  "umbrella": "Powered by AGI Corp",
+  "status": "coming soon",
+  "tagline": "Revolutionary 4D medical imaging in the metaverse",
+  "anchor": {
+    "lat": 5.342706937662501,
+    "lon": 101.5663444901012,
+    "rad": 6371000,
+    "rp1": "https://enter.rp1.com?start_cid=553&lat=5.342706937662501&lon=101.5663444901012&rad=6371000"
+  },
+  "zones": [
+    {
+      "name": "Medical Kiosk",
+      "purpose": "Standalone diagnostic kiosk with screen, flanked by monitor workstations",
+      "source": "~/Downloads/Diagnostic.X -medical kiosk diagram .png (image)"
+    },
+    {
+      "name": "4D Imaging Room",
+      "purpose": "Doctor and patient walk around a 4D image of an injury; resize to focus, shown beside 2D X-ray",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, pages 1 and 3"
+    },
+    {
+      "name": "Virtual Molecular Lab",
+      "purpose": "VR lab to view and edit molecules from inside the structure, for chemists and protein engineers",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, page 2"
+    },
+    {
+      "name": "Metaverse Medical Office",
+      "purpose": "Customized metaverse medical office offered as a service to independent practitioners",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, pages 4-5"
+    }
+  ],
+  "agents": [
+    {
+      "name": "Office AI Avatar",
+      "role": "Attends to guests in the metaverse office while the doctor is with patients or asleep (project in progress)",
+      "zone": "Metaverse Medical Office",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, page 4"
+    },
+    {
+      "name": "Scientist Assistant Avatar",
+      "role": "AI avatar assisting in the lab while the scientist runs other experiments (project in progress)",
+      "zone": "Virtual Molecular Lab",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, pages 2 and 4"
+    },
+    {
+      "name": "Imaging AI",
+      "role": "AI that improves image quality and presents images in 4D",
+      "zone": "4D Imaging Room",
+      "source": "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf, page 3"
+    },
+    {
+      "name": "Medical AI Avatar",
+      "role": "Kiosk-facing medical AI avatar (named in video title only; role-only, contents not viewed)",
+      "zone": "Medical Kiosk",
+      "source": "~/Downloads/SmartCiti Diagnostic Foundation Medical AI Avatar.webm (filename only)"
+    }
+  ],
+  "sources": [
+    "~/Documents/SmartCiti-X/worlds/SPEC.md",
+    "~/Downloads/Diagnostic.X -medical kiosk diagram .png",
+    "~/Downloads/Romanbridge Metaverse presents 4d Medical imaging & Molecular Diagnostics opportunity.pdf",
+    "~/Downloads/Diagnostic.X.webm (filename only)",
+    "~/Downloads/DiagnosticX Pitch.webm (filename only)",
+    "~/Downloads/Introducing DiagnosticX.webm (filename only)",
+    "~/Downloads/SmartCiti Diagnostic Foundation Medical AI Avatar.webm (filename only)"
+  ],
+  "gaps": [
+    "No source describes what tests or diagnostics the kiosk performs; the PNG is an unlabeled line drawing",
+    "The PDF is branded RomanBridge; no source links Diagnostic.X to AGI Corp (umbrella set per instruction)",
+    "Agents are unnamed in sources; AI avatars are described only as projects in progress",
+    "Video contents (4 .webm files) were not viewed; only filenames used",
+    "No source ties the anchor location (lat 5.34, lon 101.57) to any site or facility"
+  ]
+}

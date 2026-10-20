@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agents Work, Members Govern: A Workshop for Aerospace and Technical Union Locals",
+   "grade_or_level": "Adult workforce / continuing education",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' division of labor in an agent-managed DAO",
+    "Identify which decisions (final votes, treasury, charter changes) stay in human hands",
+    "Draft a mock proposal in the Proposal Forum and carry it through human final vote",
+    "Assess how agent-managed coordination could affect worker voice and job quality"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter and reserved-for-humans list; members map which governance powers can never be delegated to agents.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare agent-generated evidence summaries with traditional union research briefs; discuss trust, sourcing, and verification.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a workplace proposal with the Proposal & Grant Drafter's template, then debate and hold a human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Observe Task Router coordination of working groups; discuss how task routing affects workload, fairness, and representation.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized post-workshop survey responses on trust in agent-drafted materials and preferred human-reserved decision powers, contributed to shared education models.",
+   "consent": "Adult participants sign informed consent before the session; data is opt-in, de-identified, and participants may withdraw at any time with their contributions removed."
+  },
+  {
+   "audience": "k12",
+   "title": "Mission to 39A: Rockets, Wetlands, and Robot Helpers",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Locate Launch Complex 39A on a map and describe its wetland setting between the lagoon and the Atlantic",
+    "Describe what a DAO is and why some decisions are reserved for humans",
+    "Track a class 'mission' from proposal to vote using the zones of the world",
+    "Practice evaluating evidence summaries for accuracy and bias"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students read a short Evidence Monitor-style summary about Kennedy Space Center and fact-check two claims against the brief's map facts.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams write a simple class proposal (e.g., a mock 'launch day plan') and vote on it themselves, learning that agents draft but people decide.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Discuss the mission 'AI governed as a public good'; students create a class charter listing decisions only humans should make.",
+     "minutes": 30
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students build a progress tracker poster for their class mission and present it, mimicking the Progress Tracker agent's dashboard.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized class-level results (no individual names) such as aggregate quiz scores and charter ideas, contributed to shared civics-of-AI education models.",
+   "consent": "Written guardian/parent consent is required for all minors before participation; no personally identifiable information is collected, and guardians may opt out at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governing AI as a Public Good: An NGO Field Study in an Agent-Managed DAO",
+   "grade_or_level": "Professional / NGO staff and program leads",
+   "outcomes": [
+    "Analyze the AGI Future Foundation mission through the DAO's five-zone structure",
+    "Design a measurable-outcome framework for a public-good AI initiative",
+    "Facilitate a human-decision cycle where agents propose and people enact",
+    "Map collaboration opportunities using the Collaborator Scout workflow"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop on translating mission statements into measurable charter outcomes; teams draft outcome indicators for an NGO program.",
+     "minutes": 75
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice commissioning and critiquing Research Synthesis Agent outputs; establish sourcing standards for NGO use.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play working-group formation via the Task Router; identify experts and partners through a Collaborator Scout exercise.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams present full proposals drafted agent-style, then a human panel debates and takes the final vote — never the agents.",
+     "minutes": 90
+    }
+   ],
+   "data_shared": "Anonymized outcome-indicator templates and proposal scoring rubrics, stripped of organization identifiers, contributed to shared NGO governance models.",
+   "consent": "Organizational memorandum of understanding plus individual consent for staff; all shared artifacts are de-identified and reviewed before contribution."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "From Pad 39A to Public Benefit: Nonprofit Governance in an Agent-Managed World",
+   "grade_or_level": "Nonprofit board members and senior staff",
+   "outcomes": [
+    "Explain how agent-managed operations align with nonprofit fiduciary and stewardship duties",
+    "Distinguish agent-drafted proposals from human-only enactment, treasury, and windfall decisions",
+    "Build a board-level oversight checklist for agent-assisted programs",
+    "Evaluate progress reporting using the Progress Observatory model"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board members compare the DAO charter's reserved human powers with nonprofit board duties; draft a stewardship map for their own organization.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Review sample agent-drafted grants and proposals; practice the human-only steps of debate, amendment, and enactment.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Audit a Progress Tracker dashboard; teams design measurable outcomes and reporting cadence for a nonprofit program.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Discuss task routing and working groups for lean nonprofit teams; identify where agent coordination helps and where human judgment must lead.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized governance checklists and oversight practices (no donor, beneficiary, or financial data) contributed to shared nonprofit governance models.",
+   "consent": "Individual consent forms for each participant; contributions are voluntary, aggregated, de-identified, and withdrawable on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s31-aerospace-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

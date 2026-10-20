@@ -1,0 +1,235 @@
+{
+ "title": "Diagnostic.X at Karolinska Solna",
+ "summary": "A walkable medical campus on Karolinska University Hospital's Solna grounds between Brunnsviken lake and pine forest. Four zones anchor the visitor journey: a public diagnostic kiosk, a 4D imaging consultation room, a molecular VR lab, and a metaverse medical office staffed by AI avatars (projects in progress per source).",
+ "biome": "temperate-forest",
+ "districts": [
+  {
+   "zone": "Medical Kiosk",
+   "real_anchor": "Karolinska University Hospital Solna main entrance forecourt",
+   "buildings": [
+    {
+     "name": "Kiosk Pavilion",
+     "use": "Standalone diagnostic kiosk with screen, flanked by monitor workstations",
+     "floors": 1
+    },
+    {
+     "name": "Forecourt Greeting Hut",
+     "use": "Visitor orientation and triage desk",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Kiosk Bay",
+    "Monitor Workstation Row",
+    "Accessibility Nook",
+    "Sanitizer Station"
+   ],
+   "props": [
+    "touchscreen diagnostic panel",
+    "twin monitor workstations",
+    "queue stanchions",
+    "wayfinding signage",
+    "wheelchair-access ramp",
+    "pine bench"
+   ],
+   "npc_agents": [
+    "Medical AI Avatar"
+   ]
+  },
+  {
+   "zone": "4D Imaging Room",
+   "real_anchor": "Karolinska Solna radiology wing, overlooking Brunnsviken",
+   "buildings": [
+    {
+     "name": "Imaging Consultation Suite",
+     "use": "Doctor and patient walk around a 4D injury projection, resized beside a 2D X-ray",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "4D Volumetric Theater",
+    "2D X-ray Comparison Wall",
+    "Consultation Alcove",
+    "Image Enhancement Core",
+    "Family Viewing Room"
+   ],
+   "props": [
+    "floating 4D injury hologram",
+    "resize gesture ring",
+    "lightbox X-ray panel",
+    "walk-around floor dial",
+    "radiology lightbox",
+    "consultation stools"
+   ],
+   "npc_agents": [
+    "Imaging AI"
+   ]
+  },
+  {
+   "zone": "Virtual Molecular Lab",
+   "real_anchor": "Karolinska Solna research laboratories, Biomedicum quarter",
+   "buildings": [
+    {
+     "name": "Biomedicum VR Lab",
+     "use": "VR lab to view and edit molecules from inside the structure",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Molecular Immersion Chamber",
+    "Protein Engineering Bench",
+    "Structure Library",
+    "Collaboration Atrium",
+    "Data Viz Wall"
+   ],
+   "props": [
+    "molecule-scale transport platform",
+    "atomic lattice editor",
+    "haptic manipulator arms",
+    "protein folding viewer",
+    "chemist lab benches",
+    "whiteboard wall"
+   ],
+   "npc_agents": [
+    "Scientist Assistant Avatar"
+   ]
+  },
+  {
+   "zone": "Metaverse Medical Office",
+   "real_anchor": "Karolinska Solna outpatient clinic row, pine edge toward Brunnsviken",
+   "buildings": [
+    {
+     "name": "Practitioner Office Building",
+     "use": "Customized metaverse medical offices offered as a service to independent practitioners",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Reception Lounge",
+    "Consulting Office Suite",
+    "Doctor's Private Study",
+    "Telemedicine Booth",
+    "Records Room"
+   ],
+   "props": [
+    "office AI avatar desk",
+    "exam couch",
+    "virtual certificate wall",
+    "patient seating",
+    "ambient lake-view window",
+    "secure records terminal"
+   ],
+   "npc_agents": [
+    "Office AI Avatar"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Pinus sylvestris",
+   "Picea abies",
+   "Betula pendula",
+   "Quercus robur",
+   "Tilia cordata"
+  ],
+  "shrubs": [
+   "Juniperus communis",
+   "Viburnum opulus",
+   "Euonymus europaeus"
+  ],
+  "flowers": [
+   "Linnaea borealis",
+   "Hepatica nobilis",
+   "Galium odoratum"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.1,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "18:45"
+ },
+ "court": {
+  "name": "Brunnsviken Diagnostic Court",
+  "style": "Modern Scandinavian clinical plaza with pine borders and moss lawns",
+  "why_here": "Karolinska Solna sits between Brunnsviken lake and pine forest; a lakefront clinical plaza frames the diagnostic journey."
+ },
+ "quests": [
+  {
+   "title": "First Check at the Kiosk",
+   "from_zone": "Medical Kiosk",
+   "to_zone": "4D Imaging Room",
+   "steps": [
+    "Register at the Medical Kiosk touchscreen",
+    "Complete the guided screen diagnostic with the Medical AI Avatar",
+    "Follow the pine path to the Imaging Consultation Suite",
+    "Hand results to the Imaging AI for 4D rendering"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Walk Around the Injury",
+   "from_zone": "4D Imaging Room",
+   "to_zone": "Metaverse Medical Office",
+   "steps": [
+    "Step onto the walk-around floor dial in the 4D Volumetric Theater",
+    "Resize the 4D injury hologram with the gesture ring",
+    "Compare against the 2D X-ray wall",
+    "Take the summary to the Office AI Avatar at the Metaverse Medical Office"
+   ],
+   "xp": 45
+  },
+  {
+   "title": "Inside the Molecule",
+   "from_zone": "Virtual Molecular Lab",
+   "to_zone": "4D Imaging Room",
+   "steps": [
+    "Meet the Scientist Assistant Avatar at Biomedicum VR Lab",
+    "Ride the molecule-scale transport platform into a protein structure",
+    "Edit a residue with the haptic manipulators",
+    "Return and project the edited structure in the 4D Theater"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Open the Office",
+   "from_zone": "Metaverse Medical Office",
+   "to_zone": "Medical Kiosk",
+   "steps": [
+    "Customize a practitioner office with the Office AI Avatar",
+    "Set the virtual certificate wall and records terminal",
+    "Book a follow-up kiosk screening",
+    "Return to the kiosk forecourt at sunset to close the tour"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Lakeside Rounds",
+   "from_zone": "Medical Kiosk",
+   "to_zone": "Virtual Molecular Lab",
+   "steps": [
+    "Start at the kiosk forecourt greeting hut",
+    "Walk the Brunnsviken shore path past pine and moss ground",
+    "Collect a diagnostic token from each zone's avatar agent",
+    "Deliver all four tokens to the Scientist Assistant Avatar"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "diagnostic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,379 @@
+{
+ "scenarios": [
+  {
+   "id": "pile-cap-rebar-wetland",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Tie rebar cages for a foundation cap on soft restored-marsh soil at the bayfront site.",
+   "hazards": [
+    "mud and unstable footing",
+    "rebar impalement",
+    "crushed fingers during cage lifts",
+    "tidal water intrusion"
+   ],
+   "ppe": [
+    "hard hat",
+    "gloves",
+    "safety glasses",
+    "high-visibility vest",
+    "steel-toe rubber boots"
+   ],
+   "steps": [
+    "Inspect the excavation and dewatering pumps",
+    "Stage rebar bundles on mud mats",
+    "Tie cage bars with wire at marked spacing",
+    "Check cage bracing before any lift",
+    "Signal the crane for the cage pick and set",
+    "Verify cover blocks and clearance before pour"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Wears all listed PPE and never stands under a suspended load"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Tie spacing within tolerance on 90% of checks"
+    },
+    {
+     "axis": "site_awareness",
+     "pass_if": "Notes tidal conditions and keeps footing stable"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Hauls rebar bundles across soft ground to keep apprentices out of the mud."
+  },
+  {
+   "id": "trench-shore-excavation",
+   "trade": "laborers",
+   "zone": "Operations Deck",
+   "task": "Shore and inspect a utility trench dug near bayfront soils with high groundwater.",
+   "hazards": [
+    "trench cave-in",
+    "water accumulation",
+    "underground utility strike",
+    "hazardous atmosphere in the hole"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-visibility vest",
+    "gloves",
+    "steel-toe boots",
+    "respirator if air test fails"
+   ],
+   "steps": [
+    "Locate and mark utilities before digging",
+    "Check trench depth against shoring table",
+    "Install trench box or hydraulic shores",
+    "Set up dewatering pump and discharge",
+    "Test atmosphere before entry",
+    "Enter only after competent-person inspection"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "No entry before shoring, dewatering, and inspection"
+    },
+    {
+     "axis": "procedure",
+     "pass_if": "Uses protective-system table correctly for soil type"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Relays hazards to crew before entry"
+    }
+   ],
+   "minutes": 60,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "panel-wiring-ops-deck",
+   "trade": "electricians",
+   "zone": "Operations Deck",
+   "task": "Pull branch circuits and terminate panelboards inside the operations building.",
+   "hazards": [
+    "arc flash",
+    "live circuits",
+    "conductor cuts",
+    "ladder falls"
+   ],
+   "ppe": [
+    "safety glasses",
+    "hard hat",
+    "insulated gloves",
+    "voltage-rated tools check",
+    "arc-flash rated clothing for panel work"
+   ],
+   "steps": [
+    "Apply lockout-tagout and verify zero energy",
+    "Plan wire pulls and set up conduit runs",
+    "Pull conductors without damaging insulation",
+    "Terminate and torque panel connections",
+    "Megger test circuits before energizing",
+    "Label panel and restore under permit"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Applies LOTO and verifies de-energization every time"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Torque values within spec on all terminations"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Completes insulation resistance test before energizing"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "Feeds and routes conductors along tray runs to reduce repetitive pulls."
+  },
+  {
+   "id": "sprinkler-standpipe-install",
+   "trade": "fire-sprinkler",
+   "zone": "Charter Hall",
+   "task": "Install sprinkler mains and standpipe risers in the public assembly hall.",
+   "hazards": [
+    "overhead work and falling pipe",
+    "threading machine pinch points",
+    "scaffold falls",
+    "system pressure test blowback"
+   ],
+   "ppe": [
+    "hard hat",
+    "safety glasses",
+    "gloves",
+    "fall protection harness",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Lay out main runs from approved shop drawings",
+    "Cut and groove pipe with guards in place",
+    "Hang mains from rated strut and hangers",
+    "Join couplings and set seismic bracing",
+    "Pressure test with air then water per spec",
+    "Flush lines and turn over to inspection"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Uses fall protection above threshold height"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Hanger spacing and bracing per plan"
+    },
+    {
+     "axis": "testing",
+     "pass_if": "Hydro test holds with no leaks"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "hvac-duct-seal-check",
+   "trade": "hvacr",
+   "zone": "Research Synthesis Lab",
+   "task": "Seal and balance ductwork serving the lab ventilation system.",
+   "hazards": [
+    "sheet metal lacerations",
+    "working at height on lift",
+    "confined plenum spaces",
+    "fan start-up during work"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "safety glasses",
+    "hard hat",
+    "lift harness"
+   ],
+   "steps": [
+    "Lock out air handlers before opening ducts",
+    "Inspect joints and seal with mastic",
+    "Pressure-check dampers and VAV boxes",
+    "Balance airflow at each diffuser",
+    "Record readings and release equipment"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Applies LOTO before duct entry"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Leakage within allowance after sealing"
+    },
+    {
+     "axis": "documentation",
+     "pass_if": "Balancing readings recorded and legible"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries sealant and tools through tight plenum access routes."
+  },
+  {
+   "id": "hazardous-soil-handling",
+   "trade": "hazmat",
+   "zone": "Progress Observatory",
+   "task": "Characterize and handle potentially contaminated fill unearthed during observatory foundation work.",
+   "hazards": [
+    "soil contamination exposure",
+    "silica dust",
+    "heavy equipment traffic",
+    "heat stress in encapsulated suits"
+   ],
+   "ppe": [
+    "full-face respirator or PAPR",
+    "Tyvek suit",
+    "nitrile gloves",
+    "boot covers"
+   ],
+   "steps": [
+    "Review site history and sampling plan",
+    "Set exclusion and decontamination zones",
+    "Wet down material to suppress dust",
+    "Load and manifest suspect soil for disposal",
+    "Decontaminate equipment and personnel before break"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Zone controls and decon followed without shortcuts"
+    },
+    {
+     "axis": "procedure",
+     "pass_if": "Manifest and labeling match disposal requirements"
+    },
+    {
+     "axis": "awareness",
+     "pass_if": "Recognizes and reports unknown material"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Performs visual and sensor surveys of suspect soil piles before crews enter."
+  },
+  {
+   "id": "crane-pick-forum-steel",
+   "trade": "riggers",
+   "zone": "Proposal Forum",
+   "task": "Rig and direct a crane pick of structural steel for the forum canopy.",
+   "hazards": [
+    "suspended load",
+    "rigging failure",
+    "crush zones near load path",
+    "wind gusts off the bay"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-visibility vest",
+    "gloves",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Verify crane inspection and ground bearing",
+    "Select rated rigging and inspect for damage",
+    "Determine load weight and center of gravity",
+    "Attach rigging and use taglines",
+    "Give standard hand signals during the lift",
+    "Land the load on dunnage and release safely"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "Never under the load and uses taglines"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Rigging capacity exceeds load with correct sling angles"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "Signals clear and acknowledged by operator"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "roof-perimeter-guardrail",
+   "trade": "carpenters",
+   "zone": "Proposal Forum",
+   "task": "Build guardrail and perimeter protection on the forum roof edge.",
+   "hazards": [
+    "falls from roof edge",
+    "power tool cuts",
+    "weather exposure",
+    "material drops to walkways below"
+   ],
+   "ppe": [
+    "hard hat",
+    "fall protection harness",
+    "gloves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Anchor warning-line system before work",
+    "Cut and pre-assemble rail sections at ground level",
+    "Set posts at code spacing along edge",
+    "Fasten top and mid rails and toe boards",
+    "Inspect completed rail for deflection",
+    "Secure or remove loose material each shift"
+   ],
+   "rubric": [
+    {
+     "axis": "safety_compliance",
+     "pass_if": "100% tie-off within the warning line"
+    },
+    {
+     "axis": "craft_accuracy",
+     "pass_if": "Rail height and post spacing meet code"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "No loose material left near edge"
+    }
+   ],
+   "minutes": 50,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferries fasteners and rail stock up to the work zone to cut carry trips."
+  }
+ ],
+ "credential": {
+  "name": "Bayfront Wetland Build Site Readiness Card",
+  "requires": [
+   "pile-cap-rebar-wetland",
+   "trench-shore-excavation",
+   "panel-wiring-ops-deck",
+   "sprinkler-standpipe-install",
+   "hvac-duct-seal-check",
+   "hazardous-soil-handling",
+   "crane-pick-forum-steel",
+   "roof-perimeter-guardrail"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s29-metaverse-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}
