@@ -5,7 +5,7 @@ import { onState, award } from './play.js';
 const $ = (id) => document.getElementById(id);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
-export function wireHud({ slug, geo, img, world, trades, programs, course, counts, S, avatars, shooter, court, fleet, fly }) {
+export function wireHud({ slug, geo, img, world, trades, programs, course, counts, S, avatars, fleet, fly }) {
   $('facts').innerHTML = Object.entries(counts).map(([k, v]) => `<span><b>${v === true ? 'yes' : v === false ? 'no' : esc(v)}</b> ${esc(k)}</span>`).join('');
   $('credit').textContent = [img.credit, ...geo.attribution, 'HD foliage: Poly Haven (CC0)'].join(' · ');
   if (world) $('about').innerHTML = `<p>${esc(world.summary)}</p>` + (world.districts || []).map(d =>
@@ -22,8 +22,6 @@ export function wireHud({ slug, geo, img, world, trades, programs, course, count
       if (ok) award(k.xp, `quiz: ${k.zone}`); else box.querySelectorAll('button')[k.answer].classList.add('ok'); };
   }
   onState(s => { $('xp').textContent = `${s.xp} XP · ${s.made}/${s.shots} baskets`; $('log').innerHTML = s.log.map(l => `<li>${esc(l)}</li>`).join(''); });
-  $('shoot').onclick = () => shooter.shoot(+$('power').value / 100);
-  $('goCourt').onclick = () => fly(court.position, 26);
   $('goRobots').onclick = () => { const e = fleet.userData.episodes[0]; if (e) fly(e.o.position, 18); };
   $('jsonl').onclick = () => {
     const blob = new Blob([fleet.userData.jsonl()], { type: 'application/x-ndjson' });

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>WorldForge Earth world</title>
-<meta name="description" content="Walk a real place rebuilt as an agentic training world: satellite imagery, real elevation, OpenStreetMap buildings, wind-blown trees and flowers, moving water, union trade simulators, robot digital twins and a basketball court.">
+<meta name="description" content="Walk a real place rebuilt as an agentic training world: satellite imagery, real elevation, OpenStreetMap buildings, wind-blown trees and flowers, moving water, union trade simulators, robot digital twins and quest-based learning.">
 <style>
 :root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:rgba(9,18,22,.78)}
 *{box-sizing:border-box}html,body{margin:0;height:100%;background:#0b1214;color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;overflow:hidden}
@@ -34,8 +34,7 @@ button:hover{background:#21454f}button.ok{background:#1f6b4c}button.no{backgroun
   <h2>Course quiz</h2><div id="quiz"></div>
   <h2>Talk</h2><div id="talk" class="muted">Click the Omega Steward (halo), Hermes (wings), the Coach (orange) or the Hive (gold swarm).</div>
 </div>
-<div class="panel" id="game"><div id="xp">0 XP · 0/0 baskets</div>
-  <button id="goCourt">Go to court</button> <label class="muted">power <input id="power" type="range" min="40" max="85" value="62"></label> <button id="shoot">Shoot</button>
+<div class="panel" id="game"><div id="xp">0 XP</div>
   <button id="goRobots">Robot twins</button> <button id="jsonl">Download robot JSONL</button> <span id="eps" class="muted"></span>
   <ul id="log"></ul></div>
 <div class="panel" id="status">Loading...</div>

@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import { makeStage, makeGround, drapeImagery, makeBuildings, clock, uniforms } from './core.js';
 import { makeVegetation, loadHeroFoliage } from './nature.js';
 import { makeWater } from './water.js';
-import { makeCards, makeAvatars, makeCourt, makeShooter, makeQuestRings } from './play.js';
+import { makeCards, makeAvatars, makeQuestRings } from './play.js';
 import { makeFleet } from './robots.js';
 import { wireHud } from './hud.js';
 
@@ -39,9 +39,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const water = makeWater(geo, ground, S.sun.position.clone().normalize(), world?.water?.flow_mps ?? 0.4); S.scene.add(water);
   const cards = makeCards(cardsDoc?.cards || [], ground); S.scene.add(cards);
   const zones = cards.userData.zones;
-  const court = makeCourt(geo.court, ground, world?.court?.name || 'Community Court'); S.scene.add(court);
-  const shooter = makeShooter(S.scene, S.camera, court);
-  const avatars = makeAvatars(lines?.[slug], zones, ground, geo.court); S.scene.add(avatars);
+  const avatars = makeAvatars(lines?.[slug], zones, ground); S.scene.add(avatars);
   const rings = makeQuestRings(zones, ground, world?.quests || []); S.scene.add(rings);
   const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo.place }); S.scene.add(fleet);
   if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground);
@@ -50,24 +48,24 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     robots: fleet.userData.episodes.length, zones: zones.length, imageryZoom: img.zoom };
   let flyT = null;
   const fly = (p, dist = 40) => { flyT = { from: S.camera.position.clone(), to: p.clone().add(new THREE.Vector3(dist, dist * 0.6, dist)), look: p.clone(), t: 0 }; };
-  wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, shooter, court, fleet, fly });
+  wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, fleet, fly });
 
   const tour = q.get('tour') === '1';
-  const stops = [new THREE.Vector3(0, 0, 0), court.position.clone(), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))];
+  const stops = [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))];
   let tourI = 0, tourClock = 0;
   if (tour) fly(stops[0], 140);
   S.renderer.setAnimationLoop(() => {
     const raw = clock.getDelta(), dt = Math.min(raw, 0.05), time = clock.elapsedTime; uniforms.uTime.value = time;
     // robots run on real time (capped, sub-stepped) so slow GPUs still produce training episodes at the same rate
     for (let left = Math.min(raw, 0.5); left > 1e-4; left -= 0.05) fleet.userData.tick(Math.min(left, 0.05));
-    shooter.tick(dt); avatars.userData.tick(dt, time); rings.userData.tick(time, S.camera.position);
+    avatars.userData.tick(dt, time); rings.userData.tick(time, S.camera.position);
     if (flyT) { flyT.t = Math.min(flyT.t + dt / 2.5, 1); const e = flyT.t * flyT.t * (3 - 2 * flyT.t);
       S.camera.position.lerpVectors(flyT.from, flyT.to, e); S.controls.target.lerp(flyT.look, e * 0.25 + 0.05); if (flyT.t >= 1) flyT = null; }
-    if (tour && !flyT && (tourClock += dt) > 2.5) { tourClock = 0; tourI = (tourI + 1) % stops.length; fly(stops[tourI], tourI === 0 ? 140 : 34); if (tourI === 1) shooter.shoot(0.62); }
+    if (tour && !flyT && (tourClock += dt) > 2.5) { tourClock = 0; tourI = (tourI + 1) % stops.length; fly(stops[tourI], tourI === 0 ? 140 : 34); }
     S.controls.update(); S.renderer.render(S.scene, S.camera);
   });
   $('status').hidden = true;
-  window.__wf = { ready: true, slug, counts, records: () => fleet.userData.records.length, fly, stops, shoot: () => shooter.shoot(0.62),
+  window.__wf = { ready: true, slug, counts, records: () => fleet.userData.records.length, fly, stops,
     debug: () => fleet.userData.episodes.map(e => ({ id: e.task.id, cls: e.t.cls, state: e.state, t0: +e.t0.toFixed(1), dist: +e.dist.toFixed(1),
       at: [+e.o.position.x.toFixed(1), +e.o.position.z.toFixed(1)], goal: [+e.goal.x.toFixed(1), +e.goal.y.toFixed(1)] })) };
 })().catch(e => { status('Could not load this world: ' + e.message); window.__wf = { ready: false, error: String(e) }; });
