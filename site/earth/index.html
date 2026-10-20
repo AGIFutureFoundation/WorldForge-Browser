@@ -1,82 +1,117 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WorldForge Earth — 41 agentic worlds on real places</title>
-<meta name="description" content="Walk 41 worlds built from real satellite imagery, elevation and map data. Each world has a basketball court, union trade simulators, robot digital twins, and a portal to RP1. Agents operate; people govern.">
+<title>WorldForge Earth — 41 Training Worlds on Real Maps</title>
+<meta name="description" content="Explore 41 agentic training worlds built on real Earth locations. Satellite imagery, elevation data, OSM buildings, basketball courts, union trade simulators, robot digital twins, and quest-based learning. Powered by AGI Corp.">
+<meta name="keywords" content="training worlds, agentic AI, robot simulation, union training, GIS, satellite imagery, WorldForge, AGI Corp">
+<meta property="og:title" content="WorldForge Earth — 41 Training Worlds">
+<meta property="og:description" content="Walkable worlds on real maps with robots, trades training, and quests.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://agifuturefoundation.github.io/WorldForge-Browser/earth/">
 <style>
-:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:rgba(9,18,22,.85);--card:rgba(14,24,28,.9)}
-*{box-sizing:border-box}body{margin:0;background:#0b1214;color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:#0b1214;--card:rgba(14,24,28,.92);--glow:rgba(67,197,158,.15)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-header{position:sticky;top:0;z-index:10;background:rgba(11,18,20,.95);backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.08);padding:14px 24px}
-header h1{margin:0;font-size:1.2rem}header p{margin:4px 0 0;color:var(--mut);font-size:.85rem}
-main{max-width:1200px;margin:0 auto;padding:24px 16px}
+.hero{text-align:center;padding:60px 20px 40px;background:linear-gradient(180deg,rgba(11,18,20,1) 0%,rgba(9,18,20,.95) 100%)}
+.hero h1{font-size:2.4rem;margin:0 0 8px;font-weight:700}.hero h1 span{color:var(--acc)}
+.hero .sub{color:var(--mut);font-size:1.05rem;margin:0 auto 24px;max-width:600px}
+.cta{display:inline-block;background:var(--acc);color:#0b1214;font-weight:700;padding:14px 32px;border-radius:10px;font-size:1.05rem;transition:transform .15s,box-shadow .15s}
+.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(67,197,158,.3);text-decoration:none}
+.cta-sm{background:transparent;border:1px solid var(--acc);color:var(--acc);padding:10px 20px;border-radius:8px;font-size:.9rem;margin-left:12px}
+.stats{display:flex;justify-content:center;gap:40px;padding:24px 16px;flex-wrap:wrap}
+.stats div{text-align:center}.stats b{display:block;font-size:1.8rem;color:var(--acc)}.stats span{font-size:.8rem;color:var(--mut)}
+.filter{text-align:center;padding:16px}.filter button{background:rgba(255,255,255,.06);color:var(--mut);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:6px 16px;margin:4px;font-size:.8rem;cursor:pointer}
+.filter button.active{background:var(--acc);color:#0b1214;border-color:var(--acc)}
+main{max-width:1200px;margin:0 auto;padding:0 16px 40px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
 .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.4)}
-.card img{width:100%;height:160px;object-fit:cover;background:#1a2a2f}
-.card .bd{padding:12px 14px}
-.card h2{margin:0 0 4px;font-size:.95rem}
-.card .meta{margin:0 0 8px;font-size:.78rem;color:var(--mut);display:flex;gap:12px;flex-wrap:wrap}
-.card .meta span{display:flex;align-items:center;gap:4px}
-.btns{display:flex;gap:8px;margin-top:8px}
-button{background:#17323a;color:var(--ink);border:1px solid #2b5a63;border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer;font-size:.8rem}
-button:hover{background:#21454f}button:disabled{opacity:.5;cursor:not-allowed}
-.badge{display:inline-block;font-size:.65rem;padding:2px 6px;border-radius:4px;background:rgba(67,197,158,.15);color:var(--acc)}
-.badge.warn{background:rgba(230,126,34,.15);color:#e67e22}.badge.no{background:rgba(192,57,43,.15);color:#c0392b}
-footer{padding:24px 16px;text-align:center;color:var(--mut);font-size:.75rem}
-@media (max-width:600px){header{padding:12px 16px}}
+.card img{width:100%;height:140px;object-fit:cover;background:#1a2a2f}
+.card .bd{padding:12px 14px}.card h2{margin:0 0 4px;font-size:.9rem;line-height:1.3}.card h2 a{color:var(--ink)}
+.card .place{color:var(--mut);font-size:.78rem;margin:0 0 6px}
+.card .tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:8px}
+.card .tag{font-size:.65rem;padding:2px 6px;border-radius:4px;background:var(--glow);color:var(--acc)}
+.card .btns{display:flex;gap:6px}
+.card .btn{display:inline-block;background:#17323a;color:var(--ink);border:1px solid #2b5a63;border-radius:6px;padding:5px 10px;font-size:.75rem;font:inherit;cursor:pointer}
+.card .btn:hover{background:#21454f;text-decoration:none}.card .btn.primary{background:var(--acc);color:#0b1214;border-color:var(--acc)}
+footer{text-align:center;padding:24px 16px;color:var(--mut);font-size:.75rem;border-top:1px solid rgba(255,255,255,.06)}
 </style>
 </head><body>
-<header><h1>WorldForge Earth</h1><p>41 agentic worlds on real places · <span id="count">0</span> ready · <a href="world.html?world=climate-dao">try one</a></p></header>
+<div class="hero">
+  <h1>WorldForge <span>Earth</span></h1>
+  <p class="sub">41 agentic training worlds built on real Earth locations — satellite imagery, real elevation, OpenStreetMap buildings, robot digital twins, union trade simulators, and quest-based learning.</p>
+  <a href="#worlds" class="cta">Enter the Worlds</a>
+  <a href="world.html?world=climate-dao" class="cta-sm">Try Climate DAO →</a>
+</div>
+<div class="stats" id="stats">
+  <div><b id="sw">41</b><span>Worlds</span></div>
+  <div><b id="sc">0</b><span>City Grids</span></div>
+  <div><b id="sr">0</b><span>Robot Tasks</span></div>
+  <div><b id="st">0</b><span>Trade Scenarios</span></div>
+  <div><b>∞</b><span>Quests</span></div>
+</div>
+<div class="filter" id="filter">
+  <button class="active" data-f="all">All</button>
+  <button data-f="urban-park">Urban Park</button>
+  <button data-f="coast">Coast</button>
+  <button data-f="river-valley">River Valley</button>
+  <button data-f="desert">Desert</button>
+  <button data-f="tropical">Tropical</button>
+  <button data-f="mediterranean">Mediterranean</button>
+  <button data-f="wetland">Wetland</button>
+  <button data-f="grassland">Grassland</button>
+  <button data-f="alpine">Alpine</button>
+  <button data-f="urban-core">Urban Core</button>
+</div>
 <main>
   <div class="grid" id="grid"></div>
 </main>
-<footer>Agents operate; people govern. All worlds are drafts. No live deployment on mainnet. <a href="../">WorldForge home</a></footer>
+<footer>
+  Agents operate; people govern. All worlds are drafts — no live deployment on mainnet.<br>
+  Powered by <a href="https://agifuturefoundation.github.io/WorldForge-Browser/">AGI Corp</a> · <a href="https://github.com/AGIFutureFoundation/WorldForge-Browser">GitHub</a>
+</footer>
 <script>
-const $ = (s) => document.querySelector(s);
-const grid = $('#grid');
-let worlds = [], loaded = 0;
-
-async function loadIndex() {
-  const res = await fetch('worlds.json');
-  if (!res.ok) { grid.innerHTML = '<p style="padding:24px;color:#c0392b">Could not load worlds.json</p>'; return; }
-  worlds = await res.json();
-  render();
-}
-
-function render() {
-  grid.innerHTML = worlds.map(w => {
-    const hasMap = !!w.geo;
-    const hasWorld = !!w.world;
-    const hasStills = !!w.still;
-    return `
-    <article class="card">
-      ${hasStills ? `<img src="${w.still}" alt="${w.name}">` : '<div style="width:100%;height:160px;background:#1a2a2f"></div>'}
+const $=s=>document.querySelector(s);
+const grid=$('#grid');
+let worlds=[];
+fetch('worlds.json')
+  .then(r=>r.json())
+  .then(data=>{
+    worlds=data;
+    let cities=0,robots=0,trades=0;
+    worlds.forEach(w=>{if(w.world)cities++;if(w.robots)robots+=w.robots.tasks||0;if(w.trades)trades+=w.trades.scenarios||0;});
+    $('#sw').textContent=worlds.length;$('#sc').textContent=cities;$('#sr').textContent=robots;$('#st').textContent=trades;
+    render('all');
+  })
+  .catch(()=>{grid.innerHTML='<p style="padding:24px;color:#c0392b">Could not load worlds data.</p>'});
+function render(filter){
+  const filtered=filter==='all'?worlds:worlds.filter(w=>w.biome===filter);
+  grid.innerHTML=filtered.map(w=>{
+    const biome=(w.biome||'').replace('-',' ');
+    return `<article class="card" data-biome="${w.biome||''}">
+      ${w.still?`<img src="${w.still}" alt="${w.name}" loading="lazy">`:'<div style="width:100%;height:140px;background:linear-gradient(135deg,#1a2a2f,#0b1214)"></div>'}
       <div class="bd">
-        <h2>${w.name} <span class="badge">${w.slug}</span></h2>
-        <p class="meta">
-          <span>📍 ${w.place || 'no anchor'}</span>
-          <span>🗺 ${w.geo ? 'real map' : 'pending'}</span>
-        </p>
-        <p class="meta">
-          <span class="badge ${hasMap ? '' : 'warn'}">${hasMap ? 'map ready' : 'map pending'}</span>
-          <span class="badge ${hasWorld ? '' : 'warn'}">${hasWorld ? 'world ready' : 'world pending'}</span>
-        </p>
+        <h2><a href="world.html?world=${w.slug}">${w.name}</a></h2>
+        <p class="place">📍 ${w.place||'Real Earth location'}</p>
+        <div class="tags">
+          <span class="tag">${biome}</span>
+          ${w.world?'<span class="tag">world</span>':''}
+          ${w.geo?'<span class="tag">map</span>':''}
+          ${w.robots?`<span class="tag">${w.robots.tasks} robots</span>`:''}
+          ${w.trades?`<span class="tag">${w.trades.scenarios} trades</span>`:''}
+        </div>
         <div class="btns">
-          <button onclick="location.href='world.html?world=${w.slug}'" ${!hasWorld ? 'disabled' : ''}>Enter world</button>
-          <button onclick="openRP1('${w.slug}')" ${!w.rp1 ? 'disabled' : ''}>Enter in RP1</button>
+          <a href="world.html?world=${w.slug}" class="btn primary">Enter World</a>
+          ${w.rp1?`<a href="${w.rp1}" target="_blank" rel="noopener" class="btn">RP1</a>`:''}
         </div>
       </div>
     </article>`;
   }).join('');
-  $('#count').textContent = worlds.filter(w => w.world).length;
 }
-
-function openRP1(slug) {
-  const w = worlds.find(x => x.slug === slug);
-  if (!w?.rp1) return;
-  window.open(w.rp1, '_blank', 'noopener');
-}
-
-loadIndex();
+$('#filter').addEventListener('click',e=>{
+  if(!e.target.matches('button'))return;
+  $('#filter .active').classList.remove('active');
+  e.target.classList.add('active');
+  render(e.target.dataset.f);
+});
 </script>
 </body></html>
