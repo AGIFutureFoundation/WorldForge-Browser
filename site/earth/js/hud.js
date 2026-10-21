@@ -84,8 +84,3 @@ export function wireHud({ slug, geo, img, world, trades, programs, course, count
   window.__wf.closeModule = () => { document.getElementById('module-panel').style.display = 'none'; };
   window.__wf.startModule = (id) => { award(25, `started module ${id}`); window.__wf.closeModule(); };
 }
-    }).join('');
-  }
-      <details><summary>🌤️ Weather & Sky</summary><p>Wind: ${esc(world.wind?.prevailing_from||'W')} at ${esc(world.wind?.mean_mps||4)} m/s</p><p>Day: ${esc(world.day_cycle?.sunrise_local||'06:30')} - ${esc(world.day_cycle?.sunset_local||'19:30')}</p><p>Water: ${esc(world.water?.kind||'none')}</p></details>
-      <details><summary> Flora</summary><p>Trees: ${(world.flora?.trees||[]).map(esc).join(', ')}</p><p>Flowers: ${(world.flora?.flowers||[]).map(esc).join(', ')}</p></details>`;
-  } else $('about').innerHTML = '<p class="muted">Detailed design for this world is still being generated.</p>';
