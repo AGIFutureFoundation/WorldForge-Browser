@@ -18,7 +18,7 @@ button:hover{background:#21454f}button.ok{background:#1f6b4c}button.no{backgroun
 #log{margin:6px 0 0;padding-left:18px;max-height:90px;overflow:auto;font-size:.82rem;color:var(--mut)}
 #talk{margin-top:6px;font-size:.86rem}#status{left:50%;top:45%;transform:translate(-50%,-50%);font-size:1rem}
 #credit{position:fixed;left:0;right:0;bottom:0;padding:6px 12px;font-size:.7rem;color:var(--mut);background:rgba(0,0,0,.5)}
-#credit a{color:var(--mut)}.qz p{margin:8px 0 2px}a{color:var(--acc)}.module-link{color:#34d399;font-size:.75rem;text-decoration:underline}.module-link:hover{color:#6ee7b7}
+#credit a{color:var(--mut)}.qz p{margin:8px 0 2px}a{color:var(--acc)}.module-link{color:#34d399;font-size:.75rem;text-decoration:underline}.module-link:hover{color:#6ee7b7}.module-btn{background:#1a3a4a;color:#34d399;border:1px solid #34d399;border-radius:4px;padding:2px 8px;font-size:.7rem;cursor:pointer;margin-left:4px}.module-btn:hover{background:#34d399;color:#0b1214}.module-content h3{margin-bottom:8px}.module-content p{margin:4px 0}.module-actions{display:flex;gap:8px;margin-top:12px}
 @media (max-width:820px){#side{top:auto;bottom:56px;height:38vh}#game{display:none}}
 </style>
 <script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
@@ -37,12 +37,15 @@ button:hover{background:#21454f}button.ok{background:#1f6b4c}button.no{backgroun
 <div class="panel" id="game"><div id="xp">0 XP</div>
   <button id="goRobots">Robot twins</button> <button id="jsonl">Download robot JSONL</button> <span id="eps" class="muted"></span>
   <ul id="log"></ul></div>
+<div class="panel" id="module-panel" style="display:none;right:12px;top:12px;max-width:340px;max-height:80vh;overflow:auto"><div class="module-content"></div></div>
 <div class="panel" id="status">Loading...</div>
 <div id="credit"></div>
 <script>
   const u = new URL(location.href);
   document.getElementById('hdlink').href = (u.searchParams.set('hd', '1'), u.search);
   const v = new URL(location.href); v.searchParams.set('tour', '1'); document.getElementById('tourlink').href = v.search;
+  window.__wf = window.__wf || {};
+  window.__wf.closeModule = () => { document.getElementById('module-panel').style.display = 'none'; };
 </script>
 <script type="module" src="js/main.js"></script>
 </body></html>
