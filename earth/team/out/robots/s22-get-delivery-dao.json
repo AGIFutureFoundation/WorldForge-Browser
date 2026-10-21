@@ -1,331 +1,434 @@
 {
  "tasks": [
   {
-   "id": "charter-hall-talos-tour-guide",
-   "robot": "pal-robotics-talos",
+   "id": "s22-get-delivery-dao-a200-1",
+   "robot": "clearpath-husky-a200",
    "zone": "Charter Hall",
-   "goal": "Guide human stewards along the Charter Hall exhibit path, presenting charter panels while maintaining stable bipedal balance.",
+   "goal": "AMR package sorting",
    "ros": {
     "action": "/navigate_to_pose",
     "topics": [
-     "/charter_panels",
-     "/gait_state",
-     "/people_detections",
-     "/cmd_vel"
+     "/cmd_vel",
+     "/odom",
+     "/map",
+     "/laser_scan"
     ],
     "frame": "map"
    },
-   "terrain": "Flat polished concrete exhibition floor simulating a port-terminal office; cable ramps and panel plinths as obstacles.",
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
    "success": [
-    "Visits all 5 charter panels in order",
-    "Maintains <0.1 m path deviation",
-    "Zero falls or self-collision events",
-    "Stops within 0.3 m of each panel"
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "E-stop if human within 0.8 m in path",
-    "Abort gait on tilt >10 deg",
-    "Stop if battery <20%"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Human steward confirms tour route start and receives charter summaries before any reading aloud.",
+   "human_in_loop": "Union steward approves at FedEx World Hub",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "panel_id",
-     "path_deviation_m",
-     "dwell_time_s",
-     "balance_events",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "laborers",
+   "certification_level": "Level 1",
+   "industry": "logistics-warehousing"
   },
   {
-   "id": "research-lab-husky-map-sync",
+   "id": "s22-get-delivery-dao-fetch-1",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Charter Hall",
+   "goal": "AMR package sorting",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/map",
+     "/laser_scan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
+   "success": [
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at FedEx World Hub",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "laborers",
+   "certification_level": "Level 1",
+   "industry": "logistics-warehousing"
+  },
+  {
+   "id": "s22-get-delivery-dao-spot-1",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "AMR package sorting",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/map",
+     "/laser_scan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
+   "success": [
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at FedEx World Hub",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "laborers",
+   "certification_level": "Level 1",
+   "industry": "logistics-warehousing"
+  },
+  {
+   "id": "s22-get-delivery-dao-a200-2",
    "robot": "clearpath-husky-a200",
    "zone": "Research Synthesis Lab",
-   "goal": "Build and continuously update a 2D occupancy map of the Research Synthesis Lab, syncing coverage of evidence stations to the map server.",
-   "ros": {
-    "action": "/slam_toolbox/localize",
-    "topics": [
-     "/scan",
-     "/map_updates",
-     "/odometry/wheels",
-     "/coverage_status"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Wide lab floor with server racks, desk clusters, and palletized server crates mimicking Maasvlakte 2 container-office blocks.",
-   "success": [
-    "Map coverage >95% of traversable area",
-    "Loop-closure error <0.2 m",
-    "Map update latency <1 s",
-    "No collision with racks"
-   ],
-   "safety_stops": [
-    "Stop on bump switch trigger",
-    "Slow to 0.3 m/s near humans",
-    "Halt if localization covariance exceeds threshold"
-   ],
-   "human_in_loop": "Human researcher approves the map before it is published to the Progress Observatory.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "coverage_pct",
-     "loop_closure_err_m",
-     "collision_count",
-     "localization_cov",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "proposal-forum-ur10e-doc-delivery",
-   "robot": "universal-robots-ur10e",
-   "zone": "Proposal Forum",
-   "goal": "Pick printed proposal drafts from the tray and place them into the human voting booth slots, never initiating any enactment action.",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/wrist_camera/color/image_raw",
-     "/joint_states",
-     "/ grasp_pose",
-     "/io_controller"
-    ],
-    "frame": "base_link"
-   },
-   "terrain": "Stationary booth table; paper stacks, slot guides, and a guard fence typical of port-terminal control desks.",
-   "success": [
-    "Pick success rate >90% over 20 trials",
-    "Placement error <5 mm in slot",
-    "Zero crushed or misoriented documents",
-    "Cycle time <15 s per draft"
-   ],
-   "safety_stops": [
-    "Stop if human hand enters workspace via light curtain",
-    "Pause on force/torque threshold exceedance",
-    "Halt if slot sensor reports blockage"
-   ],
-   "human_in_loop": "A person performs all final votes and enactment; robot only moves paper drafts to the booth.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "pick_attempts",
-     "pick_successes",
-     "placement_err_mm",
-     "cycle_time_s",
-     "ft_events",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "operations-deck-fr3-router-mockup",
-   "robot": "franka-fr3",
-   "zone": "Operations Deck",
-   "goal": "Arrange task-routing tokens on the operations board to mirror the Task Router agent's current working-group assignments.",
+   "goal": "Robotic arm palletizing",
    "ros": {
     "action": "/follow_joint_trajectory",
     "topics": [
-     "/fr3/joint_states",
-     "/fr3/state_estimator",
-     "/board_state",
-     "/desired_pose"
+     "/joint_states",
+     "/gripper_state",
+     "/safety_state"
     ],
     "frame": "base_link"
    },
-   "terrain": "Vertical token board beside the deck console; token bins, monitor edges, and desk lip as collision hazards.",
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
    "success": [
-    "Correct token-to-slot mapping 100%",
-    "Contact force <5 N during placement",
-    "No dropped tokens",
-    "Board state matches router output within 5 s"
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Reflex stop on contact force >10 N",
-    "Stop if human within 0.5 m of board",
-    "Pause on joint velocity limit"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Human coordinator approves each working-group assignment before tokens are moved on the board.",
+   "human_in_loop": "Union steward approves at FedEx World Hub",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "tokens_placed",
-     "mapping_correct",
-     "max_contact_force_n",
-     "drops",
-     "sync_latency_s",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
-  },
-  {
-   "id": "progress-observatory-spot-crane-inspect",
-   "robot": "boston-dynamics-spot",
-   "zone": "Progress Observatory",
-   "goal": "Quadruped inspection walk along the Progress Observatory gantry-catwalk sim, recording outcome-metric displays for progress tracking.",
-   "ros": {
-    "action": "/inspect",
-    "topics": [
-     "/spot/camera/front/image",
-     "/spot/odom",
-     "/metric_displays_detected",
-     "/spot/battery"
-    ],
-    "frame": "odom"
    },
-   "terrain": "Steel grating catwalk modeled on Maasvlakte 2 gantry crane walkways; slippery grating, railings, height exposure, sea wind vibration.",
-   "success": [
-    "Captures all 6 metric displays legibly",
-    "No slip events on grating",
-    "Completes circuit in <20 min",
-    "Remains >0.5 m from railing edge"
-   ],
-   "safety_stops": [
-    "Sit-and-stop if slip detected twice within 10 s",
-    "Abort if pitch >20 deg",
-    "Return-to-dock if battery <25%",
-    "Halt if catwalk vibration exceeds threshold"
-   ],
-   "human_in_loop": "Human steward reviews captured display photos before metrics enter the progress record.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "displays_captured",
-     "legibility_score",
-     "slip_events",
-     "min_edge_clearance_m",
-     "duration_s",
-     "timestamp"
-    ]
-   }
+   "union_trade": "operating-eng",
+   "certification_level": "Level 2",
+   "industry": "logistics-warehousing"
   },
   {
-   "id": "lab-perimeter-crazyflie-patrol",
-   "robot": "bitcraze-crazyflie-2-1-plus",
+   "id": "s22-get-delivery-dao-fetch-2",
+   "robot": "fetch-robotics-fetch",
    "zone": "Research Synthesis Lab",
-   "goal": "Low-altitude perimeter patrol around the lab ceiling line, checking overhead cable trays and lighting for the evidence-monitoring station.",
+   "goal": "Robotic arm palletizing",
    "ros": {
-    "action": "/follow_path",
+    "action": "/follow_joint_trajectory",
     "topics": [
-     "/cf2/pose",
-     "/cf2/scan/range",
-     "/cable_tray_detections",
-     "/cf2/battery"
+     "/joint_states",
+     "/gripper_state",
+     "/safety_state"
     ],
-    "frame": "odom"
+    "frame": "base_link"
    },
-   "terrain": "Indoor airspace with cable trays, ductwork, and suspended LED fixtures echoing port warehouse infrastructure; strong AC drafts.",
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
    "success": [
-    "Completes 3 perimeter laps",
-    "Position hold error <0.15 m in drafts",
-    "Detects all 4 marked cable trays",
-    "Lands with battery >20%"
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Auto-land if range sensor shows obstacle <0.3 m",
-    "Land if battery <25%",
-    "Kill motors if attitude error >45 deg"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Human operator authorizes flight volume before launch and confirms landing zone is clear.",
+   "human_in_loop": "Union steward approves at FedEx World Hub",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "laps_done",
-     "hold_err_m",
-     "detections",
-     "battery_landed_pct",
-     "attitude_events",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "operating-eng",
+   "certification_level": "Level 2",
+   "industry": "logistics-warehousing"
   },
   {
-   "id": "forum-nao-greeter-dock",
-   "robot": "softbank-nao",
+   "id": "s22-get-delivery-dao-spot-2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm palletizing",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/gripper_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
+   "success": [
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at FedEx World Hub",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "operating-eng",
+   "certification_level": "Level 2",
+   "industry": "logistics-warehousing"
+  },
+  {
+   "id": "s22-get-delivery-dao-a200-3",
+   "robot": "clearpath-husky-a200",
    "zone": "Proposal Forum",
-   "goal": "Greet arriving stewards at the Proposal Forum entrance, present the debate agenda verbally, and guide them to open seating.",
+   "goal": "Quadruped warehouse inspection",
    "ros": {
     "action": "/navigate_to_pose",
     "topics": [
-     "/speech",
-     "/people_detections",
-     "/nao/odom",
-     "/agenda_state"
-    ],
-    "frame": "odom"
-   },
-   "terrain": "Carpeted forum floor with chair rows, lectern, and power gaffer-taped runs; low steps require small humanoid stability care.",
-   "success": [
-    "Greets within 5 s of person detection",
-    "Guide success to seat >90%",
-    "Zero falls on carpet transitions",
-    "Agenda read fully before guiding"
-   ],
-   "safety_stops": [
-    "Stop speech and motion if crowd >5 nearby",
-    "Sit-safe shutdown on battery <15%",
-    "Halt if pushed (IMU disturbance detected)"
-   ],
-   "human_in_loop": "Human moderator approves the day's agenda text before the robot reads it aloud.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "greet_latency_s",
-     "guide_success",
-     "falls",
-     "speech_complete",
-     "battery_pct",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "dock-fetch-restock",
-   "robot": "fetch-robotics-fetch",
-   "zone": "Operations Deck",
-   "goal": "Restock printed working-group binders from the supply shelf onto the Operations Deck coordination stations during decision cycles.",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/head_camera/depth_registered",
-     "/torso_controller/command",
-     "/gripper/action",
-     "/move_base/result"
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/depth"
     ],
     "frame": "map"
    },
-   "terrain": "Concrete deck floor with forklift-marked lanes, pallet stacks of binders, and low conveyor skids modeled on Rotterdam container-terminal layout.",
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
    "success": [
-    "Delivers 10 binders to correct stations",
-    "Grasp success >90%",
-    "Stays within marked lanes",
-    "Zero dropped items"
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop if forklift beacon active in lane",
-    "Pause if human crosses within 1 m",
-    "Abort lift if load exceeds 2 kg"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Human coordinator verifies station assignments before each delivery run begins.",
+   "human_in_loop": "Union steward approves at FedEx World Hub",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "binders_delivered",
-     "grasp_success_pct",
-     "drops",
-     "lane_violations",
-     "load_weight_kg",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "logistics-warehousing"
+  },
+  {
+   "id": "s22-get-delivery-dao-fetch-3",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Proposal Forum",
+   "goal": "Quadruped warehouse inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
+   "success": [
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at FedEx World Hub",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "logistics-warehousing"
+  },
+  {
+   "id": "s22-get-delivery-dao-spot-3",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Quadruped warehouse inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at FedEx World Hub, Memphis Tennessee",
+   "success": [
+    "Complete logistics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at FedEx World Hub",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "logistics-warehousing"
   }
  ],
- "_meta": {
-  "role": "robots",
-  "slug": "s22-get-delivery-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
- }
+ "industry": "logistics-warehousing"
 }

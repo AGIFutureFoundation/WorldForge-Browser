@@ -1,358 +1,280 @@
 {
- "scenarios": [
-  {
-   "id": "genome-hall-conduit-run",
-   "trade": "electricians",
-   "zone": "Charter Hall",
-   "task": "Pull low-voltage conduit and Cat-6A for the DAO display wall in Charter Hall.",
-   "hazards": [
-    "live circuits in adjacent panels",
-    "overhead work at 8-ft ladder",
-    "trip hazards from cable reels"
-   ],
-   "ppe": [
-    "hard hat",
-    "safety glasses",
-    " Class 2 gloves",
-    "high-vis vest"
-   ],
-   "steps": [
-    "Verify lockout/tagout on nearby panels",
-    "Measure and cut EMT conduit with proper bender",
-    "Secure conduit runs with straps every 10 ft",
-    "Pull conductors with fish tape, keeping tension even",
-    "Terminate and test each run with a certifier",
-    "Clean up scrap and coil leftover cable"
-   ],
-   "rubric": [
-    {
-     "axis": "LOTO compliance",
-     "pass_if": "Applies and verifies lockout before working near live panels"
-    },
-    {
-     "axis": "Workmanship",
-     "pass_if": "Conduit runs are strapped, bent without kinks, and pass certification"
-    },
-    {
-     "axis": "Housekeeping",
-     "pass_if": "Aisle clear of reels and scrap at task end"
-    }
-   ],
-   "minutes": 60,
-   "level": "apprentice",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "lab-fume-exhaust-duct",
-   "trade": "sheetmetal",
-   "zone": "Research Synthesis Lab",
-   "task": "Fabricate and hang stainless exhaust duct for a new fume hood in the lab.",
-   "hazards": [
-    "sharp sheet metal edges",
-    "working from a lift overhead",
-    "crew coordination under suspended load"
-   ],
-   "ppe": [
-    "cut-resistant gloves",
-    "safety glasses",
-    "hard hat",
-    "harness in lift"
-   ],
-   "steps": [
-    "Review shop drawings and confirm hood location",
-    "Fabricate duct sections with flanged joints",
-    "Seal seams per spec and deburr all edges",
-    "Raise sections with lift and hand lines",
-    "Bolt, align, and torque flange connections",
-    "Pressure-test duct and record results"
-   ],
-   "rubric": [
-    {
-     "axis": "Edge control",
-     "pass_if": "Deburr all edges and gloves worn during handling"
-    },
-    {
-     "axis": "Lift safety",
-     "pass_if": "Harness tied off and load communicated to crew"
-    },
-    {
-     "axis": "Seal quality",
-     "pass_if": "Duct passes pressure test with no leaks"
-    }
-   ],
-   "minutes": 90,
-   "level": "journey",
-   "robot_assist": "universal-robots-ur10e",
-   "robot_role": "Holds and rotates duct sections during flange bolting to reduce manual handling of sharp edges."
-  },
-  {
-   "id": "proposal-forum-led-retrofit",
-   "trade": "electricians",
-   "zone": "Proposal Forum",
-   "task": "Replace old fluorescents with LED panels in the Proposal Forum ceiling.",
-   "hazards": [
-    "energized circuits",
-    "ladder work near debate seating",
-    "asbestos-era ceiling tiles possible"
-   ],
-   "ppe": [
-    "hard hat",
-    "safety glasses",
-    "insulated gloves"
-   ],
-   "steps": [
-    "De-energize lighting circuits and verify with meter",
-    "Remove old fixtures and cap wires properly",
-    "Set and wire LED panels per drawing",
-    "Secure panels to grid frame",
-    "Restore power and test all fixtures"
-   ],
-   "rubric": [
-    {
-     "axis": "Verification",
-     "pass_if": "Tests de-energized circuits with a meter before touching conductors"
-    },
-    {
-     "axis": "Mounting",
-     "pass_if": "Panels seated flush and secured without damaging ceiling grid"
-    },
-    {
-     "axis": "Waste handling",
-     "pass_if": "Old lamps placed in lamp recycling, not general trash"
-    }
-   ],
-   "minutes": 45,
-   "level": "apprentice",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "campus-chiller-pipe",
-   "trade": "pipefitters",
-   "zone": "Operations Deck",
-   "task": "Tie in chilled-water piping for a cooling unit serving the Operations Deck.",
-   "hazards": [
-    "hot work permits for brazing",
-    "pressurized line testing",
-    "heavy pipe handling"
-   ],
-   "ppe": [
-    "welding hood",
-    "FR coveralls",
-    "gloves",
-    "face shield for pressure test"
-   ],
-   "steps": [
-    "Isolate and drain the existing chilled water loop",
-    "Cut and fit new pipe spools to the unit",
-    "Brazed joints under a valid hot-work permit with fire watch",
-    "Pressure-test joints and inspect for leaks",
-    "Insulate new piping to spec",
-    "Return loop to service and document"
-   ],
-   "rubric": [
-    {
-     "axis": "Hot work",
-     "pass_if": "Permit issued and fire watch maintained during brazing"
-    },
-    {
-     "axis": "Test discipline",
-     "pass_if": "Pressure test held and inspected before insulation"
-    },
-    {
-     "axis": "Documentation",
-     "pass_if": "Records test pressures and signs off the tie-in"
-    }
-   ],
-   "minutes": 120,
-   "level": "journey",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "observatory-roof-membrane",
-   "trade": "roofers",
-   "zone": "Progress Observatory",
-   "task": "Patch EPDM membrane on the observatory roof after a storm.",
-   "hazards": [
-    "work at unprotected edge",
-    "wet slippery membrane",
-    "weather exposure on Cam floodplain site"
-   ],
-   "ppe": [
-    "hard hat",
-    "hi-vis vest",
-    "gloves",
-    "harness with lifeline near edge"
-   ],
-   "steps": [
-    "Set up warning lines and anchor points",
-    "Locate and mark punctures",
-    "Clean and prime repair areas",
-    "Apply EPDM patches with roller, lapping correctly",
-    "Inspect seams and remove tools",
-    "Complete a weather check before descent"
-   ],
-   "rubric": [
-    {
-     "axis": "Fall protection",
-     "pass_if": "Stays inside warning line or ties off when within 6 ft of edge"
-    },
-    {
-     "axis": "Patch quality",
-     "pass_if": "Patches fully bonded with no fishmouths or bubbles"
-    },
-    {
-     "axis": "Weather awareness",
-     "pass_if": "Stops work if rain or wind picks up"
-    }
-   ],
-   "minutes": 75,
-   "level": "apprentice",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "river-outfall-erosion",
-   "trade": "grounds",
-   "zone": "Progress Observatory",
-   "task": "Stabilize eroded riverbank walkway edge along the Cam near the campus grounds.",
-   "hazards": [
-    "water edge and soft ground",
-    "manual handling of stone",
-    "plant and wildlife disturbance"
-   ],
-   "ppe": [
-    "gloves",
-    "steel-toe boots",
-    "hi-vis vest"
-   ],
-   "steps": [
-    "Inspect bank and mark access route away from soft spots",
-    "Load riprap with wheelbarrow or mini-loader",
-    "Place stone by hand, keying into bank",
-    "Backfill and compact edges",
-    "Restore turf and clean walkway"
-   ],
-   "rubric": [
-    {
-     "axis": "Edge safety",
-     "pass_if": "Never works on unstable bank edge; stays on marked route"
-    },
-    {
-     "axis": "Placement",
-     "pass_if": "Stone keyed and interlocked, not dumped loose"
-    },
-    {
-     "axis": "Restoration",
-     "pass_if": "Grass reinstated and path left clear of mud"
-    }
-   ],
-   "minutes": 90,
-   "level": "apprentice",
-   "robot_assist": "clearpath-husky-a200",
-   "robot_role": "Shuttles riprap from stockpile to bank so crew avoids repetitive heavy carries on soft ground."
-  },
-  {
-   "id": "lab-hood-cert-hvacr",
-   "trade": "hvacr",
-   "zone": "Research Synthesis Lab",
-   "task": "Test and balance airflow on lab fume hoods after duct modifications.",
-   "hazards": [
-    "airborne particulates in hood",
-    "moving belt drives",
-    "working at height on step platform"
-   ],
-   "ppe": [
-    "safety glasses",
-    "gloves",
-    "N95 for hood face sampling"
-   ],
-   "steps": [
-    "Confirm hood sash and baffles are set correctly",
-    "Measure face velocity with calibrated anemometer",
-    "Record readings across a grid of the sash opening",
-    "Adjust damper and re-measure",
-    "Log results and tag hood status"
-   ],
-   "rubric": [
-    {
-     "axis": "Measurement",
-     "pass_if": "Face velocity within spec at every grid point"
-    },
-    {
-     "axis": "Calibration",
-     "pass_if": "Uses a calibrated, in-date anemometer"
-    },
-    {
-     "axis": "Reporting",
-     "pass_if": "Logs results and applies clear pass/fail tag"
-    }
-   ],
-   "minutes": 50,
-   "level": "journey",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "forum-crane-display-lift",
-   "trade": "riggers",
-   "zone": "Proposal Forum",
-   "task": "Rig and set the large charter display screen in the Proposal Forum atrium.",
-   "hazards": [
-    "suspended load over occupied space",
-    "load swing near glass",
-    "crane floor loading limits"
-   ],
-   "ppe": [
-    "hard hat",
-    "gloves",
-    "hi-vis vest"
-   ],
-   "steps": [
-    "Verify load weight and rigging gear ratings",
-    "Inspect slings and shackles before use",
-    "Attach tag lines and confirm exclusion zone",
-    "Direct crane with standard hand signals",
-    "Guide and set display onto anchors",
-    "Remove rigging and secure the unit"
-   ],
-   "rubric": [
-    {
-     "axis": "Rigging inspection",
-     "pass_if": "Rejects any damaged sling or shackle before lift"
-    },
-    {
-     "axis": "Communication",
-     "pass_if": "Uses standard signals and keeps exclusion zone clear"
-    },
-    {
-     "axis": "Landing",
-     "pass_if": "Load set on anchors without shock loading or contact damage"
-    }
-   ],
-   "minutes": 70,
-   "level": "foreman",
-   "robot_assist": null,
-   "robot_role": null
-  }
- ],
- "credential": {
-  "name": "Genome Campus Building Trades Core Certificate",
-  "requires": [
-   "genome-hall-conduit-run",
-   "proposal-forum-led-retrofit",
-   "observatory-roof-membrane",
-   "river-outfall-erosion"
+ "certification": {
+  "n": "Semiconductor Robotics",
+  "u": "IBEW/IUE-CWA",
+  "h": 130,
+  "l": [
+   "Cleanroom",
+   "Wafer Handling",
+   "Process Control"
+  ],
+  "o": [
+   "Operate cleanroom bots",
+   "Maintain wafer handling"
   ]
  },
- "_meta": {
-  "role": "trades",
-  "slug": "s27-genomic-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "scenarios": [
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for electronics-semiconductors robot operations"
  }
 }

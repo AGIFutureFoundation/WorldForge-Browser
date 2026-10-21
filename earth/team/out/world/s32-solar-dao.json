@@ -1,196 +1,147 @@
 {
- "title": "Solar DAO (Series 32) — Bhadla Solar Park",
- "summary": "An agent-managed DAO cell on the Thar Desert flats of Bhadla Solar Park, Rajasthan. Agents synthesize evidence and draft proposals among mirror arrays; humans retain every final vote in Charter Hall.",
- "biome": "desert",
+ "title": "Houston: Clean Energy Hub",
+ "summary": "Walkable clean energy training hub at Energy Corridor, Houston Texas.",
+ "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "Bhadla Solar Park phase blocks, Jodhpur district",
+   "real_anchor": "Energy Corridor",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Display of DAO charter, contribution model and measurable outcomes",
-     "floors": 1
-    },
-    {
-     "name": "Stewards' Majlis",
-     "use": "Human-only voting chamber for reserved governance actions",
-     "floors": 1
+     "name": "Charter Hall Training Center",
+     "use": "clean energy training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Charter Scroll Room",
-    "Outcome Ledger Alcove",
-    "Contribution Model Gallery",
-    "Steward Seating Circle",
-    "Quiet Deliberation Nook"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "engraved charter stele",
-    "bronze balance scale",
-    "contribution ledger desk",
-    "voting urn",
-    "shade canopy of woven khus",
-    "solar-lit charter banners"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "Solar array rows on Bhadla's flat desert pan",
+   "real_anchor": "Buffalo Bayou",
    "buildings": [
     {
-     "name": "Synthesis Dome",
-     "use": "Evidence monitoring and research synthesis workspace",
-     "floors": 1
-    },
-    {
-     "name": "Evidence Archive",
-     "use": "Storage and indexing of monitored developments",
-     "floors": 1
+     "name": "Research Synthesis Lab Training Center",
+     "use": "clean energy training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Evidence Intake Desk",
-    "Synthesis Table Hall",
-    "Summary Scriptorium",
-    "Focus-Setting Alcove",
-    "Rest Shade Room"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "sun-bleached corkboards",
-    "evidence scroll racks",
-    "parabolic shade mirror",
-    "desert-dust instrument cases",
-    "chart of Thar irradiance"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "Central maintenance corridor between solar phases",
+   "real_anchor": "I-10 West",
    "buildings": [
     {
-     "name": "Proposal Amphitheatre",
-     "use": "Public drafting and debate of proposals",
-     "floors": 1
-    },
-    {
-     "name": "Drafter's Caravan",
-     "use": "Studio where agents draft proposals and grants for human review",
-     "floors": 1
+     "name": "Proposal Forum Training Center",
+     "use": "clean energy training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Drafting Desks",
-    "Debate Ring",
-    "Review Queue Bench",
-    "Amendment Margin Wall",
-    "Public Comment Post"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "proposal scroll spindles",
-    "debate hourglass",
-    "comment token bowls",
-    "sun-shade sail",
-    "seal press (unused by agents)"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "O&M yard near the park's transformer stations",
+   "real_anchor": "Energy Corridor",
    "buildings": [
     {
-     "name": "Operations Deck",
-     "use": "Task routing and working-group coordination hub",
+     "name": "Operations Deck Training Center",
+     "use": "clean energy training",
      "floors": 2
-    },
-    {
-     "name": "Collaborator Caravanserai",
-     "use": "Meeting point for scouts, experts and working groups",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Task Routing Board",
-    "Working Group Pods",
-    "Collaborator Registry Desk",
-    "Signal Relay Room",
-    "Tea & Shade Veranda"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "routing pigeonholes",
-    "signal bunting",
-    "sand-stabilized notice boards",
-    "water cooler and lota",
-    "dusty task tokens"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Northern edge of the solar park overlooking array rows to the horizon",
+   "real_anchor": "Buffalo Bayou",
    "buildings": [
     {
-     "name": "Progress Observatory Tower",
-     "use": "Tracking progress against charter's measurable outcomes",
-     "floors": 3
-    },
-    {
-     "name": "Milestone Cairn Court",
-     "use": "Open court marking achieved outcomes",
-     "floors": 1
+     "name": "Progress Observatory Training Center",
+     "use": "clean energy training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Outcome Horizon Gallery",
-    "Tracker's Balcony",
-    "Milestone Cairn Court",
-    "Telescope Alcove",
-    "Baseline Records Room"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "milestone cairns",
-    "progress dials",
-    "brass telescope",
-    "sun-bleached progress banners",
-    "panoramic array map"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "Prosopis cineraria (khejri)",
-   "Acacia jacquemontii",
-   "Ziziphus nummularia (bor)",
-   "Tamarix aphytica",
-   "Azadirachta indica (neem, planted)"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "Calligonum polygonoides (phog)",
-   "Ziziphus nummularia",
-   "Haloxylon salicornicum",
-   "Capparis decidua (kair)"
+   "boxwood"
   ],
   "flowers": [
-   "Trianthema portulacastrum",
-   "Tribulus terrestris",
-   "Citrullus colocynthis",
-   "Aerva javanica"
+   "rose"
   ],
-  "ground": "sand"
+  "ground": "concrete"
  },
  "water": {
   "kind": "none",
@@ -198,86 +149,98 @@
   "wave_m": 0
  },
  "wind": {
-  "prevailing_from": "SW",
-  "mean_mps": 6
+  "prevailing_from": "W",
+  "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:15",
-  "sunset_local": "18:45"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "Stewards' Voting Circle",
-  "style": "Rajasthani desert majlis with low stone benches under a khus-shaded canopy",
-  "why_here": "The DAO's charter reserves final votes for people; a shaded human circle at the solar park's heart makes governance visible beside the arrays."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Energy Corridor."
  },
  "quests": [
   {
-   "title": "Set the Focus",
+   "title": "Solar/Wind Safety Certification",
    "from_zone": "Charter Hall",
    "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Read the charter stele and note the empty focus line",
-    "Ask Evidence Monitor what topics are being tracked",
-    "Help Research Synthesis Agent summarize evidence on candidate focuses",
-    "Carry a summary scroll back to Charter Hall for steward review"
+    "Check in at Energy Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 40
+   "xp": 100
   },
   {
-   "title": "From Evidence to Draft",
+   "title": "Inspection Certification",
    "from_zone": "Research Synthesis Lab",
    "to_zone": "Proposal Forum",
    "steps": [
-    "Collect verified evidence summaries from the Archive",
-    "Bring them to Proposal & Grant Drafter's caravan",
-    "Review the drafted proposal in the Amphitheatre comment queue",
-    "Confirm no agent enacted it — the seal press stays with stewards"
+    "Check in at Buffalo Bayou",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 60
+   "xp": 150
   },
   {
-   "title": "Route the Working Groups",
+   "title": "Maintenance Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at I-10 West",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "Solar/Wind Safety Certification",
    "from_zone": "Operations Deck",
    "to_zone": "Progress Observatory",
    "steps": [
-    "Check the Task Routing Board for pending tasks",
-    "Assign task tokens to working-group pods with Task Router",
-    "Ask Collaborator Scout to flag missing expertise",
-    "Report group assignments to Progress Tracker for the outcome ledger"
+    "Check in at Energy Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 50
+   "xp": 250
   },
   {
-   "title": "Measure the Milestones",
+   "title": "Inspection Certification",
    "from_zone": "Progress Observatory",
    "to_zone": "Charter Hall",
    "steps": [
-    "Survey the Outcome Horizon Gallery baselines",
-    "Mark completed outcomes on the milestone cairns",
-    "Record progress in the tracker's ledger",
-    "Present the updated ledger at Charter Hall"
+    "Check in at Buffalo Bayou",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 70
-  },
-  {
-   "title": "Guard the Reserved Powers",
-   "from_zone": "Proposal Forum",
-   "to_zone": "Charter Hall",
-   "steps": [
-    "Audit the Proposal Forum for any agent touching reserved actions",
-    "Return the unused seal press to the Stewards' Majlis",
-    "Verify the voting urn is tended only by humans",
-    "Log the audit in the Charter Scroll Room"
-   ],
-   "xp": 100
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s32-solar-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "clean-energy",
+ "certification": {
+  "n": "Clean Energy Robotics Tech",
+  "u": "IBEW",
+  "h": 110,
+  "l": [
+   "Solar/Wind Safety",
+   "Inspection",
+   "Maintenance"
+  ],
+  "o": [
+   "Inspect solar",
+   "Maintain drones"
+  ]
  }
 }

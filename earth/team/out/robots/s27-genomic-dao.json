@@ -1,332 +1,428 @@
 {
  "tasks": [
   {
-   "id": "charter-hall-doc-tour",
-   "robot": "softbank-nao",
+   "id": "s27-genomic-dao-fr3-1",
+   "robot": "franka-fr3",
    "zone": "Charter Hall",
-   "goal": "Guide visitors along the Charter Hall exhibits, narrating the DAO charter, contribution model and measurable outcomes at each display panel.",
+   "goal": "Cleanroom wafer handling",
    "ros": {
-    "action": "/navigate_to_pose",
+    "action": "/follow_joint_trajectory",
     "topics": [
-     "/waypoint_reached",
-     "/speech_state",
-     "/tour_progress",
-     "/battery_state"
+     "/joint_states",
+     "/force_torque",
+     "/cleanroom_state"
     ],
-    "frame": "map"
+    "frame": "base_link"
    },
-   "terrain": "Flat indoor exhibit floor of the campus conference centre; queue barriers, plinth edges and cabling ramps around display panels.",
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
    "success": [
-    "Visits all 5 exhibit waypoints in order",
-    "Dwell time 20-40 s per panel",
-    "Speech utterance per waypoint matches scripted charter text",
-    "Zero collisions with barriers or visitors"
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "E-stop on human within 0.5 m",
-    "Stop if battery below 15%",
-    "Abort tour if speech engine fails twice consecutively"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward approves the final tour script and any edits to charter wording used in narration.",
+   "human_in_loop": "Union steward approves at Samsung Campus",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "waypoint_id",
-     "dwell_time_s",
-     "collision_events",
-     "speech_match_score",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
      "battery_pct",
-     "timestamp"
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "electronics-semiconductors"
   },
   {
-   "id": "research-lab-shelf-retrieval",
+   "id": "s27-genomic-dao-gen3-1",
+   "robot": "kinova-gen3",
+   "zone": "Charter Hall",
+   "goal": "Cleanroom wafer handling",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/force_torque",
+     "/cleanroom_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
+   "success": [
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Samsung Campus",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "electronics-semiconductors"
+  },
+  {
+   "id": "s27-genomic-dao-fetch-1",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Charter Hall",
+   "goal": "Cleanroom wafer handling",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/force_torque",
+     "/cleanroom_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
+   "success": [
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Samsung Campus",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "electronics-semiconductors"
+  },
+  {
+   "id": "s27-genomic-dao-fr3-2",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm PCB assembly",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/vision_state",
+     "/gripper_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
+   "success": [
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Samsung Campus",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 2",
+   "industry": "electronics-semiconductors"
+  },
+  {
+   "id": "s27-genomic-dao-gen3-2",
+   "robot": "kinova-gen3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm PCB assembly",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/vision_state",
+     "/gripper_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
+   "success": [
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Samsung Campus",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 2",
+   "industry": "electronics-semiconductors"
+  },
+  {
+   "id": "s27-genomic-dao-fetch-2",
    "robot": "fetch-robotics-fetch",
    "zone": "Research Synthesis Lab",
-   "goal": "Retrieve bound research summaries and evidence binders from library shelving and deliver them to the steward review desk.",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/head_camera/color/image_raw",
-     "/wrist_grasp_status",
-     "/move_base/result",
-     "/object_detection"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Carpeted lab floor with library stacks, rolling ladders, desk chairs and low file boxes that intrude into aisles.",
-   "success": [
-    "Grasp success rate >= 90% over 20 trials",
-    "Delivery within 0.3 m of desk drop zone",
-    "Zero dropped binders",
-    "Aisle traversal with <= 1 navigation replan per trip"
-   ],
-   "safety_stops": [
-    "Stop if gripper force exceeds threshold",
-    "Stop on unexpected human in aisle",
-    "E-stop if tilt > 10 degrees"
-   ],
-   "human_in_loop": "A person confirms each requested binder title before retrieval and signs off on delivery.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "binder_id",
-     "grasp_success",
-     "drop_events",
-     "delivery_error_m",
-     "replans",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "proposal-forum-av-setup",
-   "robot": "universal-robots-ur10e",
-   "zone": "Proposal Forum",
-   "goal": "Set up the proposal forum AV station: position microphones, route cables and stage the tablet podium for human debate and voting sessions.",
+   "goal": "Robotic arm PCB assembly",
    "ros": {
     "action": "/follow_joint_trajectory",
     "topics": [
      "/joint_states",
-     "/wrench",
-     "/scan_status",
-     "/safety_rating"
+     "/vision_state",
+     "/gripper_state"
     ],
     "frame": "base_link"
    },
-   "terrain": "Fixed dais with tiered seating, podium frame edges and under-floor cable ducts in the forum hall.",
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
    "success": [
-    "Mic placement within 2 cm of target pose on all 4 seats",
-    "Cable routed through duct with <= 1 snag",
-    "Podium tablet staged within 3 degrees of level",
-    "Cycle time under 8 minutes"
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop if end-effector wrench exceeds 40 N",
-    "Pause on human entering the dais workspace",
-    "Stop if joint velocity limit exceeded"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward verifies mic placement and activates the voting system before the session.",
+   "human_in_loop": "Union steward approves at Samsung Campus",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "station_id",
-     "pose_error_cm",
-     "snag_count",
-     "wrench_peak_n",
-     "cycle_time_s",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 2",
+   "industry": "electronics-semiconductors"
   },
   {
-   "id": "ops-deck-patrol",
-   "robot": "unitree-go2",
-   "zone": "Operations Deck",
-   "goal": "Patrol the Operations Deck, reading task-board QR codes and status displays to report working-group progress to the Task Router.",
+   "id": "s27-genomic-dao-fr3-3",
+   "robot": "franka-fr3",
+   "zone": "Proposal Forum",
+   "goal": "Cleanroom transport",
    "ros": {
     "action": "/navigate_to_pose",
     "topics": [
+     "/cmd_vel",
      "/odom",
-     "/qr_detections",
-     "/patrol_status",
-     "/battery_state"
+     "/joint_states"
     ],
-    "frame": "odom"
+    "frame": "map"
    },
-   "terrain": "Raised computer-room floor with cable trays, desk clusters and occasional trolley obstacles near the operations consoles.",
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
    "success": [
-    "Reads 8/8 QR stations per patrol lap",
-    "Lap completed in under 6 minutes",
-    "Slip or stumble events = 0",
-    "Status report published within 5 s of each scan"
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Low-battery return-to-dock below 20%",
-    "Stop on stair or drop-off edge detection",
-    "Stop if kicked or tipped"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A person reviews the compiled patrol report before it is posted to the task board.",
+   "human_in_loop": "Union steward approves at Samsung Campus",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "lap_id",
-     "qr_stations_read",
-     "lap_time_s",
-     "stumble_events",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
      "battery_pct",
-     "timestamp"
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "hvacr",
+   "certification_level": "Level 3",
+   "industry": "electronics-semiconductors"
   },
   {
-   "id": "campus-perimeter-survey",
-   "robot": "clearpath-husky-a200",
-   "zone": "Progress Observatory",
-   "goal": "Survey the campus perimeter paths and riverbank edge to log ground conditions for the Progress Observatory's site-access progress log.",
+   "id": "s27-genomic-dao-gen3-3",
+   "robot": "kinova-gen3",
+   "zone": "Proposal Forum",
+   "goal": "Cleanroom transport",
    "ros": {
-    "action": "/inspect",
+    "action": "/navigate_to_pose",
     "topics": [
-     "/gps/fix",
-     "/terrain_scan",
-     "/obstacle_detection",
-     "/survey_progress"
+     "/cmd_vel",
+     "/odom",
+     "/joint_states"
     ],
     "frame": "map"
    },
-   "terrain": "Grassland margins of the Cam river floodplain: soft riverbank mud, farm-track ruts, gate thresholds and seasonal wet patches.",
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
    "success": [
-    "Completes 1.2 km perimeter loop without manual recovery",
-    "Riverbank clearance >= 1.5 m maintained",
-    "Terrain classification logged at 1 Hz",
-    "Localization drift < 0.5 m over the loop"
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop if within 1 m of water's edge",
-    "Stop on roll > 15 degrees",
-    "Rover return on GPS fix loss > 10 s"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward approves riverbank route segments before each survey and reviews the condition log.",
+   "human_in_loop": "Union steward approves at Samsung Campus",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "loop_distance_m",
-     "min_water_clearance_m",
-     "terrain_classes",
-     "roll_peak_deg",
-     "gps_fix_quality",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "hvacr",
+   "certification_level": "Level 3",
+   "industry": "electronics-semiconductors"
   },
   {
-   "id": "atrium-swarm-visual-check",
-   "robot": "bitcraze-crazyflie-2-1-plus",
-   "zone": "Research Synthesis Lab",
-   "goal": "Fly a short inspection swarm loop across the lab atrium ceiling lights and vent grilles, capturing images for maintenance triage.",
+   "id": "s27-genomic-dao-fetch-3",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Proposal Forum",
+   "goal": "Cleanroom transport",
    "ros": {
-    "action": "/inspect",
+    "action": "/navigate_to_pose",
     "topics": [
-     "/cf_pose",
-     "/camera/image_raw",
-     "/battery_voltage",
-     "/swarm_state"
+     "/cmd_vel",
+     "/odom",
+     "/joint_states"
     ],
     "frame": "map"
    },
-   "terrain": "High atrium with skylight glazing, ceiling light fixtures, vent grilles and occasional banner cables strung for exhibits.",
+   "terrain": "Industrial facility at Samsung Semiconductor, Austin Texas",
    "success": [
-    "Images captured of all 6 target fixtures",
-    "Hover position error < 10 cm at each target",
-    "Battery-landing reserve >= 20% at touchdown",
-    "Zero interventions from safety pilot"
+    "Complete electronics task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Land immediately on battery below 3.5 V",
-    "Avoid glazing by >= 0.5 m",
-    "Kill motors on loss of positioning > 2 s"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A person clears the airspace, acts as safety pilot with kill switch, and approves the image triage list.",
+   "human_in_loop": "Union steward approves at Samsung Campus",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "fixture_id",
-     "hover_error_cm",
-     "images_captured",
-     "min_battery_v",
-     "pilot_interventions",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
-  },
-  {
-   "id": "heavy-charter-exhibit-mount",
-   "robot": "pal-robotics-talos",
-   "zone": "Charter Hall",
-   "goal": "Lift and mount the charter display frame onto the exhibit wall, then verify verticality and anchor torque before human inspection.",
-   "ros": {
-    "action": "/follow_joint_trajectory",
-    "topics": [
-     "/joint_states",
-     "/ft_sensor/wrench",
-     "/torso_imu",
-     "/mount_status"
-    ],
-    "frame": "base_link"
    },
-   "terrain": "Concrete exhibition hall floor with pallet staging area, forklift pallet edges and wall anchor points above plinth height.",
-   "success": [
-    "Display mounted within 1 degree of vertical",
-    "Anchor torque within 10% of spec on all 4 bolts",
-    "Zero drops of the 15 kg frame",
-    "Balance perturbation under 5 cm CoM shift during lift"
-   ],
-   "safety_stops": [
-    "Stop if ankle torque exceeds limit",
-    "Release-and-hold on wrench spike > 150 N",
-    "Shutdown on fall detection"
-   ],
-   "human_in_loop": "A person inspects anchors, applies final torque and signs the exhibit off before visitors enter.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "lift_id",
-     "verticality_deg",
-     "torque_error_pct",
-     "drop_events",
-     "com_shift_cm",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "precision-wiring-for-observatory",
-   "robot": "franka-fr3",
-   "zone": "Progress Observatory",
-   "goal": "Terminate sensor harness wiring for the Progress Observatory dashboard wall, inserting connectors into the sensor junction panel.",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/franka/joint_states",
-     "/connector_insertion_force",
-     "/camera/color/image_raw",
-     "/task_state"
-    ],
-    "frame": "base_link"
-   },
-   "terrain": "Workbench in the observatory gallery with cable spools, connector trays and a raised dashboard rail to reach over.",
-   "success": [
-    "Connector insertion success >= 95% over 40 inserts",
-    "Insertion force within 5-15 N band",
-    "Zero reversed-polarity insertions (detected pre-insert)",
-    "Panel wiring map match 100%"
-   ],
-   "safety_stops": [
-    "Stop if Cartesian velocity > 0.1 m/s near panel",
-    "Reflex retreat on force > 20 N",
-    "Stop on human hand entering workspace envelope"
-   ],
-   "human_in_loop": "An engineer approves the wiring map and performs final continuity check before dashboard power-up.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "connector_id",
-     "insert_success",
-     "insert_force_n",
-     "polarity_check",
-     "cycle_time_s",
-     "timestamp"
-    ]
-   }
+   "union_trade": "hvacr",
+   "certification_level": "Level 3",
+   "industry": "electronics-semiconductors"
   }
  ],
- "_meta": {
-  "role": "robots",
-  "slug": "s27-genomic-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 2,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
- }
+ "industry": "electronics-semiconductors"
 }

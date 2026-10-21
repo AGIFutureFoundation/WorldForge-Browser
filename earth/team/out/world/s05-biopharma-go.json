@@ -1,255 +1,246 @@
 {
- "title": "BioPharma.Go — Novartis Campus, Basel",
- "summary": "A Rhine-side pharma campus in Basel: research towers, production halls and the fast river in one walkable frame. Agent-run labs and forums ring a park campus where humans hold every final vote.",
+ "title": "Boston: Healthcare Biotech Hub",
+ "summary": "Walkable healthcare biotech training hub at Kendall Square, Cambridge Massachusetts.",
  "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "Novartis Campus central green, Basel",
+   "real_anchor": "MIT Campus",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display, contribution model, measurable outcomes board",
+     "name": "Charter Hall Training Center",
+     "use": "healthcare biotech training",
      "floors": 2
-    },
-    {
-     "name": "Steward Reading Room",
-     "use": "Quiet study of charter and impact metrics",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Outcome Wall",
-    "Contribution Ledger Desk",
-    "Mission Alcove"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "charter scroll case",
-    "measurable-outcomes board",
-    "contribution ledger",
-    "benches under plane trees",
-    "mission plaque"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "Novartis research towers on the Rhine bank",
+   "real_anchor": "Kendall Square T",
    "buildings": [
     {
-     "name": "Synthesis Lab East",
-     "use": "Monitoring and evidence summarization",
-     "floors": 6
-    },
-    {
-     "name": "Evidence Annex",
-     "use": "Paper review and literature triage",
-     "floors": 3
+     "name": "Research Synthesis Lab Training Center",
+     "use": "healthcare biotech training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Monitoring Room",
-    "Evidence Stacks",
-    "Summary Writing Bay"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "journal racks",
-    "evidence pinboard",
-    "whiteboard wall",
-    "microfiche cabinet"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "Campus forum plaza near the Rhine promenade",
+   "real_anchor": "Charles River",
    "buildings": [
     {
-     "name": "Forum Hall",
-     "use": "Agent-drafted proposals debated and voted by people",
+     "name": "Proposal Forum Training Center",
+     "use": "healthcare biotech training",
      "floors": 2
     }
    ],
    "interior_rooms": [
-    "Debate Floor",
-    "Voting Booths",
-    "Drafting Gallery"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "proposal drop slots",
-    "debate lectern",
-    "ballot boxes",
-    "tally board"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "Campus service yard south of the research towers",
+   "real_anchor": "MIT Campus",
    "buildings": [
     {
-     "name": "Operations Center",
-     "use": "Task routing and working-group coordination",
-     "floors": 3
-    },
-    {
-     "name": "Scout Outpost",
-     "use": "Collaborator identification and outreach prep",
-     "floors": 1
+     "name": "Operations Deck Training Center",
+     "use": "healthcare biotech training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Routing Board Room",
-    "Working Group Pods",
-    "Scout Map Room"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "task routing board",
-    "collaborator contact wall",
-    "shift schedule",
-    "courier bikes"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Riverside terrace overlooking the Rhine",
+   "real_anchor": "Kendall Square T",
    "buildings": [
     {
-     "name": "Observatory Tower",
-     "use": "Progress tracking against charter outcomes",
-     "floors": 5
+     "name": "Progress Observatory Training Center",
+     "use": "healthcare biotech training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Metrics Gallery",
-    "Timeline Hall",
-    "Overlook Deck"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "progress dials",
-    "outcome timeline frieze",
-    "brass telescope",
-    "river-view benches"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "Platanus x hispanica",
-   "Tilia cordata",
-   "Acer platanoides",
-   "Fagus sylvatica",
-   "Salix alba"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "Buxus sempervirens",
-   "Viburnum opulus",
-   "Cornus sanguinea"
+   "boxwood"
   ],
   "flowers": [
-   "Crocus vernus",
-   "Narcissus pseudonarcissus",
-   "Geranium pratense",
-   "Rudbeckia hirta"
+   "rose"
   ],
-  "ground": "grass"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "river",
-  "flow_mps": 2.2,
-  "wave_m": 0.3
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
  },
  "wind": {
-  "prevailing_from": "SW",
+  "prevailing_from": "W",
   "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:15",
-  "sunset_local": "20:30"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "The Rhine Consensus Court",
-  "style": "Riverside amphitheater of stone tiers facing the water",
-  "why_here": "On the fast Rhine the campus drinks from, stewards gather so every final vote happens in sight of the river that ties research, production and city together."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at MIT Campus."
  },
  "quests": [
   {
-   "title": "Trace the Evidence",
-   "from_zone": "Research Synthesis Lab",
-   "to_zone": "Progress Observatory",
+   "title": "Cleanroom Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Collect the day's evidence summary from the Monitoring Room",
-    "Cross-check two claims against the Evidence Stacks",
-    "Deliver the synthesis to the Metrics Gallery",
-    "Log the update on the outcome timeline"
+    "Check in at MIT Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 40
+   "xp": 100
   },
   {
-   "title": "From Draft to Debate",
+   "title": "Pharmacy Certification",
    "from_zone": "Research Synthesis Lab",
    "to_zone": "Proposal Forum",
    "steps": [
-    "Request an evidence brief from the Research Synthesis Agent",
-    "Review the draft at the Drafting Gallery",
-    "Open debate at the lectern",
-    "Hand the final decision to human stewards at the Voting Booths"
+    "Check in at Kendall Square T",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 60
+   "xp": 150
   },
   {
-   "title": "Route the Working Groups",
-   "from_zone": "Operations Deck",
-   "to_zone": "Research Synthesis Lab",
-   "steps": [
-    "Read the task routing board in the Routing Board Room",
-    "Match tasks to working-group pods",
-    "Confirm collaborator leads at the Scout Map Room",
-    "Report assignments to the lab's Monitoring Room"
-   ],
-   "xp": 35
-  },
-  {
-   "title": "Charter Check",
-   "from_zone": "Charter Hall",
+   "title": "Patient Care Certification",
+   "from_zone": "Proposal Forum",
    "to_zone": "Operations Deck",
    "steps": [
-    "Read the charter and measurable outcomes at the Outcome Wall",
-    "Verify the contribution ledger is current",
-    "Flag any mismatch at the Routing Board Room"
+    "Check in at Charles River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 25
+   "xp": 200
   },
   {
-   "title": "Riverside Stewardship",
+   "title": "Cleanroom Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at MIT Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Pharmacy Certification",
    "from_zone": "Progress Observatory",
    "to_zone": "Charter Hall",
    "steps": [
-    "Review progress dials on the Overlook Deck",
-    "Record gaps against the charter outcomes",
-    "Present findings at the Charter Pavilion for human decision"
+    "Check in at Kendall Square T",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 50
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s05-biopharma-go",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "healthcare-biotech",
+ "certification": {
+  "n": "Healthcare Robotics Tech",
+  "u": "1199SEIU",
+  "h": 90,
+  "l": [
+   "Cleanroom",
+   "Pharmacy",
+   "Patient Care"
+  ],
+  "o": [
+   "Operate pharmacy bots",
+   "Maintain clinical robots"
+  ]
  }
 }

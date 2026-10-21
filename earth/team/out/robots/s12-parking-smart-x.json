@@ -1,339 +1,434 @@
 {
  "tasks": [
   {
-   "id": "charter-hall-guided-tour",
-   "robot": "softbank-nao",
-   "zone": "Charter Hall",
-   "goal": "Guide visitors along the Charter Hall exhibit path, gesturing at each charter display panel while narrating the DAO's contribution model.",
-   "ros": {
-    "action": "/navigate_to_pose",
-    "topics": [
-     "/amcl_pose",
-     "/cmd_vel",
-     "/move_base/status",
-     "/speech"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Polished exhibit hall flooring near 1111 Lincoln Road; avoid stanchions, display plinths and visitor queues.",
-   "success": [
-    "Visits all 5 display waypoints in order",
-    "Localization error < 0.15 m at each waypoint",
-    "Speech completes at each stop before moving on",
-    "Zero contacts with obstacles"
-   ],
-   "safety_stops": [
-    "E-stop on person within 0.5 m",
-    "E-stop on obstacle within 0.3 m on planned path",
-    "Stop speech and motion on battery < 20%"
-   ],
-   "human_in_loop": "A human docent approves the tour script content before each public run.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "waypoints_reached",
-     "min_obstacle_distance",
-     "localization_error_m",
-     "speech_completion_rate",
-     "battery_pct",
-     "human_approval_status"
-    ]
-   }
-  },
-  {
-   "id": "research-lab-scan-shelves",
-   "robot": "fetch-robotics-fetch",
-   "zone": "Research Synthesis Lab",
-   "goal": "Autonomously scan research binders and monitor shelves with the torso camera, logging which bays have been inspected.",
-   "ros": {
-    "action": "/inspect",
-    "topics": [
-     "/head_camera/image_raw",
-     "/torso_controller/command",
-     "/move_base/status",
-     "/scan_log"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Narrow aisle between shelf racks; cable runs on floor from lab workstations to be crossed safely.",
-   "success": [
-    "Covers all marked aisle waypoints",
-    "Camera captures each shelf face with >90% frame coverage",
-    "Scan log written for every bay",
-    "No shelf contact"
-   ],
-   "safety_stops": [
-    "Stop if torso camera occluded >5 s",
-    "E-stop on rack contact (wrench > 5 N)",
-    "Stop on wheel slip detected on cables"
-   ],
-   "human_in_loop": "A human researcher verifies the scan log completeness before archival.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "bays_scanned",
-     "frames_captured",
-     "coverage_pct",
-     "min_wrench_n",
-     "human_verification_status"
-    ]
-   }
-  },
-  {
-   "id": "proposal-forum-table-setup",
-   "robot": "universal-robots-ur10e",
-   "zone": "Proposal Forum",
-   "goal": "Set up the proposal review table by placing nameplates, tablets and ballot boxes at marked positions from a supply tray.",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/wrench",
-     "/joint_states",
-     "/vision/object_poses",
-     "/gripper/status"
-    ],
-    "frame": "base_link"
-   },
-   "terrain": "Fixed table mounted on the forum deck; must not collide with glass railing edges of the open-air structure.",
-   "success": [
-    "6 of 6 items placed within 2 cm of targets",
-    "Zero grasp failures",
-    "Gripper force < 20 N per item",
-    "Cycle time < 240 s"
-   ],
-   "safety_stops": [
-    "Stop on wrench threshold 40 N",
-    "Stop if hand detected in workspace",
-    "Pause on vision loss of target >3 s"
-   ],
-   "human_in_loop": "A human steward confirms the seating layout matches the session roster before use.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "items_placed",
-     "placement_error_cm",
-     "grasp_failures",
-     "max_gripper_force_n",
-     "cycle_time_s",
-     "human_confirmation"
-    ]
-   }
-  },
-  {
-   "id": "ops-deck-docs-carry",
-   "robot": "unitree-go2",
-   "zone": "Operations Deck",
-   "goal": "Carry printed task-routing packets from the Operations Deck printer stand to the working-group desks on the same level.",
-   "ros": {
-    "action": "/navigate_to_pose",
-    "topics": [
-     "/odom",
-     "/cmd_vel",
-     "/payload/attached",
-     "/obstacle_scan"
-    ],
-    "frame": "odom"
-   },
-   "terrain": "Concrete parking-deck floor with painted stall lines, drainage slots and occasional vehicle drip spots; ramps avoided.",
-   "success": [
-    "Delivers packets to all 4 desks",
-    "Mean position error < 0.25 m per drop",
-    "Payload remains attached whole run",
-    "No falls or slips"
-   ],
-   "safety_stops": [
-    "Stop if payload detaches",
-    "E-stop on human within 1 m at walking speed",
-    "Stop on low traction (slip ratio >0.4)"
-   ],
-   "human_in_loop": "A human coordinator approves the delivery manifest before the robot departs.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "drops_completed",
-     "position_error_m",
-     "payload_ok",
-     "slip_events",
-     "manifest_approved"
-    ]
-   }
-  },
-  {
-   "id": "garage-level-patrol",
+   "id": "s12-parking-smart-x-spot-1",
    "robot": "boston-dynamics-spot",
-   "zone": "Operations Deck",
-   "goal": "Patrol the garage's open-air levels to verify workstation equipment is powered down and no hazards remain after DAO working hours.",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
    "ros": {
-    "action": "/inspect",
+    "action": "/navigate_to_pose",
     "topics": [
-     "/front_cam/image_raw",
+     "/cmd_vel",
      "/odom",
-     "/hazard_alerts",
-     "/battery_state"
+     "/joint_states",
+     "/camera/depth"
     ],
-    "frame": "odom"
+    "frame": "map"
    },
-   "terrain": "Open-air concrete slabs of the 1111 Lincoln Road garage: painted stall lines, low walls, floor drain covers, coastal humidity-slick patches.",
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
    "success": [
-    "Covers patrol route on 2 assigned levels",
-    "Emits hazard report with photos for each station",
-    "Localization drift < 0.5 m over route",
-    "No trips on drain covers or low walls"
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop on body pitch > 15 deg",
-    "E-stop on person within 2 m",
-    "Return to dock on battery < 25%",
-    "Stop on unexpected gap or edge detected"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A human operations lead reviews the hazard report and authorizes any follow-up tasks.",
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
    "feedback_schema": {
     "fields": [
-     "task_id",
      "timestamp",
-     "levels_patrolled",
-     "stations_checked",
-     "hazards_reported",
-     "localization_drift_m",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
      "battery_pct",
-     "human_review_status"
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
   },
   {
-   "id": "observatory-screen-mount",
-   "robot": "franka-fr3",
-   "zone": "Progress Observatory",
-   "goal": "Precision-mount progress-dashboard display brackets onto the observatory wall grid at calibrated hole positions.",
+   "id": "s12-parking-smart-x-go2-1",
+   "robot": "unitree-go2",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/camera/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-1",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/camera/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-spot-2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
    "ros": {
     "action": "/follow_joint_trajectory",
     "topics": [
      "/joint_states",
-     "/franka_state_controller/franka_states",
-     "/wrench",
-     "/cartesian_impedance_controller/equilibrium_pose"
+     "/tool_state",
+     "/safety_state"
     ],
     "frame": "base_link"
    },
-   "terrain": "Wall grid beside the observatory window overlooking Lincoln Road; cable trays along baseboard constrain base placement.",
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
    "success": [
-    "4 brackets seated within 1 mm target tolerance",
-    "Contact force < 10 N during insertion",
-    "No collision with window frame",
-    "Cycle completes < 300 s"
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Reflex stop on torque limit",
-    "Stop on human within 1.5 m of workspace",
-    "Stop on vision marker loss >2 s"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A human supervisor approves final bracket positions against the wall plan before mounting begins.",
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
    "feedback_schema": {
     "fields": [
-     "task_id",
      "timestamp",
-     "brackets_seated",
-     "position_error_mm",
-     "max_contact_force_n",
-     "cycle_time_s",
-     "supervisor_approval"
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
-  },
-  {
-   "id": "coastal-visual-sweep",
-   "robot": "bitcraze-crazyflie-2-1-plus",
-   "zone": "Progress Observatory",
-   "goal": "Fly a low-altitude visual sweep of the observatory deck to capture progress-board images for the tracking dashboard.",
-   "ros": {
-    "action": "/inspect",
-    "topics": [
-     "/cf_odom",
-     "/camera/image_raw",
-     "/cmd_full_state",
-     "/battery_state"
-    ],
-    "frame": "odom"
    },
-   "terrain": "Open-air breezeway subject to coastal wind gusts off the Atlantic; ceiling beams and hanging signage act as aerial obstacles.",
-   "success": [
-    "Completes 8-figure sweep at 1.5 m altitude",
-    "Captures all 5 progress boards in focus",
-    "Wind-gust disturbances logged each flight",
-    "No wall or beam contact"
-   ],
-   "safety_stops": [
-    "Land immediately on battery < 3.7 V",
-    "Land on wind speed > 4 m/s",
-    "Hover-stop on person entering sweep volume",
-    "Land on position estimate divergence"
-   ],
-   "human_in_loop": "A human tracker approves the flight plan and reviews captured images for dashboard use.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "boards_captured",
-     "altitude_error_m",
-     "max_wind_mps",
-     "battery_voltage",
-     "min_obstacle_distance_m",
-     "flight_approved"
-    ]
-   }
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
   },
   {
-   "id": "event-av-staging",
-   "robot": "clearpath-husky-a200",
-   "zone": "Proposal Forum",
-   "goal": "Haul AV cases and staging crates from the garage service elevator landing to the Proposal Forum stage position for a decision-cycle session.",
+   "id": "s12-parking-smart-x-go2-2",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
    "ros": {
-    "action": "/navigate_to_pose",
+    "action": "/follow_joint_trajectory",
     "topics": [
-     "/odom",
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-2",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-spot-3",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
      "/cmd_vel",
-     "/load_status",
-     "/move_base/global_costmap"
+     "/odom",
+     "/camera/rgb",
+     "/gps"
     ],
     "frame": "map"
    },
-   "terrain": "Rough transition from service corridor to open deck with a 5 deg ramp, expansion joints and evening-condensation slick concrete.",
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
    "success": [
-    "All 3 crates delivered to stage mark within 0.2 m",
-    "No crate shift during ramp transit",
-    "Route completed < 6 min",
-    "Zero collisions with walls or signage"
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop on wheel slip > 0.3 on ramp",
-    "E-stop on person within 2 m",
-    "Stop on load shift alarm",
-    "E-stop on pitch > 10 deg"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A human event steward confirms stage placement and unloads the crates before session start.",
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
    "feedback_schema": {
     "fields": [
-     "task_id",
      "timestamp",
-     "crates_delivered",
-     "position_error_m",
-     "max_pitch_deg",
-     "slip_events",
-     "steward_confirmation"
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-go2-3",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/gps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-3",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/gps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
   }
  ],
- "_meta": {
-  "role": "robots",
-  "slug": "s12-parking-smart-x",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 2,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
- }
+ "industry": "construction-infrastructure"
 }

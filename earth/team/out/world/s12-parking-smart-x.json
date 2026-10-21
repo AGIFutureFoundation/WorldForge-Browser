@@ -1,252 +1,246 @@
 {
- "title": "Parking Smart.X (Series 12) — Lincoln Road Civic Deck",
- "summary": "The agent-managed DAO cell of W3 LLC Series 12 is staged across Herzog & de Meuron's 1111 Lincoln Road garage and Collins Park, Miami Beach. Five zones ring the open-air decks: charter governance, research synthesis, proposals, operations, and progress tracking — agents operate, people govern.",
+ "title": "Miami: Construction Infrastructure Hub",
+ "summary": "Walkable construction infrastructure training hub at 1111 Lincoln Road, Miami Beach Florida.",
  "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "1111 Lincoln Road Parking Garage",
+   "real_anchor": "1111 Lincoln Road",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display and contribution-model reading room",
-     "floors": 1
-    },
-    {
-     "name": "Outcome Ledger Kiosk",
-     "use": "Measurable-outcomes board",
-     "floors": 1
-    }
-   ],
-   "interior_rooms": [
-    "Mission Reading Room",
-    "Contribution Wall",
-    "Outcome Ledger",
-    "Steward Bench"
-   ],
-   "props": [
-    "charter scroll plinth",
-    "glass railing panels",
-    "banyan shade canopy",
-    "folded concrete stair seats",
-    "contribution ledger tablet"
-   ],
-   "npc_agents": []
-  },
-  {
-   "zone": "Research Synthesis Lab",
-   "real_anchor": "Collins Park",
-   "buildings": [
-    {
-     "name": "Synthesis Lab Shed",
-     "use": "Evidence monitoring and summarizing studio",
-     "floors": 1
-    }
-   ],
-   "interior_rooms": [
-    "Evidence Ticker Room",
-    "Summary Workshop",
-    "Source Archive"
-   ],
-   "props": [
-    "evidence pinboard",
-    "ticker display column",
-    "archive crates",
-    "park bench desks",
-    "palmetto planters"
-   ],
-   "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
-   ]
-  },
-  {
-   "zone": "Proposal Forum",
-   "real_anchor": "Bâoli Miami",
-   "buildings": [
-    {
-     "name": "Proposal Forum Hall",
-     "use": "Debate and human-decision chamber",
+     "name": "Charter Hall Training Center",
+     "use": "construction infrastructure training",
      "floors": 2
     }
    ],
    "interior_rooms": [
-    "Draft Review Room",
-    "Debate Terrace",
-    "Voting Booth Alcove",
-    "Amendment Gallery"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "proposal drafting tables",
-    "ballot boxes",
-    "debate podium",
-    "cooling mist fans",
-    "quorum lanterns"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Convention Center",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Biscayne Bay",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "17th Street Parking Garage (G5)",
+   "real_anchor": "1111 Lincoln Road",
    "buildings": [
     {
-     "name": "Operations Depot",
-     "use": "Task routing and working-group coordination",
-     "floors": 5
+     "name": "Operations Deck Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Router Console Room",
-    "Working-Group Bay",
-    "Courier Dock",
-    "Standup Terrace"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "task routing board",
-    "cargo trolleys",
-    "radio mast",
-    "signage totems",
-    "tool lockers"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Collins Canal",
+   "real_anchor": "Convention Center",
    "buildings": [
     {
-     "name": "Progress Observatory Tower",
-     "use": "Progress tracking against charter outcomes",
-     "floors": 3
+     "name": "Progress Observatory Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Outcome Map Room",
-    "Milestone Gallery",
-    "Canal Overlook Deck"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "progress dial sculpture",
-    "milestone plaques",
-    "telescope mounts",
-    "canal-side railing",
-    "sunshade sails"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "banyan (Ficus benghalensis)",
-   "royal palm (Roystonea regia)",
-   "gumbo limbo (Bursera simaruba)",
-   "live oak (Quercus virginiana)"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "saw palmetto (Serenoa repens)",
-   "firebush (Hamelia patens)",
-   "cocoplum (Chrysobalanus icaco)"
+   "boxwood"
   ],
   "flowers": [
-   "bougainvillea",
-   "ixora",
-   "beach sunflower (Helianthus debilis)"
+   "rose"
   ],
-  "ground": "gravel"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "ocean",
-  "flow_mps": 0.4,
-  "wave_m": 0.8
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
  },
  "wind": {
-  "prevailing_from": "E",
-  "mean_mps": 5
+  "prevailing_from": "W",
+  "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:45",
-  "sunset_local": "18:15"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "The Open-Air Charter Court",
-  "style": "concrete open-deck civic plaza",
-  "why_here": "The 1111 Lincoln Road garage's bare decks and framing already function as an open civic room — a natural court for human-governed decisions."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at 1111 Lincoln Road."
  },
  "quests": [
   {
-   "title": "Post the Charter",
+   "title": "Site Safety Certification",
    "from_zone": "Charter Hall",
-   "to_zone": "Progress Observatory",
-   "steps": [
-    "Read the mission in the Charter Hall reading room",
-    "Copy measurable outcomes into the ledger",
-    "Carry the ledger to the Progress Observatory tower",
-    "Post outcomes on the milestone gallery wall"
-   ],
-   "xp": 30
-  },
-  {
-   "title": "Evidence Run",
-   "from_zone": "Research Synthesis Lab",
-   "to_zone": "Proposal Forum",
-   "steps": [
-    "Collect fresh evidence from the ticker in the lab",
-    "Have Research Synthesis Agent summarize it",
-    "Deliver the summary to the Proposal Forum",
-    "Brief the Proposal & Grant Drafter for drafting"
-   ],
-   "xp": 40
-  },
-  {
-   "title": "Route the Working Groups",
-   "from_zone": "Operations Deck",
    "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Read the task queue at the Router Console",
-    "Assign tasks to working-group bays",
-    "Send Collaborator Scout findings to the lab",
-    "Confirm routing with Evidence Monitor"
-   ],
-   "xp": 35
-  },
-  {
-   "title": "The Human Vote",
-   "from_zone": "Proposal Forum",
-   "to_zone": "Charter Hall",
-   "steps": [
-    "Review the agent-drafted proposal in the Draft Review Room",
-    "Debate it on the terrace with stewards",
-    "Cast the final human vote in the booth alcove",
-    "Return the ratified charter amendment to Charter Hall"
+    "Check in at 1111 Lincoln Road",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
    "xp": 100
   },
   {
-   "title": "Milestone Patrol",
-   "from_zone": "Progress Observatory",
+   "title": "Survey Robots Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Convention Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Automation Certification",
+   "from_zone": "Proposal Forum",
    "to_zone": "Operations Deck",
    "steps": [
-    "Check progress dials in the observatory",
-    "Log stalled milestones at the canal overlook",
-    "Flag gaps to Task Router at the Operations Deck",
-    "Update the routing board"
+    "Check in at Biscayne Bay",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 25
+   "xp": 200
+  },
+  {
+   "title": "Site Safety Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at 1111 Lincoln Road",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Survey Robots Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Convention Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s12-parking-smart-x",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "construction-infrastructure",
+ "certification": {
+  "n": "Construction Robotics Spec",
+  "u": "Laborers",
+  "h": 100,
+  "l": [
+   "Site Safety",
+   "Survey Robots",
+   "Automation"
+  ],
+  "o": [
+   "Operate drones",
+   "Program assistants"
+  ]
  }
 }

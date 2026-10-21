@@ -1,305 +1,286 @@
 {
- "scenarios": [
-  {
-   "id": "pile-driving-array-rows",
-   "trade": "operating-eng",
-   "zone": "Operations Deck",
-   "task": "Drive support piles for fixed-tilt PV tables across Bhadla's flat Thar Desert sand.",
-   "hazards": [
-    "Equipment rollover on loose sand",
-    "Heat exhaustion in desert sun",
-    "Struck-by from swinging pile mast",
-    "Dust inhalation"
-   ],
-   "ppe": [
-    "Hard hat",
-    "High-vis vest",
-    "Safety glasses",
-    "Steel-toe boots"
-   ],
-   "steps": [
-    "Complete morning machine inspection checklist",
-    "Verify pile layout against survey stakes",
-    "Confirm exclusion zone with spotter",
-    "Drive piles to marked depth line",
-    "Check verticality and log deviations",
-    "Report misaligned piles to foreman"
-   ],
-   "rubric": [
-    {
-     "axis": "Pre-start inspection",
-     "pass_if": "Performs full machine check before starting"
-    },
-    {
-     "axis": "Spotter coordination",
-     "pass_if": "Maintains radio contact and clears exclusion zone"
-    },
-    {
-     "axis": "Pile tolerance",
-     "pass_if": "All piles within verticality tolerance"
-    },
-    {
-     "axis": "Heat protocol",
-     "pass_if": "Takes hydration breaks per site rule"
-    }
-   ],
-   "minutes": 45,
-   "level": "apprentice",
-   "robot_assist": "clearpath-husky-a200",
-   "robot_role": "Carries layout stakes and water to the machine, and monitors exclusion-zone perimeter with sensors."
-  },
-  {
-   "id": "module-lift-and-mount",
-   "trade": "solar",
-   "zone": "Operations Deck",
-   "task": "Lift glass PV modules from pallets and torque-mount them on tracker tables in high wind.",
-   "hazards": [
-    "Wind gust lifting modules",
-    "Cuts from module edges",
-    "Falls from elevated work platform",
-    "Electrical arc from live string"
-   ],
-   "ppe": [
-    "Cut-resistant gloves",
-    "Hard hat",
-    "Safety harness on platform",
-    "UV-protective eyewear"
-   ],
-   "steps": [
-    "Check wind speed against lift limit",
-    "Stage modules with two-person carry",
-    "Clamp module to frame before releasing grip",
-    "Torque clamps to spec in sequence",
-    "Verify grounding bond on each module",
-    "Tag any cracked module for quarantine"
-   ],
-   "rubric": [
-    {
-     "axis": "Wind limit compliance",
-     "pass_if": "Halts work when gusts exceed limit"
-    },
-    {
-     "axis": "Two-person handling",
-     "pass_if": "Never carries a module alone"
-    },
-    {
-     "axis": "Torque sequence",
-     "pass_if": "Follows specified clamp order and value"
-    },
-    {
-     "axis": "Damage control",
-     "pass_if": "Quarantines cracked glass"
-    }
-   ],
-   "minutes": 40,
-   "level": "apprentice",
-   "robot_assist": "unitree-go2",
-   "robot_role": "Fetches torque tools and pallet wraps between rows, keeping apprentices off travel lanes."
-  },
-  {
-   "id": "dc-string-commissioning",
-   "trade": "electricians",
-   "zone": "Proposal Forum",
-   "task": "Commission DC strings: verify polarity, insulation resistance, and clamp voltages before energizing combiner boxes.",
-   "hazards": [
-    "DC arc flash",
-    "Thermal burns on hot terminations",
-    "Snake and scorpion strikes at ground level",
-    "Reverse polarity damage"
-   ],
-   "ppe": [
-    "Arc-rated gloves",
-    "Face shield",
-    "Insulated boots",
-    "Long-sleeve FR clothing"
-   ],
-   "steps": [
-    "Lock out and tag out combiner box",
-    "Confirm string open-circuit voltage matches model",
-    "Megger test insulation resistance",
-    "Verify polarity of each string",
-    "Torque terminations to spec",
-    "Record results and close box"
-   ],
-   "rubric": [
-    {
-     "axis": "LOTO discipline",
-     "pass_if": "Applies lockout before testing"
-    },
-    {
-     "axis": "Polarity verification",
-     "pass_if": "Catches a deliberately reversed string"
-    },
-    {
-     "axis": "Test records",
-     "pass_if": "Logs every string reading"
-    },
-    {
-     "axis": "PPE",
-     "pass_if": "Wears arc-rated gear throughout"
-    }
-   ],
-   "minutes": 60,
-   "level": "journey",
-   "robot_assist": "universal-robots-ur10e",
-   "robot_role": "Holds multimeter leads on low-voltage verification points under electrician direction."
-  },
-  {
-   "id": "tracker-torque-check",
-   "trade": "millwrights",
-   "zone": "Progress Observatory",
-   "task": "Align single-axis tracker drive assemblies and check fastener torque after a sandstorm.",
-   "hazards": [
-    "Pinch points in drive linkage",
-    "Rotating torque tube catch",
-    "Sand-driven abrasive dust",
-    "Sun glare on laser alignment"
-   ],
-   "ppe": [
-    "Safety glasses",
-    "Gloves",
-    "Hearing protection",
-    "Dust mask"
-   ],
-   "steps": [
-    "Inspect drives for sand ingress",
-    "Lubricate bearings per schedule",
-    "Align torque tube with laser",
-    "Torque drive mounting bolts",
-    "Cycle tracker through full range",
-    "Log alignment deviations"
-   ],
-   "rubric": [
-    {
-     "axis": "Sand ingress detection",
-     "pass_if": "Identifies fouled bearing"
-    },
-    {
-     "axis": "Alignment tolerance",
-     "pass_if": "Tube within specified deviation"
-    },
-    {
-     "axis": "Cycle test",
-     "pass_if": "Runs full-range sweep before sign-off"
-    }
-   ],
-   "minutes": 75,
-   "level": "journey",
-   "robot_assist": "boston-dynamics-spot",
-   "robot_role": "Walks rows post-storm with thermal camera to flag overheating bearings for the crew."
-  },
-  {
-   "id": "inverter-pad-concrete",
-   "trade": "cement-masons",
-   "zone": "Operations Deck",
-   "task": "Pour and finish an inverter station equipment pad in extreme desert heat before noon cutoff.",
-   "hazards": [
-    "Cement chemical burns",
-    "Heat illness",
-    "Concrete truck backing strike",
-    "Skin cancer risk from UV"
-   ],
-   "ppe": [
-    "Rubber boots",
-    "Alkaline-resistant gloves",
-    "Long sleeves",
-    "Sun hat or hood"
-   ],
-   "steps": [
-    "Set formwork to elevation marks",
-    "Wet base and verify rebar chairs",
-    "Coordinate truck chute placement",
-    "Screed and float surface",
-    "Cure with curing compound before heat peak",
-    "Strip forms next day and check dimensions"
-   ],
-   "rubric": [
-    {
-     "axis": "Hot-weather plan",
-     "pass_if": "Uses retarder or schedules pour before cutoff"
-    },
-    {
-     "axis": "Finish quality",
-     "pass_if": "Surface within flatness tolerance"
-    },
-    {
-     "axis": "Chemical protection",
-     "pass_if": "No skin contact with wet cement"
-    },
-    {
-     "axis": "Curing",
-     "pass_if": "Applies curing compound promptly"
-    }
-   ],
-   "minutes": 90,
-   "level": "apprentice",
-   "robot_assist": null,
-   "robot_role": null
-  },
-  {
-   "id": "night-shift-string-repair",
-   "trade": "line-workers",
-   "zone": "Research Synthesis Lab",
-   "task": "Replace a faulted harness section on an energized-adjacent feeder under night safety lighting.",
-   "hazards": [
-    "Energized adjacent circuits",
-    "Night visibility and desert wildlife",
-    "Working at height on structure",
-    "Fatigue on night shift"
-   ],
-   "ppe": [
-    "Arc-flash suit for rated exposure",
-    "Harness with twin lanyards",
-    "Headlamp plus area lighting",
-    "Snake gaiters"
-   ],
-   "steps": [
-    "Review switching order and clearances",
-    "Ground the de-energized section",
-    "Climb with 100% tie-off",
-    "Replace harness and connectors",
-    "Test continuity and insulation",
-    "Clear grounds and restore per permit"
-   ],
-   "rubric": [
-    {
-     "axis": "Clearance verification",
-     "pass_if": "Confirms de-energized lines by test before touch"
-    },
-    {
-     "axis": "Fall protection",
-     "pass_if": "Maintains 100% tie-off aloft"
-    },
-    {
-     "axis": "Grounding",
-     "pass_if": "Applies and removes grounds in correct order"
-    },
-    {
-     "axis": "Fatigue check",
-     "pass_if": "Declares fit for night work at briefing"
-    }
-   ],
-   "minutes": 120,
-   "level": "journey",
-   "robot_assist": "pal-robotics-talos",
-   "robot_role": "Positions insulating barriers and lifts tool bags to the structure under line-worker direction."
-  }
- ],
- "credential": {
-  "name": "Bhadla Solar Park Union Apprentice Certificate — Grounds to Grid",
-  "requires": [
-   "pile-driving-array-rows",
-   "module-lift-and-mount",
-   "dc-string-commissioning",
-   "inverter-pad-concrete"
+ "certification": {
+  "n": "Clean Energy Robotics Tech",
+  "u": "IBEW",
+  "h": 110,
+  "l": [
+   "Solar/Wind Safety",
+   "Inspection",
+   "Maintenance"
+  ],
+  "o": [
+   "Inspect solar",
+   "Maintain drones"
   ]
  },
- "_meta": {
-  "role": "trades",
-  "slug": "s32-solar-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "scenarios": [
+  {
+   "id": "s32-solar-dao-clean-electricians-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-electricians-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-electricians-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for clean-energy robot operations"
  }
 }

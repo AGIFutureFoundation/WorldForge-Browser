@@ -1,348 +1,431 @@
 {
  "tasks": [
   {
-   "id": "grotto-perimeter-patrol",
-   "robot": "clearpath-husky-a200",
-   "zone": "Progress Observatory",
-   "goal": "Patrol the river-valley procession circuit along the Gave de Pau riverbank and report progress-marker checkpoints.",
-   "ros": {
-    "action": "/navigate_to_pose",
-    "topics": [
-     "/odom",
-     "/gps/fix",
-     "/scan",
-     "/mission_status"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Gravel and packed-earth riverbank paths, wet cobblestones near the grotto, crowd barriers along procession routes.",
-   "success": [
-    "Complete 3 laps of the perimeter waypoint loop",
-    "Localization error < 0.5 m at each checkpoint",
-    "No e-stop events during run",
-    "Checkpoint arrival timestamps logged at 1 Hz"
-   ],
-   "safety_stops": [
-    "E-stop if obstacle within 1.0 m",
-    "Stop for any pedestrian within 2 m in path",
-    "Halt on slope slip > 10 degrees",
-    "Weather/wet-surface speed cap at 0.5 m/s"
-   ],
-   "human_in_loop": "Human steward approves patrol route and reviews the progress report before it is filed to the Progress Observatory.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "timestamp",
-     "checkpoint_id",
-     "pose_error_m",
-     "obstacle_min_dist_m",
-     "surface_type",
-     "speed_mps",
-     "success_bool"
-    ]
-   }
-  },
-  {
-   "id": "charter-hall-doc-delivery",
-   "robot": "unitree-go2",
-   "zone": "Charter Hall",
-   "goal": "Carry printed charter documents between the Charter Hall display stands and the visitor information desk.",
-   "ros": {
-    "action": "/navigate_to_pose",
-    "topics": [
-     "/cmd_vel",
-     "/scan",
-     "/battery_state",
-     "/load_status"
-    ],
-    "frame": "odom"
-   },
-   "terrain": "Smooth indoor flagstone floor, low display plinths, queue rails near the desk.",
-   "success": [
-    "10 successful delivery cycles without dropping payload",
-    "Dock-to-desk transit under 90 s per cycle",
-    "Obstacle avoidance engaged at least once per lap in a valid way",
-    "Battery above 20% at run end"
-   ],
-   "safety_stops": [
-    "Stop if payload tilt > 15 degrees",
-    "Stop for humans within 1.5 m",
-    "Return to dock if battery < 20%",
-    "E-stop on wheel slip or floor obstacle detection"
-   ],
-   "human_in_loop": "A steward confirms each charter document batch before transport, since charter materials are governance artifacts.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "cycle_count",
-     "delivery_time_s",
-     "payload_tilt_deg",
-     "min_human_dist_m",
-     "battery_pct",
-     "drop_events",
-     "success_bool"
-    ]
-   }
-  },
-  {
-   "id": "research-lab-shelf-inspect",
-   "robot": "fetch-robotics-fetch",
-   "zone": "Research Synthesis Lab",
-   "goal": "Inspect labeled research bins and publication shelves, reading QR codes to log evidence summaries received.",
-   "ros": {
-    "action": "/inspect",
-    "topics": [
-     "/head_camera/image_raw",
-     "/torso_controller/state",
-     "/odom",
-     "/dock_status"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Lab flooring with cable runs, shelf edges at 0.5-1.5 m height, chair legs at workstations.",
-   "success": [
-    "Read 20/20 QR labels with no misreads",
-    "Torso lift reaches all three shelf tiers",
-    "Zero collisions with furniture",
-    "Inspection log published per bin within 2 s of read"
-   ],
-   "safety_stops": [
-    "Stop arm/torso if human within 1 m",
-    "E-stop on unexpected contact force",
-    "Pause if camera feed drops",
-    "Do not enter aisles occupied by staff"
-   ],
-   "human_in_loop": "A person reviews flagged or unreadable QR entries before the evidence log is committed.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "bin_id",
-     "qr_read_ok",
-     "shelf_tier",
-     "scan_time_s",
-     "human_proximity_m",
-     "collision_count",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "proposal-forum-signage-setup",
+   "id": "s04-curable-x-ur10e-1",
    "robot": "universal-robots-ur10e",
-   "zone": "Proposal Forum",
-   "goal": "Mount proposal boards and placards on forum stands at fixed poses for the debate session.",
+   "zone": "Charter Hall",
+   "goal": "Robotic arm weld sequence",
    "ros": {
     "action": "/follow_joint_trajectory",
     "topics": [
      "/joint_states",
-     "/wrench",
-     "/speed_scaling_factor",
-     "/robot_status"
+     "/robot_status",
+     "/safety_state"
     ],
     "frame": "base_link"
    },
-   "terrain": "Fixed table-top stands, board weight up to 3 kg, surrounding crowd-barrier posts.",
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
    "success": [
-    "Place 6 boards within 1 cm and 3 degrees of target pose",
-    "Peak contact wrench < 20 N during placement",
-    "No dropped boards",
-    "Cycle time under 45 s per board"
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop if wrench exceeds 20 N",
-    "Stop if human enters 1.5 m workspace radius",
-    "Reduced mode (250 mm/s) when people present",
-    "E-stop on trajectory deviation > 5 cm"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward verifies board content and placement before the forum opens; agent never finalizes proposal displays.",
+   "human_in_loop": "Union steward approves at Renaissance Center",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "board_id",
-     "pose_error_mm",
-     "peak_wrench_n",
-     "cycle_time_s",
-     "human_in_workspace_bool",
-     "drop_events",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "crazyflie-grotto-aerial-survey",
-   "robot": "bitcraze-crazyflie-2-1-plus",
-   "zone": "Progress Observatory",
-   "goal": "Fly a low-altitude photogrammetry pass over the grotto rock face and riverbank to update the site digital-twin mesh.",
-   "ros": {
-    "action": "/navigate_to_pose",
-    "topics": [
-     "/cf2/pose",
-     "/cf2/range/front",
-     "/cf2/log/pose_stabilizer",
-     "/camera/image_raw"
-    ],
-    "frame": "map"
-   },
-   "terrain": "Uneven rock face of the Massabielle grotto, overhanging vegetation, river mist, variable wind in the valley.",
-   "success": [
-    "Complete 4 horizontal scan lines within 0.2 m of planned altitude",
-    "Land with residual velocity < 0.1 m/s",
-    "Capture 200+ usable frames with <5% blur",
-    "Return-to-home within 0.3 m accuracy"
-   ],
-   "safety_stops": [
-    "Land immediately if wind gust > 8 m/s",
-    "Avoid no-fly volume above grotto interior",
-    "Battery < 25% triggers return-to-home",
-    "Land if any human within 2 m below flight path"
-   ],
-   "human_in_loop": "Site steward approves flight volume and time window; flights pause during processions.",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "waypoint_id",
-     "alt_error_m",
-     "frames_captured",
-     "blur_pct",
-     "wind_ms",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
      "battery_pct",
-     "landing_vel_ms"
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
   },
   {
-   "id": "talos-procession-assist-carry",
-   "robot": "pal-robotics-talos",
-   "zone": "Operations Deck",
-   "goal": "Carry water crates from the Operations Deck staging area to working-group stations along the procession ground.",
+   "id": "s04-curable-x-fr3-1",
+   "robot": "franka-fr3",
+   "zone": "Charter Hall",
+   "goal": "Robotic arm weld sequence",
    "ros": {
-    "action": "/pick",
+    "action": "/follow_joint_trajectory",
     "topics": [
-     "/whole_body_controller/state",
-     "/octomap_point_cloud",
-     "/foot_pressure/left",
-     "/joint_states"
+     "/joint_states",
+     "/robot_status",
+     "/safety_state"
     ],
-    "frame": "map"
+    "frame": "base_link"
    },
-   "terrain": "Mixed gravel and flagstone ground, slight riverbank slope, crate stacks at staging pallets, pedestrian traffic.",
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
    "success": [
-    "Transfer 8 crates with zero drops",
-    "Bipedal balance maintained (no foot-slip recovery events)",
-    "Mean transfer time < 4 min per crate",
-    "Placement within 5 cm of station markers"
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop walking if human within 2 m in path",
-    "Squat-place crate if balance margin below threshold",
-    "E-stop on foot slip > 10 cm",
-    "Do not lift crates over 10 kg rated limit"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Steward assigns station targets and confirms final crate placement at each working-group station.",
+   "human_in_loop": "Union steward approves at Renaissance Center",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "crate_id",
-     "transfer_time_s",
-     "placement_error_cm",
-     "balance_events",
-     "human_min_dist_m",
-     "drop_events",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
   },
   {
-   "id": "nao-visitor-qa-kiosk",
-   "robot": "softbank-nao",
+   "id": "s04-curable-x-fetch-1",
+   "robot": "fetch-robotics-fetch",
    "zone": "Charter Hall",
-   "goal": "Greet visitors, answer scripted questions about the DAO charter and contribution model, and route complex queries to stewards.",
+   "goal": "Robotic arm weld sequence",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/robot_status",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-ur10e-2",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mobile robot parts delivery",
    "ros": {
     "action": "/navigate_to_pose",
     "topics": [
-     "/speech_recognition/result",
-     "/speech_synthesis",
-     "/people_detection",
-     "/odom"
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
     ],
-    "frame": "odom"
+    "frame": "map"
    },
-   "terrain": "Crowded kiosk area with stone floor, stanchions, visitors including elderly and wheelchair users.",
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
    "success": [
-    "Correctly answer 90% of 20 scripted charter questions",
-    "Detect and face each visitor within 2 s of approach",
-    "Zero navigation collisions with stanchions",
-    "Log all unanswered queries for steward routing"
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Stop motion if visitor within 0.8 m",
-    "Refuse to state governance decisions; redirect to humans",
-    "Pause speech if ambient noise > 80 dB",
-    "Shutdown greeting mode if overcrowding detected"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "All charter interpretation beyond scripted FAQ is routed to human stewards; NAO never drafts or decides proposals.",
+   "human_in_loop": "Union steward approves at Renaissance Center",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "utterance_id",
-     "question_match",
-     "answer_correct",
-     "response_latency_s",
-     "visitor_detected_bool",
-     "escalated_bool",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
   },
   {
-   "id": "fr3-lab-sample-handling",
+   "id": "s04-curable-x-fr3-2",
    "robot": "franka-fr3",
    "zone": "Research Synthesis Lab",
-   "goal": "Sort incoming evidence samples and data drives into labeled trays for the synthesis agents to process.",
+   "goal": "Mobile robot parts delivery",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fetch-2",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mobile robot parts delivery",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-ur10e-3",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
    "ros": {
     "action": "/pick",
     "topics": [
-     "/fr3/joint_states",
-     "/fr3/ee_wrench",
-     "/camera/color/image_raw",
-     "/collision_state"
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
     ],
     "frame": "base_link"
    },
-   "terrain": "Bench-top workspace with tray dividers, drive enclosures, cable clutter, occasional shared bench use by staff.",
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
    "success": [
-    "Sort 30 items into correct trays with zero misplacement",
-    "Grip force within 5-15 N band for all items",
-    "No self-collision or contact-reflex triggers",
-    "Throughput at least 12 items per 10 min"
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "Reflex stop on contact force > 15 N",
-    "Stop if human hand enters workspace volume",
-    "Pause if tray slot occupied unexpectedly",
-    "Disable on camera occlusion > 2 s"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "Lab staff approve the tray taxonomy and handle any item flagged as fragile or ambiguous.",
+   "human_in_loop": "Union steward approves at Renaissance Center",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "item_id",
-     "target_tray",
-     "grip_force_n",
-     "misplace_count",
-     "reflex_events",
-     "human_in_workspace_bool",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fr3-3",
+   "robot": "franka-fr3",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fetch-3",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
   }
  ],
- "_meta": {
-  "role": "robots",
-  "slug": "s04-curable-x",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
- }
+ "industry": "automotive-manufacturing"
 }

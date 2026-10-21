@@ -1,273 +1,246 @@
 {
- "title": "Get.Delivery DAO (Series 22) — Maasvlakte 2, Port of Rotterdam",
- "summary": "An agent-managed DAO cell on reclaimed land at the North Sea edge of Europe's largest port. Gantry cranes and container stacks frame five zones where agents synthesize, draft and route while humans hold every final vote.",
- "biome": "coast",
+ "title": "Memphis: Logistics Warehousing Hub",
+ "summary": "Walkable logistics warehousing training hub at FedEx World Hub, Memphis Tennessee.",
+ "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "ECT No. 21 container terminal",
+   "real_anchor": "FedEx World Hub",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display and contribution-model registry",
+     "name": "Charter Hall Training Center",
+     "use": "logistics warehousing training",
      "floors": 2
-    },
-    {
-     "name": "Outcome Ledger House",
-     "use": "Measurable-outcomes boardroom",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Mission Wall",
-    "Contribution Model Desk",
-    "Outcome Ledger Room",
-    "Steward Reading Nook"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "charter stele",
-    "contribution ledger board",
-    "mission banner",
-    "governance seal rug",
-    "outcome metric dials",
-    "tea trolley"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "ECT No. 21 administration block",
+   "real_anchor": "Memphis Airport",
    "buildings": [
     {
-     "name": "Synthesis Lab",
-     "use": "Evidence monitoring and summarizing workspace",
-     "floors": 3
-    },
-    {
-     "name": "Signal Antenna Hut",
-     "use": "Data intake station",
-     "floors": 1
+     "name": "Research Synthesis Lab Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Evidence Intake Bay",
-    "Summary Drafting Room",
-    "Source Archive",
-    "Quiet Analysis Cell",
-    "Briefing Gallery"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "evidence pinboard",
-    "terminal cluster",
-    "archive crates",
-    "whiteboard wall",
-    "printer drone dock",
-    "citation shelf"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "ECT No. 21 gatehouse square",
+   "real_anchor": "Mississippi River",
    "buildings": [
     {
-     "name": "Proposal Forum Hall",
-     "use": "Debate and human voting chamber",
+     "name": "Proposal Forum Training Center",
+     "use": "logistics warehousing training",
      "floors": 2
     }
    ],
    "interior_rooms": [
-    "Draft Proposal Gallery",
-    "Debate Floor",
-    "Human Voting Booths",
-    "Amendment Alcove",
-    "Reading Bench Nook"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "draft proposal stands",
-    "voting urn",
-    "debate lectern",
-    "quorum bell",
-    "reserved-for-humans sign",
-    "public comment wall"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "terminal access road beside ECT No. 21",
+   "real_anchor": "FedEx World Hub",
    "buildings": [
     {
-     "name": "Operations Deck",
-     "use": "Task routing and working-group coordination",
-     "floors": 3
-    },
-    {
-     "name": "Scout Outpost",
-     "use": "Collaborator identification station",
-     "floors": 1
+     "name": "Operations Deck Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Task Routing Board",
-    "Working Group Docks",
-    "Scout Map Room",
-    "Coordination Bridge",
-    "Standup Corner"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "routing board",
-    "shipping-container desks",
-    "crane-view windows",
-    "logistics radio rack",
-    "collaborator map table",
-    "task card carousel"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Maasvlakte 2 seawall overlook",
+   "real_anchor": "Memphis Airport",
    "buildings": [
     {
-     "name": "Progress Observatory Tower",
-     "use": "Progress tracking against charter outcomes",
-     "floors": 4
+     "name": "Progress Observatory Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Outcome Telescope Room",
-    "Milestone Gallery",
-    "Metric Calibration Lab",
-    "Harbor Overlook",
-    "Steward Briefing Room"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "progress telescope",
-    "milestone timeline rail",
-    "metric gauges",
-    "tide chart",
-    "wind vane",
-    "observation log desk"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "grey willow",
-   "black poplar",
-   "common alder",
-   "sea buckthorn"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "sea-buckthorn hedge",
-   "bramble",
-   "dune rose"
+   "boxwood"
   ],
   "flowers": [
-   "sea thrift",
-   "yellow horned-poppy",
-   "common sea-lavender"
+   "rose"
   ],
-  "ground": "gravel"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "ocean",
-  "flow_mps": 1,
-  "wave_m": 1
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
  },
  "wind": {
-  "prevailing_from": "SW",
-  "mean_mps": 8
+  "prevailing_from": "W",
+  "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:15",
-  "sunset_local": "20:45"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "The Quay Court of Final Vote",
-  "style": "open-air stone quay ringed by stacked container walls",
-  "why_here": "On the terminal's edge where cargo decisions become movements, human stewards gather to cast the votes only they may cast."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at FedEx World Hub."
  },
  "quests": [
   {
-   "title": "First Evidence Sweep",
-   "from_zone": "Research Synthesis Lab",
-   "to_zone": "Progress Observatory",
-   "steps": [
-    "Collect intake summaries from the Evidence Intake Bay",
-    "Cross-check three sources in the Source Archive",
-    "Deliver the synthesis to the Milestone Gallery",
-    "Log the entry on the progress telescope rail"
-   ],
-   "xp": 40
-  },
-  {
-   "title": "A Draft on the Table",
-   "from_zone": "Operations Deck",
-   "to_zone": "Proposal Forum",
-   "steps": [
-    "Collect a routed task card from the Routing Board",
-    "Carry it to the Draft Proposal Gallery",
-    "Observe the Proposal & Grant Drafter shape the draft",
-    "Place it on a proposal stand — never enact it",
-    "Ring the quorum bell to summon human stewards"
-   ],
-   "xp": 60
-  },
-  {
-   "title": "Charter in Full View",
+   "title": "AMR Basics Certification",
    "from_zone": "Charter Hall",
-   "to_zone": "Progress Observatory",
+   "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Read the Mission Wall",
-    "Copy the contribution model into a ledger card",
-    "Record the measurable outcomes",
-    "Post them at the Metric Calibration Lab"
-   ],
-   "xp": 30
-  },
-  {
-   "title": "Signals Across the Seawall",
-   "from_zone": "Research Synthesis Lab",
-   "to_zone": "Operations Deck",
-   "steps": [
-    "Raise a signal at the Signal Antenna Hut",
-    "Trace collaborators on the Scout Map Room table",
-    "Route a working-group invitation via the Coordination Bridge"
-   ],
-   "xp": 50
-  },
-  {
-   "title": "Stewards' Round",
-   "from_zone": "Proposal Forum",
-   "to_zone": "Charter Hall",
-   "steps": [
-    "Verify quorum at the Debate Floor",
-    "Escort the human stewards to the Quay Court",
-    "Witness the final vote — agents observe, humans decide",
-    "Record the outcome on the Outcome Ledger Room wall"
+    "Check in at FedEx World Hub",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
    "xp": 100
+  },
+  {
+   "title": "Fleet Mgmt Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Memphis Airport",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Diagnostics Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at Mississippi River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "AMR Basics Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at FedEx World Hub",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Fleet Mgmt Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Memphis Airport",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s22-get-delivery-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "logistics-warehousing",
+ "certification": {
+  "n": "AMR Technician",
+  "u": "Teamsters",
+  "h": 80,
+  "l": [
+   "AMR Basics",
+   "Fleet Mgmt",
+   "Diagnostics"
+  ],
+  "o": [
+   "Manage AMR fleet",
+   "Troubleshoot nav"
+  ]
  }
 }

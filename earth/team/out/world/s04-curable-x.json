@@ -1,193 +1,151 @@
 {
- "title": "Curable.X — Sanctuaries of Lourdes, Massabielle Grotto",
- "summary": "A walkable agent-managed DAO cell set among the grotto, riverbanks and esplanade of Lourdes. Agents monitor, synthesize, draft and track in riverside halls; humans alone hold the final vote in Charter Hall.",
- "biome": "river-valley",
+ "title": "Detroit: Automotive Manufacturing Hub",
+ "summary": "Walkable automotive manufacturing training hub at Renaissance Center, Detroit Michigan.",
+ "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "Esplanade",
+   "real_anchor": "Renaissance Center",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display, contribution model and measurable outcomes",
+     "name": "Charter Hall Training Center",
+     "use": "automotive manufacturing training",
      "floors": 2
-    },
-    {
-     "name": "Stewards' Gallery",
-     "use": "Human-only voting chamber overlooking the esplanade",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Charter Reading Room",
-    "Outcome Ledger Wall",
-    "Contribution Desk",
-    "Stewards' Voting Hall",
-    "Quiet Alcove"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "charter scroll case",
-    "measurable-outcomes board",
-    "contribution ledger",
-    "governance seal",
-    "bench rows",
-    "candle rail",
-    "human-reserved-action plaque"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "Centrale de la Grotte",
+   "real_anchor": "Ford River Rouge",
    "buildings": [
     {
-     "name": "Synthesis House",
-     "use": "Evidence monitoring and research summarization",
+     "name": "Research Synthesis Lab Training Center",
+     "use": "automotive manufacturing training",
      "floors": 2
-    },
-    {
-     "name": "Riverside Reading Annex",
-     "use": "Journal study beside the Gave de Pau",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Evidence Wall",
-    "Monitoring Desk",
-    "Synthesis Studio",
-    "Source Archive",
-    "River View Reading Room"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "evidence pinboard",
-    "document stacks",
-    "quill and ink set",
-    "river-facing desk",
-    "labeled source crate",
-    "summarized briefs tray"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "Basilique souterraine Saint-Pie X",
+   "real_anchor": "GM Hamtramck",
    "buildings": [
     {
-     "name": "Proposal Forum Hall",
-     "use": "Agent-drafted proposals debated and decided by people",
-     "floors": 1
+     "name": "Proposal Forum Training Center",
+     "use": "automotive manufacturing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Drafting Alcove",
-    "Debate Floor",
-    "Deliberation Circle",
-    "Record Desk"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "proposal scroll rack",
-    "debate lectern",
-    "comment jar",
-    "voting urn",
-    "floor mosaic map",
-    "threshold rope"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "Accueil Jean-Paul II",
+   "real_anchor": "Renaissance Center",
    "buildings": [
     {
-     "name": "Operations Deck",
-     "use": "Task routing and working-group coordination",
-     "floors": 3
-    },
-    {
-     "name": "Collaborators' Hostel",
-     "use": "Lodging for visiting experts and working groups",
-     "floors": 4
+     "name": "Operations Deck Training Center",
+     "use": "automotive manufacturing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Routing Board Room",
-    "Working Group Tables",
-    "Scout's Map Room",
-    "Signal Desk",
-    "Coordination Balcony"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "task routing board",
-    "collegial map pins",
-    "message tubes",
-    "working-group banners",
-    "coordination bell",
-    "lantern posts"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Chapelle Saint Joseph",
+   "real_anchor": "Ford River Rouge",
    "buildings": [
     {
-     "name": "Progress Observatory Tower",
-     "use": "Tracking progress against charter outcomes",
-     "floors": 5
+     "name": "Progress Observatory Training Center",
+     "use": "automotive manufacturing training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Outcome Charts Room",
-    "Tracker's Loft",
-    "Milestone Bell Chamber",
-    "Panorama Balcony"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "progress dials",
-    "milestone bell",
-    "ledger telescope stand",
-    "threshold markers",
-    "bench"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "European beech",
-   "sessile oak",
-   "common yew",
-   "horse-chestnut",
-   "white willow",
-   "plane tree"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "boxwood",
-   "common hawthorn",
-   "laurel",
-   "privet hedge"
+   "boxwood"
   ],
   "flowers": [
-   "roses (Rosa 'Bonica')",
-   "lavender",
-   "irises",
-   "marigolds"
+   "rose"
   ],
-  "ground": "gravel"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "river",
-  "flow_mps": 2,
+  "kind": "none",
+  "flow_mps": 0,
   "wave_m": 0
  },
  "wind": {
@@ -195,82 +153,94 @@
   "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:45",
-  "sunset_local": "20:30"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "Esplanade Court of Human Vote",
-  "style": "Open-air gravel court framed by bench rows on the sanctuary esplanade",
-  "why_here": "The vast Esplanade is Lourdes' natural gathering ground; here people alone cast the final vote on agent-drafted proposals."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Renaissance Center."
  },
  "quests": [
   {
-   "title": "Trace the Charter",
+   "title": "Robot Safety Certification",
    "from_zone": "Charter Hall",
-   "to_zone": "Progress Observatory",
+   "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Read the charter scroll and contribution model in Charter Hall",
-    "Record the charter's measurable outcomes in your journal",
-    "Climb the Progress Observatory and match outcomes to progress dials",
-    "Report one milestone you can verify on the Milestone Bell board"
+    "Check in at Renaissance Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 40
+   "xp": 100
   },
   {
-   "title": "From Evidence to Draft",
+   "title": "Programming Certification",
    "from_zone": "Research Synthesis Lab",
    "to_zone": "Proposal Forum",
    "steps": [
-    "Ask the Evidence Monitor for the latest summarized brief",
-    "Cross-check two sources in the Riverside Reading Annex",
-    "Watch the Proposal & Grant Drafter shape the brief into a draft",
-    "Carry the draft to the Debate Floor — but never enact it yourself"
+    "Check in at Ford River Rouge",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 60
+   "xp": 150
   },
   {
-   "title": "Route the Working Group",
-   "from_zone": "Operations Deck",
-   "to_zone": "Research Synthesis Lab",
-   "steps": [
-    "Take a routed task card from the Routing Board",
-    "Follow the Collaborator Scout's map to a suggested expert",
-    "Deliver the task summary to the Research Synthesis Agent",
-    "Confirm routing completion at the Signal Desk"
-   ],
-   "xp": 35
-  },
-  {
-   "title": "The Human Threshold",
+   "title": "Maintenance Certification",
    "from_zone": "Proposal Forum",
-   "to_zone": "Charter Hall",
+   "to_zone": "Operations Deck",
    "steps": [
-    "Observe a drafted proposal on the Debate Floor",
-    "Note which actions are reserved for humans on the governance plaque",
-    "Walk to the Stewards' Voting Hall on the Esplanade",
-    "Witness (as a person) the final vote being recorded"
+    "Check in at GM Hamtramck",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 80
+   "xp": 200
   },
   {
-   "title": "Riverside Synthesis Walk",
-   "from_zone": "Research Synthesis Lab",
+   "title": "Robot Safety Certification",
+   "from_zone": "Operations Deck",
    "to_zone": "Progress Observatory",
    "steps": [
-    "Collect an evidence summary at the Centrale de la Grotto annex",
-    "Walk the riverbank path along the Gave de Pau",
-    "Note three observations at the grotto and river",
-    "Log your synthesis at the Observatory's Outcome Charts Room"
+    "Check in at Renaissance Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 25
+   "xp": 250
+  },
+  {
+   "title": "Programming Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Ford River Rouge",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s04-curable-x",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "automotive-manufacturing",
+ "certification": {
+  "n": "Adv Manufacturing Robot Op",
+  "u": "UAW/IAM",
+  "h": 120,
+  "l": [
+   "Robot Safety",
+   "Programming",
+   "Maintenance"
+  ],
+  "o": [
+   "Operate robots safely",
+   "Program sequences"
+  ]
  }
 }

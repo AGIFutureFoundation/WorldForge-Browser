@@ -1,285 +1,246 @@
 {
- "title": "Moscone.X (Series 19) — Yerba Buena Gardens",
- "summary": "An agent-managed, human-governed DAO cell on the green roof above Moscone Center. Six districts map the DAO workflow — charter, research, proposals, operations, progress — with agents operating and people deciding.",
+ "title": "Central Valley: Agriculture Food Hub",
+ "summary": "Walkable agriculture food training hub at Fresno California Agricultural Hub.",
  "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "Yerba Buena Gardens Esplanade",
+   "real_anchor": "Fresno Metro",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display and contribution model exhibits",
+     "name": "Charter Hall Training Center",
+     "use": "agriculture food training",
      "floors": 2
-    },
-    {
-     "name": "Outcome Milestone Kiosk",
-     "use": "Measurable-outcomes display boards",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Charter Reading Room",
-    "Contribution Ledger Gallery",
-    "Mission Wall",
-    "Steward Registry",
-    "Outcome Metrics Alcove"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "engraved charter stele",
-    "contribution ledger terminal",
-    "mission banner",
-    "measurable-outcomes board",
-    "benches",
-    "brass compass rose inlaid in lawn"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "Children's Creativity Museum",
+   "real_anchor": "Tower District",
    "buildings": [
     {
-     "name": "Synthesis Lab Dome",
-     "use": "Evidence monitoring and research synthesis workspace",
-     "floors": 3
-    },
-    {
-     "name": "Evidence Archive",
-     "use": "Document and dataset storage",
+     "name": "Research Synthesis Lab Training Center",
+     "use": "agriculture food training",
      "floors": 2
     }
    ],
    "interior_rooms": [
-    "Monitoring Room",
-    "Evidence Summary Studio",
-    "Reading Nook",
-    "Data Vault",
-    "Citation Wall",
-    "Briefing Theater"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "evidence corkboard",
-    "monitoring dashboards",
-    "stacks of research briefs",
-    "labeled specimen drawers",
-    "whiteboard walls",
-    "rolling ladder"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "Martin Luther King Jr. Memorial Fountain area",
+   "real_anchor": "San Joaquin River",
    "buildings": [
     {
-     "name": "Forum Amphitheater",
-     "use": "Open debate and decision-stage space",
-     "floors": 1
-    },
-    {
-     "name": "Drafting Pavilion",
-     "use": "Proposal drafting desks for human review",
-     "floors": 1
+     "name": "Proposal Forum Training Center",
+     "use": "agriculture food training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Debate Ring",
-    "Drafting Desks",
-    "Human Vote Booths (reserved)",
-    "Comment Wall",
-    "Reading Bench"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "tiered stone seating",
-    "speakers' podium",
-    "draft-proposal printer",
-    "vote queue sign (humans only)",
-    "comment cards and pins"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "Moscone Center rooftop terrace",
+   "real_anchor": "Fresno Metro",
    "buildings": [
     {
-     "name": "Routing Hub",
-     "use": "Task routing and working-group coordination",
+     "name": "Operations Deck Training Center",
+     "use": "agriculture food training",
      "floors": 2
-    },
-    {
-     "name": "Scout Outpost",
-     "use": "Collaborator identification workspace",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Task Board Room",
-    "Working-Group Huddle Space",
-    "Router Console",
-    "Scout Map Table",
-    "Signal Room"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "kanban task board",
-    "message pneumatic tubes",
-    "collaborator directory rolodex",
-    "signaling flags",
-    "coffee cart",
-    "coordinate desk bells"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "Yerba Buena Gardens upper terrace overlook",
+   "real_anchor": "Tower District",
    "buildings": [
     {
-     "name": "Observatory Tower",
-     "use": "Progress tracking against charter outcomes",
-     "floors": 4
+     "name": "Progress Observatory Training Center",
+     "use": "agriculture food training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Tracker Gallery",
-    "Outcome Dial Room",
-    "Milestone Map Room",
-    "Telescope Platform",
-    "Records Vault"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "brass outcome dials",
-    "progress constellation map",
-    "mileometer column",
-    "observation telescope",
-    "anniversary bell"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "Platanus occidentalis (sycamore)",
-   "Acer palmatum (Japanese maple)",
-   "Ginkgo biloba",
-   "Magnolia grandiflora",
-   "Cercis occidentalis (western redbud)"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "Rosmarinus officinalis",
-   "Mahonia aquifolium",
-   "Ceanothus thyrsiflorus",
-   "Buxus sempervirens"
+   "boxwood"
   ],
   "flowers": [
-   "Eschscholzia californica (California poppy)",
-   "Lupinus arboreus",
-   "Salvia 'May Night'",
-   "Iris douglasiana"
+   "rose"
   ],
-  "ground": "grass"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "fountain",
-  "flow_mps": 0.5,
+  "kind": "none",
+  "flow_mps": 0,
   "wave_m": 0
  },
  "wind": {
   "prevailing_from": "W",
-  "mean_mps": 5
+  "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:45",
+  "sunrise_local": "06:30",
   "sunset_local": "19:30"
  },
  "court": {
-  "name": "The Decision Court",
-  "style": "Open-air circular amphitheater of stone tiers around a still reflecting pool",
-  "why_here": "Mirrors the DAO principle: agents draft and present in the open, but the final ring — the vote — is reserved for humans, steps from the Proposal Forum."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Fresno Metro."
  },
  "quests": [
   {
-   "title": "Charter Orientation",
+   "title": "Field Basics Certification",
    "from_zone": "Charter Hall",
-   "to_zone": "Progress Observatory",
+   "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Read the charter stele and mission wall",
-    "Log your contributor name in the ledger",
-    "Ask Progress Tracker which outcomes are measured",
-    "Note one outcome on the milestone map",
-    "Report back to Charter Hall"
+    "Check in at Fresno Metro",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 20
+   "xp": 100
   },
   {
-   "title": "From Evidence to Draft",
+   "title": "Harvesting Certification",
    "from_zone": "Research Synthesis Lab",
    "to_zone": "Proposal Forum",
    "steps": [
-    "Collect a summary from Evidence Monitor",
-    "Have Research Synthesis Agent brief you",
-    "Deliver the brief to the Proposal & Grant Drafter",
-    "Review the draft at a human review desk",
-    "Place the draft in the human vote queue"
+    "Check in at Tower District",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 40
+   "xp": 150
   },
   {
-   "title": "Route the Working Group",
-   "from_zone": "Operations Deck",
-   "to_zone": "Research Synthesis Lab",
-   "steps": [
-    "Read a task from the kanban board",
-    "Ask Task Router to assign a working group",
-    "Get collaborator leads from Collaborator Scout",
-    "Confirm the group's evidence needs with Evidence Monitor",
-    "Mark the task complete on the board"
-   ],
-   "xp": 35
-  },
-  {
-   "title": "Outcome Milestone Walk",
-   "from_zone": "Progress Observatory",
-   "to_zone": "Proposal Forum",
-   "steps": [
-    "Check the outcome dials with Progress Tracker",
-    "Identify the lagging metric",
-    "Request a proposal draft addressing it",
-    "Present the draft at the Decision Court",
-    "Watch humans cast the final vote (do not vote yourself)"
-   ],
-   "xp": 60
-  },
-  {
-   "title": "Guard the Human-Reserved Ring",
-   "from_zone": "Charter Hall",
+   "title": "Precision Ag Certification",
+   "from_zone": "Proposal Forum",
    "to_zone": "Operations Deck",
    "steps": [
-    "Recite the six human-reserved actions at the Mission Wall",
-    "Spot three actions only humans may take",
-    "Ask Task Router how agents hand off decisions",
-    "Log the handoff protocol at the Charter Hall kiosk"
+    "Check in at San Joaquin River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 50
+   "xp": 200
+  },
+  {
+   "title": "Field Basics Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at Fresno Metro",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Harvesting Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Tower District",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s19-moscone-x",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "agriculture-food",
+ "certification": {
+  "n": "Ag Robotics Operator",
+  "u": "UFCW",
+  "h": 70,
+  "l": [
+   "Field Basics",
+   "Harvesting",
+   "Precision Ag"
+  ],
+  "o": [
+   "Operate harvest bots",
+   "Manage drones"
+  ]
  }
 }

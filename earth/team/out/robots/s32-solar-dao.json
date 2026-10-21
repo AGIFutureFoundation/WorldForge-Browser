@@ -1,316 +1,434 @@
 {
  "tasks": [
   {
-   "id": "charter-hall-husky-patrol",
+   "id": "s32-solar-dao-spot-1",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "Quadruped solar panel inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-plus-1",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Quadruped solar panel inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-a200-1",
    "robot": "clearpath-husky-a200",
    "zone": "Charter Hall",
-   "goal": "Patrol perimeter of Charter Hall and scan charter display plinths for visitors",
+   "goal": "Quadruped solar panel inspection",
    "ros": {
     "action": "/navigate_to_pose",
     "topics": [
      "/cmd_vel",
      "/odom",
-     "/scan",
-     "/amcl_pose"
+     "/camera/thermal",
+     "/joint_states"
     ],
     "frame": "map"
    },
-   "terrain": "Thar Desert sandy-gravel flats with loose drift sand around plinth bases; low wind-blown dust obscuring lidar",
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
    "success": [
-    "complete 3-loop patrol within 15 min",
-    "map-localization error < 0.3 m RMS",
-    "zero plinth collisions"
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "estop on obstacle < 0.5 m in /scan",
-    "tilt > 15 deg halt",
-    "dust visibility loss stops motion"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward reviews patrol log and confirms plinth display areas are presentable",
+   "human_in_loop": "Union steward approves at Energy Corridor",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "loop_count",
-     "rms_pose_error",
-     "min_obstacle_dist",
-     "estop_count",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "research-lab-solar-panel-inspect",
-   "robot": "unitree-go2",
-   "zone": "Research Synthesis Lab",
-   "goal": "Trot between rooftop solar panel mock arrays and capture thermal/visual panel imagery",
-   "ros": {
-    "action": "/inspect",
-    "topics": [
-     "/camera/image_raw",
-     "/thermal/image",
-     "/odom",
-     "/joint_states"
-    ],
-    "frame": "odom"
-   },
-   "terrain": "Uneven concrete pad with panel mounting rails and cable trays; desert grit on walkways",
-   "success": [
-    "image 8/8 panels at <1 m standoff",
-    "all images sharp (blur metric < threshold)",
-    "zero rail entanglements"
-   ],
-   "safety_stops": [
-    "foot slip detection pause",
-    "temperature overheat pause",
-    "edge-of-pad geofence stop"
-   ],
-   "human_in_loop": "A researcher approves imagery before it enters the evidence synthesis pipeline",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "panels_captured",
-     "blur_score",
-     "standoff_error",
-     "slip_events",
-     "timestamp"
-    ]
-   }
-  },
-  {
-   "id": "proposal-forum-nao-moderation",
-   "robot": "softbank-nao",
-   "zone": "Proposal Forum",
-   "goal": "Stand at forum podium, gesture to proposal boards, and read proposal titles aloud for debate",
-   "ros": {
-    "action": "/follow_joint_trajectory",
-    "topics": [
-     "/joint_states",
-     "/speech",
-     "/joint_trajectory_command",
-     "/odom"
-    ],
-    "frame": "base_link"
-   },
-   "terrain": "Flat tiled forum floor; podium riser 5 cm step; low benches as foot-trip hazards",
-   "success": [
-    "complete 6 proposal intros with correct speech",
-    "arm gestures within 10 deg of scripted poses",
-    "no falls over 20-min session"
-   ],
-   "safety_stops": [
-    "gyro tilt > 20 deg sit-down",
-    "battery < 15% stop",
-    "human proximity < 0.4 m pause"
-   ],
-   "human_in_loop": "A human moderator confirms proposal summaries are accurate before debate opens",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "proposals_read",
-     "gesture_error_deg",
-     "fall_count",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
      "battery_pct",
-     "timestamp"
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
-  },
-  {
-   "id": "operations-deck-ur10e-sorting",
-   "robot": "universal-robots-ur10e",
-   "zone": "Operations Deck",
-   "goal": "Sort task-routing cards into working-group bins at the operations desk",
-   "ros": {
-    "action": "/pick",
-    "topics": [
-     "/wrist_camera/image_raw",
-     "/joint_states",
-     "/gripper_cmd",
-     "/force_torque"
-    ],
-    "frame": "base_link"
    },
-   "terrain": "Fixed desk station; dusty cards causing gripper slip; bin dividers 8 cm tall",
-   "success": [
-    "12/12 cards sorted to correct bins",
-    "cycle time < 20 s per card",
-    "zero bin-tip events"
-   ],
-   "safety_stops": [
-    "force/torque anomaly > 40 N stop",
-    "human inside workspace halt",
-    "gripper slip retry max 3 then stop"
-   ],
-   "human_in_loop": "An operator approves the working-group routing map used for bin labels",
-   "feedback_schema": {
-    "fields": [
-     "task_id",
-     "cards_sorted",
-     "cycle_time_s",
-     "max_ft_force",
-     "retries",
-     "timestamp"
-    ]
-   }
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
   },
   {
-   "id": "progress-observatory-franka-calibration",
-   "robot": "franka-fr3",
-   "zone": "Progress Observatory",
-   "goal": "Place progress-marker tiles on the observatory metrics wall with sub-millimeter alignment",
+   "id": "s32-solar-dao-spot-2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
    "ros": {
     "action": "/follow_joint_trajectory",
     "topics": [
      "/joint_states",
-     "/franka_gripper",
-     "/cartesian_pose",
-     "/force_torque"
+     "/tool_state",
+     "/safety_state"
     ],
     "frame": "base_link"
    },
-   "terrain": "Vertical wall mounting grid with slot grooves; desert dust film on tiles reducing grip friction",
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
    "success": [
-    "10/10 tiles seated in grooves",
-    "placement error < 1 mm",
-    "zero wall contact forces > 10 N"
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "contact force > 10 N reflex stop",
-    "null-space joint limit guard",
-    "operator enable-switch release stops"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward verifies metric wall layout matches charter outcomes before tiles are placed",
+   "human_in_loop": "Union steward approves at Energy Corridor",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "tiles_placed",
-     "pos_error_mm",
-     "max_contact_force",
-     "reflex_stops",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
   },
   {
-   "id": "talos-charter-hall-docent",
-   "robot": "pal-robotics-talos",
-   "zone": "Charter Hall",
-   "goal": "Walk docent route through Charter Hall, pointing at contribution-model exhibits and speaking summaries",
+   "id": "s32-solar-dao-plus-2",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
    "ros": {
-    "action": "/navigate_to_pose",
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-a200-2",
+   "robot": "clearpath-husky-a200",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-spot-3",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
+   "ros": {
+    "action": "/land",
     "topics": [
      "/cmd_vel",
-     "/whole_body_controller",
-     "/walk_pattern",
-     "/joint_states"
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
     ],
     "frame": "map"
    },
-   "terrain": "Compacted sand floor with occasional ripples; exhibit cables taped along route; 3 cm exhibit thresholds",
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
    "success": [
-    "complete 5-stop docent route without falls",
-    "zero cable snags",
-    "foot placement clearance > 2 cm on thresholds"
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "CoM drift > 5 cm halt",
-    "foot contact loss freeze",
-    "crowd density > 6 people nearby stop"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward reviews and approves the docent script tied to charter text",
+   "human_in_loop": "Union steward approves at Energy Corridor",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "stops_completed",
-     "falls",
-     "cable_snags",
-     "min_foot_clearance",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
   },
   {
-   "id": "crazyflie-progress-baseline",
+   "id": "s32-solar-dao-plus-3",
    "robot": "bitcraze-crazyflie-2-1-plus",
-   "zone": "Progress Observatory",
-   "goal": "Fly perimeter scan of Progress Observatory interior to baseline lighting and sensor coverage",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
    "ros": {
-    "action": "/inspect",
+    "action": "/land",
     "topics": [
-     "/cmd_full_state",
-     "/pose",
-     "/range",
-     "/camera/image_raw"
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
     ],
     "frame": "map"
    },
-   "terrain": "Open high-ceiling hall; dust plumes from vents; ceiling-mounted progress banner rigging as aerial obstacles",
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
    "success": [
-    "complete 2 perimeter laps at 2.5 m altitude",
-    "position hold error < 0.15 m",
-    "no rigging proximity < 1 m"
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "battery < 3.7 V land",
-    "attitude > 45 deg cut",
-    "range sensor reading < 1 m to obstacle evade-land"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A steward approves flight plan and confirms hall is cleared of people before launch",
+   "human_in_loop": "Union steward approves at Energy Corridor",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "laps",
-     "hold_error_m",
-     "min_obstacle_range",
-     "vbat",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
   },
   {
-   "id": "fetch-lab-evidence-shelving",
-   "robot": "fetch-robotics-fetch",
-   "zone": "Research Synthesis Lab",
-   "goal": "Retrieve printed evidence briefs from trays and shelve them by topic in the lab library",
+   "id": "s32-solar-dao-a200-3",
+   "robot": "clearpath-husky-a200",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
    "ros": {
-    "action": "/pick",
+    "action": "/land",
     "topics": [
-     "/head_camera/rgb",
-     "/torso_controller",
-     "/gripper/cmd",
-     "/move_base/goal"
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
     ],
     "frame": "map"
    },
-   "terrain": "Narrow library aisles 75 cm wide; brief stacks unstable on sandy dust film; floor cable runs to workstations",
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
    "success": [
-    "8/8 briefs shelved to correct topic slots",
-    "zero aisle wall contacts",
-    "no toppled stacks"
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
    ],
    "safety_stops": [
-    "aisle clearance < 10 cm stop",
-    "stack topple detection pause",
-    "cliff/step edge detection stop"
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
    ],
-   "human_in_loop": "A librarian-style steward approves topic-to-shelf mapping before shelving begins",
+   "human_in_loop": "Union steward approves at Energy Corridor",
    "feedback_schema": {
     "fields": [
+     "timestamp",
+     "robot_id",
      "task_id",
-     "briefs_shelved",
-     "shelf_accuracy",
-     "wall_min_dist",
-     "topple_events",
-     "timestamp"
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
     ]
-   }
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
   }
  ],
- "_meta": {
-  "role": "robots",
-  "slug": "s32-solar-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 2,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
- }
+ "industry": "clean-energy"
 }

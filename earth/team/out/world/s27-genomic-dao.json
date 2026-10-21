@@ -1,286 +1,246 @@
 {
- "title": "Genomic.DAO Series 27 — Genome Campus on the Cam",
- "summary": "A walkable DAO campus on Cam farmland at Hinxton: agents monitor, synthesize and draft in labs and forums while humans hold every final vote. Six zones ring the river meadow, from Charter Hall to the Progress Observatory.",
- "biome": "river-valley",
+ "title": "Austin: Electronics Semiconductors Hub",
+ "summary": "Walkable electronics semiconductors training hub at Samsung Semiconductor, Austin Texas.",
+ "biome": "urban-park",
  "districts": [
   {
    "zone": "Charter Hall",
-   "real_anchor": "Wellcome Genome Campus entrance drive, Hinxton",
+   "real_anchor": "Samsung Campus",
    "buildings": [
     {
-     "name": "Charter Pavilion",
-     "use": "Charter display and contribution-model desks",
+     "name": "Charter Hall Training Center",
+     "use": "electronics semiconductors training",
      "floors": 2
-    },
-    {
-     "name": "Outcome Ledger House",
-     "use": "Measurable-outcomes registry and public reading room",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Charter Reading Room",
-    "Contribution Desk",
-    "Outcome Ledger Wall",
-    "Steward's Antechamber"
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
    ],
    "props": [
-    "engraved charter plinth",
-    "bronze contribution ledger",
-    "mission banner",
-    "oak benches",
-    "reserved-powers notice board",
-    "voting-hour bell"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
-   "npc_agents": []
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
   },
   {
    "zone": "Research Synthesis Lab",
-   "real_anchor": "Hinxton village edge, near the campus labs",
+   "real_anchor": "Colorado River",
    "buildings": [
     {
-     "name": "Synthesis Laboratory",
-     "use": "Evidence monitoring and research summarization",
-     "floors": 3
-    },
-    {
-     "name": "Evidence Archive",
-     "use": "Document store and citation stacks",
+     "name": "Research Synthesis Lab Training Center",
+     "use": "electronics semiconductors training",
      "floors": 2
     }
    ],
    "interior_rooms": [
-    "Evidence Monitoring Floor",
-    "Synthesis Studio",
-    "Citation Stacks",
-    "Seminar Nook",
-    "Server Quiet Room"
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
    ],
    "props": [
-    "double-helix model",
-    "evidence pinboard",
-    "journal racks",
-    "sequencing-era display case",
-    "lab benches",
-    "chalkboard of open questions"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Evidence Monitor",
-    "Research Synthesis Agent"
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
    ]
   },
   {
    "zone": "Proposal Forum",
-   "real_anchor": "campus central lawn between laboratory blocks",
+   "real_anchor": "I-35 Corridor",
    "buildings": [
     {
-     "name": "Forum Rotunda",
-     "use": "Proposal debate and human decision chamber",
+     "name": "Proposal Forum Training Center",
+     "use": "electronics semiconductors training",
      "floors": 2
-    },
-    {
-     "name": "Drafter's Annex",
-     "use": "Agent drafting office for proposals and grants",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Debate Ring",
-    "Human Voting Gallery",
-    "Drafting Office",
-    "Review Table",
-    "Amendment Alcove"
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
    ],
    "props": [
-    "circular debate dais",
-    "ballot urn",
-    "proposal bulletin board",
-    "speakers' lectern",
-    "draft stacks",
-    "tally board"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Proposal & Grant Drafter"
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
    ]
   },
   {
    "zone": "Operations Deck",
-   "real_anchor": "operations buildings along the campus access road",
+   "real_anchor": "Samsung Campus",
    "buildings": [
     {
-     "name": "Operations Deck",
-     "use": "Task routing and working-group coordination",
+     "name": "Operations Deck Training Center",
+     "use": "electronics semiconductors training",
      "floors": 2
-    },
-    {
-     "name": "Scout Station",
-     "use": "Collaborator identification and outreach prep",
-     "floors": 1
     }
    ],
    "interior_rooms": [
-    "Routing Console Room",
-    "Working-Group Huddle Space",
-    "Scout Map Room",
-    "Coordinator's Office",
-    "Signal Board Corridor"
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
    ],
    "props": [
-    "task routing board",
-    "working-group signage",
-    "collaborator contact map",
-    "message pneumatic tubes",
-    "shift clock",
-    "field kit rack"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Collaborator Scout",
-    "Task Router"
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
    ]
   },
   {
    "zone": "Progress Observatory",
-   "real_anchor": "raised ground overlooking the River Cam water meadows",
+   "real_anchor": "Colorado River",
    "buildings": [
     {
-     "name": "Progress Observatory",
-     "use": "Tracking outcomes against the charter",
-     "floors": 3
-    },
-    {
-     "name": "Milestone Beacon Tower",
-     "use": "Public milestone announcements",
-     "floors": 1
+     "name": "Progress Observatory Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
     }
    ],
    "interior_rooms": [
-    "Observation Gallery",
-    "Milestone Chart Room",
-    "Steward Review Room",
-    "Telescope Platform",
-    "Records Vault"
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
    ],
    "props": [
-    "progress dial",
-    "milestone cairn",
-    "brass telescope",
-    "outcomes heatmap wall",
-    "seasonal progress flags"
+    "training robots",
+    "safety stations",
+    "assessment terminals"
    ],
    "npc_agents": [
-    "Progress Tracker"
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
    ]
   }
  ],
  "flora": {
   "trees": [
-   "English oak",
-   "ash",
-   "white willow",
-   "field maple",
-   "hawthorn",
-   "black poplar"
+   "oak",
+   "maple",
+   "pine"
   ],
   "shrubs": [
-   "blackthorn",
-   "dogwood",
-   "elder",
-   "bramble"
+   "boxwood"
   ],
   "flowers": [
-   "cowslip",
-   "meadowsweet",
-   "red clover",
-   "knapweed"
+   "rose"
   ],
-  "ground": "grass"
+  "ground": "concrete"
  },
  "water": {
-  "kind": "river",
-  "flow_mps": 0.6,
+  "kind": "none",
+  "flow_mps": 0,
   "wave_m": 0
  },
  "wind": {
-  "prevailing_from": "SW",
-  "mean_mps": 5
+  "prevailing_from": "W",
+  "mean_mps": 4
  },
  "day_cycle": {
-  "sunrise_local": "06:45",
-  "sunset_local": "17:30"
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
  },
  "court": {
-  "name": "The Helix Court",
-  "style": "open grass court ringed by path segments like base pairs",
-  "why_here": "A shared court on the campus lawn where sequenced genomes were decoded, letting stewards gather between zones."
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Samsung Campus."
  },
  "quests": [
   {
-   "title": "Read the Reserved Powers",
+   "title": "Cleanroom Certification",
    "from_zone": "Charter Hall",
-   "to_zone": "Proposal Forum",
-   "steps": [
-    "Find the engraved charter plinth",
-    "List the six human-reserved actions",
-    "Watch agents draft at the Review Table",
-    "Cast a practice vote in the gallery"
-   ],
-   "xp": 30
-  },
-  {
-   "title": "Trace the Evidence",
-   "from_zone": "Research Synthesis Lab",
-   "to_zone": "Progress Observatory",
-   "steps": [
-    "Ask Evidence Monitor for the day's summary",
-    "Collect three citations from the stacks",
-    "Carry the synthesis to the Progress Tracker",
-    "Log the outcome on the heatmap wall"
-   ],
-   "xp": 50
-  },
-  {
-   "title": "Route the Working Group",
-   "from_zone": "Operations Deck",
    "to_zone": "Research Synthesis Lab",
    "steps": [
-    "Accept a routed task from the Task Router",
-    "Recruit a collaborator suggested by the Scout",
-    "Deliver the brief to the Synthesis Studio",
-    "Report back at the Signal Board"
+    "Check in at Samsung Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 40
+   "xp": 100
   },
   {
-   "title": "From Draft to Decision",
-   "from_zone": "Proposal Forum",
-   "to_zone": "Charter Hall",
+   "title": "Wafer Handling Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
    "steps": [
-    "Review the Drafter's latest proposal",
-    "Debate it at the circular dais",
-    "Record the human vote result",
-    "Archive the outcome in the Ledger House"
+    "Check in at Colorado River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 70
+   "xp": 150
   },
   {
-   "title": "Milestone on the Mead",
-   "from_zone": "Progress Observatory",
+   "title": "Process Control Certification",
+   "from_zone": "Proposal Forum",
    "to_zone": "Operations Deck",
    "steps": [
-    "Climb to the Telescope Platform",
-    "Read the milestone dial",
-    "Light the Beacon Tower signal",
-    "Dispatch follow-up tasks via the Routing Console"
+    "Check in at I-35 Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
    ],
-   "xp": 45
+   "xp": 200
+  },
+  {
+   "title": "Cleanroom Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at Samsung Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Wafer Handling Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Colorado River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
   }
  ],
- "_meta": {
-  "role": "world",
-  "slug": "s27-genomic-dao",
-  "generator": "glm (Z.ai) via earth/team/loop.py",
-  "attempts": 1,
-  "evals_passed": true,
-  "status": "draft, unreviewed by a person"
+ "industry": "electronics-semiconductors",
+ "certification": {
+  "n": "Semiconductor Robotics",
+  "u": "IBEW/IUE-CWA",
+  "h": 130,
+  "l": [
+   "Cleanroom",
+   "Wafer Handling",
+   "Process Control"
+  ],
+  "o": [
+   "Operate cleanroom bots",
+   "Maintain wafer handling"
+  ]
  }
 }
