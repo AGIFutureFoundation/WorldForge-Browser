@@ -41,7 +41,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const zones = cards.userData.zones || [];
   const avatars = makeAvatars(lines?.[slug], zones, ground); S.scene.add(avatars);
   const rings = makeQuestRings(zones, ground, world?.quests || []); S.scene.add(rings);
-  const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo.place }); S.scene.add(fleet);
+  const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo?.place || slug }); S.scene.add(fleet);
   if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground);
 
   const counts = { ...veg.userData.counts, buildings: geo.features.building.length, ...water.userData.counts,
