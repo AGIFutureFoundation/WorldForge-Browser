@@ -55,15 +55,16 @@ export function makeAvatars(lines, zones, ground, court) {
   const g = new THREE.Group(); g.name = 'avatars';
   const at = (o, x, z) => { o.position.set(x, ground.height(x, z), z); return o; };
   const L = lines || {};
+  const zs = zones || [];
   const cx = court ? court[0] : 40, cz = court ? court[1] : 40;
   const omega = at(figure(0xf5f0e6, 1.25, true), 10, -8); omega.userData = { who: 'Omega Steward', role: 'defined, not seated: advises, never votes', say: L.omega };
   const coach = at(figure(0xff7a1a, 1.05), cx - 18, cz); coach.userData = { who: 'Coach', say: L.coach };
-  const hermes = at(figure(0x6ad1ff, 0.95), 0, 12); hermes.userData = { who: 'Hermes', role: 'messenger between zones and worlds', say: L.hermes, route: zones.map(z => [z.x, z.z]) };
+  const hermes = at(figure(0x6ad1ff, 0.95), 0, 12); hermes.userData = { who: 'Hermes', role: 'messenger between zones and worlds', say: L.hermes, route: zs.map(z => [z.x, z.z]) };
   const wing = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.6, 4), new THREE.MeshBasicMaterial({ color: 0xffffff }));
   wing.rotation.z = Math.PI / 2; wing.position.set(0.3, 1.9, 0); hermes.add(wing, wing.clone().translateX(-0.6));
   g.add(omega, coach, hermes);
   // Hive: a swarm of small drones orbiting the zone it is working in
-  const hz = zones[1] || zones[0] || { x: 40, z: 0, name: 'plaza' };
+  const hz = zs[1] || zs[0] || { x: 40, z: 0, name: 'plaza' };
   const hive = new THREE.Group(); hive.userData = { who: 'Hive', zone: hz.name, say: L.hive, center: [hz.x, hz.z] };
   for (let i = 0; i < 24; i++) { const d = new THREE.Mesh(new THREE.OctahedronGeometry(0.35), new THREE.MeshStandardMaterial({ color: 0xffc233, emissive: 0x442200 }));
     d.userData.phase = i * 0.26; d.userData.r = 6 + (i % 4) * 2.5; hive.add(d); }
@@ -72,8 +73,8 @@ export function makeAvatars(lines, zones, ground, court) {
   const hl = label(`Hive @ ${hz.name}`, '#ffd34d'); hl.position.set(hz.x, ground.height(hz.x, hz.z) + 16, hz.z); hl.scale.multiplyScalar(0.6); g.add(hl);
   let leg = 0, t = 0;
   g.userData.tick = (dt, time) => {
-    const r = hermes.userData.route; // Hermes walks plaza -> each zone -> plaza
-    if (r.length) { const [tx, tz] = leg % 2 ? [0, 0] : r[(leg / 2 | 0) % r.length]; const p = hermes.position;
+    const r = hermes.userData.route;
+    if (r && r.length) { const [tx, tz] = leg % 2 ? [0, 0] : r[(leg / 2 | 0) % r.length]; const p = hermes.position;
       const dx = tx - p.x, dz = tz - p.z, d = Math.hypot(dx, dz);
       if (d < 2) leg++; else { p.x += dx / d * dt * 6; p.z += dz / d * dt * 6; p.y = ground.height(p.x, p.z); hermes.rotation.y = Math.atan2(dx, dz); } }
     hive.children.forEach(d => { const a = time * 0.9 + d.userData.phase, [cx, cz] = hive.userData.center;
@@ -143,8 +144,9 @@ export function makeShooter(scene, camera, court) {
 // ---------------------------------------------------------------- quests: rings at each zone, fly through for XP
 export function makeQuestRings(zones, ground, quests = []) {
   const g = new THREE.Group(); g.name = 'quest-rings';
+  const zs = zones || [];
   const done = new Set();
-  zones.forEach((z, i) => {
+  zs.forEach((z, i) => {
     const r = new THREE.Mesh(new THREE.TorusGeometry(3.2, 0.25, 10, 40), new THREE.MeshBasicMaterial({ color: 0x7cf7d4 }));
     r.position.set(z.x, ground.height(z.x, z.z) + 3.6, z.z); r.userData = { zone: z.name, xp: 20 + 10 * (i % 3) };
     g.add(r);
