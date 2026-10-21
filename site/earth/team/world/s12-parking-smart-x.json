@@ -1,0 +1,246 @@
+{
+ "title": "Miami: Construction Infrastructure Hub",
+ "summary": "Walkable construction infrastructure training hub at 1111 Lincoln Road, Miami Beach Florida.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "1111 Lincoln Road",
+   "buildings": [
+    {
+     "name": "Charter Hall Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Convention Center",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Biscayne Bay",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "1111 Lincoln Road",
+   "buildings": [
+    {
+     "name": "Operations Deck Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Convention Center",
+   "buildings": [
+    {
+     "name": "Progress Observatory Training Center",
+     "use": "construction infrastructure training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "oak",
+   "maple",
+   "pine"
+  ],
+  "shrubs": [
+   "boxwood"
+  ],
+  "flowers": [
+   "rose"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at 1111 Lincoln Road."
+ },
+ "quests": [
+  {
+   "title": "Site Safety Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Check in at 1111 Lincoln Road",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Survey Robots Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Convention Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Automation Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at Biscayne Bay",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "Site Safety Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at 1111 Lincoln Road",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Survey Robots Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Convention Center",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
+  }
+ ],
+ "industry": "construction-infrastructure",
+ "certification": {
+  "n": "Construction Robotics Spec",
+  "u": "Laborers",
+  "h": 100,
+  "l": [
+   "Site Safety",
+   "Survey Robots",
+   "Automation"
+  ],
+  "o": [
+   "Operate drones",
+   "Program assistants"
+  ]
+ }
+}

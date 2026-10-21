@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "k12",
+   "title": "Reading DNA Above the Pacific: Genomics and Trusted Data at Illumina HQ",
+   "grade_or_level": "Grades 6-8",
+   "outcomes": [
+    "Explain what DNA sequencing is and why San Diego's Torrey Pines Mesa is a genomics hub",
+    "Model how a blockchain-style ledger records data without changing it",
+    "Identify who should decide how sensitive data is used"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Discuss the DAO charter mission: AI and data as a public good. Class writes its own mini-charter listing what decisions only people should vote on.",
+     "minutes": 30
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Decode a paper 'DNA sequence' (colored beads or cards) and compare team results; explore why checking evidence matters before drawing conclusions.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft proposals for how a class genome databank could be used; peers debate and vote, experiencing human-governed decisions.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Teams create posters tracking their mini-charter outcomes and present how their decisions changed the databank's use.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymised class results from the bead-sequencing exercise (patterns only, no personal information) contributed to a shared example dataset showing group variation.",
+   "consent": "Signed guardian/parent consent forms for all activities; no real DNA or personal data collected; opt-out available; teacher deletes identifiable records after the unit."
+  },
+  {
+   "audience": "union",
+   "title": "Genomics, Data Rights, and the Future of Biotech Work",
+   "grade_or_level": "Adult professional development",
+   "outcomes": [
+    "Describe how sequencing and data systems are changing biotech and health jobs",
+    "Analyze workplace data-collection risks and worker data rights",
+    "Practice collective voice in data-governance decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Review the mission of governing AI and data as a public good; map which decisions must stay with people, mirroring union democracy.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Evidence Monitor walkthrough: how agents summarize evidence; members critique a sample synthesis on automation in genomics labs.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Members draft and debate a model data-rights proposal (e.g., consent before workplace genomic data use), then hold a mock final vote reserved for people.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Task Router demo: how work gets routed to working groups; members identify skills needed for genomics-adjacent job transitions.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized survey responses on training needs and job-change concerns, aggregated into shared workforce-transition models.",
+   "consent": "Voluntary participation, informed consent before any survey, individual responses anonymized and aggregated, right to withdraw data at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Monitoring Genomics and AI Governance",
+   "grade_or_level": "Professional / NGO staff",
+   "outcomes": [
+    "Use agent-summarized evidence responsibly in advocacy",
+    "Draft fundable, measurable proposals for human decision-makers",
+    "Track outcomes transparently against a charter"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice with Evidence Monitor and Research Synthesis Agent outputs: evaluate source quality and bias in genomics-AI coverage.",
+     "minutes": 60
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Workshop on defining measurable outcomes for a data-governance mission, using the DAO charter structure as a template.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a grant-style proposal with the Proposal & Grant Drafter workflow, then simulate human-only review and enactment.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress dashboard for one campaign; peer review on whether metrics match stated outcomes.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized campaign metrics and proposal-outcome summaries shared across participating NGOs to improve shared evidence models.",
+   "consent": "Organizational data-sharing agreements; all contributed data anonymized and aggregated; communities referenced are consulted before inclusion."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Public-Good Genomics: A Community Learning Cycle",
+   "grade_or_level": "Community program / adult learners",
+   "outcomes": [
+    "Connect local genomics heritage (Torrey Pines Mesa) to shared-benefit principles",
+    "Understand consent-first data practices",
+    "Co-design a community proposal through human vote"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Storytelling session on sequencing's home base on the Torrey Pines coastal bluffs and the mission of widely shared benefits; group reflects on 'public good.'",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Facilitated walkthrough of an evidence summary on genomic data use; learners flag questions and concerns for stewards.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Learners co-draft a small community education proposal; agents prepare drafts, people debate and cast the deciding vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review the Progress Tracker together; learners suggest new measurable outcomes for the next cycle.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized feedback and learning-outcome summaries that help improve the shared education program model.",
+   "consent": "Plain-language consent forms, opt-in only, no personal or genetic data collected, anonymization before any sharing, withdrawal honored on request."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s28-genomic-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

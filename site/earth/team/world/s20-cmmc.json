@@ -1,0 +1,285 @@
+{
+ "title": "Washington DC: The Pentagon, Arlington Virginia",
+ "summary": "A walkable city grid at The Pentagon, Arlington Virginia, with real streets and landmarks from Washington DC.",
+ "biome": "urban-core",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Pentagon Metro",
+   "buildings": [
+    {
+     "name": "Pentagon Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Pentagon Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Reception",
+    "Charter Hall Work Floor",
+    "Charter Hall Meeting Room",
+    "Charter Hall Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Charter Hall Coordinator",
+    "Charter Hall Agent"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Memorial Auditorium",
+   "buildings": [
+    {
+     "name": "Memorial Bldg 1",
+     "use": "Office",
+     "floors": 4
+    },
+    {
+     "name": "Memorial Bldg 2",
+     "use": "Lab",
+     "floors": 5
+    },
+    {
+     "name": "Memorial Bldg 3",
+     "use": "Public",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Reception",
+    "Research Synthesis Lab Work Floor",
+    "Research Synthesis Lab Meeting Room",
+    "Research Synthesis Lab Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Coordinator",
+    "Research Synthesis Lab Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Pentagon City Mall",
+   "buildings": [
+    {
+     "name": "Pentagon Bldg 1",
+     "use": "Office",
+     "floors": 6
+    },
+    {
+     "name": "Pentagon Bldg 2",
+     "use": "Lab",
+     "floors": 7
+    },
+    {
+     "name": "Pentagon Bldg 3",
+     "use": "Public",
+     "floors": 8
+    },
+    {
+     "name": "Pentagon Bldg 4",
+     "use": "Public",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Reception",
+    "Proposal Forum Work Floor",
+    "Proposal Forum Meeting Room",
+    "Proposal Forum Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Proposal Forum Coordinator",
+    "Proposal Forum Agent"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Long Bridge",
+   "buildings": [
+    {
+     "name": "Long Bldg 1",
+     "use": "Office",
+     "floors": 8
+    },
+    {
+     "name": "Long Bldg 2",
+     "use": "Lab",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Reception",
+    "Operations Deck Work Floor",
+    "Operations Deck Meeting Room",
+    "Operations Deck Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Operations Deck Coordinator",
+    "Operations Deck Agent"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Washington Monument View",
+   "buildings": [
+    {
+     "name": "Washington Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Washington Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    },
+    {
+     "name": "Washington Bldg 3",
+     "use": "Public",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Reception",
+    "Progress Observatory Work Floor",
+    "Progress Observatory Meeting Room",
+    "Progress Observatory Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Progress Observatory Coordinator",
+    "Progress Observatory Agent"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "American elm",
+   "red oak",
+   "ginkgo",
+   "cherry",
+   "magnolia",
+   "dogwood"
+  ],
+  "shrubs": [
+   "boxwood",
+   "holly",
+   "azalea"
+  ],
+  "flowers": [
+   "cherry blossom",
+   "tulip",
+   "daffodil"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.8,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:15",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "Pentagon Plaza Court",
+  "style": "monumental plaza with memorial views",
+  "why_here": "At the Pentagon facing the Memorial Auditorium and Arlington."
+ },
+ "quests": [
+  {
+   "title": "Cross Washington DC: Charter Hall to Research Synthesis Lab",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Begin at Pentagon Metro",
+    "Navigate Memorial Auditorium",
+    "Check in at Research Synthesis Lab",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Cross Washington DC: Research Synthesis Lab to Proposal Forum",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Begin at Memorial Auditorium",
+    "Navigate Pentagon City Mall",
+    "Check in at Proposal Forum",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Cross Washington DC: Proposal Forum to Operations Deck",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Begin at Pentagon City Mall",
+    "Navigate Long Bridge",
+    "Check in at Operations Deck",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Cross Washington DC: Operations Deck to Progress Observatory",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Begin at Long Bridge",
+    "Navigate Washington Monument View",
+    "Check in at Progress Observatory",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 60
+  }
+ ]
+}

@@ -1,0 +1,246 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-tour-guide",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the charter exhibits, narrating the DAO's mission and measurable outcomes while stopping at each display panel.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/amcl_pose",
+     "/cmd_vel",
+     "/move_base/status",
+     "/speech"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat polished exhibit floor with pedestal displays and cabling ramps; low-friction surface requires short strides.",
+   "success": [
+    "Visits all exhibit waypoints in order within 12 minutes",
+    "Speech playback triggered at 100% of waypoints",
+    "No contact forces above 5 N on any pedestal"
+   ],
+   "safety_stops": [
+    "E-stop on torso inclination > 20 degrees",
+    "Stop if obstacle within 0.3 m on path",
+    "Battery below 15% triggers return-to-dock"
+   ],
+   "human_in_loop": "A steward approves the final tour script before public playback.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "waypoints_reached",
+     "path_deviation_m",
+     "contact_events",
+     "speech_success_rate",
+     "battery_end_pct"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-shelf-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve labeled research binders from shelf locations and deliver them to the synthesis desk for the Evidence Monitor's daily summary.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth/image_raw",
+     "/joint_states",
+     "/move_base/status",
+     "/gripper/state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Carpeted lab aisles 1.2 m wide with rolling chairs and boxed archive crates as ground clutter.",
+   "success": [
+    "Picks 8 of 10 requested binders without drops",
+    "Delivery accuracy within 0.15 m of desk target",
+    "Zero shelf collisions"
+   ],
+   "safety_stops": [
+    "Torque limit abort at 40 Nm on arm joints",
+    "Stop when human detected within 0.8 m of arm envelope",
+    "Wheel slip fault halt on carpet drag > 15%"
+   ],
+   "human_in_loop": "A researcher confirms each requested binder ID before the pick run.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "pick_success_count",
+     "grasp_force_n",
+     "drop_events",
+     "delivery_error_m",
+     "cycle_time_s"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-doc-delivery",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Carry printed proposal drafts from the drafting station to reviewer seating pods, signaling arrival so human reviewers can vote.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odom",
+     "/cmd_vel",
+     "/scan",
+     "/payload/status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Open forum floor with tiered seating steps at edges, floor outlets, and lightweight folding chairs that shift positions daily.",
+   "success": [
+    "Completes 5 deliveries per session",
+    "Mean positional error under 0.25 m at pods",
+    "Remains stable on steps detection (no tip events)"
+   ],
+   "safety_stops": [
+    "Stop on step edge detection within 0.2 m",
+    "Payload tilt > 25 degrees triggers gentle set-down",
+    "Obstacle contact > 10 N halts gait"
+   ],
+   "human_in_loop": "People at the pods accept each delivery and trigger the return command; the robot never enacts proposals.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "deliveries_completed",
+     "pos_error_m",
+     "tip_events",
+     "contact_force_n",
+     "session_duration_s"
+    ]
+   }
+  },
+  {
+   "id": "ops-deck-inspection-patrol",
+   "robot": "clearpath-husky-a200",
+   "zone": "Operations Deck",
+   "goal": "Patrol the operations floor on a fixed route inspecting working-group station status tags and reporting anomalies to the Task Router dashboard.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_camera/image_raw",
+     "/gps/fix",
+     "/odom",
+     "/diagnostics_agg"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Driftless-area grassland outside the deck doors: uneven prairie turf, rutted gravel service path, and seasonal snow patches; indoors is concrete.",
+   "success": [
+    "Completes 2 km patrol loop with localization error under 0.5 m",
+    "Captures legible QR status tags at 95% of stations",
+    "Anomaly report published within 60 s of detection"
+   ],
+   "safety_stops": [
+    "Roll-over risk halt at roll angle > 20 degrees",
+    "Wheel slip > 30% on gravel pauses and alerts",
+    "Geofence breach beyond deck perimeter triggers stop"
+   ],
+   "human_in_loop": "An operator reviews flagged anomalies before any maintenance ticket is filed.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "distance_km",
+     "tag_read_rate",
+     "localization_error_m",
+     "anomalies_flagged",
+     "terrain_class"
+    ]
+   }
+  },
+  {
+   "id": "observatory-sensor-calibration",
+   "robot": "boston-dynamics-spot",
+   "zone": "Progress Observatory",
+   "goal": "Climb the observatory mezzanine stair and calibrate progress-metric sensor mounts against fixed reference markers on the tracking wall.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/odom",
+     "/body_pose",
+     "/front_camera/image_raw",
+     "/joint_states"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Steel-grid mezzanine stairs with 18 cm risers, then flat observation deck with glass railing edges and tripod mounts as obstacles.",
+   "success": [
+    "Stair ascent with zero slips detected",
+    "Calibration poses achieved within 2 cm and 3 degrees of targets",
+    "No contact with glass railing during 10 poses"
+   ],
+   "safety_stops": [
+    "Autonomous sit-down on slip detection > 10 cm displacement",
+    "Boundary stop 0.5 m from railing edges",
+    "Comms loss > 5 s triggers hold position"
+   ],
+   "human_in_loop": "A technician verifies each calibration pose and authorizes stair descent.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "slip_events",
+     "pose_error_cm",
+     "orientation_error_deg",
+     "railing_clearance_m",
+     "calibration_time_s"
+    ]
+   }
+  },
+  {
+   "id": "charter-hall-aerial-mapping",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Fly a lawnmower-pattern scan of the Charter Hall ceiling exhibits to build a 3D model of the charter display layout for the Progress Tracker.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/pose",
+     "/cmd_full_state",
+     "/range/front",
+     "/tf"
+    ],
+    "frame": "map"
+   },
+   "terrain": "High open hall with hanging charter banners, pendant light fixtures at 4 m, and door drafts at the main entrance.",
+   "success": [
+    "Completes full hall scan grid in under 10 minutes",
+    "Map coverage above 90% of ceiling exhibit area",
+    "No positional loss events during flight"
+   ],
+   "safety_stops": [
+    "Land immediately if wall distance under 0.5 m",
+    "Battery under 20% triggers return-to-pad",
+    "Optical flow failure triggers hover-and-land"
+   ],
+   "human_in_loop": "A steward clears the airspace and approves each flight plan before launch.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "coverage_pct",
+     "flight_time_s",
+     "min_clearance_m",
+     "flow_dropouts",
+     "battery_end_pct"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s13-gonstead-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

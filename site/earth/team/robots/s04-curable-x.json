@@ -1,0 +1,431 @@
+{
+ "tasks": [
+  {
+   "id": "s04-curable-x-ur10e-1",
+   "robot": "universal-robots-ur10e",
+   "zone": "Charter Hall",
+   "goal": "Robotic arm weld sequence",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/robot_status",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fr3-1",
+   "robot": "franka-fr3",
+   "zone": "Charter Hall",
+   "goal": "Robotic arm weld sequence",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/robot_status",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fetch-1",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Charter Hall",
+   "goal": "Robotic arm weld sequence",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/robot_status",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 1",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-ur10e-2",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mobile robot parts delivery",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fr3-2",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mobile robot parts delivery",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fetch-2",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Research Synthesis Lab",
+   "goal": "Mobile robot parts delivery",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/safety_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "welders",
+   "certification_level": "Level 2",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-ur10e-3",
+   "robot": "universal-robots-ur10e",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fr3-3",
+   "robot": "franka-fr3",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
+  },
+  {
+   "id": "s04-curable-x-fetch-3",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Proposal Forum",
+   "goal": "Collaborative robot pick-and-place",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/gripper_state",
+     "/force_torque",
+     "/joint_states"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Renaissance Center, Detroit Michigan",
+   "success": [
+    "Complete automotive task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Renaissance Center",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "machinists",
+   "certification_level": "Level 3",
+   "industry": "automotive-manufacturing"
+  }
+ ],
+ "industry": "automotive-manufacturing"
+}

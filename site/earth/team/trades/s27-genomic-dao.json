@@ -1,0 +1,280 @@
+{
+ "certification": {
+  "n": "Semiconductor Robotics",
+  "u": "IBEW/IUE-CWA",
+  "h": 130,
+  "l": [
+   "Cleanroom",
+   "Wafer Handling",
+   "Process Control"
+  ],
+  "o": [
+   "Operate cleanroom bots",
+   "Maintain wafer handling"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-1",
+   "certification": "Semiconductor Robotics",
+   "level": "Cleanroom",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Cleanroom for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/cleanroom_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-2",
+   "certification": "Semiconductor Robotics",
+   "level": "Wafer Handling",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Wafer Handling for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-electricians-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "electricians",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for electricians at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-pipefitters-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "pipefitters",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for pipefitters at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s27-genomic-dao-semiconductor-hvacr-3",
+   "certification": "Semiconductor Robotics",
+   "level": "Process Control",
+   "trade": "hvacr",
+   "industry": "electronics-semiconductors",
+   "location": "Samsung Semiconductor, Austin Texas",
+   "task": "Process Control for hvacr at Samsung Campus",
+   "duration_minutes": 14,
+   "learning_objectives": [
+    "Operate cleanroom bots",
+    "Maintain wafer handling"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for electronics-semiconductors robot operations"
+ }
+}

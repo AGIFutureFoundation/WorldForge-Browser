@@ -1,0 +1,286 @@
+{
+ "certification": {
+  "n": "AMR Technician",
+  "u": "Teamsters",
+  "h": 80,
+  "l": [
+   "AMR Basics",
+   "Fleet Mgmt",
+   "Diagnostics"
+  ],
+  "o": [
+   "Manage AMR fleet",
+   "Troubleshoot nav"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s22-get-delivery-dao-amr-laborers-1",
+   "certification": "AMR Technician",
+   "level": "AMR Basics",
+   "trade": "laborers",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "AMR Basics for laborers at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/map",
+    "/laser_scan"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-operating-eng-1",
+   "certification": "AMR Technician",
+   "level": "AMR Basics",
+   "trade": "operating-eng",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "AMR Basics for operating-eng at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/map",
+    "/laser_scan"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-electricians-1",
+   "certification": "AMR Technician",
+   "level": "AMR Basics",
+   "trade": "electricians",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "AMR Basics for electricians at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/map",
+    "/laser_scan"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-laborers-2",
+   "certification": "AMR Technician",
+   "level": "Fleet Mgmt",
+   "trade": "laborers",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Fleet Mgmt for laborers at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/gripper_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-operating-eng-2",
+   "certification": "AMR Technician",
+   "level": "Fleet Mgmt",
+   "trade": "operating-eng",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Fleet Mgmt for operating-eng at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/gripper_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-electricians-2",
+   "certification": "AMR Technician",
+   "level": "Fleet Mgmt",
+   "trade": "electricians",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Fleet Mgmt for electricians at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/gripper_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-laborers-3",
+   "certification": "AMR Technician",
+   "level": "Diagnostics",
+   "trade": "laborers",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Diagnostics for laborers at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/depth"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-operating-eng-3",
+   "certification": "AMR Technician",
+   "level": "Diagnostics",
+   "trade": "operating-eng",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Diagnostics for operating-eng at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/depth"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  },
+  {
+   "id": "s22-get-delivery-dao-amr-electricians-3",
+   "certification": "AMR Technician",
+   "level": "Diagnostics",
+   "trade": "electricians",
+   "industry": "logistics-warehousing",
+   "location": "FedEx World Hub, Memphis Tennessee",
+   "task": "Diagnostics for electricians at FedEx World Hub",
+   "duration_minutes": 8,
+   "learning_objectives": [
+    "Manage AMR fleet",
+    "Troubleshoot nav"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/depth"
+   ],
+   "robot_types": [
+    "clearpath-husky-a200",
+    "fetch-robotics-fetch"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for logistics-warehousing robot operations"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-patrol-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "Patrol Charter Hall perimeter on black lava substrate and inspect charter display plinths for damage, reporting via visual inspection action.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/spot/odom",
+     "/front_camera/image_raw",
+     "/mission/status",
+     "/e_stop"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Rough Reykjanes lava field analog flooring: uneven basalt rubble, fissures, steam vents near edges",
+   "success": [
+    "Perimeter loop completed within 15 min",
+    ">=95% plinths imaged at 0.5 m standoff",
+    "Zero falls or tip events"
+   ],
+   "safety_stops": [
+    "E-stop on operator command",
+    "Auto-stop if body pitch >30 deg",
+    "Thermal stop if ambient >45 C near vents"
+   ],
+   "human_in_loop": "Steward reviews inspection imagery and approves any maintenance proposal; robot never files charter changes.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "timestamp",
+     "pose_x_y_yaw",
+     "image_count",
+     "anomalies_detected",
+     "stop_events",
+     "operator_notes"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-visitor-guidance",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Greet visitors at Proposal Forum entrance, explain agent-drafted vs human-decided proposals, and guide them to debate seats.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/nao/odom",
+     "/speech",
+     "/people_detection",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Smooth indoor flooring with lava-rock accent borders; low seating obstacles and crowd flow near entry",
+   "success": [
+    "Guides >=8 visitors/hour to correct seats",
+    "Speech intelligibility >=90% in test quiz",
+    "No collisions with people or furniture"
+   ],
+   "safety_stops": [
+    "Stop if person within 0.3 m",
+    "Battery <15% return-to-dock",
+    "Fall detection immediate safe-shutdown pose"
+   ],
+   "human_in_loop": "Person confirms seat assignment before robot escorts; steward approves scripted talking points.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "visitor_count",
+     "speech_utterances",
+     "path_completion",
+     "collision_flags",
+     "battery_min",
+     "rating"
+    ]
+   }
+  },
+  {
+   "id": "lava-field-sensor-survey",
+   "robot": "clearpath-husky-a200",
+   "zone": "Research Synthesis Lab",
+   "goal": "Drive an outdoor geothermal sensor survey transect around the lab perimeter collecting soil temperature and steam readings for evidence synthesis.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/husky/odom",
+     "/gps/fix",
+     "/thermal_camera/image",
+     "/imu/data",
+     "/scan"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Unstable black lava gravel, ruts, moss patches, geothermal steam plumes reducing visibility",
+   "success": [
+    "Completes 1 km transect with <=0.5 m GPS tracking error",
+    "Logs >=200 annotated thermal samples",
+    "Wheel slip recovery without manual assist"
+   ],
+   "safety_stops": [
+    "Geofence breach stop",
+    "H2S/CO sensor threshold abort",
+    "Roll angle >25 deg stop",
+    "Loss of teleop link >5 s hold"
+   ],
+   "human_in_loop": "Operator approves transect route near active vents; steward signs off before data enters research synthesis.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "gps_track_rmse",
+     "samples_logged",
+     "max_roll_deg",
+     "gas_alarms",
+     "duration_s",
+     "route_id"
+    ]
+   }
+  },
+  {
+   "id": "swarm-steam-plume-mapping",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a 6-drone swarm in stacked formation above the Observatory to map steam plume dispersion for progress-dashboard visualization.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/cf/pose",
+     "/swarm/formation_cmd",
+     "/tof_range",
+     "/battery_voltage"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Open air above lava field; turbulent warm updrafts from vents, gusty coastal wind from Reykjanes shoreline",
+   "success": [
+    "Holds formation within 0.2 m RMS spacing",
+    "Maps plume volume at 1 m^3 resolution in 10 min",
+    "No drone-to-drone proximity <0.5 m"
+   ],
+   "safety_stops": [
+    "Wind gust >8 m/s land",
+    "Battery <3.4 V immediate land",
+    "Loss of positioning >2 s hover-land"
+   ],
+   "human_in_loop": "Pilot approves launch and each altitude band; steward reviews mapped data before dashboard publication.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "formation_rmse",
+     "plume_voxels",
+     "wind_max",
+     "battery_min",
+     "land_reason",
+     "timestamp"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-parts-delivery",
+   "robot": "unitree-go2",
+   "zone": "Operations Deck",
+   "goal": "Deliver task-routing tablets and small toolkits between working-group desks on the Operations Deck using quadruped locomotion over raised lava-tile flooring.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/go2/odom",
+     "/cargo_weight",
+     "/object_detection",
+     "/cmd_vel"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Raised textured lava-tile floor panels, cable runs between desks, 5 cm desk-to-floor drops",
+   "success": [
+    ">=10 deliveries per shift with >=98% item integrity",
+    "Mean delivery error <=0.2 m from desk drop point",
+    "No tipping on panel edges"
+   ],
+   "safety_stops": [
+    "Cargo tilt >20 deg release-and-stabilize",
+    "Obstacle within 0.25 m stop",
+    "Operator e-stop channel"
+   ],
+   "human_in_loop": "Task Router agent assigns deliveries; human coordinator approves pickup priority queue.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "deliveries_done",
+     "drop_error_m",
+     "tilt_events",
+     "cargo_kg",
+     "stops",
+     "shift_id"
+    ]
+   }
+  },
+  {
+   "id": "lab-bench-manipulation-calibration",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Calibrate precision pick-and-place of geothermal sample vials from trays to the analyzer rack, mirroring UR10e benchmate timing for dual-arm cell sync.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/fr3/joint_states",
+     "/ft_sensor",
+     "/camera/color/image_raw",
+     "/gripper/state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed lab bench; tray slots, glass vials, steam-humidified air affecting optics; adjacent UR10e shared workspace",
+   "success": [
+    "Pick success >=99% over 200 vials",
+    "Place repeatability <=1 mm",
+    "Zero vial breakage or force events >10 N"
+   ],
+   "safety_stops": [
+    "Contact force >10 N release",
+    "Workspace intrusion by human hand within 0.4 m stop",
+    "Joint velocity limit abort"
+   ],
+   "human_in_loop": "Lab technician approves analyzer loading sequence; steward approves any sample-destruction protocol.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "picks",
+     "fails",
+     "place_repeatability_mm",
+     "max_force_n",
+     "stops",
+     "cycle_time_s"
+    ]
+   }
+  },
+  {
+   "id": "talon-observatory-maintenance-walk",
+   "robot": "pal-robotics-talos",
+   "zone": "Progress Observatory",
+   "goal": "Walk between Observatory display kiosks performing high-level checks on dashboard screens and replacing burnt indicator panels at human height.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/talos/odom",
+     "/depth_camera/points",
+     "/walk_status",
+     "/screen_diagnostics"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Even walkway with embedded lava aggregate, low ambient lighting near screens, cable covers at kiosk bases",
+   "success": [
+    "Visits all kiosks in <=20 min with <=0.1 m positioning error",
+    "Screen diagnostic pass >=95%",
+    "Panel swap cycle time <=90 s each"
+   ],
+   "safety_stops": [
+    "Foot slip or ZMP violation -> sit-down",
+    "Human within 1 m workspace stop",
+    "Power fault on panel circuit lockout"
+   ],
+   "human_in_loop": "Technician verifies electrical isolation before panel swap; steward approves updated observatory displays.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot_id",
+     "kiosks_visited",
+     "pose_error_m",
+     "panels_swapped",
+     "diagnostics_pass_pct",
+     "stop_events",
+     "time_s"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s17-curable-blockchain-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

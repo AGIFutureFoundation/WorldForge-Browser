@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Governing the Algorithm: DAO Literacy for Worker Organizations",
+   "grade_or_level": "Adult continuing education / works council training",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO differs from a traditional union structure",
+    "Identify which decisions must stay with people (final votes, charter changes, treasury) and which can be delegated to agents",
+    "Draft a sample workplace proposal for the Proposal Forum",
+    "Evaluate evidence summaries produced by agents for bargaining use"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the charter, contribution model and measurable outcomes; compare reserved-for-humans decision lists with union bylaws on what members must vote on directly.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Read an Evidence Monitor summary; practice spotting missing context, sourcing and bias before using agent-written evidence at the bargaining table.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Work in small groups to draft a member-benefit proposal using the Proposal & Grant Drafter's template; peers debate while instructor plays steward holding final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Use Progress Tracker dashboards to define measurable outcomes for a union campaign; discuss what metrics members would accept as fair.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized proposal drafts and rubric scores on agent-assisted drafting, so shared models can show which formats help worker bodies debate and decide fastest.",
+   "consent": "Adult participants sign an informed-consent form at enrollment; all contributions are pseudonymized, no workplace or employer identifiers are collected, and anyone can withdraw their data at any session."
+  },
+  {
+   "audience": "k12",
+   "title": "Crypto Valley Explorers: How a Town Governed by Lists and Lakes",
+   "grade_or_level": "Grades 7-9 (ages 12-15), geography and civics module",
+   "outcomes": [
+    "Locate Zug, Switzerland on a map and describe its lakeside old town and 'Crypto Valley' identity",
+    "Explain the idea of a ledger and why a shared record builds trust between strangers",
+    "Distinguish tasks agents can do from decisions only people should make",
+    "Design a simple class charter with reserved human decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map Zug's lake promenade and old town; then build a class 'charter' listing rules and marking which choices only the class may vote on, mirroring reserved-for-humans actions.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Sort fact cards about ledgers and DAOs into 'evidence' and 'opinion' piles; learn how the Evidence Monitor agent summarizes sources and where it can go wrong.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a fun school-improvement proposal with help from a drafter role; classmates debate and hold the final vote themselves to see human governance in action.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track the class charter's outcomes on a simple poster dashboard; each team reports progress and revises its proposal like the Progress Tracker agent would.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized, teacher-aggregated tallies of which proposal elements students found hardest to evaluate, used only to improve shared civics lesson materials; no student writing is shared.",
+   "consent": "Signed guardian/parent consent forms are collected before the module; only aggregate, anonymized counts are ever shared, no names or personal details are recorded, and guardians may opt out at any time without penalty."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Running Agent-Assisted Program Cycles",
+   "grade_or_level": "Professional development for NGO program staff",
+   "outcomes": [
+    "Map an NGO program cycle onto the five zones of an agent-managed DAO",
+    "Apply evidence-synthesis quality checks before adopting agent summaries into reports",
+    "Route tasks across working groups using an Operations Deck workflow",
+    "Define measurable outcomes aligned with a charter mission"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare the Evidence Monitor and Research Synthesis Agent roles; run a quality checklist (source, date, uncertainty) on a sample synthesis before citing it in program reporting.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate the Task Router: teams triage a backlog of program tasks into working groups and time-box coordination between decision cycles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Convert a field finding into a grant-style proposal draft; practice the human review gate where only stewards enact, agents never do.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build an outcome tracker for one program indicator; agree what evidence would count as progress and who verifies it.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized cycle-time metrics (hours from task routing to human decision) and rubric scores on synthesis quality checks, contributed to shared benchmarks for agent-assisted program cycles.",
+   "consent": "Staff consent via organizational data-sharing agreement; individual contributions are de-identified, no beneficiary or community data enters shared models, and withdrawal is honored at any decision cycle."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Charter-First Fundraising: Treasury Rules Humans Keep",
+   "grade_or_level": "Intermediate workshop for nonprofit leaders and boards",
+   "outcomes": [
+    "Draft a charter-style mission with measurable outcomes for a small nonprofit",
+    "Understand why treasury transfers, enactments and appointments remain human-only",
+    "Use a Proposal Forum workflow to prepare board-ready grant drafts",
+    "Set up progress tracking that satisfies donor reporting"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the mission statement and contribution model; each leader drafts a one-page charter with mission, measurable outcomes and a reserved-for-humans decision list for their board.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Hands-on drafting: use the Proposal & Grant Drafter's structure to build a funding proposal, then run a mock board debate where only humans cast the final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Design a task-routing board that splits volunteer and agent tasks between decision meetings; identify which coordinator roles the nonprofit still needs.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Translate the Progress Tracker approach into a donor-facing dashboard: pick three indicators and define the evidence trail behind each.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized charter templates and indicator definitions (never real donor or beneficiary data) so shared models can suggest which measurable outcomes nonprofit boards adopt most often.",
+   "consent": "Organizational consent letter plus per-leader opt-in; all shared materials are scrubbed of names, figures and locations, and any leader can remove their template from the shared pool at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s06-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

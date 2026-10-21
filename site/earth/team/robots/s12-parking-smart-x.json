@@ -1,0 +1,434 @@
+{
+ "tasks": [
+  {
+   "id": "s12-parking-smart-x-spot-1",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/camera/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-go2-1",
+   "robot": "unitree-go2",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/camera/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-1",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Quadruped site survey",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/joint_states",
+     "/camera/depth"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "carpenters",
+   "certification_level": "Level 1",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-spot-2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-go2-2",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-2",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm rebar tying",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-spot-3",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/gps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-go2-3",
+   "robot": "unitree-go2",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/gps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
+  },
+  {
+   "id": "s12-parking-smart-x-plus-3",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Drone aerial inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/rgb",
+     "/gps"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at 1111 Lincoln Road, Miami Beach Florida",
+   "success": [
+    "Complete construction task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at 1111 Lincoln Road",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 3",
+   "industry": "construction-infrastructure"
+  }
+ ],
+ "industry": "construction-infrastructure"
+}

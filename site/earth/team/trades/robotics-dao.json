@@ -1,0 +1,325 @@
+{
+ "scenarios": [
+  {
+   "id": "structural-steel-cleanroom-frame",
+   "trade": "ironworkers",
+   "zone": "Operations Deck",
+   "task": "Bolt up structural steel frame for a new high-bay integration lab adjacent to existing cleanroom.",
+   "hazards": [
+    "Working at height above 20 ft",
+    "Falling objects near active crane lifts",
+    "Live seismic joint between existing and new steel",
+    "Heat stress in Pasadena mediterranean summer"
+   ],
+   "ppe": [
+    "Hard hat with chin strap",
+    "Full-body harness with double lanyard",
+    "Safety glasses",
+    "High-vis vest",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend pre-task briefing and confirm lift plan with crane operator.",
+    "Inspect connecting hardware and torque wrench calibration tag.",
+    "Connect to anchor points before climbing the frame.",
+    "Plumb and align the column bundle per drawings.",
+    "Install bolts finger-tight, then torque in sequence.",
+    "Flag the seismic joint area and verify no interference with existing utilities.",
+    "Secure all tools with lanyards before descent.",
+    "Complete bolt-up inspection checklist with foreman."
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Apprentice is tied off 100% of the time at height"
+    },
+    {
+     "axis": "Sequence",
+     "pass_if": "Bolts torqued in correct sequence without rework"
+    },
+    {
+     "axis": "Communication",
+     "pass_if": "Uses standard hand signals or radio with crane crew"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "No loose tools or bolts left on beams at end of task"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Spot walks the steel deck with a LiDAR payload to verify bolt-torque checklist tags and detect loose connections before human sign-off."
+  },
+  {
+   "id": "cleanroom-power-feed-pull",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Pull feeder conduit and wire for a dedicated 480V cleanroom power feed inside an occupied lab building.",
+   "hazards": [
+    "Energized panels in the same electrical room",
+    "Conduit burrs and wire-pulling lacerations",
+    "Tripping hazards from wire reels in corridors",
+    "Arc flash risk during termination"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Class 0 electrical gloves (until LOTO verified)",
+    "Arc-rated long sleeves for termination",
+    "Hard hat",
+    "Cut-resistant gloves for pulling"
+   ],
+   "steps": [
+    "Apply lockout/tagout and verify zero energy at the feeder breaker.",
+    "Confirm conduit run is complete, reamed and deburred.",
+    "Set up wire reels with proper braking and corridor protection.",
+    "Pull conductors with approved pulling lubricant and rope.",
+    "Rough-in and label both ends of each conductor.",
+    "Terminate under arc-flash PPE per NFPA 70E tables.",
+    "Megger test the feed and record results.",
+    "Remove locks and restore only after supervisor sign-off."
+   ],
+   "rubric": [
+    {
+     "axis": "Energy control",
+     "pass_if": "LOTO applied and verified before any conductor pull"
+    },
+    {
+     "axis": "Wire handling",
+     "pass_if": "No insulation damage or kinks; conductors properly lubricated"
+    },
+    {
+     "axis": "Labeling",
+     "pass_if": "Both ends labeled per panel schedule"
+    },
+    {
+     "axis": "Testing",
+     "pass_if": "Insulation resistance test performed and documented"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "thermal-vac-chamber-piping",
+   "trade": "pipefitters",
+   "zone": "Proposal Forum",
+   "task": "Fabricate and fit process chilled-water piping feeding a thermal vacuum chamber test cell.",
+   "hazards": [
+    "Hot work sparks from cutting and threading",
+    "Heavy pipe lifts with chain falls",
+    "Pressure testing hazards",
+    "Congested overhead work above test equipment"
+   ],
+   "steps": [
+    "Review isometric drawing and identify hanger points.",
+    "Rig pipe sections with chain falls; confirm load ratings.",
+    "Cut and thread pipe; deburr and clean threads.",
+    "Dry-fit the run and check slope toward drain points.",
+    "Apply thread sealant and make up joints to spec.",
+    "Install hangers and remove rigging.",
+    "Hydrostatic test the line at 1.5x working pressure.",
+    "Drain, flush and hand over test certificate."
+   ],
+   "ppe": [
+    "Welding/cutting goggles for hot work",
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Steel-toe boots",
+    "Hearing protection"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging",
+     "pass_if": "Load ratings checked and no one under suspended pipe"
+    },
+    {
+     "axis": "Fit-up",
+     "pass_if": "Dry-fit pass requires no re-cut joints"
+    },
+    {
+     "axis": "Pressure test",
+     "pass_if": "Test held 1.5x pressure with no leaks and documented"
+    },
+    {
+     "axis": "Hot work",
+     "pass_if": "Fire watch and screens in place during cutting"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "UR10e holds and rotates pipe sections at the threading station, keeping the fitter's hands clear of the chuck."
+  },
+  {
+   "id": "rover-highbay-crane-lift",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and signal a crane lift moving a flight-structure shipping container from truck to high-bay floor.",
+   "hazards": [
+    "Suspended load over personnel zones",
+    "Load shift from offset center of gravity",
+    "Crush points between container and stands",
+    "Wind gusts in the Arroyo Seco-adjacent yard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "High-vis vest",
+    "Leather gloves",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Verify crane inspection tag and lift plan permits.",
+    "Weigh or confirm container weight and locate CG from markings.",
+    "Select spreader bars and shackles rated above load; inspect rigging.",
+    "Attach rigging; check sling angles within limits.",
+    "Clear the lift zone and post flaggers.",
+    "Give standard signals; direct a slow test lift of inches.",
+    "Walk the load to landing stands and guide with tag lines only.",
+    "Land, verify stability, then unrig."
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging selection",
+     "pass_if": "All hardware rated and inspected; angles within 60 deg"
+    },
+    {
+     "axis": "Signals",
+     "pass_if": "Only one designated signal person; standard signals used"
+    },
+    {
+     "axis": "Exclusion zone",
+     "pass_if": "No one under the load at any time"
+    },
+    {
+     "axis": "Landing",
+     "pass_if": "Load stable on stands before rigging release"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "arroyo-firebreak-grounds",
+   "trade": "grounds",
+   "zone": "Progress Observatory",
+   "task": "Cut and maintain a defensible-space firebreak in chaparral brush on the site perimeter above the Arroyo Seco.",
+   "hazards": [
+    "Wildfire and spark risk from equipment",
+    "Rattlesnakes and steep slopes",
+    "Heat exhaustion in mediterranean summer",
+    "Poison oak in brush"
+   ],
+   "ppe": [
+    "Fire-resistant chaps",
+    "Face shield or goggles",
+    "Leather gloves",
+    "Boots with ankle support",
+    "Sun hat and hydration pack"
+   ],
+   "steps": [
+    "Check fire weather forecast and red-flag status before starting.",
+    "Clear a 10 ft fuel-free ring around any gas-powered saw work.",
+    "Have fire extinguisher and water pack at the work area.",
+    "Cut brush in strips working upslope for footing.",
+    "Stack cut material at designated disposal points away from structures.",
+    "Inspect for hot spots and equipment heat at end of shift.",
+    "Log completed firebreak footage for the site plan."
+   ],
+   "ppe_note": "PPE listed above",
+   "steps_note": null,
+   "rubric": [
+    {
+     "axis": "Fire prevention",
+     "pass_if": "Extinguisher present and fuel ring cleared before saw start"
+    },
+    {
+     "axis": "Biological hazards",
+     "pass_if": "Snake and poison oak awareness demonstrated; no bites or exposure"
+    },
+    {
+     "axis": "Heat management",
+     "pass_if": "Water/rest cycles followed per heat index"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Firebreak footage recorded for the site plan"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Husky tows the brush trailer and carries water and extinguisher to remote perimeter strips, reducing manual carries on steep slopes."
+  },
+  {
+   "id": "test-cell-fume-exhaust-balancing",
+   "trade": "sheetmetal",
+   "zone": "Charter Hall",
+   "task": "Install and balance rectangular exhaust duct serving a new propellant test cell scrubber.",
+   "hazards": [
+    "Sharp sheet metal edges",
+    "Working from scissor lifts overhead",
+    "Confined space entry at duct riser",
+    "Sealant chemical exposure"
+   ],
+   "ppe": [
+    "Cut-resistant gloves",
+    "Safety glasses",
+    "Hard hat",
+    "Half-mask respirator for sealant"
+   ],
+   "steps": [
+    "Lay out duct route from shop drawings; verify field dimensions.",
+    "Seal longitudinal joints with low-VOC sealant; allow cure time.",
+    "Lift duct sections with scissor lift; secure with rated hangers.",
+    "Torque slip-joint fasteners and gasket flanges.",
+    "Enter riser with confined-space permit and attendant.",
+    "Set dampers and take airflow readings at each branch.",
+    "Record balancing report and label damper positions."
+   ],
+   "rubric": [
+    {
+     "axis": "Joint integrity",
+     "pass_if": "All joints sealed and fastened; no visible gaps"
+    },
+    {
+     "axis": "Lift safety",
+     "pass_if": "Scissor lift inspected and harness used at rail exit if applicable"
+    },
+    {
+     "axis": "Confined space",
+     "pass_if": "Permit, attendant and air monitoring in place at riser"
+    },
+    {
+     "axis": "Balancing",
+     "pass_if": "Airflow within 10% of design at each branch"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Go2 carries a camera and anemometer into the duct riser for pre-entry inspection, reducing confined-space entries."
+  }
+ ],
+ "credential": {
+  "name": "JPL Rover-Build Site Readiness Card",
+  "requires": [
+   "structural-steel-cleanroom-frame",
+   "cleanroom-power-feed-pull",
+   "rover-highbay-crane-lift",
+   "arroyo-firebreak-grounds"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "robotics-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

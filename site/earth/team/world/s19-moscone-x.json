@@ -1,0 +1,246 @@
+{
+ "title": "Central Valley: Agriculture Food Hub",
+ "summary": "Walkable agriculture food training hub at Fresno California Agricultural Hub.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Fresno Metro",
+   "buildings": [
+    {
+     "name": "Charter Hall Training Center",
+     "use": "agriculture food training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Tower District",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "agriculture food training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "San Joaquin River",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "agriculture food training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Fresno Metro",
+   "buildings": [
+    {
+     "name": "Operations Deck Training Center",
+     "use": "agriculture food training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Tower District",
+   "buildings": [
+    {
+     "name": "Progress Observatory Training Center",
+     "use": "agriculture food training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "oak",
+   "maple",
+   "pine"
+  ],
+  "shrubs": [
+   "boxwood"
+  ],
+  "flowers": [
+   "rose"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Fresno Metro."
+ },
+ "quests": [
+  {
+   "title": "Field Basics Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Check in at Fresno Metro",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Harvesting Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Tower District",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Precision Ag Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at San Joaquin River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "Field Basics Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at Fresno Metro",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Harvesting Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Tower District",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
+  }
+ ],
+ "industry": "agriculture-food",
+ "certification": {
+  "n": "Ag Robotics Operator",
+  "u": "UFCW",
+  "h": 70,
+  "l": [
+   "Field Basics",
+   "Harvesting",
+   "Precision Ag"
+  ],
+  "o": [
+   "Operate harvest bots",
+   "Manage drones"
+  ]
+ }
+}

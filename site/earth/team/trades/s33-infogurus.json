@@ -1,0 +1,341 @@
+{
+ "scenarios": [
+  {
+   "id": "curtainwall-glass-swap",
+   "trade": "glaziers",
+   "zone": "Charter Hall",
+   "task": "Replace a cracked exterior glass panel on the curved granite-and-glass facade above the main reading room.",
+   "hazards": [
+    "wind loads off the Mediterranean",
+    "fall from swing stage",
+    "glass lacerations",
+    "overhead load drop"
+   ],
+   "ppe": [
+    "cut-resistant gloves",
+    "hard hat with chin strap",
+    "full-body harness",
+    "safety glasses"
+   ],
+   "steps": [
+    "Stage panel in padded crate on shore side",
+    "Rig panel to vacuum lifter and inspect seals",
+    "Load-test swing stage anchor points",
+    "Raise panel and set into glazed frame",
+    "Install setting blocks and perimeter seals",
+    "Torque retainers to spec and log serial number"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging check",
+     "pass_if": "Vacuum seals tested and load tag verified before lift"
+    },
+    {
+     "axis": "edge control",
+     "pass_if": "Panel edges protected and handled with suction, never bare hands"
+    },
+    {
+     "axis": "anchor use",
+     "pass_if": "Harness tied off to approved anchor 100% of exposure time"
+    },
+    {
+     "axis": "weather call",
+     "pass_if": "Halts work if sustained wind exceeds facade lift limit"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries sealant cartridges and fasteners up staging to keep hands free at the panel."
+  },
+  {
+   "id": "reading-room-lighting-circuit",
+   "trade": "electricians",
+   "zone": "Research Synthesis Lab",
+   "task": "Pull and terminate a new branch circuit for task lighting in the reading bays without disrupting live circuits.",
+   "hazards": [
+    "energized panels",
+    "conduit burrs",
+    "dust in occupied space",
+    "trip hazards over cable runs"
+   ],
+   "ppe": [
+    "safety glasses",
+    "Class 0 gloves",
+    "hard hat",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Obtain LOTO permit and lock out panel",
+    "Verify de-energized with meter, test the meter",
+    "Fish wire through existing conduit runs",
+    "Pull conductors with proper lube and no overfills",
+    "Terminate at receptacles and panel breaker",
+    "Megger test circuit, remove lock, re-energize and verify"
+   ],
+   "rubric": [
+    {
+     "axis": "energy control",
+     "pass_if": "LOTO applied and verified before any conductor work"
+    },
+    {
+     "axis": "code compliance",
+     "pass_if": "Conduit fill and breaker sizing within code"
+    },
+    {
+     "axis": "test discipline",
+     "pass_if": "Insulation resistance tested and documented before re-energizing"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "archive-hvac-coil-clean",
+   "trade": "hvacr",
+   "zone": "Research Synthesis Lab",
+   "task": "Clean fouled chilled-water coils and replace filters on air handlers serving climate-controlled archive spaces.",
+   "hazards": [
+    "confined space AHU interior",
+    "chemical coil cleaner exposure",
+    "refrigerant contact",
+    "biological growth in drip pans"
+   ],
+   "ppe": [
+    "nitrile gloves",
+    "splash goggles",
+    "N95 respirator",
+    "knee pads"
+   ],
+   "steps": [
+    "Isolate AHU electrically and valve off water side",
+    "Confirm zero energy and post confined-space entry permit",
+    "Remove side panels and inspect coil condition",
+    "Apply coil cleaner, dwell, and rinse to drain",
+    "Replace filters and clean condensate pan tablets",
+    "Reassemble, restore valves, and run functional test"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "Electrical and mechanical energy isolated before entry"
+    },
+    {
+     "axis": "chemical safety",
+     "pass_if": "SDS reviewed and eyewash within reach during cleaner use"
+    },
+    {
+     "axis": "airflow verification",
+     "pass_if": "Static pressure and temps return to spec after restart"
+    }
+   ],
+   "minutes": 75,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "seawater-intake-dive",
+   "trade": "divers",
+   "zone": "Operations Deck",
+   "task": "Inspect and clear fouling from the library's seawater intake screens in Alexandria's Eastern Harbour.",
+   "hazards": [
+    "current and boat traffic",
+    "zero visibility",
+    "entanglement on screens",
+    "differential suction pull near intake"
+   ],
+   "ppi": [
+    "surface-supply dive hat",
+    "dry suit",
+    "lifeline and comms harness",
+    "cutting tool",
+    "gloves"
+   ],
+   "ppe": [
+    "surface-supply dive hat",
+    "dry suit",
+    "lifeline and comms harness",
+    "cutting tool",
+    "dive gloves"
+   ],
+   "steps": [
+    "Hold dive safety meeting with tender and standby diver",
+    "Confirm intake pumps locked out and tagged",
+    "Descend on downline and orient to screen grid",
+    "Clear fouling with hand tools, bag debris",
+    "Check screen fasteners and anode condition",
+    "Surface on schedule, decompress per tables, debrief"
+   ],
+   "rubric": [
+    {
+     "axis": "lockout",
+     "pass_if": "Intake pumps confirmed locked out before water entry"
+    },
+    {
+     "axis": "comms",
+     "pass_if": "Continuous two-way comms and tender logs checks"
+    },
+    {
+     "axis": "standby",
+     "pass_if": "Fully dressed standby diver at the station the entire dive"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "plaza-grout-repair",
+   "trade": "cement-masons",
+   "zone": "Progress Observatory",
+   "task": "Cut out and repoint failing grout joints on the seafront plaza overlooking the bay before a charter review event.",
+   "hazards": [
+    "silica dust from cutting",
+    "vibration injury",
+    "uneven slab trip hazards",
+    "UV heat exposure"
+   ],
+   "ppe": [
+    "P100 respirator",
+    "hearing protection",
+    "cut-resistant gloves",
+    "long sleeves and sunscreen"
+   ],
+   "steps": [
+    "Set up dust extraction and wet-cutting controls",
+    "Tape off work area and route pedestrian detour",
+    "Rake out failed joints to sound material",
+    "Vacuum slurry and dampen joints",
+    "Mix grout, pack joints, and tool flush",
+    "Cure with cover and inspect next shift"
+   ],
+   "rubric": [
+    {
+     "axis": "silica control",
+     "pass_if": "Wet cutting or extraction used; no dry sweeping"
+    },
+    {
+     "axis": "public protection",
+     "pass_if": "Barricades and signage keep pedestrians clear"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "Joints full, tooled, and cured per spec"
+    }
+   ],
+   "minutes": 80,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "great-hall-scaffold-inspect",
+   "trade": "riggers",
+   "zone": "Charter Hall",
+   "task": "Rig and inspect a suspended scaffold for facade maintenance over the main entrance canopy at height.",
+   "hazards": [
+    "fall from height",
+    "suspended load swing",
+    "anchor failure",
+    "dropped tools over entrance"
+   ],
+   "ppe": [
+    "full-body harness with Y-lanyard",
+    "hard hat",
+    "hi-vis vest",
+    "tool tethers"
+   ],
+   "steps": [
+    "Verify canopy load rating with engineer of record",
+    "Install beam clamps and torque to spec",
+    "Rig hoist lines and counterweights, apply tags",
+    "Load-test scaffold at 125% working load",
+    "Inspect wire rope, brakes, and guardrails",
+    "Complete green tag and shift handoff sheet"
+   ],
+   "rubric": [
+    {
+     "axis": "rating check",
+     "pass_if": "Canopy capacity verified in writing before loading"
+    },
+    {
+     "axis": "load test",
+     "pass_if": "Proof load held with no creep before personnel board"
+    },
+    {
+     "axis": "tagging",
+     "pass_if": "Current inspection tag displayed and signed"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries a load cell and camera to confirm clamp torque and rope condition at anchor points."
+  },
+  {
+   "id": "basement-sump-pump-service",
+   "trade": "pipefitters",
+   "zone": "Operations Deck",
+   "task": "Rebuild a corroded sump pump and check-valve assembly in the below-grade services level near the harbor waterline.",
+   "hazards": [
+    "confined wet pit",
+    "hydrogen sulfide risk",
+    "heavy pump handling",
+    "electrical proximity in wet space"
+   ],
+   "ppe": [
+    "rubber boots",
+    "face shield",
+    "gas monitor",
+    "gloves"
+   ],
+   "steps": [
+    "Set up ventilation and monitor pit atmosphere",
+    "Lock out pump circuit and valve off discharge",
+    "Rig pump hoist and lift assembly from pit",
+    "Replace wear ring, impeller, and gaskets",
+    "Reinstall, valve in, and air-free the line",
+    "Run amp-draw test against nameplate and log"
+   ],
+   "rubric": [
+    {
+     "axis": "atmosphere",
+     "pass_if": "Pit ventilated and gas readings recorded before entry"
+    },
+    {
+     "axis": "energy control",
+     "pass_if": "Circuit locked and discharge valved before rigging"
+    },
+    {
+     "axis": "performance",
+     "pass_if": "Amp draw and flow within nameplate tolerance"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Ferries small parts and torque wrench between pit and tool crib to reduce ladder trips."
+  }
+ ],
+ "credential": {
+  "name": "Bibliotheca Alexandrina Site Readiness Card",
+  "requires": [
+   "curtainwall-glass-swap",
+   "reading-room-lighting-circuit",
+   "seawater-intake-dive",
+   "great-hall-scaffold-inspect"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s33-infogurus",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

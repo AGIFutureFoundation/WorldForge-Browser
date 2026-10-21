@@ -1,0 +1,246 @@
+{
+ "title": "Austin: Electronics Semiconductors Hub",
+ "summary": "Walkable electronics semiconductors training hub at Samsung Semiconductor, Austin Texas.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Samsung Campus",
+   "buildings": [
+    {
+     "name": "Charter Hall Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Colorado River",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "I-35 Corridor",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Samsung Campus",
+   "buildings": [
+    {
+     "name": "Operations Deck Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Colorado River",
+   "buildings": [
+    {
+     "name": "Progress Observatory Training Center",
+     "use": "electronics semiconductors training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "oak",
+   "maple",
+   "pine"
+  ],
+  "shrubs": [
+   "boxwood"
+  ],
+  "flowers": [
+   "rose"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Samsung Campus."
+ },
+ "quests": [
+  {
+   "title": "Cleanroom Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Check in at Samsung Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Wafer Handling Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Colorado River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Process Control Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at I-35 Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "Cleanroom Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at Samsung Campus",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Wafer Handling Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Colorado River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
+  }
+ ],
+ "industry": "electronics-semiconductors",
+ "certification": {
+  "n": "Semiconductor Robotics",
+  "u": "IBEW/IUE-CWA",
+  "h": 130,
+  "l": [
+   "Cleanroom",
+   "Wafer Handling",
+   "Process Control"
+  ],
+  "o": [
+   "Operate cleanroom bots",
+   "Maintain wafer handling"
+  ]
+ }
+}

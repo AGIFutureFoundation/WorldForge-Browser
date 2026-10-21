@@ -1,0 +1,152 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Agent-Managed, Member-Governed: A Workshop for Education Union Stewards",
+   "grade_or_level": "Adult professional development",
+   "outcomes": [
+    "Explain the agents-operate/people-govern split and the six human-reserved actions",
+    "Map union committee roles onto the DAO's five zones",
+    "Draft a member proposal for the Proposal Forum",
+    "Evaluate evidence summaries produced by agents"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Guided reading of the charter's focus, mission and reserved-for-humans list; groups map collective-bargaining safeguards onto DAO governance rules.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Hands-on critique of an Evidence Monitor style summary: learners identify claims, sources and gaps, then rewrite one paragraph for members.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a short proposal using the Proposal & Grant Drafter pattern: agent-drafted, human-debated, human-enacted only by final vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play task routing across working groups between decision cycles, with a Collaborator Scout exercise mapping member expertise.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised workshop feedback and proposal-draft rubric scores; no personal or employment data contributed.",
+   "consent": "Participation is voluntary with opt-in consent at sign-up; learners may withdraw and request deletion of their contributions at any time."
+  },
+  {
+   "audience": "k12",
+   "title": "Meadows and Models: Learning About AI Governance at Oxford's Oldest Campus",
+   "grade_or_level": "Ages 11-14 (Key Stage 3)",
+   "outcomes": [
+    "Describe what a DAO is and why some decisions stay with people",
+    "Locate Christ Church Meadow and the River Cherwell on a map",
+    "Compare a campus's halls and libraries to the DAO's five zones",
+    "Practice debating a simple proposal and voting as a class"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Story-based introduction to the charter: what the mission means and which decisions are reserved for humans; students draw their own class charter.",
+     "minutes": 40
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Students sort statement cards into 'evidence' and 'opinion' piles, mimicking how agents summarize research for stewards.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Class debate on a school-relevant proposal; a student 'drafter' writes it up, and everyone votes, showing humans make the final decision.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students design a simple progress tracker with measurable outcomes for a class goal, then reflect on the meadow setting and river-valley biome.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymous class tallies from the debate vote and aggregated quiz answers only; no individual student data is collected.",
+   "consent": "Written guardian/parent consent is required before participation, with an opt-out at any time; teachers oversee all activities and no individually identifiable data is shared."
+  },
+  {
+   "audience": "ngo",
+   "title": "From Evidence to Enactment: NGO Staff Training in Agent-Assisted Program Design",
+   "grade_or_level": "Adult practitioner, intermediate",
+   "outcomes": [
+    "Apply the five-zone workflow to design an education program cycle",
+    "Draft measurable outcomes suitable for the Progress Observatory",
+    "Integrate agent-drafted proposals into human decision processes",
+    "Assess privacy and consent risks in data-sharing arrangements"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Workshop on using evidence summaries responsibly: triangulating sources, spotting unstated assumptions, briefing decision-makers.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams convert a program idea into an agent-style draft proposal with budget placeholders, then run a peer review simulating human-only enactment.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Task-routing simulation: teams coordinate working groups between decision cycles using a Task Router role card.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Learners build a simple indicators dashboard tied to their drafted measurable outcomes and stress-test it for gaming.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized program-design artifacts and rubric results, shared to improve open facilitation materials.",
+   "consent": "Organizational consent plus individual opt-in; contributions are de-identified before sharing and can be removed on request."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governance Grounded: A Nonprofit Board Introduction to Agent-Managed DAOs",
+   "grade_or_level": "Adult board/trustee level, introductory",
+   "outcomes": [
+    "Explain the fiduciary parallel between board duties and human-reserved DAO actions",
+    "Identify which of the six reserved actions map to existing board responsibilities",
+    "Set three measurable outcomes for an education mission",
+    "Recognize red flags when agent roles overstep into human decisions"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-style walkthrough of the charter: mission, focus, contribution model and the reserved-for-humans list, compared with a nonprofit's bylaws.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Trustees review a sample progress report against measurable outcomes and rewrite vague goals into measurable ones.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Case-study clinic: trustees spot where an agent overstepped (e.g., drafting vs. enacting) and define board-approved guardrails.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Mapping exercise linking staff, volunteers and working groups to zones, with a Collaboration Scout style skills inventory.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Aggregated, anonymized self-assessment scores and red-flag exercise results only.",
+   "consent": "Individual opt-in with clear notice that only aggregated results are shared; any trustee may decline participation without penalty."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "education-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

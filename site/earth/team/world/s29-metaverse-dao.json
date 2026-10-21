@@ -1,0 +1,285 @@
+{
+ "title": "Menlo Park: Meta Headquarters, 1 Hacker Way",
+ "summary": "A walkable city grid at Meta Headquarters, 1 Hacker Way, with real streets and landmarks from Menlo Park.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Meta Building 1",
+   "buildings": [
+    {
+     "name": "Meta Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Meta Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Reception",
+    "Charter Hall Work Floor",
+    "Charter Hall Meeting Room",
+    "Charter Hall Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Charter Hall Coordinator",
+    "Charter Hall Agent"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Hacker Way",
+   "buildings": [
+    {
+     "name": "Hacker Bldg 1",
+     "use": "Office",
+     "floors": 4
+    },
+    {
+     "name": "Hacker Bldg 2",
+     "use": "Lab",
+     "floors": 5
+    },
+    {
+     "name": "Hacker Bldg 3",
+     "use": "Public",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Reception",
+    "Research Synthesis Lab Work Floor",
+    "Research Synthesis Lab Meeting Room",
+    "Research Synthesis Lab Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Coordinator",
+    "Research Synthesis Lab Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Menlo Park City Hall",
+   "buildings": [
+    {
+     "name": "Menlo Bldg 1",
+     "use": "Office",
+     "floors": 6
+    },
+    {
+     "name": "Menlo Bldg 2",
+     "use": "Lab",
+     "floors": 7
+    },
+    {
+     "name": "Menlo Bldg 3",
+     "use": "Public",
+     "floors": 8
+    },
+    {
+     "name": "Menlo Bldg 4",
+     "use": "Public",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Reception",
+    "Proposal Forum Work Floor",
+    "Proposal Forum Meeting Room",
+    "Proposal Forum Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Proposal Forum Coordinator",
+    "Proposal Forum Agent"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Burgess Park",
+   "buildings": [
+    {
+     "name": "Burgess Bldg 1",
+     "use": "Office",
+     "floors": 8
+    },
+    {
+     "name": "Burgess Bldg 2",
+     "use": "Lab",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Reception",
+    "Operations Deck Work Floor",
+    "Operations Deck Meeting Room",
+    "Operations Deck Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Operations Deck Coordinator",
+    "Operations Deck Agent"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Stanford University",
+   "buildings": [
+    {
+     "name": "Stanford Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Stanford Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    },
+    {
+     "name": "Stanford Bldg 3",
+     "use": "Public",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Reception",
+    "Progress Observatory Work Floor",
+    "Progress Observatory Meeting Room",
+    "Progress Observatory Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Progress Observatory Coordinator",
+    "Progress Observatory Agent"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "redwood",
+   "oak",
+   "palm",
+   "magnolia",
+   "eucalyptus",
+   "redbud"
+  ],
+  "shrubs": [
+   "manzanita",
+   "ceanothus",
+   "lavender"
+  ],
+  "flowers": [
+   "rose",
+   "calla lily",
+   "California poppy"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "bay",
+  "flow_mps": 0.3,
+  "wave_m": 0.5
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "20:00"
+ },
+ "court": {
+  "name": "Hacker Way Court",
+  "style": "campus plaza with VR installations",
+  "why_here": "At Meta HQ where digital and physical worlds converge."
+ },
+ "quests": [
+  {
+   "title": "Cross Menlo Park: Charter Hall to Research Synthesis Lab",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Begin at Meta Building 1",
+    "Navigate Hacker Way",
+    "Check in at Research Synthesis Lab",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Cross Menlo Park: Research Synthesis Lab to Proposal Forum",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Begin at Hacker Way",
+    "Navigate Menlo Park City Hall",
+    "Check in at Proposal Forum",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Cross Menlo Park: Proposal Forum to Operations Deck",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Begin at Menlo Park City Hall",
+    "Navigate Burgess Park",
+    "Check in at Operations Deck",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Cross Menlo Park: Operations Deck to Progress Observatory",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Begin at Burgess Park",
+    "Navigate Stanford University",
+    "Check in at Progress Observatory",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 60
+  }
+ ]
+}

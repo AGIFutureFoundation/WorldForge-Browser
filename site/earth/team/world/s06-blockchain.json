@@ -1,0 +1,274 @@
+{
+ "title": "Zug Lakeside DAO Commons",
+ "summary": "A walkable lakeside Crypto Valley: five DAO halls along Zug's old-town promenade where six agents run research, drafting and operations, while humans keep every final vote, treasury transfer and appointment in their own hands.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Rathaus Zug",
+   "buildings": [
+    {
+     "name": "Charter Hall",
+     "use": "Charter display and contribution model registry",
+     "floors": 3
+    },
+    {
+     "name": "Mission Cloister",
+     "use": "Reading arcades for the mission statement",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Rotunda",
+    "Contribution Ledger Room",
+    "Outcomes Wall",
+    "Reserved-Powers Vault",
+    "Steward's Antechamber"
+   ],
+   "props": [
+    "engraved charter stone",
+    "contribution ledger desk",
+    "mission banner",
+    "brass mission bell",
+    "measurable-outcomes board",
+    "visitors' bench"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Metalli",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab",
+     "use": "Evidence monitoring and summarizing",
+     "floors": 3
+    },
+    {
+     "name": "Evidence Annex",
+     "use": "Source archive and citation stacks",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Monitor Bay",
+    "Synthesis Studio",
+    "Source Archive",
+    "Summary Reading Room",
+    "Focus-Pending Board"
+   ],
+   "props": [
+    "tall evidence monitors",
+    "rolling source carts",
+    "citation pinboard",
+    "quiet study lamps",
+    "printer of digests",
+    "focus placeholder sign"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Kornhaus",
+   "buildings": [
+    {
+     "name": "Proposal Forum",
+     "use": "Agent-drafted proposals debated and decided by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Gallery",
+    "Debate Chamber",
+    "Human-Decision Hall",
+    "Amendment Table",
+    "Records Office"
+   ],
+   "props": [
+    "proposal drafting desks",
+    "debate lectern",
+    "hand-count ballot boxes",
+    "enactment seal (human-only, locked)",
+    "public comment wall",
+    "stewards' bench"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Haus Zentrum",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 4
+    },
+    {
+     "name": "Collaboration Annex",
+     "use": "Scouting and working-group rooms",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Task Router Console",
+    "Working-Group Rooms",
+    "Collaborator Map Room",
+    "Routing Board",
+    "Shift Briefing Room"
+   ],
+   "props": [
+    "task routing board",
+    "collaborator directory cards",
+    "coordination telegraph",
+    "working-group sign-up sheets",
+    "coffee station for night shifts",
+    "status flags"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Parkhotel",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Dashboard Hall",
+    "Tracker's Loft",
+    "Milestone Gallery",
+    "Trend Room"
+   ],
+   "props": [
+    "brass progress gauges",
+    "milestone timeline ribbon",
+    "tracker's telescope",
+    "quarterly report lectern",
+    "indicator lamps"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Acer pseudoplatanus",
+   "Tilia cordata",
+   "Fagus sylvatica",
+   "Platanus × acerifolia",
+   "Quercus robur"
+  ],
+  "shrubs": [
+   "Buxus sempervirens",
+   "Viburnum lantana",
+   "Cornus sanguinea"
+  ],
+  "flowers": [
+   "Geranium pratense",
+   "Rosa gallica",
+   "Bellis perennis",
+   "Tulipa gesneriana"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.2,
+  "wave_m": 0.3
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 3
+ },
+ "day_cycle": {
+  "sunrise_local": "06:10",
+  "sunset_local": "20:50"
+ },
+ "court": {
+  "name": "The Human Decision Court",
+  "style": "Swiss open-air Landsgemeinde square of raised granite steps ringing a lakeside plaza",
+  "why_here": "Zug's town-meeting traditions and Crypto Valley governance make the human-only final vote the literal and symbolic center of the world."
+ },
+ "quests": [
+  {
+   "title": "From Monitor to Milestone",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect a fresh evidence digest from the Evidence Monitor Bay",
+    "Carry it through the Charter Hall Outcomes Wall for framing",
+    "Log the milestone at the Progress Observatory dashboard",
+    "Confirm the indicator lamp lights green"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "The Locked Seal",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Watch the Proposal & Grant Drafter assemble a draft",
+    "Debate the draft at the lectern",
+    "Attempt to hand the enactment seal to an agent and be refused",
+    "Deliver the seal to human stewards in the Charter Rotunda"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Routing the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Pick up routed task slips from the Task Router Console",
+    "Match each slip to a working-group room",
+    "Escort the Collaborator Scout's shortlist to the Proposal Forum",
+    "File confirmation at the Routing Board"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Promenade Charter Walk",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read all six reserved human powers at the Charter Rotunda",
+    "Collect a stamp at the Outcomes Wall",
+    "Follow the lakeside promenade past the Mission Cloister",
+    "Exchange the stamp for a research brief in the Summary Reading Room"
+   ],
+   "xp": 20
+  },
+  {
+   "title": "Focus Pending",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Inspect the empty focus board in the Evidence Annex",
+    "Record what outcomes stewards should set",
+    "Present the recommendation at the Charter Hall antechamber",
+    "Leave it sealed for human stewards to decide"
+   ],
+   "xp": 80
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s06-blockchain",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

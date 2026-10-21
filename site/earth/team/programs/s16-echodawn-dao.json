@@ -1,0 +1,158 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Voices That Echo: Worker Voice in Agent-Managed Systems",
+   "grade_or_level": "Adult continuing education / union delegate training",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO routes work and makes decisions",
+    "Identify where human decision rights are reserved and why worker voice belongs there",
+    "Practice drafting and debating a proposal through the Proposal Forum process"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the EchoDawn charter; map which powers stay with people (final vote, treasury, amendments) and discuss where delegates fit.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Role-play the Task Router: delegates assign tasks to working groups and discuss fairness, transparency and workload distribution.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Use an evidence summary template to assess how automation affects members' roles; compare notes on agent-generated summaries.",
+     "minutes": 50
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a workplace proposal, debate it, and hold a mock human final vote following the DAO's reserved-powers rule.",
+     "minutes": 75
+    }
+   ],
+   "data_shared": "Anonymised session feedback and mock proposal themes (no names, employers or identifying details) contribute to shared models of how worker groups engage with DAO governance.",
+   "consent": "Participation is voluntary with written informed consent; learners choose what feedback to share, can opt out of data contribution at any time, and no personal or workplace identifiers are collected."
+  },
+  {
+   "audience": "k12",
+   "title": "Echo Explorers: Sunrise Science and Shared Governance",
+   "grade_or_level": "Grades 6-8 (ages 11-14)",
+   "outcomes": [
+    "Describe the temperate eucalypt forest ecosystem of the Jamison Valley and the Three Sisters",
+    "Explain how sound echoes work and how echoes inspired this DAO's name and listening-based design",
+    "Simulate a decision cycle where agents inform and humans decide"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Investigate the Blue Mountains biome: eucalypt forests, valley mist and why sunrise creates echoes at Echo Point.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Read a kid-friendly charter and identify which decisions only people can make; create a classroom charter together.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a class proposal (e.g., a playground improvement) with an 'agent assistant' fact sheet, then debate and vote as humans only.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress tracker poster showing measurable outcomes of the class proposal and reflect on what worked.",
+     "minutes": 35
+    }
+   ],
+   "data_shared": "Anonymised class voting patterns and proposal drafts (no names, ages or school identifiers) help build shared examples of youth civic learning in DAO worlds.",
+   "consent": "Guardian/parent written consent is required for all data contribution; individually de-identified contributions only, parents may withdraw consent at any time, and no personal data is collected from students without it."
+  },
+  {
+   "audience": "ngo",
+   "title": "Governing AI as a Public Good: An NGO Field Guide",
+   "grade_or_level": "Professional / NGO program staff and managers",
+   "outcomes": [
+    "Analyse the AGI Future Foundation mission model of agent-managed, human-governed organisations",
+    "Design a contribution model with measurable outcomes for their own programs",
+    "Apply evidence-synthesis and proposal cycles to NGO decision-making"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the mission of governing AI as a public good; draft measurable outcomes for a hypothetical NGO charter.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practise summarising evidence with the Evidence Monitor and Research Synthesis Agent roles; critique agent-generated briefs.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a real program proposal with the Proposal & Grant Drafter method; peer review before a human-only decision step.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Map task routing and working groups across a multi-partner program, identifying coordination gaps.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set up a progress-tracking dashboard tied to charter outcomes and agree review checkpoints.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymised proposal templates, outcome indicators and lessons learned (no organisational names or beneficiary data) feed shared models of NGO governance practice.",
+   "consent": "Staff opt in via written consent; beneficiary data is never shared, contributions are aggregated and de-identified, and organisations can withdraw their material at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "From Mission to Measurement: Nonprofit Governance in an Agent-Assisted DAO",
+   "grade_or_level": "Board members and nonprofit leadership",
+   "outcomes": [
+    "Distinguish agent operations from human-reserved governance decisions (votes, treasury, appointments)",
+    "Translate mission statements into measurable charter outcomes",
+    "Run a steward-led decision cycle using the five-zone structure"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Compare their own mission statement to the EchoDawn charter; identify reserved human powers and steward roles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review how agents monitor and summarise evidence for boards; discuss trust, verification and bias checks.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Board members debate an agent-drafted proposal, amend it, and cast the final human vote - agents never enact.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Assign stewards to coordinate working groups between decision cycles using the Task Router model.",
+     "minutes": 40
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 2-3 measurable outcomes and a public progress report cadence for their organisation.",
+     "minutes": 50
+    }
+   ],
+   "data_shared": "Anonymised governance patterns - decision-cycle timings, amendment frequencies, outcome framings (no organisation or donor identifiers) - support shared research on nonprofit DAO adoption.",
+   "consent": "Leadership provides organisational consent in writing; individual contributions are optional and de-identified, sensitive board or donor information is excluded, and withdrawal is possible at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s16-echodawn-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

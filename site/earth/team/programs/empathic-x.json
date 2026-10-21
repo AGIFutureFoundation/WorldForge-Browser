@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Reading the Room on the Shop Floor",
+   "grade_or_level": "Workplace / adult members",
+   "outcomes": [
+    "Name emotional states before acting in tense shop-floor moments",
+    "Give feedback that can be used without escalation",
+    "Repair after conflict with stewards, members or management"
+   ],
+   "sessions": [
+    {
+     "zone": "Self-Reader Grove",
+     "activity": "Body-scan check-in: members name three states they were in this week and where each landed in the body, guided by the Self-Reader Guide.",
+     "minutes": 40
+    },
+    {
+     "zone": "Other-Reader Commons",
+     "activity": "Listening without preparing a reply: paired practice on a real grievance story, then asking instead of assuming with open questions.",
+     "minutes": 50
+    },
+    {
+     "zone": "Repairer's Hall",
+     "activity": "Staying in a hard conversation: role-play a post-dispute apology between member and steward, including receiving an apology well.",
+     "minutes": 60
+    },
+    {
+     "zone": "Practitioner Workshop",
+     "activity": "Saying no at work: script practice for declining unsafe asks and naming emotional labour in collective terms.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymised, opt-in counts of emotion-state names and theme tags from check-ins; no grievance content, names or workplace identifiers are ever stored.",
+   "consent": "Adult members opt in individually with a plain-language form; consent can be withdrawn at any session, and any withdrawn learner's data is deleted from shared models."
+  },
+  {
+   "audience": "k12",
+   "title": "Feelings, Friends and Repair at the Lake",
+   "grade_or_level": "Ages 10-14 (middle school)",
+   "outcomes": [
+    "Name what you feel before you act",
+    "Ask instead of assume when reading a classmate",
+    "Apologise properly and receive an apology kindly"
+   ],
+   "sessions": [
+    {
+     "zone": "Self-Reader Grove",
+     "activity": "Grove walk and journal: learners name three states from this week and draw where each feeling lands in their body.",
+     "minutes": 30
+    },
+    {
+     "zone": "Other-Reader Commons",
+     "activity": "Face-reading game with the Other-Reader Guide: observe without deciding what it means, then ask one kind question.",
+     "minutes": 30
+    },
+    {
+     "zone": "Room-Reader Plaza",
+     "activity": "Room with a newcomer: group exercise noticing who is idle or left out and practising when to do nothing versus when to step in.",
+     "minutes": 40
+    },
+    {
+     "zone": "Repairer's Hall",
+     "activity": "Repair circle: practice a proper apology and how to receive one kindly, using simple sentence starters.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Only aggregated, anonymous counts of feeling words used and session themes; no individual responses, drawings or names are collected.",
+   "consent": "Guardian/parent written consent required before participation, plus the learner's own assent; facilitators explain privacy in child-friendly language and any learner can stop at any time without giving a reason."
+  },
+  {
+   "audience": "ngo",
+   "title": "Empathy Under Pressure: Field Staff Practice",
+   "grade_or_level": "Professional development / NGO field and programme staff",
+   "outcomes": [
+    "Stay in hard conversations with communities and colleagues",
+    "Read the room before a moment goes wrong",
+    "Protect against emotional labour burnout"
+   ],
+   "sessions": [
+    {
+     "zone": "Room-Reader Plaza",
+     "activity": "Reading the energy in the room: facilitators replay field-meeting scenarios, practising spotting the moment before it goes wrong.",
+     "minutes": 60
+    },
+    {
+     "zone": "Repairer's Hall",
+     "activity": "Saying the hard thing kindly: role-play delivering difficult news to a community partner and repairing after a misstep.",
+     "minutes": 60
+    },
+    {
+     "zone": "Self-Reader Grove",
+     "activity": "Transfer check with the Self-Reader Guide: name three states from the field this week and locate them in the body before planning responses.",
+     "minutes": 30
+    },
+    {
+     "zone": "Practitioner Workshop",
+     "activity": "The colleague who is struggling: noticing signs, offering usable support, and naming emotional labour limits on the team.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Opt-in, anonymised theme-frequency data on which practice scenarios staff found hardest; no case, beneficiary or location data is ever shared.",
+   "consent": "Staff opt in individually; data is anonymised at the point of capture, and participants may decline sharing while still taking part in sessions."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Repair and Feedback Culture for Small Nonprofits",
+   "grade_or_level": "Organisational practice / staff and volunteers",
+   "outcomes": [
+    "Make feedback usable across staff and volunteers",
+    "Apologise well and leave roles well",
+    "Hold a shared language for emotional states"
+   ],
+   "sessions": [
+    {
+     "zone": "Practitioner Workshop",
+     "activity": "Feedback that can be used: pairs rewrite real (anonymised) internal feedback using the Practitioner Guide's prompts.",
+     "minutes": 50
+    },
+    {
+     "zone": "Repairer's Hall",
+     "activity": "Coming down and apologising properly: practice a full repair after a team friction, including how to receive the apology.",
+     "minutes": 50
+    },
+    {
+     "zone": "Other-Reader Commons",
+     "activity": "Listening without preparing a reply: volunteer-manager pairs practise on leaving-well conversations.",
+     "minutes": 40
+    },
+    {
+     "zone": "Self-Reader Grove",
+     "activity": "Team check-in ritual: each person names one state and where it sits in the body, building a shared weekly practice.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Aggregated, anonymous counts of session themes and check-in feeling words to improve the shared empathy models; no individual names, roles or internal organisational content.",
+   "consent": "Individual opt-in with a short plain-language notice; volunteers and staff consent separately, withdrawal is honoured immediately, and no data is shared for anyone who opts out."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "empathic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

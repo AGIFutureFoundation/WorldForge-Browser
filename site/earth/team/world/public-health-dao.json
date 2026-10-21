@@ -1,0 +1,269 @@
+{
+ "title": "Public Health DAO: Broad Street",
+ "summary": "A walkable Soho campus for the agent-managed, human-governed Public Health DAO, anchored at the Broad Street Pump replica where John Snow's mapped data first stopped a cholera outbreak. Six zones, six agents, people cast the final votes.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Broad Street Pump replica, Broadwick Street",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display, contribution model, measurable outcomes ledger",
+     "floors": 2
+    },
+    {
+     "name": "Pumpside Reading Room",
+     "use": "Public reading of the charter and mission",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Wall",
+    "Outcomes Ledger Desk",
+    "Contribution Registry",
+    "Pump-view Alcove"
+   ],
+   "props": [
+    "Broad Street Pump replica",
+    "charter stone tablets",
+    "ledger kiosks",
+    "mission banner",
+    "benches",
+    "lampposts"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Bedford Square",
+   "buildings": [
+    {
+     "name": "Synthesis House",
+     "use": "Evidence monitoring and summarizing workspace",
+     "floors": 3
+    },
+    {
+     "name": "Evidence Annex",
+     "use": "Document intake and source library",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake",
+    "Monitor Desk",
+    "Summary Studio",
+    "Source Archive",
+    "Quiet Review Bay"
+   ],
+   "props": [
+    "map wall of Soho",
+    "evidence boards",
+    "stacked research folios",
+    "pinboard",
+    "reading lamps",
+    "inkwells"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Archer Street Chambers",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "Agent-drafted proposals debated by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Gallery",
+    "Debate Floor",
+    "Human Vote Chamber",
+    "Comment Alcoves"
+   ],
+   "props": [
+    "proposal posting boards",
+    "debate lecterns",
+    "voting urns (human-only)",
+    "hourglass",
+    "public benches"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Academy House",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Working Group Sheds",
+     "use": "Small-group collaboration spaces",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Board",
+    "Working Group Rooms",
+    "Collaborator Directory Desk",
+    "Stand-up Corner",
+    "Signal Desk"
+   ],
+   "props": [
+    "task routing board",
+    "collaborator cards",
+    "chalk schedule wall",
+    "telegraph-style message racks",
+    "tool crates"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "1 Golden Square",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Progress tracking against measurable outcomes",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Telescope Room",
+    "Milestone Gallery",
+    "Trend Chart Hall",
+    "Review Balcony"
+   ],
+   "props": [
+    "milestone pillars",
+    "trend charts",
+    "tracking globes",
+    "brass telescopes",
+    "bench seating"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "London plane",
+   "common lime",
+   "horse chestnut",
+   "field maple"
+  ],
+  "shrubs": [
+   "box",
+   "hawthorn",
+   "laurel"
+  ],
+  "flowers": [
+   "daffodil",
+   "rose",
+   "lavender",
+   "primrose"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "fountain",
+  "flow_mps": 0.5,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "18:15"
+ },
+ "court": {
+  "name": "The Snow Court",
+  "style": "Georgian square courtyard centered on the pump replica",
+  "why_here": "Honors John Snow's Soho cholera map: the founding proof that mapped evidence and human decision can stop an outbreak."
+ },
+ "quests": [
+  {
+   "title": "Map the Outbreak",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Read the charter wall at the Broad Street Pump replica",
+    "Collect three evidence cards from around Soho",
+    "Deliver them to the Evidence Monitor",
+    "Review the synthesized summary with the Research Synthesis Agent"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Proposal",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Take the evidence summary to the Proposal & Grant Drafter",
+    "Watch the agent draft a proposal",
+    "Post the draft on the forum board",
+    "Watch stewards debate it in the Vote Chamber"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Carry the approved proposal brief to the Operations Deck",
+    "Ask the Collaborator Scout to identify public health experts",
+    "Let the Task Router assign working groups",
+    "Confirm all groups have owners on the routing board"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Collect progress reports from the working groups",
+    "Deliver them to the Progress Tracker",
+    "Match results against the charter's measurable outcomes",
+    "Mark the milestone pillar in the Observatory"
+   ],
+   "xp": 70
+  },
+  {
+   "title": "Humans Decide",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Review the Observatory's outcome report",
+    "Return to Charter Hall and present findings at the pump",
+    "Observe a human-only final vote on the next cycle",
+    "Record the decision in the Outcomes Ledger"
+   ],
+   "xp": 100
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "public-health-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

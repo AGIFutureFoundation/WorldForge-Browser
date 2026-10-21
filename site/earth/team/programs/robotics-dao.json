@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Who Decides When a Robot Joins the Crew?",
+   "grade_or_level": "Adult workforce / continuing education",
+   "outcomes": [
+    "Explain how an agent-managed DAO separates agent operations from human-reserved votes like governance.final_vote and treasury.transfer",
+    "Draft a workplace clause requiring human sign-off on physical-AI deployment decisions affecting jobs",
+    "Read a JPL-style deployment example and identify who is accountable at each stage"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the DAO charter and reserved-for-humans list; map which robotics deployment decisions at a worksite must stay with people vs. can be agent-prepared.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Review evidence summaries on robotics and automation; physical-AI deployment governance; practice spotting claims that lack sourcing.",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a deployment-safeguards proposal with the Proposal & Grant Drafter format; peers debate, then hold a mock human-only final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define measurable outcomes for the proposal and build a simple progress dashboard the Progress Tracker would maintain.",
+     "minutes": 35
+    }
+   ],
+   "data_shared": "Anonymized job-task inventories and proposed safeguard clauses, tagged by industry only, to a shared model of physical-AI deployment risks.",
+   "consent": "Adult participants give written consent at enrollment; can withdraw anytime; no employer-identifying data collected; data aggregated before sharing."
+  },
+  {
+   "audience": "k12",
+   "title": "Rovers Above the Arroyo: Governing Real Robots",
+   "grade_or_level": "Grades 6-8 (adaptable 9-12)",
+   "outcomes": [
+    "Describe how JPL rovers above the Arroyo Seco chaparral are physical AI operating far from human help",
+    "Compare agent tasks vs. human-only decisions in a robotics DAO",
+    "Write and vote on a classroom deployment rule for a simple robot"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Explore the JPL place card: rovers as physical AI in the wild; teams list what a rover must decide alone vs. what mission control decides.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Read the DAO's five-zone charter; sort example decisions into 'agents may do' and 'humans only' buckets.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a class proposal for a classroom robot's rules using the proposal template; hold a real vote where only students (not the teacher-agent) decide.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track one week of robot-rule outcomes on a chart and discuss what to change next cycle.",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Anonymized class proposals and vote outcomes, with no student names, ages, or school identifiers, added to a shared model of youth governance reasoning.",
+   "consent": "Guardian/parent written consent required before participation; guardians can opt out of data sharing while still joining activities; no personal data stored."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Monitoring Physical-AI Deployment",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Use the Research Synthesis Lab workflow to summarize robotics and automation governance evidence with cited sources",
+    "Convert evidence summaries into decision-ready proposals without enacting them",
+    "Track measurable outcomes across program cycles"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice the Evidence Monitor workflow: scan developments, summarize findings, and flag unsupported claims in sample briefs.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate Collaborator Scout and Task Router roles to build a working-group plan for a robotics policy campaign.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Turn a synthesis into a drafted proposal with measurable outcomes; peer review against the charter before a mock human vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Design indicators and reporting cadence the Progress Tracker would maintain for the campaign.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized campaign case studies and indicator frameworks, stripped of partner and beneficiary identities, contributed to shared governance models.",
+   "consent": "Staff sign a data-use agreement; partner and beneficiary data excluded by default; withdrawal permitted at any stage."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Governance as a Public Good: Running a Mission DAO",
+   "grade_or_level": "Nonprofit leadership / board-level workshop",
+   "outcomes": [
+    "Explain the 'agents operate; people govern' principle and its six human-reserved actions",
+    "Assess whether a mission-focused DAO structure fits a nonprofit's charter and accountability needs",
+    "Design measurable outcomes and a steward review cycle"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-level walkthrough of the charter, mission, and reserved-for-humans list; map each action to existing nonprofit governance roles.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Board members act as stewards: review agent-drafted proposals, debate, and cast the final vote agents cannot take.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Plan how Task Router and working groups would carry approved decisions between board cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set three measurable charter outcomes and a reporting rhythm; draft the accountability dashboard layout.",
+     "minutes": 50
+    }
+   ],
+   "data_shared": "Anonymized governance-design choices and outcome templates, with no donor, client, or organizational identifiers, added to shared DAO-design models.",
+   "consent": "Leadership authorizes participation via signed agreement; anonymization applied before any sharing; opt-out honored without affecting participation."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "robotics-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "id": "spot-transaction-desk-patrol",
+   "robot": "boston-dynamics-spot",
+   "zone": "Transaction Desk",
+   "goal": "Patrol the Transaction Desk perimeter in the urban park around Charging Bull, mapping pedestrian flow while agents draft transactions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/spot/odom",
+     "/spot/goal_pose",
+     "/plan_costmap",
+     "/mission_state",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Paved park plaza with bronze bull statue, dense pedestrian congestion, cobblestone edges near Broadway, no sand or river crossings",
+   "success": [
+    "Complete 3 laps within 20 min",
+    "Localization drift <0.5 m over patrol",
+    "Zero pedestrian contacts",
+    "Map landmarks within 1 m of OSM named places"
+   ],
+   "safety_stops": [
+    "E-stop on person within 1.5 m",
+    "Stop at battery <20%",
+    "Pause on rain-slick pavement detected via IMU slip"
+   ],
+   "human_in_loop": "Steward reviews patrol log and approves any continued monitoring beyond scheduled laps",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "lap_count",
+     "pose_error_m",
+     "pedestrian_detections",
+     "stops_triggered",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "go2-service-counter-delivery",
+   "robot": "unitree-go2",
+   "zone": "Service Provisioning Counter",
+   "goal": "Carry light provisioning order slips between the Service Provisioning Counter and Budget Office along sidewalk routes.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/go2/cmd_vel",
+     "/go2/odom",
+     "/lidar_scan",
+     "/load_cell"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Concrete sidewalks, curb cuts, road crossings with vehicle traffic, narrow building entrances near 100 Wall Street",
+   "success": [
+    "10 deliveries with payload <5 kg",
+    "Crossing stops at every curb line",
+    "Delivery drop accuracy within 0.3 m",
+    "No tip-over events"
+   ],
+   "safety_stops": [
+    "Stop at detected vehicle within 5 m at crossings",
+    "E-stop on payload tilt >15 deg",
+    "Battery <15% return-to-dock"
+   ],
+   "human_in_loop": "Steward confirms each physical order slip matches an approved in-budget provisioning request",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "delivery_count",
+     "payload_kg",
+     "drop_error_m",
+     "curb_stops",
+     "tilt_events",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "husky-budget-office-transport",
+   "robot": "clearpath-husky-a200",
+   "zone": "Budget Office",
+   "goal": "Haul ledger document bins from the Budget Office loading area through service alleys for steward review sessions.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/husky/cmd_vel",
+     "/husky/odometry/filtered",
+     "/front_lidar/scan",
+     "/load_status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Alley pavement with delivery trucks, grade changes, drainage grates, tight dock aprons near 55 Water Street service entrances",
+   "success": [
+    "Transport 2 bins up to 40 kg total",
+    "Route completion without manual intervention",
+    "Dock alignment error <0.2 m",
+    "Grade ascent <10 deg handled"
+   ],
+   "safety_stops": [
+    "Stop for any worker within 2 m in alley",
+    "E-stop on wheel slip >30%",
+    "Abort on dock obstacle detection"
+   ],
+   "human_in_loop": "Steward signs off bin contents before transport and after receipt; treasury records remain human-only",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "payload_kg",
+     "route_time_s",
+     "dock_error_m",
+     "slip_events",
+     "interventions",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "ur10e-gateway-dry-run-desk",
+   "robot": "universal-robots-ur10e",
+   "zone": "Financial Infrastructure Gateway",
+   "goal": "Sort dry-run transaction tokens into a verification tray simulating read/quote/dry-run rail operations.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/ur10e/joint_states",
+     "/wrist_camera/image_raw",
+     "/gripper_cmd",
+     "/tray_slots"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Fixed indoor desk; obstacles limited to tray walls, cables, and adjacent monitor mounts in a dense financial-district office floor",
+   "success": [
+    "Pick success rate >95% over 50 tokens",
+    "No gripper collisions with tray",
+    "Cycle time <6 s per token",
+    "Tray slot misplacement <2"
+   ],
+   "safety_stops": [
+    "Force-torque stop at 20 N contact",
+    "Stop on human within 1 m of workspace",
+    "Speed limit 250 mm/s near operator"
+   ],
+   "human_in_loop": "Steward validates the sorted dry-run batch matches quote logs before any reconciliation filing",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "picks_attempted",
+     "picks_succeeded",
+     "cycle_time_s",
+     "collisions",
+     "ft_peak_n",
+     "misplacements"
+    ]
+   }
+  },
+  {
+   "id": "nao-steward-briefing-assist",
+   "robot": "softbank-nao",
+   "zone": "Budget Office",
+   "goal": "Present variance-report summaries on screen and gesture toward agenda items during steward budget review.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/nao/joint_states",
+     "/nao/speech",
+     "/nao/pose/pose",
+     "/presentation_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Flat office conference floor, chair legs and cable runs as low obstacles, low tables near 28 Liberty meeting space",
+   "success": [
+    "Complete 4 agenda item transitions",
+    "Speech-to-text keyword accuracy >90%",
+    "No falls or joint faults",
+    "Gesture points within 10 deg of target screen region"
+   ],
+   "safety_stops": [
+    "Stop speech on steward voice interrupt",
+    "Balance controller halt on tilt >10 deg",
+    "Sit-down routine on battery <10%"
+   ],
+   "human_in_loop": "Stewards approve variance reports; NAO only reads drafted summaries and never files or enacts anything",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "agenda_items",
+     "keyword_accuracy",
+     "fall_events",
+     "interrupts_handled",
+     "joint_faults",
+     "battery_pct"
+    ]
+   }
+  },
+  {
+   "id": "crazyflie-harbor-visual-check",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Financial Infrastructure Gateway",
+   "goal": "Fly a short indoor rehearsal loop capturing aerial imagery of the gateway dry-run setup near the harbor-facing windows.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cf/pose",
+     "/cf/cmd_vel",
+     "/downcamera/image_raw",
+     "/flight_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor airspace only; glass harbor-view windows, ceiling ducts, lighting rigs above the open office atrium near the Battery waterfront",
+   "success": [
+    "Complete 3 laps under 8 min",
+    "Position hold error <0.15 m",
+    "No window or duct proximity <0.5 m",
+    "Usable imagery from 2 of 3 laps"
+   ],
+   "safety_stops": [
+    "Land on position estimate loss",
+    "Land on battery <3.4 V",
+    "Obstacle stop within 0.5 m",
+    "Kill on operator command"
+   ],
+   "human_in_loop": "A pilot authorizes each flight and stewards approve any use of captured imagery",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "laps",
+     "pos_hold_error_m",
+     "min_obstacle_dist_m",
+     "voltage_min",
+     "landings_auto",
+     "frames_usable"
+    ]
+   }
+  },
+  {
+   "id": "fetch-gateway-ledger-shelving",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Budget Office",
+   "goal": "Shelve and retrieve archived ledger binders from the records aisle adjacent to the Budget Office for steward audit prep.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/fetch/torso_controller",
+     "/head_camera/rgb",
+     "/arm_with_torso_controller/follow_joint_trajectory",
+     "/odom"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Narrow records aisle with floor-level shelving, box obstacles, flat office floor tile in the basement archive of the 111 Wall Street block",
+   "success": [
+    "Shelve 12 binders with <5% failures",
+    "Aisle navigation without shelf contact",
+    "Torso height accuracy within 2 cm",
+    "Zero dropped items"
+   ],
+   "safety_stops": [
+    "Stop on aisle obstruction detection",
+    "Gripper force limit 15 N",
+    "Stop on any person entering aisle"
+   ],
+   "human_in_loop": "Steward selects which binder years are pulled; robots never alter ledger contents",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "binders_handled",
+     "failures",
+     "shelf_contact_events",
+     "grip_force_peak_n",
+     "drop_events",
+     "battery_pct"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "agentic-payments",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 2,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

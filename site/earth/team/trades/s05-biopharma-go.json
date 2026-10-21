@@ -1,0 +1,280 @@
+{
+ "certification": {
+  "n": "Healthcare Robotics Tech",
+  "u": "1199SEIU",
+  "h": 90,
+  "l": [
+   "Cleanroom",
+   "Pharmacy",
+   "Patient Care"
+  ],
+  "o": [
+   "Operate pharmacy bots",
+   "Maintain clinical robots"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s05-biopharma-go-healthcare-electricians-1",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Cleanroom",
+   "trade": "electricians",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Cleanroom for electricians at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-pipefitters-1",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Cleanroom",
+   "trade": "pipefitters",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Cleanroom for pipefitters at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-hvacr-1",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Cleanroom",
+   "trade": "hvacr",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Cleanroom for hvacr at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/gripper_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-electricians-2",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Pharmacy",
+   "trade": "electricians",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Pharmacy for electricians at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-pipefitters-2",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Pharmacy",
+   "trade": "pipefitters",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Pharmacy for pipefitters at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-hvacr-2",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Pharmacy",
+   "trade": "hvacr",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Pharmacy for hvacr at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-electricians-3",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Patient Care",
+   "trade": "electricians",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Patient Care for electricians at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-pipefitters-3",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Patient Care",
+   "trade": "pipefitters",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Patient Care for pipefitters at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  },
+  {
+   "id": "s05-biopharma-go-healthcare-hvacr-3",
+   "certification": "Healthcare Robotics Tech",
+   "level": "Patient Care",
+   "trade": "hvacr",
+   "industry": "healthcare-biotech",
+   "location": "Kendall Square, Cambridge Massachusetts",
+   "task": "Patient Care for hvacr at MIT Campus",
+   "duration_minutes": 10,
+   "learning_objectives": [
+    "Operate pharmacy bots",
+    "Maintain clinical robots"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb"
+   ],
+   "robot_types": [
+    "franka-fr3",
+    "kinova-gen3"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for healthcare-biotech robot operations"
+ }
+}

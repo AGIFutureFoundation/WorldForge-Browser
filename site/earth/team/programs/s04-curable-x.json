@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Governing AI at Work: A Democratic Simulation at the Grotto",
+   "grade_or_level": "Adult continuing education / worker education",
+   "outcomes": [
+    "Explain the 'agents operate, people govern' model and name the human-reserved DAO actions",
+    "Draft and debate a proposal in the Proposal Forum format",
+    "Identify which workplace decisions should never be delegated to AI agents"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the Curable.X charter and mission; map which powers stay human-only and why member control matters.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a workplace AI-use proposal; agents (facilitators) never enact—members debate and vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Route tasks to working groups via the Task Router model; practice coordination between decision cycles.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Compare evidence summaries on AI in the workplace; critique how the Evidence Monitor frames findings.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized pre/post survey scores on AI governance understanding and anonymized proposal vote outcomes, contributed to shared learning models.",
+   "consent": "Voluntary opt-in with written explanation of data use; union stewards briefed; no personal identifiers collected; withdrawal anytime."
+  },
+  {
+   "audience": "k12",
+   "title": "Hope and Healing Waters: Lourdes as a Case in Evidence and Care",
+   "grade_or_level": "Grades 9-12 (ages 14-18)",
+   "outcomes": [
+    "Locate Lourdes, the Gave river and the Massabielle Grotto and describe the river-valley setting",
+    "Distinguish hope, testimony and scientific evidence using the Research Synthesis Lab method",
+    "Practice human-only decision-making in a mock Proposal Forum vote"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learn how the Evidence Monitor summarizes claims; sort Lourdes cure testimonies into hope, story and evidence categories.",
+     "minutes": 40
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Discuss the charter's mission of sharing AI benefits widely; define one measurable outcome for a class project.",
+     "minutes": 30
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Students draft proposals for a school kindness project; agents draft, students debate and cast the final vote.",
+     "minutes": 50
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Track the class project against its measurable outcome using the Progress Tracker's simple dashboard.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized, aggregated quiz scores and category-sorting exercise results contributed to shared civics-of-AI learning models.",
+   "consent": "Guardian/parent signed consent required before any data contribution; only aggregated, anonymized classroom data shared; opt-out always available."
+  },
+  {
+   "audience": "ngo",
+   "title": "Agent-Managed, Human-Governed: NGO Field Playbook",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Adapt the six-agent DAO workflow to an NGO program cycle",
+    "Design measurable charter outcomes and track them honestly",
+    "Draft proposals and grants with agent support while keeping enactment human"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Translate the Curable.X charter into an NGO theory of change with 2-3 measurable outcomes.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate the Collaborator Scout and Task Router: map partners, route tasks, form working groups.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Use the Proposal & Grant Drafter pattern: agents draft, staff review, leadership enacts—never the reverse.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Build a progress-tracking template against charter outcomes and practice reporting gaps candidly.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized outcome-indicator templates and program-cycle timelines, stripped of beneficiary and org identifiers, for shared NGO playbooks.",
+   "consent": "Organizational data-sharing agreement; participant opt-in; beneficiary data never shared; anonymization reviewed before contribution."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Curable Cell Startup: Launching a Nonprofit Learning Circle",
+   "grade_or_level": "Nonprofit board and volunteer training",
+   "outcomes": [
+    "Understand the W3 LLC Series 4 structure and steward roles",
+    "Run a decision cycle where agents draft and humans vote",
+    "Connect the Lourdes setting's theme of hoped-for cures to ethical communication about outcomes"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Board-style walkthrough of the charter, reserved human powers (final vote, amendments, treasury, appointments).",
+     "minutes": 50
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Practice evidence-summarization on a nonprofit topic; discuss honest framing versus overclaiming 'cures'.",
+     "minutes": 45
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Volunteers draft, board debates, humans cast the final vote on a small pilot proposal—agents never enact.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Set up progress tracking for the pilot and schedule the next human decision cycle.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized decision-cycle metrics (turnout, proposal counts) and de-identified training feedback for shared governance models.",
+   "consent": "Written opt-in for individuals; board approval for organizational data; personal identifiers removed; participants may withdraw contributions at any time."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s04-curable-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

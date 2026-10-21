@@ -1,0 +1,434 @@
+{
+ "tasks": [
+  {
+   "id": "s32-solar-dao-spot-1",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "Quadruped solar panel inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-plus-1",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Charter Hall",
+   "goal": "Quadruped solar panel inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-a200-1",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Quadruped solar panel inspection",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/joint_states"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "electricians",
+   "certification_level": "Level 1",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-spot-2",
+   "robot": "boston-dynamics-spot",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-plus-2",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-a200-2",
+   "robot": "clearpath-husky-a200",
+   "zone": "Research Synthesis Lab",
+   "goal": "Robotic arm wind turbine inspection",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/tool_state",
+     "/safety_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "ironworkers",
+   "certification_level": "Level 2",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-spot-3",
+   "robot": "boston-dynamics-spot",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-plus-3",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
+  },
+  {
+   "id": "s32-solar-dao-a200-3",
+   "robot": "clearpath-husky-a200",
+   "zone": "Proposal Forum",
+   "goal": "Drone power line inspection",
+   "ros": {
+    "action": "/land",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/thermal",
+     "/lidar"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Industrial facility at Energy Corridor, Houston Texas",
+   "success": [
+    "Complete clean task safely",
+    "Maintain comms",
+    "Log operations"
+   ],
+   "safety_stops": [
+    "Emergency stop if human in zone",
+    "Yield to humans",
+    "Safe position if comms lost"
+   ],
+   "human_in_loop": "Union steward approves at Energy Corridor",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "robot_id",
+     "task_id",
+     "pose_x",
+     "pose_y",
+     "heading",
+     "joint_angles",
+     "force_torque",
+     "battery_pct",
+     "safety_state",
+     "task_status",
+     "operator_id",
+     "union_local"
+    ]
+   },
+   "union_trade": "pipefitters",
+   "certification_level": "Level 3",
+   "industry": "clean-energy"
+  }
+ ],
+ "industry": "clean-energy"
+}

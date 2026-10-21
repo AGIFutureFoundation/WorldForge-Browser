@@ -1,0 +1,283 @@
+{
+ "certification": {
+  "n": "Aerospace Robotics",
+  "u": "IAM/UAW",
+  "h": 140,
+  "l": [
+   "Aerospace Safety",
+   "Composite Automation",
+   "Assembly"
+  ],
+  "o": [
+   "Program layup bots",
+   "Operate assembly"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s31-aerospace-dao-aerospace-ironworkers-1",
+   "certification": "Aerospace Robotics",
+   "level": "Aerospace Safety",
+   "trade": "ironworkers",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Aerospace Safety for ironworkers at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/tool_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-machinists-1",
+   "certification": "Aerospace Robotics",
+   "level": "Aerospace Safety",
+   "trade": "machinists",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Aerospace Safety for machinists at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/tool_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-electricians-1",
+   "certification": "Aerospace Robotics",
+   "level": "Aerospace Safety",
+   "trade": "electricians",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Aerospace Safety for electricians at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/force_torque",
+    "/tool_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-ironworkers-2",
+   "certification": "Aerospace Robotics",
+   "level": "Composite Automation",
+   "trade": "ironworkers",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Composite Automation for ironworkers at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-machinists-2",
+   "certification": "Aerospace Robotics",
+   "level": "Composite Automation",
+   "trade": "machinists",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Composite Automation for machinists at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-electricians-2",
+   "certification": "Aerospace Robotics",
+   "level": "Composite Automation",
+   "trade": "electricians",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Composite Automation for electricians at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/vision_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-ironworkers-3",
+   "certification": "Aerospace Robotics",
+   "level": "Assembly",
+   "trade": "ironworkers",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Assembly for ironworkers at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-machinists-3",
+   "certification": "Aerospace Robotics",
+   "level": "Assembly",
+   "trade": "machinists",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Assembly for machinists at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s31-aerospace-dao-aerospace-electricians-3",
+   "certification": "Aerospace Robotics",
+   "level": "Assembly",
+   "trade": "electricians",
+   "industry": "aerospace-defense",
+   "location": "Boeing Everett Factory, Washington",
+   "task": "Assembly for electricians at Boeing Everett",
+   "duration_minutes": 15,
+   "learning_objectives": [
+    "Program layup bots",
+    "Operate assembly"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for aerospace-defense robot operations"
+ }
+}

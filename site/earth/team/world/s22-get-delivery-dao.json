@@ -1,0 +1,246 @@
+{
+ "title": "Memphis: Logistics Warehousing Hub",
+ "summary": "Walkable logistics warehousing training hub at FedEx World Hub, Memphis Tennessee.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "FedEx World Hub",
+   "buildings": [
+    {
+     "name": "Charter Hall Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Memphis Airport",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Mississippi River",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "FedEx World Hub",
+   "buildings": [
+    {
+     "name": "Operations Deck Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Memphis Airport",
+   "buildings": [
+    {
+     "name": "Progress Observatory Training Center",
+     "use": "logistics warehousing training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "oak",
+   "maple",
+   "pine"
+  ],
+  "shrubs": [
+   "boxwood"
+  ],
+  "flowers": [
+   "rose"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at FedEx World Hub."
+ },
+ "quests": [
+  {
+   "title": "AMR Basics Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Check in at FedEx World Hub",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Fleet Mgmt Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Memphis Airport",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Diagnostics Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at Mississippi River",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "AMR Basics Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at FedEx World Hub",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Fleet Mgmt Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Memphis Airport",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
+  }
+ ],
+ "industry": "logistics-warehousing",
+ "certification": {
+  "n": "AMR Technician",
+  "u": "Teamsters",
+  "h": 80,
+  "l": [
+   "AMR Basics",
+   "Fleet Mgmt",
+   "Diagnostics"
+  ],
+  "o": [
+   "Manage AMR fleet",
+   "Troubleshoot nav"
+  ]
+ }
+}

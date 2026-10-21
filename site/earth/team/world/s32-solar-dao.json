@@ -1,0 +1,246 @@
+{
+ "title": "Houston: Clean Energy Hub",
+ "summary": "Walkable clean energy training hub at Energy Corridor, Houston Texas.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Energy Corridor",
+   "buildings": [
+    {
+     "name": "Charter Hall Training Center",
+     "use": "clean energy training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Hall Classroom",
+    "Charter Hall Lab",
+    "Charter Hall Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Charter Hall Instructor",
+    "Charter Hall Union Rep"
+   ]
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Buffalo Bayou",
+   "buildings": [
+    {
+     "name": "Research Synthesis Lab Training Center",
+     "use": "clean energy training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Research Synthesis Lab Classroom",
+    "Research Synthesis Lab Lab",
+    "Research Synthesis Lab Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Research Synthesis Lab Instructor",
+    "Research Synthesis Lab Union Rep"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "I-10 West",
+   "buildings": [
+    {
+     "name": "Proposal Forum Training Center",
+     "use": "clean energy training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Proposal Forum Classroom",
+    "Proposal Forum Lab",
+    "Proposal Forum Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Proposal Forum Instructor",
+    "Proposal Forum Union Rep"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Energy Corridor",
+   "buildings": [
+    {
+     "name": "Operations Deck Training Center",
+     "use": "clean energy training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Operations Deck Classroom",
+    "Operations Deck Lab",
+    "Operations Deck Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Operations Deck Instructor",
+    "Operations Deck Union Rep"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Buffalo Bayou",
+   "buildings": [
+    {
+     "name": "Progress Observatory Training Center",
+     "use": "clean energy training",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Progress Observatory Classroom",
+    "Progress Observatory Lab",
+    "Progress Observatory Simulator"
+   ],
+   "props": [
+    "training robots",
+    "safety stations",
+    "assessment terminals"
+   ],
+   "npc_agents": [
+    "Progress Observatory Instructor",
+    "Progress Observatory Union Rep"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "oak",
+   "maple",
+   "pine"
+  ],
+  "shrubs": [
+   "boxwood"
+  ],
+  "flowers": [
+   "rose"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "none",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "W",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:30"
+ },
+ "court": {
+  "name": "Training Plaza",
+  "style": "industrial training center",
+  "why_here": "Central training at Energy Corridor."
+ },
+ "quests": [
+  {
+   "title": "Solar/Wind Safety Certification",
+   "from_zone": "Charter Hall",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Check in at Energy Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 100
+  },
+  {
+   "title": "Inspection Certification",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Check in at Buffalo Bayou",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 150
+  },
+  {
+   "title": "Maintenance Certification",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Check in at I-10 West",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 200
+  },
+  {
+   "title": "Solar/Wind Safety Certification",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Check in at Energy Corridor",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 250
+  },
+  {
+   "title": "Inspection Certification",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Check in at Buffalo Bayou",
+    "Safety briefing",
+    "Operate robot",
+    "Pass assessment",
+    "Receive certification"
+   ],
+   "xp": 300
+  }
+ ],
+ "industry": "clean-energy",
+ "certification": {
+  "n": "Clean Energy Robotics Tech",
+  "u": "IBEW",
+  "h": 110,
+  "l": [
+   "Solar/Wind Safety",
+   "Inspection",
+   "Maintenance"
+  ],
+  "o": [
+   "Inspect solar",
+   "Maintain drones"
+  ]
+ }
+}

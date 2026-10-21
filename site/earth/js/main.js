@@ -23,8 +23,8 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     opt(`team/trades/${slug}.json`), opt(`team/robots/${slug}.json`), opt(`team/programs/${slug}.json`),
     opt('team/dialogue.json'), opt('team/courses.json'), opt('worlds.json')]);
   const meta = (index?.worlds || []).find(w => w.slug === slug) || { name: slug };
-  document.title = `${meta.name} - ${geo.place} | WorldForge Earth`;
-  $('title').textContent = meta.name; $('place').textContent = `${geo.place} · ${geo.lat.toFixed(4)}, ${geo.lon.toFixed(4)}`;
+  document.title = `${meta.name} - ${geo?.place || slug} | WorldForge Earth`;
+  $('title').textContent = meta.name; $('place').textContent = `${geo?.place || 'Real Earth location'} · ${geo?.lat?.toFixed(4) || '0'}, ${geo?.lon?.toFixed(4) || '0'}`;
 
   const S = makeStage($('c'));
   const ground = makeGround(geo); S.scene.add(ground.mesh, ground.skirt);
@@ -35,10 +35,10 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   status('Streaming satellite imagery...');
   const img = await drapeImagery(geo, ground, p => status(`Streaming satellite imagery... ${(p * 100) | 0}%`));
   const b = makeBuildings(geo, ground); if (b) S.scene.add(b);
-  const veg = makeVegetation(geo, ground, world?.biome || meta.biome); S.scene.add(veg);
+  const veg = makeVegetation(geo, ground, world?.biome || meta?.biome || 'urban-park'); S.scene.add(veg);
   const water = makeWater(geo, ground, S.sun.position.clone().normalize(), world?.water?.flow_mps ?? 0.4); S.scene.add(water);
   const cards = makeCards(cardsDoc?.cards || [], ground); S.scene.add(cards);
-  const zones = cards.userData.zones;
+  const zones = cards.userData.zones || [];
   const avatars = makeAvatars(lines?.[slug], zones, ground); S.scene.add(avatars);
   const rings = makeQuestRings(zones, ground, world?.quests || []); S.scene.add(rings);
   const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo.place }); S.scene.add(fleet);
@@ -51,7 +51,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, fleet, fly });
 
   const tour = q.get('tour') === '1';
-  const stops = [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))];
+  const stops = zones.length ? [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))] : [new THREE.Vector3(0, 0, 0)];
   let tourI = 0, tourClock = 0;
   if (tour) fly(stops[0], 140);
   S.renderer.setAnimationLoop(() => {

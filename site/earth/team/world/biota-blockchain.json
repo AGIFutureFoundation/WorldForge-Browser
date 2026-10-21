@@ -1,0 +1,284 @@
+{
+ "title": "San Francisco Bay: Genentech HQ, 1 DNA Way, South SF",
+ "summary": "A walkable city grid at Genentech HQ, 1 DNA Way, South SF, with real streets and landmarks from San Francisco Bay.",
+ "biome": "coast",
+ "districts": [
+  {
+   "zone": "Personalized Therapy Lab",
+   "real_anchor": "Genentech Building 1",
+   "buildings": [
+    {
+     "name": "Genentech Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Genentech Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Personalized Therapy Lab Reception",
+    "Personalized Therapy Lab Work Floor",
+    "Personalized Therapy Lab Meeting Room",
+    "Personalized Therapy Lab Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Personalized Therapy Lab Coordinator",
+    "Personalized Therapy Lab Agent"
+   ]
+  },
+  {
+   "zone": "DAO Governance Hall",
+   "real_anchor": "Oyster Point Marina",
+   "buildings": [
+    {
+     "name": "Oyster Bldg 1",
+     "use": "Office",
+     "floors": 4
+    },
+    {
+     "name": "Oyster Bldg 2",
+     "use": "Lab",
+     "floors": 5
+    },
+    {
+     "name": "Oyster Bldg 3",
+     "use": "Public",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "DAO Governance Hall Reception",
+    "DAO Governance Hall Work Floor",
+    "DAO Governance Hall Meeting Room",
+    "DAO Governance Hall Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "DAO Governance Hall Coordinator",
+    "DAO Governance Hall Agent"
+   ]
+  },
+  {
+   "zone": "Multi-Blockchain Ledger",
+   "real_anchor": "South SF City Hall",
+   "buildings": [
+    {
+     "name": "South Bldg 1",
+     "use": "Office",
+     "floors": 6
+    },
+    {
+     "name": "South Bldg 2",
+     "use": "Lab",
+     "floors": 7
+    },
+    {
+     "name": "South Bldg 3",
+     "use": "Public",
+     "floors": 8
+    },
+    {
+     "name": "South Bldg 4",
+     "use": "Public",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Multi-Blockchain Ledger Reception",
+    "Multi-Blockchain Ledger Work Floor",
+    "Multi-Blockchain Ledger Meeting Room",
+    "Multi-Blockchain Ledger Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Multi-Blockchain Ledger Coordinator",
+    "Multi-Blockchain Ledger Agent"
+   ]
+  },
+  {
+   "zone": "Healthcare Data Exchange",
+   "real_anchor": "El Camino Real",
+   "buildings": [
+    {
+     "name": "El Bldg 1",
+     "use": "Office",
+     "floors": 8
+    },
+    {
+     "name": "El Bldg 2",
+     "use": "Lab",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Healthcare Data Exchange Reception",
+    "Healthcare Data Exchange Work Floor",
+    "Healthcare Data Exchange Meeting Room",
+    "Healthcare Data Exchange Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Healthcare Data Exchange Coordinator",
+    "Healthcare Data Exchange Agent"
+   ]
+  },
+  {
+   "zone": "Biopharma AGI Agents Hub",
+   "real_anchor": "Grand Avenue",
+   "buildings": [
+    {
+     "name": "Grand Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Grand Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    },
+    {
+     "name": "Grand Bldg 3",
+     "use": "Public",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Biopharma AGI Agents Hub Reception",
+    "Biopharma AGI Agents Hub Work Floor",
+    "Biopharma AGI Agents Hub Meeting Room",
+    "Biopharma AGI Agents Hub Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Biopharma AGI Agents Hub Coordinator",
+    "Biopharma AGI Agents Hub Agent"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "coast live oak",
+   "Monterey pine",
+   "bay laurel",
+   "redwood",
+   "toyohon",
+   "manzanita"
+  ],
+  "shrubs": [
+   "ceanothus",
+   "manzanita",
+   "sage"
+  ],
+  "flowers": [
+   "California poppy",
+   "lupine"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "bay",
+  "flow_mps": 0.5,
+  "wave_m": 1.2
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 7
+ },
+ "day_cycle": {
+  "sunrise_local": "06:45",
+  "sunset_local": "20:00"
+ },
+ "court": {
+  "name": "Oyster Point Bay Court",
+  "style": "boardwalk over sloughs with bay views",
+  "why_here": "On the Genentech campus overlooking San Francisco Bay mudflats."
+ },
+ "quests": [
+  {
+   "title": "Cross San Francisco Bay: Personalized Therapy Lab to DAO Governance Hall",
+   "from_zone": "Personalized Therapy Lab",
+   "to_zone": "DAO Governance Hall",
+   "steps": [
+    "Begin at Genentech Building 1",
+    "Navigate Oyster Point Marina",
+    "Check in at DAO Governance Hall",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Cross San Francisco Bay: DAO Governance Hall to Multi-Blockchain Ledger",
+   "from_zone": "DAO Governance Hall",
+   "to_zone": "Multi-Blockchain Ledger",
+   "steps": [
+    "Begin at Oyster Point Marina",
+    "Navigate South SF City Hall",
+    "Check in at Multi-Blockchain Ledger",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Cross San Francisco Bay: Multi-Blockchain Ledger to Healthcare Data Exchange",
+   "from_zone": "Multi-Blockchain Ledger",
+   "to_zone": "Healthcare Data Exchange",
+   "steps": [
+    "Begin at South SF City Hall",
+    "Navigate El Camino Real",
+    "Check in at Healthcare Data Exchange",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Cross San Francisco Bay: Healthcare Data Exchange to Biopharma AGI Agents Hub",
+   "from_zone": "Healthcare Data Exchange",
+   "to_zone": "Biopharma AGI Agents Hub",
+   "steps": [
+    "Begin at El Camino Real",
+    "Navigate Grand Avenue",
+    "Check in at Biopharma AGI Agents Hub",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 60
+  }
+ ]
+}

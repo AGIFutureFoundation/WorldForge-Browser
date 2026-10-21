@@ -1,0 +1,341 @@
+{
+ "title": "New Orleans: Jackson Square, French Quarter",
+ "summary": "A walkable city grid at Jackson Square, French Quarter, with real streets and landmarks from New Orleans.",
+ "biome": "river-valley",
+ "districts": [
+  {
+   "zone": "Master Dashboard",
+   "real_anchor": "Jackson Square",
+   "buildings": [
+    {
+     "name": "Jackson Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Jackson Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Master Dashboard Reception",
+    "Master Dashboard Work Floor",
+    "Master Dashboard Meeting Room",
+    "Master Dashboard Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Master Dashboard Coordinator",
+    "Master Dashboard Agent"
+   ]
+  },
+  {
+   "zone": "Underwriting Desk",
+   "real_anchor": "St. Louis Cathedral",
+   "buildings": [
+    {
+     "name": "St. Bldg 1",
+     "use": "Office",
+     "floors": 4
+    },
+    {
+     "name": "St. Bldg 2",
+     "use": "Lab",
+     "floors": 5
+    },
+    {
+     "name": "St. Bldg 3",
+     "use": "Public",
+     "floors": 6
+    }
+   ],
+   "interior_rooms": [
+    "Underwriting Desk Reception",
+    "Underwriting Desk Work Floor",
+    "Underwriting Desk Meeting Room",
+    "Underwriting Desk Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Underwriting Desk Coordinator",
+    "Underwriting Desk Agent"
+   ]
+  },
+  {
+   "zone": "Evidence Layer",
+   "real_anchor": "Bourbon Street",
+   "buildings": [
+    {
+     "name": "Bourbon Bldg 1",
+     "use": "Office",
+     "floors": 6
+    },
+    {
+     "name": "Bourbon Bldg 2",
+     "use": "Lab",
+     "floors": 7
+    },
+    {
+     "name": "Bourbon Bldg 3",
+     "use": "Public",
+     "floors": 8
+    },
+    {
+     "name": "Bourbon Bldg 4",
+     "use": "Public",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Layer Reception",
+    "Evidence Layer Work Floor",
+    "Evidence Layer Meeting Room",
+    "Evidence Layer Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Evidence Layer Coordinator",
+    "Evidence Layer Agent"
+   ]
+  },
+  {
+   "zone": "The Academy",
+   "real_anchor": "Royal Street",
+   "buildings": [
+    {
+     "name": "Royal Bldg 1",
+     "use": "Office",
+     "floors": 8
+    },
+    {
+     "name": "Royal Bldg 2",
+     "use": "Lab",
+     "floors": 9
+    }
+   ],
+   "interior_rooms": [
+    "The Academy Reception",
+    "The Academy Work Floor",
+    "The Academy Meeting Room",
+    "The Academy Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "The Academy Coordinator",
+    "The Academy Agent"
+   ]
+  },
+  {
+   "zone": "Market Editions",
+   "real_anchor": "Decatur Street",
+   "buildings": [
+    {
+     "name": "Decatur Bldg 1",
+     "use": "Office",
+     "floors": 2
+    },
+    {
+     "name": "Decatur Bldg 2",
+     "use": "Lab",
+     "floors": 3
+    },
+    {
+     "name": "Decatur Bldg 3",
+     "use": "Public",
+     "floors": 4
+    }
+   ],
+   "interior_rooms": [
+    "Market Editions Reception",
+    "Market Editions Work Floor",
+    "Market Editions Meeting Room",
+    "Market Editions Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Market Editions Coordinator",
+    "Market Editions Agent"
+   ]
+  },
+  {
+   "zone": "Louisiana Developer Desk",
+   "real_anchor": "French Market",
+   "buildings": [
+    {
+     "name": "French Bldg 1",
+     "use": "Office",
+     "floors": 4
+    },
+    {
+     "name": "French Bldg 2",
+     "use": "Lab",
+     "floors": 5
+    },
+    {
+     "name": "French Bldg 3",
+     "use": "Public",
+     "floors": 6
+    },
+    {
+     "name": "French Bldg 4",
+     "use": "Public",
+     "floors": 7
+    }
+   ],
+   "interior_rooms": [
+    "Louisiana Developer Desk Reception",
+    "Louisiana Developer Desk Work Floor",
+    "Louisiana Developer Desk Meeting Room",
+    "Louisiana Developer Desk Server Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward placards",
+    "agent docks",
+    "exit maps"
+   ],
+   "npc_agents": [
+    "Louisiana Developer Desk Coordinator",
+    "Louisiana Developer Desk Agent"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "live oak",
+   "southern magnolia",
+   "bald cypress",
+   "crape myrtle",
+   "pecan",
+   "palmetto"
+  ],
+  "shrubs": [
+   "camellia",
+   "azalea",
+   "gardenia"
+  ],
+  "flowers": [
+   "iris",
+   "jasmine",
+   "honeysuckle"
+  ],
+  "ground": "concrete"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0.3
+ },
+ "wind": {
+  "prevailing_from": "S",
+  "mean_mps": 4
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:15"
+ },
+ "court": {
+  "name": "Jackson Square Court",
+  "style": "historic plaza with ironwork balconies",
+  "why_here": "At the heart of the French Quarter, where the Mississippi meets the city."
+ },
+ "quests": [
+  {
+   "title": "Cross New Orleans: Master Dashboard to Underwriting Desk",
+   "from_zone": "Master Dashboard",
+   "to_zone": "Underwriting Desk",
+   "steps": [
+    "Begin at Jackson Square",
+    "Navigate St. Louis Cathedral",
+    "Check in at Underwriting Desk",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "Cross New Orleans: Underwriting Desk to Evidence Layer",
+   "from_zone": "Underwriting Desk",
+   "to_zone": "Evidence Layer",
+   "steps": [
+    "Begin at St. Louis Cathedral",
+    "Navigate Bourbon Street",
+    "Check in at Evidence Layer",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Cross New Orleans: Evidence Layer to The Academy",
+   "from_zone": "Evidence Layer",
+   "to_zone": "The Academy",
+   "steps": [
+    "Begin at Bourbon Street",
+    "Navigate Royal Street",
+    "Check in at The Academy",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Cross New Orleans: The Academy to Market Editions",
+   "from_zone": "The Academy",
+   "to_zone": "Market Editions",
+   "steps": [
+    "Begin at Royal Street",
+    "Navigate Decatur Street",
+    "Check in at Market Editions",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Cross New Orleans: Market Editions to Louisiana Developer Desk",
+   "from_zone": "Market Editions",
+   "to_zone": "Louisiana Developer Desk",
+   "steps": [
+    "Begin at Decatur Street",
+    "Navigate French Market",
+    "Check in at Louisiana Developer Desk",
+    "Deliver payload to steward handoff",
+    "Confirm completion"
+   ],
+   "xp": 70
+  }
+ ]
+}

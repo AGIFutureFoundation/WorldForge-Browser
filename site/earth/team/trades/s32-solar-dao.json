@@ -1,0 +1,286 @@
+{
+ "certification": {
+  "n": "Clean Energy Robotics Tech",
+  "u": "IBEW",
+  "h": 110,
+  "l": [
+   "Solar/Wind Safety",
+   "Inspection",
+   "Maintenance"
+  ],
+  "o": [
+   "Inspect solar",
+   "Maintain drones"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s32-solar-dao-clean-electricians-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-1",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Solar/Wind Safety",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Solar/Wind Safety for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-electricians-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-2",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Inspection",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Inspection for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-electricians-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "electricians",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for electricians at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-ironworkers-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "ironworkers",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for ironworkers at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  },
+  {
+   "id": "s32-solar-dao-clean-pipefitters-3",
+   "certification": "Clean Energy Robotics Tech",
+   "level": "Maintenance",
+   "trade": "pipefitters",
+   "industry": "clean-energy",
+   "location": "Energy Corridor, Houston Texas",
+   "task": "Maintenance for pipefitters at Energy Corridor",
+   "duration_minutes": 12,
+   "learning_objectives": [
+    "Inspect solar",
+    "Maintain drones"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/thermal",
+    "/lidar"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "bitcraze-crazyflie-2-1-plus"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for clean-energy robot operations"
+ }
+}

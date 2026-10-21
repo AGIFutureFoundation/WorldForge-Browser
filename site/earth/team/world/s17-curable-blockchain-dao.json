@@ -1,0 +1,270 @@
+{
+ "title": "Curable.Blockchain DAO (Series 17) — Blue Lagoon Cell",
+ "summary": "An agent-managed, human-governed DAO cell built among the steaming silica lagoons and black lava of Reykjanes. Agents synthesize and route; stewards vote. Five zones from Charter Hall to Progress Observatory.",
+ "biome": "desert",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Bláa lónið (Blue Lagoon)",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display, contribution model, measurable outcomes ledger",
+     "floors": 1
+    },
+    {
+     "name": "Stewards' Longhouse",
+     "use": "Human-only voting chamber for reserved governance actions",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Outcome Ledger Wall",
+    "Contribution Desk",
+    "Steward Voting Chamber"
+   ],
+   "props": [
+    "engraved charter stone",
+    "silica-white ledger board",
+    "moss-covered bench",
+    "geothermal steam vent",
+    "quorum bell",
+    "lava-rock notice plinth"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "The Retreat at Blue Lagoon Iceland",
+   "buildings": [
+    {
+     "name": "Synthesis Lab",
+     "use": "Evidence monitoring and research summarization",
+     "floors": 2
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "Storage and indexing of monitored developments",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Monitor Desk",
+    "Synthesis Studio",
+    "Evidence Stacks",
+    "Summary Reading Nook"
+   ],
+   "props": [
+    "lava-shelf archive",
+    "steam-tempered instrument rack",
+    "corkboard of abstracts",
+    "hot-spring sample basin",
+    "candle-lit reading table"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Silica Hotel",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "Agent-drafted proposals debated and decided by people",
+     "floors": 1
+    },
+    {
+     "name": "Draft Review Annex",
+     "use": "Grant and proposal drafting workspace for human review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Table",
+    "Debate Circle",
+    "Review Annex",
+    "Decision Board"
+   ],
+   "props": [
+    "proposal scroll rack",
+    "debate hourglass",
+    "amendment inkwell",
+    "posted-draft lanterns",
+    "lava amphitheater seats"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Silica Lagoon",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting hub for experts and collaborators",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Routing Console",
+    "Working-Group Boards",
+    "Collaborator Registry",
+    "Coordination Bridge"
+   ],
+   "props": [
+    "task pigeonholes",
+    "signal lanterns",
+    "route-map table",
+    "steam gauge cluster",
+    "collaborator roll scroll"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "The Retreat Lagoon",
+   "buildings": [
+    {
+     "name": "Progress Observatory",
+     "use": "Tracking progress against charter outcomes",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Tracking Room",
+    "Milestone Gallery",
+    "Observation Balcony"
+   ],
+   "props": [
+    "milestone cairns",
+    "progress dials",
+    "steam-sight telescope",
+    "outcome tally board"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Betula pubescens",
+   "Salix phylicifolia",
+   "Sorbus aucuparia",
+   "Pinus contorta (planted shelterbelt)"
+  ],
+  "shrubs": [
+   "Empetrum nigrum",
+   "Arctostaphylos uva-ursi",
+   "Vaccinium uliginosum",
+   "Salix lanata"
+  ],
+  "flowers": [
+   "Silene acaulis",
+   "Saxifraga paniculata",
+   "Cerastium alpinum",
+   "Dryas octopetala"
+  ],
+  "ground": "moss"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 8
+ },
+ "day_cycle": {
+  "sunrise_local": "05:30",
+  "sunset_local": "21:45"
+ },
+ "court": {
+  "name": "The Steam Court of Bláa lónið",
+  "style": "Open-air lava amphitheater ringed by geothermal steam vents",
+  "why_here": "Set beside the milky silica lagoon, where rising steam naturally marks the gathering point for human stewards to cast reserved votes."
+ },
+ "quests": [
+  {
+   "title": "Charter Stewards' Orientation",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter stone and list the six human-reserved actions",
+    "Record a contribution pledge at the Contribution Desk",
+    "Trace one measurable outcome to the Progress Observatory tracker",
+    "Confirm no agent holds final-vote authority"
+   ],
+   "xp": 30
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect three monitored developments from the Evidence Monitor",
+    "Have the Research Synthesis Agent summarize them for stewards",
+    "Deliver the summary to the Proposal & Grant Drafter",
+    "Post the draft for human review — never enact it"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Route the Working Groups",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Pick up routed tasks from the Task Router console",
+    "Register one collaborator found by the Collaborator Scout",
+    "Assign the collaborator to the Research Synthesis Lab evidence sweep",
+    "Report completion between decision cycles"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "The Steam Court Quorum",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Carry a debated proposal to the Steam Court",
+    "Ring the quorum bell to summon human stewards",
+    "Witness the final vote — agents abstain",
+    "Record the outcome in the Charter Hall ledger"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Outcome Audit on the Lagoon Trail",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Audit two milestones at the Progress Observatory",
+    "Flag a stalled outcome to the Task Router",
+    "Open a corrective working group on the Operations Deck",
+    "Post the revised plan for the next human decision cycle"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s17-curable-blockchain-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

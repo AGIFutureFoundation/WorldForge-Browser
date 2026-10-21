@@ -1,0 +1,304 @@
+{
+ "scenarios": [
+  {
+   "id": "cliff-rock-scaling",
+   "trade": "laborers",
+   "zone": "Room-Reader Plaza",
+   "task": "Scale loose limestone on the cliff face above the lake before masonry crews rig the temple overlook scaffold, reading the crew's positions below before each bar drop.",
+   "hazards": [
+    "rock fall onto walkway and lake path",
+    "fall from cliff edge without anchor",
+    "vibration unsettling adjacent stone"
+   ],
+   "ppe": [
+    "hard hat with chin strap",
+    "class 2 hi-vis vest",
+    "gloves",
+    "safety glasses"
+   ],
+   "steps": [
+    "Barricade the base path and post a spotter with a radio",
+    "Clip into the anchored lifeline before approaching the edge",
+    "Sound suspect blocks with a scaling bar, top down",
+    "Call 'ROCK' loudly and wait for the all-clear before each drop",
+    "Sweep the shelf and bag debris into the skip",
+    "Report any block that rang hollow to the foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "barricade_and_spot",
+     "pass_if": "path closed and spotter posted before first bar strike"
+    },
+    {
+     "axis": "fall_protection",
+     "pass_if": "lifeline clipped before edge approach, 100% tie-off"
+    },
+    {
+     "axis": "scaling_sequence",
+     "pass_if": "works top down, no blocks pried outward over crews"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "calls every drop and receives all-clear"
+    }
+   ],
+   "minutes": 45,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Spot carries a lidar scan of the cliff face and ferries water up the goat path so the scaler stays clipped off longer."
+  },
+  {
+   "id": "lake-outfall-pipe-repair",
+   "trade": "pipefitters",
+   "zone": "Room-Reader Plaza",
+   "task": "Replace a corroded section of storm outfall line that drains the plaza lawns into the lake, working from a partially drained coffer area.",
+   "hazards": [
+    "confined wet trench with cave-in risk",
+    "biological contact with lake sediment",
+    "unexpected water release from upslope storm line"
+   ],
+   "ppe": [
+    "waterproof boots",
+    "gloves",
+    "hi-vis vest",
+    "face shield for sediment splash"
+   ],
+   "steps": [
+    "Confirm isolation: verify the upslope gate valve is shut and locked out",
+    "Test atmosphere in the coffer trench before entry",
+    "Shore the trench walls per the excavation permit",
+    "Cut out the corroded spool and measure the replacement",
+    "Bolt in the new spool with new gaskets",
+    "Crack the gate slowly to test for leaks before full flow",
+    "Backfill and restore the lakeside path surface"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation_verified",
+     "pass_if": "lockout confirmed before cutting"
+    },
+    {
+     "axis": "shoring",
+     "pass_if": "shores set per permit before entry"
+    },
+    {
+     "axis": "fit_quality",
+     "pass_if": "no leak at test flow, gaskets seated square"
+    },
+    {
+     "axis": "housekeeping",
+     "pass_if": "path restored, no sediment left in the lake edge"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "temple-scaffold-rig",
+   "trade": "riggers",
+   "zone": "Repairer's Hall",
+   "task": "Rig a suspended scaffold at the cliff-top temple of Sybille for masonry repointing, verifying anchors in aged stone without damaging the monument.",
+   "hazards": [
+    "suspended load swing over lake",
+    "anchor failure in weathered stone",
+    "dropped tools onto overlook below"
+   ],
+   "ppe": [
+    "hard hat",
+    "full-body harness",
+    "gloves",
+    "safety lanyard for tools"
+   ],
+   "steps": [
+    "Survey the temple structure and mark sound anchor points",
+    "Install anchor bolts and pull-test each to spec",
+    "Rig the suspension cables and set counterweights",
+    "Load-test the platform with sandbags at 125%",
+    "Tag the platform with capacity and inspection card",
+    "Run a rescue-from-suspension brief with the crew before first use"
+   ],
+   "rubric": [
+    {
+     "axis": "anchor_testing",
+     "pass_if": "every anchor pull-tested and logged"
+    },
+    {
+     "axis": "load_test",
+     "pass_if": "125% test load held without movement"
+    },
+    {
+     "axis": "overhead_control",
+     "pass_if": "tool lanyards and toe boards on all sides"
+    },
+    {
+     "axis": "rescue_plan",
+     "pass_if": "crew can state the suspension rescue steps"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Go2 shuttles shackles and pins up the cliff stairs so riggers stay tied off on the platform deck."
+  },
+  {
+   "id": "grove-tree-crown-reduction",
+   "trade": "grounds",
+   "zone": "Self-Reader Grove",
+   "task": "Reduce the crown of a mature plane tree shading the grove path, roping down cuts to protect pedestrians on the walk below.",
+   "hazards": [
+    "chainsaw kickback and falling limbs",
+    "limb swing into adjacent tree or path",
+    "heat and fatigue in summer work"
+   ],
+   "ppe": [
+    "helmet with face screen",
+    "chainsaw chaps",
+    "hearing protection",
+    "gloves",
+    "hi-vis vest"
+   ],
+   "steps": [
+    "Set the drop zone and reroute path traffic with signage",
+    "Climb on harness with two tie points, set a work anchor",
+    "Rig the first cut limb with a friction saver and rope",
+    "Make the undercut, back cut, and lower each section on the rope",
+    "Work crown outward to the reduction line in the arborist plan",
+    "Chip brush and limb wood clear of the grove floor"
+   ],
+   "rubric": [
+    {
+     "axis": "zone_control",
+     "pass_if": "path closed and signed before first cut"
+    },
+    {
+     "axis": "climb_safety",
+     "pass_if": "two tie points maintained throughout"
+    },
+    {
+     "axis": "rigged_lowers",
+     "pass_if": "no section free-falls, cuts match reduction plan"
+    },
+    {
+     "axis": "site_restored",
+     "pass_if": "grove floor clean, path reopened"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "commons-path-luminaires",
+   "trade": "electricians",
+   "zone": "Other-Reader Commons",
+   "task": "Swap failed path bollard luminaires along the commons for new LED heads, isolating each circuit at the park distribution cabinet.",
+   "hazards": [
+    "live 230V underground circuits",
+    "excavation near irrigation lines",
+    "trip hazard from open bollard bases on a busy path"
+   ],
+   "ppe": [
+    "insulated gloves",
+    "safety glasses",
+    "hi-vis vest",
+    "hard hat"
+   ],
+   "steps": [
+    "Pull the park single-line diagram and identify bollard circuits",
+    "Lock out and tag the circuit at the distribution cabinet",
+    "Verify dead at each bollard with a two-pole tester",
+    "Hand-dig around each base, watching for irrigation sleeves",
+    "Make off the new LED head, torque terminals, and reseal the gland",
+    "Energize, confirm lux levels, and reopen the path"
+   ],
+   "rubric": [
+    {
+     "axis": "loto",
+     "pass_if": "lockout applied and tested dead before contact"
+    },
+    {
+     "axis": "dig_discipline",
+     "pass_if": "hand dig only, no irrigation damage"
+    },
+    {
+     "axis": "termination",
+     "pass_if": "terminals torqued, glands sealed, IP rating kept"
+    },
+    {
+     "axis": "worksite_flow",
+     "pass_if": "open bases guarded or plated at all times"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "pal-robotics-talos",
+   "robot_role": "Talos lifts bollard heads from the cart to the bases, keeping the apprentice's hands out of the pinch line."
+  },
+  {
+   "id": "workshop-hvac-coil-service",
+   "zone": "Practitioner Workshop",
+   "trade": "hvacr",
+   "task": "Service the rooftop air handler coils on the maintenance workshop at the park depot, including lockout of the fan and refrigerant circuit checks.",
+   "hazards": [
+    "rotating fan on restart",
+    "refrigerant leak and asphyxiation risk",
+    "roof edge work near the cliff side of the depot"
+   ],
+   "ppe": [
+    "safety glasses",
+    "cut-resistant gloves",
+    "hard hat",
+    "harness near roof edge"
+   ],
+   "steps": [
+    "Lock out the air handler disconnect and verify fan is free",
+    "Recover any refrigerant to the recovery cylinder before opening circuits",
+    "Wash coils with approved cleaner, containing runoff",
+    "Check filter racks and belts, replace as tagged",
+    "Pressurize with nitrogen and leak-test fittings",
+    "Recharge per nameplate, remove lockout, and run-test the unit"
+   ],
+   "rubric": [
+    {
+     "axis": "loto_fan",
+     "pass_if": "disconnect locked before hands in the cabinet"
+    },
+    {
+     "axis": "refrigerant_handling",
+     "pass_if": "recovered to cylinder, nitrogen test passed, no venting"
+    },
+    {
+     "axis": "runout_containment",
+     "pass_if": "coil wash runoff contained, none to roof drain"
+    },
+    {
+     "axis": "system_test",
+     "pass_if": "unit runs to nameplate charge and airflow"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "universal-robots-ur10e",
+   "robot_role": "UR10e holds the coil wash wand at steady angle while the apprentice manages containment and gauges."
+  }
+ ],
+ "credential": {
+  "name": "Buttes-Chaumont Site Safety Steward — Apprentice Endorsement",
+  "requires": [
+   "cliff-rock-scaling",
+   "commons-path-luminaires",
+   "workshop-hvac-coil-service"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "empathic-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

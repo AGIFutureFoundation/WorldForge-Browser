@@ -1,0 +1,347 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-nao-guided-tour",
+   "robot": "softbank-nao",
+   "zone": "Charter Hall",
+   "goal": "Guide visitors along the Charter Hall exhibit panels presenting the DAO charter and measurable outcomes.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/charter_waypoints",
+     "/amcl_pose",
+     "/speech_state",
+     "/cmd_vel"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Flat flagstone floor of an Oxford hall, low exhibit plinths, crowded visitor circulation near doorways",
+   "success": [
+    "Visits all 5 exhibit waypoints in order",
+    "Deviation from path under 0.3 m RMS",
+    "Completes tour within 8 minutes",
+    "Speech narration triggers at each waypoint"
+   ],
+   "safety_stops": [
+    "Stop if human within 0.5 m",
+    "E-stop on tilt over 15 degrees",
+    "Pause speech if visitor query detected",
+    "Halt on battery below 15%"
+   ],
+   "human_in_loop": "A steward approves the tour script and charter wording before public deployment.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "waypoint_id",
+     "pos_error_m",
+     "speech_triggered",
+     "min_human_distance_m",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "research-synthesis-lab-ur10e-literature-shelving",
+   "robot": "universal-robots-ur10e",
+   "zone": "Research Synthesis Lab",
+   "goal": "Retrieve and shelve bound research volumes between desk stations and the stacks in the Research Synthesis Lab.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/move_group/result",
+     "/gripper_state"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Lab desks and narrow stack aisles; volumes of varying mass on shelves at 0.4-1.8 m height",
+   "success": [
+    "Picks 10 of 10 volumes without slip (wrench anomaly < 5 N)",
+    "Places within 2 cm of target slot",
+    "Zero shelf collisions",
+    "Cycle time under 25 s per volume"
+   ],
+   "safety_stops": [
+    "Stop if external wrench exceeds 40 N",
+    "Stop if human inside 1 m workspace envelope",
+    "Joint velocity limit 0.5 rad/s near shelving",
+    "E-stop on controller fault"
+   ],
+   "human_in_loop": "A lab steward approves which archive volumes may be handled by the arm.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "volume_id",
+     "pick_success",
+     "place_error_m",
+     "peak_wrench_n",
+     "collisions",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-husky-forum-logistics",
+   "robot": "clearpath-husky-a200",
+   "zone": "Proposal Forum",
+   "goal": "Transport proposal document crates from the staging area to forum debate stations and collect ballots for human tallying.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/odometry/filtered",
+     "/plan",
+     "/cmd_vel",
+     "/crate_load_state"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Gravel and cobbled Oxford paths between forum stations, kerb cuts, wet grass verges along the meadow edge",
+   "success": [
+    "Delivers 4 crates to correct stations",
+    "Localization drift under 0.5 m over route",
+    "Zero pedestrian near-misses (< 1 m closure)",
+    "Ballot crate returned intact"
+   ],
+   "safety_stops": [
+    "Stop if pedestrian within 2 m",
+    "Speed limit 1.0 m/s on cobble",
+    "Stop on wheel slip over 20%",
+    "Halt on IP67-irrelevant water ingress sensor alert"
+   ],
+   "human_in_loop": "People open crates, read proposals, and cast the deciding votes; the robot only moves documents.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "station_id",
+     "pos_error_m",
+     "min_pedestrian_distance_m",
+     "crate_loaded",
+     "wheel_slip_pct",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-crazyflie-monitoring",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow inspection circuit over the Progress Observatory display wall, capturing imagery of outcome dashboards for archiving.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cf2/pose",
+     "/cf2/camera/image",
+     "/battery_voltage",
+     "/cf2/cmd_full_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "High vaulted ceiling with timber beams; open meadow windows create gusts; hanging display banners",
+   "success": [
+    "Completes 3 full circuits at 2.5 m altitude",
+    "Maintains position within 0.2 m of flight path",
+    "Captures legible images of all 6 dashboard panels",
+    "Battery above 3.0 V at landing"
+   ],
+   "safety_stops": [
+    "Land immediately if battery below 3.7 V",
+    "Land if wind gust exceeds 6 m/s",
+    "Avoid beams with 1 m clearance envelope",
+    "Land if human enters flight volume"
+   ],
+   "human_in_loop": "A steward reviews captured dashboard imagery and approves its archival.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "circuit_no",
+     "path_error_m",
+     "panels_captured",
+     "battery_v",
+     "min_obstacle_clearance_m",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-fetch-supply-rounds",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Operations Deck",
+   "goal": "Run supply rounds delivering printouts, cables and hardware kits from the Operations Deck stores to working-group desks.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/move_base/result",
+     "/torso_controller/state",
+     "/head_camera/rgb/image_raw",
+     "/gripper/state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Raised floor cables and desk-chair clutter across the deck; door thresholds between rooms",
+   "success": [
+    "Completes 6 delivery stops per round",
+    "Object placement within 5 cm of desktop targets",
+    "Zero collisions with chairs or thresholds",
+    "Round time under 12 minutes"
+   ],
+   "safety_stops": [
+    "Stop if human within 0.8 m",
+    "Stop if torso load exceeds 8 kg",
+    "Halt on wheel current spike (threshold/entrapment)",
+    "Pause at closed doors for human opening"
+   ],
+   "human_in_loop": "Working-group leads confirm each delivery manifest before the round starts.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "stop_id",
+     "pos_error_m",
+     "drop_error_m",
+     "collisions",
+     "round_time_s",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "charter-hall-spot-inspection-patrol",
+   "robot": "boston-dynamics-spot",
+   "zone": "Charter Hall",
+   "goal": "Patrol Charter Hall after hours checking doors, exhibits and environmental sensors, logging anomalies for stewards.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/front_rgb/image_raw",
+     "/spot/pose",
+     "/anomaly_events",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Stone hall floors with uneven flagstones, exhibit plinths, low lighting after hours",
+   "success": [
+    "Covers all 5 zones of the hall in 20-minute patrol",
+    "Detects and logs anomalies with under 5% false-positive rate",
+    "Stair-free route maintained throughout",
+    "Autonomous dock on completion"
+   ],
+   "safety_stops": [
+    "Sit down if human detected after hours",
+    "Stop on terrain beyond mobility envelope",
+    "Halt if battery below 20% before dock leg",
+    "Stop if anomaly confidence below threshold flagged for review"
+   ],
+   "human_in_loop": "A steward reviews logged anomalies and decides any follow-up action.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "patrol_segment",
+     "anomaly_count",
+     "false_positive_rate",
+     "battery_pct",
+     "distance_m",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "research-synthesis-lab-fr3-experiment-tending",
+   "robot": "franka-fr3",
+   "zone": "Research Synthesis Lab",
+   "goal": "Tend bench experiments by swapping sample trays between storage rack and lab bench positions on a fixed schedule.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/fr3/joint_states",
+     "/fr3/force_torque",
+     "/fr3/gripper/state",
+     "/tray_schedule"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Benchtop with glassware and tray racks; tight 30 cm clearance lanes between instruments",
+   "success": [
+    "Swaps 12 trays per session with zero glassware contact",
+    "Insertion force under 10 N",
+    "Tray alignment within 3 mm",
+    "Schedule adherence within 60 s"
+   ],
+   "safety_stops": [
+    "Reflex stop on contact force over 15 N",
+    "Stop if human within 0.7 m of bench",
+    "Joint speed limit 0.2 m/s Cartesian near glassware",
+    "Pause if tray ID mismatch detected"
+   ],
+   "human_in_loop": "A researcher approves the tray schedule and may pause the arm at any time.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "tray_id",
+     "insertion_force_n",
+     "align_error_mm",
+     "glassware_contacts",
+     "schedule_delta_s",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "meadow-edge-go2-perimeter-survey",
+   "robot": "unitree-go2",
+   "zone": "Operations Deck",
+   "goal": "Survey the Operations Deck's outdoor perimeter along the Christ Church Meadow fence line, logging gate status and path conditions.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/utlidar/scan",
+     "/odom",
+     "/gate_status",
+     "/path_condition/image"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "River-valley grass and mud along the Cherwell-side fence, cattle-fence stiles, seasonal flooding on low paths",
+   "success": [
+    "Surveys 400 m perimeter with 3 gate checks",
+    "Localization drift under 1 m over loop",
+    "Gate status images legible for all 3 gates",
+    "Returns to deck within 30 minutes"
+   ],
+   "safety_stops": [
+    "Stop if water depth detected over 5 cm",
+    "Stop if human or dog within 2 m",
+    "Low-power sit at battery below 20%",
+    "Halt on slope exceeding 25 degrees"
+   ],
+   "human_in_loop": "A steward reviews gate-status findings and authorizes any maintenance tasking.",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "timestamp",
+     "gate_id",
+     "drift_m",
+     "gates_checked",
+     "min_human_distance_m",
+     "path_condition",
+     "result"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "education-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 3,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

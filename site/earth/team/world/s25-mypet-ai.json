@@ -1,0 +1,272 @@
+{
+ "title": "MyPet.AI (Series 25) — Balto's Grove, Central Park",
+ "summary": "A walkable agent-managed DAO cell set at the Balto statue in Central Park: five pavilions around the sled dog's lawn where agents synthesize, draft and track while humans hold every final vote.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Balto Statue, Central Park",
+   "buildings": [
+    {
+     "name": "Charter Oak Rotunda",
+     "use": "Charter display and contribution model hall",
+     "floors": 2
+    },
+    {
+     "name": "Outcomes Ledger House",
+     "use": "Measurable-outcomes records",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Contribution Pledge Desk",
+    "Outcome Ledger Gallery",
+    "Steward's Alcove"
+   ],
+   "props": [
+    "bronze Balto statue",
+    "charter stone tablets",
+    "oak benches",
+    "contribution ledger podium",
+    "mission banner poles",
+    "brass paw-print inlays"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "Central Park lawn near Balto statue",
+   "buildings": [
+    {
+     "name": "Synthesis Greenhouse",
+     "use": "Evidence monitoring and research summaries",
+     "floors": 2
+    },
+    {
+     "name": "Evidence Archive Shed",
+     "use": "Source and citation storage",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Monitor Workbenches",
+    "Evidence Stacks",
+    "Summary Writing Room",
+    "Citation Vault"
+   ],
+   "props": [
+    "cork evidence boards",
+    "field microscopes",
+    "rolling map tables",
+    "citation card catalogs",
+    "lantern lamps",
+    "seedling trays"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "Pond-side clearing east of Balto statue",
+   "buildings": [
+    {
+     "name": "Open Forum Pavilion",
+     "use": "Public proposal debate space",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Speaker's Mound",
+    "Debate Circle",
+    "Human Voting Booths",
+    "Draft Review Table"
+   ],
+   "props": [
+    "circular debate benches",
+    "proposal posting boards",
+    "ballot boxes",
+    "hand-raise tallies",
+    "gavel stump",
+    "amber path lamps"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "Central Park path junction near the statue",
+   "buildings": [
+    {
+     "name": "Routing Cabin",
+     "use": "Task routing and coordination",
+     "floors": 2
+    },
+    {
+     "name": "Working Group Tents",
+     "use": "Collaborator working group spaces",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Board Room",
+    "Router's Station",
+    "Collaborator Map Room",
+    "Working Group Alcoves",
+    "Signal Loft"
+   ],
+   "props": [
+    "task card rails",
+    "signal flags",
+    "collaborator directory board",
+    "rope-and-pulley message lines",
+    "compass bollards",
+    "tool crates"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Rising ground overlooking the park pond",
+   "buildings": [
+    {
+     "name": "Observatory Tower",
+     "use": "Progress tracking against charter outcomes",
+     "floors": 3
+    }
+   ],
+   "interior_rooms": [
+    "Progress Chart Hall",
+    "Milestone Gallery",
+    "Steward's Outlook",
+    "Trend Reading Room"
+   ],
+   "props": [
+    "brass progress dials",
+    "milestone flagpoles",
+    "telescope mounts",
+    "trend wall charts",
+    "sundial plinth",
+    "parking-stone benches"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Quercus rubra",
+   "Platanus occidentalis",
+   "Gleditsia triacanthos",
+   "Tilia americana",
+   "Acer platanoides"
+  ],
+  "shrubs": [
+   "Ilex glabra",
+   "Hydrangea arborescens",
+   "Cornus sericea"
+  ],
+  "flowers": [
+   "Echinacea purpurea",
+   "Rudbeckia hirta",
+   "Hemerocallis fulva",
+   "Narcissus pseudonarcissus"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "lake",
+  "flow_mps": 0.2,
+  "wave_m": 0.2
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:30",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "The Balto Court",
+  "style": "Bronze-and-oak open-air civic circle around the sled dog statue",
+  "why_here": "Balto, the heroic sled dog honored in bronze beside Central Park's lawns and pond, anchors this court where beloved pets and public service meet."
+ },
+ "quests": [
+  {
+   "title": "Ground the Charter",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the charter tablets in Charter Hall",
+    "Collect three steward notes on measurable outcomes",
+    "Carry the outcome list to the Progress Observatory",
+    "Watch the tracker post the first milestone dial"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Gather citations in the Evidence Archive Shed",
+    "Have the Research Synthesis Agent summarize findings",
+    "Bring the summary to the Proposal & Grant Drafter",
+    "Post the draft for human debate in the Forum"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Route the Working Group",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Pick up a task card from the Routing Cabin",
+    "Let the Collaborator Scout match members to the task",
+    "Deliver the roster to the working group tents",
+    "Report completed task back to the Evidence Monitor"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "The Human Hand",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Attend the debate circle in the Forum",
+    "Verify the ballot boxes are human-staffed",
+    "Record the enacted decision in the Charter Hall ledger",
+    "Log which reserved powers agents did not touch"
+   ],
+   "xp": 80
+  },
+  {
+   "title": "Pond Walk Audit",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Survey milestone dials from the Observatory outlook",
+    "Walk the pond loop noting unfinished tasks",
+    "File findings at the Routing Cabin",
+    "Confirm the Task Router opens the next cycle"
+   ],
+   "xp": 50
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s25-mypet-ai",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

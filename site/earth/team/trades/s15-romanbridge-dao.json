@@ -1,0 +1,411 @@
+{
+ "scenarios": [
+  {
+   "id": "aqueduct-stone-repoint",
+   "trade": "bricklayers",
+   "zone": "Charter Hall",
+   "task": "Repoint deteriorated mortar joints on a Pont du Gard access abutment using compatible lime mortar.",
+   "hazards": [
+    "silica dust from cutting/raking joints",
+    "work at height over the Gardon gorge",
+    "heat stress in mediterranean summer",
+    "fall of loose historic stone"
+   ],
+   "ppe": [
+    "respirator N95 or P100",
+    "safety harness with lanyard",
+    "hard hat",
+    "cut-resistant gloves",
+    "eye protection"
+   ],
+   "steps": [
+    "Set scaffolding with guardrails and tie-offs inspected by foreman",
+    "Wet down joints to suppress silica dust before raking",
+    "Rake joints to sound mortar without damaging Roman stone",
+    "Mix lime mortar to conservation spec",
+    "Repoint joints, tool and cure under damp burlap",
+    "Strike area and inspect for loose stone on demobilization"
+   ],
+   "rubric": [
+    {
+     "axis": "dust control",
+     "pass_if": "keeps joints wetted and wears respirator throughout cutting"
+    },
+    {
+     "axis": "height safety",
+     "pass_if": "100% tie-off above 1.8 m"
+    },
+    {
+     "axis": "material compatibility",
+     "pass_if": "uses specified lime mortar, never portland cement"
+    },
+    {
+     "axis": "finish quality",
+     "pass_if": "joints tooled flush with no smearing on stone faces"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries mortar buckets and tools up scaffold access stairs, reducing manual handling on steep gorge paths."
+  },
+  {
+   "id": "gorge-crane-matting",
+   "trade": "riggers",
+   "zone": "Operations Deck",
+   "task": "Rig and signal a mobile crane pick of scaffolding bundles onto the left bank staging pad beside the Gardon.",
+   "hazards": [
+    "crane tip-over on soft riverbank soils",
+    "load swing over walkway with public present",
+    "crushed fingers during landing",
+    "overhead power line contact on access road"
+   ],
+   "ppe": [
+    "hard hat",
+    "high-visibility vest",
+    "gloves",
+    "steel-toe boots"
+   ],
+   "steps": [
+    "Verify load weights and chart with crane operator tailboard meeting",
+    "Walk the site to confirm exclusion zone and public barriers",
+    "Set timber matting on the bank pad and check level",
+    "Rig bundles with rated slings, tag lines attached",
+    "Direct the pick with standard hand signals; stop if any pedestrian enters zone",
+    "Land load, secure it, then release slings only on signal"
+   ],
+   "rubric": [
+    {
+     "axis": "rigging selection",
+     "pass_if": "slings and shackles rated above load with correct hitch"
+    },
+    {
+     "axis": "signaling",
+     "pass_if": "uses standard signals and maintains eye contact with operator"
+    },
+    {
+     "axis": "exclusion zone",
+     "pass_if": "zone established and enforced at all times"
+    },
+    {
+     "axis": "ground conditions",
+     "pass_if": "matting placed and crane outriggers fully extended on mats"
+    }
+   ],
+   "minutes": 60,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "lirp-bank-path-grading",
+   "trade": "operating-eng",
+   "zone": "Operations Deck",
+   "task": "Grade the riverside maintenance track near Le Vieux Moulin for equipment access while protecting tree roots.",
+   "hazards": [
+    "rollover on gorge slope edge",
+    "striking buried irrigation lines",
+    "heat and dust in cab",
+    "pedestrians on riverside trail"
+   ],
+   "ppe": [
+    "hard hat",
+    "seat belt",
+    "high-visibility vest",
+    "sun-protective clothing"
+   ],
+   "steps": [
+    "Complete walkaround and locate utilities from maps",
+    "Establish exclusion zone and flag trail users detour",
+    "Cut fill in lifts, keeping machine level on slopes",
+    "Protect flagged trees and root zones with barriers",
+    "Compact and finish to surveyed grade",
+    "Park machine, cycle implements down, and secure site"
+   ],
+   "rubric": [
+    {
+     "axis": "slope safety",
+     "pass_if": "operates up/down slope, never across, within tip limits"
+    },
+    {
+     "axis": "utility protection",
+     "pass_if": "no damage to marked lines; hand-digs within 1 m"
+    },
+    {
+     "axis": "grade accuracy",
+     "pass_if": "finish within 25 mm of plan grade"
+    },
+    {
+     "axis": "public safety",
+     "pass_if": "detour and signage maintained all shift"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Tows a compact survey marker wagon along the track ahead of the machine to hold grade stakes."
+  },
+  {
+   "id": "visitor-lighting-circuit",
+   "trade": "electricians",
+   "zone": "Proposal Forum",
+   "task": "Install a new GFCI-protected lighting circuit on an outdoor kiosk near the Pont du Gard visitor path.",
+   "hazards": [
+    "electric shock in damp riverside location",
+    "working from ladder near walkway",
+    "UV and heat exposure",
+    "strike-through of unknown conduits in wall"
+   ],
+   "ppe": [
+    "insulated gloves",
+    "safety glasses",
+    "hard hat",
+    "high-visibility vest"
+   ],
+   "steps": [
+    "Lock out the feeder breaker and verify de-energized",
+    "Scan kiosk wall for embedded conduits before drilling",
+    "Run EMT, make bends, and fasten supports",
+    "Pull conductors; terminate at weatherproof GFCI and fixtures",
+    "Energize, test GFCI trip with tester, and check fixture aim",
+    "Label panel directory and close up"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO",
+     "pass_if": "applies lock, verifies zero energy before work"
+    },
+    {
+     "axis": "wet-location compliance",
+     "pass_if": "GFCI and wet-rated fittings used and tested"
+    },
+    {
+     "axis": "workmanship",
+     "pass_if": "conduit runs plumb, fittings weather-tight"
+    },
+    {
+     "axis": "test-out",
+     "pass_if": "GFCI trips on test button and tester"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "fire-line-tap-gardon",
+   "trade": "pipefitters",
+   "zone": "Research Synthesis Lab",
+   "task": "Tap a new fire-suppression supply line off the site water main serving the Carrière romaine de L'Estel Sud work area.",
+   "hazards": [
+    "pressurized main release during hot tap",
+    "confined space in valve pit",
+    "hand injury from chain tong kickback",
+    "contamination of site water supply"
+   ],
+   "ppe": [
+    "face shield",
+    "gloves",
+    "hard hat",
+    "hearing protection"
+   ],
+   "steps": [
+    "Review tap drawing and confirm main pressure with water utility",
+    "Isolate section per permit; flush and verify depressurized where required",
+    "Excavate and shore pit; test atmosphere before entry",
+    "Cut in tee and valve; pressure-test new joint to spec",
+    "Disinfect line per potable-water procedure",
+    "Backfill, compact, and record as-built locations"
+   ],
+   "rubric": [
+    {
+     "axis": "isolation",
+     "pass_if": "permit isolation verified before cutting"
+    },
+    {
+     "axis": "confined space",
+     "pass_if": "atmosphere tested and attendant posted for pit entry"
+    },
+    {
+     "axis": "joint integrity",
+     "pass_if": "pressure test holds with zero visible leakage"
+    },
+    {
+     "axis": "disinfection",
+     "pass_if": "flush and disinfect procedure completed and documented"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "rope-access-arch-inspect",
+   "trade": "laborers",
+   "zone": "Progress Observatory",
+   "task": "Assist inspectors with rope-access survey of an upper aqueduct tier, hauling tools and logging defects.",
+   "hazards": [
+    "fall from height on historic structure",
+    "dropped tools onto visitor walkway",
+    "heat exhaustion on exposed stone",
+    "rockfall triggered by work"
+   ],
+   "ppe": [
+    "full-body harness",
+    "helmet with chin strap",
+    "gloves",
+    "tethered tool lanyards"
+   ],
+   "steps": [
+    "Attend morning rescue plan briefing and gear check",
+    "Establish drop zone closure below work area",
+    "Rig haul lines and tool tethers",
+    "Support inspector movement, keeping ropes clear of edges",
+    "Photograph and log defects as called out by inspector",
+    "Retrieve all tools; verify nothing loose remains before reopening walkway"
+   ],
+   "rubric": [
+    {
+     "axis": "drop prevention",
+     "pass_if": "all tools tethered and zone closed below"
+    },
+    {
+     "axis": "rescue readiness",
+     "pass_if": "can state rescue plan and equipment location"
+    },
+    {
+     "axis": "communication",
+     "pass_if": "relays inspector calls accurately to logger"
+    },
+    {
+     "axis": "site cleanup",
+     "pass_if": "walkway reopened only after full tool count"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries the inspection payload along the tier deck and streams close-up imagery, reducing human rope time under the arches."
+  },
+  {
+   "id": "site-drainage-french-drain",
+   "trade": "cement-masons",
+   "zone": "Operations Deck",
+   "task": "Place a concrete headwall and curbing for a French drain outfall above the Gardon bank.",
+   "hazards": [
+    "cement burn and silica exposure",
+    "trench collapse in sandy bank soil",
+    "manual-handling injury from concrete bags",
+    "slip trips on rebar and formwork"
+   ],
+   "ppe": [
+    "rubber boots",
+    "alkali-resistant gloves",
+    "safety glasses",
+    "hard hat"
+   ],
+   "steps": [
+    "Check trench shoring and edge protection",
+    "Set forms and rebar with proper chair spacing",
+    "Mix/place concrete at low w/c ratio; vibrate in lifts",
+    "Screed and finish curbing to line and grade",
+    "Cure with membrane and protect from river splash",
+    "Strip forms safely; backfill and compact in lifts"
+   ],
+   "rubric": [
+    {
+     "axis": "trench safety",
+     "pass_if": "shoring and access ladder verified before entry"
+    },
+    {
+     "axis": "skin protection",
+     "pass_if": "gloves and sleeves prevent wet-cement contact"
+    },
+    {
+     "axis": "finish quality",
+     "pass_if": "curbing within line and grade tolerance, no honeycomb"
+    },
+    {
+     "axis": "curing",
+     "pass_if": "curing compound applied within spec window"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "brush-fire-fuel-reduction",
+   "trade": "grounds",
+   "zone": "Charter Hall",
+   "task": "Clear fuel-reduction firebreak strips through scrub and wood parcels in Bois communal de Remoulins.",
+   "hazards": [
+    "wildfire risk in dry mediterranean scrub",
+    "chainsaw kickback and falling limbs",
+    "heat stress",
+    "snakes and insects in brush"
+   ],
+   "ppe": [
+    "chainsaw chaps",
+    "cut-resistant gloves",
+    "eye and hearing protection",
+    "fire-resistant clothing",
+    "hard hat"
+   ],
+   "steps": [
+    "Check daily fire-danger rating and permit conditions",
+    "Establish water backpack and fire extinguisher at work point",
+    "Clear strips in teams with 3-m spacing, watchers posted",
+    "Chip or stack cut material away from tree drip lines",
+    "Hydrate and rotate crew on heat schedule",
+    "Walk the completed break for smoldering material before leaving"
+   ],
+   "rubric": [
+    {
+     "axis": "fire readiness",
+     "pass_if": "extinguisher and water present before cutting starts"
+    },
+    {
+     "axis": "saw handling",
+     "pass_if": "proper grip, stance, and no cutting above shoulder"
+    },
+    {
+     "axis": "heat management",
+     "pass_if": "follows work-rest cycle and hydration plan"
+    },
+    {
+     "axis": "break quality",
+     "pass_if": "break is continuous with no skip patches"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Hauls water, fuel, and chaps to remote scrub plots along the break line."
+  }
+ ],
+ "credential": {
+  "name": "RomanBridge Heritage Site Trades Readiness Card",
+  "requires": [
+   "aqueduct-stone-repoint",
+   "gorge-crane-matting",
+   "lirp-bank-path-grading",
+   "visitor-lighting-circuit",
+   "fire-line-tap-gardon",
+   "rope-access-arch-inspect",
+   "site-drainage-french-drain",
+   "brush-fire-fuel-reduction"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s15-romanbridge-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

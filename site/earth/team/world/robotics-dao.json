@@ -1,0 +1,269 @@
+{
+ "title": "Robotics DAO: Above the Arroyo",
+ "summary": "An agent-managed DAO campus set at NASA JPL in Pasadena, where physical AI is proven in the wild. Agents monitor, synthesize, draft and track robotics governance while humans alone vote, enact and appoint across five walkable zones.",
+ "biome": "mediterranean",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "JPL Building 186 (Theodore von Kármán Museum and",
+   "buildings": [
+    {
+     "name": "Charter Pavilion",
+     "use": "Charter display, contribution model, measurable outcomes wall",
+     "floors": 2
+    },
+    {
+     "name": "Steward Annex",
+     "use": "Human-only voting chamber for final votes and charter amendments",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Outcome Metrics Wall",
+    "Contribution Registry",
+    "Steward Vote Chamber"
+   ],
+   "props": [
+    "bronze charter plaque",
+    "measurable-outcome scoreboard",
+    "contribution ledger kiosk",
+    "glass case of rover wheel molds",
+    "windfall distribution notice board"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "JPL Building 179 (Spacecraft Assembly Facility)",
+   "buildings": [
+    {
+     "name": "Synthesis Lab",
+     "use": "Evidence monitoring and research summarization for stewards",
+     "floors": 3
+    },
+    {
+     "name": "Evidence Archive",
+     "use": "Stored summaries and monitored robotics developments",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Monitor Console Floor",
+    "Synthesis Studio",
+    "Evidence Stacks",
+    "Robotics Policy Reading Nook"
+   ],
+   "props": [
+    "wall of evidence screens",
+    "annotated rover traverse maps",
+    "robotics journal rack",
+    "whiteboard of open questions",
+    "model manipulator arm"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "JPL Building 170 (Spacecraft Fabrication Facilit",
+   "buildings": [
+    {
+     "name": "Proposal Forum Hall",
+     "use": "Agent-drafted proposals debated and decided by people",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Alcove",
+    "Debate Floor",
+    "Human Decision Booth",
+    "Grant Review Room"
+   ],
+   "props": [
+    "proposal drafting terminals",
+    "debate lectern",
+    "tally board (human-only)",
+    "grant exhibit table",
+    "queue of pending drafts"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "JPL Building 103",
+   "buildings": [
+    {
+     "name": "Operations Deck",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Outpost",
+     "use": "Scouting experts and collaborators in robotics governance",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Routing Board",
+    "Working Group Pods",
+    "Collaborator Directory Desk",
+    "Ops Standup Corner"
+   ],
+   "props": [
+    "kanban of routed tasks",
+    "collaborator pin map",
+    "shift schedule screen",
+    "radio handset rack",
+    "field notebook stand"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "Hahamongna Watershed Natural Park",
+   "buildings": [
+    {
+     "name": "Progress Observatory Tower",
+     "use": "Tracking progress against the charter's measurable outcomes",
+     "floors": 4
+    },
+    {
+     "name": "Arroyo Overlook Hut",
+     "use": "Open-air reflection point above the chaparral basin",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Outcome Tracking Gallery",
+    "Milestone Spiral Stair",
+    "Observation Deck",
+    "Quiet Reflection Room"
+   ],
+   "props": [
+    "progress ring sculpture",
+    "charter milestone dials",
+    "binocular station facing the Arroyo",
+    "rover track timeline etched in stone"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Quercus agrifolia",
+   "Platanus racemosa",
+   "Populus fremontii",
+   "Hesperocyparis macrocarpa"
+  ],
+  "shrubs": [
+   "Artemisia californica",
+   "Salvia leucophylla",
+   "Adenostoma fasciculatum",
+   "Ceanothus spinosus"
+  ],
+  "flowers": [
+   "Eschscholzia californica",
+   "Lasthenia californica",
+   "Sisyrinchium bellum",
+   "Lupinus sparsiflorus"
+  ],
+  "ground": "scrub"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 0.5,
+  "wave_m": 0
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:24",
+  "sunset_local": "17:12"
+ },
+ "court": {
+  "name": "The von Kármán Court",
+  "style": "Sunken terraced plaza ringed by mission-revival arcades and chaparral beds",
+  "why_here": "Named for JPL's founder; a shared ground between lab buildings where agent work is reviewed and humans convene to govern."
+ },
+ "quests": [
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect three evidence summaries from the Monitor Console Floor",
+    "Cross the court to the Proposal Forum Drafting Alcove",
+    "Watch the Proposal & Grant Drafter shape a draft",
+    "Confirm the draft is queued for human decision only"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Route the Working Group",
+   "from_zone": "Operations Deck",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the routed task kanban with the Task Router",
+    "Carry the task brief up the Milestone Spiral Stair",
+    "Log the milestone with the Progress Tracker",
+    "Report the outcome dial reading back at the Ops Standup Corner"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Charter Check",
+   "from_zone": "Charter Hall",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Read the charter and the measurable-outcomes scoreboard",
+    "List which actions are reserved for humans",
+    "Verify no agent terminal offers governance.final_vote",
+    "Watch stewards cast the final vote in the Decision Booth"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "Arroyo Observation",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Climb to the Observation Deck above Hahamongna",
+    "Sketch rover-track timeline parallels to DAO milestones",
+    "Descend to Charter Hall and pin the sketch beside the Outcome Metrics Wall"
+   ],
+   "xp": 25
+  },
+  {
+   "title": "Scout the Collaborators",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Ask the Research Synthesis Agent for open robotics-governance questions",
+    "Meet the Collaborator Scout at the pin map",
+    "Add three expert leads to the Collaborator Directory",
+    "Notify the Task Router to open a working-group pod"
+   ],
+   "xp": 30
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "robotics-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

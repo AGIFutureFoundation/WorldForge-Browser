@@ -1,0 +1,286 @@
+{
+ "certification": {
+  "n": "Construction Robotics Spec",
+  "u": "Laborers",
+  "h": 100,
+  "l": [
+   "Site Safety",
+   "Survey Robots",
+   "Automation"
+  ],
+  "o": [
+   "Operate drones",
+   "Program assistants"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s12-parking-smart-x-construction-carpenters-1",
+   "certification": "Construction Robotics Spec",
+   "level": "Site Safety",
+   "trade": "carpenters",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Site Safety for carpenters at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-ironworkers-1",
+   "certification": "Construction Robotics Spec",
+   "level": "Site Safety",
+   "trade": "ironworkers",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Site Safety for ironworkers at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-electricians-1",
+   "certification": "Construction Robotics Spec",
+   "level": "Site Safety",
+   "trade": "electricians",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Site Safety for electricians at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/camera/depth"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-carpenters-2",
+   "certification": "Construction Robotics Spec",
+   "level": "Survey Robots",
+   "trade": "carpenters",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Survey Robots for carpenters at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-ironworkers-2",
+   "certification": "Construction Robotics Spec",
+   "level": "Survey Robots",
+   "trade": "ironworkers",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Survey Robots for ironworkers at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-electricians-2",
+   "certification": "Construction Robotics Spec",
+   "level": "Survey Robots",
+   "trade": "electricians",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Survey Robots for electricians at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/tool_state",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-carpenters-3",
+   "certification": "Construction Robotics Spec",
+   "level": "Automation",
+   "trade": "carpenters",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Automation for carpenters at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/gps"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-ironworkers-3",
+   "certification": "Construction Robotics Spec",
+   "level": "Automation",
+   "trade": "ironworkers",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Automation for ironworkers at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/gps"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  },
+  {
+   "id": "s12-parking-smart-x-construction-electricians-3",
+   "certification": "Construction Robotics Spec",
+   "level": "Automation",
+   "trade": "electricians",
+   "industry": "construction-infrastructure",
+   "location": "1111 Lincoln Road, Miami Beach Florida",
+   "task": "Automation for electricians at 1111 Lincoln Road",
+   "duration_minutes": 11,
+   "learning_objectives": [
+    "Operate drones",
+    "Program assistants"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/camera/rgb",
+    "/gps"
+   ],
+   "robot_types": [
+    "boston-dynamics-spot",
+    "unitree-go2"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for construction-infrastructure robot operations"
+ }
+}

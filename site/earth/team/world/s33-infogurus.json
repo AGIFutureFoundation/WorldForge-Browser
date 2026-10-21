@@ -1,0 +1,277 @@
+{
+ "title": "InfoGurus: The Digital Library of Alexandria",
+ "summary": "A walkable agent-managed DAO campus set around Bibliotheca Alexandrina on Alexandria's Mediterranean shore. Six zones map the DAO workflow: charter, research, proposals, operations, and progress—all agents operate, humans govern.",
+ "biome": "mediterranean",
+ "districts": [
+  {
+   "zone": "Charter Hall",
+   "real_anchor": "Bibliotheca Alexandrina main disc",
+   "buildings": [
+    {
+     "name": "Charter Rotunda",
+     "use": "Public display of the DAO charter, contribution model and measurable outcomes",
+     "floors": 2
+    },
+    {
+     "name": "Contribution Ledger House",
+     "use": "Records member contributions and outcome definitions",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Charter Reading Room",
+    "Outcome Wall",
+    "Ledger Vault",
+    "Steward Alcove"
+   ],
+   "props": [
+    "etched charter tablet",
+    "contribution ledger desk",
+    "outcome measurement board",
+    "granite columns",
+    "olive wreath emblem",
+    "bronze mission plaque"
+   ],
+   "npc_agents": []
+  },
+  {
+   "zone": "Research Synthesis Lab",
+   "real_anchor": "مركز المؤتمرات بمكتبة الإسكندرية (BA Conference Center)",
+   "buildings": [
+    {
+     "name": "Evidence Annex",
+     "use": "Monitoring and summarizing developments",
+     "floors": 3
+    },
+    {
+     "name": "Synthesis Stack",
+     "use": "Research synthesis workspace for stewards",
+     "floors": 2
+    }
+   ],
+   "interior_rooms": [
+    "Evidence Intake Hall",
+    "Synthesis Studio",
+    "Source Archive",
+    "Quiet Reading Cells"
+   ],
+   "props": [
+    "scroll carousels",
+    "citation terminals",
+    "evidence pinboard",
+    "Alexandrian papyrus displays",
+    "digital summary wall"
+   ],
+   "npc_agents": [
+    "Evidence Monitor",
+    "Research Synthesis Agent"
+   ]
+  },
+  {
+   "zone": "Proposal Forum",
+   "real_anchor": "حدائق الشلالات (Shallalat Gardens area)",
+   "buildings": [
+    {
+     "name": "Proposal Colonnade",
+     "use": "Open-air debate of agent-drafted proposals; human final vote",
+     "floors": 1
+    },
+    {
+     "name": "Deliberation Pavilion",
+     "use": "Small-group proposal review",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Drafting Table",
+    "Debate Floor",
+    "Voting Booth",
+    "Record Niche"
+   ],
+   "props": [
+    "proposal scroll racks",
+    "speakers' stone bench",
+    "voting urn",
+    "debate hourglass",
+    "engraved reserved-powers sign"
+   ],
+   "npc_agents": [
+    "Proposal & Grant Drafter"
+   ]
+  },
+  {
+   "zone": "Operations Deck",
+   "real_anchor": "كلية التجارة (Faculty of Commerce)",
+   "buildings": [
+    {
+     "name": "Routing Hall",
+     "use": "Task routing and working-group coordination",
+     "floors": 2
+    },
+    {
+     "name": "Collaborator Registry",
+     "use": "Expert and collaborator identification desk",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Task Board Room",
+    "Working Group Pods",
+    "Registry Counter",
+    "Coordination Balcony"
+   ],
+   "props": [
+    "task routing board",
+    "working group banners",
+    "collaborator directory shelf",
+    "signal drums",
+    "message runner satchels"
+   ],
+   "npc_agents": [
+    "Collaborator Scout",
+    "Task Router"
+   ]
+  },
+  {
+   "zone": "Progress Observatory",
+   "real_anchor": "مركز القبة السماوية العلمي (Planetarium Science Center)",
+   "buildings": [
+    {
+     "name": "Outcome Observatory",
+     "use": "Tracks progress against the charter's measurable outcomes",
+     "floors": 2
+    },
+    {
+     "name": "Metrics Dome",
+     "use": "Public display of outcome dashboards",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tracker Gallery",
+    "Metrics Dome Floor",
+    "Milestone Hall",
+    "Horizon Balcony"
+   ],
+   "props": [
+    "progress orrery",
+    "milestone markers",
+    "measuring calipers monument",
+    "star chart of outcomes",
+    "brass telescope"
+   ],
+   "npc_agents": [
+    "Progress Tracker"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Olive",
+   "Aleppo pine",
+   "Ficus (ficus)",
+   "Date palm",
+   "Jacaranda"
+  ],
+  "shrubs": [
+   "Lantana",
+   "Myrtle",
+   "Oleander"
+  ],
+  "flowers": [
+   "Bougainvillea",
+   "Jasmine",
+   "Rosemary",
+   "Globe amaranth"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "bay",
+  "flow_mps": 0.4,
+  "wave_m": 0.8
+ },
+ "wind": {
+  "prevailing_from": "NW",
+  "mean_mps": 5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:10",
+  "sunset_local": "18:45"
+ },
+ "court": {
+  "name": "The Stewards' Court of the Library",
+  "style": "A sunken circular amphitheater beneath the library disc, echoing the ancient Mouseion",
+  "why_here": "Site of the ancient Great Library: the fitting stage for human-only final votes and reserved governance powers."
+ },
+ "quests": [
+  {
+   "title": "Charter by the Sea",
+   "from_zone": "Charter Hall",
+   "to_zone": "Progress Observatory",
+   "steps": [
+    "Read the etched charter tablet in Charter Hall",
+    "Record one measurable outcome with the ledger keeper",
+    "Trace the outcome to its milestone marker in the Observatory",
+    "Report the milestone to the Progress Tracker"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "From Evidence to Draft",
+   "from_zone": "Research Synthesis Lab",
+   "to_zone": "Proposal Forum",
+   "steps": [
+    "Collect three summarized evidence scrolls from the Evidence Annex",
+    "Have the Research Synthesis Agent bind them into one brief",
+    "Deliver the brief to the Proposal & Grant Drafter",
+    "Observe the human debate in the Colonnade—no agent may enact"
+   ],
+   "xp": 60
+  },
+  {
+   "title": "The Route Through Commerce",
+   "from_zone": "Operations Deck",
+   "to_zone": "Research Synthesis Lab",
+   "steps": [
+    "Accept a routed task from the Routing Hall board",
+    "Consult the Collaborator Registry for an expert near the Faculty of Commerce",
+    "Carry the expert's note to the Research Synthesis Lab",
+    "Confirm completion with the Task Router"
+   ],
+   "xp": 35
+  },
+  {
+   "title": "Measure What Matters",
+   "from_zone": "Progress Observatory",
+   "to_zone": "Charter Hall",
+   "steps": [
+    "Inspect the progress orrery for a lagging outcome",
+    "Collect metric readings from the Metrics Dome",
+    "Present findings at the Outcome Wall in Charter Hall",
+    "Flag the gap for the stewards' next vote"
+   ],
+   "xp": 50
+  },
+  {
+   "title": "Guard the Reserved Powers",
+   "from_zone": "Proposal Forum",
+   "to_zone": "Operations Deck",
+   "steps": [
+    "Study the engraved reserved-powers sign in the Colonnade",
+    "Verify no agent terminal offers final vote, amend, transfer, enact, distribute or appoint",
+    "Post a confirmation token at the Routing Hall",
+    "Brief a new working group on the principle: agents operate, people govern"
+   ],
+   "xp": 80
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "s33-infogurus",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

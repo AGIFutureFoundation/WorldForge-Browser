@@ -1,0 +1,308 @@
+{
+ "scenarios": [
+  {
+   "id": "observatory-deck-steel-erection",
+   "trade": "ironworkers",
+   "zone": "Progress Observatory",
+   "task": "Bolt up viewing-platform steel framing for a wolf-observation deck addition in cold weather.",
+   "hazards": [
+    "Cold-stress and icy walking surfaces",
+    "Loads swinging over work area",
+    "Working at leading edge without guardrails"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Fall-arrest harness",
+    "Insulated gloves",
+    "Safety glasses",
+    "High-visibility vest"
+   ],
+   "steps": [
+    "Attend pre-task huddle and confirm load plan",
+    "Inspect bolts, wrenches and anchorage points",
+    "Connect beam while spotter guides crane load",
+    "Torque bolts to spec and mark off completed connections",
+    "Install temporary cable guardrail before leaving deck",
+    "Report any slipped or missing hardware to foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Rigging awareness",
+     "pass_if": "Keeps out of load path and uses taglines"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "Ties off 100% at heights above 6 feet"
+    },
+    {
+     "axis": "Connection quality",
+     "pass_if": "All bolts torqued and marked"
+    },
+    {
+     "axis": "Cold-weather practice",
+     "pass_if": "Takes scheduled warm-up breaks"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "exhibit-hall-conduit-run",
+   "trade": "electricians",
+   "zone": "Charter Hall",
+   "task": "Pull branch-circuit conduit and wire for new exhibit display panels inside finished visitor space.",
+   "hazards": [
+    "Live circuits in adjacent panels",
+    "Dust and debris in occupied building",
+    "Ladder work near walls"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Hard hat",
+    "Insulated gloves",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Request lockout-tagout on affected panel and verify zero energy",
+    "Plan conduit route to avoid existing utilities",
+    "Cut, thread and hang EMT conduit",
+    "Pull conductors with proper lubricant and bonding",
+    "Terminate at panels and test continuity",
+    "Restore panel, remove locks, document work"
+   ],
+   "rubric": [
+    {
+     "axis": "LOTO compliance",
+     "pass_if": "Applies personal lock and verifies de-energization"
+    },
+    {
+     "axis": "Workmanship",
+     "pass_if": "Conduit runs straight, supported and bonded"
+    },
+    {
+     "axis": "Testing",
+     "pass_if": "Continuity and polarity verified before energizing"
+    },
+    {
+     "axis": "Housekeeping",
+     "pass_if": "Work area cleaned before shift end"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "wolf-habitat-fence-grounding",
+   "trade": "line-workers",
+   "zone": "Operations Deck",
+   "task": "Install grounded perimeter fencing and gate grounding around the wolf habitat enclosure.",
+   "hazards": [
+    "Uneven forest-floor terrain",
+    "Equipment near buried lines",
+    "Hand injuries from tensioning tools"
+   ],
+   "ppe": [
+    "Work gloves",
+    "Safety glasses",
+    "Hard hat",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Call 811 and confirm utility locates before digging",
+    "Set fence posts to depth with mower guard clearance",
+    "Tension mesh and secure with proper fittings",
+    "Bond gates and fence runs to ground rods",
+    "Test ground resistance and record readings",
+    "Inspect entire run for gaps or protruding wire"
+   ],
+   "rubric": [
+    {
+     "axis": "Utility clearance",
+     "pass_if": "No digging before locates confirmed"
+    },
+    {
+     "axis": "Enclosure integrity",
+     "pass_if": "No gaps a wolf could pass or snare on"
+    },
+    {
+     "axis": "Grounding",
+     "pass_if": "Bonding continuous and tested under 25 ohms"
+    },
+    {
+     "axis": "Terrain safety",
+     "pass_if": "Uses proper footing and lifting technique"
+    }
+   ],
+   "minutes": 120,
+   "level": "journey",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Hauls fence rolls and posts across soft forest terrain to reduce manual carries."
+  },
+  {
+   "id": "hvac-air-handler-filter-swap",
+   "trade": "hvacr",
+   "zone": "Research Synthesis Lab",
+   "task": "Perform seasonal maintenance on rooftop air-handling units serving the lab space.",
+   "hazards": [
+    "Roof edge exposure",
+    "Energized equipment and stored energy in fans",
+    "Confined plenum spaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Cut-resistant gloves",
+    "Fall-arrest harness near roof edge"
+   ],
+   "steps": [
+    "Lock out unit and wait for fan spin-down",
+    "Verify roof hatch and anchor points before entry",
+    "Replace filters and inspect coils and belts",
+    "Clear condensate drains and check traps",
+    "Remove locks, run unit, verify airflow readings",
+    "Log readings in maintenance record"
+   ],
+   "rubric": [
+    {
+     "axis": "Stored energy control",
+     "pass_if": "Confirms fans stopped before opening panels"
+    },
+    {
+     "axis": "Fall protection",
+     "pass_if": "Ties off within 6 feet of roof edge"
+    },
+    {
+     "axis": "Maintenance quality",
+     "pass_if": "Filters seated correctly and readings in range"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Logs completed in service record"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sprinkler-retrofit-occupied-hall",
+   "trade": "fire-sprinkler",
+   "zone": "Proposal Forum",
+   "task": "Tie in a new sprinkler branch line serving the renovated forum room while the system remains live elsewhere.",
+   "hazards": [
+    "Pressurized pipe and water release",
+    "Work overhead in occupied space",
+    "Hot work on pipe threading"
+   ],
+   "ppe": [
+    "Safety glasses",
+    "Hard hat",
+    "Cut-resistant gloves",
+    "Hearing protection"
+   ],
+   "steps": [
+    "Get hot-work permit and post fire watch if needed",
+    "Shut and drain only the isolation zone per impairments plan",
+    "Thread and hang branch line from structural steel",
+    "Install heads with proper clearance from displays",
+    "Hydrostatic test the new zone and inspect heads",
+    "Restore system, notify monitoring center, close permit"
+   ],
+   "rubric": [
+    {
+     "axis": "Impairment procedure",
+     "pass_if": "Follows impairment plan and notifies monitoring"
+    },
+    {
+     "axis": "System integrity",
+     "pass_if": "Test holds pressure with no leaks"
+    },
+    {
+     "axis": "Head placement",
+     "pass_if": "Obstruction and clearance rules met"
+    },
+    {
+     "axis": "Hot-work safety",
+     "pass_if": "Permit and fire watch in place before cutting"
+    }
+   ],
+   "minutes": 100,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "winter-snow-load-roof-clearing",
+   "trade": "laborers",
+   "zone": "Progress Observatory",
+   "task": "Clear heavy snow and ice from the observatory roof after a Boundary Waters snowfall event.",
+   "hazards": [
+    "Roof collapse under drifted load",
+    "Falls from snow-covered roof edge",
+    "Overhead icicle drop zones",
+    "Cold stress and shoveling strain"
+   ],
+   "ppe": [
+    "Insulated boots with ice cleats",
+    "Hard hat",
+    "Fall-arrest harness",
+    "High-visibility vest",
+    "Insulated gloves"
+   ],
+   "steps": [
+    "Assess drift load and set exclusion zone below eaves",
+    "Anchor fall protection and clear route to work area",
+    "Work from ridge down, pushing snow away from edge",
+    "Flag icicles for controlled knockdown from ladder",
+    "Take warm-up breaks on cycle with partner",
+    "Inspect drains and exits before leaving roof"
+   ],
+   "rubric": [
+    {
+     "axis": "Fall protection",
+     "pass_if": "Anchored 100% while on roof"
+    },
+    {
+     "axis": "Exclusion zone",
+     "pass_if": "Ground area below eaves barricaded"
+    },
+    {
+     "axis": "Cold-stress management",
+     "pass_if": "Rotates breaks and watches partner for symptoms"
+    },
+    {
+     "axis": "Structural awareness",
+     "pass_if": "Reports sagging or cracking sounds immediately"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "unitree-go2",
+   "robot_role": "Carries tools and water to roof access and monitors exclusion-zone edge with onboard cameras."
+  }
+ ],
+ "credential": {
+  "name": "Wolf Center Site Readiness Card",
+  "requires": [
+   "observatory-deck-steel-erection",
+   "exhibit-hall-conduit-run",
+   "wolf-habitat-fence-grounding",
+   "hvac-air-handler-filter-swap",
+   "sprinkler-retrofit-occupied-hall",
+   "winter-snow-load-roof-clearing"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "s26-lyka-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

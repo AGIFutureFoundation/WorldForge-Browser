@@ -1,0 +1,148 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Observing the Pack: Agent-Managed Workplaces and Worker Voice",
+   "grade_or_level": "Adult continuing education / worksite learning",
+   "outcomes": [
+    "Explain how an agent-managed, human-governed DAO like Lyka DAO separates agent operations from human-reserved decisions",
+    "Draft a worker-centered proposal for the Proposal Forum that keeps final votes in human hands",
+    "Evaluate task-routing systems against collective-bargaining principles"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Tour the DAO charter, mission and reserved-for-humans decision list; map which workplace decisions should stay human-reserved.",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Simulate a Task Router working-group cycle: assign tasks, then compare with steward-led delegation models used in unions.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Small groups draft a sample proposal with the Proposal & Grant Drafter workflow; peers debate, then hold a mock human final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Review measurable-outcome dashboards and discuss how progress metrics could be bargained into union agreements.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized mock-proposal drafts and session exit polls about which decisions workers want kept human-reserved, aggregated with no names or worksites.",
+   "consent": "Adult learners sign a plain-language consent form at signup; participation is voluntary, data is aggregated and anonymized, and anyone can opt out of sharing at any time without penalty."
+  },
+  {
+   "audience": "k12",
+   "title": "Wolf Watch Data Detectives: Learning from the Lyka Pack",
+   "grade_or_level": "Grades 6-8 (middle school)",
+   "outcomes": [
+    "Describe how the International Wolf Center in Ely, Minnesota observes real wolf packs on the edge of the Boundary Waters temperate forest",
+    "Collect and summarize behavioral observations like the Evidence Monitor agent does",
+    "Distinguish agent work from human decisions in a DAO"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Learn how the Evidence Monitor summarizes information; students practice summarizing a short wolf-behavior article into three evidence points.",
+     "minutes": 45
+    },
+    {
+     "zone": "Charter Hall",
+     "activity": "Explore the DAO charter and the reserved-for-humans list; students sort sample decisions into 'agent can do' vs 'only people vote.'",
+     "minutes": 40
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Teams draft a classroom proposal to help wolf conservation; agents help draft, but the class casts the final human vote.",
+     "minutes": 60
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Students chart their proposal's progress on a simple tracker and present findings to the class.",
+     "minutes": 30
+    }
+   ],
+   "data_shared": "Anonymized class tallies of sorting exercises and proposal-vote outcomes, contributed as aggregate counts only, with no student names or identifiers.",
+   "consent": "Guardian/parent signed consent is required before participation; teachers explain data sharing in age-appropriate language, only aggregate classroom data is shared, and parents or guardians may withdraw consent at any time."
+  },
+  {
+   "audience": "ngo",
+   "title": "Evidence to Action: Running NGO Programs Through a Human-Governed DAO",
+   "grade_or_level": "Professional / NGO staff training",
+   "outcomes": [
+    "Apply agent-based monitoring and synthesis to an NGO issue workflow",
+    "Structure proposals so agents draft and humans decide",
+    "Design measurable outcomes tracked in the Progress Observatory"
+   ],
+   "sessions": [
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Watch how Evidence Monitor and Research Synthesis Agent summarize evidence; staff practice building a two-page evidence brief on a chosen issue.",
+     "minutes": 60
+    },
+    {
+     "zone": "Operations Deck",
+     "activity": "Use Collaborator Scout and Task Router patterns to map partners and route a working group between decision cycles.",
+     "minutes": 75
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Draft a grant proposal via the Proposal & Grant Drafter workflow; staff debate it and a human panel enacts the mock decision.",
+     "minutes": 90
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Define 3 measurable outcomes and build a simple tracking dashboard aligned to the charter.",
+     "minutes": 45
+    }
+   ],
+   "data_shared": "Anonymized evidence-brief templates and outcome-metric definitions, shared as reusable models with organizational identifiers removed.",
+   "consent": "NGO staff consent via a data-sharing agreement; contributions are stripped of organization names and beneficiary data, and any partner data is only shared with explicit permission."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Packs and Stewards: Nonprofit Governance in an Agent-Managed World",
+   "grade_or_level": "Board members and nonprofit leaders",
+   "outcomes": [
+    "Explain stewardship in a model where agents operate and people govern",
+    "Map nonprofit board duties onto the DAO's human-reserved actions",
+    "Draft charter-aligned measurable outcomes for a mission like AI as a public good"
+   ],
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Study the mission of governing advanced AI as a public good; compare nonprofit bylaws with the DAO charter and reserved decision list.",
+     "minutes": 60
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Role-play a decision cycle: agents present drafted proposals, stewards debate, and only humans cast the final vote.",
+     "minutes": 75
+    },
+    {
+     "zone": "Progress Observatory",
+     "activity": "Work with the Progress Tracker to set measurable outcomes and review dashboards for board oversight.",
+     "minutes": 45
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Leaders review a Research Synthesis Agent briefing and practice asking governance-level questions of agent outputs.",
+     "minutes": 40
+    }
+   ],
+   "data_shared": "Anonymized governance exercise results and sample outcome frameworks, shared as aggregated patterns with no board, donor, or beneficiary identifying details.",
+   "consent": "Leaders sign a confidentiality and consent notice; all shared material is anonymized and aggregated, donor and beneficiary data is never included, and withdrawal of consent removes prior aggregate contributions where feasible."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "s26-lyka-dao",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

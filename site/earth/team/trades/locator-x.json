@@ -1,0 +1,357 @@
+{
+ "scenarios": [
+  {
+   "id": "locator-x-ironworkers-basic",
+   "trade": "ironworkers",
+   "zone": "Master Dashboard",
+   "task": "Install systems at Jackson Square",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at Jackson Square",
+    "Verify permit and lockout/tagout",
+    "Complete work within Master Dashboard",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 60,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "locator-x-electricians-basic",
+   "trade": "electricians",
+   "zone": "Underwriting Desk",
+   "task": "Inspect systems at St. Louis Cathedral",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at St. Louis Cathedral",
+    "Verify permit and lockout/tagout",
+    "Complete work within Underwriting Desk",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "locator-x-pipefitters-basic",
+   "trade": "pipefitters",
+   "zone": "Evidence Layer",
+   "task": "Inspect systems at Bourbon Street",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at Bourbon Street",
+    "Verify permit and lockout/tagout",
+    "Complete work within Evidence Layer",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 90,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools"
+  },
+  {
+   "id": "locator-x-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "The Academy",
+   "task": "Install systems at Royal Street",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at Royal Street",
+    "Verify permit and lockout/tagout",
+    "Complete work within The Academy",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 105,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "locator-x-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Market Editions",
+   "task": "Maintain systems at Decatur Street",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at Decatur Street",
+    "Verify permit and lockout/tagout",
+    "Complete work within Market Editions",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 120,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "locator-x-laborers-basic",
+   "trade": "laborers",
+   "zone": "Louisiana Developer Desk",
+   "task": "Maintain systems at French Market",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at French Market",
+    "Verify permit and lockout/tagout",
+    "Complete work within Louisiana Developer Desk",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 135,
+   "level": "apprentice",
+   "robot_assist": "clearpath-husky-a200",
+   "robot_role": "Transports waste"
+  },
+  {
+   "id": "locator-x-sheetmetal-basic",
+   "trade": "sheetmetal",
+   "zone": "Master Dashboard",
+   "task": "Maintain systems at Jackson Square",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at Jackson Square",
+    "Verify permit and lockout/tagout",
+    "Complete work within Master Dashboard",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 150,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "locator-x-hazmat-basic",
+   "trade": "hazmat",
+   "zone": "Underwriting Desk",
+   "task": "Maintain systems at St. Louis Cathedral",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at Jackson Square",
+    "Inspect area at St. Louis Cathedral",
+    "Verify permit and lockout/tagout",
+    "Complete work within Underwriting Desk",
+    "Clean area and file report",
+    "Debrief with foreman"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed with signatures"
+    }
+   ],
+   "minutes": 165,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "New Orleans Trades Card",
+  "requires": [
+   "locator-x-ironworkers-basic",
+   "locator-x-electricians-basic",
+   "locator-x-pipefitters-basic",
+   "locator-x-carpenters-basic"
+  ]
+ }
+}

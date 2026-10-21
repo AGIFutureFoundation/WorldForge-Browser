@@ -1,0 +1,286 @@
+{
+ "tasks": [
+  {
+   "id": "charter-hall-patrol-tour",
+   "robot": "clearpath-husky-a200",
+   "zone": "Charter Hall",
+   "goal": "Patrol the Charter Hall perimeter path, stopping at each exhibit plinth displaying charter and contribution model content.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/plan",
+     "/cmd_vel",
+     "/scan",
+     "/amcl_pose",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Polished exhibit hall floors with cable ramps near display plinths; threshold strips between gallery bays.",
+   "success": [
+    "Visits all 5 plinth waypoints within +/-0.3 m",
+    "Completes tour under 12 min at <=0.8 m/s",
+    "Zero collisions (contact force sensor silent)"
+   ],
+   "safety_stops": [
+    "E-stop on person within 1.0 m of path",
+    "Stop if /scan shows obstacle under 0.5 m",
+    "Halt when battery below 20%"
+   ],
+   "human_in_loop": "A steward reviews the tour log and approves the updated exhibit-status summary before publication.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "waypoint_id",
+     "pose_error_m",
+     "min_obstacle_dist_m",
+     "battery_pct",
+     "collision_events",
+     "steward_approved"
+    ]
+   }
+  },
+  {
+   "id": "research-lab-doc-delivery",
+   "robot": "unitree-go2",
+   "zone": "Research Synthesis Lab",
+   "goal": "Carry printed evidence summaries from the synthesis desks to the review rack near the Evidence Monitor station.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/scan",
+     "/robot_status",
+     "/payload_weight"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Low-pile carpet between bench rows; loose papers and rolling chairs as dynamic obstacles.",
+   "success": [
+    "8 deliveries completed with payload <=3 kg",
+    "Docking at rack within 0.15 m lateral error",
+    "No dropped-payload events detected"
+   ],
+   "safety_stops": [
+    "Stop on any detected ankle-height obstacle <0.4 m",
+    "Pause if payload shifts beyond tilt threshold",
+    "Sit and stop if battery <15%"
+   ],
+   "human_in_loop": "A researcher confirms each summary is correctly filed before the task is marked complete.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "delivery_count",
+     "payload_kg",
+     "dock_error_m",
+     "obstacle_stops",
+     "battery_pct",
+     "confirmed_by_human"
+    ]
+   }
+  },
+  {
+   "id": "proposal-forum-mic-transport",
+   "robot": "softbank-nao",
+   "zone": "Proposal Forum",
+   "goal": "Walk the microphones and printed proposal drafts from the drafting table to the human voting seats.",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/camera/bottom/image_raw",
+     "/joint_states"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Tiered forum seating edges, AV floor boxes, and chair legs; smooth concrete floor with painted aisle lines to follow.",
+   "success": [
+    ">=90% of line-follow segments kept centroid error <5 px",
+    "Item handover completed at each of 6 seats",
+    "Zero falls detected via IMU"
+   ],
+   "safety_stops": [
+    "Stop if IMU tilt exceeds 20 deg",
+    "Stop when a seated person reaches toward the tray",
+    "Low-battery sit-down at 15%"
+   ],
+   "human_in_loop": "Each voter acknowledges receipt of the draft; agents never enact or vote on proposals.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "seat_id",
+     "line_error_px",
+     "handover_success",
+     "imu_tilt_deg",
+     "falls",
+     "acknowledged_by_human"
+    ]
+   }
+  },
+  {
+   "id": "operations-deck-manipulation",
+   "robot": "universal-robots-ur10e",
+   "zone": "Operations Deck",
+   "goal": "Sort task-routing cards and Kanban tiles onto the working-group boards mounted above the coordination desk.",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/joint_states",
+     "/wrench",
+     "/tcp_pose",
+     "/io/status"
+    ],
+    "frame": "base_link"
+   },
+   "terrain": "Desk-mounted cell with board rails at 1.2-1.8 m height; cable management tray along the desk edge as a known obstacle.",
+   "success": [
+    "Placement error <5 mm on 12 tiles",
+    "Gripper force below 10 N throughout",
+    "Cycle time <15 s per tile"
+   ],
+   "safety_stops": [
+    "Stop if wrist wrench exceeds 40 N",
+    "Stop when a hand enters the workspace envelope via safety scanner",
+    "E-stop on unexpected joint-torque spike"
+   ],
+   "human_in_loop": "A coordinator approves the final board arrangement reflecting the routed tasks for the cycle.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "tile_id",
+     "placement_error_mm",
+     "max_wrench_n",
+     "cycle_time_s",
+     "safety_stops",
+     "approved_by_human"
+    ]
+   }
+  },
+  {
+   "id": "progress-observatory-drone-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Progress Observatory",
+   "goal": "Fly a slow scan of the observatory's outcome dashboards to capture frame-accurate images for the Progress Tracker agent.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cmd_full_state",
+     "/pose",
+     "/front_image",
+     "/battery_state"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Indoor atrium with glass display cases causing optical-flow dropouts; ceiling beams at 6 m and hanging signage as no-fly obstacles.",
+   "success": [
+    "Captures all 5 dashboards with blur metric below threshold",
+    "Holds each hover within +/-10 cm for 3 s",
+    "Maintains >=1.5 m clearance from glass and beams"
+   ],
+   "safety_stops": [
+    "Land immediately if battery <20%",
+    "Land if localization variance exceeds threshold near glass",
+    "Kill motors on optical-flow failure >1 s"
+   ],
+   "human_in_loop": "A steward verifies dashboard images and approves their use in the progress report.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "dashboard_id",
+     "hover_error_cm",
+     "blur_score",
+     "min_clearance_m",
+     "battery_pct",
+     "verified_by_human"
+    ]
+   }
+  },
+  {
+   "id": "zumbro-riverside-exterior-inspection",
+   "robot": "boston-dynamics-spot",
+   "zone": "Operations Deck",
+   "goal": "Inspect the exterior walkway between the Operations Deck loading area and the riverside utility shed along the Zumbro River bank.",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/spot/lease_status",
+     "/frontleft/image",
+     "/terrain_map",
+     "/odom"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "Gravel and brick riverside path; damp grass verges sloping to the Zumbro River, bollards, and occasional geese as dynamic obstacles.",
+   "success": [
+    "Covers 150 m of path with 100% thermal+RGB coverage",
+    "Maintains >=2 m standoff from water edge",
+    "Return-to-dock within 0.3 m"
+   ],
+   "safety_stops": [
+    "Stop if terrain slope estimate exceeds 30 deg",
+    "Stop when wildlife detected within 3 m",
+    "Sit and abort if leak/moisture fault or battery <20%"
+   ],
+   "human_in_loop": "A facilities staffer reviews inspection footage and approves before any maintenance ticket is opened.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "path_distance_m",
+     "water_standoff_m",
+     "wildlife_encounters",
+     "image_coverage_pct",
+     "battery_pct",
+     "approved_by_human"
+    ]
+   }
+  },
+  {
+   "id": "charter-archive-fetch-retrieval",
+   "robot": "fetch-robotics-fetch",
+   "zone": "Charter Hall",
+   "goal": "Retrieve archived charter-measurement binders from the tiered archive shelf and deliver them to the reading desk.",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/head_camera/depth",
+     "/arm_controller/follow_joint_trajectory",
+     "/gripper/state",
+     "/move_base/goal"
+    ],
+    "frame": "map"
+   },
+   "terrain": "Archive aisle 0.9 m wide; binder spines at 0.6-1.5 m shelf heights; anti-fatigue mats that perturb base odometry.",
+   "success": [
+    "6 of 6 correct binders picked (barcode verified)",
+    "Grasp success on first attempt >=80%",
+    "No shelf contact events during arm motion"
+   ],
+   "safety_stops": [
+    "Stop arm if external wrench >25 N",
+    "Pause base motion when a person enters the aisle",
+    "Abort if depth sensor loses shelf plane >2 s"
+   ],
+   "human_in_loop": "An archivist confirms binder IDs and logs the retrieval; archive policy changes remain human-governed.",
+   "feedback_schema": {
+    "fields": [
+     "timestamp",
+     "binder_id",
+     "first_attempt_grasp",
+     "arm_wrench_n",
+     "aisle_person_events",
+     "cycle_time_s",
+     "confirmed_by_human"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "s14-askdoc-x",
+  "generator": "glm (Z.ai) via earth/team/loop.py",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

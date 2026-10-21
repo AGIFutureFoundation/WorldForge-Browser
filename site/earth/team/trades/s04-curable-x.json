@@ -1,0 +1,283 @@
+{
+ "certification": {
+  "n": "Adv Manufacturing Robot Op",
+  "u": "UAW/IAM",
+  "h": 120,
+  "l": [
+   "Robot Safety",
+   "Programming",
+   "Maintenance"
+  ],
+  "o": [
+   "Operate robots safely",
+   "Program sequences"
+  ]
+ },
+ "scenarios": [
+  {
+   "id": "s04-curable-x-adv-ironworkers-1",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Robot Safety",
+   "trade": "ironworkers",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Robot Safety for ironworkers at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/robot_status",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-welders-1",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Robot Safety",
+   "trade": "welders",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Robot Safety for welders at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/robot_status",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-machinists-1",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Robot Safety",
+   "trade": "machinists",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Robot Safety for machinists at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/joint_states",
+    "/robot_status",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-ironworkers-2",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Programming",
+   "trade": "ironworkers",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Programming for ironworkers at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-welders-2",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Programming",
+   "trade": "welders",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Programming for welders at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-machinists-2",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Programming",
+   "trade": "machinists",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Programming for machinists at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/cmd_vel",
+    "/odom",
+    "/joint_states",
+    "/safety_state"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-ironworkers-3",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Maintenance",
+   "trade": "ironworkers",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Maintenance for ironworkers at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/gripper_state",
+    "/force_torque",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-welders-3",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Maintenance",
+   "trade": "welders",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Maintenance for welders at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/gripper_state",
+    "/force_torque",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  },
+  {
+   "id": "s04-curable-x-adv-machinists-3",
+   "certification": "Adv Manufacturing Robot Op",
+   "level": "Maintenance",
+   "trade": "machinists",
+   "industry": "automotive-manufacturing",
+   "location": "Renaissance Center, Detroit Michigan",
+   "task": "Maintenance for machinists at Renaissance Center",
+   "duration_minutes": 13,
+   "learning_objectives": [
+    "Operate robots safely",
+    "Program sequences"
+   ],
+   "assessment": {
+    "type": "practical",
+    "passing_score": 80
+   },
+   "ros_topics_used": [
+    "/gripper_state",
+    "/force_torque",
+    "/joint_states"
+   ],
+   "robot_types": [
+    "universal-robots-ur10e",
+    "franka-fr3"
+   ]
+  }
+ ],
+ "jsonl_training_schema": {
+  "version": "agi-robotics-lang/1.0",
+  "fields": [
+   "timestamp",
+   "robot_id",
+   "task_id",
+   "action",
+   "state_before",
+   "state_after",
+   "reward",
+   "safety_violation",
+   "human_intervention",
+   "task_success",
+   "operator_notes",
+   "union_local",
+   "shift"
+  ],
+  "description": "JSONL training records for automotive-manufacturing robot operations"
+ }
+}
