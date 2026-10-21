@@ -44,8 +44,8 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo?.place || slug }); S.scene.add(fleet);
   if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground);
 
-  const counts = { ...veg.userData.counts, buildings: geo.features.building.length, ...water.userData.counts,
-    robots: fleet.userData.episodes.length, zones: zones.length, imageryZoom: img.zoom };
+  const counts = { ...veg.userData.counts, buildings: geo?.features?.building?.length || 0, ...water.userData.counts,
+    robots: fleet.userData.episodes.length, zones: zones.length, imageryZoom: img?.zoom || 0 };
   let flyT = null;
   const fly = (p, dist = 40) => { flyT = { from: S.camera.position.clone(), to: p.clone().add(new THREE.Vector3(dist, dist * 0.6, dist)), look: p.clone(), t: 0 }; };
   wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, fleet, fly });

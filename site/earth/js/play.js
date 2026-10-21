@@ -55,8 +55,9 @@ export function makeAvatars(lines, zones, ground, court) {
   const g = new THREE.Group(); g.name = 'avatars';
   const at = (o, x, z) => { o.position.set(x, ground.height(x, z), z); return o; };
   const L = lines || {};
+  const cx = court ? court[0] : 40, cz = court ? court[1] : 40;
   const omega = at(figure(0xf5f0e6, 1.25, true), 10, -8); omega.userData = { who: 'Omega Steward', role: 'defined, not seated: advises, never votes', say: L.omega };
-  const coach = at(figure(0xff7a1a, 1.05), court[0] - 18, court[1]); coach.userData = { who: 'Coach', say: L.coach };
+  const coach = at(figure(0xff7a1a, 1.05), cx - 18, cz); coach.userData = { who: 'Coach', say: L.coach };
   const hermes = at(figure(0x6ad1ff, 0.95), 0, 12); hermes.userData = { who: 'Hermes', role: 'messenger between zones and worlds', say: L.hermes, route: zones.map(z => [z.x, z.z]) };
   const wing = new THREE.Mesh(new THREE.ConeGeometry(0.12, 0.6, 4), new THREE.MeshBasicMaterial({ color: 0xffffff }));
   wing.rotation.z = Math.PI / 2; wing.position.set(0.3, 1.9, 0); hermes.add(wing, wing.clone().translateX(-0.6));
