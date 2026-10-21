@@ -40,7 +40,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-amr-basics",
+   "module_url": "#module-amr-ops"
   },
   {
    "id": "s22-get-delivery-dao-amr-operating-eng-1",
@@ -68,7 +70,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-amr-basics",
+   "module_url": "#module-amr-ops"
   },
   {
    "id": "s22-get-delivery-dao-amr-electricians-1",
@@ -96,7 +100,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-amr-basics",
+   "module_url": "#module-amr-ops"
   },
   {
    "id": "s22-get-delivery-dao-amr-laborers-2",
@@ -123,7 +129,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-fleet",
+   "module_url": "#module-fleet-mgmt"
   },
   {
    "id": "s22-get-delivery-dao-amr-operating-eng-2",
@@ -150,7 +158,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-fleet",
+   "module_url": "#module-fleet-mgmt"
   },
   {
    "id": "s22-get-delivery-dao-amr-electricians-2",
@@ -177,7 +187,9 @@
    "robot_types": [
     "clearpath-husky-a200",
     "fetch-robotics-fetch"
-   ]
+   ],
+   "module_link": "union-fleet",
+   "module_url": "#module-fleet-mgmt"
   },
   {
    "id": "s22-get-delivery-dao-amr-laborers-3",
@@ -282,5 +294,196 @@
    "shift"
   ],
   "description": "JSONL training records for logistics-warehousing robot operations"
- }
+ },
+ "modules": {
+  "union-robot-safety": {
+   "id": "union-robot-safety",
+   "title": "Robot Safety Fundamentals",
+   "url": "#module-robot-safety"
+  },
+  "union-programming": {
+   "id": "union-programming",
+   "title": "Robot Programming Basics",
+   "url": "#module-robot-programming"
+  },
+  "union-maintenance": {
+   "id": "union-maintenance",
+   "title": "Robot Maintenance",
+   "url": "#module-robot-maintenance"
+  },
+  "union-amr-basics": {
+   "id": "union-amr-basics",
+   "title": "AMR Operations",
+   "url": "#module-amr-ops"
+  },
+  "union-fleet": {
+   "id": "union-fleet",
+   "title": "AMR Fleet Coordination",
+   "url": "#module-fleet-mgmt"
+  },
+  "union-site-safety": {
+   "id": "union-site-safety",
+   "title": "Construction Site Robot Safety",
+   "url": "#module-site-safety"
+  },
+  "union-cleanroom": {
+   "id": "union-cleanroom",
+   "title": "Cleanroom Robotics",
+   "url": "#module-cleanroom"
+  },
+  "union-field": {
+   "id": "union-field",
+   "title": "Agricultural Robot Operations",
+   "url": "#module-ag-robots"
+  },
+  "union-solar-wind": {
+   "id": "union-solar-wind",
+   "title": "Clean Energy Robot Safety",
+   "url": "#module-clean-energy"
+  },
+  "union-semi-cleanroom": {
+   "id": "union-semi-cleanroom",
+   "title": "Semiconductor Cleanroom Ops",
+   "url": "#module-semi-cleanroom"
+  },
+  "union-aerospace": {
+   "id": "union-aerospace",
+   "title": "Aerospace Robotics Safety",
+   "url": "#module-aerospace"
+  },
+  "k12-robotics": {
+   "id": "k12-robotics",
+   "title": "Introduction to Robotics",
+   "url": "#module-k12-robotics"
+  },
+  "k12-coding": {
+   "id": "k12-coding",
+   "title": "Coding for Robots",
+   "url": "#module-k12-coding"
+  },
+  "k12-ai-ethics": {
+   "id": "k12-ai-ethics",
+   "title": "AI and Society",
+   "url": "#module-k12-ai"
+  },
+  "k12-engineering": {
+   "id": "k12-engineering",
+   "title": "Engineering Design",
+   "url": "#module-k12-engineering"
+  },
+  "ngo-data": {
+   "id": "ngo-data",
+   "title": "Robot-Assisted Data Collection",
+   "url": "#module-ngo-data"
+  },
+  "ngo-emergency": {
+   "id": "ngo-emergency",
+   "title": "Robots in Disaster Response",
+   "url": "#module-ngo-emergency"
+  },
+  "ngo-community": {
+   "id": "ngo-community",
+   "title": "Community Technology Programs",
+   "url": "#module-ngo-community"
+  },
+  "un-sdg": {
+   "id": "un-sdg",
+   "title": "Robots for SDGs",
+   "url": "#module-un-sdg"
+  },
+  "un-peace": {
+   "id": "un-peace",
+   "title": "Technology in Peacekeeping",
+   "url": "#module-un-peace"
+  },
+  "un-climate": {
+   "id": "un-climate",
+   "title": "Robots for Climate Monitoring",
+   "url": "#module-un-climate"
+  }
+ },
+ "k12_programs": [
+  {
+   "audience": "k12",
+   "title": "Robotics in the Real World",
+   "grade": "6-8",
+   "module_link": "k12-robotics",
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Explore how robots work in this industry",
+     "minutes": 45,
+     "module": "k12-robotics"
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Program a simple robot task",
+     "minutes": 60,
+     "module": "k12-coding"
+    }
+   ]
+  },
+  {
+   "audience": "k12",
+   "title": "AI and Our Future",
+   "grade": "9-12",
+   "module_link": "k12-ai-ethics",
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Discuss how AI changes jobs",
+     "minutes": 45,
+     "module": "k12-ai-ethics"
+    },
+    {
+     "zone": "Proposal Forum",
+     "activity": "Design a robot to help your community",
+     "minutes": 60,
+     "module": "k12-engineering"
+    }
+   ]
+  }
+ ],
+ "ngo_programs": [
+  {
+   "audience": "ngo",
+   "title": "Technology for Good",
+   "module_link": "ngo-data",
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Learn how robots collect environmental data",
+     "minutes": 45,
+     "module": "ngo-data"
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Plan a robot-assisted community project",
+     "minutes": 60,
+     "module": "ngo-community"
+    }
+   ]
+  }
+ ],
+ "un_programs": [
+  {
+   "audience": "un",
+   "title": "Robots for Sustainable Development",
+   "module_link": "un-sdg",
+   "sessions": [
+    {
+     "zone": "Charter Hall",
+     "activity": "Map how robots support UN SDGs",
+     "minutes": 45,
+     "module": "un-sdg"
+    },
+    {
+     "zone": "Research Synthesis Lab",
+     "activity": "Design a robot solution for a global challenge",
+     "minutes": 60,
+     "module": "un-climate"
+    }
+   ]
+  }
+ ]
 }
