@@ -1,163 +1,182 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>WorldForge Earth — 41 Training Worlds on Real Earth Maps</title>
-<meta name="description" content="Explore 41 agentic training worlds built on real Earth locations. 8 industry training hubs, 72 ROS 2 robot tasks, 8 union certification programs, and AGI robotics language JSONL schemas. Powered by AGI Corp.">
-<meta name="keywords" content="training worlds, agentic AI, ROS 2 robotics, union training, Detroit automation, Memphis logistics, construction robots, healthcare robotics, agriculture drones, clean energy inspection, semiconductor manufacturing, aerospace assembly, GIS, satellite imagery, WorldForge, AGI Corp">
-<meta property="og:title" content="WorldForge Earth — 41 Training Worlds on Real Earth Maps">
-<meta property="og:description" content="Walkable worlds on real maps with ROS 2 robot training, union certifications, and agentic AI.">
+<title>WorldForge Earth — 41 Training Worlds on Real Maps</title>
+<meta name="description" content="41 agentic training worlds on real Earth maps. 8 industry hubs, 72 ROS 2 robot tasks, 8 union certifications. Powered by AGI Corp.">
+<meta property="og:title" content="WorldForge Earth — 41 Training Worlds">
+<meta property="og:description" content="Real Earth maps with ROS 2 robot training and union certifications.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://agifuturefoundation.github.io/WorldForge-Browser/earth/">
-<meta property="og:image" content="https://agifuturefoundation.github.io/WorldForge-Browser/earth/media/climate-dao.jpg">
 <link rel="canonical" href="https://agifuturefoundation.github.io/WorldForge-Browser/earth/">
 <style>
-:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:#0b1214;--card:rgba(14,24,28,.92);--glow:rgba(67,197,158,.12)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-.hero{text-align:center;padding:60px 20px 30px;background:linear-gradient(180deg,#0b1214 0%,rgba(9,18,20,.95) 100%)}
-.hero h1{font-size:2.4rem;margin:0 0 8px;font-weight:700}.hero h1 span{color:var(--acc)}
-.hero .sub{color:var(--mut);font-size:1.05rem;margin:0 auto 24px;max-width:640px}
-.cta{display:inline-block;background:var(--acc);color:#0b1214;font-weight:700;padding:14px 32px;border-radius:10px;font-size:1.05rem;transition:transform .15s,box-shadow .15s}
-.cta:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(67,197,158,.3);text-decoration:none}
-.stats{display:flex;justify-content:center;gap:32px;padding:20px 16px;flex-wrap:wrap}
-.stats div{text-align:center}.stats b{display:block;font-size:1.6rem;color:var(--acc)}.stats span{font-size:.78rem;color:var(--mut)}
-section{max-width:1100px;margin:0 auto;padding:20px 16px}
-section h2{font-size:1.3rem;margin:0 0 12px;color:var(--acc);border-bottom:1px solid rgba(255,255,255,.08);padding-bottom:8px}
-.hub-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-.hub{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:14px;transition:transform .15s}
-.hub:hover{transform:translateY(-2px)}.hub h3{margin:0 0 4px;font-size:.95rem}.hub h3 a{color:var(--ink)}
-.hub .meta{font-size:.78rem;color:var(--mut);margin:0 0 6px}.hub .tags{display:flex;gap:4px;flex-wrap:wrap}
-.hub .tag{font-size:.65rem;padding:2px 6px;border-radius:4px;background:var(--glow);color:var(--acc)}
-.worlds-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px}
-.world-link{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:6px;padding:8px 10px;font-size:.82rem;transition:background .15s}
-.world-link:hover{background:rgba(67,197,158,.1);text-decoration:none;color:var(--ink)}
-.world-link .place{font-size:.7rem;color:var(--mut)}
-.robot-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
-.robot-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:6px;padding:10px;font-size:.8rem}
-.robot-card b{color:var(--acc)}
-.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
-.cert{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:8px;padding:12px}
-.cert h3{margin:0 0 4px;font-size:.9rem}.cert .union{color:var(--acc);font-size:.78rem}.cert .hours{color:var(--mut);font-size:.75rem}
-.cert .levels{margin-top:6px}.cert .level{font-size:.72rem;color:var(--mut);padding:2px 0}
-footer{text-align:center;padding:24px 16px;color:var(--mut);font-size:.72rem;border-top:1px solid rgba(255,255,255,.06);margin-top:30px}
-<div class="hero">
-  <h1>WorldForge <span>Earth</span></h1>
-  <p class="sub">41 agentic training worlds built on real Earth maps — satellite imagery, elevation data, OSM buildings, ROS 2 robot training, union certification programs, and AGI robotics language schemas.</p>
-  <a href="#hubs" class="cta">Explore Industry Hubs</a>
-  <a href="#worlds" class="cta" style="background:transparent;border:1px solid var(--acc);color:var(--acc);margin-left:12px">All 41 Worlds</a>
-</div>
-<div class="stats">
-  <div><b>41</b><span>Worlds</span></div>
-  <div><b>8</b><span>Industry Hubs</span></div>
-  <div><b>72</b><span>ROS 2 Tasks</span></div>
-  <div><b>8</b><span>Union Certs</span></div>
-  <div><b>10</b><span>Robot Types</span></div>
-</div>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0f14;color:#e2e8f0;font:15px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif}
+a{color:#34d399;text-decoration:none}a:hover{color:#6ee7b7}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
 
-<section id="hubs">
-  <h2>Industry Training Hubs</h2>
-  <p style="color:var(--mut);margin:0 0 16px;font-size:.9rem">8 cities with specialized robot training, union certification courses, and AGI robotics language JSONL schemas for the future of work.</p>
-  <div class="hub-grid">
-    <div class="hub"><h3><a href="world.html?world=s04-curable-x">Detroit — Automotive Manufacturing</a></h3><p class="meta">Renaissance Center, Detroit Michigan</p><div class="tags"><span class="tag">UAW/IAM</span><span class="tag">120 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Weld sequences, parts delivery, pick-and-place assembly. ROS 2 topics: /joint_states, /cmd_vel, /gripper_state.</p></div>
-    <div class="hub"><h3><a href="world.html?world=s22-get-delivery-dao">Memphis — Logistics & Warehousing</a></h3><p class="meta">FedEx World Hub, Memphis Tennessee</p><div class="tags"><span class="tag">Teamsters/ILWU</span><span class="tag">80 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">AMR sorting, palletizing, warehouse inspection. ROS 2 topics: /cmd_vel, /odom, /map, /laser_scan.</p></div>
-    <div class="hub"><h3><a href="world.html?world=s12-parking-smart-x">Miami — Construction & Infrastructure</a></h3><p class="meta">1111 Lincoln Road, Miami Beach Florida</p><div class="tags"><span class="tag">Laborers/Ironworkers</span><span class="tag">100 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Site survey, rebar tying, drone inspection. ROS 2 topics: /cmd_vel, /camera/depth, /gps.</p></div>
+/* Hero */
+.hero{background:linear-gradient(135deg,#0a0f14 0%,#111827 50%,#0a0f14 100%);padding:80px 20px 60px;text-align:center;border-bottom:1px solid rgba(52,211,153,.15)}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.hero h1 em{font-style:normal;color:#34d399}
+.hero p{color:#94a3b8;font-size:1.1rem;max-width:640px;margin:0 auto 28px}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 28px;border-radius:8px;font-weight:600;font-size:.95rem;transition:all .2s}
+.btn-primary{background:#34d399;color:#0a0f14}.btn-primary:hover{background:#6ee7b7;transform:translateY(-1px)}
+.btn-outline{border:1.5px solid rgba(52,211,153,.4);color:#34d399}.btn-outline:hover{background:rgba(52,211,153,.1)}
 
-<section id="robots">
-  <h2>ROS 2 Robot Training Tasks</h2>
-  <p style="color:var(--mut);margin:0 0 16px;font-size:.9rem">72 training tasks across 10 robot types with JSONL feedback schemas for AGI robotics language. Each task includes ROS 2 action servers, topic subscriptions, safety stops, and human-in-loop approvals.</p>
-  <div class="robot-list">
-    <div class="robot-card"><b>Boston Dynamics Spot</b> — Quadruped for inspection and survey. Topics: /cmd_vel, /odom, /joint_states, /camera/depth. Speed: 1.6 m/s.</div>
-    <div class="robot-card"><b>Unitree Go2</b> — Agile quadruped for site navigation. Topics: /cmd_vel, /odom, /joint_states. Speed: 2.5 m/s.</div>
-    <div class="robot-card"><b>Clearpath Husky A200</b> — UGV for logistics and agriculture. Topics: /cmd_vel, /odom, /laser_scan, /camera/rgb. Speed: 1.0 m/s.</div>
-    <div class="robot-card"><b>Universal Robots UR10e</b> — Collaborative arm for welding and assembly. Topics: /joint_states, /force_torque, /gripper_state.</div>
-    <div class="robot-card"><b>Franka FR3</b> — Precision arm for healthcare and electronics. Topics: /joint_states, /force_torque, /gripper_state, /cleanroom_state.</div>
-    <div class="robot-card"><b>Kinova Gen3</b> — 7-DOF arm for PCB and wafer handling. Topics: /joint_states, /vision_state, /gripper_state.</div>
-    <div class="robot-card"><b>Fetch Robotics Freight</b> — Mobile manipulator for logistics. Topics: /cmd_vel, /odom, /joint_states, /gripper_state. Speed: 1.0 m/s.</div>
-    <div class="robot-card"><b>Bitcraze Crazyflie 2.1+</b> — Drone for aerial inspection. Topics: /cmd_vel, /odom, /camera/rgb, /gps, /lidar. Speed: 1.5 m/s.</div>
-    <div class="robot-card"><b>PAL Robotics TALOS</b> — Humanoid for healthcare delivery. Topics: /cmd_vel, /odom, /joint_states. Speed: 0.5 m/s.</div>
-    <div class="robot-card"><b>SoftBank NAO</b> — Humanoid for patient interaction. Topics: /cmd_vel, /odom, /joint_states. Speed: 0.3 m/s.</div>
-  </div>
-  <p style="color:var(--mut);margin:16px 0 0;font-size:.82rem"><b>JSONL Training Schema:</b> timestamp, robot_id, task_id, action, state_before, state_after, reward, safety_violation, human_intervention, task_success, operator_notes, union_local, shift, weather_conditions. One JSON object per line, UTF-8 encoded.</p>
+/* Stats */
+.stats{display:flex;justify-content:center;gap:40px;padding:32px 20px;flex-wrap:wrap;background:#0f1724;border-bottom:1px solid rgba(255,255,255,.05)}
+.stat{text-align:center}.stat b{display:block;font-size:2rem;color:#34d399;font-weight:700}.stat span{font-size:.8rem;color:#64748b;text-transform:uppercase;letter-spacing:.05em}
 
-<section id="certs">
-  <h2>Union Certification Programs</h2>
-  <p style="color:var(--mut);margin:0 0 16px;font-size:.9rem">8 certification programs developed with labor unions for the future of work. Each program includes practical assessments, safety compliance training, and hands-on robot operation.</p>
-  <div class="cert-grid">
-    <div class="cert"><h3>Advanced Manufacturing Robot Operator</h3><span class="union">UAW / IAM</span> <span class="hours">120 hours</span><div class="levels"><div class="level">1. Robot Safety & Basics</div><div class="level">2. Programming & Operation</div><div class="level">3. Maintenance & Troubleshooting</div></div></div>
-    <div class="cert"><h3>Autonomous Mobile Robot Technician</h3><span class="union">Teamsters / ILWU</span> <span class="hours">80 hours</span><div class="levels"><div class="level">1. AMR Fundamentals</div><div class="level">2. Fleet Management</div><div class="level">3. Advanced Diagnostics</div></div></div>
-    <div class="cert"><h3>Construction Robotics Specialist</h3><span class="union">Laborers / Ironworkers</span> <span class="hours">100 hours</span><div class="levels"><div class="level">1. Site Robotics Safety</div><div class="level">2. Survey & Inspection Robots</div><div class="level">3. Heavy Equipment Automation</div></div></div>
-    <div class="cert"><h3>Healthcare Robotics Technician</h3><span class="union">1199SEIU</span> <span class="hours">90 hours</span><div class="levels"><div class="level">1. Cleanroom Robotics</div><div class="level">2. Pharmacy Automation</div><div class="level">3. Patient Care Robotics</div></div></div>
-    <div class="cert"><h3>Agricultural Robotics Operator</h3><span class="union">UFCW</span> <span class="hours">70 hours</span><div class="levels"><div class="level">1. Field Robot Basics</div><div class="level">2. Harvesting Automation</div><div class="level">3. Precision Agriculture</div></div></div>
-    <div class="cert"><h3>Clean Energy Robotics Technician</h3><span class="union">IBEW</span> <span class="hours">110 hours</span><div class="levels"><div class="level">1. Solar/Wind Robot Safety</div><div class="level">2. Inspection Systems</div><div class="level">3. Advanced Maintenance</div></div></div>
-    <div class="cert"><h3>Semiconductor Manufacturing Robotics</h3><span class="union">IBEW / IUE-CWA</span> <span class="hours">130 hours</span><div class="levels"><div class="level">1. Cleanroom Robotics</div><div class="level">2. Wafer Handling</div><div class="level">3. Advanced Process Control</div></div></div>
-    <div class="cert"><h3>Aerospace Manufacturing Robotics</h3><span class="union">IAM / UAW Aerospace</span> <span class="hours">140 hours</span><div class="levels"><div class="level">1. Aerospace Robotics Safety</div><div class="level">2. Composite Automation</div><div class="level">3. Assembly Systems</div></div></div>
-  </div>
-</section>
-</section>
-    <div class="hub"><h3><a href="world.html?world=s05-biopharma-go">Boston — Healthcare & Biotech</a></h3><p class="meta">Kendall Square, Cambridge Massachusetts</p><div class="tags"><span class="tag">1199SEIU</span><span class="tag">90 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Pipetting, sterile compounding, patient delivery. ROS 2 topics: /force_torque, /gripper_state, /tool_state.</p></div>
-    <div class="hub"><h3><a href="world.html?world=s19-moscone-x">Central Valley — Agriculture & Food</a></h3><p class="meta">Fresno California Agricultural Hub</p><div class="tags"><span class="tag">UFCW</span><span class="tag">70 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Crop monitoring, selective harvesting, field survey. ROS 2 topics: /camera/rgb, /gps, /multispectral.</p></div>
-    <div class="hub"><h3><a href="world.html?world=s32-solar-dao">Houston — Clean Energy</a></h3><p class="meta">Energy Corridor, Houston Texas</p><div class="tags"><span class="tag">IBEW</span><span class="tag">110 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Solar panel inspection, wind turbine maintenance, power line survey. ROS 2 topics: /camera/thermal, /lidar.</p></div>
-    <div class="hub"><h3><a href="world.html?world=s27-genomic-dao">Austin — Electronics & Semiconductors</a></h3><p class="meta">Samsung Semiconductor, Austin Texas</p><div class="tags"><span class="tag">IBEW/IUE-CWA</span><span class="tag">130 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Cleanroom wafer handling, PCB assembly, cleanroom transport. ROS 2 topics: /cleanroom_state, /vision_state.</p></div>
+/* Sections */
+section{padding:48px 0}
+section h2{font-size:1.5rem;font-weight:700;margin-bottom:8px;color:#f1f5f9}
+section .lead{color:#94a3b8;margin-bottom:24px;font-size:.95rem}
 
-<section id="worlds">
-  <h2>All 41 Training Worlds</h2>
-  <p style="color:var(--mut);margin:0 0 16px;font-size:.9rem">Click any world to enter the training simulator with real satellite imagery, elevation data, and OSM buildings.</p>
-  <div class="worlds-grid">
-    <a class="world-link" href="world.html?world=agentic-payments"><b>Agentic Payments</b><br><span class="place">Charging Bull, Wall Street, NYC</span></a>
-    <a class="world-link" href="world.html?world=agents-deploy-infrastructure"><b>Agents Deploy Infrastructure</b><br><span class="place">Hoover Dam, Nevada</span></a>
-    <a class="world-link" href="world.html?world=autonomous-organizations"><b>Autonomous Organizations</b><br><span class="place">Oracle HQ, Redwood Shores</span></a>
-    <a class="world-link" href="world.html?world=biota-blockchain"><b>Biota Blockchain</b><br><span class="place">Genentech HQ, South SF</span></a>
-    <a class="world-link" href="world.html?world=cancer-dao"><b>Cancer DAO</b><br><span class="place">Fred Hutchinson, Seattle</span></a>
-    <a class="world-link" href="world.html?world=climate-dao"><b>Climate DAO</b><br><span class="place">Thames Barrier, London</span></a>
-    <a class="world-link" href="world.html?world=diagnostic-x"><b>Diagnostic X</b><br><span class="place">Karolinska Hospital, Stockholm</span></a>
-    <a class="world-link" href="world.html?world=ecology-dao"><b>Ecology DAO</b><br><span class="place">Monteverde Cloud Forest, Costa Rica</span></a>
-    <a class="world-link" href="world.html?world=education-dao"><b>Education DAO</b><br><span class="place">Christ Church Meadow, Oxford</span></a>
-    <a class="world-link" href="world.html?world=empathic-x"><b>Empathic X</b><br><span class="place">Parc des Buttes-Chaumont, Paris</span></a>
-    <a class="world-link" href="world.html?world=locator-x"><b>Locator X</b><br><span class="place">Jackson Square, New Orleans</span></a>
-    <a class="world-link" href="world.html?world=public-health-dao"><b>Public Health DAO</b><br><span class="place">Broad Street Pump, London</span></a>
-    <a class="world-link" href="world.html?world=robotics-dao"><b>Robotics DAO</b><br><span class="place">NASA JPL, Pasadena</span></a>
-    <a class="world-link" href="world.html?world=s04-curable-x"><b>Detroit — Automotive</b><br><span class="place">Renaissance Center, Detroit</span></a>
-    <a class="world-link" href="world.html?world=s05-biopharma-go"><b>Boston — Healthcare</b><br><span class="place">Kendall Square, Cambridge</span></a>
-    <a class="world-link" href="world.html?world=s06-blockchain"><b>Blockchain</b><br><span class="place">Zug Lakeside, Switzerland</span></a>
-    <a class="world-link" href="world.html?world=s07-divine-dao"><b>Divine DAO</b><br><span class="place">Dashashwamedh Ghat, Varanasi</span></a>
+/* Hub cards */
+.hubs{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px}
+.hub{background:#111827;border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:20px;transition:all .2s}
+.hub:hover{border-color:rgba(52,211,153,.3);transform:translateY(-2px)}
+.hub h3{font-size:1rem;margin-bottom:4px}.hub h3 a{color:#f1f5f9}
+.hub .loc{font-size:.82rem;color:#64748b;margin-bottom:8px}
+.hub .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px}
+.hub .tag{font-size:.7rem;padding:3px 8px;border-radius:4px;background:rgba(52,211,153,.1);color:#34d399}
+.hub p{font-size:.82rem;color:#94a3b8;line-height:1.5}
 
-<section id="worlds2">
-  <div class="worlds-grid">
-    <a class="world-link" href="world.html?world=s13-gonstead-x"><b>Gonstead X</b><br><span class="place">Mount Horeb, Wisconsin</span></a>
-    <a class="world-link" href="world.html?world=s14-askdoc-x"><b>AskDoc X</b><br><span class="place">Mayo Clinic, Rochester MN</span></a>
-    <a class="world-link" href="world.html?world=s15-romanbridge-dao"><b>RomanBridge DAO</b><br><span class="place">Pont du Gard, France</span></a>
-    <a class="world-link" href="world.html?world=s16-echodawn-dao"><b>EchoDawn DAO</b><br><span class="place">Echo Point, Blue Mountains</span></a>
-    <a class="world-link" href="world.html?world=s17-curable-blockchain-dao"><b>Curable Blockchain DAO</b><br><span class="place">Blue Lagoon, Iceland</span></a>
-    <a class="world-link" href="world.html?world=s19-moscone-x"><b>Central Valley — Agriculture</b><br><span class="place">Fresno Agricultural Hub</span></a>
-    <a class="world-link" href="world.html?world=s20-cmmc"><b>CMMC</b><br><span class="place">The Pentagon, Arlington VA</span></a>
-    <a class="world-link" href="world.html?world=s21-incubator-dao"><b>Incubator DAO</b><br><span class="place">Kendall Square, Cambridge MA</span></a>
-    <a class="world-link" href="world.html?world=s22-get-delivery-dao"><b>Memphis — Logistics</b><br><span class="place">FedEx World Hub, Memphis</span></a>
-    <a class="world-link" href="world.html?world=s23-avatar-chat"><b>Avatar Chat</b><br><span class="place">Zhangjiajie, China</span></a>
-    <a class="world-link" href="world.html?world=s24-donatello-dao"><b>Donatello DAO</b><br><span class="place">Piazzale Michelangelo, Florence</span></a>
-    <a class="world-link" href="world.html?world=s25-mypet-ai"><b>MyPet AI</b><br><span class="place">Central Park, NYC</span></a>
-    <a class="world-link" href="world.html?world=s26-lyka-dao"><b>Lyka DAO</b><br><span class="place">Intl Wolf Center, Ely MN</span></a>
-    <a class="world-link" href="world.html?world=s27-genomic-dao"><b>Austin — Electronics</b><br><span class="place">Samsung Semiconductor, Austin</span></a>
-    <a class="world-link" href="world.html?world=s28-genomic-blockchain"><b>Genomic Blockchain</b><br><span class="place">Illumina HQ, San Diego</span></a>
-    <a class="world-link" href="world.html?world=s29-metaverse-dao"><b>Metaverse DAO</b><br><span class="place">Meta HQ, Menlo Park</span></a>
-    <a class="world-link" href="world.html?world=s31-aerospace-dao"><b>Seattle — Aerospace</b><br><span class="place">Boeing Everett, Washington</span></a>
-    <a class="world-link" href="world.html?world=s32-solar-dao"><b>Houston — Clean Energy</b><br><span class="place">Energy Corridor, Houston</span></a>
-    <a class="world-link" href="world.html?world=s33-infogurus"><b>InfoGurus</b><br><span class="place">Bibliotheca Alexandrina</span></a>
-    <a class="world-link" href="world.html?world=s34-als-dao"><b>ALS DAO</b><br><span class="place">Yankee Stadium, Bronx NYC</span></a>
-    <a class="world-link" href="world.html?world=s35-parkinsons-dao"><b>Parkinsons DAO</b><br><span class="place">St Leonard's, Shoreditch London</span></a>
-  </div>
-</section>
+/* Robots */
+.robots{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.robot{background:#111827;border:1px solid rgba(255,255,255,.06);border-radius:8px;padding:14px}
+.robot b{color:#34d399;font-size:.88rem}
+.robot small{color:#64748b;font-size:.75rem;display:block;margin-top:4px}
 
-<footer>
-  Agents operate; people govern. All worlds are drafts — no live deployment on mainnet.<br>
-  Powered by <a href="https://github.com/AGIFutureFoundation">AGI Corp</a> · <a href="https://github.com/AGIFutureFoundation/WorldForge-Browser">GitHub</a>
-</footer>
-</body></html>
-    <a class="world-link" href="world.html?world=s09-astrological-x"><b>Astrological X</b><br><span class="place">Stonehenge, Wiltshire</span></a>
-    <a class="world-link" href="world.html?world=s11-molecular"><b>Molecular</b><br><span class="place">Molecule Man, Berlin</span></a>
-    <a class="world-link" href="world.html?world=s12-parking-smart-x"><b>Miami — Construction</b><br><span class="place">1111 Lincoln Road, Miami Beach</span></a>
-</div></section>
-    <div class="hub"><h3><a href="world.html?world=s31-aerospace-dao">Seattle — Aerospace & Defense</a></h3><p class="meta">Boeing Everett Factory, Washington</p><div class="tags"><span class="tag">IAM/UAW Aerospace</span><span class="tag">140 hours</span><span class="tag">9 robot tasks</span></div><p style="font-size:.78rem;color:var(--mut);margin:6px 0 0">Composite layup, aircraft assembly, hangar inspection. ROS 2 topics: /force_torque, /tool_state, /camera/depth.</p></div>
-  </div>
-</section>
-@media(max-width:600px){.hero h1{font-size:1.6rem}.stats{gap:16px}}
+/* Certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.cert{background:#111827;border:1px solid rgba(255,255,255,.06);border-radius:10px;padding:18px}
+.cert h3{font-size:.95rem;color:#f1f5f9;margin-bottom:4px}
+.cert .union{color:#34d399;font-size:.8rem}.cert .hours{color:#64748b;font-size:.78rem}
+.cert .lv{font-size:.75rem;color:#94a3b8;padding:2px 0}
+
+/* Worlds */
+.worlds{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px}
+.wl{background:#111827;border:1px solid rgba(255,255,255,.04);border-radius:6px;padding:10px 12px;font-size:.82rem;transition:all .15s}
+.wl:hover{background:rgba(52,211,153,.08);border-color:rgba(52,211,153,.2)}
+.wl b{color:#e2e8f0}.wl span{font-size:.72rem;color:#64748b;display:block;margin-top:2px}
+
+/* Footer */
+footer{text-align:center;padding:32px 20px;color:#475569;font-size:.78rem;border-top:1px solid rgba(255,255,255,.05)}
 </style>
 </head><body>
+<div class="hero"><div class="wrap">
+  <h1>WorldForge <em>Earth</em></h1>
+  <p>41 training worlds on real Earth maps with satellite imagery, elevation data, ROS 2 robot training, and union certification programs.</p>
+  <div class="btns">
+    <a href="#hubs" class="btn btn-primary">Industry Hubs</a>
+    <a href="#worlds" class="btn btn-outline">All 41 Worlds</a>
+  </div>
+</div></div>
+
+<div class="stats">
+  <div class="stat"><b>41</b><span>Worlds</span></div>
+  <div class="stat"><b>8</b><span>Hubs</span></div>
+  <div class="stat"><b>72</b><span>ROS 2 Tasks</span></div>
+  <div class="stat"><b>8</b><span>Certs</span></div>
+  <div class="stat"><b>10</b><span>Robots</span></div>
+</div>
+
+<section id="hubs"><div class="wrap">
+  <h2>Industry Training Hubs</h2>
+  <p class="lead">8 cities with specialized robot training, union certifications, and AGI robotics JSONL schemas.</p>
+  <div class="hubs">
+    <div class="hub"><h3><a href="world.html?world=s04-curable-x">Detroit — Automotive</a></h3><p class="loc">Renaissance Center, Detroit MI</p><div class="tags"><span class="tag">UAW/IAM</span><span class="tag">120h</span><span class="tag">9 tasks</span></div><p>Weld sequences, parts delivery, pick-and-place assembly. ROS 2: /joint_states, /cmd_vel.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s22-get-delivery-dao">Memphis — Logistics</a></h3><p class="loc">FedEx World Hub, Memphis TN</p><div class="tags"><span class="tag">Teamsters</span><span class="tag">80h</span><span class="tag">9 tasks</span></div><p>AMR sorting, palletizing, warehouse inspection. ROS 2: /cmd_vel, /odom, /laser_scan.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s12-parking-smart-x">Miami — Construction</a></h3><p class="loc">1111 Lincoln Road, Miami Beach FL</p><div class="tags"><span class="tag">Laborers</span><span class="tag">100h</span><span class="tag">9 tasks</span></div><p>Site survey, rebar tying, drone inspection. ROS 2: /camera/depth, /gps.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s05-biopharma-go">Boston — Healthcare</a></h3><p class="loc">Kendall Square, Cambridge MA</p><div class="tags"><span class="tag">1199SEIU</span><span class="tag">90h</span><span class="tag">9 tasks</span></div><p>Pipetting, sterile compounding, patient delivery. ROS 2: /force_torque, /gripper_state.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s19-moscone-x">Central Valley — Agriculture</a></h3><p class="loc">Fresno Agricultural Hub, CA</p><div class="tags"><span class="tag">UFCW</span><span class="tag">70h</span><span class="tag">9 tasks</span></div><p>Crop monitoring, selective harvesting, field survey. ROS 2: /camera/rgb, /multispectral.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s32-solar-dao">Houston — Clean Energy</a></h3><p class="loc">Energy Corridor, Houston TX</p><div class="tags"><span class="tag">IBEW</span><span class="tag">110h</span><span class="tag">9 tasks</span></div><p>Solar inspection, wind turbine maintenance. ROS 2: /camera/thermal, /lidar.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s27-genomic-dao">Austin — Electronics</a></h3><p class="loc">Samsung Semiconductor, Austin TX</p><div class="tags"><span class="tag">IBEW/IUE-CWA</span><span class="tag">130h</span><span class="tag">9 tasks</span></div><p>Cleanroom wafer handling, PCB assembly. ROS 2: /cleanroom_state, /vision_state.</p></div>
+    <div class="hub"><h3><a href="world.html?world=s31-aerospace-dao">Seattle — Aerospace</a></h3><p class="loc">Boeing Everett Factory, WA</p><div class="tags"><span class="tag">IAM/UAW</span><span class="tag">140h</span><span class="tag">9 tasks</span></div><p>Composite layup, aircraft assembly. ROS 2: /force_torque, /tool_state.</p></div>
+  </div>
+
+<section id="robots"><div class="wrap">
+  <h2>ROS 2 Robot Training Tasks</h2>
+  <p class="lead">72 tasks across 10 robot types with JSONL feedback schemas for AGI robotics language.</p>
+  <div class="robots">
+    <div class="robot"><b>Boston Dynamics Spot</b><small>Quadruped · 1.6 m/s · /cmd_vel /odom /joint_states</small></div>
+    <div class="robot"><b>Unitree Go2</b><small>Quadruped · 2.5 m/s · /cmd_vel /odom /joint_states</small></div>
+    <div class="robot"><b>Clearpath Husky A200</b><small>UGV · 1.0 m/s · /cmd_vel /odom /laser_scan</small></div>
+    <div class="robot"><b>Universal Robots UR10e</b><small>Arm · /joint_states /force_torque /gripper_state</small></div>
+    <div class="robot"><b>Franka FR3</b><small>Arm · /joint_states /force_torque /cleanroom_state</small></div>
+    <div class="robot"><b>Kinova Gen3</b><small>7-DOF Arm · /joint_states /vision_state /gripper_state</small></div>
+    <div class="robot"><b>Fetch Robotics Freight</b><small>Mobile Manipulator · 1.0 m/s · /cmd_vel /odom</small></div>
+    <div class="robot"><b>Bitcraze Crazyflie 2.1+</b><small>Drone · 1.5 m/s · /cmd_vel /camera/rgb /lidar</small></div>
+    <div class="robot"><b>PAL Robotics TALOS</b><small>Humanoid · 0.5 m/s · /cmd_vel /odom /joint_states</small></div>
+    <div class="robot"><b>SoftBank NAO</b><small>Humanoid · 0.3 m/s · /cmd_vel /odom /joint_states</small></div>
+  </div>
+  <p style="margin-top:16px;font-size:.82rem;color:#64748b"><b>JSONL Schema:</b> timestamp, robot_id, task_id, action, state_before, state_after, reward, safety_violation, human_intervention, task_success, operator_notes, union_local, shift.</p>
+</div></section>
+
+<section id="certs"><div class="wrap">
+  <h2>Union Certification Programs</h2>
+  <p class="lead">8 programs with practical assessments, safety training, and hands-on robot operation.</p>
+  <div class="certs">
+    <div class="cert"><h3>Advanced Manufacturing Robot Operator</h3><span class="union">UAW / IAM</span> <span class="hours">120h</span><div class="lv">1. Robot Safety & Basics · 2. Programming & Operation · 3. Maintenance</div></div>
+    <div class="cert"><h3>Autonomous Mobile Robot Technician</h3><span class="union">Teamsters / ILWU</span> <span class="hours">80h</span><div class="lv">1. AMR Fundamentals · 2. Fleet Management · 3. Diagnostics</div></div>
+    <div class="cert"><h3>Construction Robotics Specialist</h3><span class="union">Laborers / Ironworkers</span> <span class="hours">100h</span><div class="lv">1. Site Safety · 2. Survey Robots · 3. Equipment Automation</div></div>
+    <div class="cert"><h3>Healthcare Robotics Technician</h3><span class="union">1199SEIU</span> <span class="hours">90h</span><div class="lv">1. Cleanroom Robotics · 2. Pharmacy Automation · 3. Patient Care</div></div>
+    <div class="cert"><h3>Agricultural Robotics Operator</h3><span class="union">UFCW</span> <span class="hours">70h</span><div class="lv">1. Field Basics · 2. Harvesting · 3. Precision Agriculture</div></div>
+    <div class="cert"><h3>Clean Energy Robotics Technician</h3><span class="union">IBEW</span> <span class="hours">110h</span><div class="lv">1. Solar/Wind Safety · 2. Inspection · 3. Maintenance</div></div>
+    <div class="cert"><h3>Semiconductor Manufacturing Robotics</h3><span class="union">IBEW / IUE-CWA</span> <span class="hours">130h</span><div class="lv">1. Cleanroom · 2. Wafer Handling · 3. Process Control</div></div>
+    <div class="cert"><h3>Aerospace Manufacturing Robotics</h3><span class="union">IAM / UAW Aerospace</span> <span class="hours">140h</span><div class="lv">1. Aerospace Safety · 2. Composite Automation · 3. Assembly</div></div>
+  </div>
+</div></section>
+</div></section>
+
+<section id="worlds"><div class="wrap">
+  <h2>All 41 Training Worlds</h2>
+  <p class="lead">Click any world to enter the training simulator with real satellite imagery, elevation, and OSM buildings.</p>
+  <div class="worlds">
+    <a class="wl" href="world.html?world=agentic-payments"><b>Agentic Payments</b><span>Wall Street, NYC</span></a>
+    <a class="wl" href="world.html?world=agents-deploy-infrastructure"><b>Agents Deploy Infra</b><span>Hoover Dam, Nevada</span></a>
+    <a class="wl" href="world.html?world=autonomous-organizations"><b>Autonomous Orgs</b><span>Oracle HQ, Redwood Shores</span></a>
+    <a class="wl" href="world.html?world=biota-blockchain"><b>Biota Blockchain</b><span>Genentech HQ, South SF</span></a>
+    <a class="wl" href="world.html?world=cancer-dao"><b>Cancer DAO</b><span>Fred Hutchinson, Seattle</span></a>
+    <a class="wl" href="world.html?world=climate-dao"><b>Climate DAO</b><span>Thames Barrier, London</span></a>
+    <a class="wl" href="world.html?world=diagnostic-x"><b>Diagnostic X</b><span>Karolinska, Stockholm</span></a>
+    <a class="wl" href="world.html?world=ecology-dao"><b>Ecology DAO</b><span>Monteverde, Costa Rica</span></a>
+    <a class="wl" href="world.html?world=education-dao"><b>Education DAO</b><span>Oxford, England</span></a>
+    <a class="wl" href="world.html?world=empathic-x"><b>Empathic X</b><span>Paris, France</span></a>
+    <a class="wl" href="world.html?world=locator-x"><b>Locator X</b><span>Jackson Square, New Orleans</span></a>
+    <a class="wl" href="world.html?world=public-health-dao"><b>Public Health DAO</b><span>Soho, London</span></a>
+    <a class="wl" href="world.html?world=robotics-dao"><b>Robotics DAO</b><span>NASA JPL, Pasadena</span></a>
+    <a class="wl" href="world.html?world=s04-curable-x"><b>Detroit Automotive</b><span>Renaissance Center</span></a>
+    <a class="wl" href="world.html?world=s05-biopharma-go"><b>Boston Healthcare</b><span>Kendall Square</span></a>
+    <a class="wl" href="world.html?world=s06-blockchain"><b>Blockchain</b><span>Zug, Switzerland</span></a>
+    <a class="wl" href="world.html?world=s07-divine-dao"><b>Divine DAO</b><span>Varanasi, India</span></a>
+    <a class="wl" href="world.html?world=s09-astrological-x"><b>Astrological X</b><span>Stonehenge, UK</span></a>
+    <a class="wl" href="world.html?world=s11-molecular"><b>Molecular</b><span>Berlin, Germany</span></a>
+    <a class="wl" href="world.html?world=s12-parking-smart-x"><b>Miami Construction</b><span>Lincoln Road</span></a>
+    <a class="wl" href="world.html?world=s13-gonstead-x"><b>Gonstead X</b><span>Mount Horeb, WI</span></a>
+    <a class="wl" href="world.html?world=s14-askdoc-x"><b>AskDoc X</b><span>Mayo Clinic, MN</span></a>
+    <a class="wl" href="world.html?world=s15-romanbridge-dao"><b>RomanBridge DAO</b><span>Pont du Gard, France</span></a>
+    <a class="wl" href="world.html?world=s16-echodawn-dao"><b>EchoDawn DAO</b><span>Blue Mountains, Australia</span></a>
+    <a class="wl" href="world.html?world=s17-curable-blockchain-dao"><b>Curable Blockchain</b><span>Blue Lagoon, Iceland</span></a>
+    <a class="wl" href="world.html?world=s19-moscone-x"><b>Central Valley Ag</b><span>Fresno, California</span></a>
+    <a class="wl" href="world.html?world=s20-cmmc"><b>CMMC</b><span>Pentagon, Arlington VA</span></a>
+    <a class="wl" href="world.html?world=s21-incubator-dao"><b>Incubator DAO</b><span>Kendall Square, MA</span></a>
+    <a class="wl" href="world.html?world=s22-get-delivery-dao"><b>Memphis Logistics</b><span>FedEx World Hub</span></a>
+    <a class="wl" href="world.html?world=s23-avatar-chat"><b>Avatar Chat</b><span>Zhangjiajie, China</span></a>
+    <a class="wl" href="world.html?world=s24-donatello-dao"><b>Donatello DAO</b><span>Florence, Italy</span></a>
+    <a class="wl" href="world.html?world=s25-mypet-ai"><b>MyPet AI</b><span>Central Park, NYC</span></a>
+    <a class="wl" href="world.html?world=s26-lyka-dao"><b>Lyka DAO</b><span>Ely, Minnesota</span></a>
+    <a class="wl" href="world.html?world=s27-genomic-dao"><b>Austin Electronics</b><span>Samsung Semiconductor</span></a>
+    <a class="wl" href="world.html?world=s28-genomic-blockchain"><b>Genomic Blockchain</b><span>Illumina, San Diego</span></a>
+    <a class="wl" href="world.html?world=s29-metaverse-dao"><b>Metaverse DAO</b><span>Meta HQ, Menlo Park</span></a>
+    <a class="wl" href="world.html?world=s31-aerospace-dao"><b>Seattle Aerospace</b><span>Boeing Everett</span></a>
+    <a class="wl" href="world.html?world=s32-solar-dao"><b>Houston Clean Energy</b><span>Energy Corridor</span></a>
+    <a class="wl" href="world.html?world=s33-infogurus"><b>InfoGurus</b><span>Alexandria, Egypt</span></a>
+    <a class="wl" href="world.html?world=s34-als-dao"><b>ALS DAO</b><span>Yankee Stadium, Bronx</span></a>
+    <a class="wl" href="world.html?world=s35-parkinsons-dao"><b>Parkinsons DAO</b><span>Shoreditch, London</span></a>
+  </div>
+</div></section>
+
+<footer>Agents operate; people govern. All worlds are drafts. Powered by <a href="https://github.com/AGIFutureFoundation">AGI Corp</a></footer>
+</body></html>
