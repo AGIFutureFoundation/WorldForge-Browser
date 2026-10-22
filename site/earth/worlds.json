@@ -2582,8 +2582,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Chicago Loop",
-    "p": "State Street, Chicago IL",
+    "slug": "chi-loop",
+    "name": "Chicago Loop",
+    "place": "State Street, Chicago IL",
     "lat": 41.8421,
     "lon": -87.6448,
     "biome": "urban-core",
@@ -2615,8 +2616,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "West Loop",
-    "p": "Randolph Street, Chicago IL",
+    "slug": "chi-west-loop",
+    "name": "West Loop",
+    "place": "Randolph Street, Chicago IL",
     "lat": 41.8541,
     "lon": -87.6448,
     "biome": "urban-core",
@@ -2648,8 +2650,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "River North",
-    "p": "Chicago Avenue, Chicago IL",
+    "slug": "chi-river-north",
+    "name": "River North",
+    "place": "Chicago Avenue, Chicago IL",
     "lat": 41.8661,
     "lon": -87.6448,
     "biome": "urban-core",
@@ -2681,8 +2684,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "South Loop",
-    "p": "Museum Campus, Chicago IL",
+    "slug": "chi-south-loop",
+    "name": "South Loop",
+    "place": "Museum Campus, Chicago IL",
     "lat": 41.8781,
     "lon": -87.6448,
     "biome": "urban-park",
@@ -2714,8 +2718,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Lincoln Park",
-    "p": "Lincoln Avenue, Chicago IL",
+    "slug": "chi-lincoln-park",
+    "name": "Lincoln Park",
+    "place": "Lincoln Avenue, Chicago IL",
     "lat": 41.8901,
     "lon": -87.6448,
     "biome": "urban-park",
@@ -2747,8 +2752,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Wicker Park",
-    "p": "Milwaukee Avenue, Chicago IL",
+    "slug": "chi-wicker-park",
+    "name": "Wicker Park",
+    "place": "Milwaukee Avenue, Chicago IL",
     "lat": 41.9021,
     "lon": -87.6448,
     "biome": "urban-core",
@@ -2780,8 +2786,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Pilsen",
-    "p": "18th Street, Chicago IL",
+    "slug": "chi-pilsen",
+    "name": "Pilsen",
+    "place": "18th Street, Chicago IL",
     "lat": 41.9141,
     "lon": -87.6448,
     "biome": "urban-park",
@@ -2813,8 +2820,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Bridgeport",
-    "p": "Halsted Street, Chicago IL",
+    "slug": "chi-bridgeport",
+    "name": "Bridgeport",
+    "place": "Halsted Street, Chicago IL",
     "lat": 41.8421,
     "lon": -87.6298,
     "biome": "urban-park",
@@ -2846,8 +2854,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hyde Park",
-    "p": "University of Chicago, Chicago IL",
+    "slug": "chi-hyde-park",
+    "name": "Hyde Park",
+    "place": "University of Chicago, Chicago IL",
     "lat": 41.8541,
     "lon": -87.6298,
     "biome": "urban-park",
@@ -2879,8 +2888,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "OHare Airport",
-    "p": "Airport Industrial, Chicago IL",
+    "slug": "chi-ohare",
+    "name": "OHare Airport",
+    "place": "Airport Industrial, Chicago IL",
     "lat": 41.8661,
     "lon": -87.6298,
     "biome": "urban-core",
@@ -2912,8 +2922,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Chinatown",
-    "p": "Wentworth Avenue, Chicago IL",
+    "slug": "chi-chinatown",
+    "name": "Chinatown",
+    "place": "Wentworth Avenue, Chicago IL",
     "lat": 41.8781,
     "lon": -87.6298,
     "biome": "urban-park",
@@ -2945,8 +2956,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Little Village",
-    "p": "26th Street, Chicago IL",
+    "slug": "chi-little-village",
+    "name": "Little Village",
+    "place": "26th Street, Chicago IL",
     "lat": 41.8901,
     "lon": -87.6298,
     "biome": "urban-park",
@@ -2978,8 +2990,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Detroit Downtown",
-    "p": "Woodward Avenue, Detroit MI",
+    "slug": "det-downtown",
+    "name": "Detroit Downtown",
+    "place": "Woodward Avenue, Detroit MI",
     "lat": 42.2954,
     "lon": -83.0608,
     "biome": "urban-core",
@@ -3011,8 +3024,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Midtown Detroit",
-    "p": "Cass Avenue, Detroit MI",
+    "slug": "det-midtown",
+    "name": "Midtown Detroit",
+    "place": "Cass Avenue, Detroit MI",
     "lat": 42.3074,
     "lon": -83.0608,
     "biome": "urban-park",
@@ -3044,8 +3058,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Corktown",
-    "p": "Michigan Avenue, Detroit MI",
+    "slug": "det-corktown",
+    "name": "Corktown",
+    "place": "Michigan Avenue, Detroit MI",
     "lat": 42.3194,
     "lon": -83.0608,
     "biome": "urban-core",
@@ -3077,8 +3092,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Eastern Market",
-    "p": "Russell Street, Detroit MI",
+    "slug": "det-eastern",
+    "name": "Eastern Market",
+    "place": "Russell Street, Detroit MI",
     "lat": 42.3314,
     "lon": -83.0608,
     "biome": "urban-core",
@@ -3110,8 +3126,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Detroit Riverfront",
-    "p": "Renaissance Center, Detroit MI",
+    "slug": "det-detroit-river",
+    "name": "Detroit Riverfront",
+    "place": "Renaissance Center, Detroit MI",
     "lat": 42.3434,
     "lon": -83.0608,
     "biome": "urban-core",
@@ -3143,8 +3160,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "New Center",
-    "p": "Grand Boulevard, Detroit MI",
+    "slug": "det-new-center",
+    "name": "New Center",
+    "place": "Grand Boulevard, Detroit MI",
     "lat": 42.3554,
     "lon": -83.0608,
     "biome": "urban-core",
@@ -3176,8 +3194,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Lafayette Park",
-    "p": "Jefferson Avenue, Detroit MI",
+    "slug": "det-lafayette",
+    "name": "Lafayette Park",
+    "place": "Jefferson Avenue, Detroit MI",
     "lat": 42.3674,
     "lon": -83.0608,
     "biome": "urban-park",
@@ -3209,8 +3228,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "North End",
-    "p": "Livernois Avenue, Detroit MI",
+    "slug": "det-north-end",
+    "name": "North End",
+    "place": "Livernois Avenue, Detroit MI",
     "lat": 42.2954,
     "lon": -83.0458,
     "biome": "urban-park",
@@ -3242,8 +3262,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Riverfront",
-    "p": "Hart Plaza, Detroit MI",
+    "slug": "det-riverfront",
+    "name": "Riverfront",
+    "place": "Hart Plaza, Detroit MI",
     "lat": 42.3074,
     "lon": -83.0458,
     "biome": "urban-core",
@@ -3275,8 +3296,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "West Side",
-    "p": "Grand River Avenue, Detroit MI",
+    "slug": "det-west-side",
+    "name": "West Side",
+    "place": "Grand River Avenue, Detroit MI",
     "lat": 42.3194,
     "lon": -83.0458,
     "biome": "urban-park",
@@ -3308,8 +3330,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hamtramck",
-    "p": "Joseph Campau, Detroit MI",
+    "slug": "det-hamtramck",
+    "name": "Hamtramck",
+    "place": "Joseph Campau, Detroit MI",
     "lat": 42.3314,
     "lon": -83.0458,
     "biome": "urban-park",
@@ -3341,8 +3364,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Highland Park",
-    "p": "Woodward Avenue, Detroit MI",
+    "slug": "det-highland-park",
+    "name": "Highland Park",
+    "place": "Woodward Avenue, Detroit MI",
     "lat": 42.3434,
     "lon": -83.0458,
     "biome": "urban-park",
@@ -3374,8 +3398,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Pittsburgh",
-    "p": "Liberty Avenue, Pittsburgh PA",
+    "slug": "pit-downtown",
+    "name": "Downtown Pittsburgh",
+    "place": "Liberty Avenue, Pittsburgh PA",
     "lat": 40.4046,
     "lon": -80.0109,
     "biome": "urban-core",
@@ -3407,8 +3432,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Oakland",
-    "p": "Forbes Avenue, Pittsburgh PA",
+    "slug": "pit-oakland",
+    "name": "Oakland",
+    "place": "Forbes Avenue, Pittsburgh PA",
     "lat": 40.4166,
     "lon": -80.0109,
     "biome": "urban-park",
@@ -3440,8 +3466,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Strip District",
-    "p": "Penn Avenue, Pittsburgh PA",
+    "slug": "pit-strip",
+    "name": "Strip District",
+    "place": "Penn Avenue, Pittsburgh PA",
     "lat": 40.4286,
     "lon": -80.0109,
     "biome": "urban-core",
@@ -3473,8 +3500,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Lawrenceville",
-    "p": "Butler Street, Pittsburgh PA",
+    "slug": "pit-lawrenceville",
+    "name": "Lawrenceville",
+    "place": "Butler Street, Pittsburgh PA",
     "lat": 40.4406,
     "lon": -80.0109,
     "biome": "urban-core",
@@ -3506,8 +3534,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Shadyside",
-    "p": "Walnut Street, Pittsburgh PA",
+    "slug": "pit-shadyside",
+    "name": "Shadyside",
+    "place": "Walnut Street, Pittsburgh PA",
     "lat": 40.4526,
     "lon": -80.0109,
     "biome": "urban-park",
@@ -3539,8 +3568,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Squirrel Hill",
-    "p": "Murray Avenue, Pittsburgh PA",
+    "slug": "pit-squirrel-hill",
+    "name": "Squirrel Hill",
+    "place": "Murray Avenue, Pittsburgh PA",
     "lat": 40.4646,
     "lon": -80.0109,
     "biome": "urban-park",
@@ -3572,8 +3602,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hazelwood",
-    "p": "Second Avenue, Pittsburgh PA",
+    "slug": "pit-hazelwood",
+    "name": "Hazelwood",
+    "place": "Second Avenue, Pittsburgh PA",
     "lat": 40.4766,
     "lon": -80.0109,
     "biome": "urban-core",
@@ -3605,8 +3636,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "South Side",
-    "p": "East Carson Street, Pittsburgh PA",
+    "slug": "pit-south-side",
+    "name": "South Side",
+    "place": "East Carson Street, Pittsburgh PA",
     "lat": 40.4046,
     "lon": -79.9959,
     "biome": "urban-core",
@@ -3638,8 +3670,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Bloomfield",
-    "p": "Liberty Avenue, Pittsburgh PA",
+    "slug": "pit-bloomfield",
+    "name": "Bloomfield",
+    "place": "Liberty Avenue, Pittsburgh PA",
     "lat": 40.4166,
     "lon": -79.9959,
     "biome": "urban-park",
@@ -3671,8 +3704,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Point State Park",
-    "p": "Fountain, Pittsburgh PA",
+    "slug": "pit-point",
+    "name": "Point State Park",
+    "place": "Fountain, Pittsburgh PA",
     "lat": 40.4286,
     "lon": -79.9959,
     "biome": "urban-core",
@@ -3704,8 +3738,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Robotics Row",
-    "p": "Bakery Square, Pittsburgh PA",
+    "slug": "pit-tech-center",
+    "name": "Robotics Row",
+    "place": "Bakery Square, Pittsburgh PA",
     "lat": 40.4406,
     "lon": -79.9959,
     "biome": "urban-park",
@@ -3737,8 +3772,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "University District",
-    "p": "CMU Campus, Pittsburgh PA",
+    "slug": "pit-university",
+    "name": "University District",
+    "place": "CMU Campus, Pittsburgh PA",
     "lat": 40.4526,
     "lon": -79.9959,
     "biome": "urban-park",
@@ -3770,8 +3806,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Midtown Atlanta",
-    "p": "Peachtree Street, Atlanta GA",
+    "slug": "atl-midtown",
+    "name": "Midtown Atlanta",
+    "place": "Peachtree Street, Atlanta GA",
     "lat": 33.713,
     "lon": -84.403,
     "biome": "urban-core",
@@ -3803,8 +3840,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Buckhead",
-    "p": "Peachtree Road, Atlanta GA",
+    "slug": "atl-buckhead",
+    "name": "Buckhead",
+    "place": "Peachtree Road, Atlanta GA",
     "lat": 33.725,
     "lon": -84.403,
     "biome": "urban-core",
@@ -3836,8 +3874,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown",
-    "p": "Marietta Street, Atlanta GA",
+    "slug": "atl-downtown",
+    "name": "Downtown",
+    "place": "Marietta Street, Atlanta GA",
     "lat": 33.737,
     "lon": -84.403,
     "biome": "urban-park",
@@ -3869,8 +3908,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Sweet Auburn",
-    "p": "Auburn Avenue, Atlanta GA",
+    "slug": "atl-sweet-auburn",
+    "name": "Sweet Auburn",
+    "place": "Auburn Avenue, Atlanta GA",
     "lat": 33.749,
     "lon": -84.403,
     "biome": "urban-park",
@@ -3902,8 +3942,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "West End",
-    "p": "Ralph David Abernathy Blvd, Atlanta GA",
+    "slug": "atl-west-end",
+    "name": "West End",
+    "place": "Ralph David Abernathy Blvd, Atlanta GA",
     "lat": 33.761,
     "lon": -84.403,
     "biome": "urban-park",
@@ -3935,8 +3976,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Inman Park",
-    "p": "Euclid Avenue, Atlanta GA",
+    "slug": "atl-inman-park",
+    "name": "Inman Park",
+    "place": "Euclid Avenue, Atlanta GA",
     "lat": 33.773,
     "lon": -84.403,
     "biome": "urban-park",
@@ -3968,8 +4010,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Virginia-Highland",
-    "p": "Virginia Avenue, Atlanta GA",
+    "slug": "atl-virginia-highland",
+    "name": "Virginia-Highland",
+    "place": "Virginia Avenue, Atlanta GA",
     "lat": 33.785,
     "lon": -84.403,
     "biome": "urban-park",
@@ -4001,8 +4044,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Old Fourth Ward",
-    "p": "Ponce de Leon Avenue, Atlanta GA",
+    "slug": "atl-old-fourth",
+    "name": "Old Fourth Ward",
+    "place": "Ponce de Leon Avenue, Atlanta GA",
     "lat": 33.713,
     "lon": -84.388,
     "biome": "urban-core",
@@ -4034,8 +4078,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Edgewood",
-    "p": "Moreland Avenue, Atlanta GA",
+    "slug": "atl-edgewood",
+    "name": "Edgewood",
+    "place": "Moreland Avenue, Atlanta GA",
     "lat": 33.725,
     "lon": -84.388,
     "biome": "urban-park",
@@ -4067,8 +4112,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Beltline Corridor",
-    "p": "Atlanta BeltLine, Atlanta GA",
+    "slug": "atl-beltline",
+    "name": "Beltline Corridor",
+    "place": "Atlanta BeltLine, Atlanta GA",
     "lat": 33.737,
     "lon": -84.388,
     "biome": "urban-core",
@@ -4100,8 +4146,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hartsfield-Jackson",
-    "p": "Airport Industrial, Atlanta GA",
+    "slug": "atl-airport",
+    "name": "Hartsfield-Jackson",
+    "place": "Airport Industrial, Atlanta GA",
     "lat": 33.749,
     "lon": -84.388,
     "biome": "urban-core",
@@ -4133,8 +4180,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Cumberland",
-    "p": "Interstate 285, Atlanta GA",
+    "slug": "atl-cumberland",
+    "name": "Cumberland",
+    "place": "Interstate 285, Atlanta GA",
     "lat": 33.761,
     "lon": -84.388,
     "biome": "urban-core",
@@ -4166,8 +4214,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Dallas",
-    "p": "Main Street, Dallas TX",
+    "slug": "dal-downtown",
+    "name": "Downtown Dallas",
+    "place": "Main Street, Dallas TX",
     "lat": 32.7407,
     "lon": -96.812,
     "biome": "urban-core",
@@ -4199,8 +4248,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Uptown",
-    "p": "McKinney Avenue, Dallas TX",
+    "slug": "dal-uptown",
+    "name": "Uptown",
+    "place": "McKinney Avenue, Dallas TX",
     "lat": 32.7527,
     "lon": -96.812,
     "biome": "urban-core",
@@ -4232,8 +4282,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Deep Ellum",
-    "p": "Commerce Street, Dallas TX",
+    "slug": "dal-deep-ellum",
+    "name": "Deep Ellum",
+    "place": "Commerce Street, Dallas TX",
     "lat": 32.7647,
     "lon": -96.812,
     "biome": "urban-park",
@@ -4265,8 +4316,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Oak Cliff",
-    "p": "Bishop Avenue, Dallas TX",
+    "slug": "dal-oak-cliff",
+    "name": "Oak Cliff",
+    "place": "Bishop Avenue, Dallas TX",
     "lat": 32.7767,
     "lon": -96.812,
     "biome": "urban-park",
@@ -4298,8 +4350,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Design District",
-    "p": "Dragon Street, Dallas TX",
+    "slug": "dal-design",
+    "name": "Design District",
+    "place": "Dragon Street, Dallas TX",
     "lat": 32.7887,
     "lon": -96.812,
     "biome": "urban-core",
@@ -4331,8 +4384,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Arts District",
-    "p": "Flora Street, Dallas TX",
+    "slug": "dal-arts",
+    "name": "Arts District",
+    "place": "Flora Street, Dallas TX",
     "lat": 32.8007,
     "lon": -96.812,
     "biome": "urban-park",
@@ -4364,8 +4418,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Victory Park",
-    "p": "American Airlines Center, Dallas TX",
+    "slug": "dal-victory",
+    "name": "Victory Park",
+    "place": "American Airlines Center, Dallas TX",
     "lat": 32.8127,
     "lon": -96.812,
     "biome": "urban-core",
@@ -4397,8 +4452,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Lakewood",
-    "p": "Abrams Road, Dallas TX",
+    "slug": "dal-lakewood",
+    "name": "Lakewood",
+    "place": "Abrams Road, Dallas TX",
     "lat": 32.7407,
     "lon": -96.797,
     "biome": "urban-park",
@@ -4430,8 +4486,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Plano",
-    "p": "Legacy Drive, Dallas TX",
+    "slug": "dal-plano",
+    "name": "Plano",
+    "place": "Legacy Drive, Dallas TX",
     "lat": 32.7527,
     "lon": -96.797,
     "biome": "urban-core",
@@ -4463,8 +4520,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Richardson",
-    "p": "Telecom Corridor, Dallas TX",
+    "slug": "dal-richardson",
+    "name": "Richardson",
+    "place": "Telecom Corridor, Dallas TX",
     "lat": 32.7647,
     "lon": -96.797,
     "biome": "urban-core",
@@ -4496,8 +4554,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Irving",
-    "p": "Las Colinas, Dallas TX",
+    "slug": "dal-irving",
+    "name": "Irving",
+    "place": "Las Colinas, Dallas TX",
     "lat": 32.7767,
     "lon": -96.797,
     "biome": "urban-core",
@@ -4529,8 +4588,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Fort Worth Stockyards",
-    "p": "Main Street, Dallas TX",
+    "slug": "dal-fort-worth",
+    "name": "Fort Worth Stockyards",
+    "place": "Main Street, Dallas TX",
     "lat": 32.7887,
     "lon": -96.797,
     "biome": "urban-core",
@@ -4562,8 +4622,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Houston",
-    "p": "Main Street, Houston TX",
+    "slug": "hou-downtown",
+    "name": "Downtown Houston",
+    "place": "Main Street, Houston TX",
     "lat": 29.7244,
     "lon": -95.3848,
     "biome": "urban-core",
@@ -4595,8 +4656,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Texas Medical Center",
-    "p": "Holcombe Boulevard, Houston TX",
+    "slug": "hou-med-center",
+    "name": "Texas Medical Center",
+    "place": "Holcombe Boulevard, Houston TX",
     "lat": 29.7364,
     "lon": -95.3848,
     "biome": "urban-park",
@@ -4628,8 +4690,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Midtown",
-    "p": "Main Street, Houston TX",
+    "slug": "hou-midtown",
+    "name": "Midtown",
+    "place": "Main Street, Houston TX",
     "lat": 29.7484,
     "lon": -95.3848,
     "biome": "urban-core",
@@ -4661,8 +4724,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Museum District",
-    "p": "Montrose Boulevard, Houston TX",
+    "slug": "hou-museum",
+    "name": "Museum District",
+    "place": "Montrose Boulevard, Houston TX",
     "lat": 29.7604,
     "lon": -95.3848,
     "biome": "urban-park",
@@ -4694,8 +4758,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Montrose",
-    "p": "Westheimer Road, Houston TX",
+    "slug": "hou-montrose",
+    "name": "Montrose",
+    "place": "Westheimer Road, Houston TX",
     "lat": 29.7724,
     "lon": -95.3848,
     "biome": "urban-park",
@@ -4727,8 +4792,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Heights",
-    "p": "19th Street, Houston TX",
+    "slug": "hou-heights",
+    "name": "Heights",
+    "place": "19th Street, Houston TX",
     "lat": 29.7844,
     "lon": -95.3848,
     "biome": "urban-park",
@@ -4760,8 +4826,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Energy Corridor",
-    "p": "I-10 West, Houston TX",
+    "slug": "hou-energy",
+    "name": "Energy Corridor",
+    "place": "I-10 West, Houston TX",
     "lat": 29.7964,
     "lon": -95.3848,
     "biome": "urban-core",
@@ -4793,8 +4860,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Galleria",
-    "p": "Westheimer Road, Houston TX",
+    "slug": "hou-galleria",
+    "name": "Galleria",
+    "place": "Westheimer Road, Houston TX",
     "lat": 29.7244,
     "lon": -95.3698,
     "biome": "urban-core",
@@ -4826,8 +4894,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Ship Channel",
-    "p": "Clinton Drive, Houston TX",
+    "slug": "hou-ship-channel",
+    "name": "Ship Channel",
+    "place": "Clinton Drive, Houston TX",
     "lat": 29.7364,
     "lon": -95.3698,
     "biome": "urban-core",
@@ -4859,8 +4928,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Johnson Space Center",
-    "p": "NASA Road 1, Houston TX",
+    "slug": "hou-nasa",
+    "name": "Johnson Space Center",
+    "place": "NASA Road 1, Houston TX",
     "lat": 29.7484,
     "lon": -95.3698,
     "biome": "urban-park",
@@ -4892,8 +4962,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "East End",
-    "p": "Navigation Boulevard, Houston TX",
+    "slug": "hou-east-end",
+    "name": "East End",
+    "place": "Navigation Boulevard, Houston TX",
     "lat": 29.7604,
     "lon": -95.3698,
     "biome": "urban-core",
@@ -4925,8 +4996,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Third Ward",
-    "p": "Elgin Street, Houston TX",
+    "slug": "hou-third-ward",
+    "name": "Third Ward",
+    "place": "Elgin Street, Houston TX",
     "lat": 29.7724,
     "lon": -95.3698,
     "biome": "urban-park",
@@ -4958,8 +5030,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown LA",
-    "p": "Broadway, Los Angeles CA",
+    "slug": "la-downtown",
+    "name": "Downtown LA",
+    "place": "Broadway, Los Angeles CA",
     "lat": 34.0162,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -4991,8 +5064,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hollywood",
-    "p": "Hollywood Boulevard, Los Angeles CA",
+    "slug": "la-hollywood",
+    "name": "Hollywood",
+    "place": "Hollywood Boulevard, Los Angeles CA",
     "lat": 34.0282,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -5024,8 +5098,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Silicon Beach",
-    "p": "Abbot Kinney, Los Angeles CA",
+    "slug": "la-silicon-beach",
+    "name": "Silicon Beach",
+    "place": "Abbot Kinney, Los Angeles CA",
     "lat": 34.0402,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -5057,8 +5132,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Beverly Hills",
-    "p": "Rodeo Drive, Los Angeles CA",
+    "slug": "la-beverly-hills",
+    "name": "Beverly Hills",
+    "place": "Rodeo Drive, Los Angeles CA",
     "lat": 34.0522,
     "lon": -118.2587,
     "biome": "urban-park",
@@ -5090,8 +5166,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Santa Monica",
-    "p": "Third Street Promenade, Los Angeles CA",
+    "slug": "la-santa-monica",
+    "name": "Santa Monica",
+    "place": "Third Street Promenade, Los Angeles CA",
     "lat": 34.0642,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -5123,8 +5200,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Venice Beach",
-    "p": "Boardwalk, Los Angeles CA",
+    "slug": "la-venice",
+    "name": "Venice Beach",
+    "place": "Boardwalk, Los Angeles CA",
     "lat": 34.0762,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -5156,8 +5234,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Culver City",
-    "p": "Washington Boulevard, Los Angeles CA",
+    "slug": "la-culver",
+    "name": "Culver City",
+    "place": "Washington Boulevard, Los Angeles CA",
     "lat": 34.0882,
     "lon": -118.2587,
     "biome": "urban-core",
@@ -5189,8 +5268,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Pasadena",
-    "p": "Colorado Boulevard, Los Angeles CA",
+    "slug": "la-pasadena",
+    "name": "Pasadena",
+    "place": "Colorado Boulevard, Los Angeles CA",
     "lat": 34.0162,
     "lon": -118.2437,
     "biome": "urban-park",
@@ -5222,8 +5302,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Burbank",
-    "p": "Olive Avenue, Los Angeles CA",
+    "slug": "la-burbank",
+    "name": "Burbank",
+    "place": "Olive Avenue, Los Angeles CA",
     "lat": 34.0282,
     "lon": -118.2437,
     "biome": "urban-core",
@@ -5255,8 +5336,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Glendale",
-    "p": "Brand Boulevard, Los Angeles CA",
+    "slug": "la-glendale",
+    "name": "Glendale",
+    "place": "Brand Boulevard, Los Angeles CA",
     "lat": 34.0402,
     "lon": -118.2437,
     "biome": "urban-core",
@@ -5288,8 +5370,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Long Beach",
-    "p": "Ocean Boulevard, Los Angeles CA",
+    "slug": "la-long-beach",
+    "name": "Long Beach",
+    "place": "Ocean Boulevard, Los Angeles CA",
     "lat": 34.0522,
     "lon": -118.2437,
     "biome": "urban-core",
@@ -5321,8 +5404,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Compton",
-    "p": "Alondra Boulevard, Los Angeles CA",
+    "slug": "la-compton",
+    "name": "Compton",
+    "place": "Alondra Boulevard, Los Angeles CA",
     "lat": 34.0642,
     "lon": -118.2437,
     "biome": "urban-park",
@@ -5354,8 +5438,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Phoenix",
-    "p": "Central Avenue, Phoenix AZ",
+    "slug": "phx-downtown",
+    "name": "Downtown Phoenix",
+    "place": "Central Avenue, Phoenix AZ",
     "lat": 33.4124,
     "lon": -112.089,
     "biome": "urban-park",
@@ -5387,8 +5472,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Midtown",
-    "p": "Camelback Road, Phoenix AZ",
+    "slug": "phx-midtown",
+    "name": "Midtown",
+    "place": "Camelback Road, Phoenix AZ",
     "lat": 33.4244,
     "lon": -112.089,
     "biome": "urban-core",
@@ -5420,8 +5506,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Arcadia",
-    "p": "Indian School Road, Phoenix AZ",
+    "slug": "phx-arcadia",
+    "name": "Arcadia",
+    "place": "Indian School Road, Phoenix AZ",
     "lat": 33.4364,
     "lon": -112.089,
     "biome": "urban-park",
@@ -5453,8 +5540,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Scottsdale",
-    "p": "Old Town, Phoenix AZ",
+    "slug": "phx-scottsdale",
+    "name": "Scottsdale",
+    "place": "Old Town, Phoenix AZ",
     "lat": 33.4484,
     "lon": -112.089,
     "biome": "urban-core",
@@ -5486,8 +5574,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Tempe",
-    "p": "Mill Avenue, Phoenix AZ",
+    "slug": "phx-tempe",
+    "name": "Tempe",
+    "place": "Mill Avenue, Phoenix AZ",
     "lat": 33.4604,
     "lon": -112.089,
     "biome": "urban-core",
@@ -5519,8 +5608,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Mesa",
-    "p": "Main Street, Phoenix AZ",
+    "slug": "phx-mesa",
+    "name": "Mesa",
+    "place": "Main Street, Phoenix AZ",
     "lat": 33.4724,
     "lon": -112.089,
     "biome": "urban-park",
@@ -5552,8 +5642,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Glendale",
-    "p": "Glendale Avenue, Phoenix AZ",
+    "slug": "phx-glendale",
+    "name": "Glendale",
+    "place": "Glendale Avenue, Phoenix AZ",
     "lat": 33.4844,
     "lon": -112.089,
     "biome": "urban-core",
@@ -5585,8 +5676,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Chandler",
-    "p": "Arizona Avenue, Phoenix AZ",
+    "slug": "phx-chandler",
+    "name": "Chandler",
+    "place": "Arizona Avenue, Phoenix AZ",
     "lat": 33.4124,
     "lon": -112.074,
     "biome": "urban-core",
@@ -5618,8 +5710,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Gilbert",
-    "p": "Gilbert Road, Phoenix AZ",
+    "slug": "phx-gilbert",
+    "name": "Gilbert",
+    "place": "Gilbert Road, Phoenix AZ",
     "lat": 33.4244,
     "lon": -112.074,
     "biome": "urban-core",
@@ -5651,8 +5744,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Solar Corridor",
-    "p": "I-10 Corridor, Phoenix AZ",
+    "slug": "phx-solar",
+    "name": "Solar Corridor",
+    "place": "I-10 Corridor, Phoenix AZ",
     "lat": 33.4364,
     "lon": -112.074,
     "biome": "urban-park",
@@ -5684,8 +5778,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Denver",
-    "p": "16th Street Mall, Denver CO",
+    "slug": "den-downtown",
+    "name": "Downtown Denver",
+    "place": "16th Street Mall, Denver CO",
     "lat": 39.7032,
     "lon": -105.0053,
     "biome": "urban-core",
@@ -5717,8 +5812,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "LoHi",
-    "p": "Highland Boulevard, Denver CO",
+    "slug": "den-lohi",
+    "name": "LoHi",
+    "place": "Highland Boulevard, Denver CO",
     "lat": 39.7152,
     "lon": -105.0053,
     "biome": "urban-core",
@@ -5750,8 +5846,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "RiNo",
-    "p": "Larimer Street, Denver CO",
+    "slug": "den-rino",
+    "name": "RiNo",
+    "place": "Larimer Street, Denver CO",
     "lat": 39.7272,
     "lon": -105.0053,
     "biome": "urban-core",
@@ -5783,8 +5880,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Five Points",
-    "p": "Welton Street, Denver CO",
+    "slug": "den-five-points",
+    "name": "Five Points",
+    "place": "Welton Street, Denver CO",
     "lat": 39.7392,
     "lon": -105.0053,
     "biome": "urban-park",
@@ -5816,8 +5914,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Cherry Creek",
-    "p": "First Avenue, Denver CO",
+    "slug": "den-cherry-creek",
+    "name": "Cherry Creek",
+    "place": "First Avenue, Denver CO",
     "lat": 39.7512,
     "lon": -105.0053,
     "biome": "urban-core",
@@ -5849,8 +5948,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Highlands",
-    "p": "32nd Avenue, Denver CO",
+    "slug": "den-highlands",
+    "name": "Highlands",
+    "place": "32nd Avenue, Denver CO",
     "lat": 39.7632,
     "lon": -105.0053,
     "biome": "urban-park",
@@ -5882,8 +5982,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Washington Park",
-    "p": "South Downing Street, Denver CO",
+    "slug": "den-wash-park",
+    "name": "Washington Park",
+    "place": "South Downing Street, Denver CO",
     "lat": 39.7752,
     "lon": -105.0053,
     "biome": "urban-park",
@@ -5915,8 +6016,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Denver Tech Center",
-    "p": "I-25 Corridor, Denver CO",
+    "slug": "den-tech",
+    "name": "Denver Tech Center",
+    "place": "I-25 Corridor, Denver CO",
     "lat": 39.7032,
     "lon": -104.9903,
     "biome": "urban-core",
@@ -5948,8 +6050,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Aerospace Corridor",
-    "p": "Buckley Road, Denver CO",
+    "slug": "den-aerospace",
+    "name": "Aerospace Corridor",
+    "place": "Buckley Road, Denver CO",
     "lat": 39.7152,
     "lon": -104.9903,
     "biome": "urban-park",
@@ -5981,8 +6084,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Boulder",
-    "p": "Pearl Street Mall, Denver CO",
+    "slug": "den-boulder",
+    "name": "Boulder",
+    "place": "Pearl Street Mall, Denver CO",
     "lat": 39.7272,
     "lon": -104.9903,
     "biome": "urban-core",
@@ -6014,8 +6118,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Minneapolis",
-    "p": "Nicollet Mall, Minneapolis MN",
+    "slug": "msp-downtown",
+    "name": "Downtown Minneapolis",
+    "place": "Nicollet Mall, Minneapolis MN",
     "lat": 44.9418,
     "lon": -93.28,
     "biome": "urban-core",
@@ -6047,8 +6152,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "North Loop",
-    "p": "Washington Avenue, Minneapolis MN",
+    "slug": "msp-north-loop",
+    "name": "North Loop",
+    "place": "Washington Avenue, Minneapolis MN",
     "lat": 44.9538,
     "lon": -93.28,
     "biome": "urban-core",
@@ -6080,8 +6186,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Warehouse District",
-    "p": "First Avenue North, Minneapolis MN",
+    "slug": "msp-warehouse",
+    "name": "Warehouse District",
+    "place": "First Avenue North, Minneapolis MN",
     "lat": 44.9658,
     "lon": -93.28,
     "biome": "urban-core",
@@ -6113,8 +6220,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "U of M Stadium Area",
-    "p": "Washington Avenue SE, Minneapolis MN",
+    "slug": "msp-stadium",
+    "name": "U of M Stadium Area",
+    "place": "Washington Avenue SE, Minneapolis MN",
     "lat": 44.9778,
     "lon": -93.28,
     "biome": "urban-park",
@@ -6146,8 +6254,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "St Paul Downtown",
-    "p": "Rice Street, Minneapolis MN",
+    "slug": "msp-stpaul",
+    "name": "St Paul Downtown",
+    "place": "Rice Street, Minneapolis MN",
     "lat": 44.9898,
     "lon": -93.28,
     "biome": "urban-park",
@@ -6179,8 +6288,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Midway",
-    "p": "University Avenue, Minneapolis MN",
+    "slug": "msp-midway",
+    "name": "Midway",
+    "place": "University Avenue, Minneapolis MN",
     "lat": 45.0018,
     "lon": -93.28,
     "biome": "urban-core",
@@ -6212,8 +6322,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Edina",
-    "p": "50th Street, Minneapolis MN",
+    "slug": "msp-edin",
+    "name": "Edina",
+    "place": "50th Street, Minneapolis MN",
     "lat": 45.0138,
     "lon": -93.28,
     "biome": "urban-park",
@@ -6245,8 +6356,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Bloomington",
-    "p": "Mall of America, Minneapolis MN",
+    "slug": "msp-bloomington",
+    "name": "Bloomington",
+    "place": "Mall of America, Minneapolis MN",
     "lat": 44.9418,
     "lon": -93.265,
     "biome": "urban-core",
@@ -6278,8 +6390,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Plymouth",
-    "p": "Rockford Road, Minneapolis MN",
+    "slug": "msp-plymouth",
+    "name": "Plymouth",
+    "place": "Rockford Road, Minneapolis MN",
     "lat": 44.9538,
     "lon": -93.265,
     "biome": "urban-core",
@@ -6311,8 +6424,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Medical District",
-    "p": "Minneapolis Medical Center, Minneapolis MN",
+    "slug": "msp-medical",
+    "name": "Medical District",
+    "place": "Minneapolis Medical Center, Minneapolis MN",
     "lat": 44.9658,
     "lon": -93.265,
     "biome": "urban-park",
@@ -6344,8 +6458,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Seattle",
-    "p": "Pike Street, Seattle WA",
+    "slug": "sea-downtown",
+    "name": "Downtown Seattle",
+    "place": "Pike Street, Seattle WA",
     "lat": 47.5702,
     "lon": -122.3471,
     "biome": "urban-core",
@@ -6377,8 +6492,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "South Lake Union",
-    "p": "Westlake Avenue, Seattle WA",
+    "slug": "sea-slu",
+    "name": "South Lake Union",
+    "place": "Westlake Avenue, Seattle WA",
     "lat": 47.5822,
     "lon": -122.3471,
     "biome": "urban-core",
@@ -6410,8 +6526,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Capitol Hill",
-    "p": "Broadway, Seattle WA",
+    "slug": "sea-capitol-hill",
+    "name": "Capitol Hill",
+    "place": "Broadway, Seattle WA",
     "lat": 47.5942,
     "lon": -122.3471,
     "biome": "urban-park",
@@ -6443,8 +6560,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Ballard",
-    "p": "Market Street, Seattle WA",
+    "slug": "sea-ballard",
+    "name": "Ballard",
+    "place": "Market Street, Seattle WA",
     "lat": 47.6062,
     "lon": -122.3471,
     "biome": "urban-core",
@@ -6476,8 +6594,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Fremont",
-    "p": "Fremont Avenue, Seattle WA",
+    "slug": "sea-fremont",
+    "name": "Fremont",
+    "place": "Fremont Avenue, Seattle WA",
     "lat": 47.6182,
     "lon": -122.3471,
     "biome": "urban-core",
@@ -6509,8 +6628,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Queen Anne",
-    "p": "Queen Anne Avenue, Seattle WA",
+    "slug": "sea-queen-anne",
+    "name": "Queen Anne",
+    "place": "Queen Anne Avenue, Seattle WA",
     "lat": 47.6302,
     "lon": -122.3471,
     "biome": "urban-core",
@@ -6542,8 +6662,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "University District",
-    "p": "University Way, Seattle WA",
+    "slug": "sea-uw",
+    "name": "University District",
+    "place": "University Way, Seattle WA",
     "lat": 47.6422,
     "lon": -122.3471,
     "biome": "urban-park",
@@ -6575,8 +6696,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Georgetown",
-    "p": "Airport Way, Seattle WA",
+    "slug": "sea-georgetown",
+    "name": "Georgetown",
+    "place": "Airport Way, Seattle WA",
     "lat": 47.5702,
     "lon": -122.3321,
     "biome": "urban-core",
@@ -6608,8 +6730,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "SODO",
-    "p": "First Avenue South, Seattle WA",
+    "slug": "sea-sodo",
+    "name": "SODO",
+    "place": "First Avenue South, Seattle WA",
     "lat": 47.5822,
     "lon": -122.3321,
     "biome": "urban-core",
@@ -6641,8 +6764,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Bellevue",
-    "p": "Bellevue Way, Seattle WA",
+    "slug": "sea-bellevue",
+    "name": "Bellevue",
+    "place": "Bellevue Way, Seattle WA",
     "lat": 47.5942,
     "lon": -122.3321,
     "biome": "urban-core",
@@ -6674,8 +6798,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Redmond",
-    "p": "Microsoft Way, Seattle WA",
+    "slug": "sea-redmond",
+    "name": "Redmond",
+    "place": "Microsoft Way, Seattle WA",
     "lat": 47.6062,
     "lon": -122.3321,
     "biome": "urban-core",
@@ -6707,8 +6832,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Tacoma",
-    "p": "Pacific Avenue, Seattle WA",
+    "slug": "sea-tacoma",
+    "name": "Tacoma",
+    "place": "Pacific Avenue, Seattle WA",
     "lat": 47.6182,
     "lon": -122.3321,
     "biome": "urban-core",
@@ -6740,8 +6866,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Downtown Boston",
-    "p": "Washington Street, Boston MA",
+    "slug": "bos-downtown",
+    "name": "Downtown Boston",
+    "place": "Washington Street, Boston MA",
     "lat": 42.3241,
     "lon": -71.0739,
     "biome": "urban-core",
@@ -6773,8 +6900,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Back Bay",
-    "p": "Newbury Street, Boston MA",
+    "slug": "bos-back-bay",
+    "name": "Back Bay",
+    "place": "Newbury Street, Boston MA",
     "lat": 42.3361,
     "lon": -71.0739,
     "biome": "urban-park",
@@ -6806,8 +6934,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Beacon Hill",
-    "p": "Charles Street, Boston MA",
+    "slug": "bos-beacon-hill",
+    "name": "Beacon Hill",
+    "place": "Charles Street, Boston MA",
     "lat": 42.3481,
     "lon": -71.0739,
     "biome": "urban-park",
@@ -6839,8 +6968,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "South End",
-    "p": "Tremont Street, Boston MA",
+    "slug": "bos-south-end",
+    "name": "South End",
+    "place": "Tremont Street, Boston MA",
     "lat": 42.3601,
     "lon": -71.0739,
     "biome": "urban-park",
@@ -6872,8 +7002,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "North End",
-    "p": "Hanover Street, Boston MA",
+    "slug": "bos-north-end",
+    "name": "North End",
+    "place": "Hanover Street, Boston MA",
     "lat": 42.3721,
     "lon": -71.0739,
     "biome": "urban-park",
@@ -6905,8 +7036,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Kendall Square",
-    "p": "Main Street, Boston MA",
+    "slug": "bos-kendall",
+    "name": "Kendall Square",
+    "place": "Main Street, Boston MA",
     "lat": 42.3841,
     "lon": -71.0739,
     "biome": "urban-core",
@@ -6938,8 +7070,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Cambridge",
-    "p": "Massachusetts Avenue, Boston MA",
+    "slug": "bos-cambridge",
+    "name": "Cambridge",
+    "place": "Massachusetts Avenue, Boston MA",
     "lat": 42.3961,
     "lon": -71.0739,
     "biome": "urban-core",
@@ -6971,8 +7104,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Fenway",
-    "p": "Lansdowne Street, Boston MA",
+    "slug": "bos-fenway",
+    "name": "Fenway",
+    "place": "Lansdowne Street, Boston MA",
     "lat": 42.3241,
     "lon": -71.0589,
     "biome": "urban-park",
@@ -7004,8 +7138,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Charlestown",
-    "p": "Main Street, Boston MA",
+    "slug": "bos-charlestown",
+    "name": "Charlestown",
+    "place": "Main Street, Boston MA",
     "lat": 42.3361,
     "lon": -71.0589,
     "biome": "urban-core",
@@ -7037,8 +7172,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Seaport District",
-    "p": "Northern Avenue, Boston MA",
+    "slug": "bos-seaport",
+    "name": "Seaport District",
+    "place": "Northern Avenue, Boston MA",
     "lat": 42.3481,
     "lon": -71.0589,
     "biome": "urban-core",
@@ -7070,8 +7206,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Allston",
-    "p": "Harvard Avenue, Boston MA",
+    "slug": "bos-allston",
+    "name": "Allston",
+    "place": "Harvard Avenue, Boston MA",
     "lat": 42.3601,
     "lon": -71.0589,
     "biome": "urban-park",
@@ -7103,8 +7240,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Brookline",
-    "p": "Beacon Street, Boston MA",
+    "slug": "bos-brookline",
+    "name": "Brookline",
+    "place": "Beacon Street, Boston MA",
     "lat": 42.3721,
     "lon": -71.0589,
     "biome": "urban-park",
@@ -7136,8 +7274,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Shibuya",
-    "p": "Shibuya Crossing, Tokyo Japan",
+    "slug": "tokyo-shibuya",
+    "name": "Shibuya",
+    "place": "Shibuya Crossing, Tokyo Japan",
     "lat": 35.6402,
     "lon": 139.6353,
     "biome": "urban-core",
@@ -7169,8 +7308,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Shinjuku",
-    "p": "West Exit, Tokyo Japan",
+    "slug": "tokyo-shinjuku",
+    "name": "Shinjuku",
+    "place": "West Exit, Tokyo Japan",
     "lat": 35.6522,
     "lon": 139.6353,
     "biome": "urban-core",
@@ -7202,8 +7342,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Akihabara",
-    "p": "Electric Town, Tokyo Japan",
+    "slug": "tokyo-akihabara",
+    "name": "Akihabara",
+    "place": "Electric Town, Tokyo Japan",
     "lat": 35.6642,
     "lon": 139.6353,
     "biome": "urban-park",
@@ -7235,8 +7376,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Roppongi",
-    "p": "Roppongi Hills, Tokyo Japan",
+    "slug": "tokyo-roppongi",
+    "name": "Roppongi",
+    "place": "Roppongi Hills, Tokyo Japan",
     "lat": 35.6762,
     "lon": 139.6353,
     "biome": "urban-core",
@@ -7268,8 +7410,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Odaiba",
-    "p": "Telecom Center, Tokyo Japan",
+    "slug": "tokyo-odaiba",
+    "name": "Odaiba",
+    "place": "Telecom Center, Tokyo Japan",
     "lat": 35.6882,
     "lon": 139.6353,
     "biome": "urban-park",
@@ -7301,8 +7444,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Ginza",
-    "p": "Chuo-dori, Tokyo Japan",
+    "slug": "tokyo-ginza",
+    "name": "Ginza",
+    "place": "Chuo-dori, Tokyo Japan",
     "lat": 35.7002,
     "lon": 139.6353,
     "biome": "urban-park",
@@ -7334,8 +7478,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Marunouchi",
-    "p": "Tokyo Station, Tokyo Japan",
+    "slug": "tokyo-marunouchi",
+    "name": "Marunouchi",
+    "place": "Tokyo Station, Tokyo Japan",
     "lat": 35.7122,
     "lon": 139.6353,
     "biome": "urban-core",
@@ -7367,8 +7512,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Asakusa",
-    "p": "Nakamise-dori, Tokyo Japan",
+    "slug": "tokyo-asakusa",
+    "name": "Asakusa",
+    "place": "Nakamise-dori, Tokyo Japan",
     "lat": 35.6402,
     "lon": 139.6503,
     "biome": "urban-park",
@@ -7400,8 +7546,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Ikebukuro",
-    "p": "Sunshine City, Tokyo Japan",
+    "slug": "tokyo-ikebukuro",
+    "name": "Ikebukuro",
+    "place": "Sunshine City, Tokyo Japan",
     "lat": 35.6522,
     "lon": 139.6503,
     "biome": "urban-core",
@@ -7433,8 +7580,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Tsukuba Science City",
-    "p": "Research Park, Tokyo Japan",
+    "slug": "tokyo-tsukuba",
+    "name": "Tsukuba Science City",
+    "place": "Research Park, Tokyo Japan",
     "lat": 35.6642,
     "lon": 139.6503,
     "biome": "urban-park",
@@ -7466,8 +7614,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Yokohama",
-    "p": "Minato Mirai, Tokyo Japan",
+    "slug": "tokyo-yokohama",
+    "name": "Yokohama",
+    "place": "Minato Mirai, Tokyo Japan",
     "lat": 35.6762,
     "lon": 139.6503,
     "biome": "urban-core",
@@ -7499,8 +7648,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Kawasaki",
-    "p": "Daishi Bridge, Tokyo Japan",
+    "slug": "tokyo-kawasaki",
+    "name": "Kawasaki",
+    "place": "Daishi Bridge, Tokyo Japan",
     "lat": 35.6882,
     "lon": 139.6503,
     "biome": "urban-park",
@@ -7532,8 +7682,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Pudong",
-    "p": "Century Avenue, Shanghai China",
+    "slug": "sha-pudong",
+    "name": "Pudong",
+    "place": "Century Avenue, Shanghai China",
     "lat": 31.1944,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7565,8 +7716,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "The Bund",
-    "p": "Zhongshan Road, Shanghai China",
+    "slug": "sha-bund",
+    "name": "The Bund",
+    "place": "Zhongshan Road, Shanghai China",
     "lat": 31.2064,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7598,8 +7750,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Jing An",
-    "p": "Nanjing Road, Shanghai China",
+    "slug": "sha-jingan",
+    "name": "Jing An",
+    "place": "Nanjing Road, Shanghai China",
     "lat": 31.2184,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7631,8 +7784,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Huangpu",
-    "p": "East Yan An Road, Shanghai China",
+    "slug": "sha-huangpu",
+    "name": "Huangpu",
+    "place": "East Yan An Road, Shanghai China",
     "lat": 31.2304,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7664,8 +7818,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Hongqiao",
-    "p": "Transportation Hub, Shanghai China",
+    "slug": "sha-hongqiao",
+    "name": "Hongqiao",
+    "place": "Transportation Hub, Shanghai China",
     "lat": 31.2424,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7697,8 +7852,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Zhangjiang Hi-Tech",
-    "p": "Biotech Avenue, Shanghai China",
+    "slug": "sha-zhangjiang",
+    "name": "Zhangjiang Hi-Tech",
+    "place": "Biotech Avenue, Shanghai China",
     "lat": 31.2544,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7730,8 +7886,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Yangpu",
-    "p": "University District, Shanghai China",
+    "slug": "sha-yangpu",
+    "name": "Yangpu",
+    "place": "University District, Shanghai China",
     "lat": 31.2664,
     "lon": 121.4587,
     "biome": "urban-core",
@@ -7763,8 +7920,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Minhang",
-    "p": "Industrial Zone, Shanghai China",
+    "slug": "sha-minhang",
+    "name": "Minhang",
+    "place": "Industrial Zone, Shanghai China",
     "lat": 31.1944,
     "lon": 121.4737,
     "biome": "urban-park",
@@ -7796,8 +7954,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Jiading",
-    "p": "Auto City, Shanghai China",
+    "slug": "sha-jiading",
+    "name": "Jiading",
+    "place": "Auto City, Shanghai China",
     "lat": 31.2064,
     "lon": 121.4737,
     "biome": "urban-park",
@@ -7829,8 +7988,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Chongming",
-    "p": "Eco Island, Shanghai China",
+    "slug": "sha-chongming",
+    "name": "Chongming",
+    "place": "Eco Island, Shanghai China",
     "lat": 31.2184,
     "lon": 121.4737,
     "biome": "urban-park",
@@ -7862,8 +8022,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Marina Bay",
-    "p": "Marina Bay Sands, Singapore",
+    "slug": "sg-marina-bay",
+    "name": "Marina Bay",
+    "place": "Marina Bay Sands, Singapore",
     "lat": 1.3161,
     "lon": 103.8048,
     "biome": "urban-core",
@@ -7895,8 +8056,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Orchard Road",
-    "p": "Shopping District, Singapore",
+    "slug": "sg-orchard",
+    "name": "Orchard Road",
+    "place": "Shopping District, Singapore",
     "lat": 1.3281,
     "lon": 103.8048,
     "biome": "urban-core",
@@ -7928,8 +8090,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Chinatown",
-    "p": "Pagoda Street, Singapore",
+    "slug": "sg-chinatown",
+    "name": "Chinatown",
+    "place": "Pagoda Street, Singapore",
     "lat": 1.3401,
     "lon": 103.8048,
     "biome": "urban-park",
@@ -7961,8 +8124,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Little India",
-    "p": "Serangoon Road, Singapore",
+    "slug": "sg-little-india",
+    "name": "Little India",
+    "place": "Serangoon Road, Singapore",
     "lat": 1.3521,
     "lon": 103.8048,
     "biome": "urban-park",
@@ -7994,8 +8158,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Jurong",
-    "p": "Industrial Estate, Singapore",
+    "slug": "sg-jurong",
+    "name": "Jurong",
+    "place": "Industrial Estate, Singapore",
     "lat": 1.3641,
     "lon": 103.8048,
     "biome": "urban-core",
@@ -8027,8 +8192,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "One-North",
-    "p": "Biopolis, Singapore",
+    "slug": "sg-one-north",
+    "name": "One-North",
+    "place": "Biopolis, Singapore",
     "lat": 1.3761,
     "lon": 103.8048,
     "biome": "urban-core",
@@ -8060,8 +8226,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Tampines",
-    "p": "Regional Center, Singapore",
+    "slug": "sg-tampines",
+    "name": "Tampines",
+    "place": "Regional Center, Singapore",
     "lat": 1.3881,
     "lon": 103.8048,
     "biome": "urban-core",
@@ -8093,8 +8260,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Woodlands",
-    "p": "Causeway, Singapore",
+    "slug": "sg-woodlands",
+    "name": "Woodlands",
+    "place": "Causeway, Singapore",
     "lat": 1.3161,
     "lon": 103.8198,
     "biome": "urban-core",
@@ -8126,8 +8294,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Changi",
-    "p": "Airport District, Singapore",
+    "slug": "sg-changi",
+    "name": "Changi",
+    "place": "Airport District, Singapore",
     "lat": 1.3281,
     "lon": 103.8198,
     "biome": "urban-core",
@@ -8159,8 +8328,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Tuas",
-    "p": "Mega Port, Singapore",
+    "slug": "sg-tuas",
+    "name": "Tuas",
+    "place": "Mega Port, Singapore",
     "lat": 1.3401,
     "lon": 103.8198,
     "biome": "urban-core",
@@ -8192,8 +8362,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Gangnam",
-    "p": "Teheran-ro, Seoul Korea",
+    "slug": "seo-gangnam",
+    "name": "Gangnam",
+    "place": "Teheran-ro, Seoul Korea",
     "lat": 37.5305,
     "lon": 126.963,
     "biome": "urban-core",
@@ -8225,8 +8396,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Gangbuk",
-    "p": "Nowon-gu, Seoul Korea",
+    "slug": "seo-gangbuk",
+    "name": "Gangbuk",
+    "place": "Nowon-gu, Seoul Korea",
     "lat": 37.5425,
     "lon": 126.963,
     "biome": "urban-park",
@@ -8258,8 +8430,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Mapo",
-    "p": "Hongdae, Seoul Korea",
+    "slug": "seo-mapo",
+    "name": "Mapo",
+    "place": "Hongdae, Seoul Korea",
     "lat": 37.5545,
     "lon": 126.963,
     "biome": "urban-core",
@@ -8291,8 +8464,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Jongno",
-    "p": "Gyeongbokgung, Seoul Korea",
+    "slug": "seo-jongno",
+    "name": "Jongno",
+    "place": "Gyeongbokgung, Seoul Korea",
     "lat": 37.5665,
     "lon": 126.963,
     "biome": "urban-park",
@@ -8324,8 +8498,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Yongsan",
-    "p": "Electronics Market, Seoul Korea",
+    "slug": "seo-yongsan",
+    "name": "Yongsan",
+    "place": "Electronics Market, Seoul Korea",
     "lat": 37.5785,
     "lon": 126.963,
     "biome": "urban-core",
@@ -8357,8 +8532,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Songdo IBD",
-    "p": "Central Park, Seoul Korea",
+    "slug": "seo-songdo",
+    "name": "Songdo IBD",
+    "place": "Central Park, Seoul Korea",
     "lat": 37.5905,
     "lon": 126.963,
     "biome": "urban-core",
@@ -8390,8 +8566,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Pangyo Techno Valley",
-    "p": "Startup Campus, Seoul Korea",
+    "slug": "seo-pangyo",
+    "name": "Pangyo Techno Valley",
+    "place": "Startup Campus, Seoul Korea",
     "lat": 37.6025,
     "lon": 126.963,
     "biome": "urban-core",
@@ -8423,8 +8600,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Dongdaemun",
-    "p": "Design Plaza, Seoul Korea",
+    "slug": "seo-dongdaemun",
+    "name": "Dongdaemun",
+    "place": "Design Plaza, Seoul Korea",
     "lat": 37.5305,
     "lon": 126.978,
     "biome": "urban-park",
@@ -8456,8 +8634,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Yeouido",
-    "p": "IFC Seoul, Seoul Korea",
+    "slug": "seo-yeouido",
+    "name": "Yeouido",
+    "place": "IFC Seoul, Seoul Korea",
     "lat": 37.5425,
     "lon": 126.978,
     "biome": "urban-core",
@@ -8489,8 +8668,9 @@
     "status": "coming-soon"
   },
   {
-    "n": "Itaewon",
-    "p": "Hamilton Hotel, Seoul Korea",
+    "slug": "seo-itewon",
+    "name": "Itaewon",
+    "place": "Hamilton Hotel, Seoul Korea",
     "lat": 37.5545,
     "lon": 126.978,
     "biome": "urban-park",
