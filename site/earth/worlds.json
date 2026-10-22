@@ -22,14 +22,37 @@
       "title": "Agentic Payments: The Bull's Clearing Ground",
       "summary": "A walkable slice of Lower Manhattan around Charging Bull and New York Harbor where agents draft trades, provision services, manage budgets and rehearse rail calls\u2014every settlement held for human stewards.",
       "biome": "urban-park",
-      "zones": 4,
+      "zones": 5,
       "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -55,14 +78,37 @@
       "title": "Agents That Deploy Infrastructure \u2014 Hoover Dam",
       "summary": "A walkable dam-world above Lake Mead: six zones mapped onto the real Hoover Dam structures, where agent crews take an idea from bench plan to rehearsed provisioning, deployment, domains, configuration and round-the-clock operations.",
       "biome": "desert",
-      "zones": 6,
+      "zones": 5,
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -92,10 +138,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -125,10 +194,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -158,10 +250,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -192,10 +307,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -221,14 +359,37 @@
       "title": "Diagnostic.X at Karolinska Solna",
       "summary": "A walkable medical campus on Karolinska University Hospital's Solna grounds between Brunnsviken lake and pine forest. Four zones anchor the visitor journey: a public diagnostic kiosk, a 4D imaging consultation room, a molecular VR lab, and a metaverse medical office staffed by AI avatars (projects in progress per source).",
       "biome": "temperate-forest",
-      "zones": 4,
+      "zones": 5,
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 6
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -255,13 +416,36 @@
       "summary": "A canopy-hung DAO campus in the Monteverde Cloud Forest Reserve. Six zones straddle suspension bridges and misty ridgelines above Quebrada Cuecha, where agents gather evidence and humans hold every final vote.",
       "biome": "tropical",
       "zones": 5,
-      "quests": 4
+      "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -291,10 +475,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -324,10 +531,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -353,14 +583,37 @@
       "title": "Locator.X at Jackson Square",
       "summary": "A walkable French Quarter campus around Jackson Square and the Mississippi levee: seven-gate underwriting desks, evidence grading, the Academy, market editions and the Louisiana developer desk, all anchored where the Crescent City's emerging market lives.",
       "biome": "urban-park",
-      "zones": 6,
+      "zones": 5,
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 6
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -390,10 +643,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -423,10 +699,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -464,45 +763,31 @@
     },
     "trades": {
       "scenarios": 5,
-      "union_certifications": [
-        "UAW",
-        "IAM"
-      ],
+      "union_certifications": [],
       "robot_types": [
+        "AMR",
         "Articulated",
         "Cobot",
         "SCARA",
-        "Delta",
-        "AMR"
+        "Delta"
       ],
-      "training_hours": 120
+      "training_hours": 80
     },
     "robots": {
       "tasks": 15,
       "simulations": [
-        "Automotive Welding Sim",
-        "Battery Assembly Sim",
-        "Quality Inspection Sim",
-        "Paint Application Sim",
-        "Composite Layup Sim"
+        "Robotics Sim"
       ],
       "certifications": [
-        "UAW Welding L1",
-        "UAW Assembly L2",
-        "IAM Composite L1",
-        "IAM Avionics L1",
-        "Robot Safety L1"
+        "Robotics L1"
       ],
       "robot_types": [
+        "AMR",
         "Articulated",
         "Cobot",
         "SCARA",
         "Delta",
-        "AMR",
-        "AGV",
-        "Drone",
-        "Exoskeleton",
-        "Humanoid"
+        "Drone"
       ]
     }
   },
@@ -541,44 +826,31 @@
     },
     "trades": {
       "scenarios": 5,
-      "union_certifications": [
-        "1199SEIU"
-      ],
+      "union_certifications": [],
       "robot_types": [
-        "SCARA",
-        "Delta",
-        "Cobot",
+        "AMR",
         "Articulated",
-        "AMR"
+        "Cobot",
+        "SCARA",
+        "Delta"
       ],
-      "training_hours": 120
+      "training_hours": 80
     },
     "robots": {
       "tasks": 15,
       "simulations": [
-        "Cleanroom Operations Sim",
-        "Pipetting & Assay Sim",
-        "Pharma Packaging Sim",
-        "Quality Control Sim",
-        "Sterilization Sim"
+        "Robotics Sim"
       ],
       "certifications": [
-        "1199SEIU Cleanroom L1",
-        "1199SEIU Pipetting L1",
-        "1199SEIU QC L1",
-        "GMP L1",
-        "Sterilization L1"
+        "Robotics L1"
       ],
       "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
         "SCARA",
         "Delta",
-        "Cobot",
-        "Articulated",
-        "AMR",
-        "Cartesian",
-        "Drone",
-        "Exoskeleton",
-        "Humanoid"
+        "Drone"
       ]
     }
   },
@@ -609,10 +881,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -642,10 +937,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -675,10 +993,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 6
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -701,10 +1042,37 @@
       "sea": null
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -717,44 +1085,31 @@
     "rp1": null,
     "trades": {
       "scenarios": 5,
-      "union_certifications": [
-        "Laborers"
-      ],
+      "union_certifications": [],
       "robot_types": [
-        "Exoskeleton",
-        "Drone",
         "AMR",
         "Articulated",
-        "SCARA"
+        "Cobot",
+        "SCARA",
+        "Delta"
       ],
-      "training_hours": 120
+      "training_hours": 80
     },
     "robots": {
       "tasks": 15,
       "simulations": [
-        "Site Survey Sim",
-        "Rebar Installation Sim",
-        "Concrete Pour Sim",
-        "Safety Inspection Sim",
-        "Quality Control Sim"
+        "Robotics Sim"
       ],
       "certifications": [
-        "Laborers Survey L1",
-        "Laborers Rebar L1",
-        "Laborers Concrete L1",
-        "OSHA 30",
-        "Drone Survey L1"
+        "Robotics L1"
       ],
       "robot_types": [
-        "Exoskeleton",
-        "Drone",
         "AMR",
         "Articulated",
+        "Cobot",
         "SCARA",
         "Delta",
-        "Cobot",
-        "Cartesian",
-        "Humanoid"
+        "Drone"
       ]
     },
     "world": {
@@ -778,10 +1133,37 @@
     "biome": "grassland",
     "rp1": null,
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 6
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -793,10 +1175,37 @@
     "biome": "urban-park",
     "rp1": null,
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -827,10 +1236,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -842,10 +1274,37 @@
     "biome": "temperate-forest",
     "rp1": null,
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -857,10 +1316,37 @@
     "biome": "desert",
     "rp1": null,
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -873,44 +1359,31 @@
     "rp1": null,
     "trades": {
       "scenarios": 5,
-      "union_certifications": [
-        "UFCW"
-      ],
+      "union_certifications": [],
       "robot_types": [
-        "Drone",
         "AMR",
-        "Delta",
+        "Articulated",
+        "Cobot",
         "SCARA",
-        "Cobot"
+        "Delta"
       ],
-      "training_hours": 120
+      "training_hours": 80
     },
     "robots": {
       "tasks": 15,
       "simulations": [
-        "Crop Monitoring Sim",
-        "Automated Harvesting Sim",
-        "Processing Line Sim",
-        "Quality Sorting Sim",
-        "Packaging Sim"
+        "Robotics Sim"
       ],
       "certifications": [
-        "UFCW Harvesting L1",
-        "UFCW Processing L1",
-        "UFCW Packaging L1",
-        "Food Safety L1",
-        "Drone Ag L1"
+        "Robotics L1"
       ],
       "robot_types": [
-        "Drone",
         "AMR",
-        "Delta",
-        "SCARA",
-        "Cobot",
         "Articulated",
-        "Cartesian",
-        "Exoskeleton",
-        "Humanoid"
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
       ]
     },
     "world": {
@@ -934,10 +1407,37 @@
     "biome": "urban-park",
     "rp1": null,
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 6
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
+    },
+    "world": {
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -967,10 +1467,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -1008,44 +1531,31 @@
     },
     "trades": {
       "scenarios": 5,
-      "union_certifications": [
-        "Teamsters"
-      ],
+      "union_certifications": [],
       "robot_types": [
         "AMR",
-        "AGV",
-        "Delta",
+        "Articulated",
+        "Cobot",
         "SCARA",
-        "Drone"
+        "Delta"
       ],
-      "training_hours": 120
+      "training_hours": 80
     },
     "robots": {
       "tasks": 15,
       "simulations": [
-        "Warehouse Sorting Sim",
-        "AMR Dispatch Sim",
-        "Loading Operations Sim",
-        "Package Handling Sim",
-        "Inventory Management Sim"
+        "Robotics Sim"
       ],
       "certifications": [
-        "Teamsters AMR L1",
-        "Teamsters Sorting L1",
-        "Teamsters Dispatch L1",
-        "Warehouse Safety L1",
-        "Forklift L1"
+        "Robotics L1"
       ],
       "robot_types": [
         "AMR",
-        "AGV",
-        "Delta",
-        "SCARA",
-        "Drone",
-        "Cobot",
         "Articulated",
-        "Cartesian",
-        "Humanoid"
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
       ]
     }
   },
@@ -1076,10 +1586,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -1109,10 +1642,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -1142,10 +1698,33 @@
       "quests": 5
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -1172,13 +1751,36 @@
       "summary": "An agent-managed, human-governed DAO world set at the International Wolf Center in Ely, Minnesota, on the edge of the Boundary Waters. Six agents run research and operations across five districts while stewards hold the final vote.",
       "biome": "temperate-forest",
       "zones": 5,
-      "quests": 4
+      "quests": 5
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 80
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Robotics Sim"
+      ],
+      "certifications": [
+        "Robotics L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "Drone"
+      ]
     }
   },
   {
@@ -1603,16 +2205,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-garden-district",
@@ -1642,16 +2257,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-warehouse",
@@ -1681,16 +2309,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-bywater",
@@ -1720,16 +2361,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-uptown",
@@ -1759,16 +2413,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-mid-city",
@@ -1798,16 +2465,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-treme",
@@ -1837,16 +2517,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-marigny",
@@ -1876,16 +2569,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-central-city",
@@ -1915,16 +2621,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "nola-lower-ninth",
@@ -1954,16 +2673,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-financial",
@@ -1993,16 +2725,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-mission",
@@ -2032,16 +2777,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-soma",
@@ -2071,16 +2829,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-marina",
@@ -2110,16 +2881,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-chinatown",
@@ -2149,16 +2933,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-sunset",
@@ -2188,16 +2985,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-nob-hill",
@@ -2227,16 +3037,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-castro",
@@ -2266,16 +3089,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-haight",
@@ -2305,16 +3141,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-embarcadero",
@@ -2344,16 +3193,29 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR"
+      ],
+      "training_hours": 100
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim"
+      ],
+      "certifications": [
+        "L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live"
   },
   {
     "slug": "sf-presidio",
@@ -2383,14 +3245,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2422,14 +3302,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2461,14 +3359,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2500,14 +3416,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2539,14 +3473,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2578,14 +3530,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2617,14 +3587,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2656,14 +3644,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2695,14 +3701,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2734,14 +3758,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2773,14 +3815,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2812,14 +3872,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2851,14 +3929,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2890,14 +3986,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2929,14 +4043,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -2968,14 +4100,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -3007,14 +4157,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -3046,14 +4214,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -3085,14 +4271,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
@@ -3124,14 +4328,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "SF Training Sim"
+      ],
+      "certifications": [
+        "IBEW L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA",
+        "Drone",
+        "AGV"
+      ]
     },
     "status": "coming-soon"
   },
