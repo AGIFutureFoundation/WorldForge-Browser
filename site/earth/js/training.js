@@ -23,16 +23,21 @@ async function load() {
   ROBOT_TYPES.forEach(r => { const o = document.createElement('option'); o.value = r; o.textContent = r; rs.appendChild(o); });
   
   const live = worldsData.filter(w => w.status !== 'coming-soon');
-  $('stats').textContent = live.length + ' Live · ' + UNIONS.size + ' Unions · ' + SECTORS.size + ' Sectors';
+  $('stats').textContent = live.length + ' Live Worlds · ' + UNIONS.size + ' Unions · ' + SECTORS.size + ' Sectors';
   
-  const regions = [...new Set(worldsData.filter(w => w.region).map(w => w.region))].sort();
+  const regions = [...new Set(worldsData.filter(w => w.region && w.region !== 'unknown').map(w => w.region))].sort();
   const nav = $('nav');
   const allBtn = document.createElement('button');
   allBtn.className = 'active'; allBtn.textContent = 'All';
   allBtn.onclick = () => { nav.querySelectorAll('button').forEach(b => b.classList.remove('active')); allBtn.classList.add('active'); render(); };
   nav.appendChild(allBtn);
-  regions.slice(0, 15).forEach(r => {
+  regions.forEach(r => {
     const btn = document.createElement('button'); btn.textContent = r;
+    btn.onclick = () => { nav.querySelectorAll('button').forEach(b => b.classList.remove('active')); btn.classList.add('active'); render(r); };
+    nav.appendChild(btn);
+  });
+  render();
+}
 
 function render(region) {
   let filtered = worldsData.filter(w => w.status !== 'coming-soon');
@@ -59,12 +64,12 @@ function render(region) {
     card.className = 'card';
     let html = '<h3>' + (w.name || w.slug) + '</h3><div class="meta">' + w.slug + ' · ' + hours + 'h · ' + xp + ' XP</div>';
     html += '<div>' + unions.map(u => '<span class="union">' + u + '</span>').join('') + '</div>';
-    html += '<div class="meta">' + (t.sector || 'General') + '</div>';
+    html += '<div class="meta">' + (t.sector || 'General') + ' · ' + (w.region || '') + '</div>';
     html += '<div class="robots">🤖 ' + (robots.join(', ') || 'Various') + '</div>';
     
     if (scenarios.length > 0) {
       scenarios.slice(0, 5).forEach(s => {
-        html += '<div class="scenario" onclick="openModule(\'' + w.slug + '\', \'' + s.replace(/'/g, "\\'") + '\')">' + s + '</div>';
+        html += '<div class="scenario" onclick="openModule(\\'' + w.slug + '\\', \\'' + s.replace(/'/g, \"\\'\") + '\\')\">' + s + '</div>';
       });
     }
     
@@ -86,6 +91,7 @@ function openModule(slug, scenario) {
   let html = '<h2>' + (w.name || w.slug) + '</h2><div class="meta">' + scenario + '</div>';
   html += '<div class="meta">Union: ' + (unions.join(', ') || 'N/A') + '</div>';
   html += '<div class="meta">Sector: ' + (w.trades?.sector || 'General') + '</div>';
+  html += '<div class="meta">Region: ' + (w.region || 'Unknown') + '</div>';
   html += '<div class="meta">Hours: ' + hours + 'h</div>';
   html += '<hr style="border-color:#1e333a;margin:16px 0"><h3>Training Steps</h3>';
   
@@ -101,7 +107,7 @@ function openModule(slug, scenario) {
     html += '<div class="step"><h4>' + s.title + '</h4><p>' + s.desc + '</p><div class="check">☐ Complete</div></div>';
   });
   
-  html += '<div style="margin-top:16px"><button onclick="alert(\'Starting simulation...\')" style="background:var(--acc);color:#0b1214;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600">Start Simulation</button></div>';
+  html += '<div style="margin-top:16px"><button onclick="alert(\\'Starting simulation...\\')" style="background:var(--acc);color:#0b1214;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600">Start Simulation</button></div>';
   mc.innerHTML = html;
   mp.style.display = 'block';
 }
@@ -109,9 +115,4 @@ function openModule(slug, scenario) {
 $('f-union').addEventListener('change', () => render());
 $('f-sector').addEventListener('change', () => render());
 $('f-robot').addEventListener('change', () => render());
-
-    btn.onclick = () => { nav.querySelectorAll('button').forEach(b => b.classList.remove('active')); btn.classList.add('active'); render(r); };
-    nav.appendChild(btn);
-  });
-  render();
-}
+load();
