@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorldForge Earth - Training Modules</title>
+<style>
+:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:#0b1214;--card:#111c21;--border:#1e333a}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system}
+a{color:var(--acc);text-decoration:none}a:hover{color:#6ee7b7}
+header{padding:20px 24px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:16px}
+header h1{margin:0;font-size:1.4rem}header .stats{color:var(--mut);font-size:.85rem}
+nav{display:flex;gap:8px;padding:12px 24px;border-bottom:1px solid var(--border);flex-wrap:wrap}
+nav button{background:#17323a;color:var(--ink);border:1px solid #2b5a63;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit;font-size:.85rem}
+nav button:hover{background:#21454f}nav button.active{background:var(--acc);color:#0b1214}
+main{padding:20px 24px;max-width:1400px;margin:0 auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+.card:hover{border-color:var(--acc)}.card h3{margin:0 0 8px;font-size:1.05rem}
+.card .meta{color:var(--mut);font-size:.8rem;margin-bottom:8px}
+.card .union{display:inline-block;background:#1f6b4c;color:#fff;padding:2px 8px;border-radius:4px;font-size:.75rem;margin-right:4px}
+.card .robots{color:var(--mut);font-size:.78rem;margin-top:4px}
+.card .scenario{background:#0f1a1e;padding:6px 10px;border-radius:6px;margin:4px 0;font-size:.82rem;cursor:pointer}
+.card .scenario:hover{background:#17323a}.card .scenario::before{content:"▶ ";color:var(--acc)}
+.card .xp{color:var(--acc);font-weight:700;font-size:.85rem;margin-top:8px}
+.card .btn{display:inline-block;background:var(--acc);color:#0b1214;padding:6px 14px;border-radius:6px;margin-top:8px;font-size:.82rem;font-weight:600;cursor:pointer}
+.mp{position:fixed;right:0;top:0;bottom:0;width:min(480px,92vw);background:#0f1a1e;border-left:1px solid var(--border);padding:20px;overflow:auto;z-index:100;display:none}
+.mp h2{color:var(--acc);margin-top:0}.mp .close{position:absolute;top:12px;right:12px;background:#7a2b2b;color:#fff;border:none;border-radius:50%;width:28px;height:28px;cursor:pointer}
+.mp .step{background:#111c21;padding:12px;border-radius:8px;margin:8px 0}.mp .step h4{margin:0 0 4px}
+.mp .step p{margin:4px 0;color:var(--mut);font-size:.85rem}.mp .step .check{color:var(--acc);font-size:.75rem}
+.filters{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filters select{background:#17323a;color:var(--ink);border:1px solid #2b5a63;border-radius:6px;padding:6px 10px;font:inherit}
+footer{padding:20px 24px;border-top:1px solid var(--border);color:var(--mut);font-size:.8rem;text-align:center;margin-top:24px}
+</style>
+</head>
+<body>
+<header><h1>🌍 Training Modules</h1><div class="stats" id="stats"></div><a href="index.html" style="margin-left:auto">← Worlds</a></header>
+<nav id="nav"></nav>
+<main>
+  <div class="filters"><select id="f-union"><option value="">All Unions</option></select><select id="f-sector"><option value="">All Sectors</option></select><select id="f-robot"><option value="">All Robots</option></select></div>
+  <div class="grid" id="grid"></div>
+</main>
+<div class="mp" id="mp"><button class="close" onclick="document.getElementById('mp').style.display='none'">×</button><div id="mc"></div></div>
+<footer>WorldForge Earth © AGI Future Foundation · 543 Worlds · 111 Live</footer>
+<script src="js/training.js"></script>
+</body>
+</html>
