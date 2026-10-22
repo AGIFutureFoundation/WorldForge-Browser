@@ -24152,24 +24152,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Aventura: Retail & Logistics Hub",
-      "summary": "retail and logistics training at Biscayne Boulevard, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-doral",
@@ -24191,24 +24232,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Doral: Logistics & Corporate Hub",
-      "summary": "logistics and corporate training at NW 87th Avenue, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "rdu-downtown",
@@ -24230,24 +24312,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Raleigh: Tech & Government Hub",
-      "summary": "tech and government training at Fayetteville Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-research",
@@ -24269,24 +24391,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Research Triangle Park: Biotech & Tech Hub",
-      "summary": "biotech and tech training at Alexander Drive, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-durham",
@@ -24308,24 +24470,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Durham: Biotech & Education Hub",
-      "summary": "biotech and education training at Main Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-chapel-hill",
@@ -24347,24 +24549,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Chapel Hill: Education & Biotech Hub",
-      "summary": "education and biotech training at Franklin Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-cary",
@@ -24386,24 +24628,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Cary: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Walnut Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-apex",
@@ -24425,24 +24707,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Apex: Tech & Community Hub",
-      "summary": "tech and community training at Salem Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-morrisville",
@@ -24464,24 +24786,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Morrisville: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Davis Drive, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-wake",
@@ -24503,24 +24865,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Wake Forest: Manufacturing & Community Hub",
-      "summary": "manufacturing and community training at Capital Boulevard, Raleigh-Durham NC.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-nc-state",
@@ -24542,24 +24944,64 @@
       "sea": 0
     },
     "world": {
-      "title": "NC State Area: Education & Tech Hub",
-      "summary": "education and tech training at Hillsborough Street, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "rdu-duke",
@@ -24581,24 +25023,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Duke University: Biotech & Research Hub",
-      "summary": "biotech and research training at Science Drive, Raleigh-Durham NC.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "RDU",
+    "description": "General training."
   },
   {
     "slug": "cmh-downtown",
@@ -24620,24 +25102,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Columbus: Finance & Government Hub",
-      "summary": "finance and government training at High Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-short-north",
@@ -24659,24 +25181,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Short North: Arts & Tech Hub",
-      "summary": "arts and tech training at High Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-german",
@@ -24698,24 +25260,64 @@
       "sea": 0
     },
     "world": {
-      "title": "German Village: Heritage & Culinary Hub",
-      "summary": "heritage and culinary training at South 3rd Street, Columbus OH.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-osu",
@@ -24737,24 +25339,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Ohio State Area: Education & Research Hub",
-      "summary": "education and research training at Lane Avenue, Columbus OH.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-easton",
@@ -24776,24 +25418,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Easton: Retail & Corporate Hub",
-      "summary": "retail and corporate training at Easton Way, Columbus OH.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-dublin",
@@ -24815,24 +25497,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Dublin: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Bridge Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-westerville",
@@ -24854,24 +25576,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Westerville: Tech & Community Hub",
-      "summary": "tech and community training at State Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-grove-city",
@@ -24893,24 +25655,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Grove City: Manufacturing & Logistics Hub",
-      "summary": "manufacturing and logistics training at Broad Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-reynoldsburg",
@@ -24932,24 +25734,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Reynoldsburg: Logistics & Manufacturing Hub",
-      "summary": "logistics and manufacturing training at Main Street, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "cmh-pickerington",
@@ -24971,24 +25813,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Pickerington: Logistics & Manufacturing Hub",
-      "summary": "logistics and manufacturing training at Rock Mill Road, Columbus OH.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "CMH",
+    "description": "General training."
   },
   {
     "slug": "kc-downtown",
@@ -25010,24 +25892,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown KC: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Main Street, Kansas City MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-crossroads",
@@ -25049,24 +25971,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Crossroads: Arts & Manufacturing Hub",
-      "summary": "arts and manufacturing training at Wyandotte Street, Kansas City MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-plaza",
@@ -25088,24 +26050,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Country Club Plaza: Retail & Healthcare Hub",
-      "summary": "retail and healthcare training at Ward Parkway, Kansas City MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-westport",
@@ -25127,24 +26129,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Westport: Arts & Entertainment Hub",
-      "summary": "arts and entertainment training at Westport Road, Kansas City MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-power-light",
@@ -25166,24 +26208,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Power & Light: Entertainment & Sports Hub",
-      "summary": "entertainment and sports training at 12th Street, Kansas City MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-northland",
@@ -25205,24 +26287,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Northland: Suburban & Logistics Hub",
-      "summary": "suburban and logistics training at NW Barry Road, Kansas City MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-opportunity",
@@ -25244,24 +26366,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Opportunity KC: Community & Tech Hub",
-      "summary": "community and tech training at Grand Boulevard, Kansas City MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-overland",
@@ -25283,24 +26445,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Overland Park: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Metcalf Avenue, Kansas City MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-olathe",
@@ -25322,24 +26524,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Olathe: Manufacturing & Logistics Hub",
-      "summary": "manufacturing and logistics training at Santa Fe Street, Kansas City MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "kc-independence",
@@ -25361,24 +26603,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Independence: Heritage & Manufacturing Hub",
-      "summary": "heritage and manufacturing training at Noland Road, Kansas City MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "KC",
+    "description": "General training."
   },
   {
     "slug": "stl-downtown",
@@ -25400,24 +26682,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown St Louis: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Market Street, St Louis MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-central-west",
@@ -25439,24 +26761,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Central West End: Healthcare & Education Hub",
-      "summary": "healthcare and education training at Euclid Avenue, St Louis MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-soulard",
@@ -25478,24 +26840,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Soulard: Heritage & Culinary Hub",
-      "summary": "heritage and culinary training at Soulard Market, St Louis MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-delmar",
@@ -25517,24 +26919,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Delmar Loop: Arts & Education Hub",
-      "summary": "arts and education training at Delmar Boulevard, St Louis MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-cortex",
@@ -25556,24 +26998,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Cortex District: Tech & Biotech Hub",
-      "summary": "tech and biotech training at Forest Park Avenue, St Louis MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-ballpark",
@@ -25595,24 +27077,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Ballpark Village: Sports & Entertainment Hub",
-      "summary": "sports and entertainment training at Clark Avenue, St Louis MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-webster",
@@ -25634,24 +27156,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Webster Groves: Education & Community Hub",
-      "summary": "education and community training at Lockwood Avenue, St Louis MO.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-kirkwood",
@@ -25673,24 +27235,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Kirkwood: Suburban & Tech Hub",
-      "summary": "suburban and tech training at South Kirkwood Road, St Louis MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-clayton",
@@ -25712,24 +27314,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Clayton: Finance & Corporate Hub",
-      "summary": "finance and corporate training at Hanley Road, St Louis MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "stl-chesterfield",
@@ -25751,24 +27393,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Chesterfield: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Chesterfield Parkway, St Louis MO.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "STL",
+    "description": "General training."
   },
   {
     "slug": "indy-downtown",
@@ -25790,24 +27472,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Indy: Finance & Sports Hub",
-      "summary": "finance and sports training at Meridian Street, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-mass",
@@ -25829,24 +27551,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Mass Ave: Arts & Entertainment Hub",
-      "summary": "arts and entertainment training at Massachusetts Avenue, Indianapolis IN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-broad-ripple",
@@ -25868,24 +27630,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Broad Ripple: Arts & Community Hub",
-      "summary": "arts and community training at Broad Ripple Avenue, Indianapolis IN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-fountain",
@@ -25907,24 +27709,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Fountain Square: Arts & Manufacturing Hub",
-      "summary": "arts and manufacturing training at Shelby Street, Indianapolis IN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-carmel",
@@ -25946,24 +27788,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Carmel: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Rangeline Road, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-fishers",
@@ -25985,24 +27867,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Fishers: Tech & Corporate Hub",
-      "summary": "tech and corporate training at 116th Street, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-noblesville",
@@ -26024,24 +27946,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Noblesville: Manufacturing & Community Hub",
-      "summary": "manufacturing and community training at Logan Street, Indianapolis IN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-westfield",
@@ -26063,24 +28025,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Westfield: Tech & Community Hub",
-      "summary": "tech and community training at Greenfield Avenue, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-avon",
@@ -26102,24 +28104,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Avon: Logistics & Manufacturing Hub",
-      "summary": "logistics and manufacturing training at Rockville Road, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "indy-plainfield",
@@ -26141,24 +28183,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Plainfield: Logistics & Manufacturing Hub",
-      "summary": "logistics and manufacturing training at Rockville Road, Indianapolis IN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "INDY",
+    "description": "General training."
   },
   {
     "slug": "ldn-city",
@@ -26180,24 +28262,64 @@
       "sea": 0
     },
     "world": {
-      "title": "City of London: Finance & Tech Hub",
-      "summary": "finance and tech training at Bank Junction, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-shoreditch",
@@ -26219,24 +28341,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Shoreditch: Tech & Startups Hub",
-      "summary": "tech and startups training at Old Street, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-canary",
@@ -26258,24 +28420,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Canary Wharf: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Westferry Circus, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-camden",
@@ -26297,24 +28499,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Camden: Arts & Tech Hub",
-      "summary": "arts and tech training at Camden High Street, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-westminster",
@@ -26336,24 +28578,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Westminster: Government & Heritage Hub",
-      "summary": "government and heritage training at Victoria Street, London UK.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-kings-cross",
@@ -26375,24 +28657,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Kings Cross: Tech & Education Hub",
-      "summary": "tech and education training at Euston Road, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-battersea",
@@ -26414,24 +28736,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Battersea: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Battersea Power Station, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-stratford",
@@ -26453,24 +28815,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Stratford: Tech & Sports Hub",
-      "summary": "tech and sports training at Olympic Park, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-greenwich",
@@ -26492,24 +28894,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Greenwich: Maritime & Heritage Hub",
-      "summary": "maritime and heritage training at Cutty Sark, London UK.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ldn-croydon",
@@ -26531,24 +28973,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Croydon: Tech & Logistics Hub",
-      "summary": "tech and logistics training at North End, London UK.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "LDN",
+    "description": "General training."
   },
   {
     "slug": "ber-mitte",
@@ -26570,24 +29052,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Mitte: Government & Tech Hub",
-      "summary": "government and tech training at Unter den Linden, Berlin Germany.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-kreuzberg",
@@ -26609,24 +29131,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Kreuzberg: Arts & Tech Hub",
-      "summary": "arts and tech training at Oranienstrasse, Berlin Germany.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-friedrichshain",
@@ -26648,24 +29210,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Friedrichshain: Arts & Tech Hub",
-      "summary": "arts and tech training at Boxhagener Platz, Berlin Germany.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-charlotten",
@@ -26687,24 +29289,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Charlottenburg: Retail & Heritage Hub",
-      "summary": "retail and heritage training at Kurfurstendamm, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-neukolln",
@@ -26726,24 +29368,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Neukolln: Arts & Community Hub",
-      "summary": "arts and community training at Karl-Marx-Strasse, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-prenzlauer",
@@ -26765,24 +29447,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Prenzlauer Berg: Arts & Community Hub",
-      "summary": "arts and community training at Kastanienallee, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-wedding",
@@ -26804,24 +29526,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Wedding: Manufacturing & Community Hub",
-      "summary": "manufacturing and community training at Mullerstrasse, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-tempelhof",
@@ -26843,24 +29605,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Tempelhof: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Tempelhofer Damm, Berlin Germany.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-spandau",
@@ -26882,24 +29684,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Spandau: Manufacturing & Heritage Hub",
-      "summary": "manufacturing and heritage training at Breite Strasse, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "ber-adlershof",
@@ -26921,24 +29763,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Adlershof: Ai & Research Hub",
-      "summary": "ai and research training at Science City, Berlin Germany.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BER",
+    "description": "General training."
   },
   {
     "slug": "par-louvre",
@@ -26960,24 +29842,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Louvre District: Heritage & Tourism Hub",
-      "summary": "heritage and tourism training at Rue de Rivoli, Paris France.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-marais",
@@ -26999,24 +29921,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Le Marais: Arts & Heritage Hub",
-      "summary": "arts and heritage training at Rue des Francs-Bourgeois, Paris France.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-defence",
@@ -27038,24 +30000,64 @@
       "sea": 0
     },
     "world": {
-      "title": "La Defence: Finance & Tech Hub",
-      "summary": "finance and tech training at Esplanade de la Defence, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-montmartre",
@@ -27077,24 +30079,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Montmartre: Arts & Tourism Hub",
-      "summary": "arts and tourism training at Rue Lepic, Paris France.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-saclay",
@@ -27116,24 +30158,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Saclay: Ai & Research Hub",
-      "summary": "ai and research training at Plateau de Saclay, Paris France.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-bastille",
@@ -27155,24 +30237,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Bastille: Arts & Tech Hub",
-      "summary": "arts and tech training at Place de la Bastille, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-republique",
@@ -27194,24 +30316,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Republique: Tech & Community Hub",
-      "summary": "tech and community training at Avenue de la Republique, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-bercy",
@@ -27233,24 +30395,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Bercy: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Cour Saint-Emilion, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-saint-denis",
@@ -27272,24 +30474,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Saint-Denis: Tech & Sports Hub",
-      "summary": "tech and sports training at Avenue du President Wilson, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "par-evry",
@@ -27311,24 +30553,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Evry: Tech & Manufacturing Hub",
-      "summary": "tech and manufacturing training at Cours Monseigneur Romero, Paris France.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PAR",
+    "description": "General training."
   },
   {
     "slug": "syd-cbd",
@@ -27350,24 +30632,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Sydney CBD: Finance & Logistics Hub",
-      "summary": "finance and logistics training at George Street, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-darling",
@@ -27389,24 +30711,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Darling Harbour: Tourism & Tech Hub",
-      "summary": "tourism and tech training at Harbour Street, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-barangaroo",
@@ -27428,24 +30790,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Barangaroo: Finance & Tech Hub",
-      "summary": "finance and tech training at Barangaroo Avenue, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-surry",
@@ -27467,24 +30869,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Surry Hills: Arts & Tech Hub",
-      "summary": "arts and tech training at Crown Street, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-newtown",
@@ -27506,24 +30948,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Newtown: Arts & Community Hub",
-      "summary": "arts and community training at King Street, Sydney Australia.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-parramatta",
@@ -27545,24 +31027,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Parramatta: Tech & Government Hub",
-      "summary": "tech and government training at Church Street, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-chatswood",
@@ -27584,24 +31106,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Chatswood: Tech & Retail Hub",
-      "summary": "tech and retail training at Victoria Avenue, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-macquarie",
@@ -27623,24 +31185,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Macquarie Park: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Epping Road, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-north-ryde",
@@ -27662,24 +31264,64 @@
       "sea": 0
     },
     "world": {
-      "title": "North Ryde: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Delhi Road, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "syd-liverpool",
@@ -27701,24 +31343,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Liverpool: Tech & Manufacturing Hub",
-      "summary": "tech and manufacturing training at Macquarie Street, Sydney Australia.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SYD",
+    "description": "General training."
   },
   {
     "slug": "sd-downtown",
@@ -27740,24 +31422,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown San Diego: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Broadway, San Diego CA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-gaslamp",
@@ -27779,24 +31501,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Gaslamp Quarter: Entertainment & Tourism Hub",
-      "summary": "entertainment and tourism training at 5th Avenue, San Diego CA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-la-jolla",
@@ -27818,24 +31580,64 @@
       "sea": 0
     },
     "world": {
-      "title": "La Jolla: Biotech & Research Hub",
-      "summary": "biotech and research training at Prospect Street, San Diego CA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-mission",
@@ -27857,24 +31659,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Mission Valley: Retail & Logistics Hub",
-      "summary": "retail and logistics training at Mission Center Road, San Diego CA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-pacific-beach",
@@ -27896,24 +31738,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Pacific Beach: Tourism & Tech Hub",
-      "summary": "tourism and tech training at Mission Boulevard, San Diego CA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-hillcrest",
@@ -27935,24 +31817,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Hillcrest: Healthcare & Community Hub",
-      "summary": "healthcare and community training at University Avenue, San Diego CA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-north-park",
@@ -27974,24 +31896,64 @@
       "sea": 0
     },
     "world": {
-      "title": "North Park: Arts & Community Hub",
-      "summary": "arts and community training at 30th Street, San Diego CA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-sorrento",
@@ -28013,24 +31975,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Sorrento Mesa: Biotech & Tech Hub",
-      "summary": "biotech and tech training at Sorrento Valley Road, San Diego CA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SD",
+    "description": "General training."
   },
   {
     "slug": "sd-carlsbad",

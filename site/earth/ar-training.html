@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldForge AR Training - Pokemon Go Style Robotics</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, sans-serif; background: #0a0e17; color: #e2e8f0; }
+#map-container { position: relative; width: 100%; height: 100vh; overflow: hidden; }
+#map { width: 100%; height: 100%; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+#hud { position: absolute; top: 0; left: 0; right: 0; padding: 16px; background: rgba(15,23,42,0.9); display: flex; justify-content: space-between; align-items: center; }
+#hud h1 { font-size: 18px; color: #60a5fa; }
+.hud-stats { display: flex; gap: 16px; font-size: 14px; }
+.hud-stats span { background: #1e293b; padding: 6px 12px; border-radius: 8px; }
+.hud-stats .xp { color: #fbbf24; }
+.hud-stats .level { color: #34d399; }
+#controls { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; }
+.ctrl-btn { background: #3b82f6; color: white; border: none; padding: 12px 20px; border-radius: 12px; font-size: 14px; cursor: pointer; }
+.ctrl-btn:hover { background: #2563eb; }
+.ctrl-btn.active { background: #10b981; }
+#anchor-panel { position: absolute; right: 16px; top: 80px; width: 300px; max-height: calc(100vh - 100px); overflow-y: auto; background: rgba(15,23,42,0.95); border-radius: 16px; padding: 16px; display: none; }
+#anchor-panel.visible { display: block; }
+.anchor-card { background: #1e293b; border-radius: 12px; padding: 12px; margin-bottom: 12px; cursor: pointer; }
+.anchor-card:hover { background: #334155; }
+.anchor-card h3 { color: #60a5fa; font-size: 14px; margin-bottom: 4px; }
+.anchor-card p { font-size: 12px; color: #94a3b8; }
+.badge { display: inline-block; background: #3b82f6; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px; margin-right: 4px; }
+.badge.beginner { background: #10b981; }
+.badge.intermediate { background: #f59e0b; }
+.badge.advanced { background: #ef4444; }
+#training-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 100; }
+#training-modal.visible { display: flex; }
+.modal-content { background: #1e293b; border-radius: 20px; padding: 24px; width: 90%; max-width: 500px; }
+.modal-content h2 { color: #60a5fa; margin-bottom: 16px; }
+.step { background: #0f172a; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.step.completed { border-left: 4px solid #10b981; }
+.step.active { border-left: 4px solid #3b82f6; }
+.step-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.step-title { font-weight: 600; }
+.step-status { font-size: 12px; color: #94a3b8; }
+.progress-bar { height: 6px; background: #334155; border-radius: 3px; overflow: hidden; margin-top: 8px; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); transition: width 0.3s; }
+#ros-data-panel { position: absolute; left: 16px; bottom: 80px; width: 280px; background: rgba(15,23,42,0.95); border-radius: 16px; padding: 16px; display: none; }
+#ros-data-panel.visible { display: block; }
+.data-stream { background: #1e293b; border-radius: 8px; padding: 10px; margin-bottom: 8px; font-size: 12px; }
+.data-stream .title { color: #60a5fa; font-weight: 600; }
+.data-stream .meta { color: #94a3b8; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div id="map-container">
+  <div id="map"></div>
+  <div id="hud">
+    <h1>🌍 WorldForge AR Training</h1>
+    <div class="hud-stats">
+      <span class="xp">⭐ <span id="total-xp">0</span> XP</span>
+      <span class="level">🏆 Level <span id="level">1</span></span>
+      <span>📍 <span id="active-anchors">0</span> Anchors</span>
+    </div>
+  </div>
+  <div id="controls">
+    <button class="ctrl-btn" onclick="toggleAnchors()">📍 Anchors</button>
+    <button class="ctrl-btn" onclick="toggleROSData()">📊 ROS Data</button>
+    <button class="ctrl-btn" onclick="toggleARMode()">🥽 AR Mode</button>
+    <button class="ctrl-btn" onclick="startTraining()">🎯 Train</button>
+  </div>
+  <div id="anchor-panel"></div>
+  <div id="ros-data-panel"></div>
+</div>
+<div id="training-modal">
+  <div class="modal-content">
+    <h2 id="modal-title">Training Scenario</h2>
+    <div id="training-steps"></div>
+    <button class="ctrl-btn" onclick="closeModal()" style="margin-top:16px;width:100%">Close</button>
+<script>
+const state = { xp: 0, level: 1, anchors: [], rosStreams: [], arMode: false };
+async function loadData() {
+  try {
+    const [anchors, ros] = await Promise.all([
+      fetch('team/ar_anchors.json').then(r => r.json()),
+      fetch('team/ros_training_data.json').then(r => r.json())
+    ]);
+    state.anchors = Object.values(anchors).flat();
+    state.rosStreams = ros.data_streams || [];
+    renderAnchors(); renderROSData();
+    document.getElementById('active-anchors').textContent = state.anchors.length;
+  } catch(e) { console.error('Failed to load:', e); }
+}
+function renderAnchors() {
+  const panel = document.getElementById('anchor-panel');
+  panel.innerHTML = state.anchors.slice(0,20).map(a => `
+    <div class="anchor-card" onclick="openTraining('${a.id}')">
+      <h3>${a.world} - ${a.sector}</h3>
+      <p>${a.anchors?.length||0} capture points | ${a.spawn_points?.length||0} spawns</p>
+      <div style="margin-top:8px">${(a.anchors||[]).slice(0,3).map(x => `<span class="badge ${x.difficulty}">${x.difficulty}</span>`).join('')}</div>
+    </div>
+  `).join('');
+}
+function renderROSData() {
+  const panel = document.getElementById('ros-data-panel');
+  panel.innerHTML = `<h3 style="color:#60a5fa;margin-bottom:12px">📊 ROS Data Streams</h3>` +
+    state.rosStreams.slice(0,15).map(s => `
+      <div class="data-stream">
+        <div class="title">${s.training_module}</div>
+        <div class="meta">${s.world} | ${s.ros_version} | ${s.frequency_hz}Hz</div>
+      </div>
+    `).join('');
+}
+function toggleAnchors() { document.getElementById('anchor-panel').classList.toggle('visible'); }
+function toggleROSData() { document.getElementById('ros-data-panel').classList.toggle('visible'); }
+function toggleARMode() { state.arMode = !state.arMode; event.target.classList.toggle('active'); }
+function openTraining(id) {
+  const anchor = state.anchors.find(a => a.id === id);
+  if (!anchor) return;
+  document.getElementById('modal-title').textContent = `${anchor.world} - ${anchor.sector}`;
+  const steps = anchor.anchors?.slice(0,4) || [];
+  document.getElementById('training-steps').innerHTML = steps.map((s, i) => `
+    <div class="step ${i===0?'active':''}">
+      <div class="step-header"><span class="step-title">Step ${i+1}: ${s.training_module}</span><span class="step-status">${s.difficulty}</span></div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${i===0?'0':'100'}%"></div></div>
+    </div>
+  `).join('');
+  document.getElementById('training-modal').classList.add('visible');
+}
+function closeModal() { document.getElementById('training-modal').classList.remove('visible'); }
+function startTraining() {
+  if (!state.anchors.length) return alert('No anchors loaded');
+  openTraining(state.anchors[Math.floor(Math.random()*state.anchors.length)].id);
+}
+document.getElementById('map').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#60a5fa">🌍 Map View - Click Anchors to Start Training</div>';
+loadData();
+</script>
+</body>
+</html>
+  </div>
+</div>
