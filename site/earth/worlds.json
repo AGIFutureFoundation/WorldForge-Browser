@@ -8700,5 +8700,5173 @@
       "tasks": 0
     },
     "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-manhattan",
+    "name": "Manhattan",
+    "place": "Broadway, New York NY",
+    "lat": 40.6768,
+    "lon": -74.021,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Manhattan: Finance & Tech Hub",
+      "summary": "finance and tech training at Broadway, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-brooklyn",
+    "name": "Brooklyn",
+    "place": "Atlantic Avenue, New York NY",
+    "lat": 40.6888,
+    "lon": -74.021,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Brooklyn: Arts & Manufacturing Hub",
+      "summary": "arts and manufacturing training at Atlantic Avenue, New York NY.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-queens",
+    "name": "Queens",
+    "place": "Northern Boulevard, New York NY",
+    "lat": 40.7008,
+    "lon": -74.021,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Queens: Logistics & Community Hub",
+      "summary": "logistics and community training at Northern Boulevard, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-bronx",
+    "name": "Bronx",
+    "place": "Grand Concourse, New York NY",
+    "lat": 40.7128,
+    "lon": -74.021,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Bronx: Community & Health Hub",
+      "summary": "community and health training at Grand Concourse, New York NY.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-staten-island",
+    "name": "Staten Island",
+    "place": "Victory Boulevard, New York NY",
+    "lat": 40.7248,
+    "lon": -74.021,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Staten Island: Maritime & Logistics Hub",
+      "summary": "maritime and logistics training at Victory Boulevard, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-harlem",
+    "name": "Harlem",
+    "place": "125th Street, New York NY",
+    "lat": 40.7368,
+    "lon": -74.021,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Harlem: Arts & Community Hub",
+      "summary": "arts and community training at 125th Street, New York NY.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-chelsea",
+    "name": "Chelsea",
+    "place": "8th Avenue, New York NY",
+    "lat": 40.7488,
+    "lon": -74.021,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Chelsea: Arts & Tech Hub",
+      "summary": "arts and tech training at 8th Avenue, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-williamsburg",
+    "name": "Williamsburg",
+    "place": "Bedford Avenue, New York NY",
+    "lat": 40.6768,
+    "lon": -74.006,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Williamsburg: Tech & Arts Hub",
+      "summary": "tech and arts training at Bedford Avenue, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-dumbo",
+    "name": "DUMBO",
+    "place": "Water Street, New York NY",
+    "lat": 40.6888,
+    "lon": -74.006,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "DUMBO: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Water Street, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-financial",
+    "name": "Financial District",
+    "place": "Wall Street, New York NY",
+    "lat": 40.7008,
+    "lon": -74.006,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Financial District: Finance & Logistics Hub",
+      "summary": "finance and logistics training at Wall Street, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-midtown",
+    "name": "Midtown",
+    "place": "5th Avenue, New York NY",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Midtown: Finance & Retail Hub",
+      "summary": "finance and retail training at 5th Avenue, New York NY.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nyc-upper-east",
+    "name": "Upper East Side",
+    "place": "Madison Avenue, New York NY",
+    "lat": 40.7248,
+    "lon": -74.006,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Upper East Side: Healthcare & Retail Hub",
+      "summary": "healthcare and retail training at Madison Avenue, New York NY.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-downtown",
+    "name": "Downtown Portland",
+    "place": "Burnside Street, Portland OR",
+    "lat": 45.4792,
+    "lon": -122.6934,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Portland: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Burnside Street, Portland OR.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-pearl",
+    "name": "Pearl District",
+    "place": "NW 13th Avenue, Portland OR",
+    "lat": 45.4912,
+    "lon": -122.6934,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Pearl District: Arts & Tech Hub",
+      "summary": "arts and tech training at NW 13th Avenue, Portland OR.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-hawthorne",
+    "name": "Hawthorne",
+    "place": "Hawthorne Boulevard, Portland OR",
+    "lat": 45.5032,
+    "lon": -122.6934,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Hawthorne: Arts & Community Hub",
+      "summary": "arts and community training at Hawthorne Boulevard, Portland OR.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-alberta",
+    "name": "Alberta Arts",
+    "place": "Alberta Street, Portland OR",
+    "lat": 45.5152,
+    "lon": -122.6934,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Alberta Arts: Arts & Community Hub",
+      "summary": "arts and community training at Alberta Street, Portland OR.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-lloyd",
+    "name": "Lloyd District",
+    "place": "NE Grand Avenue, Portland OR",
+    "lat": 45.5272,
+    "lon": -122.6934,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Lloyd District: Tech & Logistics Hub",
+      "summary": "tech and logistics training at NE Grand Avenue, Portland OR.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-division",
+    "name": "Division",
+    "place": "Division Street, Portland OR",
+    "lat": 45.5392,
+    "lon": -122.6934,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Division: Culinary & Community Hub",
+      "summary": "culinary and community training at Division Street, Portland OR.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-beaverton",
+    "name": "Beaverton",
+    "place": "Cedar Hills Boulevard, Portland OR",
+    "lat": 45.5512,
+    "lon": -122.6934,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Beaverton: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Cedar Hills Boulevard, Portland OR.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-gresham",
+    "name": "Gresham",
+    "place": "Main Street, Portland OR",
+    "lat": 45.4792,
+    "lon": -122.6784,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Gresham: Manufacturing & Community Hub",
+      "summary": "manufacturing and community training at Main Street, Portland OR.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-hillsboro",
+    "name": "Hillsboro",
+    "place": "Tanbourn Parkway, Portland OR",
+    "lat": 45.4912,
+    "lon": -122.6784,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Hillsboro: Semiconductor & Tech Hub",
+      "summary": "semiconductor and tech training at Tanbourn Parkway, Portland OR.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "pdx-oregon-city",
+    "name": "Oregon City",
+    "place": "Main Street, Portland OR",
+    "lat": 45.5032,
+    "lon": -122.6784,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Oregon City: Heritage & Manufacturing Hub",
+      "summary": "heritage and manufacturing training at Main Street, Portland OR.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-downtown",
+    "name": "Downtown Nashville",
+    "place": "Broadway, Nashville TN",
+    "lat": 36.1267,
+    "lon": -86.7966,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Nashville: Entertainment & Tourism Hub",
+      "summary": "entertainment and tourism training at Broadway, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-music-row",
+    "name": "Music Row",
+    "place": "16th Avenue South, Nashville TN",
+    "lat": 36.1387,
+    "lon": -86.7966,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Music Row: Entertainment & Tech Hub",
+      "summary": "entertainment and tech training at 16th Avenue South, Nashville TN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-gulch",
+    "name": "The Gulch",
+    "place": "12th Avenue South, Nashville TN",
+    "lat": 36.1507,
+    "lon": -86.7966,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "The Gulch: Tech & Entertainment Hub",
+      "summary": "tech and entertainment training at 12th Avenue South, Nashville TN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-east-nash",
+    "name": "East Nashville",
+    "place": "Main Street, Nashville TN",
+    "lat": 36.1627,
+    "lon": -86.7966,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "East Nashville: Arts & Community Hub",
+      "summary": "arts and community training at Main Street, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-germantown",
+    "name": "Germantown",
+    "place": "5th Avenue North, Nashville TN",
+    "lat": 36.1747,
+    "lon": -86.7966,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Germantown: Culinary & Heritage Hub",
+      "summary": "culinary and heritage training at 5th Avenue North, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-sobro",
+    "name": "SoBro",
+    "place": "Demonbreun Street, Nashville TN",
+    "lat": 36.1867,
+    "lon": -86.7966,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "SoBro: Entertainment & Sports Hub",
+      "summary": "entertainment and sports training at Demonbreun Street, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-midtown",
+    "name": "Midtown",
+    "place": "West End Avenue, Nashville TN",
+    "lat": 36.1987,
+    "lon": -86.7966,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Midtown: Healthcare & Education Hub",
+      "summary": "healthcare and education training at West End Avenue, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-vanderbilt",
+    "name": "Vanderbilt Area",
+    "place": "21st Avenue, Nashville TN",
+    "lat": 36.1267,
+    "lon": -86.7816,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Vanderbilt Area: Education & Healthcare Hub",
+      "summary": "education and healthcare training at 21st Avenue, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-franklin",
+    "name": "Franklin",
+    "place": "Main Street, Nashville TN",
+    "lat": 36.1387,
+    "lon": -86.7816,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Franklin: Heritage & Tech Hub",
+      "summary": "heritage and tech training at Main Street, Nashville TN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "nash-murfreesboro",
+    "name": "Murfreesboro",
+    "place": "Church Street, Nashville TN",
+    "lat": 36.1507,
+    "lon": -86.7816,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Murfreesboro: Education & Manufacturing Hub",
+      "summary": "education and manufacturing training at Church Street, Nashville TN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-downtown",
+    "name": "Downtown Austin",
+    "place": "Congress Avenue, Austin TX",
+    "lat": 30.2312,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Austin: Tech & Government Hub",
+      "summary": "tech and government training at Congress Avenue, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-south-congress",
+    "name": "South Congress",
+    "place": "South Congress Avenue, Austin TX",
+    "lat": 30.2432,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "South Congress: Retail & Tech Hub",
+      "summary": "retail and tech training at South Congress Avenue, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-east",
+    "name": "East Austin",
+    "place": "East 6th Street, Austin TX",
+    "lat": 30.2552,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "East Austin: Arts & Tech Hub",
+      "summary": "arts and tech training at East 6th Street, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-domain",
+    "name": "The Domain",
+    "place": "Domain Drive, Austin TX",
+    "lat": 30.2672,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "The Domain: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Domain Drive, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-warehouse",
+    "name": "Warehouse District",
+    "place": "4th Street, Austin TX",
+    "lat": 30.2792,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Warehouse District: Entertainment & Tech Hub",
+      "summary": "entertainment and tech training at 4th Street, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-rainey",
+    "name": "Rainey Street",
+    "place": "Rainey Street, Austin TX",
+    "lat": 30.2912,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Rainey Street: Entertainment & Tech Hub",
+      "summary": "entertainment and tech training at Rainey Street, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-mueller",
+    "name": "Mueller",
+    "place": "Aldrich Street, Austin TX",
+    "lat": 30.3032,
+    "lon": -97.7581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Mueller: Tech & Community Hub",
+      "summary": "tech and community training at Aldrich Street, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-round-rock",
+    "name": "Round Rock",
+    "place": "Round Rock Avenue, Austin TX",
+    "lat": 30.2312,
+    "lon": -97.7431,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Round Rock: Tech & Manufacturing Hub",
+      "summary": "tech and manufacturing training at Round Rock Avenue, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-georgetown",
+    "name": "Georgetown",
+    "place": "Main Street, Austin TX",
+    "lat": 30.2432,
+    "lon": -97.7431,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Georgetown: Tech & Heritage Hub",
+      "summary": "tech and heritage training at Main Street, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "aus-pflugerville",
+    "name": "Pflugerville",
+    "place": "FM 685, Austin TX",
+    "lat": 30.2552,
+    "lon": -97.7431,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Pflugerville: Tech & Community Hub",
+      "summary": "tech and community training at FM 685, Austin TX.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-downtown",
+    "name": "Downtown Miami",
+    "place": "Biscayne Boulevard, Miami FL",
+    "lat": 25.7257,
+    "lon": -80.2068,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Miami: Finance & Logistics Hub",
+      "summary": "finance and logistics training at Biscayne Boulevard, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-brickell",
+    "name": "Brickell",
+    "place": "Brickell Avenue, Miami FL",
+    "lat": 25.7377,
+    "lon": -80.2068,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Brickell: Finance & Tech Hub",
+      "summary": "finance and tech training at Brickell Avenue, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-wynwood",
+    "name": "Wynwood",
+    "place": "NW 2nd Avenue, Miami FL",
+    "lat": 25.7497,
+    "lon": -80.2068,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Wynwood: Arts & Tech Hub",
+      "summary": "arts and tech training at NW 2nd Avenue, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-south-beach",
+    "name": "South Beach",
+    "place": "Ocean Drive, Miami FL",
+    "lat": 25.7617,
+    "lon": -80.2068,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "South Beach: Tourism & Entertainment Hub",
+      "summary": "tourism and entertainment training at Ocean Drive, Miami FL.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-little-havana",
+    "name": "Little Havana",
+    "place": "Calle Ocho, Miami FL",
+    "lat": 25.7737,
+    "lon": -80.2068,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Little Havana: Heritage & Culinary Hub",
+      "summary": "heritage and culinary training at Calle Ocho, Miami FL.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-design",
+    "name": "Design District",
+    "place": "NE 40th Street, Miami FL",
+    "lat": 25.7857,
+    "lon": -80.2068,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Design District: Luxury & Arts Hub",
+      "summary": "luxury and arts training at NE 40th Street, Miami FL.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-midtown",
+    "name": "Midtown Miami",
+    "place": "N Miami Avenue, Miami FL",
+    "lat": 25.7977,
+    "lon": -80.2068,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Midtown Miami: Tech & Retail Hub",
+      "summary": "tech and retail training at N Miami Avenue, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-coral-gables",
+    "name": "Coral Gables",
+    "place": "Miracle Mile, Miami FL",
+    "lat": 25.7257,
+    "lon": -80.1918,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Coral Gables: Finance & Education Hub",
+      "summary": "finance and education training at Miracle Mile, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-aventura",
+    "name": "Aventura",
+    "place": "Biscayne Boulevard, Miami FL",
+    "lat": 25.7377,
+    "lon": -80.1918,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Aventura: Retail & Logistics Hub",
+      "summary": "retail and logistics training at Biscayne Boulevard, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "mia-doral",
+    "name": "Doral",
+    "place": "NW 87th Avenue, Miami FL",
+    "lat": 25.7497,
+    "lon": -80.1918,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Doral: Logistics & Corporate Hub",
+      "summary": "logistics and corporate training at NW 87th Avenue, Miami FL.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-downtown",
+    "name": "Downtown Raleigh",
+    "place": "Fayetteville Street, Raleigh-Durham NC",
+    "lat": 35.7436,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Raleigh: Tech & Government Hub",
+      "summary": "tech and government training at Fayetteville Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-research",
+    "name": "Research Triangle Park",
+    "place": "Alexander Drive, Raleigh-Durham NC",
+    "lat": 35.7556,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Research Triangle Park: Biotech & Tech Hub",
+      "summary": "biotech and tech training at Alexander Drive, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-durham",
+    "name": "Durham",
+    "place": "Main Street, Raleigh-Durham NC",
+    "lat": 35.7676,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Durham: Biotech & Education Hub",
+      "summary": "biotech and education training at Main Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-chapel-hill",
+    "name": "Chapel Hill",
+    "place": "Franklin Street, Raleigh-Durham NC",
+    "lat": 35.7796,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Chapel Hill: Education & Biotech Hub",
+      "summary": "education and biotech training at Franklin Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-cary",
+    "name": "Cary",
+    "place": "Walnut Street, Raleigh-Durham NC",
+    "lat": 35.7916,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Cary: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Walnut Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-apex",
+    "name": "Apex",
+    "place": "Salem Street, Raleigh-Durham NC",
+    "lat": 35.8036,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Apex: Tech & Community Hub",
+      "summary": "tech and community training at Salem Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-morrisville",
+    "name": "Morrisville",
+    "place": "Davis Drive, Raleigh-Durham NC",
+    "lat": 35.8156,
+    "lon": -78.6532,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Morrisville: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Davis Drive, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-wake",
+    "name": "Wake Forest",
+    "place": "Capital Boulevard, Raleigh-Durham NC",
+    "lat": 35.7436,
+    "lon": -78.6382,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Wake Forest: Manufacturing & Community Hub",
+      "summary": "manufacturing and community training at Capital Boulevard, Raleigh-Durham NC.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-nc-state",
+    "name": "NC State Area",
+    "place": "Hillsborough Street, Raleigh-Durham NC",
+    "lat": 35.7556,
+    "lon": -78.6382,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "NC State Area: Education & Tech Hub",
+      "summary": "education and tech training at Hillsborough Street, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "rdu-duke",
+    "name": "Duke University",
+    "place": "Science Drive, Raleigh-Durham NC",
+    "lat": 35.7676,
+    "lon": -78.6382,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Duke University: Biotech & Research Hub",
+      "summary": "biotech and research training at Science Drive, Raleigh-Durham NC.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-downtown",
+    "name": "Downtown Columbus",
+    "place": "High Street, Columbus OH",
+    "lat": 39.9252,
+    "lon": -83.0138,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Columbus: Finance & Government Hub",
+      "summary": "finance and government training at High Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-short-north",
+    "name": "Short North",
+    "place": "High Street, Columbus OH",
+    "lat": 39.9372,
+    "lon": -83.0138,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Short North: Arts & Tech Hub",
+      "summary": "arts and tech training at High Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-german",
+    "name": "German Village",
+    "place": "South 3rd Street, Columbus OH",
+    "lat": 39.9492,
+    "lon": -83.0138,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "German Village: Heritage & Culinary Hub",
+      "summary": "heritage and culinary training at South 3rd Street, Columbus OH.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-osu",
+    "name": "Ohio State Area",
+    "place": "Lane Avenue, Columbus OH",
+    "lat": 39.9612,
+    "lon": -83.0138,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Ohio State Area: Education & Research Hub",
+      "summary": "education and research training at Lane Avenue, Columbus OH.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-easton",
+    "name": "Easton",
+    "place": "Easton Way, Columbus OH",
+    "lat": 39.9732,
+    "lon": -83.0138,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Easton: Retail & Corporate Hub",
+      "summary": "retail and corporate training at Easton Way, Columbus OH.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-dublin",
+    "name": "Dublin",
+    "place": "Bridge Street, Columbus OH",
+    "lat": 39.9852,
+    "lon": -83.0138,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Dublin: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Bridge Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-westerville",
+    "name": "Westerville",
+    "place": "State Street, Columbus OH",
+    "lat": 39.9972,
+    "lon": -83.0138,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Westerville: Tech & Community Hub",
+      "summary": "tech and community training at State Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-grove-city",
+    "name": "Grove City",
+    "place": "Broad Street, Columbus OH",
+    "lat": 39.9252,
+    "lon": -82.9988,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Grove City: Manufacturing & Logistics Hub",
+      "summary": "manufacturing and logistics training at Broad Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-reynoldsburg",
+    "name": "Reynoldsburg",
+    "place": "Main Street, Columbus OH",
+    "lat": 39.9372,
+    "lon": -82.9988,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Reynoldsburg: Logistics & Manufacturing Hub",
+      "summary": "logistics and manufacturing training at Main Street, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "cmh-pickerington",
+    "name": "Pickerington",
+    "place": "Rock Mill Road, Columbus OH",
+    "lat": 39.9492,
+    "lon": -82.9988,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Pickerington: Logistics & Manufacturing Hub",
+      "summary": "logistics and manufacturing training at Rock Mill Road, Columbus OH.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-downtown",
+    "name": "Downtown KC",
+    "place": "Main Street, Kansas City MO",
+    "lat": 39.0637,
+    "lon": -94.5936,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown KC: Finance & Logistics Hub",
+      "summary": "finance and logistics training at Main Street, Kansas City MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-crossroads",
+    "name": "Crossroads",
+    "place": "Wyandotte Street, Kansas City MO",
+    "lat": 39.0757,
+    "lon": -94.5936,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Crossroads: Arts & Manufacturing Hub",
+      "summary": "arts and manufacturing training at Wyandotte Street, Kansas City MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-plaza",
+    "name": "Country Club Plaza",
+    "place": "Ward Parkway, Kansas City MO",
+    "lat": 39.0877,
+    "lon": -94.5936,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Country Club Plaza: Retail & Healthcare Hub",
+      "summary": "retail and healthcare training at Ward Parkway, Kansas City MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-westport",
+    "name": "Westport",
+    "place": "Westport Road, Kansas City MO",
+    "lat": 39.0997,
+    "lon": -94.5936,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Westport: Arts & Entertainment Hub",
+      "summary": "arts and entertainment training at Westport Road, Kansas City MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-power-light",
+    "name": "Power & Light",
+    "place": "12th Street, Kansas City MO",
+    "lat": 39.1117,
+    "lon": -94.5936,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Power & Light: Entertainment & Sports Hub",
+      "summary": "entertainment and sports training at 12th Street, Kansas City MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-northland",
+    "name": "Northland",
+    "place": "NW Barry Road, Kansas City MO",
+    "lat": 39.1237,
+    "lon": -94.5936,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Northland: Suburban & Logistics Hub",
+      "summary": "suburban and logistics training at NW Barry Road, Kansas City MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-opportunity",
+    "name": "Opportunity KC",
+    "place": "Grand Boulevard, Kansas City MO",
+    "lat": 39.1357,
+    "lon": -94.5936,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Opportunity KC: Community & Tech Hub",
+      "summary": "community and tech training at Grand Boulevard, Kansas City MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-overland",
+    "name": "Overland Park",
+    "place": "Metcalf Avenue, Kansas City MO",
+    "lat": 39.0637,
+    "lon": -94.5786,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Overland Park: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Metcalf Avenue, Kansas City MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-olathe",
+    "name": "Olathe",
+    "place": "Santa Fe Street, Kansas City MO",
+    "lat": 39.0757,
+    "lon": -94.5786,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Olathe: Manufacturing & Logistics Hub",
+      "summary": "manufacturing and logistics training at Santa Fe Street, Kansas City MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "kc-independence",
+    "name": "Independence",
+    "place": "Noland Road, Kansas City MO",
+    "lat": 39.0877,
+    "lon": -94.5786,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Independence: Heritage & Manufacturing Hub",
+      "summary": "heritage and manufacturing training at Noland Road, Kansas City MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-downtown",
+    "name": "Downtown St Louis",
+    "place": "Market Street, St Louis MO",
+    "lat": 38.591,
+    "lon": -90.2144,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown St Louis: Finance & Logistics Hub",
+      "summary": "finance and logistics training at Market Street, St Louis MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-central-west",
+    "name": "Central West End",
+    "place": "Euclid Avenue, St Louis MO",
+    "lat": 38.603,
+    "lon": -90.2144,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Central West End: Healthcare & Education Hub",
+      "summary": "healthcare and education training at Euclid Avenue, St Louis MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-soulard",
+    "name": "Soulard",
+    "place": "Soulard Market, St Louis MO",
+    "lat": 38.615,
+    "lon": -90.2144,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Soulard: Heritage & Culinary Hub",
+      "summary": "heritage and culinary training at Soulard Market, St Louis MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-delmar",
+    "name": "Delmar Loop",
+    "place": "Delmar Boulevard, St Louis MO",
+    "lat": 38.627,
+    "lon": -90.2144,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Delmar Loop: Arts & Education Hub",
+      "summary": "arts and education training at Delmar Boulevard, St Louis MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-cortex",
+    "name": "Cortex District",
+    "place": "Forest Park Avenue, St Louis MO",
+    "lat": 38.639,
+    "lon": -90.2144,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Cortex District: Tech & Biotech Hub",
+      "summary": "tech and biotech training at Forest Park Avenue, St Louis MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-ballpark",
+    "name": "Ballpark Village",
+    "place": "Clark Avenue, St Louis MO",
+    "lat": 38.651,
+    "lon": -90.2144,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Ballpark Village: Sports & Entertainment Hub",
+      "summary": "sports and entertainment training at Clark Avenue, St Louis MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-webster",
+    "name": "Webster Groves",
+    "place": "Lockwood Avenue, St Louis MO",
+    "lat": 38.663,
+    "lon": -90.2144,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Webster Groves: Education & Community Hub",
+      "summary": "education and community training at Lockwood Avenue, St Louis MO.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-kirkwood",
+    "name": "Kirkwood",
+    "place": "South Kirkwood Road, St Louis MO",
+    "lat": 38.591,
+    "lon": -90.1994,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Kirkwood: Suburban & Tech Hub",
+      "summary": "suburban and tech training at South Kirkwood Road, St Louis MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-clayton",
+    "name": "Clayton",
+    "place": "Hanley Road, St Louis MO",
+    "lat": 38.603,
+    "lon": -90.1994,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Clayton: Finance & Corporate Hub",
+      "summary": "finance and corporate training at Hanley Road, St Louis MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "stl-chesterfield",
+    "name": "Chesterfield",
+    "place": "Chesterfield Parkway, St Louis MO",
+    "lat": 38.615,
+    "lon": -90.1994,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Chesterfield: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Chesterfield Parkway, St Louis MO.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-downtown",
+    "name": "Downtown Indy",
+    "place": "Meridian Street, Indianapolis IN",
+    "lat": 39.7324,
+    "lon": -86.1731,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown Indy: Finance & Sports Hub",
+      "summary": "finance and sports training at Meridian Street, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-mass",
+    "name": "Mass Ave",
+    "place": "Massachusetts Avenue, Indianapolis IN",
+    "lat": 39.7444,
+    "lon": -86.1731,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Mass Ave: Arts & Entertainment Hub",
+      "summary": "arts and entertainment training at Massachusetts Avenue, Indianapolis IN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-broad-ripple",
+    "name": "Broad Ripple",
+    "place": "Broad Ripple Avenue, Indianapolis IN",
+    "lat": 39.7564,
+    "lon": -86.1731,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Broad Ripple: Arts & Community Hub",
+      "summary": "arts and community training at Broad Ripple Avenue, Indianapolis IN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-fountain",
+    "name": "Fountain Square",
+    "place": "Shelby Street, Indianapolis IN",
+    "lat": 39.7684,
+    "lon": -86.1731,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Fountain Square: Arts & Manufacturing Hub",
+      "summary": "arts and manufacturing training at Shelby Street, Indianapolis IN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-carmel",
+    "name": "Carmel",
+    "place": "Rangeline Road, Indianapolis IN",
+    "lat": 39.7804,
+    "lon": -86.1731,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Carmel: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Rangeline Road, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-fishers",
+    "name": "Fishers",
+    "place": "116th Street, Indianapolis IN",
+    "lat": 39.7924,
+    "lon": -86.1731,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Fishers: Tech & Corporate Hub",
+      "summary": "tech and corporate training at 116th Street, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-noblesville",
+    "name": "Noblesville",
+    "place": "Logan Street, Indianapolis IN",
+    "lat": 39.8044,
+    "lon": -86.1731,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Noblesville: Manufacturing & Community Hub",
+      "summary": "manufacturing and community training at Logan Street, Indianapolis IN.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-westfield",
+    "name": "Westfield",
+    "place": "Greenfield Avenue, Indianapolis IN",
+    "lat": 39.7324,
+    "lon": -86.1581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Westfield: Tech & Community Hub",
+      "summary": "tech and community training at Greenfield Avenue, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-avon",
+    "name": "Avon",
+    "place": "Rockville Road, Indianapolis IN",
+    "lat": 39.7444,
+    "lon": -86.1581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Avon: Logistics & Manufacturing Hub",
+      "summary": "logistics and manufacturing training at Rockville Road, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "indy-plainfield",
+    "name": "Plainfield",
+    "place": "Rockville Road, Indianapolis IN",
+    "lat": 39.7564,
+    "lon": -86.1581,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Plainfield: Logistics & Manufacturing Hub",
+      "summary": "logistics and manufacturing training at Rockville Road, Indianapolis IN.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-city",
+    "name": "City of London",
+    "place": "Bank Junction, London UK",
+    "lat": 51.4714,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "City of London: Finance & Tech Hub",
+      "summary": "finance and tech training at Bank Junction, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-shoreditch",
+    "name": "Shoreditch",
+    "place": "Old Street, London UK",
+    "lat": 51.4834,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Shoreditch: Tech & Startups Hub",
+      "summary": "tech and startups training at Old Street, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-canary",
+    "name": "Canary Wharf",
+    "place": "Westferry Circus, London UK",
+    "lat": 51.4954,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Canary Wharf: Finance & Logistics Hub",
+      "summary": "finance and logistics training at Westferry Circus, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-camden",
+    "name": "Camden",
+    "place": "Camden High Street, London UK",
+    "lat": 51.5074,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Camden: Arts & Tech Hub",
+      "summary": "arts and tech training at Camden High Street, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-westminster",
+    "name": "Westminster",
+    "place": "Victoria Street, London UK",
+    "lat": 51.5194,
+    "lon": -0.1428,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Westminster: Government & Heritage Hub",
+      "summary": "government and heritage training at Victoria Street, London UK.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-kings-cross",
+    "name": "Kings Cross",
+    "place": "Euston Road, London UK",
+    "lat": 51.5314,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Kings Cross: Tech & Education Hub",
+      "summary": "tech and education training at Euston Road, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-battersea",
+    "name": "Battersea",
+    "place": "Battersea Power Station, London UK",
+    "lat": 51.5434,
+    "lon": -0.1428,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Battersea: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Battersea Power Station, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-stratford",
+    "name": "Stratford",
+    "place": "Olympic Park, London UK",
+    "lat": 51.4714,
+    "lon": -0.1278,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Stratford: Tech & Sports Hub",
+      "summary": "tech and sports training at Olympic Park, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-greenwich",
+    "name": "Greenwich",
+    "place": "Cutty Sark, London UK",
+    "lat": 51.4834,
+    "lon": -0.1278,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Greenwich: Maritime & Heritage Hub",
+      "summary": "maritime and heritage training at Cutty Sark, London UK.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ldn-croydon",
+    "name": "Croydon",
+    "place": "North End, London UK",
+    "lat": 51.4954,
+    "lon": -0.1278,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Croydon: Tech & Logistics Hub",
+      "summary": "tech and logistics training at North End, London UK.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-mitte",
+    "name": "Mitte",
+    "place": "Unter den Linden, Berlin Germany",
+    "lat": 52.484,
+    "lon": 13.39,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Mitte: Government & Tech Hub",
+      "summary": "government and tech training at Unter den Linden, Berlin Germany.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-kreuzberg",
+    "name": "Kreuzberg",
+    "place": "Oranienstrasse, Berlin Germany",
+    "lat": 52.496,
+    "lon": 13.39,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Kreuzberg: Arts & Tech Hub",
+      "summary": "arts and tech training at Oranienstrasse, Berlin Germany.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-friedrichshain",
+    "name": "Friedrichshain",
+    "place": "Boxhagener Platz, Berlin Germany",
+    "lat": 52.508,
+    "lon": 13.39,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Friedrichshain: Arts & Tech Hub",
+      "summary": "arts and tech training at Boxhagener Platz, Berlin Germany.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-charlotten",
+    "name": "Charlottenburg",
+    "place": "Kurfurstendamm, Berlin Germany",
+    "lat": 52.52,
+    "lon": 13.39,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Charlottenburg: Retail & Heritage Hub",
+      "summary": "retail and heritage training at Kurfurstendamm, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-neukolln",
+    "name": "Neukolln",
+    "place": "Karl-Marx-Strasse, Berlin Germany",
+    "lat": 52.532,
+    "lon": 13.39,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Neukolln: Arts & Community Hub",
+      "summary": "arts and community training at Karl-Marx-Strasse, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-prenzlauer",
+    "name": "Prenzlauer Berg",
+    "place": "Kastanienallee, Berlin Germany",
+    "lat": 52.544,
+    "lon": 13.39,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Prenzlauer Berg: Arts & Community Hub",
+      "summary": "arts and community training at Kastanienallee, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-wedding",
+    "name": "Wedding",
+    "place": "Mullerstrasse, Berlin Germany",
+    "lat": 52.556,
+    "lon": 13.39,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Wedding: Manufacturing & Community Hub",
+      "summary": "manufacturing and community training at Mullerstrasse, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-tempelhof",
+    "name": "Tempelhof",
+    "place": "Tempelhofer Damm, Berlin Germany",
+    "lat": 52.484,
+    "lon": 13.405,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Tempelhof: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Tempelhofer Damm, Berlin Germany.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-spandau",
+    "name": "Spandau",
+    "place": "Breite Strasse, Berlin Germany",
+    "lat": 52.496,
+    "lon": 13.405,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Spandau: Manufacturing & Heritage Hub",
+      "summary": "manufacturing and heritage training at Breite Strasse, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "ber-adlershof",
+    "name": "Adlershof",
+    "place": "Science City, Berlin Germany",
+    "lat": 52.508,
+    "lon": 13.405,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Adlershof: Ai & Research Hub",
+      "summary": "ai and research training at Science City, Berlin Germany.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-louvre",
+    "name": "Louvre District",
+    "place": "Rue de Rivoli, Paris France",
+    "lat": 48.8206,
+    "lon": 2.3372,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Louvre District: Heritage & Tourism Hub",
+      "summary": "heritage and tourism training at Rue de Rivoli, Paris France.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-marais",
+    "name": "Le Marais",
+    "place": "Rue des Francs-Bourgeois, Paris France",
+    "lat": 48.8326,
+    "lon": 2.3372,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Le Marais: Arts & Heritage Hub",
+      "summary": "arts and heritage training at Rue des Francs-Bourgeois, Paris France.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-defence",
+    "name": "La Defence",
+    "place": "Esplanade de la Defence, Paris France",
+    "lat": 48.8446,
+    "lon": 2.3372,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "La Defence: Finance & Tech Hub",
+      "summary": "finance and tech training at Esplanade de la Defence, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-montmartre",
+    "name": "Montmartre",
+    "place": "Rue Lepic, Paris France",
+    "lat": 48.8566,
+    "lon": 2.3372,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Montmartre: Arts & Tourism Hub",
+      "summary": "arts and tourism training at Rue Lepic, Paris France.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-saclay",
+    "name": "Saclay",
+    "place": "Plateau de Saclay, Paris France",
+    "lat": 48.8686,
+    "lon": 2.3372,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Saclay: Ai & Research Hub",
+      "summary": "ai and research training at Plateau de Saclay, Paris France.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-bastille",
+    "name": "Bastille",
+    "place": "Place de la Bastille, Paris France",
+    "lat": 48.8806,
+    "lon": 2.3372,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Bastille: Arts & Tech Hub",
+      "summary": "arts and tech training at Place de la Bastille, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-republique",
+    "name": "Republique",
+    "place": "Avenue de la Republique, Paris France",
+    "lat": 48.8926,
+    "lon": 2.3372,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Republique: Tech & Community Hub",
+      "summary": "tech and community training at Avenue de la Republique, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-bercy",
+    "name": "Bercy",
+    "place": "Cour Saint-Emilion, Paris France",
+    "lat": 48.8206,
+    "lon": 2.3522,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Bercy: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Cour Saint-Emilion, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-saint-denis",
+    "name": "Saint-Denis",
+    "place": "Avenue du President Wilson, Paris France",
+    "lat": 48.8326,
+    "lon": 2.3522,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Saint-Denis: Tech & Sports Hub",
+      "summary": "tech and sports training at Avenue du President Wilson, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "par-evry",
+    "name": "Evry",
+    "place": "Cours Monseigneur Romero, Paris France",
+    "lat": 48.8446,
+    "lon": 2.3522,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Evry: Tech & Manufacturing Hub",
+      "summary": "tech and manufacturing training at Cours Monseigneur Romero, Paris France.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-cbd",
+    "name": "Sydney CBD",
+    "place": "George Street, Sydney Australia",
+    "lat": -33.9048,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Sydney CBD: Finance & Logistics Hub",
+      "summary": "finance and logistics training at George Street, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-darling",
+    "name": "Darling Harbour",
+    "place": "Harbour Street, Sydney Australia",
+    "lat": -33.8928,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Darling Harbour: Tourism & Tech Hub",
+      "summary": "tourism and tech training at Harbour Street, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-barangaroo",
+    "name": "Barangaroo",
+    "place": "Barangaroo Avenue, Sydney Australia",
+    "lat": -33.8808,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Barangaroo: Finance & Tech Hub",
+      "summary": "finance and tech training at Barangaroo Avenue, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-surry",
+    "name": "Surry Hills",
+    "place": "Crown Street, Sydney Australia",
+    "lat": -33.8688,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Surry Hills: Arts & Tech Hub",
+      "summary": "arts and tech training at Crown Street, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-newtown",
+    "name": "Newtown",
+    "place": "King Street, Sydney Australia",
+    "lat": -33.8568,
+    "lon": 151.1943,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Newtown: Arts & Community Hub",
+      "summary": "arts and community training at King Street, Sydney Australia.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-parramatta",
+    "name": "Parramatta",
+    "place": "Church Street, Sydney Australia",
+    "lat": -33.8448,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Parramatta: Tech & Government Hub",
+      "summary": "tech and government training at Church Street, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-chatswood",
+    "name": "Chatswood",
+    "place": "Victoria Avenue, Sydney Australia",
+    "lat": -33.8328,
+    "lon": 151.1943,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Chatswood: Tech & Retail Hub",
+      "summary": "tech and retail training at Victoria Avenue, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-macquarie",
+    "name": "Macquarie Park",
+    "place": "Epping Road, Sydney Australia",
+    "lat": -33.9048,
+    "lon": 151.2093,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Macquarie Park: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Epping Road, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-north-ryde",
+    "name": "North Ryde",
+    "place": "Delhi Road, Sydney Australia",
+    "lat": -33.8928,
+    "lon": 151.2093,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "North Ryde: Tech & Corporate Hub",
+      "summary": "tech and corporate training at Delhi Road, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "syd-liverpool",
+    "name": "Liverpool",
+    "place": "Macquarie Street, Sydney Australia",
+    "lat": -33.8808,
+    "lon": 151.2093,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Liverpool: Tech & Manufacturing Hub",
+      "summary": "tech and manufacturing training at Macquarie Street, Sydney Australia.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-downtown",
+    "name": "Downtown San Diego",
+    "place": "Broadway, San Diego CA",
+    "lat": 32.6797,
+    "lon": -117.1761,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Downtown San Diego: Tech & Logistics Hub",
+      "summary": "tech and logistics training at Broadway, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-gaslamp",
+    "name": "Gaslamp Quarter",
+    "place": "5th Avenue, San Diego CA",
+    "lat": 32.6917,
+    "lon": -117.1761,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Gaslamp Quarter: Entertainment & Tourism Hub",
+      "summary": "entertainment and tourism training at 5th Avenue, San Diego CA.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-la-jolla",
+    "name": "La Jolla",
+    "place": "Prospect Street, San Diego CA",
+    "lat": 32.7037,
+    "lon": -117.1761,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "La Jolla: Biotech & Research Hub",
+      "summary": "biotech and research training at Prospect Street, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-mission",
+    "name": "Mission Valley",
+    "place": "Mission Center Road, San Diego CA",
+    "lat": 32.7157,
+    "lon": -117.1761,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Mission Valley: Retail & Logistics Hub",
+      "summary": "retail and logistics training at Mission Center Road, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-pacific-beach",
+    "name": "Pacific Beach",
+    "place": "Mission Boulevard, San Diego CA",
+    "lat": 32.7277,
+    "lon": -117.1761,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Pacific Beach: Tourism & Tech Hub",
+      "summary": "tourism and tech training at Mission Boulevard, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-hillcrest",
+    "name": "Hillcrest",
+    "place": "University Avenue, San Diego CA",
+    "lat": 32.7397,
+    "lon": -117.1761,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Hillcrest: Healthcare & Community Hub",
+      "summary": "healthcare and community training at University Avenue, San Diego CA.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-north-park",
+    "name": "North Park",
+    "place": "30th Street, San Diego CA",
+    "lat": 32.7517,
+    "lon": -117.1761,
+    "biome": "urban-park",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "North Park: Arts & Community Hub",
+      "summary": "arts and community training at 30th Street, San Diego CA.",
+      "biome": "urban-park",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-sorrento",
+    "name": "Sorrento Mesa",
+    "place": "Sorrento Valley Road, San Diego CA",
+    "lat": 32.6797,
+    "lon": -117.1611,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Sorrento Mesa: Biotech & Tech Hub",
+      "summary": "biotech and tech training at Sorrento Valley Road, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-carlsbad",
+    "name": "Carlsbad",
+    "place": "Palomar Airport Road, San Diego CA",
+    "lat": 32.6917,
+    "lon": -117.1611,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Carlsbad: Biotech & Tech Hub",
+      "summary": "biotech and tech training at Palomar Airport Road, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
+  },
+  {
+    "slug": "sd-chula-vista",
+    "name": "Chula Vista",
+    "place": "Third Avenue, San Diego CA",
+    "lat": 32.7037,
+    "lon": -117.1611,
+    "biome": "urban-core",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 0,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        80,
+        80
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Chula Vista: Manufacturing & Logistics Hub",
+      "summary": "manufacturing and logistics training at Third Avenue, San Diego CA.",
+      "biome": "urban-core",
+      "zones": 5,
+      "quests": 5
+    },
+    "trades": {
+      "scenarios": 0
+    },
+    "robots": {
+      "tasks": 0
+    },
+    "status": "coming-soon"
   }
 ]
