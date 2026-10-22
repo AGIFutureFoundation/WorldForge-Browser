@@ -3345,28 +3345,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3399,28 +3403,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3453,28 +3461,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3507,28 +3519,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3561,28 +3577,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3615,28 +3635,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3669,28 +3693,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3723,28 +3751,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3777,28 +3809,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3831,28 +3867,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3885,28 +3925,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3939,28 +3983,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -3993,28 +4041,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4047,28 +4099,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4101,28 +4157,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4155,28 +4215,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4209,28 +4273,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4263,28 +4331,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4317,28 +4389,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
@@ -4371,28 +4447,32 @@
       "training_modules": []
     },
     "trades": {
-      "scenarios": 5,
+      "sector": "Tech",
       "union_certifications": [
         "IBEW"
       ],
       "robot_types": [
         "AMR",
-        "Cobot"
+        "Cobot",
+        "SCARA"
       ],
-      "training_hours": 100
+      "scenarios": 5,
+      "training_hours": 120
     },
     "robots": {
       "robot_types": [
         "AMR",
         "Cobot",
-        "SCARA"
+        "SCARA",
+        "Delta",
+        "Drone"
       ],
       "tasks": 15,
       "simulations": [
-        "Sim"
+        "SF Tech Sim"
       ],
       "certifications": [
-        "L1"
+        "IBEW L1"
       ]
     },
     "status": "live"
