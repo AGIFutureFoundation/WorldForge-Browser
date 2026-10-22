@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WorldForge Datasets — ROS 2 Training Data</title>
+<style>body{font-family:system-ui,sans-serif;max-width:800px;margin:2rem auto;padding:0 1rem;line-height:1.6}
+h1{color:#1a1a2e}h2{color:#16213e;margin-top:2rem}code{background:#f4f4f4;padding:2px 6px;border-radius:4px;font-size:0.9em}
+.card{border:1px solid #ddd;border-radius:8px;padding:1rem;margin:1rem 0;background:#fafafa}
+.price{font-size:1.4em;font-weight:bold;color:#2d6a4f}.tag{display:inline-block;background:#e9ecef;padding:2px 8px;border-radius:12px;font-size:0.8em;margin:2px}
+table{width:100%;border-collapse:collapse}th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.btn{display:inline-block;padding:8px 16px;background:#2d6a4f;color:#fff;border:none;border-radius:6px;cursor:pointer;text-decoration:none}
+pre{background:#1a1a2e;color:#e0e0e0;padding:1rem;border-radius:8px;overflow-x:auto;font-size:0.85em}</style>
+</head>
+<body>
+<h1>WorldForge ROS Training Datasets</h1>
+<p>Synthetic ROS 2 data from robot runs across 370+ live worlds.</p>
+<h2>Formats</h2>
+<ul><li><code>.jsonl</code> — One JSON object per message</li><li><code>.parquet</code> — Columnar for ML</li><li><code>.meta.json</code> — Run metadata</li></ul>
+<h2>Pricing</h2>
+<div class="card"><span class="price">FREE</span> Sample data, manifest, catalog<br><span class="tag">no wallet</span></div>
+<div class="card"><span class="price">$0.01</span> / episode — Full-fidelity run<br><span class="tag">x402</span><span class="tag">USDC</span><span class="tag">base-sepolia</span></div>
+<div class="card"><span class="price">$2.00</span> / region pack<br><span class="tag">x402</span><span class="tag">bulk</span></div>
+<div class="card"><span class="price">$10.00</span> / dental pack — Unspoken Smiles<br><span class="tag">x402</span><span class="tag">premium</span></div>
+<h2>How It Works (x402)</h2>
+<ol><li>Request paid endpoint → <code>402 Payment Required</code></li>
+<li>Sign USDC on Base Sepolia</li><li>Retry with <code>X-PAYMENT</code> header → data</li></ol>
+<h2>Try It</h2>
+<div class="card">
+<h3>Free: View catalog</h3>
+
+<script>
+async function fetchCatalog(){
+  const o=document.getElementById('catalog-out');o.textContent='Loading...';
+  try{
+    const r=await fetch('https://raw.githubusercontent.com/tempgithubhelp/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json');
+    const m=await r.json();
+    o.textContent='Runs: '+m.total_runs+'\nSize: '+(m.total_size_bytes/1024).toFixed(1)+' KB\nPricing: '+JSON.stringify(m.pricing)+'\n\n'+m.runs.map(r=>r.run_id+' | '+r.robot+' | $'+r.price_usd).join('\n');
+    renderRuns(m.runs);
+  }catch(e){o.textContent='Error: '+e.message;}
+}
+function renderRuns(runs){
+  const el=document.getElementById('runs-table');
+  el.innerHTML='<table><tr><th>Run</th><th>Robot</th><th>World</th><th>Msgs</th><th>Price</th></tr>'+runs.map(r=>'<tr><td><code>'+r.run_id+'</code></td><td>'+r.robot+'</td><td>'+r.world+'</td><td>'+r.message_count+'</td><td>$'+r.price_usd+'</td></tr>').join('')+'</table>';
+}
+fetchCatalog();
+</script>
+</body>
+</html>
+<button class="btn" onclick="fetchCatalog()">Fetch /v1/catalog</button>
+<pre id="catalog-out">Click to load...</pre>
+<h3>Free: Download sample</h3>
+<a href="https://raw.githubusercontent.com/tempgithubhelp/WorldForge-Browser/main/datasets/worldforge-ros-training/samples/sample-sf-downtown-spot-60s.jsonl" class="btn" download>Download Sample</a>
+</div>
+<div id="runs-table">Loading...</div>

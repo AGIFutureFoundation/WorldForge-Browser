@@ -1,0 +1,9 @@
+{
+  "name": "worldforge-agent-wallet",
+  "version": "1.0.0",
+  "description": "x402 agent spending client for WorldForge hives",
+  "type": "module",
+  "dependencies": {
+    "@x402/fetch": "^2.28.0"
+  }
+}

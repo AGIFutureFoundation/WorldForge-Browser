@@ -1,0 +1,45 @@
+{
+  "name": "Generate & Upload Datasets",
+  "on":
+    push:
+      branches: [main]
+      paths: ["datasets/worldforge-ros-training/**"]
+    workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install mcap mcap-ros2-support pyarrow
+      - run: python3 datasets/worldforge-ros-training/generate.py --all
+      - uses: actions/upload-artifact@v4
+        with:
+          name: datasets
+          path: |
+            datasets/worldforge-ros-training/samples/
+            datasets/worldforge-ros-training/packs/
+            datasets/worldforge-ros-training/manifest.json
+
+  upload-r2:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { name: datasets, path: datasets }
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: r2 bucket create worldforge-ros-training || true
+      - uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          command: r2 object put worldforge-ros-training/samples/$(basename $f) --file $f
+        env:
+          FILES: $(find datasets/samples -type f)
+      - name: Verify ROS 2 compatibility
+        run: |
+          pip install ros2bag
+          echo "Check .mcap files with: ros2 bag info <file>"

@@ -1,0 +1,22 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "worldforge-datasets-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-06-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "PAY_TO": "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC",
+    "NETWORK": "base-sepolia",
+    "FACILITATOR_URL": "https://x402.org/facilitator",
+    "ADMIN_SECRET": "change-me-in-secrets"
+  },
+  "d1_databases": [
+    { "binding": "DB", "database_name": "worldforge-payments", "migrations_dir": "migrations" }
+  ],
+  "r2_buckets": [
+    { "binding": "R2", "bucket_name": "worldforge-ros-training" }
+  ],
+  "routes": [
+    { "pattern": "datasets-api.worldforge.*", "zone_name": "worldforge" }
+  ]
+}

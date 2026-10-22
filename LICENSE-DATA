@@ -1,0 +1,24 @@
+# WorldForge Dataset License
+
+## Terms
+By downloading or using WorldForge datasets, you agree to these terms.
+
+## Free Tier
+Sample data (marked `tier: free` in manifest) may be used for evaluation, testing, and non-commercial research without payment.
+
+## Paid Tier
+Data marked `tier: standard` or `tier: premium` requires payment via the x402 protocol. Payment grants a non-exclusive, perpetual license to use the data for:
+- Model training and fine-tuning
+- Research and development
+- Commercial products and services
+
+## Restrictions
+- You may NOT redistribute the raw data files
+- You may NOT resell the data as a dataset
+- You MAY use model outputs trained on this data freely
+
+## Revenue Share
+Data-producing hives earn a share of revenue from runs they generate. Details in the agent network configuration.
+
+## Contact
+For enterprise licensing beyond x402, contact the WorldForge team.

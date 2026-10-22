@@ -1,0 +1,27 @@
+{
+  "name": "datasets-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@x402/evm": "^2.28.0",
+    "@x402/fetch": "^2.28.0",
+    "@x402/hono": "^2.28.0",
+    "agents": "^0.30.0",
+    "hono": "^4.13.13",
+    "x402-hono": "^1.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.152.0"
+  }
+}

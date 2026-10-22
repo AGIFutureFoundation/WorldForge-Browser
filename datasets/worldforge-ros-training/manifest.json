@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-10-22T23:35:01.182599+00:00",
+  "total_runs": 2,
+  "total_size_bytes": 3506231,
+  "pricing": {
+    "free": {
+      "price_usd": 0.0
+    },
+    "standard": {
+      "price_usd": 0.01
+    },
+    "premium": {
+      "price_usd": 10.0
+    }
+  },
+  "runs": [
+    {
+      "run_id": "sample-sf-downtown-spot-60s",
+      "robot": "spot",
+      "world": "sf-downtown",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460453,
+      "parquet_size": 18179,
+      "sha256": "b21643b30921a9a914478417c583c30618ec70acf02e99d545f2fd15a28e949a",
+      "files": {
+        "jsonl": "sample-sf-downtown-spot-60s.jsonl",
+        "parquet": "sample-sf-downtown-spot-60s.parquet",
+        "meta": "sample-sf-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.0,
+      "tier": "free",
+      "description": "Free sample: Spot, 60s SF Downtown"
+    },
+    {
+      "run_id": "dental-unspoken-smiles-cleaning-5min",
+      "robot": "dental-arm",
+      "world": "unspoken-smiles",
+      "region": "dental",
+      "duration_sec": 300,
+      "message_count": 13000,
+      "jsonl_size": 2880069,
+      "parquet_size": 147530,
+      "sha256": "ef3165444aa66a1948dd1f8b48b3408e9ba44b02ef38e2e3ba29145fedc401b9",
+      "files": {
+        "jsonl": "dental-unspoken-smiles-cleaning-5min.jsonl",
+        "parquet": "dental-unspoken-smiles-cleaning-5min.parquet",
+        "meta": "dental-unspoken-smiles-cleaning-5min.meta.json"
+      },
+      "price_usd": 10.0,
+      "tier": "premium",
+      "description": "Unspoken Smiles: scaler force, probe depth, tool position",
+      "tags": [
+        "dental",
+        "unspoken-smiles",
+        "force-feedback"
+      ]
+    }
+  ]
+}
