@@ -453,13 +453,57 @@
       "summary": "A walkable agent-managed DAO cell set among the grotto, riverbanks and esplanade of Lourdes. Agents monitor, synthesize, draft and track in riverside halls; humans alone hold the final vote in Charter Hall.",
       "biome": "river-valley",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Automotive Welding",
+        "Battery Assembly",
+        "Quality Inspection",
+        "Paint Application",
+        "Composite Layup"
+      ]
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [
+        "UAW",
+        "IAM"
+      ],
+      "robot_types": [
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Automotive Welding Sim",
+        "Battery Assembly Sim",
+        "Quality Inspection Sim",
+        "Paint Application Sim",
+        "Composite Layup Sim"
+      ],
+      "certifications": [
+        "UAW Welding L1",
+        "UAW Assembly L2",
+        "IAM Composite L1",
+        "IAM Avionics L1",
+        "Robot Safety L1"
+      ],
+      "robot_types": [
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "AMR",
+        "AGV",
+        "Drone",
+        "Exoskeleton",
+        "Humanoid"
+      ]
     }
   },
   {
@@ -486,13 +530,56 @@
       "summary": "A Rhine-side pharma campus in Basel: research towers, production halls and the fast river in one walkable frame. Agent-run labs and forums ring a park campus where humans hold every final vote.",
       "biome": "urban-park",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Cleanroom Operations",
+        "Pipetting & Assay",
+        "Pharma Packaging",
+        "Quality Control",
+        "Sterilization"
+      ]
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "Cobot",
+        "Articulated",
+        "AMR"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Cleanroom Operations Sim",
+        "Pipetting & Assay Sim",
+        "Pharma Packaging Sim",
+        "Quality Control Sim",
+        "Sterilization Sim"
+      ],
+      "certifications": [
+        "1199SEIU Cleanroom L1",
+        "1199SEIU Pipetting L1",
+        "1199SEIU QC L1",
+        "GMP L1",
+        "Sterilization L1"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "Cobot",
+        "Articulated",
+        "AMR",
+        "Cartesian",
+        "Drone",
+        "Exoskeleton",
+        "Humanoid"
+      ]
     }
   },
   {
@@ -629,10 +716,57 @@
     "biome": "urban-park",
     "rp1": null,
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [
+        "Laborers"
+      ],
+      "robot_types": [
+        "Exoskeleton",
+        "Drone",
+        "AMR",
+        "Articulated",
+        "SCARA"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Site Survey Sim",
+        "Rebar Installation Sim",
+        "Concrete Pour Sim",
+        "Safety Inspection Sim",
+        "Quality Control Sim"
+      ],
+      "certifications": [
+        "Laborers Survey L1",
+        "Laborers Rebar L1",
+        "Laborers Concrete L1",
+        "OSHA 30",
+        "Drone Survey L1"
+      ],
+      "robot_types": [
+        "Exoskeleton",
+        "Drone",
+        "AMR",
+        "Articulated",
+        "SCARA",
+        "Delta",
+        "Cobot",
+        "Cartesian",
+        "Humanoid"
+      ]
+    },
+    "world": {
+      "training_modules": [
+        "Site Survey",
+        "Rebar Installation",
+        "Concrete Pour",
+        "Safety Inspection",
+        "Quality Control"
+      ],
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -738,10 +872,57 @@
     "biome": "urban-park",
     "rp1": null,
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [
+        "UFCW"
+      ],
+      "robot_types": [
+        "Drone",
+        "AMR",
+        "Delta",
+        "SCARA",
+        "Cobot"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Crop Monitoring Sim",
+        "Automated Harvesting Sim",
+        "Processing Line Sim",
+        "Quality Sorting Sim",
+        "Packaging Sim"
+      ],
+      "certifications": [
+        "UFCW Harvesting L1",
+        "UFCW Processing L1",
+        "UFCW Packaging L1",
+        "Food Safety L1",
+        "Drone Ag L1"
+      ],
+      "robot_types": [
+        "Drone",
+        "AMR",
+        "Delta",
+        "SCARA",
+        "Cobot",
+        "Articulated",
+        "Cartesian",
+        "Exoskeleton",
+        "Humanoid"
+      ]
+    },
+    "world": {
+      "training_modules": [
+        "Crop Monitoring",
+        "Automated Harvesting",
+        "Processing Line",
+        "Quality Sorting",
+        "Packaging"
+      ],
+      "zones": 5,
+      "quests": 5
     }
   },
   {
@@ -816,13 +997,56 @@
       "summary": "An agent-managed DAO cell on reclaimed land at the North Sea edge of Europe's largest port. Gantry cranes and container stacks frame five zones where agents synthesize, draft and route while humans hold every final vote.",
       "biome": "coast",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Warehouse Sorting",
+        "AMR Dispatch",
+        "Loading Operations",
+        "Package Handling",
+        "Inventory Management"
+      ]
     },
     "trades": {
-      "scenarios": 7
+      "scenarios": 5,
+      "union_certifications": [
+        "Teamsters"
+      ],
+      "robot_types": [
+        "AMR",
+        "AGV",
+        "Delta",
+        "SCARA",
+        "Drone"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Warehouse Sorting Sim",
+        "AMR Dispatch Sim",
+        "Loading Operations Sim",
+        "Package Handling Sim",
+        "Inventory Management Sim"
+      ],
+      "certifications": [
+        "Teamsters AMR L1",
+        "Teamsters Sorting L1",
+        "Teamsters Dispatch L1",
+        "Warehouse Safety L1",
+        "Forklift L1"
+      ],
+      "robot_types": [
+        "AMR",
+        "AGV",
+        "Delta",
+        "SCARA",
+        "Drone",
+        "Cobot",
+        "Articulated",
+        "Cartesian",
+        "Humanoid"
+      ]
     }
   },
   {
@@ -981,13 +1205,56 @@
       "summary": "A walkable DAO campus on Cam farmland at Hinxton: agents monitor, synthesize and draft in labs and forums while humans hold every final vote. Six zones ring the river meadow, from Charter Hall to the Progress Observatory.",
       "biome": "river-valley",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Wafer Fabrication",
+        "PCB Assembly",
+        "Semiconductor Testing",
+        "Cleanroom Protocol",
+        "Equipment Maintenance"
+      ]
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "Cartesian",
+        "Cobot",
+        "Articulated"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Wafer Fabrication Sim",
+        "PCB Assembly Sim",
+        "Semiconductor Testing Sim",
+        "Cleanroom Protocol Sim",
+        "Equipment Maintenance Sim"
+      ],
+      "certifications": [
+        "IBEW Wafer L1",
+        "IBEW PCB L1",
+        "Cleanroom L1",
+        "Semiconductor Safety L1",
+        "Equipment Maint L1"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "Cartesian",
+        "Cobot",
+        "Articulated",
+        "AMR",
+        "Drone",
+        "Exoskeleton",
+        "Humanoid"
+      ]
     }
   },
   {
@@ -1080,13 +1347,57 @@
       "summary": "An agent-managed DAO cell on the pad where Apollo and Crew Dragon flew: five zones across the marsh-lined launch complex, from Charter Hall at the Fixed Service Structure to a Progress Observatory beside the lagoon, with agents drafting and people deciding.",
       "biome": "wetland",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Composite Layup",
+        "Fuselage Assembly",
+        "Wing Inspection",
+        "Avionics Testing",
+        "Surface Finishing"
+      ]
     },
     "trades": {
-      "scenarios": 8
+      "scenarios": 5,
+      "union_certifications": [
+        "IAM",
+        "UAW"
+      ],
+      "robot_types": [
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 7
+      "tasks": 15,
+      "simulations": [
+        "Composite Layup Sim",
+        "Fuselage Assembly Sim",
+        "Wing Inspection Sim",
+        "Avionics Testing Sim",
+        "Surface Finishing Sim"
+      ],
+      "certifications": [
+        "IAM Composite L2",
+        "IAM Avionics L2",
+        "IAM Assembly L2",
+        "UAW Aerospace L1",
+        "NDT Inspector L1"
+      ],
+      "robot_types": [
+        "Articulated",
+        "Cobot",
+        "SCARA",
+        "Delta",
+        "AMR",
+        "Drone",
+        "Exoskeleton",
+        "Cartesian",
+        "Humanoid"
+      ]
     }
   },
   {
@@ -1113,13 +1424,56 @@
       "summary": "An agent-managed DAO cell on the Thar Desert flats of Bhadla Solar Park, Rajasthan. Agents synthesize evidence and draft proposals among mirror arrays; humans retain every final vote in Charter Hall.",
       "biome": "desert",
       "zones": 5,
-      "quests": 5
+      "quests": 5,
+      "training_modules": [
+        "Solar Panel Installation",
+        "Wind Turbine Maintenance",
+        "Grid Integration",
+        "Battery Storage",
+        "Energy Monitoring"
+      ]
     },
     "trades": {
-      "scenarios": 6
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "Drone",
+        "Articulated",
+        "SCARA",
+        "Delta",
+        "Cobot"
+      ],
+      "training_hours": 120
     },
     "robots": {
-      "tasks": 8
+      "tasks": 15,
+      "simulations": [
+        "Solar Panel Installation Sim",
+        "Wind Turbine Maintenance Sim",
+        "Grid Integration Sim",
+        "Battery Storage Sim",
+        "Energy Monitoring Sim"
+      ],
+      "certifications": [
+        "IBEW Solar L1",
+        "IBEW Wind L1",
+        "IBEW Electrical L1",
+        "OSHA 30",
+        "Energy Storage L1"
+      ],
+      "robot_types": [
+        "Drone",
+        "Articulated",
+        "SCARA",
+        "Delta",
+        "Cobot",
+        "AMR",
+        "Cartesian",
+        "Exoskeleton",
+        "Humanoid"
+      ]
     }
   },
   {
