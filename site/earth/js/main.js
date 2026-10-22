@@ -6,6 +6,7 @@ import { makeWater } from './water.js';
 import { makeCards, makeAvatars, makeQuestRings } from './play.js';
 import { makeFleet } from './robots.js';
 import { wireHud } from './hud.js';
+import { initTraining, SCENARIOS } from './training-sim.js';
 
 const q = new URLSearchParams(location.search);
 const slug = q.get('world') || 'climate-dao';
@@ -50,6 +51,24 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const fly = (p, dist = 40) => { flyT = { from: S.camera.position.clone(), to: p.clone().add(new THREE.Vector3(dist, dist * 0.6, dist)), look: p.clone(), t: 0 }; };
   wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, fleet, fly });
 
+  // Initialize training simulation
+  const training = initTraining();
+  const sector = meta?.trades?.sector || 'General';
+  const scenarios = SCENARIOS[sector] || SCENARIOS['General'];
+  window.__wf.trainingScenarios = scenarios;
+  
+  // Add training button to HUD
+  const gamePanel = $('game');
+  if (gamePanel) {
+    const trainBtn = document.createElement('button');
+    trainBtn.textContent = 'Training';
+    trainBtn.onclick = () => {
+      const panel = $('training-panel');
+      if (panel) panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+    };
+    gamePanel.appendChild(trainBtn);
+  }
+
   const tour = q.get('tour') === '1';
   const stops = zones.length ? [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))] : [new THREE.Vector3(0, 0, 0)];
   let tourI = 0, tourClock = 0;
@@ -65,7 +84,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     S.controls.update(); S.renderer.render(S.scene, S.camera);
   });
   $('status').hidden = true;
-  window.__wf = { ready: true, slug, counts, records: () => fleet.userData.records.length, fly, stops,
+  window.__wf = { ready: true, slug, counts, records: () => fleet.userData.records.length, fly, stops, training,
     debug: () => fleet.userData.episodes.map(e => ({ id: e.task.id, cls: e.t.cls, state: e.state, t0: +e.t0.toFixed(1), dist: +e.dist.toFixed(1),
       at: [+e.o.position.x.toFixed(1), +e.o.position.z.toFixed(1)], goal: [+e.goal.x.toFixed(1), +e.goal.y.toFixed(1)] })) };
 })().catch(e => { status('Could not load this world: ' + e.message); window.__wf = { ready: false, error: String(e) }; });
