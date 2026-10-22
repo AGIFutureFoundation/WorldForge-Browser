@@ -16172,24 +16172,65 @@
       "sea": 0
     },
     "world": {
-      "title": "North End: Culinary & Heritage Hub",
-      "summary": "culinary and heritage training at Hanover Street, Boston MA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-kendall",
@@ -16211,24 +16252,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Kendall Square: Biotech & Tech Hub",
-      "summary": "biotech and tech training at Main Street, Boston MA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-cambridge",
@@ -16250,24 +16332,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Cambridge: Education & Tech Hub",
-      "summary": "education and tech training at Massachusetts Avenue, Boston MA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-fenway",
@@ -16289,24 +16412,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Fenway: Sports & Healthcare Hub",
-      "summary": "sports and healthcare training at Lansdowne Street, Boston MA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-charlestown",
@@ -16328,24 +16492,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Charlestown: Heritage & Tech Hub",
-      "summary": "heritage and tech training at Main Street, Boston MA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-seaport",
@@ -16367,24 +16572,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Seaport District: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Northern Avenue, Boston MA.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-allston",
@@ -16406,24 +16652,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Allston: Education & Community Hub",
-      "summary": "education and community training at Harvard Avenue, Boston MA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "bos-brookline",
@@ -16445,24 +16732,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Brookline: Healthcare & Education Hub",
-      "summary": "healthcare and education training at Beacon Street, Boston MA.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Healthcare",
+      "union": "1199SEIU",
+      "description": "Boston healthcare hub.",
+      "training_modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "1199SEIU"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ],
+      "training_hours": 120,
+      "sector": "Healthcare",
+      "description": "Boston healthcare hub.",
+      "modules": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Pharmacy Auto",
+        "Lab Sample",
+        "Patient Transport",
+        "Sterilization",
+        "Supply"
+      ],
+      "certifications": [
+        "1199SEIU L1",
+        "1199SEIU L2",
+        "1199SEIU L3",
+        "1199SEIU L4",
+        "1199SEIU L5"
+      ],
+      "robot_types": [
+        "SCARA",
+        "Delta",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "BOS",
+    "description": "Boston healthcare hub."
   },
   {
     "slug": "tokyo-shibuya",
@@ -16484,24 +16812,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Shibuya: Tech & Retail Hub",
-      "summary": "tech and retail training at Shibuya Crossing, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-shinjuku",
@@ -16523,24 +16892,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Shinjuku: Finance & Logistics Hub",
-      "summary": "finance and logistics training at West Exit, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-akihabara",
@@ -16562,24 +16972,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Akihabara: Electronics & Robotics Hub",
-      "summary": "electronics and robotics training at Electric Town, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-roppongi",
@@ -16601,24 +17052,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Roppongi: Tech & Arts Hub",
-      "summary": "tech and arts training at Roppongi Hills, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-odaiba",
@@ -16640,24 +17132,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Odaiba: Robotics & Entertainment Hub",
-      "summary": "robotics and entertainment training at Telecom Center, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-ginza",
@@ -16679,24 +17212,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Ginza: Luxury & Retail Hub",
-      "summary": "luxury and retail training at Chuo-dori, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-marunouchi",
@@ -16718,24 +17292,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Marunouchi: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Tokyo Station, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-asakusa",
@@ -16757,24 +17372,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Asakusa: Heritage & Tourism Hub",
-      "summary": "heritage and tourism training at Nakamise-dori, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-ikebukuro",
@@ -16796,24 +17452,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Ikebukuro: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Sunshine City, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-tsukuba",
@@ -16835,24 +17532,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Tsukuba Science City: Ai & Robotics Hub",
-      "summary": "ai and robotics training at Research Park, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-yokohama",
@@ -16874,24 +17612,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Yokohama: Maritime & Tech Hub",
-      "summary": "maritime and tech training at Minato Mirai, Tokyo Japan.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "tokyo-kawasaki",
@@ -16913,24 +17692,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Kawasaki: Industrial & Robotics Hub",
-      "summary": "industrial and robotics training at Daishi Bridge, Tokyo Japan.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "JEW",
+      "description": "Tokyo tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "JEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Tokyo tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "JEW L1",
+        "JEW L2",
+        "JEW L3",
+        "JEW L4",
+        "JEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "TOKYO",
+    "description": "Tokyo tech center."
   },
   {
     "slug": "sha-pudong",
@@ -16952,24 +17772,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Pudong: Finance & Tech Hub",
-      "summary": "finance and tech training at Century Avenue, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-bund",
@@ -16991,24 +17852,65 @@
       "sea": 0
     },
     "world": {
-      "title": "The Bund: Finance & Heritage Hub",
-      "summary": "finance and heritage training at Zhongshan Road, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-jingan",
@@ -17030,24 +17932,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Jing An: Retail & Tech Hub",
-      "summary": "retail and tech training at Nanjing Road, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-huangpu",
@@ -17069,24 +18012,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Huangpu: Manufacturing & Logistics Hub",
-      "summary": "manufacturing and logistics training at East Yan An Road, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-hongqiao",
@@ -17108,24 +18092,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Hongqiao: Logistics & Tech Hub",
-      "summary": "logistics and tech training at Transportation Hub, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-zhangjiang",
@@ -17147,24 +18172,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Zhangjiang Hi-Tech: Biotech & Ai Hub",
-      "summary": "biotech and ai training at Biotech Avenue, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-yangpu",
@@ -17186,24 +18252,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Yangpu: Education & Tech Hub",
-      "summary": "education and tech training at University District, Shanghai China.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-minhang",
@@ -17225,24 +18332,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Minhang: Manufacturing & Robotics Hub",
-      "summary": "manufacturing and robotics training at Industrial Zone, Shanghai China.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-jiading",
@@ -17264,24 +18412,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Jiading: Automotive & Manufacturing Hub",
-      "summary": "automotive and manufacturing training at Auto City, Shanghai China.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sha-chongming",
@@ -17303,24 +18492,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Chongming: Agriculture & Research Hub",
-      "summary": "agriculture and research training at Eco Island, Shanghai China.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Manufacturing",
+      "union": "ACFTU",
+      "description": "Shanghai manufacturing.",
+      "training_modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "ACFTU"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ],
+      "training_hours": 100,
+      "sector": "Manufacturing",
+      "description": "Shanghai manufacturing.",
+      "modules": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Assembly Line",
+        "Welding",
+        "QC Inspect",
+        "Packaging",
+        "Material Handle"
+      ],
+      "certifications": [
+        "ACFTU L1",
+        "ACFTU L2",
+        "ACFTU L3",
+        "ACFTU L4",
+        "ACFTU L5"
+      ],
+      "robot_types": [
+        "Articulated",
+        "SCARA",
+        "Delta"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SHA",
+    "description": "Shanghai manufacturing."
   },
   {
     "slug": "sg-marina-bay",
@@ -17342,24 +18572,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Marina Bay: Finance & Tech Hub",
-      "summary": "finance and tech training at Marina Bay Sands, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-orchard",
@@ -17381,24 +18652,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Orchard Road: Retail & Logistics Hub",
-      "summary": "retail and logistics training at Shopping District, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-chinatown",
@@ -17420,24 +18732,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Chinatown: Heritage & Tourism Hub",
-      "summary": "heritage and tourism training at Pagoda Street, Singapore.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-little-india",
@@ -17459,24 +18812,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Little India: Heritage & Retail Hub",
-      "summary": "heritage and retail training at Serangoon Road, Singapore.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-jurong",
@@ -17498,24 +18892,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Jurong: Manufacturing & Logistics Hub",
-      "summary": "manufacturing and logistics training at Industrial Estate, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-one-north",
@@ -17537,24 +18972,65 @@
       "sea": 0
     },
     "world": {
-      "title": "One-North: Biotech & Tech Hub",
-      "summary": "biotech and tech training at Biopolis, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-tampines",
@@ -17576,24 +19052,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Tampines: Community & Logistics Hub",
-      "summary": "community and logistics training at Regional Center, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-woodlands",
@@ -17615,24 +19132,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Woodlands: Logistics & Manufacturing Hub",
-      "summary": "logistics and manufacturing training at Causeway, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-changi",
@@ -17654,24 +19212,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Changi: Aviation & Logistics Hub",
-      "summary": "aviation and logistics training at Airport District, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "sg-tuas",
@@ -17693,24 +19292,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Tuas: Maritime & Logistics Hub",
-      "summary": "maritime and logistics training at Mega Port, Singapore.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "NTUC",
+      "description": "Singapore finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "NTUC"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "Singapore finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "NTUC L1",
+        "NTUC L2",
+        "NTUC L3",
+        "NTUC L4",
+        "NTUC L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SG",
+    "description": "Singapore finance hub."
   },
   {
     "slug": "seo-gangnam",
@@ -17732,24 +19372,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Gangnam: Tech & Finance Hub",
-      "summary": "tech and finance training at Teheran-ro, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-gangbuk",
@@ -17771,24 +19452,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Gangbuk: Manufacturing & Community Hub",
-      "summary": "manufacturing and community training at Nowon-gu, Seoul Korea.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-mapo",
@@ -17810,24 +19532,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Mapo: Arts & Tech Hub",
-      "summary": "arts and tech training at Hongdae, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-jongno",
@@ -17849,24 +19612,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Jongno: Heritage & Government Hub",
-      "summary": "heritage and government training at Gyeongbokgung, Seoul Korea.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-yongsan",
@@ -17888,24 +19692,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Yongsan: Electronics & Logistics Hub",
-      "summary": "electronics and logistics training at Electronics Market, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-songdo",
@@ -17927,24 +19772,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Songdo IBD: Smart & City & Tech Hub",
-      "summary": "smart and city and tech training at Central Park, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-pangyo",
@@ -17966,24 +19852,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Pangyo Techno Valley: Tech & Startups Hub",
-      "summary": "tech and startups training at Startup Campus, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-dongdaemun",
@@ -18005,24 +19932,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Dongdaemun: Fashion & Manufacturing Hub",
-      "summary": "fashion and manufacturing training at Design Plaza, Seoul Korea.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-yeouido",
@@ -18044,24 +20012,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Yeouido: Finance & Tech Hub",
-      "summary": "finance and tech training at IFC Seoul, Seoul Korea.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "seo-itewon",
@@ -18083,24 +20092,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Itaewon: Arts & Tourism Hub",
-      "summary": "arts and tourism training at Hamilton Hotel, Seoul Korea.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "FKTU",
+      "description": "Seoul tech center.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "FKTU"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 120,
+      "sector": "Tech",
+      "description": "Seoul tech center.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "FKTU L1",
+        "FKTU L2",
+        "FKTU L3",
+        "FKTU L4",
+        "FKTU L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "SEO",
+    "description": "Seoul tech center."
   },
   {
     "slug": "nyc-manhattan",
@@ -18122,24 +20172,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Manhattan: Finance & Tech Hub",
-      "summary": "finance and tech training at Broadway, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-brooklyn",
@@ -18161,24 +20252,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Brooklyn: Arts & Manufacturing Hub",
-      "summary": "arts and manufacturing training at Atlantic Avenue, New York NY.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-queens",
@@ -18200,24 +20332,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Queens: Logistics & Community Hub",
-      "summary": "logistics and community training at Northern Boulevard, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-bronx",
@@ -18239,24 +20412,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Bronx: Community & Health Hub",
-      "summary": "community and health training at Grand Concourse, New York NY.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-staten-island",
@@ -18278,24 +20492,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Staten Island: Maritime & Logistics Hub",
-      "summary": "maritime and logistics training at Victory Boulevard, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-harlem",
@@ -18317,24 +20572,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Harlem: Arts & Community Hub",
-      "summary": "arts and community training at 125th Street, New York NY.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-chelsea",
@@ -18356,24 +20652,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Chelsea: Arts & Tech Hub",
-      "summary": "arts and tech training at 8th Avenue, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-williamsburg",
@@ -18395,24 +20732,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Williamsburg: Tech & Arts Hub",
-      "summary": "tech and arts training at Bedford Avenue, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-dumbo",
@@ -18434,24 +20812,65 @@
       "sea": 0
     },
     "world": {
-      "title": "DUMBO: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Water Street, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-financial",
@@ -18473,24 +20892,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Financial District: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Wall Street, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-midtown",
@@ -18512,24 +20972,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Midtown: Finance & Retail Hub",
-      "summary": "finance and retail training at 5th Avenue, New York NY.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "nyc-upper-east",
@@ -18551,24 +21052,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Upper East Side: Healthcare & Retail Hub",
-      "summary": "healthcare and retail training at Madison Avenue, New York NY.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Finance",
+      "union": "IBEW",
+      "description": "NYC finance hub.",
+      "training_modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ],
+      "training_hours": 120,
+      "sector": "Finance",
+      "description": "NYC finance hub.",
+      "modules": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Vault Auto",
+        "Trading Floor",
+        "Data Center",
+        "Security",
+        "Server Rack"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Drone",
+        "Cartesian"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NYC",
+    "description": "NYC finance hub."
   },
   {
     "slug": "pdx-downtown",
@@ -18590,24 +21132,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Portland: Tech & Logistics Hub",
-      "summary": "tech and logistics training at Burnside Street, Portland OR.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-pearl",
@@ -18629,24 +21212,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Pearl District: Arts & Tech Hub",
-      "summary": "arts and tech training at NW 13th Avenue, Portland OR.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-hawthorne",
@@ -18668,24 +21292,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Hawthorne: Arts & Community Hub",
-      "summary": "arts and community training at Hawthorne Boulevard, Portland OR.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-alberta",
@@ -18707,24 +21372,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Alberta Arts: Arts & Community Hub",
-      "summary": "arts and community training at Alberta Street, Portland OR.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-lloyd",
@@ -18746,24 +21452,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Lloyd District: Tech & Logistics Hub",
-      "summary": "tech and logistics training at NE Grand Avenue, Portland OR.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-division",
@@ -18785,24 +21532,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Division: Culinary & Community Hub",
-      "summary": "culinary and community training at Division Street, Portland OR.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-beaverton",
@@ -18824,24 +21612,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Beaverton: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Cedar Hills Boulevard, Portland OR.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-gresham",
@@ -18863,24 +21692,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Gresham: Manufacturing & Community Hub",
-      "summary": "manufacturing and community training at Main Street, Portland OR.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-hillsboro",
@@ -18902,24 +21772,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Hillsboro: Semiconductor & Tech Hub",
-      "summary": "semiconductor and tech training at Tanbourn Parkway, Portland OR.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "pdx-oregon-city",
@@ -18941,24 +21852,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Oregon City: Heritage & Manufacturing Hub",
-      "summary": "heritage and manufacturing training at Main Street, Portland OR.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tech",
+      "union": "IBEW",
+      "description": "Portland tech hub.",
+      "training_modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ],
+      "training_hours": 100,
+      "sector": "Tech",
+      "description": "Portland tech hub.",
+      "modules": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Server Deploy",
+        "Network Cable",
+        "Hardware Test",
+        "Cleanroom",
+        "Calibration"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "PDX",
+    "description": "Portland tech hub."
   },
   {
     "slug": "nash-downtown",
@@ -18980,24 +21932,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Nashville: Entertainment & Tourism Hub",
-      "summary": "entertainment and tourism training at Broadway, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-music-row",
@@ -19019,24 +22011,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Music Row: Entertainment & Tech Hub",
-      "summary": "entertainment and tech training at 16th Avenue South, Nashville TN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-gulch",
@@ -19058,24 +22090,64 @@
       "sea": 0
     },
     "world": {
-      "title": "The Gulch: Tech & Entertainment Hub",
-      "summary": "tech and entertainment training at 12th Avenue South, Nashville TN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-east-nash",
@@ -19097,24 +22169,64 @@
       "sea": 0
     },
     "world": {
-      "title": "East Nashville: Arts & Community Hub",
-      "summary": "arts and community training at Main Street, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-germantown",
@@ -19136,24 +22248,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Germantown: Culinary & Heritage Hub",
-      "summary": "culinary and heritage training at 5th Avenue North, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-sobro",
@@ -19175,24 +22327,64 @@
       "sea": 0
     },
     "world": {
-      "title": "SoBro: Entertainment & Sports Hub",
-      "summary": "entertainment and sports training at Demonbreun Street, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-midtown",
@@ -19214,24 +22406,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Midtown: Healthcare & Education Hub",
-      "summary": "healthcare and education training at West End Avenue, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-vanderbilt",
@@ -19253,24 +22485,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Vanderbilt Area: Education & Healthcare Hub",
-      "summary": "education and healthcare training at 21st Avenue, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-franklin",
@@ -19292,24 +22564,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Franklin: Heritage & Tech Hub",
-      "summary": "heritage and tech training at Main Street, Nashville TN.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "nash-murfreesboro",
@@ -19331,24 +22643,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Murfreesboro: Education & Manufacturing Hub",
-      "summary": "education and manufacturing training at Church Street, Nashville TN.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "NASH",
+    "description": "General training."
   },
   {
     "slug": "aus-downtown",
@@ -19370,24 +22722,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Austin: Tech & Government Hub",
-      "summary": "tech and government training at Congress Avenue, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-south-congress",
@@ -19409,24 +22801,64 @@
       "sea": 0
     },
     "world": {
-      "title": "South Congress: Retail & Tech Hub",
-      "summary": "retail and tech training at South Congress Avenue, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-east",
@@ -19448,24 +22880,64 @@
       "sea": 0
     },
     "world": {
-      "title": "East Austin: Arts & Tech Hub",
-      "summary": "arts and tech training at East 6th Street, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-domain",
@@ -19487,24 +22959,64 @@
       "sea": 0
     },
     "world": {
-      "title": "The Domain: Tech & Corporate Hub",
-      "summary": "tech and corporate training at Domain Drive, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-warehouse",
@@ -19526,24 +23038,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Warehouse District: Entertainment & Tech Hub",
-      "summary": "entertainment and tech training at 4th Street, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-rainey",
@@ -19565,24 +23117,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Rainey Street: Entertainment & Tech Hub",
-      "summary": "entertainment and tech training at Rainey Street, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-mueller",
@@ -19604,24 +23196,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Mueller: Tech & Community Hub",
-      "summary": "tech and community training at Aldrich Street, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-round-rock",
@@ -19643,24 +23275,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Round Rock: Tech & Manufacturing Hub",
-      "summary": "tech and manufacturing training at Round Rock Avenue, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-georgetown",
@@ -19682,24 +23354,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Georgetown: Tech & Heritage Hub",
-      "summary": "tech and heritage training at Main Street, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "aus-pflugerville",
@@ -19721,24 +23433,64 @@
       "sea": 0
     },
     "world": {
-      "title": "Pflugerville: Tech & Community Hub",
-      "summary": "tech and community training at FM 685, Austin TX.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "General",
+      "union": "IBEW",
+      "description": "General training.",
+      "training_modules": [
+        "Mod1",
+        "Mod2",
+        "Mod3",
+        "Mod4",
+        "Mod5"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "IBEW"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot"
+      ],
+      "training_hours": 100,
+      "sector": "General",
+      "description": "General training.",
+      "modules": [
+        "Basic",
+        "Safety",
+        "Ops",
+        "Maint",
+        "QA"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Sim1",
+        "Sim2",
+        "Sim3",
+        "Sim4",
+        "Sim5"
+      ],
+      "certifications": [
+        "IBEW L1",
+        "IBEW L2",
+        "IBEW L3",
+        "IBEW L4",
+        "IBEW L5"
+      ],
+      "robot_types": [
+        "AMR",
+        "Cobot",
+        "SCARA"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "AUS",
+    "description": "General training."
   },
   {
     "slug": "mia-downtown",
@@ -19760,24 +23512,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Downtown Miami: Finance & Logistics Hub",
-      "summary": "finance and logistics training at Biscayne Boulevard, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-brickell",
@@ -19799,24 +23592,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Brickell: Finance & Tech Hub",
-      "summary": "finance and tech training at Brickell Avenue, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-wynwood",
@@ -19838,24 +23672,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Wynwood: Arts & Tech Hub",
-      "summary": "arts and tech training at NW 2nd Avenue, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-south-beach",
@@ -19877,24 +23752,65 @@
       "sea": 0
     },
     "world": {
-      "title": "South Beach: Tourism & Entertainment Hub",
-      "summary": "tourism and entertainment training at Ocean Drive, Miami FL.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-little-havana",
@@ -19916,24 +23832,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Little Havana: Heritage & Culinary Hub",
-      "summary": "heritage and culinary training at Calle Ocho, Miami FL.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-design",
@@ -19955,24 +23912,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Design District: Luxury & Arts Hub",
-      "summary": "luxury and arts training at NE 40th Street, Miami FL.",
-      "biome": "urban-park",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-midtown",
@@ -19994,24 +23992,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Midtown Miami: Tech & Retail Hub",
-      "summary": "tech and retail training at N Miami Avenue, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-coral-gables",
@@ -20033,24 +24072,65 @@
       "sea": 0
     },
     "world": {
-      "title": "Coral Gables: Finance & Education Hub",
-      "summary": "finance and education training at Miracle Mile, Miami FL.",
-      "biome": "urban-core",
       "zones": 5,
       "quests": 5,
-      "training_modules": []
+      "sector": "Tourism",
+      "union": "HERE",
+      "description": "Miami tourism hub.",
+      "training_modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "trades": {
-      "scenarios": 0,
-      "union_certifications": [],
-      "robot_types": []
+      "scenarios": 5,
+      "union_certifications": [
+        "HERE"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ],
+      "training_hours": 100,
+      "sector": "Tourism",
+      "description": "Miami tourism hub.",
+      "modules": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ]
     },
     "robots": {
-      "tasks": 0,
-      "simulations": [],
-      "certifications": []
+      "tasks": 15,
+      "simulations": [
+        "Guest Services",
+        "Tour Guide",
+        "Restaurant Auto",
+        "Event Setup",
+        "Cleaning"
+      ],
+      "certifications": [
+        "HERE L1",
+        "HERE L2",
+        "HERE L3",
+        "HERE L4",
+        "HERE L5"
+      ],
+      "robot_types": [
+        "Humanoid",
+        "Drone",
+        "AMR"
+      ]
     },
-    "status": "coming-soon"
+    "status": "live",
+    "region": "MIA",
+    "description": "Miami tourism hub."
   },
   {
     "slug": "mia-aventura",
