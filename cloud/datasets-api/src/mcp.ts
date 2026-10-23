@@ -8,7 +8,7 @@ const X402_CONFIG: X402Config = {
   facilitator: { url: "https://x402.org/facilitator" },
 };
 
-const MANIFEST_URL = "https://raw.githubusercontent.com/tempgithubhelp/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json";
+const MANIFEST_URL = "https://raw.githubusercontent.com/AGIFutureFoundation/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json";
 
 export function createMcpServer(): McpServer {
   const server = withX402(new McpServer({ name: "WorldForgeDatasets", version: "1.0.0" }), X402_CONFIG);

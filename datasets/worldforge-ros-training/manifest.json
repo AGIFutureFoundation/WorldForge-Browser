@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-23T00:10:36.234113+00:00",
-  "total_runs": 2,
-  "total_size_bytes": 3506097,
+  "generated_at": "2026-10-23T00:14:42.913500+00:00",
+  "total_runs": 15,
+  "total_size_bytes": 7639739,
   "pricing": {
     "free": {
       "price_usd": 0.0
@@ -57,6 +57,253 @@
         "unspoken-smiles",
         "force-feedback"
       ]
+    },
+    {
+      "run_id": "bay-area-sf-financial-spot-60s",
+      "robot": "spot",
+      "world": "sf-financial",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460447,
+      "parquet_size": 18179,
+      "sha256": "9b327526dfb93f9c664a8757e67506254376e30217bea8ea17a1dbbfd8f7a067",
+      "files": {
+        "jsonl": "bay-area-sf-financial-spot-60s.jsonl",
+        "parquet": "bay-area-sf-financial-spot-60s.parquet",
+        "meta": "bay-area-sf-financial-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in SF Financial District (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-financial-stretch-60s",
+      "robot": "stretch",
+      "world": "sf-financial",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 381342,
+      "parquet_size": 18219,
+      "sha256": "7dd16fe811aa1152eef6bfab80b788f8a3d93966f894c352f4d39c6f120074fa",
+      "files": {
+        "jsonl": "bay-area-sf-financial-stretch-60s.jsonl",
+        "parquet": "bay-area-sf-financial-stretch-60s.parquet",
+        "meta": "bay-area-sf-financial-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in SF Financial District (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-financial-r1-60s",
+      "robot": "r1",
+      "world": "sf-financial",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 95670,
+      "parquet_size": 12761,
+      "sha256": "8c06123ebe6506a91f4b00f220d2c50d4d5f5b1885082e8272a3a79a9c82c13e",
+      "files": {
+        "jsonl": "bay-area-sf-financial-r1-60s.jsonl",
+        "parquet": "bay-area-sf-financial-r1-60s.parquet",
+        "meta": "bay-area-sf-financial-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in SF Financial District (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-soma-spot-60s",
+      "robot": "spot",
+      "world": "sf-soma",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460363,
+      "parquet_size": 18179,
+      "sha256": "82bbf6881868e9dd8bce92f5a97f3a08d2590b97ea7689fed9099e3eb6b7bd93",
+      "files": {
+        "jsonl": "bay-area-sf-soma-spot-60s.jsonl",
+        "parquet": "bay-area-sf-soma-spot-60s.parquet",
+        "meta": "bay-area-sf-soma-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in SF SoMa (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-soma-stretch-60s",
+      "robot": "stretch",
+      "world": "sf-soma",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 381334,
+      "parquet_size": 18219,
+      "sha256": "b1c8aca3c7f4d9b54093c90439d39dd3325b44e661702f54cdaba71343d1ca23",
+      "files": {
+        "jsonl": "bay-area-sf-soma-stretch-60s.jsonl",
+        "parquet": "bay-area-sf-soma-stretch-60s.parquet",
+        "meta": "bay-area-sf-soma-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in SF SoMa (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-soma-r1-60s",
+      "robot": "r1",
+      "world": "sf-soma",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 95617,
+      "parquet_size": 12761,
+      "sha256": "ed3fe965a1571d33447690fe29b195d33897d2e02a650ed305e258b6fa18980f",
+      "files": {
+        "jsonl": "bay-area-sf-soma-r1-60s.jsonl",
+        "parquet": "bay-area-sf-soma-r1-60s.parquet",
+        "meta": "bay-area-sf-soma-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in SF SoMa (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-mission-spot-60s",
+      "robot": "spot",
+      "world": "sf-mission",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460260,
+      "parquet_size": 18179,
+      "sha256": "f1421e572db26eaa74875ea3126fba9e28d941801eead192421a56ff46a6ae20",
+      "files": {
+        "jsonl": "bay-area-sf-mission-spot-60s.jsonl",
+        "parquet": "bay-area-sf-mission-spot-60s.parquet",
+        "meta": "bay-area-sf-mission-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in SF Mission (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-mission-stretch-60s",
+      "robot": "stretch",
+      "world": "sf-mission",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 381412,
+      "parquet_size": 18219,
+      "sha256": "fe3e764790da30c16a904bf9652a696994092e45a9163894b333b08d5dee389c",
+      "files": {
+        "jsonl": "bay-area-sf-mission-stretch-60s.jsonl",
+        "parquet": "bay-area-sf-mission-stretch-60s.parquet",
+        "meta": "bay-area-sf-mission-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in SF Mission (60s)"
+    },
+    {
+      "run_id": "bay-area-sf-mission-r1-60s",
+      "robot": "r1",
+      "world": "sf-mission",
+      "region": "bay-area",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 95648,
+      "parquet_size": 12760,
+      "sha256": "73d596207b7b36db545428387eafbb8e9e330f33107d51826e889a1a1f9dc757",
+      "files": {
+        "jsonl": "bay-area-sf-mission-r1-60s.jsonl",
+        "parquet": "bay-area-sf-mission-r1-60s.parquet",
+        "meta": "bay-area-sf-mission-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in SF Mission (60s)"
+    },
+    {
+      "run_id": "nola-nola-french-quarter-spot-60s",
+      "robot": "spot",
+      "world": "nola-french-quarter",
+      "region": "nola",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460439,
+      "parquet_size": 18179,
+      "sha256": "ff25f0a383a9762e604b65ded3433957d89f7c511855530bbc8acc28c181a5da",
+      "files": {
+        "jsonl": "nola-nola-french-quarter-spot-60s.jsonl",
+        "parquet": "nola-nola-french-quarter-spot-60s.parquet",
+        "meta": "nola-nola-french-quarter-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in New Orleans French Quarter (60s)"
+    },
+    {
+      "run_id": "nola-nola-french-quarter-r1-60s",
+      "robot": "r1",
+      "world": "nola-french-quarter",
+      "region": "nola",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 95654,
+      "parquet_size": 12760,
+      "sha256": "b827664c53011f5762fb26eb7d68cf687c46b6fcca8056db1d5644304c7da982",
+      "files": {
+        "jsonl": "nola-nola-french-quarter-r1-60s.jsonl",
+        "parquet": "nola-nola-french-quarter-r1-60s.parquet",
+        "meta": "nola-nola-french-quarter-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in New Orleans French Quarter (60s)"
+    },
+    {
+      "run_id": "nola-nola-garden-district-spot-60s",
+      "robot": "spot",
+      "world": "nola-garden-district",
+      "region": "nola",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460494,
+      "parquet_size": 18178,
+      "sha256": "4bbd7c525527bf34dc1f1d62abbd8f29f7ad743985b2f423dd7c47d2ddcb2139",
+      "files": {
+        "jsonl": "nola-nola-garden-district-spot-60s.jsonl",
+        "parquet": "nola-nola-garden-district-spot-60s.parquet",
+        "meta": "nola-nola-garden-district-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in New Orleans Garden District (60s)"
+    },
+    {
+      "run_id": "nola-nola-garden-district-r1-60s",
+      "robot": "r1",
+      "world": "nola-garden-district",
+      "region": "nola",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 95608,
+      "parquet_size": 12761,
+      "sha256": "af71689db1c5bf996d208ca44868d3c2d8238f6e8e5407a7165e9f44dc68411e",
+      "files": {
+        "jsonl": "nola-nola-garden-district-r1-60s.jsonl",
+        "parquet": "nola-nola-garden-district-r1-60s.parquet",
+        "meta": "nola-nola-garden-district-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in New Orleans Garden District (60s)"
     }
   ]
 }

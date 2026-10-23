@@ -1,0 +1,18 @@
+{
+  "run_id": "bay-area-sf-financial-spot-60s",
+  "robot": "spot",
+  "robot_type": "quadruped",
+  "world": "sf-financial",
+  "world_name": "SF Financial District",
+  "lat": 37.7912,
+  "lon": -122.4015,
+  "duration_sec": 60,
+  "message_count": 1560,
+  "topics": [
+    "/spot/camera/front",
+    "/spot/odometry",
+    "/spot/imu",
+    "/spot/joint_states"
+  ],
+  "generated_at": "2026-10-23T00:14:42.119661+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "nola-nola-garden-district-r1-60s",
+  "robot": "r1",
+  "robot_type": "delivery-robot",
+  "world": "nola-garden-district",
+  "world_name": "New Orleans Garden District",
+  "lat": 29.9311,
+  "lon": -90.0831,
+  "duration_sec": 60,
+  "message_count": 480,
+  "topics": [
+    "/r1/camera/front",
+    "/r1/lidar/scan",
+    "/r1/odometry",
+    "/r1/gps"
+  ],
+  "generated_at": "2026-10-23T00:14:42.911364+00:00"
+}

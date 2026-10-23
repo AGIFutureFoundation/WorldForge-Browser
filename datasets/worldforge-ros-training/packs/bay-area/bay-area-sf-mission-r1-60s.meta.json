@@ -1,0 +1,18 @@
+{
+  "run_id": "bay-area-sf-mission-r1-60s",
+  "robot": "r1",
+  "robot_type": "delivery-robot",
+  "world": "sf-mission",
+  "world_name": "SF Mission",
+  "lat": 37.7599,
+  "lon": -122.4148,
+  "duration_sec": 60,
+  "message_count": 480,
+  "topics": [
+    "/r1/camera/front",
+    "/r1/lidar/scan",
+    "/r1/odometry",
+    "/r1/gps"
+  ],
+  "generated_at": "2026-10-23T00:14:42.656925+00:00"
+}

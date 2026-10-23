@@ -1,0 +1,18 @@
+{
+  "run_id": "bay-area-sf-mission-stretch-60s",
+  "robot": "stretch",
+  "robot_type": "mobile-manipulator",
+  "world": "sf-mission",
+  "world_name": "SF Mission",
+  "lat": 37.7599,
+  "lon": -122.4148,
+  "duration_sec": 60,
+  "message_count": 1560,
+  "topics": [
+    "/stretch/camera/head",
+    "/stretch/odometry",
+    "/stretch/arm/joint_states",
+    "/stretch/gripper/force"
+  ],
+  "generated_at": "2026-10-23T00:14:42.615392+00:00"
+}

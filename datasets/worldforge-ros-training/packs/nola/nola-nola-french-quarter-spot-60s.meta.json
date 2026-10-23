@@ -1,0 +1,18 @@
+{
+  "run_id": "nola-nola-french-quarter-spot-60s",
+  "robot": "spot",
+  "robot_type": "quadruped",
+  "world": "nola-french-quarter",
+  "world_name": "New Orleans French Quarter",
+  "lat": 29.9574,
+  "lon": -90.0648,
+  "duration_sec": 60,
+  "message_count": 1560,
+  "topics": [
+    "/spot/camera/front",
+    "/spot/odometry",
+    "/spot/imu",
+    "/spot/joint_states"
+  ],
+  "generated_at": "2026-10-23T00:14:42.762015+00:00"
+}

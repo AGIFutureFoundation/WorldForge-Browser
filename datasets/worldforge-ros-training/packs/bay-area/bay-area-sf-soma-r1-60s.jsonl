@@ -1,0 +1,480 @@
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 59.452220246428965, "py": 58.302194822375355, "pz": 2.687644400888881, "vx": 0.14041360067567132}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78585616607137, "lon": -122.40913476214979, "alt": -4.803852770435902}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -60.77171461099093, "py": 8.114071297685129, "pz": 1.9268499510410129, "vx": 0.3923711080812162}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -92.26374450185067, "py": -77.6465011832908, "pz": -0.3914295941517213, "vx": 0.6860731784358112}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 40.294148549645996, "py": -4.4233254797483, "pz": 1.9649492534282849, "vx": -0.20549278080137068}
+{"header": {"stamp": {"sec": 1700000000, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 25.33766489846745, "py": 34.342557804111436, "pz": 0.619808809602822, "vx": -0.37674956999730913}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 63.44207626031658, "py": -86.73156544572015, "pz": 2.966746518859359, "vx": 0.9398570130641093}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785562263876194, "lon": -122.40947495939555, "alt": 0.8196404609580252}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -5.841039830408363, "py": 22.491617723200036, "pz": -0.8061239367092422, "vx": 0.33639290883746953}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -43.62509700775761, "py": -56.66947947897342, "pz": 0.3997090496651696, "vx": 0.2090459616572682}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 24.32542695092161, "py": -1.9988418595961832, "pz": 1.3254489467539163, "vx": 0.08490525422482564}
+{"header": {"stamp": {"sec": 1700000001, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -30.654112998453684, "py": -89.07274424906115, "pz": 2.6874383039074448, "vx": -0.5286447822215169}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 57.652660680529664, "py": -49.867826408903916, "pz": 0.1369925837507886, "vx": 0.7132906547806432}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78584614456764, "lon": -122.40964172982089, "alt": 9.899130126138475}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 57.61130303437392, "py": 77.64577180346751, "pz": 0.4127749249968786, "vx": 0.186801028461137}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 86.67787133466254, "py": -5.035834948004791, "pz": 0.9079505389157596, "vx": -0.13835897245942363}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 27.74020281423681, "py": 88.24023349133367, "pz": 1.4353874201283139, "vx": 0.4202606914045828}
+{"header": {"stamp": {"sec": 1700000002, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -4.3777691919370625, "py": -64.19299324908857, "pz": 1.5970383989618675, "vx": 0.17817857955805438}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 51.27200768727002, "py": -26.27466903026921, "pz": -0.7653128649991632, "vx": -0.9829040156762973}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78553191293208, "lon": -122.40872789049835, "alt": 45.9409603545886}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 75.94831132460064, "py": -56.84243228104185, "pz": -0.08105362344384714, "vx": 0.8199985781817174}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -57.952365248809414, "py": 81.17501180868729, "pz": 1.9713036629593663, "vx": -0.42176631897216743}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -35.14005986945887, "py": -3.502705651746183, "pz": 0.047856757038001074, "vx": 0.3421420897210028}
+{"header": {"stamp": {"sec": 1700000003, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -72.09513479773881, "py": -87.4401206354784, "pz": 0.8344992898091954, "vx": 0.43905458273088427}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 17.444104632668925, "py": -92.60495281143166, "pz": 2.311503741768149, "vx": 0.03171830216346638}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78413967692234, "lon": -122.40972690173739, "alt": 21.830909706863462}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 49.07597082362193, "py": 95.46145635636259, "pz": 0.13240629445549845, "vx": -0.8607998302742914}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -71.75393789841101, "py": 21.532994574928495, "pz": 1.4751344020494233, "vx": 0.919852725513326}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 14.702323697482939, "py": 56.19244113965382, "pz": 0.5963694130387358, "vx": -0.263025050142472}
+{"header": {"stamp": {"sec": 1700000004, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -44.389376384609804, "py": -4.311329620706417, "pz": 1.4368551087139783, "vx": 0.9796767220839679}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -89.70401673264688, "py": -97.04226799255355, "pz": 2.6302955011135194, "vx": 0.684125790365411}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784078853388834, "lon": -122.40886656942415, "alt": 46.49220052604888}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 44.14141573424189, "py": -69.80128406664755, "pz": -0.6060891280227474, "vx": 0.3559309929896932}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -69.1446361325172, "py": 88.59543358810237, "pz": 2.1270279539060373, "vx": -0.37777982345506167}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 28.886947952964448, "py": 32.81885172312815, "pz": -0.3057469105597943, "vx": 0.8710889135727118}
+{"header": {"stamp": {"sec": 1700000005, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 3.653044233076372, "py": 46.184596253796684, "pz": 1.994332213508753, "vx": 0.9813430507249588}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 77.09886004724996, "py": 29.777527017138027, "pz": 1.9956738764298358, "vx": -0.5537460590340249}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78564821538618, "lon": -122.40943445277293, "alt": 2.7994136247100867}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -30.609283650926017, "py": 78.4355031799974, "pz": 1.1831179332288895, "vx": 0.6236422502263324}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -0.6928774519679592, "py": -20.35658714495719, "pz": 1.516015698166317, "vx": 0.734815976918427}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 92.70749397531301, "py": 24.432501634401206, "pz": 0.7335150344689114, "vx": -0.984825586679934}
+{"header": {"stamp": {"sec": 1700000006, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 24.112178878109233, "py": 62.651037333540245, "pz": 1.8406341644744568, "vx": -0.7044027185556653}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -58.53892572170597, "py": -46.387151029257765, "pz": 1.4847684359904774, "vx": 0.24587241984109265}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785898725913796, "lon": -122.40868583215081, "alt": 17.00218472770078}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 18.068240502544256, "py": -41.85899377431031, "pz": -0.8747892616791424, "vx": 0.7252406384906038}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 89.3023600166658, "py": 93.17288516618041, "pz": -0.22572503048476777, "vx": -0.8779764049893538}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 94.202666861133, "py": -94.9073174608878, "pz": 1.5211640292432427, "vx": 0.8401692383863677}
+{"header": {"stamp": {"sec": 1700000007, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 59.830467223950535, "py": 79.66318379662368, "pz": 0.7375334842006318, "vx": -0.2616624940642146}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -83.92336755934508, "py": -54.09829596170788, "pz": -0.4563433018329638, "vx": 0.9402627462038056}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78404082199453, "lon": -122.40879520004684, "alt": 36.06169759147675}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -87.90589353815868, "py": -4.493107047511529, "pz": 0.24848263728595876, "vx": 0.26088598453682743}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 21.27918369250554, "py": -25.380224479792062, "pz": 1.1756957094542364, "vx": 0.8209201188102309}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -27.921087709485988, "py": 70.6549668714919, "pz": 0.7874976198431494, "vx": -0.9836543219941533}
+{"header": {"stamp": {"sec": 1700000008, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -71.76879586303049, "py": 90.66573527935233, "pz": 1.1691589611035251, "vx": -0.2141454272546871}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 88.02520623407139, "py": -61.98542539546587, "pz": -0.13152640480164934, "vx": -0.420134505670416}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78478875399265, "lon": -122.40897862879004, "alt": 3.470657785940489}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 94.78964804270936, "py": -3.2901139690231815, "pz": -0.6759942027027689, "vx": 0.7825122419027835}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -77.80768942112849, "py": -46.753501405294806, "pz": -0.6211082917844848, "vx": -0.24764433342048764}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -63.83039435823565, "py": -79.9851862290251, "pz": 0.49456511461257935, "vx": 0.712573425357055}
+{"header": {"stamp": {"sec": 1700000009, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 28.790951211563595, "py": 32.46839013296531, "pz": 2.0342904752201294, "vx": 0.15136460076732616}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 26.043801413326634, "py": -57.069125320662664, "pz": 1.6263379523677548, "vx": 0.3461667763695424}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78447940831473, "lon": -122.40942352114895, "alt": 40.29888169101626}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 6.196627517250789, "py": -69.07273503392494, "pz": -0.01033034207668626, "vx": 0.18330186517934766}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -20.443310675897308, "py": -51.52338978103753, "pz": -0.20467116358899384, "vx": 0.02736968924988825}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 76.95796172903556, "py": 72.29235824457419, "pz": -0.3930902074247904, "vx": -0.4008237927680811}
+{"header": {"stamp": {"sec": 1700000010, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 66.35432072190105, "py": -20.3903376400891, "pz": 2.330265210704036, "vx": -0.655943298744506}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 51.99861481836663, "py": 8.81345491781029, "pz": 0.1812544742402098, "vx": -0.7509789837820877}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7849473561911, "lon": -122.4103080466281, "alt": 8.22829828287159}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -46.367247474302864, "py": 75.06579712033209, "pz": -0.07593973750398675, "vx": -0.1644073574054692}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 61.58429781491054, "py": 79.45602425618219, "pz": 2.4056061045452126, "vx": -0.4831813951731597}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 78.85967603628472, "py": -63.97266188007431, "pz": 1.9083624791360339, "vx": -0.6987386811619458}
+{"header": {"stamp": {"sec": 1700000011, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 84.26429748605665, "py": -65.95226837380181, "pz": 0.8483910127448058, "vx": -0.22671814571172721}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -14.398077554070738, "py": -83.31109263384768, "pz": 0.5691178781309676, "vx": -0.8483815289756831}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7856987740349, "lon": -122.41023390990463, "alt": -0.9126672873083965}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 61.782822256755225, "py": 65.34605137056792, "pz": -0.5708622008469614, "vx": -0.7580052371549142}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -88.5205218505105, "py": 92.07597726521527, "pz": 1.431505150177597, "vx": 0.9465068269325341}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.14483279972265, "py": 92.19506350407883, "pz": -0.10158709545107336, "vx": 0.7045086596283454}
+{"header": {"stamp": {"sec": 1700000012, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 11.530647873853653, "py": -1.1639129438025435, "pz": -0.666094470636994, "vx": -0.021645080118939175}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -28.32123001191789, "py": 16.53667498898011, "pz": 1.6272399954551706, "vx": -0.20729164208013484}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78489372218761, "lon": -122.40892753339799, "alt": 49.39897105751566}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -62.788578307333296, "py": -49.602222300879376, "pz": 0.7757856097022839, "vx": -0.19774681708629516}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 21.71924375858542, "py": 60.48561658254829, "pz": -0.8988903948015348, "vx": -0.8625845201865497}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 8.956132047607042, "py": -36.60314720697397, "pz": 2.1069575880966553, "vx": 0.7198169392603675}
+{"header": {"stamp": {"sec": 1700000013, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -35.606124300580774, "py": -97.89048870281584, "pz": -0.7618315854989104, "vx": 0.6404461809658506}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 1.8357199763916725, "py": 76.89437575342595, "pz": -0.08489245894012432, "vx": 0.8564592721273254}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78490580827064, "lon": -122.40992864985826, "alt": 0.41076087390217975}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -43.81016519222407, "py": -93.8456198631399, "pz": 0.6377729724072894, "vx": 0.9993914579204555}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -60.12631986735979, "py": 51.39191649079561, "pz": -0.49824027131157256, "vx": 0.191499203670064}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -77.55201359155814, "py": 19.991953521826943, "pz": 1.1923818812529285, "vx": 0.48294224573002453}
+{"header": {"stamp": {"sec": 1700000014, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 47.25230037518031, "py": 9.122730335038852, "pz": 1.9968708267577937, "vx": -0.5211264577116661}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -43.81584362548847, "py": 13.948570886602909, "pz": -0.12759430714991693, "vx": 0.22106811341313604}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784534964456974, "lon": -122.40951298303905, "alt": 44.207379457991294}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -53.306717585371, "py": -25.75961691072264, "pz": -0.6625861959085153, "vx": -0.4429524076455795}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -15.486633536615486, "py": -83.0229013702147, "pz": 1.4210185604015777, "vx": -0.29905651526867993}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -46.74212171243176, "py": -99.93428855169851, "pz": 0.8011250191049595, "vx": 0.3547823162969559}
+{"header": {"stamp": {"sec": 1700000015, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -15.07290533366573, "py": 72.69896552641802, "pz": -0.8490638239041555, "vx": -0.8789463297267637}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 55.406260471980005, "py": -90.85188761108358, "pz": 2.675485733611447, "vx": 0.2432805745100446}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785011916024715, "lon": -122.4089566969907, "alt": 35.145276913713985}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -68.8621515368548, "py": 25.897672867352966, "pz": -0.7147408165927662, "vx": -0.29585556254832146}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 43.87242829362472, "py": 50.49409694224366, "pz": 1.4141145340882018, "vx": 0.7740779499844024}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -77.29288405181447, "py": -77.1492116662052, "pz": 0.35252766549644243, "vx": 0.06505069632460136}
+{"header": {"stamp": {"sec": 1700000016, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -36.860219772819136, "py": 56.60205153834937, "pz": 1.1069139854964178, "vx": 0.7912916263749576}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -42.901616220148874, "py": -68.09804338134654, "pz": 2.815103618285829, "vx": -0.9790929616132609}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7849106315157, "lon": -122.40930044712768, "alt": 29.859596369679515}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -27.138074129103998, "py": 38.99390155137411, "pz": -0.8357509671441469, "vx": -0.4741293665919488}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -50.82123257355568, "py": -32.567363311965835, "pz": 2.74135630307095, "vx": -0.5654953577409503}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -42.82897755557996, "py": -52.811675520056546, "pz": -0.5509989645467906, "vx": -0.20744474169237614}
+{"header": {"stamp": {"sec": 1700000017, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 76.89687680109566, "py": 57.91209209008696, "pz": 2.47129604824561, "vx": 0.6104577000143485}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 63.95983293734841, "py": -18.813050536518446, "pz": 0.8732528181418213, "vx": 0.4599131737484399}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784878297646216, "lon": -122.41027667656239, "alt": 23.116619859005855}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -91.11064450357576, "py": -35.42810750104702, "pz": 1.488433996819853, "vx": -0.5525817565783637}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 56.31015337195956, "py": -16.825420189533475, "pz": 1.933122818727096, "vx": 0.9415963976678043}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -80.74061551915904, "py": 39.79062985161369, "pz": 0.25215823156013695, "vx": 0.8974953617644112}
+{"header": {"stamp": {"sec": 1700000018, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -85.72329675479206, "py": -84.96321251893518, "pz": -0.9319379326019558, "vx": 0.680808254182377}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -56.160148047823775, "py": -31.85305574765887, "pz": -0.4422041025851515, "vx": 0.41871442600893727}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7845496403871, "lon": -122.40910124819277, "alt": 40.36555582376743}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -29.26239420925188, "py": 82.7165362027005, "pz": 2.339822096420832, "vx": -0.17102490187550434}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 35.19011629071761, "py": 79.07253590669134, "pz": -0.34873650685443147, "vx": 0.07333543980963353}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -66.4092672643413, "py": -12.605044896015855, "pz": -0.5949275804371703, "vx": 0.14739033238108856}
+{"header": {"stamp": {"sec": 1700000019, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 94.26032449030083, "py": 50.65936644210589, "pz": 2.173151800554136, "vx": 0.9922554904248169}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 98.135224665073, "py": 92.37799602507576, "pz": 0.2704800356035413, "vx": 0.03814139524117777}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78518272718708, "lon": -122.40911140694735, "alt": 39.98254595519656}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 65.65052496068182, "py": 59.36593517265874, "pz": 2.248563487271304, "vx": 0.8295847337945255}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -92.52332159530013, "py": 9.380682226479607, "pz": 0.5655663947533229, "vx": -0.6158658144816249}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -21.863112842545718, "py": 94.51361268927886, "pz": 0.795921195751057, "vx": 0.2762857888105028}
+{"header": {"stamp": {"sec": 1700000020, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -67.59231341771036, "py": -4.599873705903249, "pz": 1.8624605917824306, "vx": 0.9875495353896027}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -82.6233640661707, "py": 15.398794786956998, "pz": 0.9855939020896334, "vx": -0.8769124438979347}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78524310753364, "lon": -122.4093222786675, "alt": 43.063090426106065}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -45.9759898960843, "py": 32.28121047073191, "pz": -0.6293880205443739, "vx": 0.6340576561281646}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -3.5466826611860114, "py": 19.58071494772446, "pz": 2.6743666919264557, "vx": 0.9353682080171986}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -17.54075162101408, "py": 75.06397713506959, "pz": -0.9086010717167644, "vx": -0.5713748608879294}
+{"header": {"stamp": {"sec": 1700000021, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 87.7298802265187, "py": 75.37669113997885, "pz": -0.9104032384675964, "vx": 0.8958883786083738}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 67.56357999751143, "py": 56.054269590104866, "pz": 0.4912785678555016, "vx": -0.5497777294950277}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78493473435585, "lon": -122.40953875643937, "alt": 42.7428201312437}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 37.81754163616867, "py": -88.29238844568528, "pz": 2.9362095711419167, "vx": -0.25003447613145635}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -22.773860243013644, "py": -96.55446023544802, "pz": -0.11109364987421644, "vx": 0.4224746722115327}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -21.015003203773162, "py": 79.11311002322515, "pz": -0.5223016185213298, "vx": 0.9914945737251466}
+{"header": {"stamp": {"sec": 1700000022, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -46.6741890316568, "py": 64.33099848981678, "pz": 0.6709707707419312, "vx": 0.33534716423514666}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 67.7498595338495, "py": -24.19199078919773, "pz": 2.5714930289697735, "vx": -0.9493975102763911}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78406539598496, "lon": -122.40856789557587, "alt": 29.318102650434618}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 5.297201447789618, "py": 87.92060715177223, "pz": 1.8028261320521395, "vx": 0.38197607977060066}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -77.62555275785567, "py": -82.99977697939235, "pz": 0.3824596207936539, "vx": 0.6976786742133059}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -74.31757656128322, "py": 11.403546959094484, "pz": 0.8168074156785017, "vx": 0.5119073591448728}
+{"header": {"stamp": {"sec": 1700000023, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 17.47769806263109, "py": -85.53580942511564, "pz": 2.7081824736947966, "vx": -0.38574437945363427}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 84.77202852803555, "py": 34.74355874351241, "pz": -0.6546458879660646, "vx": -0.5289683346949104}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78499998418355, "lon": -122.40960527035523, "alt": 10.132762554191366}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 56.4331494453028, "py": -0.4494500778214672, "pz": 2.494123932849159, "vx": 0.8102980263341621}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -35.97580850464588, "py": 80.76903956019706, "pz": 1.7054981953693242, "vx": -0.7673795592228331}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -51.590016040238396, "py": -42.43149117676237, "pz": 1.206647416112602, "vx": -0.29183399936640875}
+{"header": {"stamp": {"sec": 1700000024, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 63.63795440036901, "py": -58.07365918339833, "pz": 0.8483818672457588, "vx": -0.5240046269338375}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 43.48784340311994, "py": -41.84813155875959, "pz": -0.26419125384457653, "vx": 0.7732450950878846}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78546748493568, "lon": -122.40991579963226, "alt": 28.86148308527595}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 35.35614757522049, "py": -53.182311331970865, "pz": 0.13501428488029177, "vx": -0.7160707593166726}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.93325278170201, "py": -57.26694818794131, "pz": 2.144633020177525, "vx": -0.040341331038386885}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -61.11838645651406, "py": 81.38356409567976, "pz": 0.5638894436807742, "vx": -0.4043087731723889}
+{"header": {"stamp": {"sec": 1700000025, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -31.9467313677672, "py": -68.57212447336529, "pz": 0.2478451637811372, "vx": 0.47612644885482536}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 77.27093346635033, "py": 85.0891144657082, "pz": 2.9500786598164837, "vx": -0.504024588333597}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78442654014977, "lon": -122.41008263502829, "alt": 24.956918369736762}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -20.669531173864485, "py": -37.33362736823592, "pz": -0.05581143521275045, "vx": -0.8942634827754565}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 60.82895630269641, "py": 52.25282657071304, "pz": 1.2419263215758876, "vx": -0.3607964573266491}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 99.46653549810333, "py": -27.798665631353842, "pz": 0.22372143964230595, "vx": 0.42042336523249824}
+{"header": {"stamp": {"sec": 1700000026, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 55.410647623558276, "py": -55.59608929519146, "pz": 0.8907804050869756, "vx": 0.7625755605970728}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -72.62089158412154, "py": -33.01796099571503, "pz": 1.2607230142889967, "vx": -0.08944606665045551}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78476242559569, "lon": -122.40985496533305, "alt": 48.97063978773803}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 81.03161853336078, "py": 87.05593649209479, "pz": 2.787808755336184, "vx": -0.8383415242512261}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -99.61119496975444, "py": -18.072543629511856, "pz": 2.980749777020941, "vx": 0.09884720816846504}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -89.4221726331877, "py": -34.022902640474555, "pz": 0.7986882365057812, "vx": 0.11242483196965813}
+{"header": {"stamp": {"sec": 1700000027, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -27.756842695781955, "py": -58.98843504969864, "pz": -0.015066470442569813, "vx": -0.9799252570019104}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 79.47511320860224, "py": -40.38584282197157, "pz": 1.693709263555268, "vx": -0.4976593436882334}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78519480141281, "lon": -122.41007490773279, "alt": 36.64592877492814}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -32.843965497131904, "py": 12.348851010698624, "pz": 2.3777878837611373, "vx": 0.5421554262086026}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 93.93018842989773, "py": 0.03524453603040456, "pz": -0.29027539822005843, "vx": -0.7885300487963521}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -44.551045139864776, "py": 8.768362736807362, "pz": -0.7413570573104686, "vx": -0.11658734459926368}
+{"header": {"stamp": {"sec": 1700000028, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 74.86924639700291, "py": -28.193912753092718, "pz": 2.6593738749320037, "vx": 0.8246516510210748}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -91.4165212463738, "py": 39.782937368733826, "pz": 0.4471259532434597, "vx": 0.5214596250465469}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78577708101923, "lon": -122.40868230308266, "alt": 22.378458884902255}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 89.89625039795104, "py": 27.958137704610692, "pz": 1.4707052339637166, "vx": -0.021204464530580114}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 83.39686713574955, "py": -92.29544542402364, "pz": 1.8364676153133468, "vx": 0.6951320803161352}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 92.90658961457348, "py": -28.64074865428698, "pz": 1.75183549294167, "vx": -0.9717930121426278}
+{"header": {"stamp": {"sec": 1700000029, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 10.242336297963007, "py": 76.57517313912098, "pz": 2.274031430521047, "vx": -0.7102511073197846}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.64845798580501, "py": -95.09251470934976, "pz": 2.4468013320944153, "vx": -0.20415987511866085}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78438651926006, "lon": -122.41015239361674, "alt": 20.66217588759489}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -40.544181444434415, "py": -90.81034024972492, "pz": 1.9963727756143133, "vx": -0.14293468748468596}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -81.02442143360045, "py": -86.93131705398119, "pz": -0.619099359060844, "vx": -0.2304198400174987}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -75.0535449192877, "py": -38.119375062940655, "pz": 2.3782294904732204, "vx": -0.4934290147775863}
+{"header": {"stamp": {"sec": 1700000030, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -58.07147471055528, "py": -7.407593615315562, "pz": -0.17705222016031608, "vx": 0.45291395110928523}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -22.136575018829546, "py": -24.19559696479459, "pz": 0.285851017363129, "vx": 0.8601738757353956}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.783962127108566, "lon": -122.40906886862847, "alt": 34.690107068154695}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -92.15288088026998, "py": -99.52595117841798, "pz": 1.4496940889202596, "vx": 0.7738787590019673}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -70.00604970393115, "py": 79.09211589044904, "pz": 0.574411838783599, "vx": -0.3667253063191561}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -98.91589784722993, "py": -93.9467411988008, "pz": 1.7673435103031734, "vx": 0.812600657191676}
+{"header": {"stamp": {"sec": 1700000031, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 63.88840307552772, "py": -16.037171313516367, "pz": -0.44665123296590936, "vx": -0.9203981000463347}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -53.090892681920806, "py": 95.6251308205135, "pz": -0.7587178884823755, "vx": -0.29933848568949717}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785556700543246, "lon": -122.40922775681862, "alt": 30.872436747326518}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -50.32422141441235, "py": 93.35601738932019, "pz": 2.003816336445048, "vx": 0.16072394763398834}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 94.00718907528011, "py": 40.229071711361684, "pz": 1.928108816542737, "vx": 0.019002868942328277}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 82.8076172868885, "py": -95.09557456910288, "pz": 2.412622053808431, "vx": 0.4617816102643493}
+{"header": {"stamp": {"sec": 1700000032, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 46.72409182532027, "py": 64.594241491671, "pz": 0.6436668005274682, "vx": -0.5401092626768066}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 2.6341767939072724, "py": 65.79041208731951, "pz": -0.2759343567434558, "vx": -0.8241483774320133}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78414636397032, "lon": -122.4091625749399, "alt": 43.50943851445246}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -73.85925120352447, "py": 69.12753447149802, "pz": -0.6004931373700617, "vx": -0.742896097544941}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -13.207990680185503, "py": -49.42532959843396, "pz": 2.7792945350147296, "vx": -0.32545691104962493}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 27.794854206698176, "py": 74.79510594719383, "pz": 0.9919664035610101, "vx": -0.11021180118739593}
+{"header": {"stamp": {"sec": 1700000033, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 27.472371730067692, "py": -16.34113084838654, "pz": 1.9353099116645085, "vx": 0.7104945799562878}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 17.922537425834207, "py": -15.01290126992562, "pz": -0.0971413883926886, "vx": -0.17931537057029323}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784094491052606, "lon": -122.40972835514121, "alt": -3.5398772109558045}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -68.36787923019959, "py": -78.25039894177314, "pz": 1.5108829515244562, "vx": 0.056725758697711015}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 22.711144776984924, "py": -0.6082398973550198, "pz": 1.2949342645514172, "vx": -0.48055661255538284}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -7.885037815778787, "py": 48.88399283983574, "pz": 0.13669035572731603, "vx": 0.7245130277894614}
+{"header": {"stamp": {"sec": 1700000034, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -95.43911380750454, "py": 32.070660212745395, "pz": 2.3755290183124522, "vx": 0.1312945679922639}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 54.650331997029866, "py": -81.58308140153792, "pz": 2.673445163401929, "vx": 0.12782345120412986}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78540375782005, "lon": -122.40993439450672, "alt": 23.947716991521226}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -98.05147391560008, "py": -86.941150010029, "pz": 2.0938756682703947, "vx": 0.5827271371722937}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 3.620152092676406, "py": -20.44161686391746, "pz": 1.1586297686209917, "vx": 0.6155694588383904}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 96.10249658032927, "py": -85.8225211218095, "pz": 2.4463406710913596, "vx": 0.23333851092335767}
+{"header": {"stamp": {"sec": 1700000035, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 45.81142046876252, "py": -47.802074555337015, "pz": 1.6114625399850295, "vx": -0.3453467928552223}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 24.603296289615926, "py": 4.625655149847091, "pz": 2.274201603697, "vx": 0.10510065508810396}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784467662404126, "lon": -122.40897436858431, "alt": 38.23524639277628}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -49.82884263067122, "py": -9.089510461432269, "pz": 1.7151765920140623, "vx": -0.228559955886957}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -42.61201971637527, "py": 41.00160173992634, "pz": -0.5692483049187088, "vx": 0.7103318360386575}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 33.76633904238278, "py": 93.31625083935668, "pz": 0.6188724320002152, "vx": 0.493147440178733}
+{"header": {"stamp": {"sec": 1700000036, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -6.6267073119119, "py": -63.803387949117976, "pz": 2.6074329168387362, "vx": -0.8467250183333954}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -36.88843426853437, "py": 74.20678921296536, "pz": 2.291836217733411, "vx": 0.8522392780368688}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78546138942543, "lon": -122.40873596507507, "alt": -1.1194691230954557}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -73.54131742016874, "py": 89.82077752563927, "pz": 2.709939969394707, "vx": 0.21064805792572283}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 14.199192774134033, "py": 72.06963795706733, "pz": 0.8000609541989248, "vx": -0.5107404594629075}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -69.34175341722562, "py": -57.83641461287888, "pz": -0.6357397608908641, "vx": -0.5643384119411037}
+{"header": {"stamp": {"sec": 1700000037, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.68483962239449, "py": -5.184180830795498, "pz": 0.9847789102735938, "vx": -0.35299052898729855}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 92.33221384366189, "py": -45.71057492840127, "pz": -0.5930780108492266, "vx": 0.2975273067382427}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78512752734512, "lon": -122.40897461632275, "alt": 17.049794725137858}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -38.01521999714459, "py": -93.82875925642902, "pz": 2.3161026393329163, "vx": -0.5221033361607157}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 31.453290774338086, "py": -24.852037790382084, "pz": 1.839874662410688, "vx": 0.08301865513668183}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 67.90783359866123, "py": 0.12236949214583603, "pz": 1.6473193206061891, "vx": 0.9145265440283599}
+{"header": {"stamp": {"sec": 1700000038, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 35.03070525812245, "py": -77.50372481996958, "pz": 2.914982146051635, "vx": -0.5148058350630811}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 25.164827776614203, "py": 49.08814926882431, "pz": 1.8891557628529174, "vx": -0.24947671848237862}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78420417339291, "lon": -122.40984543262766, "alt": 37.06120978255362}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -67.7229580643638, "py": -45.6546753443023, "pz": 0.937670990153324, "vx": 0.8982210681824883}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 81.99273131127578, "py": 46.9974062450072, "pz": 1.8738693160273576, "vx": 0.5277026012372863}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.45685336474793, "py": 15.133011227390043, "pz": 1.9601903442717283, "vx": -0.005281569761301896}
+{"header": {"stamp": {"sec": 1700000039, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -79.33822810877952, "py": 60.25057763691706, "pz": 0.941498695777435, "vx": -0.6573406318218219}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 28.886418593684226, "py": 40.909264130716, "pz": 1.614234898563959, "vx": 0.3891576327719195}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78586634922108, "lon": -122.4094401809466, "alt": 30.24494561650169}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 49.661985698974064, "py": 8.106518040357443, "pz": 2.5945099776064398, "vx": 0.19467864254575185}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -86.38883320319746, "py": 90.55700302647912, "pz": -0.6759365514245926, "vx": -0.0017394372697904226}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -2.7082838195229186, "py": 90.74095776066596, "pz": 2.0088633803841294, "vx": 0.19609539390379838}
+{"header": {"stamp": {"sec": 1700000040, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 52.95713069802065, "py": 2.5859491190999506, "pz": 2.5104678072617816, "vx": -0.583039120853054}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 44.28294555189504, "py": -14.386329193496579, "pz": 1.4735357770485331, "vx": -0.948344318150752}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78398959421712, "lon": -122.40860595025656, "alt": 5.133626248771963}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -24.31275574952832, "py": 52.948535161916055, "pz": 0.4797331154755833, "vx": 0.6656818531974176}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -65.51058982308247, "py": 35.60969747428388, "pz": -0.39446413948055914, "vx": -0.3037423415960716}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -43.5555629948136, "py": 64.21282519317856, "pz": 1.4822530983219777, "vx": -0.23167921147678883}
+{"header": {"stamp": {"sec": 1700000041, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -69.35064769181778, "py": 39.08453482141516, "pz": 1.1163120476240551, "vx": 0.2841642266614115}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -15.674249427453987, "py": 79.21749311938589, "pz": 1.1537193551415679, "vx": 0.960803570560762}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784301080671725, "lon": -122.40885515769602, "alt": 34.01631751738746}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -95.52518402467571, "py": -90.08924884050403, "pz": 0.8140253849569099, "vx": -0.1444811218499613}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -88.303975943486, "py": -64.51789099838145, "pz": 2.586927033895901, "vx": -0.9457149495918804}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 40.043901056049776, "py": 12.677599320017748, "pz": 0.058981245771717816, "vx": -0.7848912090312835}
+{"header": {"stamp": {"sec": 1700000042, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -85.41966737454021, "py": -81.08425321870006, "pz": -0.06634265380033288, "vx": -0.6518016183752597}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 46.06803512078318, "py": 6.4305515569656535, "pz": 0.8780709277254035, "vx": 0.08162941830979165}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784726392790986, "lon": -122.4101392422516, "alt": 36.272513776286395}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -14.467986382095049, "py": 2.7823011032464393, "pz": 0.12040226544978183, "vx": 0.08715576394332114}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 2.812085841069532, "py": 36.75231198679222, "pz": -0.5272777676536067, "vx": -0.11613838469069793}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -45.99317350880266, "py": 29.775675502253563, "pz": 0.10464994902077995, "vx": 0.7941316772944524}
+{"header": {"stamp": {"sec": 1700000043, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 91.98727475230018, "py": -83.77230757226246, "pz": 2.0163485284579035, "vx": 0.5723776028650887}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 80.14797321400846, "py": 47.42447936811968, "pz": 2.1058503310366996, "vx": -0.39193570724560256}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785347704979294, "lon": -122.40886195626736, "alt": 42.48549449087784}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -22.87388294931786, "py": -79.44120958515018, "pz": 1.330376522572112, "vx": 0.8129907302844168}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -81.99600325509311, "py": 11.966151187381783, "pz": -0.8183356650663729, "vx": -0.12696047074748373}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 16.89693884238777, "py": 62.37256101117339, "pz": 2.421509395844223, "vx": 0.6482087239551948}
+{"header": {"stamp": {"sec": 1700000044, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 21.00167694467612, "py": -62.88244672265528, "pz": 2.5512569323557863, "vx": -0.9533052059159922}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -80.78462455219321, "py": 25.327125019799368, "pz": 1.0719038044655576, "vx": -0.5869140564752457}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.785016231594156, "lon": -122.4102391892256, "alt": 12.245936339688384}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -99.26156583620352, "py": -76.22973232589365, "pz": 1.2219810268112097, "vx": 0.5939385604035516}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -60.03390527409831, "py": -97.32853755575692, "pz": 1.2378746162004175, "vx": 0.5407897916190081}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -12.645279707921958, "py": 86.66988629869664, "pz": 2.3572006816600015, "vx": -0.6777328922912351}
+{"header": {"stamp": {"sec": 1700000045, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -89.28988984681278, "py": -82.17210179019926, "pz": 0.26418276877003377, "vx": -0.6580786048013412}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 14.107170998407085, "py": -98.8852633736154, "pz": 0.2516672544667551, "vx": 0.4698954262332897}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7854691294317, "lon": -122.41004815386106, "alt": 16.201787105073176}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 4.073371269440273, "py": 82.73810418994626, "pz": 1.7198609834669734, "vx": -0.040254909544878315}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -10.3919276134895, "py": 85.93870179317443, "pz": 0.26155533665966346, "vx": 0.9336639437369563}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 49.794348799218255, "py": -50.26498144840165, "pz": 1.3759694415184618, "vx": 0.9249354781278543}
+{"header": {"stamp": {"sec": 1700000046, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -49.56719275391024, "py": -77.65086545015674, "pz": 0.99357679344319, "vx": -0.16588082762680623}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 7.845207253081625, "py": 92.1174115522482, "pz": 1.5867540116254055, "vx": -0.878011716639714}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78450028326711, "lon": -122.40954842570883, "alt": 23.49986258602118}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 80.56201842745926, "py": 34.309723485168206, "pz": -0.743922343451333, "vx": 0.11918572892524604}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 1.2833844595121917, "py": -44.26124407946791, "pz": -0.0720728540845228, "vx": -0.4213519085176156}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 95.32446275955436, "py": -90.25439256180468, "pz": 2.154394419182976, "vx": 0.11334762090849715}
+{"header": {"stamp": {"sec": 1700000047, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -19.75181285565054, "py": 99.08870816143946, "pz": 0.3345088311361264, "vx": 0.06428014614384336}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -33.00600646877824, "py": 28.580605514572767, "pz": 2.200594326776277, "vx": -0.9083450174609944}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78579738935865, "lon": -122.40867765313196, "alt": 23.963769400218077}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 93.7953604507492, "py": -52.89412349801951, "pz": 0.15196018058797645, "vx": -0.6165535039283201}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -31.52901568662979, "py": 44.83221449210461, "pz": 2.2739951155143654, "vx": -0.5859625577769416}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 28.894870873864107, "py": -69.94984749583287, "pz": 2.9590001122171103, "vx": 0.22097074381722748}
+{"header": {"stamp": {"sec": 1700000048, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 16.03333163582849, "py": 60.625081855851136, "pz": -0.1009186179817868, "vx": 0.5733632366427401}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 27.427298613505215, "py": -76.29963535933814, "pz": 0.41949766745257455, "vx": 0.9914890872428497}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78470102696776, "lon": -122.40945638441787, "alt": 4.39487923358986}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 7.454310581397067, "py": 92.67512599118709, "pz": 0.961314111682416, "vx": 0.659723902864483}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -0.9244651265378252, "py": 5.898672064948428, "pz": 0.3600900979089161, "vx": -0.18324410621656761}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 63.644105338820935, "py": 24.131783014229697, "pz": 1.9302137131293517, "vx": -0.03838288044505067}
+{"header": {"stamp": {"sec": 1700000049, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -76.31897596302888, "py": 66.42509759659785, "pz": 1.3620092489036169, "vx": 0.33969969575359005}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -76.59885868892417, "py": 29.426695151705502, "pz": 2.6206649060438294, "vx": -0.26948377382074273}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78542637896059, "lon": -122.4098105307247, "alt": 35.48149820689168}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 31.106534174177995, "py": -64.38876885365505, "pz": 2.312260313059088, "vx": -0.32987377096148074}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -26.196247202131744, "py": 53.6773062040713, "pz": 0.020073963831206854, "vx": -0.5992098436437883}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 7.211169177239384, "py": -58.1909569495044, "pz": 0.37838554668767377, "vx": -0.25874556175586894}
+{"header": {"stamp": {"sec": 1700000050, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -84.50455896671869, "py": 22.979344139490962, "pz": 0.10031668047614972, "vx": -0.5446568467636418}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -53.34861741355778, "py": 35.77592824692124, "pz": 1.1962933236364446, "vx": 0.6635841087277965}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78468759749935, "lon": -122.40880400291454, "alt": 35.049530106244056}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -55.082407629459645, "py": 38.962874476984865, "pz": 0.9700669809378333, "vx": -0.5922322878495501}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 10.874518503432057, "py": -96.19333081857992, "pz": 2.573807308367386, "vx": 0.892923624963156}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 62.80446744935969, "py": 57.677391337963286, "pz": 0.009377593524062977, "vx": 0.9975545128088352}
+{"header": {"stamp": {"sec": 1700000051, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 85.37865419559068, "py": -60.763869560406, "pz": 2.042865278120835, "vx": -0.8418821495677213}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 84.22199425292081, "py": -98.9276699822206, "pz": 0.6246456938865603, "vx": 0.8790138878640814}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78457755662439, "lon": -122.41032632770087, "alt": 4.061218230977111}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -64.01974080651917, "py": -89.7678348538285, "pz": 2.875959691567842, "vx": 0.7776319744841618}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 46.62782543954651, "py": 90.86910811749576, "pz": -0.6486216781568284, "vx": -0.48811137440698105}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -94.37686344103382, "py": -45.975947821839014, "pz": 0.5808041106470434, "vx": 0.4176427303588386}
+{"header": {"stamp": {"sec": 1700000052, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -10.346729158405168, "py": -78.23588185903657, "pz": 1.494268211895998, "vx": -0.5943313766530766}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 43.49490261388965, "py": -2.946485823872152, "pz": 2.592660934184523, "vx": 0.558167288767569}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78458478205645, "lon": -122.40885113561971, "alt": 49.948795130806054}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 1.3132090778267695, "py": -80.86064196380677, "pz": 2.6267188846352862, "vx": -0.7987757186754214}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 79.841340476375, "py": 97.61426936130658, "pz": -0.6919921682199365, "vx": -0.6200800904938065}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -67.20248505227522, "py": -14.243789345954568, "pz": 2.21405951952882, "vx": 0.6001307867526022}
+{"header": {"stamp": {"sec": 1700000053, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 43.900506768884185, "py": -35.51378085777715, "pz": 0.27572838433990143, "vx": 0.2984725735893001}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -61.469605530692945, "py": 58.826804163224665, "pz": 2.242538538589262, "vx": 0.9578495841441246}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.7857755376352, "lon": -122.41032100654787, "alt": 2.566323876044227}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 87.48140651990687, "py": 54.642752671896005, "pz": -0.2081431773166753, "vx": 0.9675261208023826}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 78.12897641888179, "py": 29.85923962532567, "pz": 1.4392444240102158, "vx": -0.4511783526186117}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -27.863298993492407, "py": -64.72335525071688, "pz": 0.536429234679825, "vx": 0.0026346479139207624}
+{"header": {"stamp": {"sec": 1700000054, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 86.4243414046434, "py": -82.4790693846795, "pz": 0.5895543315183471, "vx": 0.48450774989975276}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 65.05090346495638, "py": -9.321989022533998, "pz": 0.2873510572332585, "vx": 0.03540359041890051}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.784091726815994, "lon": -122.40961942805836, "alt": 14.287026409385213}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 93.89194325857392, "py": -89.81547266677777, "pz": 0.1192815232723019, "vx": -0.1167495310752823}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -88.37151647408024, "py": -24.34319785640257, "pz": 0.0770083380058908, "vx": -0.42832254520245205}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 17.95296719139499, "py": -54.09389026741741, "pz": 0.25925176412354256, "vx": -0.9217179237701366}
+{"header": {"stamp": {"sec": 1700000055, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 9.191386000293548, "py": -69.82214563015734, "pz": 2.558655175274192, "vx": 0.3511950089834943}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 15.958591277552287, "py": -42.07363305587065, "pz": 1.0907457250322348, "vx": -0.1812863700692956}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78579185011239, "lon": -122.40973904294287, "alt": 41.97155722589153}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -72.25834208864349, "py": -98.5535049524712, "pz": 2.5196137536536103, "vx": 0.19346226068878614}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 22.142950942653812, "py": 30.100345555298304, "pz": 1.2780176398899274, "vx": -0.9467863772741314}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 14.648143395618177, "py": 99.7412645424387, "pz": -0.6851866374953842, "vx": -0.8902130496997418}
+{"header": {"stamp": {"sec": 1700000056, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 12.711769210834163, "py": 15.95393810106303, "pz": 1.0510880686777786, "vx": -0.41437769141543124}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -19.243662015470505, "py": 59.76269962662013, "pz": -0.8112964612001352, "vx": -0.5512166097215425}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78440336924141, "lon": -122.4087683478792, "alt": 12.241559792697931}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -62.29580202799352, "py": 18.803335080249667, "pz": 1.1055441491935558, "vx": -0.8591062423078208}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 70.58312384775326, "py": 5.1892691681922685, "pz": 0.006178851918150263, "vx": -0.8225912226841215}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 8.025509899529368, "py": 54.26826523984741, "pz": -0.8160862863229392, "vx": -0.25831598136599343}
+{"header": {"stamp": {"sec": 1700000057, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -37.25888804510522, "py": 8.34323670791548, "pz": 2.587659713128985, "vx": 0.6464546788819279}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 41.607390948523346, "py": -81.30890664614677, "pz": 0.18506993295281604, "vx": -0.13522927841307353}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78510541451645, "lon": -122.40846132149107, "alt": 29.947194610646733}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 62.70744392418263, "py": 13.0950367603661, "pz": 2.467500659996806, "vx": -0.7142650119580982}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -71.02665289776326, "py": 31.243810563938865, "pz": 2.188859541541611, "vx": 0.7225508329486503}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 68.25692418503124, "py": -51.430268438946484, "pz": 1.6504574491478103, "vx": 0.7879048219821179}
+{"header": {"stamp": {"sec": 1700000058, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 86.58417047962101, "py": 88.3102406493536, "pz": 1.7000336626935253, "vx": -0.9186727272727685}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/camera/front", "height": 480, "width": 640, "encoding": "rgb8", "data": "binary_truncated"}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/lidar/scan", "ranges_count": 360, "range_min": 0.1, "range_max": 30.0}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -59.85511716548713, "py": -49.744430270555306, "pz": 2.296198881609063, "vx": 0.11199317021116473}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 0}, "frame_id": "r1_base"}, "_tp": "/r1/gps", "lat": 37.78589109124257, "lon": -122.40920643675796, "alt": 13.418665990454485}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 200000047}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 16.666154335312328, "py": 71.55323399291402, "pz": 1.807087302512271, "vx": 0.4034035842971935}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 400000095}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -17.18627411264015, "py": 36.11094598767005, "pz": -0.35061520330415563, "vx": -0.4274008624398272}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 599999904}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": -88.01947654218975, "py": -12.138011339887385, "pz": 0.8574471583985115, "vx": 0.7414689963008461}
+{"header": {"stamp": {"sec": 1700000059, "nanosec": 799999952}, "frame_id": "r1_base"}, "_tp": "/r1/odometry", "px": 45.713491548527685, "py": -69.5172680967547, "pz": -0.0691867496446299, "vx": -0.38892827739361535}

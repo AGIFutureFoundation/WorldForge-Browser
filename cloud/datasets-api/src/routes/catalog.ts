@@ -1,6 +1,6 @@
 import type { Hono } from "hono";
 
-const MANIFEST_URL = "https://raw.githubusercontent.com/tempgithubhelp/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json";
+const MANIFEST_URL = "https://raw.githubusercontent.com/AGIFutureFoundation/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json";
 
 export function registerCatalogRoutes(app: Hono) {
   app.get("/v1/catalog", async (c) => {
@@ -25,7 +25,7 @@ export function registerCatalogRoutes(app: Hono) {
   });
   app.get("/v1/sample/:file", async (c) => {
     const file = c.req.param("file");
-    const res = await fetch(`https://raw.githubusercontent.com/tempgithubhelp/WorldForge-Browser/main/datasets/worldforge-ros-training/samples/${file}`);
+    const res = await fetch(`https://raw.githubusercontent.com/AGIFutureFoundation/WorldForge-Browser/main/datasets/worldforge-ros-training/samples/${file}`);
     if (!res.ok) return c.json({ error: "sample_not_found", file }, 404);
     const body = await res.arrayBuffer();
     const ct = file.endsWith(".jsonl") ? "application/x-ndjson" : file.endsWith(".parquet") ? "application/octet-stream" : "application/json";

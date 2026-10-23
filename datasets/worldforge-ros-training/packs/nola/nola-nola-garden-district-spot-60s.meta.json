@@ -1,0 +1,18 @@
+{
+  "run_id": "nola-nola-garden-district-spot-60s",
+  "robot": "spot",
+  "robot_type": "quadruped",
+  "world": "nola-garden-district",
+  "world_name": "New Orleans Garden District",
+  "lat": 29.9311,
+  "lon": -90.0831,
+  "duration_sec": 60,
+  "message_count": 1560,
+  "topics": [
+    "/spot/camera/front",
+    "/spot/odometry",
+    "/spot/imu",
+    "/spot/joint_states"
+  ],
+  "generated_at": "2026-10-23T00:14:42.887037+00:00"
+}

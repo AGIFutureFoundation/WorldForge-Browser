@@ -45,7 +45,7 @@ def gen_msgs(rid,robot,world,dur=60):
     for ti in range(dur*10):
         ts=bt+ti*0.1
         for topic,mt,rate in TOPICS[robot]:
-            if ti%max(1,10//(rate//10))!=0: continue
+            if ti%max(1,10//max(1,rate//10))!=0: continue
             msgs.append(_m(mt,topic,ts,rng,world,robot))
     msgs.sort(key=lambda m:m.get("_t",0)); return msgs
 
