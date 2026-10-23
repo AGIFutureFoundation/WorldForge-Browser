@@ -22,6 +22,20 @@
    "French Quarter Anchor 3",
    "French Quarter Anchor 4",
    "French Quarter Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-garden-district": {
@@ -47,6 +61,20 @@
    "Garden District Anchor 3",
    "Garden District Anchor 4",
    "Garden District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-warehouse": {
@@ -72,6 +100,20 @@
    "Warehouse District Anchor 3",
    "Warehouse District Anchor 4",
    "Warehouse District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-bywater": {
@@ -97,6 +139,20 @@
    "Bywater Anchor 3",
    "Bywater Anchor 4",
    "Bywater Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-uptown": {
@@ -122,6 +178,20 @@
    "Uptown Anchor 3",
    "Uptown Anchor 4",
    "Uptown Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-mid-city": {
@@ -147,6 +217,20 @@
    "Mid-City Anchor 3",
    "Mid-City Anchor 4",
    "Mid-City Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-treme": {
@@ -172,6 +256,20 @@
    "Treme Anchor 3",
    "Treme Anchor 4",
    "Treme Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-marigny": {
@@ -197,6 +295,20 @@
    "Marigny Anchor 3",
    "Marigny Anchor 4",
    "Marigny Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-central-city": {
@@ -222,6 +334,20 @@
    "Central City Anchor 3",
    "Central City Anchor 4",
    "Central City Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-lower-ninth": {
@@ -247,6 +373,20 @@
    "Lower Ninth Ward Anchor 3",
    "Lower Ninth Ward Anchor 4",
    "Lower Ninth Ward Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-gentilly": {
@@ -272,6 +412,20 @@
    "Gentilly Anchor 3",
    "Gentilly Anchor 4",
    "Gentilly Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-lakeview": {
@@ -297,6 +451,20 @@
    "Lakeview Anchor 3",
    "Lakeview Anchor 4",
    "Lakeview Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-metairie": {
@@ -322,6 +490,20 @@
    "Metairie Anchor 3",
    "Metairie Anchor 4",
    "Metairie Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-kenner": {
@@ -347,6 +529,20 @@
    "Kenner Anchor 3",
    "Kenner Anchor 4",
    "Kenner Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-chalmette": {
@@ -372,6 +568,20 @@
    "Chalmette Anchor 3",
    "Chalmette Anchor 4",
    "Chalmette Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-arabi": {
@@ -397,6 +607,20 @@
    "Arabi Anchor 3",
    "Arabi Anchor 4",
    "Arabi Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-violet": {
@@ -422,6 +646,20 @@
    "Violet Anchor 3",
    "Violet Anchor 4",
    "Violet Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-plaquemines": {
@@ -447,6 +685,20 @@
    "Plaquemines Parish Anchor 3",
    "Plaquemines Parish Anchor 4",
    "Plaquemines Parish Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-st-bernard": {
@@ -472,6 +724,20 @@
    "St. Bernard Parish Anchor 3",
    "St. Bernard Parish Anchor 4",
    "St. Bernard Parish Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "nola-jefferson": {
@@ -497,6 +763,20 @@
    "Jefferson Parish Anchor 3",
    "Jefferson Parish Anchor 4",
    "Jefferson Parish Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-financial": {
@@ -522,6 +802,20 @@
    "Financial District Anchor 3",
    "Financial District Anchor 4",
    "Financial District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-mission": {
@@ -547,6 +841,20 @@
    "Mission District Anchor 3",
    "Mission District Anchor 4",
    "Mission District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-soma": {
@@ -572,6 +880,20 @@
    "SOMA Anchor 3",
    "SOMA Anchor 4",
    "SOMA Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-marina": {
@@ -597,6 +919,20 @@
    "Marina District Anchor 3",
    "Marina District Anchor 4",
    "Marina District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-chinatown": {
@@ -622,6 +958,20 @@
    "Chinatown Anchor 3",
    "Chinatown Anchor 4",
    "Chinatown Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-sunset": {
@@ -647,6 +997,20 @@
    "Sunset District Anchor 3",
    "Sunset District Anchor 4",
    "Sunset District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-nob-hill": {
@@ -672,6 +1036,20 @@
    "Nob Hill Anchor 3",
    "Nob Hill Anchor 4",
    "Nob Hill Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-castro": {
@@ -697,6 +1075,20 @@
    "Castro District Anchor 3",
    "Castro District Anchor 4",
    "Castro District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-haight": {
@@ -722,6 +1114,20 @@
    "Haight-Ashbury Anchor 3",
    "Haight-Ashbury Anchor 4",
    "Haight-Ashbury Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-embarcadero": {
@@ -747,6 +1153,20 @@
    "Embarcadero Anchor 3",
    "Embarcadero Anchor 4",
    "Embarcadero Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-presidio": {
@@ -772,6 +1192,20 @@
    "Presidio Anchor 3",
    "Presidio Anchor 4",
    "Presidio Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-pacific-heights": {
@@ -797,6 +1231,20 @@
    "Pacific Heights Anchor 3",
    "Pacific Heights Anchor 4",
    "Pacific Heights Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-excelsior": {
@@ -822,6 +1270,20 @@
    "Excelsior Anchor 3",
    "Excelsior Anchor 4",
    "Excelsior Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-visitacion": {
@@ -847,6 +1309,20 @@
    "Visitacion Valley Anchor 3",
    "Visitacion Valley Anchor 4",
    "Visitacion Valley Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-bayview": {
@@ -872,6 +1348,20 @@
    "Bayview Anchor 3",
    "Bayview Anchor 4",
    "Bayview Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-potrero": {
@@ -897,6 +1387,20 @@
    "Potrero Hill Anchor 3",
    "Potrero Hill Anchor 4",
    "Potrero Hill Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-dogpatch": {
@@ -922,6 +1426,20 @@
    "Dogpatch Anchor 3",
    "Dogpatch Anchor 4",
    "Dogpatch Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-western-addition": {
@@ -947,6 +1465,20 @@
    "Western Addition Anchor 3",
    "Western Addition Anchor 4",
    "Western Addition Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-hayes-valley": {
@@ -972,6 +1504,20 @@
    "Hayes Valley Anchor 3",
    "Hayes Valley Anchor 4",
    "Hayes Valley Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-nopa": {
@@ -997,6 +1543,20 @@
    "NOPA Anchor 3",
    "NOPA Anchor 4",
    "NOPA Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-richmond": {
@@ -1022,6 +1582,20 @@
    "Richmond District Anchor 3",
    "Richmond District Anchor 4",
    "Richmond District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-outer-sunset": {
@@ -1047,6 +1621,20 @@
    "Outer Sunset Anchor 3",
    "Outer Sunset Anchor 4",
    "Outer Sunset Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-tenderloin": {
@@ -1072,6 +1660,20 @@
    "Tenderloin Anchor 3",
    "Tenderloin Anchor 4",
    "Tenderloin Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-civic-center": {
@@ -1097,6 +1699,20 @@
    "Civic Center Anchor 3",
    "Civic Center Anchor 4",
    "Civic Center Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-south-beach": {
@@ -1122,6 +1738,20 @@
    "South Beach Anchor 3",
    "South Beach Anchor 4",
    "South Beach Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-rincon-hill": {
@@ -1147,6 +1777,20 @@
    "Rincon Hill Anchor 3",
    "Rincon Hill Anchor 4",
    "Rincon Hill Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-yerba-buena": {
@@ -1172,6 +1816,20 @@
    "Yerba Buena Anchor 3",
    "Yerba Buena Anchor 4",
    "Yerba Buena Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-telegraph-hill": {
@@ -1197,6 +1855,20 @@
    "Telegraph Hill Anchor 3",
    "Telegraph Hill Anchor 4",
    "Telegraph Hill Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-russian-hill": {
@@ -1222,6 +1894,20 @@
    "Russian Hill Anchor 3",
    "Russian Hill Anchor 4",
    "Russian Hill Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sf-north-beach": {
@@ -1247,6 +1933,20 @@
    "North Beach Anchor 3",
    "North Beach Anchor 4",
    "North Beach Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "franka-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-loop": {
@@ -1272,6 +1972,20 @@
    "The Loop Anchor 3",
    "The Loop Anchor 4",
    "The Loop Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-river-north": {
@@ -1297,6 +2011,20 @@
    "River North Anchor 3",
    "River North Anchor 4",
    "River North Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-south-loop": {
@@ -1322,6 +2050,20 @@
    "South Loop Anchor 3",
    "South Loop Anchor 4",
    "South Loop Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-west-loop": {
@@ -1347,6 +2089,20 @@
    "West Loop Anchor 3",
    "West Loop Anchor 4",
    "West Loop Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-lincoln-park": {
@@ -1372,6 +2128,20 @@
    "Lincoln Park Anchor 3",
    "Lincoln Park Anchor 4",
    "Lincoln Park Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-wicker-park": {
@@ -1397,6 +2167,20 @@
    "Wicker Park Anchor 3",
    "Wicker Park Anchor 4",
    "Wicker Park Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-pilsen": {
@@ -1422,6 +2206,20 @@
    "Pilsen Anchor 3",
    "Pilsen Anchor 4",
    "Pilsen Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-chinatown": {
@@ -1447,6 +2245,20 @@
    "Chinatown Anchor 3",
    "Chinatown Anchor 4",
    "Chinatown Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-ohare": {
@@ -1472,6 +2284,20 @@
    "OHare Area Anchor 3",
    "OHare Area Anchor 4",
    "OHare Area Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hi-medical-district": {
@@ -1497,6 +2323,20 @@
    "Medical District Anchor 3",
    "Medical District Anchor 4",
    "Medical District Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-downtown": {
@@ -1522,6 +2362,20 @@
    "Downtown Houston Anchor 3",
    "Downtown Houston Anchor 4",
    "Downtown Houston Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-medical-center": {
@@ -1547,6 +2401,20 @@
    "Texas Medical Center Anchor 3",
    "Texas Medical Center Anchor 4",
    "Texas Medical Center Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-energy-corridor": {
@@ -1572,6 +2440,20 @@
    "Energy Corridor Anchor 3",
    "Energy Corridor Anchor 4",
    "Energy Corridor Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-clear-lake": {
@@ -1597,6 +2479,20 @@
    "Clear Lake Anchor 3",
    "Clear Lake Anchor 4",
    "Clear Lake Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-woodlands": {
@@ -1622,6 +2518,20 @@
    "The Woodlands Anchor 3",
    "The Woodlands Anchor 4",
    "The Woodlands Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-katy": {
@@ -1647,6 +2557,20 @@
    "Katy Anchor 3",
    "Katy Anchor 4",
    "Katy Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-sugar-land": {
@@ -1672,6 +2596,20 @@
    "Sugar Land Anchor 3",
    "Sugar Land Anchor 4",
    "Sugar Land Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hogalleria": {
@@ -1697,6 +2635,20 @@
    "Galleria Anchor 3",
    "Galleria Anchor 4",
    "Galleria Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "hoheights": {
@@ -1722,6 +2674,20 @@
    "The Heights Anchor 3",
    "The Heights Anchor 4",
    "The Heights Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "ho-east-end": {
@@ -1747,6 +2713,20 @@
    "East End Anchor 3",
    "East End Anchor 4",
    "East End Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-salado-iland": {
@@ -1772,6 +2752,20 @@
    "San Antonio Santuario Anchor 3",
    "San Antonio Santuario Anchor 4",
    "San Antonio Santuario Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-market-squ": {
@@ -1797,6 +2791,20 @@
    "Market Square Anchor 3",
    "Market Square Anchor 4",
    "Market Square Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-river-walk": {
@@ -1822,6 +2830,20 @@
    "River Walk Anchor 3",
    "River Walk Anchor 4",
    "River Walk Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-pearl": {
@@ -1847,6 +2869,20 @@
    "The Pearl Anchor 3",
    "The Pearl Anchor 4",
    "The Pearl Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-mission": {
@@ -1872,6 +2908,20 @@
    "Mission Street Anchor 3",
    "Mission Street Anchor 4",
    "Mission Street Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-downtown": {
@@ -1897,6 +2947,20 @@
    "Downtown Anchor 3",
    "Downtown Anchor 4",
    "Downtown Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-alamodito": {
@@ -1922,6 +2986,20 @@
    "Alamodito Anchor 3",
    "Alamodito Anchor 4",
    "Alamodito Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-sites-augusta": {
@@ -1947,6 +3025,20 @@
    "Sites and Swap Anchor 3",
    "Sites and Swap Anchor 4",
    "Sites and Swap Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-affoirtable-housing": {
@@ -1972,6 +3064,20 @@
    "Sun You Indian Creek Anchor 3",
    "Sun You Indian Creek Anchor 4",
    "Sun You Indian Creek Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  },
  "sa-kingwilliam": {
@@ -1997,6 +3103,20 @@
    "Kingwilliam Anchor 3",
    "Kingwilliam Anchor 4",
    "Kingwilliam Anchor 5"
+  ],
+  "dataset_runs": [
+   {
+    "robot": "universal-robots-ur10e",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   },
+   {
+    "robot": "frig ta-fr3",
+    "duration": 60,
+    "topics": 3,
+    "price_usd": 0.01
+   }
   ]
  }
 }
