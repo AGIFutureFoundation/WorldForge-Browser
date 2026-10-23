@@ -14,13 +14,13 @@ SAMPLES.mkdir(parents=True,exist_ok=True); PACKS.mkdir(parents=True,exist_ok=Tru
 
 REGIONS = {
     "bay-area": {"worlds": [
-        {"slug":"sf-downtown","name":"San Francisco Downtown","lat":37.7749,"lon":-122.4194},
-        {"slug":"oakland-uptown","name":"Oakland Uptown","lat":37.8044,"lon":-122.2712},
-        {"slug":"san-jose-santana-row","name":"San Jose Santana Row","lat":37.3230,"lon":-121.9470}],
+        {"slug":"sf-financial","name":"SF Financial District","lat":37.7912,"lon":-122.4015},
+        {"slug":"sf-soma","name":"SF SoMa","lat":37.7849,"lon":-122.4094},
+        {"slug":"sf-mission","name":"SF Mission","lat":37.7599,"lon":-122.4148}],
         "robots":["spot","stretch","r1"]},
     "nola": {"worlds": [
-        {"slug":"nola-french-quarter","name":"New Orleans French Quarter","lat":29.9584,"lon":-90.0644},
-        {"slug":"nola-garden-district","name":"New Orleans Garden District","lat":29.9287,"lon":-90.0878}],
+        {"slug":"nola-french-quarter","name":"New Orleans French Quarter","lat":29.9574,"lon":-90.0648},
+        {"slug":"nola-garden-district","name":"New Orleans Garden District","lat":29.9311,"lon":-90.0831}],
         "robots":["spot","r1"]},
     "dental": {"worlds": [
         {"slug":"unspoken-smiles","name":"Unspoken Smiles Dental Clinic","lat":37.7800,"lon":-122.4100}],
@@ -98,8 +98,8 @@ def gen_run(rid,robot,world,od,dur=60):
 
 def gen_sample():
     print("=== FREE SAMPLE ==="); w=REGIONS["bay-area"]["worlds"][0]
-    e=gen_run("sample-sf-downtown-spot-60s","spot",w,SAMPLES,60)
-    e.update({"price_usd":0.0,"tier":"free","description":"Free sample: Spot, 60s SF Downtown"}); return e
+    e=gen_run("sample-sf-financial-spot-60s","spot",w,SAMPLES,60)
+    e.update({"price_usd":0.0,"tier":"free","description":"Free sample: Spot, 60s SF Financial District"}); return e
 
 def gen_dental():
     print("=== DENTAL PACK ==="); dd=PACKS/"dental"; dd.mkdir(parents=True,exist_ok=True)

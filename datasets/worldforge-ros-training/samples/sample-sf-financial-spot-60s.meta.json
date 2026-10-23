@@ -1,11 +1,11 @@
 {
-  "run_id": "sample-sf-downtown-spot-60s",
+  "run_id": "sample-sf-financial-spot-60s",
   "robot": "spot",
   "robot_type": "quadruped",
-  "world": "sf-downtown",
-  "world_name": "San Francisco Downtown",
-  "lat": 37.7749,
-  "lon": -122.4194,
+  "world": "sf-financial",
+  "world_name": "SF Financial District",
+  "lat": 37.7912,
+  "lon": -122.4015,
   "duration_sec": 60,
   "message_count": 1560,
   "topics": [
@@ -14,5 +14,5 @@
     "/spot/imu",
     "/spot/joint_states"
   ],
-  "generated_at": "2026-10-22T23:35:00.454045+00:00"
+  "generated_at": "2026-10-23T00:10:35.065148+00:00"
 }

@@ -37181,5 +37181,52 @@
       "certifications": []
     },
     "status": "coming-soon"
+  },
+  {
+    "slug": "unspoken-smiles",
+    "name": "Unspoken Smiles Dental Clinic",
+    "place": "Mission Street, San Francisco CA",
+    "lat": 37.78,
+    "lon": -122.41,
+    "biome": "indoor-clinic",
+    "rp1": null,
+    "geo": {
+      "trees": 0,
+      "buildings": 1,
+      "water": 0,
+      "rivers": 0,
+      "court": [
+        0,
+        0
+      ],
+      "sea": 0
+    },
+    "world": {
+      "title": "Unspoken Smiles Dental Training",
+      "summary": "Dental clinic simulation for scaler force, probe depth, and tool-position training.",
+      "biome": "indoor-clinic",
+      "zones": 1,
+      "quests": 3,
+      "training_modules": [
+        "Scaling & Polishing",
+        "Probing & Diagnosis",
+        "Tool Handling"
+      ],
+      "description": "Dental manipulation training for force-feedback and precision tool positioning."
+    },
+    "trades": {
+      "scenarios": 3,
+      "union_certifications": [],
+      "robot_types": [
+        "dental-arm"
+      ],
+      "training_hours": 40,
+      "description": "Dental manipulation training for force-feedback and precision.",
+      "modules": [
+        "Scaling & Polishing",
+        "Probing & Diagnosis",
+        "Tool Handling"
+      ]
+    }
   }
 ]

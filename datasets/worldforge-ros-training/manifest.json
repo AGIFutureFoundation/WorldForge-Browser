@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-22T23:35:01.182599+00:00",
+  "generated_at": "2026-10-23T00:10:36.234113+00:00",
   "total_runs": 2,
-  "total_size_bytes": 3506231,
+  "total_size_bytes": 3506097,
   "pricing": {
     "free": {
       "price_usd": 0.0
@@ -16,23 +16,23 @@
   },
   "runs": [
     {
-      "run_id": "sample-sf-downtown-spot-60s",
+      "run_id": "sample-sf-financial-spot-60s",
       "robot": "spot",
-      "world": "sf-downtown",
+      "world": "sf-financial",
       "region": "bay-area",
       "duration_sec": 60,
       "message_count": 1560,
-      "jsonl_size": 460453,
+      "jsonl_size": 460319,
       "parquet_size": 18179,
-      "sha256": "b21643b30921a9a914478417c583c30618ec70acf02e99d545f2fd15a28e949a",
+      "sha256": "e8764e1bdb972cd7423938ba73b33e1b23c2277312c8a2b8df64f1e73ed6dbf8",
       "files": {
-        "jsonl": "sample-sf-downtown-spot-60s.jsonl",
-        "parquet": "sample-sf-downtown-spot-60s.parquet",
-        "meta": "sample-sf-downtown-spot-60s.meta.json"
+        "jsonl": "sample-sf-financial-spot-60s.jsonl",
+        "parquet": "sample-sf-financial-spot-60s.parquet",
+        "meta": "sample-sf-financial-spot-60s.meta.json"
       },
       "price_usd": 0.0,
       "tier": "free",
-      "description": "Free sample: Spot, 60s SF Downtown"
+      "description": "Free sample: Spot, 60s SF Financial District"
     },
     {
       "run_id": "dental-unspoken-smiles-cleaning-5min",
