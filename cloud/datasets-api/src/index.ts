@@ -6,6 +6,7 @@ import { registerDataRoutes } from "./routes/data";
 import { registerStatsRoutes } from "./routes/stats";
 import { registerX402Info } from "./routes/x402";
 import { registerMarketplaceRoutes } from "./routes/marketplace";
+import { registerACPRoutes } from "./routes/acp";
 
 const app = new Hono();
 
@@ -38,6 +39,7 @@ registerDataRoutes(app);
 registerStatsRoutes(app);
 registerX402Info(app);
 registerMarketplaceRoutes(app);
+registerACPRoutes(app);
 
 // Health check
 app.get("/health", (c) => c.json({ status: "ok", ts: Date.now() }));
