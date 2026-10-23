@@ -51,6 +51,26 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const fly = (p, dist = 40) => { flyT = { from: S.camera.position.clone(), to: p.clone().add(new THREE.Vector3(dist, dist * 0.6, dist)), look: p.clone(), t: 0 }; };
   wireHud({ slug, geo, img, world, trades, programs, course: course?.[slug], counts, S, avatars, fleet, fly });
 
+  // Load agent network and x402 info
+  const agentNet = await opt('../earth/agent_network.json');
+  const worldAgents = agentNet?.worlds?.[slug];
+  if (worldAgents && $('agents')) {
+    const agentList = worldAgents.agents || [];
+    $('agents').innerHTML = agentList.map(a => 
+      `<div style="margin:4px 0;padding:4px;background:rgba(255,255,255,.04);border-radius:4px">
+        <b style="color:#34d399">${a.robot_type}</b> · ${a.task.replace('-',' ')}<br>
+        <span style="font-size:.7rem">$${a.price_per_hour_usd}/hr · ${a.sensors?.slice(0,3).join(', ') || 'sensors'}</span>
+      </div>`
+    ).join('') || '<span class="muted">No active agents</span>';
+  }
+  if (worldAgents && $('x402')) {
+    $('x402').innerHTML = `
+      <div style="margin:4px 0">
+        <a href="${worldAgents.x402_catalog}" target="_blank" style="font-size:.75rem;color:#60a5fa">📊 Browse Catalog</a><br>
+        <span style="font-size:.7rem;color:#9ca3af">Base network · USDC payments · $0.01/episode</span>
+      </div>`;
+  }
+
   // Initialize training simulation
   const training = initTraining();
   const sector = meta?.trades?.sector || 'General';
