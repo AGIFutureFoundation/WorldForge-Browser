@@ -1,0 +1,2002 @@
+{
+ "nola-french-quarter": {
+  "n": "French Quarter",
+  "p": "Jackson Square, Nola CA",
+  "lat": 29.9261,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "French Quarter Anchor 1",
+   "French Quarter Anchor 2",
+   "French Quarter Anchor 3",
+   "French Quarter Anchor 4",
+   "French Quarter Anchor 5"
+  ]
+ },
+ "nola-garden-district": {
+  "n": "Garden District",
+  "p": "Magazine Street, Nola CA",
+  "lat": 29.9311,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "historic-preservation",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Garden District Anchor 1",
+   "Garden District Anchor 2",
+   "Garden District Anchor 3",
+   "Garden District Anchor 4",
+   "Garden District Anchor 5"
+  ]
+ },
+ "nola-warehouse": {
+  "n": "Warehouse District",
+  "p": "Andrew Higgins Blvd, Nola CA",
+  "lat": 29.9361,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Warehouse District Anchor 1",
+   "Warehouse District Anchor 2",
+   "Warehouse District Anchor 3",
+   "Warehouse District Anchor 4",
+   "Warehouse District Anchor 5"
+  ]
+ },
+ "nola-bywater": {
+  "n": "Bywater",
+  "p": "Dauphine Street, Nola CA",
+  "lat": 29.9411,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "community-development",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Bywater Anchor 1",
+   "Bywater Anchor 2",
+   "Bywater Anchor 3",
+   "Bywater Anchor 4",
+   "Bywater Anchor 5"
+  ]
+ },
+ "nola-uptown": {
+  "n": "Uptown",
+  "p": "St. Charles Avenue, Nola CA",
+  "lat": 29.9461,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "education-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Uptown Anchor 1",
+   "Uptown Anchor 2",
+   "Uptown Anchor 3",
+   "Uptown Anchor 4",
+   "Uptown Anchor 5"
+  ]
+ },
+ "nola-mid-city": {
+  "n": "Mid-City",
+  "p": "Canal Street, Nola CA",
+  "lat": 29.9511,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "healthcare-medical",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Mid-City Anchor 1",
+   "Mid-City Anchor 2",
+   "Mid-City Anchor 3",
+   "Mid-City Anchor 4",
+   "Mid-City Anchor 5"
+  ]
+ },
+ "nola-treme": {
+  "n": "Treme",
+  "p": "North Rampart Street, Nola CA",
+  "lat": 29.9561,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "cultural-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Treme Anchor 1",
+   "Treme Anchor 2",
+   "Treme Anchor 3",
+   "Treme Anchor 4",
+   "Treme Anchor 5"
+  ]
+ },
+ "nola-marigny": {
+  "n": "Marigny",
+  "p": "Frenchmen Street, Nola CA",
+  "lat": 29.9611,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "music-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Marigny Anchor 1",
+   "Marigny Anchor 2",
+   "Marigny Anchor 3",
+   "Marigny Anchor 4",
+   "Marigny Anchor 5"
+  ]
+ },
+ "nola-central-city": {
+  "n": "Central City",
+  "p": "South Rampart, Nola CA",
+  "lat": 29.9661,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "community-development",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Central City Anchor 1",
+   "Central City Anchor 2",
+   "Central City Anchor 3",
+   "Central City Anchor 4",
+   "Central City Anchor 5"
+  ]
+ },
+ "nola-lower-ninth": {
+  "n": "Lower Ninth Ward",
+  "p": "Florida Avenue, Nola CA",
+  "lat": 29.9711,
+  "lon": -90.0765,
+  "biome": "urban-park",
+  "i": "resilience-rebuilding",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Lower Ninth Ward Anchor 1",
+   "Lower Ninth Ward Anchor 2",
+   "Lower Ninth Ward Anchor 3",
+   "Lower Ninth Ward Anchor 4",
+   "Lower Ninth Ward Anchor 5"
+  ]
+ },
+ "nola-gentilly": {
+  "n": "Gentilly",
+  "p": "Elysian Fields Avenue, Nola CA",
+  "lat": 29.9261,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Gentilly Anchor 1",
+   "Gentilly Anchor 2",
+   "Gentilly Anchor 3",
+   "Gentilly Anchor 4",
+   "Gentilly Anchor 5"
+  ]
+ },
+ "nola-lakeview": {
+  "n": "Lakeview",
+  "p": "Lakeshore Drive, Nola CA",
+  "lat": 29.9311,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "lakefront-residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Lakeview Anchor 1",
+   "Lakeview Anchor 2",
+   "Lakeview Anchor 3",
+   "Lakeview Anchor 4",
+   "Lakeview Anchor 5"
+  ]
+ },
+ "nola-metairie": {
+  "n": "Metairie",
+  "p": "Veterans Memorial Blvd, Nola CA",
+  "lat": 29.9361,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "suburban-commercial",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Metairie Anchor 1",
+   "Metairie Anchor 2",
+   "Metairie Anchor 3",
+   "Metairie Anchor 4",
+   "Metairie Anchor 5"
+  ]
+ },
+ "nola-kenner": {
+  "n": "Kenner",
+  "p": "Williams Blvd, Nola CA",
+  "lat": 29.9411,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "airport-industrial",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Kenner Anchor 1",
+   "Kenner Anchor 2",
+   "Kenner Anchor 3",
+   "Kenner Anchor 4",
+   "Kenner Anchor 5"
+  ]
+ },
+ "nola-chalmette": {
+  "n": "Chalmette",
+  "p": "Paris Road, Nola CA",
+  "lat": 29.9461,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "historic-battlefield",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Chalmette Anchor 1",
+   "Chalmette Anchor 2",
+   "Chalmette Anchor 3",
+   "Chalmette Anchor 4",
+   "Chalmette Anchor 5"
+  ]
+ },
+ "nola-arabi": {
+  "n": "Arabi",
+  "p": "Judge Perez Drive, Nola CA",
+  "lat": 29.9511,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "industrial-residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Arabi Anchor 1",
+   "Arabi Anchor 2",
+   "Arabi Anchor 3",
+   "Arabi Anchor 4",
+   "Arabi Anchor 5"
+  ]
+ },
+ "nola-violet": {
+  "n": "Violet",
+  "p": "Paris Road, Nola CA",
+  "lat": 29.9561,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "post-katrina-recovery",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Violet Anchor 1",
+   "Violet Anchor 2",
+   "Violet Anchor 3",
+   "Violet Anchor 4",
+   "Violet Anchor 5"
+  ]
+ },
+ "nola-plaquemines": {
+  "n": "Plaquemines Parish",
+  "p": "Highway 23, Nola CA",
+  "lat": 29.9611,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "coastal-industrial",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Plaquemines Parish Anchor 1",
+   "Plaquemines Parish Anchor 2",
+   "Plaquemines Parish Anchor 3",
+   "Plaquemines Parish Anchor 4",
+   "Plaquemines Parish Anchor 5"
+  ]
+ },
+ "nola-st-bernard": {
+  "n": "St. Bernard Parish",
+  "p": "Chalmette Battlefield, Nola CA",
+  "lat": 29.9661,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "coastal-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "St. Bernard Parish Anchor 1",
+   "St. Bernard Parish Anchor 2",
+   "St. Bernard Parish Anchor 3",
+   "St. Bernard Parish Anchor 4",
+   "St. Bernard Parish Anchor 5"
+  ]
+ },
+ "nola-jefferson": {
+  "n": "Jefferson Parish",
+  "p": "Clearview Parkway, Nola CA",
+  "lat": 29.9711,
+  "lon": -90.0715,
+  "biome": "urban-park",
+  "i": "suburban-commercial",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Jefferson Parish Anchor 1",
+   "Jefferson Parish Anchor 2",
+   "Jefferson Parish Anchor 3",
+   "Jefferson Parish Anchor 4",
+   "Jefferson Parish Anchor 5"
+  ]
+ },
+ "sf-financial": {
+  "n": "Financial District",
+  "p": "Montgomery Street, Sf Bay CA",
+  "lat": 37.7499,
+  "lon": -122.4244,
+  "biome": "urban-core",
+  "i": "finance-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Financial District Anchor 1",
+   "Financial District Anchor 2",
+   "Financial District Anchor 3",
+   "Financial District Anchor 4",
+   "Financial District Anchor 5"
+  ]
+ },
+ "sf-mission": {
+  "n": "Mission District",
+  "p": "Mission Street, Sf Bay CA",
+  "lat": 37.7549,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "community-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Mission District Anchor 1",
+   "Mission District Anchor 2",
+   "Mission District Anchor 3",
+   "Mission District Anchor 4",
+   "Mission District Anchor 5"
+  ]
+ },
+ "sf-soma": {
+  "n": "SOMA",
+  "p": "Howard Street, Sf Bay CA",
+  "lat": 37.7599,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "tech-startups",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "SOMA Anchor 1",
+   "SOMA Anchor 2",
+   "SOMA Anchor 3",
+   "SOMA Anchor 4",
+   "SOMA Anchor 5"
+  ]
+ },
+ "sf-marina": {
+  "n": "Marina District",
+  "p": "Chestnut Street, Sf Bay CA",
+  "lat": 37.7649,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "maritime-logistics",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Marina District Anchor 1",
+   "Marina District Anchor 2",
+   "Marina District Anchor 3",
+   "Marina District Anchor 4",
+   "Marina District Anchor 5"
+  ]
+ },
+ "sf-chinatown": {
+  "n": "Chinatown",
+  "p": "Grant Avenue, Sf Bay CA",
+  "lat": 37.7699,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Chinatown Anchor 1",
+   "Chinatown Anchor 2",
+   "Chinatown Anchor 3",
+   "Chinatown Anchor 4",
+   "Chinatown Anchor 5"
+  ]
+ },
+ "sf-sunset": {
+  "n": "Sunset District",
+  "p": "Irving Street, Sf Bay CA",
+  "lat": 37.7749,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Sunset District Anchor 1",
+   "Sunset District Anchor 2",
+   "Sunset District Anchor 3",
+   "Sunset District Anchor 4",
+   "Sunset District Anchor 5"
+  ]
+ },
+ "sf-nob-hill": {
+  "n": "Nob Hill",
+  "p": "California Street, Sf Bay CA",
+  "lat": 37.7799,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Nob Hill Anchor 1",
+   "Nob Hill Anchor 2",
+   "Nob Hill Anchor 3",
+   "Nob Hill Anchor 4",
+   "Nob Hill Anchor 5"
+  ]
+ },
+ "sf-castro": {
+  "n": "Castro District",
+  "p": "Castro Street, Sf Bay CA",
+  "lat": 37.7849,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "community-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Castro District Anchor 1",
+   "Castro District Anchor 2",
+   "Castro District Anchor 3",
+   "Castro District Anchor 4",
+   "Castro District Anchor 5"
+  ]
+ },
+ "sf-haight": {
+  "n": "Haight-Ashbury",
+  "p": "Haight Street, Sf Bay CA",
+  "lat": 37.7899,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Haight-Ashbury Anchor 1",
+   "Haight-Ashbury Anchor 2",
+   "Haight-Ashbury Anchor 3",
+   "Haight-Ashbury Anchor 4",
+   "Haight-Ashbury Anchor 5"
+  ]
+ },
+ "sf-embarcadero": {
+  "n": "Embarcadero",
+  "p": "Embarcadero, Sf Bay CA",
+  "lat": 37.7949,
+  "lon": -122.4244,
+  "biome": "urban-park",
+  "i": "maritime-logistics",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Embarcadero Anchor 1",
+   "Embarcadero Anchor 2",
+   "Embarcadero Anchor 3",
+   "Embarcadero Anchor 4",
+   "Embarcadero Anchor 5"
+  ]
+ },
+ "sf-presidio": {
+  "n": "Presidio",
+  "p": "Lincoln Blvd, Sf Bay CA",
+  "lat": 37.7499,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "conservation",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Presidio Anchor 1",
+   "Presidio Anchor 2",
+   "Presidio Anchor 3",
+   "Presidio Anchor 4",
+   "Presidio Anchor 5"
+  ]
+ },
+ "sf-pacific-heights": {
+  "n": "Pacific Heights",
+  "p": "Pacific Avenue, Sf Bay CA",
+  "lat": 37.7549,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "healthcare",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Pacific Heights Anchor 1",
+   "Pacific Heights Anchor 2",
+   "Pacific Heights Anchor 3",
+   "Pacific Heights Anchor 4",
+   "Pacific Heights Anchor 5"
+  ]
+ },
+ "sf-excelsior": {
+  "n": "Excelsior",
+  "p": "Mission Street, Sf Bay CA",
+  "lat": 37.7599,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "manufacturing",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Excelsior Anchor 1",
+   "Excelsior Anchor 2",
+   "Excelsior Anchor 3",
+   "Excelsior Anchor 4",
+   "Excelsior Anchor 5"
+  ]
+ },
+ "sf-visitacion": {
+  "n": "Visitacion Valley",
+  "p": "Raymond Avenue, Sf Bay CA",
+  "lat": 37.7649,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "community-development",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Visitacion Valley Anchor 1",
+   "Visitacion Valley Anchor 2",
+   "Visitacion Valley Anchor 3",
+   "Visitacion Valley Anchor 4",
+   "Visitacion Valley Anchor 5"
+  ]
+ },
+ "sf-bayview": {
+  "n": "Bayview",
+  "p": "3rd Street, Sf Bay CA",
+  "lat": 37.7699,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "environmental-cleanup",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Bayview Anchor 1",
+   "Bayview Anchor 2",
+   "Bayview Anchor 3",
+   "Bayview Anchor 4",
+   "Bayview Anchor 5"
+  ]
+ },
+ "sf-potrero": {
+  "n": "Potrero Hill",
+  "p": "Potrero Avenue, Sf Bay CA",
+  "lat": 37.7749,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "tech-manufacturing",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Potrero Hill Anchor 1",
+   "Potrero Hill Anchor 2",
+   "Potrero Hill Anchor 3",
+   "Potrero Hill Anchor 4",
+   "Potrero Hill Anchor 5"
+  ]
+ },
+ "sf-dogpatch": {
+  "n": "Dogpatch",
+  "p": "3rd Street, Sf Bay CA",
+  "lat": 37.7799,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "arts-manufacturing",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Dogpatch Anchor 1",
+   "Dogpatch Anchor 2",
+   "Dogpatch Anchor 3",
+   "Dogpatch Anchor 4",
+   "Dogpatch Anchor 5"
+  ]
+ },
+ "sf-western-addition": {
+  "n": "Western Addition",
+  "p": "Fillmore Street, Sf Bay CA",
+  "lat": 37.7849,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "cultural-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Western Addition Anchor 1",
+   "Western Addition Anchor 2",
+   "Western Addition Anchor 3",
+   "Western Addition Anchor 4",
+   "Western Addition Anchor 5"
+  ]
+ },
+ "sf-hayes-valley": {
+  "n": "Hayes Valley",
+  "p": "Hayes Street, Sf Bay CA",
+  "lat": 37.7899,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Hayes Valley Anchor 1",
+   "Hayes Valley Anchor 2",
+   "Hayes Valley Anchor 3",
+   "Hayes Valley Anchor 4",
+   "Hayes Valley Anchor 5"
+  ]
+ },
+ "sf-nopa": {
+  "n": "NOPA",
+  "p": "Divisadero Street, Sf Bay CA",
+  "lat": 37.7949,
+  "lon": -122.4194,
+  "biome": "urban-park",
+  "i": "community-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "NOPA Anchor 1",
+   "NOPA Anchor 2",
+   "NOPA Anchor 3",
+   "NOPA Anchor 4",
+   "NOPA Anchor 5"
+  ]
+ },
+ "sf-richmond": {
+  "n": "Richmond District",
+  "p": "Geary Boulevard, Sf Bay CA",
+  "lat": 37.7499,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Richmond District Anchor 1",
+   "Richmond District Anchor 2",
+   "Richmond District Anchor 3",
+   "Richmond District Anchor 4",
+   "Richmond District Anchor 5"
+  ]
+ },
+ "sf-outer-sunset": {
+  "n": "Outer Sunset",
+  "p": "Judah Street, Sf Bay CA",
+  "lat": 37.7549,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "coastal-residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Outer Sunset Anchor 1",
+   "Outer Sunset Anchor 2",
+   "Outer Sunset Anchor 3",
+   "Outer Sunset Anchor 4",
+   "Outer Sunset Anchor 5"
+  ]
+ },
+ "sf-tenderloin": {
+  "n": "Tenderloin",
+  "p": "Eddy Street, Sf Bay CA",
+  "lat": 37.7599,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "social-services",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Tenderloin Anchor 1",
+   "Tenderloin Anchor 2",
+   "Tenderloin Anchor 3",
+   "Tenderloin Anchor 4",
+   "Tenderloin Anchor 5"
+  ]
+ },
+ "sf-civic-center": {
+  "n": "Civic Center",
+  "p": "Market Street, Sf Bay CA",
+  "lat": 37.7649,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "government-services",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Civic Center Anchor 1",
+   "Civic Center Anchor 2",
+   "Civic Center Anchor 3",
+   "Civic Center Anchor 4",
+   "Civic Center Anchor 5"
+  ]
+ },
+ "sf-south-beach": {
+  "n": "South Beach",
+  "p": "King Street, Sf Bay CA",
+  "lat": 37.7699,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "maritime-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "South Beach Anchor 1",
+   "South Beach Anchor 2",
+   "South Beach Anchor 3",
+   "South Beach Anchor 4",
+   "South Beach Anchor 5"
+  ]
+ },
+ "sf-rincon-hill": {
+  "n": "Rincon Hill",
+  "p": "Folsom Street, Sf Bay CA",
+  "lat": 37.7749,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "residential-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Rincon Hill Anchor 1",
+   "Rincon Hill Anchor 2",
+   "Rincon Hill Anchor 3",
+   "Rincon Hill Anchor 4",
+   "Rincon Hill Anchor 5"
+  ]
+ },
+ "sf-yerba-buena": {
+  "n": "Yerba Buena",
+  "p": "Mission Street, Sf Bay CA",
+  "lat": 37.7799,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Yerba Buena Anchor 1",
+   "Yerba Buena Anchor 2",
+   "Yerba Buena Anchor 3",
+   "Yerba Buena Anchor 4",
+   "Yerba Buena Anchor 5"
+  ]
+ },
+ "sf-telegraph-hill": {
+  "n": "Telegraph Hill",
+  "p": "Greenwich Street, Sf Bay CA",
+  "lat": 37.7849,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Telegraph Hill Anchor 1",
+   "Telegraph Hill Anchor 2",
+   "Telegraph Hill Anchor 3",
+   "Telegraph Hill Anchor 4",
+   "Telegraph Hill Anchor 5"
+  ]
+ },
+ "sf-russian-hill": {
+  "n": "Russian Hill",
+  "p": "Hyde Street, Sf Bay CA",
+  "lat": 37.7899,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "tourism-residential",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Russian Hill Anchor 1",
+   "Russian Hill Anchor 2",
+   "Russian Hill Anchor 3",
+   "Russian Hill Anchor 4",
+   "Russian Hill Anchor 5"
+  ]
+ },
+ "sf-north-beach": {
+  "n": "North Beach",
+  "p": "Columbus Avenue, Sf Bay CA",
+  "lat": 37.7949,
+  "lon": -122.4144,
+  "biome": "urban-park",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "franka-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "North Beach Anchor 1",
+   "North Beach Anchor 2",
+   "North Beach Anchor 3",
+   "North Beach Anchor 4",
+   "North Beach Anchor 5"
+  ]
+ },
+ "hi-loop": {
+  "n": "The Loop",
+  "p": "State St, Chicago",
+  "lat": 41.855,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "finance-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "The Loop Anchor 1",
+   "The Loop Anchor 2",
+   "The Loop Anchor 3",
+   "The Loop Anchor 4",
+   "The Loop Anchor 5"
+  ]
+ },
+ "hi-river-north": {
+  "n": "River North",
+  "p": "Michigan Ave, Chicago",
+  "lat": 41.86,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "River North Anchor 1",
+   "River North Anchor 2",
+   "River North Anchor 3",
+   "River North Anchor 4",
+   "River North Anchor 5"
+  ]
+ },
+ "hi-south-loop": {
+  "n": "South Loop",
+  "p": "Roosevelt Rd, Chicago",
+  "lat": 41.865,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "healthcare-biotech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "South Loop Anchor 1",
+   "South Loop Anchor 2",
+   "South Loop Anchor 3",
+   "South Loop Anchor 4",
+   "South Loop Anchor 5"
+  ]
+ },
+ "hi-west-loop": {
+  "n": "West Loop",
+  "p": "Randolph St, Chicago",
+  "lat": 41.87,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "tech-startups",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "West Loop Anchor 1",
+   "West Loop Anchor 2",
+   "West Loop Anchor 3",
+   "West Loop Anchor 4",
+   "West Loop Anchor 5"
+  ]
+ },
+ "hi-lincoln-park": {
+  "n": "Lincoln Park",
+  "p": "Armitage Ave, Chicago",
+  "lat": 41.875,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "education-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Lincoln Park Anchor 1",
+   "Lincoln Park Anchor 2",
+   "Lincoln Park Anchor 3",
+   "Lincoln Park Anchor 4",
+   "Lincoln Park Anchor 5"
+  ]
+ },
+ "hi-wicker-park": {
+  "n": "Wicker Park",
+  "p": "Milwaukee Ave, Chicago",
+  "lat": 41.88,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Wicker Park Anchor 1",
+   "Wicker Park Anchor 2",
+   "Wicker Park Anchor 3",
+   "Wicker Park Anchor 4",
+   "Wicker Park Anchor 5"
+  ]
+ },
+ "hi-pilsen": {
+  "n": "Pilsen",
+  "p": "18th St, Chicago",
+  "lat": 41.885,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "cultural-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Pilsen Anchor 1",
+   "Pilsen Anchor 2",
+   "Pilsen Anchor 3",
+   "Pilsen Anchor 4",
+   "Pilsen Anchor 5"
+  ]
+ },
+ "hi-chinatown": {
+  "n": "Chinatown",
+  "p": "Wentworth Ave, Chicago",
+  "lat": 41.89,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Chinatown Anchor 1",
+   "Chinatown Anchor 2",
+   "Chinatown Anchor 3",
+   "Chinatown Anchor 4",
+   "Chinatown Anchor 5"
+  ]
+ },
+ "hi-ohare": {
+  "n": "OHare Area",
+  "p": "Mannheim Rd, Chicago",
+  "lat": 41.895,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "logistics-maritime",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "OHare Area Anchor 1",
+   "OHare Area Anchor 2",
+   "OHare Area Anchor 3",
+   "OHare Area Anchor 4",
+   "OHare Area Anchor 5"
+  ]
+ },
+ "hi-medical-district": {
+  "n": "Medical District",
+  "p": "Harrison St, Chicago",
+  "lat": 41.9,
+  "lon": -87.635,
+  "biome": "urban-core",
+  "i": "healthcare-biotech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Medical District Anchor 1",
+   "Medical District Anchor 2",
+   "Medical District Anchor 3",
+   "Medical District Anchor 4",
+   "Medical District Anchor 5"
+  ]
+ },
+ "ho-downtown": {
+  "n": "Downtown Houston",
+  "p": "Main St, Houston",
+  "lat": 29.735,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "energy-petrochemical",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Downtown Houston Anchor 1",
+   "Downtown Houston Anchor 2",
+   "Downtown Houston Anchor 3",
+   "Downtown Houston Anchor 4",
+   "Downtown Houston Anchor 5"
+  ]
+ },
+ "ho-medical-center": {
+  "n": "Texas Medical Center",
+  "p": "Holcombe Blvd, Houston",
+  "lat": 29.74,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "healthcare-biotech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Texas Medical Center Anchor 1",
+   "Texas Medical Center Anchor 2",
+   "Texas Medical Center Anchor 3",
+   "Texas Medical Center Anchor 4",
+   "Texas Medical Center Anchor 5"
+  ]
+ },
+ "ho-energy-corridor": {
+  "n": "Energy Corridor",
+  "p": "Eldridge Pkwy, Houston",
+  "lat": 29.745,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "energy-petrochemical",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Energy Corridor Anchor 1",
+   "Energy Corridor Anchor 2",
+   "Energy Corridor Anchor 3",
+   "Energy Corridor Anchor 4",
+   "Energy Corridor Anchor 5"
+  ]
+ },
+ "ho-clear-lake": {
+  "n": "Clear Lake",
+  "p": "NASA Pkwy, Houston",
+  "lat": 29.75,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "aerospace-defense",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Clear Lake Anchor 1",
+   "Clear Lake Anchor 2",
+   "Clear Lake Anchor 3",
+   "Clear Lake Anchor 4",
+   "Clear Lake Anchor 5"
+  ]
+ },
+ "ho-woodlands": {
+  "n": "The Woodlands",
+  "p": "Research Forest Dr, Houston",
+  "lat": 29.755,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "tech-startups",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "The Woodlands Anchor 1",
+   "The Woodlands Anchor 2",
+   "The Woodlands Anchor 3",
+   "The Woodlands Anchor 4",
+   "The Woodlands Anchor 5"
+  ]
+ },
+ "ho-katy": {
+  "n": "Katy",
+  "p": "Katy Fwy, Houston",
+  "lat": 29.76,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "manufacturing-logistics",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Katy Anchor 1",
+   "Katy Anchor 2",
+   "Katy Anchor 3",
+   "Katy Anchor 4",
+   "Katy Anchor 5"
+  ]
+ },
+ "ho-sugar-land": {
+  "n": "Sugar Land",
+  "p": "Hwy , Houston",
+  "lat": 29.765,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "finance-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Sugar Land Anchor 1",
+   "Sugar Land Anchor 2",
+   "Sugar Land Anchor 3",
+   "Sugar Land Anchor 4",
+   "Sugar Land Anchor 5"
+  ]
+ },
+ "hogalleria": {
+  "n": "Galleria",
+  "p": "Westheimer Rd, Houston",
+  "lat": 29.77,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "finance-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Galleria Anchor 1",
+   "Galleria Anchor 2",
+   "Galleria Anchor 3",
+   "Galleria Anchor 4",
+   "Galleria Anchor 5"
+  ]
+ },
+ "hoheights": {
+  "n": "The Heights",
+  "p": "19th St, Houston",
+  "lat": 29.775,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "The Heights Anchor 1",
+   "The Heights Anchor 2",
+   "The Heights Anchor 3",
+   "The Heights Anchor 4",
+   "The Heights Anchor 5"
+  ]
+ },
+ "ho-east-end": {
+  "n": "East End",
+  "p": "Navigation Blvd, Houston",
+  "lat": 29.78,
+  "lon": -95.375,
+  "biome": "urban-core",
+  "i": "logistics-maritime",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "East End Anchor 1",
+   "East End Anchor 2",
+   "East End Anchor 3",
+   "East End Anchor 4",
+   "East End Anchor 5"
+  ]
+ },
+ "sa-salado-iland": {
+  "n": "San Antonio Santuario",
+  "p": "Market Square, Mexico",
+  "lat": 29.6269,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "San Antonio Santuario Anchor 1",
+   "San Antonio Santuario Anchor 2",
+   "San Antonio Santuario Anchor 3",
+   "San Antonio Santuario Anchor 4",
+   "San Antonio Santuario Anchor 5"
+  ]
+ },
+ "sa-market-squ": {
+  "n": "Market Square",
+  "p": "Market Square, Mexico",
+  "lat": 29.6319,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "cultural-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Market Square Anchor 1",
+   "Market Square Anchor 2",
+   "Market Square Anchor 3",
+   "Market Square Anchor 4",
+   "Market Square Anchor 5"
+  ]
+ },
+ "sa-river-walk": {
+  "n": "River Walk",
+  "p": "River Walk, Mexico",
+  "lat": 29.6369,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "tourism-heritage",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "River Walk Anchor 1",
+   "River Walk Anchor 2",
+   "River Walk Anchor 3",
+   "River Walk Anchor 4",
+   "River Walk Anchor 5"
+  ]
+ },
+ "sa-pearl": {
+  "n": "The Pearl",
+  "p": "Pearl Parkway, Mexico",
+  "lat": 29.6419,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "community-development",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "The Pearl Anchor 1",
+   "The Pearl Anchor 2",
+   "The Pearl Anchor 3",
+   "The Pearl Anchor 4",
+   "The Pearl Anchor 5"
+  ]
+ },
+ "sa-mission": {
+  "n": "Mission Street",
+  "p": "Mission Street, Mexico",
+  "lat": 29.6469,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "community-health",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Mission Street Anchor 1",
+   "Mission Street Anchor 2",
+   "Mission Street Anchor 3",
+   "Mission Street Anchor 4",
+   "Mission Street Anchor 5"
+  ]
+ },
+ "sa-downtown": {
+  "n": "Downtown",
+  "p": "Commerce St, Mexico",
+  "lat": 29.6519,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "finance-tech",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Downtown Anchor 1",
+   "Downtown Anchor 2",
+   "Downtown Anchor 3",
+   "Downtown Anchor 4",
+   "Downtown Anchor 5"
+  ]
+ },
+ "sa-alamodito": {
+  "n": "Alamodito",
+  "p": "Alamodito Rd, Mexico",
+  "lat": 29.6569,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "suburban-commercial",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Alamodito Anchor 1",
+   "Alamodito Anchor 2",
+   "Alamodito Anchor 3",
+   "Alamodito Anchor 4",
+   "Alamodito Anchor 5"
+  ]
+ },
+ "sa-sites-augusta": {
+  "n": "Sites and Swap",
+  "p": "Swap St, Mexico",
+  "lat": 29.6619,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "arts-entertainment",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Sites and Swap Anchor 1",
+   "Sites and Swap Anchor 2",
+   "Sites and Swap Anchor 3",
+   "Sites and Swap Anchor 4",
+   "Sites and Swap Anchor 5"
+  ]
+ },
+ "sa-affoirtable-housing": {
+  "n": "Sun You Indian Creek",
+  "p": "Cypress Blvd, Mexico",
+  "lat": 29.6669,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "community-development",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Sun You Indian Creek Anchor 1",
+   "Sun You Indian Creek Anchor 2",
+   "Sun You Indian Creek Anchor 3",
+   "Sun You Indian Creek Anchor 4",
+   "Sun You Indian Creek Anchor 5"
+  ]
+ },
+ "sa-kingwilliam": {
+  "n": "Kingwilliam",
+  "p": "Fredericksburg Rd, Mexico",
+  "lat": 29.6719,
+  "lon": -98.4996,
+  "biome": "urban-core",
+  "i": "suburban-commercial",
+  "rf": [
+   "universal-robots-ur10e",
+   "frig ta-fr3",
+   "fetch-robotics-fetch"
+  ],
+  "tr": [
+   "electricians",
+   "laborers",
+   "operating-eng"
+  ],
+  "an": [
+   "Kingwilliam Anchor 1",
+   "Kingwilliam Anchor 2",
+   "Kingwilliam Anchor 3",
+   "Kingwilliam Anchor 4",
+   "Kingwilliam Anchor 5"
+  ]
+ }
+}

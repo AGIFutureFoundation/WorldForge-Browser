@@ -9,7 +9,7 @@ export function registerCatalogRoutes(app: Hono) {
     const manifest = await res.json() as any;
     return c.json({
       name: "WorldForge ROS Training Datasets",
-      description: "Synthetic ROS 2 data from robot runs across 370+ live worlds",
+      description: "Synthetic ROS 2 data from robot runs across 80+ live worlds",
       formats: [".jsonl", ".parquet"],
       total_runs: manifest.total_runs,
       pricing: manifest.pricing,
