@@ -3,7 +3,7 @@ import { withX402, type X402Config } from "agents/x402";
 import { z } from "zod";
 
 const X402_CONFIG: X402Config = {
-  network: "base-sepolia",
+  network: "base",
   recipient: "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC",
   facilitator: { url: "https://x402.org/facilitator" },
 };

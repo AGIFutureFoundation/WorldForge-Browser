@@ -16,10 +16,10 @@ const PAY_TO = "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC";
 app.use("/*", paymentMiddleware(
   PAY_TO as `0x${string}`,
   {
-    "/v1/episodes/*": { price: "$0.01", network: "base-sepolia", config: { description: "Single episode download (.jsonl/.parquet)" } },
-    "/v1/streams/*": { price: "$0.01", network: "base-sepolia", config: { description: "Data stream slice" } },
-    "/v1/packs/*": { price: "$2.00", network: "base-sepolia", config: { description: "Region pack download" } },
-    "/v1/packs/dental": { price: "$10.00", network: "base-sepolia", config: { description: "Unspoken Smiles dental training pack" } },
+    "/v1/episodes/*": { price: "$0.01", network: "base", config: { description: "Single episode download (.jsonl/.parquet)" } },
+    "/v1/streams/*": { price: "$0.01", network: "base", config: { description: "Data stream slice" } },
+    "/v1/packs/*": { price: "$2.00", network: "base", config: { description: "Region pack download" } },
+    "/v1/packs/dental": { price: "$10.00", network: "base", config: { description: "Unspoken Smiles dental training pack" } },
   },
   { url: "https://x402.org/facilitator" },
 ));

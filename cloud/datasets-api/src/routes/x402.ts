@@ -4,7 +4,7 @@ export function registerX402Info(app: Hono) {
   app.get("/.well-known/x402", (c) => c.json({
     version: "1.0.0",
     recipient: "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC",
-    network: "base-sepolia",
+    network: "base",
     facilitator: "https://x402.org/facilitator",
     pricing: {
       "/v1/episodes/*": { price: "$0.01", description: "Single episode download" },
