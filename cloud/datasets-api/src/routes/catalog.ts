@@ -1,15 +1,14 @@
 import type { Hono } from "hono";
 
-const MANIFEST_URL = "https://raw.githubusercontent.com/AGIFutureFoundation/WorldForge-Browser/main/datasets/worldforge-ros-training/manifest.json";
-
 export function registerCatalogRoutes(app: Hono) {
   app.get("/v1/catalog", async (c) => {
-    const res = await fetch(MANIFEST_URL);
-    if (!res.ok) return c.json({ error: "manifest_unavailable" }, 503);
-    const manifest = await res.json() as any;
+    const r2 = (c.env as any).R2;
+    const obj = await r2.get("manifest.json");
+    if (!obj) return c.json({ error: "manifest_unavailable" }, 503);
+    const manifest = await obj.json() as any;
     return c.json({
       name: "WorldForge ROS Training Datasets",
-      description: "Synthetic ROS 2 data from robot runs across 80+ live worlds",
+      description: "Synthetic ROS 2 data from robot runs across 544 live worlds",
       formats: [".jsonl", ".parquet"],
       total_runs: manifest.total_runs,
       pricing: manifest.pricing,
@@ -19,15 +18,17 @@ export function registerCatalogRoutes(app: Hono) {
     });
   });
   app.get("/v1/manifest", async (c) => {
-    const res = await fetch(MANIFEST_URL);
-    if (!res.ok) return c.json({ error: "manifest_unavailable" }, 503);
-    return c.body(await res.text(), { headers: { "content-type": "application/json" } });
+    const r2 = (c.env as any).R2;
+    const obj = await r2.get("manifest.json");
+    if (!obj) return c.json({ error: "manifest_unavailable" }, 503);
+    return c.body(await obj.text(), { headers: { "content-type": "application/json" } });
   });
   app.get("/v1/sample/:file", async (c) => {
     const file = c.req.param("file");
-    const res = await fetch(`https://raw.githubusercontent.com/AGIFutureFoundation/WorldForge-Browser/main/datasets/worldforge-ros-training/samples/${file}`);
-    if (!res.ok) return c.json({ error: "sample_not_found", file }, 404);
-    const body = await res.arrayBuffer();
+    const r2 = (c.env as any).R2;
+    const obj = await r2.get(`samples/${file}`);
+    if (!obj) return c.json({ error: "sample_not_found", file }, 404);
+    const body = await obj.arrayBuffer();
     const ct = file.endsWith(".jsonl") ? "application/x-ndjson" : file.endsWith(".parquet") ? "application/octet-stream" : "application/json";
     return c.body(body, { headers: { "content-type": ct } });
   });
