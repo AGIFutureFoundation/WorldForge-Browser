@@ -13,10 +13,10 @@
   "d1_databases": [
     { "binding": "DB", "database_name": "worldforge-payments", "migrations_dir": "migrations" }
   ],
-  "r2_buckets": [
-    { "binding": "R2", "bucket_name": "worldforge-ros-training" }
-  ],
-  "routes": [
-    { "pattern": "datasets-api.worldforge.*", "zone_name": "worldforge" }
-  ]
+  // "r2_buckets": [
+  //   { "binding": "R2", "bucket_name": "worldforge-ros-training", "preview_bucket_name": "worldforge-ros-training-preview" }
+  // ],
+  // "routes": [
+  //   { "pattern": "datasets-api.worldforge.*", "zone_name": "worldforge" }
+  // ]
 }

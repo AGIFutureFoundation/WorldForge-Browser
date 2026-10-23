@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-10-23T17:51:33.652022+00:00",
-  "total_runs": 15,
+  "generated_at": "2026-10-23T19:37:07.645379+00:00",
+  "total_runs": 99,
   "total_size_bytes": 7639739,
   "pricing": {
     "free": {
@@ -304,6 +304,1938 @@
       "price_usd": 0.01,
       "tier": "standard",
       "description": "r1 in New Orleans Garden District (60s)"
+    },
+    {
+      "run_id": "miami-mia-downtown-spot-60s",
+      "robot": "spot",
+      "world": "mia-downtown",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "e8b68d9880b996c355d9b8e10aef277af9d2e20f60a29ff0d4061716b5b36bad",
+      "files": {
+        "jsonl": "miami-mia-downtown-spot-60s.jsonl",
+        "parquet": "miami-mia-downtown-spot-60s.parquet",
+        "meta": "miami-mia-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Mia Downtown (60s)",
+      "tags": [
+        "miami",
+        "mia-downtown"
+      ]
+    },
+    {
+      "run_id": "miami-mia-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "mia-downtown",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "8142100a84f169b30d154964fc57da2ba389cc990db30032e4562a28a94baafb",
+      "files": {
+        "jsonl": "miami-mia-downtown-stretch-60s.jsonl",
+        "parquet": "miami-mia-downtown-stretch-60s.parquet",
+        "meta": "miami-mia-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Mia Downtown (60s)",
+      "tags": [
+        "miami",
+        "mia-downtown"
+      ]
+    },
+    {
+      "run_id": "miami-mia-downtown-r1-60s",
+      "robot": "r1",
+      "world": "mia-downtown",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "6e4c68d9ae44414ad6668b48d68117d342ae8d0466df0f0bb04b7a2f0b5372b8",
+      "files": {
+        "jsonl": "miami-mia-downtown-r1-60s.jsonl",
+        "parquet": "miami-mia-downtown-r1-60s.parquet",
+        "meta": "miami-mia-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Mia Downtown (60s)",
+      "tags": [
+        "miami",
+        "mia-downtown"
+      ]
+    },
+    {
+      "run_id": "miami-mia-south-beach-spot-60s",
+      "robot": "spot",
+      "world": "mia-south-beach",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "3b0d9f875c60a7b5d77a0070da9af1666c9edb0046e8646cc4b47916f9ba0a78",
+      "files": {
+        "jsonl": "miami-mia-south-beach-spot-60s.jsonl",
+        "parquet": "miami-mia-south-beach-spot-60s.parquet",
+        "meta": "miami-mia-south-beach-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Mia South Beach (60s)",
+      "tags": [
+        "miami",
+        "mia-south-beach"
+      ]
+    },
+    {
+      "run_id": "miami-mia-south-beach-stretch-60s",
+      "robot": "stretch",
+      "world": "mia-south-beach",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "79cb69a84b5bc64143aadb2d69d38478d7698bbdab5bbf43ff259caf4d799304",
+      "files": {
+        "jsonl": "miami-mia-south-beach-stretch-60s.jsonl",
+        "parquet": "miami-mia-south-beach-stretch-60s.parquet",
+        "meta": "miami-mia-south-beach-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Mia South Beach (60s)",
+      "tags": [
+        "miami",
+        "mia-south-beach"
+      ]
+    },
+    {
+      "run_id": "miami-mia-south-beach-r1-60s",
+      "robot": "r1",
+      "world": "mia-south-beach",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "edf2a87676dafcbae08063ba6bd9281070b437496365634fa785cadbfde6e99d",
+      "files": {
+        "jsonl": "miami-mia-south-beach-r1-60s.jsonl",
+        "parquet": "miami-mia-south-beach-r1-60s.parquet",
+        "meta": "miami-mia-south-beach-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Mia South Beach (60s)",
+      "tags": [
+        "miami",
+        "mia-south-beach"
+      ]
+    },
+    {
+      "run_id": "miami-mia-wynwood-spot-60s",
+      "robot": "spot",
+      "world": "mia-wynwood",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "5a92a16928f94496d6379b212176a293b0b005e1a7f2cd3d471ee465afbb7b9e",
+      "files": {
+        "jsonl": "miami-mia-wynwood-spot-60s.jsonl",
+        "parquet": "miami-mia-wynwood-spot-60s.parquet",
+        "meta": "miami-mia-wynwood-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Mia Wynwood (60s)",
+      "tags": [
+        "miami",
+        "mia-wynwood"
+      ]
+    },
+    {
+      "run_id": "miami-mia-wynwood-stretch-60s",
+      "robot": "stretch",
+      "world": "mia-wynwood",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "fdba708f8c46a339e579e9def31b490e746637b819e0f52f34680c3b38574be4",
+      "files": {
+        "jsonl": "miami-mia-wynwood-stretch-60s.jsonl",
+        "parquet": "miami-mia-wynwood-stretch-60s.parquet",
+        "meta": "miami-mia-wynwood-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Mia Wynwood (60s)",
+      "tags": [
+        "miami",
+        "mia-wynwood"
+      ]
+    },
+    {
+      "run_id": "miami-mia-wynwood-r1-60s",
+      "robot": "r1",
+      "world": "mia-wynwood",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "d2019173e203b381e7e9684597045ad22000089ec12a5e69c63d837779046da0",
+      "files": {
+        "jsonl": "miami-mia-wynwood-r1-60s.jsonl",
+        "parquet": "miami-mia-wynwood-r1-60s.parquet",
+        "meta": "miami-mia-wynwood-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Mia Wynwood (60s)",
+      "tags": [
+        "miami",
+        "mia-wynwood"
+      ]
+    },
+    {
+      "run_id": "miami-mia-brickell-spot-60s",
+      "robot": "spot",
+      "world": "mia-brickell",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "23b819f05cfb60a7232c813af0fbb41fe2158b2a0d6217a1671dfca8fdedc464",
+      "files": {
+        "jsonl": "miami-mia-brickell-spot-60s.jsonl",
+        "parquet": "miami-mia-brickell-spot-60s.parquet",
+        "meta": "miami-mia-brickell-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Mia Brickell (60s)",
+      "tags": [
+        "miami",
+        "mia-brickell"
+      ]
+    },
+    {
+      "run_id": "miami-mia-brickell-stretch-60s",
+      "robot": "stretch",
+      "world": "mia-brickell",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "c79b5d28439ae83aca7d4424d334683fc9c3353909f9d68ca4afcb6101ccaa97",
+      "files": {
+        "jsonl": "miami-mia-brickell-stretch-60s.jsonl",
+        "parquet": "miami-mia-brickell-stretch-60s.parquet",
+        "meta": "miami-mia-brickell-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Mia Brickell (60s)",
+      "tags": [
+        "miami",
+        "mia-brickell"
+      ]
+    },
+    {
+      "run_id": "miami-mia-brickell-r1-60s",
+      "robot": "r1",
+      "world": "mia-brickell",
+      "region": "miami",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "5fb566d6ac68fee63896d0f552db02b87226895bc0616f0cc2f3276b4efe0359",
+      "files": {
+        "jsonl": "miami-mia-brickell-r1-60s.jsonl",
+        "parquet": "miami-mia-brickell-r1-60s.parquet",
+        "meta": "miami-mia-brickell-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Mia Brickell (60s)",
+      "tags": [
+        "miami",
+        "mia-brickell"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-downtown-spot-60s",
+      "robot": "spot",
+      "world": "sea-downtown",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "d2d09d9435d0c23d44d1ba938f5283b8eef3d042c43eb3b362181c2a0d5e3c3e",
+      "files": {
+        "jsonl": "seattle-sea-downtown-spot-60s.jsonl",
+        "parquet": "seattle-sea-downtown-spot-60s.parquet",
+        "meta": "seattle-sea-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sea Downtown (60s)",
+      "tags": [
+        "seattle",
+        "sea-downtown"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "sea-downtown",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "9452164a4286ae753b14f1788059519f295a74177e44486677220d863a8e5f83",
+      "files": {
+        "jsonl": "seattle-sea-downtown-stretch-60s.jsonl",
+        "parquet": "seattle-sea-downtown-stretch-60s.parquet",
+        "meta": "seattle-sea-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sea Downtown (60s)",
+      "tags": [
+        "seattle",
+        "sea-downtown"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-downtown-r1-60s",
+      "robot": "r1",
+      "world": "sea-downtown",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "fb1e705626329fa436036cc67bd685d7d1502958048c0df410413fdd7a494382",
+      "files": {
+        "jsonl": "seattle-sea-downtown-r1-60s.jsonl",
+        "parquet": "seattle-sea-downtown-r1-60s.parquet",
+        "meta": "seattle-sea-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sea Downtown (60s)",
+      "tags": [
+        "seattle",
+        "sea-downtown"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-capitol-hill-spot-60s",
+      "robot": "spot",
+      "world": "sea-capitol-hill",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "94b3e783925236fe55b7a7783eb0e8200daf0a5d538ee1309a97fce17ee6cdaa",
+      "files": {
+        "jsonl": "seattle-sea-capitol-hill-spot-60s.jsonl",
+        "parquet": "seattle-sea-capitol-hill-spot-60s.parquet",
+        "meta": "seattle-sea-capitol-hill-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sea Capitol Hill (60s)",
+      "tags": [
+        "seattle",
+        "sea-capitol-hill"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-capitol-hill-stretch-60s",
+      "robot": "stretch",
+      "world": "sea-capitol-hill",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "e33a1d33591b3a99648043dbacf2fe0d5ac8f4e42c704e30b2e17a989f468e99",
+      "files": {
+        "jsonl": "seattle-sea-capitol-hill-stretch-60s.jsonl",
+        "parquet": "seattle-sea-capitol-hill-stretch-60s.parquet",
+        "meta": "seattle-sea-capitol-hill-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sea Capitol Hill (60s)",
+      "tags": [
+        "seattle",
+        "sea-capitol-hill"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-capitol-hill-r1-60s",
+      "robot": "r1",
+      "world": "sea-capitol-hill",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "8441bdb0d091cc084c7cd14941ceeaf0af86948732fe10f2877fc690d5826d8d",
+      "files": {
+        "jsonl": "seattle-sea-capitol-hill-r1-60s.jsonl",
+        "parquet": "seattle-sea-capitol-hill-r1-60s.parquet",
+        "meta": "seattle-sea-capitol-hill-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sea Capitol Hill (60s)",
+      "tags": [
+        "seattle",
+        "sea-capitol-hill"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-ballard-spot-60s",
+      "robot": "spot",
+      "world": "sea-ballard",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "a940c47ea02f054dd32727a5ce9c3ecfc5dafe76431f229e2cf1a04367751a3b",
+      "files": {
+        "jsonl": "seattle-sea-ballard-spot-60s.jsonl",
+        "parquet": "seattle-sea-ballard-spot-60s.parquet",
+        "meta": "seattle-sea-ballard-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sea Ballard (60s)",
+      "tags": [
+        "seattle",
+        "sea-ballard"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-ballard-stretch-60s",
+      "robot": "stretch",
+      "world": "sea-ballard",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "05bf99d5a311287d530bea37729443ad7d7b736fd48e2739c8eed808a2f6b1f4",
+      "files": {
+        "jsonl": "seattle-sea-ballard-stretch-60s.jsonl",
+        "parquet": "seattle-sea-ballard-stretch-60s.parquet",
+        "meta": "seattle-sea-ballard-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sea Ballard (60s)",
+      "tags": [
+        "seattle",
+        "sea-ballard"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-ballard-r1-60s",
+      "robot": "r1",
+      "world": "sea-ballard",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "fb2d14c459c6259aa3e4f3046b3c07d25b630e6b05575688bdc5c32a88b23e97",
+      "files": {
+        "jsonl": "seattle-sea-ballard-r1-60s.jsonl",
+        "parquet": "seattle-sea-ballard-r1-60s.parquet",
+        "meta": "seattle-sea-ballard-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sea Ballard (60s)",
+      "tags": [
+        "seattle",
+        "sea-ballard"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-fremont-spot-60s",
+      "robot": "spot",
+      "world": "sea-fremont",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "b92cb3c09694214c57da2b39400c4dd5e4b0efa718a4f6ec0a0667a115f4e57c",
+      "files": {
+        "jsonl": "seattle-sea-fremont-spot-60s.jsonl",
+        "parquet": "seattle-sea-fremont-spot-60s.parquet",
+        "meta": "seattle-sea-fremont-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sea Fremont (60s)",
+      "tags": [
+        "seattle",
+        "sea-fremont"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-fremont-stretch-60s",
+      "robot": "stretch",
+      "world": "sea-fremont",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "6fbac5a46cf8635f8969e4e3caea62b71e83837da46363053d5d6127bbad2bcf",
+      "files": {
+        "jsonl": "seattle-sea-fremont-stretch-60s.jsonl",
+        "parquet": "seattle-sea-fremont-stretch-60s.parquet",
+        "meta": "seattle-sea-fremont-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sea Fremont (60s)",
+      "tags": [
+        "seattle",
+        "sea-fremont"
+      ]
+    },
+    {
+      "run_id": "seattle-sea-fremont-r1-60s",
+      "robot": "r1",
+      "world": "sea-fremont",
+      "region": "seattle",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "97bbee9b379a5e9902f2f811b5718d7aec20404e400ea91bdeb3ce24020b70e9",
+      "files": {
+        "jsonl": "seattle-sea-fremont-r1-60s.jsonl",
+        "parquet": "seattle-sea-fremont-r1-60s.parquet",
+        "meta": "seattle-sea-fremont-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sea Fremont (60s)",
+      "tags": [
+        "seattle",
+        "sea-fremont"
+      ]
+    },
+    {
+      "run_id": "denver-den-downtown-spot-60s",
+      "robot": "spot",
+      "world": "den-downtown",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "7c3a2c69c36e53d11deeb4247f8e0f7cb769ad9f634a386ebba17be78c4bf0ee",
+      "files": {
+        "jsonl": "denver-den-downtown-spot-60s.jsonl",
+        "parquet": "denver-den-downtown-spot-60s.parquet",
+        "meta": "denver-den-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Den Downtown (60s)",
+      "tags": [
+        "denver",
+        "den-downtown"
+      ]
+    },
+    {
+      "run_id": "denver-den-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "den-downtown",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "4128cc2d89a0b3bcf57cbaff42f08c6d83b3c341a710ad593c98be2a1480fcd5",
+      "files": {
+        "jsonl": "denver-den-downtown-stretch-60s.jsonl",
+        "parquet": "denver-den-downtown-stretch-60s.parquet",
+        "meta": "denver-den-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Den Downtown (60s)",
+      "tags": [
+        "denver",
+        "den-downtown"
+      ]
+    },
+    {
+      "run_id": "denver-den-downtown-r1-60s",
+      "robot": "r1",
+      "world": "den-downtown",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "6425f31e11144dd3d52a4c136f455720b097034003b4241ec9c633b443a11c28",
+      "files": {
+        "jsonl": "denver-den-downtown-r1-60s.jsonl",
+        "parquet": "denver-den-downtown-r1-60s.parquet",
+        "meta": "denver-den-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Den Downtown (60s)",
+      "tags": [
+        "denver",
+        "den-downtown"
+      ]
+    },
+    {
+      "run_id": "denver-den-highlands-spot-60s",
+      "robot": "spot",
+      "world": "den-highlands",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "c5686a5c9820b7a89446625268948535cefba2ed3fc101cea1f69a19ade71e74",
+      "files": {
+        "jsonl": "denver-den-highlands-spot-60s.jsonl",
+        "parquet": "denver-den-highlands-spot-60s.parquet",
+        "meta": "denver-den-highlands-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Den Highlands (60s)",
+      "tags": [
+        "denver",
+        "den-highlands"
+      ]
+    },
+    {
+      "run_id": "denver-den-highlands-stretch-60s",
+      "robot": "stretch",
+      "world": "den-highlands",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "89131a89644a9ca61ac4f71d7de1d2d45b9f8c59ecffd24c522cc90824255c88",
+      "files": {
+        "jsonl": "denver-den-highlands-stretch-60s.jsonl",
+        "parquet": "denver-den-highlands-stretch-60s.parquet",
+        "meta": "denver-den-highlands-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Den Highlands (60s)",
+      "tags": [
+        "denver",
+        "den-highlands"
+      ]
+    },
+    {
+      "run_id": "denver-den-highlands-r1-60s",
+      "robot": "r1",
+      "world": "den-highlands",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "5bb260fbb588b282129857bd25922f9de59375ceb42d41e4cffeaf828544d128",
+      "files": {
+        "jsonl": "denver-den-highlands-r1-60s.jsonl",
+        "parquet": "denver-den-highlands-r1-60s.parquet",
+        "meta": "denver-den-highlands-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Den Highlands (60s)",
+      "tags": [
+        "denver",
+        "den-highlands"
+      ]
+    },
+    {
+      "run_id": "denver-den-rino-spot-60s",
+      "robot": "spot",
+      "world": "den-rino",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "82f5b6039777f0dd849d39c90e6083ee28fc222d7f6714d41a8b12370f587bec",
+      "files": {
+        "jsonl": "denver-den-rino-spot-60s.jsonl",
+        "parquet": "denver-den-rino-spot-60s.parquet",
+        "meta": "denver-den-rino-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Den Rino (60s)",
+      "tags": [
+        "denver",
+        "den-rino"
+      ]
+    },
+    {
+      "run_id": "denver-den-rino-stretch-60s",
+      "robot": "stretch",
+      "world": "den-rino",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "b70c5c9285b586e5ce0fc1bb4489aa4126d937ce305013808ee53a010de19f5a",
+      "files": {
+        "jsonl": "denver-den-rino-stretch-60s.jsonl",
+        "parquet": "denver-den-rino-stretch-60s.parquet",
+        "meta": "denver-den-rino-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Den Rino (60s)",
+      "tags": [
+        "denver",
+        "den-rino"
+      ]
+    },
+    {
+      "run_id": "denver-den-rino-r1-60s",
+      "robot": "r1",
+      "world": "den-rino",
+      "region": "denver",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "518ad8a10bb7899292db5dc495c7e9c062a333973e5892f329bc32fd7f639df9",
+      "files": {
+        "jsonl": "denver-den-rino-r1-60s.jsonl",
+        "parquet": "denver-den-rino-r1-60s.parquet",
+        "meta": "denver-den-rino-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Den Rino (60s)",
+      "tags": [
+        "denver",
+        "den-rino"
+      ]
+    },
+    {
+      "run_id": "boston-bos-downtown-spot-60s",
+      "robot": "spot",
+      "world": "bos-downtown",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "f8b5f4cc916795123869f178299eec56b0d7803fd5941ec57eaefbc88b990de6",
+      "files": {
+        "jsonl": "boston-bos-downtown-spot-60s.jsonl",
+        "parquet": "boston-bos-downtown-spot-60s.parquet",
+        "meta": "boston-bos-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Bos Downtown (60s)",
+      "tags": [
+        "boston",
+        "bos-downtown"
+      ]
+    },
+    {
+      "run_id": "boston-bos-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "bos-downtown",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "dd33feb450961dea22981f5681b775e000d97c2322c23e0ee44f99fac1007078",
+      "files": {
+        "jsonl": "boston-bos-downtown-stretch-60s.jsonl",
+        "parquet": "boston-bos-downtown-stretch-60s.parquet",
+        "meta": "boston-bos-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Bos Downtown (60s)",
+      "tags": [
+        "boston",
+        "bos-downtown"
+      ]
+    },
+    {
+      "run_id": "boston-bos-downtown-r1-60s",
+      "robot": "r1",
+      "world": "bos-downtown",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "328ae0f10a9e53b25779703486ae3a4daefac6d41585d4f69b0e08af48201150",
+      "files": {
+        "jsonl": "boston-bos-downtown-r1-60s.jsonl",
+        "parquet": "boston-bos-downtown-r1-60s.parquet",
+        "meta": "boston-bos-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Bos Downtown (60s)",
+      "tags": [
+        "boston",
+        "bos-downtown"
+      ]
+    },
+    {
+      "run_id": "boston-bos-back-bay-spot-60s",
+      "robot": "spot",
+      "world": "bos-back-bay",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "87631929a6c12db507c6993f3d7d3b2d1e31e14259263a1348c35ea0f1ebd010",
+      "files": {
+        "jsonl": "boston-bos-back-bay-spot-60s.jsonl",
+        "parquet": "boston-bos-back-bay-spot-60s.parquet",
+        "meta": "boston-bos-back-bay-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Bos Back Bay (60s)",
+      "tags": [
+        "boston",
+        "bos-back-bay"
+      ]
+    },
+    {
+      "run_id": "boston-bos-back-bay-stretch-60s",
+      "robot": "stretch",
+      "world": "bos-back-bay",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "30548c223bfe6849cf5c54a98c32b8b8320bf36f233e430b0051be9a5ffc9cdb",
+      "files": {
+        "jsonl": "boston-bos-back-bay-stretch-60s.jsonl",
+        "parquet": "boston-bos-back-bay-stretch-60s.parquet",
+        "meta": "boston-bos-back-bay-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Bos Back Bay (60s)",
+      "tags": [
+        "boston",
+        "bos-back-bay"
+      ]
+    },
+    {
+      "run_id": "boston-bos-back-bay-r1-60s",
+      "robot": "r1",
+      "world": "bos-back-bay",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "16fc79167c4ed3ee8189531d7645b51569d048e6cbc8cd6a0b265af0ecf2fbf8",
+      "files": {
+        "jsonl": "boston-bos-back-bay-r1-60s.jsonl",
+        "parquet": "boston-bos-back-bay-r1-60s.parquet",
+        "meta": "boston-bos-back-bay-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Bos Back Bay (60s)",
+      "tags": [
+        "boston",
+        "bos-back-bay"
+      ]
+    },
+    {
+      "run_id": "boston-bos-seaport-spot-60s",
+      "robot": "spot",
+      "world": "bos-seaport",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "f113da9944d4ab62f6dca8d09956eb1889409aa15a2817acd09b06a0e38cbd01",
+      "files": {
+        "jsonl": "boston-bos-seaport-spot-60s.jsonl",
+        "parquet": "boston-bos-seaport-spot-60s.parquet",
+        "meta": "boston-bos-seaport-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Bos Seaport (60s)",
+      "tags": [
+        "boston",
+        "bos-seaport"
+      ]
+    },
+    {
+      "run_id": "boston-bos-seaport-stretch-60s",
+      "robot": "stretch",
+      "world": "bos-seaport",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "76ef2d4c8d84a20af1124289abf56c4159b60e5a67f065422544c9b029002f11",
+      "files": {
+        "jsonl": "boston-bos-seaport-stretch-60s.jsonl",
+        "parquet": "boston-bos-seaport-stretch-60s.parquet",
+        "meta": "boston-bos-seaport-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Bos Seaport (60s)",
+      "tags": [
+        "boston",
+        "bos-seaport"
+      ]
+    },
+    {
+      "run_id": "boston-bos-seaport-r1-60s",
+      "robot": "r1",
+      "world": "bos-seaport",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "7292de4995f8b27d628f0eb94b3550007324568dc90a222bfcf57d747ed297ac",
+      "files": {
+        "jsonl": "boston-bos-seaport-r1-60s.jsonl",
+        "parquet": "boston-bos-seaport-r1-60s.parquet",
+        "meta": "boston-bos-seaport-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Bos Seaport (60s)",
+      "tags": [
+        "boston",
+        "bos-seaport"
+      ]
+    },
+    {
+      "run_id": "boston-bos-cambridge-spot-60s",
+      "robot": "spot",
+      "world": "bos-cambridge",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "366a5bfd18c51a8503641e2117c893a3c65113f98e41120850a35ba2fc6e6df8",
+      "files": {
+        "jsonl": "boston-bos-cambridge-spot-60s.jsonl",
+        "parquet": "boston-bos-cambridge-spot-60s.parquet",
+        "meta": "boston-bos-cambridge-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Bos Cambridge (60s)",
+      "tags": [
+        "boston",
+        "bos-cambridge"
+      ]
+    },
+    {
+      "run_id": "boston-bos-cambridge-stretch-60s",
+      "robot": "stretch",
+      "world": "bos-cambridge",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "0f54ea25071b83e985e1b2f22cc0d24ee27d0b081ea0a768bb1b37bc06e3a4fc",
+      "files": {
+        "jsonl": "boston-bos-cambridge-stretch-60s.jsonl",
+        "parquet": "boston-bos-cambridge-stretch-60s.parquet",
+        "meta": "boston-bos-cambridge-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Bos Cambridge (60s)",
+      "tags": [
+        "boston",
+        "bos-cambridge"
+      ]
+    },
+    {
+      "run_id": "boston-bos-cambridge-r1-60s",
+      "robot": "r1",
+      "world": "bos-cambridge",
+      "region": "boston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "ff42a227d7a76f54c27dd9bae15fce52b3887de4769365e4bbc8727aabbb3307",
+      "files": {
+        "jsonl": "boston-bos-cambridge-r1-60s.jsonl",
+        "parquet": "boston-bos-cambridge-r1-60s.parquet",
+        "meta": "boston-bos-cambridge-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Bos Cambridge (60s)",
+      "tags": [
+        "boston",
+        "bos-cambridge"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-midtown-spot-60s",
+      "robot": "spot",
+      "world": "atl-midtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "6bcef23b15bd2fb0ab33aff1ee8529dfd7740dd501595898fccd3c008aad77ee",
+      "files": {
+        "jsonl": "atlanta-atl-midtown-spot-60s.jsonl",
+        "parquet": "atlanta-atl-midtown-spot-60s.parquet",
+        "meta": "atlanta-atl-midtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Atl Midtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-midtown"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-midtown-stretch-60s",
+      "robot": "stretch",
+      "world": "atl-midtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "f37bedfaca73e4cdc20da3a8c2ac3537c844a39dc87fd638ea6ac81aa785d9b4",
+      "files": {
+        "jsonl": "atlanta-atl-midtown-stretch-60s.jsonl",
+        "parquet": "atlanta-atl-midtown-stretch-60s.parquet",
+        "meta": "atlanta-atl-midtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Atl Midtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-midtown"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-midtown-r1-60s",
+      "robot": "r1",
+      "world": "atl-midtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "20545cc29769b099643c872a304a1b12fcfeaa3e16bb576ce5bc9c45a4c6447d",
+      "files": {
+        "jsonl": "atlanta-atl-midtown-r1-60s.jsonl",
+        "parquet": "atlanta-atl-midtown-r1-60s.parquet",
+        "meta": "atlanta-atl-midtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Atl Midtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-midtown"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-buckhead-spot-60s",
+      "robot": "spot",
+      "world": "atl-buckhead",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "ece14dfd98839ccc7b4bf27129b1c86fce4e45422bab75867bd952630c829e49",
+      "files": {
+        "jsonl": "atlanta-atl-buckhead-spot-60s.jsonl",
+        "parquet": "atlanta-atl-buckhead-spot-60s.parquet",
+        "meta": "atlanta-atl-buckhead-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Atl Buckhead (60s)",
+      "tags": [
+        "atlanta",
+        "atl-buckhead"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-buckhead-stretch-60s",
+      "robot": "stretch",
+      "world": "atl-buckhead",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "7152174ef483428647678dd754bea860c849cbe9c2d339c01a3175749d4d74ca",
+      "files": {
+        "jsonl": "atlanta-atl-buckhead-stretch-60s.jsonl",
+        "parquet": "atlanta-atl-buckhead-stretch-60s.parquet",
+        "meta": "atlanta-atl-buckhead-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Atl Buckhead (60s)",
+      "tags": [
+        "atlanta",
+        "atl-buckhead"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-buckhead-r1-60s",
+      "robot": "r1",
+      "world": "atl-buckhead",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "b813246a3a4ffe1eb20607e4abb1e5d55ea2f372e78a2b94e481e9323ed13ba8",
+      "files": {
+        "jsonl": "atlanta-atl-buckhead-r1-60s.jsonl",
+        "parquet": "atlanta-atl-buckhead-r1-60s.parquet",
+        "meta": "atlanta-atl-buckhead-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Atl Buckhead (60s)",
+      "tags": [
+        "atlanta",
+        "atl-buckhead"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-downtown-spot-60s",
+      "robot": "spot",
+      "world": "atl-downtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "6138b7d95d27ba9d8512b5a0b7e5026ad56ca5bee963155c5b71cb85100db441",
+      "files": {
+        "jsonl": "atlanta-atl-downtown-spot-60s.jsonl",
+        "parquet": "atlanta-atl-downtown-spot-60s.parquet",
+        "meta": "atlanta-atl-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Atl Downtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-downtown"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "atl-downtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "7c0634e4e4606474cf1f59830378b491456a587c91250cdbc237a93978b5a06c",
+      "files": {
+        "jsonl": "atlanta-atl-downtown-stretch-60s.jsonl",
+        "parquet": "atlanta-atl-downtown-stretch-60s.parquet",
+        "meta": "atlanta-atl-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Atl Downtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-downtown"
+      ]
+    },
+    {
+      "run_id": "atlanta-atl-downtown-r1-60s",
+      "robot": "r1",
+      "world": "atl-downtown",
+      "region": "atlanta",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "7536b9857989135062bb7be109828b0b84d879073f9e255b4e24feffce565f46",
+      "files": {
+        "jsonl": "atlanta-atl-downtown-r1-60s.jsonl",
+        "parquet": "atlanta-atl-downtown-r1-60s.parquet",
+        "meta": "atlanta-atl-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Atl Downtown (60s)",
+      "tags": [
+        "atlanta",
+        "atl-downtown"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-loop-spot-60s",
+      "robot": "spot",
+      "world": "chi-loop",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "0124325f0f0de641671ee2e18dce37564b3c38bb369783c4e79c55597140a9c3",
+      "files": {
+        "jsonl": "chicago-chi-loop-spot-60s.jsonl",
+        "parquet": "chicago-chi-loop-spot-60s.parquet",
+        "meta": "chicago-chi-loop-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Chi Loop (60s)",
+      "tags": [
+        "chicago",
+        "chi-loop"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-loop-stretch-60s",
+      "robot": "stretch",
+      "world": "chi-loop",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "c4f9924536de86399a340127e03ece02605e21402691628b61783ce926389fc9",
+      "files": {
+        "jsonl": "chicago-chi-loop-stretch-60s.jsonl",
+        "parquet": "chicago-chi-loop-stretch-60s.parquet",
+        "meta": "chicago-chi-loop-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Chi Loop (60s)",
+      "tags": [
+        "chicago",
+        "chi-loop"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-loop-r1-60s",
+      "robot": "r1",
+      "world": "chi-loop",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "698f1d5fb8bc6f257097e38d7facc97cc1aa1c2eb61ab393a62908e57899dd96",
+      "files": {
+        "jsonl": "chicago-chi-loop-r1-60s.jsonl",
+        "parquet": "chicago-chi-loop-r1-60s.parquet",
+        "meta": "chicago-chi-loop-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Chi Loop (60s)",
+      "tags": [
+        "chicago",
+        "chi-loop"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-wicker-park-spot-60s",
+      "robot": "spot",
+      "world": "chi-wicker-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "69c52242009b4ad9039583395a901b45e63a736e38b69f771d3837a70f56e64d",
+      "files": {
+        "jsonl": "chicago-chi-wicker-park-spot-60s.jsonl",
+        "parquet": "chicago-chi-wicker-park-spot-60s.parquet",
+        "meta": "chicago-chi-wicker-park-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Chi Wicker Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-wicker-park"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-wicker-park-stretch-60s",
+      "robot": "stretch",
+      "world": "chi-wicker-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "36565e666aa27eba7e3d19f0fbfbf93cce0c422efe9134f23099029b1a0e16bc",
+      "files": {
+        "jsonl": "chicago-chi-wicker-park-stretch-60s.jsonl",
+        "parquet": "chicago-chi-wicker-park-stretch-60s.parquet",
+        "meta": "chicago-chi-wicker-park-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Chi Wicker Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-wicker-park"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-wicker-park-r1-60s",
+      "robot": "r1",
+      "world": "chi-wicker-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "26d35938809908758e67ff6170c4542b809313d0d5c64218ce9c2ed5485afff9",
+      "files": {
+        "jsonl": "chicago-chi-wicker-park-r1-60s.jsonl",
+        "parquet": "chicago-chi-wicker-park-r1-60s.parquet",
+        "meta": "chicago-chi-wicker-park-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Chi Wicker Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-wicker-park"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-lakeview-spot-60s",
+      "robot": "spot",
+      "world": "chi-lakeview",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "5bd6865c2487adfd09d60a501fbc1bfb466384760ad2883af6052cab0815c241",
+      "files": {
+        "jsonl": "chicago-chi-lakeview-spot-60s.jsonl",
+        "parquet": "chicago-chi-lakeview-spot-60s.parquet",
+        "meta": "chicago-chi-lakeview-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Chi Lakeview (60s)",
+      "tags": [
+        "chicago",
+        "chi-lakeview"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-lakeview-stretch-60s",
+      "robot": "stretch",
+      "world": "chi-lakeview",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "165868e88c9a054643c36435473cd82ca0501970f452a5ddf3962e8378ff6859",
+      "files": {
+        "jsonl": "chicago-chi-lakeview-stretch-60s.jsonl",
+        "parquet": "chicago-chi-lakeview-stretch-60s.parquet",
+        "meta": "chicago-chi-lakeview-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Chi Lakeview (60s)",
+      "tags": [
+        "chicago",
+        "chi-lakeview"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-lakeview-r1-60s",
+      "robot": "r1",
+      "world": "chi-lakeview",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "b3bf02786a9cab334dc44b41b05084e6d0374db6909542832e7d80cebc3d615f",
+      "files": {
+        "jsonl": "chicago-chi-lakeview-r1-60s.jsonl",
+        "parquet": "chicago-chi-lakeview-r1-60s.parquet",
+        "meta": "chicago-chi-lakeview-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Chi Lakeview (60s)",
+      "tags": [
+        "chicago",
+        "chi-lakeview"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-hyde-park-spot-60s",
+      "robot": "spot",
+      "world": "chi-hyde-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "a2e1f0df4f63159adb8f5e2bccb0f4906ede8b4cabacc2466362fb00ab8b45a3",
+      "files": {
+        "jsonl": "chicago-chi-hyde-park-spot-60s.jsonl",
+        "parquet": "chicago-chi-hyde-park-spot-60s.parquet",
+        "meta": "chicago-chi-hyde-park-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Chi Hyde Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-hyde-park"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-hyde-park-stretch-60s",
+      "robot": "stretch",
+      "world": "chi-hyde-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "8dd51435d23468ff217688d6a8250406c2cd19557f7ee0c92d197cd42a1758d9",
+      "files": {
+        "jsonl": "chicago-chi-hyde-park-stretch-60s.jsonl",
+        "parquet": "chicago-chi-hyde-park-stretch-60s.parquet",
+        "meta": "chicago-chi-hyde-park-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Chi Hyde Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-hyde-park"
+      ]
+    },
+    {
+      "run_id": "chicago-chi-hyde-park-r1-60s",
+      "robot": "r1",
+      "world": "chi-hyde-park",
+      "region": "chicago",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "58cf4a835c28df5de7b31375a5b31c42f11a52432e176a868cfa0e8ad235fc03",
+      "files": {
+        "jsonl": "chicago-chi-hyde-park-r1-60s.jsonl",
+        "parquet": "chicago-chi-hyde-park-r1-60s.parquet",
+        "meta": "chicago-chi-hyde-park-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Chi Hyde Park (60s)",
+      "tags": [
+        "chicago",
+        "chi-hyde-park"
+      ]
+    },
+    {
+      "run_id": "houston-hou-downtown-spot-60s",
+      "robot": "spot",
+      "world": "hou-downtown",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "56c3cc52370c828a4a17ec830966c9bf328a25444092138c6cc9f170812c0a7a",
+      "files": {
+        "jsonl": "houston-hou-downtown-spot-60s.jsonl",
+        "parquet": "houston-hou-downtown-spot-60s.parquet",
+        "meta": "houston-hou-downtown-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Hou Downtown (60s)",
+      "tags": [
+        "houston",
+        "hou-downtown"
+      ]
+    },
+    {
+      "run_id": "houston-hou-downtown-stretch-60s",
+      "robot": "stretch",
+      "world": "hou-downtown",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "1ad282f45b275cafe5d77cc49cfb01a5f467cee0d295b295828d7a28506e6e46",
+      "files": {
+        "jsonl": "houston-hou-downtown-stretch-60s.jsonl",
+        "parquet": "houston-hou-downtown-stretch-60s.parquet",
+        "meta": "houston-hou-downtown-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Hou Downtown (60s)",
+      "tags": [
+        "houston",
+        "hou-downtown"
+      ]
+    },
+    {
+      "run_id": "houston-hou-downtown-r1-60s",
+      "robot": "r1",
+      "world": "hou-downtown",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "6f60264ec879f7019ccba46daa386955d3a449c88b27620f4667ac3b4c4a9384",
+      "files": {
+        "jsonl": "houston-hou-downtown-r1-60s.jsonl",
+        "parquet": "houston-hou-downtown-r1-60s.parquet",
+        "meta": "houston-hou-downtown-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Hou Downtown (60s)",
+      "tags": [
+        "houston",
+        "hou-downtown"
+      ]
+    },
+    {
+      "run_id": "houston-hou-medical-center-spot-60s",
+      "robot": "spot",
+      "world": "hou-medical-center",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "6c23bc64dfe7009e6001e8d5629d86d9758c4c60ec10595b9d7f3498db111077",
+      "files": {
+        "jsonl": "houston-hou-medical-center-spot-60s.jsonl",
+        "parquet": "houston-hou-medical-center-spot-60s.parquet",
+        "meta": "houston-hou-medical-center-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Hou Medical Center (60s)",
+      "tags": [
+        "houston",
+        "hou-medical-center"
+      ]
+    },
+    {
+      "run_id": "houston-hou-medical-center-stretch-60s",
+      "robot": "stretch",
+      "world": "hou-medical-center",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "a627daa581f11278c9d6183d57a383ed1746e64439ad31b50815ab1c49e61099",
+      "files": {
+        "jsonl": "houston-hou-medical-center-stretch-60s.jsonl",
+        "parquet": "houston-hou-medical-center-stretch-60s.parquet",
+        "meta": "houston-hou-medical-center-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Hou Medical Center (60s)",
+      "tags": [
+        "houston",
+        "hou-medical-center"
+      ]
+    },
+    {
+      "run_id": "houston-hou-medical-center-r1-60s",
+      "robot": "r1",
+      "world": "hou-medical-center",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "704a40f34169830d4b00d8b727b9804c379e89893b561833ce1896bacfd93532",
+      "files": {
+        "jsonl": "houston-hou-medical-center-r1-60s.jsonl",
+        "parquet": "houston-hou-medical-center-r1-60s.parquet",
+        "meta": "houston-hou-medical-center-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Hou Medical Center (60s)",
+      "tags": [
+        "houston",
+        "hou-medical-center"
+      ]
+    },
+    {
+      "run_id": "houston-hou-energy-corridor-spot-60s",
+      "robot": "spot",
+      "world": "hou-energy-corridor",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "594617cbaa35ef879853a9a193ddc12882bc3d92481c57a71f54d928ea3e48c0",
+      "files": {
+        "jsonl": "houston-hou-energy-corridor-spot-60s.jsonl",
+        "parquet": "houston-hou-energy-corridor-spot-60s.parquet",
+        "meta": "houston-hou-energy-corridor-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Hou Energy Corridor (60s)",
+      "tags": [
+        "houston",
+        "hou-energy-corridor"
+      ]
+    },
+    {
+      "run_id": "houston-hou-energy-corridor-stretch-60s",
+      "robot": "stretch",
+      "world": "hou-energy-corridor",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "bee1edfa2315f357e72c7b26acff9fde27ddffb2f8b7ba4d59e0c3bc97b0a19a",
+      "files": {
+        "jsonl": "houston-hou-energy-corridor-stretch-60s.jsonl",
+        "parquet": "houston-hou-energy-corridor-stretch-60s.parquet",
+        "meta": "houston-hou-energy-corridor-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Hou Energy Corridor (60s)",
+      "tags": [
+        "houston",
+        "hou-energy-corridor"
+      ]
+    },
+    {
+      "run_id": "houston-hou-energy-corridor-r1-60s",
+      "robot": "r1",
+      "world": "hou-energy-corridor",
+      "region": "houston",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "ca36083b2ab3c12d13402a3ebd9ece8aced660ccc9b0d7fd6e9637608616331c",
+      "files": {
+        "jsonl": "houston-hou-energy-corridor-r1-60s.jsonl",
+        "parquet": "houston-hou-energy-corridor-r1-60s.parquet",
+        "meta": "houston-hou-energy-corridor-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Hou Energy Corridor (60s)",
+      "tags": [
+        "houston",
+        "hou-energy-corridor"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-river-walk-spot-60s",
+      "robot": "spot",
+      "world": "sa-river-walk",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "14f592874a2f7b322370ec6d218b0817e77c2ed9d3d57bd9ec8a41d438ba561d",
+      "files": {
+        "jsonl": "san-antonio-sa-river-walk-spot-60s.jsonl",
+        "parquet": "san-antonio-sa-river-walk-spot-60s.parquet",
+        "meta": "san-antonio-sa-river-walk-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sa River Walk (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-river-walk"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-river-walk-stretch-60s",
+      "robot": "stretch",
+      "world": "sa-river-walk",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "aa847782542914b0e370cd164e1b99a8607167304ef7eb01a4471a4d51bd0378",
+      "files": {
+        "jsonl": "san-antonio-sa-river-walk-stretch-60s.jsonl",
+        "parquet": "san-antonio-sa-river-walk-stretch-60s.parquet",
+        "meta": "san-antonio-sa-river-walk-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sa River Walk (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-river-walk"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-river-walk-r1-60s",
+      "robot": "r1",
+      "world": "sa-river-walk",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "3fd8af59f5ba7ce07c5d5d3c5fd6e8923b2bd1b53ead6ca56635368b30dfa27d",
+      "files": {
+        "jsonl": "san-antonio-sa-river-walk-r1-60s.jsonl",
+        "parquet": "san-antonio-sa-river-walk-r1-60s.parquet",
+        "meta": "san-antonio-sa-river-walk-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sa River Walk (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-river-walk"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-alamo-spot-60s",
+      "robot": "spot",
+      "world": "sa-alamo",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "b524dbe40b7f3ce6852c033b4dfbce48f9d5b7f534976cfaefbd285e4c055b34",
+      "files": {
+        "jsonl": "san-antonio-sa-alamo-spot-60s.jsonl",
+        "parquet": "san-antonio-sa-alamo-spot-60s.parquet",
+        "meta": "san-antonio-sa-alamo-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sa Alamo (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-alamo"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-alamo-stretch-60s",
+      "robot": "stretch",
+      "world": "sa-alamo",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "892af6e7e600b0d66c727606a85bfd5632eb7b9c58bb52f222e6a69136559f9b",
+      "files": {
+        "jsonl": "san-antonio-sa-alamo-stretch-60s.jsonl",
+        "parquet": "san-antonio-sa-alamo-stretch-60s.parquet",
+        "meta": "san-antonio-sa-alamo-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sa Alamo (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-alamo"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-alamo-r1-60s",
+      "robot": "r1",
+      "world": "sa-alamo",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "f1c9a82c4fa76e90e922ab160376109035e23e396af7b9f3867d966174e5e54e",
+      "files": {
+        "jsonl": "san-antonio-sa-alamo-r1-60s.jsonl",
+        "parquet": "san-antonio-sa-alamo-r1-60s.parquet",
+        "meta": "san-antonio-sa-alamo-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sa Alamo (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-alamo"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-pearl-spot-60s",
+      "robot": "spot",
+      "world": "sa-pearl",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "422232c9ac712710c0d4512c63af1798aa3d4a3c07619d7555f1d71c0cd3dab7",
+      "files": {
+        "jsonl": "san-antonio-sa-pearl-spot-60s.jsonl",
+        "parquet": "san-antonio-sa-pearl-spot-60s.parquet",
+        "meta": "san-antonio-sa-pearl-spot-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "spot in Sa Pearl (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-pearl"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-pearl-stretch-60s",
+      "robot": "stretch",
+      "world": "sa-pearl",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 1560,
+      "jsonl_size": 460319,
+      "parquet_size": 18179,
+      "sha256": "9354da0bbcbca9ff62c3b03785e3b499f1a35cbf86bd4c44e22246d5db18183c",
+      "files": {
+        "jsonl": "san-antonio-sa-pearl-stretch-60s.jsonl",
+        "parquet": "san-antonio-sa-pearl-stretch-60s.parquet",
+        "meta": "san-antonio-sa-pearl-stretch-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "stretch in Sa Pearl (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-pearl"
+      ]
+    },
+    {
+      "run_id": "san-antonio-sa-pearl-r1-60s",
+      "robot": "r1",
+      "world": "sa-pearl",
+      "region": "san-antonio",
+      "duration_sec": 60,
+      "message_count": 480,
+      "jsonl_size": 180000,
+      "parquet_size": 8500,
+      "sha256": "549f722155f777c0e8ead60fde9b16b83eb17e6542d2e83c8dbfa2e0c553af88",
+      "files": {
+        "jsonl": "san-antonio-sa-pearl-r1-60s.jsonl",
+        "parquet": "san-antonio-sa-pearl-r1-60s.parquet",
+        "meta": "san-antonio-sa-pearl-r1-60s.meta.json"
+      },
+      "price_usd": 0.01,
+      "tier": "standard",
+      "description": "r1 in Sa Pearl (60s)",
+      "tags": [
+        "san-antonio",
+        "sa-pearl"
+      ]
     }
   ]
 }
