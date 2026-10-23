@@ -1,76 +1,10 @@
 import type { Hono } from "hono";
-
 export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculum Marketplace
-  app.get("/v1/education/k12/courses", async (c) => {
-    return c.json({
-      category: "K-12 Curriculum",
-      total_courses: 45,
-      grade_levels: ["K-5", "6-8", "9-12"],
-      subjects: ["STEM", "Robotics", "AI Literacy", "Environmental Science", "Coding"],
-      courses: [
-        { id: "k12-robotics-101", title: "Introduction to Robotics", grades: "6-8", price_usd: 5.00, lessons: 12, worlds: ["sf-financial", "nola-french-quarter"] },
-        { id: "k12-ai-literacy", title: "AI Literacy for Kids", grades: "K-5", price_usd: 3.00, lessons: 8, worlds: ["mia-south-beach"] },
-        { id: "k12-env-science", title: "Environmental Science Lab", grades: "9-12", price_usd: 7.00, lessons: 16, worlds: ["sea-downtown", "den-rino"] },
-        { id: "k12-coding-basics", title:import type { Hono } from "hono";
-
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculum Marketpla"k
-export function registerEducatiSTE  // K-12 Curriculum Marketplace
-  app.get("/v1/edu 4  app.get("/v1/education/k12/co      return c.json({
-      category: "K-12 Curriculum 0      category: "K:       total_courses: 45,
-      grba      grade_levels: ["Kre      subjects: ["STEM", "Robotics", "AI LEd      courses: [
-        { id: "k12-robotics-101", title: "Introduction to Robotics",           { id: "=         { id: "k12-ai-literacy", title: "AI Literacy for Kids", grades: "K-5", price_usd: 3.00, lessons: 8, worlds: ["mia-south-beach"] },
-        { id: "k12-env-sth        { id: "k12-env-science", title: "Environmental Science Lab", grades: "9-12", price_usd: 7.00, lessons: 16, worlds: ["sea-downtownin        { id: "k12-coding-basics", title:import type { Hono } from "hono";
-
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculum Mara"
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketpla"k
-export function reatexport function registerEducati0"  app.get("/v1/edu 4  app.get("/v1/education/k12/co      return crk      category: "K-12 Curriculum 0      category: "K:       total_courstu      grba      grade_levels: ["Kre      subjects: ["STEM", "Robotics", "AI L
-         { id: "k12-robotics-101", title: "Introduction to Robotics",           { id: "=       ra        { id: "k12-env-sth        { id: "k12-env-science", title: "Environmental Science Lab", grades: "9-12", price_usd: 7.00, lessons: 16, worlds: ["sea-downtownin        { id: "k12-coding-basics", title:import type { Hono ce
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculum Mara"
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketpla"k
-export function reatexport function registerEducace_  // K-12 Curriculum Mara"
-export function registertiexport fun
-        { id: "t  // K-12 Curriculusim  // K-12 Curriculum Marketpl pexport function reatexport function registerEducati0"},         { id: "k12-robotics-101", title: "Introduction to Robotics",           { id: "=       ra        { id: "k12-env-sth        { id: "k12-env-science", title: "Environmental Science Lab", grades: "9-12", price_usd: 7.00, lessons: 16, worlds: ["sea-downtownin        ]export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculum Mara"
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketpla"k
-export function reatexport function registerEducace_  // K-12 Curriculum Mara"
-export function registertiexport fun
-        { id: "t  /c.  // K-12 Curriculum Mara"
-export function registerriexport function registerE    // K-12 Curriculusim  // K-12 Curriculum Marketplthexport function reatexport function registerEducace_ leexport function registertiexport fun
-        { id: "t  // K-12 Curriculusim  wo        { id: "t  // K-12 Curriculuop  // K-12 Curriculum Mara"
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketpla"k
-export function reatexport function registerEducace_  // K-12 Curriculum Mara"
-export function registertiexport fun
-        { id: "t  /c.  // K-12 Curriculum Mara"
-export function registerriexport function registerE    // K-12 Curriculusim  // K-12 Curriculum Marketplthexport function reatexport function regis;
-export function registerEin  // K-12 Curriculusim  // K-12 Curriculum Marketpltaexport function reatexport function registerEducace_ t"export function registertiexport fun
-        { id: "t  /c.  // K-12 Curriculu:         { id: "t  /c.  // K-12 Curr  export function registerriexport function regi          { id: "t  // K-12 Curriculusim  wo        { id: "t  // K-12 Curriculuop  // K-12 Curriculum Mara"
-export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curri "export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Curriculum Marketpltcexport function reatexportch", world: "nola-french-quarexport function registertiexport fun
-        { id: "t  /c.  // K-12 Curriculu_s        { id: "t  /c.  // K-12 Curr0.export function registerriexport function regi"rexport function registerEin  // K-12 Curriculusim  // K-12 Curriculum Marketpltaexport function reatexport function registerEducace_ t"export functd:        { id: "t  /c.  // K-12 Curriculu:         { id: "t  /c.  // K-12 Curr  export function registerriexport function regi          { id: "t  // K-12 Curriculusim  wo ],export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curri "export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Cro  // K-12 Curriculusim  // K-12 Curri "export functng  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Currion        { id: "t  /c.  // K-12 Curriculu_s        { id: "t  /c.  // K-12 Curr0.export function registerriexport function regi"rexport function registerEin  // K-12 Curriculusim  // K-12 Curriculumnc  // K-12 Curriculusim  // K-12 Curri "export function registerEducationRoutes(app: Hono) {
-  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Cro  // K-12 Curriculusim  // K-12 Curri "export functng  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Currion        { id: "t  /c.  // K-12 Curriculu_s        { id: "t  /c.  // K-12 Curr0.export function registerriexport function regi"rexport function registerEin  // K-12 Curriculusna  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Cro  si  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Cro  // K-12 Curriculusim  // K-12 Curri "export functng  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Currion        { id: "t  /c.  // K-12 Curriculu_s        { id: "t  /c.  // K-12 Curr0.export function registerriexport function regi"rexport function registerEin  // K-12 Curriculusna  // K-12 Curriculusim  // K-12 Curriculum Marketplmb  // K-12 Curriculusim  // K-12 Cro  si  // K-12 Curriculusenue_usd: 1225.00 },
-        union_trades: { courses_sold: 89, revenue_usd: 1335.00 },
-        ros2_data: { episodes_sold: 12500, revenue_usd: 125.00 },
-        total_revenue_usd: 2685.00,
-        today_usd: 45.50,
-        this_week_usd: 312.00,
-      },
-      top_sellers: [
-        { course: "k12-stem-pack", revenue_usd: 625.00 },
-        { course: "trade-full-pack", revenue_usd: 750.00 },
-        { course: "ros2-full-pack", revenue_usd: 500.00 },
-      ],
-      x402: { recipient: "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC", network: "base" },
-    });
-  });
+  app.get("/v1/education/k12/courses", async (c) => c.json({ category: "K-12 Curriculum", total_courses: 45, grade_levels: ["K-5","6-8","9-12"], subjects: ["STEM","Robotics","AI Literacy","Environmental Science","Coding"], courses: [{ id: "k12-robotics-101", title: "Intro to Robotics", grades: "6-8", price_usd: 5.00, lessons: 12 }, { id: "k12-ai-literacy", title: "AI Literacy for Kids", grades: "K-5", price_usd: 3.00, lessons: 8 }, { id: "k12-stem-pack", title: "Complete STEM Pack", grades: "K-12", price_usd: 25.00, lessons: 45 }], pricing: { per_course_usd: 5.00, per_lesson_usd: 0.50, full_pack_usd: 25.00 }, x402: { network: "base", currency: "USDC" } }));
+  app.get("/v1/education/trades/courses", async (c) => c.json({ category: "Union Trades Training", total_courses: 32, trades: ["Electricians","Plumbers","Ironworkers","Carpenters","HVAC","Welders"], certifications: ["OSHA 10","OSHA 30","NCCER","Union Apprenticeship"], courses: [{ id: "trade-electrical-101", trade: "Electricians", level: "Apprentice", price_usd: 15.00, hours: 40, certification: "OSHA 10" }, { id: "trade-plumbing-201", trade: "Plumbers", level: "Journeyman", price_usd: 25.00, hours: 60, certification: "NCCER" }, { id: "trade-full-pack", trade: "All Trades", level: "Complete", price_usd: 150.00, hours: 400 }], pricing: { per_course_usd: 15.00, per_hour_usd: 0.50, full_pack_usd: 150.00 }, x402: { network: "base", currency: "USDC" } }));
+  app.get("/v1/education/ros2/data", async (c) => { const robot = c.req.query("robot"); const world = c.req.query("world"); return c.json({ category: "ROS2 Robotics Training Data", total_datasets: 99, total_worlds: 544, robot_types: ["spot","stretch","r1","dental-arm","ur10e","franka-fr3","fetch"], ros_version: "ROS2 Humble", datasets: [{ id: "ros2-spot-sf-60s", robot: "spot", world: "sf-financial", duration_sec: 60, messages: 1560, topics: ["/cmd_vel","/odom","/imu","/camera"], size_mb: 0.46, price_usd: 0.01 }, { id: "ros2-dental-clean-5min", robot: "dental-arm", world: "unspoken-smiles", duration_sec: 300, messages: 13000, topics: ["/force_feedback","/probe_depth","/tool_position"], size_mb: 2.88, price_usd: 10.00 }, { id: "ros2-full-pack", robot: "all", world: "all", duration_sec: 5940, messages: 154440, size_mb: 45.0, price_usd: 50.00 }].filter((d) => (!robot || d.robot === robot) && (!world || d.world === world)), pricing: { per_episode_usd: 0.01, per_hour_usd: 0.50, full_pack_usd: 50.00 }, formats: ["jsonl","parquet","rosbag2"], x402: { network: "base", currency: "USDC" } }); });
+  app.get("/v1/education/revenue", async (c) => c.json({ vertical: "Education & Training", revenue: { k12_curriculum: { courses_sold: 245, revenue_usd: 1225.00 }, union_trades: { courses_sold: 89, revenue_usd: 1335.00 }, ros2_data: { episodes_sold: 12500, revenue_usd: 125.00 }, total_revenue_usd: 2685.00, today_usd: 45.50, this_week_usd: 312.00 }, top_sellers: [{ course: "k12-stem-pack", revenue_usd: 625.00 }, { course: "trade-full-pack", revenue_usd: 750.00 }, { course: "ros2-full-pack", revenue_usd: 500.00 }], x402: { recipient: "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC", network: "base" } }));
+  app.get("/v1/education/k12/:courseId", async (c) => c.json({ course_id: c.req.param("courseId"), title: "K-12 Course", grade_level: "6-8", lessons: 12, price_usd: 5.00, x402: { price: "$5.00", network: "base" } }));
+  app.get("/v1/education/trades/:tradeId", async (c) => c.json({ trade_id: c.req.param("tradeId"), title: "Trade Course", level: "Apprentice", hours: 40, price_usd: 15.00, x402: { price: "$15.00", network: "base" } }));
+  app.get("/v1/education/ros2/:datasetId", async (c) => c.json({ dataset_id: c.req.param("datasetId"), title: "ROS2 Dataset", ros_version: "ROS2 Humble", duration_sec: 60, message_count: 1560, price_usd: 0.01, x402: { price: "$0.01", network: "base" } }));
 }
