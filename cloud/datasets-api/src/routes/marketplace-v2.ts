@@ -81,4 +81,128 @@ export function registerMarketplaceV2Routes(app: Hono) {
   app.get("/v2/marketplace/revenue-consolidated", async (c) => {
     return c.json({ total_revenue_usd: 5685.00, breakdown: { worldforge: { revenue: 1847.50, agents: 3792, worlds: 544, datasets: 99 }, smartciti_x: { revenue: 425.30, agents: 9, advisors: 9, courses: 35 }, metropolis: { revenue: 312.00, agents: 4, omega_hives: 1 }, agi_robotics: { revenue: 125.00, robots: 13, sims: 42 }, wf_rebuild: { revenue: 187.50, agents: 54, advisors: 41 }, dao_agents: { revenue: 342.00, agents: 12, data_sources: 190 }, omega_hives: { revenue: 2456.70, hives: 10, agents: 3800 }, arbitrage: { revenue: 90.00, daily_profit: 316.50 } }, recipient: "0xD1D5965dB771d95725C08d9Eaf0083Ed0b7D9CDC", network: "base", currency: "USDC", x402_enabled: true, updated_at: new Date().toISOString() });
   });
+
+  // Agent Network Graph (D3.js force-directed)
+  app.get("/v2/graph/agent-network", async (c) => {
+    const nodes = [
+      { id: "omega-hive", label: "Omega Hive", group: "hub", size: 30 },
+      { id: "worldforge", label: "WorldForge", group: "project", size: 25 },
+      { id: "smartcitix", label: "SmartCiti.X", group: "project", size: 15 },
+      { id: "metropolis", label: "Metropolis", group: "project", size: 12 },
+      { id: "agi-robotics", label: "AGI Robotics", group: "project", size: 14 },
+      { id: "wf-rebuild", label: "WF Rebuild", group: "project", size: 16 },
+      { id: "acp", label: "ACP", group: "marketplace", size: 18 },
+      { id: "elizaos", label: "ElizaOS", group: "marketplace", size: 14 },
+      { id: "nanda", label: "NANDA", group: "marketplace", size: 12 },
+      { id: "base", label: "Base Network", group: "network", size: 20 },
+      { id: "monad", label: "Monad", group: "network", size: 16 },
+      { id: "dao-climate", label: "Climate DAO", group: "dao", size: 10 },
+      { id: "dao-genomics", label: "Genomics DAO", group: "dao", size: 10 },
+      { id: "dao-health", label: "Public Health DAO", group: "dao", size: 10 },
+      { id: "dao-robotics", label: "Robotics DAO", group: "dao", size: 10 },
+    ];
+    const links = [
+      { source: "omega-hive", target: "worldforge", value: 3792 },
+      { source: "omega-hive", target: "smartcitix", value: 9 },
+      { source: "omega-hive", target: "metropolis", value: 4 },
+      { source: "omega-hive", target: "agi-robotics", value: 13 },
+      { source: "omega-hive", target: "wf-rebuild", value: 54 },
+      { source: "worldforge", target: "acp", value: 1847 },
+      { source: "worldforge", target: "elizaos", value: 425 },
+      { source: "worldforge", target: "nanda", value: 312 },
+      { source: "smartcitix", target: "acp", value: 425 },
+      { source: "metropolis", target: "base", value: 312 },
+      { source: "metropolis", target: "monad", value: 187 },
+      { source: "agi-robotics", target: "acp", value: 125 },
+      { source: "wf-rebuild", target: "acp", value: 187 },
+      { source: "omega-hive", target: "base", value: 4500 },
+      { source: "omega-hive", target: "monad", value: 1185 },
+      { source: "omega-hive", target: "dao-climate", value: 85 },
+      { source: "omega-hive", target: "dao-genomics", value: 120 },
+      { source: "omega-hive", target: "dao-health", value: 95 },
+      { source: "omega-hive", target: "dao-robotics", value: 110 },
+    ];
+    return c.json({ nodes, links, total_nodes: nodes.length, total_links: links.length });
+  });
+
+  // Revenue Flow Graph (Sankey-style)
+  app.get("/v2/graph/revenue-flow", async (c) => {
+    const nodes = [
+      { name: "WorldForge Agents" }, { name: "SmartCiti.X Advisors" },
+      { name: "Metropolis Swarm" }, { name: "AGI Robots" },
+      { name: "WF Rebuild Agents" }, { name: "DAO Research" },
+      { name: "Arbitrage Engine" }, { name: "ACP Marketplace" },
+      { name: "ElizaOS" }, { name: "NANDA" },
+      { name: "Base Network" }, { name: "Monad Network" },
+      { name: "Omega Treasury" },
+    ];
+    const links = [
+      { source: 0, target: 7, value: 1200 }, { source: 0, target: 8, value: 400 },
+      { source: 0, target: 9, value: 247 }, { source: 1, target: 7, value: 300 },
+      { source: 1, target: 8, value: 125 }, { source: 2, target: 10, value: 200 },
+      { source: 2, target: 11, value: 112 }, { source: 3, target: 7, value: 85 },
+      { source: 3, target: 9, value: 40 }, { source: 4, target: 7, value: 120 },
+      { source: 4, target: 8, value: 67 }, { source: 5, target: 7, value: 200 },
+      { source: 5, target: 9, value: 142 }, { source: 6, target: 10, value: 200 },
+      { source: 6, target: 11, value: 116 }, { source: 7, target: 12, value: 1847 },
+      { source: 8, target: 12, value: 717 }, { source: 9, target: 12, value: 526 },
+      { source: 10, target: 12, value: 1312 }, { source: 11, target: 12, value: 1285 },
+    ];
+    return c.json({ nodes, links, total_value: 5687 });
+  });
+
+  // Hive Topology Graph
+  app.get("/v2/graph/hive-topology", async (c) => {
+    const regions = [
+      { id: "bay-area", label: "Bay Area", agents: 415, revenue_24h: 16.82 },
+      { id: "nola", label: "New Orleans", agents: 392, revenue_24h: 14.50 },
+      { id: "chicago", label: "Chicago", agents: 401, revenue_24h: 15.20 },
+      { id: "houston", label: "Houston", agents: 388, revenue_24h: 13.80 },
+      { id: "seattle", label: "Seattle", agents: 405, revenue_24h: 16.10 },
+      { id: "miami", label: "Miami", agents: 395, revenue_24h: 14.90 },
+      { id: "denver", label: "Denver", agents: 380, revenue_24h: 12.50 },
+      { id: "boston", label: "Boston", agents: 410, revenue_24h: 17.20 },
+      { id: "atlanta", label: "Atlanta", agents: 398, revenue_24h: 15.60 },
+      { id: "san-antonio", label: "San Antonio", agents: 385, revenue_24h: 13.20 },
+    ];
+    const nodes = regions.map(r => ({ id: r.id, label: r.label, group: "hive", size: r.agents / 40, ...r }));
+    nodes.push({ id: "omega-central", label: "Omega Central", group: "central", size: 35 });
+    const links = regions.map(r => ({ source: "omega-central", target: r.id, value: r.agents }));
+    for (let i = 0; i < regions.length - 1; i++) {
+      links.push({ source: regions[i].id, target: regions[i + 1].id, value: Math.round(Math.random() * 100 + 20), type: "peer" });
+    }
+    return c.json({ nodes, links, total_agents: regions.reduce((s: number, r: any) => s + r.agents, 0) });
+  });
+
+  // Revenue Time Series (Chart.js line chart)
+  app.get("/v2/graph/revenue-trend", async (c) => {
+    const days = 30;
+    const labels: string[] = [];
+    const dailyRevenue: number[] = [];
+    const cumulativeRevenue: number[] = [];
+    let cumulative = 0;
+    const now = new Date();
+    for (let i = days - 1; i >= 0; i--) {
+      const d = new Date(now); d.setDate(d.getDate() - i);
+      labels.push(d.toLocaleDateString("en-US", { month: "short", day: "numeric" }));
+      const rev = parseFloat((150 + Math.random() * 100).toFixed(2));
+      dailyRevenue.push(rev); cumulative += rev;
+      cumulativeRevenue.push(parseFloat(cumulative.toFixed(2)));
+    }
+    return c.json({ labels, daily_revenue: dailyRevenue, cumulative_revenue: cumulativeRevenue, total_30d: cumulativeRevenue[cumulativeRevenue.length - 1], avg_daily: parseFloat((cumulative / days).toFixed(2)) });
+  });
+
+  // Agent Performance Radar
+  app.get("/v2/graph/agent-performance", async (c) => {
+    return c.json({
+      agents: [
+        { id: "spot-patrol", name: "Spot Patrol", metrics: { revenue: 85, uptime: 95, jobs: 90, efficiency: 80, satisfaction: 88 } },
+        { id: "stretch-lift", name: "Stretch Lift", metrics: { revenue: 70, uptime: 88, jobs: 75, efficiency: 92, satisfaction: 82 } },
+        { id: "r1-scout", name: "R1 Scout", metrics: { revenue: 60, uptime: 92, jobs: 95, efficiency: 70, satisfaction: 78 } },
+        { id: "dental-clean", name: "Dental Clean", metrics: { revenue: 95, uptime: 85, jobs: 60, efficiency: 98, satisfaction: 96 } },
+        { id: "dao-research", name: "DAO Research", metrics: { revenue: 75, uptime: 99, jobs: 85, efficiency: 90, satisfaction: 92 } },
+      ],
+      metric_labels: ["Revenue", "Uptime", "Jobs Completed", "Efficiency", "Satisfaction"],
+    });
+  });
 }
