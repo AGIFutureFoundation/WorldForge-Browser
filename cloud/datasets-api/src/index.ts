@@ -10,6 +10,7 @@ import { registerACPRoutes } from "./routes/acp";
 import { registerPayoutRoutes } from "./routes/payout";
 import { registerEducationRoutes } from "./routes/education";
 import { registerAgentOptimizeRoutes } from "./routes/agents-optimize";
+import { registerMarketplaceV2Routes } from "./routes/marketplace-v2";
 
 const app = new Hono();
 
@@ -46,6 +47,7 @@ registerACPRoutes(app);
 registerPayoutRoutes(app);
 registerEducationRoutes(app);
 registerAgentOptimizeRoutes(app);
+registerMarketplaceV2Routes(app);
 
 // Health check
 app.get("/health", (c) => c.json({ status: "ok", ts: Date.now() }));

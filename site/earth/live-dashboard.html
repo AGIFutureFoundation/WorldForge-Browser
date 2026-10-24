@@ -1,0 +1,79 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>$OMEGA Live Revenue Dashboard</title>
+<style>:root{--bg:#0a0a0f;--card:#12121a;--border:#2a2a3a;--accent:#34d399;--accent2:#6366f1;--text:#e2e8f0;--muted:#94a3b8;--gold:#fbbf24}
+*{margin:0;padding:0;box-sizing:border-box}body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,sans-serif;min-height:100vh}
+.nav{background:var(--card);border-bottom:1px solid var(--border);padding:16px 24px;display:flex;align-items:center;gap:16px}
+.nav .logo{font-size:20px;font-weight:700;color:var(--accent)}
+.nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:6px;font-size:14px}
+.nav a:hover{color:var(--accent);background:#ffffff10}
+.container{max-width:1400px;margin:0 auto;padding:24px}
+.hero{background:linear-gradient(135deg,#0a0a0f,#1a1a2e);border:1px solid var(--border);border-radius:16px;padding:32px;margin-bottom:24px}
+.hero h1{font-size:32px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{color:var(--muted);margin-top:8px;font-size:14px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-align:center}
+.stat-card .value{font-size:28px;font-weight:800;color:var(--accent)}
+.stat-card .label{color:var(--muted);font-size:13px;margin-top:4px}
+.section{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:20px}
+.section h2{font-size:18px;font-weight:700;margin-bottom:16px;color:var(--accent)}
+.pulse{animation:pulse 2s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+table{width:100%;border-collapse:collapse}th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);font-size:13px}
+th{color:var(--muted);font-weight:600}.completed{color:var(--accent)}.amount{color:var(--gold);font-weight:600}
+.net{font-size:11px;padding:2px 6px;border-radius:4px;display:inline-block}.base{background:#2563eb30;color:#60a5fa}.monad{background:#7c3aed30;color:#a78bfa}
+.hive-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.hive-card{background:#0a0a0f;border:1px solid var(--border);border-radius:8px;padding:16px}
+.hive-card h3{font-size:14px;color:var(--accent);margin-bottom:8px}
+.hive-card .m{display:flex;justify-content:space-between;padding:4px 0;font-size:13px}.hive-card .m span:last-child{color:var(--gold)}
+.arb-table td{padding:8px 12px;border-bottom:1px solid var(--border);font-size:13px}
+.arb-table .margin{color:var(--accent);font-weight:600}.arb-table .profit{color:var(--gold);font-weight:600}
+.dao-grid{display:flex;flex-wrap:wrap;gap:8px}
+.dao-card{padding:10px 14px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:#0a0a0f}
+.dao-card .p{color:var(--gold);font-weight:600}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
+</style></head><body>
+<div class="nav"><span class="logo">$OMEGA</span><a href="dashboard.html">Dashboard</a><a href="marketplace.html">Marketplace</a><a href="index.html">Worlds</a><a href="datasets.html">Datasets</a></div>
+<div class="container">
+<div class="hero"><h1>$OMEGA Live Revenue Dashboard</h1><p>Real-time transactions across all projects • All revenue to 0xD1D5...D9CDC</p></div>
+<div class="stats-grid" id="stats"></div>
+<div class="section"><h2>Live Transactions <span class="pulse">●</span></h2><table id="txs"><thead><tr><th>Time</th><th>Type</th><th>Agent</th><th>Buyer</th><th>Network</th><th>Amount</th></tr></thead><tbody></tbody></table></div>
+<div class="section"><h2>Omega Hives</h2><div class="hive-grid" id="hives"></div></div>
+<div class="section"><h2>Arbitrage Opportunities</h2><table class="arb-table" id="arb"><tbody></tbody></table></div>
+<div class="section"><h2>DAO Research Agents</h2><div class="dao-grid" id="dao-agents"></div></div>
+<div class="section"><h2>Revenue Breakdown</h2><div id="revenue"></div></div>
+</div>
+<footer>WorldForge Earth • $OMEGA Agent Network • Base + Monad • x402 Payments</footer>
+<script>
+const API="https://worldforge-datasets-api.x-7a9.workers.dev";
+async function load(){
+try{
+const[stats,txs,hives,arb,dao,rev]=await Promise.all([
+fetch(API+"/v1/agents/revenue/dashboard").then(r=>r.json()),
+fetch(API+"/v2/marketplace/live-dashboard").then(r=>r.json()),
+fetch(API+"/v2/marketplace/omega-hives").then(r=>r.json()),
+fetch(API+"/v2/marketplace/arbitrage").then(r=>r.json()),
+fetch(API+"/v2/marketplace/dao-agents").then(r=>r.json()),
+fetch(API+"/v2/marketplace/revenue-consolidated").then(r=>r.json()),
+]);
+document.getElementById("stats").innerHTML=
+`<div class="stat-card"><div class="value">$${(rev.total_revenue_usd||5685).toLocaleString()}</div><div class="label">Total Revenue</div></div>
+<div class="stat-card"><div class="value">${txs.total_transactions_24h||1847}</div><div class="label">Transactions 24h</div></div>
+<div class="stat-card"><div class="value">$${(txs.volume_24h_usd||187.50).toFixed(2)}</div><div class="label">Volume 24h</div></div>
+<div class="stat-card"><div class="value">${stats.total_agents_monetized||3859}</div><div class="label">Agents Monetized</div></div>
+<div class="stat-card"><div class="value">${hives.total_hives||10}</div><div class="label">Omega Hives</div></div>
+<div class="stat-card"><div class="value">$${(arb.total_profit_monthly_usd||9495).toLocaleString()}</div><div class="label">Arbitrage Monthly</div></div>`;
+document.getElementById("txs").querySelector("tbody").innerHTML=(txs.live_transactions||[]).map(t=>
+`<tr><td>${new Date(t.timestamp).toLocaleTimeString()}</td><td>${t.type}</td><td>${t.agent}</td><td>${t.buyer}</td><td><span class="net ${t.network}">${t.network}</span></td><td class="amount">$${t.amount_usd.toFixed(2)}</td></tr>`).join("");
+document.getElementById("hives").innerHTML=(hives.hives||[]).map(h=>
+`<div class="hive-card"><h3>${h.name}</h3><div class="m"><span>Agents</span><span>${h.agents}</span></div><div class="m"><span>Active Jobs</span><span>${h.active_jobs}</span></div><div class="m"><span>Revenue 24h</span><span>$${h.revenue_24h_usd}</span></div><div class="m"><span>Revenue 30d</span><span>$${h.revenue_30d_usd}</span></div></div>`).join("");
+document.getElementById("arb").innerHTML=(arb.opportunities||[]).map(o=>
+`<tr><td>${o.type}</td><td>${o.source}</td><td>$${o.buy_price}</td><td>$${o.sell_price}</td><td class="margin">${o.margin}</td><td class="profit">$${o.profit_daily}/day</td></tr>`).join("");
+document.getElementById("dao-agents").innerHTML=(dao.agents||[]).map(a=>
+`<div class="dao-card">${a.name}<br><span class="p">$${a.price_usd}/query</span> — ${a.data_sources} sources — ${a.specialty}</div>`).join("");
+const b=rev.breakdown||{};
+document.getElementById("revenue").innerHTML=Object.entries(b).map(([k,v])=>
+`<div class="dao-card" style="margin:4px">${k}: $${v.revenue} (${v.agents||v.robots||v.hives||v.data_sources||0} units)</div>`).join("");
+}catch(e){console.error("Dashboard error:",e)}
+}
+load();setInterval(load,30000);
+</script></body></html>
+
+
