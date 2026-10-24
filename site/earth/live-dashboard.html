@@ -29,6 +29,23 @@ th{color:var(--muted);font-weight:600}.completed{color:var(--accent)}.amount{col
 .dao-card{padding:10px 14px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:#0a0a0f}
 .dao-card .p{color:var(--gold);font-weight:600}
 footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
+.chart-container{position:relative;height:300px;margin-top:12px}
+#agent-network-graph{width:100%;height:400px;border:1px solid var(--border);border-radius:8px;background:#08080f}
+#revenue-chart{width:100%;height:300px}
+#hive-graph{width:100%;height:350px;border:1px solid var(--border);border-radius:8px;background:#08080f}
+#radar-charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.radar-card{background:#0a0a0f;border:1px solid var(--border);border-radius:8px;padding:16px;text-align:center}
+.radar-card h4{color:var(--accent);margin-bottom:8px;font-size:13px}
+.radar-card canvas{max-width:180px;max-height:180px}
+.graph-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;justify-content:center}
+.legend-item{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted)}
+.legend-dot{width:10px;height:10px;border-radius:50%;display:inline-block}
+footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
+</style></head><body>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<div class="nav"><span class="logo">$OMEGA</span><a href="dashboard.html">Dashboard</a><a href="marketplace.html">Marketplace</a><a href="index.html">Worlds</a><a href="datasets.html">Datasets</a></div>
+
 </style></head><body>
 <div class="nav"><span class="logo">$OMEGA</span><a href="dashboard.html">Dashboard</a><a href="marketplace.html">Marketplace</a><a href="index.html">Worlds</a><a href="datasets.html">Datasets</a></div>
 <div class="container">
@@ -39,6 +56,10 @@ footer{text-align:center;padding:24px;color:var(--muted);font-size:12px}
 <div class="section"><h2>Arbitrage Opportunities</h2><table class="arb-table" id="arb"><tbody></tbody></table></div>
 <div class="section"><h2>DAO Research Agents</h2><div class="dao-grid" id="dao-agents"></div></div>
 <div class="section"><h2>Revenue Breakdown</h2><div id="revenue"></div></div>
+  <div class="section"><h2>Agent Network Graph <span style="font-size:12px;color:var(--muted)">— D3.js Force-Directed</span></h2><div id="agent-network-graph"></div><div class="graph-legend" id="network-legend"></div></div>
+  <div class="section"><h2>Revenue Trend <span style="font-size:12px;color:var(--muted)">— 30 Day</span></h2><div class="chart-container"><canvas id="revenue-chart"></canvas></div></div>
+  <div class="section"><h2>Omega Hive Topology <span style="font-size:12px;color:var(--muted)">— D3.js</span></h2><div id="hive-graph"></div></div>
+  <div class="section"><h2>Agent Performance Radar</h2><div id="radar-charts"></div></div>
 </div>
 <footer>WorldForge Earth • $OMEGA Agent Network • Base + Monad • x402 Payments</footer>
 <script>
@@ -74,6 +95,68 @@ document.getElementById("revenue").innerHTML=Object.entries(b).map(([k,v])=>
 }catch(e){console.error("Dashboard error:",e)}
 }
 load();setInterval(load,30000);
+
+// ===== GRAPH RENDERING =====
+async function loadGraphs(){
+try{
+const[netData,revData,hiveData,perfData]=await Promise.all([
+fetch(API+"/v2/graph/agent-network").then(r=>r.json()),
+fetch(API+"/v2/graph/revenue-trend").then(r=>r.json()),
+fetch(API+"/v2/graph/hive-topology").then(r=>r.json()),
+fetch(API+"/v2/graph/agent-performance").then(r=>r.json()),
+]);
+renderAgentNetwork(netData);
+renderRevenueChart(revData);
+renderHiveTopology(hiveData);
+renderRadarCharts(perfData);
+}catch(e){console.error("Graph load error:",e);setTimeout(loadGraphs,10000)}
+}
+
+const GROUP_COLORS={hub:"#fbbf24",project:"#34d399",marketplace:"#60a5fa",network:"#a78bfa",dao:"#fb923c",hive:"#34d399",central:"#fbbf24"};
+
+function renderAgentNetwork(data){
+const svg=d3.select("#agent-network-graph").append("svg").attr("width","100%").attr("height","400").attr("viewBox","0 0 900 400");
+const g=svg.append("g");
+const sim=d3.forceSimulation(data.nodes).force("link",d3.forceLink(data.links).id(d=>d.id).distance(d=>d.value>1000?60:d.value>100?100:140)).force("charge",d3.forceManyBody().strength(-300)).force("center",d3.forceCenter(450,200)).force("collision",d3.forceCollide().radius(d=>d.size+10));
+const link=g.append("g").selectAll("line").data(data.links).join("line").attr("stroke","#2a2a3a").attr("stroke-width",d=>Math.max(1,d.value/500)).attr("stroke-opacity",0.6);
+const node=g.append("g").selectAll("circle").data(data.nodes).join("circle").attr("r",d=>d.size).attr("fill",d=>GROUP_COLORS[d.group]||"#666").attr("stroke","#fff").attr("stroke-width",0.5).attr("cursor","pointer").call(d3.drag().on("start",dragStarted).on("drag",dragged).on("end",dragEnded));
+const label=g.append("g").selectAll("text").data(data.nodes).join("text").text(d=>d.label).attr("font-size","10px").attr("fill","#ccc").attr("text-anchor","middle").attr("dy",d=>d.size+12);
+sim.on("tick",()=>{link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);node.attr("cx",d=>d.x).attr("cy",d=>d.y);label.attr("x",d=>d.x).attr("y",d=>d.y)});
+function dragStarted(e,d){if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y}
+function dragged(e,d){d.fx=e.x;d.fy=e.y}
+function dragEnded(e,d){if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null}
+const legend=document.getElementById("network-legend");
+legend.innerHTML=Object.entries(GROUP_COLORS).map(([g,c])=>`<div class="legend-item"><span class="legend-dot" style="background:${c}"></span>${g}</div>`).join("");
+}
+
+function renderRevenueChart(data){
+const ctx=document.getElementById("revenue-chart").getContext("2d");
+new Chart(ctx,{type:"line",data:{labels:data.labels,datasets:[{label:"Daily Revenue ($)",data:data.daily_revenue,borderColor:"#34d399",backgroundColor:"rgba(52,211,153,0.1)",fill:true,tension:0.4,pointRadius:2},{label:"Cumulative ($)",data:data.cumulative_revenue,borderColor:"#6366f1",backgroundColor:"rgba(99,102,241,0.05)",fill:true,tension:0.4,pointRadius:2,yAxisID:"y1"}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{color:"#94a3b8"}}},scales:{x:{ticks:{color:"#94a3b8",maxRotation:45,maxTicksLimit:10},grid:{color:"#1a1a2a"}},y:{ticks:{color:"#34d399"},grid:{color:"#1a1a2a"}},y1:{position:"right",ticks:{color:"#6366f1",callback:v=>"$"+v.toLocaleString()},grid:{display:false}}}}});
+}
+
+function renderHiveTopology(data){
+const svg=d3.select("#hive-graph").append("svg").attr("width","100%").attr("height","350").attr("viewBox","0 0 900 350");
+const g=svg.append("g");
+const sim=d3.forceSimulation(data.nodes).force("link",d3.forceLink(data.links).id(d=>d.id).distance(d=>d.type==="peer"?120:80)).force("charge",d3.forceManyBody().strength(-200)).force("center",d3.forceCenter(450,175)).force("collision",d3.forceCollide().radius(d=>d.size+8));
+const link=g.append("g").selectAll("line").data(data.links).join("line").attr("stroke",d=>d.type==="peer"?"#444":"#2a2a3a").attr("stroke-width",d=>d.type==="peer"?1:Math.max(1,d.value/200)).attr("stroke-dasharray",d=>d.type==="peer"?"4,4":null).attr("stroke-opacity",0.5);
+const node=g.append("g").selectAll("circle").data(data.nodes).join("circle").attr("r",d=>d.size).attr("fill",d=>GROUP_COLORS[d.group]||"#666").attr("stroke","#fff").attr("stroke-width",0.8);
+const label=g.append("g").selectAll("text").data(data.nodes).join("text").text(d=>d.label).attr("font-size","9px").attr("fill","#ccc").attr("text-anchor","middle").attr("dy",d=>d.size+10);
+sim.on("tick",()=>{link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);node.attr("cx",d=>d.x).attr("cy",d=>d.y);label.attr("x",d=>d.x).attr("y",d=>d.y)});
+}
+
+function renderRadarCharts(data){
+const container=document.getElementById("radar-charts");
+container.innerHTML="";
+data.agents.forEach((agent,i)=>{
+const card=document.createElement("div");card.className="radar-card";
+card.innerHTML=`<h4>${agent.name}</h4><canvas id="radar-${i}" width="180" height="180"></canvas>`;
+container.appendChild(card);
+const ctx=document.getElementById(`radar-${i}`).getContext("2d");
+new Chart(ctx,{type:"radar",data:{labels:data.metric_labels,datasets:[{data:[agent.metrics.revenue,agent.metrics.uptime,agent.metrics.jobs,agent.metrics.efficiency,agent.metrics.satisfaction],borderColor:"#34d399",backgroundColor:"rgba(52,211,153,0.15)",pointBackgroundColor:"#34d399",pointRadius:3}]},options:{responsive:false,plugins:{legend:{display:false}},scales:{r:{angleLines:{color:"#2a2a3a"},grid:{color:"#2a2a3a"},ticks:{display:false},pointLabels:{color:"#94a3b8",font:{size:9}},suggestedMin:0,suggestedMax:100}}}});
+});
+}
+
+loadGraphs();
 </script></body></html>
 
 
