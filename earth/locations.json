@@ -1,412 +1,4354 @@
 [
  {
   "slug": "agentic-payments",
-  "place": "Charging Bull, Wall Street, New York City",
-  "country": "United States",
   "lat": 40.7055,
   "lon": -74.0135,
+  "place": "Charging Bull, Wall Street, New York City",
   "biome": "urban-park",
-  "water": "bay",
-  "why": "Wall Street's bull overlooks New York Harbor: buying, selling and settlement drafted where global finance actually clears."
+  "industry": "general"
  },
  {
   "slug": "agents-deploy-infrastructure",
-  "place": "Hoover Dam, Nevada-Arizona border",
-  "country": "United States",
   "lat": 36.0161,
   "lon": -114.7377,
+  "place": "Hoover Dam, Nevada-Arizona border",
   "biome": "desert",
-  "water": "lake",
-  "why": "A monument to taking infrastructure from idea to production and operating it daily: power, gauges and on-call decks above Lake Mead."
+  "industry": "general"
  },
  {
   "slug": "autonomous-organizations",
-  "place": "Oracle Headquarters Lagoon, Redwood Shores",
-  "country": "United States",
   "lat": 37.5297,
   "lon": -122.2602,
+  "place": "Oracle Headquarters Lagoon, Redwood Shores",
   "biome": "urban-park",
-  "water": "lake",
-  "why": "One campus ringing one lagoon: goal walls, coordination floors and execution bays arranged around a shared blue center."
+  "industry": "general"
  },
  {
   "slug": "biota-blockchain",
-  "place": "Genentech Headquarters, 1 DNA Way, South San Francisco",
-  "country": "United States",
   "lat": 37.659,
   "lon": -122.379,
+  "place": "Genentech Headquarters, 1 DNA Way, South San Francisco",
   "biome": "coast",
-  "water": "bay",
-  "why": "Personalized-therapy pipelines at 1 DNA Way on San Francisco Bay, with mudflats and sloughs that render beautifully in 3-D."
+  "industry": "general"
  },
  {
   "slug": "cancer-dao",
-  "place": "Fred Hutchinson Cancer Center, South Lake Union, Seattle",
-  "country": "United States",
   "lat": 47.6263,
   "lon": -122.3292,
+  "place": "Fred Hutchinson Cancer Center, South Lake Union, Seattle",
   "biome": "urban-park",
-  "water": "lake",
-  "why": "A working cancer-research campus on Lake Union: labs, proposal forums and progress observatories at the water's edge."
+  "industry": "general"
  },
  {
   "slug": "climate-dao",
-  "place": "Thames Barrier, London",
-  "country": "United Kingdom",
   "lat": 51.4967,
   "lon": 0.0367,
+  "place": "Thames Barrier, London",
   "biome": "river-valley",
-  "water": "river",
-  "why": "The Thames Barrier is climate resilience operating in real time: the progress observatory for London's flood defense."
+  "industry": "general"
  },
  {
   "slug": "diagnostic-x",
-  "place": "Karolinska University Hospital, Solna",
-  "country": "Sweden",
   "lat": 59.3503,
   "lon": 18.03,
+  "place": "Karolinska University Hospital, Solna",
   "biome": "temperate-forest",
-  "water": "lake",
-  "why": "A world-class imaging hospital between Brunnsviken lake and pine forest: a fitting stage for 4-D medical imaging."
+  "industry": "general"
  },
  {
   "slug": "ecology-dao",
-  "place": "Monteverde Cloud Forest Reserve",
-  "country": "Costa Rica",
   "lat": 10.3018,
   "lon": -84.7903,
+  "place": "Monteverde Cloud Forest Reserve",
   "biome": "tropical",
-  "water": "none",
-  "why": "Monteverde's cloud-forest canopy is biodiversity at its densest: a living charter hall for ecology and conservation."
+  "industry": "general"
  },
  {
   "slug": "education-dao",
-  "place": "Christ Church Meadow, University of Oxford",
-  "country": "United Kingdom",
   "lat": 51.747,
   "lon": -1.252,
+  "place": "Christ Church Meadow, University of Oxford",
   "biome": "river-valley",
-  "water": "river",
-  "why": "Oxford's meadows, halls and libraries along the Cherwell: the oldest continuously running campus of the DAO's focus."
+  "industry": "general"
  },
  {
   "slug": "empathic-x",
-  "place": "Parc des Buttes-Chaumont, Paris",
-  "country": "France",
   "lat": 48.879,
   "lon": 2.382,
+  "place": "Parc des Buttes-Chaumont, Paris",
   "biome": "urban-park",
-  "water": "lake",
-  "why": "Grove, commons, cliff-top temple hall and plaza around a lake: rooms for reading the self, others and the room."
+  "industry": "general"
  },
  {
   "slug": "locator-x",
-  "place": "Jackson Square, New Orleans",
-  "country": "United States",
   "lat": 29.9571,
   "lon": -90.0644,
+  "place": "Jackson Square, New Orleans",
   "biome": "urban-park",
-  "water": "river",
-  "why": "Anchors the Louisiana developer desk where it lives: the Mississippi levee in the Crescent City's emerging market."
+  "industry": "general"
  },
  {
   "slug": "public-health-dao",
-  "place": "Broad Street Pump replica, Soho, London",
-  "country": "United Kingdom",
   "lat": 51.5137,
   "lon": -0.135,
+  "place": "Broad Street Pump replica, Soho, London",
   "biome": "urban-park",
-  "water": "none",
-  "why": "The Broad Street pump is public health's founding story: where mapped data first stopped an outbreak."
+  "industry": "general"
  },
  {
   "slug": "robotics-dao",
-  "place": "NASA Jet Propulsion Laboratory, Pasadena",
-  "country": "United States",
   "lat": 34.2013,
   "lon": -118.1714,
+  "place": "NASA Jet Propulsion Laboratory, Pasadena",
   "biome": "mediterranean",
-  "water": "none",
-  "why": "JPL's rovers are physical AI in the wild: deployment and operations tested above the Arroyo Seco chaparral."
+  "industry": "general"
  },
  {
   "slug": "s04-curable-x",
-  "place": "Sanctuaries of Lourdes, Massabielle Grotto",
-  "country": "France",
   "lat": 43.0955,
   "lon": -0.051,
+  "place": "Sanctuaries of Lourdes, Massabielle Grotto",
   "biome": "river-valley",
-  "water": "river",
-  "why": "Lourdes is the world's emblem of hoped-for cures: grotto, riverbanks and procession grounds for a Curable cell."
+  "industry": "general"
  },
  {
   "slug": "s05-biopharma-go",
-  "place": "Novartis Campus, Basel",
-  "country": "Switzerland",
   "lat": 47.5605,
   "lon": 7.5935,
+  "place": "Novartis Campus, Basel",
   "biome": "urban-park",
-  "water": "river",
-  "why": "A Rhine-side pharma campus moving molecules to clinic: research, production and river packed into one frame."
+  "industry": "general"
  },
  {
   "slug": "s06-blockchain",
-  "place": "Zug lakeside old town, 'Crypto Valley'",
-  "country": "Switzerland",
   "lat": 47.1684,
   "lon": 8.5161,
+  "place": "Zug lakeside old town, 'Crypto Valley'",
   "biome": "urban-park",
-  "water": "lake",
-  "why": "Zug is literally Crypto Valley: ledgers, DAO halls and lake promenade in one small Swiss town."
+  "industry": "general"
  },
  {
   "slug": "s07-divine-dao",
-  "place": "Dashashwamedh Ghat, Varanasi",
-  "country": "India",
   "lat": 25.3076,
   "lon": 83.0104,
+  "place": "Dashashwamedh Ghat, Varanasi",
   "biome": "river-valley",
-  "water": "river",
-  "why": "Dawn aarti on the Ganges ghats: the divine made public, daily, above one of Earth's great rivers."
+  "industry": "general"
  },
  {
   "slug": "s09-astrological-x",
-  "place": "Stonehenge, Wiltshire",
-  "country": "United Kingdom",
   "lat": 51.1789,
   "lon": -1.8262,
+  "place": "Stonehenge, Wiltshire",
   "biome": "grassland",
-  "water": "none",
-  "why": "The original sky-reader: megaliths aligned to solstice risings on open Salisbury grassland."
+  "industry": "general"
  },
  {
   "slug": "s11-molecular",
-  "place": "Molecule Man sculpture, Spree River, Berlin",
-  "country": "Germany",
   "lat": 52.5005,
   "lon": 13.4536,
+  "place": "Molecule Man sculpture, Spree River, Berlin",
   "biome": "urban-park",
-  "water": "river",
-  "why": "A 30-metre molecular figure rises from the Spree: the molecular world made walkable."
+  "industry": "general"
  },
  {
   "slug": "s12-parking-smart-x",
-  "place": "1111 Lincoln Road Parking Garage, Miami Beach",
-  "country": "United States",
   "lat": 25.7907,
   "lon": -80.1304,
+  "place": "1111 Lincoln Road Parking Garage, Miami Beach",
   "biome": "urban-park",
-  "water": "ocean",
-  "why": "Herzog & de Meuron's open-air parking landmark: smart parking as civic icon, blocks from South Beach surf."
+  "industry": "general"
  },
  {
   "slug": "s13-gonstead-x",
-  "place": "Mount Horeb, home of the Gonstead Clinic, Wisconsin",
-  "country": "United States",
   "lat": 43.0083,
   "lon": -89.7387,
+  "place": "Mount Horeb, home of the Gonstead Clinic, Wisconsin",
   "biome": "grassland",
-  "water": "none",
-  "why": "The Driftless-area village where Clarence Gonstead built his clinic and the method that bears his name."
+  "industry": "general"
  },
  {
   "slug": "s14-askdoc-x",
-  "place": "Mayo Clinic, Rochester, Minnesota",
-  "country": "United States",
   "lat": 44.0222,
   "lon": -92.4658,
+  "place": "Mayo Clinic, Rochester, Minnesota",
   "biome": "urban-park",
-  "water": "river",
-  "why": "Mayo is the world's ask-the-experts destination; its downtown campus is threaded by the Zumbro River."
+  "industry": "general"
  },
  {
   "slug": "s15-romanbridge-dao",
-  "place": "Pont du Gard, Gardon River",
-  "country": "France",
   "lat": 43.9472,
   "lon": 4.5355,
+  "place": "Pont du Gard, Gardon River",
   "biome": "mediterranean",
-  "water": "river",
-  "why": "A Roman bridge-aqueduct still spanning the green Gardon gorge after two millennia."
+  "industry": "general"
  },
  {
   "slug": "s16-echodawn-dao",
-  "place": "Echo Point, Blue Mountains, Katoomba",
-  "country": "Australia",
   "lat": -33.7289,
   "lon": 150.312,
+  "place": "Echo Point, Blue Mountains, Katoomba",
   "biome": "temperate-forest",
-  "water": "none",
-  "why": "Echo Point at sunrise: valley mist, echoes and the Three Sisters over the Jamison eucalypt forest."
+  "industry": "general"
  },
  {
   "slug": "s17-curable-blockchain-dao",
-  "place": "Blue Lagoon geothermal spa, Reykjanes lava field",
-  "country": "Iceland",
   "lat": 63.8804,
   "lon": -22.4495,
+  "place": "Blue Lagoon geothermal spa, Reykjanes lava field",
   "biome": "desert",
-  "water": "lake",
-  "why": "Steaming geothermal healing waters set in black lava fields: the cure-led cell's natural landscape."
+  "industry": "general"
  },
  {
   "slug": "s19-moscone-x",
-  "place": "Yerba Buena Gardens above Moscone Center, San Francisco",
-  "country": "United States",
   "lat": 37.7842,
   "lon": -122.4016,
+  "place": "Yerba Buena Gardens above Moscone Center, San Francisco",
   "biome": "urban-park",
-  "water": "none",
-  "why": "The green roof of the Moscone Center itself: the convention campus this cell is named for."
+  "industry": "general"
  },
  {
   "slug": "s20-cmmc",
-  "place": "The Pentagon, Arlington, Virginia",
-  "country": "United States",
   "lat": 38.8719,
   "lon": -77.0563,
+  "place": "The Pentagon, Arlington, Virginia",
   "biome": "urban-park",
-  "water": "river",
-  "why": "The Pentagon anchors the DoD supply chains that CMMC maturity levels exist to protect, beside the Potomac."
+  "industry": "general"
  },
  {
   "slug": "s21-incubator-dao",
-  "place": "Kendall Square, Cambridge, Massachusetts",
-  "country": "United States",
   "lat": 42.3629,
   "lon": -71.0866,
+  "place": "Kendall Square, Cambridge, Massachusetts",
   "biome": "urban-park",
-  "water": "river",
-  "why": "The densest startup incubation square mile on Earth, stacked along the Charles River."
+  "industry": "general"
  },
  {
   "slug": "s22-get-delivery-dao",
-  "place": "Maasvlakte 2, Port of Rotterdam",
-  "country": "Netherlands",
   "lat": 51.9517,
   "lon": 4.0528,
+  "place": "Maasvlakte 2, Port of Rotterdam",
   "biome": "coast",
-  "water": "ocean",
-  "why": "Gantry cranes at the North Sea edge of Europe's largest port: delivery logistics at continental scale."
+  "industry": "general"
  },
  {
   "slug": "s23-avatar-chat",
-  "place": "Yuanjiajie, Zhangjiajie National Forest Park",
-  "country": "China",
   "lat": 29.3153,
   "lon": 110.435,
+  "place": "Yuanjiajie, Zhangjiajie National Forest Park",
   "biome": "tropical",
-  "water": "none",
-  "why": "Zhangjiajie's sandstone pillars inspired Avatar's floating peaks: the real-world terrain of avatars."
+  "industry": "general"
  },
  {
   "slug": "s24-donatello-dao",
-  "place": "Piazzale Michelangelo, Florence",
-  "country": "Italy",
   "lat": 43.7585,
   "lon": 11.265,
+  "place": "Piazzale Michelangelo, Florence",
   "biome": "mediterranean",
-  "water": "river",
-  "why": "A hillside terrace over Donatello's Florence and the Arno: the sculptor's city in one panorama."
+  "industry": "general"
  },
  {
   "slug": "s25-mypet-ai",
-  "place": "Balto Statue, Central Park, New York",
-  "country": "United States",
   "lat": 40.7679,
   "lon": -73.9725,
+  "place": "Balto Statue, Central Park, New York",
   "biome": "urban-park",
-  "water": "lake",
-  "why": "Balto, the heroic sled dog, stands among Central Park's lawns and pond: beloved pets cast in bronze."
+  "industry": "general"
  },
  {
   "slug": "s26-lyka-dao",
-  "place": "International Wolf Center, Ely, Minnesota",
-  "country": "United States",
   "lat": 47.904,
   "lon": -91.8535,
+  "place": "International Wolf Center, Ely, Minnesota",
   "biome": "temperate-forest",
-  "water": "none",
-  "why": "Lyka reads as 'wolf': a center observing real packs on the edge of the Boundary Waters forest."
+  "industry": "general"
  },
  {
   "slug": "s27-genomic-dao",
-  "place": "Wellcome Genome Campus, Hinxton, Cambridge",
-  "country": "United Kingdom",
   "lat": 52.079,
   "lon": 0.192,
+  "place": "Wellcome Genome Campus, Hinxton, Cambridge",
   "biome": "grassland",
-  "water": "river",
-  "why": "The campus where the human genome was sequenced, set in Cam farmland along the river."
+  "industry": "general"
  },
  {
   "slug": "s28-genomic-blockchain",
-  "place": "Illumina Headquarters, Torrey Pines Mesa, San Diego",
-  "country": "United States",
   "lat": 32.8796,
   "lon": -117.2258,
+  "place": "Illumina Headquarters, Torrey Pines Mesa, San Diego",
   "biome": "mediterranean",
-  "water": "ocean",
-  "why": "Sequencing's home base on Torrey Pines coastal bluffs: reading DNA above the Pacific."
+  "industry": "general"
  },
  {
   "slug": "s29-metaverse-dao",
-  "place": "Meta Headquarters, 1 Hacker Way, Menlo Park",
-  "country": "United States",
   "lat": 37.4529,
   "lon": -122.1621,
+  "place": "Meta Headquarters, 1 Hacker Way, Menlo Park",
   "biome": "wetland",
-  "water": "bay",
-  "why": "The company renamed for the metaverse sits on restored bayfront marsh: a virtual world on real wetland."
+  "industry": "general"
  },
  {
   "slug": "s31-aerospace-dao",
-  "place": "Launch Complex 39A, Kennedy Space Center",
-  "country": "United States",
   "lat": 28.6084,
   "lon": -80.6043,
+  "place": "Launch Complex 39A, Kennedy Space Center",
   "biome": "wetland",
-  "water": "ocean",
-  "why": "Apollo and Crew Dragon lifted from this pad amid Merritt Island marshes between lagoon and Atlantic."
+  "industry": "general"
  },
  {
   "slug": "s32-solar-dao",
-  "place": "Bhadla Solar Park, Rajasthan",
-  "country": "India",
   "lat": 27.5333,
   "lon": 71.9167,
+  "place": "Bhadla Solar Park, Rajasthan",
   "biome": "desert",
-  "water": "none",
-  "why": "One of Earth's largest solar parks gleams across Thar Desert flats: the solar cell's natural home."
+  "industry": "general"
  },
  {
   "slug": "s33-infogurus",
-  "place": "Bibliotheca Alexandrina, Alexandria",
-  "country": "Egypt",
   "lat": 31.2089,
   "lon": 29.9092,
+  "place": "Bibliotheca Alexandrina, Alexandria",
   "biome": "coast",
-  "water": "bay",
-  "why": "The modern Great Library curates the world's information on the Mediterranean: gurus of knowledge, by a harbor."
+  "industry": "general"
  },
  {
   "slug": "s34-als-dao",
-  "place": "Yankee Stadium, Bronx, New York",
-  "country": "United States",
   "lat": 40.8296,
   "lon": -73.9262,
+  "place": "Yankee Stadium, Bronx, New York",
   "biome": "urban-park",
-  "water": "river",
-  "why": "ALS carries Lou Gehrig's name; the Iron Horse's home ballpark sits beside the Harlem River."
+  "industry": "general"
  },
  {
   "slug": "s35-parkinsons-dao",
-  "place": "St Leonard's Church, Shoreditch, London",
-  "country": "United Kingdom",
   "lat": 51.5245,
   "lon": -0.0759,
+  "place": "St Leonard's Church, Shoreditch, London",
   "biome": "urban-park",
-  "water": "none",
-  "why": "James Parkinson's parish church, where the shaking palsy was first described in 1817."
+  "industry": "general"
+ },
+ {
+  "slug": "nola-french-quarter",
+  "lat": 29.9574,
+  "lon": -90.0648,
+  "place": "Jackson Square, New Orleans LA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-garden-district",
+  "lat": 29.9311,
+  "lon": -90.0831,
+  "place": "Magazine Street, New Orleans LA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-warehouse",
+  "lat": 29.9465,
+  "lon": -90.0701,
+  "place": "Andrew Higgins Blvd, New Orleans LA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-bywater",
+  "lat": 29.9662,
+  "lon": -90.0312,
+  "place": "Dauphine Street, New Orleans LA",
+  "biome": "river-valley",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-uptown",
+  "lat": 29.9271,
+  "lon": -90.115,
+  "place": "St. Charles Avenue, New Orleans LA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-mid-city",
+  "lat": 29.9719,
+  "lon": -90.0893,
+  "place": "Canal Street, New Orleans LA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-treme",
+  "lat": 29.9695,
+  "lon": -90.0701,
+  "place": "North Rampart Street, New Orleans LA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-marigny",
+  "lat": 29.9647,
+  "lon": -90.0532,
+  "place": "Frenchmen Street, New Orleans LA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-central-city",
+  "lat": 29.9465,
+  "lon": -90.0831,
+  "place": "South Rampart, New Orleans LA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nola-lower-ninth",
+  "lat": 29.9574,
+  "lon": -90.0267,
+  "place": "Florida Avenue, New Orleans LA",
+  "biome": "river-valley",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-financial",
+  "lat": 37.7912,
+  "lon": -122.4015,
+  "place": "Montgomery Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-mission",
+  "lat": 37.7599,
+  "lon": -122.4148,
+  "place": "Mission Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-soma",
+  "lat": 37.7849,
+  "lon": -122.4094,
+  "place": "Howard Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-marina",
+  "lat": 37.8021,
+  "lon": -122.4416,
+  "place": "Chestnut Street, San Francisco CA",
+  "biome": "coast",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-chinatown",
+  "lat": 37.7941,
+  "lon": -122.4078,
+  "place": "Grant Avenue, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-sunset",
+  "lat": 37.7644,
+  "lon": -122.4686,
+  "place": "Irving Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-nob-hill",
+  "lat": 37.7919,
+  "lon": -122.4154,
+  "place": "California Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-castro",
+  "lat": 37.7609,
+  "lon": -122.435,
+  "place": "Castro Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-haight",
+  "lat": 37.7692,
+  "lon": -122.4481,
+  "place": "Haight Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-embarcadero",
+  "lat": 37.7955,
+  "lon": -122.3937,
+  "place": "Embarcadero, San Francisco CA",
+  "biome": "coast",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-presidio",
+  "lat": 37.7989,
+  "lon": -122.4662,
+  "place": "Lincoln Blvd, San Francisco CA",
+  "biome": "temperate-forest",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-pacific-heights",
+  "lat": 37.7923,
+  "lon": -122.4376,
+  "place": "Pacific Avenue, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-excelsior",
+  "lat": 37.7211,
+  "lon": -122.4244,
+  "place": "Mission Street, SF Excelsior CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-visitacion",
+  "lat": 37.7127,
+  "lon": -122.4038,
+  "place": "Raymond Avenue, SF CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-bayview",
+  "lat": 37.7312,
+  "lon": -122.3878,
+  "place": "3rd Street, San Francisco CA",
+  "biome": "industrial",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-potrero",
+  "lat": 37.7587,
+  "lon": -122.3977,
+  "place": "Potrero Avenue, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-dogpatch",
+  "lat": 37.7503,
+  "lon": -122.3887,
+  "place": "3rd Street, SF Dogpatch CA",
+  "biome": "industrial",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-western-addition",
+  "lat": 37.7794,
+  "lon": -122.4324,
+  "place": "Fillmore Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-hayes-valley",
+  "lat": 37.7756,
+  "lon": -122.4244,
+  "place": "Hayes Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-nopa",
+  "lat": 37.7749,
+  "lon": -122.4376,
+  "place": "Divisadero Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-richmond",
+  "lat": 37.7807,
+  "lon": -122.4633,
+  "place": "Geary Boulevard, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-outer-sunset",
+  "lat": 37.7594,
+  "lon": -122.4724,
+  "place": "Judah Street, San Francisco CA",
+  "biome": "coast",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-tenderloin",
+  "lat": 37.7837,
+  "lon": -122.4151,
+  "place": "Eddy Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-civic-center",
+  "lat": 37.7794,
+  "lon": -122.4193,
+  "place": "Market Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-south-beach",
+  "lat": 37.7769,
+  "lon": -122.3899,
+  "place": "King Street, San Francisco CA",
+  "biome": "coast",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-rincon-hill",
+  "lat": 37.7875,
+  "lon": -122.3944,
+  "place": "Folsom Street, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-yerba-buena",
+  "lat": 37.7849,
+  "lon": -122.4015,
+  "place": "Mission Street, SF Yerba Buena CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-telegraph-hill",
+  "lat": 37.8024,
+  "lon": -122.4058,
+  "place": "Greenwich Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-russian-hill",
+  "lat": 37.8014,
+  "lon": -122.4194,
+  "place": "Hyde Street, San Francisco CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sf-north-beach",
+  "lat": 37.8006,
+  "lon": -122.4102,
+  "place": "Columbus Avenue, San Francisco CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-loop",
+  "lat": 41.8421,
+  "lon": -87.6448,
+  "place": "State Street, Chicago IL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-west-loop",
+  "lat": 41.8541,
+  "lon": -87.6448,
+  "place": "Randolph Street, Chicago IL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-river-north",
+  "lat": 41.8661,
+  "lon": -87.6448,
+  "place": "Chicago Avenue, Chicago IL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-south-loop",
+  "lat": 41.8781,
+  "lon": -87.6448,
+  "place": "Museum Campus, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-lincoln-park",
+  "lat": 41.8901,
+  "lon": -87.6448,
+  "place": "Lincoln Avenue, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-wicker-park",
+  "lat": 41.9021,
+  "lon": -87.6448,
+  "place": "Milwaukee Avenue, Chicago IL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-pilsen",
+  "lat": 41.9141,
+  "lon": -87.6448,
+  "place": "18th Street, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-bridgeport",
+  "lat": 41.8421,
+  "lon": -87.6298,
+  "place": "Halsted Street, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-hyde-park",
+  "lat": 41.8541,
+  "lon": -87.6298,
+  "place": "University of Chicago, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-ohare",
+  "lat": 41.8661,
+  "lon": -87.6298,
+  "place": "Airport Industrial, Chicago IL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-chinatown",
+  "lat": 41.8781,
+  "lon": -87.6298,
+  "place": "Wentworth Avenue, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "chi-little-village",
+  "lat": 41.8901,
+  "lon": -87.6298,
+  "place": "26th Street, Chicago IL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-downtown",
+  "lat": 42.2954,
+  "lon": -83.0608,
+  "place": "Woodward Avenue, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-midtown",
+  "lat": 42.3074,
+  "lon": -83.0608,
+  "place": "Cass Avenue, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-corktown",
+  "lat": 42.3194,
+  "lon": -83.0608,
+  "place": "Michigan Avenue, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-eastern",
+  "lat": 42.3314,
+  "lon": -83.0608,
+  "place": "Russell Street, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-detroit-river",
+  "lat": 42.3434,
+  "lon": -83.0608,
+  "place": "Renaissance Center, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-new-center",
+  "lat": 42.3554,
+  "lon": -83.0608,
+  "place": "Grand Boulevard, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-lafayette",
+  "lat": 42.3674,
+  "lon": -83.0608,
+  "place": "Jefferson Avenue, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-north-end",
+  "lat": 42.2954,
+  "lon": -83.0458,
+  "place": "Livernois Avenue, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-riverfront",
+  "lat": 42.3074,
+  "lon": -83.0458,
+  "place": "Hart Plaza, Detroit MI",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "det-west-side",
+  "lat": 42.3194,
+  "lon": -83.0458,
+  "place": "Grand River Avenue, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-hamtramck",
+  "lat": 42.3314,
+  "lon": -83.0458,
+  "place": "Joseph Campau, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "det-highland-park",
+  "lat": 42.3434,
+  "lon": -83.0458,
+  "place": "Woodward Avenue, Detroit MI",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-downtown",
+  "lat": 40.4046,
+  "lon": -80.0109,
+  "place": "Liberty Avenue, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-oakland",
+  "lat": 40.4166,
+  "lon": -80.0109,
+  "place": "Forbes Avenue, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-strip",
+  "lat": 40.4286,
+  "lon": -80.0109,
+  "place": "Penn Avenue, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-lawrenceville",
+  "lat": 40.4406,
+  "lon": -80.0109,
+  "place": "Butler Street, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-shadyside",
+  "lat": 40.4526,
+  "lon": -80.0109,
+  "place": "Walnut Street, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-squirrel-hill",
+  "lat": 40.4646,
+  "lon": -80.0109,
+  "place": "Murray Avenue, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-hazelwood",
+  "lat": 40.4766,
+  "lon": -80.0109,
+  "place": "Second Avenue, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-south-side",
+  "lat": 40.4046,
+  "lon": -79.9959,
+  "place": "East Carson Street, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-bloomfield",
+  "lat": 40.4166,
+  "lon": -79.9959,
+  "place": "Liberty Avenue, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-point",
+  "lat": 40.4286,
+  "lon": -79.9959,
+  "place": "Fountain, Pittsburgh PA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-tech-center",
+  "lat": 40.4406,
+  "lon": -79.9959,
+  "place": "Bakery Square, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pit-university",
+  "lat": 40.4526,
+  "lon": -79.9959,
+  "place": "CMU Campus, Pittsburgh PA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-midtown",
+  "lat": 33.713,
+  "lon": -84.403,
+  "place": "Peachtree Street, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-buckhead",
+  "lat": 33.725,
+  "lon": -84.403,
+  "place": "Peachtree Road, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-downtown",
+  "lat": 33.737,
+  "lon": -84.403,
+  "place": "Marietta Street, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-sweet-auburn",
+  "lat": 33.749,
+  "lon": -84.403,
+  "place": "Auburn Avenue, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-west-end",
+  "lat": 33.761,
+  "lon": -84.403,
+  "place": "Ralph David Abernathy Blvd, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-inman-park",
+  "lat": 33.773,
+  "lon": -84.403,
+  "place": "Euclid Avenue, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-virginia-highland",
+  "lat": 33.785,
+  "lon": -84.403,
+  "place": "Virginia Avenue, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-old-fourth",
+  "lat": 33.713,
+  "lon": -84.388,
+  "place": "Ponce de Leon Avenue, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-edgewood",
+  "lat": 33.725,
+  "lon": -84.388,
+  "place": "Moreland Avenue, Atlanta GA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-beltline",
+  "lat": 33.737,
+  "lon": -84.388,
+  "place": "Atlanta BeltLine, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-airport",
+  "lat": 33.749,
+  "lon": -84.388,
+  "place": "Airport Industrial, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "atl-cumberland",
+  "lat": 33.761,
+  "lon": -84.388,
+  "place": "Interstate 285, Atlanta GA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-downtown",
+  "lat": 32.7407,
+  "lon": -96.812,
+  "place": "Main Street, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-uptown",
+  "lat": 32.7527,
+  "lon": -96.812,
+  "place": "McKinney Avenue, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-deep-ellum",
+  "lat": 32.7647,
+  "lon": -96.812,
+  "place": "Commerce Street, Dallas TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-oak-cliff",
+  "lat": 32.7767,
+  "lon": -96.812,
+  "place": "Bishop Avenue, Dallas TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-design",
+  "lat": 32.7887,
+  "lon": -96.812,
+  "place": "Dragon Street, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-arts",
+  "lat": 32.8007,
+  "lon": -96.812,
+  "place": "Flora Street, Dallas TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-victory",
+  "lat": 32.8127,
+  "lon": -96.812,
+  "place": "American Airlines Center, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-lakewood",
+  "lat": 32.7407,
+  "lon": -96.797,
+  "place": "Abrams Road, Dallas TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-plano",
+  "lat": 32.7527,
+  "lon": -96.797,
+  "place": "Legacy Drive, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-richardson",
+  "lat": 32.7647,
+  "lon": -96.797,
+  "place": "Telecom Corridor, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-irving",
+  "lat": 32.7767,
+  "lon": -96.797,
+  "place": "Las Colinas, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-fort-worth",
+  "lat": 32.7887,
+  "lon": -96.797,
+  "place": "Main Street, Dallas TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-downtown",
+  "lat": 29.7244,
+  "lon": -95.3848,
+  "place": "Main Street, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-med-center",
+  "lat": 29.7364,
+  "lon": -95.3848,
+  "place": "Holcombe Boulevard, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-midtown",
+  "lat": 29.7484,
+  "lon": -95.3848,
+  "place": "Main Street, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-museum",
+  "lat": 29.7604,
+  "lon": -95.3848,
+  "place": "Montrose Boulevard, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-montrose",
+  "lat": 29.7724,
+  "lon": -95.3848,
+  "place": "Westheimer Road, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-heights",
+  "lat": 29.7844,
+  "lon": -95.3848,
+  "place": "19th Street, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-energy",
+  "lat": 29.7964,
+  "lon": -95.3848,
+  "place": "I-10 West, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-galleria",
+  "lat": 29.7244,
+  "lon": -95.3698,
+  "place": "Westheimer Road, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-ship-channel",
+  "lat": 29.7364,
+  "lon": -95.3698,
+  "place": "Clinton Drive, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-nasa",
+  "lat": 29.7484,
+  "lon": -95.3698,
+  "place": "NASA Road 1, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-east-end",
+  "lat": 29.7604,
+  "lon": -95.3698,
+  "place": "Navigation Boulevard, Houston TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-third-ward",
+  "lat": 29.7724,
+  "lon": -95.3698,
+  "place": "Elgin Street, Houston TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "la-downtown",
+  "lat": 34.0162,
+  "lon": -118.2587,
+  "place": "Broadway, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-hollywood",
+  "lat": 34.0282,
+  "lon": -118.2587,
+  "place": "Hollywood Boulevard, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-silicon-beach",
+  "lat": 34.0402,
+  "lon": -118.2587,
+  "place": "Abbot Kinney, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-beverly-hills",
+  "lat": 34.0522,
+  "lon": -118.2587,
+  "place": "Rodeo Drive, Los Angeles CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "la-santa-monica",
+  "lat": 34.0642,
+  "lon": -118.2587,
+  "place": "Third Street Promenade, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-venice",
+  "lat": 34.0762,
+  "lon": -118.2587,
+  "place": "Boardwalk, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-culver",
+  "lat": 34.0882,
+  "lon": -118.2587,
+  "place": "Washington Boulevard, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-pasadena",
+  "lat": 34.0162,
+  "lon": -118.2437,
+  "place": "Colorado Boulevard, Los Angeles CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "la-burbank",
+  "lat": 34.0282,
+  "lon": -118.2437,
+  "place": "Olive Avenue, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-glendale",
+  "lat": 34.0402,
+  "lon": -118.2437,
+  "place": "Brand Boulevard, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-long-beach",
+  "lat": 34.0522,
+  "lon": -118.2437,
+  "place": "Ocean Boulevard, Los Angeles CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "la-compton",
+  "lat": 34.0642,
+  "lon": -118.2437,
+  "place": "Alondra Boulevard, Los Angeles CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-downtown",
+  "lat": 33.4124,
+  "lon": -112.089,
+  "place": "Central Avenue, Phoenix AZ",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-midtown",
+  "lat": 33.4244,
+  "lon": -112.089,
+  "place": "Camelback Road, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-arcadia",
+  "lat": 33.4364,
+  "lon": -112.089,
+  "place": "Indian School Road, Phoenix AZ",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-scottsdale",
+  "lat": 33.4484,
+  "lon": -112.089,
+  "place": "Old Town, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-tempe",
+  "lat": 33.4604,
+  "lon": -112.089,
+  "place": "Mill Avenue, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-mesa",
+  "lat": 33.4724,
+  "lon": -112.089,
+  "place": "Main Street, Phoenix AZ",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-glendale",
+  "lat": 33.4844,
+  "lon": -112.089,
+  "place": "Glendale Avenue, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-chandler",
+  "lat": 33.4124,
+  "lon": -112.074,
+  "place": "Arizona Avenue, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-gilbert",
+  "lat": 33.4244,
+  "lon": -112.074,
+  "place": "Gilbert Road, Phoenix AZ",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "phx-solar",
+  "lat": 33.4364,
+  "lon": -112.074,
+  "place": "I-10 Corridor, Phoenix AZ",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-downtown",
+  "lat": 39.7032,
+  "lon": -105.0053,
+  "place": "16th Street Mall, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-lohi",
+  "lat": 39.7152,
+  "lon": -105.0053,
+  "place": "Highland Boulevard, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-rino",
+  "lat": 39.7272,
+  "lon": -105.0053,
+  "place": "Larimer Street, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-five-points",
+  "lat": 39.7392,
+  "lon": -105.0053,
+  "place": "Welton Street, Denver CO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-cherry-creek",
+  "lat": 39.7512,
+  "lon": -105.0053,
+  "place": "First Avenue, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-highlands",
+  "lat": 39.7632,
+  "lon": -105.0053,
+  "place": "32nd Avenue, Denver CO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-wash-park",
+  "lat": 39.7752,
+  "lon": -105.0053,
+  "place": "South Downing Street, Denver CO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-tech",
+  "lat": 39.7032,
+  "lon": -104.9903,
+  "place": "I-25 Corridor, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-aerospace",
+  "lat": 39.7152,
+  "lon": -104.9903,
+  "place": "Buckley Road, Denver CO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-boulder",
+  "lat": 39.7272,
+  "lon": -104.9903,
+  "place": "Pearl Street Mall, Denver CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-downtown",
+  "lat": 44.9418,
+  "lon": -93.28,
+  "place": "Nicollet Mall, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-north-loop",
+  "lat": 44.9538,
+  "lon": -93.28,
+  "place": "Washington Avenue, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-warehouse",
+  "lat": 44.9658,
+  "lon": -93.28,
+  "place": "First Avenue North, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-stadium",
+  "lat": 44.9778,
+  "lon": -93.28,
+  "place": "Washington Avenue SE, Minneapolis MN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-stpaul",
+  "lat": 44.9898,
+  "lon": -93.28,
+  "place": "Rice Street, Minneapolis MN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-midway",
+  "lat": 45.0018,
+  "lon": -93.28,
+  "place": "University Avenue, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-edin",
+  "lat": 45.0138,
+  "lon": -93.28,
+  "place": "50th Street, Minneapolis MN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-bloomington",
+  "lat": 44.9418,
+  "lon": -93.265,
+  "place": "Mall of America, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-plymouth",
+  "lat": 44.9538,
+  "lon": -93.265,
+  "place": "Rockford Road, Minneapolis MN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "msp-medical",
+  "lat": 44.9658,
+  "lon": -93.265,
+  "place": "Minneapolis Medical Center, Minneapolis MN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-downtown",
+  "lat": 47.5702,
+  "lon": -122.3471,
+  "place": "Pike Street, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-slu",
+  "lat": 47.5822,
+  "lon": -122.3471,
+  "place": "Westlake Avenue, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-capitol-hill",
+  "lat": 47.5942,
+  "lon": -122.3471,
+  "place": "Broadway, Seattle WA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-ballard",
+  "lat": 47.6062,
+  "lon": -122.3471,
+  "place": "Market Street, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-fremont",
+  "lat": 47.6182,
+  "lon": -122.3471,
+  "place": "Fremont Avenue, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-queen-anne",
+  "lat": 47.6302,
+  "lon": -122.3471,
+  "place": "Queen Anne Avenue, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-uw",
+  "lat": 47.6422,
+  "lon": -122.3471,
+  "place": "University Way, Seattle WA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-georgetown",
+  "lat": 47.5702,
+  "lon": -122.3321,
+  "place": "Airport Way, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-sodo",
+  "lat": 47.5822,
+  "lon": -122.3321,
+  "place": "First Avenue South, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-bellevue",
+  "lat": 47.5942,
+  "lon": -122.3321,
+  "place": "Bellevue Way, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-redmond",
+  "lat": 47.6062,
+  "lon": -122.3321,
+  "place": "Microsoft Way, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-tacoma",
+  "lat": 47.6182,
+  "lon": -122.3321,
+  "place": "Pacific Avenue, Seattle WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-downtown",
+  "lat": 42.3241,
+  "lon": -71.0739,
+  "place": "Washington Street, Boston MA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-back-bay",
+  "lat": 42.3361,
+  "lon": -71.0739,
+  "place": "Newbury Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-beacon-hill",
+  "lat": 42.3481,
+  "lon": -71.0739,
+  "place": "Charles Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-south-end",
+  "lat": 42.3601,
+  "lon": -71.0739,
+  "place": "Tremont Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-north-end",
+  "lat": 42.3721,
+  "lon": -71.0739,
+  "place": "Hanover Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-kendall",
+  "lat": 42.3841,
+  "lon": -71.0739,
+  "place": "Main Street, Boston MA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-cambridge",
+  "lat": 42.3961,
+  "lon": -71.0739,
+  "place": "Massachusetts Avenue, Boston MA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-fenway",
+  "lat": 42.3241,
+  "lon": -71.0589,
+  "place": "Lansdowne Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-charlestown",
+  "lat": 42.3361,
+  "lon": -71.0589,
+  "place": "Main Street, Boston MA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-seaport",
+  "lat": 42.3481,
+  "lon": -71.0589,
+  "place": "Northern Avenue, Boston MA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-allston",
+  "lat": 42.3601,
+  "lon": -71.0589,
+  "place": "Harvard Avenue, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "bos-brookline",
+  "lat": 42.3721,
+  "lon": -71.0589,
+  "place": "Beacon Street, Boston MA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-shibuya",
+  "lat": 35.6402,
+  "lon": 139.6353,
+  "place": "Shibuya Crossing, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-shinjuku",
+  "lat": 35.6522,
+  "lon": 139.6353,
+  "place": "West Exit, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-akihabara",
+  "lat": 35.6642,
+  "lon": 139.6353,
+  "place": "Electric Town, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-roppongi",
+  "lat": 35.6762,
+  "lon": 139.6353,
+  "place": "Roppongi Hills, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-odaiba",
+  "lat": 35.6882,
+  "lon": 139.6353,
+  "place": "Telecom Center, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-ginza",
+  "lat": 35.7002,
+  "lon": 139.6353,
+  "place": "Chuo-dori, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-marunouchi",
+  "lat": 35.7122,
+  "lon": 139.6353,
+  "place": "Tokyo Station, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-asakusa",
+  "lat": 35.6402,
+  "lon": 139.6503,
+  "place": "Nakamise-dori, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-ikebukuro",
+  "lat": 35.6522,
+  "lon": 139.6503,
+  "place": "Sunshine City, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-tsukuba",
+  "lat": 35.6642,
+  "lon": 139.6503,
+  "place": "Research Park, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-yokohama",
+  "lat": 35.6762,
+  "lon": 139.6503,
+  "place": "Minato Mirai, Tokyo Japan",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tokyo-kawasaki",
+  "lat": 35.6882,
+  "lon": 139.6503,
+  "place": "Daishi Bridge, Tokyo Japan",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-pudong",
+  "lat": 31.1944,
+  "lon": 121.4587,
+  "place": "Century Avenue, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-bund",
+  "lat": 31.2064,
+  "lon": 121.4587,
+  "place": "Zhongshan Road, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-jingan",
+  "lat": 31.2184,
+  "lon": 121.4587,
+  "place": "Nanjing Road, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-huangpu",
+  "lat": 31.2304,
+  "lon": 121.4587,
+  "place": "East Yan An Road, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-hongqiao",
+  "lat": 31.2424,
+  "lon": 121.4587,
+  "place": "Transportation Hub, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-zhangjiang",
+  "lat": 31.2544,
+  "lon": 121.4587,
+  "place": "Biotech Avenue, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-yangpu",
+  "lat": 31.2664,
+  "lon": 121.4587,
+  "place": "University District, Shanghai China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-minhang",
+  "lat": 31.1944,
+  "lon": 121.4737,
+  "place": "Industrial Zone, Shanghai China",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-jiading",
+  "lat": 31.2064,
+  "lon": 121.4737,
+  "place": "Auto City, Shanghai China",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sha-chongming",
+  "lat": 31.2184,
+  "lon": 121.4737,
+  "place": "Eco Island, Shanghai China",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-marina-bay",
+  "lat": 1.3161,
+  "lon": 103.8048,
+  "place": "Marina Bay Sands, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-orchard",
+  "lat": 1.3281,
+  "lon": 103.8048,
+  "place": "Shopping District, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-chinatown",
+  "lat": 1.3401,
+  "lon": 103.8048,
+  "place": "Pagoda Street, Singapore",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-little-india",
+  "lat": 1.3521,
+  "lon": 103.8048,
+  "place": "Serangoon Road, Singapore",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-jurong",
+  "lat": 1.3641,
+  "lon": 103.8048,
+  "place": "Industrial Estate, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-one-north",
+  "lat": 1.3761,
+  "lon": 103.8048,
+  "place": "Biopolis, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-tampines",
+  "lat": 1.3881,
+  "lon": 103.8048,
+  "place": "Regional Center, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-woodlands",
+  "lat": 1.3161,
+  "lon": 103.8198,
+  "place": "Causeway, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-changi",
+  "lat": 1.3281,
+  "lon": 103.8198,
+  "place": "Airport District, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sg-tuas",
+  "lat": 1.3401,
+  "lon": 103.8198,
+  "place": "Mega Port, Singapore",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-gangnam",
+  "lat": 37.5305,
+  "lon": 126.963,
+  "place": "Teheran-ro, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-gangbuk",
+  "lat": 37.5425,
+  "lon": 126.963,
+  "place": "Nowon-gu, Seoul Korea",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-mapo",
+  "lat": 37.5545,
+  "lon": 126.963,
+  "place": "Hongdae, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-jongno",
+  "lat": 37.5665,
+  "lon": 126.963,
+  "place": "Gyeongbokgung, Seoul Korea",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-yongsan",
+  "lat": 37.5785,
+  "lon": 126.963,
+  "place": "Electronics Market, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-songdo",
+  "lat": 37.5905,
+  "lon": 126.963,
+  "place": "Central Park, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-pangyo",
+  "lat": 37.6025,
+  "lon": 126.963,
+  "place": "Startup Campus, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-dongdaemun",
+  "lat": 37.5305,
+  "lon": 126.978,
+  "place": "Design Plaza, Seoul Korea",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-yeouido",
+  "lat": 37.5425,
+  "lon": 126.978,
+  "place": "IFC Seoul, Seoul Korea",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "seo-itewon",
+  "lat": 37.5545,
+  "lon": 126.978,
+  "place": "Hamilton Hotel, Seoul Korea",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-manhattan",
+  "lat": 40.6768,
+  "lon": -74.021,
+  "place": "Broadway, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-brooklyn",
+  "lat": 40.6888,
+  "lon": -74.021,
+  "place": "Atlantic Avenue, New York NY",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-queens",
+  "lat": 40.7008,
+  "lon": -74.021,
+  "place": "Northern Boulevard, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-bronx",
+  "lat": 40.7128,
+  "lon": -74.021,
+  "place": "Grand Concourse, New York NY",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-staten-island",
+  "lat": 40.7248,
+  "lon": -74.021,
+  "place": "Victory Boulevard, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-harlem",
+  "lat": 40.7368,
+  "lon": -74.021,
+  "place": "125th Street, New York NY",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-chelsea",
+  "lat": 40.7488,
+  "lon": -74.021,
+  "place": "8th Avenue, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-williamsburg",
+  "lat": 40.6768,
+  "lon": -74.006,
+  "place": "Bedford Avenue, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-dumbo",
+  "lat": 40.6888,
+  "lon": -74.006,
+  "place": "Water Street, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-financial",
+  "lat": 40.7008,
+  "lon": -74.006,
+  "place": "Wall Street, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-midtown",
+  "lat": 40.7128,
+  "lon": -74.006,
+  "place": "5th Avenue, New York NY",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nyc-upper-east",
+  "lat": 40.7248,
+  "lon": -74.006,
+  "place": "Madison Avenue, New York NY",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-downtown",
+  "lat": 45.4792,
+  "lon": -122.6934,
+  "place": "Burnside Street, Portland OR",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-pearl",
+  "lat": 45.4912,
+  "lon": -122.6934,
+  "place": "NW 13th Avenue, Portland OR",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-hawthorne",
+  "lat": 45.5032,
+  "lon": -122.6934,
+  "place": "Hawthorne Boulevard, Portland OR",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-alberta",
+  "lat": 45.5152,
+  "lon": -122.6934,
+  "place": "Alberta Street, Portland OR",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-lloyd",
+  "lat": 45.5272,
+  "lon": -122.6934,
+  "place": "NE Grand Avenue, Portland OR",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-division",
+  "lat": 45.5392,
+  "lon": -122.6934,
+  "place": "Division Street, Portland OR",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-beaverton",
+  "lat": 45.5512,
+  "lon": -122.6934,
+  "place": "Cedar Hills Boulevard, Portland OR",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-gresham",
+  "lat": 45.4792,
+  "lon": -122.6784,
+  "place": "Main Street, Portland OR",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-hillsboro",
+  "lat": 45.4912,
+  "lon": -122.6784,
+  "place": "Tanbourn Parkway, Portland OR",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "pdx-oregon-city",
+  "lat": 45.5032,
+  "lon": -122.6784,
+  "place": "Main Street, Portland OR",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-downtown",
+  "lat": 36.1267,
+  "lon": -86.7966,
+  "place": "Broadway, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-music-row",
+  "lat": 36.1387,
+  "lon": -86.7966,
+  "place": "16th Avenue South, Nashville TN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-gulch",
+  "lat": 36.1507,
+  "lon": -86.7966,
+  "place": "12th Avenue South, Nashville TN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-east-nash",
+  "lat": 36.1627,
+  "lon": -86.7966,
+  "place": "Main Street, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-germantown",
+  "lat": 36.1747,
+  "lon": -86.7966,
+  "place": "5th Avenue North, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-sobro",
+  "lat": 36.1867,
+  "lon": -86.7966,
+  "place": "Demonbreun Street, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-midtown",
+  "lat": 36.1987,
+  "lon": -86.7966,
+  "place": "West End Avenue, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-vanderbilt",
+  "lat": 36.1267,
+  "lon": -86.7816,
+  "place": "21st Avenue, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-franklin",
+  "lat": 36.1387,
+  "lon": -86.7816,
+  "place": "Main Street, Nashville TN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "nash-murfreesboro",
+  "lat": 36.1507,
+  "lon": -86.7816,
+  "place": "Church Street, Nashville TN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-downtown",
+  "lat": 30.2312,
+  "lon": -97.7581,
+  "place": "Congress Avenue, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-south-congress",
+  "lat": 30.2432,
+  "lon": -97.7581,
+  "place": "South Congress Avenue, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-east",
+  "lat": 30.2552,
+  "lon": -97.7581,
+  "place": "East 6th Street, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-domain",
+  "lat": 30.2672,
+  "lon": -97.7581,
+  "place": "Domain Drive, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-warehouse",
+  "lat": 30.2792,
+  "lon": -97.7581,
+  "place": "4th Street, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-rainey",
+  "lat": 30.2912,
+  "lon": -97.7581,
+  "place": "Rainey Street, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-mueller",
+  "lat": 30.3032,
+  "lon": -97.7581,
+  "place": "Aldrich Street, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-round-rock",
+  "lat": 30.2312,
+  "lon": -97.7431,
+  "place": "Round Rock Avenue, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-georgetown",
+  "lat": 30.2432,
+  "lon": -97.7431,
+  "place": "Main Street, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "aus-pflugerville",
+  "lat": 30.2552,
+  "lon": -97.7431,
+  "place": "FM 685, Austin TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-downtown",
+  "lat": 25.7257,
+  "lon": -80.2068,
+  "place": "Biscayne Boulevard, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-brickell",
+  "lat": 25.7377,
+  "lon": -80.2068,
+  "place": "Brickell Avenue, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-wynwood",
+  "lat": 25.7497,
+  "lon": -80.2068,
+  "place": "NW 2nd Avenue, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-south-beach",
+  "lat": 25.7617,
+  "lon": -80.2068,
+  "place": "Ocean Drive, Miami FL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-little-havana",
+  "lat": 25.7737,
+  "lon": -80.2068,
+  "place": "Calle Ocho, Miami FL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-design",
+  "lat": 25.7857,
+  "lon": -80.2068,
+  "place": "NE 40th Street, Miami FL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-midtown",
+  "lat": 25.7977,
+  "lon": -80.2068,
+  "place": "N Miami Avenue, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-coral-gables",
+  "lat": 25.7257,
+  "lon": -80.1918,
+  "place": "Miracle Mile, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-aventura",
+  "lat": 25.7377,
+  "lon": -80.1918,
+  "place": "Biscayne Boulevard, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mia-doral",
+  "lat": 25.7497,
+  "lon": -80.1918,
+  "place": "NW 87th Avenue, Miami FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-downtown",
+  "lat": 35.7436,
+  "lon": -78.6532,
+  "place": "Fayetteville Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-research",
+  "lat": 35.7556,
+  "lon": -78.6532,
+  "place": "Alexander Drive, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-durham",
+  "lat": 35.7676,
+  "lon": -78.6532,
+  "place": "Main Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-chapel-hill",
+  "lat": 35.7796,
+  "lon": -78.6532,
+  "place": "Franklin Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-cary",
+  "lat": 35.7916,
+  "lon": -78.6532,
+  "place": "Walnut Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-apex",
+  "lat": 35.8036,
+  "lon": -78.6532,
+  "place": "Salem Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-morrisville",
+  "lat": 35.8156,
+  "lon": -78.6532,
+  "place": "Davis Drive, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-wake",
+  "lat": 35.7436,
+  "lon": -78.6382,
+  "place": "Capital Boulevard, Raleigh-Durham NC",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-nc-state",
+  "lat": 35.7556,
+  "lon": -78.6382,
+  "place": "Hillsborough Street, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "rdu-duke",
+  "lat": 35.7676,
+  "lon": -78.6382,
+  "place": "Science Drive, Raleigh-Durham NC",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-downtown",
+  "lat": 39.9252,
+  "lon": -83.0138,
+  "place": "High Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-short-north",
+  "lat": 39.9372,
+  "lon": -83.0138,
+  "place": "High Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-german",
+  "lat": 39.9492,
+  "lon": -83.0138,
+  "place": "South 3rd Street, Columbus OH",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-osu",
+  "lat": 39.9612,
+  "lon": -83.0138,
+  "place": "Lane Avenue, Columbus OH",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-easton",
+  "lat": 39.9732,
+  "lon": -83.0138,
+  "place": "Easton Way, Columbus OH",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-dublin",
+  "lat": 39.9852,
+  "lon": -83.0138,
+  "place": "Bridge Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-westerville",
+  "lat": 39.9972,
+  "lon": -83.0138,
+  "place": "State Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-grove-city",
+  "lat": 39.9252,
+  "lon": -82.9988,
+  "place": "Broad Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-reynoldsburg",
+  "lat": 39.9372,
+  "lon": -82.9988,
+  "place": "Main Street, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "cmh-pickerington",
+  "lat": 39.9492,
+  "lon": -82.9988,
+  "place": "Rock Mill Road, Columbus OH",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-downtown",
+  "lat": 39.0637,
+  "lon": -94.5936,
+  "place": "Main Street, Kansas City MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-crossroads",
+  "lat": 39.0757,
+  "lon": -94.5936,
+  "place": "Wyandotte Street, Kansas City MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-plaza",
+  "lat": 39.0877,
+  "lon": -94.5936,
+  "place": "Ward Parkway, Kansas City MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-westport",
+  "lat": 39.0997,
+  "lon": -94.5936,
+  "place": "Westport Road, Kansas City MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-power-light",
+  "lat": 39.1117,
+  "lon": -94.5936,
+  "place": "12th Street, Kansas City MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-northland",
+  "lat": 39.1237,
+  "lon": -94.5936,
+  "place": "NW Barry Road, Kansas City MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-opportunity",
+  "lat": 39.1357,
+  "lon": -94.5936,
+  "place": "Grand Boulevard, Kansas City MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-overland",
+  "lat": 39.0637,
+  "lon": -94.5786,
+  "place": "Metcalf Avenue, Kansas City MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-olathe",
+  "lat": 39.0757,
+  "lon": -94.5786,
+  "place": "Santa Fe Street, Kansas City MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "kc-independence",
+  "lat": 39.0877,
+  "lon": -94.5786,
+  "place": "Noland Road, Kansas City MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-downtown",
+  "lat": 38.591,
+  "lon": -90.2144,
+  "place": "Market Street, St Louis MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-central-west",
+  "lat": 38.603,
+  "lon": -90.2144,
+  "place": "Euclid Avenue, St Louis MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-soulard",
+  "lat": 38.615,
+  "lon": -90.2144,
+  "place": "Soulard Market, St Louis MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-delmar",
+  "lat": 38.627,
+  "lon": -90.2144,
+  "place": "Delmar Boulevard, St Louis MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-cortex",
+  "lat": 38.639,
+  "lon": -90.2144,
+  "place": "Forest Park Avenue, St Louis MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-ballpark",
+  "lat": 38.651,
+  "lon": -90.2144,
+  "place": "Clark Avenue, St Louis MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-webster",
+  "lat": 38.663,
+  "lon": -90.2144,
+  "place": "Lockwood Avenue, St Louis MO",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-kirkwood",
+  "lat": 38.591,
+  "lon": -90.1994,
+  "place": "South Kirkwood Road, St Louis MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-clayton",
+  "lat": 38.603,
+  "lon": -90.1994,
+  "place": "Hanley Road, St Louis MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "stl-chesterfield",
+  "lat": 38.615,
+  "lon": -90.1994,
+  "place": "Chesterfield Parkway, St Louis MO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-downtown",
+  "lat": 39.7324,
+  "lon": -86.1731,
+  "place": "Meridian Street, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-mass",
+  "lat": 39.7444,
+  "lon": -86.1731,
+  "place": "Massachusetts Avenue, Indianapolis IN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-broad-ripple",
+  "lat": 39.7564,
+  "lon": -86.1731,
+  "place": "Broad Ripple Avenue, Indianapolis IN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-fountain",
+  "lat": 39.7684,
+  "lon": -86.1731,
+  "place": "Shelby Street, Indianapolis IN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-carmel",
+  "lat": 39.7804,
+  "lon": -86.1731,
+  "place": "Rangeline Road, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-fishers",
+  "lat": 39.7924,
+  "lon": -86.1731,
+  "place": "116th Street, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-noblesville",
+  "lat": 39.8044,
+  "lon": -86.1731,
+  "place": "Logan Street, Indianapolis IN",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-westfield",
+  "lat": 39.7324,
+  "lon": -86.1581,
+  "place": "Greenfield Avenue, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-avon",
+  "lat": 39.7444,
+  "lon": -86.1581,
+  "place": "Rockville Road, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "indy-plainfield",
+  "lat": 39.7564,
+  "lon": -86.1581,
+  "place": "Rockville Road, Indianapolis IN",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-city",
+  "lat": 51.4714,
+  "lon": -0.1428,
+  "place": "Bank Junction, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-shoreditch",
+  "lat": 51.4834,
+  "lon": -0.1428,
+  "place": "Old Street, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-canary",
+  "lat": 51.4954,
+  "lon": -0.1428,
+  "place": "Westferry Circus, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-camden",
+  "lat": 51.5074,
+  "lon": -0.1428,
+  "place": "Camden High Street, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-westminster",
+  "lat": 51.5194,
+  "lon": -0.1428,
+  "place": "Victoria Street, London UK",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-kings-cross",
+  "lat": 51.5314,
+  "lon": -0.1428,
+  "place": "Euston Road, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-battersea",
+  "lat": 51.5434,
+  "lon": -0.1428,
+  "place": "Battersea Power Station, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-stratford",
+  "lat": 51.4714,
+  "lon": -0.1278,
+  "place": "Olympic Park, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-greenwich",
+  "lat": 51.4834,
+  "lon": -0.1278,
+  "place": "Cutty Sark, London UK",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ldn-croydon",
+  "lat": 51.4954,
+  "lon": -0.1278,
+  "place": "North End, London UK",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-mitte",
+  "lat": 52.484,
+  "lon": 13.39,
+  "place": "Unter den Linden, Berlin Germany",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-kreuzberg",
+  "lat": 52.496,
+  "lon": 13.39,
+  "place": "Oranienstrasse, Berlin Germany",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-friedrichshain",
+  "lat": 52.508,
+  "lon": 13.39,
+  "place": "Boxhagener Platz, Berlin Germany",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-charlotten",
+  "lat": 52.52,
+  "lon": 13.39,
+  "place": "Kurfurstendamm, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-neukolln",
+  "lat": 52.532,
+  "lon": 13.39,
+  "place": "Karl-Marx-Strasse, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-prenzlauer",
+  "lat": 52.544,
+  "lon": 13.39,
+  "place": "Kastanienallee, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-wedding",
+  "lat": 52.556,
+  "lon": 13.39,
+  "place": "Mullerstrasse, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-tempelhof",
+  "lat": 52.484,
+  "lon": 13.405,
+  "place": "Tempelhofer Damm, Berlin Germany",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-spandau",
+  "lat": 52.496,
+  "lon": 13.405,
+  "place": "Breite Strasse, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "ber-adlershof",
+  "lat": 52.508,
+  "lon": 13.405,
+  "place": "Science City, Berlin Germany",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "par-louvre",
+  "lat": 48.8206,
+  "lon": 2.3372,
+  "place": "Rue de Rivoli, Paris France",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "par-marais",
+  "lat": 48.8326,
+  "lon": 2.3372,
+  "place": "Rue des Francs-Bourgeois, Paris France",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "par-defence",
+  "lat": 48.8446,
+  "lon": 2.3372,
+  "place": "Esplanade de la Defence, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "par-montmartre",
+  "lat": 48.8566,
+  "lon": 2.3372,
+  "place": "Rue Lepic, Paris France",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "par-saclay",
+  "lat": 48.8686,
+  "lon": 2.3372,
+  "place": "Plateau de Saclay, Paris France",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "par-bastille",
+  "lat": 48.8806,
+  "lon": 2.3372,
+  "place": "Place de la Bastille, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "par-republique",
+  "lat": 48.8926,
+  "lon": 2.3372,
+  "place": "Avenue de la Republique, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "par-bercy",
+  "lat": 48.8206,
+  "lon": 2.3522,
+  "place": "Cour Saint-Emilion, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "par-saint-denis",
+  "lat": 48.8326,
+  "lon": 2.3522,
+  "place": "Avenue du President Wilson, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "par-evry",
+  "lat": 48.8446,
+  "lon": 2.3522,
+  "place": "Cours Monseigneur Romero, Paris France",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-cbd",
+  "lat": -33.9048,
+  "lon": 151.1943,
+  "place": "George Street, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-darling",
+  "lat": -33.8928,
+  "lon": 151.1943,
+  "place": "Harbour Street, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-barangaroo",
+  "lat": -33.8808,
+  "lon": 151.1943,
+  "place": "Barangaroo Avenue, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-surry",
+  "lat": -33.8688,
+  "lon": 151.1943,
+  "place": "Crown Street, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-newtown",
+  "lat": -33.8568,
+  "lon": 151.1943,
+  "place": "King Street, Sydney Australia",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-parramatta",
+  "lat": -33.8448,
+  "lon": 151.1943,
+  "place": "Church Street, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-chatswood",
+  "lat": -33.8328,
+  "lon": 151.1943,
+  "place": "Victoria Avenue, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-macquarie",
+  "lat": -33.9048,
+  "lon": 151.2093,
+  "place": "Epping Road, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-north-ryde",
+  "lat": -33.8928,
+  "lon": 151.2093,
+  "place": "Delhi Road, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "syd-liverpool",
+  "lat": -33.8808,
+  "lon": 151.2093,
+  "place": "Macquarie Street, Sydney Australia",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-downtown",
+  "lat": 32.6797,
+  "lon": -117.1761,
+  "place": "Broadway, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-gaslamp",
+  "lat": 32.6917,
+  "lon": -117.1761,
+  "place": "5th Avenue, San Diego CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-la-jolla",
+  "lat": 32.7037,
+  "lon": -117.1761,
+  "place": "Prospect Street, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-mission",
+  "lat": 32.7157,
+  "lon": -117.1761,
+  "place": "Mission Center Road, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-pacific-beach",
+  "lat": 32.7277,
+  "lon": -117.1761,
+  "place": "Mission Boulevard, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-hillcrest",
+  "lat": 32.7397,
+  "lon": -117.1761,
+  "place": "University Avenue, San Diego CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-north-park",
+  "lat": 32.7517,
+  "lon": -117.1761,
+  "place": "30th Street, San Diego CA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-sorrento",
+  "lat": 32.6797,
+  "lon": -117.1611,
+  "place": "Sorrento Valley Road, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-carlsbad",
+  "lat": 32.6917,
+  "lon": -117.1611,
+  "place": "Palomar Airport Road, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sd-chula-vista",
+  "lat": 32.7037,
+  "lon": -117.1611,
+  "place": "Third Avenue, San Diego CA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-bandra",
+  "lat": 19.04,
+  "lon": 72.8627,
+  "place": "Bandra Kurla Complex, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-nariman",
+  "lat": 19.052,
+  "lon": 72.8627,
+  "place": "Marine Drive, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-andheri",
+  "lat": 19.064,
+  "lon": 72.8627,
+  "place": "Western Express Highway, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-powai",
+  "lat": 19.076,
+  "lon": 72.8627,
+  "place": "IIT Bombay Campus, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-lower-parel",
+  "lat": 19.088,
+  "lon": 72.8627,
+  "place": "Senapati Bapat Marg, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-worli",
+  "lat": 19.1,
+  "lon": 72.8627,
+  "place": "Worli Sea Link, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-thane",
+  "lat": 19.112,
+  "lon": 72.8627,
+  "place": "Eastern Express Highway, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-navi-mumbai",
+  "lat": 19.04,
+  "lon": 72.8777,
+  "place": "CBD Belapur, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-borivali",
+  "lat": 19.052,
+  "lon": 72.8777,
+  "place": "Western Express Highway, Mumbai India",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "mum-kalyan",
+  "lat": 19.064,
+  "lon": 72.8777,
+  "place": "Kalyan-Shil Road, Mumbai India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-marina",
+  "lat": 25.1688,
+  "lon": 55.2558,
+  "place": "Marina Walk, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-downtown",
+  "lat": 25.1808,
+  "lon": 55.2558,
+  "place": "Burj Khalifa, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-jlt",
+  "lat": 25.1928,
+  "lon": 55.2558,
+  "place": "Cluster Avenue, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-internet",
+  "lat": 25.2048,
+  "lon": 55.2558,
+  "place": "Sheikh Zayed Road, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-media",
+  "lat": 25.2168,
+  "lon": 55.2558,
+  "place": "Knowledge Village, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-difc",
+  "lat": 25.2288,
+  "lon": 55.2558,
+  "place": "Gate Avenue, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-al-barsha",
+  "lat": 25.2408,
+  "lon": 55.2558,
+  "place": "Sheikh Zayed Road, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-deira",
+  "lat": 25.1688,
+  "lon": 55.2708,
+  "place": "Gold Souk, Dubai UAE",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-jebel-ali",
+  "lat": 25.1808,
+  "lon": 55.2708,
+  "place": "Port Road, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dxb-silicon",
+  "lat": 25.1928,
+  "lon": 55.2708,
+  "place": "Academic City Road, Dubai UAE",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-downtown",
+  "lat": 43.6172,
+  "lon": -79.3982,
+  "place": "King Street, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-yorkville",
+  "lat": 43.6292,
+  "lon": -79.3982,
+  "place": "Bloor Street, Toronto Canada",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-distillery",
+  "lat": 43.6412,
+  "lon": -79.3982,
+  "place": "Mill Street, Toronto Canada",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-liberty",
+  "lat": 43.6532,
+  "lon": -79.3982,
+  "place": "Liberty Street, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-waterfront",
+  "lat": 43.6652,
+  "lon": -79.3982,
+  "place": "Queens Quay, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-markham",
+  "lat": 43.6772,
+  "lon": -79.3982,
+  "place": "Highway 7, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-mississauga",
+  "lat": 43.6892,
+  "lon": -79.3982,
+  "place": "City Centre Drive, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-vaughan",
+  "lat": 43.6172,
+  "lon": -79.3832,
+  "place": "Highway 400, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-north-york",
+  "lat": 43.6292,
+  "lon": -79.3832,
+  "place": "Yonge Street, Toronto Canada",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tor-scarborough",
+  "lat": 43.6412,
+  "lon": -79.3832,
+  "place": "Kingston Road, Toronto Canada",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-plano2",
+  "lat": 32.7407,
+  "lon": -96.812,
+  "place": "Legacy Drive, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-frisco",
+  "lat": 32.7527,
+  "lon": -96.812,
+  "place": "Preston Road, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-mckinney",
+  "lat": 32.7647,
+  "lon": -96.812,
+  "place": "Louisiana Street, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-allen",
+  "lat": 32.7767,
+  "lon": -96.812,
+  "place": "Stacy Road, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-addison",
+  "lat": 32.7887,
+  "lon": -96.812,
+  "place": "Belt Line Road, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-carrollton",
+  "lat": 32.8007,
+  "lon": -96.812,
+  "place": "Josey Lane, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-lewisville",
+  "lat": 32.8127,
+  "lon": -96.812,
+  "place": "Corporate Drive, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-flower-mound",
+  "lat": 32.7407,
+  "lon": -96.797,
+  "place": "Cross Timbers Road, Dallas Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-grand-prairie",
+  "lat": 32.7527,
+  "lon": -96.797,
+  "place": "Main Street, Dallas Metro TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "dal-arlington2",
+  "lat": 32.7647,
+  "lon": -96.797,
+  "place": "Collins Street, Dallas Metro TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-downtown",
+  "lat": 27.9146,
+  "lon": -82.4722,
+  "place": "Franklin Street, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-ybor",
+  "lat": 27.9266,
+  "lon": -82.4722,
+  "place": "7th Avenue, Tampa FL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-hyde-park",
+  "lat": 27.9386,
+  "lon": -82.4722,
+  "place": "South Howard Avenue, Tampa FL",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-channelside",
+  "lat": 27.9506,
+  "lon": -82.4722,
+  "place": "Channelside Drive, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-westshore",
+  "lat": 27.9626,
+  "lon": -82.4722,
+  "place": "Westshore Boulevard, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-st-pete",
+  "lat": 27.9746,
+  "lon": -82.4722,
+  "place": "Central Avenue, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-clearwater",
+  "lat": 27.9866,
+  "lon": -82.4722,
+  "place": "Cleveland Street, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-brandon",
+  "lat": 27.9146,
+  "lon": -82.4572,
+  "place": "Bloomingdale Avenue, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-wesley-chapel",
+  "lat": 27.9266,
+  "lon": -82.4572,
+  "place": "Wiregrass Ranch Blvd, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "tpa-lakeland",
+  "lat": 27.9386,
+  "lon": -82.4572,
+  "place": "Main Street, Tampa FL",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-electronic",
+  "lat": 12.9356,
+  "lon": 77.5796,
+  "place": "Hosur Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-whitefield",
+  "lat": 12.9476,
+  "lon": 77.5796,
+  "place": "ITPL Main Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-outer-ring",
+  "lat": 12.9596,
+  "lon": 77.5796,
+  "place": "Bellandur, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-indiranagar",
+  "lat": 12.9716,
+  "lon": 77.5796,
+  "place": "100 Feet Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-koramangala",
+  "lat": 12.9836,
+  "lon": 77.5796,
+  "place": "80 Feet Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-hebbal",
+  "lat": 12.9956,
+  "lon": 77.5796,
+  "place": "Bellary Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-marathahalli",
+  "lat": 13.0076,
+  "lon": 77.5796,
+  "place": "Outer Ring Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-devanahalli",
+  "lat": 12.9356,
+  "lon": 77.5946,
+  "place": "Airport Road, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-yelahanka",
+  "lat": 12.9476,
+  "lon": 77.5946,
+  "place": "Air Force Base Road, Bangalore India",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "blr-peenya",
+  "lat": 12.9596,
+  "lon": 77.5946,
+  "place": "Industrial Area, Bangalore India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-katy",
+  "lat": 29.7244,
+  "lon": -95.3848,
+  "place": "Katy Freeway, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-sugar-land2",
+  "lat": 29.7364,
+  "lon": -95.3848,
+  "place": "Highway 6, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-pearland",
+  "lat": 29.7484,
+  "lon": -95.3848,
+  "place": "Broadway Street, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-the-woodlands",
+  "lat": 29.7604,
+  "lon": -95.3848,
+  "place": "Research Forest Drive, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-cypress",
+  "lat": 29.7724,
+  "lon": -95.3848,
+  "place": "Highway 290, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-spring",
+  "lat": 29.7844,
+  "lon": -95.3848,
+  "place": "I-45 North, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-conroe",
+  "lat": 29.7964,
+  "lon": -95.3848,
+  "place": "I-45 North, Houston Metro TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-lake-jackson",
+  "lat": 29.7244,
+  "lon": -95.3698,
+  "place": "Highway 288, Houston Metro TX",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-texas-city",
+  "lat": 29.7364,
+  "lon": -95.3698,
+  "place": "Highway 146, Houston Metro TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "hou-galveston",
+  "lat": 29.7484,
+  "lon": -95.3698,
+  "place": "Seawall Boulevard, Houston Metro TX",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "den-aurora",
+  "lat": 39.7032,
+  "lon": -105.0053,
+  "place": "Colfax Avenue, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-lakewood",
+  "lat": 39.7152,
+  "lon": -105.0053,
+  "place": "Wadsworth Boulevard, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-arvada",
+  "lat": 39.7272,
+  "lon": -105.0053,
+  "place": "Wadsworth Boulevard, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-westminster",
+  "lat": 39.7392,
+  "lon": -105.0053,
+  "place": "Highway 36, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-thornton",
+  "lat": 39.7512,
+  "lon": -105.0053,
+  "place": "Washington Street, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-centennial",
+  "lat": 39.7632,
+  "lon": -105.0053,
+  "place": "Arapahoe Road, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-littleton",
+  "lat": 39.7752,
+  "lon": -105.0053,
+  "place": "Main Street, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-englewood",
+  "lat": 39.7032,
+  "lon": -104.9903,
+  "place": "Broadway, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-highlands-ranch",
+  "lat": 39.7152,
+  "lon": -104.9903,
+  "place": "Highlands Ranch Parkway, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "den-castle-rock",
+  "lat": 39.7272,
+  "lon": -104.9903,
+  "place": "Highway 105, Denver Metro CO",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-everett",
+  "lat": 47.5702,
+  "lon": -122.3471,
+  "place": "Boeing Factory Road, Seattle Metro WA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-tacoma2",
+  "lat": 47.5822,
+  "lon": -122.3471,
+  "place": "Pacific Avenue, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-federal-way",
+  "lat": 47.5942,
+  "lon": -122.3471,
+  "place": "Highway 99, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-kent",
+  "lat": 47.6062,
+  "lon": -122.3471,
+  "place": "Central Avenue, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-renton",
+  "lat": 47.6182,
+  "lon": -122.3471,
+  "place": "Boeing Access Road, Seattle Metro WA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-bothell",
+  "lat": 47.6302,
+  "lon": -122.3471,
+  "place": "Highway 522, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-lynnwood",
+  "lat": 47.6422,
+  "lon": -122.3471,
+  "place": "Highway 99, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-edmonds",
+  "lat": 47.5702,
+  "lon": -122.3321,
+  "place": "Highway 99, Seattle Metro WA",
+  "biome": "urban-park",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-shoreline",
+  "lat": 47.5822,
+  "lon": -122.3321,
+  "place": "Aurora Avenue, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "sea-issaquah",
+  "lat": 47.5942,
+  "lon": -122.3321,
+  "place": "Highway 90, Seattle Metro WA",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-connaught",
+  "lat": 28.6019,
+  "lon": 77.173,
+  "place": "Rajiv Chowk, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-cyber",
+  "lat": 28.6139,
+  "lon": 77.191,
+  "place": "DLF Cyber Hub, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-dwarka",
+  "lat": 28.6259,
+  "lon": 77.209,
+  "place": "Sector 21, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-noida",
+  "lat": 28.6019,
+  "lon": 77.227,
+  "place": "Sector 62, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-gurgaon",
+  "lat": 28.6139,
+  "lon": 77.245,
+  "place": "MG Road, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-rohini",
+  "lat": 28.6259,
+  "lon": 77.173,
+  "place": "Sector 10, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-vaishali",
+  "lat": 28.6019,
+  "lon": 77.191,
+  "place": "NH 24, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-ghaziabad",
+  "lat": 28.6139,
+  "lon": 77.209,
+  "place": "NH 24, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-faridabad",
+  "lat": 28.6259,
+  "lon": 77.227,
+  "place": "NH 19, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "delhi-sonipat",
+  "lat": 28.6019,
+  "lon": 77.245,
+  "place": "NH 44, Delhi India",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-nanshan",
+  "lat": 22.5311,
+  "lon": 114.0219,
+  "place": "Science Park, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-futian",
+  "lat": 22.5431,
+  "lon": 114.0399,
+  "place": "CBD District, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-luohu",
+  "lat": 22.5551,
+  "lon": 114.0579,
+  "place": "Dongmen, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-baoan",
+  "lat": 22.5311,
+  "lon": 114.0759,
+  "place": "Airport Road, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-longhua",
+  "lat": 22.5431,
+  "lon": 114.0939,
+  "place": "Foxconn Zone, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-longgang",
+  "lat": 22.5551,
+  "lon": 114.0219,
+  "place": "Industrial Park, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-yantian",
+  "lat": 22.5311,
+  "lon": 114.0399,
+  "place": "Port District, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-guangming",
+  "lat": 22.5431,
+  "lon": 114.0579,
+  "place": "Science City, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-pingshan",
+  "lat": 22.5551,
+  "lon": 114.0759,
+  "place": "Biotech Park, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "shenzhen-dapeng",
+  "lat": 22.5311,
+  "lon": 114.0939,
+  "place": "Peninsula, Shenzhen China",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-quincy",
+  "lat": 42.3481,
+  "lon": -71.0949,
+  "place": "Hancock Street, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-newton",
+  "lat": 42.3601,
+  "lon": -71.0769,
+  "place": "Washington Street, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-waltham",
+  "lat": 42.3721,
+  "lon": -71.0589,
+  "place": "Moody Street, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-lexington",
+  "lat": 42.3481,
+  "lon": -71.0409,
+  "place": "Mass Ave, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-burlington",
+  "lat": 42.3601,
+  "lon": -71.0229,
+  "place": "Mall Road, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-woburn",
+  "lat": 42.3721,
+  "lon": -71.0949,
+  "place": "Commerce Way, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-reading",
+  "lat": 42.3481,
+  "lon": -71.0769,
+  "place": "Main Street, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-somerville",
+  "lat": 42.3601,
+  "lon": -71.0589,
+  "place": "Davis Square, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-medford",
+  "lat": 42.3721,
+  "lon": -71.0409,
+  "place": "Mystic Parkway, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "bosm-lynn",
+  "lat": 42.3481,
+  "lon": -71.0229,
+  "place": "Boston Street, MA Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-troy",
+  "lat": 42.3194,
+  "lon": -83.0818,
+  "place": "Big Beaver Road, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-southfield",
+  "lat": 42.3314,
+  "lon": -83.0638,
+  "place": "NW Highway, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-novi",
+  "lat": 42.3434,
+  "lon": -83.0458,
+  "place": "Grand River Ave, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-ann-arbor",
+  "lat": 42.3194,
+  "lon": -83.0278,
+  "place": "State Street, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-livonia",
+  "lat": 42.3314,
+  "lon": -83.0098,
+  "place": "Plymouth Road, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-sterling",
+  "lat": 42.3434,
+  "lon": -83.0818,
+  "place": "Hall Road, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-rochester",
+  "lat": 42.3194,
+  "lon": -83.0638,
+  "place": "Rochester Road, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-bloomfield",
+  "lat": 42.3314,
+  "lon": -83.0458,
+  "place": "Telegraph Road, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-pontiac",
+  "lat": 42.3434,
+  "lon": -83.0278,
+  "place": "Woodward Avenue, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "detm-flint",
+  "lat": 42.3194,
+  "lon": -83.0098,
+  "place": "Saginaw Street, MI Metro",
+  "biome": "urban-core",
+  "industry": "general"
+ },
+ {
+  "slug": "unspoken-smiles",
+  "lat": 37.78,
+  "lon": -122.41,
+  "place": "Mission Street, San Francisco CA",
+  "biome": "indoor-clinic",
+  "industry": "general"
  }
 ]
