@@ -1,0 +1,21 @@
+{
+   "Container": "agi-corp-poc",
+   "Services": [],
+   "Modules": [
+      {
+         "sUrl": "https://cdn.rp1.com/sneeze/examples/wasm/map.wasm"
+      }
+   ],
+   "Primary": {
+      "Ambient":     { "fBrightness": 0.05, "fColor": "0xFFFFFF" },
+      "Directional": { "fBrightness": 0.5,  "fColor": "0xFFFFFF", "Rotation": [0.0, 0.5808, 0.6663, 0.468] }
+   },
+   "Data": {
+      "Scene":
+      { "Head": { "Self": "P-?" }, "Name": "AGI Corp POC", "Resource": { "sReference": "https://cdn.rp1.com/sneeze/examples/assets/Stool.glb" }, "aChildren":
+         [
+            { "Head": { "Self": "P-?" }, "Name": "Bucket", "Resource": { "sReference": "https://cdn.rp1.com/sneeze/examples/assets/Bucket.glb" }, "Transform": { "Position": [0.0, 0.0, 0.428] } }
+         ]
+      }
+   }
+}
