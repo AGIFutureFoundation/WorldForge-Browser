@@ -1,6 +1,6 @@
 {
-  "total": 100,
-  "captured": 47,
+  "total": 108,
+  "captured": 51,
   "failed": 1,
   "results": [
     {
@@ -329,6 +329,34 @@
       "slug": "chi-pilsen",
       "ok": false,
       "error": "Page.captureScreenshot timeout"
+    },
+    {
+      "slug": "sf-pacific-heights",
+      "ok": true,
+      "fallback": false,
+      "size": 442365,
+      "frames": 24
+    },
+    {
+      "slug": "sf-presidio",
+      "ok": true,
+      "fallback": false,
+      "size": 404346,
+      "frames": 24
+    },
+    {
+      "slug": "sf-soma",
+      "ok": true,
+      "fallback": false,
+      "size": 441433,
+      "frames": 24
+    },
+    {
+      "slug": "sf-sunset",
+      "ok": true,
+      "fallback": false,
+      "size": 646753,
+      "frames": 24
     }
   ]
 }
