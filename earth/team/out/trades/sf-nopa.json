@@ -1,0 +1,263 @@
+{
+ "scenarios": [
+  {
+   "id": "sf-nopa-electricians-basic",
+   "trade": "electricians",
+   "zone": "Training Yard",
+   "task": "Supervised electricians task at Adah's Stairway Garden, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Adah's Stairway Garden",
+    "Verify permit and lockout/tagout",
+    "Complete the electricians task within Training Yard"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-nopa-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Safety Office",
+   "task": "Supervised carpenters task at Alamo Square, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Alamo Square",
+    "Verify permit and lockout/tagout",
+    "Complete the carpenters task within Safety Office",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-nopa-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Robotics Lab",
+   "task": "Supervised operating-eng task at Buena Vista Park, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Buena Vista Park",
+    "Verify permit and lockout/tagout",
+    "Complete the operating-eng task within Robotics Lab",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-nopa-laborers-basic",
+   "trade": "laborers",
+   "zone": "Operations Center",
+   "task": "Supervised laborers task at Buena Vista Park Waller Steps, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Buena Vista Park Waller Steps",
+    "Verify permit and lockout/tagout",
+    "Complete the laborers task within Operations Center"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-nopa-hvacr-basic",
+   "trade": "hvacr",
+   "zone": "Community Plaza",
+   "task": "Supervised hvacr task at Duboce Park, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Duboce Park",
+    "Verify permit and lockout/tagout",
+    "Complete the hvacr task within Community Plaza",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-nopa-welders-basic",
+   "trade": "welders",
+   "zone": "Harbor Annex",
+   "task": "Supervised welders task at Fillmore & Turk Mini Park, Divisadero Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Fillmore & Turk Mini Park",
+    "Verify permit and lockout/tagout",
+    "Complete the welders task within Harbor Annex",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 105,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Divisadero Street Trades Readiness",
+  "requires": [
+   "sf-nopa-electricians-basic",
+   "sf-nopa-carpenters-basic",
+   "sf-nopa-operating-eng-basic"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "sf-nopa",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

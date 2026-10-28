@@ -1,0 +1,263 @@
+{
+ "scenarios": [
+  {
+   "id": "sf-north-beach-electricians-basic",
+   "trade": "electricians",
+   "zone": "Training Yard",
+   "task": "Supervised electricians task at Filbert Steps Garden, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Filbert Steps Garden",
+    "Verify permit and lockout/tagout",
+    "Complete the electricians task within Training Yard"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-north-beach-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Safety Office",
+   "task": "Supervised carpenters task at Grace Marchant Garden, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Grace Marchant Garden",
+    "Verify permit and lockout/tagout",
+    "Complete the carpenters task within Safety Office",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-north-beach-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Robotics Lab",
+   "task": "Supervised operating-eng task at Ina Coolbrith Park, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Ina Coolbrith Park",
+    "Verify permit and lockout/tagout",
+    "Complete the operating-eng task within Robotics Lab",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-north-beach-laborers-basic",
+   "trade": "laborers",
+   "zone": "Operations Center",
+   "task": "Supervised laborers task at Jack Early Park, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Jack Early Park",
+    "Verify permit and lockout/tagout",
+    "Complete the laborers task within Operations Center"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-north-beach-hvacr-basic",
+   "trade": "hvacr",
+   "zone": "Community Plaza",
+   "task": "Supervised hvacr task at Marini Plaza, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Marini Plaza",
+    "Verify permit and lockout/tagout",
+    "Complete the hvacr task within Community Plaza",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-north-beach-welders-basic",
+   "trade": "welders",
+   "zone": "Harbor Annex",
+   "task": "Supervised welders task at Michelangelo Community Garden, Columbus Avenue, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Michelangelo Community Garden",
+    "Verify permit and lockout/tagout",
+    "Complete the welders task within Harbor Annex",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 105,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Columbus Avenue Trades Readiness",
+  "requires": [
+   "sf-north-beach-electricians-basic",
+   "sf-north-beach-carpenters-basic",
+   "sf-north-beach-operating-eng-basic"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "sf-north-beach",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

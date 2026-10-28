@@ -1,0 +1,263 @@
+{
+ "scenarios": [
+  {
+   "id": "sf-tenderloin-electricians-basic",
+   "trade": "electricians",
+   "zone": "Training Yard",
+   "task": "Supervised electricians task at Alexis Park Tenderloin, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Alexis Park Tenderloin",
+    "Verify permit and lockout/tagout",
+    "Complete the electricians task within Training Yard"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-tenderloin-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Safety Office",
+   "task": "Supervised carpenters task at Boeddeker Park, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Boeddeker Park",
+    "Verify permit and lockout/tagout",
+    "Complete the carpenters task within Safety Office",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-tenderloin-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Robotics Lab",
+   "task": "Supervised operating-eng task at Boeddeker Park Clubhouse, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Boeddeker Park Clubhouse",
+    "Verify permit and lockout/tagout",
+    "Complete the operating-eng task within Robotics Lab",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-tenderloin-laborers-basic",
+   "trade": "laborers",
+   "zone": "Operations Center",
+   "task": "Supervised laborers task at CPMC Van Ness Campus, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at CPMC Van Ness Campus",
+    "Verify permit and lockout/tagout",
+    "Complete the laborers task within Operations Center"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-tenderloin-hvacr-basic",
+   "trade": "hvacr",
+   "zone": "Community Plaza",
+   "task": "Supervised hvacr task at City College of San Francisco Alemany Campus, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at City College of San Francisco Alemany Campus",
+    "Verify permit and lockout/tagout",
+    "Complete the hvacr task within Community Plaza",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-tenderloin-welders-basic",
+   "trade": "welders",
+   "zone": "Harbor Annex",
+   "task": "Supervised welders task at Civic Center Plaza, Eddy Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Civic Center Plaza",
+    "Verify permit and lockout/tagout",
+    "Complete the welders task within Harbor Annex",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 105,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Eddy Street Trades Readiness",
+  "requires": [
+   "sf-tenderloin-electricians-basic",
+   "sf-tenderloin-carpenters-basic",
+   "sf-tenderloin-operating-eng-basic"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "sf-tenderloin",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

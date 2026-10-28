@@ -1,0 +1,363 @@
+{
+ "title": "Columbus Avenue: Training Campus on a Real Map",
+ "summary": "A walkable training campus at Columbus Avenue, San Francisco CA, on the real OSM terrain: trades scenarios, robot fleet episodes and public programs, with stewards holding the approvals.",
+ "biome": "urban-park",
+ "districts": [
+  {
+   "zone": "Training Yard",
+   "real_anchor": "Filbert Steps Garden",
+   "buildings": [
+    {
+     "name": "Filbert Steps Garden Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Filbert Steps Garden Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tool Room",
+    "PPE Cage",
+    "Rigging Bay",
+    "Weather Shelter"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches"
+   ],
+   "npc_agents": [
+    "Coach"
+   ]
+  },
+  {
+   "zone": "Safety Office",
+   "real_anchor": "Grace Marchant Garden",
+   "buildings": [
+    {
+     "name": "Grace Marchant Garden Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Grace Marchant Garden Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Permit Desk",
+    "Hazard Board Room",
+    "Toolbox Talk Room",
+    "Records Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks"
+   ],
+   "npc_agents": [
+    "Safety Steward"
+   ]
+  },
+  {
+   "zone": "Robotics Lab",
+   "real_anchor": "Ina Coolbrith Park",
+   "buildings": [
+    {
+     "name": "Ina Coolbrith Park Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Ina Coolbrith Park Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Cobot Cell A",
+    "Cobot Cell B",
+    "Docking Hall",
+    "Teleop Booth",
+    "Repair Bench"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards"
+   ],
+   "npc_agents": [
+    "Fleet Lead"
+   ]
+  },
+  {
+   "zone": "Operations Center",
+   "real_anchor": "Jack Early Park",
+   "buildings": [
+    {
+     "name": "Jack Early Park Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Jack Early Park Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Telemetry Wall",
+    "Ops Floor",
+    "Review Room",
+    "Dataset Archive"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards",
+    "observation deck"
+   ],
+   "npc_agents": [
+    "Data Clerk"
+   ]
+  },
+  {
+   "zone": "Community Plaza",
+   "real_anchor": "Marini Plaza",
+   "buildings": [
+    {
+     "name": "Marini Plaza Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Marini Plaza Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tour Kiosk",
+    "Feedback Room",
+    "Steward Office",
+    "Reading Corner"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards",
+    "observation deck",
+    "footbridge"
+   ],
+   "npc_agents": [
+    "Community Guide",
+    "Site Steward"
+   ]
+  },
+  {
+   "zone": "Harbor Annex",
+   "real_anchor": "Michelangelo Community Garden",
+   "buildings": [
+    {
+     "name": "Michelangelo Community Garden Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Michelangelo Community Garden Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Annex Staging",
+    "Tool Room",
+    "Records Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches"
+   ],
+   "npc_agents": [
+    "Neighborhood Liaison"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Coast live oak",
+   "Monterey cypress",
+   "London plane",
+   "California buckeye",
+   "Blue gum eucalyptus",
+   "Blackwood acacia"
+  ],
+  "shrubs": [
+   "California coffeeberry",
+   "Coyote brush",
+   "Sticky monkeyflower"
+  ],
+  "flowers": [
+   "California poppy",
+   "Douglas iris",
+   "Seaside daisy",
+   "Yarrow",
+   "Fremont star lily"
+  ],
+  "ground": "gravel"
+ },
+ "water": {
+  "kind": "bay",
+  "flow_mps": 0.4,
+  "wave_m": 0.3
+ },
+ "wind": {
+  "prevailing_from": "SW",
+  "mean_mps": 6.5
+ },
+ "day_cycle": {
+  "sunrise_local": "06:35",
+  "sunset_local": "19:45"
+ },
+ "court": {
+  "name": "Filbert Steps Garden Court",
+  "style": "half-court",
+  "why_here": "Open flat ground at Columbus Avenue next to real paths; visible from every zone."
+ },
+ "quests": [
+  {
+   "title": "First Day at Columbus Avenue",
+   "from_zone": "Training Yard",
+   "to_zone": "Operations Center",
+   "steps": [
+    "Meet the Coach at the Training Yard",
+    "Collect PPE at the Safety Office",
+    "Complete the guided tour",
+    "Check in at the Operations Center"
+   ],
+   "xp": 10
+  },
+  {
+   "title": "Permit Round",
+   "from_zone": "Safety Office",
+   "to_zone": "Training Yard",
+   "steps": [
+    "Read the hazard board",
+    "Sign the toolbox talk sheet",
+    "Have the Safety Steward countersign the permit",
+    "Run the supervised drill"
+   ],
+   "xp": 25
+  },
+  {
+   "title": "Fleet Check",
+   "from_zone": "Robotics Lab",
+   "to_zone": "Operations Center",
+   "steps": [
+    "Wake the fleet at the docks",
+    "Run the pre-task checks",
+    "Log the episode in the telemetry wall",
+    "Review the record with the Data Clerk"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Community Tour",
+   "from_zone": "Operations Center",
+   "to_zone": "Community Plaza",
+   "steps": [
+    "Pick up the tour card",
+    "Visit each zone kiosk",
+    "Leave one note on the feedback board",
+    "Close the tour with the Community Guide"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "sf-north-beach",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

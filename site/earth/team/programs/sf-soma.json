@@ -1,0 +1,126 @@
+{
+ "programs": [
+  {
+   "audience": "union",
+   "title": "Working Safely With Robots on a Real Map",
+   "grade_or_level": "apprentice",
+   "outcomes": [
+    "Read the live map and zones",
+    "Name the safety rules"
+   ],
+   "sessions": [
+    {
+     "zone": "Training Yard",
+     "activity": "Guided walkthrough at Howard Street: Skilled trades apprentices learn to brief, permit and supervise robot-assisted work.",
+     "minutes": 30
+    },
+    {
+     "zone": "Safety Office",
+     "activity": "Hands-on practice in Safety Office",
+     "minutes": 45
+    },
+    {
+     "zone": "Robotics Lab",
+     "activity": "Review, reflection and feedback board session",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Crews contribute anonymized task timing (no names) to shared safety models.",
+   "consent": "Union steward sign-off before any shared record leaves the site."
+  },
+  {
+   "audience": "k12",
+   "title": "Neighborhood Robots: A Field Course",
+   "grade_or_level": "grades 6-8",
+   "outcomes": [
+    "Read the live map and zones",
+    "Name the safety rules",
+    "Run one supervised session"
+   ],
+   "sessions": [
+    {
+     "zone": "Safety Office",
+     "activity": "Guided walkthrough at Howard Street: Students tour a real map of their own neighborhood and meet the fleet safely.",
+     "minutes": 30
+    },
+    {
+     "zone": "Robotics Lab",
+     "activity": "Hands-on practice in Robotics Lab",
+     "minutes": 45
+    },
+    {
+     "zone": "Operations Center",
+     "activity": "Review, reflection and feedback board session",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Classes contribute grouped quiz scores, never individual records.",
+   "consent": "Parent or guardian consent is required for every student record; nothing is published."
+  },
+  {
+   "audience": "ngo",
+   "title": "Mapping for Community Programs",
+   "grade_or_level": "staff",
+   "outcomes": [
+    "Read the live map and zones",
+    "Name the safety rules"
+   ],
+   "sessions": [
+    {
+     "zone": "Robotics Lab",
+     "activity": "Guided walkthrough at Howard Street: Staff learn to read the live map, zones and telemetry for their programs.",
+     "minutes": 30
+    },
+    {
+     "zone": "Operations Center",
+     "activity": "Hands-on practice in Operations Center",
+     "minutes": 45
+    },
+    {
+     "zone": "Community Plaza",
+     "activity": "Review, reflection and feedback board session",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Staff contribute aggregated attendance and route data only.",
+   "consent": "Program leads opt in per cohort and can withdraw at any time."
+  },
+  {
+   "audience": "nonprofit",
+   "title": "Stewardship and Open Telemetry",
+   "grade_or_level": "volunteer",
+   "outcomes": [
+    "Read the live map and zones",
+    "Name the safety rules",
+    "Run one supervised session"
+   ],
+   "sessions": [
+    {
+     "zone": "Operations Center",
+     "activity": "Guided walkthrough at Howard Street: Volunteers run tours, collect feedback and keep the public board honest.",
+     "minutes": 30
+    },
+    {
+     "zone": "Community Plaza",
+     "activity": "Hands-on practice in Community Plaza",
+     "minutes": 45
+    },
+    {
+     "zone": "Harbor Annex",
+     "activity": "Review, reflection and feedback board session",
+     "minutes": 20
+    }
+   ],
+   "data_shared": "Volunteers contribute anonymized feedback-board themes.",
+   "consent": "The steward office reviews any excerpt before it enters a shared dataset."
+  }
+ ],
+ "_meta": {
+  "role": "programs",
+  "slug": "sf-soma",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

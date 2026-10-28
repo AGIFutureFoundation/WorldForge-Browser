@@ -1,0 +1,263 @@
+{
+ "scenarios": [
+  {
+   "id": "sf-south-beach-electricians-basic",
+   "trade": "electricians",
+   "zone": "Training Yard",
+   "task": "Supervised electricians task at China Basin Park, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at China Basin Park",
+    "Verify permit and lockout/tagout",
+    "Complete the electricians task within Training Yard"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-south-beach-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Safety Office",
+   "task": "Supervised carpenters task at Mission Bay Kids Park, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Mission Bay Kids Park",
+    "Verify permit and lockout/tagout",
+    "Complete the carpenters task within Safety Office",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-south-beach-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Robotics Lab",
+   "task": "Supervised operating-eng task at Mission Creek Park, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Mission Creek Park",
+    "Verify permit and lockout/tagout",
+    "Complete the operating-eng task within Robotics Lab",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-south-beach-laborers-basic",
+   "trade": "laborers",
+   "zone": "Operations Center",
+   "task": "Supervised laborers task at Mission Creek Park Pavilion, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Mission Creek Park Pavilion",
+    "Verify permit and lockout/tagout",
+    "Complete the laborers task within Operations Center"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "sf-south-beach-hvacr-basic",
+   "trade": "hvacr",
+   "zone": "Community Plaza",
+   "task": "Supervised hvacr task at Park Terrace, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Park Terrace",
+    "Verify permit and lockout/tagout",
+    "Complete the hvacr task within Community Plaza",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "sf-south-beach-welders-basic",
+   "trade": "welders",
+   "zone": "Harbor Annex",
+   "task": "Supervised welders task at Seals Plaza, King Street, San Francisco CA",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Seals Plaza",
+    "Verify permit and lockout/tagout",
+    "Complete the welders task within Harbor Annex",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 105,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "King Street Trades Readiness",
+  "requires": [
+   "sf-south-beach-electricians-basic",
+   "sf-south-beach-carpenters-basic",
+   "sf-south-beach-operating-eng-basic"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "sf-south-beach",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}

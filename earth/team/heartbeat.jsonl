@@ -266,3 +266,289 @@
 {"role": "world", "slug": "s16-echodawn-dao", "attempt": 1, "secs": 19.3, "errors": [], "t": "2026-10-14T11:01:31"}
 {"role": "world", "slug": "s17-curable-blockchain-dao", "attempt": 1, "secs": 22.2, "errors": [], "t": "2026-10-14T11:02:04"}
 {"event": "end", "rounds": 41, "done": {"world": 41, "robots": 41}, "ok": 37, "fail": 0, "repaired": 2, "calls": 39, "chars_out": 220097, "t": "2026-10-14T11:02:12"}
+{"role": "world", "slug": "chi-bridgeport", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:40"}
+{"role": "trades", "slug": "chi-bridgeport", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "robots", "slug": "chi-bridgeport", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "programs", "slug": "chi-bridgeport", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "world", "slug": "chi-lincoln-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "trades", "slug": "chi-lincoln-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "robots", "slug": "chi-lincoln-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "programs", "slug": "chi-lincoln-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "world", "slug": "chi-loop", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:41"}
+{"role": "trades", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "robots", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "programs", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "world", "slug": "chi-pilsen", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "trades", "slug": "chi-pilsen", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "robots", "slug": "chi-pilsen", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "programs", "slug": "chi-pilsen", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "world", "slug": "chi-river-north", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:41"}
+{"role": "trades", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "robots", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "programs", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:41"}
+{"role": "world", "slug": "chi-south-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "chi-south-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "chi-south-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "chi-south-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "chi-west-loop", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "chi-wicker-park", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-bywater", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-bywater", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-bywater", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-bywater", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-central-city", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-french-quarter", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-garden-district", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-garden-district", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-garden-district", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-garden-district", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-lower-ninth", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-lower-ninth", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-lower-ninth", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-lower-ninth", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-marigny", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-mid-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-mid-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-mid-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-mid-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-treme", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-uptown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-uptown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-uptown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-uptown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "nola-warehouse", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "sf-bayview", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "sf-castro", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:42"}
+{"role": "trades", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "robots", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "programs", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:42"}
+{"role": "world", "slug": "sf-chinatown", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-civic-center", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-dogpatch", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-embarcadero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-embarcadero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-embarcadero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-embarcadero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-excelsior", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-excelsior", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-excelsior", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-excelsior", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-financial", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-haight", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-haight", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-haight", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-haight", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-marina", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-marina", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-marina", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-marina", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-mission", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-mission", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-mission", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-mission", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-nob-hill", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-nopa", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-nopa", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-nopa", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-nopa", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-north-beach", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:43"}
+{"role": "trades", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "robots", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "programs", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:43"}
+{"role": "world", "slug": "sf-outer-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:44"}
+{"role": "trades", "slug": "sf-outer-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:44"}
+{"role": "robots", "slug": "sf-outer-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:44"}
+{"role": "programs", "slug": "sf-outer-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:44"}
+{"role": "world", "slug": "sf-pacific-heights", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:45"}
+{"role": "trades", "slug": "sf-pacific-heights", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:45"}
+{"role": "robots", "slug": "sf-pacific-heights", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:45"}
+{"role": "programs", "slug": "sf-pacific-heights", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:45"}
+{"role": "world", "slug": "sf-potrero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:46"}
+{"role": "trades", "slug": "sf-potrero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:46"}
+{"role": "robots", "slug": "sf-potrero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:46"}
+{"role": "programs", "slug": "sf-potrero", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:46"}
+{"role": "world", "slug": "sf-presidio", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "trades", "slug": "sf-presidio", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "robots", "slug": "sf-presidio", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "programs", "slug": "sf-presidio", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "world", "slug": "sf-richmond", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "trades", "slug": "sf-richmond", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "robots", "slug": "sf-richmond", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "programs", "slug": "sf-richmond", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:47"}
+{"role": "world", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:48"}
+{"role": "trades", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "robots", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "programs", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "world", "slug": "sf-russian-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "trades", "slug": "sf-russian-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "robots", "slug": "sf-russian-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "programs", "slug": "sf-russian-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:48"}
+{"role": "world", "slug": "sf-soma", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:49"}
+{"role": "trades", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "robots", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "programs", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "world", "slug": "sf-south-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "trades", "slug": "sf-south-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "robots", "slug": "sf-south-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "programs", "slug": "sf-south-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:49"}
+{"role": "world", "slug": "sf-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "trades", "slug": "sf-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "robots", "slug": "sf-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "programs", "slug": "sf-sunset", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "world", "slug": "sf-telegraph-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "trades", "slug": "sf-telegraph-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "robots", "slug": "sf-telegraph-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "programs", "slug": "sf-telegraph-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:50"}
+{"role": "world", "slug": "sf-tenderloin", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:52"}
+{"role": "trades", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:53"}
+{"role": "robots", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:53"}
+{"role": "programs", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:53"}
+{"role": "world", "slug": "sf-visitacion", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:54"}
+{"role": "trades", "slug": "sf-visitacion", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:54"}
+{"role": "robots", "slug": "sf-visitacion", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:54"}
+{"role": "programs", "slug": "sf-visitacion", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:54"}
+{"role": "world", "slug": "sf-western-addition", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:56"}
+{"role": "trades", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:56"}
+{"role": "robots", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:56"}
+{"role": "programs", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:56"}
+{"role": "world", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": ["biome must be one of ['temperate-forest', 'wetland', 'coast', 'desert', 'alpine', 'grassland', 'tropical', 'urban-park', 'river-valley', 'mediterranean']"], "t": "2026-10-27T21:21:57"}
+{"role": "trades", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:57"}
+{"role": "robots", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:57"}
+{"role": "programs", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:21:57"}
+{"summary": "local_gen run", "ok": 169, "fail": 23, "worlds": 48, "t": "2026-10-27T21:21:57"}
+{"role": "world", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:17"}
+{"role": "trades", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:17"}
+{"role": "robots", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:17"}
+{"role": "programs", "slug": "chi-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:17"}
+{"role": "world", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:19"}
+{"role": "trades", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:19"}
+{"role": "robots", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:19"}
+{"role": "programs", "slug": "chi-river-north", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "world", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "trades", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "robots", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "programs", "slug": "chi-west-loop", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "world", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "trades", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "robots", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "programs", "slug": "chi-wicker-park", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "world", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:20"}
+{"role": "trades", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:22"}
+{"role": "robots", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:23"}
+{"role": "programs", "slug": "nola-central-city", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:24"}
+{"role": "world", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:24"}
+{"role": "trades", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:24"}
+{"role": "robots", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:24"}
+{"role": "programs", "slug": "nola-french-quarter", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:24"}
+{"role": "world", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:26"}
+{"role": "trades", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:26"}
+{"role": "robots", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:27"}
+{"role": "programs", "slug": "nola-marigny", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:27"}
+{"role": "world", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:28"}
+{"role": "trades", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:29"}
+{"role": "robots", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:29"}
+{"role": "programs", "slug": "nola-treme", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:29"}
+{"role": "world", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "trades", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "robots", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "programs", "slug": "nola-warehouse", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "world", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "trades", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "robots", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "programs", "slug": "sf-bayview", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "world", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:30"}
+{"role": "trades", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "robots", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "programs", "slug": "sf-castro", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "world", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "trades", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "robots", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "programs", "slug": "sf-chinatown", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:31"}
+{"role": "world", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:32"}
+{"role": "trades", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:33"}
+{"role": "robots", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:33"}
+{"role": "programs", "slug": "sf-civic-center", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:33"}
+{"role": "world", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:34"}
+{"role": "trades", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:34"}
+{"role": "robots", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:34"}
+{"role": "programs", "slug": "sf-dogpatch", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:35"}
+{"role": "world", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:36"}
+{"role": "trades", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:36"}
+{"role": "robots", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:36"}
+{"role": "programs", "slug": "sf-financial", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:36"}
+{"role": "world", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:37"}
+{"role": "trades", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:38"}
+{"role": "robots", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:38"}
+{"role": "programs", "slug": "sf-hayes-valley", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:38"}
+{"role": "world", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:40"}
+{"role": "trades", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:41"}
+{"role": "robots", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:41"}
+{"role": "programs", "slug": "sf-nob-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:41"}
+{"role": "world", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "trades", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "robots", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "programs", "slug": "sf-north-beach", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "world", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "trades", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "robots", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "programs", "slug": "sf-rincon-hill", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "world", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "trades", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "robots", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "programs", "slug": "sf-soma", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "world", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "trades", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "robots", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "programs", "slug": "sf-tenderloin", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:42"}
+{"role": "world", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:43"}
+{"role": "trades", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:43"}
+{"role": "robots", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:43"}
+{"role": "programs", "slug": "sf-western-addition", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:43"}
+{"role": "world", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:44"}
+{"role": "trades", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:44"}
+{"role": "robots", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:44"}
+{"role": "programs", "slug": "sf-yerba-buena", "generator": "local_gen", "errors": [], "t": "2026-10-27T21:23:44"}
+{"summary": "local_gen run", "ok": 92, "fail": 0, "worlds": 23, "t": "2026-10-27T21:23:44"}

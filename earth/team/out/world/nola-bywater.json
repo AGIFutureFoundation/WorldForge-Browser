@@ -1,0 +1,363 @@
+{
+ "title": "Dauphine Street: Training Campus on a Real Map",
+ "summary": "A walkable training campus at Dauphine Street, New Orleans LA, on the real OSM terrain: trades scenarios, robot fleet episodes and public programs, with stewards holding the approvals.",
+ "biome": "river-valley",
+ "districts": [
+  {
+   "zone": "Training Yard",
+   "real_anchor": "Fredrick A Douglass High School",
+   "buildings": [
+    {
+     "name": "Fredrick A Douglass High School Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Fredrick A Douglass High School Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tool Room",
+    "PPE Cage",
+    "Rigging Bay",
+    "Weather Shelter"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches"
+   ],
+   "npc_agents": [
+    "Coach"
+   ]
+  },
+  {
+   "zone": "Safety Office",
+   "real_anchor": "New Orleans Public Library - Alvar Branch",
+   "buildings": [
+    {
+     "name": "New Orleans Public Library - Alvar Branch Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "New Orleans Public Library - Alvar Branch Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Permit Desk",
+    "Hazard Board Room",
+    "Toolbox Talk Room",
+    "Records Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks"
+   ],
+   "npc_agents": [
+    "Safety Steward"
+   ]
+  },
+  {
+   "zone": "Robotics Lab",
+   "real_anchor": "Alvar Street",
+   "buildings": [
+    {
+     "name": "Alvar Street Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Alvar Street Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Cobot Cell A",
+    "Cobot Cell B",
+    "Docking Hall",
+    "Teleop Booth",
+    "Repair Bench"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards"
+   ],
+   "npc_agents": [
+    "Fleet Lead"
+   ]
+  },
+  {
+   "zone": "Operations Center",
+   "real_anchor": "Bartholomew Street",
+   "buildings": [
+    {
+     "name": "Bartholomew Street Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Bartholomew Street Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Telemetry Wall",
+    "Ops Floor",
+    "Review Room",
+    "Dataset Archive"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards",
+    "observation deck"
+   ],
+   "npc_agents": [
+    "Data Clerk"
+   ]
+  },
+  {
+   "zone": "Community Plaza",
+   "real_anchor": "Burgundy Street",
+   "buildings": [
+    {
+     "name": "Burgundy Street Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Burgundy Street Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Tour Kiosk",
+    "Feedback Room",
+    "Steward Office",
+    "Reading Corner"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches",
+    "charging docks",
+    "safety boards",
+    "observation deck",
+    "footbridge"
+   ],
+   "npc_agents": [
+    "Community Guide",
+    "Site Steward"
+   ]
+  },
+  {
+   "zone": "Riverfront Annex",
+   "real_anchor": "Congress Street",
+   "buildings": [
+    {
+     "name": "Congress Street Training Hall",
+     "use": "Training facility",
+     "floors": 3
+    },
+    {
+     "name": "Congress Street Field Office",
+     "use": "Site office",
+     "floors": 2
+    },
+    {
+     "name": "Robotics Workshop",
+     "use": "Lab and maintenance",
+     "floors": 1
+    },
+    {
+     "name": "Observation Deck",
+     "use": "Viewing",
+     "floors": 1
+    }
+   ],
+   "interior_rooms": [
+    "Annex Staging",
+    "Tool Room",
+    "Records Room"
+   ],
+   "props": [
+    "terminals",
+    "wayfinding",
+    "steward plaques",
+    "tool benches"
+   ],
+   "npc_agents": [
+    "Neighborhood Liaison"
+   ]
+  }
+ ],
+ "flora": {
+  "trees": [
+   "Southern live oak",
+   "Bald cypress",
+   "Crape myrtle",
+   "Southern magnolia",
+   "Water tupelo",
+   "American elm"
+  ],
+  "shrubs": [
+   "Wax myrtle",
+   "Yaupon holly",
+   "Virginia sweetspire"
+  ],
+  "flowers": [
+   "Louisiana iris",
+   "Azalea",
+   "Cast iron plant",
+   "Red spider lily",
+   "Sweet olive blossom"
+  ],
+  "ground": "grass"
+ },
+ "water": {
+  "kind": "river",
+  "flow_mps": 1.2,
+  "wave_m": 0.1
+ },
+ "wind": {
+  "prevailing_from": "SE",
+  "mean_mps": 4.2
+ },
+ "day_cycle": {
+  "sunrise_local": "06:25",
+  "sunset_local": "19:35"
+ },
+ "court": {
+  "name": "Fredrick A Douglass High School Court",
+  "style": "half-court",
+  "why_here": "Open flat ground at Dauphine Street next to real paths; visible from every zone."
+ },
+ "quests": [
+  {
+   "title": "First Day at Dauphine Street",
+   "from_zone": "Training Yard",
+   "to_zone": "Operations Center",
+   "steps": [
+    "Meet the Coach at the Training Yard",
+    "Collect PPE at the Safety Office",
+    "Complete the guided tour",
+    "Check in at the Operations Center"
+   ],
+   "xp": 10
+  },
+  {
+   "title": "Permit Round",
+   "from_zone": "Safety Office",
+   "to_zone": "Training Yard",
+   "steps": [
+    "Read the hazard board",
+    "Sign the toolbox talk sheet",
+    "Have the Safety Steward countersign the permit",
+    "Run the supervised drill"
+   ],
+   "xp": 25
+  },
+  {
+   "title": "Fleet Check",
+   "from_zone": "Robotics Lab",
+   "to_zone": "Operations Center",
+   "steps": [
+    "Wake the fleet at the docks",
+    "Run the pre-task checks",
+    "Log the episode in the telemetry wall",
+    "Review the record with the Data Clerk"
+   ],
+   "xp": 40
+  },
+  {
+   "title": "Community Tour",
+   "from_zone": "Operations Center",
+   "to_zone": "Community Plaza",
+   "steps": [
+    "Pick up the tour card",
+    "Visit each zone kiosk",
+    "Leave one note on the feedback board",
+    "Close the tour with the Community Guide"
+   ],
+   "xp": 60
+  }
+ ],
+ "_meta": {
+  "role": "world",
+  "slug": "nola-bywater",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}
