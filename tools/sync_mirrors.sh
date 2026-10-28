@@ -12,7 +12,7 @@ for entry in "agifellowship.church:www.agifellowship.church" "agi.lease:www.agi.
   touch "$dir/.nojekyll"
   (cd "$dir" && git init -q -b main && git add -A &&
     git commit -qm "site mirror sync for $cname $(date -u +%FT%TZ)" &&
-    git remote add origin "https://github.com/AGIFutureFoundation/${repo}.git" && git push -q origin main)
+    git remote add origin "https://github.com/AGIFutureFoundation/${repo}.git" && git push -q --force origin main)
   echo "synced $cname <- site/ ($(du -sh "$dir" | cut -f1))"
   rm -rf "$dir"
 done
