@@ -72,15 +72,46 @@ export function wireHud({ slug, geo, img, world, trades, programs, course, count
     const blob = new Blob([fleet.userData.jsonl()], { type: 'application/x-ndjson' });
     Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `${slug}-robot-episodes.jsonl` }).click();
   };
-  setInterval(() => { $('eps').textContent = `${fleet.userData.records.length} robot episodes recorded`; }, 1000);
+  setInterval(() => { const n = fleet.userData.records.length;
+    $('eps').textContent = `${n} robot episodes recorded`;
+    window.__wfGame?.episodes?.(n); }, 1000);
+
+  function robotSheet(e) {
+    const s = e.t, task = e.task;
+    return `<b style="color:#34d399">${s.brand} ${s.model}</b> <span class="muted">(${s.cls}, to manufacturer spec)</span>
+      <p style="margin:2px 0">dims ${s.size[0]}×${s.size[1]}×${s.size[2]} m · ${s.mass_kg} kg · payload ${s.payload_kg} kg · ${s.dof} DOF</p>
+      <p style="margin:2px 0">sensors: ${(s.sensors || []).join(', ')} · ${s.facts}</p>
+      <p style="margin:2px 0">task: ${esc(task.id)} in ${esc(task.zone)} — ${esc(task.goal || '')}</p>
+      <p class="muted" style="margin:2px 0">human-in-loop: ${esc(task.human_in_loop || 'n/a')}</p>`;
+  }
+
   S.renderer.domElement.addEventListener('click', (ev) => {
     const r = new THREE.Raycaster(), rect = ev.target.getBoundingClientRect();
     r.setFromCamera(new THREE.Vector2((ev.clientX - rect.left) / rect.width * 2 - 1, -(ev.clientY - rect.top) / rect.height * 2 + 1), S.camera);
-    const hit = r.intersectObjects(avatars.userData.talkers, true)[0]; if (!hit) return;
-    let o = hit.object; while (o && !o.userData.who) o = o.parent; if (!o) return;
-    const L = o.userData.say || {};
-    $('talk').innerHTML = `<b>${esc(o.userData.who)}</b>${o.userData.role ? ` <span class="muted">(${esc(o.userData.role)})</span>` : ''}${Object.values(L).map(t => `<p>${esc(t)}</p>`).join('')}`;
-    award(5, `talked with ${o.userData.who}`);
+    // avatars (Omega Steward, Hermes, Coach, Hive) + game-layer NPCs, pavilions and easter eggs
+    const talkables = [...(avatars.userData.talkers || []), ...(window.__wfTalkers || [])];
+    let hit = r.intersectObjects(talkables, true)[0];
+    if (hit) {
+      let o = hit.object; while (o && !o.userData.who) o = o.parent;
+      if (o) {
+        if (o.userData.egg !== undefined) { window.__wfGame?.egg?.(o.userData.egg);
+          $('talk').innerHTML = `<b style="color:#ffd34d">${esc(o.userData.who)}</b><p>${esc(o.userData.say?.found || 'Seal collected.')}</p>
+            <p class="muted">Easter egg ${o.userData.egg + 1}/3 — the Steward Seals.</p>`;
+          return; }
+        $('talk').innerHTML = `<b>${esc(o.userData.who)}</b>${o.userData.role ? ` <span class="muted">(${esc(o.userData.role)})</span>` : ''}${Object.values(o.userData.say || {}).map(t => `<p>${esc(t)}</p>`).join('')}`;
+        window.__wfGame?.talk?.(o.userData.who);
+        award(5, `talked with ${o.userData.who}`);
+        return;
+      }
+    }
+    // robot twins: click one for its manufacturer spec sheet
+    hit = r.intersectObjects(fleet.children, true)[0];
+    if (hit) {
+      let o = hit.object; while (o && !o.userData.spec) o = o.parent;
+      if (!o) return;
+      const e = fleet.userData.episodes.find(x => x.o === o);
+      if (e) { $('talk').innerHTML = robotSheet(e); award(3, `inspected ${e.t.brand} ${e.t.model}`); }
+    }
   });
   window.__wf = window.__wf || {};
   window.__wf.showModule = showModule;

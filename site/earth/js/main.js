@@ -5,6 +5,8 @@ import { makeVegetation, loadHeroFoliage } from './nature.js';
 import { makeWater } from './water.js';
 import { makeCards, makeAvatars, makeQuestRings } from './play.js';
 import { makeFleet } from './robots.js';
+import { makeSkyFX, weatherPanel } from './fx.js';
+import { makeGame } from './game.js';
 import { wireHud } from './hud.js';
 import { initTraining, SCENARIOS } from './training-sim.js';
 
@@ -43,6 +45,14 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const avatars = makeAvatars(lines?.[slug], zones, ground); S.scene.add(avatars);
   const rings = makeQuestRings(zones, ground, world?.quests || []); S.scene.add(rings);
   const fleet = makeFleet(robots?.tasks || [], zones, ground, { slug, place: geo?.place || slug }); S.scene.add(fleet);
+
+  // ---- living sky + weather (wind gusts drive the shared foliage field), weather HUD
+  const fx = makeSkyFX({ S, world, baseWind: [wind[0] * ws || 0.8, wind[1] * ws || 0.3],
+    initial: q.get('weather') || 'clear' });
+  S.scene.add(fx.group); weatherPanel(fx);
+  // ---- game layer: NPC agents + district pavilions + Steward Seals + learning board
+  const game = makeGame({ S, ground, world, slug, quests: world?.quests || [] });
+  S.scene.add(game.group); window.__wfTalkers = game.talkers;
   if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground);
 
   const counts = { ...veg.userData.counts, buildings: geo?.features?.building?.length || 0, ...water.userData.counts,
@@ -98,6 +108,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     // robots run on real time (capped, sub-stepped) so slow GPUs still produce training episodes at the same rate
     for (let left = Math.min(raw, 0.5); left > 1e-4; left -= 0.05) fleet.userData.tick(Math.min(left, 0.05));
     avatars.userData.tick(dt, time); rings.userData.tick(time, S.camera.position);
+    fx.tick(dt, time); game.group.userData.tick && game.group.userData.tick(time);
     if (flyT) { flyT.t = Math.min(flyT.t + dt / 2.5, 1); const e = flyT.t * flyT.t * (3 - 2 * flyT.t);
       S.camera.position.lerpVectors(flyT.from, flyT.to, e); S.controls.target.lerp(flyT.look, e * 0.25 + 0.05); if (flyT.t >= 1) flyT = null; }
     if (tour && !flyT && (tourClock += dt) > 2.5) { tourClock = 0; tourI = (tourI + 1) % stops.length; fly(stops[tourI], tourI === 0 ? 140 : 34); }

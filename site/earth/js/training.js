@@ -68,14 +68,19 @@ function render(region) {
     html += '<div class="robots">🤖 ' + (robots.join(', ') || 'Various') + '</div>';
     
     if (scenarios.length > 0) {
+      const esc = (v) => String(v).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
       scenarios.slice(0, 5).forEach(s => {
-        html += '<div class="scenario" onclick="openModule(\\'' + w.slug + '\\', \\'' + s.replace(/'/g, \"\\'\") + '\\')\">' + s + '</div>';
+        html += '<div class="scenario" data-slug="' + esc(w.slug) + '" data-s="' + esc(s) + '">' + esc(s) + '</div>';
       });
     }
-    
-    html += '<div class="xp">⚡ ' + xp + ' XP</div>';
+
+    html += '<div class="xp">\u26a1 ' + xp + ' XP</div>';
     html += '<a href="world.html?world=' + w.slug + '" class="btn">Enter World</a>';
     card.innerHTML = html;
+    card.addEventListener('click', (e) => {
+      const d = e.target.closest('.scenario');
+      if (d) openModule(d.dataset.slug, d.dataset.s);
+    });
     grid.appendChild(card);
   });
 }
@@ -107,8 +112,10 @@ function openModule(slug, scenario) {
     html += '<div class="step"><h4>' + s.title + '</h4><p>' + s.desc + '</p><div class="check">☐ Complete</div></div>';
   });
   
-  html += '<div style="margin-top:16px"><button onclick="alert(\\'Starting simulation...\\')" style="background:var(--acc);color:#0b1214;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600">Start Simulation</button></div>';
+  html += '<div style="margin-top:16px"><button id="start-sim" style="background:var(--acc);color:#0b1214;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600">Start Simulation</button></div>';
   mc.innerHTML = html;
+  const sb = document.getElementById('start-sim');
+  if (sb) sb.onclick = () => window.alert('Starting simulation...');
   mp.style.display = 'block';
 }
 

@@ -6,7 +6,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 
 export const clock = new THREE.Clock();
-export const uniforms = { uTime: { value: 0 }, uWind: { value: new THREE.Vector2(1, 0.3) } };
+export const uniforms = { uTime: { value: 0 }, uWind: { value: new THREE.Vector2(1, 0.3) }, uWeather: { value: 'clear' } };
 
 export function makeStage(canvas) {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
@@ -110,9 +110,62 @@ export async function drapeImagery(geo, ground, onProgress) {
   return { zoom: Z, tiles: total, credit: IMAGERY.esri.credit, canvas: out };
 }
 
-// ---------------------------------------------------------------- OSM buildings (extruded footprints, real heights)
+// ---------------------------------------------------------------- OSM buildings (extruded footprints, real
+// heights) with PROCEDURAL FACHADES: per-wall UVs, window grids / brick / glass chosen by the
+// building's real height class, dark roofs. All textures drawn once on a canvas.
+function facadeTex(kind) {
+  const c = document.createElement('canvas'); c.width = 256; c.height = 128;
+  const x = c.getContext('2d');
+  if (kind === 'glass') {
+    x.fillStyle = '#7e9bb5'; x.fillRect(0, 0, 256, 128);
+    for (let i = 0; i < 8; i++) for (let j = 0; j < 4; j++) {
+      x.fillStyle = `rgba(14,22,34,${0.5 + Math.random() * 0.35})`;
+      x.fillRect(6 + i * 31.5, 5 + j * 31, 22, 20);
+      x.fillStyle = 'rgba(255,255,255,.10)'; x.fillRect(6 + i * 31.5, 5 + j * 31, 22, 4);
+    }
+    x.strokeStyle = '#31445a'; x.lineWidth = 2;
+    for (let i = 0; i <= 8; i++) { x.beginPath(); x.moveTo(i * 31.5, 0); x.lineTo(i * 31.5, 128); x.stroke(); }
+    for (let j = 0; j <= 4; j++) { x.beginPath(); x.moveTo(0, j * 31.5); x.lineTo(256, j * 31.5); x.stroke(); }
+  } else if (kind === 'brick') {
+    x.fillStyle = '#b28a72'; x.fillRect(0, 0, 256, 128);
+    for (let y = 0; y < 128; y += 7) for (let i = 0; i < 16; i++) {
+      x.fillStyle = `rgba(${120 + Math.random() * 40 | 0},${70 + Math.random() * 30 | 0},${55 + Math.random() * 25 | 0},.6)`;
+      x.fillRect((i * 16 + (y % 14 ? 8 : 0)) % 256, y, 14, 6);
+    }
+    for (let i = 0; i < 6; i++) for (let j = 0; j < 3; j++) {
+      x.fillStyle = `rgba(20,28,40,${0.55 + Math.random() * 0.3})`;
+      x.fillRect(8 + i * 42, 9 + j * 42, 26, 22);
+      x.fillStyle = 'rgba(255,240,210,.35)'; x.fillRect(8 + i * 42, 9 + j * 42, 26, 5);
+    }
+  } else {                                     // stucco / painted low-rise with storefronts
+    x.fillStyle = '#cfc7b8'; x.fillRect(0, 0, 256, 128);
+    for (let k = 0; k < 400; k++) { x.fillStyle = `rgba(0,0,0,${Math.random() * 0.05})`;
+      x.fillRect(Math.random() * 256, Math.random() * 128, 10, 4); }
+    for (let i = 0; i < 8; i++) { x.fillStyle = i % 2 ? 'rgba(34,52,74,.8)' : 'rgba(40,60,84,.75)';
+      x.fillRect(4 + i * 32, 84, 24, 40); x.fillStyle = 'rgba(255,255,255,.14)'; x.fillRect(4 + i * 32, 84, 24, 6); }
+    for (let i = 0; i < 6; i++) { x.fillStyle = `rgba(22,30,42,${0.5 + Math.random() * 0.3})`;
+      x.fillRect(10 + i * 42, 8, 24, 16); }
+  }
+  const t = new THREE.CanvasTexture(c);
+  t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 4; t.colorSpace = THREE.SRGBColorSpace;
+  return t;
+}
+
+function wallUVs(g) {
+  // per-vertex UVs: walls wrap windows (u = horizontal metres, v = one floor per 3.2 m); roofs tile flat.
+  const p = g.attributes.position, n = g.attributes.normal, uv = new Float32Array(p.count * 2);
+  for (let i = 0; i < p.count; i++) {
+    const x = p.getX(i), y = p.getY(i), z = p.getZ(i);
+    if (Math.abs(n.getY(i)) > 0.8) uv.set([x * 0.05, z * 0.05], i * 2);
+    else if (Math.abs(n.getX(i)) > Math.abs(n.getZ(i))) uv.set([z * 0.25, y * 0.3125], i * 2);
+    else uv.set([x * 0.25, y * 0.3125], i * 2);
+  }
+  g.setAttribute('uv', new THREE.BufferAttribute(uv, 2));
+}
+
 export function makeBuildings(geo, ground) {
-  const geos = [], palette = [0xd9d2c3, 0xc8c3b8, 0xb9b2a5, 0xe4ded2, 0xa9a39a];
+  const palette = [0xd9d2c3, 0xc8c3b8, 0xb9b2a5, 0xe4ded2, 0xa9a39a];
+  const buckets = { low: [], mid: [], tall: [] };
   let n = 0;
   for (const f of geo.features.building) {
     const p = f.p; if (p.length < 4) continue;
@@ -124,16 +177,24 @@ export function makeBuildings(geo, ground) {
     g.rotateX(-Math.PI / 2);
     let minY = Infinity; for (const [x, z] of p) minY = Math.min(minY, ground.height(x, z));
     g.translate(0, minY - 0.3, 0);
+    wallUVs(g);
     const c = new THREE.Color(palette[n % palette.length]);
-    const col = new Float32Array(g.attributes.position.count * 3);
-    for (let i = 0; i < col.length; i += 3) { col[i] = c.r; col[i + 1] = c.g; col[i + 2] = c.b; }
+    const pos = g.attributes.position, nor = g.attributes.normal, col = new Float32Array(pos.count * 3);
+    for (let i = 0; i < pos.count; i++) {                     // darken roofs so window grids read as walls only
+      const k = Math.abs(nor.getY(i)) > 0.8 ? 0.55 : 1;
+      col[i * 3] = c.r * k; col[i * 3 + 1] = c.g * k; col[i * 3 + 2] = c.b * k;
+    }
     g.setAttribute('color', new THREE.BufferAttribute(col, 3));
-    g.deleteAttribute('uv');
-    geos.push(g.index ? g.toNonIndexed() : g); n++;
+    buckets[h <= 8 ? 'low' : h <= 16 ? 'mid' : 'tall'].push(g.index ? g.toNonIndexed() : g); n++;
   }
-  if (!geos.length) return null;
-  const mesh = new THREE.Mesh(mergeGeometries(geos, false),
-    new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.85, metalness: 0.05 }));
-  mesh.castShadow = mesh.receiveShadow = true; mesh.name = `osm-buildings (${n})`;
-  return mesh;
+  const root = new THREE.Group(); root.name = `osm-buildings (${n})`;
+  const style = { low: ['stucco', 0.85, 0.02], mid: ['brick', 0.7, 0.05], tall: ['glass', 0.35, 0.45] };
+  for (const [k, geos] of Object.entries(buckets)) {
+    if (!geos.length) continue;
+    const [kind, rough, metal] = style[k];
+    const mesh = new THREE.Mesh(mergeGeometries(geos, false),
+      new THREE.MeshStandardMaterial({ vertexColors: true, map: facadeTex(kind), roughness: rough, metalness: metal }));
+    mesh.castShadow = mesh.receiveShadow = true; root.add(mesh);
+  }
+  return root.children.length ? root : null;
 }
