@@ -18,9 +18,18 @@ EARTH = ROOT / 'site' / 'earth'
 
 
 def status():
-    geo = {p.name[:-9] for p in (EARTH / 'data').glob('*.geo.json')}       # strip .geo.json
-    vids = {p.name[:-4] for p in (EARTH / 'videos').glob('*.mp4')}
-    team = {p.name[:-5] for p in (EARTH / 'team' / 'world').glob('*.json')}
+    """Only count files that are COMMITTED (git ls-files), so the generated page never
+    references assets that a background capture/fetch may have written but not shipped."""
+    import subprocess
+
+    def tracked(pattern, cut):
+        out = subprocess.run(['git', 'ls-files', '-z', pattern], cwd=EARTH,
+                             capture_output=True, text=True).stdout.split('\0')
+        return {pathlib.Path(p).name[:-cut] for p in out if p}
+
+    geo = tracked('data/*.geo.json', 9)
+    vids = tracked('videos/*.mp4', 4)
+    team = tracked('team/world/*.json', 5)
     return geo, vids, team
 
 
