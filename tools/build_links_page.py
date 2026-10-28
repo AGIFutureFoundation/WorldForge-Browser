@@ -15,7 +15,7 @@ import time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / 'site'
-BASE_URL = 'https://agifuturefoundation.github.io/WorldForge-Browser/'
+BASE_URL = 'https://www.agifuturefoundation.org/'   # canonical custom domain (Hostinger DNS -> GitHub Pages)
 
 DESC = {
     'index.html': 'SmartCiti.X WorldForge landing page: every project surface, one list.',
