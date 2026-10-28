@@ -1,0 +1,234 @@
+{
+ "tasks": [
+  {
+   "id": "hou-east-end-boston-dynamics-spot-patrol",
+   "robot": "boston-dynamics-spot",
+   "zone": "Training Yard",
+   "goal": "Patrol and map Training Yard at Navigation Boulevard",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf"
+    ],
+    "frame": "map"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "hou-east-end-clearpath-husky-a200-inspect",
+   "robot": "clearpath-husky-a200",
+   "zone": "Safety Office",
+   "goal": "Inspect and document Safety Office at Navigation Boulevard",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf",
+     "/clearpath_husky_a200/status"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base",
+    "Record 10+ waypoints"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians",
+    "Return to dock if battery below 20%"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result",
+     "telemetry_uri"
+    ]
+   }
+  },
+  {
+   "id": "hou-east-end-universal-robots-ur10e-carry",
+   "robot": "universal-robots-ur10e",
+   "zone": "Robotics Lab",
+   "goal": "Inspect and document Robotics Lab at Navigation Boulevard",
+   "ros": {
+    "action": "/pick",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf",
+     "/universal_robots_ur10e/status",
+     "/universal_robots_ur10e/diag"
+    ],
+    "frame": "map"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result",
+     "telemetry_uri",
+     "operator_notes"
+    ]
+   }
+  },
+  {
+   "id": "hou-east-end-unitree-go2-log",
+   "robot": "unitree-go2",
+   "zone": "Operations Center",
+   "goal": "Patrol and map Operations Center at Navigation Boulevard",
+   "ros": {
+    "action": "/follow_joint_trajectory",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base",
+    "Record 10+ waypoints"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians",
+    "Return to dock if battery below 20%"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result"
+    ]
+   }
+  },
+  {
+   "id": "hou-east-end-franka-fr3-check",
+   "robot": "franka-fr3",
+   "zone": "Community Plaza",
+   "goal": "Inspect and document Community Plaza at Navigation Boulevard",
+   "ros": {
+    "action": "/navigate_to_pose",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf",
+     "/franka_fr3/status"
+    ],
+    "frame": "map"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result",
+     "telemetry_uri"
+    ]
+   }
+  },
+  {
+   "id": "hou-east-end-bitcraze-crazyflie-2-1-plus-scan",
+   "robot": "bitcraze-crazyflie-2-1-plus",
+   "zone": "Field Annex",
+   "goal": "Inspect and document Field Annex at Navigation Boulevard",
+   "ros": {
+    "action": "/inspect",
+    "topics": [
+     "/cmd_vel",
+     "/odom",
+     "/tf",
+     "/bitcraze_crazyflie_2_1_plus/status",
+     "/bitcraze_crazyflie_2_1_plus/diag"
+    ],
+    "frame": "odom"
+   },
+   "terrain": "mixed paved and green ground with tree rows and parked fixtures and open water nearby",
+   "success": [
+    "Complete the task in under 5 min",
+    "Maintain comms with base",
+    "Record 10+ waypoints"
+   ],
+   "safety_stops": [
+    "Emergency stop if a person is within 2 m",
+    "Yield to pedestrians",
+    "Return to dock if battery below 20%"
+   ],
+   "human_in_loop": "The Fleet Lead approves each route change before launch",
+   "feedback_schema": {
+    "fields": [
+     "task_id",
+     "robot",
+     "zone",
+     "started_at",
+     "result",
+     "telemetry_uri",
+     "operator_notes"
+    ]
+   }
+  }
+ ],
+ "_meta": {
+  "role": "robots",
+  "slug": "hou-east-end",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}
