@@ -1,6 +1,6 @@
 {
-  "total": 108,
-  "captured": 51,
+  "total": 120,
+  "captured": 60,
   "failed": 1,
   "results": [
     {
@@ -327,8 +327,10 @@
     },
     {
       "slug": "chi-pilsen",
-      "ok": false,
-      "error": "Page.captureScreenshot timeout"
+      "ok": true,
+      "fallback": true,
+      "size": 26544,
+      "frames": 24
     },
     {
       "slug": "sf-pacific-heights",
@@ -356,6 +358,67 @@
       "ok": true,
       "fallback": false,
       "size": 646753,
+      "frames": 24
+    },
+    {
+      "slug": "agentic-payments",
+      "ok": true,
+      "fallback": false,
+      "size": 319573,
+      "frames": 24
+    },
+    {
+      "slug": "agents-deploy-infrastructure",
+      "ok": true,
+      "fallback": false,
+      "size": 343751,
+      "frames": 24
+    },
+    {
+      "slug": "chi-bridgeport",
+      "ok": true,
+      "fallback": false,
+      "size": 445188,
+      "frames": 24
+    },
+    {
+      "slug": "chi-chinatown",
+      "ok": true,
+      "fallback": false,
+      "size": 243338,
+      "frames": 24
+    },
+    {
+      "slug": "chi-hyde-park",
+      "ok": true,
+      "fallback": false,
+      "size": 524984,
+      "frames": 24
+    },
+    {
+      "slug": "chi-lincoln-park",
+      "ok": true,
+      "fallback": false,
+      "size": 445047,
+      "frames": 24
+    },
+    {
+      "slug": "chi-little-village",
+      "ok": true,
+      "fallback": false,
+      "size": 245986,
+      "frames": 24
+    },
+    {
+      "slug": "chi-loop",
+      "ok": false,
+      "error": "chi-loop: ReferenceError: body is not defined"
+    },
+    {
+      "slug": "chi-ohare",
+      "ok": true,
+      "fallback": false,
+      "size": 548734,
       "frames": 24
     }
   ]
