@@ -1,0 +1,263 @@
+{
+ "scenarios": [
+  {
+   "id": "det-lafayette-electricians-basic",
+   "trade": "electricians",
+   "zone": "Training Yard",
+   "task": "Supervised electricians task at Art Center Community Garden, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Art Center Community Garden",
+    "Verify permit and lockout/tagout",
+    "Complete the electricians task within Training Yard"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 30,
+   "level": "apprentice",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "det-lafayette-carpenters-basic",
+   "trade": "carpenters",
+   "zone": "Safety Office",
+   "task": "Supervised carpenters task at CCS Parking Structure, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at CCS Parking Structure",
+    "Verify permit and lockout/tagout",
+    "Complete the carpenters task within Safety Office",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 45,
+   "level": "journey",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "det-lafayette-operating-eng-basic",
+   "trade": "operating-eng",
+   "zone": "Robotics Lab",
+   "task": "Supervised operating-eng task at Medbury Park Terrrace, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Medbury Park Terrrace",
+    "Verify permit and lockout/tagout",
+    "Complete the operating-eng task within Robotics Lab",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 60,
+   "level": "foreman",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "det-lafayette-laborers-basic",
+   "trade": "laborers",
+   "zone": "Operations Center",
+   "task": "Supervised laborers task at Peck Park, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Peck Park",
+    "Verify permit and lockout/tagout",
+    "Complete the laborers task within Operations Center"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 75,
+   "level": "apprentice",
+   "robot_assist": null,
+   "robot_role": null
+  },
+  {
+   "id": "det-lafayette-hvacr-basic",
+   "trade": "hvacr",
+   "zone": "Community Plaza",
+   "task": "Supervised hvacr task at Saint Antoine Gardens Tower, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Saint Antoine Gardens Tower",
+    "Verify permit and lockout/tagout",
+    "Complete the hvacr task within Community Plaza",
+    "Clean the area and file the report"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 90,
+   "level": "journey",
+   "robot_assist": "boston-dynamics-spot",
+   "robot_role": "Carries tools and documents the area"
+  },
+  {
+   "id": "det-lafayette-welders-basic",
+   "trade": "welders",
+   "zone": "Field Annex",
+   "task": "Supervised welders task at Detroit Department of Transportation Administrat, Jefferson Avenue, Detroit MI",
+   "hazards": [
+    "Working at height",
+    "Electrical hazard",
+    "Slippery surfaces"
+   ],
+   "ppe": [
+    "Hard hat",
+    "Safety glasses",
+    "Steel-toe boots",
+    "High-vis vest"
+   ],
+   "steps": [
+    "Attend briefing at the Safety Office",
+    "Inspect the work area at Detroit Department of Transportation Administrat",
+    "Verify permit and lockout/tagout",
+    "Complete the welders task within Field Annex",
+    "Clean the area and file the report",
+    "Debrief with the Safety Steward"
+   ],
+   "rubric": [
+    {
+     "axis": "Safety compliance",
+     "pass_if": "All PPE worn and permit verified"
+    },
+    {
+     "axis": "Work quality",
+     "pass_if": "No rework required"
+    },
+    {
+     "axis": "Documentation",
+     "pass_if": "Report filed same shift"
+    }
+   ],
+   "minutes": 105,
+   "level": "foreman",
+   "robot_assist": null,
+   "robot_role": null
+  }
+ ],
+ "credential": {
+  "name": "Jefferson Avenue Trades Readiness",
+  "requires": [
+   "det-lafayette-electricians-basic",
+   "det-lafayette-carpenters-basic",
+   "det-lafayette-operating-eng-basic"
+  ]
+ },
+ "_meta": {
+  "role": "trades",
+  "slug": "det-lafayette",
+  "generator": "local_gen.py (claude-authored fallback; Z.ai GLM key expired/balance 0)",
+  "attempts": 1,
+  "evals_passed": true,
+  "status": "draft, unreviewed by a person"
+ }
+}
