@@ -72,6 +72,9 @@ export const SCENARIOS = {
     { name: 'Tour Guidance', steps: ['Route Plan', 'System Check', 'Tour', 'Feedback'], duration: 90 },
     { name: 'Restaurant Auto', steps: ['Setup', 'Config', 'Test', 'Service'], duration: 60 },
     { name: 'Event Setup', steps: ['Layout', 'Setup', 'Test', 'Go'], duration: 120 },
+    { name: 'Guest Relations', steps: ['Check-In', 'Assist', 'Follow-Up', 'Survey'], duration: 45 }
+  ]
+};
 
 export class TrainingSim {
   constructor() {
@@ -154,14 +157,3 @@ export function initTraining() {
   }
   return window.__wf.training;
 }
-
-    { name: 'Cleaning Ops', steps: ['Plan', 'Execute', 'Inspect', 'Report'], duration: 45 }
-  ],
-  'General': [
-    { name: 'Basic Training', steps: ['Safety', 'Setup', 'Practice', 'Test'], duration: 60 },
-    { name: 'Equipment Ops', steps: ['Check', 'Operate', 'Maintain', 'Log'], duration: 45 },
-    { name: 'Safety Protocol', steps: ['Review', 'Drill', 'Test', 'Certify'], duration: 30 },
-    { name: 'System Integration', steps: ['Plan', 'Install', 'Test', 'Deploy'], duration: 90 },
-    { name: 'Quality Assurance', steps: ['Inspect', 'Test', 'Document', 'Release'], duration: 60 }
-  ]
-};

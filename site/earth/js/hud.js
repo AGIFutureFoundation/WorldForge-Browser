@@ -19,7 +19,8 @@ export function wireHud({ slug, geo, img, world, trades, programs, course, count
     const bldgs = (world.districts || []).flatMap(d => d.buildings || []);
     const bDetails = bldgs.length ? bldgs.map(b => `${esc(b.name)} (${esc(b.floors)} fl, ${esc(b.use)})`).join(', ') : 'Real OSM buildings';
     $('about').innerHTML = `<p>${esc(world.summary)}</p>
-      <details><summary>🏢 Buildings & Streets</summary><p>${bDetails}</p><p>Streets: ${esc((world.districts||[]).map(d=>d.real_anchor).join(', '))}</p></details>
+      <details><summary>🏢 Buildings & Streets</summary><p>${bDetails}</p><p>Streets: ${esc((world.districts||[]).map(d=>d.real_anchor).join(', '))}</p></details>`;
+  }
 
   if (trades && trades.scenarios) {
     const mods = trades.modules || {};
@@ -55,6 +56,8 @@ export function wireHud({ slug, geo, img, world, trades, programs, course, count
       const mod = mods[p.module_link] || {};
       const mb = mod.id ? `<button class="module-btn" onclick="window.__wf.showModule('${p.module_link}',${mj})">Module</button>` : '';
       return `<details><summary>${esc(p.title)}${mb}</summary>${(p.sessions||[]).map(s=>`<p><b>${esc(s.zone)}</b>: ${esc(s.activity)} (${esc(s.minutes)} min)</p>`).join('')}</details>`;
+    }).join('');
+  }
 
   if (programs && programs.programs) $('programs').innerHTML = programs.programs.map(p => `<details><summary>${esc(p.audience).toUpperCase()} · ${esc(p.title)}</summary><p>${esc(p.grade_or_level)}</p><ul>${p.sessions.map(s => `<li>${esc(s.zone)}: ${esc(s.activity)} (${esc(s.minutes)} min)</li>`).join('')}</ul><p class="muted">Data shared: ${esc(p.data_shared)}<br>Consent: ${esc(p.consent)}</p></details>`).join('');
   if (course && course.checkpoints) {

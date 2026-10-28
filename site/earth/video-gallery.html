@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldForge Earth - Video Gallery</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0a; color: #e0e0e0; font-family: system-ui, sans-serif; }
+    header { padding: 2rem; text-align: center; border-bottom: 1px solid #222; }
+    header h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    header p { color: #888; font-size: 0.9rem; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; padding: 2rem; }
+    .card { background: #151515; border-radius: 8px; overflow: hidden; }
+    .card video { width: 100%; display: block; background: #000; }
+    .card-info { padding: 0.75rem 1rem; }
+    .card-info h3 { font-size: 1rem; margin-bottom: 0.25rem; }
+    .card-info p { font-size: 0.8rem; color: #666; }
+    #stats { text-align: center; padding: 1rem; color: #666; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 WorldForge Earth - Video Gallery</h1>
+    <p>3-second flyovers of real-world locations rebuilt as agentic training worlds</p>
+  </header>
+  <div id="stats"></div>
+  <div class="gallery" id="gallery"></div>
+
+  <script type="module">
+    async function loadGallery() {
+      const manifest = await fetch('videos/manifest.json').then(r => r.json());
+      const worlds = await fetch('worlds.json').then(r => r.json());
+      const worldMap = new Map(worlds.map(w => [w.slug, w]));
+
+      const captured = manifest.results.filter(r => r.ok);
+      document.getElementById('stats').textContent = 
+        `${captured.length} of ${manifest.total} worlds captured • ${manifest.failed} failed`;
+
+      const gallery = document.getElementById('gallery');
+      captured.forEach(r => {
+        const info = worldMap.get(r.slug) || {};
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <video src="videos/${r.slug}.mp4" muted loop preload="metadata"></video>
+          <div class="card-info">
+            <h3>${info.name || r.slug}</h3>
+            <p>${info.place || ''} • ${(r.size / 1024).toFixed(0)} KB</p>
+          </div>`;
+        gallery.appendChild(card);
+      });
+
+      // Hover to play
+      gallery.querySelectorAll('video').forEach(v => {
+        v.parentElement.addEventListener('mouseenter', () => v.play());
+        v.parentElement.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
+      });
+    }
+    loadGallery();
+  </script>
+</body>
+</html>

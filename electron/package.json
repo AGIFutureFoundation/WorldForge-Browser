@@ -1,0 +1,46 @@
+{
+  "name": "worldforge-desktop",
+  "version": "1.0.0",
+  "description": "WorldForge Browser - Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . --world=climate-dao",
+    "start:world": "electron . --world=$npm_config_world",
+    "build:mac": "electron-builder --mac",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.worldforge.browser",
+    "productName": "WorldForge",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "../site/earth/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "../site/earth",
+        "to": "site/earth"
+      }
+    ],
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "portable"]
+    },
+    "linux": {
+      "target": ["AppImage", "deb"],
+      "category": "Game"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0"
+  }
+}

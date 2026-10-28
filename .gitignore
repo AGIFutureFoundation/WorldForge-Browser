@@ -4,3 +4,7 @@ __pycache__/
 .env*
 .wrangler/
 worldforge/site/dist/
+
+# Electron build output (DMGs, app bundles - too large for git)
+electron/dist/
+electron/out/

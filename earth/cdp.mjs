@@ -35,18 +35,22 @@ export async function session(W, H) {
   return { send, ev, logs, close: () => { try { ws.close(); } catch {} chrome.kill(); } };
 }
 
-export async function open(S, slug, extra = '') {
+export async function open(S, slug, extra = '', { timeoutMs = 90000, fallback = false } = {}) {
   S.logs.length = 0;
   await S.send('Page.navigate', { url: `${BASE}/earth/world.html?world=${slug}${extra}` });
   const t0 = Date.now();
-  while (Date.now() - t0 < 200000) {
+  while (Date.now() - t0 < timeoutMs) {
     await sleep(500);
     const r = await S.ev('JSON.stringify(window.__wf||{})').catch(() => null);
     const w = r && JSON.parse(r);
     if (w?.ready) return w;
     if (w?.error) throw new Error(`${slug}: ${w.error}`);
   }
-  throw new Error(`${slug}: not ready in 200 s; console: ${S.logs.slice(0, 3).join(' | ')}`);
+  // Timed out: collect diagnostics before deciding what to do
+  const diag = await S.ev('JSON.stringify({wf: window.__wf||null, rs: document.readyState, url: location.href})').catch(() => null);
+  const msg = `${slug}: not ready in ${Math.round((Date.now()-t0)/1000)}s; state=${diag}; console: ${S.logs.slice(0, 3).join(' | ')}`;
+  if (fallback) { console.log('  (fallback: capturing anyway) ' + msg); return { ready: false, slug, fallback: true }; }
+  throw new Error(msg);
 }
 export const shot = async (S, q = 88) => Buffer.from((await S.send('Page.captureScreenshot', { format: 'jpeg', quality: q })).result.data, 'base64');
 export const hud = (S, show) => S.ev(`document.querySelectorAll('.panel').forEach(p=>p.style.visibility='${show ? 'visible' : 'hidden'}')`);
