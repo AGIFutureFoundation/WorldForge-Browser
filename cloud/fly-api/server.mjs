@@ -293,6 +293,40 @@ app.get('/v2/rp1/enter/:slug', (c) => {
   return c.json({ engine: 'WorldForge', slug, name: w.name, place: w.place, lat: w.lat, lon: w.lon, mounted: rp1Worlds.has(slug), enterUrl: enter }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
+// RP1 spatial fabric (.msf.json) for a mounted world: the same node shape as the
+// my-fabric builds (holodeck.json / cognition.json) — Container/Modules/Primary/Data.Scene
+// with aChildren — with the Resource pointing at THIS deployment's preview GLB, so the
+// fabric loaded into a dev.rp1.com company Map Viewer pulls its payload from fly.io.
+app.get('/v2/rp1/fabric/:slug', (c) => {
+  const e = rp1Worlds.get(c.req.param('slug'));
+  if (!e || !e.previewGlbPath) return c.json({ error: 'fabric_unavailable', slug: c.req.param('slug'), hint: 'fabrics exist for mounted worlds (Sneeze plan + preview GLB); GET /v2/sneeze/plans' }, 404);
+  const origin = new URL(c.req.url).origin;
+  const w = e.world || {};
+  const fabric = {
+    Container: `worldforge-${e.plan.rootCardId?.replace(/^world:/, '') || c.req.param('slug')}`,
+    Services: [],
+    Modules: [{ sUrl: 'wasm/map.wasm' }],
+    Primary: {
+      Ambient: { fBrightness: 0.12, fColor: '0xFFFFFF' },
+      Directional: { fBrightness: 0.6, fColor: '0xFFF4E0', Rotation: [0.0, 0.5808, 0.6663, 0.468] },
+    },
+    Data: {
+      Scene: {
+        Head: { Self: 'P-?' },
+        Name: w.name || e.card?.displayName || c.req.param('slug'),
+        Resource: { sReference: `${origin}/v2/worlds/${c.req.param('slug')}/preview.glb` },
+        Transform: { Position: [0.0, 0.0, 0.0] },
+        aChildren: [],
+      },
+    },
+  };
+  return c.json(fabric, 200, {
+    'content-type': 'application/json',
+    'cache-control': 'public, max-age=300',
+    'access-control-allow-origin': '*',           // the dev.rp1.com Map Viewer fetches cross-origin
+  });
+});
+
 app.get('/v2/sneeze/plans', (c) => {
   const origin = new URL(c.req.url).origin;
   const plans = [...rp1Worlds.keys()].sort().map((slug) => {
