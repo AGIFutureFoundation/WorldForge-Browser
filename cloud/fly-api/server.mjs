@@ -293,14 +293,37 @@ app.get('/v2/rp1/enter/:slug', (c) => {
   return c.json({ engine: 'WorldForge', slug, name: w.name, place: w.place, lat: w.lat, lon: w.lon, mounted: rp1Worlds.has(slug), enterUrl: enter }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
-// RP1 spatial fabric (.msf.json) for a mounted world: the same node shape as the
-// my-fabric builds (holodeck.json / cognition.json) — Container/Modules/Primary/Data.Scene
-// with aChildren — with the Resource pointing at THIS deployment's preview GLB, so the
-// fabric loaded into a dev.rp1.com company Map Viewer pulls its payload from fly.io.
+// RP1 spatial fabric (.msf.json) for a world: generated per mounted world, or served from a
+// static fabric file dropped in worldforge/fabrics/<slug>.json (the full my-fabric builds —
+// SmartCiti.X holodeck, Cognition.X campus). Node shape matches the my-fabric builds
+// (holodeck.json / cognition.json): Container/Modules/Primary/Data.Scene with aChildren —
+// with Resources pointing at THIS deployment so a dev.rp1.com Map Viewer pulls from fly.io.
+const FABRICS_DIR = fileURLToPath(new URL('worldforge/fabrics/', ROOT));
+const rewriteFabric = (node, origin) => {
+  if (Array.isArray(node)) { for (const n of node) rewriteFabric(n, origin); return; }
+  if (node && typeof node === 'object') {
+    const ref = node.Resource?.sReference;
+    if (typeof ref === 'string' && !/^https?:/.test(ref)) {
+      const m = /^(cognition|holodeck)\/models\/(.+)$/.exec(ref);
+      node.Resource.sReference = m
+        ? `${origin}/v2/rp1/fabric-assets/${m[1]}-models/${m[2]}`
+        : `${origin}/v2/rp1/fabric-assets/${ref.replace(/^assets\//, '')}`;
+    }
+    for (const k of Object.keys(node)) if (k !== 'Resource') rewriteFabric(node[k], origin);
+  }
+};
+
 app.get('/v2/rp1/fabric/:slug', (c) => {
-  const e = rp1Worlds.get(c.req.param('slug'));
-  if (!e || !e.previewGlbPath) return c.json({ error: 'fabric_unavailable', slug: c.req.param('slug'), hint: 'fabrics exist for mounted worlds (Sneeze plan + preview GLB); GET /v2/sneeze/plans' }, 404);
+  const slug = c.req.param('slug');
   const origin = new URL(c.req.url).origin;
+  const staticFile = path.join(FABRICS_DIR, `${slug}.json`);
+  if (fs.existsSync(staticFile)) {
+    const fabric = JSON.parse(fs.readFileSync(staticFile, 'utf8'));
+    rewriteFabric(fabric, origin);
+    return c.json(fabric, 200, { 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=300' });
+  }
+  const e = rp1Worlds.get(slug);
+  if (!e || !e.previewGlbPath) return c.json({ error: 'fabric_unavailable', slug, hint: 'fabrics exist for mounted worlds (Sneeze plan + preview GLB) and static fabrics in worldforge/fabrics/; GET /v2/sneeze/plans' }, 404);
   const w = e.world || {};
   const fabric = {
     Container: `worldforge-${e.plan.rootCardId?.replace(/^world:/, '') || c.req.param('slug')}`,
@@ -325,6 +348,14 @@ app.get('/v2/rp1/fabric/:slug', (c) => {
     'cache-control': 'public, max-age=300',
     'access-control-allow-origin': '*',           // the dev.rp1.com Map Viewer fetches cross-origin
   });
+});
+
+app.get('/v2/rp1/fabric-assets/*', (c) => {
+  const rest = c.req.path.replace(/^\/v2\/rp1\/fabric-assets\//, '');
+  const baseDir = path.resolve(FABRICS_DIR, 'assets');
+  const abs = path.resolve(baseDir, rest || '');
+  if (!abs.startsWith(baseDir + path.sep)) return c.json({ error: 'forbidden' }, 403);
+  return serveFile(c, abs);
 });
 
 app.get('/v2/sneeze/plans', (c) => {

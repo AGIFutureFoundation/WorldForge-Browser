@@ -25,6 +25,9 @@ COPY site/earth/worlds.json /app/site/earth/worlds.json
 # shared assets (unit-cube.glb, ...) and per-world preview GLBs (~150MB)
 COPY worldforge/out/ /app/worldforge/out/
 
+# static RP1 fabrics + their models (SmartCiti.X holodeck, Cognition.X campus; ~17MB)
+COPY worldforge/fabrics/ /app/worldforge/fabrics/
+
 ENV PORT=8080
 EXPOSE 8080
 CMD ["node", "server.mjs"]
