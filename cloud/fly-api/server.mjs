@@ -347,17 +347,6 @@ const rp1FabricJson = (slug, origin) => {
     },
   };
 };
-for (const route of ['/fabric/:fid/:ver', '/fabric/:fid/:ver/', '/fabric/:fid/:ver/config/fabric.msf.json', '/fabric/:fid/:ver/*']) {
-  app.get(route, (c) => {
-    const slug = RP1_FABRIC_IDS[c.req.param('fid')];
-    const origin = new URL(c.req.url).origin;
-    if (!slug) return c.json({ error: 'unknown_fabric_id', fid: c.req.param('fid'), known: Object.keys(RP1_FABRIC_IDS), hint: 'the AGI Corp fabrics are served by slug at /v2/rp1/fabric/:slug' }, 404, { 'access-control-allow-origin': '*' });
-    const fabric = rp1FabricJson(slug, origin);
-    if (!fabric) return c.json({ error: 'fabric_unavailable', slug }, 404, { 'access-control-allow-origin': '*' });
-    return c.json(fabric, 200, { 'content-type': 'application/json', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60' });
-  });
-}
-
 // the Sneeze map module the fabric MSF references by relative sUrl (wasm/map.wasm):
 // the metaverse browser downloads it from the fabric directory, so it must be served here.
 // The binary is the official map.wasm from the RP1 skeleton (cdn.rp1.com/sneeze/examples/stool.zip).
@@ -372,6 +361,18 @@ app.get('/v2/rp1/fabric-wasm/map.wasm', (c) => {
   const data = fs.readFileSync(MAP_WASM);
   return new Response(data, { headers: { 'content-type': 'application/wasm', 'cache-control': 'public, max-age=3600' } });
 });
+
+for (const route of ['/fabric/:fid/:ver', '/fabric/:fid/:ver/', '/fabric/:fid/:ver/config/fabric.msf.json', '/fabric/:fid/:ver/*']) {
+  app.get(route, (c) => {
+    const slug = RP1_FABRIC_IDS[c.req.param('fid')];
+    const origin = new URL(c.req.url).origin;
+    if (!slug) return c.json({ error: 'unknown_fabric_id', fid: c.req.param('fid'), known: Object.keys(RP1_FABRIC_IDS), hint: 'the AGI Corp fabrics are served by slug at /v2/rp1/fabric/:slug' }, 404, { 'access-control-allow-origin': '*' });
+    const fabric = rp1FabricJson(slug, origin);
+    if (!fabric) return c.json({ error: 'fabric_unavailable', slug }, 404, { 'access-control-allow-origin': '*' });
+    return c.json(fabric, 200, { 'content-type': 'application/json', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60' });
+  });
+}
+
 
 
 app.get('/v2/rp1/fabric/:slug', (c) => {
