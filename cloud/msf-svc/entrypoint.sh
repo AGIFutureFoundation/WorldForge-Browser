@@ -11,12 +11,14 @@ fi
 mkdir -p /var/run/mysqld && chown mysql:mysql /var/run/mysqld
 
 mysqld --user=mysql --datadir=/var/lib/mysql --bind-address=127.0.0.1 --port=3306 &
+# wait over the LOCAL SOCKET (debian mariadb root uses unix_socket auth; TCP is denied)
 for i in $(seq 1 60); do
-  mysqladmin --protocol=tcp -h 127.0.0.1 ping >/dev/null 2>&1 && break
+  mysqladmin ping >/dev/null 2>&1 && break
   sleep 1
 done
 
-mysql -h 127.0.0.1 -e "CREATE DATABASE IF NOT EXISTS \`${MYSQLDATABASE:-msf_map}\`;
+# create the app database + user over the socket (as root), reachable via TCP for the service
+mysql -e "CREATE DATABASE IF NOT EXISTS \`${MYSQLDATABASE:-msf_map}\`;
 CREATE USER IF NOT EXISTS '${MYSQLUSER:-msf}'@'127.0.0.1' IDENTIFIED BY '${MYSQLPASSWORD}';
 GRANT ALL PRIVILEGES ON \`${MYSQLDATABASE:-msf_map}\`.* TO '${MYSQLUSER:-msf}'@'127.0.0.1';
 FLUSH PRIVILEGES;"
