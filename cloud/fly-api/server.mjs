@@ -101,17 +101,33 @@ const rp1Entry = (card) => {
 };
 
 const rp1Summary = (slug, origin) => {
-  const e = rp1Worlds.get(slug);
-  const w = e.world || {};
+  const e = rp1Worlds.get(slug) || null;                 // mounted set: cards + Sneeze mount plan
+  const w = (e && e.world) || worldsBySlug.get(slug) || {};
+  const base = {
+    slug,
+    mounted: !!e,
+    name: w.name || (e && e.card?.displayName) || slug,
+    place: w.place || null,
+    biome: w.biome || null,
+  };
+  if (!e) {
+    // registered from the world record's real-Earth place; the Sneeze mount plan is not built yet
+    return {
+      ...base,
+      lat: w.lat ?? null,
+      lon: w.lon ?? null,
+      rp1: (w.lat != null && w.lon != null)
+        ? { status: 'registered', url: `https://enter.rp1.com?start_cid=553&lat=${w.lat}&lon=${w.lon}&rad=6371000` }
+        : { status: 'unbound', url: null },
+      sneeze: { engine: 'Sneeze', mounted: false, status: 'mount-plan-pending', planUrl: null },
+    };
+  }
   const rp1 = rp1Entry(e.card);
   const extent = e.plan.coordinateFrame?.extentXZ || [0, 0];
   return {
-    slug,
-    name: w.name || e.card?.displayName || slug,
-    place: w.place || null,
+    ...base,
     lat: rp1.lat ?? w.lat ?? null,
     lon: rp1.lon ?? w.lon ?? null,
-    biome: w.biome || null,
     rp1: {
       status: rp1.status,
       url: rp1.url,
@@ -159,26 +175,38 @@ app.get('/', (c) => c.json({
 
 app.get('/v2/rp1/worlds', (c) => {
   const origin = new URL(c.req.url).origin;
-  const bound = [], unbound = [];
-  for (const slug of [...rp1Worlds.keys()].sort()) {
-    const s = rp1Summary(slug, origin);
-    (s.rp1.status === 'unbound' ? unbound : bound).push(s);
-  }
+  const mounted = [...rp1Worlds.keys()].sort().map((slug) => rp1Summary(slug, origin));
+  const mountedSlugs = new Set(rp1Worlds.keys());
+  const pending = WORLDS.filter((w) => !mountedSlugs.has(w.slug))
+    .map((w) => rp1Summary(w.slug, origin))
+    .sort((a, b) => (a.slug < b.slug ? -1 : 1));
+  const worlds = [...mounted, ...pending];
+  const registered = worlds.filter((x) => x.rp1.url).length;
   return c.json({
     engine: 'worldforge-sneeze',
-    mounted: rp1Worlds.size,
-    bound: bound.length,
-    unbound: unbound.length,
-    note: 'bound = a steward wrote the card anchor and rp1.com issued an enter.rp1.com URL; unbound = anchor slot open',
-    worlds: [...bound, ...unbound],
+    total: worlds.length,
+    mounted: mounted.length,
+    mountPlanPending: pending.length,
+    registered,
+    unbound: worlds.length - registered,
+    note: 'registered = an enter.rp1.com link exists; mounted = Sneeze SOM mount plan built (worldforge/out/<slug>); mount-plan-pending = registered from the world record, plan not built yet',
+    worlds,
   }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
 app.get('/v2/rp1/worlds/:slug', (c) => {
   const slug = c.req.param('slug');
   const e = rp1Worlds.get(slug);
-  if (!e) return c.json({ error: 'unknown_world', slug, hint: 'GET /v2/rp1/worlds for the mounted set' }, 404);
-  return c.json({ ...rp1Summary(slug, new URL(c.req.url).origin), world: e.world, card: e.card }, 200, { 'cache-control': 'public, max-age=300' });
+  const w = worldsBySlug.get(slug);
+  if (!e && !w) return c.json({ error: 'unknown_world', slug, hint: 'GET /v2/rp1/worlds for the full registry' }, 404);
+  const origin = new URL(c.req.url).origin;
+  if (e) return c.json({ ...rp1Summary(slug, origin), world: e.world, card: e.card }, 200, { 'cache-control': 'public, max-age=300' });
+  return c.json({
+    ...rp1Summary(slug, origin),
+    world: w,
+    card: null,
+    note: 'registered from the world record (site/earth/worlds.json); the Sneeze mount plan is pending the worldforge build',
+  }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
 app.get('/v2/sneeze/plans', (c) => {
@@ -249,4 +277,4 @@ http.createServer(async (req, res) => {
     res.writeHead(500, { 'content-type': 'application/json' });
     res.end(JSON.stringify({ error: 'internal', message: String(e.message || e) }));
   }
-}).listen(PORT, () => console.log(`worldforge-api listening on :${PORT} (marketplace v2 + movement LM + ${rp1Worlds.size} RP1/Sneeze worlds)`));
+}).listen(PORT, () => console.log(`worldforge-api listening on :${PORT} (marketplace v2 + movement LM + ${rp1Worlds.size} mounted RP1/Sneeze worlds of ${WORLDS.length} registered)`));
