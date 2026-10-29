@@ -1,16 +1,17 @@
 #!/usr/bin/env bash
 # deploy.sh -- deploy the RP1 MSF Map Service (worldforge-msf) to Fly.io.
-# The token is read from FLY_API_TOKEN in the environment or the .env at repo root (gitignored).
+# Build context = this directory (its own fly.toml). Token from repo-root .env (gitignored).
 # Secrets: MVSADMINKEY (the metaverse server admin key, also the Scene Assembler login key) and
-# MYSQLPASSWORD (the embedded MariaDB user password) are generated on first deploy and stored
-# as Fly secrets; they are never printed.
+# MYSQLPASSWORD (the embedded MariaDB user password) are generated if unset and stored as Fly
+# secrets; they are never printed.
 set -euo pipefail
-cd "$(dirname "$0")/../.."
+cd "$(dirname "$0")"          # cloud/msf-svc -- the fly.toml here names the app and context
+ROOT="$(cd ../.. && pwd)"
 
-if [ -z "${FLY_API_TOKEN:-}" ] && [ -f .env ]; then
-  export $(grep -E '^FLY_API_TOKEN=' .env | head -1 | xargs)
+if [ -z "${FLY_API_TOKEN:-}" ] && [ -f "$ROOT/.env" ]; then
+  export $(grep -E '^FLY_API_TOKEN=' "$ROOT/.env" | head -1 | xargs)
 fi
-: "${FLY_API_TOKEN:?FLY_API_TOKEN not set. Put it in .env at the repo root (gitignored): FLY_API_TOKEN=... }"
+: "${FLY_API_TOKEN:?FLY_API_TOKEN not set. Put it in $ROOT/.env (gitignored): FLY_API_TOKEN=... }"
 command -v flyctl >/dev/null 2>&1 || { echo "flyctl not installed -> brew install flyctl"; exit 2; }
 
 APP=worldforge-msf
