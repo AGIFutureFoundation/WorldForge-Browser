@@ -1,0 +1,36 @@
+# Dockerfile.dockerignore -- BuildKit prefers the ignore file ADJACENT to the Dockerfile
+# (cloud/fly-api/Dockerfile) when the Dockerfile is not at the context root, which is our
+# case (build context = repo root, see fly.toml). Same whitelist as the root .dockerignore:
+# keep the Fly build context tiny (~155MB) and never ship .env, node_modules, capture
+# frames or dist/ to the remote builder. Patterns are relative to the CONTEXT ROOT.
+
+**
+!cloud/fly-api/Dockerfile
+!fly.toml
+
+!cloud
+!cloud/fly-api
+!cloud/fly-api/package.json
+!cloud/fly-api/server.mjs
+
+!cloud/datasets-api
+!cloud/datasets-api/src
+!cloud/datasets-api/src/routes
+!cloud/datasets-api/src/routes/marketplace-v2.ts
+
+!site
+!site/earth
+!site/earth/data
+!site/earth/data/motion
+!site/earth/data/motion/model.json
+!site/earth/data/motion/samples.json
+!earth
+!earth/motion
+!earth/motion/corpus
+!earth/motion/corpus/corpus-stats.json
+
+!site/earth/worlds.json
+
+!worldforge
+!worldforge/out
+!worldforge/out/**

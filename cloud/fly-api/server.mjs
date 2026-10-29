@@ -234,7 +234,10 @@ app.notFound((c) => c.json({ error: 'not_found', hint: 'GET /, /v2/rp1/worlds, /
 
 
 http.createServer(async (req, res) => {
-  const url = `http://${req.headers.host || 'localhost'}${req.url}`;
+  // Fly terminates TLS: honor x-forwarded-proto so route-generated URLs (plan asset rewrites,
+  // registry links) come out as https://worldforge-api.fly.dev, not http://
+  const proto = req.headers['x-forwarded-proto'] || 'http';
+  const url = `${proto}://${req.headers.host || 'localhost'}${req.url}`;
   const init = { method: req.method, headers: req.headers };
   if (!['GET', 'HEAD'].includes(req.method)) init.body = req;        // stream request body through
   try {
