@@ -358,6 +358,22 @@ for (const route of ['/fabric/:fid/:ver', '/fabric/:fid/:ver/', '/fabric/:fid/:v
   });
 }
 
+// the Sneeze map module the fabric MSF references by relative sUrl (wasm/map.wasm):
+// the metaverse browser downloads it from the fabric directory, so it must be served here.
+// The binary is the official map.wasm from the RP1 skeleton (cdn.rp1.com/sneeze/examples/stool.zip).
+const MAP_WASM = fileURLToPath(new URL('worldforge/fabrics/wasm/map.wasm', ROOT));
+app.get('/fabric/:fid/:ver/wasm/*', (c) => {
+  if (!fs.existsSync(MAP_WASM)) return c.json({ error: 'module_missing' }, 404, { 'access-control-allow-origin': '*' });
+  const data = fs.readFileSync(MAP_WASM);
+  return new Response(data, { headers: { 'content-type': 'application/wasm', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=3600' } });
+});
+app.get('/v2/rp1/fabric-wasm/map.wasm', (c) => {
+  if (!fs.existsSync(MAP_WASM)) return c.json({ error: 'module_missing' }, 404);
+  const data = fs.readFileSync(MAP_WASM);
+  return new Response(data, { headers: { 'content-type': 'application/wasm', 'cache-control': 'public, max-age=3600' } });
+});
+
+
 app.get('/v2/rp1/fabric/:slug', (c) => {
   const slug = c.req.param('slug');
   const origin = new URL(c.req.url).origin;
