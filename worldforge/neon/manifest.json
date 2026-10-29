@@ -1,5 +1,5 @@
 {
- "stamp": "2dcb27734118ad00",
+ "stamp": "7c84828f9d57e122",
  "generated_by": "worldforge/neon/build_seed.py",
  "schema": "worldforge/neon/schema.sql",
  "pg_schema": "worldforge",
@@ -24,7 +24,7 @@
  "rows": {
   "total": 11510
  },
- "seed_bytes": 6141571,
+ "seed_bytes": 6144570,
  "training_lessons": "loaded from the per-world files worldforge/out/training/index.json lists",
  "sql_validation": "PostgreSQL and sqlparse are not installed on the build machine; build_seed.py runs its own conservative check (quote/E-string/comment-aware splitter, balanced parentheses, token-level parse of every seed statement, structural read of schema.sql)",
  "sources": [
