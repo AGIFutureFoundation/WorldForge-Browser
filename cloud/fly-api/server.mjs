@@ -313,6 +313,51 @@ const rewriteFabric = (node, origin) => {
   }
 };
 
+// RP1 metaverse-server convention: the Dev Center "Attach Fabric" wizard verifies the Spatial
+// Fabric URL <server>/fabric/<rp1-fabric-id>/<version>/ and loads the MSF from it (the file is
+// served at the directory itself and at config/fabric.msf.json beneath it). This maps the
+// RP1 fabric ids of the AGI Corp companies to the fabrics served from this deployment.
+const RP1_FABRIC_IDS = { 73: 'smartciti-holodeck', 82: 'cognition-x', 83: 'empathic-x', 84: 'diagnostic-x' };
+const rp1FabricJson = (slug, origin) => {
+  const staticFile = path.join(FABRICS_DIR, `${slug}.json`);
+  if (fs.existsSync(staticFile)) {
+    const fabric = JSON.parse(fs.readFileSync(staticFile, 'utf8'));
+    rewriteFabric(fabric, origin);
+    return fabric;
+  }
+  const e = rp1Worlds.get(slug);
+  if (!e || !e.previewGlbPath) return null;
+  const w = e.world || {};
+  return {
+    Container: `worldforge-${e.plan.rootCardId?.replace(/^world:/, '') || slug}`,
+    Services: [],
+    Modules: [{ sUrl: 'wasm/map.wasm' }],
+    Primary: {
+      Ambient: { fBrightness: 0.12, fColor: '0xFFFFFF' },
+      Directional: { fBrightness: 0.6, fColor: '0xFFF4E0', Rotation: [0.0, 0.5808, 0.6663, 0.468] },
+    },
+    Data: {
+      Scene: {
+        Head: { Self: 'P-?' },
+        Name: w.name || e.card?.displayName || slug,
+        Resource: { sReference: `${origin}/v2/worlds/${slug}/preview.glb` },
+        Transform: { Position: [0.0, 0.0, 0.0] },
+        aChildren: [],
+      },
+    },
+  };
+};
+for (const route of ['/fabric/:fid/:ver', '/fabric/:fid/:ver/', '/fabric/:fid/:ver/config/fabric.msf.json', '/fabric/:fid/:ver/*']) {
+  app.get(route, (c) => {
+    const slug = RP1_FABRIC_IDS[c.req.param('fid')];
+    const origin = new URL(c.req.url).origin;
+    if (!slug) return c.json({ error: 'unknown_fabric_id', fid: c.req.param('fid'), known: Object.keys(RP1_FABRIC_IDS), hint: 'the AGI Corp fabrics are served by slug at /v2/rp1/fabric/:slug' }, 404, { 'access-control-allow-origin': '*' });
+    const fabric = rp1FabricJson(slug, origin);
+    if (!fabric) return c.json({ error: 'fabric_unavailable', slug }, 404, { 'access-control-allow-origin': '*' });
+    return c.json(fabric, 200, { 'content-type': 'application/json', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60' });
+  });
+}
+
 app.get('/v2/rp1/fabric/:slug', (c) => {
   const slug = c.req.param('slug');
   const origin = new URL(c.req.url).origin;
