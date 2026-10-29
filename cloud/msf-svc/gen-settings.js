@@ -6,6 +6,10 @@ const settings = {
     nPort: process.env.PORT || '8080',
     key: process.env.MVSADMINKEY,
     sCompanyId: process.env.COMPANY_ID || '137',
+    LAN: {
+      port: process.env.PORT || '8080',          // @metaversalcorp/mvsf listens on Settings.LAN.port
+      SSL: { bUseSSL: false },                   // plain HTTP: Fly terminates TLS at the edge
+    },
   },
   SQL: {
     type: 'MYSQL',

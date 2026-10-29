@@ -17,10 +17,11 @@ for i in $(seq 1 60); do
   sleep 1
 done
 
-# create the app database + user over the socket (as root), reachable via TCP for the service
-mysql -e "CREATE DATABASE IF NOT EXISTS \`${MYSQLDATABASE:-msf_map}\`;
-CREATE USER IF NOT EXISTS '${MYSQLUSER:-msf}'@'127.0.0.1' IDENTIFIED BY '${MYSQLPASSWORD}';
-GRANT ALL PRIVILEGES ON \`${MYSQLDATABASE:-msf_map}\`.* TO '${MYSQLUSER:-msf}'@'127.0.0.1';
+# create the app user over the socket (as root). NOTE: we do NOT create the database --
+# MSF_Map.sql creates it (install.js skips the schema install if the schema already exists,
+# so pre-creating it would leave the service with zero tables).
+mysql -e "CREATE USER IF NOT EXISTS '${MYSQLUSER:-msf}'@'127.0.0.1' IDENTIFIED BY '${MYSQLPASSWORD}';
+GRANT ALL PRIVILEGES ON *.* TO '${MYSQLUSER:-msf}'@'127.0.0.1' WITH GRANT OPTION;
 FLUSH PRIVILEGES;"
 
 node /app/gen-settings.js
