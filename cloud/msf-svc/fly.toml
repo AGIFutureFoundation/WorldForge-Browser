@@ -1,0 +1,32 @@
+# fly.toml -- worldforge-msf: the RP1 MSF Map Service (live metaverse server) on Fly.io.
+# Deploy: bash cloud/msf-svc/deploy.sh   (token from .env, like cloud/fly-api)
+app = "worldforge-msf"
+primary_region = "sjc"
+
+[build]
+  dockerfile = "cloud/msf-svc/Dockerfile"
+
+[env]
+  PORT = "8080"
+  MYSQLHOST = "127.0.0.1"
+  MYSQLPORT = "3306"
+  MYSQLUSER = "msf"
+  MYSQLDATABASE = "msf_map"
+  COMPANY_ID = "137"     # the SmartCiti Dev Center company
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [services.concurrency]
+    type = "connections"
+    soft_limit = 100
+    hard_limit = 150
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "512mb"
