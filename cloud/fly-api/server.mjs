@@ -170,7 +170,7 @@ const serveFile = (c, absPath) => {
 app.get('/', (c) => c.json({
   service: 'worldforge-api',
   host: 'fly.io',
-  routes: ['/', '/health', '/v2/rp1/worlds', '/v2/rp1/worlds/:slug', '/v2/sneeze/plans', '/v2/sneeze/plans/:slug', '/v2/sneeze/assets/*', '/v2/worlds/:slug/preview.glb', '/v2/marketplace/projects', '/v2/motion/model'],
+  routes: ['/', '/health', '/v2/rp1/worlds', '/v2/rp1/worlds/:slug', '/v2/rp1/connections', '/v2/sneeze/plans', '/v2/sneeze/plans/:slug', '/v2/sneeze/assets/*', '/v2/worlds/:slug/preview.glb', '/v2/marketplace/projects', '/v2/motion/model'],
 }));
 
 app.get('/v2/rp1/worlds', (c) => {
@@ -206,6 +206,44 @@ app.get('/v2/rp1/worlds/:slug', (c) => {
     world: w,
     card: null,
     note: 'registered from the world record (site/earth/worlds.json); the Sneeze mount plan is pending the worldforge build',
+  }, 200, { 'cache-control': 'public, max-age=300' });
+});
+
+app.get('/v2/rp1/connections', (c) => {
+  const origin = new URL(c.req.url).origin;
+  const mountedSlugs = new Set(rp1Worlds.keys());
+  const connections = WORLDS.map((w) => {
+    const isMounted = mountedSlugs.has(w.slug);
+    const e = rp1Worlds.get(w.slug);
+    const r = e ? rp1Entry(e.card) : null;
+    const enter = r?.url ?? ((w.lat != null && w.lon != null)
+      ? `https://enter.rp1.com?start_cid=553&lat=${w.lat}&lon=${w.lon}&rad=6371000` : null);
+    return {
+      slug: w.slug,
+      name: w.name,
+      place: w.place,
+      lat: w.lat,
+      lon: w.lon,
+      mounted: isMounted,
+      rp1: { status: r?.status ?? (enter ? 'registered' : 'unbound'), url: enter },
+      fly: {
+        app: 'worldforge-api',
+        apiDetail: `${origin}/v2/rp1/worlds/${w.slug}`,
+        worldPage: `https://www.agifuturefoundation.org/earth/world.html?world=${w.slug}`,
+        ...(isMounted
+          ? { status: 'mounted', sneezePlan: `${origin}/v2/sneeze/plans/${w.slug}`, previewGlb: `${origin}/v2/worlds/${w.slug}/preview.glb` }
+          : { status: 'mount-plan-pending' }),
+      },
+    };
+  });
+  return c.json({
+    service: 'worldforge-api on fly.io',
+    dashboard: 'https://fly.io/apps/worldforge-api',
+    note: 'every RP1-registered space connected to its Fly.io-hosted world: enter.rp1.com anchor, API detail, Sneeze mount plan and preview GLB (mounted) or mount-plan-pending, plus the GitHub Pages world page',
+    total: connections.length,
+    mounted: mountedSlugs.size,
+    mountPlanPending: connections.length - mountedSlugs.size,
+    connections,
   }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
@@ -257,7 +295,7 @@ app.get('/v2/worlds/:slug/preview.glb', (c) => {
   return serveFile(c, e.previewGlbPath);
 });
 
-app.notFound((c) => c.json({ error: 'not_found', hint: 'GET /, /v2/rp1/worlds, /v2/sneeze/plans, /v2/marketplace/projects, /v2/motion/model' }, 404));
+app.notFound((c) => c.json({ error: 'not_found', hint: 'GET /, /v2/rp1/worlds, /v2/rp1/connections, /v2/sneeze/plans, /v2/marketplace/projects, /v2/motion/model' }, 404));
 
 
 

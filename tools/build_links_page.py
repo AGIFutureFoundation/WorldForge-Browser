@@ -31,6 +31,7 @@ DESC = {
     'earth/dashboard.html': 'WorldForge dashboard: operations overview.',
     'earth/training.html': 'Trades training simulator home.',
     'earth/motion-lm.html': 'Movement LM: our own tiny GPT over robot + human movement episodes (trained locally), samples and replays in-browser.',
+    'earth/rp1.html': 'RP1 worlds x Fly.io: every active RP1 space connected to its Fly.io-hosted world (enter.rp1.com anchors, Sneeze mount plans, preview GLBs, API links).',
     'earth/ar-training.html': 'AR training: anchors and overlays for on-site use.',
     'earth/console.html': 'Earth console: per-world board with geo/video/content status and deep links.',
     'consoles/worldforge/index.html': 'WorldForge console: Master Cards, rights, avatars and voice lines.',

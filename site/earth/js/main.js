@@ -30,6 +30,18 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   const meta = (index?.worlds || []).find(w => w.slug === slug) || { name: slug };
   document.title = `${meta.name} - ${geo?.place || slug} | WorldForge Earth`;
   $('title').textContent = meta.name; $('place').textContent = `${geo?.place || 'Real Earth location'} · ${geo?.lat?.toFixed(4) || '0'}, ${geo?.lon?.toFixed(4) || '0'}`;
+  { // RP1 space connection: the enter.rp1.com anchor for this world's real-Earth place + its Fly.io-hosted resources
+    const rp1El = $('rp1'); if (rp1El) {
+      const API = 'https://worldforge-api.fly.dev';
+      const lat = geo?.lat, lon = geo?.lon, mounted = !!cardsDoc?.cards;
+      const enter = (lat != null && lon != null) ? `https://enter.rp1.com?start_cid=553&lat=${lat}&lon=${lon}&rad=6371000` : null;
+      const a = (h, t) => `<a href="${h}" target="_blank" rel="noopener">${t}</a>`;
+      rp1El.innerHTML = 'RP1 space: '
+        + (enter ? `${a(enter, 'enter.rp1.com')} · ` : 'no anchor · ')
+        + a(`${API}/v2/rp1/worlds/${slug}`, 'Fly API')
+        + (mounted ? ` · ${a(`${API}/v2/sneeze/plans/${slug}`, 'Sneeze plan')} · ${a(`${API}/v2/worlds/${slug}/preview.glb`, 'GLB')}` : ' · Sneeze plan pending');
+    }
+  }
 
   const S = makeStage($('c'));
   const ground = makeGround(geo); S.scene.add(ground.mesh, ground.skirt);
