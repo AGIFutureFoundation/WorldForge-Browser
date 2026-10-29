@@ -18,6 +18,13 @@ COPY site/earth/data/motion/model.json /app/site/earth/data/motion/model.json
 COPY site/earth/data/motion/samples.json /app/site/earth/data/motion/samples.json
 COPY earth/motion/corpus/corpus-stats.json /app/earth/motion/corpus/corpus-stats.json
 
+# RP1 worlds registry (544 world records) -- joined with cards/plans at boot
+COPY site/earth/worlds.json /app/site/earth/worlds.json
+
+# Sneeze / WorldForge engine payload: world cards (RP1 anchors), SOM mount plans,
+# shared assets (unit-cube.glb, ...) and per-world preview GLBs (~150MB)
+COPY worldforge/out/ /app/worldforge/out/
+
 ENV PORT=8080
 EXPOSE 8080
 CMD ["node", "server.mjs"]

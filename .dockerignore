@@ -1,0 +1,40 @@
+# .dockerignore -- keep the Fly.io build context tiny (the repo is multi-GB on disk).
+# Whitelist ONLY what cloud/fly-api/Dockerfile COPYs; everything else stays local.
+# This also protects against leaking capture frames, node_modules, .env and dist/ into a remote build.
+**
+
+# build inputs
+!cloud/fly-api/Dockerfile
+!fly.toml
+
+# server + deps
+!cloud
+!cloud/fly-api
+!cloud/fly-api/package.json
+!cloud/fly-api/server.mjs
+
+# shared marketplace-v2 route (single source of truth with the Cloudflare Worker)
+!cloud/datasets-api
+!cloud/datasets-api/src
+!cloud/datasets-api/src/routes
+!cloud/datasets-api/src/routes/marketplace-v2.ts
+
+# movement LM artifacts (/v2/motion/*)
+!site
+!site/earth
+!site/earth/data
+!site/earth/data/motion
+!site/earth/data/motion/model.json
+!site/earth/data/motion/samples.json
+!earth
+!earth/motion
+!earth/motion/corpus
+!earth/motion/corpus/corpus-stats.json
+
+# RP1 worlds registry
+!site/earth/worlds.json
+
+# Sneeze / WorldForge engine payload (cards, mount plans, assets, preview GLBs)
+!worldforge
+!worldforge/out
+!worldforge/out/**
