@@ -1,0 +1,1382 @@
+{
+ "apex": {
+  "name": "AGI Future Foundation PBC",
+  "structure": [
+   {
+    "tier": "Apex",
+    "what": "California PBC: fiduciary protection and mission oversight",
+    "source": "site"
+   },
+   {
+    "tier": "Commercial engine",
+    "what": "Wyoming Series LLC housing DAO subsidiaries with isolated assets and liability",
+    "source": "site"
+   },
+   {
+    "tier": "Ownership",
+    "what": "Class C founder shares for mission control; Class A profit participation; Class B aligned participation",
+    "source": "site"
+   }
+  ],
+  "programs": [
+   {
+    "name": "Fiduciary Shield",
+    "what": "PBC legal protection for safety-prioritizing decisions",
+    "source": "site"
+   },
+   {
+    "name": "Open Global Investment",
+    "what": "Broad international ownership decoupled from governance",
+    "source": "site"
+   },
+   {
+    "name": "Windfall Clause",
+    "what": "Profits above a set threshold redistributed globally",
+    "source": "site"
+   },
+   {
+    "name": "Alignment Evaluation Gate",
+    "what": "Pre-registered safety evaluation before deployment",
+    "source": "site"
+   }
+  ],
+  "steward_seats": 3,
+  "reserved_for_humans": [
+   "governance.final_vote",
+   "charter.amend",
+   "treasury.transfer",
+   "proposal.enact",
+   "windfall.distribute",
+   "steward.appoint"
+  ],
+  "mission": "Ensure advanced AI is governed as a public good, with benefits shared widely and deployed toward humanity's most urgent challenges."
+ },
+ "parent": {
+  "name": "W3 LLC",
+  "what": "Wyoming Series LLC housing DAO subsidiaries with isolated assets and liability",
+  "cells": 35
+ },
+ "hub": {
+  "name": "AGI Corp Hub",
+  "kind": "apex desk",
+  "world": "agi-corp-hub",
+  "team": {
+   "file": "agents/dao/agi-corp-hub.json",
+   "seated": 3,
+   "shared": 1,
+   "roles": 8,
+   "proposals": 26,
+   "held": 1,
+   "progress": "3/8",
+   "evals": "18/18",
+   "stewards": [
+    "steward-1",
+    "steward-2",
+    "steward-3"
+   ],
+   "signatures_required": true
+  },
+  "note": "membership levels and payment accounts are decided here"
+ },
+ "cells": [
+  {
+   "series": 1,
+   "name": "Cognition.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "cognition-x",
+   "fabric": "my-fabric/cognition.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/cognition-x.json",
+    "seated": 1,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 4,
+    "held": 1,
+    "progress": "3/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 2,
+   "name": "Empathic.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "empathic-x",
+   "fabric": "my-fabric/worlds/empathic-x/world.json",
+   "status": "coming soon",
+   "anchor": {
+    "lat": 47.43990000744796,
+    "lon": -179.34952851914045
+   },
+   "team": {
+    "file": "agents/dao/empathic-x.json",
+    "seated": 2,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "8/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 3,
+   "name": "Diagnostic.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "diagnostic-x",
+   "fabric": "my-fabric/worlds/diagnostic-x/world.json",
+   "status": "coming soon",
+   "anchor": {
+    "lat": 5.342706937662501,
+    "lon": 101.5663444901012
+   },
+   "team": {
+    "file": "agents/dao/diagnostic-x.json",
+    "seated": 3,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "8/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 4,
+   "name": "Curable.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s04-curable-x",
+   "fabric": "my-fabric/worlds/s04-curable-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s04-curable-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s04-curable-x/spec.json#series"
+  },
+  {
+   "series": 5,
+   "name": "BioPharma.Go",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s05-biopharma-go",
+   "fabric": "my-fabric/worlds/s05-biopharma-go/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s05-biopharma-go.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s05-biopharma-go/spec.json#series"
+  },
+  {
+   "series": 6,
+   "name": "Blockchain",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s06-blockchain",
+   "fabric": "my-fabric/worlds/s06-blockchain/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s06-blockchain.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 3,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s06-blockchain/spec.json#series"
+  },
+  {
+   "series": 7,
+   "name": "Divine.DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s07-divine-dao",
+   "fabric": "my-fabric/worlds/s07-divine-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s07-divine-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s07-divine-dao/spec.json#series"
+  },
+  {
+   "series": 8,
+   "name": "Locator.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "locator-x",
+   "fabric": "my-fabric/worlds/locator-x/world.json",
+   "status": "coming soon",
+   "anchor": {
+    "lat": 21.09705311564314,
+    "lon": 142.69254864512746
+   },
+   "team": {
+    "file": "agents/dao/locator-x.json",
+    "seated": 7,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "8/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 9,
+   "name": "Astrological.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s09-astrological-x",
+   "fabric": "my-fabric/worlds/s09-astrological-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s09-astrological-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s09-astrological-x/spec.json#series"
+  },
+  {
+   "series": 10,
+   "name": "SmartCiti.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "smartciti-holodeck",
+   "fabric": "my-fabric/holodeck.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/smartciti-holodeck.json",
+    "seated": 3,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 4,
+    "held": 1,
+    "progress": "3/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 11,
+   "name": "Molecular",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s11-molecular",
+   "fabric": "my-fabric/worlds/s11-molecular/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s11-molecular.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s11-molecular/spec.json#series"
+  },
+  {
+   "series": 12,
+   "name": "Parking Smart.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s12-parking-smart-x",
+   "fabric": "my-fabric/worlds/s12-parking-smart-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s12-parking-smart-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s12-parking-smart-x/spec.json#series"
+  },
+  {
+   "series": 13,
+   "name": "Gonstead.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s13-gonstead-x",
+   "fabric": "my-fabric/worlds/s13-gonstead-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s13-gonstead-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s13-gonstead-x/spec.json#series"
+  },
+  {
+   "series": 14,
+   "name": "AskDoc.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s14-askdoc-x",
+   "fabric": "my-fabric/worlds/s14-askdoc-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s14-askdoc-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s14-askdoc-x/spec.json#series"
+  },
+  {
+   "series": 15,
+   "name": "RomanBridge DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s15-romanbridge-dao",
+   "fabric": "my-fabric/worlds/s15-romanbridge-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s15-romanbridge-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s15-romanbridge-dao/spec.json#series"
+  },
+  {
+   "series": 16,
+   "name": "EchoDawn DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s16-echodawn-dao",
+   "fabric": "my-fabric/worlds/s16-echodawn-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s16-echodawn-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s16-echodawn-dao/spec.json#series"
+  },
+  {
+   "series": 17,
+   "name": "Curable.Blockchain DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s17-curable-blockchain-dao",
+   "fabric": "my-fabric/worlds/s17-curable-blockchain-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s17-curable-blockchain-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s17-curable-blockchain-dao/spec.json#series"
+  },
+  {
+   "series": 18,
+   "name": "BioDao.Blockchain",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "biota-blockchain",
+   "fabric": "my-fabric/worlds/biota-blockchain/world.json",
+   "status": "coming soon",
+   "anchor": {
+    "lat": -38.71260348427612,
+    "lon": -27.248278366617797
+   },
+   "team": {
+    "file": "agents/dao/biota-blockchain.json",
+    "seated": 4,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "8/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 19,
+   "name": "Moscone.X",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s19-moscone-x",
+   "fabric": "my-fabric/worlds/s19-moscone-x/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s19-moscone-x.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s19-moscone-x/spec.json#series"
+  },
+  {
+   "series": 20,
+   "name": "CMMC",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s20-cmmc",
+   "fabric": "my-fabric/worlds/s20-cmmc/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s20-cmmc.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 3,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s20-cmmc/spec.json#series"
+  },
+  {
+   "series": 21,
+   "name": "Incubator DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s21-incubator-dao",
+   "fabric": "my-fabric/worlds/s21-incubator-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s21-incubator-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 7,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s21-incubator-dao/spec.json#series"
+  },
+  {
+   "series": 22,
+   "name": "Get.Delivery DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s22-get-delivery-dao",
+   "fabric": "my-fabric/worlds/s22-get-delivery-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s22-get-delivery-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s22-get-delivery-dao/spec.json#series"
+  },
+  {
+   "series": 23,
+   "name": "Avatar.Chat",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s23-avatar-chat",
+   "fabric": "my-fabric/worlds/s23-avatar-chat/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s23-avatar-chat.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s23-avatar-chat/spec.json#series"
+  },
+  {
+   "series": 24,
+   "name": "Donatello DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s24-donatello-dao",
+   "fabric": "my-fabric/worlds/s24-donatello-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s24-donatello-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s24-donatello-dao/spec.json#series"
+  },
+  {
+   "series": 25,
+   "name": "MyPet.AI",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s25-mypet-ai",
+   "fabric": "my-fabric/worlds/s25-mypet-ai/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s25-mypet-ai.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s25-mypet-ai/spec.json#series"
+  },
+  {
+   "series": 26,
+   "name": "Lyka DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s26-lyka-dao",
+   "fabric": "my-fabric/worlds/s26-lyka-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s26-lyka-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s26-lyka-dao/spec.json#series"
+  },
+  {
+   "series": 27,
+   "name": "Genomic.DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s27-genomic-dao",
+   "fabric": "my-fabric/worlds/s27-genomic-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s27-genomic-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s27-genomic-dao/spec.json#series"
+  },
+  {
+   "series": 28,
+   "name": "Genomic.Blockchain",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s28-genomic-blockchain",
+   "fabric": "my-fabric/worlds/s28-genomic-blockchain/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s28-genomic-blockchain.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s28-genomic-blockchain/spec.json#series"
+  },
+  {
+   "series": 29,
+   "name": "Metaverse DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s29-metaverse-dao",
+   "fabric": "my-fabric/worlds/s29-metaverse-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s29-metaverse-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 6,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s29-metaverse-dao/spec.json#series"
+  },
+  {
+   "series": 30,
+   "name": "Robotics DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "robotics-dao",
+   "fabric": "my-fabric/worlds/robotics-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/robotics-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json"
+  },
+  {
+   "series": 31,
+   "name": "Aerospace DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s31-aerospace-dao",
+   "fabric": "my-fabric/worlds/s31-aerospace-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s31-aerospace-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s31-aerospace-dao/spec.json#series"
+  },
+  {
+   "series": 32,
+   "name": "Solar DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s32-solar-dao",
+   "fabric": "my-fabric/worlds/s32-solar-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s32-solar-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s32-solar-dao/spec.json#series"
+  },
+  {
+   "series": 33,
+   "name": "InfoGurus",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s33-infogurus",
+   "fabric": "my-fabric/worlds/s33-infogurus/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s33-infogurus.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s33-infogurus/spec.json#series"
+  },
+  {
+   "series": 34,
+   "name": "ALS DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s34-als-dao",
+   "fabric": "my-fabric/worlds/s34-als-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s34-als-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s34-als-dao/spec.json#series"
+  },
+  {
+   "series": 35,
+   "name": "Parkinsons DAO",
+   "parent": "W3 LLC",
+   "kind": "series cell",
+   "world": "s35-parkinsons-dao",
+   "fabric": "my-fabric/worlds/s35-parkinsons-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/s35-parkinsons-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "6/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/series.json + worlds/s35-parkinsons-dao/spec.json#series"
+  }
+ ],
+ "focus_domains": [
+  {
+   "series": null,
+   "name": "Cancer DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "cancer-dao",
+   "fabric": "my-fabric/worlds/cancer-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/cancer-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus)",
+   "note": "not a series cell: sits under the PBC directly"
+  },
+  {
+   "series": null,
+   "name": "Robotics DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "robotics-dao",
+   "fabric": "my-fabric/worlds/robotics-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/robotics-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus; site (named subsidiary))",
+   "note": "also series 30"
+  },
+  {
+   "series": null,
+   "name": "Ecology DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "ecology-dao",
+   "fabric": "my-fabric/worlds/ecology-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/ecology-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 3,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus)",
+   "note": "not a series cell: sits under the PBC directly"
+  },
+  {
+   "series": null,
+   "name": "Climate DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "climate-dao",
+   "fabric": "my-fabric/worlds/climate-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/climate-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus)",
+   "note": "not a series cell: sits under the PBC directly"
+  },
+  {
+   "series": null,
+   "name": "Education DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "education-dao",
+   "fabric": "my-fabric/worlds/education-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/education-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus)",
+   "note": "not a series cell: sits under the PBC directly"
+  },
+  {
+   "series": null,
+   "name": "Public Health DAO",
+   "parent": "AGI Future Foundation PBC",
+   "kind": "PBC focus-domain DAO",
+   "world": "public-health-dao",
+   "fabric": "my-fabric/worlds/public-health-dao/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/public-health-dao.json",
+    "seated": 8,
+    "shared": 2,
+    "roles": 8,
+    "proposals": 2,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/PBC.json focus_domains (mission: Global Issue Focus)",
+   "note": "not a series cell: sits under the PBC directly"
+  }
+ ],
+ "tracks": [
+  {
+   "series": null,
+   "name": "Agentic Payments",
+   "parent": null,
+   "kind": "program track (no series assigned)",
+   "world": "agentic-payments",
+   "fabric": "my-fabric/worlds/agentic-payments/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/agentic-payments.json",
+    "seated": 3,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md",
+   "note": "which series cell, if any, holds this track is a steward decision (charter.amend / proposal.enact are human-only)"
+  },
+  {
+   "series": null,
+   "name": "Agents That Deploy Infrastructure",
+   "parent": null,
+   "kind": "program track (no series assigned)",
+   "world": "agents-deploy-infrastructure",
+   "fabric": "my-fabric/worlds/agents-deploy-infrastructure/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/agents-deploy-infrastructure.json",
+    "seated": 1,
+    "shared": 0,
+    "roles": 8,
+    "proposals": 5,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md",
+   "note": "which series cell, if any, holds this track is a steward decision (charter.amend / proposal.enact are human-only)"
+  },
+  {
+   "series": null,
+   "name": "Autonomous Organizations",
+   "parent": null,
+   "kind": "program track (no series assigned)",
+   "world": "autonomous-organizations",
+   "fabric": "my-fabric/worlds/autonomous-organizations/world.json",
+   "status": "coming soon",
+   "anchor": null,
+   "team": {
+    "file": "agents/dao/autonomous-organizations.json",
+    "seated": 4,
+    "shared": 1,
+    "roles": 8,
+    "proposals": 4,
+    "held": 1,
+    "progress": "7/10",
+    "evals": "18/18",
+    "stewards": [
+     "steward-1",
+     "steward-2",
+     "steward-3"
+    ],
+    "signatures_required": true
+   },
+   "source": "worlds/sources/founder-tracks-2026-09-28.md",
+   "note": "which series cell, if any, holds this track is a steward decision (charter.amend / proposal.enact are human-only)"
+  }
+ ],
+ "findings": [
+  {
+   "severity": "thin",
+   "finding": "6 team(s) seat fewer than 4 of 8 charter roles from their own agents (the coordinator holds the rest): cognition-x 1/8, empathic-x 2/8, diagnostic-x 3/8, smartciti-holodeck 3/8, agentic-payments 3/8, agents-deploy-infrastructure 1/8",
+   "decision": "more specialists come from the source material; a coordinator-held role is honest, not a defect"
+  },
+  {
+   "severity": "governance",
+   "finding": "one Steward Council (steward-1, steward-2, steward-3) serves all 44 cells; the seats are the ledger's throwaway test keys",
+   "decision": "per-cell stewards and real keys are steward.appoint - human-only; nothing here can seat a person"
+  },
+  {
+   "severity": "gap",
+   "finding": "31 series cells have no RP1 location",
+   "decision": "a founder line per cell in worlds/focus.json"
+  },
+  {
+   "severity": "decision",
+   "finding": "3 program tracks are not assigned to a series cell: Agentic Payments, Agents That Deploy Infrastructure, Autonomous Organizations",
+   "decision": "a steward decides whether each becomes a cell, joins one, or stays a program"
+  },
+  {
+   "severity": "note",
+   "finding": "no cell holds a treasury; treasury.transfer is refused to every signer",
+   "decision": "a treasury, if any, is opened by the founder outside this repository"
+  }
+ ],
+ "evals": [
+  {
+   "name": "every series number is unique",
+   "ok": true
+  },
+  {
+   "name": "every series maps to at most one world, and a mapped world exists on disk",
+   "ok": true
+  },
+  {
+   "name": "no two series claim the same world",
+   "ok": true
+  },
+  {
+   "name": "every world with a fabric has a management team",
+   "ok": true
+  },
+  {
+   "name": "every team requires signed steward decisions",
+   "ok": true
+  },
+  {
+   "name": "the apex seats no agent: its programs and ownership classes are human structure",
+   "ok": true
+  },
+  {
+   "name": "the reserved-for-humans list is the same in every team",
+   "ok": true
+  },
+  {
+   "name": "every finding names a decision and who takes it",
+   "ok": true
+  },
+  {
+   "name": "focus-domain DAOs are listed under the PBC, and the one that is also a series says so",
+   "ok": true
+  }
+ ],
+ "totals": {
+  "series": 35,
+  "cells_with_world": 35,
+  "cells_with_team": 35,
+  "focus_domains": 6,
+  "tracks": 3,
+  "teams": 44,
+  "seats_by_own_agents": 303,
+  "open_proposals": 154,
+  "findings": 5
+ },
+ "honesty": "a computed map and review of the files in this repository: the structure is the PBC's own, the cells are the series list's own, nothing is seated or decided here; every finding names the human decision it waits on",
+ "self_test": [
+  {
+   "what": "a duplicate series number",
+   "ok": true,
+   "failed": [
+    "every series number is unique"
+   ]
+  }
+ ]
+}

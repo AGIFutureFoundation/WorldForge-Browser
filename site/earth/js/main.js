@@ -8,6 +8,7 @@ import { makeFleet } from './robots.js';
 import { makeSkyFX, weatherPanel } from './fx.js';
 import { makeGame } from './game.js';
 import { wireHud } from './hud.js';
+import { ps2ify } from './ps2.js';
 import { initTraining, SCENARIOS } from './training-sim.js';
 
 const q = new URLSearchParams(location.search);
@@ -53,7 +54,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   // ---- game layer: NPC agents + district pavilions + Steward Seals + learning board
   const game = makeGame({ S, ground, world, slug, quests: world?.quests || [] });
   S.scene.add(game.group); window.__wfTalkers = game.talkers;
-  if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground);
+  if (q.get('hd') === '1') loadHeroFoliage(S.scene, ground).then(() => ps2ify(S.scene)); // re-run the PS2 pass when late meshes land;
 
   const counts = { ...veg.userData.counts, buildings: geo?.features?.building?.length || 0, ...water.userData.counts,
     robots: fleet.userData.episodes.length, zones: zones.length, imageryZoom: img?.zoom || 0 };
@@ -100,6 +101,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   }
 
   const tour = q.get('tour') === '1';
+  ps2ify(S.scene);   // PS2 pass: vertex-lit look + CRT overlay (no-op with ?modern=1)
   const stops = zones.length ? [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))] : [new THREE.Vector3(0, 0, 0)];
   let tourI = 0, tourClock = 0;
   if (tour) fly(stops[0], 140);

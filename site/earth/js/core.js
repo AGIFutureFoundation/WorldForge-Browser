@@ -8,15 +8,23 @@ import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
 export const clock = new THREE.Clock();
 export const uniforms = { uTime: { value: 0 }, uWind: { value: new THREE.Vector2(1, 0.3) }, uWeather: { value: 'clear' } };
 
+// PS2-era look is the DEFAULT for worlds: vertex-lit materials, half-res render with chunky
+// pixel upscale, hard basic shadows, pop-in fog, short draw distance. ?modern=1 opts out
+// and restores the full-fidelity renderer (antialiasing, PCF soft shadows, ACES exposure).
+export const PS2 = new URLSearchParams(location.search).get('modern') !== '1';
+
 export function makeStage(canvas) {
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, preserveDrawingBuffer: true });
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: !PS2, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
+  if (PS2) {
+    renderer.setPixelRatio(Math.max(0.35, Math.min(devicePixelRatio, 2) * 0.42)); // ~PS2-class internal resolution
+    canvas.style.imageRendering = 'pixelated';                                   // chunky upscale, like a 480i CRT
+  } else renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = 0.55;
+  renderer.toneMappingExposure = PS2 ? 0.72 : 0.55;           // Lambert lighting is flat: lift exposure to compensate
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  renderer.shadowMap.type = PS2 ? THREE.BasicShadowMap : THREE.PCFSoftShadowMap; // hard-edged PS2-era shadows
   const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(55, 1, 0.5, 9000);
+  const camera = new THREE.PerspectiveCamera(55, 1, 0.5, PS2 ? 4800 : 9000);     // shorter draw distance in PS2 mode
   camera.position.set(-260, 210, 320);
   const controls = new OrbitControls(camera, canvas);
   controls.enableDamping = true; controls.maxPolarAngle = Math.PI * 0.49; controls.maxDistance = 1600;
@@ -25,11 +33,11 @@ export function makeStage(canvas) {
   const su = sky.material.uniforms;
   su.turbidity.value = 6; su.rayleigh.value = 1.4; su.mieCoefficient.value = 0.004; su.mieDirectionalG.value = 0.8;
   const sun = new THREE.DirectionalLight(0xfff1dc, 2.6);
-  sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048);
+  sun.castShadow = true; sun.shadow.mapSize.set(PS2 ? 1024 : 2048, PS2 ? 1024 : 2048);
   Object.assign(sun.shadow.camera, { left: -420, right: 420, top: 420, bottom: -420, near: 10, far: 2000 });
-  scene.add(sun, sun.target, new THREE.HemisphereLight(0xcfe6ff, 0x5a5236, 0.9));
+  scene.add(sun, sun.target, new THREE.HemisphereLight(0xcfe6ff, 0x5a5236, PS2 ? 1.15 : 0.9));
   scene.background = new THREE.Color(0x9ec4e6);
-  scene.fog = new THREE.Fog(0xb4d0ea, 900, 3200);
+  scene.fog = PS2 ? new THREE.Fog(0xb4d0ea, 420, 2300) : new THREE.Fog(0xb4d0ea, 900, 3200); // pop-in fog: the PS2 draw-distance trick
   const sunDir = new THREE.Vector3();
   function setSun(hour) {           // 6..18 daylight arc
     const t = (hour - 6) / 12, elev = Math.sin(Math.PI * Math.min(Math.max(t, 0.02), 0.98)) * 62 + 3;
