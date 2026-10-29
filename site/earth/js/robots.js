@@ -2,9 +2,10 @@
 // (dimensions, mass, payload, DOF, drive class, brand colors). Each runs a ROS 2-style task
 // from earth/team (eval-checked): publishes simulated /odom, /cmd_vel and /joint_states,
 // plans over the real elevation, honours safety stops, and writes one RICH JSONL training
-// record per episode (schema worldforge-earth/robot-episode/2: manufacturer block, sampled
-// route, battery/thermal model, event log, live wind context). Visuals are scaffold-accurate
-// (simple geoms at true proportions); kinematics remain honest training-data scaffolds.
+// record per episode (schema worldforge-earth/robot-episode/3: manufacturer block, sampled
+// route, per-tick ACTUATED JOINT TRACE (gait/pose trajectories for the movement LM), battery/
+// thermal model, event log, live wind context). Schema /2 records remain valid downstream.
+// Visuals are scaffold-accurate (simple geoms at true proportions); kinematics remain honest training-data scaffolds.
 import * as THREE from 'three';
 import { uniforms } from './core.js';
 
@@ -190,18 +191,19 @@ export function makeFleet(tasks, zones, ground, world) {
     const at = (t.cls === 'arm' || t.cls === 'drone') ? new THREE.Vector2(goal.x + Math.cos(a) * 8, goal.z + Math.sin(a) * 8) : start;
     o.position.set(at.x, ground.height(at.x, at.y) + 0.02, at.y); g.add(o);
     episodes.push({ task, t, o, goal: new THREE.Vector2(goal.x + Math.cos(a) * 6, goal.z + Math.sin(a) * 6),
-      start: at.clone(), t0: 0, dist: 0, maxSlope: 0, stops: 0, state: 'running', route: [], events: [],
+      start: at.clone(), t0: 0, dist: 0, maxSlope: 0, stops: 0, state: 'running', route: [], events: [], joints: [],
       sampleT: 0, ros: { cmd_vel: [0, 0], odom: [at.x, at.y, 0] } });
   });
   function record(e, outcome) {
     const t = e.t;
     const battery = t.battery_min ? Math.max(2, Math.round(100 - e.t0 / 60 / t.battery_min * 100)) : 100;
-    const r = { schema: 'worldforge-earth/robot-episode/2', world: world.slug, place: world.place,
+    const r = { schema: 'worldforge-earth/robot-episode/3', world: world.slug, place: world.place,
       robot: e.task.robot, manufacturer: { brand: t.brand, model: t.model, class: t.cls, dims_m: t.size,
         mass_kg: t.mass_kg, payload_kg: t.payload_kg, dof: t.dof, sensors: t.sensors, facts: t.facts },
       task_id: e.task.id, zone: e.task.zone, ros_action: e.task.ros?.action, topics: e.task.ros?.topics,
       outcome, duration_s: +e.t0.toFixed(2), path_m: +e.dist.toFixed(2), max_slope_deg: +e.maxSlope.toFixed(1),
-      safety_stops: e.stops, events: e.events.slice(0, 24), route: e.route.slice(0, 90),
+      safety_stops: e.stops, events: e.events.slice(0, 24), route: e.route.slice(0, 240),
+      joints: e.joints.slice(0, 240), joints_hz: 2, dof_reported: t.dof,
       success_checks: e.task.success, human_in_loop: e.task.human_in_loop,
       feedback_fields: e.task.feedback_schema?.fields,
       battery_pct: battery, core_temp_c: +(35 + Math.sin(e.t0 / 20) * 3 + (e.stops * 0.4)).toFixed(1),
@@ -210,13 +212,21 @@ export function makeFleet(tasks, zones, ground, world) {
       sim: 'kinematic scaffold (visuals spec-accurate, not vendor physics)', ts: new Date().toISOString() };
     records.push(r); return r;
   }
+  const jointsAt = (e) => { const u = e.o.userData, j = [];   // actuated DOF snapshot for the movement LM
+    (u.legs || []).forEach(l => { j.push(+((l.hip?.rotation.x ?? l.rotation.x) || 0).toFixed(2), +(l.knee?.rotation.z ?? 0).toFixed(2)); });
+    (u.arms || []).forEach(a => j.push(+a.rotation.x.toFixed(2)));
+    if (u.joint) j.push(+u.joint.rotation.z.toFixed(2));
+    if (u.wrist) j.push(+u.wrist.rotation.x.toFixed(2));
+    if (u.scan) j.push(+u.scan.rotation.y.toFixed(2));
+    return j; };
   const sample = (e) => { e.route.push([+e.t0.toFixed(1), +e.o.position.x.toFixed(1), +e.o.position.z.toFixed(1),
-    +e.o.rotation.y.toFixed(2), +Math.max(0, ground.height(e.o.position.x, e.o.position.z)).toFixed(1)]); };
+    +e.o.rotation.y.toFixed(2), +Math.max(0, ground.height(e.o.position.x, e.o.position.z)).toFixed(1)]);
+    e.joints.push(jointsAt(e)); };
   g.userData.tick = (dt) => {
     for (const e of episodes) {
       if (e.state !== 'running') continue;
       e.t0 += dt; e.sampleT += dt;
-      if (e.sampleT > 2) { sample(e); e.sampleT = 0; }
+      if (e.sampleT > 0.5) { sample(e); e.sampleT = 0; }   // 2 Hz route + joint sampling (movement-LM cadence)
       const t = e.t;
       // ---- idle-time animation of every actuated part (also runs while moving)
       const P = e.o.userData.props || []; P.forEach((p, k) => p.rotation.y += dt * (40 + k));
@@ -232,7 +242,7 @@ export function makeFleet(tasks, zones, ground, world) {
       }
       const p = new THREE.Vector2(e.o.position.x, e.o.position.z), to = e.goal.clone().sub(p), d = to.length();
       if (d < 1.5) {                      // episode done: record it, then run the next episode back to the start
-        record(e, 'success'); e.t0 = 0; e.dist = 0; e.maxSlope = 0; e.stops = 0; e.route = []; e.events = [];
+        record(e, 'success'); e.t0 = 0; e.dist = 0; e.maxSlope = 0; e.stops = 0; e.route = []; e.events = []; e.joints = [];
         const back = e.home || (e.home = new THREE.Vector2(e.o.position.x, e.o.position.z));
         [e.goal, e.home] = [e.start || back, e.goal]; e.start = e.home; continue;
       }

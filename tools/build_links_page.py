@@ -30,6 +30,7 @@ DESC = {
     'earth/live-dashboard.html': 'Live dashboard: D3/Chart graphs over worlds, videos, geo and datasets.',
     'earth/dashboard.html': 'WorldForge dashboard: operations overview.',
     'earth/training.html': 'Trades training simulator home.',
+    'earth/motion-lm.html': 'Movement LM: our own tiny GPT over robot + human movement episodes (trained locally), samples and replays in-browser.',
     'earth/ar-training.html': 'AR training: anchors and overlays for on-site use.',
     'earth/console.html': 'Earth console: per-world board with geo/video/content status and deep links.',
     'consoles/worldforge/index.html': 'WorldForge console: Master Cards, rights, avatars and voice lines.',

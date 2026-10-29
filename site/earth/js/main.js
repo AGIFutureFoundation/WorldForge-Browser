@@ -10,6 +10,7 @@ import { makeGame } from './game.js';
 import { wireHud } from './hud.js';
 import { ps2ify } from './ps2.js';
 import { initTraining, SCENARIOS } from './training-sim.js';
+import { wireMotionCorpus } from './motion.js';
 
 const q = new URLSearchParams(location.search);
 const slug = q.get('world') || 'climate-dao';
@@ -84,6 +85,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
 
   // Initialize training simulation
   const training = initTraining();
+  wireMotionCorpus({ slug, fleet, training });   // "Movement corpus" button: robot + human episodes, one JSONL
   const sector = meta?.trades?.sector || 'General';
   const scenarios = SCENARIOS[sector] || SCENARIOS['General'];
   window.__wf.trainingScenarios = scenarios;
@@ -117,7 +119,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     S.controls.update(); S.renderer.render(S.scene, S.camera);
   });
   $('status').hidden = true;
-  window.__wf = { ready: true, slug, counts, records: () => fleet.userData.records.length, fly, stops, training,
+  window.__wf = { ready: true, slug, counts, trainingScenarios: scenarios, records: () => fleet.userData.records.length, fly, stops, training,
     debug: () => fleet.userData.episodes.map(e => ({ id: e.task.id, cls: e.t.cls, state: e.state, t0: +e.t0.toFixed(1), dist: +e.dist.toFixed(1),
       at: [+e.o.position.x.toFixed(1), +e.o.position.z.toFixed(1)], goal: [+e.goal.x.toFixed(1), +e.goal.y.toFixed(1)] })) };
 })().catch(e => { status('Could not load this world: ' + e.message); window.__wf = { ready: false, error: String(e) }; });

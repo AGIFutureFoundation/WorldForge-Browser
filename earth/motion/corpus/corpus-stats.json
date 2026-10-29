@@ -1,0 +1,101 @@
+{
+ "episodes": {
+  "robot": 1030,
+  "human": 2720,
+  "total": 3750
+ },
+ "worlds": 544,
+ "sectors": [
+  "Aerospace",
+  "Energy",
+  "Entertainment",
+  "Finance",
+  "General",
+  "Healthcare",
+  "Logistics",
+  "Manufacturing",
+  "Solar",
+  "Tech",
+  "Tourism"
+ ],
+ "scenarios": {
+  "Tech": [
+   "Server Deployment",
+   "Network Cabling",
+   "Hardware Testing",
+   "Cleanroom Protocol",
+   "Equipment Calibration"
+  ],
+  "Energy": [
+   "Grid Automation",
+   "Solar Install",
+   "Wind Turbine Maint",
+   "Substation Setup",
+   "Energy Storage"
+  ],
+  "Aerospace": [
+   "Drone Assembly",
+   "Aircraft Maint",
+   "Satellite Deploy",
+   "Avionics Testing",
+   "Quality Control"
+  ],
+  "Logistics": [
+   "Warehouse Sorting",
+   "Fleet Dispatch",
+   "Loading Ops",
+   "Inventory Mgmt",
+   "Route Planning"
+  ],
+  "Entertainment": [
+   "Stage Setup",
+   "Lighting Design",
+   "Sound Engineering",
+   "Event Production",
+   "Venue Automation"
+  ],
+  "Healthcare": [
+   "Pharmacy Auto",
+   "Lab Sample",
+   "Patient Transport",
+   "Sterilization",
+   "Supply Chain"
+  ],
+  "Finance": [
+   "Vault Automation",
+   "Trading Floor",
+   "Data Center",
+   "Security Patrol",
+   "Server Rack"
+  ],
+  "Solar": [
+   "Panel Install",
+   "Inverter Setup",
+   "Grid Connect",
+   "Maintenance",
+   "Monitoring"
+  ],
+  "Manufacturing": [
+   "Assembly Line",
+   "Welding Ops",
+   "Quality Inspect",
+   "Packaging",
+   "Material Handling"
+  ],
+  "Tourism": [
+   "Guest Services",
+   "Tour Guidance",
+   "Restaurant Auto",
+   "Event Setup",
+   "Guest Relations"
+  ],
+  "General": [
+   "Workplace Safety",
+   "Equipment Basics",
+   "Site Orientation",
+   "Team Coordination",
+   "Quality Basics"
+  ]
+ },
+ "bytes": 6336648
+}

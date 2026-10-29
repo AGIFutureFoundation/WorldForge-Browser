@@ -3,6 +3,10 @@ import * as THREE from 'three';
 
 const $ = (id) => document.getElementById(id);
 
+// deterministic seeded RNG so recorded human movements are reproducible per scenario
+function hashStr(s) { let h = 2166136261; for (const c of s) { h ^= c.codePointAt(0); h = Math.imul(h, 16777619) >>> 0; } return h >>> 0; }
+function mulberry32(seed) { let a = seed >>> 0; return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+
 export const SCENARIOS = {
   'Tech': [
     { name: 'Server Deployment', steps: ['Rack Setup', 'Network Config', 'Power On', 'Testing'], duration: 45 },
@@ -73,6 +77,13 @@ export const SCENARIOS = {
     { name: 'Restaurant Auto', steps: ['Setup', 'Config', 'Test', 'Service'], duration: 60 },
     { name: 'Event Setup', steps: ['Layout', 'Setup', 'Test', 'Go'], duration: 120 },
     { name: 'Guest Relations', steps: ['Check-In', 'Assist', 'Follow-Up', 'Survey'], duration: 45 }
+  ],
+  'General': [
+    { name: 'Workplace Safety', steps: ['Briefing', 'Hazard Scan', 'Task', 'Report'], duration: 30 },
+    { name: 'Equipment Basics', steps: ['Inspect', 'Operate', 'Maintain', 'Log'], duration: 45 },
+    { name: 'Site Orientation', steps: ['Check-In', 'Walkthrough', 'Practice', 'Review'], duration: 60 },
+    { name: 'Team Coordination', steps: ['Assign', 'Rehearse', 'Execute', 'Debrief'], duration: 40 },
+    { name: 'Quality Basics', steps: ['Standard', 'Self-Check', 'Fix', 'Verify'], duration: 35 }
   ]
 };
 
@@ -84,6 +95,28 @@ export class TrainingSim {
     this.timer = null;
     this.timeElapsed = 0;
     this.completed = [];
+    this.motions = [];               // human movement episodes (schema worldforge-earth/human-motion/1)
+    this.motionEp = null;
+    this.rng = null;
+  }
+
+  // human movement primitives for one union-module step, derived from the step's wording
+  // (walk to station, then the step's characteristic verbs, then a verification)
+  static stepMoves(name, rnd) {
+    const s = name.toLowerCase(), mv = [];
+    mv.push({ v: 'WALK', m: 3 + Math.floor(rnd() * 9), dir: Math.floor(rnd() * 16) });
+    if (/rack|mount|panel|install|load|wire|cable|frame|rig|build/.test(s))
+      mv.push({ v: 'LIFT', kg: +(1 + rnd() * 11).toFixed(1) }, { v: 'CARRY', m: +(1 + rnd() * 4).toFixed(1) }, { v: 'PLACE' });
+    if (/test|check|inspect|scan|verif|audit|ndt|quality|diagnos/.test(s))
+      mv.push({ v: 'INSPECT', s: 20 + Math.floor(rnd() * 40) });
+    if (/config|program|type|log|document|report|record|plan|cue|eq|mix|reconcil/.test(s))
+      mv.push({ v: 'TYPE', s: 30 + Math.floor(rnd() * 90) });
+    if (/gown|entry|exit|prep|clean|cycle|stock|receive|sort|count|collect/.test(s))
+      mv.push({ v: 'BEND', deg: 20 + Math.floor(rnd() * 40) });
+    if (/power|energize|switch|launch|deploy|activate|live|commission|press/.test(s))
+      mv.push({ v: 'REACH', m: +(0.4 + rnd() * 0.35).toFixed(2) }, { v: 'PRESS' });
+    mv.push({ v: 'CHECK' });
+    return mv;
   }
 
   startScenario(scenario) {
@@ -91,12 +124,21 @@ export class TrainingSim {
     this.currentStep = 0;
     this.score = 0;
     this.timeElapsed = 0;
+    this.rng = mulberry32(hashStr(scenario.name));
+    this.motionEp = { schema: 'worldforge-earth/human-motion/1', agent: 'human-trainee',
+      scenario: scenario.name, sector: scenario.sector || null, steps: [], ts: new Date().toISOString() };
     this.updateUI();
     this.startTimer();
   }
 
   completeStep() {
     if (!this.currentScenario || this.currentStep >= this.currentScenario.steps.length) return;
+    const stepName = this.currentScenario.steps[this.currentStep];
+    const moves = TrainingSim.stepMoves(stepName, this.rng);
+    if (this.motionEp) this.motionEp.steps.push({ step: stepName, elapsed_s: this.timeElapsed, moves,
+      posture: { bend_deg: moves.some(m => m.v === 'BEND') ? moves.find(m => m.v === 'BEND').deg : 0,
+        reach_m: +(0.3 + this.rng() * 0.4).toFixed(2),
+        load_kg: moves.find(m => m.v === 'LIFT')?.kg ?? 0 } });
     this.currentStep++;
     this.score += Math.max(10, 100 - this.timeElapsed);
     if (this.currentStep >= this.currentScenario.steps.length) {
@@ -108,6 +150,8 @@ export class TrainingSim {
   completeScenario() {
     if (this.timer) clearInterval(this.timer);
     this.completed.push({ scenario: this.currentScenario.name, score: this.score, time: this.timeElapsed, date: new Date().toISOString() });
+    if (this.motionEp) { this.motionEp.outcome = 'success'; this.motionEp.total_s = this.timeElapsed;
+      this.motions.push(this.motionEp); this.motionEp = null; }
     this.currentScenario = null;
     this.currentStep = 0;
   }
@@ -139,10 +183,12 @@ export class TrainingSim {
     this.currentStep = 0;
     this.score = 0;
     this.timeElapsed = 0;
+    this.motionEp = null;
     this.updateUI();
   }
 
   getCompleted() { return this.completed; }
+  getMotions() { return this.motions; }   // human movement episodes for the corpus
 }
 
 export function initTraining() {
