@@ -367,6 +367,13 @@ for (const route of ['/fabric/:fid/:ver', '/fabric/:fid/:ver/', '/fabric/:fid/:v
     const slug = RP1_FABRIC_IDS[c.req.param('fid')];
     const origin = new URL(c.req.url).origin;
     if (!slug) return c.json({ error: 'unknown_fabric_id', fid: c.req.param('fid'), known: Object.keys(RP1_FABRIC_IDS), hint: 'the AGI Corp fabrics are served by slug at /v2/rp1/fabric/:slug' }, 404, { 'access-control-allow-origin': '*' });
+    // the Dev Center wizard loads the SIGNED .msf (Metaverse Spatial Fabric, a JWS); serve it
+    // when the signed file exists, falling back to the plain fabric JSON.
+    const msfFile = path.join(FABRICS_DIR, 'signed', `${slug}.msf`);
+    if (fs.existsSync(msfFile)) {
+      const msf = fs.readFileSync(msfFile);
+      return new Response(msf, { headers: { 'content-type': 'application/octet-stream', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60' } });
+    }
     const fabric = rp1FabricJson(slug, origin);
     if (!fabric) return c.json({ error: 'fabric_unavailable', slug }, 404, { 'access-control-allow-origin': '*' });
     return c.json(fabric, 200, { 'content-type': 'application/json', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=60' });
