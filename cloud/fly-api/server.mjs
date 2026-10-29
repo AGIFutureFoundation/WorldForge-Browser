@@ -170,7 +170,7 @@ const serveFile = (c, absPath) => {
 app.get('/', (c) => c.json({
   service: 'worldforge-api',
   host: 'fly.io',
-  routes: ['/', '/health', '/v2/rp1/worlds', '/v2/rp1/worlds/:slug', '/v2/rp1/connections', '/v2/sneeze/plans', '/v2/sneeze/plans/:slug', '/v2/sneeze/assets/*', '/v2/worlds/:slug/preview.glb', '/v2/marketplace/projects', '/v2/motion/model'],
+  routes: ['/', '/health', '/v2/engine', '/v2/rp1/enter', '/v2/rp1/enter/:slug', '/v2/rp1/worlds', '/v2/rp1/worlds/:slug', '/v2/rp1/connections', '/v2/sneeze/plans', '/v2/sneeze/plans/:slug', '/v2/sneeze/assets/*', '/v2/worlds/:slug/preview.glb', '/v2/marketplace/projects', '/v2/motion/model'],
 }));
 
 app.get('/v2/rp1/worlds', (c) => {
@@ -247,6 +247,52 @@ app.get('/v2/rp1/connections', (c) => {
   }, 200, { 'cache-control': 'public, max-age=300' });
 });
 
+// --- WorldForge Engine: the entry engine for rp1.com ------------------------
+// WorldForge replaces Artemis as the way into RP1 for this content: it turns any
+// real-Earth place into an rp1.com space (the enter.rp1.com convention), registers
+// worlds at their real coordinates, and serves the Sneeze payload behind each link.
+const ENTER_URL = (lat, lon, rad) => `https://enter.rp1.com?start_cid=553&lat=${lat}&lon=${lon}&rad=${rad ?? 6371000}`;
+
+app.get('/v2/engine', (c) => c.json({
+  engine: 'WorldForge',
+  version: '1.0',
+  role: 'entry engine for rp1.com — a replacement for the Artemis metaverse browser client for this content: it turns real-Earth places into rp1.com spaces and serves the 3-D payload behind each enter link',
+  provider: 'AGI Future Foundation PBC · Powered by AGI Corp',
+  app: 'worldforge-api on fly.io',
+  worlds: { registered: WORLDS.length, mounted: rp1Worlds.size, sneezePlans: rp1Worlds.size },
+  conventions: {
+    enterUrl: 'https://enter.rp1.com?start_cid=553&lat=<LAT>&lon=<LON>&rad=6371000',
+    note: 'the same link shape rp1.com issues for registered spaces; rad defaults to 6371000 (Earth radius, metres)',
+  },
+  routes: [
+    'GET /v2/rp1/enter?lat=&lon=&rad=&go=1   any real-Earth place -> an rp1.com enter link (go=1 opens it via redirect)',
+    'GET /v2/rp1/enter/:slug?go=1            the enter link for a registered WorldForge world (go=1 opens it)',
+    'GET /v2/rp1/worlds · /v2/rp1/worlds/:slug · /v2/rp1/connections   the registry and the Fly.io connection list',
+    'GET /v2/sneeze/plans · /v2/sneeze/plans/:slug · /v2/sneeze/assets/* · /v2/worlds/:slug/preview.glb   the 3-D payload',
+  ],
+}, 200, { 'cache-control': 'public, max-age=300' }));
+
+app.get('/v2/rp1/enter', (c) => {
+  const lat = Number(c.req.query('lat'));
+  const lon = Number(c.req.query('lon'));
+  const rad = Number(c.req.query('rad')) || 6371000;
+  if (!Number.isFinite(lat) || !Number.isFinite(lon) || lat < -90 || lat > 90 || lon < -180 || lon > 180 || rad <= 0) {
+    return c.json({ error: 'bad_coordinates', hint: 'lat -90..90, lon -180..180, rad > 0 — e.g. /v2/rp1/enter?lat=40.7055&lon=-74.0135' }, 400);
+  }
+  const enter = ENTER_URL(lat, lon, rad);
+  if (c.req.query('go') === '1') return c.redirect(enter, 302);
+  return c.json({ engine: 'WorldForge', lat, lon, rad, enterUrl: enter, world: null }, 200, { 'cache-control': 'public, max-age=300' });
+});
+
+app.get('/v2/rp1/enter/:slug', (c) => {
+  const slug = c.req.param('slug');
+  const w = worldsBySlug.get(slug);
+  if (!w) return c.json({ error: 'unknown_world', slug, hint: 'GET /v2/rp1/worlds for the registry, or /v2/rp1/enter?lat=&lon= for any place' }, 404);
+  const enter = ENTER_URL(w.lat, w.lon, 6371000);
+  if (c.req.query('go') === '1') return c.redirect(enter, 302);
+  return c.json({ engine: 'WorldForge', slug, name: w.name, place: w.place, lat: w.lat, lon: w.lon, mounted: rp1Worlds.has(slug), enterUrl: enter }, 200, { 'cache-control': 'public, max-age=300' });
+});
+
 app.get('/v2/sneeze/plans', (c) => {
   const origin = new URL(c.req.url).origin;
   const plans = [...rp1Worlds.keys()].sort().map((slug) => {
@@ -295,7 +341,7 @@ app.get('/v2/worlds/:slug/preview.glb', (c) => {
   return serveFile(c, e.previewGlbPath);
 });
 
-app.notFound((c) => c.json({ error: 'not_found', hint: 'GET /, /v2/rp1/worlds, /v2/rp1/connections, /v2/sneeze/plans, /v2/marketplace/projects, /v2/motion/model' }, 404));
+app.notFound((c) => c.json({ error: 'not_found', hint: 'GET /v2/engine, /v2/rp1/enter?lat=&lon=, /v2/rp1/worlds, /v2/rp1/connections, /v2/sneeze/plans' }, 404));
 
 
 

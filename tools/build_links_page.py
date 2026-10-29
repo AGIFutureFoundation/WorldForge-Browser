@@ -32,6 +32,7 @@ DESC = {
     'earth/training.html': 'Trades training simulator home.',
     'earth/motion-lm.html': 'Movement LM: our own tiny GPT over robot + human movement episodes (trained locally), samples and replays in-browser.',
     'earth/rp1.html': 'RP1 worlds x Fly.io: every active RP1 space connected to its Fly.io-hosted world (enter.rp1.com anchors, Sneeze mount plans, preview GLBs, API links).',
+    'earth/engine.html': 'WorldForge Engine: the entry engine for rp1.com (a replacement for Artemis) — turn any real-Earth place into an rp1.com space, with the open enter API and embed snippets for others.',
     'earth/ar-training.html': 'AR training: anchors and overlays for on-site use.',
     'earth/console.html': 'Earth console: per-world board with geo/video/content status and deep links.',
     'consoles/worldforge/index.html': 'WorldForge console: Master Cards, rights, avatars and voice lines.',

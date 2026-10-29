@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WorldForge Engine - enter rp1.com from anywhere</title>
+<meta name="description" content="WorldForge is the entry engine for rp1.com - a replacement for Artemis. Turn any real-Earth place into an rp1.com space: 544 registered worlds, Sneeze 3-D payloads, open enter links.">
+<style>
+:root{--ink:#e9f1ef;--mut:#9fb1ad;--acc:#43c59e;--bg:#0b1214;--panel:rgba(9,18,22,.78)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:960px;margin:0 auto;padding:28px 16px 64px}h1{font-size:1.6rem;margin:.2em 0}h2{font-size:1.05rem;color:var(--acc);margin:26px 0 8px}
+p{color:var(--mut)}a{color:var(--acc)}code,pre{font:12px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:12px;overflow:auto}
+.panel{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:14px}
+input,select{background:#0d1a1f;color:var(--ink);border:1px solid #2b5a63;border-radius:8px;padding:7px 10px;font:inherit}
+button{background:#1f6b4c;color:var(--ink);border:1px solid #34d399;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit}
+button:hover{background:#34d399;color:#0b1214}
+table{border-collapse:collapse;width:100%;font-size:.82rem}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid rgba(255,255,255,.08);vertical-align:top}
+th{color:var(--mut);font-weight:600}td code{color:#34d399}
+.count{color:var(--acc);font-weight:700}
+#err{color:#f87171;font-size:.82rem;min-height:1.2em}
+</style></head><body><main>
+<h1>WorldForge Engine</h1>
+<p>The entry engine for <a href="https://www.rp1.com">rp1.com</a> &mdash; a replacement for Artemis as the way in.
+WorldForge turns any real-Earth place into an rp1.com space and serves the 3-D payload behind each enter link:
+<span class="count" id="n-worlds">544</span> registered worlds, <span class="count" id="n-mounted">41</span> with full
+Sneeze engine payloads, open enter links for any coordinates. Hosted on <a href="https://fly.io/apps/worldforge-api">Fly.io</a>
+by AGI Future Foundation PBC &middot; Powered by AGI Corp.</p>
+
+<h2>Enter any place right now</h2>
+<div class="panel">
+  lat <input id="lat" type="number" step="any" value="40.7055" style="width:110px">
+  lon <input id="lon" type="number" step="any" value="-74.0135" style="width:110px">
+  <button id="go">Enter in RP1</button>
+  <span id="err"></span>
+  <p style="margin:8px 0 0">enter link: <a id="enterlink" target="_blank" rel="noopener"></a></p>
+<h2>How others use the engine</h2>
+<p>One link. Drop it in any page, app or QR code &mdash; the engine turns the coordinates into an rp1.com entry:</p>
+<pre>&lt;a href="https://worldforge-api.fly.dev/v2/rp1/enter?lat=40.7055&amp;lon=-74.0135&amp;go=1"&gt;Enter this place in RP1&lt;/a&gt;</pre>
+<p>Or resolve the link first (JSON), for any place on Earth:</p>
+<pre>GET https://worldforge-api.fly.dev/v2/rp1/enter?lat=51.4967&amp;lon=0.0367
+&lt;- { "engine": "WorldForge", "enterUrl": "https://enter.rp1.com?start_cid=553&amp;lat=51.4967&amp;lon=0.0367&amp;rad=6371000" }</pre>
+
+<h2>API</h2>
+<table>
+<tr><th>Route</th><th>What it does</th></tr>
+<tr><td><code>GET /v2/engine</code></td><td>engine manifest: identity, conventions, world counts</td></tr>
+<tr><td><code>GET /v2/rp1/enter?lat=&amp;lon=&amp;rad=[&amp;go=1]</code></td><td>any real-Earth place &rarr; an rp1.com enter link (go=1 opens it)</td></tr>
+<tr><td><code>GET /v2/rp1/enter/:slug?go=1</code></td><td>enter link for a registered WorldForge world (go=1 opens it)</td></tr>
+<tr><td><code>GET /v2/rp1/worlds</code> &middot; <code>/v2/rp1/worlds/:slug</code></td><td>the 544-world registry (place, coordinates, enter link, mount status)</td></tr>
+<tr><td><code>GET /v2/rp1/connections</code></td><td>every RP1 space connected to its Fly.io-hosted world</td></tr>
+<tr><td><code>GET /v2/sneeze/plans[/:slug]</code> &middot; <code>/v2/worlds/:slug/preview.glb</code></td><td>the Sneeze 3-D payload (mount plans, shared assets, preview GLBs)</td></tr>
+</table>
+<p style="margin-top:24px;font-size:.75rem"><a href="index.html">All worlds</a> &middot; <a href="rp1.html">RP1 worlds &times; Fly.io directory</a> &middot; engine service on <a href="https://fly.io/apps/worldforge-api">fly.io</a></p>
+</main>
+<script>
+const API = 'https://worldforge-api.fly.dev';
+const q = (s) => document.getElementById(s);
+const link = (lat, lon) => `https://enter.rp1.com?start_cid=553&lat=${lat}&lon=${lon}&rad=6371000`;
+function setEnter() {
+  const lat = parseFloat(q('lat').value), lon = parseFloat(q('lon').value), err = q('err');
+  if (!isFinite(lat) || !isFinite(lon) || lat < -90 || lat > 90 || lon < -180 || lon > 180) { err.textContent = 'lat -90..90, lon -180..180'; return null; }
+  err.textContent = ''; const u = link(lat, lon); q('enterlink').href = u; q('enterlink').textContent = u.replace('https://', ''); return u;
+}
+q('go').onclick = () => { const u = setEnter(); if (u) window.open(u, '_blank', 'noopener'); };
+q('lat').oninput = q('lon').oninput = setEnter; setEnter();
+fetch('worlds.json').then(r => r.json()).then(ws => {
+  q('n-worlds').textContent = ws.length;
+  const sel = q('wsl'); sel.innerHTML = '';
+  for (const w of ws) { const o = document.createElement('option'); o.value = w.slug; o.textContent = `${w.name} — ${w.place}`; sel.appendChild(o); }
+  sel.onchange = () => { const w = ws.find(x => x.slug === sel.value); if (!w) return; q('winfo').textContent = `${w.name} · ${w.place}`; q('lat').value = w.lat; q('lon').value = w.lon; setEnter(); };
+  q('wgo').onclick = () => { const w = ws.find(x => x.slug === sel.value); if (w) window.open(`${API}/v2/rp1/enter/${w.slug}?go=1`, '_blank', 'noopener'); };
+  fetch(`${API}/v2/engine`).then(r => r.json()).then(e => { q('n-mounted').textContent = e.worlds.mounted; }).catch(() => {});
+}).catch(() => { q('wsl').innerHTML = '<option value="">worlds.json unavailable</option>'; });
+</script>
+</body></html>
+
+</div>
+
+<h2>Enter a registered world</h2>
+<div class="panel">
+  <select id="wsl"><option value="">loading 544 worlds...</option></select>
+  <button id="wgo">Enter world in RP1</button>
+  <p id="winfo" style="margin:8px 0 0"></p>
+</div>
