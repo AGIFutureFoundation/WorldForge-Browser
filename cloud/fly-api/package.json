@@ -1,0 +1,13 @@
+{
+  "name": "worldforge-fly-api",
+  "version": "1.0.0",
+  "description": "WorldForge API on Fly.io: marketplace v2 routes (shared with the Cloudflare Worker) + movement LM artifacts",
+  "type": "module",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.13.13"
+  }
+}

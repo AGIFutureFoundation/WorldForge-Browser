@@ -1,0 +1,30 @@
+# fly.toml -- WorldForge API on Fly.io (marketplace v2 + movement LM artifacts).
+# Deploy: put FLY_API_TOKEN in .env (repo root, gitignored) or the GitHub secret FLY_API_TOKEN,
+# then `bash cloud/fly-api/deploy.sh` (locally) or push to main (GitHub workflow).
+# If "worldforge-api" is taken in your Fly org, change the name below (and the deploy command).
+app = "worldforge-api"
+primary_region = "sjc"
+
+[build]
+  dockerfile = "cloud/fly-api/Dockerfile"
+
+[env]
+  PORT = "8080"
+
+[[services]]
+  internal_port = 8080
+  protocol = "tcp"
+
+  [[services.ports]]
+    port = 443
+    handlers = ["tls", "http"]
+
+  [services.concurrency]
+    type = "requests"
+    soft_limit = 200
+    hard_limit = 250
+
+  [[services.http_checks]]
+    path = "/health"
+    interval = "10s"
+    timeout = "2s"
