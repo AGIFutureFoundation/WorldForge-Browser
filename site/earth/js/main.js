@@ -115,7 +115,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
   }
 
   const tour = q.get('tour') === '1';
-  ps2ify(S.scene);   // PS2 pass: vertex-lit look + CRT overlay (no-op with ?modern=1)
+  const ps2 = ps2ify(S.scene);   // PS2 pass: vertex-lit look + texture budget + CRT overlay (no-op with ?modern=1)
   const stops = zones.length ? [new THREE.Vector3(0, 0, 0), ...zones.map(z => new THREE.Vector3(z.x, ground.height(z.x, z.z), z.z))] : [new THREE.Vector3(0, 0, 0)];
   let tourI = 0, tourClock = 0;
   if (tour) fly(stops[0], 140);
@@ -131,7 +131,7 @@ const DIRS = { N: [0, 1], NE: [-0.7, 0.7], E: [-1, 0], SE: [-0.7, -0.7], S: [0, 
     S.controls.update(); S.renderer.render(S.scene, S.camera);
   });
   $('status').hidden = true;
-  window.__wf = { ready: true, slug, counts, trainingScenarios: scenarios, records: () => fleet.userData.records.length, fly, stops, training,
+  window.__wf = { ready: true, slug, counts, ps2, trainingScenarios: scenarios, records: () => fleet.userData.records.length, fly, stops, training,
     debug: () => fleet.userData.episodes.map(e => ({ id: e.task.id, cls: e.t.cls, state: e.state, t0: +e.t0.toFixed(1), dist: +e.dist.toFixed(1),
       at: [+e.o.position.x.toFixed(1), +e.o.position.z.toFixed(1)], goal: [+e.goal.x.toFixed(1), +e.goal.y.toFixed(1)] })) };
 })().catch(e => { status('Could not load this world: ' + e.message); window.__wf = { ready: false, error: String(e) }; });

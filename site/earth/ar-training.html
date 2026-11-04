@@ -5,47 +5,50 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WorldForge AR Training - Pokemon Go Style Robotics</title>
 <style>
+/* Era-consistent skin (SMARTCITI-STYLE.md): PS2-menu chrome -- deep indigo panels, bright cyan
+   titles with hard 1px offset shadows (no blur: composite era), boxier beveled buttons, bold
+   condensed UI type + mono telemetry. Layout, interactions and difficulty colors unchanged. */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, sans-serif; background: #0a0e17; color: #e2e8f0; }
+body { font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif; background: #0b0e2a; color: #e8ecff; }
 #map-container { position: relative; width: 100%; height: 100vh; overflow: hidden; }
-#map { width: 100%; height: 100%; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
-#hud { position: absolute; top: 0; left: 0; right: 0; padding: 16px; background: rgba(15,23,42,0.9); display: flex; justify-content: space-between; align-items: center; }
-#hud h1 { font-size: 18px; color: #60a5fa; }
-.hud-stats { display: flex; gap: 16px; font-size: 14px; }
-.hud-stats span { background: #1e293b; padding: 6px 12px; border-radius: 8px; }
-.hud-stats .xp { color: #fbbf24; }
-.hud-stats .level { color: #34d399; }
+#map { width: 100%; height: 100%; background: linear-gradient(135deg, #0d1030 0%, #1a1f4a 100%); }
+#hud { position: absolute; top: 0; left: 0; right: 0; padding: 16px; background: rgba(13,16,48,0.92); border-bottom: 1px solid #2c3670; display: flex; justify-content: space-between; align-items: center; }
+#hud h1 { font-size: 18px; color: #4dd8ff; text-shadow: 1px 1px 0 #082a4a; letter-spacing: .5px; }
+.hud-stats { display: flex; gap: 16px; font-size: 14px; font-weight: 700; }
+.hud-stats span { background: #1a1f4a; border: 1px solid #2c3670; padding: 6px 12px; border-radius: 4px; }
+.hud-stats .xp { color: #ffd23f; }
+.hud-stats .level { color: #3ddc84; }
 #controls { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; }
-.ctrl-btn { background: #3b82f6; color: white; border: none; padding: 12px 20px; border-radius: 12px; font-size: 14px; cursor: pointer; }
-.ctrl-btn:hover { background: #2563eb; }
-.ctrl-btn.active { background: #10b981; }
-#anchor-panel { position: absolute; right: 16px; top: 80px; width: 300px; max-height: calc(100vh - 100px); overflow-y: auto; background: rgba(15,23,42,0.95); border-radius: 16px; padding: 16px; display: none; }
+.ctrl-btn { background: #2b5fe3; color: #fff; border: none; border-bottom: 3px solid #16327f; padding: 12px 20px; border-radius: 4px; font-size: 13px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; cursor: pointer; }
+.ctrl-btn:hover { background: #3a70f0; }
+.ctrl-btn.active { background: #10b981; border-bottom-color: #0a6e50; }
+#anchor-panel { position: absolute; right: 16px; top: 80px; width: 300px; max-height: calc(100vh - 100px); overflow-y: auto; background: rgba(13,16,48,0.95); border: 1px solid #2c3670; border-radius: 6px; padding: 16px; display: none; }
 #anchor-panel.visible { display: block; }
-.anchor-card { background: #1e293b; border-radius: 12px; padding: 12px; margin-bottom: 12px; cursor: pointer; }
-.anchor-card:hover { background: #334155; }
-.anchor-card h3 { color: #60a5fa; font-size: 14px; margin-bottom: 4px; }
-.anchor-card p { font-size: 12px; color: #94a3b8; }
-.badge { display: inline-block; background: #3b82f6; color: white; padding: 2px 8px; border-radius: 12px; font-size: 10px; margin-right: 4px; }
+.anchor-card { background: #1a1f4a; border: 1px solid #2c3670; border-radius: 4px; padding: 12px; margin-bottom: 12px; cursor: pointer; }
+.anchor-card:hover { background: #232a5e; }
+.anchor-card h3 { color: #4dd8ff; font-size: 14px; margin-bottom: 4px; }
+.anchor-card p { font-size: 12px; color: #a8b2d8; font-family: 'Courier New', monospace; }
+.badge { display: inline-block; background: #2b5fe3; color: white; padding: 2px 8px; border-radius: 2px; font-size: 10px; font-weight: 700; text-transform: uppercase; margin-right: 4px; }
 .badge.beginner { background: #10b981; }
-.badge.intermediate { background: #f59e0b; }
+.badge.intermediate { background: #f5a623; }
 .badge.advanced { background: #ef4444; }
-#training-modal { position: fixed; inset: 0; background: rgba(0,0,0,0.8); display: none; align-items: center; justify-content: center; z-index: 100; }
+#training-modal { position: fixed; inset: 0; background: rgba(4,6,20,0.8); display: none; align-items: center; justify-content: center; z-index: 100; }
 #training-modal.visible { display: flex; }
-.modal-content { background: #1e293b; border-radius: 20px; padding: 24px; width: 90%; max-width: 500px; }
-.modal-content h2 { color: #60a5fa; margin-bottom: 16px; }
-.step { background: #0f172a; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.modal-content { background: #1a1f4a; border: 1px solid #2c3670; border-radius: 6px; padding: 24px; width: 90%; max-width: 500px; }
+.modal-content h2 { color: #4dd8ff; text-shadow: 1px 1px 0 #082a4a; margin-bottom: 16px; }
+.step { background: #0d1030; border: 1px solid #2c3670; border-radius: 4px; padding: 16px; margin-bottom: 12px; }
 .step.completed { border-left: 4px solid #10b981; }
-.step.active { border-left: 4px solid #3b82f6; }
+.step.active { border-left: 4px solid #2b5fe3; }
 .step-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
-.step-title { font-weight: 600; }
-.step-status { font-size: 12px; color: #94a3b8; }
-.progress-bar { height: 6px; background: #334155; border-radius: 3px; overflow: hidden; margin-top: 8px; }
-.progress-fill { height: 100%; background: linear-gradient(90deg, #3b82f6, #10b981); transition: width 0.3s; }
-#ros-data-panel { position: absolute; left: 16px; bottom: 80px; width: 280px; background: rgba(15,23,42,0.95); border-radius: 16px; padding: 16px; display: none; }
+.step-title { font-weight: 700; }
+.step-status { font-size: 12px; color: #a8b2d8; font-family: 'Courier New', monospace; text-transform: uppercase; }
+.progress-bar { height: 8px; background: #0d1030; border: 1px solid #2c3670; overflow: hidden; margin-top: 8px; }
+.progress-fill { height: 100%; background: linear-gradient(90deg, #2b5fe3, #3ddc84); }
+#ros-data-panel { position: absolute; left: 16px; bottom: 80px; width: 280px; background: rgba(13,16,48,0.95); border: 1px solid #2c3670; border-radius: 6px; padding: 16px; display: none; }
 #ros-data-panel.visible { display: block; }
-.data-stream { background: #1e293b; border-radius: 8px; padding: 10px; margin-bottom: 8px; font-size: 12px; }
-.data-stream .title { color: #60a5fa; font-weight: 600; }
-.data-stream .meta { color: #94a3b8; margin-top: 4px; }
+.data-stream { background: #1a1f4a; border: 1px solid #2c3670; border-radius: 4px; padding: 10px; margin-bottom: 8px; font-size: 12px; }
+.data-stream .title { color: #4dd8ff; font-weight: 700; }
+.data-stream .meta { color: #a8b2d8; margin-top: 4px; font-family: 'Courier New', monospace; }
 </style>
 </head>
 <body>
@@ -99,7 +102,7 @@ function renderAnchors() {
 }
 function renderROSData() {
   const panel = document.getElementById('ros-data-panel');
-  panel.innerHTML = `<h3 style="color:#60a5fa;margin-bottom:12px">📊 ROS Data Streams</h3>` +
+  panel.innerHTML = `<h3 style="color:#4dd8ff;margin-bottom:12px">📊 ROS Data Streams</h3>` +
     state.rosStreams.slice(0,15).map(s => `
       <div class="data-stream">
         <div class="title">${s.training_module}</div>
@@ -128,10 +131,8 @@ function startTraining() {
   if (!state.anchors.length) return alert('No anchors loaded');
   openTraining(state.anchors[Math.floor(Math.random()*state.anchors.length)].id);
 }
-document.getElementById('map').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#60a5fa">🌍 Map View - Click Anchors to Start Training</div>';
+document.getElementById('map').innerHTML = '<div style="display:flex;align-items:center;justify-content:center;height:100%;font-size:24px;color:#4dd8ff">🌍 Map View - Click Anchors to Start Training</div>';
 loadData();
 </script>
 </body>
 </html>
-  </div>
-</div>

@@ -9,7 +9,7 @@ export const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 export const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'wfe-'));
 
 export async function session(W, H) {
-  const chrome = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${PORT}`, `--user-data-dir=${path.join(tmp, 'p')}`,
+  const chrome = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${PORT}`, `--user-data-dir=${path.join(tmp, 'p')}`, '--no-sandbox',
     '--use-gl=angle', '--use-angle=swiftshader-webgl', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist', '--enable-webgl',
     '--mute-audio', '--hide-scrollbars', `--window-size=${W},${H}`, 'about:blank'], { stdio: 'ignore' });
   let tg;

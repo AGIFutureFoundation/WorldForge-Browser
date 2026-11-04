@@ -18,9 +18,10 @@ export function makeStage(canvas) {
   if (PS2) {
     renderer.setPixelRatio(Math.max(0.35, Math.min(devicePixelRatio, 2) * 0.42)); // ~PS2-class internal resolution
     canvas.style.imageRendering = 'pixelated';                                   // chunky upscale, like a 480i CRT
+    canvas.style.filter = 'saturate(1.14) contrast(1.07) sepia(0.05)';           // era grading: composite-video push
   } else renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
-  renderer.toneMappingExposure = PS2 ? 0.72 : 0.55;           // Lambert lighting is flat: lift exposure to compensate
+  renderer.toneMappingExposure = PS2 ? 0.88 : 0.55;           // Lambert lighting is flat: lift exposure to compensate
   renderer.shadowMap.enabled = true;
   renderer.shadowMap.type = PS2 ? THREE.BasicShadowMap : THREE.PCFSoftShadowMap; // hard-edged PS2-era shadows
   const scene = new THREE.Scene();
@@ -35,7 +36,7 @@ export function makeStage(canvas) {
   const sun = new THREE.DirectionalLight(0xfff1dc, 2.6);
   sun.castShadow = true; sun.shadow.mapSize.set(PS2 ? 1024 : 2048, PS2 ? 1024 : 2048);
   Object.assign(sun.shadow.camera, { left: -420, right: 420, top: 420, bottom: -420, near: 10, far: 2000 });
-  scene.add(sun, sun.target, new THREE.HemisphereLight(0xcfe6ff, 0x5a5236, PS2 ? 1.15 : 0.9));
+  scene.add(sun, sun.target, new THREE.HemisphereLight(0xcfe6ff, 0x5a5236, PS2 ? 1.35 : 0.9));
   scene.background = new THREE.Color(0x9ec4e6);
   scene.fog = PS2 ? new THREE.Fog(0xb4d0ea, 420, 2300) : new THREE.Fog(0xb4d0ea, 900, 3200); // pop-in fog: the PS2 draw-distance trick
   const sunDir = new THREE.Vector3();
