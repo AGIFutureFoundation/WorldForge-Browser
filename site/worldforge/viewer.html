@@ -74,6 +74,26 @@
   #cardlist .k { color:var(--muted); display:inline-block; min-width:56px; }
   body.clean #app { grid-template-columns:1fr; }
   body.clean aside, body.clean #detail, body.clean .hud { display:none !important; }
+  /* UI toggles: per-panel close, Hide UI (H), Panels menu */
+  .ptoggle { flex:none; width:22px; height:22px; line-height:1; padding:0; border:1px solid var(--line); border-radius:6px; background:var(--panel2); color:var(--muted); font:inherit; font-size:14px; cursor:pointer; }
+  .ptoggle:hover { color:var(--text); border-color:var(--world); }
+  .prow { display:flex; justify-content:flex-end; }
+  header .hrow { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
+  #help { padding-right:34px; }
+  #help .ptoggle { position:absolute; top:6px; right:6px; }
+  body.no-sidebar #app { grid-template-columns:minmax(0,1fr) 372px; }
+  body.no-detail #app { grid-template-columns:248px minmax(0,1fr); }
+  body.no-sidebar.no-detail #app { grid-template-columns:minmax(0,1fr); }
+  body.no-sidebar aside, body.no-detail #detail, body.no-topbar #topbar, body.no-help #help { display:none !important; }
+  #uiCtl { right:12px; bottom:56px; display:flex; gap:6px; }
+  body.clean #uiCtl { display:flex !important; }
+  #panelsMenu { right:12px; bottom:100px; width:230px; display:none; padding:10px 12px; }
+  #panelsMenu.open { display:block; }
+  body.clean #panelsMenu.open { display:block !important; }
+  #panelsMenu .pm-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:2px; }
+  #panelsMenu .pm-head h4 { margin:0; }
+  #panelsMenu .pm-row { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:5px 0; border-top:1px solid var(--line); font-size:12px; }
+  #panelsMenu .pm-row .btn { padding:4px 9px; font-size:11px; }
   @media (max-width: 900px) {
     #app { grid-template-columns:1fr; grid-template-rows:62vh auto auto; height:auto; }
     #stage { grid-row:1; height:62vh; } #detail { grid-row:2; border-left:0; border-top:1px solid var(--line); } aside { grid-row:3; border-right:0; border-top:1px solid var(--line); }
@@ -85,7 +105,7 @@
 <body>
 <div id="app">
   <aside>
-    <header><h1>WorldForge Worlds</h1><div class="muted" id="totals">loading…</div></header>
+    <header><div class="hrow"><div><h1>WorldForge Worlds</h1><div class="muted" id="totals">loading…</div></div><button type="button" class="ptoggle" data-ptoggle="sidebar" title="Hide worlds list" aria-label="Hide worlds list">×</button></div></header>
     <input id="filter" type="search" placeholder="Filter worlds" aria-label="Filter worlds">
     <div id="worlds" role="list"></div>
   </aside>
@@ -97,15 +117,28 @@
       <button type="button" class="btn" id="exitBtn" hidden>Exit</button>
       <button type="button" class="btn" id="accessBtn" aria-expanded="true" aria-controls="access">Access</button>
       <span class="chip" id="status">loading…</span>
+      <button type="button" class="ptoggle" data-ptoggle="topbar" title="Hide top bar" aria-label="Hide top bar">×</button>
     </div>
-    <div id="help" class="hud chip">Orbit: drag to turn, scroll to zoom, click a building, the landmark, an avatar, seat or pad for its card. Walk: click the view to look with the mouse (Esc frees it), W A S D or arrows to move, Shift to run, E at a door to go in or out. Access lists every door and room for one-click teleport; council rooms are view only (stewards enter).</div>
+    <div id="help" class="hud chip"><button type="button" class="ptoggle" data-ptoggle="help" title="Hide help" aria-label="Hide help">×</button>Orbit: drag to turn, scroll to zoom, click a building, the landmark, an avatar, seat or pad for its card. Walk: click the view to look with the mouse (Esc frees it), W A S D or arrows to move, Shift to run, E at a door to go in or out. Access lists every door and room for one-click teleport; council rooms are view only (stewards enter).</div>
     <div id="voicebar" class="hud chip" hidden></div>
     <nav id="access" class="hud chip" aria-label="Access points" hidden></nav>
     <div id="gateNote" class="hud chip" role="status" hidden></div>
     <div id="crosshair" class="hud" hidden></div>
     <div id="joy" class="hud" hidden><div id="knob"></div></div>
+    <div id="uiCtl" class="hud ui-ctl" role="group" aria-label="Interface controls">
+      <button type="button" class="btn" id="hideUiBtn" title="Hide all panels (H)">Hide UI</button>
+      <button type="button" class="btn" id="panelsBtn" aria-expanded="false" aria-controls="panelsMenu" title="Show or hide panels">Panels</button>
+    </div>
+    <div id="panelsMenu" class="hud ui-ctl chip" role="dialog" aria-label="Panels">
+      <div class="pm-head"><h4>Panels</h4><button type="button" class="ptoggle" data-pmenu="close" title="Close panels menu" aria-label="Close panels menu">×</button></div>
+      <div class="pm-row"><span>Worlds list</span><button type="button" class="btn" data-pm="sidebar">Hide</button></div>
+      <div class="pm-row"><span>Details</span><button type="button" class="btn" data-pm="detail">Hide</button></div>
+      <div class="pm-row"><span>Top bar</span><button type="button" class="btn" data-pm="topbar">Hide</button></div>
+      <div class="pm-row"><span>Help</span><button type="button" class="btn" data-pm="help">Hide</button></div>
+      <div class="pm-row"><span>Access</span><button type="button" class="btn" data-pm="access">Hide</button></div>
+    </div>
   </main>
-  <section id="detail" aria-live="polite"><div class="muted">Loading the world…</div></section>
+  <section id="detail" aria-live="polite"><div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div><div class="muted">Loading the world…</div></section>
 </div>
 <audio id="voice" preload="none"></audio>
 <script type="importmap">
@@ -354,7 +387,7 @@ async function openWorld(slug) {
     S.lodIdxCache ??= getJSON(new URL('assets/lod/index.json', OUT)),
   ]);
   if (token !== S.token) return;
-  if (!doc || !blockout) { status(`World ${slug} did not load (cards or blockout missing)`); $('#detail').innerHTML = `<p class="bad">No cards for <code>${esc(slug)}</code>.</p>`; window.__wfReady = true; return; }
+  if (!doc || !blockout) { status(`World ${slug} did not load (cards or blockout missing)`); $('#detail').innerHTML = `<div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div><p class="bad">No cards for <code>${esc(slug)}</code>.</p>`; window.__wfReady = true; return; }
   S.doc = doc; S.blockout = blockout; S.cards = new Map(doc.cards.map((c) => [c.cardId, c])); S.avIdx = avIdx; S.lodIdx = lodIdx;
   S.brand = team?.brand ?? null; S.hue = Number.isFinite(+S.brand?.hue) ? +S.brand.hue : hashStr(slug) % 360;
   document.documentElement.style.setProperty('--world', `hsl(${S.hue} 62% 62%)`);
@@ -918,7 +951,7 @@ function renderAccess() {
     return `<button type="button" class="ap${here ? ' on' : ''}" data-id="${esc(p.id)}" data-inside="${p.inside ? 1 : 0}">${esc(p.label)}${tag}</button>`;
   };
   const ext = pts.filter((p) => p.side === 'exterior'), int = pts.filter((p) => p.side === 'interior');
-  el.innerHTML = `<h4>Access · exterior (${ext.length})</h4>${ext.map(row).join('')}<h4>Access · interior (${int.length})</h4>${int.map(row).join('') || '<div class="muted">no interiors in this world</div>'}`;
+  el.innerHTML = `<div class="prow"><button type="button" class="ptoggle" data-ptoggle="access" title="Hide Access panel" aria-label="Hide Access panel">×</button></div><h4>Access · exterior (${ext.length})</h4>${ext.map(row).join('')}<h4>Access · interior (${int.length})</h4>${int.map(row).join('') || '<div class="muted">no interiors in this world</div>'}`;
   el.querySelectorAll('button.ap').forEach((bt) => bt.addEventListener('click', () => {
     const inside = bt.dataset.inside === '1';
     if (inside && S.inside?.card.cardId === bt.dataset.id) { exitBuilding(true); setAccessURL(bt.dataset.id, false); return; }
@@ -956,6 +989,59 @@ function teleportOutside(c, b) {
   S.at = c.cardId; if (S.selected?.cardId !== c.cardId) select(c); else renderAccess();
 }
 $('#accessBtn').onclick = () => { S.accessHidden = !$('#access').hidden; renderAccess(); };
+// --- UI toggles: per-panel close, Hide UI (H), Panels menu ---
+// Panels: sidebar (aside), detail (#detail), topbar (#topbar), help (#help), access (#access).
+// Clean mode (body.clean) hides everything; per-panel states persist underneath it.
+const PANELS = {
+  sidebar: { isHidden: () => document.body.classList.contains('no-sidebar'),
+    set: (hide) => document.body.classList.toggle('no-sidebar', hide) },
+  detail: { isHidden: () => document.body.classList.contains('no-detail'),
+    set: (hide) => document.body.classList.toggle('no-detail', hide) },
+  topbar: { isHidden: () => document.body.classList.contains('no-topbar'),
+    set: (hide) => document.body.classList.toggle('no-topbar', hide) },
+  help: { isHidden: () => document.body.classList.contains('no-help'),
+    set: (hide) => document.body.classList.toggle('no-help', hide) },
+  access: { isHidden: () => { const el = $('#access'); return !!(el && el.hidden); },
+    set: (hide) => { S.accessHidden = hide; renderAccess(); } },
+};
+function isPanelEffectivelyHidden(id) {
+  if (document.body.classList.contains('clean')) return true;
+  const p = PANELS[id]; return p ? p.isHidden() : true;
+}
+function syncPanelsMenu() {
+  document.querySelectorAll('#panelsMenu [data-pm]').forEach((bt) => {
+    bt.textContent = isPanelEffectivelyHidden(bt.dataset.pm) ? 'Show' : 'Hide';
+  });
+  const hb = $('#hideUiBtn'); if (hb) hb.textContent = document.body.classList.contains('clean') ? 'Show UI' : 'Hide UI';
+}
+function setPanel(id, hide) {
+  const p = PANELS[id]; if (!p) return;
+  if (!hide && document.body.classList.contains('clean')) document.body.classList.remove('clean');
+  p.set(hide);
+  syncPanelsMenu();
+}
+function toggleClean() {
+  document.body.classList.toggle('clean');
+  syncPanelsMenu();
+}
+document.addEventListener('click', (e) => {
+  const t = e.target.closest?.('[data-ptoggle]');
+  if (t) { setPanel(t.dataset.ptoggle, true); return; }
+  const pm = e.target.closest?.('[data-pm]');
+  if (pm) { setPanel(pm.dataset.pm, !isPanelEffectivelyHidden(pm.dataset.pm)); return; }
+  if (e.target.closest?.('[data-pmenu="close"]')) {
+    $('#panelsMenu').classList.remove('open');
+    $('#panelsBtn').setAttribute('aria-expanded', 'false');
+  }
+});
+$('#hideUiBtn').addEventListener('click', toggleClean);
+$('#panelsBtn').addEventListener('click', () => {
+  const m = $('#panelsMenu'), open = !m.classList.contains('open');
+  m.classList.toggle('open', open);
+  $('#panelsBtn').setAttribute('aria-expanded', String(open));
+  if (open) syncPanelsMenu();
+});
+syncPanelsMenu();
 const RIGHT_NOTE = { view: 'see it', enter: 'go in', build: 'change its build', operate: 'run it day to day', delegate: 'hand a right to someone', transfer: 'move it or its assets', govern: 'decide its rules' };
 function permTable(c) {
   const rights = S.doc.rights ?? Object.keys(c.permissions ?? {});
@@ -1017,7 +1103,7 @@ function show(c) {
   const worldNotes = c.kind === 'world' ? `<h2>Gaps the cards list</h2><ul class="tight">${(S.doc.gaps ?? []).map((g) => `<li>${esc(g)}</li>`).join('') || '<li>none</li>'}</ul>
     <div class="note"><b>What this view is and is not.</b> Buildings are the spaces build's shared shells for each zone's kind, with that zone's own room sign; they are not bespoke architecture. Ground, roads, trees, lamps and the gate arch are drawn by this viewer from the blockout layout. ${S.avatars.some((a) => !a.model) ? 'Avatar models are not built yet, so tinted stand-ins mark where each agent stands. ' : ''}The civic landmark is a synthetic procedural building from the landmarks build (worldforge/out/assets/landmarks), not a real building and not modelled on one; its placement is suggested by that build, not written into the cards. Advisors are scripted guides, not AI models. The Omega Steward is defined, not seated; every voice here is synthetic, and agents never hold a steward-quorum right.${S.notes.length ? `</div><h2>Viewer notes</h2><ul class="tight">${S.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>` : '</div>'}` : '';
   const kindLabel = c.kind === 'omega' ? 'Omega Steward' : c.kind;
-  $('#detail').innerHTML = `<span class="kind">${esc(kindLabel)}</span><code>${esc(c.cardId)}</code><h3 style="margin-top:6px">${esc(c.name ?? c.displayName)}</h3>
+  $('#detail').innerHTML = `<div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div><span class="kind">${esc(kindLabel)}</span><code>${esc(c.cardId)}</code><h3 style="margin-top:6px">${esc(c.name ?? c.displayName)}</h3>
     ${lead ? `<p>${esc(lead)}</p>` : ''}${actions}<table>${rows.join('')}</table>${extra}${c.kind === 'landmark' ? `<div class="note">No Master Card: the landmark is a viewer-only entry read from <code>worldforge/out/assets/landmarks/index.json</code>, so it carries no permissions or Volum of its own. It is a synthetic procedural model, not a real building and not modelled on one; nothing here is built, deployed or minted.</div>` : `<h2>Permissions</h2>${permTable(c)}`}${reserved}${may}${worldNotes}
     <h2>Cards in this world</h2><div id="cardlist"></div>`;
   renderCardList();
@@ -1213,6 +1299,7 @@ function updateWalk(dt) {
 }
 addEventListener('keydown', (e) => {
   if (e.target.closest?.('input, textarea')) return;
+  if (e.code === 'KeyH') { toggleClean(); return; }
   if (S.mode === 'walk' && /^(Key[WASDE]|Arrow|Shift)/.test(e.code)) { walk.keys.add(e.code); if (e.code.startsWith('Arrow')) e.preventDefault(); }
   if (e.code === 'KeyE' && S.mode === 'walk') {
     if (S.inside) { const [, zl] = toLocal(S.inside, walk.x, walk.z); if (zl > 1.5) exitBuilding(true); }
