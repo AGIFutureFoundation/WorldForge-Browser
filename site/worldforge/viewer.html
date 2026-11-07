@@ -81,9 +81,10 @@
   header .hrow { display:flex; justify-content:space-between; align-items:flex-start; gap:8px; }
   #help { padding-right:34px; }
   #help .ptoggle { position:absolute; top:6px; right:6px; }
-  body.no-sidebar #app { grid-template-columns:minmax(0,1fr) 372px; }
-  body.no-detail #app { grid-template-columns:248px minmax(0,1fr); }
-  body.no-sidebar.no-detail #app { grid-template-columns:minmax(0,1fr); }
+  body.no-sidebar #app, body.float-sidebar:not(.clean) #app { grid-template-columns:minmax(0,1fr) 372px; }
+  body.no-detail #app, body.float-detail:not(.clean) #app { grid-template-columns:248px minmax(0,1fr); }
+  body.no-sidebar.no-detail #app, body.float-sidebar.float-detail:not(.clean) #app,
+  body.float-sidebar.no-detail:not(.clean) #app, body.no-sidebar.float-detail:not(.clean) #app { grid-template-columns:minmax(0,1fr); }
   body.no-sidebar aside, body.no-detail #detail, body.no-topbar #topbar, body.no-help #help { display:none !important; }
   #uiCtl { right:12px; bottom:56px; display:flex; gap:6px; }
   body.clean #uiCtl { display:flex !important; }
@@ -94,6 +95,15 @@
   #panelsMenu .pm-head h4 { margin:0; }
   #panelsMenu .pm-row { display:flex; justify-content:space-between; align-items:center; gap:8px; padding:5px 0; border-top:1px solid var(--line); font-size:12px; }
   #panelsMenu .pm-row .btn { padding:4px 9px; font-size:11px; }
+  /* Move + resize: a dragged panel floats free of the grid / HUD flow, draggable by its header, resizable from its corner. */
+  body.float-sidebar aside, body.float-detail #detail,
+  body.float-topbar #topbar, body.float-help #help, body.float-access #access { position:fixed; z-index:30; resize:both; overflow:auto; min-width:180px; min-height:64px; max-width:94vw; max-height:94vh; }
+  #uiCtl, #panelsMenu { z-index:50; }
+  /* Drag affordance: draggable headers show a grab cursor and a grip mark. */
+  aside header, #detail .prow, #access .prow, #topbar #lockup, #topbar #status, #help { cursor:grab; }
+  aside header:active, #detail .prow:active, #access .prow:active, #topbar #lockup:active, #topbar #status:active, #help:active { cursor:grabbing; }
+  aside header h1::before, #detail .prow::before, #access .prow::before, #topbar #lockup::before, #help::before { content:'⠿ '; color:var(--muted); }
+  #detail .prow::before, #access .prow::before { margin-right:auto; }
   @media (max-width: 900px) {
     #app { grid-template-columns:1fr; grid-template-rows:62vh auto auto; height:auto; }
     #stage { grid-row:1; height:62vh; } #detail { grid-row:2; border-left:0; border-top:1px solid var(--line); } aside { grid-row:3; border-right:0; border-top:1px solid var(--line); }
@@ -136,6 +146,8 @@
       <div class="pm-row"><span>Top bar</span><button type="button" class="btn" data-pm="topbar">Hide</button></div>
       <div class="pm-row"><span>Help</span><button type="button" class="btn" data-pm="help">Hide</button></div>
       <div class="pm-row"><span>Access</span><button type="button" class="btn" data-pm="access">Hide</button></div>
+      <div class="pm-row"><span>Layout</span><button type="button" class="btn" data-pmenu="reset" title="Dock all panels and clear saved positions">Reset</button></div>
+      <div class="muted" style="margin-top:6px">Drag a panel by its header to move it · drag its bottom-right corner to resize · double-click a header to dock it.</div>
     </div>
   </main>
   <section id="detail" aria-live="polite"><div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div><div class="muted">Loading the world…</div></section>
@@ -1042,6 +1054,147 @@ $('#panelsBtn').addEventListener('click', () => {
   if (open) syncPanelsMenu();
 });
 syncPanelsMenu();
+// --- Move + resize: drag any panel by its header to float it free; drag its corner to resize. ---
+// A panel is "floating" when body has float-<id>: it leaves the grid / HUD flow and becomes a fixed
+// overlay at an explicit left/top/width/height. Geometry persists in localStorage (wf-panels-v1).
+// Showing a hidden floating panel restores its last position/size; Hide UI still hides everything.
+// Double-click a header to dock a panel; Panels > Reset docks all and clears saved geometry.
+// Drag uses pointer delegation on each panel's header (no new DOM), so it survives the Detail and
+// Access panels being re-rendered from data. Resize is the native corner grip (CSS resize), also
+// immune to re-rendering; a ResizeObserver saves the new size.
+const FLOAT_KEY = 'wf-panels-v1';
+const PANEL_ELS = { sidebar: () => document.querySelector('aside'), detail: () => $('#detail'), topbar: () => $('#topbar'), help: () => $('#help'), access: () => $('#access') };
+const FLOAT_MIN = { w: 180, h: 64 };
+function loadFloatGeo() { try { return JSON.parse(localStorage.getItem(FLOAT_KEY) || '{}') || {}; } catch { return {}; } }
+function saveFloatGeo() { try { localStorage.setItem(FLOAT_KEY, JSON.stringify(floatGeo)); } catch {} }
+let floatGeo = loadFloatGeo();
+function panelRect(el) { const r = el.getBoundingClientRect(); return { left: r.left, top: r.top, width: r.width, height: r.height }; }
+function clampFloatRect(r) {
+  const vw = innerWidth, vh = innerHeight;
+  return {
+    left: clamp(r.left, -Math.max(0, r.width - 80), vw - 80),
+    top: clamp(r.top, 0, vh - 40),
+    width: clamp(r.width, FLOAT_MIN.w, vw * 0.94),
+    height: clamp(r.height, FLOAT_MIN.h, vh * 0.94),
+  };
+}
+function applyFloatGeo(el, r) {
+  const c = clampFloatRect(r);
+  el.style.left = c.left + 'px'; el.style.top = c.top + 'px';
+  el.style.width = c.width + 'px'; el.style.height = c.height + 'px';
+  el.style.right = 'auto'; el.style.bottom = 'auto';
+  el.setAttribute('title', 'Drag the header to move · drag the bottom-right corner to resize · double-click the header to dock');
+  return c;
+}
+function floatPanel(id) {
+  const el = PANEL_ELS[id]?.(); if (!el) return false;
+  if (document.body.classList.contains('float-' + id)) return true;
+  const r = panelRect(el);
+  document.body.classList.add('float-' + id);
+  const c = applyFloatGeo(el, r);
+  floatGeo[id] = c; saveFloatGeo();
+  return true;
+}
+function dockPanel(id) {
+  const el = PANEL_ELS[id]?.(); if (!el) return;
+  document.body.classList.remove('float-' + id);
+  for (const k of ['left', 'top', 'width', 'height', 'right', 'bottom']) el.style[k] = '';
+  el.removeAttribute('title');
+  delete floatGeo[id]; saveFloatGeo();
+}
+function resetLayout() {
+  for (const id of Object.keys(PANEL_ELS)) dockPanel(id);
+  syncPanelsMenu();
+}
+function isFloating(id) { return document.body.classList.contains('float-' + id); }
+// Drag: pointerdown on a panel's header region (never on a button/input/link) starts a move-drag.
+function isDragHandle(id, t, el) {
+  if (!t || t.closest?.('button, input, textarea, select, a')) return false;
+  if (id === 'sidebar') return !!t.closest?.('aside header');
+  if (id === 'detail') return !!t.closest?.('#detail .prow');
+  if (id === 'access') return !!t.closest?.('#access .prow');
+  if (id === 'topbar') return !!(t.closest?.('#lockup') || t.closest?.('#status') || t === el);
+  if (id === 'help') return !!t.closest?.('#help');
+  return false;
+}
+let drag = null;
+function onDragDown(e, id) {
+  const el = PANEL_ELS[id]?.(); if (!el) return;
+  drag = { id, el, pid: e.pointerId, sx: e.clientX, sy: e.clientY, ol: 0, ot: 0, moved: false };
+  try { el.setPointerCapture(e.pointerId); } catch {}
+  e.stopPropagation();
+  document.body.style.userSelect = 'none';
+  window.addEventListener('pointermove', onDragMove);
+  window.addEventListener('pointerup', onDragUp, { once: true });
+  window.addEventListener('pointercancel', onDragUp, { once: true });
+}
+function onDragMove(e) {
+  if (!drag || e.pointerId !== drag.pid) return;
+  const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy;
+  if (!drag.moved) {
+    if (Math.hypot(dx, dy) < 4) return;
+    drag.moved = true;
+    const r = panelRect(drag.el);
+    floatPanel(drag.id);
+    drag.ol = r.left; drag.ot = r.top;
+  }
+  const w = drag.el.getBoundingClientRect().width, h = drag.el.getBoundingClientRect().height;
+  const c = clampFloatRect({ left: drag.ol + dx, top: drag.ot + dy, width: w, height: h });
+  drag.el.style.left = c.left + 'px'; drag.el.style.top = c.top + 'px';
+}
+function onDragUp() {
+  window.removeEventListener('pointermove', onDragMove);
+  document.body.style.userSelect = '';
+  if (!drag) return;
+  const d = drag; drag = null;
+  if (d.moved) {
+    const r = panelRect(d.el);
+    floatGeo[d.id] = { left: r.left, top: r.top, width: r.width, height: r.height };
+    saveFloatGeo();
+  }
+}
+document.addEventListener('pointerdown', (e) => {
+  if (TOUR) return;
+  if (e.pointerType === 'mouse' && e.button !== 0) return;
+  for (const id of Object.keys(PANEL_ELS)) {
+    const el = PANEL_ELS[id]?.(); if (!el) continue;
+    if (el.contains(e.target) && isDragHandle(id, e.target, el)) { onDragDown(e, id); return; }
+  }
+});
+document.addEventListener('dblclick', (e) => {
+  if (TOUR) return;
+  for (const id of Object.keys(PANEL_ELS)) {
+    const el = PANEL_ELS[id]?.(); if (!el) continue;
+    if (el.contains(e.target) && isDragHandle(id, e.target, el) && isFloating(id)) { dockPanel(id); return; }
+  }
+});
+document.addEventListener('click', (e) => {
+  if (e.target.closest?.('[data-pmenu="reset"]')) resetLayout();
+});
+// Save a floating panel's size when the user resizes it from the corner (CSS resize).
+let saveT = null;
+const panelRO = new ResizeObserver((entries) => {
+  let dirty = false;
+  for (const en of entries) {
+    const id = Object.keys(PANEL_ELS).find((k) => PANEL_ELS[k]() === en.target);
+    if (!id || !isFloating(id)) continue;
+    const r = panelRect(en.target);
+    floatGeo[id] = { left: r.left, top: r.top, width: r.width, height: r.height };
+    dirty = true;
+  }
+  if (dirty) { clearTimeout(saveT); saveT = setTimeout(saveFloatGeo, 250); }
+});
+for (const id of Object.keys(PANEL_ELS)) { const el = PANEL_ELS[id]?.(); if (el) panelRO.observe(el); }
+// Restore floating panels from the last session (clamped to this viewport). Not in tour / no-HUD mode.
+if (HUD && !TOUR) {
+  for (const id of Object.keys(floatGeo)) {
+    const g = floatGeo[id];
+    if (!g || ![g.left, g.top, g.width, g.height].every(Number.isFinite)) continue;
+    const el = PANEL_ELS[id]?.(); if (!el) continue;
+    document.body.classList.add('float-' + id);
+    applyFloatGeo(el, g);
+  }
+}
 const RIGHT_NOTE = { view: 'see it', enter: 'go in', build: 'change its build', operate: 'run it day to day', delegate: 'hand a right to someone', transfer: 'move it or its assets', govern: 'decide its rules' };
 function permTable(c) {
   const rights = S.doc.rights ?? Object.keys(c.permissions ?? {});
