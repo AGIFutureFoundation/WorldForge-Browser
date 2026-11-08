@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- STAGED VIEWER READER WIRING — next-wiring/a-viewer-reader/ (2026-11-07). Source: worldforge-ui-toggle/site/worldforge/viewer.html (read, never edited). STAGED ONLY: do NOT copy over the live viewer without Mike's decision (silent-fallback vs precise-error) — see APPLY.md. Requires the sibling files viewer-link.mjs + worldforge-index.json in the same directory. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -194,6 +195,40 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+/* ---- STAGED viewer-link wiring (next-wiring/a-viewer-reader, 2026-11-07) ----
+   Wires in viewer-reader/viewer-link.mjs (resolveViewerLink) + the staged
+   544-slug index (worldforge-index.json, sibling file). See
+   viewer-reader/VIEWER_LINK_CONTRACT.md v1 for the error codes.
+   VIEWER_LINK_MODE: 'precise' (staged default) surfaces the reader's error
+   codes in the status chip + detail panel instead of substituting a target.
+   'silent' runs the live viewer's original fallback lines verbatim (unknown
+   slug -> index.worlds[0]; no world -> locator-x; unknown card -> world
+   card). The mode is the decision Mike must make (VIEWER_LINK_CONTRACT.md
+   §5/§8); flipping this one const restores live behaviour exactly. */
+import { resolveViewerLink } from './viewer-link.mjs';
+const VIEWER_LINK_MODE = 'precise'; // 'precise' (staged) | 'silent' (live default)
+let WF_INDEX_544 = null; // staged 544-slug index, loaded at entry
+function viewerLinkErrorText(r) {
+  const req = r.requested || {};
+  const bits = { missing_world: 'No ?world= parameter in the link.',
+    malformed: 'The ' + (r.param || 'link') + ' value ' + JSON.stringify(req[r.param] || '') + ' is not a valid id.',
+    world_not_found: 'No WorldForge world with slug ' + JSON.stringify(req.world) + ' exists in the 544-world index.',
+    card_not_found: 'Card ' + JSON.stringify(req.card) + ' was checked against this world\'s card list and is not in it.',
+    card_unverified: 'Card ' + JSON.stringify(req.card) + ' could not be checked: no card list was supplied for this world.',
+    bad_index: 'The staged world index failed to load.',
+    bad_cards: 'The card data for this world is not in a readable shape.' };
+  return (bits[r.error] || ('Link error: ' + r.error)) + (r.error === 'world_not_found' && r.known_world_count ? ' (' + r.known_world_count + ' worlds indexed.)' : '');
+}
+function showViewerLinkError(r, prepend) {
+  const html = '<div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div>'
+    + '<p class="bad"><b>Link error (' + r.error + ').</b> ' + viewerLinkErrorText(r) + '</p>'
+    + '<p class="muted">Pick a world from the list, or use a link of the form <code>viewer.html?world=&lt;slug&gt;</code>.</p>';
+  status('Link error: ' + r.error);
+  const detail = $('#detail');
+  if (!detail) return;
+  if (prepend) detail.innerHTML = html + detail.innerHTML;
+  else detail.innerHTML = html;
+}
 
 (window.__wfT = window.__wfT || {}).module = Math.round(performance.now());
 const P = new URLSearchParams(location.search);
@@ -442,9 +477,26 @@ async function openWorld(slug) {
   status(`${worldCard?.name ?? slug} · loaded in ${(S.loadMs / 1000).toFixed(1)} s · ${nbOk}/${nb} buildings · ${naModel}/${na} avatar models (${byKind('agent')} agents, ${byKind('advisor')} advisors, ${byKind('coordinator')} coordinator, ${byKind('omega')} Omega)${naModel < na ? ` · ${na - naModel} stand-ins` : ''}${S.landmark?.model ? ' · landmark' : ''}`);
   window.__wfLoadMs = S.loadMs; window.__wfStats = S.stats;
   renderCardList();
-  const deep = !S.deepUsed && P.get('card') ? S.cards.get(P.get('card')) : null; S.deepUsed = true;
+  // ---- STAGED card resolution (viewer-link reader; see wiring block above) ----
+  // The world's own card list (S.cards, loaded from out/<slug>/cards.json) is
+  // the card data the reader checks against; a card with no list entry is
+  // card_not_found, and a card checked against no list at all is
+  // card_unverified — both are errors here, never a silent world-card show.
+  let deep = null;
+  if (!S.deepUsed && P.get('card')) {
+    if (VIEWER_LINK_MODE === 'precise' && WF_INDEX_544) {
+      const cardLink = resolveViewerLink(location.search, WF_INDEX_544, new Map([[S.slug, [...S.cards.values()]]]));
+      if (cardLink.ok) deep = cardLink.card;
+      else S.viewerLinkCardError = cardLink; // world still loads; error banner added below
+    } else {
+      // LIVE DEFAULT (silent fallback): unknown card -> null -> world card shown.
+      deep = S.cards.get(P.get('card'));
+    }
+  }
+  S.deepUsed = true;
   overview();
   if (deep) { select(deep); frameCard(deep); } else show(worldCard);
+  if (S.viewerLinkCardError && VIEWER_LINK_MODE === 'precise') { showViewerLinkError(S.viewerLinkCardError, true); S.viewerLinkCardError = null; }
   S.ready = true;
   const acc = !S.accUsed && !TOUR ? P.get('access') : null; S.accUsed = true;
   if (acc) S.accessResult = goAccess(acc, P.get('inside') === '1');
@@ -1579,8 +1631,26 @@ window.__wfInfo = () => ({ world: S.slug, ready: S.ready, loadMs: S.loadMs, stat
   avatars: S.avatars.map((a) => ({ card: a.card.cardId, kind: a.card.kind, model: a.model, ref: a.ref ?? null, at: [+a.x.toFixed(2), +a.y.toFixed(2), +a.z.toFixed(2)], height: +a.height.toFixed(2) })) });
 
 size();
-const first = P.get('world') || 'locator-x';
-openWorld(index?.worlds?.some((w) => w.slug === first) ? first : (index?.worlds?.[0]?.slug ?? first));
+// ---- STAGED entry resolution (viewer-link reader; see wiring block above) ----
+WF_INDEX_544 = await getJSON(new URL('worldforge-index.json', location.href));
+if (VIEWER_LINK_MODE === 'precise') {
+  if (!WF_INDEX_544) {
+    showViewerLinkError({ ok: false, error: 'bad_index', param: null, requested: { world: P.get('world'), card: P.get('card') } });
+    window.__wfReady = true; // list stays usable; no world is opened on a broken link
+  } else {
+    const link = resolveViewerLink(location.search, WF_INDEX_544, null);
+    if (!link.ok) {
+      showViewerLinkError(link);
+      window.__wfReady = true; // list stays usable; no world is opened on a broken link
+    } else {
+      openWorld(link.world.slug);
+    }
+  }
+} else {
+  // LIVE DEFAULT (silent fallback): unknown slug -> index.worlds[0]; no world -> locator-x.
+  const first = P.get('world') || 'locator-x';
+  openWorld(index?.worlds?.some((w) => w.slug === first) ? first : (index?.worlds?.[0]?.slug ?? first));
+}
 </script>
 </body>
 </html>
