@@ -1647,9 +1647,20 @@ if (VIEWER_LINK_MODE === 'precise') {
     }
   }
 } else {
-  // LIVE DEFAULT (silent fallback): unknown slug -> index.worlds[0]; no world -> locator-x.
+  // LIVE DEFAULT: unknown slug -> index.worlds[0] + banner naming the slug; no world -> locator-x.
   const first = P.get('world') || 'locator-x';
-  openWorld(index?.worlds?.some((w) => w.slug === first) ? first : (index?.worlds?.[0]?.slug ?? first));
+  const found = index?.worlds?.some((w) => w.slug === first);
+if (!found) {
+  // D2 (deep-debug 2026-11-07): an unknown ?world= used to fall back to
+  // worlds[0] with no indication, so a typo'd or stale deep link silently
+  // showed the wrong world. Keep the fallback (the viewer must open
+  // something) but say so on the page, naming the requested slug.
+  const note = document.createElement('div');
+  note.className = 'wf-world-note';
+  note.textContent = `No world “${first}” in this viewer — showing ${index?.worlds?.[0]?.slug ?? 'the first world'} instead.`;
+  document.body.prepend(note);
+}
+openWorld(found ? first : (index?.worlds?.[0]?.slug ?? first));
 }
 </script>
 </body>
