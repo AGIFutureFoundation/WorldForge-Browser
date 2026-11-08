@@ -1,0 +1,4377 @@
+{
+ "schemaVersion": "worldforge-materials-audit/0.1",
+ "generator": "worldforge/lod/materials_report.py",
+ "umbrella": "Powered by AGI Corp",
+ "report_only": true,
+ "note": "measured from the LOD0 GLBs as they are; nothing was changed. Fix at source and re-run.",
+ "inputs_sha256": "1c5dec143519240247d0a4585c16bbb668cff3648e9d257e64e1b3e90353d3ec",
+ "recommended": {
+  "dielectric_albedo_srgb": [
+   50,
+   240
+  ],
+  "dielectric_albedo_linear": [
+   0.031,
+   0.871
+  ],
+  "metal_albedo_linear_min": 0.5,
+  "albedo_linear_hard_min": 0.02,
+  "albedo_linear_hard_max": 0.95,
+  "metallic": "exactly 0 (dielectric) or 1 (metal); in-between only on mixed texels (rust, dirt, edges)",
+  "roughness": [
+   0.05,
+   1.0
+  ],
+  "glass": "metallic 0, roughness 0.0-0.1, base colour near white with alphaMode BLEND or KHR_materials_transmission; IOR 1.5",
+  "emissive": "emissive materials are exempt from albedo limits; emissive strength in nits/lux needs scene exposure context",
+  "references": [
+   "glTF 2.0 spec 3.9.2 (metallic-roughness)",
+   "Physically Based (physicallybased.info) albedo tables",
+   "Unreal/Substance PBR guide: dielectric sRGB 50-240, metals 180-255 sRGB"
+  ]
+ },
+ "summary": {
+  "materials": 15,
+  "flagged_materials": 9,
+  "flagged_names": [
+   "AV_Boot",
+   "AV_Emblem",
+   "AV_Shell",
+   "AV_Trim",
+   "LM_Facade",
+   "LM_Fin_Tint",
+   "LM_Glass",
+   "LM_Metal",
+   "LM_Plaque"
+  ],
+  "clean_names": [
+   "AV_Fabric_Body",
+   "AV_Fabric_Garment",
+   "AV_Halo",
+   "AV_Visor",
+   "LM_Crown_Glow",
+   "LM_Stone"
+  ],
+  "glbs": 47,
+  "glbs_with_flags": 47
+ },
+ "materials": {
+  "AV_Boot": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [
+    "avatars/alignment.glb",
+    "avatars/coordinator.glb",
+    "avatars/host.glb",
+    "avatars/liaison.glb",
+    "avatars/omega.glb",
+    "avatars/specialist.glb"
+   ],
+   "flags": {
+    "metallicFactor 0.15 is neither 0 nor 1": 6
+   },
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Boot",
+     "baseColorFactor": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.15,
+     "roughnessFactor": 0.55,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1693,
+      "mean": 0.1693,
+      "p98": 0.1693
+     },
+     "albedo_srgb_mean_8bit": [
+      111,
+      115,
+      121
+     ],
+     "roughness_effective": {
+      "min": 0.55,
+      "mean": 0.55,
+      "max": 0.55
+     },
+     "metallic_effective": {
+      "min": 0.15,
+      "mean": 0.15,
+      "max": 0.15,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.15 metallic on a rubber/leather boot: set metallic 0"
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Boot",
+     "baseColorFactor": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.15,
+     "roughnessFactor": 0.55,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1693,
+      "mean": 0.1693,
+      "p98": 0.1693
+     },
+     "albedo_srgb_mean_8bit": [
+      111,
+      115,
+      121
+     ],
+     "roughness_effective": {
+      "min": 0.55,
+      "mean": 0.55,
+      "max": 0.55
+     },
+     "metallic_effective": {
+      "min": 0.15,
+      "mean": 0.15,
+      "max": 0.15,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.15 metallic on a rubber/leather boot: set metallic 0"
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Boot",
+     "baseColorFactor": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.15,
+     "roughnessFactor": 0.55,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.16,
+      0.17,
+      0.19
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1693,
+      "mean": 0.1693,
+      "p98": 0.1693
+     },
+     "albedo_srgb_mean_8bit": [
+      111,
+      115,
+      121
+     ],
+     "roughness_effective": {
+      "min": 0.55,
+      "mean": 0.55,
+      "max": 0.55
+     },
+     "metallic_effective": {
+      "min": 0.15,
+      "mean": 0.15,
+      "max": 0.15,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.15 metallic on a rubber/leather boot: set metallic 0"
+    }
+   ],
+   "flagged_file_count": 6,
+   "suggested_fix": "0.15 metallic on a rubber/leather boot: set metallic 0"
+  },
+  "AV_Emblem": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [
+    "avatars/alignment.glb",
+    "avatars/coordinator.glb",
+    "avatars/host.glb",
+    "avatars/liaison.glb",
+    "avatars/omega.glb",
+    "avatars/specialist.glb"
+   ],
+   "flags": {
+    "metallicFactor 0.35 is neither 0 nor 1": 6
+   },
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Emblem",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.35,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.251,
+      0.2612,
+      0.2847
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0149,
+      "mean": 0.2607,
+      "p98": 0.6474
+     },
+     "albedo_srgb_mean_8bit": [
+      137,
+      140,
+      145
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.35,
+      "mean": 0.35,
+      "max": 0.35,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.35 metallic emblem: choose 0 (printed) or 1 (metal badge)"
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Emblem",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.35,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2524,
+      0.2542,
+      0.2705
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0135,
+      "mean": 0.255,
+      "p98": 0.6474
+     },
+     "albedo_srgb_mean_8bit": [
+      138,
+      138,
+      142
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.35,
+      "mean": 0.35,
+      "max": 0.35,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.35 metallic emblem: choose 0 (printed) or 1 (metal badge)"
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Emblem",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.35,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2218,
+      0.2346,
+      0.2662
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0142,
+      "mean": 0.2342,
+      "p98": 0.6474
+     },
+     "albedo_srgb_mean_8bit": [
+      130,
+      133,
+      141
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.35,
+      "mean": 0.35,
+      "max": 0.35,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.35 metallic emblem: choose 0 (printed) or 1 (metal badge)"
+    }
+   ],
+   "flagged_file_count": 6,
+   "suggested_fix": "0.35 metallic emblem: choose 0 (printed) or 1 (metal badge)"
+  },
+  "AV_Fabric_Body": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Fabric_Body",
+     "baseColorFactor": [
+      0.9,
+      0.91,
+      0.93
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5083,
+      0.5198,
+      0.5433
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.4734,
+      "mean": 0.5191,
+      "p98": 0.5609
+     },
+     "albedo_srgb_mean_8bit": [
+      189,
+      191,
+      195
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Fabric_Body",
+     "baseColorFactor": [
+      0.9,
+      0.91,
+      0.93
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5083,
+      0.5198,
+      0.5433
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.4734,
+      "mean": 0.5191,
+      "p98": 0.5609
+     },
+     "albedo_srgb_mean_8bit": [
+      189,
+      191,
+      195
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Fabric_Body",
+     "baseColorFactor": [
+      0.9,
+      0.91,
+      0.93
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5083,
+      0.5198,
+      0.5433
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.4734,
+      "mean": 0.5191,
+      "p98": 0.5609
+     },
+     "albedo_srgb_mean_8bit": [
+      189,
+      191,
+      195
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  },
+  "AV_Fabric_Garment": {
+   "kind": "avatar",
+   "files": 4,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Fabric_Garment",
+     "baseColorFactor": [
+      0.3,
+      0.36,
+      0.52
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.1694,
+      0.2056,
+      0.3038
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.187,
+      "mean": 0.205,
+      "p98": 0.2215
+     },
+     "albedo_srgb_mean_8bit": [
+      114,
+      125,
+      150
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "liaison.glb",
+     "name": "AV_Fabric_Garment",
+     "baseColorFactor": [
+      0.64,
+      0.5,
+      0.32
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.3615,
+      0.2856,
+      0.1869
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.2687,
+      "mean": 0.2946,
+      "p98": 0.3184
+     },
+     "albedo_srgb_mean_8bit": [
+      162,
+      146,
+      120
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "omega.glb",
+     "name": "AV_Fabric_Garment",
+     "baseColorFactor": [
+      0.93,
+      0.92,
+      0.89
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5253,
+      0.5255,
+      0.5199
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.4789,
+      "mean": 0.5251,
+      "p98": 0.5673
+     },
+     "albedo_srgb_mean_8bit": [
+      192,
+      192,
+      191
+     ],
+     "roughness_effective": {
+      "min": 0.776,
+      "mean": 0.832,
+      "max": 0.898
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.004,
+      "max": 0.024,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  },
+  "AV_Halo": {
+   "kind": "avatar",
+   "files": 1,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "omega.glb",
+     "name": "AV_Halo",
+     "baseColorFactor": [
+      1.0,
+      0.95,
+      0.82
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.4,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      1.0,
+      0.95,
+      0.82
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.9512,
+      "mean": 0.9512,
+      "p98": 0.9512
+     },
+     "albedo_srgb_mean_8bit": [
+      255,
+      249,
+      234
+     ],
+     "roughness_effective": {
+      "min": 0.4,
+      "mean": 0.4,
+      "max": 0.4
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  },
+  "AV_Shell": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [
+    "avatars/alignment.glb",
+    "avatars/coordinator.glb",
+    "avatars/host.glb",
+    "avatars/liaison.glb",
+    "avatars/omega.glb",
+    "avatars/specialist.glb"
+   ],
+   "flags": {
+    "dielectric albedo above sRGB 240": 6
+   },
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Shell",
+     "baseColorFactor": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.32,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.9214,
+      "mean": 0.9214,
+      "p98": 0.9214
+     },
+     "albedo_srgb_mean_8bit": [
+      246,
+      246,
+      248
+     ],
+     "roughness_effective": {
+      "min": 0.32,
+      "mean": 0.32,
+      "max": 0.32
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": [
+      "dielectric albedo above sRGB 240 (linear 0.921)"
+     ],
+     "suggested_fix": "baseColor 0.92 linear (sRGB ~246) is brighter than white paint/plastic (~0.8 linear): lower to <= 0.8"
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Shell",
+     "baseColorFactor": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.32,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.9214,
+      "mean": 0.9214,
+      "p98": 0.9214
+     },
+     "albedo_srgb_mean_8bit": [
+      246,
+      246,
+      248
+     ],
+     "roughness_effective": {
+      "min": 0.32,
+      "mean": 0.32,
+      "max": 0.32
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": [
+      "dielectric albedo above sRGB 240 (linear 0.921)"
+     ],
+     "suggested_fix": "baseColor 0.92 linear (sRGB ~246) is brighter than white paint/plastic (~0.8 linear): lower to <= 0.8"
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Shell",
+     "baseColorFactor": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.32,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.92,
+      0.92,
+      0.94
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.9214,
+      "mean": 0.9214,
+      "p98": 0.9214
+     },
+     "albedo_srgb_mean_8bit": [
+      246,
+      246,
+      248
+     ],
+     "roughness_effective": {
+      "min": 0.32,
+      "mean": 0.32,
+      "max": 0.32
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": [
+      "dielectric albedo above sRGB 240 (linear 0.921)"
+     ],
+     "suggested_fix": "baseColor 0.92 linear (sRGB ~246) is brighter than white paint/plastic (~0.8 linear): lower to <= 0.8"
+    }
+   ],
+   "flagged_file_count": 6,
+   "suggested_fix": "baseColor 0.92 linear (sRGB ~246) is brighter than white paint/plastic (~0.8 linear): lower to <= 0.8"
+  },
+  "AV_Trim": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [
+    "avatars/alignment.glb",
+    "avatars/coordinator.glb",
+    "avatars/host.glb",
+    "avatars/liaison.glb",
+    "avatars/omega.glb",
+    "avatars/specialist.glb"
+   ],
+   "flags": {
+    "metallicFactor 0.85 is neither 0 nor 1": 6
+   },
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Trim",
+     "baseColorFactor": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.3,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.7613,
+      "mean": 0.7613,
+      "p98": 0.7613
+     },
+     "albedo_srgb_mean_8bit": [
+      231,
+      226,
+      212
+     ],
+     "roughness_effective": {
+      "min": 0.3,
+      "mean": 0.3,
+      "max": 0.3
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.85-metal trim: set metallic 1 (brass/gold reflectance ~0.9 linear is fine)"
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Trim",
+     "baseColorFactor": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.3,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.7613,
+      "mean": 0.7613,
+      "p98": 0.7613
+     },
+     "albedo_srgb_mean_8bit": [
+      231,
+      226,
+      212
+     ],
+     "roughness_effective": {
+      "min": 0.3,
+      "mean": 0.3,
+      "max": 0.3
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.85-metal trim: set metallic 1 (brass/gold reflectance ~0.9 linear is fine)"
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Trim",
+     "baseColorFactor": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.3,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.8,
+      0.76,
+      0.66
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.7613,
+      "mean": 0.7613,
+      "p98": 0.7613
+     },
+     "albedo_srgb_mean_8bit": [
+      231,
+      226,
+      212
+     ],
+     "roughness_effective": {
+      "min": 0.3,
+      "mean": 0.3,
+      "max": 0.3
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.85-metal trim: set metallic 1 (brass/gold reflectance ~0.9 linear is fine)"
+    }
+   ],
+   "flagged_file_count": 6,
+   "suggested_fix": "0.85-metal trim: set metallic 1 (brass/gold reflectance ~0.9 linear is fine)"
+  },
+  "AV_Visor": {
+   "kind": "avatar",
+   "files": 6,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "alignment.glb",
+     "name": "AV_Visor",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.07,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0031,
+      0.0039,
+      0.006
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0015,
+      "mean": 0.0039,
+      "p98": 0.0224
+     },
+     "albedo_srgb_mean_8bit": [
+      10,
+      13,
+      18
+     ],
+     "roughness_effective": {
+      "min": 0.07,
+      "mean": 0.07,
+      "max": 0.07
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "coordinator.glb",
+     "name": "AV_Visor",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.07,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0031,
+      0.0039,
+      0.006
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0015,
+      "mean": 0.0039,
+      "p98": 0.0224
+     },
+     "albedo_srgb_mean_8bit": [
+      10,
+      13,
+      18
+     ],
+     "roughness_effective": {
+      "min": 0.07,
+      "mean": 0.07,
+      "max": 0.07
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "host.glb",
+     "name": "AV_Visor",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.07,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0031,
+      0.0039,
+      0.006
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0015,
+      "mean": 0.0039,
+      "p98": 0.0224
+     },
+     "albedo_srgb_mean_8bit": [
+      10,
+      13,
+      18
+     ],
+     "roughness_effective": {
+      "min": 0.07,
+      "mean": 0.07,
+      "max": 0.07
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  },
+  "LM_Crown_Glow": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Crown_Glow",
+     "baseColorFactor": [
+      0.0289,
+      1.0,
+      0.6687
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.4,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0289,
+      1.0,
+      0.6687
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.7696,
+      "mean": 0.7696,
+      "p98": 0.7696
+     },
+     "albedo_srgb_mean_8bit": [
+      47,
+      255,
+      213
+     ],
+     "roughness_effective": {
+      "min": 0.4,
+      "mean": 0.4,
+      "max": 0.4
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Crown_Glow",
+     "baseColorFactor": [
+      0.5531,
+      0.0289,
+      1.0
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.4,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.5531,
+      0.0289,
+      1.0
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.2104,
+      "mean": 0.2104,
+      "p98": 0.2104
+     },
+     "albedo_srgb_mean_8bit": [
+      196,
+      47,
+      255
+     ],
+     "roughness_effective": {
+      "min": 0.4,
+      "mean": 0.4,
+      "max": 0.4
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Crown_Glow",
+     "baseColorFactor": [
+      0.0289,
+      1.0,
+      0.3424
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.0,
+     "roughnessFactor": 0.4,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0289,
+      1.0,
+      0.3424
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.7461,
+      "mean": 0.7461,
+      "p98": 0.7461
+     },
+     "albedo_srgb_mean_8bit": [
+      47,
+      255,
+      158
+     ],
+     "roughness_effective": {
+      "min": 0.4,
+      "mean": 0.4,
+      "max": 0.4
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.0,
+      "max": 0.0,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  },
+  "LM_Facade": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [
+    "landmarks/agentic-payments.glb",
+    "landmarks/agents-deploy-infrastructure.glb",
+    "landmarks/autonomous-organizations.glb"
+   ],
+   "flags": {
+    "100% of ORM texels are partially metallic": 3
+   },
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Facade",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5308,
+      0.5621,
+      0.5912
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.3479,
+      "mean": 0.5575,
+      "p98": 0.6266
+     },
+     "albedo_srgb_mean_8bit": [
+      193,
+      198,
+      202
+     ],
+     "roughness_effective": {
+      "min": 0.337,
+      "mean": 0.424,
+      "max": 0.635
+     },
+     "metallic_effective": {
+      "min": 0.09,
+      "mean": 0.343,
+      "max": 0.373,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "100% of ORM texels are partially metallic (0.05-0.95)"
+     ],
+     "suggested_fix": "ORM blue channel is fractional across the whole map on these files: author metallic 0 for stone/render and 1 only on metal mullions"
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Facade",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5308,
+      0.5621,
+      0.5912
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.3479,
+      "mean": 0.5575,
+      "p98": 0.6266
+     },
+     "albedo_srgb_mean_8bit": [
+      193,
+      198,
+      202
+     ],
+     "roughness_effective": {
+      "min": 0.337,
+      "mean": 0.424,
+      "max": 0.635
+     },
+     "metallic_effective": {
+      "min": 0.09,
+      "mean": 0.343,
+      "max": 0.373,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "100% of ORM texels are partially metallic (0.05-0.95)"
+     ],
+     "suggested_fix": "ORM blue channel is fractional across the whole map on these files: author metallic 0 for stone/render and 1 only on metal mullions"
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Facade",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.5308,
+      0.5621,
+      0.5912
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.3479,
+      "mean": 0.5575,
+      "p98": 0.6266
+     },
+     "albedo_srgb_mean_8bit": [
+      193,
+      198,
+      202
+     ],
+     "roughness_effective": {
+      "min": 0.337,
+      "mean": 0.424,
+      "max": 0.635
+     },
+     "metallic_effective": {
+      "min": 0.09,
+      "mean": 0.343,
+      "max": 0.373,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "100% of ORM texels are partially metallic (0.05-0.95)"
+     ],
+     "suggested_fix": "ORM blue channel is fractional across the whole map on these files: author metallic 0 for stone/render and 1 only on metal mullions"
+    }
+   ],
+   "flagged_file_count": 3,
+   "suggested_fix": "ORM blue channel is fractional across the whole map on these files: author metallic 0 for stone/render and 1 only on metal mullions"
+  },
+  "LM_Fin_Tint": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [
+    "landmarks/agentic-payments.glb",
+    "landmarks/agents-deploy-infrastructure.glb",
+    "landmarks/autonomous-organizations.glb",
+    "landmarks/biota-blockchain.glb",
+    "landmarks/cancer-dao.glb",
+    "landmarks/climate-dao.glb",
+    "landmarks/diagnostic-x.glb",
+    "landmarks/ecology-dao.glb",
+    "landmarks/education-dao.glb",
+    "landmarks/empathic-x.glb",
+    "landmarks/locator-x.glb",
+    "landmarks/public-health-dao.glb",
+    "landmarks/robotics-dao.glb",
+    "landmarks/s04-curable-x.glb",
+    "landmarks/s05-biopharma-go.glb",
+    "landmarks/s06-blockchain.glb",
+    "landmarks/s07-divine-dao.glb",
+    "landmarks/s09-astrological-x.glb",
+    "landmarks/s11-molecular.glb",
+    "landmarks/s12-parking-smart-x.glb",
+    "landmarks/s13-gonstead-x.glb",
+    "landmarks/s14-askdoc-x.glb",
+    "landmarks/s15-romanbridge-dao.glb",
+    "landmarks/s16-echodawn-dao.glb",
+    "landmarks/s17-curable-blockchain-dao.glb",
+    "landmarks/s19-moscone-x.glb",
+    "landmarks/s20-cmmc.glb",
+    "landmarks/s21-incubator-dao.glb",
+    "landmarks/s22-get-delivery-dao.glb",
+    "landmarks/s23-avatar-chat.glb",
+    "landmarks/s24-donatello-dao.glb",
+    "landmarks/s25-mypet-ai.glb",
+    "landmarks/s26-lyka-dao.glb",
+    "landmarks/s27-genomic-dao.glb",
+    "landmarks/s28-genomic-blockchain.glb",
+    "landmarks/s29-metaverse-dao.glb",
+    "landmarks/s31-aerospace-dao.glb",
+    "landmarks/s32-solar-dao.glb",
+    "landmarks/s33-infogurus.glb",
+    "landmarks/s34-als-dao.glb",
+    "landmarks/s35-parkinsons-dao.glb"
+   ],
+   "flags": {
+    "metal reflectance too dark": 41,
+    "metallicFactor 0.7 is neither 0 nor 1": 41
+   },
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Fin_Tint",
+     "baseColorFactor": [
+      0.047,
+      0.477,
+      0.3473
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.7,
+     "roughnessFactor": 0.34,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.047,
+      0.477,
+      0.3473
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.3762,
+      "mean": 0.3762,
+      "p98": 0.3762
+     },
+     "albedo_srgb_mean_8bit": [
+      61,
+      184,
+      159
+     ],
+     "roughness_effective": {
+      "min": 0.34,
+      "mean": 0.34,
+      "max": 0.34
+     },
+     "metallic_effective": {
+      "min": 0.7,
+      "mean": 0.7,
+      "max": 0.7,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.376 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "tinted 0.7-metal; anodised/painted fins are either metal 1 with a bright tint or painted dielectric 0"
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Fin_Tint",
+     "baseColorFactor": [
+      0.3002,
+      0.047,
+      0.477
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.7,
+     "roughnessFactor": 0.34,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.3002,
+      0.047,
+      0.477
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1318,
+      "mean": 0.1318,
+      "p98": 0.1318
+     },
+     "albedo_srgb_mean_8bit": [
+      149,
+      61,
+      184
+     ],
+     "roughness_effective": {
+      "min": 0.34,
+      "mean": 0.34,
+      "max": 0.34
+     },
+     "metallic_effective": {
+      "min": 0.7,
+      "mean": 0.7,
+      "max": 0.7,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.132 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "tinted 0.7-metal; anodised/painted fins are either metal 1 with a bright tint or painted dielectric 0"
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Fin_Tint",
+     "baseColorFactor": [
+      0.047,
+      0.477,
+      0.2104
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.7,
+     "roughnessFactor": 0.34,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.047,
+      0.477,
+      0.2104
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.3663,
+      "mean": 0.3663,
+      "p98": 0.3663
+     },
+     "albedo_srgb_mean_8bit": [
+      61,
+      184,
+      126
+     ],
+     "roughness_effective": {
+      "min": 0.34,
+      "mean": 0.34,
+      "max": 0.34
+     },
+     "metallic_effective": {
+      "min": 0.7,
+      "mean": 0.7,
+      "max": 0.7,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.366 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "tinted 0.7-metal; anodised/painted fins are either metal 1 with a bright tint or painted dielectric 0"
+    }
+   ],
+   "flagged_file_count": 41,
+   "suggested_fix": "tinted 0.7-metal; anodised/painted fins are either metal 1 with a bright tint or painted dielectric 0"
+  },
+  "LM_Glass": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [
+    "landmarks/agentic-payments.glb",
+    "landmarks/agents-deploy-infrastructure.glb",
+    "landmarks/autonomous-organizations.glb",
+    "landmarks/biota-blockchain.glb",
+    "landmarks/cancer-dao.glb",
+    "landmarks/climate-dao.glb",
+    "landmarks/diagnostic-x.glb",
+    "landmarks/ecology-dao.glb",
+    "landmarks/education-dao.glb",
+    "landmarks/empathic-x.glb",
+    "landmarks/locator-x.glb",
+    "landmarks/public-health-dao.glb",
+    "landmarks/robotics-dao.glb",
+    "landmarks/s04-curable-x.glb",
+    "landmarks/s05-biopharma-go.glb",
+    "landmarks/s06-blockchain.glb",
+    "landmarks/s07-divine-dao.glb",
+    "landmarks/s09-astrological-x.glb",
+    "landmarks/s11-molecular.glb",
+    "landmarks/s12-parking-smart-x.glb",
+    "landmarks/s13-gonstead-x.glb",
+    "landmarks/s14-askdoc-x.glb",
+    "landmarks/s15-romanbridge-dao.glb",
+    "landmarks/s16-echodawn-dao.glb",
+    "landmarks/s17-curable-blockchain-dao.glb",
+    "landmarks/s19-moscone-x.glb",
+    "landmarks/s20-cmmc.glb",
+    "landmarks/s21-incubator-dao.glb",
+    "landmarks/s22-get-delivery-dao.glb",
+    "landmarks/s23-avatar-chat.glb",
+    "landmarks/s24-donatello-dao.glb",
+    "landmarks/s25-mypet-ai.glb",
+    "landmarks/s26-lyka-dao.glb",
+    "landmarks/s27-genomic-dao.glb",
+    "landmarks/s28-genomic-blockchain.glb",
+    "landmarks/s29-metaverse-dao.glb",
+    "landmarks/s31-aerospace-dao.glb",
+    "landmarks/s32-solar-dao.glb",
+    "landmarks/s33-infogurus.glb",
+    "landmarks/s34-als-dao.glb",
+    "landmarks/s35-parkinsons-dao.glb"
+   ],
+   "flags": {
+    "albedo too dark": 41,
+    "metal reflectance too dark": 41,
+    "100% of ORM texels are partially metallic": 41,
+    "metallicFactor 0.6 scales a metallic texture to fractional values": 41,
+    "roughness reaches 0.024": 41,
+    "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission": 41
+   },
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Glass",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.6,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.0059,
+      0.0072,
+      0.0097
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0046,
+      "mean": 0.0071,
+      "p98": 0.025
+     },
+     "albedo_srgb_mean_8bit": [
+      18,
+      20,
+      25
+     ],
+     "roughness_effective": {
+      "min": 0.024,
+      "mean": 0.078,
+      "max": 0.412
+     },
+     "metallic_effective": {
+      "min": 0.579,
+      "mean": 0.599,
+      "max": 0.6,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+      "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+      "100% of ORM texels are partially metallic (0.05-0.95)",
+      "metallicFactor 0.6 scales a metallic texture to fractional values",
+      "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+      "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+     ],
+     "suggested_fix": "glass modelled as a 0.6-metal; make it metallic 0, roughness ~0.05, alphaMode BLEND (or KHR_materials_transmission)"
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Glass",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.6,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.0059,
+      0.0072,
+      0.0097
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0046,
+      "mean": 0.0071,
+      "p98": 0.025
+     },
+     "albedo_srgb_mean_8bit": [
+      18,
+      20,
+      25
+     ],
+     "roughness_effective": {
+      "min": 0.024,
+      "mean": 0.078,
+      "max": 0.412
+     },
+     "metallic_effective": {
+      "min": 0.579,
+      "mean": 0.599,
+      "max": 0.6,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+      "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+      "100% of ORM texels are partially metallic (0.05-0.95)",
+      "metallicFactor 0.6 scales a metallic texture to fractional values",
+      "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+      "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+     ],
+     "suggested_fix": "glass modelled as a 0.6-metal; make it metallic 0, roughness ~0.05, alphaMode BLEND (or KHR_materials_transmission)"
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Glass",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.6,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.0059,
+      0.0072,
+      0.0097
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0046,
+      "mean": 0.0071,
+      "p98": 0.025
+     },
+     "albedo_srgb_mean_8bit": [
+      18,
+      20,
+      25
+     ],
+     "roughness_effective": {
+      "min": 0.024,
+      "mean": 0.078,
+      "max": 0.412
+     },
+     "metallic_effective": {
+      "min": 0.579,
+      "mean": 0.599,
+      "max": 0.6,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+      "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+      "100% of ORM texels are partially metallic (0.05-0.95)",
+      "metallicFactor 0.6 scales a metallic texture to fractional values",
+      "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+      "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+     ],
+     "suggested_fix": "glass modelled as a 0.6-metal; make it metallic 0, roughness ~0.05, alphaMode BLEND (or KHR_materials_transmission)"
+    }
+   ],
+   "flagged_file_count": 41,
+   "suggested_fix": "glass modelled as a 0.6-metal; make it metallic 0, roughness ~0.05, alphaMode BLEND (or KHR_materials_transmission)"
+  },
+  "LM_Metal": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [
+    "landmarks/agentic-payments.glb",
+    "landmarks/agents-deploy-infrastructure.glb",
+    "landmarks/autonomous-organizations.glb",
+    "landmarks/biota-blockchain.glb",
+    "landmarks/cancer-dao.glb",
+    "landmarks/climate-dao.glb",
+    "landmarks/diagnostic-x.glb",
+    "landmarks/ecology-dao.glb",
+    "landmarks/education-dao.glb",
+    "landmarks/empathic-x.glb",
+    "landmarks/locator-x.glb",
+    "landmarks/public-health-dao.glb",
+    "landmarks/robotics-dao.glb",
+    "landmarks/s04-curable-x.glb",
+    "landmarks/s05-biopharma-go.glb",
+    "landmarks/s06-blockchain.glb",
+    "landmarks/s07-divine-dao.glb",
+    "landmarks/s09-astrological-x.glb",
+    "landmarks/s11-molecular.glb",
+    "landmarks/s12-parking-smart-x.glb",
+    "landmarks/s13-gonstead-x.glb",
+    "landmarks/s14-askdoc-x.glb",
+    "landmarks/s15-romanbridge-dao.glb",
+    "landmarks/s16-echodawn-dao.glb",
+    "landmarks/s17-curable-blockchain-dao.glb",
+    "landmarks/s19-moscone-x.glb",
+    "landmarks/s20-cmmc.glb",
+    "landmarks/s21-incubator-dao.glb",
+    "landmarks/s22-get-delivery-dao.glb",
+    "landmarks/s23-avatar-chat.glb",
+    "landmarks/s24-donatello-dao.glb",
+    "landmarks/s25-mypet-ai.glb",
+    "landmarks/s26-lyka-dao.glb",
+    "landmarks/s27-genomic-dao.glb",
+    "landmarks/s28-genomic-blockchain.glb",
+    "landmarks/s29-metaverse-dao.glb",
+    "landmarks/s31-aerospace-dao.glb",
+    "landmarks/s32-solar-dao.glb",
+    "landmarks/s33-infogurus.glb",
+    "landmarks/s34-als-dao.glb",
+    "landmarks/s35-parkinsons-dao.glb"
+   ],
+   "flags": {
+    "metal reflectance too dark": 41,
+    "metallicFactor 0.85 is neither 0 nor 1": 41
+   },
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Metal",
+     "baseColorFactor": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1914,
+      "mean": 0.1914,
+      "p98": 0.1914
+     },
+     "albedo_srgb_mean_8bit": [
+      124,
+      121,
+      118
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "dark 0.85-metal; real metals reflect >= 50% (aluminium ~0.91, steel ~0.56 linear): raise baseColor to ~0.56-0.91 and set metallic 1, or keep the dark colour as a painted dielectric (metallic 0)"
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Metal",
+     "baseColorFactor": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1914,
+      "mean": 0.1914,
+      "p98": 0.1914
+     },
+     "albedo_srgb_mean_8bit": [
+      124,
+      121,
+      118
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "dark 0.85-metal; real metals reflect >= 50% (aluminium ~0.91, steel ~0.56 linear): raise baseColor to ~0.56-0.91 and set metallic 1, or keep the dark colour as a painted dielectric (metallic 0)"
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Metal",
+     "baseColorFactor": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "baseColorTexture": false,
+     "metallicFactor": 0.85,
+     "roughnessFactor": 0.38,
+     "ormTexture": false,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2,
+      0.19,
+      0.18
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.1914,
+      "mean": 0.1914,
+      "p98": 0.1914
+     },
+     "albedo_srgb_mean_8bit": [
+      124,
+      121,
+      118
+     ],
+     "roughness_effective": {
+      "min": 0.38,
+      "mean": 0.38,
+      "max": 0.38
+     },
+     "metallic_effective": {
+      "min": 0.85,
+      "mean": 0.85,
+      "max": 0.85,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+      "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "dark 0.85-metal; real metals reflect >= 50% (aluminium ~0.91, steel ~0.56 linear): raise baseColor to ~0.56-0.91 and set metallic 1, or keep the dark colour as a painted dielectric (metallic 0)"
+    }
+   ],
+   "flagged_file_count": 41,
+   "suggested_fix": "dark 0.85-metal; real metals reflect >= 50% (aluminium ~0.91, steel ~0.56 linear): raise baseColor to ~0.56-0.91 and set metallic 1, or keep the dark colour as a painted dielectric (metallic 0)"
+  },
+  "LM_Plaque": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [
+    "landmarks/agentic-payments.glb",
+    "landmarks/agents-deploy-infrastructure.glb",
+    "landmarks/autonomous-organizations.glb",
+    "landmarks/biota-blockchain.glb",
+    "landmarks/cancer-dao.glb",
+    "landmarks/climate-dao.glb",
+    "landmarks/diagnostic-x.glb",
+    "landmarks/ecology-dao.glb",
+    "landmarks/education-dao.glb",
+    "landmarks/empathic-x.glb",
+    "landmarks/locator-x.glb",
+    "landmarks/public-health-dao.glb",
+    "landmarks/robotics-dao.glb",
+    "landmarks/s04-curable-x.glb",
+    "landmarks/s05-biopharma-go.glb",
+    "landmarks/s06-blockchain.glb",
+    "landmarks/s07-divine-dao.glb",
+    "landmarks/s09-astrological-x.glb",
+    "landmarks/s11-molecular.glb",
+    "landmarks/s12-parking-smart-x.glb",
+    "landmarks/s13-gonstead-x.glb",
+    "landmarks/s14-askdoc-x.glb",
+    "landmarks/s15-romanbridge-dao.glb",
+    "landmarks/s16-echodawn-dao.glb",
+    "landmarks/s17-curable-blockchain-dao.glb",
+    "landmarks/s19-moscone-x.glb",
+    "landmarks/s20-cmmc.glb",
+    "landmarks/s21-incubator-dao.glb",
+    "landmarks/s22-get-delivery-dao.glb",
+    "landmarks/s23-avatar-chat.glb",
+    "landmarks/s24-donatello-dao.glb",
+    "landmarks/s25-mypet-ai.glb",
+    "landmarks/s26-lyka-dao.glb",
+    "landmarks/s27-genomic-dao.glb",
+    "landmarks/s28-genomic-blockchain.glb",
+    "landmarks/s29-metaverse-dao.glb",
+    "landmarks/s31-aerospace-dao.glb",
+    "landmarks/s32-solar-dao.glb",
+    "landmarks/s33-infogurus.glb",
+    "landmarks/s34-als-dao.glb",
+    "landmarks/s35-parkinsons-dao.glb"
+   ],
+   "flags": {
+    "metallicFactor 0.25 is neither 0 nor 1": 41
+   },
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Plaque",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.25,
+     "roughnessFactor": 0.45,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0901,
+      0.112,
+      0.0974
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0201,
+      "mean": 0.1063,
+      "p98": 0.8657
+     },
+     "albedo_srgb_mean_8bit": [
+      85,
+      94,
+      88
+     ],
+     "roughness_effective": {
+      "min": 0.45,
+      "mean": 0.45,
+      "max": 0.45
+     },
+     "metallic_effective": {
+      "min": 0.25,
+      "mean": 0.25,
+      "max": 0.25,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.25 metallic plaque: choose 0 (enamel) or 1 (cast metal)"
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Plaque",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.25,
+     "roughnessFactor": 0.45,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.1373,
+      0.1146,
+      0.1283
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0099,
+      "mean": 0.1204,
+      "p98": 0.8739
+     },
+     "albedo_srgb_mean_8bit": [
+      104,
+      95,
+      100
+     ],
+     "roughness_effective": {
+      "min": 0.45,
+      "mean": 0.45,
+      "max": 0.45
+     },
+     "metallic_effective": {
+      "min": 0.25,
+      "mean": 0.25,
+      "max": 0.25,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.25 metallic plaque: choose 0 (enamel) or 1 (cast metal)"
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Plaque",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 0.25,
+     "roughnessFactor": 0.45,
+     "ormTexture": false,
+     "emissive": true,
+     "albedo_linear_mean": [
+      0.0966,
+      0.118,
+      0.0946
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.0196,
+      "mean": 0.1118,
+      "p98": 0.8657
+     },
+     "albedo_srgb_mean_8bit": [
+      88,
+      96,
+      87
+     ],
+     "roughness_effective": {
+      "min": 0.45,
+      "mean": 0.45,
+      "max": 0.45
+     },
+     "metallic_effective": {
+      "min": 0.25,
+      "mean": 0.25,
+      "max": 0.25,
+      "mixed_texel_fraction": 1.0
+     },
+     "flags": [
+      "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+     ],
+     "suggested_fix": "0.25 metallic plaque: choose 0 (enamel) or 1 (cast metal)"
+    }
+   ],
+   "flagged_file_count": 41,
+   "suggested_fix": "0.25 metallic plaque: choose 0 (enamel) or 1 (cast metal)"
+  },
+  "LM_Stone": {
+   "kind": "landmark",
+   "files": 41,
+   "flagged_files": [],
+   "flags": {},
+   "samples": [
+    {
+     "file": "agentic-payments.glb",
+     "name": "LM_Stone",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2628,
+      0.2408,
+      0.2091
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.109,
+      "mean": 0.2432,
+      "p98": 0.2998
+     },
+     "albedo_srgb_mean_8bit": [
+      140,
+      135,
+      126
+     ],
+     "roughness_effective": {
+      "min": 0.631,
+      "mean": 0.725,
+      "max": 0.89
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.007,
+      "max": 0.027,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "agents-deploy-infrastructure.glb",
+     "name": "LM_Stone",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2628,
+      0.2408,
+      0.2091
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.109,
+      "mean": 0.2432,
+      "p98": 0.2998
+     },
+     "albedo_srgb_mean_8bit": [
+      140,
+      135,
+      126
+     ],
+     "roughness_effective": {
+      "min": 0.631,
+      "mean": 0.725,
+      "max": 0.89
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.007,
+      "max": 0.027,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    },
+    {
+     "file": "autonomous-organizations.glb",
+     "name": "LM_Stone",
+     "baseColorFactor": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "baseColorTexture": true,
+     "metallicFactor": 1.0,
+     "roughnessFactor": 1.0,
+     "ormTexture": true,
+     "emissive": false,
+     "albedo_linear_mean": [
+      0.2628,
+      0.2408,
+      0.2091
+     ],
+     "albedo_luminance_linear": {
+      "p02": 0.109,
+      "mean": 0.2432,
+      "p98": 0.2998
+     },
+     "albedo_srgb_mean_8bit": [
+      140,
+      135,
+      126
+     ],
+     "roughness_effective": {
+      "min": 0.631,
+      "mean": 0.725,
+      "max": 0.89
+     },
+     "metallic_effective": {
+      "min": 0.0,
+      "mean": 0.007,
+      "max": 0.027,
+      "mixed_texel_fraction": 0.0
+     },
+     "flags": []
+    }
+   ],
+   "flagged_file_count": 0,
+   "suggested_fix": null
+  }
+ },
+ "by_file": {
+  "landmarks/agentic-payments.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": [
+     "100% of ORM texels are partially metallic (0.05-0.95)"
+    ]
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.376 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/agents-deploy-infrastructure.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": [
+     "100% of ORM texels are partially metallic (0.05-0.95)"
+    ]
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.132 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/autonomous-organizations.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": [
+     "100% of ORM texels are partially metallic (0.05-0.95)"
+    ]
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.366 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/biota-blockchain.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.279 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/cancer-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.366 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/climate-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.379 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/diagnostic-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.261 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/ecology-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.140 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/education-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.234 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/empathic-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.399 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/locator-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.355 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/public-health-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.148 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/robotics-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.369 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s04-curable-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.372 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s05-biopharma-go.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.355 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s06-blockchain.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.098 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s07-divine-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.119 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s09-astrological-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.143 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s11-molecular.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.101 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s12-parking-smart-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.107 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s13-gonstead-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.167 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s14-askdoc-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.117 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s15-romanbridge-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.245 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s16-echodawn-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.128 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s17-curable-blockchain-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.158 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s19-moscone-x.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.105 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s20-cmmc.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.360 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s21-incubator-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.161 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s22-get-delivery-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.159 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s23-avatar-chat.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.359 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s24-donatello-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.319 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s25-mypet-ai.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.360 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s26-lyka-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.370 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s27-genomic-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.154 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s28-genomic-blockchain.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.092 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s29-metaverse-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.159 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s31-aerospace-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.146 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s32-solar-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.150 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s33-infogurus.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.148 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s34-als-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.090 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "landmarks/s35-parkinsons-dao.glb": [
+   {
+    "material": "LM_Stone",
+    "flags": []
+   },
+   {
+    "material": "LM_Facade",
+    "flags": []
+   },
+   {
+    "material": "LM_Glass",
+    "flags": [
+     "albedo too dark (mean linear luminance 0.007 < 0.02, near pure black)",
+     "metal reflectance too dark (linear 0.007 < 0.5; real metals 0.5-0.98)",
+     "100% of ORM texels are partially metallic (0.05-0.95)",
+     "metallicFactor 0.6 scales a metallic texture to fractional values",
+     "roughness reaches 0.024 (< 0.03: mirror-like, aliasing risk)",
+     "glass is opaque and metallic 0.6: use metallic 0 + alphaMode BLEND or KHR_materials_transmission"
+    ]
+   },
+   {
+    "material": "LM_Fin_Tint",
+    "flags": [
+     "metal reflectance too dark (linear 0.155 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.7 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Metal",
+    "flags": [
+     "metal reflectance too dark (linear 0.191 < 0.5; real metals 0.5-0.98)",
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "LM_Crown_Glow",
+    "flags": []
+   },
+   {
+    "material": "LM_Plaque",
+    "flags": [
+     "metallicFactor 0.25 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "avatars/alignment.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "avatars/coordinator.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Fabric_Garment",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "avatars/host.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "avatars/liaison.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Fabric_Garment",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ],
+  "avatars/omega.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Fabric_Garment",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Halo",
+    "flags": []
+   }
+  ],
+  "avatars/specialist.glb": [
+   {
+    "material": "AV_Fabric_Body",
+    "flags": []
+   },
+   {
+    "material": "AV_Fabric_Garment",
+    "flags": []
+   },
+   {
+    "material": "AV_Shell",
+    "flags": [
+     "dielectric albedo above sRGB 240 (linear 0.921)"
+    ]
+   },
+   {
+    "material": "AV_Visor",
+    "flags": []
+   },
+   {
+    "material": "AV_Trim",
+    "flags": [
+     "metallicFactor 0.85 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Boot",
+    "flags": [
+     "metallicFactor 0.15 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   },
+   {
+    "material": "AV_Emblem",
+    "flags": [
+     "metallicFactor 0.35 is neither 0 nor 1 (uniform blend, no mixed texels)"
+    ]
+   }
+  ]
+ }
+}
