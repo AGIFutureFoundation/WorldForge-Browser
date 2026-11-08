@@ -666,6 +666,10 @@
    "bytes": 67819,
    "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
   },
+  "console.html": {
+   "bytes": 544,
+   "why": "redirect page (fixes inert _redirects shortcut)"
+  },
   "consoles/worldforge/index.html": {
    "bytes": 1293307,
    "why": "page"
@@ -1877,6 +1881,14 @@
   "sitemap.xml": {
    "bytes": 4974,
    "why": "sitemap"
+  },
+  "whitepaper.html": {
+   "bytes": 571,
+   "why": "redirect page (fixes inert _redirects shortcut)"
+  },
+  "viewer.html": {
+   "bytes": 518,
+   "why": "redirect page (fixes inert _redirects shortcut)"
   },
   "worldforge/out/agentic-payments/agentic-payments.glb": {
    "bytes": 17428,
