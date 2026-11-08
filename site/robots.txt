@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# STAGED — 2026-11-07, Phase C (M4) of the deep-interop-build program
+# (deep-interop-build/m4-catalog/). Built on the Phase 1 audit's draft
+# (phase1-interop-audit/quick-wins/worldforge-robots.txt). Do NOT copy into
+# the live WorldForge repo until Mike approves the host/path and the M4
+# schema decision (see DECISION.md in this directory).
+#
+# Wording copied from the verified worlds-3d robots.txt pattern
+# (worlds-3d/robots.txt): Allow, Content-Signal, Agentmap.
+#
+# HOST NOT YET FILLED IN: the staging copy (worldforge-ui-toggle/site/)
+# gives no live base URL for viewer.html, so the Agentmap line below is
+# relative and there is NO Sitemap line — WorldForge has no sitemap yet and
+# none is invented here. The base URL
+# https://agifuturefoundation.github.io/WorldForge-Browser/ is REPORTED
+# only (staged agent-readiness/worldforge/ai-catalog.json), not
+# live-verified. Fill in the host from the repo before deploying, and only
+# deploy once the unified ai-catalog.json (M4) exists at that path.
+
+# Content-Signal: this site opts out of AI training use.
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
+# Agentmap: machine-readable catalog of this site's agent resources.
+# The catalog does not exist live yet — see the staged unified catalog in
+# deep-interop-build/m4-catalog/ai-catalog.json (M4).
+Agentmap: /ai-catalog.json

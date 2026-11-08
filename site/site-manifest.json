@@ -10,6 +10,10 @@
    "bytes": 0,
    "why": "nojekyll"
   },
+  ".well-known/ai-catalog.json": {
+   "bytes": 16095,
+   "why": "catalog"
+  },
   "agents/hive/voices/agentic-payments/boundary.mp4": {
    "bytes": 44377,
    "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
@@ -666,6 +670,10 @@
    "bytes": 67819,
    "why": "viewer + console: Omega hive voice line (optional; HEAD-checked)"
   },
+  "ai-catalog.json": {
+   "bytes": 16095,
+   "why": "catalog"
+  },
   "console.html": {
    "bytes": 544,
    "why": "redirect page (fixes inert _redirects shortcut)"
@@ -673,6 +681,10 @@
   "consoles/worldforge/index.html": {
    "bytes": 1293307,
    "why": "page"
+  },
+  "llms.txt": {
+   "bytes": 5592,
+   "why": "catalog"
   },
   "my-fabric/worlds/models/env-sky-agentic-payments.glb": {
    "bytes": 126620,
@@ -1877,6 +1889,10 @@
   "my-fabric/worlds/models/spaces-int-studio.glb": {
    "bytes": 597684,
    "why": "viewer: building interior (../my-fabric/worlds/models)"
+  },
+  "robots.txt": {
+   "bytes": 1375,
+   "why": "catalog"
   },
   "sitemap.xml": {
    "bytes": 4974,

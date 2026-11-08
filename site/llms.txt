@@ -1,0 +1,112 @@
+# WorldForge — llms.txt (STAGED — NOT DEPLOYED)
+
+> STAGED 2026-11-07 by Phase C (M4) of the deep-interop-build program
+> (deep-interop-build/m4-catalog/). Built on the Phase 1 audit's draft
+> (phase1-interop-audit/quick-wins/worldforge-llms.txt). Do NOT copy into
+> the live WorldForge repo until Mike approves the host/path and the M4
+> schema decision (see DECISION.md in this directory). Every fact below was
+> copied from a file read in the audit or in M4; no live base URL is asserted
+> as verified — the one base URL named here is labelled REPORTED.
+
+## What this is
+
+Walkable WorldForge viewer: every coming-soon world's Master Cards with its
+real building shells, interiors and agent avatars. 544 WorldForge worlds in
+the index; 0 live on RP1. Powered by AGI Corp.
+
+WorldForge has no discovery files today (no `llms.txt`, `robots.txt`,
+`ai-catalog.json`, `agent.json`, or sitemap in the staging copy — Phase 1
+audit §4.1). This file, the staged `worldforge-robots.txt`, and the staged
+unified `ai-catalog.json` in this directory are the proposed fix.
+
+## Start here
+
+- Viewer: worldforge/viewer.html (staging path; live base URL REPORTED, not
+  live-verified — see "Live base URL" below)
+- World list: worldforge/out/index.json — the viewer loads it at startup
+  (viewer.html:362: `getJSON(new URL('index.json', OUT))`, where OUT is
+  worldforge/out/)
+- Master Cards per world: worldforge/out/<slug>/cards.json
+- Avatars: worldforge/out/avatars/index.json
+- Landmarks: worldforge/out/assets/landmarks/index.json
+- LOD map: worldforge/out/assets/lod/index.json
+- Site manifest (integrity gate): site/site-manifest.json — validated by
+  tools/check_site.mjs against site/
+
+## The index: 544 worlds
+
+- 544 worlds total (source: worlds-3d/data/worlds.json :: worldforge_worlds,
+  copied verbatim into the M4 viewer index).
+- Groups: 502 city districts, 41 curated, 1 spotlight.
+- Every world carries place, biome, and group; most carry lat/lon and a
+  `fellowship.chat` subdomain (batch 1 = 46 subdomains, planned total 549).
+- 0 worlds live on RP1. All 544 are rp1:null.
+
+## Deep links (verified in viewer.html, staging copy)
+
+- viewer.html?world=<slug> — a WorldForge world (544 slugs)
+- viewer.html?world=<slug>&card=<cardId> — a world's Master Card
+- viewer.html?world=<slug>&card=<cardId>&inside=1 — enter the card's room
+- viewer.html?world=<slug>&hud=0 — hide the HUD
+- viewer.html?world=<slug>&tour=1 — tour/recording view
+- The viewer keeps ?world= in sync as you navigate (history.replaceState).
+
+Recording contract: ?world=<slug> &card=<cardId> &hud=0 &tour=1,
+window.__wfReady. Entry follows card.permissions.enter: this viewer is a
+visitor (public). (viewer.html:188-199.)
+
+## The six anchored fabrics and the seven flagships
+
+The six fabrics with real-world anchors are the same six flagships playable
+in worlds-3d (player.html?world=<id>). Their WorldForge fabric JSONs live at
+agifuturefoundation.github.io/WorldForge-Browser/my-fabric/ — see the
+worlds-3d data/anchors.json for the coordinates. All six are rp1:null.
+
+Flagship overlap with the 544-world index (checked 2026-11-07 in M4):
+biota-blockchain, diagnostic-x, empathic-x, and locator-x ARE slugs in the
+index; agi-corp-hub, cognition-x, and smartciti-holodeck are NOT. Do not
+assume a viewer link exists for a flagship until its slug is in the index.
+
+The 7 flagships playable in worlds-3d (player.html?world=<id>,
+explore.html?world=<id>): agi-corp-hub, smartciti-holodeck, cognition-x,
+locator-x, biota-blockchain, empathic-x, diagnostic-x — 56 NPCs, 46 quests,
+73 collectibles, 29 stations, 14 practice simulations (M1 registry counts).
+Simulations are practice only; none certifies, diagnoses, treats, or
+qualifies anyone.
+
+## Agents
+
+- Agent avatars in the viewer are game characters; their live instances are
+  offline, so no hire can be fulfilled from this viewer.
+- Omega Hive: 44 agents defined, 1 seated. 5 agents listed on Virtuals ACP
+  with 29 jobs and 6 subscriptions (verified live 2026-11-06) — all instances
+  offline, no hire can be fulfilled today. Source: Worlds Hub agents.json.
+
+## Live base URL
+
+REPORTED, NOT LIVE-VERIFIED: https://agifuturefoundation.github.io/WorldForge-Browser/
+— asserted only in the staged agent-readiness/worldforge/ai-catalog.json.
+No live check was run in M4. Confirm the live WorldForge-Browser base URL
+from the repo before deploying this file with absolute URLs, and before
+publishing the staged robots.txt Agentmap / sitemap lines with a host.
+
+## Limits
+
+- No API, no login, no live data feed. Nothing here is live on RP1.
+- Building shells use procedural placeholders where the real 3D models are
+  not hosted. Landmarks are synthetic procedural models, not real buildings.
+- Only two entities are verified as filed: AGI Future Foundation (CA
+  Nonprofit Public Benefit Corp, Entity B20260196664, filed 2026-04-24) and
+  AGI Fellowship (CA Nonprofit Religious Corp, Entity B20260229217, filed
+  2026-05-13). No IRS 501(c)(3) determination letter exists for either —
+  neither is tax-exempt and no donation is tax-deductible.
+- AGI Corp has an EIN only; incorporation is unverified. W3 = 33 named
+  sub-series in an April 2026 internal list (not a filing).
+
+## Agent discovery (staged — see M4)
+
+- Agent catalog: ai-catalog.json (STAGED in deep-interop-build/m4-catalog/;
+  unified Shape A catalog — see CATALOG_SCHEMA.md. Does NOT exist live yet.)
+- This llms.txt itself is staged until the live base URL is confirmed.
+- Contact: x@agifuturefoundation.org (human-gated email only — no login,
+  no OAuth, no token).
