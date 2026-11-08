@@ -1,5 +1,6 @@
 <!doctype html>
 <!-- STAGED VIEWER READER WIRING — next-wiring/a-viewer-reader/ (2026-11-07). Source: worldforge-ui-toggle/site/worldforge/viewer.html (read, never edited). STAGED ONLY: do NOT copy over the live viewer without Mike's decision (silent-fallback vs precise-error) — see APPLY.md. Requires the sibling files viewer-link.mjs + worldforge-index.json in the same directory. -->
+<!-- P2 (2026-11-08, worldforge-env-loop): atmosphere presets (Day/Dusk/Night), hover ring + tooltip, click-to-focus on landmarks/avatars, richer world/landmark detail rows from index + LOD data, D2 banner styling. Staged only; see p2-viewer README.md. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -55,6 +56,10 @@
   #access button.ap:hover, #access button.ap.on { color:var(--world); }
   #access .tag { color:var(--muted); white-space:nowrap; } #access .tag.go { color:var(--world); } #access .tag.held { color:var(--held); }
   #gateNote { left:50%; top:58px; transform:translateX(-50%); max-width:min(520px, calc(100% - 24px)); border-color:var(--warn); color:var(--text); }
+  /* D2 banner (P2): the unknown-?world= note is a plain prepended div; give it the warn treatment so it reads as a banner, not stray text. Behaviour unchanged: same text, same fallback. */
+  .wf-world-note { margin:0; padding:10px 16px; background:#2a2113; border-bottom:1px solid var(--warn); color:var(--warn); font-size:13px; }
+  /* Hover tooltip (P2): follows the pointer over pickable cards; positioned by JS against #stage. */
+  #hoverTip { position:absolute; z-index:4; pointer-events:none; max-width:260px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   [hidden] { display:none !important; }
   table { border-collapse:collapse; width:100%; font-size:12px; margin:6px 0; table-layout:fixed; }
   td, th { border-top:1px solid var(--line); padding:5px 6px; text-align:left; vertical-align:top; overflow-wrap:anywhere; }
@@ -124,16 +129,18 @@
     <div id="topbar" class="hud">
       <span class="chip" id="lockup">WorldForge</span>
       <span class="seg" role="group" aria-label="View mode"><button type="button" id="mOrbit" aria-pressed="true">Orbit</button><button type="button" id="mWalk" aria-pressed="false">Walk</button></span>
+      <span class="seg" role="group" aria-label="Atmosphere"><button type="button" id="atmoDay" aria-pressed="true">Day</button><button type="button" id="atmoDusk" aria-pressed="false">Dusk</button><button type="button" id="atmoNight" aria-pressed="false">Night</button></span>
       <button type="button" class="btn primary" id="enterBtn" hidden>Enter</button>
       <button type="button" class="btn" id="exitBtn" hidden>Exit</button>
       <button type="button" class="btn" id="accessBtn" aria-expanded="true" aria-controls="access">Access</button>
       <span class="chip" id="status">loading…</span>
       <button type="button" class="ptoggle" data-ptoggle="topbar" title="Hide top bar" aria-label="Hide top bar">×</button>
     </div>
-    <div id="help" class="hud chip"><button type="button" class="ptoggle" data-ptoggle="help" title="Hide help" aria-label="Hide help">×</button>Orbit: drag to turn, scroll to zoom, click a building, the landmark, an avatar, seat or pad for its card. Walk: click the view to look with the mouse (Esc frees it), W A S D or arrows to move, Shift to run, E at a door to go in or out. Access lists every door and room for one-click teleport; council rooms are view only (stewards enter).</div>
+    <div id="help" class="hud chip"><button type="button" class="ptoggle" data-ptoggle="help" title="Hide help" aria-label="Hide help">×</button>Orbit: drag to turn, scroll to zoom, click a building, the landmark, an avatar, seat or pad for its card. Walk: click the view to look with the mouse (Esc frees it), W A S D or arrows to move, Shift to run, E at a door to go in or out. Access lists every door and room for one-click teleport; council rooms are view only (stewards enter). Keys: H hide UI · F frame selection · 1/2/3 Day/Dusk/Night · click a landmark or avatar to focus it.</div>
     <div id="voicebar" class="hud chip" hidden></div>
     <nav id="access" class="hud chip" aria-label="Access points" hidden></nav>
     <div id="gateNote" class="hud chip" role="status" hidden></div>
+    <div id="hoverTip" class="hud chip" hidden></div>
     <div id="crosshair" class="hud" hidden></div>
     <div id="joy" class="hud" hidden><div id="knob"></div></div>
     <div id="uiCtl" class="hud ui-ctl" role="group" aria-label="Interface controls">
@@ -286,6 +293,37 @@ function fitShadow(cx, cz, r) {
   sun.target.updateMatrixWorld(); sun.updateMatrixWorld();
 }
 fitShadow(0, 0, 200);
+
+// ---- Atmosphere presets (P2): Day / Dusk / Night. Applied ON TOP of buildSky's per-world lighting
+// (buildSky derives sun/hemi from the world's own sky horizon); a preset only scales those values and
+// retunes fog + exposure, so a world's sky still drives the base look. Persisted in localStorage
+// (wf-atmo-v1); keys 1 / 2 / 3 and the top-bar seg. Re-applied on every openWorld, because buildSky
+// resets sun/hemi/fog for the new world. No new assets, no new fetches.
+const ATMO_KEY = 'wf-atmo-v1';
+const ATMO = {
+  day:   { sun: 1.0, hemi: 1.0, expo: 1.0, fogNear: 300, fogFar: 1150, bgMul: 1.0 },
+  dusk:  { sun: 0.55, hemi: 0.75, expo: 0.95, fogNear: 220, fogFar: 950, bgMul: 0.82 },
+  night: { sun: 0.28, hemi: 0.5, expo: 0.9, fogNear: 140, fogFar: 700, bgMul: 0.45 },
+};
+let atmoMode = 'day';
+try { const m = localStorage.getItem(ATMO_KEY); if (ATMO[m]) atmoMode = m; } catch {}
+let atmoBase = null; // captured after buildSky: { sunI, hemiI, fog, bg }
+function captureAtmoBase() {
+  atmoBase = { sunI: sun.intensity, hemiI: hemi.intensity, fog: scene.fog.color.clone(), bg: scene.background?.isColor ? scene.background.clone() : new THREE.Color('#9fb6c8') };
+}
+function applyAtmosphere(mode) {
+  const a = ATMO[mode]; if (!a) return;
+  atmoMode = mode;
+  try { localStorage.setItem(ATMO_KEY, mode); } catch {}
+  for (const [k, id] of [['day', 'atmoDay'], ['dusk', 'atmoDusk'], ['night', 'atmoNight']]) { const b = document.getElementById(id); if (b) b.setAttribute('aria-pressed', String(k === mode)); }
+  if (!atmoBase) return; // world not built yet; openWorld re-applies after buildSky
+  sun.intensity = atmoBase.sunI * a.sun;
+  hemi.intensity = atmoBase.hemiI * a.hemi;
+  renderer.toneMappingExposure = a.expo;
+  scene.fog.near = a.fogNear; scene.fog.far = a.fogFar;
+  scene.fog.color.copy(atmoBase.fog).multiplyScalar(a.bgMul);
+  if (scene.background?.isColor) scene.background.copy(atmoBase.bg).multiplyScalar(a.bgMul);
+}
 
 function size() {
   const r = stage.getBoundingClientRect(); const w = Math.max(1, r.width), h = Math.max(1, r.height);
@@ -467,6 +505,7 @@ async function openWorld(slug) {
   const lmP = task(placeLandmark(slug, lmIdx), 'landmark');
   await Promise.all([skyP, blockP, buildP, avP, coP, lmP]);
   if (token !== S.token) return;
+  captureAtmoBase(); applyAtmosphere(atmoMode); // P2: buildSky reset the lights/fog; restore the chosen preset
   S.coordinator = S.coordinator ?? S.avatars.find((a) => a.card.kind === 'coordinator') ?? null;
   buildPadDressing(); buildTrees(); buildLamps(); buildHills(); placeSeats(); hideReplacedBlockout();
   S.loadMs = Math.round(performance.now() - t0);
@@ -954,6 +993,10 @@ function buildLamps() {
 // ---------------------------------------------------------------------------------- selection + UI ----
 const selRing = new THREE.Mesh(new THREE.RingGeometry(1, 1.09, 72).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.55, depthWrite: false, fog: false }));
 selRing.visible = false; selRing.renderOrder = 3; scene.add(selRing);
+// Hover ring (P2): a thinner, dimmer sibling of selRing, shown under the pointer in orbit mode.
+// Its own mesh and material — hover never touches shared materials or the selection ring.
+const hoverRing = new THREE.Mesh(new THREE.RingGeometry(1, 1.05, 72).rotateX(-Math.PI / 2), new THREE.MeshBasicMaterial({ color: '#ffffff', transparent: true, opacity: 0.35, depthWrite: false, fog: false }));
+hoverRing.visible = false; hoverRing.renderOrder = 3; scene.add(hoverRing);
 function cardFor(obj) {
   for (let o = obj; o; o = o.parent) { const id = o.userData?.cardId ?? o.userData?.parentCardId; if (id && S.cards.has(id)) return S.cards.get(id); }
   return null;
@@ -1262,6 +1305,17 @@ function show(c) {
   if (c.parentCardId !== undefined) tr('Parent', `<code>${esc(c.parentCardId ?? 'none (root)')}</code>`);
   if (V) tr('Volum', `centre ${V.center.join(', ')} · half ${V.halfExtents.join(', ')} m`);
   if (c.kind === 'world') { tr('Status', esc(c.status)); tr('Management', esc(c.management_style)); tr('RP1 anchor', c.anchor?.lat ? `${esc(c.anchor.lat)}, ${esc(c.anchor.lon)}` : '<span class="held">none yet</span>'); if (c.omega_steward) tr('Omega Steward', `${esc(c.omega_steward.id)} · <span class="held">${esc(c.omega_steward.status)}</span>`); }
+  // P2: index-sourced world facts, from worldforge/out/index.json — the same file the sidebar
+  // totals come from. No tutor link exists anywhere in that index (checked 2026-11-08: no tutor,
+  // link or href field), so none is shown here. Nothing is invented: every number is an index field.
+  if (c.kind === 'world') {
+    const iw = index?.worlds?.find((w) => w.slug === S.slug);
+    if (iw) {
+      tr('World index', `${iw.cards} cards · ${iw.zones} zones · ${iw.agents} agents · ${iw.primitives} primitives · ${iw.roads} roads · ${iw.planNodes} plan nodes · ${iw.resourceNodes} resource nodes`);
+      tr('World file', `${iw.glbBytes.toLocaleString()} B GLB · ${iw.anchored ? 'anchored' : 'not anchored'} · ${iw.omega ? 'Omega world' : 'no Omega flag'} · ${iw.gaps} gap${iw.gaps === 1 ? '' : 's'}${iw.failed.length ? ` · ${iw.failed.length} failed` : ''}`);
+      tr('Index totals', `${index.totals.worlds} worlds · ${index.totals.cards} cards · ${index.totals.primitives} primitives · ${index.totals.evals} evals · ${index.totals.failed} failed · ${index.totals.anchored} anchored`);
+    }
+  }
   if (c.kind === 'seat') tr('Seat', `${esc(c.seat_type)} seat · <b>${c.seated ? esc(c.seated) : 'empty'}</b>`);
   if (c.kind === 'omega') { tr('Omega id', `<code>${esc(c.omega_id)}</code>`); tr('Status', `<span class="held">${esc(c.status)}</span>`); tr('Seated agent', esc(c.seated_agent ?? 'none')); }
   if (B) {
@@ -1274,7 +1328,7 @@ function show(c) {
   }
   if (c.binding) { const mp = c.binding.metaprompt; tr('Swarm', `<code>${esc(c.binding.swarm)}</code>`); if (mp) tr('Metaprompt', `<code>${esc(typeof mp === 'object' ? `${mp.file ?? ''}${mp.id ? ' #' + mp.id : ''}` : mp)}</code>`); if (c.binding.fabricNode) tr('Fabric node', esc(c.binding.fabricNode)); if (c.binding.registry) tr('Registry', `<code>${esc(c.binding.registry)}</code>`); }
   if (c.stands_on) tr('Stands on', `<code>${esc(c.stands_on)}</code> (no coordinator card yet; placed from worldforge/out/avatars/index.json)`);
-  if (c.avatar) { const a = info?.avatar; tr('Avatar', `<code>${esc(c.avatar.model_ref)}</code> · ${a ? (a.model ? '<span class="ok">model loaded</span>' : '<span class="held">did not load: tinted stand-in</span>') : ''}`); }
+  if (c.avatar) { const a = info?.avatar; tr('Avatar', `<code>${esc(c.avatar.model_ref)}</code> · ${a ? (a.model ? '<span class="ok">model loaded</span>' : '<span class="held">did not load: tinted stand-in</span>') : ''}`); if (a?.lod1) tr('Avatar LOD', `<code>${esc(a.lod1)}</code> · shown beyond ${LOD_M} m`); }
   if (c.hive_ref) tr('Hive record', `<code>${esc(c.hive_ref)}</code>`);
   tr('Source', `<code>${esc(c.source)}</code>`);
   if (c.kind === 'advisor') { if (c.manages) tr('Manages', esc(c.manages)); tr('Kind', `<span class="held">${esc(c.note ?? 'a scripted guide, not an AI model')}</span>`); if (c.binding?.advisor) tr('Advisor file', `<code>${esc(c.binding.advisor.file ?? '')}${c.binding.advisor.id ? ' #' + esc(c.binding.advisor.id) : ''}</code>`); }
@@ -1284,6 +1338,10 @@ function show(c) {
     tr('What it is', '<span class="held">synthetic civic landmark, not a real building</span>');
     tr('Placement', `translation ${esc(c.placement?.translation?.join(', '))} · yaw ${esc(c.placement?.yaw_deg)}° (entrance turned to the plaza) · <span class="muted">suggested by the landmarks build, not written into the world's cards</span>`);
     tr('Model', `<code>${esc(c.file)}</code> · ${esc(c.triangles)} triangles · ${S.landmark?.model ? '<span class="ok">loaded</span>' : '<span class="bad">did not load</span>'}`);
+    // P2: LOD figures for this world's landmark, from worldforge/out/assets/lod/index.json (47 items:
+    // 41 landmarks + 6 avatars). Matched by slug; shown only when the entry exists.
+    const lod = S.lodIdx?.items?.find((i) => i.kind === 'landmark' && i.name === S.slug);
+    if (lod) tr('LOD', `LOD1 ${lod.bytes1.toLocaleString()} B vs LOD0 ${lod.bytes0.toLocaleString()} B (${(lod.ratio * 100).toFixed(1)}%) · ${lod.tris1.toLocaleString()} / ${lod.tris0.toLocaleString()} triangles · shown beyond ${LOD_M} m`);
     if (c.mark) tr('Plaque', `brand mark letters only: <b>${esc(c.mark)}</b>`);
   }
   const lead = c.kind === 'advisor' ? `Scripted guide for ${c.manages ?? 'this world'}.` : c.purpose ?? c.role ?? c.tagline ?? '';
@@ -1462,6 +1520,11 @@ $('#mOrbit').onclick = () => setMode('orbit');
 $('#mWalk').onclick = () => setMode('walk');
 $('#enterBtn').onclick = () => enterBuilding(buildingOf(S.selected));
 $('#exitBtn').onclick = () => exitBuilding(false);
+// P2: atmosphere seg wiring; applyAtmosphere also syncs aria-pressed for the saved mode.
+$('#atmoDay').onclick = () => applyAtmosphere('day');
+$('#atmoDusk').onclick = () => applyAtmosphere('dusk');
+$('#atmoNight').onclick = () => applyAtmosphere('night');
+applyAtmosphere(atmoMode);
 
 function collide(nx, nz) {
   const b = S.inside;
@@ -1505,6 +1568,11 @@ function updateWalk(dt) {
 addEventListener('keydown', (e) => {
   if (e.target.closest?.('input, textarea')) return;
   if (e.code === 'KeyH') { toggleClean(); return; }
+  // P2: F frames the selection; 1/2/3 switch the atmosphere preset. Both are listed in the Help bar.
+  if (e.code === 'KeyF' && S.selected) { if (S.mode === 'walk') setMode('orbit'); frameCard(S.selected); return; }
+  if (e.code === 'Digit1') { applyAtmosphere('day'); return; }
+  if (e.code === 'Digit2') { applyAtmosphere('dusk'); return; }
+  if (e.code === 'Digit3') { applyAtmosphere('night'); return; }
   if (S.mode === 'walk' && /^(Key[WASDE]|Arrow|Shift)/.test(e.code)) { walk.keys.add(e.code); if (e.code.startsWith('Arrow')) e.preventDefault(); }
   if (e.code === 'KeyE' && S.mode === 'walk') {
     if (S.inside) { const [, zl] = toLocal(S.inside, walk.x, walk.z); if (zl > 1.5) exitBuilding(true); }
@@ -1535,10 +1603,42 @@ cv.addEventListener('pointerup', (e) => {
   if (!tap) return;
   if (S.mode === 'walk' && document.pointerLockElement === cv) { const r = cv.getBoundingClientRect(); const c = pickAt(r.left + r.width / 2, r.top + r.height / 2); if (c) select(c); return; }
   const c = pickAt(e.clientX, e.clientY);
-  if (c) select(c);
+  // P2: click-to-focus — a click on a landmark or an avatar (agent / omega / coordinator /
+  // advisor) selects AND frames it; buildings, seats and pads keep select-only on a single
+  // click (double-click still frames everything).
+  if (c) { select(c); if (S.mode === 'orbit' && ['landmark', 'agent', 'omega', 'coordinator', 'advisor'].includes(c.kind)) frameCard(c); }
   else if (S.mode === 'walk' && !coarse && cv.requestPointerLock) { try { const p = cv.requestPointerLock(); p?.catch?.(() => {}); } catch {} }
 });
 cv.addEventListener('dblclick', (e) => { if (S.mode !== 'orbit') return; const c = pickAt(e.clientX, e.clientY); if (c) { select(c); frameCard(c); } });
+// ---- Hover feedback (P2): in orbit mode the pointer gets a ring on the hovered card plus a
+// name tooltip. Throttled to one raycast per animation frame; touch pointers are excluded
+// (no hover on touch); walk mode keeps its drag-look behaviour untouched.
+let hoverRAF = false;
+function hoverAt(cx, cy) {
+  const tip = $('#hoverTip');
+  if (S.mode !== 'orbit' || TOUR || !S.ready) { hoverRing.visible = false; if (tip) tip.hidden = true; return; }
+  const c = pickAt(cx, cy);
+  if (!c || !tip) { hoverRing.visible = false; if (tip) tip.hidden = true; return; }
+  const info = S.byCard.get(c.cardId);
+  if (info) {
+    const r = info.building ? 9.5 : info.radius + 0.6;
+    hoverRing.scale.setScalar(r);
+    const base = info.building ? info.building.y : floorAt(info.pos.x, info.pos.z);
+    hoverRing.position.set(info.pos.x, (info.seatIn ? info.pos.y - 0.6 : base) + 0.04, info.pos.z);
+    hoverRing.visible = true;
+  } else hoverRing.visible = false;
+  tip.textContent = `${c.name ?? c.cardId} · ${c.kind === 'omega' ? 'Omega Steward' : c.kind}`;
+  tip.hidden = false;
+  const sr = stage.getBoundingClientRect();
+  tip.style.left = Math.min(cx - sr.left + 14, Math.max(0, sr.width - 190)) + 'px';
+  tip.style.top = (cy - sr.top + 14) + 'px';
+}
+cv.addEventListener('pointermove', (e) => {
+  if (S.mode !== 'orbit' || e.pointerType === 'touch') return;
+  if (hoverRAF) return; hoverRAF = true;
+  requestAnimationFrame(() => { hoverRAF = false; hoverAt(e.clientX, e.clientY); });
+});
+cv.addEventListener('pointerleave', () => { hoverRing.visible = false; const t = $('#hoverTip'); if (t) t.hidden = true; });
 // on-screen joystick for touch walking
 {
   const joy = $('#joy'), knob = $('#knob'); let id = null;
@@ -1629,6 +1729,8 @@ window.__wfInfo = () => ({ world: S.slug, ready: S.ready, loadMs: S.loadMs, stat
   buildings: S.buildings.map((b) => ({ card: b.card.cardId, ext: !!b.ext, room: !!b.room, int: !!b.int, at: [+b.x.toFixed(2), +b.y.toFixed(2), +b.z.toFixed(2)], yawDeg: +(b.yaw * 180 / Math.PI).toFixed(1) })),
   landmark: S.landmark ? { card: S.landmark.card.cardId, model: S.landmark.model, at: [S.landmark.x, S.landmark.y, S.landmark.z], yawDeg: +(S.landmark.yaw * 180 / Math.PI).toFixed(1), height: S.landmark.H, style: S.landmark.card.style } : null,
   avatars: S.avatars.map((a) => ({ card: a.card.cardId, kind: a.card.kind, model: a.model, ref: a.ref ?? null, at: [+a.x.toFixed(2), +a.y.toFixed(2), +a.z.toFixed(2)], height: +a.height.toFixed(2) })) });
+// P2 test hook: atmosphere preset state, for the harness / live checks.
+window.__wfAtmo = () => ({ mode: atmoMode, saved: (() => { try { return localStorage.getItem(ATMO_KEY); } catch { return null; } })(), base: atmoBase ? { sunI: +atmoBase.sunI.toFixed(2), hemiI: +atmoBase.hemiI.toFixed(2) } : null });
 
 size();
 // ---- STAGED entry resolution (viewer-link reader; see wiring block above) ----
