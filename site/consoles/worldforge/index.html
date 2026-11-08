@@ -54,6 +54,8 @@ background:linear-gradient(135deg,hsl(var(--h) 72% 48%),hsl(calc(var(--h) + 40) 
 .layout{display:grid;grid-template-columns:270px minmax(0,1fr);gap:16px;align-items:start}
 .wl{position:sticky;top:76px;max-height:calc(100vh - 92px);overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:8px}
 .wl input{width:100%;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:8px 10px;margin-bottom:6px}
+#view .tbar #cq{flex:1;min-width:180px;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:8px 10px;color:var(--ink)}
+#cqCount{font-size:.85rem}
 .wb{display:flex;gap:10px;align-items:center;width:100%;text-align:left;padding:7px 8px;border:1px solid transparent;border-radius:10px;background:none;cursor:pointer}
 .wb:hover{background:var(--panel2)}.wb[aria-current="true"]{background:hsl(var(--h) 50% 50% / .14);border-color:hsl(var(--h) 60% 55% / .55)}
 .wb[hidden]{display:none}.wbt{min-width:0}.wbt b{display:block;font-size:13px;line-height:1.25}.wbt small{display:block;color:var(--ink2);font-size:11px}
@@ -176,7 +178,7 @@ h4{font:700 11.5px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.1em;
   const LINE = { greet: 'Greeting', role: 'Role', boundary: 'Boundary', services: 'Services' };
   const UP = '../../';
   const CHEV = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
-  const viewerUrl = (slug, card) => UP + 'worldforge/viewer.html?world=' + encodeURIComponent(slug) + (card ? '&card=' + encodeURIComponent(card) : '');
+  const viewerUrl = (slug, card) => 'https://agifuturefoundation.github.io/WorldForge-Browser/worldforge/viewer.html?world=' + encodeURIComponent(slug) + (card ? '&card=' + encodeURIComponent(card) : '');
   const base = (p) => String(p || '').split('/').pop();
   const tag = (cls, text) => '<span class="tag ' + cls + '">' + esc(text) + '</span>';
   const num = (v) => (v == null ? 'none' : Number(v).toLocaleString('en-US'));
@@ -401,7 +403,7 @@ h4{font:700 11.5px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.1em;
     return '<div class="wh"><span class="mark lg" aria-hidden="true">' + esc(w.brand.mark) + '</span><div class="wh-t"><div class="eyebrow">' + esc(w.brand.lockup || '') + '</div>'
       + '<h2 id="wTitle">' + esc(w.name) + ' ' + tag('st', w.status || '') + '</h2><p>' + esc(w.tagline || '') + '</p>'
       + '<div class="meta">' + anch + '<span>' + esc(w.mgmt || '') + '</span><span>Omega: ' + (os ? esc(os.status) : 'none defined') + '</span><span class="mono">' + esc(w.slug) + '</span><span>skin: hue ' + esc(w.brand.hue) + ', mark ' + esc(w.brand.mark) + '</span></div>'
-      + '<div class="links"><a class="btn" href="' + esc(viewerUrl(w.slug)) + '">Open in viewer</a><a class="btn ghost" href="../hive/#' + esc(w.slug) + '">Hive console</a><a class="btn ghost" href="../../agents/teams.html">Team console</a></div></div></div>';
+      + '<div class="links"><a class="btn" href="' + esc(viewerUrl(w.slug)) + '">Open in viewer</a><a class="btn ghost" href="../hive/#' + esc(w.slug) + '">Hive console</a><a class="btn ghost" href="../../agents/teams.html">Team console</a></div><div class="tbar"><label class="sr" for="cq">Filter cards, agents and buildings in this world</label><input id="cq" type="search" placeholder="Filter cards, agents + buildings in this world" autocomplete="off"><span id="cqCount" class="muted" aria-live="polite"></span></div></div></div>';
   }
   function wstats(w) {
     const c = w.counts, e = Object.values(w.evals);
@@ -494,6 +496,92 @@ h4{font:700 11.5px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.1em;
   window.WF = { show, slugs: D.worlds.map((w) => w.slug), current: () => cur };
   show(start && BY.has(start) ? start : D.defaultWorld, false);
 })();
+</script>
+<script>
+/* P4 — WorldForge console: filter the rendered world view.
+ *
+ * ADDITIVE ONLY. New standalone <script> block, placed after the main
+ * console script in consoles/worldforge/index.html. It touches no existing
+ * code: the filter input (#cq) is rendered by header(w) in the world-view
+ * toolbar, and this listener is delegated on #view, so it survives show()
+ * re-renders (a world switch rebuilds the input empty, which correctly
+ * clears the filter for the new world).
+ *
+ * What it filters (text already on the page — no data added, nothing
+ * invented):
+ *   - card-tree rows: #view ul.tree li (one <li> per card of the shown
+ *     world). li.textContent covers the whole subtree, so a parent row
+ *     stays visible when any descendant matches, and non-matching
+ *     children hide themselves.
+ *   - table rows: #view table tr (agents + buildings tables), skipping
+ *     header rows (those containing a <th>).
+ * Collapsed <ul hidden> ancestors of a match are un-hidden while the
+ * filter is active and restored when the query is cleared.
+ * Known edge: clearing the filter restores the pre-filter collapse state
+ * even if the visitor pressed Expand all mid-filter.
+ */
+(function () {
+  var view = document.getElementById('view');
+  if (!view) return;
+  var opened = []; // collapsed <ul>s we un-hid while filtering
+  function toks(q) { return q.trim().toLowerCase().split(/\s+/).filter(Boolean); }
+  function hit(text, ts) {
+    var t = (text || '').toLowerCase();
+    for (var i = 0; i < ts.length; i++) if (t.indexOf(ts[i]) === -1) return false;
+    return true;
+  }
+  function setCount(text) {
+    var c = document.getElementById('cqCount');
+    if (c) c.textContent = text;
+  }
+  function clear() {
+    var lis = view.querySelectorAll('ul.tree li');
+    for (var i = 0; i < lis.length; i++) lis[i].style.display = '';
+    var trs = view.querySelectorAll('table tr');
+    for (var j = 0; j < trs.length; j++) trs[j].style.display = '';
+    for (var k = 0; k < opened.length; k++) opened[k].hidden = true;
+    opened = [];
+    setCount('');
+  }
+  function apply(q) {
+    var ts = toks(q);
+    if (!ts.length) { clear(); return; }
+    var shown = 0, total = 0;
+    var lis = view.querySelectorAll('ul.tree li');
+    for (var i = 0; i < lis.length; i++) {
+      total++;
+      var li = lis[i];
+      if (hit(li.textContent, ts)) {
+        li.style.display = '';
+        shown++;
+        var p = li.parentElement;
+        while (p && p !== view) {
+          if (p.tagName === 'UL' && p.hidden) {
+            p.hidden = false;
+            if (opened.indexOf(p) === -1) opened.push(p);
+          }
+          p = p.parentElement;
+        }
+      } else {
+        li.style.display = 'none';
+      }
+    }
+    var trs = view.querySelectorAll('table tr');
+    for (var j = 0; j < trs.length; j++) {
+      var tr = trs[j];
+      if (tr.querySelector('th')) continue; // header row
+      total++;
+      if (hit(tr.textContent, ts)) { tr.style.display = ''; shown++; }
+      else tr.style.display = 'none';
+    }
+    setCount(shown + ' of ' + total + ' rows shown');
+  }
+  view.addEventListener('input', function (e) {
+    var t = e.target;
+    if (t && t.id === 'cq') apply(t.value);
+  });
+})();
+
 </script>
 </body>
 </html>
