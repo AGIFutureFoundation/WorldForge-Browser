@@ -229,7 +229,7 @@ app.get('/v2/rp1/connections', (c) => {
       fly: {
         app: 'worldforge-api',
         apiDetail: `${origin}/v2/rp1/worlds/${w.slug}`,
-        worldPage: `https://www.agifuturefoundation.org/earth/world.html?world=${w.slug}`,
+        worldPage: `https://agifuturefoundation.github.io/WorldForge-Browser/earth/world.html?world=${w.slug}`,
         ...(isMounted
           ? { status: 'mounted', sneezePlan: `${origin}/v2/sneeze/plans/${w.slug}`, previewGlb: `${origin}/v2/worlds/${w.slug}/preview.glb` }
           : { status: 'mount-plan-pending' }),

@@ -22,7 +22,7 @@ WORLDS = os.path.join(ROOT, "site", "earth", "worlds.json")
 OUT = os.path.join(ROOT, "worldforge", "out")
 PAGE = os.path.join(ROOT, "site", "earth", "rp1.html")
 API = "https://worldforge-api.fly.dev"
-BASE = "https://www.agifuturefoundation.org"
+BASE = "https://agifuturefoundation.github.io/WorldForge-Browser"
 
 
 def esc(s):
