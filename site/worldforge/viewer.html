@@ -1,6 +1,8 @@
 <!doctype html>
 <!-- STAGED VIEWER READER WIRING — next-wiring/a-viewer-reader/ (2026-11-07). Source: worldforge-ui-toggle/site/worldforge/viewer.html (read, never edited). STAGED ONLY: do NOT copy over the live viewer without Mike's decision (silent-fallback vs precise-error) — see APPLY.md. Requires the sibling files viewer-link.mjs + worldforge-index.json in the same directory. -->
 <!-- P2 (2026-11-08, worldforge-env-loop): atmosphere presets (Day/Dusk/Night), hover ring + tooltip, click-to-focus on landmarks/avatars, richer world/landmark detail rows from index + LOD data, D2 banner styling. Staged only; see p2-viewer README.md. -->
+<!-- P8 (2026-11-08, worldforge-env-loop): night-preset depth — lamp emissive + sky-dome shader driven by the Night preset; Day/Dusk values unchanged. Staged only; see p8-night-depth README.md. -->
+<!-- P6 (2026-11-08, worldforge-env-loop): tutor descriptions (tutors-index.json, P3) in the detail-panel lead for world cards; generic-DAO-template label for the 28 template slugs. Staged only; see p6-tutor-panels README.md. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -251,6 +253,34 @@ const smooth = (t) => t * t * t * (t * (t * 6 - 15) + 10);
 const lerp = (a, b, t) => a + (b - a) * t;
 const angDiff = (a, b) => { const d = (((a - b) % (2 * Math.PI)) + 3 * Math.PI) % (2 * Math.PI) - Math.PI; return Math.abs(d); };
 async function getJSON(url) { try { const r = await fetch(url, { cache: 'no-cache' }); return r.ok ? await r.json() : null; } catch { return null; } }
+// ---- P6: tutor-sourced descriptions (tutors-index.json, staged by P3 at
+// site/worldforge/out/training/tutors/). The viewer fetches the index once per
+// openWorld (cached, same pattern as avatars/landmarks/LOD) and shows the
+// tutor description as the detail-panel lead for world cards. No description
+// is embedded here: the index is 35,599 B for 41 tutors. If the fetch fails
+// (P3 not live yet) or the slug has no tutor entry, the lead falls back to
+// the card's own tagline exactly as before. The 28 Series tutor files are
+// one generic DAO template (P3 finding: charter focus "not yet set by the
+// stewards", same four zones, same six specialists) — for those slugs the
+// lead says so instead of presenting the template text as a world-specific
+// description. Detection is the index description's own sentence: every one
+// of the 28 carries "charter focus is not yet set by the stewards" and none
+// of the other 13 does (verified in test-p6.mjs against tutors-index.json).
+// The 6 named-focus DAOs (cancer, climate, ecology, education, public-health,
+// robotics) and the 7 distinctive tutors show their index description verbatim.
+const TUTOR_GENERIC_PHRASE = 'charter focus is not yet set by the stewards';
+const TUTOR_GENERIC_LEAD = 'Tutor: generic DAO template — charter not yet set by stewards.';
+function tutorFor(slug) {
+  const list = S.tutorIdx?.tutors;
+  if (!Array.isArray(list) || !slug) return null;
+  return list.find((t) => t.slug === slug) ?? null;
+}
+function tutorLead(slug, fallback) {
+  const t = tutorFor(slug);
+  if (!t || typeof t.description !== 'string' || !t.description) return fallback;
+  if (t.description.includes(TUTOR_GENERIC_PHRASE)) return TUTOR_GENERIC_LEAD;
+  return t.description;
+}
 function mulberry32(a) { return () => { a |= 0; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
 function hashStr(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; }
 
@@ -301,15 +331,19 @@ fitShadow(0, 0, 200);
 // resets sun/hemi/fog for the new world. No new assets, no new fetches.
 const ATMO_KEY = 'wf-atmo-v1';
 const ATMO = {
-  day:   { sun: 1.0, hemi: 1.0, expo: 1.0, fogNear: 300, fogFar: 1150, bgMul: 1.0 },
-  dusk:  { sun: 0.55, hemi: 0.75, expo: 0.95, fogNear: 220, fogFar: 950, bgMul: 0.82 },
-  night: { sun: 0.28, hemi: 0.5, expo: 0.9, fogNear: 140, fogFar: 700, bgMul: 0.45 },
+  // lamp = lamp-head emissive multiplier; lampWarm = warm emissive tint (null = captured base).
+  // skyTop/skyBot = sky-dome multipliers (zenith / horizon). Day + Dusk are 1.0 throughout:
+  // only Night changes the lamps or the dome, so Day/Dusk behaviour is byte-identical to P2/P6.
+  day:   { sun: 1.0, hemi: 1.0, expo: 1.0, fogNear: 300, fogFar: 1150, bgMul: 1.0, lamp: 1.0, lampWarm: null, skyTop: 1.0, skyBot: 1.0 },
+  dusk:  { sun: 0.55, hemi: 0.75, expo: 0.95, fogNear: 220, fogFar: 950, bgMul: 0.82, lamp: 1.0, lampWarm: null, skyTop: 1.0, skyBot: 1.0 },
+  night: { sun: 0.28, hemi: 0.5, expo: 0.9, fogNear: 140, fogFar: 700, bgMul: 0.45, lamp: 2.6, lampWarm: '#ffb45e', skyTop: 0.16, skyBot: 0.38 },
 };
 let atmoMode = 'day';
 try { const m = localStorage.getItem(ATMO_KEY); if (ATMO[m]) atmoMode = m; } catch {}
 let atmoBase = null; // captured after buildSky: { sunI, hemiI, fog, bg }
 function captureAtmoBase() {
   atmoBase = { sunI: sun.intensity, hemiI: hemi.intensity, fog: scene.fog.color.clone(), bg: scene.background?.isColor ? scene.background.clone() : new THREE.Color('#9fb6c8') };
+  captureSkyDomeBase(); // P8: the dome is built by buildSky just before this runs
 }
 function applyAtmosphere(mode) {
   const a = ATMO[mode]; if (!a) return;
@@ -323,6 +357,50 @@ function applyAtmosphere(mode) {
   scene.fog.near = a.fogNear; scene.fog.far = a.fogFar;
   scene.fog.color.copy(atmoBase.fog).multiplyScalar(a.bgMul);
   if (scene.background?.isColor) scene.background.copy(atmoBase.bg).multiplyScalar(a.bgMul);
+  applyLampAtmo(); applySkyDomeAtmo(); // P8: night depth (no-ops for Day/Dusk: multipliers are 1.0)
+}
+
+// ---- Night depth (P8): lamps glow warm + the sky dome darkens at night. Additive to the P2
+// preset system — only the Night preset changes anything here; Day/Dusk restore the captured
+// base exactly (multipliers 1.0, lampWarm null). Lamp heads share one material (buildLamps),
+// so one captured base covers every lamp; the sky dome is either the fallback ShaderMaterial
+// dome (uniforms top/bot) or a loaded env-sky GLB (the 'sky' group) — both are captured per
+// world in captureSkyDomeBase(), after buildSky, and re-applied on every openWorld. The GLB
+// case uses the horizon multiplier (skyBot) so painted sky detail stays faintly visible
+// instead of being crushed to near-black; the shader dome gets a true night gradient
+// (dark zenith, lighter horizon band). buildSky itself is untouched.
+let lampBase = null; // { mat, emissive: Color, intensity } — set at the end of buildLamps
+let skyBase = null;  // { kind: 'shader', mat, top, bot } | { kind: 'glb', mats: [{ mat, color, emissive }] }
+function captureSkyDomeBase() {
+  skyBase = null;
+  let dome = null;
+  S.group?.traverse((o) => { if (!dome && o.isMesh && o.material?.isShaderMaterial && o.material.uniforms?.top && o.material.uniforms?.bot) dome = o; });
+  if (dome) { skyBase = { kind: 'shader', mat: dome.material, top: dome.material.uniforms.top.value.clone(), bot: dome.material.uniforms.bot.value.clone() }; return; }
+  const sky = S.group?.children.find((c) => c.name === 'sky');
+  if (!sky) return;
+  const mats = [];
+  sky.traverse((o) => { if (o.isMesh && o.material?.color && !mats.some((e) => e.mat === o.material)) mats.push({ mat: o.material, color: o.material.color.clone(), emissive: o.material.emissive ? o.material.emissive.clone() : null }); });
+  if (mats.length) skyBase = { kind: 'glb', mats };
+}
+function applyLampAtmo() {
+  if (!lampBase) return; // lamps not built yet; buildLamps applies on completion
+  const a = ATMO[atmoMode];
+  lampBase.mat.emissiveIntensity = lampBase.intensity * a.lamp;
+  if (a.lampWarm) lampBase.mat.emissive.set(a.lampWarm);
+  else lampBase.mat.emissive.copy(lampBase.emissive);
+}
+function applySkyDomeAtmo() {
+  if (!skyBase) return;
+  const a = ATMO[atmoMode];
+  if (skyBase.kind === 'shader') {
+    skyBase.mat.uniforms.top.value.copy(skyBase.top).multiplyScalar(a.skyTop);
+    skyBase.mat.uniforms.bot.value.copy(skyBase.bot).multiplyScalar(a.skyBot);
+  } else {
+    for (const e of skyBase.mats) {
+      e.mat.color.copy(e.color).multiplyScalar(a.skyBot);
+      if (e.emissive) e.mat.emissive.copy(e.emissive).multiplyScalar(a.skyBot);
+    }
+  }
 }
 
 function size() {
@@ -425,7 +503,7 @@ function labelTexture(title, sub, accent) {
 const S = {
   token: 0, slug: null, doc: null, cards: new Map(), blockout: null, brand: null, hue: 170, ready: false, loadMs: 0,
   group: null, track: [], pick: [], buildings: [], byCard: new Map(), avatars: [], pads: [], roads: [], boxes: [],
-  labels: [], zoneLabels: [], inside: null, selected: null, mode: 'orbit', avIdx: null, coordinator: null, notes: [], lazy: [], lodIdx: null, denied: null,
+  labels: [], zoneLabels: [], inside: null, selected: null, mode: 'orbit', avIdx: null, coordinator: null, notes: [], lazy: [], lodIdx: null, tutorIdx: null, denied: null,
   extent: 200, ring: 100, gateZ: 140, councilZ: -140, stats: {},
 };
 let simT = 0;
@@ -465,15 +543,16 @@ async function openWorld(slug) {
   if (S.mode === 'walk') setMode('orbit');
   disposeWorld(); S.slug = slug;
   status('Loading cards…');
-  const [doc, blockout, team, avIdx, lmIdx, lodIdx] = await Promise.all([
+  const [doc, blockout, team, avIdx, lmIdx, lodIdx, tutorIdx] = await Promise.all([
     getJSON(new URL(`${slug}/cards.json`, OUT)), getJSON(new URL(`${slug}/blockout.generated.json`, OUT)),
     getJSON(repo(`worlds/generated/teams/${slug}.json`)), S.avIdxCache ??= getJSON(new URL('avatars/index.json', OUT)),
     S.lmIdxCache ??= getJSON(new URL('assets/landmarks/index.json', OUT)),
     S.lodIdxCache ??= getJSON(new URL('assets/lod/index.json', OUT)),
+    S.tutorIdxCache ??= getJSON(new URL('training/tutors/tutors-index.json', OUT)),
   ]);
   if (token !== S.token) return;
   if (!doc || !blockout) { status(`World ${slug} did not load (cards or blockout missing)`); $('#detail').innerHTML = `<div class="prow"><button type="button" class="ptoggle" data-ptoggle="detail" title="Hide details" aria-label="Hide details">×</button></div><p class="bad">No cards for <code>${esc(slug)}</code>.</p>`; window.__wfReady = true; return; }
-  S.doc = doc; S.blockout = blockout; S.cards = new Map(doc.cards.map((c) => [c.cardId, c])); S.avIdx = avIdx; S.lodIdx = lodIdx;
+  S.doc = doc; S.blockout = blockout; S.cards = new Map(doc.cards.map((c) => [c.cardId, c])); S.avIdx = avIdx; S.lodIdx = lodIdx; S.tutorIdx = tutorIdx;
   S.brand = team?.brand ?? null; S.hue = Number.isFinite(+S.brand?.hue) ? +S.brand.hue : hashStr(slug) % 360;
   document.documentElement.style.setProperty('--world', `hsl(${S.hue} 62% 62%)`);
   const worldCard = doc.cards.find((c) => c.kind === 'world');
@@ -988,6 +1067,10 @@ function buildLamps() {
   const M = new THREE.Matrix4(), q = new THREE.Quaternion(), one = new THREE.Vector3(1, 1, 1), v = new THREE.Vector3();
   spots.forEach((p, i) => { q.setFromAxisAngle(new THREE.Vector3(0, 1, 0), p[2] + Math.PI / 2); v.set(p[0], floorAt(p[0], p[1]), p[1]); M.compose(v, q, one); poles.setMatrixAt(i, M); heads.setMatrixAt(i, M); });
   poles.castShadow = true; S.group.add(poles, heads);
+  // P8: lamp heads share one material — capture its base once and apply the current preset.
+  // buildLamps runs after applyAtmosphere in openWorld, so the night glow is applied here.
+  lampBase = { mat: headM, emissive: headM.emissive.clone(), intensity: headM.emissiveIntensity };
+  applyLampAtmo();
 }
 
 // ---------------------------------------------------------------------------------- selection + UI ----
@@ -1306,8 +1389,9 @@ function show(c) {
   if (V) tr('Volum', `centre ${V.center.join(', ')} · half ${V.halfExtents.join(', ')} m`);
   if (c.kind === 'world') { tr('Status', esc(c.status)); tr('Management', esc(c.management_style)); tr('RP1 anchor', c.anchor?.lat ? `${esc(c.anchor.lat)}, ${esc(c.anchor.lon)}` : '<span class="held">none yet</span>'); if (c.omega_steward) tr('Omega Steward', `${esc(c.omega_steward.id)} · <span class="held">${esc(c.omega_steward.status)}</span>`); }
   // P2: index-sourced world facts, from worldforge/out/index.json — the same file the sidebar
-  // totals come from. No tutor link exists anywhere in that index (checked 2026-11-08: no tutor,
-  // link or href field), so none is shown here. Nothing is invented: every number is an index field.
+  // totals come from. Nothing is invented: every number is an index field.
+  // P6: the tutor description is the lead line (see tutorLead below); the Tutor row
+  // under it names the tutor file it came from (tutors-index.json, fetched in openWorld).
   if (c.kind === 'world') {
     const iw = index?.worlds?.find((w) => w.slug === S.slug);
     if (iw) {
@@ -1315,6 +1399,12 @@ function show(c) {
       tr('World file', `${iw.glbBytes.toLocaleString()} B GLB · ${iw.anchored ? 'anchored' : 'not anchored'} · ${iw.omega ? 'Omega world' : 'no Omega flag'} · ${iw.gaps} gap${iw.gaps === 1 ? '' : 's'}${iw.failed.length ? ` · ${iw.failed.length} failed` : ''}`);
       tr('Index totals', `${index.totals.worlds} worlds · ${index.totals.cards} cards · ${index.totals.primitives} primitives · ${index.totals.evals} evals · ${index.totals.failed} failed · ${index.totals.anchored} anchored`);
     }
+    // P6: tutor source row, from site/worldforge/out/training/tutors/tutors-index.json
+    // (null until it loads, or if the fetch failed — then no row, and the lead
+    // falls back to the tagline). Sourced fields only: draft-lesson count,
+    // status, source path. The description itself is the lead line, not a row.
+    const te = tutorFor(S.slug);
+    if (te) tr('Tutor', `${te.tutorCount ?? '?'} draft lesson${te.tutorCount === 1 ? '' : 's'} · status ${esc(te.status ?? 'coming soon')} · <code>${esc(te.source ?? '')}</code>`);
   }
   if (c.kind === 'seat') tr('Seat', `${esc(c.seat_type)} seat · <b>${c.seated ? esc(c.seated) : 'empty'}</b>`);
   if (c.kind === 'omega') { tr('Omega id', `<code>${esc(c.omega_id)}</code>`); tr('Status', `<span class="held">${esc(c.status)}</span>`); tr('Seated agent', esc(c.seated_agent ?? 'none')); }
@@ -1344,7 +1434,10 @@ function show(c) {
     if (lod) tr('LOD', `LOD1 ${lod.bytes1.toLocaleString()} B vs LOD0 ${lod.bytes0.toLocaleString()} B (${(lod.ratio * 100).toFixed(1)}%) · ${lod.tris1.toLocaleString()} / ${lod.tris0.toLocaleString()} triangles · shown beyond ${LOD_M} m`);
     if (c.mark) tr('Plaque', `brand mark letters only: <b>${esc(c.mark)}</b>`);
   }
-  const lead = c.kind === 'advisor' ? `Scripted guide for ${c.manages ?? 'this world'}.` : c.purpose ?? c.role ?? c.tagline ?? '';
+  // P6: world cards show the tutor-sourced description as the lead (tutorLead falls
+  // back to the card's own tagline when the tutor index failed to load or the slug
+  // has no tutor entry). Non-world cards keep the original chain untouched.
+  const lead = c.kind === 'advisor' ? `Scripted guide for ${c.manages ?? 'this world'}.` : c.kind === 'world' ? tutorLead(S.slug, c.purpose ?? c.role ?? c.tagline ?? '') : c.purpose ?? c.role ?? c.tagline ?? '';
   let extra = '';
   if (['agent', 'coordinator', 'advisor', 'omega'].includes(c.kind)) {
     const e = c._index ?? avEntry(c.cardId), intro = introOf(e) ?? (c.kind === 'omega' ? c.voice?.lines?.find((l) => l.id === 'greet')?.text ?? null : null), vv = e?.voice;
@@ -1730,7 +1823,12 @@ window.__wfInfo = () => ({ world: S.slug, ready: S.ready, loadMs: S.loadMs, stat
   landmark: S.landmark ? { card: S.landmark.card.cardId, model: S.landmark.model, at: [S.landmark.x, S.landmark.y, S.landmark.z], yawDeg: +(S.landmark.yaw * 180 / Math.PI).toFixed(1), height: S.landmark.H, style: S.landmark.card.style } : null,
   avatars: S.avatars.map((a) => ({ card: a.card.cardId, kind: a.card.kind, model: a.model, ref: a.ref ?? null, at: [+a.x.toFixed(2), +a.y.toFixed(2), +a.z.toFixed(2)], height: +a.height.toFixed(2) })) });
 // P2 test hook: atmosphere preset state, for the harness / live checks.
-window.__wfAtmo = () => ({ mode: atmoMode, saved: (() => { try { return localStorage.getItem(ATMO_KEY); } catch { return null; } })(), base: atmoBase ? { sunI: +atmoBase.sunI.toFixed(2), hemiI: +atmoBase.hemiI.toFixed(2) } : null });
+// P8 extends it with the night-depth state (lamp emissive + sky-dome kind/current colours).
+window.__wfAtmo = () => ({ mode: atmoMode, saved: (() => { try { return localStorage.getItem(ATMO_KEY); } catch { return null; } })(), base: atmoBase ? { sunI: +atmoBase.sunI.toFixed(2), hemiI: +atmoBase.hemiI.toFixed(2) } : null,
+  lampEmissive: lampBase ? +lampBase.mat.emissiveIntensity.toFixed(2) : null, lampColor: lampBase ? `#${lampBase.mat.emissive.getHexString()}` : null,
+  skyDome: skyBase ? { kind: skyBase.kind, ...(skyBase.kind === 'shader' ? { top: `#${skyBase.mat.uniforms.top.value.getHexString()}`, bot: `#${skyBase.mat.uniforms.bot.value.getHexString()}` } : { mats: skyBase.mats.length }) } : null });
+// P6 test hook: tutor index state + the lead the detail panel shows for this world.
+window.__wfTutor = () => { const t = tutorFor(S.slug); return { loaded: !!S.tutorIdx, entries: S.tutorIdx?.tutors?.length ?? 0, slug: S.slug, hasTutor: !!t, genericTemplate: t ? t.description.includes(TUTOR_GENERIC_PHRASE) : null, lead: t ? tutorLead(S.slug, '') : null }; };
 
 size();
 // ---- STAGED entry resolution (viewer-link reader; see wiring block above) ----
